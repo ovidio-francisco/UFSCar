@@ -16,7 +16,16 @@ fi
 
 git add .
 git commit -m "$1"
+
+echo ""
+echo "commited"
+echo ""
+
+
 git push -u origin master
+
+echo ""
+
 fortune | cowsay -f dragon -W 80
 
 echo ""
