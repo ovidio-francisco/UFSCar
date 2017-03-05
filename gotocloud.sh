@@ -1,12 +1,17 @@
 if [ $# -lt 1 ] ; then
+	echo ""
         echo "message commit expected"
+	echo ""
         exit 3
 else
-	echo  "commit message --> \"$1\""
+	echo ""
+	echo "backing up!"
+	echo "commit message --> \"$1\""
+	echo ""
 fi
 
 
-echo "backing up!"
+
 git add .
 git commit -m "$1"
 git push -u origin master
