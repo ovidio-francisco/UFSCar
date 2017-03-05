@@ -1,0 +1,80 @@
+
+\documentclass{sig-alternate-05-2015}
+\usepackage[portuguese]{babel}
+%\usepackage{multirow}
+%\usepackage{adjustbox}
+%\usepackage{graphicx}
+%\usepackage{array}
+%\usepackage{tabulary}
+% \usepackage{pgfplotstable}
+% recommended:
+%\usepackage{booktabs}
+%\usepackage{array}
+%\usepackage{colortbl}
+%\usepackage{emptypage}
+%\newcolumntype{l}[1]{>{\centering\arraybackslash}p{#1}}
+% \usepackage{showframe}   %% just for demo
+% \usepackage[brazilian,hyperpageref]{backref}	 % Paginas com as citações na bibl
+% \usepackage[alf]{abntex2cite}	% Citações padrão ABNT
+\usepackage[utf8]{inputenc}		% Codificacao do documento (conversão automática dos acentos)
+
+\usepackage{rotating}
+\usepackage{tabularx}
+\usepackage{multicol}
+
+\begin{document}
+
+\title{Segmentação topical automática de atas de reunião}
+
+
+\numberofauthors{1} 
+
+\author{
+\alignauthor Ovídio José Francisco\\
+       \email{ovidiojf@gmail.com}
+}
+
+\maketitle
+
+%\begin{abstract}   
+%
+%\end{abstract}
+
+\section*{RESUMO}
+
+
+
+\keywords{}
+
+\begingroup
+\let\clearpage\relax
+
+\section{Introdução}
+	\label{sec:introducao}
+	\include{project/introducao}
+
+\section{Trabalhos Relacionados}
+	\label{sec:trabalhos}
+	\include{project/trabalhosrelacionados}
+
+\section{Análise dos Resultados}
+	\label{sec:resultados}
+	\include{project/resultados}
+	
+\section{TextTilingBR}
+
+
+\section{Conclusão}
+	\label{sec:conclusao}
+	\include{project/conclusao}
+\endgroup
+
+
+
+\bibliographystyle{abbrv}
+\bibliography{sigproc}  % sigproc.bib is the name of the Bibliography in this case
+	
+\pagestyle{empty}
+ 	\label{sec:anexo}
+ 	\include{project/anexo}
+\end{document}

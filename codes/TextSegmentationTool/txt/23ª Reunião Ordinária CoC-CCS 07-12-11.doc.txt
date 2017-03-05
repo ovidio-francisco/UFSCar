@@ -1,0 +1,135 @@
+UNIVERSIDADE FEDERAL DE SÃO CARLOS ? Campus Sorocaba
+
+BACHARELADO EM CIÊNCIA DA COMPUTAÇÃO
+
+Rodovia João Leme dos Santos, Km 110 (SP-264)
+
+Bairro do Itinga - Sorocaba-SP - CEP 18052-780
+
+Telefone: (15) 3202-2022 / www. ufscar. br
+
+Ata da 23ª Reunião Ordinária do Conselho do Curso de Bacharelado em Ciência da Computação, UFSCar ? Sorocaba
+
+Local, Dia e Hora: Na ATLAB107, situada nas dependências da Universidade Federal de São Carlos - campus Sorocaba, à Rodovia João Leme dos Santos, quilômetro 110, Bairro do Itinga, na cidade de Sorocaba, Estado de São Paulo e realizada aos sete dias do mês de dezembro de dois mil e onze, às 14h00. Convocação e Presença: A convocação foi realizada dois dias antes da data da sua realização, celebrou-se a primeira chamada as 14h00 e a segunda chamada as 14h20 estavam presentes após a segunda chamada os seguintes membros do Conselho do Curso de Bacharelado em Ciência da Computação ? Sorocaba: Luciana Aparecida Martinez Zaina (presidindo a reunião), Adilson José Vieira Brandão, Fábio Luciano Verdi, José de Oliveira Guimarães, Sahudy M. Gonzáles,  Siovani Cintra Felipussi, Tiemi C. Sakata e o representantes discente, Sr. Lúcio Mitsuru Seki (2010), Sr. Marcel Popolin de Araujo Cunha (2009), Sr. Vitor Casadei (2011) e Sr. Winícius Reis de Jesus Ferreira (2008). A Profa. Luciana solicitou inclusão da pauta das Fichas de Caracterização de disciplinas que são ofertadas ao curso de CCS, pois com a departamentalização os códigos das disciplinas serão alterados, para isso, as disciplinas que são ofertadas para o CCS devem ser submetidas ao Conselho. Todos os membros aceitaram a inclusão. Comunicação da Presidência: (I) A próxima reunião do Conselho provavelmente será realizada em março; (II) Com a departamentalização a Sra. Sônia, secretária do curso, irá para o DComp (Departamento de Computação), com isso a Sra. Manoela ficará secretariando a Coordenação dos Cursos de Economia e Computação; (III) Durante as férias o atendimento da coordenação terá a seguinte escala: 
+	Dias
+	Professores 
+
+	02/01/2011 a 12/01/2011
+	Tiago Agostinho de Almeida
+
+	13/01/2011 a 31/01/2011
+	Katti Faceli
+
+	01/02/2011
+	Luciana Ap. M. Zaina
+
+
+(IV) Com a departamentalização os Laboratórios da Computação passarão a ser geridos pelo do chefe de departamento (Dcomp). Comunicação dos membros: O Prof. José Guimarães informou que, devido ao mau comportamento dos alunos nos laboratórios será anotado o nome para punição dos alunos que causarem desordem, de acordo com as regras dos laboratórios. A Profa. Tiemi informou que o time da Computação ficou em 16° lugar na MARATONA NACIONAL DE PROGRAMAÇÃO, ficando na frente de equipes com mais experiência como USP São Carlos e UFSCar São Carlos. A Profa. Luciana parabenizou os professores Candida, Tiemi e Gustavo pelo trabalho realizado na preparação dos alunos e pelo resultado conquistado. Ordem do Dia: (I) CALENDÁRIO ACADÊMICO: A ProGrad enviou a minuta do Calendário Acadêmico para apreciação do curso, a Profa. Luciana informou que o mesmo será submetido ao CoG na reunião do dia 12/12/2011, a presidente salientou ainda que para o segundo semestre de 2012 haverá muitos feriados às sextas, devendo a coordenação ser cautelosa na confecção da grade horária 2012/2. Conforme a minuta do calendário o período letivo se iniciará com a semana da calourada entre os dias 27/02 e 29/02, e a aula terá início dia 01/03/2011. O Conselho não sugeriu alterações no calendário acadêmico. (II) ATIVIDADES COMPLEMENTARES: Alguns alunos questionaram a coordenação sobre a distribuição de créditos para quem participa e organiza eventos. Atualmente quem organiza recebe a mesma quantidade de crédito de quem participa, sendo a organização mais trabalhosa que a participação. Com isso, a Profa. Luciana propôs que o número de créditos seja maior para organizadores. A Profa. Tiemi sugeriu que a cada 2 (dois) dias de organização de evento o aluno receba 2 (dois) créditos. O aluno Winícius propôs que a cada 1 (um) dia de organização de evento o aluno organizador receba 1 (um) crédito. Aceita a proposta. Aprovado por unanimidade. (II.I) A Profa. Luciana recebeu email de aluno questionando sobre a validação como atividade complementar a participação em C.A e Atlética do D.A., a Profa. Luciana sugeriu que a cada 1 (um) semestre completo seja atribuído 1 (um) crédito ao aluno. Aprovado por unanimidade. (III) FICHAS DE CARACTERIZAÇÃO: Com a Departamentalização as disciplinas terão novo código, conforme o departamento. Os Departamentos de Física, Química e Matemática - DFQM e de Economia ? DEco solicitaram a submissão das Fichas de Caracterização das disciplinas oferecidas para o Curso de Ciências da Computação, listadas na tabela abaixo:
+
+	Departamento
+	Código Velho
+	Código Novo
+	Disciplina
+	Caráter
+	Perfil
+	Crédito
+
+	DEco
+	343242
+	491144
+	Noções Básicas em Economia
+	Obrigatório
+	1
+	2
+
+	DFQM
+	344001
+	524034
+	Cálculo Diferencial e Integral 1
+	Obrigatório
+	1
+	4
+
+	DFQM
+	345075
+	524069
+	Cálculo Diferencial e Séries
+	Obrigatório
+	2
+	4
+
+	DFQM
+	343129
+	520225
+	Física para Computação (2008)
+	Obrigatório
+	1
+	4
+
+	DFQM
+	345482
+	520217
+	Física para Computação (2011)
+	Obrigatório
+	1
+	4
+
+	DFQM
+	345083
+	524204
+	Geometria Analítica e Álgebra Linear
+	Obrigatório
+	1
+	4
+
+
+As fichas foram analisadas e aprovadas. Encerramento: Estando todos de acordo e nada mais havendo a deliberar, lavra-se, leia-se, aprova-se e assina-se esta Ata por todos os membros do Conselho do Curso de Bacharelado em Ciência da Computação, Campus Sorocaba, participantes desta reunião que será levada à registro e arquivamento junto à Coordenação do Conselho do Curso de Bacharelado em Ciência da Computação - Sorocaba, ficando ali à disposição para consulta restrita aos professores da UFSCar - Sorocaba. Nada mais
+	Profª Drª Luciana Aparecida Martinez Zaina
+
+Presidente desta Reunião
+
+	Prof. Dr. Adilson José V. Brandão
+
+Professor Associado
+	Prof. Dr. Fábio Luciano Verdi
+
+Professor Adjunto
+
+	Prof. Dr José de Oliveira Guimarães
+
+Professor Associado
+	Profa. Dra. Sahudy Montenegro González
+
+Professora Adjunta
+
+	Prof. Dr. Siovani Cintra Felipussi
+
+Professor Adjunto
+	Profa. Dra. Tiemi Chistine Sakata
+
+Professora Adjunta
+
+	Winícius Reis de Jesus Ferreira
+ Representante Discente - 2008
+
+
+	Marcel Popolin de Araujo Cunha
+ Representante Discente - 2009
+
+
+
+	Lúcio Mitsuru Seki
+ Representante Discente - 2010
+
+	Vitor Casadei
+ Representante Discente - 2011 
+
+
+
+	Manoela Anechini Simões Marins
+Secretária do Curso Bacharelado em Ciência da Computação  
+
+
+
+
+

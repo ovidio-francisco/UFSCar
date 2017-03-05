@@ -1,0 +1,3 @@
+# Text Segmentation Tool
+
+## Ajuda 

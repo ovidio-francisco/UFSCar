@@ -1,0 +1,11 @@
+C99 and TextTilling
+WindowDiff and F-measure. 
+
+Text Split 
+TopicTiling
+
+Text tiling
+Multi-Paragraph Segmentation of Expository Text
+http://people.ischool.berkeley.edu/~hearst/research/tiling.html
+
+

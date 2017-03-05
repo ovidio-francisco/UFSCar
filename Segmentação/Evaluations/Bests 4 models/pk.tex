@@ -1,0 +1,99 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage{graphicx}
+\usepackage{lscape}
+\title{Output tables for the test of Multiple comparisons.}
+\author{}
+\date{\today}
+\begin{document}
+\begin{landscape}
+\pagestyle{empty}
+\maketitle
+\thispagestyle{empty}
+\section{Average rankings of Friedman test}
+
+
+
+Average ranks obtained by applying the Friedman procedure
+
+\begin{table}[!htp]
+\centering
+\begin{tabular}{|c|c|}\hline
+Algorithm&Ranking\\\hline
+C99-40-11-true & 2.125\\
+C99-40-9-true & 2.4167\\
+TT-30-9 & 2.625\\
+TT-30-12 & 2.8333\\
+\hline
+\end{tabular}
+\caption{Average Rankings of the algorithms}
+\end{table}
+
+Friedman statistic considering reduction performance (distributed according to chi-square with 3 degrees of freedom: 1.975.
+
+P-value computed by Friedman Test: 0.5776117288532787.\newline
+
+
+
+\pagebreak
+
+\section{Post hoc comparisons}
+
+Results achieved on post hoc comparisons for $\alpha = 0.05$, $\alpha = 0.10$ and adjusted p-values.
+
+\subsection{P-values for $\alpha=0.05$}
+
+\begin{table}[!htp]
+\centering\scriptsize
+\begin{tabular}{cccc}
+$i$&algorithms&$z=(R_0 - R_i)/SE$&$p$\\
+\hline6&C99-40-11-true vs. TT-30-12&1.343968&0.178959\\
+5&C99-40-11-true vs. TT-30-9&0.948683&0.342782\\
+4&C99-40-9-true vs. TT-30-12&0.790569&0.429195\\
+3&C99-40-11-true vs. C99-40-9-true&0.553399&0.579991\\
+2&C99-40-9-true vs. TT-30-9&0.395285&0.692633\\
+1&TT-30-9 vs. TT-30-12&0.395285&0.692633\\
+\hline
+\end{tabular}
+\caption{P-values Table for $\alpha=0.05$}
+\end{table}Nemenyi's procedure rejects those hypotheses that have an unadjusted p-value $\le0.008333$.
+
+\pagebreak
+
+\subsection{P-values for $\alpha=0.10$}
+
+\begin{table}[!htp]
+\centering\scriptsize
+\begin{tabular}{cccc}
+$i$&algorithms&$z=(R_0 - R_i)/SE$&$p$\\
+\hline6&C99-40-11-true vs. TT-30-12&1.343968&0.178959\\
+5&C99-40-11-true vs. TT-30-9&0.948683&0.342782\\
+4&C99-40-9-true vs. TT-30-12&0.790569&0.429195\\
+3&C99-40-11-true vs. C99-40-9-true&0.553399&0.579991\\
+2&C99-40-9-true vs. TT-30-9&0.395285&0.692633\\
+1&TT-30-9 vs. TT-30-12&0.395285&0.692633\\
+\hline
+\end{tabular}
+\caption{P-values Table for $\alpha=0.10$}
+\end{table}Nemenyi's procedure rejects those hypotheses that have an unadjusted p-value $\le0.016667$.
+
+\pagebreak
+
+\subsection{Adjusted p-values}
+
+\begin{table}[!htp]
+\centering\scriptsize
+\begin{tabular}{cccc}
+i&hypothesis&unadjusted $p$&$p_{Neme}$\\
+\hline1&C99-40-11-true vs .TT-30-12&0.178959&1.073752\\
+2&C99-40-11-true vs .TT-30-9&0.342782&2.05669\\
+3&C99-40-9-true vs .TT-30-12&0.429195&2.575172\\
+4&C99-40-11-true vs .C99-40-9-true&0.579991&3.479943\\
+5&C99-40-9-true vs .TT-30-9&0.692633&4.155797\\
+6&TT-30-9 vs .TT-30-12&0.692633&4.155797\\
+\hline
+\end{tabular}
+\caption{Adjusted $p$-values}
+\end{table}
+
+\end{landscape}
+\end{document}
