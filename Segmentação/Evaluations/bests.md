@@ -1,5 +1,6 @@
 
 
+# Primeiros Testes com 20 modelos para cada medida
 
 						best		vice
 C99 Acuracy				C-40-11-t	C-40-9-t
@@ -16,6 +17,17 @@ TextTiling Pk			TT-30-9		TT-30-12
 TextTiling Windiff		TT-50-9		TT-60-12
 
 
+# Teste Final com 4 modelos para cada medida, sendo esses os 2 melhores de cada algorítmo
+
+
+
+				Best
+Acuracy			C-40-11-t
+Precision		C-40-11-t
+Pk				C-40-11-t
+Windiff			C-40-11-t
+F1				C-60-9-t
+Recall			C-100-9-f
 
 
 
