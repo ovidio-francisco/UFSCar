@@ -1,6 +1,8 @@
 if [ $# -lt 1 ] ; then
         echo "message commit expected"
         exit 3
+else
+	echo  "commit message --> \"$1\""
 fi
 
 
