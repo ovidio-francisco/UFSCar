@@ -42,6 +42,17 @@
 		| of the candidate. *Topic boundaries are placed at the locations of valleys in this measure,           |
 		| and are then *adjusted* to coincide with known paragraph boundaries*.                                 |
 		|_______________________________________________________________________________________________________|
+		+-------------------------------------------------------------------------------------------------------+
+		|                                                                                                       
+		|                                                                                                       
+		  1. Recebe uma lista cadidados a limite entre tótipicos, frequentemente finais de sentença.
+		  2. Atribui um _score_ a cada candidato, o qual é calculado por meio da analise do texto que o circunda
+                                                                                                                 /
+                                                                                                                /
+		+-------------------------------------------------------------------------------------------------------+
+		
+
+
 
 		'___________________
 		/ Cue-word features \___________________________________________________________________________________

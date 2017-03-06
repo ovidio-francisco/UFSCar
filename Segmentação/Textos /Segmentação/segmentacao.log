@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.10.9)  5 MAR 2017 00:19
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.10.9)  6 MAR 2017 00:19
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -722,39 +722,81 @@ File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 
 
 (./project/introducao.tex)
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
 \openout2 = `project/trabalhosrelacionados.aux'.
 
- (./project/trabalhosrelacionados.tex
 
-LaTeX Warning: Citation `fulano' on page \thepage  undefined on input line 16.
+(./project/trabalhosrelacionados.tex
+
+LaTeX Warning: Citation `fulano' on page \thepage  undefined on input line 6.
 
 )
 \openout2 = `project/resultados.aux'.
 
- (./project/resultados.tex)
+ (./project/resultados.tex
+
+LaTeX Warning: Citation `fulano' on page \thepage  undefined on input line 18.
+
+
+LaTeX Warning: Citation `Reynar 1994; Choi 2000; e própiro autor do "A Critique
+ and Impro.' on page \thepage  undefined on input line 20.
+
+
+LaTeX Warning: Citation `Manning 1998; Kan' on page \thepage  undefined on inpu
+t line 21.
+
+
+LaTeX Warning: Citation `Klavans' on page \thepage  undefined on input line 21.
+
+
+
+LaTeX Warning: Citation `and McKeown 1998' on page \thepage  undefined on input
+ line 21.
+
+
+LaTeX Warning: Citation `Two Step ... Meeting Minutes' on page \thepage  undefi
+ned on input line 22.
+
+
+LaTeX Warning: Citation `fulano' on page \thepage  undefined on input line 33.
+
+) [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
+
+
+
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.0.1}TextTiling}{\
+thepage }}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.0.2}C99}{\thepage
+ }}
+\@writefile{toc}{\contentsline {section}{\numberline {4}Avalia\IeC {\c c}\IeC {
+\~a}o}{\thepage }}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Medidas de Avalia\
+IeC {\c c}\IeC {\~a}o}{\thepage }}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.1.1}Pk}{\thepage 
+}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.1.2}WindowDiff}{\
+thepage }}
+]
 \openout2 = `project/conclusao.aux'.
 
- (./project/conclusao.tex) (./segmentacao.bbl)
-[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
+ (./project/conclusao.tex) (./segmentacao.bbl) [2
 
-
-
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.1}Avalia\IeC {\c c}\
-IeC {\~a}o}{\thepage }}
 ]
 \openout2 = `project/anexo.aux'.
 
- (./project/anexo.tex) (./segmentacao.aux (./project/introducao.aux)
+ (./project/anexo.tex)
+(./segmentacao.aux (./project/introducao.aux)
 (./project/trabalhosrelacionados.aux) (./project/resultados.aux)
 (./project/conclusao.aux) (./project/anexo.aux)) ) 
 Here is how much of TeX's memory you used:
- 4262 strings out of 494315
- 53602 string characters out of 6163325
- 132848 words of memory out of 5000000
- 7423 multiletter control sequences out of 15000+600000
- 52682 words of font info for 75 fonts, out of 8000000 for 9000
+ 4268 strings out of 494315
+ 53752 string characters out of 6163325
+ 133848 words of memory out of 5000000
+ 7428 multiletter control sequences out of 15000+600000
+ 53818 words of font info for 76 fonts, out of 8000000 for 9000
  374 hyphenation exceptions out of 8191
- 41i,11n,35p,481b,478s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 41i,11n,35p,588b,478s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dis
 t/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public
 /amsfonts/cm/cmbx9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
@@ -763,11 +805,12 @@ r9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb>
 </usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/
 texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/ty
-pe1/urw/times/utmr8a.pfb>
-Output written on segmentacao.pdf (1 page, 81182 bytes).
+pe1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/u
+tmri8a.pfb>
+Output written on segmentacao.pdf (2 pages, 94749 bytes).
 PDF statistics:
- 41 PDF objects out of 1000 (max. 8388607)
- 29 compressed objects within 1 object stream
+ 48 PDF objects out of 1000 (max. 8388607)
+ 34 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
