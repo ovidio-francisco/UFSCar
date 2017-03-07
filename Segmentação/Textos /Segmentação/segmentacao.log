@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.10.9)  7 MAR 2017 10:20
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.10.9)  7 MAR 2017 15:36
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -726,7 +726,7 @@ File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 
  (./project/trabalhosrelacionados.tex
 
-LaTeX Warning: Citation `fulano' on page \thepage  undefined on input line 6.
+LaTeX Warning: Citation `fulano' on page \thepage  undefined on input line 10.
 
 )
 \openout2 = `project/resultados.aux'.
@@ -787,10 +787,10 @@ thepage }}
 (./project/trabalhosrelacionados.aux) (./project/resultados.aux)
 (./project/conclusao.aux) (./project/anexo.aux)) ) 
 Here is how much of TeX's memory you used:
- 4268 strings out of 494315
- 53752 string characters out of 6163325
- 133848 words of memory out of 5000000
- 7428 multiletter control sequences out of 15000+600000
+ 4278 strings out of 494315
+ 53894 string characters out of 6163325
+ 133872 words of memory out of 5000000
+ 7438 multiletter control sequences out of 15000+600000
  53818 words of font info for 76 fonts, out of 8000000 for 9000
  374 hyphenation exceptions out of 8191
  41i,11n,35p,588b,478s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -804,7 +804,7 @@ texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/ty
 pe1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/u
 tmri8a.pfb>
-Output written on segmentacao.pdf (2 pages, 94920 bytes).
+Output written on segmentacao.pdf (2 pages, 101895 bytes).
 PDF statistics:
  48 PDF objects out of 1000 (max. 8388607)
  34 compressed objects within 1 object stream

@@ -1,3 +1,39 @@
-\begin{thebibliography}{}
+\begin{thebibliography}{1}
+
+\bibitem{Banerjee200657}
+S.~Banerjee and A.~Rudnicky.
+\newblock A texttiling based approach to topic boundary detection in meetings.
+\newblock volume~1, pages 57--60, 2006.
+\newblock cited By 3.
+
+\bibitem{Beeferman1999}
+D.~Beeferman, A.~Berger, and J.~Lafferty.
+\newblock Statistical models for text segmentation.
+\newblock {\em Machine Learning}, 34(1):177--210, 1999.
+
+\bibitem{CHAIBI2014437}
+A.~H. Chaibi, M.~Naili, and S.~Sammoud.
+\newblock Topic segmentation for textual document written in arabic language.
+\newblock {\em Procedia Computer Science}, 35:437 -- 446, 2014.
+
+\bibitem{Kern2009167}
+R.~Kern and M.~Granitzer.
+\newblock Efficient linear text segmentation based on information retrieval
+  techniques.
+\newblock pages 167--171, 2009.
+\newblock cited By 10.
+
+\bibitem{Pevzner200219}
+L.~Pevzner and M.~Hearst.
+\newblock A critique and improvement of an evaluation metric for text
+  segmentation.
+\newblock {\em Computational Linguistics}, 28(1):19--36, 2002.
+\newblock cited By 154.
+
+\bibitem{Salton199653}
+G.~Salton, A.~Singhal, C.~Buckley, and M.~Mitra.
+\newblock Automatic text decomposition using text segments and text themes.
+\newblock pages 53--65, 1996.
+\newblock cited By 50.
 
 \end{thebibliography}

@@ -12,6 +12,19 @@
 
 # 2 Trabalhos Relacionados 
 
+	- TextTiling
+
+		 [Top Seg for Arabic mostra 3 fases do TextTiling]	
+
+	- C99
+		. Baseado em coesão léxica
+		. Usa cosine
+		. Melhorado com LSA
+
+		 [usa todas as palavras e sem stemming]
+		 [Top Seg for Arabic mostra 4 fases do C99]	
+	
+
 # 3 Análise dos Resultados
 
 # 4 Avaliação
@@ -26,6 +39,11 @@
 	- Justificativa / Motivação
 	- Algoritmos base
 	- Adapatações nos alg. base para o contexto das atas
+	- Preprocessamento
+		- Extração de palavras
+		- eliminação de stopwords
+		- stemming
+		{imagem mostrando o preprocessamento}
 
 # 6 Conclusão
 
