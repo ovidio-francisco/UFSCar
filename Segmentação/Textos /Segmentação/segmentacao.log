@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.10.9)  7 MAR 2017 09:04
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.10.9)  7 MAR 2017 10:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -722,12 +722,9 @@ File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 
 
 (./project/introducao.tex)
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
 \openout2 = `project/trabalhosrelacionados.aux'.
 
-
-(./project/trabalhosrelacionados.tex
+ (./project/trabalhosrelacionados.tex
 
 LaTeX Warning: Citation `fulano' on page \thepage  undefined on input line 6.
 
@@ -807,7 +804,7 @@ texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/ty
 pe1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/u
 tmri8a.pfb>
-Output written on segmentacao.pdf (2 pages, 94749 bytes).
+Output written on segmentacao.pdf (2 pages, 94920 bytes).
 PDF statistics:
  48 PDF objects out of 1000 (max. 8388607)
  34 compressed objects within 1 object stream
