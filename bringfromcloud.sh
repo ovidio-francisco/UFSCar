@@ -1,7 +1,7 @@
 
 
 
-    read -p "Do you wish to discard the local changes and get the latest commits in the remote repository? " yn
+    read -p "Do you wish to discard the local changes and get the latest commits in the remote repository? [Y/n] " yn
     case $yn in
         [Nn]* ) echo "" ; 
 		echo "Ok. We didn't nothing! Good bye.";
@@ -28,3 +28,6 @@ echo "Finish"
 
 #http://stackoverflow.com/questions/15745045/how-do-i-resolve-git-saying-commit-your-changes-or-stash-them-before-you-can-me
 
+
+After this operation, 114 kB of additional disk space will be used.
+Do you want to continue? [Y/n]
