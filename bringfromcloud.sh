@@ -28,6 +28,3 @@ echo "Finish"
 
 #http://stackoverflow.com/questions/15745045/how-do-i-resolve-git-saying-commit-your-changes-or-stash-them-before-you-can-me
 
-
-After this operation, 114 kB of additional disk space will be used.
-Do you want to continue? [Y/n]
