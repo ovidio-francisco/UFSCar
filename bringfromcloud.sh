@@ -17,6 +17,9 @@
 		echo "Getting the latest commits from the repository";
 		git pull origin master
 
+
+		fortune | cowsay -f turtle
+
 		echo "";;
 
         * ) echo "Please answer yes or no.";;

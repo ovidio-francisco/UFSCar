@@ -26,7 +26,7 @@ git push -u origin master
 
 echo ""
 
-fortune | cowsay -f dragon -W 80
+fortune | cowsay -f dragon
 
 echo ""
 echo "done!"
