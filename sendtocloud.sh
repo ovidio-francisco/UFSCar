@@ -1,5 +1,29 @@
 
 
+    read -p "Do you wish to update the remote repository with the local data? [Y/n] " yn
+    case $yn in
+        [Nn]* ) echo "" ; 
+			echo "Ok. We didn't nothing! Good bye.";
+			echo "";
+			exit ;;
+
+        [Yy]* ) echo ""; 
+
+			echo "";;
+
+        * ) echo "Please answer yes or no.";
+			exit ;;
+    esac
+
+
+
+
+
+
+
+
+
+
 if [ $# -lt 1 ] ; then
 	echo ""
         echo "message commit expected"

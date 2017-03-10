@@ -279,6 +279,16 @@ ________________________________________________________________________________
 
 	[Statistical Models for Text Segmentation]
 
+
+
+	* usa uma janela deslisante para computar as similaridades entre blocos de texto adjacente baseado em seus vetores de frequêcia.
+	* 
+
+
+	3 Fases:
+		1. construção dos blocos usando janela deslisante; 
+		2. Cálculo das similaridades usando cosine;
+		3. Os limites são determinados pelas mudanças na sequencia dos scores de similaridades;
 ________________________________________________________________________________________________________
 
 
@@ -304,4 +314,4 @@ ________________________________________________________________________________
 
 
 
-
+ 

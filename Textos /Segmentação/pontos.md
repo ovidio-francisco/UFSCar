@@ -5,7 +5,6 @@
 	* Descrição da tarefa de segmentação
 	* Utilidade da segmentação (domínios onde é aplicada)
 	* Utilidade da segmentação (Vantagens da utilização para esses domínios)
-	* Ideia básica dos algorítmos (Coesão léxica ) como **presuposto básico**
 	* Objetivo do Trabalho
 		Proposta: Adaptar e Avaliar Texting e C99 para PtBr e Atas
 		Dividir o documento de modo que cada parte corresponda a um tópico
@@ -13,7 +12,7 @@
 
 # 2 Trabalhos Relacionados 
 
-	- Pressuposto da coesão léxica
+	* Ideia básica dos algorítmos (Coesão léxica ) como **presuposto básico**
 
 	- TextTiling
 
