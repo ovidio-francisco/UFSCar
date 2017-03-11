@@ -289,20 +289,42 @@ ________________________________________________________________________________
 		* preprocessamento
 		1. construção dos blocos usando janela deslisante; 
 		2. Cálculo das similaridades usando cosine;
-		3. Os limites são determinados pelas mudanças na sequencia dos scores de similaridades;
+		3. Os limites são determinados pelas mudanças na sequência dos scores de similaridades;
+
+
+	
+		
+	- Baixa complexidade e baixa acurácia
+	-
+
+
+	--> Cada posição _i_ entre sentenças adjacentes é candidata a quebra de sentença. Para posição candidata são construídos 2 blocos. Um contendo sentenças que precedem a posição e outro com as que o sucedem. O tamanho desses blocos é um parâmetro a ser fonecido a algoritmo e determina o tamanho mínimode uma segmento.
+	As similaridades entre os blocos são calculadas pela análise das frequencias das palavras que a compõe.
+
+
+
+	(([Kern] leva em conta ainda mais uma medida chamada de _inner similarty_ a qual é a similaridade entre as sentenças de cada bloco, em seguida))
+
+	((No trabalho de [Kern] outra medida é calculada, a inner similarty, ))
+	As similaridades entre as sentenças são calculadas pela análise das frequencias das palavras que a compõe. A similaridade entre as senteças de cada bloco é chamada de _inner similarity_
+
 ________________________________________________________________________________________________________
+
 
 
 
 # Funcionamento do C99
 
-		
+	4 Fases:
 		* Não faz preprocessamento (originalmente) ???????????????
 		1. Construção de um dicionário de frequências (vetor que contem a frequencia de cada palavra)
 		2. Construção de uma matrix de similaridades (usa cosine)
 		3. Cálculo da matrix de ranking
 		4. Identificar os limites usando Reynar's maximisation algorithm
 
+	- Transforma a matrix de similaridade em uma matrix de ranking e Usa _divisive clusterim_ para encontrar os melhores segmentos	[Kern]
+
+	- Exige maior coplexidade computacional pq usa matriz de similaridades de todas as sentenças do documento
 
 
 ________________________________________________________________________________________________________
@@ -323,6 +345,33 @@ ________________________________________________________________________________
 
 
 
+Pevzner,
+title={A critique and improvement of an evaluation metric for text segmentation},
+
+Banerjee,
+title={A TextTiling based approach to topic boundary detection in meetings},
+
+Salton,
+title={Automatic text decomposition using text segments and text themes},
+
+Kern,
+title={Efficient linear text segmentation based on information retrieval techniques},
+
+# Criou o Pk ???
+Beeferman,
+title="Statistical Models for Text Segmentation",
 
 
+CHAIBI20,
+title = "Topic Segmentation for Textual Document Written in Arabic Language",
+
+Bokaei,
+ title = {Linear Discourse Segmentation of Multi-party Meetings Based on Local and Global Information},
+
+Galley,
+ title = {Discourse Segmentation of Multi-party Conversation},
+
+
+Hearst,
+ title = {Multi-paragraph Segmentation of Expository Text},
  
