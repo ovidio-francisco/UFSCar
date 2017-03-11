@@ -286,6 +286,7 @@ ________________________________________________________________________________
 
 
 	3 Fases:
+		* preprocessamento
 		1. construção dos blocos usando janela deslisante; 
 		2. Cálculo das similaridades usando cosine;
 		3. Os limites são determinados pelas mudanças na sequencia dos scores de similaridades;
@@ -293,8 +294,18 @@ ________________________________________________________________________________
 
 
 
+# Funcionamento do C99
+
+		
+		* Não faz preprocessamento (originalmente) ???????????????
+		1. Construção de um dicionário de frequências (vetor que contem a frequencia de cada palavra)
+		2. Construção de uma matrix de similaridades (usa cosine)
+		3. Cálculo da matrix de ranking
+		4. Identificar os limites usando Reynar's maximisation algorithm
 
 
+
+________________________________________________________________________________________________________
 
 
 
