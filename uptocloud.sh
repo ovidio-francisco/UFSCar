@@ -1,3 +1,13 @@
+
+
+if [ $# -lt 1 ] ; then
+	echo ""
+        echo "message commit expected"
+	echo ""
+        exit 3
+fi
+
+
     tput bold
     echo ""
     echo " Made some work?"
@@ -20,27 +30,10 @@
     esac
 
 
-
-
-
-
-
-
-
-
-if [ $# -lt 1 ] ; then
-	echo ""
-        echo "message commit expected"
-	echo ""
-        exit 3
-else
-	echo ""
-	echo "backing up!"
-	echo "commit message --> \"$1\""
-	echo ""
-fi
-
-
+echo ""
+echo "backing up!"
+echo "commit message --> \"$1\""
+echo ""
 
 git add .
 git commit -m "$1"
