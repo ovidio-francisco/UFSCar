@@ -1,11 +1,11 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.10.9)  10 MAR 2017 16:33
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.3.9)  12 MAR 2017 16:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **trabalhosrelacionados.tex
 (./trabalhosrelacionados.tex
-LaTeX2e <2016/02/01>
-Babel <3.9q> and hyphenation patterns for 32 language(s) loaded.
+LaTeX2e <2017/01/01> patch level 1
+Babel <3.9r> and hyphenation patterns for 6 language(s) loaded.
 
 ! LaTeX Error: Missing \begin{document}.
 
@@ -354,7 +354,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.27 E
+l.30 E
       ntre os mais influentes podemos citar o \textit{TextTiling}~\cite{Hear...
 
 You're in trouble here.  Try typing  <return>  to proceed.
@@ -399,7 +399,7 @@ Missing character: There is no [ in font nullfont!
 ! Undefined control sequence.
 <write> ...: Citation `\@citeb ' on page \thepage 
                                                   \space undefined\on@line .
-l.27 ...ar o \textit{TextTiling}~\cite{Hearst1994}
+l.30 ...ar o \textit{TextTiling}~\cite{Hearst1994}
                                                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -408,27 +408,105 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-LaTeX Warning: Citation `Hearst1994' on page  undefined on input line 27.
+LaTeX Warning: Citation `Hearst1994' on page  undefined on input line 30.
 
 Missing character: There is no ] in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 27--28
+Overfull \hbox (20.0pt too wide) in paragraph at lines 30--31
 []
  []
 
 
-Overfull \hbox (22.5276pt too wide) in paragraph at lines 27--28
+Overfull \hbox (22.5276pt too wide) in paragraph at lines 30--31
 \OT1/cmr/m/it/10 Text-
  []
 
 
-Overfull \hbox (16.35544pt too wide) in paragraph at lines 27--28
+Overfull \hbox (16.35544pt too wide) in paragraph at lines 30--31
 \OT1/cmr/m/it/10 Til-
  []
 
 
-Overfull \hbox (19.60405pt too wide) in paragraph at lines 27--28
+Overfull \hbox (19.60405pt too wide) in paragraph at lines 30--31
 \OT1/cmr/m/it/10 ing [] 
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.35 S
+      emelhante a esse trabalho, outras abordagens foram propostas como ...
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no S in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no . in font nullfont!
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 35--36
+[]
  []
 
 )
@@ -439,11 +517,11 @@ Overfull \hbox (19.60405pt too wide) in paragraph at lines 27--28
 
  
 Here is how much of TeX's memory you used:
- 11 strings out of 494315
- 248 string characters out of 6163325
- 47929 words of memory out of 5000000
- 3445 multiletter control sequences out of 15000+600000
+ 11 strings out of 494884
+ 248 string characters out of 6179237
+ 46006 words of memory out of 5000000
+ 3417 multiletter control sequences out of 15000+600000
  4294 words of font info for 16 fonts, out of 8000000 for 9000
- 374 hyphenation exceptions out of 8191
+ 38 hyphenation exceptions out of 8191
  20i,2n,26p,405b,93s stack positions out of 5000i,500n,10000p,200000b,80000s
 !  ==> Fatal error occurred, no output PDF file produced!

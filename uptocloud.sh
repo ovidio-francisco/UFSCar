@@ -14,7 +14,7 @@ fi
     echo ""
     tput sgr0
 
-    read -p " Do you wish to update the remote repository with the local data? [Y/n] " yn
+    read -p " Do you wish to update the remote repository with the local data? [y/n] " yn
     case $yn in
         [Nn]* ) echo "" ; 
 			echo "Ok. We didn't nothing! Good bye.";
