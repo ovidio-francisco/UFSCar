@@ -341,12 +341,14 @@ ________________________________________________________________________________
 	- Medidas como precisão e recall podem não reprentar bem a performance do algoritmo, uma vez que desconsideram limites próximos ao esperado.
 	- Calcula a discordância entre uma segmentação automática e uma real.
 		- Uma discordância ocorre quando um par de palavras é colocado em segmentos diferentes, onde a distancia entre as palavras _k_ é calculado como a metada das comprimentos médios dos segentos reais (referência)
-	-Quando aplicado a todos os termos produzidos, Pk pode ser interpretado como a probablilidade de erro geral [Kern]
+	- Quando aplicado a todos os termos produzidos, Pk pode ser interpretado como a probablilidade de erro geral [Kern]
 	- [Kern] inclui o Pk por ser a mais utilizada, mas tambem inclui WindowDiff para referencias futuras
 
 
 
 # Medida WindowDiff
+
+	- 
 
 	
 
