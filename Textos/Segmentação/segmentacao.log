@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=latex 2017.3.13)  14 MAR 2017 18:04
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.3.13)  14 MAR 2017 23:51
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -26,10 +26,18 @@ Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 (/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
-Package graphics Info: Driver file: dvips.def on input line 99.
+Package graphics Info: Driver file: pdftex.def on input line 99.
 
-(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/dvips.def
-File: dvips.def 2016/07/10 v3.1a Driver-dependent file (DPC,SPQR)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2017/01/12 v0.06k Graphics/color for pdfTeX
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count79
 ))
 \Gin@req@height=\dimen102
 \Gin@req@width=\dimen103
@@ -68,13 +76,13 @@ Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2016/03/08 v2.02 operator names
 )
-\inf@bad=\count79
+\inf@bad=\count80
 LaTeX Info: Redefining \frac on input line 213.
-\uproot@=\count80
-\leftroot@=\count81
+\uproot@=\count81
+\leftroot@=\count82
 LaTeX Info: Redefining \overline on input line 375.
-\classnum@=\count82
-\DOTSCASE@=\count83
+\classnum@=\count83
+\DOTSCASE@=\count84
 LaTeX Info: Redefining \ldots on input line 472.
 LaTeX Info: Redefining \dots on input line 475.
 LaTeX Info: Redefining \cdots on input line 596.
@@ -83,15 +91,15 @@ LaTeX Info: Redefining \cdots on input line 596.
 \big@size=\dimen108
 LaTeX Font Info:    Redeclaring font encoding OML on input line 712.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
-\macc@depth=\count84
-\c@MaxMatrixCols=\count85
+\macc@depth=\count85
+\c@MaxMatrixCols=\count86
 \dotsspace@=\muskip10
-\c@parentequation=\count86
-\dspbrk@lvl=\count87
+\c@parentequation=\count87
+\dspbrk@lvl=\count88
 \tag@help=\toks17
-\row@=\count88
-\column@=\count89
-\maxfields@=\count90
+\row@=\count89
+\column@=\count90
+\maxfields@=\count91
 \andhelp@=\toks18
 \eqnshift@=\dimen109
 \alignsep@=\dimen110
@@ -115,7 +123,7 @@ Excerpts were taken from (Journal Style) 'esub2acm.cls'.
 m.org ******
 Questions on the style, SIGS policies, etc. to Adrienne Griscti griscti@acm.org
 
-\ACM@basesize=\count91
+\ACM@basesize=\count92
 (/usr/share/texlive/texmf-dist/tex/latex/comment/comment.sty
 \CommentStream=\write3
 
@@ -127,22 +135,22 @@ Excluding comment 'comment') Excluding comment 'CCSXML'
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty
 Package: ifpdf 2016/05/14 v3.1 Provides the ifpdf switch
 )
-\aucount=\count92
-\originalaucount=\count93
+\aucount=\count93
+\originalaucount=\count94
 \auwidth=\dimen118
 \auskip=\dimen119
-\auskipcount=\count94
+\auskipcount=\count95
 \auskip=\dimen120
 \allauboxes=\dimen121
 \addauthors=\toks21
-\addauflag=\count95
+\addauflag=\count96
 \subtitletext=\toks22
-\savesection=\count96
-\sectioncntr=\count97
-\c@figure=\count98
-\c@table=\count99
+\savesection=\count97
+\sectioncntr=\count98
+\c@figure=\count99
+\c@table=\count100
 \titleboxnotes=\toks23
-\titleboxnoteflag=\count100
+\titleboxnoteflag=\count101
 
 
 LaTeX Warning: You have requested document class `sig-alternate-05-2015',
@@ -157,26 +165,26 @@ LaTeX Font Info:    Overwriting symbol font `lasy' in version `bold'
 (Font)                  U/lasy/m/n --> U/lasy/b/n on input line 52.
 )
 \@acmtitlebox=\box28
-\titlenotecount=\count101
+\titlenotecount=\count102
 \tntoks=\toks24
 \tntokstwo=\toks25
 \tntoksthree=\toks26
 \tntoksfour=\toks27
 \tntoksfive=\toks28
-\catcount=\count102
+\catcount=\count103
 \copyrightnotice=\toks29
 \conf=\toks30
 \confinfo=\toks31
-\c@part=\count103
-\c@section=\count104
-\c@subsection=\count105
-\c@subsubsection=\count106
-\c@paragraph=\count107
+\c@part=\count104
+\c@section=\count105
+\c@subsection=\count106
+\c@subsubsection=\count107
+\c@paragraph=\count108
 
 Using 'Abbrev' bibliography style
 LaTeX Info: Redefining \cite on input line 1408.
 \bibindent=\dimen122
-\colcntr=\count108
+\colcntr=\count109
 \saveb@x=\box29
 \copyrtyr=\toks32
 \acmcopyr=\toks33
@@ -195,7 +203,7 @@ Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
 \XKV@toks=\toks35
 \XKV@tempa@toks=\toks36
 )
-\XKV@depth=\count109
+\XKV@depth=\count110
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 )))
 \copyrightetc=\toks37
@@ -220,7 +228,7 @@ Language: portuges 2008/03/18 v1.2q Portuguese support from the babel system
 
 (/usr/share/texlive/texmf-dist/tex/generic/babel/babel.def
 File: babel.def 2016/04/23 3.9r Babel common definitions
-\babel@savecnt=\count110
+\babel@savecnt=\count111
 \U@D=\dimen123
 )
 Package babel Info: Making " an active character on input line 145.
@@ -549,7 +557,7 @@ Package: rotating 2016/08/11 v2.16d rotated objects in LaTeX
 (/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )
-\c@r@tfl@t=\count111
+\c@r@tfl@t=\count112
 \rotFPtop=\skip44
 \rotFPbot=\skip45
 \rot@float@box=\box30
@@ -571,19 +579,19 @@ Package: array 2016/10/06 v2.4d Tabular extension package (FMi)
 \TX@old@col=\dimen128
 \TX@target=\dimen129
 \TX@delta=\dimen130
-\TX@cols=\count112
+\TX@cols=\count113
 \TX@ftn=\toks42
 )
 (/usr/share/texlive/texmf-dist/tex/latex/tools/multicol.sty
 Package: multicol 2016/04/07 v1.8p multicolumn formatting (FMi)
-\c@tracingmulticols=\count113
+\c@tracingmulticols=\count114
 \mult@box=\box31
 \multicol@leftmargin=\dimen131
-\c@unbalance=\count114
-\c@collectmore=\count115
-\doublecol@number=\count116
-\multicoltolerance=\count117
-\multicolpretolerance=\count118
+\c@unbalance=\count115
+\c@collectmore=\count116
+\doublecol@number=\count117
+\multicoltolerance=\count118
+\multicolpretolerance=\count119
 \full@width=\dimen132
 \page@free=\dimen133
 \premulticols=\dimen134
@@ -614,14 +622,14 @@ Package: multicol 2016/04/07 v1.8p multicolumn formatting (FMi)
 \@tempa=\box52
 \@tempa=\box53
 \@tempa=\box54
-\c@columnbadness=\count119
-\c@finalcolumnbadness=\count120
+\c@columnbadness=\count120
+\c@finalcolumnbadness=\count121
 \last@try=\dimen137
 \multicolovershoot=\dimen138
 \multicolundershoot=\dimen139
 \mult@nat@firstbox=\box55
 \colbreak@box=\box56
-\mc@col@check@num=\count121
+\mc@col@check@num=\count122
 ) (./segmentacao.aux (./project/introducao.aux) (./project/trabalhosrelacionado
 s.aux)
 (./project/resultados.aux) (./project/conclusao.aux) (./project/anexo.aux))
@@ -639,6 +647,66 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 25.
 LaTeX Font Info:    ... okay on input line 25.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 25.
 LaTeX Font Info:    ... okay on input line 25.
+
+(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count123
+\scratchdimen=\dimen140
+\scratchbox=\box57
+\nofMPsegments=\count124
+\nofMParguments=\count125
+\everyMPshowfont=\toks43
+\MPscratchCnt=\count126
+\MPscratchDim=\dimen141
+\MPnumerator=\count127
+\makeMPintoPDFobject=\count128
+\everyMPtoPDFconversion=\toks44
+) (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2016/05/21 v0.22 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
+
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+))
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+38.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 456.
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
 LaTeX Font Info:    Try loading font information for U+msa on input line 37.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
@@ -665,18 +733,18 @@ File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 (./project/introducao.tex)
 \openout2 = `project/trabalhosrelacionados.aux'.
 
- (./project/trabalhosrelacionados.tex
-
-LaTeX Warning: Citation `Banerjee200657' on page \thepage  undefined on input l
-ine 37.
-
-)
+ (./project/trabalhosrelacionados.tex)
 \openout2 = `project/resultados.aux'.
 
- (./project/resultados.tex
+
+(./project/resultados.tex
 
 LaTeX Warning: Citation `fulano' on page \thepage  undefined on input line 18.
 
+[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
+
+
+]
 
 LaTeX Warning: Citation `Reynar 1994; Choi 2000; e própiro autor do "A Critique
  and Impro.' on page \thepage  undefined on input line 20.
@@ -700,28 +768,49 @@ ned on input line 22.
 
 LaTeX Warning: Citation `fulano' on page \thepage  undefined on input line 35.
 
-[1
-
-
-])
+)
 \openout2 = `project/conclusao.aux'.
 
  (./project/conclusao.tex) (./segmentacao.bbl) [2
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Medidas de Avalia\
+IeC {\c c}\IeC {\~a}o}{\thepage }}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.1.1}Pk}{\thepage 
+}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.1.2}WindowDiff}{\
+thepage }}
 
 ]
 \openout2 = `project/anexo.aux'.
 
- (./project/anexo.tex)
-(./segmentacao.aux (./project/introducao.aux)
+ (./project/anexo.tex) (./segmentacao.aux (./project/introducao.aux)
 (./project/trabalhosrelacionados.aux) (./project/resultados.aux)
 (./project/conclusao.aux) (./project/anexo.aux)) ) 
 Here is how much of TeX's memory you used:
- 3362 strings out of 494885
- 39776 string characters out of 6179262
- 113429 words of memory out of 5000000
- 6550 multiletter control sequences out of 15000+600000
- 44606 words of font info for 60 fonts, out of 8000000 for 9000
+ 4293 strings out of 494884
+ 54094 string characters out of 6179236
+ 133671 words of memory out of 5000000
+ 7424 multiletter control sequences out of 15000+600000
+ 53818 words of font info for 76 fonts, out of 8000000 for 9000
  38 hyphenation exceptions out of 8191
- 39i,11n,34p,588b,478s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 41i,11n,37p,588b,478s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texlive/texmf-dis
+t/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmbx9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
+ts/cmextra/cmex9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmm
+i9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><
+/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/sha
+re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texli
+ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/share/texlive/texmf-dist/
+fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/
+urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/ut
+mb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/
+share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on segmentacao.pdf (2 pages, 142523 bytes).
+PDF statistics:
+ 68 PDF objects out of 1000 (max. 8388607)
+ 49 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
-Output written on segmentacao.dvi (2 pages, 7236 bytes).

@@ -1,5 +1,19 @@
 \begin{thebibliography}{1}
 
+\bibitem{Banerjee200657}
+S.~Banerjee and A.~Rudnicky.
+\newblock A texttiling based approach to topic boundary detection in meetings.
+\newblock volume~1, pages 57--60, 2006.
+\newblock cited By 3.
+
+\bibitem{Choi2000}
+F.~Y.~Y. Choi.
+\newblock Advances in domain independent linear text segmentation.
+\newblock In {\em Proceedings of the 1st North American Chapter of the
+  Association for Computational Linguistics Conference}, NAACL 2000, pages
+  26--33, Stroudsburg, PA, USA, 2000. Association for Computational
+  Linguistics.
+
 \bibitem{Hearst1994}
 M.~A. Hearst.
 \newblock Multi-paragraph segmentation of expository text.
