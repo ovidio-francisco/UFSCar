@@ -92,12 +92,12 @@ public class Cleaner {
     	return result;
     }
     
-    public static String removeChars(String token, String remove) {
+    public static String removeChars(String token, char[] remove) {
     	StringBuilder result = new StringBuilder();
     	
     	ArrayList<Character> notAllowed = new ArrayList<>();
     	
-    	for(char c : remove.toCharArray()) {
+    	for(char c : remove) {
     		notAllowed.add(c);
     	}
     	
@@ -107,6 +107,10 @@ public class Cleaner {
     	}
     	
     	return result.toString();
+    }
+    
+    public static String removePunctuation(String token) {
+    	return removeChars(token, PUNCTUATION);
     }
     
 }

@@ -3,6 +3,8 @@ package segmenter.algorithms.c99br;
 import java.util.ArrayList;
 import java.util.List;
 
+import preprocessamento.Stemmer;
+import preprocessamento.StopWords;
 import segmenter.AbstractSegmenter;
 import segmenter.algorithms.c99br.uima.Stringx;
 import utils.TextUtils;

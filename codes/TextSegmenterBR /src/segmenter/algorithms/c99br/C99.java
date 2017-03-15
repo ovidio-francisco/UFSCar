@@ -6,6 +6,8 @@ package segmenter.algorithms.c99br;
 import java.util.Arrays;
 import java.util.Vector;
 
+import preprocessamento.Stemmer;
+import preprocessamento.StopWords;
 import segmenter.algorithms.c99br.math.Convolution;
 import segmenter.algorithms.c99br.statistics.*;
 import segmenter.algorithms.c99br.struct.*;

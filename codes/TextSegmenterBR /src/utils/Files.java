@@ -11,6 +11,8 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.util.ArrayList;
+import java.util.List;
+
 import org.apache.commons.csv.CSVFormat;
 import org.apache.commons.csv.CSVPrinter;
 
@@ -48,6 +50,26 @@ public class Files {
         }
         return buffer.toString();
     }
+	
+	public static List<String> loadTxtFileToList(File file) {
+		ArrayList<String> result = new ArrayList<>();
+		
+        String line;
+        try {
+            BufferedReader text = Files.getBufferedReader(file);  
+            
+            while((line = text.readLine()) != null){
+                result.add(line);
+            }
+                        
+        } catch (IOException ex) {
+            System.err.println("Houve um erro ao abrir o arquivo " + file);
+            ex.printStackTrace();
+        }
+		
+		
+		return result;
+	}
 
 	
     public static BufferedReader getBufferedReader(File file) {
