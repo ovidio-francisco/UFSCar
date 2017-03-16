@@ -22,6 +22,28 @@
 \usepackage{tabularx}
 \usepackage{multicol}
 
+
+
+% Define o caminho das figuras
+\graphicspath{{images/}}
+
+\newcommand{\addimage}[3]{
+
+  \begin{figure}[!h]
+
+	\centering
+	\includegraphics[width=#2\textwidth]{#1}
+	\caption{#3}
+	%\label{fig:familia-exp}
+
+  \end{figure}
+}
+
+
+
+
+
+
 \begin{document}
 
 \title{Segmentação topical automática de atas de reunião}

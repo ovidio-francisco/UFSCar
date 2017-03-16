@@ -48,23 +48,51 @@ Semelhante a esse trabalho, outras abordagens foram propostas como ...
 % C99 %
 %%%%%%%
 
-Choi \cite{Choi2000} apresenta um trabalho que usa \textit{cosine} como medida similaridade e apresenta um esquema de ranking em seu algoritmo, o C99.
+Choi \cite{Choi2000} apresenta um trabalho que usa \textit{cosine}, a qual é exibida na equação~\ref{equ:cosine}, como medida similaridade e apresenta um esquema de ranking em seu algoritmo, o C99. 
 %
 Embora muitos dos melhores trabalho utilizarem matrizes de similaridades, o autor traz obervações.
 %
 Ele aponta que para pequenos segmentos, o cálculo de suas similaridades não é confiável. Pois uma ocorrência adicional de uma palavra causa um impacto desproporcional no cálculo.
 %
-Além disso, o estilo da escrita pode não ser constante em todo o texto. Choi sugere que, por exemplo, textos iniciais dedicados a introdução costumam apresentar menor coesão do que trechos dedicados a um tópico específico. Portanto comparar a similaridade entre trechos de diferentes regiões, não é apropriado.
-% Complexidade O(n²)
-Devido a isso, as similaridades não podem ser comparadas em valores absolutos. O autor apresenta um esquema de ranking para contornar esse problema.
+Além disso, o estilo da escrita pode não ser constante em todo o texto. Choi sugere que, por exemplo, textos iniciais dedicados a introdução costumam apresentar menor coesão do que trechos dedicados a um tópico específico. 
+%
 
-Cada valor na matriz similaridade é substituída por seu ranking local. O ranking é o número de elementos vizinhos com similaridade menor, conforme a imagem abaixo.
+Portanto comparar a similaridade entre trechos de diferentes regiões, não é apropriado.
+% Complexidade O(n²)
+Devido a isso, as similaridades não podem ser comparadas em valores absolutos,  então, o autor apresenta um esquema de ranking para contornar esse problema.
+%
+
+Cada valor na matriz de similaridade é substituído por seu ranking local. Onde ranking é o número de elementos vizinhos com similaridade menor, o qual e calculado com a equação~\ref{equ:ranklocal}. Um exemplo é mostrado na Figura \ref{fig:exemplomatrixrank} abaixo.
+
+
+
+  \begin{figure}[!h]
+
+	\centering
+	\includegraphics[width=0.45\textwidth]{exemplo-matrix-rank-noborder.jpg}
+	\caption{Exemplo de construção de uma matriz de rank}
+	\label{fig:exemplomatrixrank}
+
+  \end{figure}
+
+
+  \begin{figure}[!h]
+
+	\centering
+	\includegraphics[width=0.45\textwidth]{exemplo-preprocessamento.jpg}
+	\caption{Exemplo de preprocessamento}
+	\label{fig:exemplomatrixrank}
+
+  \end{figure}
+
+
 
 
 \begin{equation}
 Sim(x,y) = \frac
 {\Sigma_j f_{x,j} \times f_{y,j}}
 {\sqrt{\Sigma_j f^2_{x,j} \times \Sigma f^2_{x,j}}}
+\label{equ:cosine}
 \end{equation}
 
 
@@ -73,6 +101,7 @@ Sim(x,y) = \frac
 r(x,y) = \frac
 {Numero\ de\ elementos\ com\ similaridade\ menor}
 {Numero\ de\ elementos\ examinados}
+\label{equ:ranklocal}
 \end{equation}
 
 
