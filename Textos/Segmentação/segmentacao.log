@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.3.13)  16 MAR 2017 08:47
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.3.13)  17 MAR 2017 11:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -632,7 +632,8 @@ Package: multicol 2016/04/07 v1.8p multicolumn formatting (FMi)
 \mc@col@check@num=\count122
 ) (./segmentacao.aux (./project/introducao.aux) (./project/trabalhosrelacionado
 s.aux)
-(./project/resultados.aux) (./project/conclusao.aux) (./project/anexo.aux))
+(./project/adaptacaoasatas.aux) (./project/resultados.aux)
+(./project/conclusao.aux) (./project/anexo.aux))
 \openout1 = `segmentacao.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 47.
@@ -734,36 +735,44 @@ File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 \openout2 = `project/trabalhosrelacionados.aux'.
 
  (./project/trabalhosrelacionados.tex
-
-LaTeX Warning: Reference `equ:ranklocal' on page \thepage  undefined on input l
-ine 65.
-
-<images/exemplo-matrix-rank-noborder.jpg, id=1, 366.168pt x 193.2018pt>
-File: images/exemplo-matrix-rank-noborder.jpg Graphic file (type jpg)
-
-<use images/exemplo-matrix-rank-noborder.jpg>
-Package pdftex.def Info: images/exemplo-matrix-rank-noborder.jpg used on input 
-line 72.
-(pdftex.def)             Requested size: 226.79846pt x 119.66888pt.
-
-<images/exemplo-preprocessamento.jpg, id=2, 640.3122pt x 344.487pt>
-File: images/exemplo-preprocessamento.jpg Graphic file (type jpg)
-
-<use images/exemplo-preprocessamento.jpg>
-Package pdftex.def Info: images/exemplo-preprocessamento.jpg used on input line
- 82.
-(pdftex.def)             Requested size: 226.79846pt x 122.01776pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Underfull \vbox (badness 6510) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 
- <./images/exemplo-matrix-rank-noborder.jpg>])
+]
+
+LaTeX Warning: Reference `equ:ranklocal' on page \thepage  undefined on input l
+ine 74.
+
+
+LaTeX Warning: Reference `fig:exemplomatrixrank' on page \thepage  undefined on
+ input line 74.
+
+<images/exemplo-matrix-rank-noborder.jpg, id=18, 366.168pt x 193.2018pt>
+File: images/exemplo-matrix-rank-noborder.jpg Graphic file (type jpg)
+
+<use images/exemplo-matrix-rank-noborder.jpg>
+Package pdftex.def Info: images/exemplo-matrix-rank-noborder.jpg used on input 
+line 81.
+(pdftex.def)             Requested size: 226.79846pt x 119.66888pt.
+
+<images/exemplo-preprocessamento.jpg, id=19, 640.3122pt x 344.487pt>
+File: images/exemplo-preprocessamento.jpg Graphic file (type jpg)
+
+<use images/exemplo-preprocessamento.jpg>
+Package pdftex.def Info: images/exemplo-preprocessamento.jpg used on input line
+ 91.
+(pdftex.def)             Requested size: 226.79846pt x 122.01776pt.
+
+
+LaTeX Warning: Citation `reynar' on page \thepage  undefined on input line 108.
+
+
+)
+\openout2 = `project/adaptacaoasatas.aux'.
+
+ (./project/adaptacaoasatas.tex)
 \openout2 = `project/resultados.aux'.
 
  (./project/resultados.tex
@@ -797,34 +806,45 @@ LaTeX Warning: Citation `fulano' on page \thepage  undefined on input line 35.
 \openout2 = `project/conclusao.aux'.
 
  (./project/conclusao.tex) (./segmentacao.bbl) [2
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Exemplo d
+e constru\IeC {\c c}\IeC {\~a}o de uma matriz de rank}}{\thepage }}
+\newlabel{fig:exemplomatrixrank}{{1}{\thepage }}
 \@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Exemplo d
 e preprocessamento}}{\thepage }}
 \newlabel{fig:exemplomatrixrank}{{2}{\thepage }}
 \newlabel{equ:ranklocal}{{2}{\thepage }}
-\@writefile{toc}{\contentsline {section}{\numberline {4}Avalia\IeC {\c c}\IeC {
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Pr\IeC {\'e}proces
+samento}{\thepage }}
+\newlabel{subsec:preprocessamento}{{3.1}{\thepage }}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Identifica\IeC {\c
+ c}\IeC {\~a}o de senten\IeC {\c c}as}{\thepage }}
+\newlabel{subsec:indentificacaosentencas}{{3.2}{\thepage }}
+\@writefile{toc}{\contentsline {section}{\numberline {5}Avalia\IeC {\c c}\IeC {
 \~a}o}{\thepage }}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Medidas de Avalia\
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1}Medidas de Avalia\
 IeC {\c c}\IeC {\~a}o}{\thepage }}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.1.1}Pk}{\thepage 
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.1.1}Pk}{\thepage 
 }}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.1.2}WindowDiff}{\
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.1.2}WindowDiff}{\
 thepage }}
- <./images/exemplo-preprocessamento.jpg>]
+ <./images/exemplo-matrix-rank-noborder.jpg> <./images/exemplo-preprocessamento
+.jpg>] [3
+
+]
 \openout2 = `project/anexo.aux'.
 
- (./project/anexo.tex)
-(./segmentacao.aux (./project/introducao.aux)
-(./project/trabalhosrelacionados.aux) (./project/resultados.aux)
-(./project/conclusao.aux) (./project/anexo.aux))
+ (./project/anexo.tex) (./segmentacao.aux (./project/introducao.aux)
+(./project/trabalhosrelacionados.aux) (./project/adaptacaoasatas.aux)
+(./project/resultados.aux) (./project/conclusao.aux) (./project/anexo.aux))
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 4309 strings out of 494884
- 54557 string characters out of 6179236
- 132752 words of memory out of 5000000
- 7436 multiletter control sequences out of 15000+600000
+ 4320 strings out of 494884
+ 54808 string characters out of 6179236
+ 134007 words of memory out of 5000000
+ 7440 multiletter control sequences out of 15000+600000
  53818 words of font info for 76 fonts, out of 8000000 for 9000
  38 hyphenation exceptions out of 8191
  41i,11n,37p,588b,478s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -842,10 +862,10 @@ texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/ty
 pe1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/u
 tmri8a.pfb>
-Output written on segmentacao.pdf (2 pages, 334160 bytes).
+Output written on segmentacao.pdf (3 pages, 338872 bytes).
 PDF statistics:
- 70 PDF objects out of 1000 (max. 8388607)
- 49 compressed objects within 1 object stream
+ 73 PDF objects out of 1000 (max. 8388607)
+ 51 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  11 words of extra memory for PDF output out of 10000 (max. 10000000)
 
