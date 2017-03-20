@@ -6,6 +6,11 @@ S.~Banerjee and A.~Rudnicky.
 \newblock volume~1, pages 57--60, 2006.
 \newblock cited By 3.
 
+\bibitem{Beeferman1999}
+D.~Beeferman, A.~Berger, and J.~Lafferty.
+\newblock Statistical models for text segmentation.
+\newblock {\em Machine Learning}, 34(1):177--210, 1999.
+
 \bibitem{Choi2000}
 F.~Y.~Y. Choi.
 \newblock Advances in domain independent linear text segmentation.
@@ -27,5 +32,12 @@ R.~Kern and M.~Granitzer.
   techniques.
 \newblock pages 167--171, 2009.
 \newblock cited By 10.
+
+\bibitem{Pevzner200219}
+L.~Pevzner and M.~Hearst.
+\newblock A critique and improvement of an evaluation metric for text
+  segmentation.
+\newblock {\em Computational Linguistics}, 28(1):19--36, 2002.
+\newblock cited By 154.
 
 \end{thebibliography}
