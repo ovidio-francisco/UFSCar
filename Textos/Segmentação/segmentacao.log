@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.3.13)  20 MAR 2017 16:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.3.13)  21 MAR 2017 11:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -797,11 +797,11 @@ File: images/exemplo-matrix-rank-noborder.jpg Graphic file (type jpg)
 
 <use images/exemplo-matrix-rank-noborder.jpg>
 Package pdftex.def Info: images/exemplo-matrix-rank-noborder.jpg used on input 
-line 81.
+line 88.
 (pdftex.def)             Requested size: 226.79846pt x 119.66888pt.
 
 
-LaTeX Warning: Citation `reynar' on page \thepage  undefined on input line 100.
+LaTeX Warning: Citation `reynar' on page \thepage  undefined on input line 107.
 
 
 )
@@ -813,60 +813,49 @@ File: images/exemplo-preprocessamento-noborder.jpg Graphic file (type jpg)
 
 <use images/exemplo-preprocessamento-noborder.jpg>
 Package pdftex.def Info: images/exemplo-preprocessamento-noborder.jpg used on i
-nput line 24.
+nput line 26.
 (pdftex.def)             Requested size: 226.79846pt x 91.3876pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-LaTeX Font Info:    Try loading font information for T1+aett on input line 99.
+LaTeX Font Info:    Try loading font information for T1+aett on input line 101.
+
 (/usr/share/texlive/texmf-dist/tex/latex/ae/t1aett.fd
 File: t1aett.fd 1997/11/16 Font definitions for T1/aett.
 ))
 \openout2 = `project/avaliacao.aux'.
 
 
-(./project/avaliacao.tex
+(./project/avaliacao.tex [2 <./images/exemplo-matrix-rank-noborder.jpg> <./imag
+es/exemplo-preprocessamento-noborder.jpg>]
 
-LaTeX Warning: Citation `fulano' on page \thepage  undefined on input line 18.
-
-[2 <./images/exemplo-matrix-rank-noborder.jpg> <./images/exemplo-preprocessamen
-to-noborder.jpg>]
-
-LaTeX Warning: Citation `Reynar 1994; Choi 2000; e própiro autor do "A Critique
- and Impro.' on page \thepage  undefined on input line 20.
-
-
-LaTeX Warning: Citation `Manning 1998; Kan' on page \thepage  undefined on inpu
-t line 21.
-
-
-LaTeX Warning: Citation `Klavans' on page \thepage  undefined on input line 21.
-
-
-
-LaTeX Warning: Citation `and McKeown 1998' on page \thepage  undefined on input
- line 21.
-
-
-LaTeX Warning: Citation `Two Step ... Meeting Minutes' on page \thepage  undefi
-ned on input line 22.
+LaTeX Warning: Citation `fulano' on page \thepage  undefined on input line 29.
 
 
 LaTeX Warning: Reference `fig:exemplosegmentacaozoom' on page \thepage  undefin
-ed on input line 36.
+ed on input line 47.
 
 <images/windiffzoom.jpg, id=25, 312.2064pt x 78.5334pt>
 File: images/windiffzoom.jpg Graphic file (type jpg)
 
 <use images/windiffzoom.jpg>
-Package pdftex.def Info: images/windiffzoom.jpg used on input line 43.
+Package pdftex.def Info: images/windiffzoom.jpg used on input line 54.
 (pdftex.def)             Requested size: 236.88062pt x 59.58533pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Overfull \hbox (11.5521pt too wide) in paragraph at lines 77--78
+\T1/aer/m/n/9 sua pro-posta ini-cial de sen-si-bi-li-dade a \T1/aer/m/it/9 near
+ mis-ses\T1/aer/m/n/9 , penalizando-
+ []
 
 <images/windiff.jpg, id=26, 661.0296pt x 79.0152pt>
 File: images/windiff.jpg Graphic file (type jpg)
  <use images/windiff.jpg>
-Package pdftex.def Info: images/windiff.jpg used on input line 71.
+Package pdftex.def Info: images/windiff.jpg used on input line 83.
 (pdftex.def)             Requested size: 236.88062pt x 28.31523pt.
 )
 \openout2 = `project/resultados.aux'.
@@ -875,23 +864,31 @@ Package pdftex.def Info: images/windiff.jpg used on input line 71.
 (./project/resultados.tex)
 \openout2 = `project/conclusao.aux'.
 
- (./project/conclusao.tex) (./segmentacao.bbl)
+ (./project/conclusao.tex) (./segmentacao.bbl
 [3
 \@writefile{loa}{\contentsline {algocf}{\numberline {1}{\ignorespaces Identific
 a\IeC {\c c}\IeC {\~a}o de finais de senten\IeC {\c c}a}}{\thepage }}
 \@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Medidas de Avalia\
 IeC {\c c}\IeC {\~a}o}{\thepage }}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.1.1}P$_k$}{\thepa
+ge }}
 \@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Exmplos d
 e segmenta\IeC {\c c}\IeC {\~a}o}}{\thepage }}
 \newlabel{fig:exemplosegmentacaozoom}{{3}{\thepage }}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.1.1}P$_k$}{\thepa
-ge }}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {4.1.2}WindowDiff}{\
 thepage }}
 \@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Exemplo d
 e constru\IeC {\c c}\IeC {\~a}o de uma matriz de rank}}{\thepage }}
 \newlabel{fig:exemplosegmentacao}{{4}{\thepage }}
- <./images/windiffzoom.jpg> <./images/windiff.jpg>]
+\@writefile{toc}{\contentsline {section}{\numberline {5}An\IeC {\'a}lise dos Re
+sultados}{\thepage }}
+\newlabel{sec:resultados}{{5}{\thepage }}
+\@writefile{toc}{\contentsline {section}{\numberline {6}Conclus\IeC {\~a}o}{\th
+epage }}
+\newlabel{sec:conclusao}{{6}{\thepage }}
+ <./images/windiffzoom.jpg> <./images/windiff.jpg>]) [4
+
+]
 \openout2 = `project/anexo.aux'.
 
  (./project/anexo.tex)
@@ -908,13 +905,13 @@ LaTeX Warning: There were undefined references.
 ### simple group (level 1) entered at line 1061 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 5407 strings out of 494884
- 72528 string characters out of 6179236
- 162726 words of memory out of 5000000
- 8497 multiletter control sequences out of 15000+600000
+ 5400 strings out of 494884
+ 72354 string characters out of 6179236
+ 163710 words of memory out of 5000000
+ 8490 multiletter control sequences out of 15000+600000
  58973 words of font info for 85 fonts, out of 8000000 for 9000
  38 hyphenation exceptions out of 8191
- 41i,15n,37p,587b,2344s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 41i,15n,37p,818b,2344s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx6.pfb></usr/share
 /texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/texliv
@@ -931,10 +928,10 @@ texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/ty
 pe1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/u
 tmri8a.pfb>
-Output written on segmentacao.pdf (3 pages, 495049 bytes).
+Output written on segmentacao.pdf (4 pages, 497519 bytes).
 PDF statistics:
- 83 PDF objects out of 1000 (max. 8388607)
- 57 compressed objects within 1 object stream
+ 86 PDF objects out of 1000 (max. 8388607)
+ 59 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  21 words of extra memory for PDF output out of 10000 (max. 10000000)
 

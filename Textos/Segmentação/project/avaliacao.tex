@@ -1,25 +1,36 @@
 
+\section{Avaliação}
+	\label{sec:avaliacao}
 
 
-Definir o que é um bom algoritmo de segmentação
+%avaliação
+%todos precisam de um gold text
+%
+%	1 - Concatenação
+%	2 - Juízes concordam ou não 
+%	3 - Mediador na reunião
+%	4 - Não avaliar o segmentador e sim o resultado da aplicação final.
+%	5 - Consultar o autor do texto
+
+Para que se possa avaliar um segmentador automático de textos, é preciso uma referência, isto é, um texto com os limites entre os segmento conhecidos. Essa referência, deve ser confiável, sendo uma segmentação legítima que é capaz de dividir o texto em porções relativamente independentes, mantendo um conteúdo legível, ou seja, uma segmentação ideal.
+%
+
+Entre as abordagens mais comuns para se conseguir essas referências, encontramos: A concatenação aleatória de documentos distintos, onde o ponto entre o final de um texto e o inicio do seguinte é um limite entre eles. A segmentação manual dos documentos, nesse caso, pessoas capacitadas, também chamadas de juízes, ou mesmo o autor do texto, são consultadas e indicam manualmente onde há uma quebra de segmento. Em transcrição de conversas faladas em reuniões com múltiplos participantes, um mediador é responsável por encerrar um assunto e iniciar um novo, nesse caso o mediador anota manualmente o tempo onde há uma transição de tópico. Em aplicações onde a segmentação é tarefa secundária, analisar seu impacto na aplicação final.
 
 
-avaliação
-todos precisam de um gold text
+% Definir o que é um bom algoritmo de segmentação
 
-	1 - Concatenação
-	2 - Juízes concordam ou não 
-	3 - Mediador na reunião
-	4 - Não avaliar o segmentador e sim o resultado da aplicação final.
-	5 - Consultar o autor do texto
+Para fins de avaliação, um bom método de segmentação
+
+
 	
 	
 
-De acordo com \cite{fulano} há duas principais dificuldades na avaliação de segmentadores automáticos. A primeira é conseguir um referência confiável de texto segmentado, ou seja, uma segmentação ideal, já que juízes humanos costumam não concordar entre si, sobre onde os limites estão. A segunda é que tipos diferentes de erros devem ter pesos diferentes de acordo com a aplicação. Há casos onde certa imprecisão é tolerável e outras como a segmentação de notícias, onde a precisão é mais importante.
+De acordo com \cite{fulano} há duas principais dificuldades na avaliação de segmentadores automáticos. A primeira é conseguir um referência, já que juízes humanos costumam não concordar entre si, sobre onde os limites estão e outras abordagens podem não se aplicar ao contexto. A segunda é que tipos diferentes de erros devem ter pesos diferentes de acordo com a aplicação. Há casos onde certa imprecisão é tolerável e outras como a segmentação de notícias, onde a precisão é mais importante.
 
-Para contornar essas dificuldades, algumas abordagens podem ser utilizadas. Algumas autores preferem detectar a segmentação em textos formados pela concatenação de documentos distintos, para que não haja diferenças subjetivas \cite{Reynar 1994; Choi 2000; e própiro autor do "A Critique and Impro.}. Há ainda outros que não avaliam o algoritmo diretamente, mas seu impacto na aplicação final\cite{Manning 1998; Kan,
-Klavans, and McKeown 1998}. 
-Outras abordagens apenas atribuiem um segmento cada quebra de parágrafo \cite{Two Step ... Meeting Minutes}
+%Para contornar essas dificuldades, algumas abordagens podem ser utilizadas. Algumas autores preferem detectar a segmentação em textos formados pela concatenação de documentos distintos, para que não haja diferenças subjetivas \cite{Reynar 1994; Choi 2000; e própiro autor do "A Critique and Impro.}. Há ainda outros que não avaliam o algoritmo diretamente, mas seu impacto na aplicação final\cite{Manning 1998; Kan,
+%Klavans, and McKeown 1998}. 
+%Outras abordagens apenas atribuiem um segmento cada quebra de parágrafo \cite{Two Step ... Meeting Minutes}
 
 
 % Dificuldade: Coesão léxica não tão bem definida
@@ -49,20 +60,21 @@ A Figura~\ref{fig:exemplosegmentacaozoom} mostra um exemplo com duas segmentaç�
 
 
 \subsubsection{P$_k$}
-A fim de resolver o problema de \textit{near misses}, Beeferman \textit{at al.}~\cite{Beeferman1999} apresentam uma nova medida chama P$_k$ que atribui valores parciais a \textit{near misses}. Esse método move uma janela de tamanho $k$ e a cada posição e verifica se o inicio e o final da janela estão dentro do segmento esperado e penaliza o algoritmo em caso de discrepância.
-% divide o número de discrepâncias pela quantidade de limites analizados 
+A fim de resolver o problema de \textit{near misses}, Beeferman \textit{at al.}~\cite{Beeferman1999} apresentam uma nova medida chama P$_k$ que atribui valores parciais a \textit{near misses}. Esse método move uma janela de tamanho $k$ e a cada posição e verifica se o início e o final da janela estão ou não dentro do mesmo segmento e penaliza o algoritmo em caso de discrepância. 
+
+Ou seja, dado duas palavras de distancia $k$, uma discrepância é computada quando o algoritmo e a referência não concordam se as palavras estão ou não no mesmo segmento.
+
+O valor de $k$ é calculado como a metade da média dos comprimentos dos segmentos reais. Como resultado, é retornado a contagem de discrepâncias divido pelo quantidade de segmentações analisadas. Esse valor serve como medida de dissimilaridade entre as segmentações e pode ser interpretada como a probabilidade de duas sentenças extraídas aleatoriamente pertencerem ao mesmo segmento.
+
 
 
 \subsubsection{WindowDiff}
 
-Pevzner~\cite{Pevzner200219} aponta problemas na avaliação mais tradicional Pk~\cite{Beeferman1999}. Eles apontam que esse métrica penaliza demasiadamente os falsos negativos em relação aos falsos positivos, desconsidera no o tamanho e a quantidade de segmentos, entre outros apontamentos.
+Pevzner~\cite{Pevzner200219} aponta problemas na avaliação mais tradicional Pk~\cite{Beeferman1999}. Eles apontam que esse método penaliza demasiadamente os falsos negativos em relação aos falsos positivos e a \textit{near misses}, além disso, desconsidera o tamanho e a quantidade de segmentos, entre outros problemas.
 
-Como solução, propõem duas alterações principais. Dobra a penalidade para os falsos positivos a fim de diminuir o problema da subestimação dessa medida e
+Como solução, propõem um novo método, o qual chamam de \textit{WindowDiff} que traz duas diferenças principais: a dobra a penalidade para os falsos positivos a fim de diminuir o problema da subestimação dessa medida e, diferente de P$_k$, ao mover a janela pelo texto, penaliza o algoritmo sempre que o número de limites proposto pelo algoritmo não coincidir com o número de limites esperados para aquela janela de texto. 
 
-ao mover a janela pelo texto e penaliza o algoritmo sempre que o número de limites proposto pelo algoritmo não coincidir com o número de limites esperados para aquela janela de texto. 
-
-
-%\textit{near misses}, quando um limite entre tópicos não casa exatamente com esperado mas fica próximo a ele.
+Com isso, demonstram em seu trabalho que, em relação a P$_k$, consegue resolver seus principais problemas e mantém sua proposta inicial de sensibilidade a \textit{near misses}, penalizando-os menos que os falsos positivos puros.
 
 
   \begin{figure}[!h]
@@ -73,4 +85,8 @@ ao mover a janela pelo texto e penaliza o algoritmo sempre que o número de limi
 	\label{fig:exemplosegmentacao}
 
   \end{figure}
+  
+  
+
+%Falar do software para segmentação manual????
 
