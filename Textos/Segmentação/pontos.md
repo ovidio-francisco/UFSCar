@@ -13,6 +13,7 @@
 # 2 Trabalhos Relacionados 
 
 	* Ideia básica dos algorítmos (Coesão léxica ) como **presuposto básico**
+	* Similaridade e Cosine
 
 	- TextTiling
 
@@ -27,7 +28,32 @@
 		 [Top Seg for Arabic mostra 4 fases do C99]	
 	
 
-# 3 Análise dos Resultados
+# 3 Adapatção às Atas
+
+	* Algoritmos tradicionais feitos para o inglês
+	* Dificuldade: Coesão léxica não tão bem definida
+	* Dificuldade: estilo da escrita
+	  - Paragrafo único
+	  - Cabeçalhos e rodapés
+	  - Pontuação --> ';' encerrando sentenças
+	  - Insersão de espaços que não são quebra de sentença
+	  - Ruídos
+
+## 		Preprocessamento
+
+	* Stop words e stemming
+	* Imagem exemplo
+	
+## 		Remoção de ruídos
+	
+	* Cabeçalhos e rodapés
+	* Numerais	
+
+## 		Identificação de Candidatos
+
+	* 
+
+
 
 # 4 Avaliação
 	- Medidas
@@ -38,6 +64,10 @@
 			* Ideia da media (quantidade de borders por janala)
 
 	[Nas reuniões transcritas ha uma tolerânica de n seundos quando se apura os matches]
+	
+	
+	
+	
 		
 # 5 Proposta
 	- Justificativa / Motivação
