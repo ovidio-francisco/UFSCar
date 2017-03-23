@@ -57,35 +57,35 @@ public class Tests {
 		 * C99 Variando Numero de Segmentos
 		 */
 		
-//		double initialSegsRate = 0.2;
-//		double increaseSegsRate =0.2;
-//		double limitSegsRate = 1.0;
-//		
-//		int initialRankingSize   = 9;  
-//		int increaseRankingSize  = 2;  
-//		int limitRankingSize     = 11;  
-//		
-//		boolean initialWeight = false;
-//
-//		TestSegmenterModel c99Model = new TestSegmenterModel(initialSegsRate, initialRankingSize, initialWeight);
-//		while(c99Model.getSegmentsRate() <= limitSegsRate ) {
-//			
-//			c99Model.setRankingSize(initialRankingSize);
-//			while(c99Model.getRankingSize() <= limitRankingSize) {
-//
-//				
-//				c99Model.setWeight(initialWeight);
-//				result.add(testAll(folder, c99Model));
-//					
-//				c99Model.setWeight(!initialWeight);
-//				result.add(testAll(folder, c99Model));
-//				
-//				c99Model.increaseRankingSize(increaseRankingSize);
-//			}
-//			
-////			c99Model.increaseSegmentsNumber(increaseNSegs);
-//			c99Model.icreaseSegmentsRate(increaseSegsRate);
-//		}
+		double initialSegsRate = 0.2;
+		double increaseSegsRate =0.2;
+		double limitSegsRate = 1.0;
+		
+		int initialRankingSize   = 9;  
+		int increaseRankingSize  = 2;  
+		int limitRankingSize     = 11;  
+		
+		boolean initialWeight = false;
+
+		TestSegmenterModel c99Model = new TestSegmenterModel(initialSegsRate, initialRankingSize, initialWeight);
+		while(c99Model.getSegmentsRate() <= limitSegsRate ) {
+			
+			c99Model.setRankingSize(initialRankingSize);
+			while(c99Model.getRankingSize() <= limitRankingSize) {
+
+				
+				c99Model.setWeight(initialWeight);
+				result.add(testAll(folder, c99Model));
+					
+				c99Model.setWeight(!initialWeight);
+				result.add(testAll(folder, c99Model));
+				
+				c99Model.increaseRankingSize(increaseRankingSize);
+			}
+			
+//			c99Model.increaseSegmentsNumber(increaseNSegs);
+			c99Model.icreaseSegmentsRate(increaseSegsRate);
+		}
 		
 		
 		try {

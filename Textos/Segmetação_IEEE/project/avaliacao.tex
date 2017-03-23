@@ -112,31 +112,97 @@ Em seguida aplicou-se o teste de Friedman a fim de saber se há diferenças sign
 %
 Exite diferença quando seus \textit{rankings} médios diferirem em um valor mínimo, chamado de diferença critica (CD). 
 %
+
+%%%%%%%%%%
+% Dados Obtidos
+%%%%%%%%%%
 Com isso foi possível, pela análise do diagrama de diferença crítica, verificar qual é o melhor modelo para cada medida
 % e quão significativamente 
-em relação aos demais. A tabela [?] mostra os dados obtidos
+em relação aos demais. 
+
+
+A tabelas [?] mostra os dados obtidos com o \textit{C99}, onde \texttt{S} é a proporção de segmentos em relação a quantidade de candidatos, \texttt{M} é o tamanho da máscara utilizada para criar a matriz de \textit{ranking} e \texttt{W} indica se os segmentos são representados por vetores contendo a frequência ou um peso das palavras. 
 
 
 
-Verificou-se que 
-
-
-
-Com os melhores modelos para cada
-
-
-
-A Figura~\ref{fig:cd} 
-
-
-\newcommand{\cdsize}{0.6\textwidth}
-
-\begin{figure}[!h]
+\begin{table}[!h]
 	\centering
-	\includegraphics[width=\cdsize]{CD/WinDiff-2.png}
-	\caption{Diagramas de diferença crítica do pós-teste de Nemenyi}
-	\label{fig:cd}
-\end{figure}
+
+	\begin{tabular}{|c|c|c|c|c|}
+	
+		\hline
+		Medida & \texttt{S} & \texttt{M} & \texttt{W} & \textbf{Média}\\		
+		\hline
+
+		Acuracy		& 40	& 11 & Sim & 0.6199	\\ \hline	
+		F1			& 60	& 9	 & Sim & 0.6167	\\ \hline	
+		Precision	& 40	& 11 & Sim & 0.7106	\\ \hline			
+		Recall		& 100	& 9	 & Não & 0.8516	\\ \hline		
+		Pk			& 40	& 11 & Sim & 0.1163	\\ \hline	
+		Windiff		& 40	& 11 & Sim & 0.3800	\\ \hline		
+
+		
+	\end{tabular}
+	
+	\caption{Médias das medidas obtidas com \textit{C99}}
+	\label{tab:mediasC99}
+\end{table}
+
+
+A tabelas [?] mostra os dados obtidos com o \textit{TextTiling}, \texttt{J} é o tamanho da janela e \texttt{P} e o passo.
+
+\begin{table}[!h]
+	\centering
+
+	\begin{tabular}{|c|c|c|c|}
+	
+		\hline
+		Medida & \texttt{J} & \texttt{P} & \textbf{Média}\\		
+		\hline
+
+		Acuracy		& 50 & 9 	& 0.5510 \\ \hline	
+		F1			& 50 & 3 	& 0.5898 \\ \hline	
+		Precision	& 60 & 12 	& 0.5746 \\ \hline			
+		Recall		& 50 & 3 	& 0.7717 \\ \hline		
+		Pk			& 30 & 9 	& 0.1572 \\ \hline	
+		Windiff		& 50 & 9 	& 0.4489 \\ \hline		
+
+		
+	\end{tabular}
+	
+	\caption{Médias das medidas obtidas com o \textit{TextTiling}}
+	\label{tab:mediasTextTiling}
+\end{table}
+
+
+Uma vez sabendo quais valores de parâmetros melhor configuram um algoritmo para uma medida, resta então saber qual dos dois algoritmos é mais eficiente segundo essa medida. Para isso aplicou-se novamente o teste de Friedman com pós-teste de Nemenyi, dessa vez, com os melhores modelos dos dois algoritmos para cada medida. O resultado segue na Tabela [?]
+
+\begin{table}[!h]
+	\centering
+	
+	\begin{tabular}{|c|c|c|c|c|}
+
+		\hline
+		Medida & Algoritmo & \texttt{S} & \texttt{M} & \texttt{W}\\		
+		\hline
+		
+	
+		Acuracy		& C99 & 40 	& 11	& Sim \\ \hline
+		Precision	& C99 & 40 	& 11	& Sim \\ \hline
+		Pk			& C99 & 40 	& 11	& Sim \\ \hline
+		Windiff		& C99 & 40 	& 11	& Sim \\ \hline
+		F1			& C99 & 60 	& 9		& Sim \\ \hline
+		Recall		& C99 & 100 & 9		& Não \\ \hline
+ 	
+	
+	\end{tabular}
+	
+	
+\end{table}
+
+
+Na análise do diagrama de diferença crítica verificou-se que o algoritmo \textit{C99} apresenta melhor eficiência em todas as medidas. Pode-se ver também que para as 4 primeiras os valores de \texttt{S}, \texttt{M} e \texttt{W} se repetiram, sugerindo uma configuração otimizada para o problema da segmentação de atas de reunião.
+
 
 
 

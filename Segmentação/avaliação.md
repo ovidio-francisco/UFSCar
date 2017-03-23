@@ -49,6 +49,20 @@ por pelo menos um determinado valor de diferença crı́tica (CD).
 ===============================================================================================
 
 
+A Figura~\ref{fig:cd} 
+
+
+\newcommand{\cdsize}{0.5\textwidth}
+
+\begin{figure}[!h]
+	\centering
+	\includegraphics[width=\cdsize]{CD/WinDiff-2.png}
+	\caption{Diagramas de diferença crítica do pós-teste de Nemenyi}
+	\label{fig:cd}
+\end{figure}
+
+
+
 
 
 
