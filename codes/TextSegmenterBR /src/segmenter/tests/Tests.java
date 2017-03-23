@@ -24,68 +24,68 @@ public class Tests {
 		getFiles(folder);
 
 		
-//		/*
-//		 * TextTiling Variando WinSize
-//		 */
-//		int initialWinSize   = 20;  
-//		int limitWinSize     = 60;
-//		int increaseWinSize  = 10;  
-//		
-//		int initialStep   = 3;  
-//		int limitStep     = 12;   
-//		int increaseStep  = 3;  
-//		
-//
-//		TestSegmenterModel textTilingModel = new TestSegmenterModel(initialWinSize, initialStep);
-//		while(textTilingModel.getWinSize() <= limitWinSize ) {
-//			
-//			textTilingModel.setStep(initialStep);
-//			while(textTilingModel.getStep() <= limitStep) {
-//				
-//				result.add(testAll(folder, textTilingModel));
-//
-//				
-//				textTilingModel.increaseStep(increaseStep);
-//			}
-//			
-//			
-//			textTilingModel.increaseWinSize(increaseWinSize);
-//		}
+		/*
+		 * TextTiling Variando WinSize
+		 */
+		int initialWinSize   = 20;  
+		int limitWinSize     = 60;
+		int increaseWinSize  = 10;  
+		
+		int initialStep   = 3;  
+		int limitStep     = 12;   
+		int increaseStep  = 3;  
+		
+
+		TestSegmenterModel textTilingModel = new TestSegmenterModel(initialWinSize, initialStep);
+		while(textTilingModel.getWinSize() <= limitWinSize ) {
+			
+			textTilingModel.setStep(initialStep);
+			while(textTilingModel.getStep() <= limitStep) {
+				
+				result.add(testAll(folder, textTilingModel));
+
+				
+				textTilingModel.increaseStep(increaseStep);
+			}
+			
+			
+			textTilingModel.increaseWinSize(increaseWinSize);
+		}
 
 		
 		/*
 		 * C99 Variando Numero de Segmentos
 		 */
 		
-		double initialSegsRate = 0.2;
-		double increaseSegsRate =0.2;
-		double limitSegsRate = 1.0;
-		
-		int initialRankingSize   = 9;  
-		int increaseRankingSize  = 2;  
-		int limitRankingSize     = 11;  
-		
-		boolean initialWeight = false;
-
-		TestSegmenterModel c99Model = new TestSegmenterModel(initialSegsRate, initialRankingSize, initialWeight);
-		while(c99Model.getSegmentsRate() <= limitSegsRate ) {
-			
-			c99Model.setRankingSize(initialRankingSize);
-			while(c99Model.getRankingSize() <= limitRankingSize) {
-
-				
-				c99Model.setWeight(initialWeight);
-				result.add(testAll(folder, c99Model));
-					
-				c99Model.setWeight(!initialWeight);
-				result.add(testAll(folder, c99Model));
-				
-				c99Model.increaseRankingSize(increaseRankingSize);
-			}
-			
-//			c99Model.increaseSegmentsNumber(increaseNSegs);
-			c99Model.icreaseSegmentsRate(increaseSegsRate);
-		}
+//		double initialSegsRate = 0.2;
+//		double increaseSegsRate =0.2;
+//		double limitSegsRate = 1.0;
+//		
+//		int initialRankingSize   = 9;  
+//		int increaseRankingSize  = 2;  
+//		int limitRankingSize     = 11;  
+//		
+//		boolean initialWeight = false;
+//
+//		TestSegmenterModel c99Model = new TestSegmenterModel(initialSegsRate, initialRankingSize, initialWeight);
+//		while(c99Model.getSegmentsRate() <= limitSegsRate ) {
+//			
+//			c99Model.setRankingSize(initialRankingSize);
+//			while(c99Model.getRankingSize() <= limitRankingSize) {
+//
+//				
+//				c99Model.setWeight(initialWeight);
+//				result.add(testAll(folder, c99Model));
+//					
+//				c99Model.setWeight(!initialWeight);
+//				result.add(testAll(folder, c99Model));
+//				
+//				c99Model.increaseRankingSize(increaseRankingSize);
+//			}
+//			
+////			c99Model.increaseSegmentsNumber(increaseNSegs);
+//			c99Model.icreaseSegmentsRate(increaseSegsRate);
+//		}
 		
 		
 		try {

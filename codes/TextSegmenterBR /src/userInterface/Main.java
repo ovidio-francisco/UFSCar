@@ -13,7 +13,7 @@ public class Main {
 
 	public static void main(String[] args) {
 //		new ViewSegmentationFrame();
-//		new EvaluateSegmentationsFrame();
+		new EvaluateSegmentationsFrame();
 //		new TopicsFrame();
 		
 //		String text = TextExtractor.docToString(new File("test.txt"));

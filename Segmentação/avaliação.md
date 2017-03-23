@@ -30,12 +30,81 @@ por pelo menos um determinado valor de diferença crı́tica (CD).
 
 
 
+2 etapas
 
+	1ª etapa
+		- extrai o melhor modelo de cada algoritmo para cada medida
+	
+	2ª etapa
+		
+	
+	
+	
+	
+		- escolhe-se o modelo que mais se repete em primeiro lugar nas seis medidas.
 
 
 
 
 ===============================================================================================
+
+
+
+
+
+\newcommand{\cdsize}{0.6\textwidth}
+
+\begin{figure}[!h]
+	\centering
+	
+	\begin{subfigure}{\cdsize}	
+		\centering
+		\includegraphics[width=\cdsize]{CD/Acuracy-2.png}
+		\caption{Acurácia}
+	\end{subfigure}
+	
+	\begin{subfigure}{\cdsize}	
+		\centering
+		\includegraphics[width=\cdsize]{CD/F1-2.png}
+		\caption{F1}
+	
+	\end{subfigure}
+
+	\begin{subfigure}{\cdsize}	
+		\centering
+		\includegraphics[width=\cdsize]{CD/Pk-2.png}
+		\caption{P$_k$}
+	
+	\end{subfigure}
+
+	\begin{subfigure}{\cdsize}	
+		\centering
+		\includegraphics[width=\cdsize]{CD/Precision-2.png}
+		\caption{Precision}
+	
+	\end{subfigure}
+
+
+	\begin{subfigure}{\cdsize}	
+		\centering
+		\includegraphics[width=\cdsize]{CD/Recall-2.png}
+		\caption{Recall}
+	
+	\end{subfigure}
+
+	\begin{subfigure}{\cdsize}	
+		\centering
+		\includegraphics[width=\cdsize]{CD/WinDiff-2.png}
+		\caption{WindowDiff}
+	
+	\end{subfigure}
+
+
+
+	\caption{Diagramas de diferença crítica do pós-teste de Nemenyi}
+	\label{fig:cd}
+\end{figure}
+
 
 
 

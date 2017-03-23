@@ -85,6 +85,9 @@ Com isso, demonstram em seu trabalho que, em relação a P$_k$, consegue resolve
 \subsection{Avaliação dos segmentadores}
 
 
+%%%%%%%%%%
+% Parâmetros
+%%%%%%%%%%
 As implementações dos algoritmos permitem ao usuário a configuração de seus parâmetros. 
 %
 O \textit{TextTiling} permite ajustarmos dois parâmetros, sendo, o tamanho da janela (distância entre a primeira e a última sentença) para o qual atribuiu-se os valores 20, 40 e 60. O segundo parâmetro, o passo (distância que a janela desliza), atribuiu-se os valores 3, 6, 9 e 12. Gerando ao final 18 modelos.
@@ -93,65 +96,44 @@ O \textit{TextTiling} permite ajustarmos dois parâmetros, sendo, o tamanho da j
 O \textit{C99} permite ajustarmos três parâmetros, sendo, a quantidade segmentos desejados, o qual é calculado como uma proporção dos candidatos a limite. Para isso atribuiu-se as proporções de 0,2 a 1,0 em intervalos de 0,2 O segundo parâmetro, o tamanho da máscara utilizada para gerar a matriz de ranking, atribuiu-se os valores 9 e 11. Permite ainda, definirmos se as sentenças serão representados por vetores contendo a frequência ou o peso de cada termo, onde ambas as representações foram utilizadas. Gerando ao final 20 modelos.
 
 
-Pela comparação dos resultados com a segmentação fornecida pelos especialistas, calculou-se para  cada modelo as medidas tradicionais acurácia, precisão, revocação, F-medida e as métricas mais aplicadas a segmentação textual P$_k$ e \textit{WindowDiff}
+
+%%%%%%%%%%
+% Cálculo das medidas para cada modelo
+%%%%%%%%%%
+Pela comparação dos resultados com a segmentação fornecida pelos especialistas, calculou-se para cada modelo as medidas tradicionais acurácia, precisão, revocação, F-medida. Além dessas, computou-se também as métricas mais aplicadas à segmentação textual P$_k$ e \textit{WindowDiff}.
 
 
 
-
-Em seguida aplicou-se o teste de Friedman a fim de saber se há diferenças significativas entre a eficácia dos modelos e pós-teste de Nemenyi para descobrir quais diferenças são significativas. 
+%%%%%%%%%%
+% Teste de Fiedman e CD
+% 1ª Etapa
+%%%%%%%%%%
+Em seguida aplicou-se o teste de Friedman a fim de saber se há diferenças significativas entre a eficácia dos modelos, o pós-teste de Nemenyi foi aplicado para descobrir quais diferenças são significativas. 
 %
-Exite diferença quando seus \textit{rankings} médios diferirem em um valor mínimo, chamado de diferença critica (CD). A Figura~\ref{fig:cd} 
+Exite diferença quando seus \textit{rankings} médios diferirem em um valor mínimo, chamado de diferença critica (CD). 
+%
+Com isso foi possível, pela análise do diagrama de diferença crítica, verificar qual é o melhor modelo para cada medida
+% e quão significativamente 
+em relação aos demais. A tabela [?] mostra os dados obtidos
+
+
+
+Verificou-se que 
+
+
+
+Com os melhores modelos para cada
+
+
+
+A Figura~\ref{fig:cd} 
 
 
 \newcommand{\cdsize}{0.6\textwidth}
 
 \begin{figure}[!h]
 	\centering
-	
-	\begin{subfigure}{\cdsize}	
-		\centering
-		\includegraphics[width=\cdsize]{CD/Acuracy-2.png}
-		\caption{Acurácia}
-	\end{subfigure}
-	
-	\begin{subfigure}{\cdsize}	
-		\centering
-		\includegraphics[width=\cdsize]{CD/F1-2.png}
-		\caption{F1}
-	
-	\end{subfigure}
-
-	\begin{subfigure}{\cdsize}	
-		\centering
-		\includegraphics[width=\cdsize]{CD/Pk-2.png}
-		\caption{P$_k$}
-	
-	\end{subfigure}
-
-	\begin{subfigure}{\cdsize}	
-		\centering
-		\includegraphics[width=\cdsize]{CD/Precision-2.png}
-		\caption{Precision}
-	
-	\end{subfigure}
-
-
-	\begin{subfigure}{\cdsize}	
-		\centering
-		\includegraphics[width=\cdsize]{CD/Recall-2.png}
-		\caption{Recall}
-	
-	\end{subfigure}
-
-	\begin{subfigure}{\cdsize}	
-		\centering
-		\includegraphics[width=\cdsize]{CD/WinDiff-2.png}
-		\caption{WindowDiff}
-	
-	\end{subfigure}
-
-
-
+	\includegraphics[width=\cdsize]{CD/WinDiff-2.png}
 	\caption{Diagramas de diferença crítica do pós-teste de Nemenyi}
 	\label{fig:cd}
 \end{figure}
