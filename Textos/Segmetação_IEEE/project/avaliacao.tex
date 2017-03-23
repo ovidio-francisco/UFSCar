@@ -103,19 +103,54 @@ Em seguida aplicou-se o teste de Friedman a fim de saber se há diferenças sign
 Exite diferença quando seus \textit{rankings} médios diferirem em um valor mínimo, chamado de diferença critica (CD). A Figura~\ref{fig:cd} 
 
 
+\newcommand{\cdsize}{0.6\textwidth}
+
 \begin{figure}[!h]
 	\centering
 	
-	\begin{subfigure}{0.7\textwidth}	
-		\includegraphics[width=0.7\textwidth]{CD/Acuracy-2.png}
+	\begin{subfigure}{\cdsize}	
+		\centering
+		\includegraphics[width=\cdsize]{CD/Acuracy-2.png}
 		\caption{Acurácia}
 	\end{subfigure}
 	
-	\begin{subfigure}{0.1\textwidth}	
-		\includegraphics[width=0.1\textwidth]{CD/F1-2.png}
+	\begin{subfigure}{\cdsize}	
+		\centering
+		\includegraphics[width=\cdsize]{CD/F1-2.png}
 		\caption{F1}
 	
 	\end{subfigure}
+
+	\begin{subfigure}{\cdsize}	
+		\centering
+		\includegraphics[width=\cdsize]{CD/Pk-2.png}
+		\caption{P$_k$}
+	
+	\end{subfigure}
+
+	\begin{subfigure}{\cdsize}	
+		\centering
+		\includegraphics[width=\cdsize]{CD/Precision-2.png}
+		\caption{Precision}
+	
+	\end{subfigure}
+
+
+	\begin{subfigure}{\cdsize}	
+		\centering
+		\includegraphics[width=\cdsize]{CD/Recall-2.png}
+		\caption{Recall}
+	
+	\end{subfigure}
+
+	\begin{subfigure}{\cdsize}	
+		\centering
+		\includegraphics[width=\cdsize]{CD/WinDiff-2.png}
+		\caption{WindowDiff}
+	
+	\end{subfigure}
+
+
 
 	\caption{Diagramas de diferença crítica do pós-teste de Nemenyi}
 	\label{fig:cd}
