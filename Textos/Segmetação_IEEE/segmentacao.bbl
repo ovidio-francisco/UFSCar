@@ -1,11 +1,5 @@
 \begin{thebibliography}{1}
 
-\bibitem{Banerjee200657}
-S.~Banerjee and A.~Rudnicky.
-\newblock A texttiling based approach to topic boundary detection in meetings.
-\newblock volume~1, pages 57--60, 2006.
-\newblock cited By 3.
-
 \bibitem{Beeferman1999}
 D.~Beeferman, A.~Berger, and J.~Lafferty.
 \newblock Statistical models for text segmentation.
@@ -26,14 +20,14 @@ M.~A. Hearst.
   Computational Linguistics}, ACL '94, pages 9--16, Stroudsburg, PA, USA, 1994.
   Association for Computational Linguistics.
 
-\bibitem{Kern2009167}
+\bibitem{Kern2009}
 R.~Kern and M.~Granitzer.
 \newblock Efficient linear text segmentation based on information retrieval
   techniques.
 \newblock pages 167--171, 2009.
 \newblock cited By 10.
 
-\bibitem{Pevzner200219}
+\bibitem{Pevzner2002}
 L.~Pevzner and M.~Hearst.
 \newblock A critique and improvement of an evaluation metric for text
   segmentation.

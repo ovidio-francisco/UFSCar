@@ -3,49 +3,50 @@ Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: segmentacao.aux
 The style file: abbrv.bst
 Database file #1: sigproc.bib
+Warning--I didn't find a database entry for "Kern2009167"
 Warning--I didn't find a database entry for "reynar"
-Warning--I didn't find a database entry for "fulano"
-Warning--empty booktitle in Banerjee200657
-Warning--empty booktitle in Kern2009167
-You've used 6 entries,
+Warning--I didn't find a database entry for "Banerjee200657"
+Warning--I didn't find a database entry for "Pevzner200219"
+Warning--empty booktitle in Kern2009
+You've used 5 entries,
             2118 wiz_defined-function locations,
-            550 strings with 5001 characters,
-and the built_in function-call counts, 2318 in all, are:
-= -- 243
-> -- 71
-< -- 5
-+ -- 30
-- -- 22
-* -- 142
-:= -- 356
-add.period$ -- 23
-call.type$ -- 6
-change.case$ -- 29
+            547 strings with 4813 characters,
+and the built_in function-call counts, 1901 in all, are:
+= -- 202
+> -- 58
+< -- 3
++ -- 24
+- -- 18
+* -- 119
+:= -- 297
+add.period$ -- 19
+call.type$ -- 5
+change.case$ -- 24
 chr.to.int$ -- 0
-cite$ -- 8
-duplicate$ -- 104
-empty$ -- 198
-format.name$ -- 22
-if$ -- 522
+cite$ -- 6
+duplicate$ -- 84
+empty$ -- 162
+format.name$ -- 18
+if$ -- 425
 int.to.chr$ -- 0
-int.to.str$ -- 6
-missing$ -- 6
-newline$ -- 36
-num.names$ -- 12
-pop$ -- 29
+int.to.str$ -- 5
+missing$ -- 5
+newline$ -- 30
+num.names$ -- 10
+pop$ -- 22
 preamble$ -- 1
-purify$ -- 23
+purify$ -- 19
 quote$ -- 0
-skip$ -- 84
+skip$ -- 65
 stack$ -- 0
-substring$ -- 163
-swap$ -- 35
-text.length$ -- 5
+substring$ -- 137
+swap$ -- 26
+text.length$ -- 3
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 24
-warning$ -- 2
-while$ -- 25
-width$ -- 7
-write$ -- 79
-(There were 4 warnings)
+type$ -- 20
+warning$ -- 1
+while$ -- 21
+width$ -- 6
+write$ -- 66
+(There were 5 warnings)
