@@ -51,7 +51,7 @@ A Figura~\ref{fig:exemplosegmentacaozoom} mostra um exemplo com duas segmentaç�
 
 
 \subsubsection{P$_k$}
-A fim de resolver o problema de \textit{near misses}, Beeferman \textit{at al.}~\cite{Beeferman1999} apresentam uma nova medida chama P$_k$ que atribui valores parciais a \textit{near misses}. Esse método move uma janela de tamanho $k$ e a cada posição e verifica se o início e o final da janela estão ou não dentro do mesmo segmento e penaliza o algoritmo em caso de discrepância. 
+A fim de resolver o problema de \textit{near misses}, Beeferman \textit{et. al.}~\cite{Beeferman1999} apresentam uma nova medida chama P$_k$ que atribui valores parciais a \textit{near misses}. Esse método move uma janela de tamanho $k$ e a cada posição e verifica se o início e o final da janela estão ou não dentro do mesmo segmento e penaliza o algoritmo em caso de discrepância. 
 
 Ou seja, dado duas palavras de distancia $k$, uma discrepância é computada quando o algoritmo e a referência não concordam se as palavras estão ou não no mesmo segmento.
 
@@ -121,7 +121,7 @@ Com isso foi possível, pela análise do diagrama de diferença crítica, verifi
 em relação aos demais. 
 
 
-A tabelas [?] mostra os dados obtidos com o \textit{C99}, onde \texttt{S} é a proporção de segmentos em relação a quantidade de candidatos, \texttt{M} é o tamanho da máscara utilizada para criar a matriz de \textit{ranking} e \texttt{W} indica se os segmentos são representados por vetores contendo a frequência ou um peso das palavras. 
+A tabela~\ref{tab:mediasC99} mostra os dados obtidos com o \textit{C99}, onde \texttt{S} é a proporção de segmentos em relação a quantidade de candidatos, \texttt{M} é o tamanho da máscara utilizada para criar a matriz de \textit{ranking} e \texttt{W} indica se os segmentos são representados por vetores contendo a frequência ou um peso das palavras. 
 
 
 
@@ -149,7 +149,7 @@ A tabelas [?] mostra os dados obtidos com o \textit{C99}, onde \texttt{S} é a p
 \end{table}
 
 
-A tabelas [?] mostra os dados obtidos com o \textit{TextTiling}, \texttt{J} é o tamanho da janela e \texttt{P} e o passo.
+A tabelas~\ref{tab:mediasTextTiling} mostra os dados obtidos com o \textit{TextTiling}, \texttt{J} é o tamanho da janela e \texttt{P} e o passo.
 
 \begin{table}[!h]
 	\centering
@@ -175,7 +175,7 @@ A tabelas [?] mostra os dados obtidos com o \textit{TextTiling}, \texttt{J} é o
 \end{table}
 
 
-Uma vez sabendo quais valores de parâmetros melhor configuram um algoritmo para uma medida, resta então saber qual dos dois algoritmos é mais eficiente segundo essa medida. Para isso aplicou-se novamente o teste de Friedman com pós-teste de Nemenyi, dessa vez, com os melhores modelos dos dois algoritmos para cada medida. O resultado segue na Tabela [?]
+Uma vez sabendo quais valores de parâmetros melhor configuram um algoritmo para uma medida, resta então saber qual dos dois algoritmos é mais eficiente segundo essa medida. Para isso aplicou-se novamente o teste de Friedman com pós-teste de Nemenyi, dessa vez, com os melhores modelos dos dois algoritmos para cada medida. O resultado segue na Tabela~\ref{tab:melhoresmodelos}
 
 \begin{table}[!h]
 	\centering
@@ -196,7 +196,9 @@ Uma vez sabendo quais valores de parâmetros melhor configuram um algoritmo para
  	
 	
 	\end{tabular}
-	
+
+	\caption{Melhores modelos para cada medida segundo diagramas de diferença crítica}
+	\label{tab:melhoresmodelos}	
 	
 \end{table}
 

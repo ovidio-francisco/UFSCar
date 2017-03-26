@@ -1,5 +1,11 @@
 \begin{thebibliography}{1}
 
+\bibitem{Banerjee2006}
+S.~Banerjee and A.~Rudnicky.
+\newblock A texttiling based approach to topic boundary detection in meetings.
+\newblock volume~1, pages 57--60, 2006.
+\newblock cited By 3.
+
 \bibitem{Beeferman1999}
 D.~Beeferman, A.~Berger, and J.~Lafferty.
 \newblock Statistical models for text segmentation.
