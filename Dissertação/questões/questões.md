@@ -16,7 +16,7 @@
 =====================================================================================
 - A mesma palavra pode estar presente em tópicos diferentes. Identificar esses tópicos eh um diferencial. A palavra pode estar em um tópico mas o tópico não necessáriamente tem como centro o significado da palavra, nesse caso deve ser apresentado com menor relevância em relação ao caso de a palavra estar presente em um tópico e o tópico realmente tratar desse significado.
 
-- Identficicar esses tópicos é um difirencial
+- Identficicar esses tópicos é um diferencial
 
 - Qual o tópico onde esse palavra está incerida?
 
@@ -34,6 +34,11 @@
 - Procurar por problemas relacionados a buscas por _key words_.
 
 - Topic Detection and traking TDT.
+
+- É benéfica para ajudar a organizar e facilitar o acesso a atas
+
+- Pode ser útil como parte da etapa de pre-processamento para outras aplicações envolvendo documentos
+
 =====================================================================================
 
 

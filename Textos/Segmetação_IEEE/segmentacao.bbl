@@ -11,6 +11,13 @@ D.~Beeferman, A.~Berger, and J.~Lafferty.
 \newblock Statistical models for text segmentation.
 \newblock {\em Machine Learning}, 34(1):177--210, 1999.
 
+\bibitem{Bokaei2015}
+M.~H. Bokaei, H.~Sameti, and Y.~Liu.
+\newblock Linear discourse segmentation of multi-party meetings based on local
+  and global information.
+\newblock {\em IEEE/ACM Trans. Audio, Speech and Lang. Proc.},
+  23(11):1879--1891, Nov. 2015.
+
 \bibitem{Choi2000}
 F.~Y.~Y. Choi.
 \newblock Advances in domain independent linear text segmentation.

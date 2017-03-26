@@ -167,6 +167,30 @@
 		| where a change in vocabulary correlates with a change of      |
 		| topics.                                                       | 
 		|_______________________________________________________________|
+		
+		
+
+# Linear Discourse Segmentation of Multi-Party Meetings Based on Local and Global Information
+
+		'_____________
+		/ Introdução  \_____________________________________________________
+		|                                                                   |
+		| M                                                                 | 
+		|  EETINGS are important activities for businesses,                 | 
+		| managemntes and organizations in where people spend               | 
+		| plenty of their daily time. Organazing these data is tradionally  | 
+		| done by human operators.  The growing number of daily meet-       | 
+		| ings makes it very expensive or impossible to maintain and        | 
+		| structure all the information exchanged in them. Accordingly      | 
+		| automatically understanding and structuring meetings has          | 
+		| attracted a great deal of attention in the last decade. However,  | 
+		| understanding a meeting thoroughly (in a way that all the         | 
+		| related questions can be answered and the minutes can be ex-      | 
+		| tracted automatically) is a challenging task for computers, and   | 
+		| hasn’t been achieved yet.		                                    | 
+		|___________________________________________________________________|
+	
+
 
 
 _______________________________________________________________________________________________________
@@ -357,6 +381,40 @@ ________________________________________________________________________________
 ________________________________________________________________________________________________________
 
 
+
+________________________________________________________________________________________________________
+
+
+# Trabalhos que tratam de reuniões faladas
+
+	- Discurse Segmentation of Multi-Party Conversation
+	- Linear Discurse Segmentation of Multi-Party Meetings Based on Local and Global Information
+	- 
+	
+##		Elementos da fala
+			- pausas
+			- troca de locutor
+			- picos de acentuação (acentuação da fala)
+			- 
+
+
+
+
+
+________________________________________________________________________________________________________
+
+
+________________________________________________________________________________________________________
+
+# Motivações para Segmentação
+
+	- Aprimoração de recuperação de informação
+	- Aprimoração de sumarização
+	- Facilidade na navegação pelo documento
+	- 
+
+
+________________________________________________________________________________________________________
 
 
 
