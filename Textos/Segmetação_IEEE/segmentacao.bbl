@@ -19,6 +19,13 @@ F.~Y.~Y. Choi.
   26--33, Stroudsburg, PA, USA, 2000. Association for Computational
   Linguistics.
 
+\bibitem{Galley2003}
+M.~Galley, K.~McKeown, E.~Fosler-Lussier, and H.~Jing.
+\newblock Discourse segmentation of multi-party conversation.
+\newblock In {\em Proceedings of the 41st Annual Meeting on Association for
+  Computational Linguistics - Volume 1}, ACL '03, pages 562--569, Stroudsburg,
+  PA, USA, 2003. Association for Computational Linguistics.
+
 \bibitem{Hearst1994}
 M.~A. Hearst.
 \newblock Multi-paragraph segmentation of expository text.
