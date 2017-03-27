@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.3.13)  26 MAR 2017 17:58
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.3.13)  27 MAR 2017 01:06
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -791,33 +791,23 @@ Underfull \hbox (badness 1436) in paragraph at lines 34--35
 [][]\OT1/ptm/m/n/10 E []util em aplica[][]oes que tra-ba-lham com tex-tos sem
  []
 
-
-Underfull \hbox (badness 1960) in paragraph at lines 40--44
-\OT1/ptm/m/n/10 em aplica[][]oes vol-ta-das a recupera[][]ao de informa[][]ao e
-
- []
-
-) (./project/trabalhosrelacionados.tex [1{/var/lib/texmf/fonts/map/pdftex/updma
-p/pdftex.map}
+) (./project/referencial.tex [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.m
+ap}
 
 
-]
-<images/exemplo-matrix-rank-noborder.jpg, id=16, 366.168pt x 193.2018pt>
+] <images/exemplo-matrix-rank-noborder.jpg, id=16, 366.168pt x 193.2018pt>
 File: images/exemplo-matrix-rank-noborder.jpg Graphic file (type jpg)
 
 <use images/exemplo-matrix-rank-noborder.jpg>
 Package pdftex.def Info: images/exemplo-matrix-rank-noborder.jpg used on input 
-line 87.
+line 79.
 (pdftex.def)             Requested size: 232.19843pt x 122.51668pt.
 
-Overfull \hbox (6.52435pt too wide) detected at line 101
+Overfull \hbox (6.52435pt too wide) detected at line 93
 \OML/cmm/m/it/10 r\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x; y\OT1/cmr/m/n/10 ) = []
  []
 
-
-LaTeX Warning: Citation `reynar' on page 2 undefined on input line 106.
-
-) (./project/adaptacaoasatas.tex
+) (./project/trabalhosrelacionados.tex) (./project/adaptacaoasatas.tex
 <images/exemplo-preprocessamento-noborder.jpg, id=17, 588.2778pt x 237.0456pt>
 File: images/exemplo-preprocessamento-noborder.jpg Graphic file (type jpg)
 
@@ -849,15 +839,29 @@ File: images/windiffzoom.jpg Graphic file (type jpg)
 <use images/windiffzoom.jpg>
 Package pdftex.def Info: images/windiffzoom.jpg used on input line 45.
 (pdftex.def)             Requested size: 242.52063pt x 61.00415pt.
- [3 <./images/windiffzoom.jpg>]
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[3]
+Underfull \hbox (badness 7888) in paragraph at lines 64--65
+ \OT1/ptm/m/it/10 2) Win-dow-Diff: [][] \OT1/ptm/m/n/10 Pevz-ner [[]] aponta pr
+o-ble-mas na
+ []
+
 <images/windiff.jpg, id=26, 661.0296pt x 79.0152pt>
 File: images/windiff.jpg Graphic file (type jpg)
  <use images/windiff.jpg>
 Package pdftex.def Info: images/windiff.jpg used on input line 74.
 (pdftex.def)             Requested size: 242.52063pt x 28.9892pt.
-)
-(./project/resultados.tex) (./project/conclusao.tex) (./segmentacao.bbl
-[4 <./images/windiff.jpg>])
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+) (./project/resultados.tex) (./project/conclusao.tex) (./segmentacao.bbl
+Underfull \vbox (badness 2790) has occurred while \output is active []
+
+ [4 <./images/windiffzoom.jpg> <./images/windiff.jpg>])
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -871,20 +875,16 @@ Before submitting the final camera ready copy, remember to:
 
 [5
 
-] (./segmentacao.aux)
-
-LaTeX Warning: There were undefined references.
-
- )
+] (./segmentacao.aux) )
 (\end occurred inside a group at level 1)
 
 ### simple group (level 1) entered at line 1061 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 6253 strings out of 494884
- 96340 string characters out of 6179236
- 192250 words of memory out of 5000000
- 9442 multiletter control sequences out of 15000+600000
+ 6262 strings out of 494884
+ 96483 string characters out of 6179236
+ 193287 words of memory out of 5000000
+ 9448 multiletter control sequences out of 15000+600000
  41221 words of font info for 80 fonts, out of 8000000 for 9000
  41 hyphenation exceptions out of 8191
  39i,16n,39p,817b,3097s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -899,7 +899,7 @@ rw/courier/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb
 8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/s
 hare/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/te
 xmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on segmentacao.pdf (5 pages, 446409 bytes).
+Output written on segmentacao.pdf (5 pages, 448499 bytes).
 PDF statistics:
  69 PDF objects out of 1000 (max. 8388607)
  46 compressed objects within 1 object stream
