@@ -3,8 +3,9 @@
 
 
 
-	Os algoritmos \textit{TextTiling} e \textit{C99} foram propostos para o inglês, independente de domínio, ou seja, a proposta inicial é trabalhar em qualquer texto nessa língua.
-	A proposta desse trabalho é adaptá-los ao contexto das atas de reunião em português do Brasil. As subseções seguintes tratam das adaptações para esse nicho mais específico. A seção~\ref{sec:avaliacao} mostra a análise dos algoritmos adaptados.
+Os algoritmos \textit{TextTiling} e \textit{C99} foram propostos para o inglês, independente de domínio, ou seja, a proposta inicial é trabalhar em qualquer texto nessa língua.
+
+A proposta desse trabalho é adaptá-los ao contexto das atas de reunião em português do Brasil. As subseções seguintes tratam das adaptações para esse nicho mais específico. A Seção~\ref{sec:avaliacao} mostra a análise dos algoritmos adaptados.
 
 %%%%%%%%%%
 % Dificuldade: Coesão léxica não tão bem definida
@@ -20,10 +21,10 @@ O vocabulário das reuniões, ainda que em tópicos diferentes, compartilham cer
 %%%%%%%%%%
 As atas de reunião costumam ter um estilo de escrita que deve ser levando em conta na adaptação do algoritmos, como a identificação de finais de sentença na ausência de quebras de parágrafo, inserção de linhas que não separam assuntos, utilização de pontuação para transição de tópicos e cabeçalhos e numerais ruidosos. 
 
-Nas subseções a seguir serão expostas simples alterações para aumentar a eficiência dos algoritmos e encontra o melhor modelo para a tarefa de segmentar o texto das atas em tópicos.
+Nas subseções a seguir serão expostas simples alterações para aumentar a eficiência dos algoritmos e encontrar o melhor modelo para a tarefa de segmentar o texto das atas em tópicos.
 
 
-\subsection{Préprocessamento}
+\subsection{Pré-processamento}
 	\label{subsec:preprocessamento}
 
 
@@ -50,16 +51,17 @@ Há ainda outros passos presentes nessa etapa como remoção de acentos, transfo
 
 
 
-\subsubsection{Remoção de ruídos}
+%\subsection{Remoção de ruídos}
 
 % Cabeçalhos e rodapés
 As atas frequentemente contém trechos que podem ser considerados pouco informativos e descartados durante o pré-processamento. 
-Após a extração, cabeçalhos e roda-pés se misturam aos tópicos tratados na reunião, podendo ser  inseridos no meio de um tópico e criando uma quebra que prejudica tanto o algoritmo de extração, quanto a leitura do texto pelo usuário.
-
+Após a extração, cabeçalhos e roda-pés se misturam aos tópicos tratados na reunião, podendo ser  inseridos no meio de um tópico e criando uma quebra que prejudica tanto o algoritmo de segmentação, quanto a leitura do texto pelo usuário.
+%%%%%%%%%%
 % Numerais
-Também é comum o uso de numerais para marcação de páginas e linhas, da mesma forma, são pouco informativos e podem ser removidos.
+%%%%%%%%%%
+Também é comum o uso de numerais para marcação de páginas e linhas, da mesma forma, são pouco informativos e podem ser descartados.
 
-Nesse trabalho, esses elementos são removidos por meio de heurísticas simples, uma vez que, o descarte não causa perca de informação e pode facilitar a identificação dos segmentos, pois melhora a coesão do texto. Outro benefício é manter os segmentos livres de textos que fogem do assunto.
+Nesse trabalho, esses elementos são removidos por meio de heurísticas simples, uma vez que, o descarte não causa perca de informação e pode facilitar a identificação dos segmentos, pois melhora a coesão do texto. Outro benefício é manter o texto livre de trechos que fogem do assunto circundante.
 
 
 %Como forma de padronização, as instituições acrescentam ao documento
@@ -80,7 +82,7 @@ Nesse trabalho, esses elementos são removidos por meio de heurísticas simples,
 %	Os algoritmos de segmentação devem ser
 	É preciso fornecer aos algoritmos os candidatos iniciais a limites de segmento. Aproveitando do estilo de escrita e baseando-se na pontuação do texto é possível indicar quebras de parágrafo, finais de sentenças ou mesmo palavras. 
 
-	Ocorre que em atas de reunião é uma prática comum redigi-las de forma que o conteúdo discutido fica em parágrafo único, além disso, quebras de parágrafo são usados para formatação de outros elementos como espaço para assinaturas. Indicar todo \textit{token} como ponto candidato obriga a ajustar posteriormente os segmentos de maneira a não quebrar uma ideia ou frase. Assim, nesse trabalho, os finais de sentença são considerado candidatos passíveis a limite entre segmentos. 
+	Ocorre que em atas de reunião é uma prática comum redigi-las de forma que o conteúdo discutido fica em parágrafo único, além disso, quebras de parágrafo são usados para formatação de outros elementos como espaço para assinaturas. Indicar todo ponto entre \textit{token} como candidato obriga a ajustar posteriormente os segmentos de maneira a não quebrar uma ideia ou frase. Assim, neste trabalho, os finais de sentença são considerados unidades de informação e portanto, passíveis a limite entre segmentos. 
 	
 	Devido ao estilo de pontuação desses documentos, como encerrar sentenças usando um \textit{";"} e inserção de linhas extras, usa-se as regras abaixo para identificar os finais de sentenças.  
 

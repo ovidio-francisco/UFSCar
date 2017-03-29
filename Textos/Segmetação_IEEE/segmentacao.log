@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.3.13)  29 MAR 2017 00:11
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.3.13)  29 MAR 2017 16:24
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -787,7 +787,7 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
 
 (./project/resumo.tex) (./project/introducao.tex
-Underfull \hbox (badness 1436) in paragraph at lines 34--35
+Underfull \hbox (badness 1436) in paragraph at lines 32--33
 [][]\OT1/ptm/m/n/10 E []util em aplica[][]oes que tra-ba-lham com tex-tos sem
  []
 
@@ -800,65 +800,64 @@ File: images/exemplo-matrix-rank-noborder.jpg Graphic file (type jpg)
 
 <use images/exemplo-matrix-rank-noborder.jpg>
 Package pdftex.def Info: images/exemplo-matrix-rank-noborder.jpg used on input 
-line 69.
+line 79.
 (pdftex.def)             Requested size: 232.19843pt x 122.51668pt.
 
-Overfull \hbox (6.52435pt too wide) detected at line 83
+Overfull \hbox (6.52435pt too wide) detected at line 93
 \OML/cmm/m/it/10 r\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x; y\OT1/cmr/m/n/10 ) = []
  []
 
-) (./project/trabalhosrelacionados.tex) (./project/adaptacaoasatas.tex [2 <./im
-ages/exemplo-matrix-rank-noborder.jpg>]
+) (./project/trabalhosrelacionados.tex) (./project/adaptacaoasatas.tex
+Underfull \vbox (badness 1194) has occurred while \output is active []
+
+ [2 <./images/exemplo-matrix-rank-noborder.jpg>]
 <images/exemplo-preprocessamento-noborder.jpg, id=21, 588.2778pt x 237.0456pt>
 File: images/exemplo-preprocessamento-noborder.jpg Graphic file (type jpg)
 
 <use images/exemplo-preprocessamento-noborder.jpg>
 Package pdftex.def Info: images/exemplo-preprocessamento-noborder.jpg used on i
-nput line 41.
+nput line 42.
 (pdftex.def)             Requested size: 232.19843pt x 93.56506pt.
-LaTeX Font Info:    Try loading font information for OT1+pcr on input line 112.
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 114.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 )
-LaTeX Font Info:    Try loading font information for OMS+pcr on input line 112.
+LaTeX Font Info:    Try loading font information for OMS+pcr on input line 114.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omspcr.fd
 File: omspcr.fd 
 )
 LaTeX Font Info:    Font shape `OMS/pcr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 112.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 114.
 )
 (./project/avaliacao.tex [3 <./images/exemplo-preprocessamento-noborder.jpg>]
+Underfull \hbox (badness 4279) in paragraph at lines 41--42
+[]\OT1/ptm/m/n/10 A presen[]a de ru[]^^Pdos como cabe[]alhos, ro-dap[]es e
+ []
+
 <images/windiffzoom.jpg, id=26, 312.2064pt x 78.5334pt>
 File: images/windiffzoom.jpg Graphic file (type jpg)
 
 <use images/windiffzoom.jpg>
-Package pdftex.def Info: images/windiffzoom.jpg used on input line 53.
+Package pdftex.def Info: images/windiffzoom.jpg used on input line 58.
 (pdftex.def)             Requested size: 242.52063pt x 61.00415pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Underfull \hbox (badness 7888) in paragraph at lines 72--73
- \OT1/ptm/m/it/10 2) Win-dow-Diff: [][] \OT1/ptm/m/n/10 Pevz-ner [[]] aponta pr
-o-ble-mas na
- []
 
 <images/windiff.jpg, id=27, 661.0296pt x 79.0152pt>
 File: images/windiff.jpg Graphic file (type jpg)
  <use images/windiff.jpg>
-Package pdftex.def Info: images/windiff.jpg used on input line 82.
+Package pdftex.def Info: images/windiff.jpg used on input line 67.
 (pdftex.def)             Requested size: 242.52063pt x 28.9892pt.
 
 [4 <./images/windiffzoom.jpg> <./images/windiff.jpg>]
+Underfull \hbox (badness 7888) in paragraph at lines 89--90
+ \OT1/ptm/m/it/10 2) Win-dow-Diff: [][] \OT1/ptm/m/n/10 Pevz-ner [[]] aponta pr
+o-ble-mas na
+ []
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-) (./project/conclusao.tex) (./segmentacao.bbl [5])
+) (./project/conclusao.tex [5]) (./segmentacao.bbl)
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -880,11 +879,11 @@ Before submitting the final camera ready copy, remember to:
 Here is how much of TeX's memory you used:
  6269 strings out of 494884
  96529 string characters out of 6179236
- 195277 words of memory out of 5000000
+ 193277 words of memory out of 5000000
  9451 multiletter control sequences out of 15000+600000
  42358 words of font info for 84 fonts, out of 8000000 for 9000
  41 hyphenation exceptions out of 8191
- 39i,16n,39p,848b,3098s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 39i,16n,39p,867b,3097s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texl
@@ -897,7 +896,7 @@ ier/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb>
 </usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/te
 xlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dis
 t/fonts/type1/urw/times/utmri8a.pfb>
-Output written on segmentacao.pdf (6 pages, 464082 bytes).
+Output written on segmentacao.pdf (6 pages, 466490 bytes).
 PDF statistics:
  76 PDF objects out of 1000 (max. 8388607)
  51 compressed objects within 1 object stream

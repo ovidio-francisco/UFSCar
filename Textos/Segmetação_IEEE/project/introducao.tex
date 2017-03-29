@@ -15,18 +15,16 @@ As atas são documentos textuais e portanto constituem dados não estruturados, 
 %%%%%%%%%%
 % Segmentar e extrair tópicos
 %%%%%%%%%%
-Uma vez que a ata registra a sucessão de assuntos discutidos na reunião, tal sistema tem duas principais tarefas: descobrir quando há uma mudança de assunto, e quais são esses assuntos~\cite{Banerjee2006}. Esse trabalho tem foco principal na primeira tarefa, a segmentação topical automática.
+Uma vez que a ata registra a sucessão de assuntos discutidos na reunião, tal sistema tem duas principais tarefas: descobrir quando há uma mudança de assunto, e quais são esses assuntos~\cite{Banerjee2006}. Este trabalho tem foco principal na primeira tarefa, a segmentação topical automática.
 
 
-%%%%%%%%%%
-% Descrição das Atas
-%%%%%%%%%%
-Frequentemente atas de reunião tem a característica de apresentar um texto com poucas quebras de parágrafo e sem marcações de estrutura, como capítulos, seções ou quaisquer indicações sobre o tema do texto. 
 
 %%%%%%%%%%
 % Definição da Tarefa
 %%%%%%%%%%
 A tarefa de segmentação textual consiste dividir um texto em partes que contenham um significado relativamente independente. Em outras palavras, é identificar as posições onde há uma mudança significativa de tópicos.
+
+
 
 %%%%%%%%%%
 % Utilidade da segmentação (domínios onde é aplicada)
@@ -40,9 +38,17 @@ A tarefa de segmentação textual consiste dividir um texto em partes que conten
 O interesse por segmentação textual tem crescido em em aplicações voltadas a recuperação de informação~\cite{Reynar1999} %citar o [15] ...
 e sumarização de textos~\cite{Boguraev2000}~\cite{Boguraev2000b}. % ... e [2] do "Efficient Linear T S"
 Essa técnica pode ser usada para aprimorar o acesso a informação quando essa é solicitada por meio de uma consulta, onde é possível oferecer porções menores de texto mais relevantes ao invés de exibir um documento maior que pode conter informações menos pertinentes. 
-A sumarização de texto pode ser aprimorada ao processar segmentos separados por tópicos ao invés de documentos inteiros. A navegação pelo documento pode ser aprimorada, em especial na utilização por usuários com deficiência visual~\cite{Choi2000}.
+%
+Além disso, encontrar pontos onde o texto muda de assunto, pode ser útil como etapa de preprocessamento em aplicações voltadas ao entendimento do texto, principalmente em textos longos
+%
+A sumarização de texto pode ser aprimorada ao processar segmentos separados por tópicos ao invés de documentos inteiros. A navegação pelo documento pode ser aprimorada, em especial na utilização por usuários com deficiência visual~\cite{Choi2000}. 
 
 
+
+%%%%%%%%%%
+% Descrição das Atas
+%%%%%%%%%%
+Frequentemente atas de reunião têm a característica de apresentar um texto com poucas quebras de parágrafo e sem marcações de estrutura, como capítulos, seções ou quaisquer indicações sobre o tema do texto. O estilo de escrita compacto e formal, desfavorece o processamento tradicional.
 
 %%%%%%%%%%
 % As Atas

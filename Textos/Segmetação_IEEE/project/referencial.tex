@@ -5,7 +5,12 @@
 % Ideia básica dos algorítmos (Coesão léxica ) como **presuposto básico**
 %%%%%%%%%%
 Trabalhos anteriores apontam que a coesão léxica é um forte indicador da estrutura do texto~\cite{Galley2003}~\cite{Boguraev2000}.
-Os principais algoritmos de segmentação textual baseiam-se na ideia de coesão léxica em um assunto. Isto é, a mudança de tópicos é acompanhada de uma proporcional mudança de vocabulário. A partir disso, vários algoritmos foram propostos sob o pressuposto de que um segmento pode ser identificado e delimitado pela análise das palavras que o compõe.
+%Os principais algoritmos de segmentação textual baseiam-se na ideia de coesão léxica em um assunto.
+Isto é, a mudança de tópicos é acompanhada de uma proporcional mudança de vocabulário. A partir disso, vários algoritmos foram propostos baseados na ideia de que um segmento pode ser identificado e delimitado pela análise das palavras que o compõe.
+
+Um segmento pode ser visto como uma sucessão de unidades de informação que compartilham um tópico. Essas unidades podem ser, por exemplo, palavras, sentenças ou parágrafos. Essas unidades são a menor parte de um segmento e portanto consideradas candidatas a limite entre segmentos, bem como é necessário mensurar suas similaridades.
+
+
 
 %%%%%%%%%%
 % Porque cosine
@@ -25,17 +30,17 @@ Sim(x,y) = \frac
 %%%              TextTiling                 %%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-Entre os trabalhos mais influentes podemos citar o \textit{TextTiling}~\cite{Hearst1994} proposto por Hearst. Ela propõe um algoritmo baseado em janelas deslizantes, onde para cada candidato a limite, analisa-se o texto circundante. Um limite ou quebra se segmento é identificado quando a similaridade entres os blocos apresenta uma queda considerável.
+Entre os trabalhos mais influentes podemos citar o \textit{TextTiling}~\cite{Hearst1994} proposto por Hearst. Ela propõe um algoritmo baseado em janelas deslizantes, onde para cada candidato a limite, analisa-se o texto circundante. Um limite ou quebra de segmento é identificado quando a similaridade entres os blocos apresenta uma queda considerável.
 
-Ela propõe um algoritmo baseado em janelas deslizante, para analisar blocos de texto adjacentes e identificar os limites com base nas similaridades dos blocos.
+%Ela propõe um algoritmo baseado em janelas deslizante, para analisar blocos de texto adjacentes e identificar os limites com base nas similaridades dos blocos.
 
 O algoritmo recebe uma lista de candidatos a limite, usualmente finais de parágrafo ou finais de sentenças. Para cada posição candidata são construídos 2 blocos, um contendo sentenças que a precedem e outro com as que a sucedem. O tamanho desses blocos é um parâmetro a ser fornecido ao algoritmo e determina o tamanho mínimo de um segmento.
 %
 Em seguida, os blocos de texto são representados por vetores que contém as frequências de suas palavras. Então, usa-se \textit{cosini} (equação~\ref{equ:cosine}) para calcular a similaridade entre os blocos.
 
-Finalmente, os limites são identificados sempre que a similaridade entre blocos adjacentes entre cada candidato ultrapassa um determinado \textit{threshold}
+Finalmente, os limites são identificados sempre que a similaridade entre blocos adjacentes entre cada candidato ultrapassa um determinado \textit{threshold}.
 
-Apresenta baixa complexidade computacional, devido a simplicidade do algoritmo e baixa eficiência quando comparado a outros métodos mais sofisticados como mostrando em~\cite{Choi2000, Kern2009}.
+O \textit{TextTiling} apresenta baixa complexidade computacional, devido a simplicidade do algoritmo e baixa eficiência quando comparado a outros métodos mais sofisticados como mostrando em~\cite{Choi2000, Kern2009}.
 
 
 
@@ -43,9 +48,14 @@ Apresenta baixa complexidade computacional, devido a simplicidade do algoritmo e
 %%%                  C99                    %%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-Choi \cite{Choi2000} apresenta um trabalho que usa \textit{cosine}, a qual é exibida na equação~\ref{equ:cosine}, como medida similaridade e apresenta um esquema de ranking em seu algoritmo, o \textit{C99}. 
+Choi \cite{Choi2000} apresenta um esquema de ranking em seu algoritmo, o \textit{C99}. 
 %
-Embora muitos dos melhores trabalho utilizarem matrizes de similaridades, o autor traz obervações.
+% trabalho onde é construída matriz com os \textit{rakinks} locais da similaridades entre sentenças
+%
+%
+%um trabalho que usa \textit{cosine}, a qual é exibida na equação~\ref{equ:cosine}, como medida similaridade e apresenta um esquema de ranking em seu algoritmo, o \textit{C99}. 
+%
+Embora muitos trabalhos utilizem matrizes de similaridades, o autor traz obervações.
 %
 Ele aponta que para pequenos segmentos, o cálculo de suas similaridades não é confiável. Pois uma ocorrência adicional de uma palavra causa um impacto desproporcional no cálculo.
 %
@@ -54,12 +64,12 @@ Além disso, o estilo da escrita pode não ser constante em todo o texto. Choi s
 
 Portanto comparar a similaridade entre trechos de diferentes regiões, não é apropriado.
 % Complexidade O(n²)
-Devido a isso, as similaridades não podem ser comparadas em valores absolutos,  então, o autor apresenta um esquema de ranking para contornar esse problema.
+Devido a isso, as similaridades não podem ser comparadas em valores absolutos,  então, o autor apresenta um esquema de \textit{ranking} para contornar esse problema.
 %
 
 
 
-Cada valor na matriz de similaridade é substituído por seu ranking local. Onde ranking é o número de elementos vizinhos com similaridade menor, o qual e calculado com a equação~\ref{equ:ranklocal}. Um exemplo é mostrado na Figura \ref{fig:exemplomatrixrank} abaixo, onde utiliza-se uma máscara de largura igual a 3.
+Cada valor na matriz de similaridade é substituído por seu ranking local. Onde \textit{ranking} é o número de elementos vizinhos com similaridade menor, o qual e calculado com a equação~\ref{equ:ranklocal}. Um exemplo é mostrado na Figura \ref{fig:exemplomatrixrank} abaixo, onde utiliza-se uma máscara de largura igual a 3.
 
 
 
@@ -85,7 +95,8 @@ r(x,y) = \frac
 
 % Clustering Reynar maximization
 	
-	Finalmente, na etapa de \textit{clustering}, utiliza um método baseado no algoritmo de maximização de Reynar~\cite{Reynar1998} para identificar os limites entre os segmentos. Como melhoramento, Choi apresenta uma versão em seu trabalho posterior~\cite{Choi2001-LSA} que utiliza \textit{Latent Semantic Analisys} (LSA) para extrair conhecimento semântico do conjunto de documentos. 
+Finalmente, utiliza um método de divisão por \textit{clustering} baseado no algoritmo de maximização de Reynar~\cite{Reynar1998} para identificar os limites entre os segmentos. Essa abordagem apresenta uma redução taxa de erros de 22\% para 10\%. Por outro lado, exige que a quantidade de segmentos seja conhecida.
+Como melhoramento, Choi apresenta posteriormente uma versão em seu trabalho ~\cite{Choi2001-LSA} que utiliza \textit{Latent Semantic Analisys} (LSA) para calcular as similaridades ao invês de \textit{cosine}.
 
 
 
