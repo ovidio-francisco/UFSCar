@@ -1,4 +1,6 @@
 
+# Aplicação de técnicas de Mineração de Textos para Organização e Extração de Históricos de Decisões de Documentos de Reuniões
+
 
 # Resumo
   - Necessidade de organizar grades quantidades de texto.
@@ -23,13 +25,36 @@
     - Volume de texto.
     - Falta de estruturação.
     - As consultas são feitas normalemente com apoio de ferramentas de busca por palavra chave e/ou memória dos usuários.
-   
+  - Tecnicas de Mineração de Texto são empregradas a esse tipo de problema. Por exemplo:
+    - Exemplos onde é empregada.
+    - Técnicas que são utilizadas. 
+  - Justificativa do trabalho 
 
-
-- sdf
-  - sdf
-    - sd 
 
 	  
-	  
-# 
+# Objetivos
+
+  - O objetivo é desenvolver um sistema de consultas a conteúdos de atas de reuniões.
+  - Justificativa e contribuição do trabalho.
+  	- Testar se a aplicação de técnicas de MT nas atas ajuda a responder as consultas do usuários.
+  	
+
+
+
+
+
+
+  
+=================================================================================================================================
+  	
+# Justificativa	
+  	
+  	- Testar se a alicação de técnicas de MT nas atas ajuda a responder às consultas do usuário.
+  	- Entrega segmentos coerentes e relacionados à intensão do usuário.
+  	- As abordagens desse trabalho podem ser aproveitadas em pesquisas semelhantes como notícias, audios transcritos, discursos, conversas ao telefone, reuniões em reral.
+  	- 
+  	
+  	
+  	
+  	
+  	
