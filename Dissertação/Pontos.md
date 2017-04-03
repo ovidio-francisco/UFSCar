@@ -16,10 +16,20 @@
     - Conteúdo
     - Formato textual usado para consultas posteriores.
     - Usadas como registro das reuniões usadas como base para outras reuniões e decisões.
-  - Departamento de computação como exemplo.
-    - O mesmo assunto pode ser mensionado várias vezes ao longo do tempo, podendo conter alterações. [ex: credenciamento de docentes no programa]
+  - Departamento de computação como exemplo. [ex: credenciamento de docentes no programa]
+    - O mesmo assunto pode ser mensionado várias vezes ao longo do tempo, podendo conter alterações. 
     - É desejavel saber quais decisões foram tomadas a respeito e o histórico do que já foi discutido.
-    - 
+  - Dificuldade em manter as atas e localizar assuntos discutidos divido a:
+    - Volume de texto.
+    - Falta de estruturação.
+    - As consultas são feitas normalemente com apoio de ferramentas de busca por palavra chave e/ou memória dos usuários.
+   
+
+
+- sdf
+  - sdf
+    - sd 
+
 	  
 	  
 # 
