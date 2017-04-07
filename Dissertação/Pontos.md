@@ -3,7 +3,7 @@
 
 
 # Resumo
-  - Necessidade de organizar grades quantidades de texto.
+
 	
 
 # Introdução
@@ -36,7 +36,8 @@
 
   - O objetivo é desenvolver um sistema de consultas a conteúdos de atas de reuniões.
   - Justificativa e contribuição do trabalho.
-  	- Testar se a aplicação de técnicas de MT nas atas ajuda a responder as consultas do usuários.
+  	- Testar se a aplicação de técnicas de MT nas atas ajuda a responder as consultas do usuário.
+  - Estudar e Empregar tecnicas de MT e IR em sub-documentos das atas de reunião.
   	
 
 # Funcionamento do sistema
@@ -51,7 +52,10 @@
   * O módulo de consulta busca os segmentos que contém o tópico de interesse do usuário.
 
 
-  Dado um conjunto de n documentos D = (d1, d2, d3, ..., dn), cada documento i é dividido em m segmentos S = (s1i, s2i, s...mi). Cada segmento pode ser visto como um pseudo-documento. Os segmentos e seus assuntos são representados por uma matriz segmento-tópico
+  Dado um conjunto de n documentos D = (d1, d2, d3, ..., dn), cada documento i é dividido em m segmentos S = (s1i, s2i, s...mi). Cada segmento pode ser visto como um pseudo-documento. 
+  
+  
+  Os segmentos e seus assuntos são representados por uma matriz documento-tópico que contém o peso de cada tópico para cada documento e uma matriz termo-tópico que representa a probabilidade de um termo ocorrer em um documento que contem um tópico.
 
   
 =================================================================================================================================
