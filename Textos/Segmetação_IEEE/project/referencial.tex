@@ -15,7 +15,7 @@ Um segmento pode ser visto como uma sucessão de unidades de informação que co
 %%%%%%%%%%
 % Porque cosine
 %%%%%%%%%%
-Uma vez que a coesão léxica é pressuposto básico da maioria dos algoritmos, o cálculo da similaridade entre textos e fundamental. Uma medida de similidade frequentemente utilizada é a \textit{cosine}, a qual pode ser vista na equação~\ref{equ:cosine}, sendo $f_{x,j}$ a frequência da palavra $j$ na sentença $x$ e $f_{y,j}$ sendo a frequência da palavra $j$ na sentença $y$.
+Uma vez que a coesão léxica é pressuposto básico da maioria dos algoritmos, o cálculo da similaridade entre textos e fundamental. Uma medida de similidade frequentemente utilizada é o cosseno, o qual pode ser vista na Equação~\ref{equ:cosine}, sendo $f_{x,j}$ a frequência da palavra $j$ na sentença $x$ e $f_{y,j}$ sendo a frequência da palavra $j$ na sentença $y$.
 
 
 \begin{equation}
@@ -36,7 +36,7 @@ Entre os trabalhos mais influentes podemos citar o \textit{TextTiling}~\cite{Hea
 
 O algoritmo recebe uma lista de candidatos a limite, usualmente finais de parágrafo ou finais de sentenças. Para cada posição candidata são construídos 2 blocos, um contendo sentenças que a precedem e outro com as que a sucedem. O tamanho desses blocos é um parâmetro a ser fornecido ao algoritmo e determina o tamanho mínimo de um segmento.
 %
-Em seguida, os blocos de texto são representados por vetores que contém as frequências de suas palavras. Então, usa-se \textit{cosini} (equação~\ref{equ:cosine}) para calcular a similaridade entre os blocos.
+Em seguida, os blocos de texto são representados por vetores que contém as frequências de suas palavras. Então, usa-se cosseno (Equação~\ref{equ:cosine}) para calcular a similaridade entre os blocos.
 
 Finalmente, os limites são identificados sempre que a similaridade entre blocos adjacentes entre cada candidato ultrapassa um determinado \textit{threshold}.
 
@@ -69,7 +69,7 @@ Devido a isso, as similaridades não podem ser comparadas em valores absolutos, 
 
 
 
-Cada valor na matriz de similaridade é substituído por seu ranking local. Onde \textit{ranking} é o número de elementos vizinhos com similaridade menor, o qual e calculado com a equação~\ref{equ:ranklocal}. Um exemplo é mostrado na Figura \ref{fig:exemplomatrixrank} abaixo, onde utiliza-se uma máscara de largura igual a 3.
+Cada valor na matriz de similaridade é substituído por seu ranking local. Onde \textit{ranking} é o número de elementos vizinhos com similaridade menor, o qual é calculado com a Equação~\ref{equ:ranklocal}. Um exemplo é mostrado na Figura \ref{fig:exemplomatrixrank} abaixo, onde utiliza-se uma máscara de largura igual a 3.
 
 
 
