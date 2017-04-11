@@ -2,18 +2,32 @@
 	\label{referencial}
 	
 %%%%%%%%%%
-% Ideia básica dos algorítmos (Coesão léxica ) como **presuposto básico**
+% Retomada das Definições
+%%%%%%%%%%	
+
+Um documento textual, sobre tudo quando longos, são frequentemente um sucessão de tópicos. 
+
+%%%%%%%%%%
+% Segmentação
+%%%%%%%%%%
+Segmentação topical ou segmentação linear é a tarefa de dividir um texto em partes mantendo nas partes o texto de um tópico com seu significado completo.
+	
+%%%%%%%%%%
+% Segmento
+%%%%%%%%%%	
+Um segmento pode ser visto como uma sucessão de unidades de informação que compartilham um tópico e podem ser, por exemplo, palavras, sentenças ou parágrafos. Essas unidades são a menor parte de um segmento e portanto consideradas candidatas a limite entre segmentos, bem como é necessário mensurar suas similaridades.
+
+%%%%%%%%%%
+% Coesão léxica como **presuposto básico**
 %%%%%%%%%%
 Trabalhos anteriores apontam que a coesão léxica é um forte indicador da estrutura do texto~\cite{Galley2003}~\cite{Boguraev2000}.
 %Os principais algoritmos de segmentação textual baseiam-se na ideia de coesão léxica em um assunto.
 Isto é, a mudança de tópicos é acompanhada de uma proporcional mudança de vocabulário. A partir disso, vários algoritmos foram propostos baseados na ideia de que um segmento pode ser identificado e delimitado pela análise das palavras que o compõe.
 
-Um segmento pode ser visto como uma sucessão de unidades de informação que compartilham um tópico. Essas unidades podem ser, por exemplo, palavras, sentenças ou parágrafos. Essas unidades são a menor parte de um segmento e portanto consideradas candidatas a limite entre segmentos, bem como é necessário mensurar suas similaridades.
-
 
 
 %%%%%%%%%%
-% Porque cosine
+% Porque cosseno
 %%%%%%%%%%
 Uma vez que a coesão léxica é pressuposto básico da maioria dos algoritmos, o cálculo da similaridade entre textos e fundamental. Uma medida de similidade frequentemente utilizada é o cosseno, o qual pode ser vista na Equação~\ref{equ:cosine}, sendo $f_{x,j}$ a frequência da palavra $j$ na sentença $x$ e $f_{y,j}$ sendo a frequência da palavra $j$ na sentença $y$.
 
@@ -49,11 +63,6 @@ O \textit{TextTiling} apresenta baixa complexidade computacional, devido a simpl
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 Choi \cite{Choi2000} apresenta um esquema de ranking em seu algoritmo, o \textit{C99}. 
-%
-% trabalho onde é construída matriz com os \textit{rakinks} locais da similaridades entre sentenças
-%
-%
-%um trabalho que usa \textit{cosine}, a qual é exibida na equação~\ref{equ:cosine}, como medida similaridade e apresenta um esquema de ranking em seu algoritmo, o \textit{C99}. 
 %
 Embora muitos trabalhos utilizem matrizes de similaridades, o autor traz obervações.
 %

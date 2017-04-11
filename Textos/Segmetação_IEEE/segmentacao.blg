@@ -2,13 +2,13 @@ This is BibTeX, Version 0.99d (TeX Live 2016/Debian)
 Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: segmentacao.aux
 The style file: abbrv.bst
-Database file #1: sigproc.bib
+Database file #1: bibs.bib
 Warning--empty booktitle in Banerjee2006
 Warning--empty booktitle in Kern2009
 Warning--empty school in Reynar1998
 You've used 14 entries,
             2118 wiz_defined-function locations,
-            605 strings with 6561 characters,
+            605 strings with 6558 characters,
 and the built_in function-call counts, 5270 in all, are:
 = -- 545
 > -- 188

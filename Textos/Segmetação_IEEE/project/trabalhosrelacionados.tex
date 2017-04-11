@@ -1,22 +1,71 @@
 \section{Trabalhos Relacionados}
 	\label{sec:trabalhos}
 
+%%%%%%%%%%
+% Retomada da proposta
+%%%%%%%%%%
+A proposta é adaptar os algoritmos tradicionais à segmentação de atas de reunião em português, bem como encontrar um modelo que melhor se ajuste a esse contexto. Semelhante a este trabalho, outras abordagens foram propostas no sentido como mostradas a seguir.
 
-Semelhante a este trabalho, outras abordagens foram propostas como em~\cite{CHAIBI2014} onde os autores adaptam os algoritmos \textit{TextTiling} e \textit{C99} ao idioma árabe. Eles apresentam os resultados de experimentos no qual avaliaram a performance em jornais de diferentes países em árabe. As adaptações consistem basicamente na etapa de pré-processamento e apontam que diferenças no dialeto de cada pais devem ser consideradas no processo de segmentação e que a adaptação depende da escolha de um \textit{stemmer} adequado.
+
+
+%%%%%%%%%%
+% Topic segmentation for textual document written in arabic language
+%%%%%%%%%%
+A fim de adaptar os algoritmos \textit{TextTiling} e \textit{C99} ao idioma árabe de vários países, foram propostos ajustes na etapa de preprocessamento onde verificou-se que diferenças diferenças no dialeto de cada
+pais devem ser consideradas no processo de segmentação e que a adaptação depende da escolha de um \textit{stemmer} adequado à cada dialeto~\cite{CHAIBI2014}.
+
+
+Semelhante a esse trabalho, a principal motivação dos autores é adaptar os algoritmos mais influentes ao idioma árabe, devido a falta de trabalhos consistentes nesse sentido. 
+
+Por outro lado, na avaliação, eles usam como \textit{corpus} a concatenação de textos extraídos de notícias de diferentes países como Tunísia, Egito e Algeria, que tratam de assuntos distintos como política, esporte, cultura, história, tecnologia e artes, que trazem particularidades nos estilos de escrita e até diferenças entre dialetos locais. Ocorre que essas características favorecem o processo de segmentação uma vez que os documentos produzidos pela concatenação contém tópicos obtidos de domínios distintos que compartilham pouco vocabulário. Por outro lado, essas características não estão presentes no contexto das atas, onde um documento é redigido por um mesmo autor, e todos tópicos foram produzidos no mesmo domínio, dessa forma tendo estilo de escrita e vocabulário similares.
+
 
 É recorrente a aplicação de segmentadores à reuniões com múltiplos participantes onde se estuda os discursos extraídos de reuniões, ou seja, o texto a ser segmentado é uma transcrição das falas dos participantes durante a reunião.
 %
 
-
-Banerjee~\cite{Banerjee2006} apresenta um segmentador, baseado no  \textit{TextTiling}, ao contexto das reuniões com múltiplos participantes. Utiliza como \textit{corpus} a transcrição da fala dos participantes durante a reunião a qual foi conduzida por um mediador que propunha os tópicos e anotava o tempo onde os participantes mudavam o assunto. 
+%%%%%%%%%%
+% A texttiling based apporach to topic boundary detection in meetings
+%%%%%%%%%%
+Nesse sentido, é apresentado um segmentador baseado no  \textit{TextTiling}, o qual aplicou em reuniões com múltiplos participantes. Utiliza como \textit{corpus} a transcrição da fala dos participantes durante a reunião a qual foi conduzida por um mediador que propunha os tópicos e anotava o tempo onde os participantes mudavam o assunto~\cite{Banerjee2006}. 
+%%%%%%%%%%
+% Discourse segmentation of multi-party conversation
+%%%%%%%%%%
+Os autores apoiaram-se em trabalhos anteriores que consideram elementos da fala como pausas, trocas de falantes e entonação para encontrar melhores segmentos~\cite{Galley2003}.
 % outros exemplos são
 
-Ainda no contexto de reuniões com múltiplos participantes, alguns elementos da fala são utilizados para encontrar melhores segmentos.
-%
-Bokaei~\cite{Bokaei2015}, traz um trabalho voltado à segmentação funcional do texto, que foca na atividade dos participantes, as quais categoriza, por exemplo em diálogos, discussões e monólogos e sugere que alguns comportamentos podem dar pistas de mudança de tópico, como quando um participante toma a palavra por um tempo prolongado. 
-Galley~\cite{Galley2003} por sua vez considera de elementos como pausas, trocas de falantes e entonação para encontrar melhores segmentos.
 
-Kern aponta em sua pesquisa~\cite{Kern2009} que algoritmos que apresentam melhor performance o fazem ao custo de maior complexidade computacional, que se deve à construção de matrizes de similaridade entre todas as sentenças como em~\cite{Choi2000}. Ele apresenta uma abordagem que otimiza o cálculo ao computar as médias das similaridades de cada bloco, a qual chama de \textit{inner similarity} e em seguida usa esses valores para calcular as medias das similaridades entre todos os blocos a qual chama de \textit{outter similarity}. Dessa forma não é criada uma matriz que contem as similaridades de todas as sentenças, mas apenas daquelas mais próximas. Os autores reportam uma eficiência superior e uma eficácia comparável aos algoritmos mais complexos.
+%%%%%%%%%%
+% Diferenças
+%%%%%%%%%%
+
+
+O estudo da análise do discurso em reuniões, como mostrado acima, difere desse trabalho em algumas características típicas de um estilo formal como o texto sucinto, onde o autor se limita a relatar apenas o essencial de uma discussão e omite detalhes da discussão, o que resulta em segmentos mais curtos os quais desfavorecem algoritmos baseados em coesão léxica~\cite{Choi2000}. Mais detalhes referentes às diferenças entre as atas e os textos analisados na maioria dos trabalhos são mostrados na Subseção~\ref{subsec:conjunto-de-documentos}.
+
+
+%%%%%%%%%%
+% Linear discourse segmentation of multi-party meetings bases ond local and global information
+%%%%%%%%%%
+Ainda no contexto de reuniões com múltiplos participantes, alguns outros aspectos podem ser analisados, como a participação dos presentes na reunião. Nesse sentido estuda-se a contribuição das pessoas pode ser categorizada  por exemplo, em diálogos, discussões e monólogos e sugere-se que alguns comportamentos podem dar pistas de mudança de tópico, como quando um participante toma a palavra por um tempo prolongado~\cite{Bokaei2015}. 
+
+%
+
+
+
+%%%%%%%%%%
+% Efficient linear text segmentation based on information retrieval techniques
+%%%%%%%%%%
+Algoritmos que apresentam melhor performance o fazem ao custo de maior complexidade computacional, que se deve, muitas vezes, à construção de matrizes de similaridade entre todas as sentenças como em~\cite{Choi2000}. É apresentada uma abordagem que otimiza o cálculo ao computar as médias das similaridades de cada bloco, a qual chama de \textit{inner similarity} e em seguida usa esses valores para calcular as medias das similaridades entre todos os blocos a qual chama de \textit{outter similarity}. Dessa forma não é criada uma matriz que contem as similaridades de todas as sentenças, mas apenas daquelas mais próximas. Os autores reportam uma eficiência superior e uma eficácia comparável aos algoritmos mais complexos~\cite{Kern2009}.
 % usa vetores contendo o peso da palavra ao inves da frequencia.
 
 
+
+
+
+
+
+
+%como em~\cite{CHAIBI2014} onde os autores adaptam os algoritmos \textit{TextTiling} e \textit{C99} ao idioma árabe. Eles apresentam os resultados de experimentos no qual avaliaram a performance em notícias de diferentes países em árabe. As adaptações consistem basicamente na etapa de pré-processamento e apontam que diferenças no dialeto de cada pais devem ser consideradas no processo de segmentação e que a adaptação depende da escolha de um \textit{stemmer} adequado.
+
+%Galley~\cite{Galley2003} por sua vez considera de elementos como pausas, trocas de falantes e entonação para encontrar melhores segmentos.
+
+%Bokaei~\cite{Bokaei2015}, traz um trabalho voltado à segmentação funcional do texto, que foca na atividade dos participantes, as quais categoriza, por exemplo em diálogos, discussões e monólogos e sugere que alguns comportamentos podem dar pistas de mudança de tópico, como quando um participante toma a palavra por um tempo prolongado. 
