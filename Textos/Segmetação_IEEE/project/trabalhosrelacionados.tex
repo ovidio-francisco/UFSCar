@@ -17,7 +17,7 @@ pais devem ser consideradas no processo de segmentação e que a adaptação dep
 
 Semelhante a esse trabalho, a principal motivação dos autores é adaptar os algoritmos mais influentes ao idioma árabe, devido a falta de trabalhos consistentes nesse sentido. 
 
-Por outro lado, na avaliação, eles usam como \textit{corpus} a concatenação de textos extraídos de notícias de diferentes países como Tunísia, Egito e Algeria, que tratam de assuntos distintos como política, esporte, cultura, história, tecnologia e artes, e que trazem particularidades nos estilos de escrita e até diferenças entre dialetos locais. Ocorre que essas características favorecem o processo de segmentação uma vez que os documentos produzidos pela concatenação contém tópicos obtidos de domínios distintos que compartilham pouco vocabulário. Por outro lado, essas características não estão presentes no contexto das atas, onde um documento é redigido por um mesmo autor, e todos tópicos foram produzidos no mesmo domínio, e dessa forma, têm estilo de escrita e vocabulário similares.
+Por outro lado, na avaliação, os autores utilizaram como \textit{corpus} a concatenação de textos extraídos de notícias de diferentes países como Tunísia, Egito e Algeria, que tratam de assuntos distintos como política, esporte, cultura, história, tecnologia e artes, e que trazem particularidades nos estilos de escrita e até diferenças entre dialetos locais. Ocorre que essas características favorecem o processo de segmentação uma vez que os documentos produzidos pela concatenação contém tópicos obtidos de domínios distintos que compartilham pouco vocabulário. Por outro lado, essas características não estão presentes no contexto das atas, onde um documento é redigido por um mesmo autor, e todos tópicos foram produzidos no mesmo domínio, e dessa forma, têm estilo de escrita e vocabulário similares.
 
 
 %%%%%%%%%%
@@ -49,7 +49,7 @@ O estudo da análise do discurso em reuniões, como mostrado acima, difere desse
 %%%%%%%%%%
 % Linear discourse segmentation of multi-party meetings bases ond local and global information
 %%%%%%%%%%
-Ainda no contexto de reuniões com múltiplos participantes temos a segmentação funcional dos discursos, onde, onde outros aspectos podem ser analisados, como a participação dos presentes na reunião. Nesse sentido estuda-se a contribuição das pessoas as quais podem ser categorizadas,  por exemplo, em diálogos, discussões e monólogos. Sugere-se que alguns comportamentos podem dar pistas de mudança de discurso, como quando um participante toma a palavra por um tempo prolongado~\cite{Bokaei2015}. 
+Ainda no contexto de reuniões com múltiplos participantes temos a segmentação funcional dos discursos, onde outros aspectos podem ser analisados, como a participação dos presentes na reunião. Nesse sentido, estuda-se a contribuição das pessoas as quais podem ser categorizadas,  por exemplo, em diálogos, discussões e monólogos. Sugere-se que alguns comportamentos podem dar pistas de mudança de discurso, como quando um participante toma a palavra por um tempo prolongado~\cite{Bokaei2015}. 
 
 Tais aspectos não se aplicam ao contexto das atas, onde o estilo de escrita em forma de narrativa, prefere poupar o leitor de diálogos secundários durante transições de tópicos.
 
@@ -58,7 +58,7 @@ Tais aspectos não se aplicam ao contexto das atas, onde o estilo de escrita em 
 %%%%%%%%%%
 % Palavras Pista
 %%%%%%%%%%
-A fim de aprimorar a detecção de limites entre segmentos, a presença de \textit{pistas} podem ser indicativos de finais ou inícios de sentença, uma vez que alguns elementos são frequentes na transição de tópicos. Essas \textit{pistas} podem ser palavras como \textit{``Ok''}, \textit{``continuando''}, frases como \textit{``Boa noite''}, \textit{``Dando prosseguimento''} ou pausas prolongadas. Essas palavras podem ser detectadas por meio de algoritmos de aprendizado de máquina ou anotadas manualmente
+A fim de aprimorar a detecção de limites entre segmentos, a presença de \textit{pistas} pode ser um indicativo de finais ou inícios de segmentos, uma vez que alguns elementos são frequentes na transição de tópicos. Essas \textit{pistas} podem ser palavras como \textit{``Ok''}, \textit{``continuando''}, frases como \textit{``Boa noite''}, \textit{``Dando prosseguimento''} ou pausas prolongadas. Essas palavras podem ser detectadas por meio de algoritmos de aprendizado de máquina ou anotadas manualmente
 \cite{Hsueh2006} % Faz combinações com Lexical e Cue LC-CUE
 \cite{Galley2003} 
 %\cite{Boguraev2000}%\textit{por outro lado}
