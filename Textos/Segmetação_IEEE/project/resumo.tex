@@ -4,13 +4,34 @@
 A tarefa de segmentação topical consiste em dividir um texto em porções com significado relativamente independente, de maneira que cada segmento contenha um assunto ou tópico. 
 %
 %
-%A segmentação de atas de reuniões é útil na organização desses documentos e para facilitar o seu acesso.
-%
-%
+%%%%%%%%%%
+% Peculiaridades das atas
+%%%%%%%%%%
+As atas de reunião frequentemente são escritas em parágrafo único  e não apresentam marcações de estrutura como capítulos ou seções. Além disso, possuem estilo de redação mais formal e sucinto, o que desfavorece técnicas baseadas em frequência de palavras.
+%%%%%%%%%%
+% Utilidade
+%%%%%%%%%%%
+A segmentação desses documentos é facilita a sua organização e acesso, oferecendo vantagens no processo de recuperação de informação em relação à busca por palavras chave pois é possível retornar porções de texto menores que contenham tópicos relevantes à intenção do usuário, ao invés de destacar as palavras chave em um texto longo que pode conter informações menos pertinentes. Além disso, pode aprimorar a navegação pelo documento, sobre tudo por usuários com deficiência visual.
+% Sumarização  ??????
+% Etapa de pre-processamento ???
+%apresenta vantagens em relação a organização manual 
+%%%%%%%%%%
+% Objetivo: Adaptar algs e encontar modelo
+%%%%%%%%%%%
 Este artigo se concentra nos principais algoritmos da literatura adaptando-os ao contexto das atas de reunião em português, bem como encontrar um modelo que ofereça segmentos coesos e contribua para aprimorar sistemas de recuperação de informação para que respondam melhor à buscas do usuário.
+%%%%%%%%%%
+% Modelo melhor avaliado
+%%%%%%%%%%
+Para a avaliação, um conjunto de atas  do departamento de pós-graduação da UFSCar-Sorocaba\footnote{\urlatas} foi manualmente segmentado por participantes das reuniões, então comparou-se as divisões manuais com as geradas automaticamente a fim de encontrar um método que melhor retorne segmentos coesos de atas de reunião. Ao final, chegou-se a um modelo capaz de segmentar as atas com eficiência similar à trabalhos anteriores, entregando segmentos com significado relativamente independente do documento. 
 %
 %
-Para a avaliação, um conjunto de atas  do departamento de pós-graduação da UFSCar-Sorocaba\footnote{\urlatas} foi manualmente segmentado por participantes das reuniões, então comparou-se as divisões manuais com as geradas automaticamente. Os testes registraram precisão de 0.7106, revocação de 0.8516, as medidas P$_k$ e \textit{WindowDiff} mostram respectivamente 0.1163 e 0.3800 de dissimilaridade.
+
+
+% se levado em conta a peculiaridade desses documentos.
+
+
+
+%Os testes registraram precisão de 0.7106, revocação de 0.8516, as medidas P$_k$ e \textit{WindowDiff} mostram respectivamente 0.1163 e 0.3800 de dissimilaridade.
 
 
 

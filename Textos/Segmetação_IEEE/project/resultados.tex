@@ -16,14 +16,18 @@ As implementações dos algoritmos permitem ao usuário a configuração de seus
 O \textit{TextTiling} permite ajustarmos dois parâmetros, sendo, o tamanho da janela (distância entre a primeira e a última sentença) para o qual atribuiu-se os valores 20, 40 e 60. Para o segundo parâmetro, o passo (distância que a janela desliza), atribuiu-se os valores 3, 6, 9 e 12. Gerando ao final 20 modelos.
 %
 
-O \textit{C99} permite ajustarmos três parâmetros, sendo, a quantidade segmentos desejados, o qual é calculado como uma proporção dos candidatos a limite. Para isso atribuiu-se as proporções de 0,2 a 1,0 em intervalos de 0,2 O segundo parâmetro, o tamanho da máscara utilizada para gerar a matriz de ranking, atribuiu-se os valores 9 e 11. Permite ainda, definirmos se as sentenças serão representados por vetores contendo a frequência ou o peso de cada termo, onde ambas as representações foram utilizadas. Gerando ao final 20 modelos.
+O \textit{C99} permite ajustarmos três parâmetros, sendo, a quantidade segmentos desejados, o qual é calculado como uma proporção dos candidatos a limite. Para isso atribuiu-se as proporções {0,2; 0,4; 0,6; 0,8; 1,0}. O segundo parâmetro, o tamanho da máscara utilizada para gerar a matriz de ranking, atribuiu-se os valores 9 e 11. Permite ainda, definirmos se as sentenças serão representados por vetores contendo a frequência ou o peso de cada termo, onde ambas as representações foram utilizadas.
+%
+ Considerando todos os parâmetros, foram gerados 20 modelos para o algoritmo C99.% By Rafael 
 
 
 
 %%%%%%%%%%
 % Cálculo das medidas para cada modelo
 %%%%%%%%%%
-Pela comparação dos resultados com a segmentação fornecida pelos especialistas, calculou-se para cada modelo as medidas tradicionais acurácia, precisão, revocação, F-medida. Além dessas, computou-se também as métricas mais aplicadas à segmentação textual P$_k$ e \textit{WindowDiff}.
+
+% --> Isso já foi falado no texto
+%Pela comparação dos resultados com a segmentação fornecida pelos especialistas, calculou-se para cada modelo as medidas tradicionais acurácia, precisão, revocação, F-medida. Além dessas, computou-se também as métricas mais aplicadas à segmentação textual P$_k$ e \textit{WindowDiff}.
 
 
 
@@ -44,7 +48,7 @@ Com isso foi possível, pela análise do diagrama de diferença crítica, verifi
 em relação aos demais. 
 
 
-A tabela~\ref{tab:mediasC99} mostra os dados obtidos com o \textit{C99}, onde \texttt{S} é a proporção de segmentos em relação a quantidade de candidatos, \texttt{M} é o tamanho da máscara utilizada para criar a matriz de \textit{ranking} e \texttt{W} indica se os segmentos são representados por vetores contendo a frequência ou um peso das palavras. 
+A Tabela~\ref{tab:mediasC99} mostra os dados obtidos com o \textit{C99}, onde \texttt{S} é a proporção de segmentos em relação a quantidade de candidatos, \texttt{M} é o tamanho da máscara utilizada para criar a matriz de \textit{ranking} e \texttt{W} indica se os segmentos são representados por vetores contendo a frequência ou um peso das palavras. 
 
 
 
@@ -93,7 +97,7 @@ A tabelas~\ref{tab:mediasTextTiling} mostra os dados obtidos com o \textit{TextT
 		
 	\end{tabular}
 	
-	\caption{Médias das medidas obtidas com o \textit{TextTiling}}
+	\caption{Médias das medidas obtidas com o \textit{TextTiling}.}
 	\label{tab:mediasTextTiling}
 \end{table}
 
@@ -120,7 +124,7 @@ Uma vez sabendo quais valores de parâmetros melhor configuram um algoritmo para
 	
 	\end{tabular}
 
-	\caption{Melhores modelos para cada medida segundo diagramas de diferença crítica}
+	\caption{Melhores modelos para cada medida segundo diagramas de diferença crítica.}
 	\label{tab:melhoresmodelos}	
 	
 \end{table}

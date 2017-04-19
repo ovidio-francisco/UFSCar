@@ -1,33 +1,34 @@
 \section{Referencial Teórico}
-	\label{referencial}
+	\label{sec:referencial}
 	
 %%%%%%%%%%
 % Retomada das Definições
 %%%%%%%%%%	
 
 Um documento textual, sobre tudo quando longos, são frequentemente um sucessão de tópicos. 
-
 %%%%%%%%%%
 % Segmentação
 %%%%%%%%%%
-Segmentação topical ou segmentação linear é a tarefa de dividir um texto em partes mantendo nas partes o texto de um tópico com seu significado completo.
+A segmentação textual ou segmentação topical é a tarefa de dividir um texto mantendo em cada parte um tópico com seu significado completo.
 	
 %%%%%%%%%%
 % Segmento
 %%%%%%%%%%	
-Um segmento pode ser visto como uma sucessão de unidades de informação que compartilham um tópico e podem ser, por exemplo, palavras, sentenças ou parágrafos. Essas unidades são a menor parte de um segmento e portanto consideradas candidatas a limite entre segmentos, bem como é necessário mensurar suas similaridades.
+Um segmento pode ser visto como uma sucessão de unidades de informação que compartilham um tópico e podem ser, por exemplo, palavras, sentenças ou parágrafos. Essas unidades são a menor parte de um segmento e portanto consideradas candidatas a limite entre segmentos.
 
 %%%%%%%%%%
 % Coesão léxica como **presuposto básico**
 %%%%%%%%%%
-Trabalhos anteriores apontam que a coesão léxica é um forte indicador da estrutura do texto, isto é, a mudança de tópicos é acompanhada de uma proporcional mudança de vocabulário. A partir disso, vários algoritmos foram propostos baseados na ideia de que um segmento pode ser identificado e delimitado pela análise das palavras que o compõe~\cite{Galley2003}~\cite{Boguraev2000}.
+Trabalhos anteriores apoiam na ideia de que a mudança de tópicos em um texto é acompanhada de uma proporcional mudança de vocabulário, essa ideia, chamada de coesão léxica, sugere que a distribuição das palavras é um forte indicador da estrutura do texto. A partir disso, vários algoritmos foram propostos baseados na ideia de que um segmento pode ser identificado e delimitado pela análise das palavras que o compõe~\cite{Galley2003}~\cite{Boguraev2000}.
 
 
+
+%, bem como é necessário mensurar suas similaridades. { asunidades de medida}
 
 %%%%%%%%%%
 % Porque cosseno
 %%%%%%%%%%
-Uma vez que a coesão léxica é pressuposto básico da maioria dos algoritmos, o cálculo da similaridade entre textos e fundamental. Uma medida de similidade frequentemente utilizada é o cosseno, o qual pode ser vista na Equação~\ref{equ:cosine}, sendo $f_{x,j}$ a frequência da palavra $j$ na sentença $x$ e $f_{y,j}$ sendo a frequência da palavra $j$ na sentença $y$.
+Uma vez que a coesão léxica é pressuposto básico da maioria dos algoritmos, o cálculo da similaridade entre unidades de informação (comumente sentenças) é fundamental. Uma medida de similidade frequentemente utilizada é o cosseno, a qual pode ser vista na Equação~\ref{equ:cosine}, sendo $f_{x,j}$ a frequência da palavra $j$ na sentença $x$ e $f_{y,j}$ sendo a frequência da palavra $j$ na sentença $y$.
 
 
 \begin{equation}
@@ -107,6 +108,9 @@ Como melhoramento, Choi apresenta posteriormente uma versão em seu trabalho ~\c
 
 
 
+
+
+%apontam que a coesão léxica é um forte indicador da estrutura do texto, isto é, a mudança de tópicos é acompanhada de uma proporcional mudança de vocabulário. A partir disso, vários algoritmos foram propostos baseados na ideia de que um segmento pode ser identificado e delimitado pela análise das palavras que o compõe~\cite{Galley2003}~\cite{Boguraev2000}.
 
 
 %Finalmente, os limites são identificados sempre que a similaridade entre blocos adjacentes entre cada candidato ultrapassa um determinado \textit{threshold}.

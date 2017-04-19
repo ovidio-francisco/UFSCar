@@ -9,13 +9,14 @@
 Reuniões são tarefas presentes em atividades corporativas, ambientes de gestão e nas organizações de um modo geral. O conteúdo das reuniões são frequentemente registradas em texto na forma de atas de reunião para fins de documentação e posterior consulta. A organização e consulta manual desses arquivos torna-se uma tarefa custosa, especialmente considerando o seu crescimento em uma instituição. 
 
 %%%%%%%%%%
-% Atas são documentos não estruturados
+% Atas são documentos não estruturados e
+% diferencial do sistema
 %%%%%%%%%%
-As atas são documentos textuais e portanto constituem dados não estruturados. Assim, um sistema que automaticamente responde a consultas do usuário ao conteúdo das atas é um desafio que envolve a sua compreensão~\cite{Bokaei2015}. 
+As atas são documentos textuais e portanto constituem dados não estruturados. Assim, um sistema que responde a consultas do usuário ao conteúdo das atas, retornando trechos de textos relevantes à sua intenção, é um desafio que envolve a sua compreensão~\cite{Bokaei2015}. 
 %%%%%%%%%%
 % Segmentar e extrair tópicos
 %%%%%%%%%%
-Uma vez que a ata registra a sucessão de assuntos discutidos na reunião, tal sistema tem duas principais tarefas: descobrir quando há uma mudança de assunto, e quais são esses assuntos~\cite{Banerjee2006}. Este trabalho tem foco principal na primeira tarefa, a segmentação topical automática.
+Uma vez que a ata registra a sucessão de assuntos discutidos na reunião, é interessante um sistema que aponte trechos de uma ata que tratam de um assunto específico. Tal sistema tem duas principais tarefas: descobrir quando há uma mudança de assunto e quais são esses assuntos~\cite{Banerjee2006}. Este trabalho tem foco principal na primeira tarefa, a segmentação textual automática. 
 
 
 
@@ -47,10 +48,32 @@ A sumarização de texto pode ser aprimorada ao processar segmentos separados po
 Frequentemente atas de reunião têm a característica de apresentar um texto com poucas quebras de parágrafo e sem marcações de estrutura, como capítulos, seções ou quaisquer indicações sobre o tema do texto. O estilo de escrita compacto e formal, desfavorece o processamento tradicional.
 
 %%%%%%%%%%
+% O que vem sendo feito e ...
+%%%%%%%%%%
+O interesse por técnicas de segmentação textual acompanha o crescimento da produção de conteúdos, sendo estudada em aplicações voltadas principalmente a identificar divisões em
+textos longos como notícias e documentos da web, os quais são frequentemente concatenação de textos. 
+
+% TODO citar os projetos TDT e os bachmarks que outros usaram
+
+%%%%%%%%%%
+% ... as lacunas
+%%%%%%%%%%
+Há também um maior foco ao idioma inglês, presente na maioria dos artigos publicados. Embora haja abordagens voltadas para outros idiomas, falta ainda uma maior atenção na literatura sobre língua portuguesa e a documentos características próprias como as atas de reunião.
+
+%%%%%%%%%%
 % As Atas
 %%%%%%%%%%
 Assim, esse trabalho trata da adaptação e avaliação de algoritmos tradicionais ao contexto de documentos em português do Brasil, com ênfase especial nas atas de reuniões.
 
+O restante deste artigo está dividido da seguinte forma. Na Seção~\ref{sec:referencial} o processo de segmentação textual é melhor descrito, bem como os principais algoritmos da literatura. Na Seção~\ref{sec:trabalhos} são apresentados trabalhos recentes que desenvolveram as técnicas existentes em contextos específicos. Na Seção~\ref{sec:proposta} é apresentada a proposta desse trabalho voltada às atas de reunião. Na Seção~\ref{sec:avaliacao-experimental} é detalhado a avaliação dos experimentos e seus resultados reportados na Seção~\ref{sec:resultados}. Por fim, na Seção~\ref{sec:conclusao} são apresentadas as considerações finais e trabalhos futuros.
+
+
+
+
+
+
+
+%O restante deste artigo está dividido da seguinte forma. Na Seção 2 é apresentado XYZ. Na Seção 3, são apresentados ABC.... Por fim, Na Seção Z são apresentadas as considerações finais e os trabalhos futuros.
 
 %As atas, como frequentemente são, apresentam-se como uma sucessão de tópicos. Assim, o objetivo desse trabalho é identificar, automaticamente, onde há a mudança de um tópico para seus adjacentes.
 
