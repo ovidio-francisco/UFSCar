@@ -2,12 +2,15 @@
 	\label{sec:trabalhos}
 
 %%%%%%%%%%
-% Retomada da proposta
+% Propostas dos trabalhos
 %%%%%%%%%%
-%A proposta é adaptar os algoritmos tradicionais à segmentação de atas de reunião em português, bem como encontrar um modelo que melhor se ajuste a esse contexto. 
 
-%Semelhante a este trabalho, outras abordagens foram propostas como mostradas a seguir.
+Semelhante a este trabalho, outras abordagens foram propostas no sentido de propor segmentadores para outros idiomas além do inglês bem como alvaliá-los em contextos específicos como discursos e conversas em reuniões.
 
+%%%%%%%%%%
+% Diferenças de entre Línguas
+%%%%%%%%%%
+Diferenças de performance podem ser vistas no mesmo algoritmo quando aplicando em documentos de diferentes idiomas, se aplicado ao inglês, apresenta um taxa de erro significativamente menor se apliacado a outro como o alemão e o espanhol~\cite{Kern2009}.
 
 
 %%%%%%%%%%
@@ -15,8 +18,7 @@
 %%%%%%%%%%
 A fim de adaptar os algoritmos \textit{TextTiling} e \textit{C99} ao idioma árabe de vários países, foram propostos ajustes na etapa de preprocessamento onde verificou-se que diferenças diferenças no dialeto de cada pais devem ser consideradas no processo de segmentação e que a adaptação depende da escolha de um \textit{stemmer} adequado à cada dialeto~\cite{CHAIBI2014}.
 
-
-Semelhante a esse trabalho, a principal motivação dos autores é adaptar os algoritmos mais influentes ao idioma árabe, devido a falta de trabalhos consistentes nesse sentido. 
+%Semelhante a esse trabalho, a principal motivação dos autores é adaptar os algoritmos mais influentes ao idioma árabe, devido a falta de trabalhos consistentes nesse sentido. 
 
 % Por outro lado, 
 Na avaliação, os autores utilizaram como \textit{corpus} a concatenação de textos extraídos de notícias de diferentes países como Tunísia, Egito e Algeria, que tratam de assuntos distintos como política, esporte, cultura, história, tecnologia e artes, e que trazem particularidades nos estilos de escrita e até diferenças entre dialetos locais. %Ocorre que essas características favorecem o processo de segmentação uma vez que os documentos produzidos pela concatenação contém tópicos obtidos de domínios distintos que compartilham pouco vocabulário. Por outro lado, essas características não estão presentes no contexto das atas, onde um documento é redigido por um mesmo autor, e todos tópicos foram produzidos no mesmo domínio, e dessa forma, têm estilo de escrita e vocabulário similares.
