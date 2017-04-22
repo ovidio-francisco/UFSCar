@@ -20,15 +20,15 @@
   - [ ] Trocar o subtitulo por Fundamentos?
   - [x] Explicar coesão lexica antes de dizer que ela é um forte indicador
   - [x] Explicar que não é só uma queda considerável e sim uma analise dos picos (tem um texto que explica isso --> 'depth valeys')
-  - [ ] Explicar o que é máscara de largura
-  - [ ] Explicar melhor a figura dos rankings
+  - [x] Explicar o que é máscara de largura
+  - [x] Explicar melhor a figura dos rankings
   - [ ] Explicar cada elemento da função r
   - [ ] Explicar melhor o 22% para 10%
   - [ ] Explicar o que o LSA faz no C99
 
 ## Trabalhos Relacionados
   - [ ] Não falar da proposta do artigo
-  - [ ] Colocar todos os verbos no passado
+  - [x] Colocar todos os verbos no passado
   - [ ] No trabalho dos árabes, tirar a comparação com meu trabalho?
   - [ ] Reescrever o Trabalho [1], partindo das utilização das tecnicas da fala
   - [ ] Desconectar [9] de [1] - Para não confudir transcrição de audio com audio {IDEM para o [5]}
