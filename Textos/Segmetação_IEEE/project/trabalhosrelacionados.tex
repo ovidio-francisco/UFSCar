@@ -1,6 +1,10 @@
 \section{Trabalhos Relacionados}
 	\label{sec:trabalhos}
 
+
+
+
+
 %%%%%%%%%%
 % Propostas dos trabalhos
 %%%%%%%%%%
@@ -22,34 +26,6 @@ A fim de adaptar os algoritmos \textit{TextTiling} e \textit{C99} ao idioma ára
 
 % Por outro lado, 
 Na avaliação os autores utilizaram como \textit{corpus} a concatenação de textos extraídos de notícias de diferentes países como Tunísia, Egito e Algeria, que tratam de assuntos distintos como política, esporte, cultura, história, tecnologia e artes, e que trazem particularidades nos estilos de escrita e até diferenças entre dialetos locais. %Ocorre que essas características favorecem o processo de segmentação uma vez que os documentos produzidos pela concatenação contém tópicos obtidos de domínios distintos que compartilham pouco vocabulário. Por outro lado, essas características não estão presentes no contexto das atas, onde um documento é redigido por um mesmo autor, e todos tópicos foram produzidos no mesmo domínio, e dessa forma, têm estilo de escrita e vocabulário similares.
-
-
-%%%%%%%%%%
-% Os Corpus {Corporea}
-%%%%%%%%%%
-
-Muitos trabalhos utilizam a concatenação de textos na avaliação, os quais foram extraídos de coleções como \textit{Brow Corpus}\footnote{\urlbrowcorpus} e \textit{Reuters Corpora}\footnote{\urlreuterscorpus}
-
-utilizam como \textit{corpus} a concatenação de documentos, extraídos 
-%muitas vezes extraídos de notícias, como XYZ 
-%que utilizam TDT na avaliação de seus trabalhos. 	 
-
-
-
-
-
-Efficent Linear Text Segmentation ...
-	Brown
-	Reuters
-
-Discurse Segmentation fo Multi-party Conversation
-	Brown
-	ICSI Meeting corpus
-		http://www.ee.columbia.edu/~dpwe/pubs/icassp03-janin.pdf
-		http://www1.icsi.berkeley.edu/Speech/mr/
-		
-
-
 
 
 
@@ -109,6 +85,56 @@ Nesse sentido, foi apresentada uma abordagem que otimiza o processo ao computar 
 
 % 
 % usa vetores contendo o peso da palavra ao inves da frequencia.
+
+
+
+%%%%%%%%%%
+% Os Corpus {Corporea}
+%%%%%%%%%%
+
+Muitos trabalhos utilizam a concatenação de textos na avaliação, os quais foram extraídos de coleções documentos como 
+\textit{TDT}\footnote{\urltdt},
+\textit{WSJ}\footnote{\urlwsj},
+\textit{Brow}\footnote{\urlbrowcorpus} e 
+\textit{Reuters}\footnote{\urlreuterscorpus}. Nesses casos, tem-se facilmente os segmentos de referência onde cada limite de segmento separa os documentos originais.
+%
+%
+Outros avaliam seus trabalhos utilizando coleções de transcrições de áudios gravados durante conversas de reuniões entre pessoas como o \textit{ICSI}\footnote{\urlicsi} o \textit{CALO-MA}\footnote{\urlcaloproject}. Nesses casos, os segmentos de referência são dados por anotações feitas durante a reunião, onde registrou-se o tempo onde houve troca de assunto\cite{Tur2010}.
+
+
+%
+% Efficent Linear Text Segmentation ...    
+%	Brown   
+%	Reuters    
+%
+% Discurse Segmentation fo Multi-party Conversation   
+%	Brown    
+%	ICSI Meeting corpus   
+%		(Janin et al., 2003)
+%		http://www.ee.columbia.edu/~dpwe/pubs/icassp03-janin.pdf   
+%		ftp://ftp.icsi.berkeley.edu/pub/speech/papers/icassp03-janin.pdf
+%		http://www1.icsi.berkeley.edu/Speech/mr/    
+%		http://http.icsi.berkeley.edu/ftp/pub/speech/papers/nist2004-meeting-janin.pdf
+%		
+%	TDT   
+%		http://link.springer.com/chapter/10.1007%2F978-1-4615-0933-2_3     
+%		https://catalog.ldc.upenn.edu/LDC98T25    
+%
+% TextTiling Based Approach ... in Meetings
+%	CALO-MA
+%		THE CALO MEETING SPEECH RECOGNITION AND UNDERSTANDING SYSTEM
+%		The CALO meeting assistant system
+% 		https://www.sri.com/sites/default/files/publications/the_calo_meeting_speech_recognition_and_understanding_system.pdf
+%
+%
+%
+%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%	
+% SPEAKER SEGMENTATION AND CLUSTERING IN MEETINGS	
+%https://pdfs.semanticscholar.org/1ac5/fe1d2502dc04ebf1ed438a094dd9d798db59.pdf
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%		
+%
 
 
 

@@ -17,12 +17,6 @@ B.~K. Boguraev and M.~S. Neff.
 \newblock In {\em In Proceedings of Hawaii Int. Conf. on System Sciences
   (HICSS-33), Minitrack on Digital Documents Understanding, IEEE}, 2000.
 
-\bibitem{Boguraev2000b}
-B.~K. Boguraev and M.~S. Neff.
-\newblock Lexical cohesion, discourse segmentation and document summarization.
-\newblock In {\em In RIAO-2000, Content-Based Multimedia Information Access},
-  2000.
-
 \bibitem{Bokaei2015}
 M.~H. Bokaei, H.~Sameti, and Y.~Liu.
 \newblock Linear discourse segmentation of multi-party meetings based on local
@@ -89,6 +83,15 @@ J.~C. Reynar.
   Computational Linguistics on Computational Linguistics}, ACL '99, pages
   357--364, Stroudsburg, PA, USA, 1999. Association for Computational
   Linguistics.
+
+\bibitem{Tur2010}
+G.~Tur, A.~Stolcke, L.~Voss, S.~Peters, D.~Hakkani-T\"{u}r, J.~Dowding,
+  B.~Favre, R.~Fern\'{a}ndez, M.~Frampton, M.~Frandsen, C.~Frederickson,
+  M.~Graciarena, D.~Kintzing, K.~Leveque, S.~Mason, J.~Niekrasz, M.~Purver,
+  K.~Riedhammer, E.~Shriberg, J.~Tien, D.~Vergyri, and F.~Yang.
+\newblock The calo meeting assistant system.
+\newblock {\em Trans. Audio, Speech and Lang. Proc.}, 18(6):1601--1611, Aug.
+  2010.
 
 \bibitem{Hsueh2006}
 P.~yun Hsueh, J.~D. Moore, and S.~Renals.

@@ -3,48 +3,53 @@ Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: segmentacao.aux
 The style file: abbrv.bst
 Database file #1: bibs.bib
+Repeated entry---line 213 of file bibs.bib
+ : @inproceedings{Boguraev2000
+ :                            ,
+I'm skipping whatever remains of this entry
+Warning--I didn't find a database entry for "Boguraev2000b"
 Warning--empty booktitle in Banerjee2006
 Warning--empty booktitle in Kern2009
 Warning--empty school in Reynar1998
 You've used 15 entries,
             2118 wiz_defined-function locations,
-            610 strings with 6676 characters,
-and the built_in function-call counts, 5573 in all, are:
-= -- 570
-> -- 206
+            617 strings with 7091 characters,
+and the built_in function-call counts, 6276 in all, are:
+= -- 624
+> -- 306
 < -- 8
-+ -- 83
-- -- 66
-* -- 350
-:= -- 871
++ -- 124
+- -- 106
+* -- 448
+:= -- 1003
 add.period$ -- 53
 call.type$ -- 15
-change.case$ -- 77
+change.case$ -- 97
 chr.to.int$ -- 0
 cite$ -- 18
-duplicate$ -- 246
-empty$ -- 472
-format.name$ -- 66
-if$ -- 1233
+duplicate$ -- 243
+empty$ -- 473
+format.name$ -- 106
+if$ -- 1346
 int.to.chr$ -- 0
 int.to.str$ -- 15
 missing$ -- 14
 newline$ -- 82
 num.names$ -- 30
-pop$ -- 87
+pop$ -- 101
 preamble$ -- 1
-purify$ -- 63
+purify$ -- 83
 quote$ -- 0
-skip$ -- 184
+skip$ -- 183
 stack$ -- 0
-substring$ -- 362
-swap$ -- 75
+substring$ -- 394
+swap$ -- 74
 text.length$ -- 8
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 60
 warning$ -- 3
-while$ -- 55
+while$ -- 57
 width$ -- 17
-write$ -- 183
-(There were 3 warnings)
+write$ -- 184
+(There was 1 error message)
