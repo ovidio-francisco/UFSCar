@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.4.21)  22 APR 2017 09:41
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.4.21)  22 APR 2017 23:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -824,9 +824,24 @@ line 109.
 )
 (./project/trabalhosrelacionados.tex [2 <./images/exemplo-matrix-rank-noborder.
 jpg>]
-Underfull \hbox (badness 3333) in paragraph at lines 24--25
-[]\OT1/ptm/m/n/10 Na avalia[][]ao, os au-to-res uti-li-za-ram como \OT1/ptm/m/i
-t/10 cor-pus \OT1/ptm/m/n/10 a
+Underfull \hbox (badness 4132) in paragraph at lines 24--25
+[]\OT1/ptm/m/n/10 Na avalia[][]ao os au-to-res uti-li-za-ram como \OT1/ptm/m/it
+/10 cor-pus \OT1/ptm/m/n/10 a
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 45--50
+[]\OT1/ptm/m/n/10 Discurse Seg-men-ta-tion fo Multi-party
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 45--50
+\OT1/ptm/m/n/10 Con-ver-sa-tion Brown ICSI Me-e-ting cor-pus
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 45--50
+\OT1/ptm/m/n/10 http://www.ee.columbia.edu/ dpwe/pubs/icassp03-janin.pdf
  []
 
 ) (./project/adaptacaoasatas.tex
@@ -837,11 +852,14 @@ File: images/exemplo-preprocessamento-noborder.jpg Graphic file (type jpg)
 Package pdftex.def Info: images/exemplo-preprocessamento-noborder.jpg used on i
 nput line 42.
 (pdftex.def)             Requested size: 232.19843pt x 93.56506pt.
- [3 <./images/exemplo-preprocessamento-noborder.jpg>]
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[3]
 LaTeX Font Info:    Try loading font information for OT1+pcr on input line 118.
 
-
-(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1pcr.fd
+ (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 )
 LaTeX Font Info:    Try loading font information for OMS+pcr on input line 118.
@@ -853,7 +871,7 @@ File: omspcr.fd
 LaTeX Font Info:    Font shape `OMS/pcr/m/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 118.
 )
-(./project/avaliacao.tex [4]
+(./project/avaliacao.tex [4 <./images/exemplo-preprocessamento-noborder.jpg>]
 Underfull \hbox (badness 4279) in paragraph at lines 47--48
 []\OT1/ptm/m/n/10 A presen[]a de ru[]^^Pdos como cabe[]alhos, ro-dap[]es e
  []
@@ -870,18 +888,25 @@ File: images/windiffzoom.jpg Graphic file (type jpg)
 Package pdftex.def Info: images/windiffzoom.jpg used on input line 64.
 (pdftex.def)             Requested size: 242.52063pt x 61.00415pt.
 
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
 <images/windiff.jpg, id=29, 661.0296pt x 79.0152pt>
 File: images/windiff.jpg Graphic file (type jpg)
  <use images/windiff.jpg>
 Package pdftex.def Info: images/windiff.jpg used on input line 73.
 (pdftex.def)             Requested size: 242.52063pt x 28.9892pt.
 
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
 Underfull \hbox (badness 7116) in paragraph at lines 89--90
 []\OT1/ptm/m/n/10 WindowDiff. Pevz-ner [[]] aponta pro-ble-mas na
  []
 
 ) (./project/resultados.tex [5 <./images/windiffzoom.jpg> <./images/windiff.jpg
->]) (./project/conclusao.tex) (./segmentacao.bbl)
+>]) (./project/conclusao.tex) (./segmentacao.bbl [6])
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -893,7 +918,9 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[6] (./segmentacao.aux)
+[7
+
+] (./segmentacao.aux)
 
 LaTeX Warning: There were undefined references.
 
@@ -903,13 +930,13 @@ LaTeX Warning: There were undefined references.
 ### simple group (level 1) entered at line 1061 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 6279 strings out of 494884
- 96710 string characters out of 6179236
- 194299 words of memory out of 5000000
- 9457 multiletter control sequences out of 15000+600000
+ 6282 strings out of 494884
+ 96746 string characters out of 6179236
+ 193299 words of memory out of 5000000
+ 9460 multiletter control sequences out of 15000+600000
  43943 words of font info for 86 fonts, out of 8000000 for 9000
  41 hyphenation exceptions out of 8191
- 39i,16n,39p,894b,3097s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 39i,16n,39p,893b,3101s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texl
@@ -921,10 +948,10 @@ rw/courier/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb
 8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/s
 hare/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/te
 xmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on segmentacao.pdf (6 pages, 464179 bytes).
+Output written on segmentacao.pdf (7 pages, 465077 bytes).
 PDF statistics:
- 72 PDF objects out of 1000 (max. 8388607)
- 48 compressed objects within 1 object stream
+ 77 PDF objects out of 1000 (max. 8388607)
+ 52 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  21 words of extra memory for PDF output out of 10000 (max. 10000000)
 

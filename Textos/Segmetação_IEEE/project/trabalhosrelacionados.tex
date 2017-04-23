@@ -21,24 +21,51 @@ A fim de adaptar os algoritmos \textit{TextTiling} e \textit{C99} ao idioma ára
 %Semelhante a esse trabalho, a principal motivação dos autores é adaptar os algoritmos mais influentes ao idioma árabe, devido a falta de trabalhos consistentes nesse sentido. 
 
 % Por outro lado, 
-Na avaliação, os autores utilizaram como \textit{corpus} a concatenação de textos extraídos de notícias de diferentes países como Tunísia, Egito e Algeria, que tratam de assuntos distintos como política, esporte, cultura, história, tecnologia e artes, e que trazem particularidades nos estilos de escrita e até diferenças entre dialetos locais. %Ocorre que essas características favorecem o processo de segmentação uma vez que os documentos produzidos pela concatenação contém tópicos obtidos de domínios distintos que compartilham pouco vocabulário. Por outro lado, essas características não estão presentes no contexto das atas, onde um documento é redigido por um mesmo autor, e todos tópicos foram produzidos no mesmo domínio, e dessa forma, têm estilo de escrita e vocabulário similares.
+Na avaliação os autores utilizaram como \textit{corpus} a concatenação de textos extraídos de notícias de diferentes países como Tunísia, Egito e Algeria, que tratam de assuntos distintos como política, esporte, cultura, história, tecnologia e artes, e que trazem particularidades nos estilos de escrita e até diferenças entre dialetos locais. %Ocorre que essas características favorecem o processo de segmentação uma vez que os documentos produzidos pela concatenação contém tópicos obtidos de domínios distintos que compartilham pouco vocabulário. Por outro lado, essas características não estão presentes no contexto das atas, onde um documento é redigido por um mesmo autor, e todos tópicos foram produzidos no mesmo domínio, e dessa forma, têm estilo de escrita e vocabulário similares.
 
 
 %%%%%%%%%%
+% Os Corpus {Corporea}
 %%%%%%%%%%
 
+Muitos trabalhos utilizam a concatenação de textos na avaliação, os quais foram extraídos de coleções como \textit{Brow Corpus}\footnote{\urlbrowcorpus} e \textit{Reuters Corpora}\footnote{\urlreuterscorpus}
 
-É recorrente a aplicação de segmentadores à reuniões com múltiplos participantes onde se estuda os discursos extraídos de reuniões, ou seja, o texto a ser segmentado é uma transcrição das falas dos participantes durante a reunião.
+utilizam como \textit{corpus} a concatenação de documentos, extraídos 
+%muitas vezes extraídos de notícias, como XYZ 
+%que utilizam TDT na avaliação de seus trabalhos. 	 
+
+
+
+
+
+Efficent Linear Text Segmentation ...
+	Brown
+	Reuters
+
+Discurse Segmentation fo Multi-party Conversation
+	Brown
+	ICSI Meeting corpus
+		http://www.ee.columbia.edu/~dpwe/pubs/icassp03-janin.pdf
+		http://www1.icsi.berkeley.edu/Speech/mr/
+		
+
+
+
+
+
+
+
+Outra aplicação para essas técnicas é a segmentação de conversas em reuniões com múltiplos participantes onde se estuda os discursos extraídos, ou seja, o texto a ser segmentado é uma transcrição das falas dos participantes durante a reunião.
 %
 
 %%%%%%%%%%
 % A texttiling based apporach to topic boundary detection in meetings
 %%%%%%%%%%
-Nesse sentido, foi apresentado um segmentador baseado no  \textit{TextTiling}, que foi aplicado em reuniões com múltiplos participantes. Utiliza como \textit{corpus} a transcrição da fala dos participantes durante as reuniões que foram conduzidas por um mediador que propunha os tópicos e anotava o tempo onde os participantes mudavam o assunto~\cite{Banerjee2006}. 
+Nesse sentido, foi apresentado um segmentador baseado no  \textit{TextTiling}, que foi aplicado em reuniões com múltiplos participantes. Utiliza como \textit{corpus} a transcrição da fala dos participantes durante as reuniões que foram conduzidas por um mediador que propunha os tópicos e anotava o tempo onde os participantes mudavam de assunto~\cite{Banerjee2006}. 
 %%%%%%%%%%
 % Discourse segmentation of multi-party conversation
 %%%%%%%%%%
-Os autores também se apoiaram em trabalhos anteriores que consideram elementos da fala como pausas, trocas de falantes e entonação para encontrar melhores segmentos~\cite{Galley2003}.
+Os autores publicaram trabalhos anteriores que consideram elementos da fala como pausas, trocas de falantes e entonação para encontrar melhores segmentos~\cite{Galley2003}.
 % outros exemplos são
 
 
