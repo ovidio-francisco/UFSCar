@@ -17,7 +17,7 @@
 
 
 ## 1 Introdução
-  * Descrição das atas
+* Descrição das atas
   * Descrição da tarefa de segmentação
   * Utilidade da segmentação (domínios onde é aplicada)
   * Utilidade da segmentação (Vantagens da utilização para esses domínios)
@@ -27,8 +27,8 @@
 
 ## 2 Trabalhos Relacionados
 
-  * Ideia básica dos algorítmos (Coesão léxica ) como **presuposto básico**
-  * Similaridade e Cosine
+* Ideia básica dos algorítmos (Coesão léxica ) como **presuposto básico**
+* Similaridade e Cosine
 
   - TextTiling
 

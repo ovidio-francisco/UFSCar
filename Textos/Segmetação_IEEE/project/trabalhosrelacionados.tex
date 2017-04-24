@@ -2,9 +2,6 @@
 	\label{sec:trabalhos}
 
 
-
-
-
 %%%%%%%%%%
 % Propostas dos trabalhos
 %%%%%%%%%%
@@ -14,21 +11,24 @@ Semelhante a este trabalho, outras abordagens foram propostas no sentido de prop
 %%%%%%%%%%
 % Diferenças de entre Línguas
 %%%%%%%%%%
-Diferenças de performance podem ser vistas no mesmo algoritmo quando aplicando em documentos de diferentes idiomas, se aplicado ao inglês, apresenta um taxa de erro significativamente menor se apliacado a outro como o alemão e o espanhol~\cite{Kern2009}.
+Diferenças de performance podem ser vistas no mesmo algoritmo quando aplicando em documentos de diferentes idiomas. Se aplicado ao inglês, apresenta um taxa de erro significativamente menor do que quando apliacado a outro idioma como o alemão e o espanhol~\cite{Kern2009}.
 
 
 %%%%%%%%%%
 % Topic segmentation for textual document written in arabic language
 %%%%%%%%%%
-A fim de adaptar os algoritmos \textit{TextTiling} e \textit{C99} ao idioma árabe de vários países, foram propostos ajustes na etapa de preprocessamento onde verificou-se que diferenças diferenças no dialeto de cada pais devem ser consideradas no processo de segmentação e que a adaptação depende da escolha de um \textit{stemmer} adequado à cada dialeto~\cite{CHAIBI2014}.
+A fim de adaptar os algoritmos \textit{TextTiling} e \textit{C99} ao idioma árabe, foram propostos ajustes na etapa de preprocessamento onde verificou-se que diferenças no dialeto de cada pais devem ser consideradas no processo de segmentação e que a adaptação depende da escolha de um \textit{stemmer} adequado à cada dialeto~\cite{CHAIBI2014}.
 
 %Semelhante a esse trabalho, a principal motivação dos autores é adaptar os algoritmos mais influentes ao idioma árabe, devido a falta de trabalhos consistentes nesse sentido. 
 
 % Por outro lado, 
-Na avaliação os autores utilizaram como \textit{corpus} a concatenação de textos extraídos de notícias de diferentes países como Tunísia, Egito e Algeria, que tratam de assuntos distintos como política, esporte, cultura, história, tecnologia e artes, e que trazem particularidades nos estilos de escrita e até diferenças entre dialetos locais. %Ocorre que essas características favorecem o processo de segmentação uma vez que os documentos produzidos pela concatenação contém tópicos obtidos de domínios distintos que compartilham pouco vocabulário. Por outro lado, essas características não estão presentes no contexto das atas, onde um documento é redigido por um mesmo autor, e todos tópicos foram produzidos no mesmo domínio, e dessa forma, têm estilo de escrita e vocabulário similares.
+Na avaliação os autores utilizaram como \textit{corpus} a concatenação de textos extraídos de notícias de diferentes países como Tunísia, Egito e Algeria, que tratam de assuntos distintos como política, esporte, cultura, história, tecnologia e artes, e que trazem particularidades nos estilos de escrita e até diferenças entre dialetos locais. 
 
 
-
+%%%%%%%%%%
+% A concatenação de textos favorece a segmentação
+%%%%%%%%%%
+%Ocorre que essas características favorecem o processo de segmentação uma vez que os documentos produzidos pela concatenação contém tópicos obtidos de domínios distintos que compartilham pouco vocabulário. Por outro lado, essas características não estão presentes no contexto das atas, onde um documento é redigido por um mesmo autor, e todos tópicos foram produzidos no mesmo domínio, e dessa forma, têm estilo de escrita e vocabulário similares.
 
 
 Outra aplicação para essas técnicas é a segmentação de conversas em reuniões com múltiplos participantes onde se estuda os discursos extraídos, ou seja, o texto a ser segmentado é uma transcrição das falas dos participantes durante a reunião.
@@ -37,20 +37,19 @@ Outra aplicação para essas técnicas é a segmentação de conversas em reuni�
 %%%%%%%%%%
 % A texttiling based apporach to topic boundary detection in meetings
 %%%%%%%%%%
-Nesse sentido, foi apresentado um segmentador baseado no  \textit{TextTiling}, que foi aplicado em reuniões com múltiplos participantes. Utiliza como \textit{corpus} a transcrição da fala dos participantes durante as reuniões que foram conduzidas por um mediador que propunha os tópicos e anotava o tempo onde os participantes mudavam de assunto~\cite{Banerjee2006}. 
+Nesse sentido, como parte do projeto \textit{CALO-MA}\footnote{\urlcaloproject},foi apresentado um segmentador baseado no  \textit{TextTiling}, que foi aplicado em reuniões com múltiplos participantes. Os autores apoiaram-se em elementos da fala como pausas, trocas de falantes e entonação para encontrar melhores segmentos~\cite{Galley2003}. O \textit{corpus} utilizado contém a transcrição da fala dos participantes durante as reuniões que foram conduzidas por um mediador que propunha os tópicos e anotava o tempo onde os participantes mudavam de assunto~\cite{Banerjee2006}~\cite{Tur2010}. 
 %%%%%%%%%%
 % Discourse segmentation of multi-party conversation
 %%%%%%%%%%
-Os autores publicaram trabalhos anteriores que consideram elementos da fala como pausas, trocas de falantes e entonação para encontrar melhores segmentos~\cite{Galley2003}.
+%Os autores apoiaram-se em trabalhos anteriores que consideram elementos da fala como pausas, trocas de falantes e entonação para encontrar melhores segmentos~\cite{Galley2003}.
 % outros exemplos são
 
 
 %%%%%%%%%%
-% Diferenças
+% Diferenças entre atas formais e discursos falados
 %%%%%%%%%%
 
-
-%O estudo da análise do discurso em reuniões, como mostrado acima, difere desse trabalho em algumas características que são típicas de um estilo formal como o texto sucinto, onde o autor se limita a relatar apenas o essencial de uma discussão e omite detalhes da discussão, o que resulta em segmentos mais curtos os quais desfavorecem algoritmos baseados em coesão léxica~\cite{Choi2000}. Mais detalhes referentes às diferenças entre as atas e os textos analisados na maioria dos trabalhos são mostrados na Subseção~\ref{subsec:conjunto-de-documentos}.
+%O estudo da análise do discurso em reuniões, difere desse trabalho em algumas características que são típicas de um estilo formal como o texto sucinto, onde o autor se limita a relatar apenas o essencial de uma discussão e omite detalhes da discussão, o que resulta em segmentos mais curtos os quais desfavorecem algoritmos baseados em coesão léxica~\cite{Choi2000}. Mais detalhes referentes às diferenças entre as atas e os textos analisados na maioria dos trabalhos são mostrados na Subseção~\ref{subsec:conjunto-de-documentos}.
 
 
 %%%%%%%%%%
@@ -79,8 +78,12 @@ A fim de aprimorar a detecção de limites entre segmentos, a presença de \text
 %%%%%%%%%%
 Algoritmos que apresentam melhor performance o fazem ao custo de maior complexidade computacional, que se deve, muitas vezes, à construção de matrizes de similaridade entre todas as sentenças como em~\cite{Choi2000}, onde é apresentado que calcular similaridades entre blocos de sentenças muito distantes no documento, pode representar um custo computacional dispensável. %Pode citar o mesmo autor no mesmo parágrafo quando ele fala de dois principios diferentes? 
 
-Nesse sentido, foi apresentada uma abordagem que otimiza o processo ao computar as médias das similaridades entre sentenças de cada bloco, a qual chamou de \textit{inner similarity} e em seguida usa esses valores para calcular as medias das similaridades entre todos os blocos a qual chamou de \textit{outter similarity}. Dessa forma não é criada uma matriz que contem as similaridades de todas as sentenças, mas apenas daquelas mais próximas. Os autores reportaram uma eficiência superior e uma eficácia comparável aos algoritmos mais complexos~\cite{Kern2009}.
+Nesse sentido, foi apresentada uma abordagem que otimiza o processo ao computar as médias das similaridades entre sentenças de cada bloco, a qual chamou de \textit{inner similarity} e em seguida usou esses valores para calcular as medias das similaridades entre todos os blocos a qual chamou de \textit{outter similarity}. Dessa forma não é criada uma matriz que contem as similaridades de todas as sentenças, mas apenas daquelas mais próximas. Os autores reportaram uma eficiência superior e uma eficácia comparável aos algoritmos mais complexos~\cite{Kern2009}.
 
+
+%%%%%%%%%%
+% Tempo de preprocessamento
+%%%%%%%%%%
 %Nesse trabalho, não há preocupação com o tempo de processamento, uma vez que as atas são documentos relativamente curtos (com cerca de três páginas) e não chega a impactar na eficácia do sistema, estando o foco principal na eficácia em produzir boas segmentações.
 
 % 
@@ -93,13 +96,31 @@ Nesse sentido, foi apresentada uma abordagem que otimiza o processo ao computar 
 %%%%%%%%%%
 
 Muitos trabalhos utilizam a concatenação de textos na avaliação, os quais foram extraídos de coleções documentos como 
-\textit{TDT}\footnote{\urltdt},
-\textit{WSJ}\footnote{\urlwsj},
-\textit{Brow}\footnote{\urlbrowcorpus} e 
-\textit{Reuters}\footnote{\urlreuterscorpus}. Nesses casos, tem-se facilmente os segmentos de referência onde cada limite de segmento separa os documentos originais.
+\textit{TDT}\footnote{\urltdt} e
+\textit{WSJ}\footnote{\urlwsj}.
+%\textit{Brow}\footnote{\urlbrowcorpus} e 
+%\textit{Reuters}\footnote{\urlreuterscorpus}
+Nesses casos, tem-se facilmente os segmentos de referência onde cada limite de segmento separa os documentos originais.
 %
 %
-Outros avaliam seus trabalhos utilizando coleções de transcrições de áudios gravados durante conversas de reuniões entre pessoas como o \textit{ICSI}\footnote{\urlicsi} o \textit{CALO-MA}\footnote{\urlcaloproject}. Nesses casos, os segmentos de referência são dados por anotações feitas durante a reunião, onde registrou-se o tempo onde houve troca de assunto\cite{Tur2010}.
+Outros avaliam seus trabalhos utilizando coleções de transcrições de áudios gravados durante conversas de reuniões entre pessoas como \textit{ICSI}~\cite{Janin2003} e \textit{AMI}~\cite{Carletta2005}.
+% e o \textit{CALO-MA}\footnote{\urlcaloproject}
+Nesses casos, os segmentos de referência são dados por anotações feitas durante a reunião, onde registrou-se o tempo em que os participantes trocaram de assunto.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 %
@@ -126,7 +147,8 @@ Outros avaliam seus trabalhos utilizando coleções de transcrições de áudios
 %		The CALO meeting assistant system
 % 		https://www.sri.com/sites/default/files/publications/the_calo_meeting_speech_recognition_and_understanding_system.pdf
 %
-%
+% Linear Discourse Segmentation of Multi-Party Meetings ...
+%	AMI
 %
 %
 

@@ -1,5 +1,8 @@
 \begin{thebibliography}{10}
 
+\bibitem{Janin2003}
+
+
 \bibitem{Banerjee2006}
 S.~Banerjee and A.~Rudnicky.
 \newblock A texttiling based approach to topic boundary detection in meetings.
@@ -17,12 +20,27 @@ B.~K. Boguraev and M.~S. Neff.
 \newblock In {\em In Proceedings of Hawaii Int. Conf. on System Sciences
   (HICSS-33), Minitrack on Digital Documents Understanding, IEEE}, 2000.
 
+\bibitem{Boguraev2000b}
+B.~K. Boguraev and M.~S. Neff.
+\newblock Lexical cohesion, discourse segmentation and document summarization.
+\newblock In {\em In RIAO-2000, Content-Based Multimedia Information Access},
+  2000.
+
 \bibitem{Bokaei2015}
 M.~H. Bokaei, H.~Sameti, and Y.~Liu.
 \newblock Linear discourse segmentation of multi-party meetings based on local
   and global information.
 \newblock {\em IEEE/ACM Trans. Audio, Speech and Lang. Proc.},
   23(11):1879--1891, Nov. 2015.
+
+\bibitem{Carletta2005}
+J.~Carletta, S.~Ashby, S.~Bourban, M.~Flynn, M.~Guillemot, T.~Hain, J.~Kadlec,
+  V.~Karaiskos, W.~Kraaij, M.~Kronenthal, G.~Lathoud, M.~Lincoln, A.~Lisowska,
+  I.~McCowan, W.~Post, D.~Reidsma, and P.~Wellner.
+\newblock The ami meeting corpus: A pre-announcement.
+\newblock In {\em Proceedings of the Second International Conference on Machine
+  Learning for Multimodal Interaction}, MLMI'05, pages 28--39, Berlin,
+  Heidelberg, 2006. Springer-Verlag.
 
 \bibitem{CHAIBI2014}
 A.~H. Chaibi, M.~Naili, and S.~Sammoud.

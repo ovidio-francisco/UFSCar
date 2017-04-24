@@ -3,53 +3,62 @@ Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: segmentacao.aux
 The style file: abbrv.bst
 Database file #1: bibs.bib
-Repeated entry---line 213 of file bibs.bib
- : @inproceedings{Boguraev2000
- :                            ,
+You're missing a field name---line 279 of file bibs.bib
+ : 
+ : %    author = {Adam Janin and Don Baron and Jane Edwards and Dan Ellis and David Gelbart and Nelson Morgan and Barbara Peskin and Thilo Pfau and Elizabeth Shriberg and Andreas Stolcke and Chuck Wooters},
+(Error may have been on previous line)
 I'm skipping whatever remains of this entry
-Warning--I didn't find a database entry for "Boguraev2000b"
+Repeated entry---line 286 of file bibs.bib
+ : @inproceedings{Janin2003
+ :                         ,
+I'm skipping whatever remains of this entry
+Warning--to sort, need author or key in Janin2003
+Warning--empty author in Janin2003
+Warning--empty title in Janin2003
+Warning--empty booktitle in Janin2003
+Warning--empty year in Janin2003
 Warning--empty booktitle in Banerjee2006
 Warning--empty booktitle in Kern2009
 Warning--empty school in Reynar1998
-You've used 15 entries,
+You've used 18 entries,
             2118 wiz_defined-function locations,
-            617 strings with 7091 characters,
-and the built_in function-call counts, 6276 in all, are:
-= -- 624
-> -- 306
-< -- 8
-+ -- 124
-- -- 106
-* -- 448
-:= -- 1003
-add.period$ -- 53
-call.type$ -- 15
-change.case$ -- 97
+            630 strings with 7775 characters,
+and the built_in function-call counts, 7625 in all, are:
+= -- 736
+> -- 408
+< -- 9
++ -- 166
+- -- 144
+* -- 564
+:= -- 1216
+add.period$ -- 61
+call.type$ -- 18
+change.case$ -- 124
 chr.to.int$ -- 0
-cite$ -- 18
-duplicate$ -- 243
-empty$ -- 473
-format.name$ -- 106
-if$ -- 1346
+cite$ -- 26
+duplicate$ -- 291
+empty$ -- 564
+format.name$ -- 144
+if$ -- 1620
 int.to.chr$ -- 0
-int.to.str$ -- 15
-missing$ -- 14
-newline$ -- 82
-num.names$ -- 30
-pop$ -- 101
+int.to.str$ -- 18
+missing$ -- 17
+newline$ -- 95
+num.names$ -- 34
+pop$ -- 143
 preamble$ -- 1
-purify$ -- 83
+purify$ -- 108
 quote$ -- 0
-skip$ -- 183
+skip$ -- 214
 stack$ -- 0
-substring$ -- 394
-swap$ -- 74
-text.length$ -- 8
+substring$ -- 434
+swap$ -- 85
+text.length$ -- 9
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 60
-warning$ -- 3
-while$ -- 57
-width$ -- 17
-write$ -- 184
-(There was 1 error message)
+type$ -- 72
+warning$ -- 8
+while$ -- 64
+width$ -- 20
+write$ -- 212
+(There were 2 error messages)
