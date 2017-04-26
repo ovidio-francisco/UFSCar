@@ -36,7 +36,7 @@
   - [ ] Repensar se falo da complexidade no último paragrafo
 
 ## Proposta
-  - [ ] Começar falando as especificidades das atas.
+  - [x] Começar falando as especificidades das atas.
   - [ ] Colocar a explicação das subseções no final da seção {anterior} {ou tirar}
   - [ ] Porque janelas de sentenças e não de palavras ou paragrafos.
   - [ ] Colocar uma apresentação das subseções (ver exemplo)

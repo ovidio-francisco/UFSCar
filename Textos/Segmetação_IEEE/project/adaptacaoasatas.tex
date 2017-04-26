@@ -3,9 +3,36 @@
 
 
 
-Os algoritmos \textit{TextTiling} e \textit{C99} foram propostos para o inglês, independente de domínio, ou seja, a proposta inicial é trabalhar em qualquer texto nessa língua.
+%%%%%%%%%%
+% A concatenação de textos favorece a segmentação
+%%%%%%%%%%
+A maioria dos trabalhos da literatura enquadram-se em duas categorias no que se refere ao \textit{corpus} estudado. A primeira utiliza a concatenação de textos de diferentes fontes e assuntos. 
+Ocorre que essas características favorecem o processo de segmentação uma vez que os documentos produzidos pela concatenação contém tópicos obtidos de domínios distintos que compartilham pouco vocabulário. Por outro lado, essas características não estão presentes no contexto das atas, onde um documento é redigido por um mesmo autor, e todos tópicos foram produzidos no mesmo domínio, e dessa forma, têm estilo de escrita e vocabulário similares.
 
-A proposta desse trabalho é adaptá-los ao contexto das atas de reunião em português do Brasil. As subseções seguintes tratam das adaptações para esse nicho mais específico. A Seção~\ref{sec:avaliacao-experimental} mostra a análise dos algoritmos adaptados.
+
+%%%%%%%%%%
+% Diferenças entre atas formais e discursos falados
+%%%%%%%%%%
+A segunda estuda a segmentação automática de textos obtidos da transcrição de áudios como de vídeos e de gravações de reuniões com grupos de pessoas. 
+A transcrição da fala de pessoas, difere desse trabalho, pois este possui caracteristicas típicas de um estilo formal, por exemplo, o texto sucinto, onde o autor se limita a relatar apenas o essencial de uma discussão e omite detalhes da discussão, poupando o leitor de diálogos repetitivos ou falas durante a transição de tópicos, o que resulta em segmentos mais curtos os quais desfavorecem algoritmos baseados em coesão léxica~\cite{Choi2000}. 
+Mais detalhes referentes às diferenças entre as atas e os textos analisados na maioria dos trabalhos são mostrados na Subseção~\ref{subsec:conjunto-de-documentos}.
+
+% Em outras palavras, uma ata é a narração de uma reunição que poupa
+
+
+
+
+
+
+
+%%%%%%%%%%
+% TextTiling e C99 criados para inglês e independente de domínio
+%%%%%%%%%%
+Os algoritmos \textit{TextTiling} e \textit{C99} foram propostos para o inglês, independente de domínio, ou seja, a proposta inicial é trabalhar em qualquer texto nessa língua.
+%%%%%%%%%%
+% Adapatar para Atas em português
+%%%%%%%%%%
+A proposta desse trabalho é adaptá-los ao contexto das atas de reunião em português do Brasil, ou seja, em uma língua diferente e dentro de um contexto específico. As subseções seguintes tratam das adaptações para esse nicho mais específico. A Seção~\ref{sec:avaliacao-experimental} mostra a análise dos algoritmos adaptados.
 
 %%%%%%%%%%
 % Dificuldade: Coesão léxica não tão bem definida
@@ -21,7 +48,10 @@ O vocabulário das reuniões, ainda que em tópicos diferentes, compartilham cer
 %%%%%%%%%%
 As atas de reunião costumam ter um estilo de escrita que deve ser levado em conta na adaptação do algoritmos, como a identificação de finais de sentença na ausência de quebras de parágrafo, inserção de linhas que não separam assuntos, utilização de pontuação para transição de tópicos, e cabeçalhos e numerais ruidosos. 
 
-Nas subseções a seguir serão expostas as alterações para aumentar a eficiência dos algoritmos e encontrar o melhor modelo para a tarefa de segmentar o texto das atas em tópicos.
+Nas subseções a seguir serão apresentados o pré-processamento e a identificação de segmentos candidatos considerados para a segmentação de atas.
+
+
+
 
 
 \subsection{Pré-processamento}
@@ -60,7 +90,17 @@ As atas frequentemente contém trechos que podem ser considerados pouco informat
 %%%%%%%%%%
 Também é comum o uso de numerais para marcação de páginas e linhas, da mesma forma, são pouco informativos e podem ser descartados.
 
-Nesse trabalho, esses elementos são removidos por meio de heurísticas simples, uma vez que, o descarte não causa perca de informação e pode facilitar a identificação dos segmentos, pois melhora a coesão do texto. Outro benefício é manter o texto livre de trechos que fogem do assunto circundante.
+
+%%%%%%%%%%
+% Remoção de ruídos
+%%%%%%%%%%
+Nesse trabalho, esses elementos são removidos, uma vez que, o descarte não causa perca de informação e pode facilitar a identificação dos segmentos, pois melhora a coesão do texto. Outro benefício é manter o texto livre de trechos que fogem do assunto circundante.
+%%%
+% TODO: Como são removidos?
+%%%
+
+
+% por meio de heurísticas simples
 
 
 %Como forma de padronização, as instituições acrescentam ao documento
@@ -121,9 +161,20 @@ Nesse trabalho, esses elementos são removidos por meio de heurísticas simples,
 
 
 
+
+
+
 %A qualidade do algoritmo é sempre dependente da escrita correta! Ausência de emoticons, códigos de computador e gírias.
 
 
+
+
+
+%Nas subseções a seguir serão expostas as alterações para aumentar a eficiência dos algoritmos e encontrar o melhor modelo para a tarefa de segmentar o texto das atas em tópicos.
+
+
+
+%Tais aspectos não se aplicam ao contexto das atas, onde o estilo de escrita em forma de narrativa, prefere poupar o leitor de diálogos secundários durante transições de tópicos. 
 
 
 

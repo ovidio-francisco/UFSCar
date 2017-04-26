@@ -5,7 +5,6 @@
 %%%%%%%%%%
 % Propostas dos trabalhos
 %%%%%%%%%%
-
 Semelhante a este trabalho, outras abordagens foram propostas no sentido de propor segmentadores para outros idiomas além do inglês bem como alvaliá-los em contextos específicos como discursos e conversas em reuniões.
 
 %%%%%%%%%%
@@ -19,20 +18,15 @@ Diferenças de performance podem ser vistas no mesmo algoritmo quando aplicando 
 %%%%%%%%%%
 A fim de adaptar os algoritmos \textit{TextTiling} e \textit{C99} ao idioma árabe, foram propostos ajustes na etapa de preprocessamento onde verificou-se que diferenças no dialeto de cada pais devem ser consideradas no processo de segmentação e que a adaptação depende da escolha de um \textit{stemmer} adequado à cada dialeto~\cite{CHAIBI2014}.
 
-%Semelhante a esse trabalho, a principal motivação dos autores é adaptar os algoritmos mais influentes ao idioma árabe, devido a falta de trabalhos consistentes nesse sentido. 
-
-% Por outro lado, 
 Na avaliação os autores utilizaram como \textit{corpus} a concatenação de textos extraídos de notícias de diferentes países como Tunísia, Egito e Algeria, que tratam de assuntos distintos como política, esporte, cultura, história, tecnologia e artes, e que trazem particularidades nos estilos de escrita e até diferenças entre dialetos locais. 
 
 
-%%%%%%%%%%
-% A concatenação de textos favorece a segmentação
-%%%%%%%%%%
-%Ocorre que essas características favorecem o processo de segmentação uma vez que os documentos produzidos pela concatenação contém tópicos obtidos de domínios distintos que compartilham pouco vocabulário. Por outro lado, essas características não estão presentes no contexto das atas, onde um documento é redigido por um mesmo autor, e todos tópicos foram produzidos no mesmo domínio, e dessa forma, têm estilo de escrita e vocabulário similares.
 
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Reuniões com múltiplos participantes
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 Outra aplicação para essas técnicas é a segmentação de conversas em reuniões com múltiplos participantes onde se estuda os discursos extraídos, ou seja, o texto a ser segmentado é uma transcrição das falas dos participantes durante a reunião.
-%
+
 
 %%%%%%%%%%
 % A texttiling based apporach to topic boundary detection in meetings
@@ -41,15 +35,6 @@ Nesse sentido, como parte do projeto \textit{CALO-MA}\footnote{\urlcaloproject},
 %%%%%%%%%%
 % Discourse segmentation of multi-party conversation
 %%%%%%%%%%
-%Os autores apoiaram-se em trabalhos anteriores que consideram elementos da fala como pausas, trocas de falantes e entonação para encontrar melhores segmentos~\cite{Galley2003}.
-% outros exemplos são
-
-
-%%%%%%%%%%
-% Diferenças entre atas formais e discursos falados
-%%%%%%%%%%
-
-%O estudo da análise do discurso em reuniões, difere desse trabalho em algumas características que são típicas de um estilo formal como o texto sucinto, onde o autor se limita a relatar apenas o essencial de uma discussão e omite detalhes da discussão, o que resulta em segmentos mais curtos os quais desfavorecem algoritmos baseados em coesão léxica~\cite{Choi2000}. Mais detalhes referentes às diferenças entre as atas e os textos analisados na maioria dos trabalhos são mostrados na Subseção~\ref{subsec:conjunto-de-documentos}.
 
 
 %%%%%%%%%%
@@ -57,9 +42,6 @@ Nesse sentido, como parte do projeto \textit{CALO-MA}\footnote{\urlcaloproject},
 %%%%%%%%%%
 Ainda no contexto de reuniões com múltiplos participantes temos a segmentação funcional dos discursos, onde outros aspectos podem ser analisados, como a participação dos presentes na reunião. Nesse sentido, estuda-se a contribuição das pessoas as quais podem ser categorizadas,  por exemplo, em diálogos, discussões e monólogos. Sugere-se que alguns comportamentos podem dar pistas de mudança de discurso, como quando um participante toma a palavra por um tempo prolongado~\cite{Bokaei2015}. 
 
-%Tais aspectos não se aplicam ao contexto das atas, onde o estilo de escrita em forma de narrativa, prefere poupar o leitor de diálogos secundários durante transições de tópicos.
-
-%
 
 %%%%%%%%%%
 % Palavras Pista
@@ -76,19 +58,9 @@ A fim de aprimorar a detecção de limites entre segmentos, a presença de \text
 %%%%%%%%%%
 % Efficient linear text segmentation based on information retrieval techniques
 %%%%%%%%%%
-Algoritmos que apresentam melhor performance o fazem ao custo de maior complexidade computacional, que se deve, muitas vezes, à construção de matrizes de similaridade entre todas as sentenças como em~\cite{Choi2000}, onde é apresentado que calcular similaridades entre blocos de sentenças muito distantes no documento, pode representar um custo computacional dispensável. %Pode citar o mesmo autor no mesmo parágrafo quando ele fala de dois principios diferentes? 
+Algoritmos que apresentam melhor performance o fazem ao custo de maior complexidade computacional, que se deve, muitas vezes, à construção de matrizes de similaridade entre todas as sentenças como em~\cite{Choi2000}, onde é apresentado que calcular similaridades entre blocos de sentenças muito distantes no documento, pode representar um custo computacional dispensável. 
 
 Nesse sentido, foi apresentada uma abordagem que otimiza o processo ao computar as médias das similaridades entre sentenças de cada bloco, a qual chamou de \textit{inner similarity} e em seguida usou esses valores para calcular as medias das similaridades entre todos os blocos a qual chamou de \textit{outter similarity}. Dessa forma não é criada uma matriz que contem as similaridades de todas as sentenças, mas apenas daquelas mais próximas. Os autores reportaram uma eficiência superior e uma eficácia comparável aos algoritmos mais complexos~\cite{Kern2009}.
-
-
-%%%%%%%%%%
-% Tempo de preprocessamento
-%%%%%%%%%%
-%Nesse trabalho, não há preocupação com o tempo de processamento, uma vez que as atas são documentos relativamente curtos (com cerca de três páginas) e não chega a impactar na eficácia do sistema, estando o foco principal na eficácia em produzir boas segmentações.
-
-% 
-% usa vetores contendo o peso da palavra ao inves da frequencia.
-
 
 
 %%%%%%%%%%
@@ -160,6 +132,23 @@ Nesses casos, os segmentos de referência são dados por anotações feitas dura
 
 
 
+
+
+%%%%%%%%%%
+% Tempo de preprocessamento
+%%%%%%%%%%
+%Nesse trabalho, não há preocupação com o tempo de processamento, uma vez que as atas são documentos relativamente curtos (com cerca de três páginas) e não chega a impactar na eficácia do sistema, estando o foco principal na eficácia em produzir boas segmentações.
+
+% 
+% usa vetores contendo o peso da palavra ao inves da frequencia.
+
+
+%Semelhante a esse trabalho, a principal motivação dos autores é adaptar os algoritmos mais influentes ao idioma árabe, devido a falta de trabalhos consistentes nesse sentido. 
+
+% Por outro lado, 
+
+%Os autores apoiaram-se em trabalhos anteriores que consideram elementos da fala como pausas, trocas de falantes e entonação para encontrar melhores segmentos~\cite{Galley2003}.
+% outros exemplos são
 
 
 
