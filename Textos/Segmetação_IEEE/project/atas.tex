@@ -1,0 +1,29 @@
+
+\section{Conjunto de documentos}
+	\label{sec:conjutodedocumentos} 
+ 
+%%%%%%%%%%
+% A concatenação de textos favorece a segmentação
+%%%%%%%%%%
+A maioria dos trabalhos da literatura enquadram-se em duas categorias no que se refere ao \textit{corpus} estudado. A primeira utiliza a concatenação de textos de diferentes fontes e assuntos. 
+Ocorre que essas características favorecem o processo de segmentação uma vez que os documentos produzidos pela concatenação contém tópicos obtidos de domínios distintos que compartilham pouco vocabulário. Por outro lado, essas características não estão presentes no contexto das atas, onde um documento é redigido por um mesmo autor, e todos tópicos foram produzidos no mesmo domínio, e dessa forma, têm estilo de escrita e vocabulário similares.
+
+
+%%%%%%%%%%
+% Diferenças entre atas formais e discursos falados
+%%%%%%%%%%
+A segunda estuda a segmentação automática de textos obtidos da transcrição de áudios como de vídeos e de gravações de reuniões com grupos de pessoas. 
+A transcrição da fala de pessoas, difere desse trabalho, pois este possui caracteristicas típicas de um estilo formal, por exemplo, o texto sucinto, onde o autor se limita a relatar apenas o essencial de uma discussão e omite detalhes da discussão, poupando o leitor de diálogos repetitivos ou falas durante a transição de tópicos, o que resulta em segmentos mais curtos os quais desfavorecem algoritmos baseados em coesão léxica~\cite{Choi2000}. 
+Mais detalhes referentes às diferenças entre as atas e os textos analisados na maioria dos trabalhos são mostrados na Subseção~\ref{subsec:conjunto-de-documentos}.
+
+% Em outras palavras, uma ata é a narração de uma reunição que poupa
+
+
+
+	A fim de obter um conjunto de documentos segmentados que possam servir como referência na avaliação, seis atas de reunião foram coletadas junto ao departamento de pós-graduação da UFSCar-Sorocaba\footnote{\urlatas}. Os documentos foram oferecidos à profissionais que participam de reuniões desse departamento e por meio de um \textit{software} segmentaram o texto das atas conforme o julgamento de cada um. Os segmentos gerados manualmente foram comparados à segmentação automática conforme os critérios descritos a seguir.
+	
+	As atas de reunião diferem dos textos comumente estudados em outros trabalhos em alguns pontos. O estilo de escrita favorece textos sucintos com poucos detalhes de maneira que o ambiente dá preferência a textos curtos. Segundo Choi~\cite{Choi2001-LSA}, o segmentador tem a acurácia reduzida em segmentos curtos (em torno de 3 a 5 sentenças).
+	
+	Para evitar um texto monótono à leitura, a redação do documento tem o cuidado de não repetir ideias e palavras em favor da elegância do texto. Tal característica enfraquece a coesão léxica e portanto o cálculo da similaridade é prejudicado. Por exemplo, duas sentenças diferem se uma contiver a palavra \textit{computadores} e na seguinte \textit{equipamentos}, mesmo que se refiram à mesma ideia. Além disso, o documento compartilha um certo vocabulário próprio do ambiente onde os assuntos são discutidos e com isso nota-se que os segmentos, embora tratem de assuntos diferentes, são semelhantes em vocabulário.
+	
+A presença de ruídos como cabeçalhos, rodapés e numeração de páginas e linhas prejudicam tanto similaridade entre sentenças como a apresentação final ao usuário. Porém, esses ruídos podem ser reduzidos ou eliminados como mostrado na Subseção~\ref{subsec:preprocessamento}, sobre preprocessamento.

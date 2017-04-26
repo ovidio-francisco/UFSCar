@@ -37,9 +37,9 @@
 
 ## Proposta
   - [x] Começar falando as especificidades das atas.
-  - [ ] Colocar a explicação das subseções no final da seção {anterior} {ou tirar}
+  - [x] Colocar a explicação das subseções no final da seção {anterior} {ou tirar}
   - [ ] Porque janelas de sentenças e não de palavras ou paragrafos.
-  - [ ] Colocar uma apresentação das subseções (ver exemplo)
+  - [x] Colocar uma apresentação das subseções (ver exemplo)
   - [ ] Rever a imagem do preprocessamento
   - [ ] Exemplificar as heurísticas de remoção de cabeçalhos e rodapés
   - [ ] Escrever Algoritmo 1 - em português
