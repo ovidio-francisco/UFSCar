@@ -56,6 +56,7 @@ As próximas subseções mostram o conjunto de atas e a segmentação usada como
 	\label{subsec:conjunto-de-documentos}
 	
 % Como foram obtidas
+	% Software
 % Como foram tratadas	
 	
 
@@ -63,7 +64,22 @@ As próximas subseções mostram o conjunto de atas e a segmentação usada como
 \subsection{Medidas de Avaliação}
 
 
-	As medidas de avaliação tradicionalmente utilizadas na área de recuperação de informação como precisão e revocação trazem alguns problemas na avalização de segmentadores automáticos.  
+	Avaliações baseadas em hits 
+
+
+	As medidas de avaliação tradicionalmente utilizadas na área de recuperação de informação como precisão e revocação trazem alguns problemas na avalização de segmentadores automáticos. 
+	
+	se considerarmos 
+
+\aqui	
+	
+Precisão é a proporção de limites identificados pelo algorimo que são verdadeiros
+
+Revocação e a proporção limites verdadeiros que foram identificados pelo algoritmo
+
+%corretamente identificados pelo algorítmo	
+	 
+	
 Conforme o algoritmo aponta mais segmentos no texto, este tende a melhorar a revocação e ao mesmo tempo, reduzir a precisão, um problema que pode ser contornado usando \textit{F-measure} que faz uma combinação das duas levando em conta seus pesos, o que por outro lado é mais difícil de interpretar. 
 Entretanto, as medidas apresentadas acima falham ao não serem sensíveis a \textit{near misses}, ou seja, quando um limite não coincide exatamente com o esperado, mas está próximo a ele~\cite{Kern2009}.
 

@@ -27,13 +27,13 @@
   - [ ] Explicar o que o LSA faz no C99
 
 ## Trabalhos Relacionados
-  - [ ] Não falar da proposta do artigo
+  - [x] Não falar da proposta do artigo
   - [x] Colocar todos os verbos no passado
   - [ ] No trabalho dos árabes, tirar a comparação com meu trabalho?
   - [ ] Reescrever o Trabalho [1], partindo das utilização das tecnicas da fala
   - [ ] Desconectar [9] de [1] - Para não confudir transcrição de audio com audio {IDEM para o [5]}
-  - [ ] Colocar um texto fechando a seção e comparando com a proposta desse trabalho.
-  - [ ] Repensar se falo da complexidade no último paragrafo
+  - [x] Colocar um texto fechando a seção e comparando com a proposta desse trabalho.
+  - [x] Repensar se falo da complexidade no último paragrafo
 
 ## Proposta
   - [x] Começar falando as especificidades das atas.
@@ -41,16 +41,16 @@
   - [ ] Porque janelas de sentenças e não de palavras ou paragrafos.
   - [x] Colocar uma apresentação das subseções (ver exemplo)
   - [ ] Rever a imagem do preprocessamento
-  - [ ] Exemplificar as heurísticas de remoção de cabeçalhos e rodapés
+  - [x] Exemplificar as heurísticas de remoção de cabeçalhos e rodapés
   - [ ] Escrever Algoritmo 1 - em português
 
 ## Avaliação Experimental
   - [ ] Criar subseções --> Bases, Configuração Experimental e Resutados.
-  - [ ] Falar que a segmentação de referência são definidas por especialistas de domínio.
-  - [ ] Itemizar as formas de coseguir segmentação de referência.
+  - [x] Falar que a segmentação de referência são definidas por especialistas de domínio.
+  - [x] Itemizar as formas de coseguir segmentação de referência.
   - [ ] Explicar/Disponibilizar o software de segmentação.
-  - [ ] Não explicar as atas aqui, e sim antes.
-  - [ ] Apresentar as bases e quem segmentou.
+  - [x] Não explicar as atas aqui, e sim antes.
+  - [x] Apresentar as bases e quem segmentou.
   - [ ] Explicar o que é revocação e precisão para as atas (hits).
   - [ ] Explicar que F é uma medida harmônica entre precisão e revocação
   - [ ] Completar a legenta da figura 4 --> Deixar semelhante à figura 3.
