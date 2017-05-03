@@ -2,13 +2,10 @@
 \section{Avaliação Experimental}
 	\label{sec:avaliacao-experimental}
 
-
-
 %%%%%%%%%% 
 % Necessidade de uma referência
 %%%%%%%%%%
 Para que se possa avaliar um segmentador automático de textos, é preciso uma referência, isto é, um texto com os limites entre os segmento conhecidos. Essa referência, deve ser confiável, sendo uma segmentação legítima que é capaz de dividir o texto em porções relativamente independentes, mantendo um conteúdo legível, ou seja, uma segmentação ideal.
-%
 
 
 
@@ -63,25 +60,24 @@ As próximas subseções mostram o conjunto de atas e a segmentação usada como
 
 \subsection{Medidas de Avaliação}
 
+%%%%%%%%%%
+%	Avaliações baseadas em hits 
+%%%%%%%%%%
 
-	Avaliações baseadas em hits 
+Medidas de avaliação tradicionais, baseiam se na contagem de acertos. No contexto da segmentação de textos um acerto é quando um o limite hipotético coincide com um limite de referência.
 
-
-	As medidas de avaliação tradicionalmente utilizadas na área de recuperação de informação como precisão e revocação trazem alguns problemas na avalização de segmentadores automáticos. 
+Nesse sentido, 
+%
+a precisão, que é a proporção de limites corretamente identificados pelo algoritmo, e 
+%
+a revocação, que é a proporção de limites verdadeiros que foram identificados pelo algoritmo,
+%
+trazem alguns problemas na avaliação de segmentadores automáticos.
+ 	
 	
-	se considerarmos 
+Conforme o algoritmo aponta mais segmentos no texto, este tende a melhorar a revocação e ao mesmo tempo, reduzir a precisão. Esse problema de avaliação pode ser contornado utilizado a medida F-1 que é uma média harmônica entre precisão e revocação onde ambas tem a o mesmo peso. Por por outro lado, tem a desvantagem de ser mais difícil de interpretar. 
 
-\aqui	
-	
-Precisão é a proporção de limites identificados pelo algorimo que são verdadeiros
-
-Revocação e a proporção limites verdadeiros que foram identificados pelo algoritmo
-
-%corretamente identificados pelo algorítmo	
-	 
-	
-Conforme o algoritmo aponta mais segmentos no texto, este tende a melhorar a revocação e ao mesmo tempo, reduzir a precisão, um problema que pode ser contornado usando \textit{F-measure} que faz uma combinação das duas levando em conta seus pesos, o que por outro lado é mais difícil de interpretar. 
-Entretanto, as medidas apresentadas acima falham ao não serem sensíveis a \textit{near misses}, ou seja, quando um limite não coincide exatamente com o esperado, mas está próximo a ele~\cite{Kern2009}.
+As medidas apresentadas acima falham ao não serem sensíveis a \textit{near misses}, ou seja, quando um limite não coincide exatamente com o esperado, mas está próximo a ele~\cite{Kern2009}.
 
 Na Figura~\ref{fig:exemplosegmentacaozoom} é apresentado um exemplo com duas segmentações hipotéticas e uma referência. Na Figura~\ref{fig:exemplosegmentacao}, em ambos os casos não há nenhum verdadeiro positivo, o que implica em zero para os valores de precisão, acurácia, e revocação, embora a segunda hipótese possa ser considerada superior à primeira se levado em conta a proximidade dos limites.
 
@@ -122,6 +118,25 @@ Com isso, demonstram em seu trabalho que, em relação a P$_k$, consegue resolve
 
 \end{enumerate}
 
+% Baseando-se em medidas de avaliação tradicionais que utilizam a quantidade de acertos 
+
+
+%	As medidas de avaliação tradicionalmente utilizadas na área de recuperação de informação como precisão e revocação trazem alguns problemas na avalização de segmentadores automáticos. 
+%	
+%	se considerarmos 
+
+%	As medidas de avaliação tradicionalmente utilizadas na área de recuperação de informação como  
+%
+%Precisão é a proporção de limites identificados pelo algoritmo que são verdadeiros
+%
+%Revocação e a proporção limites verdadeiros que foram identificados pelo algoritmo
+
+%corretamente identificados pelo algorítmo	
+	 
+
+
 
 %Para quantificar a eficiência dos algoritmos, segue uma revisão das principais métricas aplicáveis.
+
+
 
