@@ -66,6 +66,15 @@ As próximas subseções mostram o conjunto de atas e a segmentação usada como
 
 Medidas de avaliação tradicionais, baseiam se na contagem de acertos. No contexto da segmentação de textos um acerto é quando um o limite hipotético coincide com um limite de referência.
 
+As medidas de avaliação tentam computar os erros do algoritmo, isto é falsos positivos e falsos negativos, a fim de calcular sua eficiência. 
+%
+% falso positivo
+Um falso positivo é um limite identificado pelo algoritmo que não corresponde a nenhum limite na segmentação de referência. 
+%
+% falso negativo
+Um falso negativo é quando o algoritmo não identifica um limite existente na segmentação de referência.
+
+
 Nesse sentido, 
 %
 a precisão, que é a proporção de limites corretamente identificados pelo algoritmo, e 
@@ -107,7 +116,14 @@ Na Figura~\ref{fig:exemplosegmentacaozoom} é apresentado um exemplo com duas se
 Entre as medidas mais utilizadas para avaliar segmentadores estão:
 
 \begin{enumerate}
-	\item P$_k$. A fim de resolver o problema de \textit{near misses}, Beeferman \textit{et. al.}~\cite{Beeferman1999} apresentam uma medida chamada P$_k$ que atribui valores parciais a \textit{near misses}. Esse método move uma janela de tamanho $k$ e a cada posição e verifica se o início e o final da janela estão ou não dentro do mesmo segmento e penaliza o algoritmo em caso de discrepância. Ou seja, dado duas palavras de distancia $k$, uma discrepância é computada quando o algoritmo e a referência não concordam se as palavras estão ou não no mesmo segmento.
+
+	\item P$_k$. A fim de resolver o problema de \textit{near misses}, Beeferman \textit{et. al.}~\cite{Beeferman1999} apresentam uma medida chamada P$_k$ que atribui 
+%
+valores parciais a \textit{near misses}, 
+%
+ou seja, limites sempre receberão um peso proporcional à sua proximidade, desde que dentro de um janela de tamanho $k$.
+%
+Para isso, esse método move uma janela de tamanho $k$ e a cada posição e verifica se o início e o final da janela estão ou não dentro do mesmo segmento e penaliza o algoritmo em caso de discrepância. Ou seja, dado duas palavras de distancia $k$, uma discrepância é computada quando o algoritmo e a referência não concordam se as palavras estão ou não no mesmo segmento.
 
 O valor de $k$ é calculado como a metade da média dos comprimentos dos segmentos reais. Como resultado, é retornado a contagem de discrepâncias divido pelo quantidade de segmentações analisadas. Esse valor serve como medida de dissimilaridade entre as segmentações e pode ser interpretada como a probabilidade de duas sentenças extraídas aleatoriamente pertencerem ao mesmo segmento.
 
@@ -117,6 +133,40 @@ Com isso, demonstram em seu trabalho que, em relação a P$_k$, consegue resolve
 
 
 \end{enumerate}
+
+\subsection{Configuração experimental}
+	\label{subsec:configuracaoexperimental}
+
+%%%%%%%%%%
+% Parâmetros
+%%%%%%%%%%
+As implementações dos algoritmos permitem ao usuário a configuração de seus parâmetros. 
+%
+O \textit{TextTiling} permite ajustarmos dois parâmetros, sendo, o tamanho da janela (distância entre a primeira e a última sentença) para o qual atribuiu-se os valores 20, 40 e 60. Para o segundo parâmetro, o passo (distância que a janela desliza), atribuiu-se os valores 3, 6, 9 e 12. Gerando ao final 20 modelos.
+%
+
+O \textit{C99} permite ajustarmos três parâmetros, sendo, a quantidade segmentos desejados, o qual é calculado como uma proporção dos candidatos a limite. Para isso atribuiu-se as proporções {0,2; 0,4; 0,6; 0,8; 1,0}. O segundo parâmetro, o tamanho da máscara utilizada para gerar a matriz de ranking, atribuiu-se os valores 9 e 11, sendo 11 o valor padrão da apresentado pelo autor. Permite ainda, definirmos se as sentenças serão representados por vetores contendo a frequência ou o peso de cada termo, onde ambas as representações foram utilizadas.
+%
+ Considerando todos os parâmetros, foram gerados 20 modelos para o algoritmo C99.% By Rafael 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+% ou seja limites não exatos podem ter um peso proporcional à proximidade, desde que estejam dentro da distancia K
+%
+
 
 % Baseando-se em medidas de avaliação tradicionais que utilizam a quantidade de acertos 
 
