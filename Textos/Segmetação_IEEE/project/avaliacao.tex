@@ -5,7 +5,7 @@
 %%%%%%%%%% 
 % Necessidade de uma referência
 %%%%%%%%%%
-Para que se possa avaliar um segmentador automático de textos, é preciso uma referência, isto é, um texto com os limites entre os segmento conhecidos. Essa referência, deve ser confiável, sendo uma segmentação legítima que é capaz de dividir o texto em porções relativamente independentes, mantendo um conteúdo legível, ou seja, uma segmentação ideal.
+Para que se possa avaliar um segmentador automático de textos é preciso uma referência, isto é, um texto com os limites entre os segmento conhecidos. Essa referência, deve ser confiável, sendo uma segmentação legítima que é capaz de dividir o texto em porções relativamente independentes, ou seja, uma segmentação ideal.
 
 
 
@@ -49,12 +49,6 @@ Para fins de avaliação desse trabalho, um bom método de segmentação é aque
 As próximas subseções mostram o conjunto de atas e a segmentação usada como referência em seguida são apresentadas as métricas de avaliação utilizadas neste trabalho e os testes realizados para avaliar os métodos.
 
 
-\subsection{Conjunto de documentos}
-	\label{subsec:conjunto-de-documentos}
-	
-% Como foram obtidas
-	% Software
-% Como foram tratadas	
 	
 
 
@@ -64,9 +58,9 @@ As próximas subseções mostram o conjunto de atas e a segmentação usada como
 %	Avaliações baseadas em hits 
 %%%%%%%%%%
 
-Medidas de avaliação tradicionais, baseiam se na contagem de acertos. No contexto da segmentação de textos um acerto é quando um o limite hipotético coincide com um limite de referência.
+As medidas de avaliação tradicionais, baseiam se na contagem de acertos. No contexto da segmentação de textos um acerto é quando um o limite hipotético coincide com um limite de referência.
 
-As medidas de avaliação tentam computar os erros do algoritmo, isto é falsos positivos e falsos negativos, a fim de calcular sua eficiência. 
+Essas medidas de avaliação tentam computar os erros do algoritmo, isto é falsos positivos e falsos negativos, a fim de calcular sua eficiência. 
 %
 % falso positivo
 Um falso positivo é um limite identificado pelo algoritmo que não corresponde a nenhum limite na segmentação de referência. 

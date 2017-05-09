@@ -14,7 +14,7 @@ A segmentação textual ou segmentação topical é a tarefa de dividir um texto
 %%%%%%%%%%
 % Segmento
 %%%%%%%%%%	
-Um segmento pode ser visto como uma sucessão de unidades de informação que compartilham um tópico e podem ser, por exemplo, palavras, sentenças ou parágrafos. Essas unidades são a menor parte de um segmento e portanto consideradas candidatas a limite entre segmentos.
+Um segmento pode ser visto como uma sucessão de unidades de informação que compartilham um tópico essas unidades podem ser, por exemplo, palavras, sentenças ou parágrafos. Sendo a menor parte de um segmento, portanto são consideradas candidatas a limite entre segmentos.
 
 %%%%%%%%%%
 % Coesão léxica como **presuposto básico**
@@ -55,7 +55,7 @@ Em seguida, os blocos de texto são representados por vetores que contém as fre
 
 %sempre que a similaridade cai abaixo de um \textit{threshold}.
 
-O \textit{TextTiling} apresenta baixa complexidade computacional, devido a simplicidade do algoritmo e baixa eficiência quando comparado a outros métodos mais sofisticados como apresentados em~\cite{Choi2000, Kern2009}.
+O \textit{TextTiling} apresenta baixa complexidade computacional, devido a simplicidade do algoritmo e baixa eficiência quando comparado a outros métodos mais sofisticados como apresentados em~\cite{Choi2000, Kern2009, Misra2009}.
 
 
 
@@ -74,7 +74,7 @@ Além disso, o estilo da escrita pode não ser constante em todo o texto. Choi s
 
 Portanto, comparar a similaridade entre trechos de diferentes regiões, não é apropriado.
 % Complexidade O(n²)
-Devido a isso, as similaridades não podem ser comparadas em valores absolutos. Com isso, o autor apresenta um esquema de \textit{ranking} para contornar esse problema.
+Devido a isso, as similaridades não podem ser comparadas em valores absolutos. Então, o autor apresenta um esquema de \textit{rankings} para contornar esse problema.
 
 
 %
@@ -89,9 +89,9 @@ Devido a isso, as similaridades não podem ser comparadas em valores absolutos. 
 % colocar os passos na imagem
 
 
-Inicialmente é construída uma matriz que contém as similaridades de todas as unidades de texto. Em seguida, cada valor na matriz de similaridade é substituído por seu ranking local. Onde para cade elemento da matiz, \textit{ranking} é o número de elementos vizinhos com valor de similaridade menor ao seu.%, o qual é calculado com a Equação~\ref{equ:ranklocal}. 
+Inicialmente é construída uma matriz que contém as similaridades de todas as unidades de texto. Em seguida, cada valor na matriz de similaridade é substituído por seu ranking local. Onde para cade elemento da matiz, seu \textit{ranking} é o número de elementos vizinhos com valor de similaridade menor ao seu.%, o qual é calculado com a Equação~\ref{equ:ranklocal}. 
 
-Na Figura~\ref{fig:exemplomatrixrank} vemos um quadro de dimensões 3~x~3 destacado na matriz de similaridades, que contém os valores  $\{0,3; 0,4; 0,4; 0,6; 0,5; 0,2; 0,9; 0,5; 0,7\}$, tomando como exemplo o elemento com valor $0,5$, a mesma posição na matriz de ranks terá o valor $4$, pois esse é número de vizinhos com valores inferiores a $0,5$ dentro do quadro analisado na matriz de similaridades. 
+Na Figura~\ref{fig:exemplomatrixrank} vemos um quadro de dimensões 3~x~3 destacado na matriz de similaridades, que contém os valores  $\{0,3; 0,4; 0,4; 0,6; 0,5; 0,2; 0,9; 0,5; 0,7\}$, tomando como exemplo o elemento com valor $0,5$, a mesma posição na matriz de \textit{ranks} terá o valor $4$, pois esse é número de vizinhos com valores inferiores a $0,5$ dentro do quadro analisado na matriz de similaridades. 
 
 
 %nesse exemplo, o valor $0,5$ é substituído por $4$ na matriz de ranks pois há 4 vizinhos com valor inferior

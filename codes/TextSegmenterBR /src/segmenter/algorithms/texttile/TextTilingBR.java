@@ -9,7 +9,6 @@ import org.apache.commons.csv.CSVPrinter;
 import preprocessamento.Cleaner;
 import ptstemmer.Stemmer;
 import ptstemmer.implementations.OrengoStemmer;
-import ptstemmer.implementations.PorterStemmer;
 import segmenter.AbstractSegmenter;
 import segmenter.algorithms.texttile.struct.*;
 import utils.Files;
@@ -59,11 +58,11 @@ public class TextTilingBR extends AbstractSegmenter {
  * @param c uk.ac.man.cs.choif.nlp.struct.RawText
  * @param s uk.ac.man.cs.choif.nlp.stopword.Stopword
  */
-public TextTilingBR(RawText c, Stopword s) {
-	collection = c;
-	stopwords = s;
-	preprocess();
-}
+//public TextTilingBR(RawText c, Stopword s) {
+//	collection = c;
+//	stopwords = s;
+//	preprocess();
+//}
 
 
 
@@ -318,7 +317,10 @@ protected boolean include(int i) {
 	
 	if(preprocessToken(token).length() < minTokenSize) return false;
 	
-	if (stopwords == null) return true;
+	
+	if (stopwords == null || !isRemoveStopWords()) return true;
+	
+//	return true;
 	
 	return !stopwords.isStopword(token.toLowerCase());
 
@@ -498,7 +500,7 @@ protected void similarityDetermination() {
  * Date: 25-01-2017                                                                       * 
  * ****************************************************************************************/
 
-	public enum StemmingAlgorithms {PORTER, ORENGO, NONE}
+//	public enum StemmingAlgorithms {PORTER, ORENGO, NONE}
 
 	private int    segmentsCount = 0;
 //	public static String EOS_MARK = "^^";
@@ -511,17 +513,34 @@ protected void similarityDetermination() {
 
 public TextTilingBR() {
 	
+	System.out.println("Creating");
+	
 	this.setWindowSize(15);  
 	this.setStep(3);
 	
+	System.out.println(String.format("%b %b", isRemoveStopWords(), isRemoveSteam()));
+	System.out.println(minTokenSize);
+	
+	this.setStopwords(getStopWordFile());
+	
+	this.setStemmer(new OrengoStemmer());
+	
 }
 
-public TextTilingBR(int windowSize, int step, File stopWordList, StemmingAlgorithms stem) {
-	this.setWindowSize(windowSize);
-	this.setStep(step);
-	this.setStopwords(stopWordList);
-	this.setStemmer(stem);
-}
+//public TextTilingBR(int windowSize, int step, File stopWordList, StemmingAlgorithms stem) {
+//	this.setWindowSize(windowSize);
+//	this.setStep(step);
+//	
+//	this.setStopwords(stopWordList);
+//	this.setStemmer(stem);
+//}
+
+//public TextTilingBR(int windowSize, int step, boolean removeStopWords, boolean removeStemming) {
+////	TODO: 
+//	
+//	this.setWindowSize(15);  
+//	this.setStep(3);
+//}
 
 
 public void segmentToFileParts(File source) {
@@ -657,7 +676,7 @@ public String preprocessToString() {
 public String preprocessToken(String token) {
 	String preproecessedToken = token.trim().toLowerCase();
 	
-	if(stemmer != null) {
+	if(stemmer != null && isRemoveSteam()) { 
 		preproecessedToken = stemmer.wordStemming(preproecessedToken);
 	}
 	
@@ -666,7 +685,6 @@ public String preprocessToken(String token) {
 	}
 	
 	preproecessedToken = preproecessedToken.trim();
-	
 	preproecessedToken = preproecessedToken.replace(' ', '·');
 	
 	return preproecessedToken;
@@ -759,20 +777,20 @@ public void setMinTokenSize(int minTokenSize) {
 	this.minTokenSize = minTokenSize;
 }
 
-public void setStemmer(StemmingAlgorithms stem) {
-	switch (stem) {
-	case ORENGO:
-		this.stemmer = new OrengoStemmer();
-		break;
-	case PORTER:
-		this.stemmer = new PorterStemmer();
-		break;
-
-	default:
-		this.stemmer = null;
-		break;
-	}
-}
+//public void setStemmer(StemmingAlgorithms stem) {
+//	switch (stem) {
+//	case ORENGO:
+//		this.stemmer = new OrengoStemmer();
+//		break;
+//	case PORTER:
+//		this.stemmer = new PorterStemmer();
+//		break;
+//
+//	default:
+//		this.stemmer = null;
+//		break;
+//	}
+//}
 
 
 
@@ -785,7 +803,7 @@ public String getAlgorithmName() {
 
 @Override
 public String paramsToString() {
-	return String.format("winSize=%d step=%d", windowSize, step);
+	return String.format("winSize=%d step=%d removeSW=%b removeStem=%b", windowSize, step, isRemoveStopWords(), isRemoveSteam());
 }
 
 	

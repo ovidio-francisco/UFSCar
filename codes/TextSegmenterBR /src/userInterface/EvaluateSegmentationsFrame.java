@@ -26,6 +26,7 @@ import javax.swing.JToolBar;
 import javax.swing.SpinnerNumberModel;
 import javax.swing.border.EmptyBorder;
 
+import segmenter.AbstractSegmenter;
 import segmenter.Segmenter;
 import segmenter.Segmenter.SegmenterAlgorithms;
 import segmenter.algorithms.c99br.C99BR;
@@ -60,6 +61,9 @@ public class EvaluateSegmentationsFrame extends JFrame {
 	private static JSpinner  spNSegs       = new JSpinner(new SpinnerNumberModel(0.5, -1, 1, 0.1));
 	private static JSpinner  spRankingsize = new JSpinner(new SpinnerNumberModel(11,  1, 999, 2));
 	private static JCheckBox cbWeight      = new JCheckBox("Weight context vector with term frequencies", true);
+	
+	private static JCheckBox cbStopWords   = new JCheckBox("Remove StopWords", false);
+	private static JCheckBox cbStems        = new JCheckBox("Remove Stems", false);
 
 	
 	public EvaluateSegmentationsFrame() {
@@ -94,6 +98,9 @@ public class EvaluateSegmentationsFrame extends JFrame {
 		toolBar.addSeparator();
 		toolBar.add(new JLabel("Algorithm: "));
 		toolBar.add(cbAlg);
+		toolBar.addSeparator();
+		toolBar.add(cbStopWords);
+		toolBar.add(cbStems);
 		
 		
 		JToolBar textTilingToolBar = new JToolBar();
@@ -175,6 +182,9 @@ public class EvaluateSegmentationsFrame extends JFrame {
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				
+				System.out.println("Loading a file");
+
+				
 				File doc=null, real=null;
 				
 				JFileChooser fc = new JFileChooser();
@@ -241,8 +251,9 @@ public class EvaluateSegmentationsFrame extends JFrame {
 	
 	private void load(File doc, File real, Segmenter alg) {
 		
+		
 		tpReal.setTitleAt(0, real.getName());
-		tpTest .setTitleAt(0, doc.getName());
+		tpTest.setTitleAt(0, doc.getName());
 		
 //		taReal.setText(arrayToString(Evaluation.getTokens(real, alg)));
 //		taTest.setText(arrayToString(Evaluation.getTokens(doc, alg)));
@@ -332,9 +343,14 @@ public class EvaluateSegmentationsFrame extends JFrame {
 	}
 	
 	private Segmenter getAlgorithm() {
-		return cbAlg.getSelectedItem().toString().equals(algs[0]) ? 
-				getTextTilingSegmenter() : 
-					getC99BrSegmenter();
+		Segmenter result = cbAlg.getSelectedItem().toString().equals(algs[0]) ? 
+			 	              getTextTilingSegmenter() : 
+					          getC99BrSegmenter(); 
+		
+		((AbstractSegmenter)result).setRemoveStopWords(cbStopWords.isSelected());
+		((AbstractSegmenter)result).setRemoveStem(cbStems.isSelected());	 	              
+		
+		return result;
 	}
 	
 	private static TextTilingBR getTextTilingSegmenter() {
@@ -349,7 +365,7 @@ public class EvaluateSegmentationsFrame extends JFrame {
 		textTiling.setWindowSize(winSize);
 		textTiling.setStep(step);
 		textTiling.setStopwords(null);
-		textTiling.setStemmer(TextTilingBR.StemmingAlgorithms.NONE);
+//		textTiling.setStemmer(TextTilingBR.StemmingAlgorithms.NONE);
 		textTiling.setMinTokenSize(1);
 		textTiling.setRemoveHeader(false);
 		

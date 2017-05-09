@@ -1,6 +1,8 @@
 package segmenter.algorithms.c99br;
 
 
+import java.util.ArrayList;
+
 // #include "top.lic"
 
 import java.util.Arrays;
@@ -332,6 +334,8 @@ public class C99
     )
     {
         ContextVector[] v   = new ContextVector[ document.length ];
+        
+        
 
         String token, stem;
 
@@ -343,17 +347,31 @@ public class C99
             {
                 token   = document[ i ][ j ].toLowerCase();
 
-                if  (   CharUtils.isAWord( token ) &&
+                if  (   //CharUtils.isAWord( token ) && by OJF 8-5-2017
                         !stopWords.isStopWord( token )
                     )
                 {
                     stem    = stemmer.stem( token );
+                    
+                    /* OJF */
+//                    System.out.println("--> " + stem);
+                    words.add(stem);
 
                     ContextVector.inc( stem , 1 , v[ i ] );
                 }
             }
         }
+        
+        
+        /* By OJF */
+//        String[] kkk = ContextVector.keys(v[0]);
+//        System.out.println("kkk = " + kkk.length);
+//        
+//        for(String k : kkk) {
+//        	System.out.println(k);
+//        }
 
+        
         return v;
     }
 
@@ -387,7 +405,7 @@ public class C99
             {
                 token   = document[ i ][ j ].toLowerCase();
 
-                if  (   CharUtils.isAWord( token ) &&
+                if  (   //CharUtils.isAWord( token ) && by OJF 8-5-2017
                         !stopWords.isStopWord( token )
                     )
                 {
@@ -395,6 +413,10 @@ public class C99
 
                     ContextVector.inc( stem , 1 , v[ i ] );
                     ContextVector.inc( stem , 1 , tf );
+
+                    /* OJF */
+//                  System.out.println("--> " + stem);
+                    words.add(stem);
                 }
             }
         }
@@ -768,5 +790,14 @@ public class C99
 
         return sum;
     }
+    
+    /* by OJF*/
+    static ArrayList<String> words = new ArrayList<>();
+
+	public static ArrayList<String> getWords() {
+		return words;
+	}
+
+    
 }
 

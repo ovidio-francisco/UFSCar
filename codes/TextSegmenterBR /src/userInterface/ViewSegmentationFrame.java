@@ -24,8 +24,9 @@ import javax.swing.SpinnerNumberModel;
 import javax.swing.border.EmptyBorder;
 
 import preprocessamento.Cleaner;
+import segmenter.Segmenter;
+import segmenter.algorithms.c99br.C99BR;
 import segmenter.algorithms.texttile.TextTilingBR;
-import segmenter.algorithms.texttile.TextTilingBR.StemmingAlgorithms;
 import utils.TextExtractor;
 
 public class ViewSegmentationFrame extends JFrame {
@@ -251,15 +252,16 @@ public class ViewSegmentationFrame extends JFrame {
 		int step     = (Integer)spStep.getValue();
 		int minToken = (Integer)spMinTokenSize.getValue();
 		boolean removeStopWords = cbRemoveStopWords.isSelected();
+		boolean removeStem = !cbStemming.getSelectedItem().toString().equals(stemmingAlgs[0]);
 		
-		StemmingAlgorithms stem = null;
-		String selectedStem = cbStemming.getSelectedItem().toString();
+//		StemmingAlgorithms stem = null;
+//		String selectedStem = cbStemming.getSelectedItem().toString();
 		String selectedAllowedChars = cbAllowedChars.getSelectedItem().toString();
-		File stopWordFile = removeStopWords ? new File("stopPort.txt") : null;
+//		File stopWordFile = removeStopWords ? new File("stopPort.txt") : null;
 		
-		if (selectedStem.equals(stemmingAlgs[0])) stem = StemmingAlgorithms.NONE;
-		if (selectedStem.equals(stemmingAlgs[1])) stem = StemmingAlgorithms.PORTER;
-		if (selectedStem.equals(stemmingAlgs[2])) stem = StemmingAlgorithms.ORENGO;
+//		if (selectedStem.equals(stemmingAlgs[0])) stem = StemmingAlgorithms.NONE;
+//		if (selectedStem.equals(stemmingAlgs[1])) stem = StemmingAlgorithms.PORTER;
+//		if (selectedStem.equals(stemmingAlgs[2])) stem = StemmingAlgorithms.ORENGO;
 		
 		boolean allowNumbers     = selectedAllowedChars.equals(allowedChars[1]);
 		boolean allowPunctuation = false;
@@ -270,23 +272,50 @@ public class ViewSegmentationFrame extends JFrame {
 		}
 		
 		Cleaner.setAllowedChars(allowNumbers, allowPunctuation);
+
+
+		Segmenter segmenter;
+		
+		String alg = "TextTiling=";
+		
+		if (alg.equals("TextTiling")) {
+
+			TextTilingBR textTiling = new TextTilingBR();
+			
+			textTiling.setWindowSize(winSize);
+			textTiling.setStep(step);
+			textTiling.setMinTokenSize(minToken);
+			
+			segmenter = textTiling;
+			lbStatus.setText(String.format("<html>Headers Removed:  <b>%d</b> | Boundary candidates:  <b>%d</b> | Segments count:  <b>%d</b></html>",textTiling.getHeaderOccurrence(), textTiling.getCollection().boundaries.size(), textTiling.getSegmentsCount())); 
+		}
+		else {
+
+			C99BR c99 = new C99BR();
+			
+			c99.setnSegsRate(0.5);
+			c99.setRakingSize(11);
+			c99.setWeitght(true);
+			
+			System.out.println("C99");
+			
+			segmenter = c99;
+		}
+		
+
+		/* Noise Reduction */
+		
+		segmenter.setRemoveStopWords(removeStopWords);
+		segmenter.setRemoveStem(removeStem);			
 		
 		
-		TextTilingBR textTiling = new TextTilingBR();
 		
-		textTiling.setWindowSize(winSize);
-		textTiling.setStep(step);
-		textTiling.setStopwords(stopWordFile);
-		textTiling.setStemmer(stem);
-		textTiling.setMinTokenSize(minToken);
-		
-		taSegmented.setText(textTiling.segmentsToString(sourceFile));
+		taSegmented.setText(segmenter.segmentsToString(sourceFile));
 		taSegmented.setCaretPosition(0);
 		
-		taWindows.setText(textTiling.preprocessToString());
+		taWindows.setText(segmenter.preprocessToString());
 		taWindows.setCaretPosition(0);
 				
-		lbStatus.setText(String.format("<html>Headers Removed:  <b>%d</b> | Boundary candidates:  <b>%d</b> | Segments count:  <b>%d</b></html>",textTiling.getHeaderOccurrence(), textTiling.getCollection().boundaries.size(), textTiling.getSegmentsCount()));
 	}
 //	
 //	private void segmentFileC99() {

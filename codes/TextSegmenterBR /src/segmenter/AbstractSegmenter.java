@@ -13,6 +13,16 @@ public abstract class AbstractSegmenter implements Segmenter {
 	private boolean removePageNumbers = false;
 	private int headerOccurrence = 0;
 	private boolean removeExtraSpaces;
+	
+	private boolean removeStopWords = false;
+	private boolean removeSteam = false;
+	
+	private boolean removeNumbers = false;
+	private int minTokenSize = -1;
+	private String allowedChars;
+	
+	private File stopWordFile = new File("stopPort.txt");
+
 
 	@Override
 	public final ArrayList<String> getSegments(File source) {
@@ -33,7 +43,6 @@ public abstract class AbstractSegmenter implements Segmenter {
 		}
 		
 		return sb.toString();
-
 	}
 
 	protected String cleanTextMeating(String text) {
@@ -96,6 +105,62 @@ public abstract class AbstractSegmenter implements Segmenter {
 		this.removeExtraSpaces = removeExtraSpaces;
 	}
 
+	@Override
+	public boolean isRemoveStopWords() {
+		return removeStopWords;
+	}
+
+	@Override
+	public void setRemoveStopWords(boolean removeStopWords) {
+		this.removeStopWords = removeStopWords;
+	}
+
+	@Override
+	public boolean isRemoveSteam() {
+		return removeSteam;
+	}
+
+	@Override
+	public void setRemoveStem(boolean removeSteam) {
+		this.removeSteam = removeSteam;
+	}
+
+
+	public File getStopWordFile() {
+		return stopWordFile;
+	}
+
+
+	public boolean isRemoveNumbers() {
+		return removeNumbers;
+	}
+
+
+	public void setRemoveNumbers(boolean removeNumbers) {
+		this.removeNumbers = removeNumbers;
+	}
+
+
+	public int getMinTokenSize() {
+		return minTokenSize;
+	}
+
+
+	public void setMinTokenSize(int minTokenSize) {
+		this.minTokenSize = minTokenSize;
+	}
+
+
+	public String getAllowedChars() {
+		return allowedChars;
+	}
+
+
+	public void setAllowedChars(String allowedChars) {
+		this.allowedChars = allowedChars;
+	}
+
+	
 	
 	
 }

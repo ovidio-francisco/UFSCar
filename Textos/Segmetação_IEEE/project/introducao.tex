@@ -23,10 +23,12 @@ Uma vez que a ata registra a sucessão de assuntos discutidos na reunião, é in
 %%%%%%%%%%
 % Definição da Tarefa
 %%%%%%%%%%
+A tarefa de segmentação textual consiste dividir um texto em partes que contenham um significado relativamente independente. Em outras palavras, é identificar as posições onde há uma mudança significativa de tópicos. 
+
 %%%%%%%%%%
 % Utilidade da segmentação (domínios onde é aplicada)
 %%%%%%%%%%
-A tarefa de segmentação textual consiste dividir um texto em partes que contenham um significado relativamente independente. Em outras palavras, é identificar as posições onde há uma mudança significativa de tópicos. A segmentação de textos é útil em aplicações que trabalham com textos sem indicações de quebras de assunto, ou seja, não apresentam parágrafos, seções ou capítulos, como transcrições automáticas de áudio, vídeos e grandes documentos que contêm vários assuntos como atas de reunião e noticias.
+A segmentação de textos é útil em aplicações que trabalham com textos sem indicações de quebras de assunto, ou seja, não apresentam parágrafos, seções ou capítulos, como transcrições automáticas de áudio, vídeos e grandes documentos que contêm vários assuntos como atas de reunião e noticias.
 
 
 %%%%%%%%%%
@@ -36,9 +38,11 @@ O interesse por segmentação textual tem crescido em em aplicações voltadas a
 e sumarização de textos~\cite{Boguraev2000}~\cite{Boguraev2000b}. % ... e [2] do "Efficient Linear T S"
 Essa técnica pode ser usada para aprimorar o acesso a informação quando essa é solicitada por meio de uma consulta, onde é possível oferecer porções menores de texto mais relevantes ao invés de exibir um documento maior que pode conter informações menos pertinentes. 
 %
-Além disso, encontrar pontos onde o texto muda de assunto, pode ser útil como etapa de preprocessamento em aplicações voltadas ao entendimento do texto, principalmente em textos longos
+Além disso, encontrar pontos onde o texto muda de assunto, pode ser útil como etapa de preprocessamento em aplicações voltadas ao entendimento do texto, principalmente em textos longos.
 %
-A sumarização de texto pode ser aprimorada ao processar segmentos separados por tópicos ao invés de documentos inteiros. A navegação pelo documento pode ser aprimorada, em especial na utilização por usuários com deficiência visual~\cite{Choi2000}. 
+A sumarização de texto pode ser aprimorada ao processar segmentos separados por tópicos ao invés de documentos inteiros. 
+%
+A navegação pelo documento pode ser aprimorada, em especial na utilização por usuários com deficiência visual~\cite{Choi2000}. 
 
 
 
@@ -51,7 +55,7 @@ Frequentemente atas de reunião têm a característica de apresentar um texto co
 % O que vem sendo feito e ...
 %%%%%%%%%%
 O interesse por técnicas de segmentação textual acompanha o crescimento da produção de conteúdos, sendo estudada em aplicações voltadas principalmente a identificar divisões em
-textos longos como notícias e documentos da web, os quais são frequentemente concatenação de textos. 
+textos longos como notícias e documentos da web, os quais são frequentemente uma concatenação de textos. 
 
 % TODO citar os projetos TDT e os bachmarks que outros usaram
 
