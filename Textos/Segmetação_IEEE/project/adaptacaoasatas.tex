@@ -9,11 +9,11 @@
 %%%%%%%%%%
 % TextTiling e C99 criados para inglês e independente de domínio
 %%%%%%%%%%
-Os algoritmos \textit{TextTiling} e \textit{C99} foram propostos para o inglês, independente de domínio, ou seja, a proposta inicial é trabalhar em qualquer texto nessa língua.
+Os algoritmos \textit{TextTiling} e \textit{C99} foram propostos para o inglês, independente de domínio, ou seja, a proposta inicial dos autores é trabalhar em qualquer texto nessa língua.
 %%%%%%%%%%
 % Adapatar para Atas em português
 %%%%%%%%%%
-A proposta desse trabalho é adaptá-los ao contexto das atas de reunião em português do Brasil, ou seja, em uma língua diferente e dentro de um contexto específico. As subseções seguintes tratam das adaptações para esse nicho mais específico. A Seção~\ref{sec:avaliacao-experimental} mostra a análise dos algoritmos adaptados.
+Assim, propõe-se adaptá-los ao contexto das atas de reunião em português do Brasil, ou seja, em uma língua diferente e dentro de um contexto específico. As subseções seguintes tratam das adaptações para esse nicho mais específico. A Seção~\ref{sec:avaliacao} mostra a análise dos algoritmos adaptados.
 
 %%%%%%%%%%
 % Dificuldade: Coesão léxica não tão bem definida
@@ -107,11 +107,10 @@ Tem-se então, uma lista com os elementos considerados mais significativos do te
 
   \begin{figure}[!h]
 	\centering
-	\includegraphics[width=0.45\textwidth]{exemplo-preprocessamento-noborder.jpg}
+	\includegraphics[width=0.45\textwidth]{exemplo-preprocessamento.jpg}
 	\caption{Exemplo de pré-processamento.}
 	\label{fig:exemplopreprocessamento}
   \end{figure}
-
 
 
 
@@ -144,6 +143,7 @@ Tem-se então, uma lista com os elementos considerados mais significativos do te
 	\SetKwFor{ParaTodo}{para todo}{}{fim para todo}
 	\SetKwIF{Se}{SenaoSe}{Senao}{}{}{senao se}{senao}{fim se}
 	\SetKwFor{Para}{}{}{}
+%	\SetKwAlgorithm{Algorithm}{Algoritmo}{}
 
 	
 	\Input{Texto}

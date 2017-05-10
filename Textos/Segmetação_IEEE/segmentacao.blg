@@ -3,62 +3,52 @@ Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: segmentacao.aux
 The style file: abbrv.bst
 Database file #1: bibs.bib
-You're missing a field name---line 279 of file bibs.bib
- : 
- : %    author = {Adam Janin and Don Baron and Jane Edwards and Dan Ellis and David Gelbart and Nelson Morgan and Barbara Peskin and Thilo Pfau and Elizabeth Shriberg and Andreas Stolcke and Chuck Wooters},
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
 Repeated entry---line 286 of file bibs.bib
- : @inproceedings{Janin2003
- :                         ,
+ : %@inproceedings{Janin2003
+ :                          ,
 I'm skipping whatever remains of this entry
-Warning--to sort, need author or key in Janin2003
-Warning--empty author in Janin2003
-Warning--empty title in Janin2003
-Warning--empty booktitle in Janin2003
-Warning--empty year in Janin2003
 Warning--empty booktitle in Banerjee2006
 Warning--empty booktitle in Kern2009
 Warning--empty school in Reynar1998
 You've used 19 entries,
             2118 wiz_defined-function locations,
-            639 strings with 8041 characters,
-and the built_in function-call counts, 8193 in all, are:
-= -- 799
-> -- 431
-< -- 10
-+ -- 175
-- -- 152
-* -- 602
-:= -- 1297
-add.period$ -- 65
+            643 strings with 8350 characters,
+and the built_in function-call counts, 8745 in all, are:
+= -- 854
+> -- 488
+< -- 11
++ -- 198
+- -- 174
+* -- 646
+:= -- 1397
+add.period$ -- 67
 call.type$ -- 19
-change.case$ -- 131
+change.case$ -- 143
 chr.to.int$ -- 0
-cite$ -- 27
-duplicate$ -- 316
-empty$ -- 606
-format.name$ -- 152
-if$ -- 1751
+cite$ -- 22
+duplicate$ -- 326
+empty$ -- 620
+format.name$ -- 174
+if$ -- 1863
 int.to.chr$ -- 0
 int.to.str$ -- 19
 missing$ -- 18
-newline$ -- 100
-num.names$ -- 36
-pop$ -- 150
+newline$ -- 102
+num.names$ -- 38
+pop$ -- 154
 preamble$ -- 1
-purify$ -- 114
+purify$ -- 125
 quote$ -- 0
-skip$ -- 236
+skip$ -- 249
 stack$ -- 0
-substring$ -- 479
-swap$ -- 97
-text.length$ -- 10
+substring$ -- 512
+swap$ -- 107
+text.length$ -- 11
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 76
-warning$ -- 8
-while$ -- 69
+warning$ -- 3
+while$ -- 74
 width$ -- 21
-write$ -- 226
-(There were 2 error messages)
+write$ -- 233
+(There was 1 error message)

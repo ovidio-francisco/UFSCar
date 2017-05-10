@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.4.21)  10 MAY 2017 08:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.4.21)  10 MAY 2017 11:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -797,7 +797,7 @@ LaTeX Warning: No \author given.
 
 (./project/resumo.tex) (./project/introducao.tex
 
-LaTeX Warning: Reference `sec:resultados' on page 1 undefined on input line 78.
+LaTeX Warning: Reference `sec:resultados' on page 1 undefined on input line 88.
 
 
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
@@ -805,12 +805,7 @@ LaTeX Warning: Reference `sec:resultados' on page 1 undefined on input line 78.
 
 ])
 (./project/referencial.tex
-
-LaTeX Warning: Reference `fig:curvadedissimilaridade' on page 2 undefined on in
-put line 54.
-
-
-Underfull \hbox (badness 3396) in paragraph at lines 94--95
+Underfull \hbox (badness 3396) in paragraph at lines 98--99
 \OMS/cmsy/m/n/10 f\OT1/cmr/m/n/10 0\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 3; 0\OML/
 cmm/m/it/10 ; \OT1/cmr/m/n/10 4; 0\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 4; 0\OML/c
 mm/m/it/10 ; \OT1/cmr/m/n/10 6; 0\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 5; 0\OML/cm
@@ -824,17 +819,33 @@ File: images/exemplo-matrix-rank-noborder.jpg Graphic file (type jpg)
 
 <use images/exemplo-matrix-rank-noborder.jpg>
 Package pdftex.def Info: images/exemplo-matrix-rank-noborder.jpg used on input 
-line 109.
+line 113.
 (pdftex.def)             Requested size: 232.19843pt x 122.51668pt.
+ [2 <./images/exemplo-matrix-rank-noborder.jpg>]
+Underfull \hbox (badness 2818) in paragraph at lines 168--169
+[]\OT1/ptm/m/n/10 Na Fi-gura 2[] []e apre-sen-tado um exem-plo com duas
+ []
+
+<images/windiffzoom.jpg, id=20, 312.2064pt x 78.5334pt>
+File: images/windiffzoom.jpg Graphic file (type jpg)
+
+<use images/windiffzoom.jpg>
+Package pdftex.def Info: images/windiffzoom.jpg used on input line 175.
+(pdftex.def)             Requested size: 242.52063pt x 61.00415pt.
+
+<images/windiff.jpg, id=21, 661.0296pt x 79.0152pt>
+File: images/windiff.jpg Graphic file (type jpg)
+ <use images/windiff.jpg>
+Package pdftex.def Info: images/windiff.jpg used on input line 184.
+(pdftex.def)             Requested size: 242.52063pt x 28.9892pt.
 )
-(./project/trabalhosrelacionados.tex [2 <./images/exemplo-matrix-rank-noborder.
-jpg>]
+(./project/trabalhosrelacionados.tex
 Underfull \hbox (badness 4132) in paragraph at lines 21--22
 []\OT1/ptm/m/n/10 Na avalia[][]ao os au-to-res uti-li-za-ram como \OT1/ptm/m/it
 /10 cor-pus \OT1/ptm/m/n/10 a
  []
 
-) (./project/atas.tex
+[3 <./images/windiffzoom.jpg> <./images/windiff.jpg>]) (./project/atas.tex
 Underfull \hbox (badness 4279) in paragraph at lines 19--20
 []\OT1/ptm/m/n/10 A presen[]a de ru[]^^Pdos como cabe[]alhos, ro-dap[]es e
  []
@@ -844,20 +855,18 @@ Underfull \hbox (badness 6078) in paragraph at lines 27--37
 []\OT1/ptm/m/n/10 Na li-te-ra-tura, ve-mos que a mai-o-ria dos tra-ba-lhos
  []
 
-[3]) (./project/adaptacaoasatas.tex
+[4]) (./project/adaptacaoasatas.tex
 Underfull \hbox (badness 5260) in paragraph at lines 32--33
 []\OT1/ptm/m/n/10 Nas subse[][]oes a se-guir ser[]ao apre-sen-ta-dos o pr[]e-
  []
 
+<images/exemplo-preprocessamento.jpg, id=28, 566.115pt x 197.538pt>
+File: images/exemplo-preprocessamento.jpg Graphic file (type jpg)
 
-<images/exemplo-preprocessamento-noborder.jpg, id=23, 588.2778pt x 237.0456pt>
-File: images/exemplo-preprocessamento-noborder.jpg Graphic file (type jpg)
-
-<use images/exemplo-preprocessamento-noborder.jpg>
-Package pdftex.def Info: images/exemplo-preprocessamento-noborder.jpg used on i
-nput line 110.
-(pdftex.def)             Requested size: 232.19843pt x 93.56506pt.
- [4 <./images/exemplo-preprocessamento-noborder.jpg>]
+<use images/exemplo-preprocessamento.jpg>
+Package pdftex.def Info: images/exemplo-preprocessamento.jpg used on input line
+ 110.
+(pdftex.def)             Requested size: 232.19843pt x 81.02124pt.
 LaTeX Font Info:    Try loading font information for OT1+pcr on input line 164.
 
 
@@ -873,32 +882,22 @@ File: omspcr.fd
 LaTeX Font Info:    Font shape `OMS/pcr/m/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 164.
 )
-(./project/avaliacao.tex
-Underfull \hbox (badness 2818) in paragraph at lines 85--86
-[]\OT1/ptm/m/n/10 Na Fi-gura 3[] []e apre-sen-tado um exem-plo com duas
+(./project/avaliacao.tex [5 <./images/exemplo-preprocessamento.jpg>]
+Underfull \vbox (badness 2376) has occurred while \output is active []
+
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[6]) (./project/resultados.tex) (./project/conclusao.tex
+Underfull \hbox (badness 2922) in paragraph at lines 14--15
+[]\OT1/ptm/m/n/10 A segmenta[][]ao de atas de reuni[]ao pode aju-dar na
  []
 
-<images/windiffzoom.jpg, id=27, 312.2064pt x 78.5334pt>
-File: images/windiffzoom.jpg Graphic file (type jpg)
-
-<use images/windiffzoom.jpg>
-Package pdftex.def Info: images/windiffzoom.jpg used on input line 92.
-(pdftex.def)             Requested size: 242.52063pt x 61.00415pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<images/windiff.jpg, id=28, 661.0296pt x 79.0152pt>
-File: images/windiff.jpg Graphic file (type jpg)
- <use images/windiff.jpg>
-Package pdftex.def Info: images/windiff.jpg used on input line 101.
-(pdftex.def)             Requested size: 242.52063pt x 28.9892pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[5] [6 <./images/windiffzoom.jpg> <./images/windiff.jpg>])
-(./project/resultados.tex) (./project/conclusao.tex) (./segmentacao.bbl)
+) (./segmentacao.bbl)
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -920,13 +919,13 @@ LaTeX Warning: There were undefined references.
 ### simple group (level 1) entered at line 1061 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 6298 strings out of 494884
- 96955 string characters out of 6179236
- 193342 words of memory out of 5000000
- 9473 multiletter control sequences out of 15000+600000
+ 6396 strings out of 494884
+ 98631 string characters out of 6179236
+ 205867 words of memory out of 5000000
+ 9571 multiletter control sequences out of 15000+600000
  43943 words of font info for 86 fonts, out of 8000000 for 9000
  41 hyphenation exceptions out of 8191
- 39i,16n,39p,773b,3111s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 39i,16n,39p,775b,3415s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texl
@@ -939,7 +938,7 @@ ier/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb>
 </usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/te
 xlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dis
 t/fonts/type1/urw/times/utmri8a.pfb>
-Output written on segmentacao.pdf (7 pages, 476867 bytes).
+Output written on segmentacao.pdf (7 pages, 385818 bytes).
 PDF statistics:
  81 PDF objects out of 1000 (max. 8388607)
  55 compressed objects within 1 object stream

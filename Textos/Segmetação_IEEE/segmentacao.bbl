@@ -1,8 +1,5 @@
 \begin{thebibliography}{10}
 
-\bibitem{Janin2003}
-
-
 \bibitem{Banerjee2006}
 S.~Banerjee and A.~Rudnicky.
 \newblock A texttiling based approach to topic boundary detection in meetings.
@@ -73,6 +70,13 @@ M.~A. Hearst.
 \newblock In {\em Proceedings of the 32Nd Annual Meeting on Association for
   Computational Linguistics}, ACL '94, pages 9--16, Stroudsburg, PA, USA, 1994.
   Association for Computational Linguistics.
+
+\bibitem{Janin2003}
+A.~Janin, D.~Baron, J.~Edwards, D.~Ellis, D.~Gelbart, N.~Morgan, B.~Peskin,
+  T.~Pfau, E.~Shriberg, A.~Stolcke, and C.~Wooters.
+\newblock The icsi meeting corpus.
+\newblock In {\em Proceedings of the IEEE International Conference on
+  Acoustics, Speech, and Signal Processing}, pages 364--367, 2003.
 
 \bibitem{Kern2009}
 R.~Kern and M.~Granitzer.
