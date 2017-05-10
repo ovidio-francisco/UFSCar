@@ -115,13 +115,13 @@ Entre as medidas mais utilizadas para avaliar segmentadores estão:
 %
 valores parciais a \textit{near misses}, 
 %
-ou seja, limites sempre receberão um peso proporcional à sua proximidade, desde que dentro de um janela de tamanho $k$.
+ou seja, limites sempre receberão um peso proporcional à sua proximidade, desde que dentro de um janela de tamanho~$k$.
 %
 Para isso, esse método move uma janela de tamanho $k$ e a cada posição e verifica se o início e o final da janela estão ou não dentro do mesmo segmento e penaliza o algoritmo em caso de discrepância. Ou seja, dado duas palavras de distancia $k$, uma discrepância é computada quando o algoritmo e a referência não concordam se as palavras estão ou não no mesmo segmento.
 
 O valor de $k$ é calculado como a metade da média dos comprimentos dos segmentos reais. Como resultado, é retornado a contagem de discrepâncias divido pelo quantidade de segmentações analisadas. Esse valor serve como medida de dissimilaridade entre as segmentações e pode ser interpretada como a probabilidade de duas sentenças extraídas aleatoriamente pertencerem ao mesmo segmento.
 
-\item WindowDiff. Pevzner~\cite{Pevzner2002} aponta problemas na avaliação mais tradicional P$_k$~\cite{Beeferman1999}. Eles apontam que esse método penaliza demasiadamente os falsos negativos em relação aos falsos positivos e a \textit{near misses}, além disso, desconsidera o tamanho e a quantidade de segmentos. Como solução, propõem um novo método, o qual chamam de \textit{WindowDiff} que traz duas diferenças principais: a dobra a penalidade para os falsos positivos a fim de diminuir o problema da subestimação dessa medida e, diferente de P$_k$, ao mover a janela pelo texto, penaliza-se o algoritmo sempre que o número de limites proposto pelo algoritmo não coincidir com o número de limites esperados para aquela janela de texto. 
+\item \textit{WindowDiff}. Pevzner~\cite{Pevzner2002} aponta problemas na avaliação mais tradicional, P$_k$~\cite{Beeferman1999}. Eles apontam que esse método penaliza demasiadamente os falsos negativos em relação aos falsos positivos e a \textit{near misses}, além disso, desconsidera o tamanho dos segmentos. Como solução, propõem um método, que traz duas diferenças principais: a dobra da penalidade para os falsos positivos a fim de diminuir o problema da subestimação dessa medida e, diferente de P$_k$, ao mover a janela pelo texto, penaliza-se o algoritmo sempre que o número de limites proposto pelo algoritmo não coincidir com o número de limites esperados para aquela janela de texto. 
 
 Com isso, demonstram em seu trabalho que, em relação a P$_k$, consegue resolver seus principais problemas e mantém sua proposta inicial de sensibilidade a \textit{near misses}, penalizando-os menos que os falsos positivos puros.
 
@@ -139,9 +139,140 @@ As implementações dos algoritmos permitem ao usuário a configuração de seus
 O \textit{TextTiling} permite ajustarmos dois parâmetros, sendo, o tamanho da janela (distância entre a primeira e a última sentença) para o qual atribuiu-se os valores 20, 40 e 60. Para o segundo parâmetro, o passo (distância que a janela desliza), atribuiu-se os valores 3, 6, 9 e 12. Gerando ao final 20 modelos.
 %
 
-O \textit{C99} permite ajustarmos três parâmetros, sendo, a quantidade segmentos desejados, o qual é calculado como uma proporção dos candidatos a limite. Para isso atribuiu-se as proporções {0,2; 0,4; 0,6; 0,8; 1,0}. O segundo parâmetro, o tamanho da máscara utilizada para gerar a matriz de ranking, atribuiu-se os valores 9 e 11, sendo 11 o valor padrão da apresentado pelo autor. Permite ainda, definirmos se as sentenças serão representados por vetores contendo a frequência ou o peso de cada termo, onde ambas as representações foram utilizadas.
+O \textit{C99} permite ajustarmos três parâmetros, sendo, a quantidade segmentos desejados, o qual é calculado como uma proporção dos candidatos a limite. Para isso atribuiu-se as proporções {0,2; 0,4; 0,6; 0,8; 1,0}. O segundo parâmetro, o tamanho do quadro utilizado para gerar a matriz de ranking, atribuiu-se os valores 9 e 11, sendo 11 o valor padrão da apresentado pelo autor. Permite ainda, definirmos se as sentenças serão representados por vetores contendo a frequência ou o peso de cada termo, onde ambas as representações foram utilizadas.
 %
  Considerando todos os parâmetros, foram gerados 20 modelos para o algoritmo C99.% By Rafael 
+
+
+\subsection{Resultados}
+	\label{subsec:resultados}
+
+%%%%%%%%%%
+% Objetivos
+%%%%%%%%%%
+A fim de encontrar o melhor método que divida uma ata em segmentos coerentes, realizou-se experimentos com o \textit{TextTiling} e \textit{C99} a fim de encontrar os melhores parâmetros para esses documentos.
+
+%%%%%%%%%%
+% Teste de Fiedman e CD
+% 1ª Etapa
+%%%%%%%%%%
+Em seguida aplicou-se o teste de Friedman para saber se há diferenças significativas entre a eficácia dos modelos. O pós-teste de Nemenyi foi aplicado para descobrir quais diferenças são significativas. 
+%
+Exite diferença quando seus \textit{rankings} médios diferirem em um valor mínimo, chamado de diferença critica (CD). 
+%
+
+%%%%%%%%%%
+% 
+%%%%%%%%%%
+Com isso foi possível, pela análise do diagrama de diferença crítica, verificar qual é o melhor modelo para cada medida
+% e quão significativamente 
+em relação aos demais. 
+
+%%%%%%%%%%
+% Dados obtidos com o C99
+%%%%%%%%%%
+A Tabela~\ref{tab:mediasC99} mostra os dados obtidos com o \textit{C99}, onde \texttt{S} é a proporção de segmentos em relação a quantidade de candidatos, \texttt{M} é o tamanho do quadro utilizado para criar a matriz de \textit{ranking} e \texttt{W} indica se os segmentos são representados por vetores contendo a frequência ou um peso das palavras. 
+
+
+
+\begin{table}[!h]
+	\centering
+
+	\begin{tabular}{|c|c|c|c|c|}
+	
+		\hline
+		Medida & \texttt{S} & \texttt{M} & \texttt{W} & \textbf{Média}\\		
+		\hline
+
+		Acuracy		& 40	& 11 & Sim & 0.6199	\\ \hline	
+		F1			& 60	& 9	 & Sim & 0.6167	\\ \hline	
+		Precision	& 40	& 11 & Sim & 0.7106	\\ \hline			
+		Recall		& 100	& 9	 & Não & 0.8516	\\ \hline		
+		Pk			& 40	& 11 & Sim & 0.1163	\\ \hline	
+		Windiff		& 40	& 11 & Sim & 0.3800	\\ \hline		
+
+		
+	\end{tabular}
+	
+	\caption{Médias das medidas obtidas com \textit{C99}.}
+	\label{tab:mediasC99}
+\end{table}
+
+
+A tabelas~\ref{tab:mediasTextTiling} mostra os dados obtidos com o \textit{TextTiling}, onde \texttt{J} é o tamanho da janela e \texttt{P} é o passo.
+
+\begin{table}[!h]
+	\centering
+
+	\begin{tabular}{|c|c|c|c|}
+	
+		\hline
+		Medida & \texttt{J} & \texttt{P} & \textbf{Média}\\		
+		\hline
+
+		Acuracy		& 50 & 9 	& 0.5510 \\ \hline	
+		F1			& 50 & 3 	& 0.5898 \\ \hline	
+		Precision	& 60 & 12 	& 0.5746 \\ \hline			
+		Recall		& 50 & 3 	& 0.7717 \\ \hline		
+		Pk			& 30 & 9 	& 0.1572 \\ \hline	
+		Windiff		& 50 & 9 	& 0.4489 \\ \hline		
+
+		
+	\end{tabular}
+	
+	\caption{Médias das medidas obtidas com o \textit{TextTiling}.}
+	\label{tab:mediasTextTiling}
+\end{table}
+
+
+Uma vez sabendo quais valores de parâmetros melhor configuram um algoritmo para uma medida, resta então saber qual dos dois algoritmos é mais eficiente segundo essa medida. Para isso aplicou-se novamente o teste de Friedman com pós-teste de Nemenyi, dessa vez, com os melhores modelos dos dois algoritmos para cada medida. O resultado segue na Tabela~\ref{tab:melhoresmodelos}
+
+\begin{table}[!h]
+	\centering
+	
+	\begin{tabular}{|c|c|c|c|c|}
+
+		\hline
+		Medida & Algoritmo & \texttt{S} & \texttt{M} & \texttt{W}\\		
+		\hline
+		
+	
+		Acuracy		& C99 & 40 	& 11	& Sim \\ \hline
+		Precision	& C99 & 40 	& 11	& Sim \\ \hline
+		Pk			& C99 & 40 	& 11	& Sim \\ \hline
+		Windiff		& C99 & 40 	& 11	& Sim \\ \hline
+		F1			& C99 & 60 	& 9		& Sim \\ \hline
+		Recall		& C99 & 100 & 9		& Não \\ \hline
+ 	
+	
+	\end{tabular}
+
+	\caption{Melhores modelos para cada medida segundo diagramas de diferença crítica.}
+	\label{tab:melhoresmodelos}	
+	
+\end{table}
+
+
+Na análise do diagrama de diferença crítica verificou-se que o algoritmo \textit{C99} apresenta melhor eficiência em todas as medidas e os valores das quatro primeiras os valores de \texttt{S}, \texttt{M} e \texttt{W} se repetiram, sugerindo uma configuração otimizada para o problema da segmentação de atas de reunião.
+
+
+
+
+%tópicos retornando segmentos  que retorne segmentos coerentes 
+
+
+
+
+%%%%%%%%%%
+% Cálculo das medidas para cada modelo
+%%%%%%%%%%
+
+% --> Isso já foi falado no texto
+% Pela comparação dos resultados com a segmentação fornecida pelos especialistas, calculou-se para cada modelo as medidas tradicionais acurácia, precisão, revocação, F-medida. 
+
+% Além dessas, computou-se também as métricas mais aplicadas à segmentação textual P$_k$ e \textit{WindowDiff}.
+
+
 
 
 
