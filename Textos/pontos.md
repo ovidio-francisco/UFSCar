@@ -1,103 +1,74 @@
 
-## Vanategens e Utilidades da Segmentação Textual
-  - Em texto sem indicações de quebras de assutno
-  - Utilizada em sumarização de textos e recuperação de informação
-  - Aprimpora a consulta
-    - Oferece porçoes menores de texto mais relevantes
-  - Como etapa de preprocessamento em aplicações voltadas ao entendimento do texto
-  - Aprimora a navegação pelo documento, em especial na utilização por usuários em deficiência visual
 
-### Vantagens da Segmentação de Atas de Reunião
-  - Frequentemente apresentam pouca marcações da estrutura do documento, como parágrafos, seções ou quaisquer indicações sobre o tema do texto.
-  - Estilo de escrita compacto e formal, que desfavorece o processamento.
+
+# Segmentação Textual Automática de Atas de Reunião
 
 
 
-* * *
+## Resumo
+    - Breve Definição de segmentação.
+    - Literatura focada em documentos longos e em inglês.
+    - Maior foco e performance no inglês.
+    - Peculiaridades das atas.
+    - Utilidade da segmentação
+    - Objetivo: Adaptar algs e encotrar modelo
+    - Modelo melhor avaliado
 
 
-## 1 Introdução
-* Descrição das atas
-  * Descrição da tarefa de segmentação
-  * Utilidade da segmentação (domínios onde é aplicada)
-  * Utilidade da segmentação (Vantagens da utilização para esses domínios)
-  * Objetivo do Trabalho
-    * Proposta: Adaptar e Avaliar Texting e C99 para PtBr e Atas
-    * Dividir o documento de modo que cada parte corresponda a um tópico
-
-## 2 Trabalhos Relacionados
-
-* Ideia básica dos algorítmos (Coesão léxica ) como **presuposto básico**
-* Similaridade e Cosine
-
-  - TextTiling
-
-    [Top Seg for Arabic mostra 3 fases do TextTiling]	
-
-  - C99
-    . Baseado em coesão léxica
-    . Usa cosine
-    . Melhorado com LSA
-
-    [usa todas as palavras e sem stemming]
-    [Top Seg for Arabic mostra 4 fases do C99]	
-	
-
-## 3 Adapatção às Atas
-
-  * Algoritmos tradicionais feitos para o inglês
-  * Dificuldade: Coesão léxica não tão bem definida
-  * Dificuldade: estilo da escrita
-    - Paragrafo único
-    - Cabeçalhos e rodapés
-    - Pontuação --> ';' encerrando sentenças
-    - Insersão de espaços que não são quebra de sentença
-    - Ruídos
-
-### 		Preprocessamento
-
-  * Stop words e stemming
-  * Imagem exemplo
-	
-### 		Remoção de ruídos
-	
-  * Cabeçalhos e rodapés
-  * Numerais	
-
-### 		Identificação de Candidatos
+## 1 - Introdução
+    - Descrição das Reuniões
+    - Atas são documentos não estruturados e dificuldades para o sistema 
+    - Segmentar e extrair tópicos
+    - Definição da tarefa de segmentação
+    - Utilidade da segmentação 
+        - domínios onde e aplicada
+        - interesse crescente
+        - aprimoramento a: acesso a informação, sumarização de textos, acessibilidade
+    - Descrição das atas
+    - Onde é usada e lacunas
+    - Foco nas atas
+    - Ornanizado do restante do artigo
 
 
-## 4 Avaliação
-  - Medidas
-  * Tradicionais
-  * Para Segmentações
-      - Pk
-      - WindowDiff
-          * Problemas do Pk (demasiada penalização de FN / desconsideração de _near misses_)
-          * Ideia da media (quantidade de borders por janala)
+## 2 - Referencial Teórico
+    - Retomada de definições
+        - Segmentação
+        - Segmento
+        - Coesão léxica 
+        - Coseno
 
-	[Nas reuniões transcritas ha uma tolerânica de n seundos quando se apura os matches]
-	
-	
-	
-	
-		
-## 5 Proposta
-  - Justificativa / Motivação
-    - No problema de recuperação de informação, há duas princias questões: 1 detectar onde há uma divisão entre os tópicos, 2. detectar do que se trata o tópico. Nesse trabalho foca na primeira questão
-  - Algoritmos base
-  - Adapatações nos alg. base para o contexto das atas
-  - Preprocessamento
-    - Extração de palavras
-    - eliminação de stopwords
-    - stemming
-    {imagem mostrando o preprocessamento}
-
-## 6 Conclusão
-
-## 7 Referências
+### Principais algortimos
+    - TextTiling
+        - Funcionamento
+        - Janela deslizante
+        - Similaridade entre janelas
+        - Os limites estão nos picos de dissimilaridade
+        - Baixa complexidade e baixa eficiência
+    - C99
+        - Funcionamento
 
 
-[em atas, o vocabulário de segmentos distintos estão relacionados, isto é, compartilham certo vocabulário]
+## 3 - Trabalhos Relacionados
 
 
+
+## 4 - Conjunto de Documentos
+
+
+
+## 5 - Proposta: Segmentação Linear Automática de Atas de Reunião 
+
+
+
+## 6 - Avaliação Experimental
+
+
+
+## 7 - Conclusão
+
+
+
+
+
+
+   
