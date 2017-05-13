@@ -16,16 +16,16 @@ Diferenças de performance podem ser vistas no mesmo algoritmo quando aplicando 
 %%%%%%%%%%
 % Topic segmentation for textual document written in arabic language
 %%%%%%%%%%
-A fim de adaptar os algoritmos \textit{TextTiling} e \textit{C99} ao idioma árabe, foram propostos ajustes na etapa de preprocessamento onde verificou-se que diferenças no dialeto de cada pais devem ser consideradas no processo de segmentação e que a adaptação depende da escolha de um \textit{stemmer} adequado à cada dialeto~\cite{CHAIBI2014}.
+A fim de adaptar os algoritmos \textit{TextTiling} e \textit{C99} ao idioma árabe, foi utilizado como \textit{corpus} a concatenação de textos extraídos de notícias de diferentes países como Tunísia, Egito e Algeria, que tratam de assuntos distintos como política, esporte, cultura, história, tecnologia e artes, e que trazem particularidades nos estilos de escrita e até diferenças entre dialetos locais. 
 
-Na avaliação os autores utilizaram como \textit{corpus} a concatenação de textos extraídos de notícias de diferentes países como Tunísia, Egito e Algeria, que tratam de assuntos distintos como política, esporte, cultura, história, tecnologia e artes, e que trazem particularidades nos estilos de escrita e até diferenças entre dialetos locais. 
+Foram propostos ajustes na etapa de preprocessamento onde verificou-se que diferenças no dialeto de cada pais devem ser consideradas no processo de segmentação e que a adaptação depende da escolha de um \textit{stemmer} adequado à cada dialeto~\cite{CHAIBI2014}.
 
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Reuniões com múltiplos participantes
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-Outra aplicação para essas técnicas é a segmentação de conversas em reuniões com múltiplos participantes onde se estuda os discursos extraídos, ou seja, o texto a ser segmentado é uma transcrição das falas dos participantes durante a reunião.
+Outra aplicação para essas técnicas é a segmentação de conversas em reuniões com múltiplos participantes onde se estuda os textos extraídos dos discursos, ou seja, o texto a ser segmentado é uma transcrição das falas dos participantes durante a reunião.
 
 
 %%%%%%%%%%
@@ -61,7 +61,7 @@ uma vez que alguns elementos são frequentes na transição de tópicos. Essas \
 %%%%%%%%%%
 % Efficient linear text segmentation based on information retrieval techniques
 %%%%%%%%%%
-Quanto a eficácia dos algoritmos, observou-se que aqueles que apresentam melhor performance o fazem ao custo de maior complexidade computacional, que se deve, muitas vezes, à construção de matrizes de similaridade entre todas as sentenças como em~\cite{Choi2000}, onde é apresentado que calcular similaridades entre blocos de sentenças muito distantes no documento, pode representar um custo computacional dispensável. 
+Quanto a eficácia dos algoritmos, observou-se que aqueles que apresentam melhor performance o fazem ao custo de maior complexidade computacional, que se deve, muitas vezes, à construção de matrizes de similaridade entre todas as sentenças como em~\cite{Choi2000}, onde é apresentado que calcular similaridades entre trechos muito distantes no documento, pode representar um custo computacional dispensável. 
 
 Nesse sentido, foi apresentada uma abordagem que otimiza o processo ao computar as médias das similaridades entre sentenças de cada bloco, a qual chamou de \textit{inner similarity} e em seguida usou esses valores para calcular as medias das similaridades entre todos os blocos a qual chamou de \textit{outter similarity}. Dessa forma não é criada uma matriz que contem as similaridades de todas as sentenças, mas apenas daquelas mais próximas. Os autores reportaram uma eficiência superior e uma eficácia comparável aos algoritmos mais complexos~\cite{Kern2009}.
 

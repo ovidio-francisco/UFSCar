@@ -189,8 +189,8 @@ Na Figura~\ref{fig:exemplosegmentacaozoom} é apresentado um exemplo com duas se
 
   \end{figure}
   
-  
-Entre as medidas mais utilizadas para avaliar segmentadores estão:
+
+A fim de contornar esses problemas, algumas foram propostas. Entre as medidas mais utilizadas para avaliar segmentadores estão:
 
 \begin{enumerate}
 
@@ -202,7 +202,9 @@ ou seja, limites sempre receberão um peso proporcional à sua proximidade, desd
 %
 Para isso, esse método move uma janela de tamanho $k$ e a cada posição e verifica se o início e o final da janela estão ou não dentro do mesmo segmento e penaliza o algoritmo em caso de discrepância. Ou seja, dado duas palavras de distancia $k$, uma discrepância é computada quando o algoritmo e a referência não concordam se as palavras estão ou não no mesmo segmento.
 
-O valor de $k$ é calculado como a metade da média dos comprimentos dos segmentos reais. Como resultado, é retornado a contagem de discrepâncias divido pelo quantidade de segmentações analisadas. Esse valor serve como medida de dissimilaridade entre as segmentações e pode ser interpretada como a probabilidade de duas sentenças extraídas aleatoriamente pertencerem ao mesmo segmento.
+O valor de $k$ é calculado como a metade da média dos comprimentos dos segmentos reais. Como resultado, é retornado a contagem de discrepâncias divido pelo quantidade de segmentações analisadas. 
+
+P$_k$ é uma medida de dissimilaridade entre as segmentações e pode ser interpretada como a probabilidade de duas sentenças extraídas aleatoriamente pertencerem ao mesmo segmento.
 
 \item \textit{WindowDiff}. Pevzner~\cite{Pevzner2002} aponta problemas na avaliação mais tradicional, P$_k$~\cite{Beeferman1999}. Eles apontam que esse método penaliza demasiadamente os falsos negativos em relação aos falsos positivos e a \textit{near misses}, além disso, desconsidera o tamanho dos segmentos. Como solução, propõem um método, que traz duas diferenças principais: a dobra da penalidade para os falsos positivos a fim de diminuir o problema da subestimação dessa medida e, diferente de P$_k$, ao mover a janela pelo texto, penaliza-se o algoritmo sempre que o número de limites proposto pelo algoritmo não coincidir com o número de limites esperados para aquela janela de texto. 
 
