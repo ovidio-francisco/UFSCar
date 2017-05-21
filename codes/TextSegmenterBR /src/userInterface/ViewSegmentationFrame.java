@@ -276,7 +276,7 @@ public class ViewSegmentationFrame extends JFrame {
 
 		Segmenter segmenter;
 		
-		String alg = "TextTiling=";
+		String alg = "TextTiling";
 		
 		if (alg.equals("TextTiling")) {
 

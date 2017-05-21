@@ -9,7 +9,7 @@
 %%%%%%%%%%
 % TextTiling e C99 criados para inglês e independente de domínio
 %%%%%%%%%%
-Os algoritmos \textit{TextTiling} e \textit{C99} foram propostos para o inglês, independente de domínio, ou seja, a proposta inicial dos autores é trabalhar em qualquer texto nessa língua.
+Os algoritmos \textit{TextTiling} e \textit{C99} foram propostos para o inglês, independentemente de domínio, ou seja, a proposta inicial dos autores é trabalhar em qualquer texto nessa língua.
 %%%%%%%%%%
 % Adapatar para Atas em português
 %%%%%%%%%%
@@ -43,74 +43,82 @@ Nas subseções a seguir serão apresentados o pré-processamento e a identifica
 
 	O texto a ser segmentado frequentemente é extraído de documentos em formatos como \textit{pdf}, \textit{doc}, \textit{docx} ou \textit{odt}. Após a extração do texto, esse pode passar por processos de transformação os quais serão apresentados a seguir.
 	
-	A etapa de pré-processamento, em um documento contendo texto puro, acontece em quatro passos principais. 
+%	A etapa de pré-processamento, em um documento contendo texto puro, acontece em quatro passos principais. 
+
+  \begin{figure}[!h]
+	\centering
+	\includegraphics[width=0.2\textwidth]{construcao.png}
+%	\caption{Exemplo de pré-processamento.}
+	\\Em Construção
+	\label{fig:exemplopreprocessamento}
+  \end{figure}
 
 	
-\begin{enumerate}
+%\begin{enumerate}
 
 
 %
 % 1) Identificação de sentenças
-\item \textit{Identificação de sentenças}: 
-Cada final de sentença e identificado e marcado com uma \textit{string} especial, esse processo é melhor descrito na Subseção~\ref{subsec:indentificacaosentencas}.
+%\item \textit{Identificação de sentenças}: 
+%Cada final de sentença e identificado e marcado com uma \textit{string} especial, esse processo é melhor descrito na Subseção~\ref{subsec:indentificacaosentencas}.
 %
 %conforme mostrado no Algoritmo~\ref{alg:identificacaofinaisdesent}.
 
 %	
 % 2) Eliminação de ruídos
-\item \textit{Remoção de ruídos}:
+%\item \textit{Remoção de ruídos}:
 
 %%%%%%%%%%
 % Cabeçalhos e rodapés
 %%%%%%%%%%
-As atas frequentemente contém trechos que podem ser considerados pouco informativos e descartados durante o pré-processamento, como cabeçalhos e rodapés que se misturam aos tópicos tratados na reunião, podendo ser  inseridos no meio de um tópico e criando uma quebra que prejudica tanto o algoritmo de segmentação, quanto a leitura do texto pelo usuário.
+%As atas frequentemente contém trechos que podem ser considerados pouco informativos e descartados durante o pré-processamento, como cabeçalhos e rodapés que se misturam aos tópicos tratados na reunião, podendo ser  inseridos no meio de um tópico e criando uma quebra que prejudica tanto o algoritmo de segmentação, quanto a leitura do texto pelo usuário.
 %%%%%%%%%%
 % Numerais
 %%%%%%%%%%
-Também é comum o uso de numerais para marcação de páginas e linhas, da mesma forma, são pouco informativos e podem ser descartados.
+%Também é comum o uso de numerais para marcação de páginas e linhas, da mesma forma, são pouco informativos e podem ser descartados.
 
 
 %%%%%%%%%%
 % Remoção de ruídos
 %%%%%%%%%%
-Nesse trabalho, esses elementos são removidos, uma vez que, o descarte não causa perca de informação e pode facilitar a identificação dos segmentos, pois melhora a coesão do texto. Outro benefício é manter o texto livre de trechos que fogem do assunto circundante.
+%Nesse trabalho, esses elementos são removidos, uma vez que, o descarte não causa perca de informação e pode facilitar a identificação dos segmentos, pois melhora a coesão do texto. Outro benefício é manter o texto livre de trechos que fogem do assunto circundante.
 %%%
 % TODO: Como são removidos?
 % por meio de heurísticas simples
 %%%
 
-Elimina-se também nesse passo a acentuação, sinais de pontuação, restando apenas palavras.  
+%Elimina-se também nesse passo a acentuação, sinais de pontuação, restando apenas palavras.  
 
 
 
 %	
 % 3) Stop Words
-\item \textit{Stop Words}: 
-Remove-se as palavras consideradas menos informativas, as quais são chamadas de \textit{stop words}, para isso, utiliza-se uma lista contendo 438 palavras. 
+%\item \textit{Stop Words}: 
+%Remove-se as palavras consideradas menos informativas, as quais são chamadas de \textit{stop words}, para isso, utiliza-se uma lista contendo 438 palavras. 
 
 %
 % 4) Stemming
-\item \textit{Stemming}:
-Extrai-se o radical de cada palavra, para isso, as letras são convertidas em caixa baixa e aplica-se o algoritmo \textit{Orengo}\footnote{\urlorengo} para remoção de sufixos.
+%\item \textit{Stemming}:
+%Extrai-se o radical de cada palavra, para isso, as letras são convertidas em caixa baixa e aplica-se o algoritmo \textit{Orengo}\footnote{\urlorengo} para remoção de sufixos.
 
 
-\end{enumerate}
+%\end{enumerate}
 	
 	
 
 
 
-Tem-se então, uma lista com os elementos considerados mais significativos do texto. A Figura~\ref{fig:exemplopreprocessamento} mostra a etapa de pré-processamento em uma sentença em português.
+%Tem-se então, uma lista com os elementos considerados mais significativos do texto. %A Figura~\ref{fig:exemplopreprocessamento} mostra a etapa de pré-processamento em uma sentença em português.
 	
 
 
 
-  \begin{figure}[!h]
-	\centering
-	\includegraphics[width=0.45\textwidth]{exemplo-preprocessamento.jpg}
-	\caption{Exemplo de pré-processamento.}
-	\label{fig:exemplopreprocessamento}
-  \end{figure}
+%  \begin{figure}[!h]
+%	\centering
+%	\includegraphics[width=0.45\textwidth]{exemplo-preprocessamento.jpg}
+%	\caption{Exemplo de pré-processamento.}
+%	\label{fig:exemplopreprocessamento}
+%  \end{figure}
 
 
 
@@ -127,11 +135,13 @@ Tem-se então, uma lista com os elementos considerados mais significativos do te
 	
 %	Como entrada para os 
 %	Os algoritmos de segmentação devem ser
-	É preciso fornecer aos algoritmos os candidatos iniciais a limites de segmento. Antes disso, é necessário escolher qual será a unidade de informação mínima que constitui um segmento. Baseando-se no estilo de escrita e considerando as pontuações dos textos, é possível indicar quebras de parágrafo, finais de sentenças ou mesmo palavras como elementos que encerram um segmento. 
+	É preciso fornecer aos algoritmos os candidatos iniciais a limites de segmento. Para isso, é necessário escolher qual será a unidade de informação mínima que constitui um segmento. Baseando-se no estilo de escrita e considerando as pontuações de um texto, é possível, em alguns casos, indicar quebras de parágrafo, finais de sentenças ou mesmo palavras como elementos que encerram um segmento. 
 
 	Ocorre que em atas de reunião é uma prática comum redigi-las de forma que o conteúdo discutido fica em parágrafo único, além disso, as quebras de parágrafo são usados para formatação de outros elementos como espaço para assinaturas. 
-
-	Indicar todo ponto entre \textit{token} como candidato obriga a ajustar posteriormente os segmentos de maneira a não quebrar uma ideia ou frase. Assim, neste trabalho, os finais de sentença são considerados unidades de informação e portanto, passíveis a limite entre segmentos. 
+%
+	Também não é conveniente indicar todo ponto entre \textit{token} como candidato pois obrigaria a ajustar posteriormente os segmentos de maneira a não quebrar uma ideia ou frase. 
+%	
+	Assim, neste trabalho, os finais de sentença são considerados unidades de informação e portanto, passíveis a limite entre segmentos. 
 	
 	Devido ao estilo de pontuação desses documentos, como encerrar sentenças usando um \textit{";"} e inserção de linhas extras, foram usadas as regras apresentadas no Algoritmo 1 para identificar os finais de sentenças.  
 

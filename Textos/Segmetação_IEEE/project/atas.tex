@@ -3,18 +3,18 @@
 	\label{sec:conjutodedocumentos} 
 
 
-%%%%%%%%%%
-% Como foram obtidas (software e especialistas)
-%%%%%%%%%%
-	A fim de obter um conjunto de documentos segmentados que possam servir como referência na avaliação, seis atas de reunião foram coletadas junto ao departamento de pós-graduação da UFSCar-Sorocaba\footnote{\urlatas}. Os documentos foram oferecidos à profissionais que participam de reuniões desse departamento e por meio de um \textit{software} segmentaram o texto das atas conforme o julgamento de cada um. Os segmentos gerados manualmente foram comparados à segmentação automática conforme os critérios descritos a seguir.
+	
+Para a condução desse trabalho é necessário que hajam documentos a serem segmentados automaticamente e que se conheça uma segmentação de referência para compará-los e avaliar a proposta. A seguir, é apresentado as caraterísticas particulares das atas em relação a outros tipos textos e a segmentação de referência a ser utilizada.
 
+
+\subsection{Características das atas}
 	
 %%%%%%%%%%
 % Características particulares
 %%%%%%%%%%
  As atas de reunião diferem dos textos comumente estudados em outros trabalhos em alguns pontos. O estilo de escrita favorece textos sucintos com poucos detalhes, pois o ambiente dá preferência a textos curtos. Segundo Choi~\cite{Choi2001-LSA}, o segmentador tem a acurácia reduzida em segmentos curtos (em torno de 3 a 5 sentenças).
 	
-	Para evitar um texto monótono à leitura, a redação do documento tem o cuidado de não repetir ideias e palavras em favor da elegância do texto. Tal característica enfraquece a coesão léxica e portanto o cálculo da similaridade é prejudicado. Por exemplo, duas sentenças diferem se uma contiver a palavra \textit{computadores} e na seguinte \textit{equipamentos}, mesmo que se refiram à mesma ideia. Além disso, o documento compartilha um certo vocabulário próprio do ambiente onde os assuntos são discutidos e com isso nota-se que os segmentos, embora tratem de assuntos diferentes, são semelhantes em vocabulário.
+	Para evitar um texto monótono à leitura, ao redigir o documento tem-se o cuidado de não repetir ideias e palavras em favor da elegância do documento. Tal característica enfraquece a coesão léxica e portanto o cálculo da similaridade é prejudicado. Por exemplo, duas sentenças diferem se uma contiver a palavra \textit{computadores} e na seguinte \textit{equipamentos}, mesmo que se refiram à mesma ideia. Além disso, o documento compartilha um certo vocabulário próprio do ambiente onde os assuntos são discutidos e com isso nota-se que os segmentos, embora tratem de assuntos diferentes, são semelhantes em vocabulário.
 	
 A presença de ruídos como cabeçalhos, rodapés e numeração de páginas e linhas prejudicam tanto similaridade entre sentenças como a apresentação final ao usuário. Porém, esses ruídos podem ser reduzidos ou eliminados como mostrado na Subseção~\ref{subsec:preprocessamento}, sobre preprocessamento.
 
@@ -24,7 +24,7 @@ A presença de ruídos como cabeçalhos, rodapés e numeração de páginas e li
 %%%%%%%%%%
 % Há duas diferenças entre os tipos de documentos mais estudados
 %%%%%%%%%%
-Na literatura, vemos que a maioria dos trabalhos enquadram-se em duas categorias no que se refere ao \textit{corpus} estudado.  
+A maioria dos trabalhos enquadram-se em duas categorias no que se refere ao \textit{corpus} estudado.  
 %%%%%%%%%%
 % A concatenação de textos favorece a segmentação
 % E diferenças
@@ -44,7 +44,50 @@ Ocorre que essas características favorecem o processo de segmentação uma vez 
 %
 %%%%%%%%%%
 A segunda estuda a segmentação automática de textos obtidos da transcrição de áudios como de vídeos e de gravações de reuniões com grupos de pessoas. 
-A transcrição da fala de pessoas, difere desse trabalho, pois este possui caracteristicas típicas de um estilo formal, por exemplo, o texto sucinto, onde o autor se limita a relatar apenas o essencial de uma discussão e omite detalhes da discussão, poupando o leitor de diálogos repetitivos ou falas durante a transição de tópicos, o que resulta em segmentos mais curtos os quais desfavorecem algoritmos baseados em coesão léxica~\cite{Choi2000}. 
+A transcrição da fala de pessoas, difere desse trabalho, pois este possui características típicas de um estilo formal, por exemplo, o texto sucinto, onde o autor se limita a relatar apenas o essencial de uma discussão e omite detalhes da discussão, poupando o leitor de diálogos repetitivos ou falas durante a transição de tópicos, o que resulta em segmentos mais curtos os quais desfavorecem algoritmos baseados em coesão léxica~\cite{Choi2000}. 
+
+
+
+
+\subsection{Segmentação de Referência}
+
+
+%%%%%%%%%% 
+% Necessidade de uma referência
+%%%%%%%%%%
+Para que se possa avaliar um segmentador automático de textos é preciso uma referência, isto é, um texto com os limites entre os segmento conhecidos. Essa referência, deve ser confiável, sendo uma segmentação legítima que é capaz de dividir o texto em porções relativamente independentes, ou seja, uma segmentação ideal.
+
+
+
+%%%%%%%%%%
+% Formas de conseguir a Segentançaõ de Referência
+%%%%%%%%%%
+Entre as abordagens mais comuns para se conseguir essas referências, encontramos: 
+
+\begin{itemize}
+
+% Concatenação
+\item A concatenação aleatória de documentos distintos, onde o ponto entre o final de um texto e o início do seguinte é um limite entre eles. 
+
+% Segmentação manual
+\item A segmentação manual dos documentos, nesse caso, pessoas capacitadas, também chamadas de juízes, ou mesmo o autor do texto, são consultadas e indicam manualmente onde há uma quebra de segmento. 
+% Mediador em conversas
+\item Em transcrição de conversas faladas em reuniões com múltiplos participantes, um mediador é responsável por encerrar um assunto e iniciar um novo, nesse caso o mediador anota manualmente o tempo onde há uma transição de tópico. 
+
+\end{itemize}
+
+% Não avaliar
+Em aplicações onde a segmentação é uma tarefa secundária e quando essas abordagens são custosas ou não se aplicam, é possível, ao invés de avaliar o segmentador, analisar seu impacto na aplicação final.
+
+
+
+
+
+
+
+
+
+
 
 
 

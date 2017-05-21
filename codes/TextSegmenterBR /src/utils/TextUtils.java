@@ -63,19 +63,16 @@ and the next token following whitespace is uppercase, it is EOS
 	
 	public static String indentifyEndOfSentence(String txt, String eosMark) {
 
-		txt = txt.replace("\n", "\n ");
-		txt = txt.replace("\t", "\t ");
+//		txt = txt.replace("\n", "\n ");
+//		txt = txt.replace("\t", "\t ");     modificado 20-05-2017
+		txt = txt.replace("\n", " \n");
+		txt = txt.replace("\t", " \t");
 		txt = Cleaner.removeDoubleSpaces(txt);
 		
-//		[1] - ok - All ?! are EOS
-
-//		[^ ]\?\ 
-//		txt = txt.replaceAll("[^ ]\\?\\ ", "?"+eosMark);
 		
 		txt = txt.replace("!"  , "!"+eosMark); 
-//		txt = txt.replace(": (", ": "+eosMark +"(");  // by OJF
 
-		String[] tokens = txt.split(" ");
+		String[] tokens = txt.split("\\s+");
 		
 		
 		for(int i=0; i<tokens.length-1; i++) {
@@ -84,33 +81,7 @@ and the next token following whitespace is uppercase, it is EOS
 			if (!( tokens[i].endsWith(".") || tokens[i].endsWith("?") || tokens[i].endsWith(";"))) continue;
 			if (isAbreviation(tokens[i])) continue; 			
 
-//			[5] If the token to which the period is attached is capitalized and is < 5 characters 
-//			and the next token begins uppercase, it is not EOS
-//			Contra exemplo : "Bla bla bla bla bla Ana. Bla bla bla bla bla."
-/*
-			if (isUppercase(tokens[i]) && (tokens[i].length() < 5) && isUppercase(tokens[i+1])) {
-				System.out.println("5");
-				continue;  
-			}
-*/
-			
-//			[6] If the token to which the period is attached has other periods, it is not EOS
-//			Contra exemplo: "Bla bla bla bla bla no endereço ufscar.com.br. Bla bla bla bla bla."
-/*
-			if (tokens[i].substring(0, tokens[i].length()-1).contains(".")) {
-				System.out.println(6);
-				continue;
-			}
- */
-			
-//			[7] If the token to which the period is attached has < 2 characters, it is not EOS
-//			Contra exemplo : "Bla bla bla bla bla bloco A. Bla bla bla bla bla."
-/*
-			if (tokens[i].length()<3) { // 3 pq conto o '.' "s.".len = 2
-//				System.out.println(7);
-				continue;
-			}
- */
+
 			
 //			[8] If the next token following whitespace begins with $({["' it is EOS 
 			if ( "$({[\"'".contains(""+tokens[i+1].charAt(0))) {
@@ -150,7 +121,7 @@ and the next token following whitespace is uppercase, it is EOS
 		}
 		
 		String result = "";
-
+		
 		for(String s : tokens) {
 			result = result.concat(s).concat(" ");
 		}
@@ -159,18 +130,7 @@ and the next token following whitespace is uppercase, it is EOS
 	}
 
 	
-//	public static ArrayList<String> splitSentences(String txt) {
-////		["')}]\.|[\!\?]
-//		String regex = "[\"\')}]\\.|[\\!\\?]";
-//		
-//		String[] ss = txt.split(regex);
-//		
-//		ArrayList<String> result = new ArrayList<>();
-//		
-//		for(String s : ss) result.add(s);
-//		
-//		return result;
-//	}
+
 
 	public static ArrayList<String> splitSentences(String txt, String eosMark) {
 		
@@ -181,7 +141,7 @@ and the next token following whitespace is uppercase, it is EOS
 		ArrayList<String> result = new ArrayList<>();
 		
 		for(String s : sentences)
-			result.add(s);
+			result.add(s.trim());
 		
 		return result;
 	}
@@ -230,6 +190,12 @@ and the next token following whitespace is uppercase, it is EOS
 		
 		return text;
 		
+	}
+	
+	public static boolean isANumber(String token) {
+		token = token.trim();
+		token = Cleaner.removeChars(token, ",.".toCharArray());
+		return token.matches("-?\\d+(\\.\\d+)?");
 	}
 	
 	

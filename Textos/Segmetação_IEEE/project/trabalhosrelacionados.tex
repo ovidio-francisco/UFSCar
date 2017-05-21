@@ -47,9 +47,13 @@ Ainda no contexto de reuniões com múltiplos participantes temos a segmentaçã
 % Palavras Pista
 %%%%%%%%%%
 
-A presença de \textit{pistas} pode ser um indicativo que ajuda a aprimorar a detecção de limites entre segmentos,
-%A fim de aprimorar a detecção de limites entre segmentos, a presença de \textit{pistas} pode ser um indicativo de finais ou inícios de segmentos, 
-uma vez que alguns elementos são frequentes na transição de tópicos. Essas \textit{pistas} podem ser palavras como \textit{``Ok''}, \textit{``continuando''}, frases como \textit{``Boa noite''}, \textit{``Dando prosseguimento''} ou pausas prolongadas. Essas \textit{pistas} podem ser detectadas por meio de algoritmos de aprendizado de máquina ou anotadas manualmente
+A presença de \textit{pistas} pode ser um indicativo que ajuda a aprimorar a detecção de limites entre segmentos, uma vez que alguns elementos são frequentes na transição de tópicos. 
+%
+Essas \textit{pistas} podem ser p
+
+Palavras como \textit{``Ok''}, \textit{``continuando''} e frases como \textit{``Boa noite''}, \textit{``Dando prosseguimento''} ou pausas prolongadas, ajudam a indicar uma mudança de tópicos. 
+%
+Essas \textit{pistas} podem ser detectadas por meio de algoritmos de aprendizado de máquina ou anotadas manualmente
 \cite{Hsueh2006} % Faz combinações com Lexical e Cue LC-CUE
 \cite{Galley2003} 
 %\cite{Boguraev2000}%\textit{por outro lado}
@@ -61,7 +65,7 @@ uma vez que alguns elementos são frequentes na transição de tópicos. Essas \
 %%%%%%%%%%
 % Efficient linear text segmentation based on information retrieval techniques
 %%%%%%%%%%
-Quanto a eficácia dos algoritmos, observou-se que aqueles que apresentam melhor performance o fazem ao custo de maior complexidade computacional, que se deve, muitas vezes, à construção de matrizes de similaridade entre todas as sentenças como em~\cite{Choi2000}, onde é apresentado que calcular similaridades entre trechos muito distantes no documento, pode representar um custo computacional dispensável. 
+Quanto a eficácia dos algoritmos, observou-se que aqueles que apresentam melhor performance o fazem ao custo de maior complexidade computacional, que se deve, muitas vezes, à construção de matrizes de similaridade entre todas as sentenças como em~\cite{Choi2000}, nesses casos, calcular similaridades entre trechos muito distantes no documento, pode representar um custo computacional evitável. 
 
 Nesse sentido, foi apresentada uma abordagem que otimiza o processo ao computar as médias das similaridades entre sentenças de cada bloco, a qual chamou de \textit{inner similarity} e em seguida usou esses valores para calcular as medias das similaridades entre todos os blocos a qual chamou de \textit{outter similarity}. Dessa forma não é criada uma matriz que contem as similaridades de todas as sentenças, mas apenas daquelas mais próximas. Os autores reportaram uma eficiência superior e uma eficácia comparável aos algoritmos mais complexos~\cite{Kern2009}.
 
@@ -70,7 +74,7 @@ Nesse sentido, foi apresentada uma abordagem que otimiza o processo ao computar 
 % Os Corpus {Corporea}
 %%%%%%%%%%
 
-Para a obtenção do corpus, muitos trabalhos utilizam a concatenação de textos na avaliação, os quais foram extraídos de coleções documentos como 
+Para a obtenção do corpus, bem como segmentações de referência, muitos trabalhos utilizam a concatenação de textos na avaliação, os quais foram extraídos de coleções documentos como 
 \textit{TDT}\footnote{\urltdt} e
 \textit{WSJ}\footnote{\urlwsj}.
 %\textit{Brow}\footnote{\urlbrowcorpus} e 
@@ -95,6 +99,7 @@ Nesses casos, os segmentos de referência são dados por anotações feitas dura
 
 
 
+%A fim de aprimorar a detecção de limites entre segmentos, a presença de \textit{pistas} pode ser um indicativo de finais ou inícios de segmentos, 
 
 
 

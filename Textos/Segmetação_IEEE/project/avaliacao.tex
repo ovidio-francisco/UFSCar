@@ -3,40 +3,14 @@
 \label{sec:avaliacao}
 
 
-%\subsection{Bases}
-%	\label{subsec:bases}
 
-%%%%%%%%%% 
-% Necessidade de uma referência
-%%%%%%%%%%
-Para que se possa avaliar um segmentador automático de textos é preciso uma referência, isto é, um texto com os limites entre os segmento conhecidos. Essa referência, deve ser confiável, sendo uma segmentação legítima que é capaz de dividir o texto em porções relativamente independentes, ou seja, uma segmentação ideal.
+%A fim de avaliar a proposta deste trabalho, conduziu-se os experimentos descritos a seguir. A Subseção~\ref{subsec:bases}, descreve como os 
 
-
-
-%%%%%%%%%%
-% Formas de conseguir a Segentançaõ de Referência
-%%%%%%%%%%
-Entre as abordagens mais comuns para se conseguir essas referências, encontramos: 
-
-\begin{itemize}
-
-% Concatenação
-\item A concatenação aleatória de documentos distintos, onde o ponto entre o final de um texto e o início do seguinte é um limite entre eles. 
-
-% Segmentação manual
-\item A segmentação manual dos documentos, nesse caso, pessoas capacitadas, também chamadas de juízes, ou mesmo o autor do texto, são consultadas e indicam manualmente onde há uma quebra de segmento. 
-% Mediador em conversas
-\item Em transcrição de conversas faladas em reuniões com múltiplos participantes, um mediador é responsável por encerrar um assunto e iniciar um novo, nesse caso o mediador anota manualmente o tempo onde há uma transição de tópico. 
-
-\end{itemize}
-
-% Não avaliar
-Em aplicações onde a segmentação é uma tarefa secundária e quando essas abordagens são custosas ou não se aplicam, é possível, ao invés de avaliar o segmentador, analisar seu impacto na aplicação final.
 
 %%%%%%%%%%
 % As 2 principais dificuldades na avaliação
 %%%%%%%%%%
-De acordo com \cite{Pevzner2002} há duas principais dificuldades na avaliação de segmentadores automáticos. A primeira é conseguir um referência, já que juízes humanos costumam não concordar entre si, sobre onde os limites estão e outras abordagens podem não se aplicar ao contexto. A segunda é que tipos diferentes de erros devem ter pesos diferentes de acordo com a aplicação. Há casos onde certa imprecisão é tolerável e outras, como a segmentação de notícias, onde a precisão é mais importante.
+De acordo com \cite{Pevzner2002} há duas principais dificuldades na avaliação de segmentadores automáticos. A primeira é conseguir uma referência, já que juízes humanos costumam não concordar entre si, sobre onde os limites estão e outras abordagens podem não se aplicar ao contexto. A segunda é que tipos diferentes de erros devem ter pesos diferentes de acordo com a aplicação. Há casos onde certa imprecisão é tolerável e outras, como a segmentação de notícias, onde a precisão é mais importante.
 
 
 %%%%%%%%%%
@@ -53,7 +27,16 @@ Para fins de avaliação desse trabalho, um bom método de segmentação é aque
 As próximas subseções mostram o conjunto de atas e a segmentação usada como referência em seguida são apresentadas as métricas de avaliação utilizadas neste trabalho e os testes realizados para avaliar os métodos.
 
 
+
+\subsection{Bases}
+	\label{subsec:bases}
+
 	
+%%%%%%%%%%
+% Como foram obtidas (software e especialistas)
+%%%%%%%%%%
+	A fim de obter um conjunto de documentos segmentados que possam servir como referência na avaliação, seis atas de reunião foram coletadas junto ao departamento de pós-graduação da UFSCar-Sorocaba\footnote{\urlatas}. Os documentos foram oferecidos à profissionais que participam de reuniões desse departamento e por meio de um \textit{software} segmentaram o texto das atas conforme o julgamento de cada um. Os segmentos gerados manualmente foram comparados à segmentação automática conforme os critérios descritos a seguir.
+
 
 
 \subsection{Configuração experimental}
@@ -74,114 +57,125 @@ O \textit{C99} permite ajustarmos três parâmetros, sendo, a quantidade segment
 
 \subsection{Resultados}
 	\label{subsec:resultados}
+	
+	
+  \begin{figure}[!h]
+	\centering
+	\includegraphics[width=0.2\textwidth]{construcao.png}
+%	\caption{Exemplo de pré-processamento.}
+	\\Em Construção
+	\label{fig:emconstrucao}
+  \end{figure}
+
+	
 
 %%%%%%%%%%
 % Objetivos
 %%%%%%%%%%
-A fim de encontrar o melhor método que divida uma ata em segmentos coerentes, realizou-se experimentos com o \textit{TextTiling} e \textit{C99} a fim de encontrar os melhores parâmetros para esses documentos.
+%A fim de encontrar o melhor método que divida uma ata em segmentos coerentes, realizou-se experimentos com o \textit{TextTiling} e \textit{C99} a fim de encontrar os melhores parâmetros para esses documentos.
 
 %%%%%%%%%%
 % Teste de Fiedman e CD
 % 1ª Etapa
 %%%%%%%%%%
-Em seguida aplicou-se o teste de Friedman para saber se há diferenças significativas entre a eficácia dos modelos. O pós-teste de Nemenyi foi aplicado para descobrir quais diferenças são significativas. 
+%Em seguida aplicou-se o teste de Friedman para saber se há diferenças significativas entre a eficácia dos modelos. O pós-teste de Nemenyi foi aplicado para descobrir quais diferenças são significativas. 
 %
-Exite diferença quando seus \textit{rankings} médios diferirem em um valor mínimo, chamado de diferença critica (CD). 
+%Exite diferença quando seus \textit{rankings} médios diferirem em um valor mínimo, chamado de diferença critica (CD). 
 %
 
 %%%%%%%%%%
 % 
 %%%%%%%%%%
-Com isso foi possível, pela análise do diagrama de diferença crítica, verificar qual é o melhor modelo para cada medida
+%Com isso foi possível, pela análise do diagrama de diferença crítica, verificar qual é o melhor modelo para cada medida
 % e quão significativamente 
-em relação aos demais. 
+%em relação aos demais. 
 
 %%%%%%%%%%
 % Dados obtidos com o C99
 %%%%%%%%%%
-A Tabela~\ref{tab:mediasC99} mostra os dados obtidos com o \textit{C99}, onde \texttt{S} é a proporção de segmentos em relação a quantidade de candidatos, \texttt{M} é o tamanho do quadro utilizado para criar a matriz de \textit{ranking} e \texttt{W} indica se os segmentos são representados por vetores contendo a frequência ou um peso das palavras. 
+%A Tabela~\ref{tab:mediasC99} mostra os dados obtidos com o \textit{C99}, onde \texttt{S} é a proporção de segmentos em relação a quantidade de candidatos, \texttt{M} é o tamanho do quadro utilizado para criar a matriz de \textit{ranking} e \texttt{W} indica se os segmentos são representados por vetores contendo a frequência ou um peso das palavras. 
 
 
 
-\begin{table}[!h]
-	\centering
-
-	\begin{tabular}{|c|c|c|c|c|}
-	
-		\hline
-		Medida & \texttt{S} & \texttt{M} & \texttt{W} & \textbf{Média}\\		
-		\hline
-
-		Acuracy		& 40	& 11 & Sim & 0.6199	\\ \hline	
-		F1			& 60	& 9	 & Sim & 0.6167	\\ \hline	
-		Precision	& 40	& 11 & Sim & 0.7106	\\ \hline			
-		Recall		& 100	& 9	 & Não & 0.8516	\\ \hline		
-		Pk			& 40	& 11 & Sim & 0.1163	\\ \hline	
-		Windiff		& 40	& 11 & Sim & 0.3800	\\ \hline		
-
-		
-	\end{tabular}
-	
-	\caption{Médias das medidas obtidas com \textit{C99}.}
-	\label{tab:mediasC99}
-\end{table}
-
-
-A tabelas~\ref{tab:mediasTextTiling} mostra os dados obtidos com o \textit{TextTiling}, onde \texttt{J} é o tamanho da janela e \texttt{P} é o passo.
-
-\begin{table}[!h]
-	\centering
-
-	\begin{tabular}{|c|c|c|c|}
-	
-		\hline
-		Medida & \texttt{J} & \texttt{P} & \textbf{Média}\\		
-		\hline
-
-		Acuracy		& 50 & 9 	& 0.5510 \\ \hline	
-		F1			& 50 & 3 	& 0.5898 \\ \hline	
-		Precision	& 60 & 12 	& 0.5746 \\ \hline			
-		Recall		& 50 & 3 	& 0.7717 \\ \hline		
-		Pk			& 30 & 9 	& 0.1572 \\ \hline	
-		Windiff		& 50 & 9 	& 0.4489 \\ \hline		
-
-		
-	\end{tabular}
-	
-	\caption{Médias das medidas obtidas com o \textit{TextTiling}.}
-	\label{tab:mediasTextTiling}
-\end{table}
+%\begin{table}[!h]
+%	\centering
+%
+%	\begin{tabular}{|c|c|c|c|c|}
+%	
+%		\hline
+%		Medida & \texttt{S} & \texttt{M} & \texttt{W} & \textbf{Média}\\		
+%		\hline
+%
+%		Acuracy		& 40	& 11 & Sim & 0.6199	\\ \hline	
+%		F1			& 60	& 9	 & Sim & 0.6167	\\ \hline	
+%		Precision	& 40	& 11 & Sim & 0.7106	\\ \hline			
+%		Recall		& 100	& 9	 & Não & 0.8516	\\ \hline		
+%		Pk			& 40	& 11 & Sim & 0.1163	\\ \hline	
+%		Windiff		& 40	& 11 & Sim & 0.3800	\\ \hline		
+%
+%		
+%	\end{tabular}
+%	
+%	\caption{Médias das medidas obtidas com \textit{C99}.}
+%	\label{tab:mediasC99}
+%\end{table}
 
 
-Uma vez sabendo quais valores de parâmetros melhor configuram um algoritmo para uma medida, resta então saber qual dos dois algoritmos é mais eficiente segundo essa medida. Para isso aplicou-se novamente o teste de Friedman com pós-teste de Nemenyi, dessa vez, com os melhores modelos dos dois algoritmos para cada medida. O resultado segue na Tabela~\ref{tab:melhoresmodelos}
+%A tabelas~\ref{tab:mediasTextTiling} mostra os dados obtidos com o \textit{TextTiling}, onde \texttt{J} é o tamanho da janela e \texttt{P} é o passo.
 
-\begin{table}[!h]
-	\centering
-	
-	\begin{tabular}{|c|c|c|c|c|}
-
-		\hline
-		Medida & Algoritmo & \texttt{S} & \texttt{M} & \texttt{W}\\		
-		\hline
-		
-	
-		Acuracy		& C99 & 40 	& 11	& Sim \\ \hline
-		Precision	& C99 & 40 	& 11	& Sim \\ \hline
-		Pk			& C99 & 40 	& 11	& Sim \\ \hline
-		Windiff		& C99 & 40 	& 11	& Sim \\ \hline
-		F1			& C99 & 60 	& 9		& Sim \\ \hline
-		Recall		& C99 & 100 & 9		& Não \\ \hline
- 	
-	
-	\end{tabular}
-
-	\caption{Melhores modelos para cada medida segundo diagramas de diferença crítica.}
-	\label{tab:melhoresmodelos}	
-	
-\end{table}
+%\begin{table}[!h]
+%	\centering
+%
+%	\begin{tabular}{|c|c|c|c|}
+%	
+%		\hline
+%		Medida & \texttt{J} & \texttt{P} & \textbf{Média}\\		
+%		\hline
+%
+%		Acuracy		& 50 & 9 	& 0.5510 \\ \hline	
+%		F1			& 50 & 3 	& 0.5898 \\ \hline	
+%		Precision	& 60 & 12 	& 0.5746 \\ \hline			
+%		Recall		& 50 & 3 	& 0.7717 \\ \hline		
+%		Pk			& 30 & 9 	& 0.1572 \\ \hline	
+%		Windiff		& 50 & 9 	& 0.4489 \\ \hline		
+%
+%		
+%	\end{tabular}
+%	
+%	\caption{Médias das medidas obtidas com o \textit{TextTiling}.}
+%	\label{tab:mediasTextTiling}
+%\end{table}
 
 
-Na análise do diagrama de diferença crítica verificou-se que o algoritmo \textit{C99} apresenta melhor eficiência em todas as medidas e os valores das quatro primeiras os valores de \texttt{S}, \texttt{M} e \texttt{W} se repetiram, sugerindo uma configuração otimizada para o problema da segmentação de atas de reunião.
+%Uma vez sabendo quais valores de parâmetros melhor configuram um algoritmo para uma medida, resta então saber qual dos dois algoritmos é mais eficiente segundo essa medida. Para isso aplicou-se novamente o teste de Friedman com pós-teste de Nemenyi, dessa vez, com os melhores modelos dos dois algoritmos para cada medida. O resultado segue na Tabela~\ref{tab:melhoresmodelos}
+
+%\begin{table}[!h]
+%	\centering
+%	
+%	\begin{tabular}{|c|c|c|c|c|}
+%
+%		\hline
+%		Medida & Algoritmo & \texttt{S} & \texttt{M} & \texttt{W}\\		
+%		\hline
+%		
+%	
+%		Acuracy		& C99 & 40 	& 11	& Sim \\ \hline
+%		Precision	& C99 & 40 	& 11	& Sim \\ \hline
+%		Pk			& C99 & 40 	& 11	& Sim \\ \hline
+%		Windiff		& C99 & 40 	& 11	& Sim \\ \hline
+%		F1			& C99 & 60 	& 9		& Sim \\ \hline
+%		Recall		& C99 & 100 & 9		& Não \\ \hline
+% 	
+%	
+%	\end{tabular}
+%
+%	\caption{Melhores modelos para cada medida segundo diagramas de diferença crítica.}
+%	\label{tab:melhoresmodelos}	
+%	
+%\end{table}
+
+
+%Na análise do diagrama de diferença crítica verificou-se que o algoritmo \textit{C99} apresenta melhor eficiência em todas as medidas e os valores das quatro primeiras os valores de \texttt{S}, \texttt{M} e \texttt{W} se repetiram, sugerindo uma configuração otimizada para o problema da segmentação de atas de reunião.
 
 
 
