@@ -8,11 +8,12 @@ import ptstemmer.implementations.OrengoStemmer;
 import utils.Files;
 import utils.TextUtils;
 
-public class TestePreprocessamento {
+public class StatisticsPreprocessamento {
 
 		
 	private static ArrayList<File> files = new ArrayList<>();
 	private static ArrayList<String> texts = new ArrayList<>();
+	
 	private static ArrayList<ArrayList<ArrayList<String>>> docs = new ArrayList<>();
 	
 	private static StopWordList stopWords = new StopWordList(new File("stopPort.txt"));
@@ -28,9 +29,11 @@ public class TestePreprocessamento {
 		files.clear();
 		getFiles(new File("./testes-preprocessamento"));
 		
-		String txt = Files.loadTxtFile(files.get(0));
-		
-		texts.add(txt);
+		for(File f : files) {
+
+			String txt = Files.loadTxtFile(f);
+			texts.add(txt);
+		}
 		
 	}
 	
@@ -43,13 +46,13 @@ public class TestePreprocessamento {
 			txt = TextUtils.indentifyEndOfSentence(txt, EOS);
 			ArrayList<String> StringSentences = TextUtils.splitSentences(txt, EOS);
 			
-			ArrayList<ArrayList<String>> arraySentendes = new ArrayList<>();
+			ArrayList<ArrayList<String>> arraySentences = new ArrayList<>();
 
 			for(String stringSentence : StringSentences) {
-				arraySentendes.add(getTokens(stringSentence));
+				arraySentences.add(getTokens(stringSentence));
 			}
 			
-			docs.add(arraySentendes);
+			docs.add(arraySentences);
 			
 		}
 		
@@ -153,28 +156,70 @@ public class TestePreprocessamento {
 	}
 	
 	private static void showSizes() {
-		String sizes = "";
+//		String sizes = "";
+//		String mediasDasSentencas = "";
+		String medias = "";
+		
+		int totalPalavras  = 0;
+//		int totalSentencas = 0;
+		float sumMedias = 0;
+		
 		for(ArrayList<ArrayList<String>> doc : docs) {
-			int docSize = 0;
-			String sentencesSizes = "";
+			int nWords = 0;
+			float mediaSentencas = 0;
+			
+//			String sentencesSizes = "";
 			for(ArrayList<String> sentence : doc) {
-				sentencesSizes += " " + sentence.size();
-				docSize += sentence.size();
+//				sentencesSizes += " " + sentence.size();
+				nWords += sentence.size();
 			}
-			sizes += "  Total: " + docSize + " = " +sentencesSizes;
+			
+			mediaSentencas = (float)nWords / (float)doc.size();
+//			mediasDasSentencas = String.format(" | Medias das Sentenças = %.3f", mediaSentencas);
+			
+//			sizes += "doc :" 
+//			         + " Words = " + nWords 
+//			         + " Sents = " + doc.size() + " --> " +sentencesSizes + mediasDasSentencas + "\n";
+		
+			totalPalavras  += nWords;
+//			totalSentencas += doc.size();
+			sumMedias      += mediaSentencas;
 		}
-		System.out.println(sizes);
+		
+		float mediaDocs = (float)totalPalavras / docs.size();
+		float mediaSent = sumMedias / docs.size();
+		
+		medias =            String.format("MÉDIA  --------------------> DOCS: %.3f | SENTENÇAS: %.3f", mediaDocs , mediaSent);
+
+//		System.out.print(sizes);
+//		System.out.print("TOTAL: " + totalPalavras + "\n");
+		System.out.print(medias +  "\n");
+		System.out.print("\n");
+		
 	}
 	
 	private static void showTextsSizes() {
 		
+		int sum = 0;
+//		String totais = "";
+		
 		for(String txt : texts) {
+			int total = getTokens(txt).size();
 			
-			System.out.println("  Total= " + getTokens(txt).size());
+//			totais += " " + total;
+			
+			
+			sum += total;
 		}
+//		System.out.println("Totais = " + totais);
+//		System.out.println("TOTAL: " + sum);
+		float media = (float)sum / (float)texts.size();
+		System.out.println(String.format("MÉDIAS --------------------> DOCS: %.3f", media));
+		System.out.println();
 		
 	}
 
+	@SuppressWarnings("unused")
 	private static void showWords(ArrayList<ArrayList<String>> doc) {
 		StringBuilder sb = new StringBuilder();
 		
@@ -203,7 +248,7 @@ public class TestePreprocessamento {
 			if(f.isDirectory())
 				getFiles(f);
 			else
-				TestePreprocessamento.files.add(f);
+				StatisticsPreprocessamento.files.add(f);
 		}
 		
 	}
@@ -230,19 +275,19 @@ public class TestePreprocessamento {
 		System.out.println("Testando Preprocessamento\n");
 
 		
-		loadDocs();					System.out.print("Loading docs         "); 	showTextsSizes();
+		loadDocs();					System.out.print("Loading docs         \n"); 	showTextsSizes();
 		
-		removeHeaderAndFooters();	System.out.print("Removing Headers     "); 	showTextsSizes();	
+		removeHeaderAndFooters();	System.out.print("Removing Headers     \n"); 	showTextsSizes();	
 		
 		loadArrays();				System.out.print("Spliting sentences \n");	
 		
 		toLowCase();
-		removePunctuation();		System.out.print("Removing Punctuation ");	showSizes();
-		removeAccents();			System.out.print("Removing Accents     ");	showSizes();
-		removeStopWords();          System.out.print("Removing StopWords   ");	showSizes();
-		removeNumbers();            System.out.print("Removing Numbers     ");	showSizes();
-		removeShortThan(3);			System.out.print("Removing Shorters    ");	showSizes();
-		removeStem();               System.out.print("Removing Stem        ");	showSizes();
+		removePunctuation();		System.out.print("Removing Punctuation \n");	
+		removeAccents();			System.out.print("Removing Accents     \n");	
+		removeStopWords();          System.out.print("Removing StopWords   \n");	showSizes();
+		removeNumbers();            System.out.print("Removing Numbers     \n");	showSizes();
+		removeShortThan(3);			System.out.print("Removing Shorters    \n");	showSizes();
+		removeStem();               System.out.print("Removing Stem        \n");	
 
 //		showWords(docs.get(0));
 		
