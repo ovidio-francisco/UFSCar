@@ -18,7 +18,7 @@ public class StopWordList implements StopWords {
 	
 	@Override
 	public boolean isStopWord(String word) {
-		return list.contains(Cleaner.clean(word.toLowerCase()));
+		return list.contains(Cleaner.clean(word.toLowerCase()).trim());
 	}
 
 	@Override

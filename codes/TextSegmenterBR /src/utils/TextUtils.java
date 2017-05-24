@@ -194,7 +194,7 @@ and the next token following whitespace is uppercase, it is EOS
 	
 	public static boolean isANumber(String token) {
 		token = token.trim();
-		token = Cleaner.removeChars(token, ",.".toCharArray());
+		token = Cleaner.removeChars(token, ",.ªº$".toCharArray());
 		return token.matches("-?\\d+(\\.\\d+)?");
 	}
 	

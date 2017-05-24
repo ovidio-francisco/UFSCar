@@ -87,7 +87,7 @@ public class StatisticsPreprocessamento {
 		for(ArrayList<ArrayList<String>> doc : docs) {
 			for(ArrayList<String> sentence : doc) {
 				for(int i=0; i<sentence.size(); i++) {
-					if (sentence.get(i).length() < minSize) {
+					if (sentence.get(i).trim().length() < minSize) {
 						sentence.remove(i);
 						i--;
 					}
@@ -284,14 +284,17 @@ public class StatisticsPreprocessamento {
 		toLowCase();
 		removePunctuation();		System.out.print("Removing Punctuation \n");	
 		removeAccents();			System.out.print("Removing Accents     \n");	
-		removeStopWords();          System.out.print("Removing StopWords   \n");	showSizes();
-		removeNumbers();            System.out.print("Removing Numbers     \n");	showSizes();
 		removeShortThan(3);			System.out.print("Removing Shorters    \n");	showSizes();
+
+		removeNumbers();            System.out.print("Removing Numbers     \n");	showSizes();
+		removeStopWords();          System.out.print("Removing StopWords   \n");	showSizes();
 		removeStem();               System.out.print("Removing Stem        \n");	
 
 //		showWords(docs.get(0));
-		
+	
+
 	}
+	
 
 }
 

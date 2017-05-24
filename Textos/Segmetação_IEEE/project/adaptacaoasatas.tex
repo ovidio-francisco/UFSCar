@@ -38,6 +38,42 @@ Nas subseções a seguir serão apresentados o pré-processamento e a identifica
 \subsection{Pré-processamento}
 	\label{subsec:preprocessamento}
 
+	O texto a ser segmentado frequentemente é extraído de documentos em formatos como \textit{pdf}, \textit{doc}, \textit{docx} ou \textit{odt}. Após a extração, uma ata tem em média 906 \textit{tokens}, incluindo elementos menos informativos, a fim selecionar as palavras mais significativas, o texto passa por processos de transformação os quais serão apresentados a seguir.
+	
+
+\begin{enumerate}
+
+
+% Cabeçalhos e rodapés
+\item Remoção de Cabeçalhos e rodapés: 
+As atas frequentemente contém trechos que podem ser considerados pouco informativos e descartados durante o pré-processamento, como cabeçalhos e rodapés que se misturam aos tópicos tratados na reunião, podendo ser  inseridos no meio de um tópico e criando uma quebra que prejudica tanto o algoritmo de segmentação, quanto a leitura do texto pelo usuário.
+
+% Identificação de sentenças
+\item Identificação de finais sentenças: 
+Cada final de sentença e identificado e marcado com uma \textit{string} especial, esse processo é melhor descrito na Subseção~\ref{subsec:indentificacaosentencas}.
+
+% Limpeza
+\item Limpeza: 
+Todos os caracteres são convertidos em caixa baixa e elimina-se a acentuação, sinais de pontuação e todos os \textit{tokens} menores que três caracteres.
+
+% Numerais
+\item Remoção de numerais:
+Nas atas, é comum o uso de numerais para marcação de páginas e linhas, da mesma forma, são pouco informativos e podem ser descartados.
+
+% Stop Words
+\item Remoção de \textit{Stop Words}: 
+Remove-se as palavras consideradas menos informativas, para isso, utiliza-se uma lista contendo 438 palavras. 
+
+% Stemming
+\item \textit{Stemming}:
+Extrai-se o radical de cada palavra, para isso, as letras são convertidas em caixa baixa e aplica-se o algoritmo \textit{Orengo}\footnote{\urlorengo} para remoção de sufixos.
+
+\end{enumerate}
+	
+	
+
+Após cada passo, os \textit{tokens} menos significativos são removidos e, ao final, são extraídas em média 441 palavras de cada ata, conforme mostrado na Tabela~\ref{tab:preprocessamento}.
+
 %Testando Preprocessamento
 %
 %Loading docs         
@@ -49,111 +85,53 @@ Nas subseções a seguir serão apresentados o pré-processamento e a identifica
 %Spliting sentences 
 %Removing Punctuation 
 %Removing Accents     
-%Removing StopWords   
-%MÉDIA  --------------------> DOCS: 548.000 | SENTENÇAS: 29.520
+%Removing Shorters    
+%MÉDIA  --------------------> DOCS: 535.333 | SENTENÇAS: 28.772
 %
 %Removing Numbers     
-%MÉDIA  --------------------> DOCS: 471.500 | SENTENÇAS: 25.443
+%MÉDIA  --------------------> DOCS: 526.500 | SENTENÇAS: 28.327
 %
-%Removing Shorters    
+%Removing StopWords   
 %MÉDIA  --------------------> DOCS: 441.000 | SENTENÇAS: 23.884
 %
-%Removing Stem        
+%Removing Stem  
 
-
-
-% 1 - Carregamento e conversão 
-% 2 - Remoção de cabeçalho
-% 3 - Divisão em sentenças
-% 4 - Remoção de pontuação, acentos
-% 5 - Remoção de StopWords
-% 6 - Remoção de Numerais
-% 7 - Remoção de palavras menores
-% 8 - Remoção de Sufixos
-
-
-
-
-
-	O texto a ser segmentado frequentemente é extraído de documentos em formatos como \textit{pdf}, \textit{doc}, \textit{docx} ou \textit{odt}. Após a extração do texto, esse pode passar por processos de transformação os quais serão apresentados a seguir.
-	
-%	A etapa de pré-processamento, em um documento contendo texto puro, acontece em quatro passos principais. 
-
-  \begin{figure}[!h]
+\begin{table}[!h]
 	\centering
-	\includegraphics[width=0.2\textwidth]{construcao.png}
-%	\caption{Exemplo de pré-processamento.}
-	\\Em Construção
+
+	\begin{tabular}{|l|c|}
+	
+		\hline
+		\textbf{Processo}      &  \textbf{Média de \textit{Tokens}}\\		
+
+		\hline
+
+		Extração do texto                    & 906 \\ \hline
+		Remoção de Cabeçalhos Rodapés        & 813 \\ \hline
+		Identificação de finais de sentença  & 813 \\ \hline
+		Limpeza                              & 535 \\ \hline
+		Remoção de Numerais                  & 526 \\ \hline
+		Remoção de \textit{Stop Words}       & 441 \\ \hline
+		\textit{Stemming}                    & 441 \\ \hline
+		
+		
+	\end{tabular}
+	
+	\caption{Quantidade média de \textit{tokens} extraídos após cada passo do pré-processamento.}
+	\label{tab:preprocessamento}
+\end{table}
+
+
+A Figura~\ref{fig:exemplopreprocessamento} mostra a etapa de pré-processamento em uma sentença em português.
+	
+
+
+  \begin{figure*}
+	\centering
+	\includegraphics[width=1\textwidth]{pre-processamento.jpg}
+	\caption{Exemplo de pré-processamento.}
 	\label{fig:exemplopreprocessamento}
-  \end{figure}
-
-
-	
-%\begin{enumerate}
-
-
-%
-% 1) Identificação de sentenças
-%\item \textit{Identificação de sentenças}: 
-%Cada final de sentença e identificado e marcado com uma \textit{string} especial, esse processo é melhor descrito na Subseção~\ref{subsec:indentificacaosentencas}.
-%
-%conforme mostrado no Algoritmo~\ref{alg:identificacaofinaisdesent}.
-
-%	
-% 2) Eliminação de ruídos
-%\item \textit{Remoção de ruídos}:
-
-%%%%%%%%%%
-% Cabeçalhos e rodapés
-%%%%%%%%%%
-%As atas frequentemente contém trechos que podem ser considerados pouco informativos e descartados durante o pré-processamento, como cabeçalhos e rodapés que se misturam aos tópicos tratados na reunião, podendo ser  inseridos no meio de um tópico e criando uma quebra que prejudica tanto o algoritmo de segmentação, quanto a leitura do texto pelo usuário.
-%%%%%%%%%%
-% Numerais
-%%%%%%%%%%
-%Também é comum o uso de numerais para marcação de páginas e linhas, da mesma forma, são pouco informativos e podem ser descartados.
-
-
-%%%%%%%%%%
-% Remoção de ruídos
-%%%%%%%%%%
-%Nesse trabalho, esses elementos são removidos, uma vez que, o descarte não causa perca de informação e pode facilitar a identificação dos segmentos, pois melhora a coesão do texto. Outro benefício é manter o texto livre de trechos que fogem do assunto circundante.
-%%%
-% TODO: Como são removidos?
-% por meio de heurísticas simples
-%%%
-
-%Elimina-se também nesse passo a acentuação, sinais de pontuação, restando apenas palavras.  
-
-
-
-%	
-% 3) Stop Words
-%\item \textit{Stop Words}: 
-%Remove-se as palavras consideradas menos informativas, as quais são chamadas de \textit{stop words}, para isso, utiliza-se uma lista contendo 438 palavras. 
-
-%
-% 4) Stemming
-%\item \textit{Stemming}:
-%Extrai-se o radical de cada palavra, para isso, as letras são convertidas em caixa baixa e aplica-se o algoritmo \textit{Orengo}\footnote{\urlorengo} para remoção de sufixos.
-
-
-%\end{enumerate}
-	
-	
-
-
-
-%Tem-se então, uma lista com os elementos considerados mais significativos do texto. %A Figura~\ref{fig:exemplopreprocessamento} mostra a etapa de pré-processamento em uma sentença em português.
-	
-
-
-
-%  \begin{figure}[!h]
-%	\centering
-%	\includegraphics[width=0.45\textwidth]{exemplo-preprocessamento.jpg}
-%	\caption{Exemplo de pré-processamento.}
-%	\label{fig:exemplopreprocessamento}
-%  \end{figure}
+  \end{figure*}
 
 
 
@@ -213,6 +191,22 @@ Nas subseções a seguir serão apresentados o pré-processamento e a identifica
 
 
 
+
+
+%conforme mostrado no Algoritmo~\ref{alg:identificacaofinaisdesent}.
+%	
+% 2) Eliminação de ruídos
+%\item \textit{Remoção de ruídos}:
+%%%%%%%%%%
+% Remoção de ruídos
+%%%%%%%%%%
+%Nesse trabalho, esses elementos são removidos, uma vez que, o descarte não causa perca de informação e pode facilitar a identificação dos segmentos, pois melhora a coesão do texto. Outro benefício é manter o texto livre de trechos que fogem do assunto circundante.
+%%%
+% TODO: Como são removidos?
+% por meio de heurísticas simples
+%%%
+
+%Elimina-se também nesse passo a acentuação, sinais de pontuação, restando apenas palavras.  
 
 
 
