@@ -347,8 +347,8 @@ public class EvaluateSegmentationsFrame extends JFrame {
 			 	              getTextTilingSegmenter() : 
 					          getC99BrSegmenter(); 
 		
-		((AbstractSegmenter)result).setRemoveStopWords(cbStopWords.isSelected());
-		((AbstractSegmenter)result).setRemoveStem(cbStems.isSelected());	 	              
+		((AbstractSegmenter)result).getPreprocess().setRemoveStopWord(cbStopWords.isSelected());
+		((AbstractSegmenter)result).getPreprocess().setRemoveStem(cbStems.isSelected());	 	              
 		
 		return result;
 	}
@@ -364,7 +364,7 @@ public class EvaluateSegmentationsFrame extends JFrame {
 		
 		textTiling.setWindowSize(winSize);
 		textTiling.setStep(step);
-		textTiling.setStopwords(null);
+//		textTiling.setStopwords(null);
 //		textTiling.setStemmer(TextTilingBR.StemmingAlgorithms.NONE);
 		textTiling.setMinTokenSize(1);
 		textTiling.setRemoveHeader(false);

@@ -8,12 +8,11 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Vector;
 
-import preprocessamento.Stemmer;
-import preprocessamento.StopWords;
+import preprocessamento.Preprocess;
 import segmenter.algorithms.c99br.math.Convolution;
 import segmenter.algorithms.c99br.statistics.*;
 import segmenter.algorithms.c99br.struct.*;
-import segmenter.algorithms.c99br.utils.CharUtils; 
+//import segmenter.algorithms.c99br.utils.CharUtils; 
 
 
 /** Choi's C99 algorithm for linear text segmentation
@@ -329,8 +328,9 @@ public class C99
     protected static ContextVector[] normalize
     (
         final String[][] document ,
-        StopWords stopWords ,
-        Stemmer stemmer
+//        StopWords stopWords ,
+//        Stemmer stemmer
+          Preprocess preprocess
     )
     {
         ContextVector[] v   = new ContextVector[ document.length ];
@@ -348,10 +348,12 @@ public class C99
                 token   = document[ i ][ j ].toLowerCase();
 
                 if  (   //CharUtils.isAWord( token ) && by OJF 8-5-2017
-                        !stopWords.isStopWord( token )
+//                        !stopWords.isStopWord( token )
+                        !preprocess.remove(token)
                     )
                 {
-                    stem    = stemmer.stem( token );
+//                    stem    = stemmer.stem( token );
+                	stem = preprocess.transform(token);
                     
                     /* OJF */
 //                    System.out.println("--> " + stem);
@@ -389,8 +391,9 @@ public class C99
     (
         final String[][] document ,
         ContextVector tf ,
-        StopWords stopWords ,
-        Stemmer stemmer
+//        StopWords stopWords ,
+//        Stemmer stemmer
+          Preprocess preprocess
     )
     {
         ContextVector[] v   = new ContextVector[ document.length ];
@@ -406,10 +409,12 @@ public class C99
                 token   = document[ i ][ j ].toLowerCase();
 
                 if  (   //CharUtils.isAWord( token ) && by OJF 8-5-2017
-                        !stopWords.isStopWord( token )
+//                        !stopWords.isStopWord( token )
+                		!preprocess.remove(token)
                     )
                 {
-                    stem    = stemmer.stem( token );
+//                    stem    = stemmer.stem( token );
+                	stem = preprocess.transform(token);
 
                     ContextVector.inc( stem , 1 , v[ i ] );
                     ContextVector.inc( stem , 1 , tf );
@@ -553,11 +558,12 @@ public class C99
         final String[][] document ,
         final int n ,
         final int s ,
-        StopWords stopWords ,
-        Stemmer stemmer
+//        StopWords stopWords ,
+//        Stemmer stemmer
+        Preprocess preprocess
     )
     {
-        ContextVector[] vectors = normalize( document , stopWords , stemmer );
+        ContextVector[] vectors = normalize( document , preprocess );
 
         double[][] sim          = similarity( vectors );
 
@@ -605,14 +611,15 @@ public class C99
         final String[][] document ,
         final int n ,
         final int s ,
-        StopWords stopWords ,
-        Stemmer stemmer
+//        StopWords stopWords ,
+//        Stemmer stemmer
+        Preprocess preprocess
     )
     {
         ContextVector tf        = new ContextVector();
 
         ContextVector[] vectors =
-            normalize( document , tf , stopWords , stemmer );
+            normalize( document , tf , preprocess );
 
         EntropyVector ev        = new EntropyVector( tf );
 

@@ -3,7 +3,6 @@ package segmenter.algorithms.texttile.struct;
 import java.util.*;
 
 import segmenter.algorithms.texttile.TextTilingBR;
-import utils.TextUtils;
 
 import java.io.*;
 
@@ -117,9 +116,6 @@ public RawText(String txt) {
 
 private void parse2(String txt) {
 
-	txt = txt.replaceAll("\n", "\n ");
-	txt = TextUtils.indentifyEndOfSentence(txt, TextTilingBR.EOS_MARK);
-
 	String words[] = txt.split(" ");
 	
 	int word_id = 0;              // Absolute word count, first word is word 0
@@ -143,11 +139,9 @@ private void parse2(String txt) {
 		}
 		
 		text.addElement(word);
-		
 	}
 	
 	boundaries.addElement(new Integer(word_id));
-	
 }
 
 

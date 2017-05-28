@@ -6,7 +6,6 @@ import java.util.*;
 
 import org.apache.commons.csv.CSVPrinter;
 
-import preprocessamento.Cleaner;
 import ptstemmer.Stemmer;
 import ptstemmer.implementations.OrengoStemmer;
 import segmenter.AbstractSegmenter;
@@ -26,7 +25,7 @@ public class TextTilingBR extends AbstractSegmenter {
 		
 	/* Data sets */
 	private RawText collection = new RawText();   // A collection for segmentation
-	private Stopword stopwords = new Stopword(); // A stopword list for noise reduction
+//	private Stopword stopwords = new Stopword(); // A stopword list for noise reduction
 	
 
 	/* Token -> stem dictionary */
@@ -313,16 +312,19 @@ protected boolean include(int i) {
 	return (pos.startsWith("N") || pos.startsWith("V")); */
 	
 	/* Noise reduction by stopword removal - OK */
-	String token = (String) collection.text.elementAt(i);
+	String token = (String) collection.text.elementAt(i);  
 	
-	if(preprocessToken(token).length() < minTokenSize) return false;
+//	if(preprocessToken(token).length() < minTokenSize) return false; // commented on 27/08/2017
 	
 	
-	if (stopwords == null || !isRemoveStopWords()) return true;
+//	if (stopwords == null || !isRemoveStopWords()) return true; // commented on 27/08/2017
 	
 //	return true;
 	
-	return !stopwords.isStopword(token.toLowerCase());
+//	return !stopwords.isStopword(token.toLowerCase()); // commented on 27/08/2017
+	
+	
+	return !getPreprocess().remove(token);
 
 	/* No noise reduction -- Worst
 	return true; */
@@ -513,18 +515,12 @@ protected void similarityDetermination() {
 
 public TextTilingBR() {
 	
-	System.out.println("Creating");
-	
 	this.setWindowSize(15);  
 	this.setStep(3);
 	
-	System.out.println(String.format("%b %b", isRemoveStopWords(), isRemoveSteam()));
-	System.out.println(minTokenSize);
-	
-	this.setStopwords(getStopWordFile());
+//	this.setStopwords(getStopWordFile());
 	
 	this.setStemmer(new OrengoStemmer());
-	
 }
 
 //public TextTilingBR(int windowSize, int step, File stopWordList, StemmingAlgorithms stem) {
@@ -581,6 +577,7 @@ public void segmentation() {
 public ArrayList<String> getSegments(String txt) {
 	
 	txt = cleanTextMeating(txt);
+	txt = getPreprocess().identifyEOS(txt, TextTilingBR.EOS_MARK);
 
 	
 	setSource(txt);
@@ -664,7 +661,7 @@ public String preprocessToString() {
 			
 //			preprocessedToken = "["+preprocessedToken+"]";
 			
-			sb.append(preprocessedToken + "  ");
+			sb.append(preprocessedToken + " ");
 		}
 	}
 	
@@ -674,19 +671,22 @@ public String preprocessToString() {
 
 
 public String preprocessToken(String token) {
-	String preproecessedToken = token.trim().toLowerCase();
+//	String preproecessedToken = token.trim().toLowerCase();
+//	
+//	if(stemmer != null && isRemoveSteam()) { 
+//		preproecessedToken = stemmer.wordStemming(preproecessedToken);
+//	}
+//	
+//	if (true) {
+//		preproecessedToken = Cleaner.clean(preproecessedToken);
+//	}
+//	
+//	preproecessedToken = preproecessedToken.trim();
+//	preproecessedToken = preproecessedToken.replace(' ', '·');
 	
-	if(stemmer != null && isRemoveSteam()) { 
-		preproecessedToken = stemmer.wordStemming(preproecessedToken);
-	}
 	
-	if (true) {
-		preproecessedToken = Cleaner.clean(preproecessedToken);
-	}
-	
-	preproecessedToken = preproecessedToken.trim();
-	preproecessedToken = preproecessedToken.replace(' ', '·');
-	
+	String preproecessedToken = getPreprocess().transform(token);
+
 	return preproecessedToken;
 }
 
@@ -734,14 +734,14 @@ public void setSource(String source) {
 	
 }
 
-public Stopword getStopwords() {
-	return stopwords;
-}
+//public Stopword getStopwords() {
+//	return stopwords;
+//}
 
 
-public void setStopwords(File stopwordsList) {
-	this.stopwords = (stopwordsList != null) ? new Stopword(stopwordsList.getName()) : null;
-}
+//public void setStopwords(File stopwordsList) {
+//	this.stopwords = (stopwordsList != null) ? new Stopword(stopwordsList.getName()) : null;
+//}
 
 
 public Vector<Integer> getSegmentation() {
@@ -803,7 +803,7 @@ public String getAlgorithmName() {
 
 @Override
 public String paramsToString() {
-	return String.format("winSize=%d step=%d removeSW=%b removeStem=%b", windowSize, step, isRemoveStopWords(), isRemoveSteam());
+	return String.format("winSize=%d step=%d removeSW=TODO removeStem=TODO", windowSize, step);
 }
 
 	

@@ -4,6 +4,7 @@ import java.io.File;
 import java.util.ArrayList;
 
 import preprocessamento.HeaderDetector;
+import preprocessamento.Preprocess;
 import utils.TextExtractor;
 import utils.TextUtils;
 
@@ -12,16 +13,19 @@ public abstract class AbstractSegmenter implements Segmenter {
 	private boolean removeHeader = false;
 	private boolean removePageNumbers = false;
 	private int headerOccurrence = 0;
-	private boolean removeExtraSpaces;
+	private boolean removeExtraSpaces = false;
 	
-	private boolean removeStopWords = false;
-	private boolean removeSteam = false;
 	
-	private boolean removeNumbers = false;
-	private int minTokenSize = -1;
-	private String allowedChars;
+	private Preprocess preprocess = new Preprocess();
 	
-	private File stopWordFile = new File("stopPort.txt");
+	public Preprocess getPreprocess() {
+		return preprocess;
+	}
+
+
+	public void setPreprocess(Preprocess preprocess) {
+		this.preprocess = preprocess;
+	}
 
 
 	@Override
@@ -70,12 +74,12 @@ public abstract class AbstractSegmenter implements Segmenter {
 		return text;
 	}
 	
-
+	@Override
 	public final boolean isRemoveHeader() {
 		return removeHeader;
 	}
 
-
+	@Override
 	public final void setRemoveHeader(boolean removeHeader) {
 		this.removeHeader = removeHeader;
 	}
@@ -105,60 +109,16 @@ public abstract class AbstractSegmenter implements Segmenter {
 		this.removeExtraSpaces = removeExtraSpaces;
 	}
 
-	@Override
-	public boolean isRemoveStopWords() {
-		return removeStopWords;
-	}
-
-	@Override
-	public void setRemoveStopWords(boolean removeStopWords) {
-		this.removeStopWords = removeStopWords;
-	}
-
-	@Override
-	public boolean isRemoveSteam() {
-		return removeSteam;
-	}
-
-	@Override
-	public void setRemoveStem(boolean removeSteam) {
-		this.removeSteam = removeSteam;
-	}
 
 
-	public File getStopWordFile() {
-		return stopWordFile;
-	}
-
-
-	public boolean isRemoveNumbers() {
-		return removeNumbers;
-	}
-
-
-	public void setRemoveNumbers(boolean removeNumbers) {
-		this.removeNumbers = removeNumbers;
-	}
-
-
-	public int getMinTokenSize() {
-		return minTokenSize;
-	}
-
-
-	public void setMinTokenSize(int minTokenSize) {
-		this.minTokenSize = minTokenSize;
-	}
-
-
-	public String getAllowedChars() {
-		return allowedChars;
-	}
-
-
-	public void setAllowedChars(String allowedChars) {
-		this.allowedChars = allowedChars;
-	}
+//	public String getAllowedChars() {
+//		return allowedChars;
+//	}
+//
+//
+//	public void setAllowedChars(String allowedChars) {
+//		this.allowedChars = allowedChars;
+//	}
 
 	
 	

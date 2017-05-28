@@ -3,12 +3,14 @@ package segmenter;
 import java.io.File;
 import java.util.ArrayList;
 
+import preprocessamento.Preprocess;
+
 public interface Segmenter {
 	public enum SegmenterAlgorithms {TEXT_TILING, C99}
 	
 	public static final String EOS_MARK = "_EOS_";
 	
-	
+	public Preprocess getPreprocess();
 	
 	public ArrayList<String> getSegments(File source);
 	public ArrayList<String> getSegments(String text);
@@ -16,13 +18,8 @@ public interface Segmenter {
 	public String preprocessToString();
 	public String getAlgorithmName();
 	public String paramsToString();
-	
-	public boolean isRemoveStopWords();
-	public void setRemoveStopWords(boolean removeStopWords);
-	public boolean isRemoveSteam();
-	public void setRemoveStem(boolean removeSteam);
 
+	public boolean isRemoveHeader();
+	public void setRemoveHeader(boolean removeHeader);
 	
-	
-
 }
