@@ -3,6 +3,7 @@ package preprocessamento;
 import java.io.File;
 import java.io.FileFilter;
 import java.util.ArrayList;
+import java.util.HashMap;
 
 import utils.Files;
 import utils.TextUtils;
@@ -20,11 +21,23 @@ public class TestPreprocess {
 
 	
 	
-//	private static int wordRepetition(){
-//		int result = 0;
-//		
-//		return result;
-//	}
+	private static int wordRepetition(ArrayList<ArrayList<String>> doc){
+		int result = 0;
+
+		HashMap<String, Integer> tokens = new HashMap<>();
+		
+		for(ArrayList<String> seg : doc) {
+			for(String t : seg)
+				if(tokens.containsKey(tokens)) 
+					tokens.put(t, tokens.get(t)+1);
+				else
+					tokens.put(t, 1);
+		}
+		
+	
+		
+		return result;
+	}
 	
 	private static void loadDocs() {
 		files.clear();
