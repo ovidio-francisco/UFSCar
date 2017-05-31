@@ -366,8 +366,9 @@ public class EvaluateSegmentationsFrame extends JFrame {
 		textTiling.setStep(step);
 //		textTiling.setStopwords(null);
 //		textTiling.setStemmer(TextTilingBR.StemmingAlgorithms.NONE);
-		textTiling.setMinTokenSize(1);
-		textTiling.setRemoveHeader(false);
+//		textTiling.setMinTokenSize(1);
+//		textTiling.setRemoveHeader(false);
+		textTiling.getPreprocess().setRemoveHeaders(false);
 		
 		return textTiling;
 		

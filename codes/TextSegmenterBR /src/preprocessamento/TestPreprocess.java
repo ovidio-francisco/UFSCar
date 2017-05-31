@@ -4,7 +4,6 @@ import java.io.File;
 import java.io.FileFilter;
 import java.util.ArrayList;
 
-import ptstemmer.implementations.OrengoStemmer;
 import utils.Files;
 import utils.TextUtils;
 

@@ -10,6 +10,10 @@ public class Preprocess {
 	private static StopWordList stopWords = new StopWordList(new File("stopPort.txt"));
 	private static ptstemmer.Stemmer stemmer =  new OrengoStemmer();
 	
+	private boolean toLowCase         = true;
+
+	private boolean identifyEOS       = true;
+
 	private boolean removeStopWord    = false;
 	private boolean removeShortThan   = false;
 	
@@ -18,10 +22,12 @@ public class Preprocess {
 	private boolean removeNumbers     = false;
 	private boolean removePunctuation = false;
 	private boolean removeAccents     = false;
-	private boolean toLowCase         = false;
-	private boolean identifyEOS       = false;
 	
-	private boolean useNewIdentifyEOSMethod = false;
+	private boolean removePageNumbers = false;
+	private boolean removeExtraSpaces = false;
+	
+	private int headerOccurrence = 0;
+
 	
 	
 	public  boolean remove(String token) {
@@ -52,29 +58,62 @@ public class Preprocess {
 	}
 
 	public String identifyEOS(String txt, String eosMark) {
+
+//		txt = txt.replaceAll("\n", "\n ");
 		
-		if (useNewIdentifyEOSMethod) {
-			txt = txt.replaceAll("\n", "\n ");
+		if (identifyEOS) {
 			txt = TextUtils.indentifyEndOfSentence(txt, eosMark);
 		}
 		else {
-			txt = txt.replaceAll("\\. ", " \\. " + eosMark);
+			txt = TextUtils.indentifyEndOfSentence_byPeriods(txt, eosMark);
 		}
-		
 		
 		return txt;
 	}
 	
 	
+	public String cleanTextMeating(String text) {
+		
+		if (removeHeaders) {
+			HeaderDetector headerDetector = new HeaderDetector();
+			headerDetector.detectHeader(text);
+			text = headerDetector.removeHeader();
+			headerOccurrence = headerDetector.getHeaderOccurrence();
+		}
+		
+		if (removePageNumbers) {
+			text = TextUtils.removePageNumbers(text);
+		}
+		
+		if (removeExtraSpaces) {
+			text = text.trim();
+
+			text = TextUtils.restrictChar(text, ' ' , 1);
+			
+			while (text.contains("\n ")) text = text.replace("\n ", "\n");
+			text = TextUtils.restrictChar(text, '\n', 2);
+		}
+		
+		return text;
+	}	
 	
-	public boolean isUseNewIdentifyEOSMethod() {
-		return useNewIdentifyEOSMethod;
+	public String configToString() {
+		return String.format("%s %s %s %s %s %s %s %s %s", 
+				
+				"lc=" + (toLowCase         ? "T" : "F"),
+				"rp=" + (removePunctuation ? "T" : "F"),
+				"ra=" + (removeAccents     ? "T" : "F"),
+				"rs=" + (removeShortThan   ? "T" : "F"),
+				"rn=" + (removeNumbers     ? "T" : "F"),
+				"rh=" + (removeHeaders     ? "T" : "F"),
+				"ieof=" + (identifyEOS       ? "T" : "F"),
+				"rsw=" + (removeStopWord    ? "T" : "F"),
+				"rst=" + (removeStem        ? "T" : "F")
+				
+				);
 	}
-
-	public void setUseNewIdentifyEOSMethod(boolean useNewIdentifyEOSMethod) {
-		this.useNewIdentifyEOSMethod = useNewIdentifyEOSMethod;
-	}
-
+	
+	
 	public static StopWordList getStopWords() {
 		return stopWords;
 	}
@@ -141,4 +180,33 @@ public class Preprocess {
 	public void setIdentifyEOS(boolean identifyEOS) {
 		this.identifyEOS = identifyEOS;
 	}
+
+
+	public boolean isRemovePageNumbers() {
+		return removePageNumbers;
+	}
+
+
+	public void setRemovePageNumbers(boolean removePageNumbers) {
+		this.removePageNumbers = removePageNumbers;
+	}
+
+
+	public boolean isRemoveExtraSpaces() {
+		return removeExtraSpaces;
+	}
+
+
+	public void setRemoveExtraSpaces(boolean removeExtraSpaces) {
+		this.removeExtraSpaces = removeExtraSpaces;
+	}
+
+
+	public int getHeaderOccurrence() {
+		return headerOccurrence;
+	}
+	
+	
+	
+	
 }

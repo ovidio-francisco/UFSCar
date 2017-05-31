@@ -9,9 +9,9 @@ import java.util.LinkedList;
 import org.apache.commons.csv.CSVFormat;
 import org.apache.commons.csv.CSVRecord;
 
+import preprocessamento.Preprocess;
 import segmenter.Segmenter;
 import utils.Files;
-import utils.TextUtils;
 
 public class Evaluation {
 	
@@ -40,21 +40,21 @@ public class Evaluation {
 	/**
 	 * Reads a csv file split the segments into sentences and put the sentences into an array
 	 */
-	public static ArrayList<String> CSVSegmentsToSentences(File csvFile) {
-
-		return segmentsToSentences(CSVSegmentsToArray(csvFile));
-	}
+//	public static ArrayList<String> CSVSegmentsToSentences(File csvFile) {
+//
+//		return segmentsToSentences(CSVSegmentsToArray(csvFile));
+//	}
 	
 	/**
 	 * Split each segent in sentences and return it in a string
 	 */
-	public static ArrayList<String> segmentsToSentences(ArrayList<String> segments) {
+	public static ArrayList<String> segmentsToSentences(ArrayList<String> segments, Preprocess preprocess) {
 		ArrayList<String> result = new ArrayList<>();
 		
 		for(String seg : segments) {
 			
 			seg                = seg.replace('\n', ' ');
-			String[] sentences = splitInSentences(seg); 
+			String[] sentences = splitInSentences(seg, preprocess); 
 			
 			for(String sent : sentences) {
 				result.add(sent.trim());
@@ -67,14 +67,43 @@ public class Evaluation {
 		
 		return result;
 	}
+	public static ArrayList<String> segmentsToSentences2(ArrayList<String> segments, Preprocess preprocess) {
+		ArrayList<String> result = new ArrayList<>();
+		
+		
+		String txt = "";
+		for(String seg : segments) {
+//			aqui!
+//			seg                = seg.replace('\n', ' ');
+			
+			txt += seg;
+		}
+
+		String[] sentences = splitInSentences(txt, preprocess); 
+		
+		for(String sent : sentences) {
+			result.add(sent.trim());
+		}
+		
+		String last = result.get(result.size()-1).replace(END_SEGMENT_MARK, "");
+		result.remove(result.size()-1);
+		result.add(last);
+		
+		System.out.println("_________________________________>" + result.size());
+		
+		
+		return result;
+	}	
 	
 	/**
 	 * Split a segment in sentences  and return it on an array
+	 * @param preprocess 
 	 */
-	public static String[] splitInSentences(String segment) {
+	public static String[] splitInSentences(String segment, Preprocess preprocess) {
 		
 		String s1 = segment.trim()+END_SEGMENT_MARK;
-		String s2 = TextUtils.indentifyEndOfSentence(s1, END_SENTENCE_MARK);
+//		String s2 = TextUtils.indentifyEndOfSentence(s1, END_SENTENCE_MARK);
+		String s2 = preprocess.identifyEOS(s1, END_SENTENCE_MARK);
 		
 		return s2.split(END_SENTENCE_MARK);
 	}
@@ -115,10 +144,10 @@ public class Evaluation {
 	public static ArrayList<String> getSentences(File file, Segmenter alg) {
 		
 		if(Files.getFileExtension(file).equals("csv")) {
-			return segmentsToSentences(CSVSegmentsToArray(file));
+			return segmentsToSentences(CSVSegmentsToArray(file), alg.getPreprocess());
 		}
 		else {
-			return segmentsToSentences(alg.getSegments(file));
+			return segmentsToSentences(alg.getSegments(file), alg.getPreprocess());
 		}
 			
 	}
@@ -145,6 +174,7 @@ public class Evaluation {
 			int l = realSegs.size() < testSegs.size() ? realSegs.size() : testSegs.size();
 			
 			System.out.println("--->" + test);
+			System.out.println(String.format("=========> Diferença na qtd de sentenças (%d != %d)", realSegs.size(), testSegs.size()));
 			
 			for(int i = 0; i<l ; i++) {
 				System.out.println(String.format("-->%s\n-->%s\n\n", realSegs.get(i), testSegs.get(i)));
@@ -189,6 +219,9 @@ public class Evaluation {
 			i++;
 		}
 //		hypo.add(i);
+		
+//		System.out.println(String.format("%d $$ %d", gold.size(), hypo.size()));
+//		TODO: verificar porque gold e hypo estão com zero elementos!
 		
 		return new EvaluationData(gold, hypo, boundariesReal, boundariesHypo, real, test, alg);
 	}

@@ -2,6 +2,7 @@ package segmenter.tests;
 
 import java.io.File;
 
+import preprocessamento.Preprocess;
 import segmenter.Segmenter;
 import segmenter.Segmenter.SegmenterAlgorithms;
 import segmenter.algorithms.c99br.C99BR;
@@ -19,6 +20,7 @@ public class TestSegmenterModel {
 	private int rankingSize = 0;
 	private boolean weight = false;
 	
+	private Preprocess preprocess = new Preprocess();
 
 	public TestSegmenterModel(int winSize, int step) {
 		this.winSize = winSize;
@@ -61,6 +63,9 @@ public class TestSegmenterModel {
 			((C99BR)seg).setWeitght(this.weight);
 		}
 		
+		
+		seg.setPreprocess(preprocess);
+		
 		try {
 			return Evaluation.evalueate(gold, txt, seg);
 		} catch (Exception e) {
@@ -73,6 +78,16 @@ public class TestSegmenterModel {
 
 	
 	
+	
+	
+	public Preprocess getPreprocess() {
+		return preprocess;
+	}
+
+	public void setPreprocess(Preprocess preprocess) {
+		this.preprocess = preprocess;
+	}
+
 	public void increaseWinSize(int n) {
 		this.winSize += n;
 	}

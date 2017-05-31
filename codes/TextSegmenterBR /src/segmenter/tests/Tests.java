@@ -8,6 +8,7 @@ import java.util.Locale;
 
 import org.apache.commons.csv.CSVPrinter;
 
+import preprocessamento.Preprocess;
 import segmenter.evaluations.EvaluationData;
 import utils.Files;
 
@@ -22,70 +23,98 @@ public class Tests {
 
 		files.clear();
 		getFiles(folder);
+		
+		
+		Preprocess preprocess = new Preprocess();
+		preprocess.setIdentifyEOS       (true);
+		preprocess.setRemoveAccents     (false);
+		preprocess.setRemoveHeaders     (false);
+		preprocess.setRemoveNumbers     (false);
+		preprocess.setRemovePunctuation (false);
+		preprocess.setRemoveShortThan   (false);
+		preprocess.setRemoveStem        (false);
+		preprocess.setRemoveStopWord    (false);
+		preprocess.setToLowCase         (false);
 
 		
 		/*
 		 * TextTiling Variando WinSize
 		 */
-		int initialWinSize   = 20;  
-		int limitWinSize     = 60;
-		int increaseWinSize  = 10;  
 		
-		int initialStep   = 3;  
-		int limitStep     = 12;   
-		int increaseStep  = 3;  
+		boolean testTT = false;
+		boolean testC9 = false;
 		
-
-		TestSegmenterModel textTilingModel = new TestSegmenterModel(initialWinSize, initialStep);
-		while(textTilingModel.getWinSize() <= limitWinSize ) {
+		testTT = true;
+//		testC9 = true;
+		
+		if (testTT) {
 			
-			textTilingModel.setStep(initialStep);
-			while(textTilingModel.getStep() <= limitStep) {
+			int initialWinSize   = 20;  
+			int limitWinSize     = 60;
+			int increaseWinSize  = 10;  
+			
+			int initialStep   = 3;  
+			int limitStep     = 12;   
+			int increaseStep  = 3;  
+			
+			
+			TestSegmenterModel textTilingModel = new TestSegmenterModel(initialWinSize, initialStep);
+			textTilingModel.setPreprocess(preprocess);
+			
+			while(textTilingModel.getWinSize() <= limitWinSize ) {
 				
-				result.add(testAll(folder, textTilingModel));
-
+				textTilingModel.setStep(initialStep);
+				while(textTilingModel.getStep() <= limitStep) {
+					
+					result.add(testAll(folder, textTilingModel));
+					
+					textTilingModel.increaseStep(increaseStep);
+				}
 				
-				textTilingModel.increaseStep(increaseStep);
+				textTilingModel.increaseWinSize(increaseWinSize);
 			}
 			
-			
-			textTilingModel.increaseWinSize(increaseWinSize);
 		}
-
 		
+
 		/*
 		 * C99 Variando Numero de Segmentos
 		 */
-		
-		double initialSegsRate = 0.2;
-		double increaseSegsRate =0.2;
-		double limitSegsRate = 1.0;
-		
-		int initialRankingSize   = 9;  
-		int increaseRankingSize  = 2;  
-		int limitRankingSize     = 11;  
-		
-		boolean initialWeight = false;
-
-		TestSegmenterModel c99Model = new TestSegmenterModel(initialSegsRate, initialRankingSize, initialWeight);
-		while(c99Model.getSegmentsRate() <= limitSegsRate ) {
+		if (testC9) {
 			
-			c99Model.setRankingSize(initialRankingSize);
-			while(c99Model.getRankingSize() <= limitRankingSize) {
-
+			double initialSegsRate = 0.2;
+			double increaseSegsRate =0.2;
+			double limitSegsRate = 1.0;
+			
+			int initialRankingSize   = 9;  
+			int increaseRankingSize  = 2;  
+			int limitRankingSize     = 11;  
+			
+			boolean initialWeight = false;
+			
+			TestSegmenterModel c99Model = new TestSegmenterModel(initialSegsRate, initialRankingSize, initialWeight);
+			c99Model.setPreprocess(preprocess);
+			while(c99Model.getSegmentsRate() <= limitSegsRate ) {
 				
-				c99Model.setWeight(initialWeight);
-				result.add(testAll(folder, c99Model));
+				c99Model.setRankingSize(initialRankingSize);
+				while(c99Model.getRankingSize() <= limitRankingSize) {
 					
-				c99Model.setWeight(!initialWeight);
-				result.add(testAll(folder, c99Model));
+					
+					c99Model.setWeight(initialWeight);
+					result.add(testAll(folder, c99Model));
+					
+					c99Model.setWeight(!initialWeight);
+					result.add(testAll(folder, c99Model));
+					
+					c99Model.increaseRankingSize(increaseRankingSize);
+				}
 				
-				c99Model.increaseRankingSize(increaseRankingSize);
-			}
-			
 //			c99Model.increaseSegmentsNumber(increaseNSegs);
-			c99Model.icreaseSegmentsRate(increaseSegsRate);
+				c99Model.icreaseSegmentsRate(increaseSegsRate);
+			}
 		}
+		
+		
 		
 		
 		try {

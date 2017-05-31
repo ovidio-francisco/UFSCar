@@ -10,17 +10,14 @@ import java.io.File;
 
 import javax.swing.JButton;
 import javax.swing.JCheckBox;
-import javax.swing.JComboBox;
 import javax.swing.JFileChooser;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
-import javax.swing.JSpinner;
 import javax.swing.JTabbedPane;
 import javax.swing.JTextArea;
 import javax.swing.JToolBar;
-import javax.swing.SpinnerNumberModel;
 import javax.swing.border.EmptyBorder;
 
 import segmenter.Segmenter;
@@ -38,15 +35,7 @@ public class ViewSegmentationFrame extends JFrame {
 	
 	private JLabel lbStatus = new JLabel();
 
-	private JSpinner spWinSize      = new JSpinner(new SpinnerNumberModel(30, 1, 999, 1));
-	private JSpinner spStep         = new JSpinner(new SpinnerNumberModel(5 , 1, 999, 1));
-	private JSpinner spMinTokenSize = new JSpinner(new SpinnerNumberModel(2 , 1, 999, 1));
-	
-	private String stemmingAlgs[]            = {"None", "Porter", "Orengo"};
-	private String allowedChars[]            = {"Only Letters", "Letters and Numbers", "Letters, numbers and punctuaction"};
 	private JCheckBox cbRemoveStopWords      = new JCheckBox("Remove StopWords");
-	private JComboBox<String> cbStemming     = new JComboBox<>(stemmingAlgs);
-	private JComboBox<String> cbAllowedChars = new JComboBox<>(allowedChars);
 	private JCheckBox cbShowPreprocess       = new JCheckBox("Show Preprocess");
 	
 	private File sourceFile = null;
@@ -72,16 +61,9 @@ public class ViewSegmentationFrame extends JFrame {
 		JButton  btSegment = new JButton("Segment");
 		JButton  btSaveToCSV = new JButton("Save");
 		
-		cbStemming       .setMaximumSize(new Dimension(100, 25));
-		cbAllowedChars   .setMaximumSize(new Dimension(190, 25));
-		spWinSize        .setMaximumSize(new Dimension(40 , 25));
-		spStep           .setMaximumSize(new Dimension(40 , 25));
-		spMinTokenSize   .setMaximumSize(new Dimension(40 , 25));
 		cbRemoveStopWords.setMaximumSize(new Dimension(170, 15));
 		cbShowPreprocess .setMaximumSize(new Dimension(180, 15));
 		
-		cbStemming.setSelectedItem(stemmingAlgs[2]);
-		cbAllowedChars.setSelectedItem(allowedChars[0]);
 		cbRemoveStopWords.setSelected(true);
 		cbShowPreprocess.setSelected(true);
 		
@@ -93,21 +75,6 @@ public class ViewSegmentationFrame extends JFrame {
 		toolBar.add(btSaveToCSV);
 		toolBar.addSeparator();
 		toolBar.add(btSegment);
-		toolBar.addSeparator();
-		toolBar.add(new JLabel("Win Size:"));
-		toolBar.add(spWinSize);
-		toolBar.addSeparator();
-		toolBar.add(new JLabel("Step:"));
-		toolBar.add(spStep);
-		toolBar.addSeparator();
-		toolBar.add(new JLabel("Min Token Size:"));
-		toolBar.add(spMinTokenSize);
-		toolBar.addSeparator();
-		toolBar.add(new JLabel("Stemmer: "));
-		toolBar.add(cbStemming);
-		toolBar.addSeparator();
-		toolBar.add(new JLabel("Allowed:"));
-		toolBar.add(cbAllowedChars);
 		toolBar.addSeparator();
 		toolBar.add(cbRemoveStopWords);
 		toolBar.addSeparator();
@@ -264,7 +231,7 @@ public class ViewSegmentationFrame extends JFrame {
 //			textTiling.setMinTokenSize(minToken);
 			
 			segmenter = textTiling;
-			lbStatus.setText(String.format("<html>Headers Removed:  <b>%d</b> | Boundary candidates:  <b>%d</b> | Segments count:  <b>%d</b></html>",textTiling.getHeaderOccurrence(), textTiling.getCollection().boundaries.size(), textTiling.getSegmentsCount())); 
+			lbStatus.setText(String.format("<html>Headers Removed:  <b>%d</b> | Boundary candidates:  <b>%d</b> | Segments count:  <b>%d</b></html>",textTiling.getPreprocess().getHeaderOccurrence(), textTiling.getCollection().boundaries.size(), textTiling.getSegmentsCount())); 
 		}
 		else {
 
@@ -287,8 +254,8 @@ public class ViewSegmentationFrame extends JFrame {
 		segmenter.getPreprocess().setRemoveStem(true);
 		segmenter.getPreprocess().setRemoveShortThan(true);
 		
-		segmenter.setRemoveHeader(true);
-		segmenter.getPreprocess().setUseNewIdentifyEOSMethod(true);
+		segmenter.getPreprocess().setRemoveHeaders(true);
+		segmenter.getPreprocess().setIdentifyEOS(true);
 		
 		taSegmented.setText(segmenter.segmentsToString(sourceFile));
 		taSegmented.setCaretPosition(0);
@@ -297,16 +264,6 @@ public class ViewSegmentationFrame extends JFrame {
 		taWindows.setCaretPosition(0);
 				
 	}
-//	
-//	private void segmentFileC99() {
-//		C99BR c99 = new C99BR();
-//		
-//		taSegmented.setText(c99.segmentsToString(sourceFile));
-//	}
-//	
-//	private TextTilingBR getTextTilingSegmenter() {
-//		return null;
-//		
-//	}
+
 	
 }

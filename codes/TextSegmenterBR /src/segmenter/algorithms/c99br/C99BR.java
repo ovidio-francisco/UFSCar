@@ -17,7 +17,7 @@ public class C99BR extends AbstractSegmenter {
 	public ArrayList<String> getSegments(String text) {
 		ArrayList<String> result = new ArrayList<>();
 
-		text = cleanTextMeating(text);
+		text = getPreprocess().cleanTextMeating(text);
 		text = getPreprocess().identifyEOS(text, EOS_MARK);
 
 		
@@ -91,7 +91,7 @@ public class C99BR extends AbstractSegmenter {
 
 	@Override
 	public String paramsToString() {
-		return String.format("nSegsRate=%4.2f nSegs=%d rakingSize=%d, weitght=%b removeSW=TODO removeStem=TODO", nSegsRate, nSegs, rakingSize, weitght);
+		return String.format("nSegsRate=%4.2f nSegs=%d rakingSize=%d, weitght=%b | %s", nSegsRate, nSegs, rakingSize, weitght, getPreprocess().configToString());
 	}
 
 	public double getnSegsRate() {

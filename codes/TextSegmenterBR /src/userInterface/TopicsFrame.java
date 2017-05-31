@@ -200,9 +200,9 @@ public class TopicsFrame extends JFrame{
 		c99.setRakingSize(11);
 		c99.setWeitght(true);
 		
-		c99.setRemovePageNumbers(true);
-		c99.setRemoveHeader(true);
-		c99.setRemoveExtraSpaces(true);		
+		c99.getPreprocess().setRemovePageNumbers(true);
+		c99.getPreprocess().setRemoveHeaders(true);
+		c99.getPreprocess().setRemoveExtraSpaces(true);		
 		
 		return c99;
 	}

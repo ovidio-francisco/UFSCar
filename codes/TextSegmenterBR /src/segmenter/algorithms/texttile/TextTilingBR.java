@@ -508,7 +508,7 @@ protected void similarityDetermination() {
 //	public static String EOS_MARK = "^^";
 	private Stemmer stemmer = null;
 	private ArrayList<Hashtable<String, Integer>> windows = new ArrayList<>();
-	private int minTokenSize = 2;
+//	private int minTokenSize = 2;
 
 	
 
@@ -532,8 +532,6 @@ public TextTilingBR() {
 //}
 
 //public TextTilingBR(int windowSize, int step, boolean removeStopWords, boolean removeStemming) {
-////	TODO: 
-//	
 //	this.setWindowSize(15);  
 //	this.setStep(3);
 //}
@@ -576,7 +574,7 @@ public void segmentation() {
 @Override
 public ArrayList<String> getSegments(String txt) {
 	
-	txt = cleanTextMeating(txt);
+	txt = getPreprocess().cleanTextMeating(txt);
 	txt = getPreprocess().identifyEOS(txt, TextTilingBR.EOS_MARK);
 
 	
@@ -766,16 +764,16 @@ public void setStemmer(Stemmer stemmer) {
 	this.stemmer = stemmer;
 }
 
-
-public int getMinTokenSize() {
-	return minTokenSize;
-}
-
-
-
-public void setMinTokenSize(int minTokenSize) {
-	this.minTokenSize = minTokenSize;
-}
+//
+//public int getMinTokenSize() {
+//	return minTokenSize;
+//}
+//
+//
+//
+//public void setMinTokenSize(int minTokenSize) {
+//	this.minTokenSize = minTokenSize;
+//}
 
 //public void setStemmer(StemmingAlgorithms stem) {
 //	switch (stem) {
@@ -803,7 +801,7 @@ public String getAlgorithmName() {
 
 @Override
 public String paramsToString() {
-	return String.format("winSize=%d step=%d removeSW=TODO removeStem=TODO", windowSize, step);
+	return String.format("winSize=%d step=%d | %s", windowSize, step, getPreprocess().configToString());
 }
 
 	

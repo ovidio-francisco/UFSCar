@@ -11,6 +11,7 @@ public interface Segmenter {
 	public static final String EOS_MARK = "_EOS_";
 	
 	public Preprocess getPreprocess();
+	public void setPreprocess(Preprocess preprocess);
 	
 	public ArrayList<String> getSegments(File source);
 	public ArrayList<String> getSegments(String text);
@@ -19,7 +20,4 @@ public interface Segmenter {
 	public String getAlgorithmName();
 	public String paramsToString();
 
-	public boolean isRemoveHeader();
-	public void setRemoveHeader(boolean removeHeader);
-	
 }

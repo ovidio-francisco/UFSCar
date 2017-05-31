@@ -129,6 +129,72 @@ and the next token following whitespace is uppercase, it is EOS
 		return result;
 	}
 
+	public static String indentifyEndOfSentence_byPeriods(String txt, String eosMark) {
+
+		txt = txt.replace("\n", " \n");
+		txt = txt.replace("\t", " \t");
+		txt = Cleaner.removeDoubleSpaces(txt);
+		
+		
+		txt = txt.replace("!"  , "!"+eosMark); 
+
+		String[] tokens = txt.split("\\s+");
+		
+		
+		for(int i=0; i<tokens.length-1; i++) {
+			
+			if (tokens[i].length() < 2) continue;     // deve permitrir finais de sentença que terminam em uma palavra de 1 letra seguida de '.' Por exemplo "Cálculo 3.", "Cálculo I." "Conceito B;"
+			if (!( tokens[i].endsWith(".") || tokens[i].endsWith("?") || tokens[i].endsWith(";"))) continue;
+			if (isAbreviation(tokens[i])) continue; 			
+
+
+			
+//			[8] If the next token following whitespace begins with $({["' it is EOS 
+			if ( "$({[\"'".contains(""+tokens[i+1].charAt(0))) {
+				tokens[i] = tokens[i] + eosMark;
+				continue;
+			}
+			
+			
+//			[9] If the token to which the period is attached begins with a lowercase letter 
+//			and the next token following whitespace is uppercase, it is EOS
+			if (/*isLowercase(tokens[i]) &&*/ isCapitalized(tokens[i+1])) {
+				tokens[i] = tokens[i] + eosMark;
+				continue;
+			}
+			
+//			[2] - ok - If " or ' appears before period, it is EOS
+//			[3] - ok - If )}] before period, it is EOS
+			if ("\"')}]".contains(""+tokens[i].charAt(tokens[i].length()-2))) {
+				tokens[i] = tokens[i] + eosMark;
+				continue;
+			}
+			
+			
+			
+			if(tokens[i].endsWith(";") && (isCapitalized(tokens[i+1]) || "({[".contains(""+tokens[i+1].charAt(0)))) {
+				tokens[i] = tokens[i] + eosMark;
+				continue;
+			}
+			
+			if(tokens[i].endsWith(".") && " \n\t".contains(""+tokens[i+1].charAt(0))) {
+				tokens[i] = tokens[i] + eosMark;
+				continue;
+			}
+			
+
+			
+		}
+		
+		String result = "";
+		
+		for(String s : tokens) {
+			result = result.concat(s).concat(" ");
+		}
+		
+		return result;
+	}
+
 	
 
 
