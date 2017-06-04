@@ -1,0 +1,4600 @@
+Id = 0	 - Fabio/Ata 29 - 25a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=0.20 nSegs=4 rakingSize=9, weitght=false | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        17
+Judge     boundaries        6
+Automatic boundaries        3
+
+tp fp                       1 2
+fn tn                       5 9
+Acuracy                     0.588235
+Precision                   0.333333
+Recall                      0.166667
+F1                          0.222222
+Window_Diff                 0.411765
+Pk                          0.312500
+
+gold : 1 1 0 1 0 1 0 1 0 0 0 0 0 0 0 0 1 
+hypo : 0 0 0 1 0 0 0 0 1 0 0 0 0 0 0 1 0 
+# ===========//==========//==========
+
+Id = 1	 - Fabio/Ata 36 - 31a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=0.20 nSegs=5 rakingSize=9, weitght=false | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        24
+Judge     boundaries        10
+Automatic boundaries        4
+
+tp fp                       3 1
+fn tn                       7 13
+Acuracy                     0.666667
+Precision                   0.750000
+Recall                      0.300000
+F1                          0.428571
+Window_Diff                 0.333333
+Pk                          0.347826
+
+gold : 0 0 1 0 0 0 0 1 0 0 0 0 1 1 1 0 1 0 1 1 0 0 1 1 
+hypo : 0 0 0 0 0 0 1 1 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
+# ===========//==========//==========
+
+Id = 2	 - Fabio/Ata 35 - 5a Reunião Extraodinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=0.20 nSegs=2 rakingSize=9, weitght=false | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        9
+Judge     boundaries        3
+Automatic boundaries        1
+
+tp fp                       1 0
+fn tn                       2 6
+Acuracy                     0.777778
+Precision                   1.000000
+Recall                      0.333333
+F1                          0.500000
+Window_Diff                 0.222222
+Pk                          0.250000
+
+gold : 0 0 0 0 1 1 0 0 1 
+hypo : 0 0 0 0 1 0 0 0 0 
+# ===========//==========//==========
+
+Id = 3	 - Fabio/Ata 33 - 29a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=0.20 nSegs=6 rakingSize=9, weitght=false | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        31
+Judge     boundaries        8
+Automatic boundaries        5
+
+tp fp                       1 4
+fn tn                       7 19
+Acuracy                     0.645161
+Precision                   0.200000
+Recall                      0.125000
+F1                          0.153846
+Window_Diff                 0.354839
+Pk                          0.333333
+
+gold : 0 0 0 1 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 0 1 0 0 0 1 0 1 1 1 
+hypo : 0 1 0 0 0 0 0 0 0 1 0 0 0 1 0 0 0 1 0 0 0 0 0 0 0 0 1 0 0 0 0 
+# ===========//==========//==========
+
+Id = 4	 - Fabio/Ata 30 - 26a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=0.20 nSegs=5 rakingSize=9, weitght=false | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        25
+Judge     boundaries        8
+Automatic boundaries        4
+
+tp fp                       1 3
+fn tn                       7 14
+Acuracy                     0.600000
+Precision                   0.250000
+Recall                      0.125000
+F1                          0.166667
+Window_Diff                 0.400000
+Pk                          0.333333
+
+gold : 1 1 0 0 1 0 0 0 1 0 0 0 0 0 0 1 1 0 0 0 1 1 0 0 0 
+hypo : 0 0 0 0 0 0 0 1 1 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 0 
+# ===========//==========//==========
+
+Id = 5	 - Fabio/Ata 32 - 28a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=0.20 nSegs=5 rakingSize=9, weitght=false | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        23
+Judge     boundaries        6
+Automatic boundaries        4
+
+tp fp                       1 3
+fn tn                       5 14
+Acuracy                     0.652174
+Precision                   0.250000
+Recall                      0.166667
+F1                          0.200000
+Window_Diff                 0.347826
+Pk                          0.318182
+
+gold : 1 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 1 0 1 
+hypo : 0 0 0 0 0 1 0 0 0 1 0 0 0 0 0 0 0 0 1 1 0 0 0 
+# ===========//==========//==========
+
+Id = 6	 - Gustavo/Ata 29 - 25a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=0.20 nSegs=4 rakingSize=9, weitght=false | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        17
+Judge     boundaries        14
+Automatic boundaries        3
+
+tp fp                       2 1
+fn tn                       12 2
+Acuracy                     0.235294
+Precision                   0.666667
+Recall                      0.142857
+F1                          0.235294
+Window_Diff                 0.764706
+Pk                          0.000000
+
+gold : 1 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 
+hypo : 0 0 1 0 0 0 0 0 1 0 0 0 0 0 0 1 0 
+# ===========//==========//==========
+
+Id = 7	 - Gustavo/Ata 36 - 31a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=0.20 nSegs=5 rakingSize=9, weitght=false | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        25
+Judge     boundaries        16
+Automatic boundaries        4
+
+tp fp                       3 1
+fn tn                       13 8
+Acuracy                     0.440000
+Precision                   0.750000
+Recall                      0.187500
+F1                          0.300000
+Window_Diff                 0.560000
+Pk                          0.000000
+
+gold : 1 0 0 1 0 1 1 1 1 1 0 0 0 1 0 1 1 1 1 1 1 0 0 1 1 
+hypo : 0 0 1 0 0 0 0 1 1 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 
+# ===========//==========//==========
+
+Id = 8	 - Gustavo/Ata 35 - 5a Reunião Extraodinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=0.20 nSegs=2 rakingSize=9, weitght=false | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        10
+Judge     boundaries        8
+Automatic boundaries        1
+
+tp fp                       1 0
+fn tn                       7 2
+Acuracy                     0.300000
+Precision                   1.000000
+Recall                      0.125000
+F1                          0.222222
+Window_Diff                 0.700000
+Pk                          0.000000
+
+gold : 1 0 0 1 1 1 1 1 1 1 
+hypo : 0 0 0 0 0 1 0 0 0 0 
+# ===========//==========//==========
+
+Id = 9	 - Gustavo/Ata 33 - 29a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=0.20 nSegs=7 rakingSize=9, weitght=false | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        32
+Judge     boundaries        16
+Automatic boundaries        6
+
+tp fp                       3 3
+fn tn                       13 13
+Acuracy                     0.500000
+Precision                   0.500000
+Recall                      0.187500
+F1                          0.272727
+Window_Diff                 0.500000
+Pk                          0.000000
+
+gold : 1 0 0 0 1 1 1 0 0 1 1 1 0 0 0 0 1 0 1 0 0 1 0 1 1 0 0 1 1 0 1 1 
+hypo : 0 0 1 0 0 0 0 0 0 0 1 0 0 0 1 0 0 0 1 0 0 0 0 0 0 0 0 1 0 1 0 0 
+# ===========//==========//==========
+
+Id = 10	 - Gustavo/Ata 30 - 26a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=0.20 nSegs=5 rakingSize=9, weitght=false | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        26
+Judge     boundaries        19
+Automatic boundaries        4
+
+tp fp                       2 2
+fn tn                       17 5
+Acuracy                     0.269231
+Precision                   0.500000
+Recall                      0.105263
+F1                          0.173913
+Window_Diff                 0.730769
+Pk                          0.000000
+
+gold : 1 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 1 0 1 1 0 0 1 
+hypo : 0 0 0 0 0 0 0 0 1 1 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 0 
+# ===========//==========//==========
+
+Id = 11	 - Gustavo/Ata 32 - 28a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=0.20 nSegs=5 rakingSize=9, weitght=false | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        26
+Judge     boundaries        14
+Automatic boundaries        4
+
+tp fp                       3 1
+fn tn                       11 11
+Acuracy                     0.538462
+Precision                   0.750000
+Recall                      0.214286
+F1                          0.333333
+Window_Diff                 0.461538
+Pk                          0.000000
+
+gold : 1 0 0 0 1 1 0 0 0 1 1 1 0 0 0 0 1 1 1 0 0 1 1 1 1 1 
+hypo : 0 0 0 0 0 0 1 0 0 0 1 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
+# ===========//==========//==========
+
+
+12 files avaliated
+Id = 12	 - Fabio/Ata 29 - 25a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=0.20 nSegs=4 rakingSize=9, weitght=true | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        17
+Judge     boundaries        6
+Automatic boundaries        3
+
+tp fp                       1 2
+fn tn                       5 9
+Acuracy                     0.588235
+Precision                   0.333333
+Recall                      0.166667
+F1                          0.222222
+Window_Diff                 0.411765
+Pk                          0.312500
+
+gold : 1 1 0 1 0 1 0 1 0 0 0 0 0 0 0 0 1 
+hypo : 0 0 0 1 0 0 0 0 0 1 0 0 0 0 1 0 0 
+# ===========//==========//==========
+
+Id = 13	 - Fabio/Ata 36 - 31a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=0.20 nSegs=5 rakingSize=9, weitght=true | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        24
+Judge     boundaries        10
+Automatic boundaries        4
+
+tp fp                       4 0
+fn tn                       6 14
+Acuracy                     0.750000
+Precision                   1.000000
+Recall                      0.400000
+F1                          0.571429
+Window_Diff                 0.250000
+Pk                          0.260870
+
+gold : 0 0 1 0 0 0 0 1 0 0 0 0 1 1 1 0 1 0 1 1 0 0 1 1 
+hypo : 0 0 1 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
+# ===========//==========//==========
+
+Id = 14	 - Fabio/Ata 35 - 5a Reunião Extraodinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=0.20 nSegs=2 rakingSize=9, weitght=true | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        9
+Judge     boundaries        3
+Automatic boundaries        1
+
+tp fp                       1 0
+fn tn                       2 6
+Acuracy                     0.777778
+Precision                   1.000000
+Recall                      0.333333
+F1                          0.500000
+Window_Diff                 0.222222
+Pk                          0.250000
+
+gold : 0 0 0 0 1 1 0 0 1 
+hypo : 0 0 0 0 1 0 0 0 0 
+# ===========//==========//==========
+
+Id = 15	 - Fabio/Ata 33 - 29a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=0.20 nSegs=6 rakingSize=9, weitght=true | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        31
+Judge     boundaries        8
+Automatic boundaries        5
+
+tp fp                       3 2
+fn tn                       5 21
+Acuracy                     0.774194
+Precision                   0.600000
+Recall                      0.375000
+F1                          0.461538
+Window_Diff                 0.225806
+Pk                          0.233333
+
+gold : 0 0 0 1 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 0 1 0 0 0 1 0 1 1 1 
+hypo : 0 0 0 1 0 0 0 0 0 0 0 0 0 1 0 0 0 1 0 0 0 0 0 0 0 0 1 0 1 0 0 
+# ===========//==========//==========
+
+Id = 16	 - Fabio/Ata 30 - 26a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=0.20 nSegs=5 rakingSize=9, weitght=true | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        25
+Judge     boundaries        8
+Automatic boundaries        4
+
+tp fp                       1 3
+fn tn                       7 14
+Acuracy                     0.600000
+Precision                   0.250000
+Recall                      0.125000
+F1                          0.166667
+Window_Diff                 0.400000
+Pk                          0.333333
+
+gold : 1 1 0 0 1 0 0 0 1 0 0 0 0 0 0 1 1 0 0 0 1 1 0 0 0 
+hypo : 0 0 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 0 
+# ===========//==========//==========
+
+Id = 17	 - Fabio/Ata 32 - 28a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=0.20 nSegs=5 rakingSize=9, weitght=true | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        23
+Judge     boundaries        6
+Automatic boundaries        4
+
+tp fp                       2 2
+fn tn                       4 15
+Acuracy                     0.739130
+Precision                   0.500000
+Recall                      0.333333
+F1                          0.400000
+Window_Diff                 0.260870
+Pk                          0.227273
+
+gold : 1 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 1 0 1 
+hypo : 0 0 1 0 0 0 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0 0 0 
+# ===========//==========//==========
+
+Id = 18	 - Gustavo/Ata 29 - 25a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=0.20 nSegs=4 rakingSize=9, weitght=true | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        17
+Judge     boundaries        14
+Automatic boundaries        3
+
+tp fp                       2 1
+fn tn                       12 2
+Acuracy                     0.235294
+Precision                   0.666667
+Recall                      0.142857
+F1                          0.235294
+Window_Diff                 0.764706
+Pk                          0.000000
+
+gold : 1 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 
+hypo : 0 0 1 0 0 0 0 0 1 0 0 0 0 0 0 1 0 
+# ===========//==========//==========
+
+Id = 19	 - Gustavo/Ata 36 - 31a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=0.20 nSegs=5 rakingSize=9, weitght=true | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        25
+Judge     boundaries        16
+Automatic boundaries        4
+
+tp fp                       4 0
+fn tn                       12 9
+Acuracy                     0.520000
+Precision                   1.000000
+Recall                      0.250000
+F1                          0.400000
+Window_Diff                 0.480000
+Pk                          0.000000
+
+gold : 1 0 0 1 0 1 1 1 1 1 0 0 0 1 0 1 1 1 1 1 1 0 0 1 1 
+hypo : 0 0 0 1 0 0 0 0 1 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
+# ===========//==========//==========
+
+Id = 20	 - Gustavo/Ata 35 - 5a Reunião Extraodinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=0.20 nSegs=2 rakingSize=9, weitght=true | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        10
+Judge     boundaries        8
+Automatic boundaries        1
+
+tp fp                       1 0
+fn tn                       7 2
+Acuracy                     0.300000
+Precision                   1.000000
+Recall                      0.125000
+F1                          0.222222
+Window_Diff                 0.700000
+Pk                          0.000000
+
+gold : 1 0 0 1 1 1 1 1 1 1 
+hypo : 0 0 0 0 0 1 0 0 0 0 
+# ===========//==========//==========
+
+Id = 21	 - Gustavo/Ata 33 - 29a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=0.20 nSegs=7 rakingSize=9, weitght=true | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        32
+Judge     boundaries        16
+Automatic boundaries        6
+
+tp fp                       3 3
+fn tn                       13 13
+Acuracy                     0.500000
+Precision                   0.500000
+Recall                      0.187500
+F1                          0.272727
+Window_Diff                 0.500000
+Pk                          0.000000
+
+gold : 1 0 0 0 1 1 1 0 0 1 1 1 0 0 0 0 1 0 1 0 0 1 0 1 1 0 0 1 1 0 1 1 
+hypo : 0 0 0 1 1 0 0 0 0 0 0 0 0 0 1 0 0 0 1 0 0 0 0 0 0 0 0 1 0 1 0 0 
+# ===========//==========//==========
+
+Id = 22	 - Gustavo/Ata 30 - 26a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=0.20 nSegs=5 rakingSize=9, weitght=true | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        26
+Judge     boundaries        19
+Automatic boundaries        4
+
+tp fp                       1 3
+fn tn                       18 4
+Acuracy                     0.192308
+Precision                   0.250000
+Recall                      0.052632
+F1                          0.086957
+Window_Diff                 0.807692
+Pk                          0.000000
+
+gold : 1 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 1 0 1 1 0 0 1 
+hypo : 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 0 
+# ===========//==========//==========
+
+Id = 23	 - Gustavo/Ata 32 - 28a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=0.20 nSegs=5 rakingSize=9, weitght=true | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        26
+Judge     boundaries        14
+Automatic boundaries        4
+
+tp fp                       3 1
+fn tn                       11 11
+Acuracy                     0.538462
+Precision                   0.750000
+Recall                      0.214286
+F1                          0.333333
+Window_Diff                 0.461538
+Pk                          0.000000
+
+gold : 1 0 0 0 1 1 0 0 0 1 1 1 0 0 0 0 1 1 1 0 0 1 1 1 1 1 
+hypo : 0 0 1 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 0 0 0 1 0 0 0 0 
+# ===========//==========//==========
+
+
+12 files avaliated
+Id = 24	 - Fabio/Ata 29 - 25a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=0.20 nSegs=4 rakingSize=11, weitght=false | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        17
+Judge     boundaries        6
+Automatic boundaries        3
+
+tp fp                       1 2
+fn tn                       5 9
+Acuracy                     0.588235
+Precision                   0.333333
+Recall                      0.166667
+F1                          0.222222
+Window_Diff                 0.411765
+Pk                          0.312500
+
+gold : 1 1 0 1 0 1 0 1 0 0 0 0 0 0 0 0 1 
+hypo : 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0 
+# ===========//==========//==========
+
+Id = 25	 - Fabio/Ata 36 - 31a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=0.20 nSegs=5 rakingSize=11, weitght=false | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        24
+Judge     boundaries        10
+Automatic boundaries        4
+
+tp fp                       3 1
+fn tn                       7 13
+Acuracy                     0.666667
+Precision                   0.750000
+Recall                      0.300000
+F1                          0.428571
+Window_Diff                 0.333333
+Pk                          0.347826
+
+gold : 0 0 1 0 0 0 0 1 0 0 0 0 1 1 1 0 1 0 1 1 0 0 1 1 
+hypo : 0 0 0 0 0 0 1 1 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
+# ===========//==========//==========
+
+Id = 26	 - Fabio/Ata 35 - 5a Reunião Extraodinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=0.20 nSegs=2 rakingSize=11, weitght=false | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        9
+Judge     boundaries        3
+Automatic boundaries        1
+
+tp fp                       1 0
+fn tn                       2 6
+Acuracy                     0.777778
+Precision                   1.000000
+Recall                      0.333333
+F1                          0.500000
+Window_Diff                 0.222222
+Pk                          0.250000
+
+gold : 0 0 0 0 1 1 0 0 1 
+hypo : 0 0 0 0 1 0 0 0 0 
+# ===========//==========//==========
+
+Id = 27	 - Fabio/Ata 33 - 29a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=0.20 nSegs=6 rakingSize=11, weitght=false | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        31
+Judge     boundaries        8
+Automatic boundaries        5
+
+tp fp                       1 4
+fn tn                       7 19
+Acuracy                     0.645161
+Precision                   0.200000
+Recall                      0.125000
+F1                          0.153846
+Window_Diff                 0.354839
+Pk                          0.333333
+
+gold : 0 0 0 1 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 0 1 0 0 0 1 0 1 1 1 
+hypo : 0 1 0 0 0 0 0 0 0 1 0 0 0 1 0 0 0 1 0 0 0 0 0 0 0 0 1 0 0 0 0 
+# ===========//==========//==========
+
+Id = 28	 - Fabio/Ata 30 - 26a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=0.20 nSegs=5 rakingSize=11, weitght=false | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        25
+Judge     boundaries        8
+Automatic boundaries        4
+
+tp fp                       1 3
+fn tn                       7 14
+Acuracy                     0.600000
+Precision                   0.250000
+Recall                      0.125000
+F1                          0.166667
+Window_Diff                 0.400000
+Pk                          0.333333
+
+gold : 1 1 0 0 1 0 0 0 1 0 0 0 0 0 0 1 1 0 0 0 1 1 0 0 0 
+hypo : 0 0 0 0 0 0 0 1 1 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 0 
+# ===========//==========//==========
+
+Id = 29	 - Fabio/Ata 32 - 28a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=0.20 nSegs=5 rakingSize=11, weitght=false | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        23
+Judge     boundaries        6
+Automatic boundaries        4
+
+tp fp                       1 3
+fn tn                       5 14
+Acuracy                     0.652174
+Precision                   0.250000
+Recall                      0.166667
+F1                          0.200000
+Window_Diff                 0.347826
+Pk                          0.318182
+
+gold : 1 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 1 0 1 
+hypo : 0 0 0 0 0 1 0 0 0 1 0 0 0 0 0 0 0 0 1 1 0 0 0 
+# ===========//==========//==========
+
+Id = 30	 - Gustavo/Ata 29 - 25a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=0.20 nSegs=4 rakingSize=11, weitght=false | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        17
+Judge     boundaries        14
+Automatic boundaries        3
+
+tp fp                       2 1
+fn tn                       12 2
+Acuracy                     0.235294
+Precision                   0.666667
+Recall                      0.142857
+F1                          0.235294
+Window_Diff                 0.764706
+Pk                          0.000000
+
+gold : 1 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 
+hypo : 0 0 1 0 0 0 0 0 1 0 0 0 0 0 0 1 0 
+# ===========//==========//==========
+
+Id = 31	 - Gustavo/Ata 36 - 31a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=0.20 nSegs=5 rakingSize=11, weitght=false | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        25
+Judge     boundaries        16
+Automatic boundaries        4
+
+tp fp                       3 1
+fn tn                       13 8
+Acuracy                     0.440000
+Precision                   0.750000
+Recall                      0.187500
+F1                          0.300000
+Window_Diff                 0.560000
+Pk                          0.000000
+
+gold : 1 0 0 1 0 1 1 1 1 1 0 0 0 1 0 1 1 1 1 1 1 0 0 1 1 
+hypo : 0 0 0 0 0 0 0 1 1 0 0 0 0 0 0 0 0 0 0 1 0 1 0 0 0 
+# ===========//==========//==========
+
+Id = 32	 - Gustavo/Ata 35 - 5a Reunião Extraodinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=0.20 nSegs=2 rakingSize=11, weitght=false | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        10
+Judge     boundaries        8
+Automatic boundaries        1
+
+tp fp                       1 0
+fn tn                       7 2
+Acuracy                     0.300000
+Precision                   1.000000
+Recall                      0.125000
+F1                          0.222222
+Window_Diff                 0.700000
+Pk                          0.000000
+
+gold : 1 0 0 1 1 1 1 1 1 1 
+hypo : 0 0 0 0 0 1 0 0 0 0 
+# ===========//==========//==========
+
+Id = 33	 - Gustavo/Ata 33 - 29a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=0.20 nSegs=7 rakingSize=11, weitght=false | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        32
+Judge     boundaries        16
+Automatic boundaries        6
+
+tp fp                       3 3
+fn tn                       13 13
+Acuracy                     0.500000
+Precision                   0.500000
+Recall                      0.187500
+F1                          0.272727
+Window_Diff                 0.500000
+Pk                          0.000000
+
+gold : 1 0 0 0 1 1 1 0 0 1 1 1 0 0 0 0 1 0 1 0 0 1 0 1 1 0 0 1 1 0 1 1 
+hypo : 0 0 1 0 0 0 0 0 0 0 1 0 0 0 1 0 0 0 1 0 0 0 0 0 0 0 0 1 0 1 0 0 
+# ===========//==========//==========
+
+Id = 34	 - Gustavo/Ata 30 - 26a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=0.20 nSegs=5 rakingSize=11, weitght=false | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        26
+Judge     boundaries        19
+Automatic boundaries        4
+
+tp fp                       2 2
+fn tn                       17 5
+Acuracy                     0.269231
+Precision                   0.500000
+Recall                      0.105263
+F1                          0.173913
+Window_Diff                 0.730769
+Pk                          0.000000
+
+gold : 1 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 1 0 1 1 0 0 1 
+hypo : 0 0 0 0 0 0 0 0 1 1 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 0 
+# ===========//==========//==========
+
+Id = 35	 - Gustavo/Ata 32 - 28a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=0.20 nSegs=5 rakingSize=11, weitght=false | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        26
+Judge     boundaries        14
+Automatic boundaries        4
+
+tp fp                       4 0
+fn tn                       10 12
+Acuracy                     0.615385
+Precision                   1.000000
+Recall                      0.285714
+F1                          0.444444
+Window_Diff                 0.384615
+Pk                          0.000000
+
+gold : 1 0 0 0 1 1 0 0 0 1 1 1 0 0 0 0 1 1 1 0 0 1 1 1 1 1 
+hypo : 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 0 1 0 0 0 1 0 0 0 0 
+# ===========//==========//==========
+
+
+12 files avaliated
+Id = 36	 - Fabio/Ata 29 - 25a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=0.20 nSegs=4 rakingSize=11, weitght=true | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        17
+Judge     boundaries        6
+Automatic boundaries        3
+
+tp fp                       1 2
+fn tn                       5 9
+Acuracy                     0.588235
+Precision                   0.333333
+Recall                      0.166667
+F1                          0.222222
+Window_Diff                 0.411765
+Pk                          0.312500
+
+gold : 1 1 0 1 0 1 0 1 0 0 0 0 0 0 0 0 1 
+hypo : 0 0 0 1 0 0 0 0 0 1 0 0 0 0 1 0 0 
+# ===========//==========//==========
+
+Id = 37	 - Fabio/Ata 36 - 31a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=0.20 nSegs=5 rakingSize=11, weitght=true | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        24
+Judge     boundaries        10
+Automatic boundaries        4
+
+tp fp                       4 0
+fn tn                       6 14
+Acuracy                     0.750000
+Precision                   1.000000
+Recall                      0.400000
+F1                          0.571429
+Window_Diff                 0.250000
+Pk                          0.260870
+
+gold : 0 0 1 0 0 0 0 1 0 0 0 0 1 1 1 0 1 0 1 1 0 0 1 1 
+hypo : 0 0 1 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
+# ===========//==========//==========
+
+Id = 38	 - Fabio/Ata 35 - 5a Reunião Extraodinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=0.20 nSegs=2 rakingSize=11, weitght=true | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        9
+Judge     boundaries        3
+Automatic boundaries        1
+
+tp fp                       1 0
+fn tn                       2 6
+Acuracy                     0.777778
+Precision                   1.000000
+Recall                      0.333333
+F1                          0.500000
+Window_Diff                 0.222222
+Pk                          0.250000
+
+gold : 0 0 0 0 1 1 0 0 1 
+hypo : 0 0 0 0 1 0 0 0 0 
+# ===========//==========//==========
+
+Id = 39	 - Fabio/Ata 33 - 29a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=0.20 nSegs=6 rakingSize=11, weitght=true | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        31
+Judge     boundaries        8
+Automatic boundaries        5
+
+tp fp                       1 4
+fn tn                       7 19
+Acuracy                     0.645161
+Precision                   0.200000
+Recall                      0.125000
+F1                          0.153846
+Window_Diff                 0.354839
+Pk                          0.366667
+
+gold : 0 0 0 1 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 0 1 0 0 0 1 0 1 1 1 
+hypo : 0 0 0 1 0 0 0 0 0 0 0 1 0 0 0 1 0 1 0 0 0 0 0 1 0 0 0 0 0 0 0 
+# ===========//==========//==========
+
+Id = 40	 - Fabio/Ata 30 - 26a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=0.20 nSegs=5 rakingSize=11, weitght=true | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        25
+Judge     boundaries        8
+Automatic boundaries        4
+
+tp fp                       1 3
+fn tn                       7 14
+Acuracy                     0.600000
+Precision                   0.250000
+Recall                      0.125000
+F1                          0.166667
+Window_Diff                 0.400000
+Pk                          0.333333
+
+gold : 1 1 0 0 1 0 0 0 1 0 0 0 0 0 0 1 1 0 0 0 1 1 0 0 0 
+hypo : 0 0 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 0 
+# ===========//==========//==========
+
+Id = 41	 - Fabio/Ata 32 - 28a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=0.20 nSegs=5 rakingSize=11, weitght=true | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        23
+Judge     boundaries        6
+Automatic boundaries        4
+
+tp fp                       2 2
+fn tn                       4 15
+Acuracy                     0.739130
+Precision                   0.500000
+Recall                      0.333333
+F1                          0.400000
+Window_Diff                 0.260870
+Pk                          0.227273
+
+gold : 1 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 1 0 1 
+hypo : 0 0 1 0 0 0 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0 0 0 
+# ===========//==========//==========
+
+Id = 42	 - Gustavo/Ata 29 - 25a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=0.20 nSegs=4 rakingSize=11, weitght=true | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        17
+Judge     boundaries        14
+Automatic boundaries        3
+
+tp fp                       2 1
+fn tn                       12 2
+Acuracy                     0.235294
+Precision                   0.666667
+Recall                      0.142857
+F1                          0.235294
+Window_Diff                 0.764706
+Pk                          0.000000
+
+gold : 1 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 
+hypo : 0 0 1 0 0 0 0 0 1 0 0 0 0 0 0 1 0 
+# ===========//==========//==========
+
+Id = 43	 - Gustavo/Ata 36 - 31a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=0.20 nSegs=5 rakingSize=11, weitght=true | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        25
+Judge     boundaries        16
+Automatic boundaries        4
+
+tp fp                       3 1
+fn tn                       13 8
+Acuracy                     0.440000
+Precision                   0.750000
+Recall                      0.187500
+F1                          0.300000
+Window_Diff                 0.560000
+Pk                          0.000000
+
+gold : 1 0 0 1 0 1 1 1 1 1 0 0 0 1 0 1 1 1 1 1 1 0 0 1 1 
+hypo : 0 0 0 1 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
+# ===========//==========//==========
+
+Id = 44	 - Gustavo/Ata 35 - 5a Reunião Extraodinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=0.20 nSegs=2 rakingSize=11, weitght=true | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        10
+Judge     boundaries        8
+Automatic boundaries        1
+
+tp fp                       1 0
+fn tn                       7 2
+Acuracy                     0.300000
+Precision                   1.000000
+Recall                      0.125000
+F1                          0.222222
+Window_Diff                 0.700000
+Pk                          0.000000
+
+gold : 1 0 0 1 1 1 1 1 1 1 
+hypo : 0 0 0 0 0 1 0 0 0 0 
+# ===========//==========//==========
+
+Id = 45	 - Gustavo/Ata 33 - 29a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=0.20 nSegs=7 rakingSize=11, weitght=true | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        32
+Judge     boundaries        16
+Automatic boundaries        6
+
+tp fp                       5 1
+fn tn                       11 15
+Acuracy                     0.625000
+Precision                   0.833333
+Recall                      0.312500
+F1                          0.454545
+Window_Diff                 0.375000
+Pk                          0.000000
+
+gold : 1 0 0 0 1 1 1 0 0 1 1 1 0 0 0 0 1 0 1 0 0 1 0 1 1 0 0 1 1 0 1 1 
+hypo : 0 0 0 0 1 0 0 0 0 0 0 0 1 0 0 0 1 0 1 0 0 0 0 0 1 0 0 0 1 0 0 0 
+# ===========//==========//==========
+
+Id = 46	 - Gustavo/Ata 30 - 26a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=0.20 nSegs=5 rakingSize=11, weitght=true | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        26
+Judge     boundaries        19
+Automatic boundaries        4
+
+tp fp                       1 3
+fn tn                       18 4
+Acuracy                     0.192308
+Precision                   0.250000
+Recall                      0.052632
+F1                          0.086957
+Window_Diff                 0.807692
+Pk                          0.000000
+
+gold : 1 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 1 0 1 1 0 0 1 
+hypo : 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 0 
+# ===========//==========//==========
+
+Id = 47	 - Gustavo/Ata 32 - 28a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=0.20 nSegs=5 rakingSize=11, weitght=true | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        26
+Judge     boundaries        14
+Automatic boundaries        4
+
+tp fp                       4 0
+fn tn                       10 12
+Acuracy                     0.615385
+Precision                   1.000000
+Recall                      0.285714
+F1                          0.444444
+Window_Diff                 0.384615
+Pk                          0.000000
+
+gold : 1 0 0 0 1 1 0 0 0 1 1 1 0 0 0 0 1 1 1 0 0 1 1 1 1 1 
+hypo : 0 0 0 0 0 1 0 0 0 0 1 0 0 0 0 0 0 1 0 0 0 1 0 0 0 0 
+# ===========//==========//==========
+
+
+12 files avaliated
+Id = 48	 - Fabio/Ata 29 - 25a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=0.40 nSegs=7 rakingSize=9, weitght=false | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        17
+Judge     boundaries        6
+Automatic boundaries        6
+
+tp fp                       2 4
+fn tn                       4 7
+Acuracy                     0.529412
+Precision                   0.333333
+Recall                      0.333333
+F1                          0.333333
+Window_Diff                 0.470588
+Pk                          0.375000
+
+gold : 1 1 0 1 0 1 0 1 0 0 0 0 0 0 0 0 1 
+hypo : 0 0 1 1 0 0 0 1 1 0 1 0 0 0 0 1 0 
+# ===========//==========//==========
+
+Id = 49	 - Fabio/Ata 36 - 31a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=0.40 nSegs=10 rakingSize=9, weitght=false | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        24
+Judge     boundaries        10
+Automatic boundaries        9
+
+tp fp                       5 4
+fn tn                       5 10
+Acuracy                     0.625000
+Precision                   0.555556
+Recall                      0.500000
+F1                          0.526316
+Window_Diff                 0.375000
+Pk                          0.347826
+
+gold : 0 0 1 0 0 0 0 1 0 0 0 0 1 1 1 0 1 0 1 1 0 0 1 1 
+hypo : 0 1 0 0 0 0 1 1 1 0 0 0 0 1 0 1 0 0 1 1 0 0 0 1 
+# ===========//==========//==========
+
+Id = 50	 - Fabio/Ata 35 - 5a Reunião Extraodinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=0.40 nSegs=4 rakingSize=9, weitght=false | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        9
+Judge     boundaries        3
+Automatic boundaries        3
+
+tp fp                       2 1
+fn tn                       1 5
+Acuracy                     0.777778
+Precision                   0.666667
+Recall                      0.666667
+F1                          0.666667
+Window_Diff                 0.222222
+Pk                          0.250000
+
+gold : 0 0 0 0 1 1 0 0 1 
+hypo : 0 0 0 1 1 0 0 0 1 
+# ===========//==========//==========
+
+Id = 51	 - Fabio/Ata 33 - 29a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=0.40 nSegs=13 rakingSize=9, weitght=false | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        31
+Judge     boundaries        8
+Automatic boundaries        12
+
+tp fp                       6 6
+fn tn                       2 17
+Acuracy                     0.741935
+Precision                   0.500000
+Recall                      0.750000
+F1                          0.600000
+Window_Diff                 0.258065
+Pk                          0.233333
+
+gold : 0 0 0 1 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 0 1 0 0 0 1 0 1 1 1 
+hypo : 0 1 0 1 0 0 0 1 0 1 1 0 0 1 1 0 0 1 0 0 1 0 1 0 0 0 1 0 1 0 0 
+# ===========//==========//==========
+
+Id = 52	 - Fabio/Ata 30 - 26a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=0.40 nSegs=10 rakingSize=9, weitght=false | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        25
+Judge     boundaries        8
+Automatic boundaries        9
+
+tp fp                       4 5
+fn tn                       4 12
+Acuracy                     0.640000
+Precision                   0.444444
+Recall                      0.500000
+F1                          0.470588
+Window_Diff                 0.360000
+Pk                          0.291667
+
+gold : 1 1 0 0 1 0 0 0 1 0 0 0 0 0 0 1 1 0 0 0 1 1 0 0 0 
+hypo : 0 0 0 1 1 0 0 1 1 0 0 0 0 0 1 0 1 0 0 1 0 1 0 1 0 
+# ===========//==========//==========
+
+Id = 53	 - Fabio/Ata 32 - 28a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=0.40 nSegs=10 rakingSize=9, weitght=false | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        23
+Judge     boundaries        6
+Automatic boundaries        9
+
+tp fp                       2 7
+fn tn                       4 10
+Acuracy                     0.521739
+Precision                   0.222222
+Recall                      0.333333
+F1                          0.266667
+Window_Diff                 0.478261
+Pk                          0.454545
+
+gold : 1 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 1 0 1 
+hypo : 0 0 0 1 0 1 0 1 0 1 0 0 0 0 1 0 1 0 1 1 0 0 1 
+# ===========//==========//==========
+
+Id = 54	 - Gustavo/Ata 29 - 25a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=0.40 nSegs=7 rakingSize=9, weitght=false | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        17
+Judge     boundaries        14
+Automatic boundaries        6
+
+tp fp                       4 2
+fn tn                       10 1
+Acuracy                     0.294118
+Precision                   0.666667
+Recall                      0.285714
+F1                          0.400000
+Window_Diff                 0.705882
+Pk                          0.000000
+
+gold : 1 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 
+hypo : 0 1 1 0 0 0 1 0 1 0 1 0 0 0 0 1 0 
+# ===========//==========//==========
+
+Id = 55	 - Gustavo/Ata 36 - 31a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=0.40 nSegs=10 rakingSize=9, weitght=false | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        25
+Judge     boundaries        16
+Automatic boundaries        9
+
+tp fp                       7 2
+fn tn                       9 7
+Acuracy                     0.560000
+Precision                   0.777778
+Recall                      0.437500
+F1                          0.560000
+Window_Diff                 0.440000
+Pk                          0.000000
+
+gold : 1 0 0 1 0 1 1 1 1 1 0 0 0 1 0 1 1 1 1 1 1 0 0 1 1 
+hypo : 0 0 1 0 0 0 0 1 1 1 0 0 0 0 1 0 1 0 0 1 1 0 0 0 1 
+# ===========//==========//==========
+
+Id = 56	 - Gustavo/Ata 35 - 5a Reunião Extraodinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=0.40 nSegs=4 rakingSize=9, weitght=false | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        10
+Judge     boundaries        8
+Automatic boundaries        3
+
+tp fp                       3 0
+fn tn                       5 2
+Acuracy                     0.500000
+Precision                   1.000000
+Recall                      0.375000
+F1                          0.545455
+Window_Diff                 0.500000
+Pk                          0.000000
+
+gold : 1 0 0 1 1 1 1 1 1 1 
+hypo : 0 0 0 1 0 1 0 0 0 1 
+# ===========//==========//==========
+
+Id = 57	 - Gustavo/Ata 33 - 29a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=0.40 nSegs=13 rakingSize=9, weitght=false | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        32
+Judge     boundaries        16
+Automatic boundaries        12
+
+tp fp                       6 6
+fn tn                       10 10
+Acuracy                     0.500000
+Precision                   0.500000
+Recall                      0.375000
+F1                          0.428571
+Window_Diff                 0.500000
+Pk                          0.000000
+
+gold : 1 0 0 0 1 1 1 0 0 1 1 1 0 0 0 0 1 0 1 0 0 1 0 1 1 0 0 1 1 0 1 1 
+hypo : 0 1 1 0 0 0 0 0 1 0 1 1 0 0 1 1 0 0 1 0 0 1 0 1 0 0 0 1 0 1 0 0 
+# ===========//==========//==========
+
+Id = 58	 - Gustavo/Ata 30 - 26a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=0.40 nSegs=11 rakingSize=9, weitght=false | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        26
+Judge     boundaries        19
+Automatic boundaries        10
+
+tp fp                       6 4
+fn tn                       13 3
+Acuracy                     0.346154
+Precision                   0.600000
+Recall                      0.315789
+F1                          0.413793
+Window_Diff                 0.653846
+Pk                          0.000000
+
+gold : 1 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 1 0 1 1 0 0 1 
+hypo : 0 1 0 1 1 0 0 0 1 1 0 0 0 0 0 1 0 1 0 0 1 0 1 0 1 0 
+# ===========//==========//==========
+
+Id = 59	 - Gustavo/Ata 32 - 28a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=0.40 nSegs=11 rakingSize=9, weitght=false | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        26
+Judge     boundaries        14
+Automatic boundaries        10
+
+tp fp                       5 5
+fn tn                       9 7
+Acuracy                     0.461538
+Precision                   0.500000
+Recall                      0.357143
+F1                          0.416667
+Window_Diff                 0.538462
+Pk                          0.000000
+
+gold : 1 0 0 0 1 1 0 0 0 1 1 1 0 0 0 0 1 1 1 0 0 1 1 1 1 1 
+hypo : 0 0 1 0 0 0 1 0 1 0 1 0 0 0 0 1 0 1 1 0 1 1 0 0 0 1 
+# ===========//==========//==========
+
+
+12 files avaliated
+Id = 60	 - Fabio/Ata 29 - 25a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=0.40 nSegs=7 rakingSize=9, weitght=true | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        17
+Judge     boundaries        6
+Automatic boundaries        6
+
+tp fp                       4 2
+fn tn                       2 9
+Acuracy                     0.764706
+Precision                   0.666667
+Recall                      0.666667
+F1                          0.666667
+Window_Diff                 0.235294
+Pk                          0.187500
+
+gold : 1 1 0 1 0 1 0 1 0 0 0 0 0 0 0 0 1 
+hypo : 0 1 0 1 0 0 0 1 0 1 0 0 0 0 1 0 1 
+# ===========//==========//==========
+
+Id = 61	 - Fabio/Ata 36 - 31a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=0.40 nSegs=10 rakingSize=9, weitght=true | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        24
+Judge     boundaries        10
+Automatic boundaries        9
+
+tp fp                       5 4
+fn tn                       5 10
+Acuracy                     0.625000
+Precision                   0.555556
+Recall                      0.500000
+F1                          0.526316
+Window_Diff                 0.375000
+Pk                          0.391304
+
+gold : 0 0 1 0 0 0 0 1 0 0 0 0 1 1 1 0 1 0 1 1 0 0 1 1 
+hypo : 0 0 1 0 0 0 1 1 1 0 0 0 0 1 0 1 0 0 1 0 1 0 0 1 
+# ===========//==========//==========
+
+Id = 62	 - Fabio/Ata 35 - 5a Reunião Extraodinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=0.40 nSegs=4 rakingSize=9, weitght=true | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        9
+Judge     boundaries        3
+Automatic boundaries        3
+
+tp fp                       2 1
+fn tn                       1 5
+Acuracy                     0.777778
+Precision                   0.666667
+Recall                      0.666667
+F1                          0.666667
+Window_Diff                 0.222222
+Pk                          0.250000
+
+gold : 0 0 0 0 1 1 0 0 1 
+hypo : 0 0 1 0 1 0 0 0 1 
+# ===========//==========//==========
+
+Id = 63	 - Fabio/Ata 33 - 29a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=0.40 nSegs=13 rakingSize=9, weitght=true | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        31
+Judge     boundaries        8
+Automatic boundaries        12
+
+tp fp                       5 7
+fn tn                       3 16
+Acuracy                     0.677419
+Precision                   0.416667
+Recall                      0.625000
+F1                          0.500000
+Window_Diff                 0.322581
+Pk                          0.333333
+
+gold : 0 0 0 1 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 0 1 0 0 0 1 0 1 1 1 
+hypo : 0 0 1 1 0 1 0 0 1 0 1 0 0 1 0 1 0 1 0 0 1 0 0 1 0 0 1 0 1 0 0 
+# ===========//==========//==========
+
+Id = 64	 - Fabio/Ata 30 - 26a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=0.40 nSegs=10 rakingSize=9, weitght=true | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        25
+Judge     boundaries        8
+Automatic boundaries        9
+
+tp fp                       3 6
+fn tn                       5 11
+Acuracy                     0.560000
+Precision                   0.333333
+Recall                      0.375000
+F1                          0.352941
+Window_Diff                 0.440000
+Pk                          0.375000
+
+gold : 1 1 0 0 1 0 0 0 1 0 0 0 0 0 0 1 1 0 0 0 1 1 0 0 0 
+hypo : 0 0 0 1 0 0 1 0 1 0 0 1 1 0 0 1 0 0 0 1 0 1 0 1 0 
+# ===========//==========//==========
+
+Id = 65	 - Fabio/Ata 32 - 28a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=0.40 nSegs=10 rakingSize=9, weitght=true | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        23
+Judge     boundaries        6
+Automatic boundaries        9
+
+tp fp                       4 5
+fn tn                       2 12
+Acuracy                     0.695652
+Precision                   0.444444
+Recall                      0.666667
+F1                          0.533333
+Window_Diff                 0.304348
+Pk                          0.272727
+
+gold : 1 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 1 0 1 
+hypo : 0 0 1 0 1 0 0 0 1 0 1 0 0 0 1 1 0 0 1 1 0 0 1 
+# ===========//==========//==========
+
+Id = 66	 - Gustavo/Ata 29 - 25a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=0.40 nSegs=7 rakingSize=9, weitght=true | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        17
+Judge     boundaries        14
+Automatic boundaries        6
+
+tp fp                       5 1
+fn tn                       9 2
+Acuracy                     0.411765
+Precision                   0.833333
+Recall                      0.357143
+F1                          0.500000
+Window_Diff                 0.588235
+Pk                          0.000000
+
+gold : 1 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 
+hypo : 0 0 1 0 0 0 1 0 1 0 1 0 0 1 0 1 0 
+# ===========//==========//==========
+
+Id = 67	 - Gustavo/Ata 36 - 31a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=0.40 nSegs=10 rakingSize=9, weitght=true | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        25
+Judge     boundaries        16
+Automatic boundaries        9
+
+tp fp                       7 2
+fn tn                       9 7
+Acuracy                     0.560000
+Precision                   0.777778
+Recall                      0.437500
+F1                          0.560000
+Window_Diff                 0.440000
+Pk                          0.000000
+
+gold : 1 0 0 1 0 1 1 1 1 1 0 0 0 1 0 1 1 1 1 1 1 0 0 1 1 
+hypo : 0 0 0 1 0 0 0 1 1 0 1 0 0 1 0 1 0 0 0 1 0 1 0 0 1 
+# ===========//==========//==========
+
+Id = 68	 - Gustavo/Ata 35 - 5a Reunião Extraodinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=0.40 nSegs=4 rakingSize=9, weitght=true | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        10
+Judge     boundaries        8
+Automatic boundaries        3
+
+tp fp                       3 0
+fn tn                       5 2
+Acuracy                     0.500000
+Precision                   1.000000
+Recall                      0.375000
+F1                          0.545455
+Window_Diff                 0.500000
+Pk                          0.000000
+
+gold : 1 0 0 1 1 1 1 1 1 1 
+hypo : 0 0 0 1 0 1 0 0 0 1 
+# ===========//==========//==========
+
+Id = 69	 - Gustavo/Ata 33 - 29a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=0.40 nSegs=13 rakingSize=9, weitght=true | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        32
+Judge     boundaries        16
+Automatic boundaries        12
+
+tp fp                       9 3
+fn tn                       7 13
+Acuracy                     0.687500
+Precision                   0.750000
+Recall                      0.562500
+F1                          0.642857
+Window_Diff                 0.312500
+Pk                          0.000000
+
+gold : 1 0 0 0 1 1 1 0 0 1 1 1 0 0 0 0 1 0 1 0 0 1 0 1 1 0 0 1 1 0 1 1 
+hypo : 0 0 0 1 1 0 0 0 0 1 0 1 0 0 1 0 1 0 1 0 0 1 0 1 1 0 0 1 0 1 0 0 
+# ===========//==========//==========
+
+Id = 70	 - Gustavo/Ata 30 - 26a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=0.40 nSegs=11 rakingSize=9, weitght=true | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        26
+Judge     boundaries        19
+Automatic boundaries        10
+
+tp fp                       7 3
+fn tn                       12 4
+Acuracy                     0.423077
+Precision                   0.700000
+Recall                      0.368421
+F1                          0.482759
+Window_Diff                 0.576923
+Pk                          0.000000
+
+gold : 1 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 1 0 1 1 0 0 1 
+hypo : 0 0 0 1 0 0 0 1 0 1 0 0 1 1 0 0 1 0 0 0 1 0 1 0 1 1 
+# ===========//==========//==========
+
+Id = 71	 - Gustavo/Ata 32 - 28a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=0.40 nSegs=11 rakingSize=9, weitght=true | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        26
+Judge     boundaries        14
+Automatic boundaries        10
+
+tp fp                       6 4
+fn tn                       8 8
+Acuracy                     0.538462
+Precision                   0.600000
+Recall                      0.428571
+F1                          0.500000
+Window_Diff                 0.461538
+Pk                          0.000000
+
+gold : 1 0 0 0 1 1 0 0 0 1 1 1 0 0 0 0 1 1 1 0 0 1 1 1 1 1 
+hypo : 0 0 1 0 0 0 1 0 0 1 1 1 0 0 0 1 0 1 0 0 1 1 0 0 0 1 
+# ===========//==========//==========
+
+
+12 files avaliated
+Id = 72	 - Fabio/Ata 29 - 25a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=0.40 nSegs=7 rakingSize=11, weitght=false | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        17
+Judge     boundaries        6
+Automatic boundaries        6
+
+tp fp                       2 4
+fn tn                       4 7
+Acuracy                     0.529412
+Precision                   0.333333
+Recall                      0.333333
+F1                          0.333333
+Window_Diff                 0.470588
+Pk                          0.375000
+
+gold : 1 1 0 1 0 1 0 1 0 0 0 0 0 0 0 0 1 
+hypo : 0 0 1 1 0 0 0 1 0 1 0 1 0 0 0 1 0 
+# ===========//==========//==========
+
+Id = 73	 - Fabio/Ata 36 - 31a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=0.40 nSegs=10 rakingSize=11, weitght=false | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        24
+Judge     boundaries        10
+Automatic boundaries        9
+
+tp fp                       5 4
+fn tn                       5 10
+Acuracy                     0.625000
+Precision                   0.555556
+Recall                      0.500000
+F1                          0.526316
+Window_Diff                 0.375000
+Pk                          0.347826
+
+gold : 0 0 1 0 0 0 0 1 0 0 0 0 1 1 1 0 1 0 1 1 0 0 1 1 
+hypo : 0 1 0 0 0 0 1 1 1 0 0 0 0 1 0 1 0 0 1 1 0 0 0 1 
+# ===========//==========//==========
+
+Id = 74	 - Fabio/Ata 35 - 5a Reunião Extraodinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=0.40 nSegs=4 rakingSize=11, weitght=false | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        9
+Judge     boundaries        3
+Automatic boundaries        3
+
+tp fp                       2 1
+fn tn                       1 5
+Acuracy                     0.777778
+Precision                   0.666667
+Recall                      0.666667
+F1                          0.666667
+Window_Diff                 0.222222
+Pk                          0.250000
+
+gold : 0 0 0 0 1 1 0 0 1 
+hypo : 0 0 1 0 1 0 0 0 1 
+# ===========//==========//==========
+
+Id = 75	 - Fabio/Ata 33 - 29a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=0.40 nSegs=13 rakingSize=11, weitght=false | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        31
+Judge     boundaries        8
+Automatic boundaries        12
+
+tp fp                       6 6
+fn tn                       2 17
+Acuracy                     0.741935
+Precision                   0.500000
+Recall                      0.750000
+F1                          0.600000
+Window_Diff                 0.258065
+Pk                          0.233333
+
+gold : 0 0 0 1 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 0 1 0 0 0 1 0 1 1 1 
+hypo : 0 1 0 1 0 0 1 0 0 1 1 0 0 1 1 0 0 1 0 0 1 0 1 0 0 0 1 0 1 0 0 
+# ===========//==========//==========
+
+Id = 76	 - Fabio/Ata 30 - 26a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=0.40 nSegs=10 rakingSize=11, weitght=false | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        25
+Judge     boundaries        8
+Automatic boundaries        9
+
+tp fp                       4 5
+fn tn                       4 12
+Acuracy                     0.640000
+Precision                   0.444444
+Recall                      0.500000
+F1                          0.470588
+Window_Diff                 0.360000
+Pk                          0.291667
+
+gold : 1 1 0 0 1 0 0 0 1 0 0 0 0 0 0 1 1 0 0 0 1 1 0 0 0 
+hypo : 0 0 0 1 1 0 0 1 1 0 0 0 0 0 1 0 1 0 0 1 0 1 0 1 0 
+# ===========//==========//==========
+
+Id = 77	 - Fabio/Ata 32 - 28a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=0.40 nSegs=10 rakingSize=11, weitght=false | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        23
+Judge     boundaries        6
+Automatic boundaries        9
+
+tp fp                       2 7
+fn tn                       4 10
+Acuracy                     0.521739
+Precision                   0.222222
+Recall                      0.333333
+F1                          0.266667
+Window_Diff                 0.478261
+Pk                          0.454545
+
+gold : 1 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 1 0 1 
+hypo : 0 0 0 1 0 1 0 1 0 1 0 0 0 0 1 0 1 0 1 1 0 0 1 
+# ===========//==========//==========
+
+Id = 78	 - Gustavo/Ata 29 - 25a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=0.40 nSegs=7 rakingSize=11, weitght=false | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        17
+Judge     boundaries        14
+Automatic boundaries        6
+
+tp fp                       4 2
+fn tn                       10 1
+Acuracy                     0.294118
+Precision                   0.666667
+Recall                      0.285714
+F1                          0.400000
+Window_Diff                 0.705882
+Pk                          0.000000
+
+gold : 1 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 
+hypo : 0 1 1 0 0 0 1 0 1 0 1 0 0 0 0 1 0 
+# ===========//==========//==========
+
+Id = 79	 - Gustavo/Ata 36 - 31a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=0.40 nSegs=10 rakingSize=11, weitght=false | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        25
+Judge     boundaries        16
+Automatic boundaries        9
+
+tp fp                       6 3
+fn tn                       10 6
+Acuracy                     0.480000
+Precision                   0.666667
+Recall                      0.375000
+F1                          0.480000
+Window_Diff                 0.520000
+Pk                          0.000000
+
+gold : 1 0 0 1 0 1 1 1 1 1 0 0 0 1 0 1 1 1 1 1 1 0 0 1 1 
+hypo : 0 0 1 0 0 0 0 1 1 1 0 0 0 0 1 0 1 0 0 1 0 1 0 0 1 
+# ===========//==========//==========
+
+Id = 80	 - Gustavo/Ata 35 - 5a Reunião Extraodinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=0.40 nSegs=4 rakingSize=11, weitght=false | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        10
+Judge     boundaries        8
+Automatic boundaries        3
+
+tp fp                       3 0
+fn tn                       5 2
+Acuracy                     0.500000
+Precision                   1.000000
+Recall                      0.375000
+F1                          0.545455
+Window_Diff                 0.500000
+Pk                          0.000000
+
+gold : 1 0 0 1 1 1 1 1 1 1 
+hypo : 0 0 0 1 0 1 0 0 0 1 
+# ===========//==========//==========
+
+Id = 81	 - Gustavo/Ata 33 - 29a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=0.40 nSegs=13 rakingSize=11, weitght=false | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        32
+Judge     boundaries        16
+Automatic boundaries        12
+
+tp fp                       6 6
+fn tn                       10 10
+Acuracy                     0.500000
+Precision                   0.500000
+Recall                      0.375000
+F1                          0.428571
+Window_Diff                 0.500000
+Pk                          0.000000
+
+gold : 1 0 0 0 1 1 1 0 0 1 1 1 0 0 0 0 1 0 1 0 0 1 0 1 1 0 0 1 1 0 1 1 
+hypo : 0 1 1 0 0 0 0 0 1 0 1 1 0 0 1 1 0 0 1 0 0 1 0 1 0 0 0 1 0 1 0 0 
+# ===========//==========//==========
+
+Id = 82	 - Gustavo/Ata 30 - 26a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=0.40 nSegs=11 rakingSize=11, weitght=false | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        26
+Judge     boundaries        19
+Automatic boundaries        10
+
+tp fp                       6 4
+fn tn                       13 3
+Acuracy                     0.346154
+Precision                   0.600000
+Recall                      0.315789
+F1                          0.413793
+Window_Diff                 0.653846
+Pk                          0.000000
+
+gold : 1 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 1 0 1 1 0 0 1 
+hypo : 0 1 0 1 1 0 0 0 1 1 0 0 0 0 0 1 0 1 0 0 1 0 1 0 1 0 
+# ===========//==========//==========
+
+Id = 83	 - Gustavo/Ata 32 - 28a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=0.40 nSegs=11 rakingSize=11, weitght=false | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        26
+Judge     boundaries        14
+Automatic boundaries        10
+
+tp fp                       5 5
+fn tn                       9 7
+Acuracy                     0.461538
+Precision                   0.500000
+Recall                      0.357143
+F1                          0.416667
+Window_Diff                 0.538462
+Pk                          0.000000
+
+gold : 1 0 0 0 1 1 0 0 0 1 1 1 0 0 0 0 1 1 1 0 0 1 1 1 1 1 
+hypo : 0 0 1 0 1 0 1 0 1 0 1 0 0 0 0 1 0 1 0 0 1 1 0 0 0 1 
+# ===========//==========//==========
+
+
+12 files avaliated
+Id = 84	 - Fabio/Ata 29 - 25a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=0.40 nSegs=7 rakingSize=11, weitght=true | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        17
+Judge     boundaries        6
+Automatic boundaries        6
+
+tp fp                       3 3
+fn tn                       3 8
+Acuracy                     0.647059
+Precision                   0.500000
+Recall                      0.500000
+F1                          0.500000
+Window_Diff                 0.352941
+Pk                          0.250000
+
+gold : 1 1 0 1 0 1 0 1 0 0 0 0 0 0 0 0 1 
+hypo : 0 0 0 1 0 0 0 1 0 1 0 1 0 0 1 0 1 
+# ===========//==========//==========
+
+Id = 85	 - Fabio/Ata 36 - 31a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=0.40 nSegs=10 rakingSize=11, weitght=true | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        24
+Judge     boundaries        10
+Automatic boundaries        9
+
+tp fp                       5 4
+fn tn                       5 10
+Acuracy                     0.625000
+Precision                   0.555556
+Recall                      0.500000
+F1                          0.526316
+Window_Diff                 0.375000
+Pk                          0.391304
+
+gold : 0 0 1 0 0 0 0 1 0 0 0 0 1 1 1 0 1 0 1 1 0 0 1 1 
+hypo : 0 0 1 0 0 0 1 1 1 0 0 0 0 1 0 1 0 0 1 0 1 0 0 1 
+# ===========//==========//==========
+
+Id = 86	 - Fabio/Ata 35 - 5a Reunião Extraodinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=0.40 nSegs=4 rakingSize=11, weitght=true | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        9
+Judge     boundaries        3
+Automatic boundaries        3
+
+tp fp                       2 1
+fn tn                       1 5
+Acuracy                     0.777778
+Precision                   0.666667
+Recall                      0.666667
+F1                          0.666667
+Window_Diff                 0.222222
+Pk                          0.250000
+
+gold : 0 0 0 0 1 1 0 0 1 
+hypo : 0 0 1 0 1 0 0 0 1 
+# ===========//==========//==========
+
+Id = 87	 - Fabio/Ata 33 - 29a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=0.40 nSegs=13 rakingSize=11, weitght=true | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        31
+Judge     boundaries        8
+Automatic boundaries        12
+
+tp fp                       4 8
+fn tn                       4 15
+Acuracy                     0.612903
+Precision                   0.333333
+Recall                      0.500000
+F1                          0.400000
+Window_Diff                 0.387097
+Pk                          0.400000
+
+gold : 0 0 0 1 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 0 1 0 0 0 1 0 1 1 1 
+hypo : 0 0 1 1 0 0 0 1 0 1 0 1 0 0 0 1 0 1 0 0 1 0 1 1 0 0 0 1 1 0 0 
+# ===========//==========//==========
+
+Id = 88	 - Fabio/Ata 30 - 26a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=0.40 nSegs=10 rakingSize=11, weitght=true | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        25
+Judge     boundaries        8
+Automatic boundaries        9
+
+tp fp                       3 6
+fn tn                       5 11
+Acuracy                     0.560000
+Precision                   0.333333
+Recall                      0.375000
+F1                          0.352941
+Window_Diff                 0.440000
+Pk                          0.375000
+
+gold : 1 1 0 0 1 0 0 0 1 0 0 0 0 0 0 1 1 0 0 0 1 1 0 0 0 
+hypo : 0 0 0 1 0 0 1 1 1 0 0 0 1 0 0 1 0 0 0 1 0 1 0 1 0 
+# ===========//==========//==========
+
+Id = 89	 - Fabio/Ata 32 - 28a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=0.40 nSegs=10 rakingSize=11, weitght=true | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        23
+Judge     boundaries        6
+Automatic boundaries        9
+
+tp fp                       3 6
+fn tn                       3 11
+Acuracy                     0.608696
+Precision                   0.333333
+Recall                      0.500000
+F1                          0.400000
+Window_Diff                 0.391304
+Pk                          0.363636
+
+gold : 1 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 1 0 1 
+hypo : 0 0 1 0 1 1 0 0 1 0 1 0 0 0 1 1 0 0 1 1 0 0 0 
+# ===========//==========//==========
+
+Id = 90	 - Gustavo/Ata 29 - 25a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=0.40 nSegs=7 rakingSize=11, weitght=true | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        17
+Judge     boundaries        14
+Automatic boundaries        6
+
+tp fp                       5 1
+fn tn                       9 2
+Acuracy                     0.411765
+Precision                   0.833333
+Recall                      0.357143
+F1                          0.500000
+Window_Diff                 0.588235
+Pk                          0.000000
+
+gold : 1 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 
+hypo : 0 0 1 0 0 0 1 0 1 0 1 0 0 1 0 1 0 
+# ===========//==========//==========
+
+Id = 91	 - Gustavo/Ata 36 - 31a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=0.40 nSegs=10 rakingSize=11, weitght=true | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        25
+Judge     boundaries        16
+Automatic boundaries        9
+
+tp fp                       7 2
+fn tn                       9 7
+Acuracy                     0.560000
+Precision                   0.777778
+Recall                      0.437500
+F1                          0.560000
+Window_Diff                 0.440000
+Pk                          0.000000
+
+gold : 1 0 0 1 0 1 1 1 1 1 0 0 0 1 0 1 1 1 1 1 1 0 0 1 1 
+hypo : 0 0 0 1 0 0 0 1 1 1 0 0 0 0 1 0 1 0 0 1 0 1 0 0 1 
+# ===========//==========//==========
+
+Id = 92	 - Gustavo/Ata 35 - 5a Reunião Extraodinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=0.40 nSegs=4 rakingSize=11, weitght=true | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        10
+Judge     boundaries        8
+Automatic boundaries        3
+
+tp fp                       3 0
+fn tn                       5 2
+Acuracy                     0.500000
+Precision                   1.000000
+Recall                      0.375000
+F1                          0.545455
+Window_Diff                 0.500000
+Pk                          0.000000
+
+gold : 1 0 0 1 1 1 1 1 1 1 
+hypo : 0 0 0 1 0 1 0 0 0 1 
+# ===========//==========//==========
+
+Id = 93	 - Gustavo/Ata 33 - 29a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=0.40 nSegs=13 rakingSize=11, weitght=true | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        32
+Judge     boundaries        16
+Automatic boundaries        12
+
+tp fp                       8 4
+fn tn                       8 12
+Acuracy                     0.625000
+Precision                   0.666667
+Recall                      0.500000
+F1                          0.571429
+Window_Diff                 0.375000
+Pk                          0.000000
+
+gold : 1 0 0 0 1 1 1 0 0 1 1 1 0 0 0 0 1 0 1 0 0 1 0 1 1 0 0 1 1 0 1 1 
+hypo : 0 0 0 1 1 0 0 0 1 0 1 0 1 0 0 0 1 0 1 0 0 1 0 1 1 0 0 0 1 1 0 0 
+# ===========//==========//==========
+
+Id = 94	 - Gustavo/Ata 30 - 26a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=0.40 nSegs=11 rakingSize=11, weitght=true | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        26
+Judge     boundaries        19
+Automatic boundaries        10
+
+tp fp                       7 3
+fn tn                       12 4
+Acuracy                     0.423077
+Precision                   0.700000
+Recall                      0.368421
+F1                          0.482759
+Window_Diff                 0.576923
+Pk                          0.000000
+
+gold : 1 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 1 0 1 1 0 0 1 
+hypo : 0 0 0 1 0 0 0 1 1 1 0 0 1 1 0 0 1 0 0 0 1 0 1 0 1 0 
+# ===========//==========//==========
+
+Id = 95	 - Gustavo/Ata 32 - 28a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=0.40 nSegs=11 rakingSize=11, weitght=true | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        26
+Judge     boundaries        14
+Automatic boundaries        10
+
+tp fp                       7 3
+fn tn                       7 9
+Acuracy                     0.615385
+Precision                   0.700000
+Recall                      0.500000
+F1                          0.583333
+Window_Diff                 0.384615
+Pk                          0.000000
+
+gold : 1 0 0 0 1 1 0 0 0 1 1 1 0 0 0 0 1 1 1 0 0 1 1 1 1 1 
+hypo : 0 0 0 1 0 1 0 0 0 1 1 0 0 0 0 1 0 1 1 0 1 1 0 0 0 1 
+# ===========//==========//==========
+
+
+12 files avaliated
+Id = 96	 - Fabio/Ata 29 - 25a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=0.60 nSegs=11 rakingSize=9, weitght=false | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        17
+Judge     boundaries        6
+Automatic boundaries        10
+
+tp fp                       3 7
+fn tn                       3 4
+Acuracy                     0.411765
+Precision                   0.300000
+Recall                      0.500000
+F1                          0.375000
+Window_Diff                 0.588235
+Pk                          0.500000
+
+gold : 1 1 0 1 0 1 0 1 0 0 0 0 0 0 0 0 1 
+hypo : 0 0 1 1 1 0 0 1 1 1 1 0 0 0 1 1 1 
+# ===========//==========//==========
+
+Id = 97	 - Fabio/Ata 36 - 31a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=0.60 nSegs=15 rakingSize=9, weitght=false | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        24
+Judge     boundaries        10
+Automatic boundaries        14
+
+tp fp                       7 7
+fn tn                       3 7
+Acuracy                     0.583333
+Precision                   0.500000
+Recall                      0.700000
+F1                          0.583333
+Window_Diff                 0.416667
+Pk                          0.347826
+
+gold : 0 0 1 0 0 0 0 1 0 0 0 0 1 1 1 0 1 0 1 1 0 0 1 1 
+hypo : 1 1 0 1 1 0 1 1 1 0 0 0 1 1 0 1 0 0 1 1 0 0 1 1 
+# ===========//==========//==========
+
+Id = 98	 - Fabio/Ata 35 - 5a Reunião Extraodinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=0.60 nSegs=6 rakingSize=9, weitght=false | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        9
+Judge     boundaries        3
+Automatic boundaries        5
+
+tp fp                       3 2
+fn tn                       0 4
+Acuracy                     0.777778
+Precision                   0.600000
+Recall                      1.000000
+F1                          0.750000
+Window_Diff                 0.222222
+Pk                          0.125000
+
+gold : 0 0 0 0 1 1 0 0 1 
+hypo : 0 1 0 1 1 1 0 0 1 
+# ===========//==========//==========
+
+Id = 99	 - Fabio/Ata 33 - 29a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=0.60 nSegs=19 rakingSize=9, weitght=false | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        31
+Judge     boundaries        8
+Automatic boundaries        18
+
+tp fp                       7 11
+fn tn                       1 12
+Acuracy                     0.612903
+Precision                   0.388889
+Recall                      0.875000
+F1                          0.538462
+Window_Diff                 0.387097
+Pk                          0.333333
+
+gold : 0 0 0 1 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 0 1 0 0 0 1 0 1 1 1 
+hypo : 1 1 0 1 0 1 0 1 0 1 1 1 0 1 1 1 0 1 0 0 1 0 1 0 0 0 1 1 1 0 1 
+# ===========//==========//==========
+
+Id = 100	 - Fabio/Ata 30 - 26a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=0.60 nSegs=16 rakingSize=9, weitght=false | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        25
+Judge     boundaries        8
+Automatic boundaries        15
+
+tp fp                       7 8
+fn tn                       1 9
+Acuracy                     0.640000
+Precision                   0.466667
+Recall                      0.875000
+F1                          0.608696
+Window_Diff                 0.360000
+Pk                          0.333333
+
+gold : 1 1 0 0 1 0 0 0 1 0 0 0 0 0 0 1 1 0 0 0 1 1 0 0 0 
+hypo : 0 1 0 1 1 0 0 1 1 0 0 1 1 0 1 1 1 0 0 1 1 1 0 1 1 
+# ===========//==========//==========
+
+Id = 101	 - Fabio/Ata 32 - 28a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=0.60 nSegs=14 rakingSize=9, weitght=false | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        23
+Judge     boundaries        6
+Automatic boundaries        13
+
+tp fp                       3 10
+fn tn                       3 7
+Acuracy                     0.434783
+Precision                   0.230769
+Recall                      0.500000
+F1                          0.315789
+Window_Diff                 0.565217
+Pk                          0.500000
+
+gold : 1 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 1 0 1 
+hypo : 0 1 0 1 0 1 0 1 1 1 1 0 0 0 1 1 1 0 1 1 0 0 1 
+# ===========//==========//==========
+
+Id = 102	 - Gustavo/Ata 29 - 25a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=0.60 nSegs=11 rakingSize=9, weitght=false | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        17
+Judge     boundaries        14
+Automatic boundaries        10
+
+tp fp                       7 3
+fn tn                       7 0
+Acuracy                     0.411765
+Precision                   0.700000
+Recall                      0.500000
+F1                          0.583333
+Window_Diff                 0.588235
+Pk                          0.000000
+
+gold : 1 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 
+hypo : 0 1 1 1 0 0 1 1 1 0 1 0 0 1 0 1 1 
+# ===========//==========//==========
+
+Id = 103	 - Gustavo/Ata 36 - 31a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=0.60 nSegs=16 rakingSize=9, weitght=false | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        25
+Judge     boundaries        16
+Automatic boundaries        15
+
+tp fp                       10 5
+fn tn                       6 4
+Acuracy                     0.560000
+Precision                   0.666667
+Recall                      0.625000
+F1                          0.645161
+Window_Diff                 0.440000
+Pk                          0.000000
+
+gold : 1 0 0 1 0 1 1 1 1 1 0 0 0 1 0 1 1 1 1 1 1 0 0 1 1 
+hypo : 0 1 1 0 1 1 0 1 1 1 0 0 0 1 1 0 1 0 0 1 1 0 1 1 1 
+# ===========//==========//==========
+
+Id = 104	 - Gustavo/Ata 35 - 5a Reunião Extraodinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=0.60 nSegs=7 rakingSize=9, weitght=false | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        10
+Judge     boundaries        8
+Automatic boundaries        6
+
+tp fp                       4 2
+fn tn                       4 0
+Acuracy                     0.400000
+Precision                   0.666667
+Recall                      0.500000
+F1                          0.571429
+Window_Diff                 0.600000
+Pk                          0.000000
+
+gold : 1 0 0 1 1 1 1 1 1 1 
+hypo : 0 1 1 1 0 1 1 0 0 1 
+# ===========//==========//==========
+
+Id = 105	 - Gustavo/Ata 33 - 29a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=0.60 nSegs=20 rakingSize=9, weitght=false | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        32
+Judge     boundaries        16
+Automatic boundaries        19
+
+tp fp                       12 7
+fn tn                       4 9
+Acuracy                     0.656250
+Precision                   0.631579
+Recall                      0.750000
+F1                          0.685714
+Window_Diff                 0.343750
+Pk                          0.000000
+
+gold : 1 0 0 0 1 1 1 0 0 1 1 1 0 0 0 0 1 0 1 0 0 1 0 1 1 0 0 1 1 0 1 1 
+hypo : 0 1 1 0 1 0 1 0 1 0 1 1 1 0 1 1 1 0 1 0 0 1 0 1 1 0 0 1 1 1 0 1 
+# ===========//==========//==========
+
+Id = 106	 - Gustavo/Ata 30 - 26a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=0.60 nSegs=16 rakingSize=9, weitght=false | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        26
+Judge     boundaries        19
+Automatic boundaries        15
+
+tp fp                       11 4
+fn tn                       8 3
+Acuracy                     0.538462
+Precision                   0.733333
+Recall                      0.578947
+F1                          0.647059
+Window_Diff                 0.461538
+Pk                          0.000000
+
+gold : 1 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 1 0 1 1 0 0 1 
+hypo : 0 1 0 1 1 0 1 0 1 1 0 0 1 1 0 1 1 1 0 0 1 0 1 0 1 1 
+# ===========//==========//==========
+
+Id = 107	 - Gustavo/Ata 32 - 28a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=0.60 nSegs=16 rakingSize=9, weitght=false | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        26
+Judge     boundaries        14
+Automatic boundaries        15
+
+tp fp                       9 6
+fn tn                       5 6
+Acuracy                     0.576923
+Precision                   0.600000
+Recall                      0.642857
+F1                          0.620690
+Window_Diff                 0.423077
+Pk                          0.000000
+
+gold : 1 0 0 0 1 1 0 0 0 1 1 1 0 0 0 0 1 1 1 0 0 1 1 1 1 1 
+hypo : 0 1 1 0 1 0 1 0 1 1 1 1 0 0 0 1 0 1 1 0 1 1 1 0 0 1 
+# ===========//==========//==========
+
+
+12 files avaliated
+Id = 108	 - Fabio/Ata 29 - 25a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=0.60 nSegs=11 rakingSize=9, weitght=true | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        17
+Judge     boundaries        6
+Automatic boundaries        10
+
+tp fp                       5 5
+fn tn                       1 6
+Acuracy                     0.647059
+Precision                   0.500000
+Recall                      0.833333
+F1                          0.625000
+Window_Diff                 0.352941
+Pk                          0.312500
+
+gold : 1 1 0 1 0 1 0 1 0 0 0 0 0 0 0 0 1 
+hypo : 0 1 0 1 0 1 0 1 0 1 0 1 1 0 1 1 1 
+# ===========//==========//==========
+
+Id = 109	 - Fabio/Ata 36 - 31a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=0.60 nSegs=15 rakingSize=9, weitght=true | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        24
+Judge     boundaries        10
+Automatic boundaries        14
+
+tp fp                       7 7
+fn tn                       3 7
+Acuracy                     0.583333
+Precision                   0.500000
+Recall                      0.700000
+F1                          0.583333
+Window_Diff                 0.416667
+Pk                          0.391304
+
+gold : 0 0 1 0 0 0 0 1 0 0 0 0 1 1 1 0 1 0 1 1 0 0 1 1 
+hypo : 0 1 1 0 1 0 1 1 1 0 0 0 1 1 0 1 0 0 1 1 1 1 0 1 
+# ===========//==========//==========
+
+Id = 110	 - Fabio/Ata 35 - 5a Reunião Extraodinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=0.60 nSegs=6 rakingSize=9, weitght=true | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        9
+Judge     boundaries        3
+Automatic boundaries        5
+
+tp fp                       3 2
+fn tn                       0 4
+Acuracy                     0.777778
+Precision                   0.600000
+Recall                      1.000000
+F1                          0.750000
+Window_Diff                 0.222222
+Pk                          0.125000
+
+gold : 0 0 0 0 1 1 0 0 1 
+hypo : 0 1 1 0 1 1 0 0 1 
+# ===========//==========//==========
+
+Id = 111	 - Fabio/Ata 33 - 29a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=0.60 nSegs=19 rakingSize=9, weitght=true | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        31
+Judge     boundaries        8
+Automatic boundaries        18
+
+tp fp                       7 11
+fn tn                       1 12
+Acuracy                     0.612903
+Precision                   0.388889
+Recall                      0.875000
+F1                          0.538462
+Window_Diff                 0.387097
+Pk                          0.366667
+
+gold : 0 0 0 1 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 0 1 0 0 0 1 0 1 1 1 
+hypo : 0 1 1 1 1 1 0 0 1 1 1 1 0 1 0 1 0 1 0 0 1 0 1 1 0 0 1 0 1 0 1 
+# ===========//==========//==========
+
+Id = 112	 - Fabio/Ata 30 - 26a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=0.60 nSegs=16 rakingSize=9, weitght=true | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        25
+Judge     boundaries        8
+Automatic boundaries        15
+
+tp fp                       4 11
+fn tn                       4 6
+Acuracy                     0.400000
+Precision                   0.266667
+Recall                      0.500000
+F1                          0.347826
+Window_Diff                 0.600000
+Pk                          0.583333
+
+gold : 1 1 0 0 1 0 0 0 1 0 0 0 0 0 0 1 1 0 0 0 1 1 0 0 0 
+hypo : 0 1 1 1 0 0 1 1 1 0 0 1 1 1 0 1 0 1 0 1 0 1 0 1 1 
+# ===========//==========//==========
+
+Id = 113	 - Fabio/Ata 32 - 28a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=0.60 nSegs=14 rakingSize=9, weitght=true | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        23
+Judge     boundaries        6
+Automatic boundaries        13
+
+tp fp                       4 9
+fn tn                       2 8
+Acuracy                     0.521739
+Precision                   0.307692
+Recall                      0.666667
+F1                          0.421053
+Window_Diff                 0.478261
+Pk                          0.409091
+
+gold : 1 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 1 0 1 
+hypo : 0 1 1 0 1 1 0 0 1 0 1 0 1 0 1 1 1 0 1 1 0 0 1 
+# ===========//==========//==========
+
+Id = 114	 - Gustavo/Ata 29 - 25a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=0.60 nSegs=11 rakingSize=9, weitght=true | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        17
+Judge     boundaries        14
+Automatic boundaries        10
+
+tp fp                       8 2
+fn tn                       6 1
+Acuracy                     0.529412
+Precision                   0.800000
+Recall                      0.571429
+F1                          0.666667
+Window_Diff                 0.470588
+Pk                          0.000000
+
+gold : 1 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 
+hypo : 0 1 1 0 1 0 1 0 1 0 1 0 0 1 1 1 1 
+# ===========//==========//==========
+
+Id = 115	 - Gustavo/Ata 36 - 31a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=0.60 nSegs=16 rakingSize=9, weitght=true | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        25
+Judge     boundaries        16
+Automatic boundaries        15
+
+tp fp                       10 5
+fn tn                       6 4
+Acuracy                     0.560000
+Precision                   0.666667
+Recall                      0.625000
+F1                          0.645161
+Window_Diff                 0.440000
+Pk                          0.000000
+
+gold : 1 0 0 1 0 1 1 1 1 1 0 0 0 1 0 1 1 1 1 1 1 0 0 1 1 
+hypo : 0 1 0 1 0 1 0 1 1 0 1 0 0 1 1 1 0 1 0 1 1 1 1 0 1 
+# ===========//==========//==========
+
+Id = 116	 - Gustavo/Ata 35 - 5a Reunião Extraodinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=0.60 nSegs=7 rakingSize=9, weitght=true | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        10
+Judge     boundaries        8
+Automatic boundaries        6
+
+tp fp                       5 1
+fn tn                       3 1
+Acuracy                     0.600000
+Precision                   0.833333
+Recall                      0.625000
+F1                          0.714286
+Window_Diff                 0.400000
+Pk                          0.000000
+
+gold : 1 0 0 1 1 1 1 1 1 1 
+hypo : 0 1 0 1 0 1 1 0 1 1 
+# ===========//==========//==========
+
+Id = 117	 - Gustavo/Ata 33 - 29a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=0.60 nSegs=20 rakingSize=9, weitght=true | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        32
+Judge     boundaries        16
+Automatic boundaries        19
+
+tp fp                       13 6
+fn tn                       3 10
+Acuracy                     0.718750
+Precision                   0.684211
+Recall                      0.812500
+F1                          0.742857
+Window_Diff                 0.281250
+Pk                          0.000000
+
+gold : 1 0 0 0 1 1 1 0 0 1 1 1 0 0 0 0 1 0 1 0 0 1 0 1 1 0 0 1 1 0 1 1 
+hypo : 0 1 1 1 1 1 1 0 0 1 1 1 1 0 1 0 1 0 1 0 0 1 0 1 1 0 0 1 0 1 0 1 
+# ===========//==========//==========
+
+Id = 118	 - Gustavo/Ata 30 - 26a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=0.60 nSegs=16 rakingSize=9, weitght=true | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        26
+Judge     boundaries        19
+Automatic boundaries        15
+
+tp fp                       10 5
+fn tn                       9 2
+Acuracy                     0.461538
+Precision                   0.666667
+Recall                      0.526316
+F1                          0.588235
+Window_Diff                 0.538462
+Pk                          0.000000
+
+gold : 1 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 1 0 1 1 0 0 1 
+hypo : 0 1 0 1 1 1 0 1 1 1 0 0 1 1 0 0 1 0 1 0 1 0 1 0 1 1 
+# ===========//==========//==========
+
+Id = 119	 - Gustavo/Ata 32 - 28a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=0.60 nSegs=16 rakingSize=9, weitght=true | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        26
+Judge     boundaries        14
+Automatic boundaries        15
+
+tp fp                       10 5
+fn tn                       4 7
+Acuracy                     0.653846
+Precision                   0.666667
+Recall                      0.714286
+F1                          0.689655
+Window_Diff                 0.346154
+Pk                          0.000000
+
+gold : 1 0 0 0 1 1 0 0 0 1 1 1 0 0 0 0 1 1 1 0 0 1 1 1 1 1 
+hypo : 0 1 1 0 1 0 1 0 0 1 1 1 0 0 0 1 1 1 1 0 1 1 1 0 0 1 
+# ===========//==========//==========
+
+
+12 files avaliated
+Id = 120	 - Fabio/Ata 29 - 25a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=0.60 nSegs=11 rakingSize=11, weitght=false | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        17
+Judge     boundaries        6
+Automatic boundaries        10
+
+tp fp                       3 7
+fn tn                       3 4
+Acuracy                     0.411765
+Precision                   0.300000
+Recall                      0.500000
+F1                          0.375000
+Window_Diff                 0.588235
+Pk                          0.500000
+
+gold : 1 1 0 1 0 1 0 1 0 0 0 0 0 0 0 0 1 
+hypo : 0 0 1 1 1 0 0 1 1 1 0 1 0 0 1 1 1 
+# ===========//==========//==========
+
+Id = 121	 - Fabio/Ata 36 - 31a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=0.60 nSegs=15 rakingSize=11, weitght=false | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        24
+Judge     boundaries        10
+Automatic boundaries        14
+
+tp fp                       7 7
+fn tn                       3 7
+Acuracy                     0.583333
+Precision                   0.500000
+Recall                      0.700000
+F1                          0.583333
+Window_Diff                 0.416667
+Pk                          0.347826
+
+gold : 0 0 1 0 0 0 0 1 0 0 0 0 1 1 1 0 1 0 1 1 0 0 1 1 
+hypo : 1 1 0 1 1 0 1 1 1 0 0 0 1 1 0 1 0 0 1 1 0 0 1 1 
+# ===========//==========//==========
+
+Id = 122	 - Fabio/Ata 35 - 5a Reunião Extraodinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=0.60 nSegs=6 rakingSize=11, weitght=false | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        9
+Judge     boundaries        3
+Automatic boundaries        5
+
+tp fp                       3 2
+fn tn                       0 4
+Acuracy                     0.777778
+Precision                   0.600000
+Recall                      1.000000
+F1                          0.750000
+Window_Diff                 0.222222
+Pk                          0.125000
+
+gold : 0 0 0 0 1 1 0 0 1 
+hypo : 0 1 1 0 1 1 0 0 1 
+# ===========//==========//==========
+
+Id = 123	 - Fabio/Ata 33 - 29a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=0.60 nSegs=19 rakingSize=11, weitght=false | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        31
+Judge     boundaries        8
+Automatic boundaries        18
+
+tp fp                       7 11
+fn tn                       1 12
+Acuracy                     0.612903
+Precision                   0.388889
+Recall                      0.875000
+F1                          0.538462
+Window_Diff                 0.387097
+Pk                          0.333333
+
+gold : 0 0 0 1 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 0 1 0 0 0 1 0 1 1 1 
+hypo : 1 1 0 1 0 0 1 0 1 1 1 1 0 1 1 1 0 1 0 0 1 0 1 0 0 0 1 1 1 0 1 
+# ===========//==========//==========
+
+Id = 124	 - Fabio/Ata 30 - 26a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=0.60 nSegs=16 rakingSize=11, weitght=false | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        25
+Judge     boundaries        8
+Automatic boundaries        15
+
+tp fp                       7 8
+fn tn                       1 9
+Acuracy                     0.640000
+Precision                   0.466667
+Recall                      0.875000
+F1                          0.608696
+Window_Diff                 0.360000
+Pk                          0.333333
+
+gold : 1 1 0 0 1 0 0 0 1 0 0 0 0 0 0 1 1 0 0 0 1 1 0 0 0 
+hypo : 0 1 0 1 1 0 0 1 1 0 0 1 1 0 1 1 1 0 0 1 1 1 0 1 1 
+# ===========//==========//==========
+
+Id = 125	 - Fabio/Ata 32 - 28a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=0.60 nSegs=14 rakingSize=11, weitght=false | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        23
+Judge     boundaries        6
+Automatic boundaries        13
+
+tp fp                       3 10
+fn tn                       3 7
+Acuracy                     0.434783
+Precision                   0.230769
+Recall                      0.500000
+F1                          0.315789
+Window_Diff                 0.565217
+Pk                          0.500000
+
+gold : 1 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 1 0 1 
+hypo : 0 1 0 1 0 1 0 1 1 1 1 0 0 0 1 1 1 0 1 1 0 0 1 
+# ===========//==========//==========
+
+Id = 126	 - Gustavo/Ata 29 - 25a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=0.60 nSegs=11 rakingSize=11, weitght=false | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        17
+Judge     boundaries        14
+Automatic boundaries        10
+
+tp fp                       7 3
+fn tn                       7 0
+Acuracy                     0.411765
+Precision                   0.700000
+Recall                      0.500000
+F1                          0.583333
+Window_Diff                 0.588235
+Pk                          0.000000
+
+gold : 1 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 
+hypo : 0 1 1 1 0 0 1 1 1 0 1 0 0 1 0 1 1 
+# ===========//==========//==========
+
+Id = 127	 - Gustavo/Ata 36 - 31a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=0.60 nSegs=16 rakingSize=11, weitght=false | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        25
+Judge     boundaries        16
+Automatic boundaries        15
+
+tp fp                       9 6
+fn tn                       7 3
+Acuracy                     0.480000
+Precision                   0.600000
+Recall                      0.562500
+F1                          0.580645
+Window_Diff                 0.520000
+Pk                          0.000000
+
+gold : 1 0 0 1 0 1 1 1 1 1 0 0 0 1 0 1 1 1 1 1 1 0 0 1 1 
+hypo : 0 1 1 0 1 1 0 1 1 1 0 0 0 1 1 0 1 0 0 1 1 1 1 0 1 
+# ===========//==========//==========
+
+Id = 128	 - Gustavo/Ata 35 - 5a Reunião Extraodinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=0.60 nSegs=7 rakingSize=11, weitght=false | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        10
+Judge     boundaries        8
+Automatic boundaries        6
+
+tp fp                       4 2
+fn tn                       4 0
+Acuracy                     0.400000
+Precision                   0.666667
+Recall                      0.500000
+F1                          0.571429
+Window_Diff                 0.600000
+Pk                          0.000000
+
+gold : 1 0 0 1 1 1 1 1 1 1 
+hypo : 0 1 1 1 0 1 1 0 0 1 
+# ===========//==========//==========
+
+Id = 129	 - Gustavo/Ata 33 - 29a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=0.60 nSegs=20 rakingSize=11, weitght=false | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        32
+Judge     boundaries        16
+Automatic boundaries        19
+
+tp fp                       12 7
+fn tn                       4 9
+Acuracy                     0.656250
+Precision                   0.631579
+Recall                      0.750000
+F1                          0.685714
+Window_Diff                 0.343750
+Pk                          0.000000
+
+gold : 1 0 0 0 1 1 1 0 0 1 1 1 0 0 0 0 1 0 1 0 0 1 0 1 1 0 0 1 1 0 1 1 
+hypo : 0 1 1 0 1 0 1 0 1 1 1 1 1 0 1 1 1 0 1 0 0 1 0 1 0 0 0 1 1 1 0 1 
+# ===========//==========//==========
+
+Id = 130	 - Gustavo/Ata 30 - 26a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=0.60 nSegs=16 rakingSize=11, weitght=false | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        26
+Judge     boundaries        19
+Automatic boundaries        15
+
+tp fp                       11 4
+fn tn                       8 3
+Acuracy                     0.538462
+Precision                   0.733333
+Recall                      0.578947
+F1                          0.647059
+Window_Diff                 0.461538
+Pk                          0.000000
+
+gold : 1 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 1 0 1 1 0 0 1 
+hypo : 0 1 0 1 1 0 1 0 1 1 0 0 1 1 0 1 1 1 0 0 1 0 1 0 1 1 
+# ===========//==========//==========
+
+Id = 131	 - Gustavo/Ata 32 - 28a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=0.60 nSegs=16 rakingSize=11, weitght=false | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        26
+Judge     boundaries        14
+Automatic boundaries        15
+
+tp fp                       9 6
+fn tn                       5 6
+Acuracy                     0.576923
+Precision                   0.600000
+Recall                      0.642857
+F1                          0.620690
+Window_Diff                 0.423077
+Pk                          0.000000
+
+gold : 1 0 0 0 1 1 0 0 0 1 1 1 0 0 0 0 1 1 1 0 0 1 1 1 1 1 
+hypo : 0 1 1 0 1 0 1 0 1 1 1 1 0 0 0 1 0 1 1 0 1 1 1 0 0 1 
+# ===========//==========//==========
+
+
+12 files avaliated
+Id = 132	 - Fabio/Ata 29 - 25a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=0.60 nSegs=11 rakingSize=11, weitght=true | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        17
+Judge     boundaries        6
+Automatic boundaries        10
+
+tp fp                       5 5
+fn tn                       1 6
+Acuracy                     0.647059
+Precision                   0.500000
+Recall                      0.833333
+F1                          0.625000
+Window_Diff                 0.352941
+Pk                          0.312500
+
+gold : 1 1 0 1 0 1 0 1 0 0 0 0 0 0 0 0 1 
+hypo : 0 1 0 1 0 1 0 1 0 1 0 1 1 0 1 1 1 
+# ===========//==========//==========
+
+Id = 133	 - Fabio/Ata 36 - 31a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=0.60 nSegs=15 rakingSize=11, weitght=true | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        24
+Judge     boundaries        10
+Automatic boundaries        14
+
+tp fp                       7 7
+fn tn                       3 7
+Acuracy                     0.583333
+Precision                   0.500000
+Recall                      0.700000
+F1                          0.583333
+Window_Diff                 0.416667
+Pk                          0.391304
+
+gold : 0 0 1 0 0 0 0 1 0 0 0 0 1 1 1 0 1 0 1 1 0 0 1 1 
+hypo : 0 1 1 0 1 0 1 1 1 0 0 0 1 1 0 1 0 0 1 1 1 1 0 1 
+# ===========//==========//==========
+
+Id = 134	 - Fabio/Ata 35 - 5a Reunião Extraodinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=0.60 nSegs=6 rakingSize=11, weitght=true | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        9
+Judge     boundaries        3
+Automatic boundaries        5
+
+tp fp                       3 2
+fn tn                       0 4
+Acuracy                     0.777778
+Precision                   0.600000
+Recall                      1.000000
+F1                          0.750000
+Window_Diff                 0.222222
+Pk                          0.125000
+
+gold : 0 0 0 0 1 1 0 0 1 
+hypo : 0 1 1 0 1 1 0 0 1 
+# ===========//==========//==========
+
+Id = 135	 - Fabio/Ata 33 - 29a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=0.60 nSegs=19 rakingSize=11, weitght=true | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        31
+Judge     boundaries        8
+Automatic boundaries        18
+
+tp fp                       7 11
+fn tn                       1 12
+Acuracy                     0.612903
+Precision                   0.388889
+Recall                      0.875000
+F1                          0.538462
+Window_Diff                 0.387097
+Pk                          0.400000
+
+gold : 0 0 0 1 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 0 1 0 0 0 1 0 1 1 1 
+hypo : 0 0 1 1 1 0 0 1 1 1 1 1 1 0 0 1 0 1 0 0 1 0 1 1 0 0 1 1 1 0 1 
+# ===========//==========//==========
+
+Id = 136	 - Fabio/Ata 30 - 26a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=0.60 nSegs=16 rakingSize=11, weitght=true | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        25
+Judge     boundaries        8
+Automatic boundaries        15
+
+tp fp                       5 10
+fn tn                       3 7
+Acuracy                     0.480000
+Precision                   0.333333
+Recall                      0.625000
+F1                          0.434783
+Window_Diff                 0.520000
+Pk                          0.500000
+
+gold : 1 1 0 0 1 0 0 0 1 0 0 0 0 0 0 1 1 0 0 0 1 1 0 0 0 
+hypo : 0 1 1 1 1 0 1 1 1 0 0 1 1 0 0 1 0 1 0 1 0 1 0 1 1 
+# ===========//==========//==========
+
+Id = 137	 - Fabio/Ata 32 - 28a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=0.60 nSegs=14 rakingSize=11, weitght=true | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        23
+Judge     boundaries        6
+Automatic boundaries        13
+
+tp fp                       4 9
+fn tn                       2 8
+Acuracy                     0.521739
+Precision                   0.307692
+Recall                      0.666667
+F1                          0.421053
+Window_Diff                 0.478261
+Pk                          0.409091
+
+gold : 1 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 1 0 1 
+hypo : 0 1 1 0 1 1 0 0 1 0 1 0 1 0 1 1 1 0 1 1 0 0 1 
+# ===========//==========//==========
+
+Id = 138	 - Gustavo/Ata 29 - 25a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=0.60 nSegs=11 rakingSize=11, weitght=true | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        17
+Judge     boundaries        14
+Automatic boundaries        10
+
+tp fp                       8 2
+fn tn                       6 1
+Acuracy                     0.529412
+Precision                   0.800000
+Recall                      0.571429
+F1                          0.666667
+Window_Diff                 0.470588
+Pk                          0.000000
+
+gold : 1 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 
+hypo : 0 1 1 0 1 0 1 0 1 0 1 0 0 1 1 1 1 
+# ===========//==========//==========
+
+Id = 139	 - Gustavo/Ata 36 - 31a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=0.60 nSegs=16 rakingSize=11, weitght=true | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        25
+Judge     boundaries        16
+Automatic boundaries        15
+
+tp fp                       10 5
+fn tn                       6 4
+Acuracy                     0.560000
+Precision                   0.666667
+Recall                      0.625000
+F1                          0.645161
+Window_Diff                 0.440000
+Pk                          0.000000
+
+gold : 1 0 0 1 0 1 1 1 1 1 0 0 0 1 0 1 1 1 1 1 1 0 0 1 1 
+hypo : 0 1 1 1 0 1 0 1 1 1 0 0 0 1 1 0 1 0 0 1 1 1 1 0 1 
+# ===========//==========//==========
+
+Id = 140	 - Gustavo/Ata 35 - 5a Reunião Extraodinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=0.60 nSegs=7 rakingSize=11, weitght=true | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        10
+Judge     boundaries        8
+Automatic boundaries        6
+
+tp fp                       5 1
+fn tn                       3 1
+Acuracy                     0.600000
+Precision                   0.833333
+Recall                      0.625000
+F1                          0.714286
+Window_Diff                 0.400000
+Pk                          0.000000
+
+gold : 1 0 0 1 1 1 1 1 1 1 
+hypo : 0 1 0 1 0 1 1 0 1 1 
+# ===========//==========//==========
+
+Id = 141	 - Gustavo/Ata 33 - 29a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=0.60 nSegs=20 rakingSize=11, weitght=true | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        32
+Judge     boundaries        16
+Automatic boundaries        19
+
+tp fp                       13 6
+fn tn                       3 10
+Acuracy                     0.718750
+Precision                   0.684211
+Recall                      0.812500
+F1                          0.742857
+Window_Diff                 0.281250
+Pk                          0.000000
+
+gold : 1 0 0 0 1 1 1 0 0 1 1 1 0 0 0 0 1 0 1 0 0 1 0 1 1 0 0 1 1 0 1 1 
+hypo : 0 1 0 1 1 1 0 0 1 1 1 1 1 1 0 0 1 0 1 0 0 1 0 1 1 0 0 1 1 1 0 1 
+# ===========//==========//==========
+
+Id = 142	 - Gustavo/Ata 30 - 26a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=0.60 nSegs=16 rakingSize=11, weitght=true | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        26
+Judge     boundaries        19
+Automatic boundaries        15
+
+tp fp                       10 5
+fn tn                       9 2
+Acuracy                     0.461538
+Precision                   0.666667
+Recall                      0.526316
+F1                          0.588235
+Window_Diff                 0.538462
+Pk                          0.000000
+
+gold : 1 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 1 0 1 1 0 0 1 
+hypo : 0 1 0 1 1 1 0 1 1 1 0 0 1 1 0 0 1 0 1 0 1 0 1 0 1 1 
+# ===========//==========//==========
+
+Id = 143	 - Gustavo/Ata 32 - 28a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=0.60 nSegs=16 rakingSize=11, weitght=true | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        26
+Judge     boundaries        14
+Automatic boundaries        15
+
+tp fp                       9 6
+fn tn                       5 6
+Acuracy                     0.576923
+Precision                   0.600000
+Recall                      0.642857
+F1                          0.620690
+Window_Diff                 0.423077
+Pk                          0.000000
+
+gold : 1 0 0 0 1 1 0 0 0 1 1 1 0 0 0 0 1 1 1 0 0 1 1 1 1 1 
+hypo : 0 1 0 1 0 1 1 0 0 1 1 0 1 0 0 1 1 1 1 0 1 1 1 0 0 1 
+# ===========//==========//==========
+
+
+12 files avaliated
+Id = 144	 - Fabio/Ata 29 - 25a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=0.80 nSegs=14 rakingSize=9, weitght=false | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        17
+Judge     boundaries        6
+Automatic boundaries        13
+
+tp fp                       4 9
+fn tn                       2 2
+Acuracy                     0.352941
+Precision                   0.307692
+Recall                      0.666667
+F1                          0.421053
+Window_Diff                 0.647059
+Pk                          0.625000
+
+gold : 1 1 0 1 0 1 0 1 0 0 0 0 0 0 0 0 1 
+hypo : 0 1 1 1 1 0 0 1 1 1 1 1 1 0 1 1 1 
+# ===========//==========//==========
+
+Id = 145	 - Fabio/Ata 36 - 31a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=0.80 nSegs=20 rakingSize=9, weitght=false | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        24
+Judge     boundaries        10
+Automatic boundaries        19
+
+tp fp                       8 11
+fn tn                       2 3
+Acuracy                     0.458333
+Precision                   0.421053
+Recall                      0.800000
+F1                          0.551724
+Window_Diff                 0.541667
+Pk                          0.478261
+
+gold : 0 0 1 0 0 0 0 1 0 0 0 0 1 1 1 0 1 0 1 1 0 0 1 1 
+hypo : 1 1 0 1 1 1 1 1 1 0 1 0 1 1 0 1 1 0 1 1 1 1 1 1 
+# ===========//==========//==========
+
+Id = 146	 - Fabio/Ata 35 - 5a Reunião Extraodinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=0.80 nSegs=8 rakingSize=9, weitght=false | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        9
+Judge     boundaries        3
+Automatic boundaries        7
+
+tp fp                       3 4
+fn tn                       0 2
+Acuracy                     0.555556
+Precision                   0.428571
+Recall                      1.000000
+F1                          0.600000
+Window_Diff                 0.444444
+Pk                          0.250000
+
+gold : 0 0 0 0 1 1 0 0 1 
+hypo : 1 1 0 1 1 1 0 1 1 
+# ===========//==========//==========
+
+Id = 147	 - Fabio/Ata 33 - 29a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=0.80 nSegs=26 rakingSize=9, weitght=false | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        31
+Judge     boundaries        8
+Automatic boundaries        25
+
+tp fp                       7 18
+fn tn                       1 5
+Acuracy                     0.387097
+Precision                   0.280000
+Recall                      0.875000
+F1                          0.424242
+Window_Diff                 0.612903
+Pk                          0.566667
+
+gold : 0 0 0 1 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 0 1 0 0 0 1 0 1 1 1 
+hypo : 1 1 1 1 0 1 1 1 1 1 1 1 1 1 1 1 1 1 0 1 1 0 1 1 0 0 1 1 1 0 1 
+# ===========//==========//==========
+
+Id = 148	 - Fabio/Ata 30 - 26a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=0.80 nSegs=21 rakingSize=9, weitght=false | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        25
+Judge     boundaries        8
+Automatic boundaries        20
+
+tp fp                       8 12
+fn tn                       0 5
+Acuracy                     0.520000
+Precision                   0.400000
+Recall                      1.000000
+F1                          0.571429
+Window_Diff                 0.480000
+Pk                          0.500000
+
+gold : 1 1 0 0 1 0 0 0 1 0 0 0 0 0 0 1 1 0 0 0 1 1 0 0 0 
+hypo : 1 1 1 1 1 1 1 1 1 0 0 1 1 0 1 1 1 1 0 1 1 1 0 1 1 
+# ===========//==========//==========
+
+Id = 149	 - Fabio/Ata 32 - 28a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=0.80 nSegs=19 rakingSize=9, weitght=false | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        23
+Judge     boundaries        6
+Automatic boundaries        18
+
+tp fp                       5 13
+fn tn                       1 4
+Acuracy                     0.391304
+Precision                   0.277778
+Recall                      0.833333
+F1                          0.416667
+Window_Diff                 0.608696
+Pk                          0.545455
+
+gold : 1 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 1 0 1 
+hypo : 0 1 1 1 1 1 0 1 1 1 1 0 0 1 1 1 1 1 1 1 1 0 1 
+# ===========//==========//==========
+
+Id = 150	 - Gustavo/Ata 29 - 25a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=0.80 nSegs=14 rakingSize=9, weitght=false | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        17
+Judge     boundaries        14
+Automatic boundaries        13
+
+tp fp                       10 3
+fn tn                       4 0
+Acuracy                     0.588235
+Precision                   0.769231
+Recall                      0.714286
+F1                          0.740741
+Window_Diff                 0.411765
+Pk                          0.000000
+
+gold : 1 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 
+hypo : 0 1 1 1 0 0 1 1 1 0 1 1 1 1 1 1 1 
+# ===========//==========//==========
+
+Id = 151	 - Gustavo/Ata 36 - 31a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=0.80 nSegs=21 rakingSize=9, weitght=false | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        25
+Judge     boundaries        16
+Automatic boundaries        20
+
+tp fp                       13 7
+fn tn                       3 2
+Acuracy                     0.600000
+Precision                   0.650000
+Recall                      0.812500
+F1                          0.722222
+Window_Diff                 0.400000
+Pk                          0.000000
+
+gold : 1 0 0 1 0 1 1 1 1 1 0 0 0 1 0 1 1 1 1 1 1 0 0 1 1 
+hypo : 0 1 1 1 1 1 1 1 1 1 0 1 0 1 1 0 1 1 0 1 1 1 1 1 1 
+# ===========//==========//==========
+
+Id = 152	 - Gustavo/Ata 35 - 5a Reunião Extraodinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=0.80 nSegs=9 rakingSize=9, weitght=false | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        10
+Judge     boundaries        8
+Automatic boundaries        8
+
+tp fp                       6 2
+fn tn                       2 0
+Acuracy                     0.600000
+Precision                   0.750000
+Recall                      0.750000
+F1                          0.750000
+Window_Diff                 0.400000
+Pk                          0.000000
+
+gold : 1 0 0 1 1 1 1 1 1 1 
+hypo : 0 1 1 1 1 1 1 0 1 1 
+# ===========//==========//==========
+
+Id = 153	 - Gustavo/Ata 33 - 29a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=0.80 nSegs=26 rakingSize=9, weitght=false | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        32
+Judge     boundaries        16
+Automatic boundaries        25
+
+tp fp                       13 12
+fn tn                       3 4
+Acuracy                     0.531250
+Precision                   0.520000
+Recall                      0.812500
+F1                          0.634146
+Window_Diff                 0.468750
+Pk                          0.000000
+
+gold : 1 0 0 0 1 1 1 0 0 1 1 1 0 0 0 0 1 0 1 0 0 1 0 1 1 0 0 1 1 0 1 1 
+hypo : 0 1 1 1 1 0 1 1 1 1 1 1 1 1 1 1 1 1 1 0 1 1 0 1 1 0 0 1 1 1 0 1 
+# ===========//==========//==========
+
+Id = 154	 - Gustavo/Ata 30 - 26a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=0.80 nSegs=22 rakingSize=9, weitght=false | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        26
+Judge     boundaries        19
+Automatic boundaries        21
+
+tp fp                       15 6
+fn tn                       4 1
+Acuracy                     0.615385
+Precision                   0.714286
+Recall                      0.789474
+F1                          0.750000
+Window_Diff                 0.384615
+Pk                          0.000000
+
+gold : 1 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 1 0 1 1 0 0 1 
+hypo : 1 1 1 1 1 0 1 1 1 1 0 0 1 1 1 1 1 1 1 0 1 1 1 0 1 1 
+# ===========//==========//==========
+
+Id = 155	 - Gustavo/Ata 32 - 28a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=0.80 nSegs=22 rakingSize=9, weitght=false | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        26
+Judge     boundaries        14
+Automatic boundaries        21
+
+tp fp                       12 9
+fn tn                       2 3
+Acuracy                     0.576923
+Precision                   0.571429
+Recall                      0.857143
+F1                          0.685714
+Window_Diff                 0.423077
+Pk                          0.000000
+
+gold : 1 0 0 0 1 1 0 0 0 1 1 1 0 0 0 0 1 1 1 0 0 1 1 1 1 1 
+hypo : 0 1 1 1 1 0 1 0 1 1 1 1 0 0 1 1 1 1 1 1 1 1 1 1 1 1 
+# ===========//==========//==========
+
+
+12 files avaliated
+Id = 156	 - Fabio/Ata 29 - 25a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=0.80 nSegs=14 rakingSize=9, weitght=true | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        17
+Judge     boundaries        6
+Automatic boundaries        13
+
+tp fp                       5 8
+fn tn                       1 3
+Acuracy                     0.470588
+Precision                   0.384615
+Recall                      0.833333
+F1                          0.526316
+Window_Diff                 0.529412
+Pk                          0.500000
+
+gold : 1 1 0 1 0 1 0 1 0 0 0 0 0 0 0 0 1 
+hypo : 0 1 1 1 0 1 0 1 1 1 0 1 1 1 1 1 1 
+# ===========//==========//==========
+
+Id = 157	 - Fabio/Ata 36 - 31a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=0.80 nSegs=20 rakingSize=9, weitght=true | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        24
+Judge     boundaries        10
+Automatic boundaries        19
+
+tp fp                       9 10
+fn tn                       1 4
+Acuracy                     0.541667
+Precision                   0.473684
+Recall                      0.900000
+F1                          0.620690
+Window_Diff                 0.458333
+Pk                          0.391304
+
+gold : 0 0 1 0 0 0 0 1 0 0 0 0 1 1 1 0 1 0 1 1 0 0 1 1 
+hypo : 1 1 1 0 1 1 1 1 1 1 0 0 1 1 0 1 1 0 1 1 1 1 1 1 
+# ===========//==========//==========
+
+Id = 158	 - Fabio/Ata 35 - 5a Reunião Extraodinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=0.80 nSegs=8 rakingSize=9, weitght=true | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        9
+Judge     boundaries        3
+Automatic boundaries        7
+
+tp fp                       3 4
+fn tn                       0 2
+Acuracy                     0.555556
+Precision                   0.428571
+Recall                      1.000000
+F1                          0.600000
+Window_Diff                 0.444444
+Pk                          0.250000
+
+gold : 0 0 0 0 1 1 0 0 1 
+hypo : 1 1 1 0 1 1 0 1 1 
+# ===========//==========//==========
+
+Id = 159	 - Fabio/Ata 33 - 29a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=0.80 nSegs=26 rakingSize=9, weitght=true | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        31
+Judge     boundaries        8
+Automatic boundaries        25
+
+tp fp                       8 17
+fn tn                       0 6
+Acuracy                     0.451613
+Precision                   0.320000
+Recall                      1.000000
+F1                          0.484848
+Window_Diff                 0.548387
+Pk                          0.500000
+
+gold : 0 0 0 1 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 0 1 0 0 0 1 0 1 1 1 
+hypo : 1 1 1 1 1 1 0 1 1 1 1 1 1 1 0 1 0 1 0 1 1 0 1 1 1 0 1 1 1 1 1 
+# ===========//==========//==========
+
+Id = 160	 - Fabio/Ata 30 - 26a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=0.80 nSegs=21 rakingSize=9, weitght=true | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        25
+Judge     boundaries        8
+Automatic boundaries        20
+
+tp fp                       7 13
+fn tn                       1 4
+Acuracy                     0.440000
+Precision                   0.350000
+Recall                      0.875000
+F1                          0.500000
+Window_Diff                 0.560000
+Pk                          0.541667
+
+gold : 1 1 0 0 1 0 0 0 1 0 0 0 0 0 0 1 1 0 0 0 1 1 0 0 0 
+hypo : 0 1 1 1 1 0 1 1 1 0 0 1 1 1 1 1 1 1 1 1 1 1 0 1 1 
+# ===========//==========//==========
+
+Id = 161	 - Fabio/Ata 32 - 28a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=0.80 nSegs=19 rakingSize=9, weitght=true | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        23
+Judge     boundaries        6
+Automatic boundaries        18
+
+tp fp                       5 13
+fn tn                       1 4
+Acuracy                     0.391304
+Precision                   0.277778
+Recall                      0.833333
+F1                          0.416667
+Window_Diff                 0.608696
+Pk                          0.545455
+
+gold : 1 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 1 0 1 
+hypo : 0 1 1 1 1 1 0 1 1 1 1 0 1 0 1 1 1 1 1 1 1 0 1 
+# ===========//==========//==========
+
+Id = 162	 - Gustavo/Ata 29 - 25a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=0.80 nSegs=14 rakingSize=9, weitght=true | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        17
+Judge     boundaries        14
+Automatic boundaries        13
+
+tp fp                       11 2
+fn tn                       3 1
+Acuracy                     0.705882
+Precision                   0.846154
+Recall                      0.785714
+F1                          0.814815
+Window_Diff                 0.294118
+Pk                          0.000000
+
+gold : 1 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 
+hypo : 0 1 1 0 1 0 1 1 1 0 1 1 1 1 1 1 1 
+# ===========//==========//==========
+
+Id = 163	 - Gustavo/Ata 36 - 31a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=0.80 nSegs=21 rakingSize=9, weitght=true | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        25
+Judge     boundaries        16
+Automatic boundaries        20
+
+tp fp                       14 6
+fn tn                       2 3
+Acuracy                     0.680000
+Precision                   0.700000
+Recall                      0.875000
+F1                          0.777778
+Window_Diff                 0.320000
+Pk                          0.000000
+
+gold : 1 0 0 1 0 1 1 1 1 1 0 0 0 1 0 1 1 1 1 1 1 0 0 1 1 
+hypo : 0 1 1 1 0 1 1 1 1 1 1 0 0 1 1 1 1 1 0 1 1 1 1 1 1 
+# ===========//==========//==========
+
+Id = 164	 - Gustavo/Ata 35 - 5a Reunião Extraodinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=0.80 nSegs=9 rakingSize=9, weitght=true | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        10
+Judge     boundaries        8
+Automatic boundaries        8
+
+tp fp                       6 2
+fn tn                       2 0
+Acuracy                     0.600000
+Precision                   0.750000
+Recall                      0.750000
+F1                          0.750000
+Window_Diff                 0.400000
+Pk                          0.000000
+
+gold : 1 0 0 1 1 1 1 1 1 1 
+hypo : 1 1 1 1 0 1 1 0 1 1 
+# ===========//==========//==========
+
+Id = 165	 - Gustavo/Ata 33 - 29a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=0.80 nSegs=26 rakingSize=9, weitght=true | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        32
+Judge     boundaries        16
+Automatic boundaries        25
+
+tp fp                       15 10
+fn tn                       1 6
+Acuracy                     0.656250
+Precision                   0.600000
+Recall                      0.937500
+F1                          0.731707
+Window_Diff                 0.343750
+Pk                          0.000000
+
+gold : 1 0 0 0 1 1 1 0 0 1 1 1 0 0 0 0 1 0 1 0 0 1 0 1 1 0 0 1 1 0 1 1 
+hypo : 0 1 1 1 1 1 1 0 1 1 1 1 1 1 1 0 1 0 1 0 1 1 0 1 1 1 0 1 1 1 1 1 
+# ===========//==========//==========
+
+Id = 166	 - Gustavo/Ata 30 - 26a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=0.80 nSegs=22 rakingSize=9, weitght=true | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        26
+Judge     boundaries        19
+Automatic boundaries        21
+
+tp fp                       15 6
+fn tn                       4 1
+Acuracy                     0.615385
+Precision                   0.714286
+Recall                      0.789474
+F1                          0.750000
+Window_Diff                 0.384615
+Pk                          0.000000
+
+gold : 1 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 1 0 1 1 0 0 1 
+hypo : 0 1 1 1 1 1 0 1 1 1 0 0 1 1 1 1 1 1 1 1 1 1 1 0 1 1 
+# ===========//==========//==========
+
+Id = 167	 - Gustavo/Ata 32 - 28a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=0.80 nSegs=22 rakingSize=9, weitght=true | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        26
+Judge     boundaries        14
+Automatic boundaries        21
+
+tp fp                       12 9
+fn tn                       2 3
+Acuracy                     0.576923
+Precision                   0.571429
+Recall                      0.857143
+F1                          0.685714
+Window_Diff                 0.423077
+Pk                          0.000000
+
+gold : 1 0 0 0 1 1 0 0 0 1 1 1 0 0 0 0 1 1 1 0 0 1 1 1 1 1 
+hypo : 0 1 1 1 1 1 1 0 1 1 1 1 0 1 0 1 1 1 1 1 1 1 1 0 1 1 
+# ===========//==========//==========
+
+
+12 files avaliated
+Id = 168	 - Fabio/Ata 29 - 25a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=0.80 nSegs=14 rakingSize=11, weitght=false | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        17
+Judge     boundaries        6
+Automatic boundaries        13
+
+tp fp                       5 8
+fn tn                       1 3
+Acuracy                     0.470588
+Precision                   0.384615
+Recall                      0.833333
+F1                          0.526316
+Window_Diff                 0.529412
+Pk                          0.562500
+
+gold : 1 1 0 1 0 1 0 1 0 0 0 0 0 0 0 0 1 
+hypo : 1 1 1 1 1 0 0 1 1 1 0 1 1 0 1 1 1 
+# ===========//==========//==========
+
+Id = 169	 - Fabio/Ata 36 - 31a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=0.80 nSegs=20 rakingSize=11, weitght=false | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        24
+Judge     boundaries        10
+Automatic boundaries        19
+
+tp fp                       8 11
+fn tn                       2 3
+Acuracy                     0.458333
+Precision                   0.421053
+Recall                      0.800000
+F1                          0.551724
+Window_Diff                 0.541667
+Pk                          0.478261
+
+gold : 0 0 1 0 0 0 0 1 0 0 0 0 1 1 1 0 1 0 1 1 0 0 1 1 
+hypo : 1 1 0 1 1 1 1 1 1 0 1 0 1 1 0 1 1 0 1 1 1 1 1 1 
+# ===========//==========//==========
+
+Id = 170	 - Fabio/Ata 35 - 5a Reunião Extraodinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=0.80 nSegs=8 rakingSize=11, weitght=false | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        9
+Judge     boundaries        3
+Automatic boundaries        7
+
+tp fp                       3 4
+fn tn                       0 2
+Acuracy                     0.555556
+Precision                   0.428571
+Recall                      1.000000
+F1                          0.600000
+Window_Diff                 0.444444
+Pk                          0.250000
+
+gold : 0 0 0 0 1 1 0 0 1 
+hypo : 1 1 1 1 1 1 0 0 1 
+# ===========//==========//==========
+
+Id = 171	 - Fabio/Ata 33 - 29a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=0.80 nSegs=26 rakingSize=11, weitght=false | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        31
+Judge     boundaries        8
+Automatic boundaries        25
+
+tp fp                       7 18
+fn tn                       1 5
+Acuracy                     0.387097
+Precision                   0.280000
+Recall                      0.875000
+F1                          0.424242
+Window_Diff                 0.612903
+Pk                          0.566667
+
+gold : 0 0 0 1 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 0 1 0 0 0 1 0 1 1 1 
+hypo : 1 1 1 1 0 1 1 1 1 1 1 1 1 1 1 1 1 1 0 1 1 0 1 1 0 0 1 1 1 0 1 
+# ===========//==========//==========
+
+Id = 172	 - Fabio/Ata 30 - 26a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=0.80 nSegs=21 rakingSize=11, weitght=false | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        25
+Judge     boundaries        8
+Automatic boundaries        20
+
+tp fp                       8 12
+fn tn                       0 5
+Acuracy                     0.520000
+Precision                   0.400000
+Recall                      1.000000
+F1                          0.571429
+Window_Diff                 0.480000
+Pk                          0.500000
+
+gold : 1 1 0 0 1 0 0 0 1 0 0 0 0 0 0 1 1 0 0 0 1 1 0 0 0 
+hypo : 1 1 1 1 1 1 1 1 1 0 0 1 1 0 1 1 1 1 0 1 1 1 0 1 1 
+# ===========//==========//==========
+
+Id = 173	 - Fabio/Ata 32 - 28a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=0.80 nSegs=19 rakingSize=11, weitght=false | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        23
+Judge     boundaries        6
+Automatic boundaries        18
+
+tp fp                       5 13
+fn tn                       1 4
+Acuracy                     0.391304
+Precision                   0.277778
+Recall                      0.833333
+F1                          0.416667
+Window_Diff                 0.608696
+Pk                          0.545455
+
+gold : 1 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 1 0 1 
+hypo : 0 1 1 1 1 1 0 1 1 1 1 0 0 1 1 1 1 1 1 1 1 0 1 
+# ===========//==========//==========
+
+Id = 174	 - Gustavo/Ata 29 - 25a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=0.80 nSegs=14 rakingSize=11, weitght=false | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        17
+Judge     boundaries        14
+Automatic boundaries        13
+
+tp fp                       10 3
+fn tn                       4 0
+Acuracy                     0.588235
+Precision                   0.769231
+Recall                      0.714286
+F1                          0.740741
+Window_Diff                 0.411765
+Pk                          0.000000
+
+gold : 1 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 
+hypo : 1 1 1 1 1 0 1 1 1 0 1 0 0 1 1 1 1 
+# ===========//==========//==========
+
+Id = 175	 - Gustavo/Ata 36 - 31a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=0.80 nSegs=21 rakingSize=11, weitght=false | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        25
+Judge     boundaries        16
+Automatic boundaries        20
+
+tp fp                       13 7
+fn tn                       3 2
+Acuracy                     0.600000
+Precision                   0.650000
+Recall                      0.812500
+F1                          0.722222
+Window_Diff                 0.400000
+Pk                          0.000000
+
+gold : 1 0 0 1 0 1 1 1 1 1 0 0 0 1 0 1 1 1 1 1 1 0 0 1 1 
+hypo : 0 1 1 0 1 1 1 1 1 1 0 1 0 1 1 1 1 1 0 1 1 1 1 1 1 
+# ===========//==========//==========
+
+Id = 176	 - Gustavo/Ata 35 - 5a Reunião Extraodinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=0.80 nSegs=9 rakingSize=11, weitght=false | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        10
+Judge     boundaries        8
+Automatic boundaries        8
+
+tp fp                       6 2
+fn tn                       2 0
+Acuracy                     0.600000
+Precision                   0.750000
+Recall                      0.750000
+F1                          0.750000
+Window_Diff                 0.400000
+Pk                          0.000000
+
+gold : 1 0 0 1 1 1 1 1 1 1 
+hypo : 0 1 1 1 1 1 1 0 1 1 
+# ===========//==========//==========
+
+Id = 177	 - Gustavo/Ata 33 - 29a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=0.80 nSegs=26 rakingSize=11, weitght=false | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        32
+Judge     boundaries        16
+Automatic boundaries        25
+
+tp fp                       14 11
+fn tn                       2 5
+Acuracy                     0.593750
+Precision                   0.560000
+Recall                      0.875000
+F1                          0.682927
+Window_Diff                 0.406250
+Pk                          0.000000
+
+gold : 1 0 0 0 1 1 1 0 0 1 1 1 0 0 0 0 1 0 1 0 0 1 0 1 1 0 0 1 1 0 1 1 
+hypo : 0 1 1 1 1 0 1 0 1 1 1 1 1 1 1 1 1 1 1 0 1 1 0 1 1 0 0 1 1 1 1 1 
+# ===========//==========//==========
+
+Id = 178	 - Gustavo/Ata 30 - 26a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=0.80 nSegs=22 rakingSize=11, weitght=false | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        26
+Judge     boundaries        19
+Automatic boundaries        21
+
+tp fp                       15 6
+fn tn                       4 1
+Acuracy                     0.615385
+Precision                   0.714286
+Recall                      0.789474
+F1                          0.750000
+Window_Diff                 0.384615
+Pk                          0.000000
+
+gold : 1 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 1 0 1 1 0 0 1 
+hypo : 1 1 1 1 1 0 1 1 1 1 0 0 1 1 1 1 1 1 1 0 1 1 1 0 1 1 
+# ===========//==========//==========
+
+Id = 179	 - Gustavo/Ata 32 - 28a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=0.80 nSegs=22 rakingSize=11, weitght=false | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        26
+Judge     boundaries        14
+Automatic boundaries        21
+
+tp fp                       12 9
+fn tn                       2 3
+Acuracy                     0.576923
+Precision                   0.571429
+Recall                      0.857143
+F1                          0.685714
+Window_Diff                 0.423077
+Pk                          0.000000
+
+gold : 1 0 0 0 1 1 0 0 0 1 1 1 0 0 0 0 1 1 1 0 0 1 1 1 1 1 
+hypo : 1 1 1 1 1 0 1 0 1 1 1 1 0 0 1 1 1 1 1 1 1 1 1 1 0 1 
+# ===========//==========//==========
+
+
+12 files avaliated
+Id = 180	 - Fabio/Ata 29 - 25a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=0.80 nSegs=14 rakingSize=11, weitght=true | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        17
+Judge     boundaries        6
+Automatic boundaries        13
+
+tp fp                       5 8
+fn tn                       1 3
+Acuracy                     0.470588
+Precision                   0.384615
+Recall                      0.833333
+F1                          0.526316
+Window_Diff                 0.529412
+Pk                          0.500000
+
+gold : 1 1 0 1 0 1 0 1 0 0 0 0 0 0 0 0 1 
+hypo : 0 1 1 1 0 1 0 1 1 1 0 1 1 1 1 1 1 
+# ===========//==========//==========
+
+Id = 181	 - Fabio/Ata 36 - 31a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=0.80 nSegs=20 rakingSize=11, weitght=true | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        24
+Judge     boundaries        10
+Automatic boundaries        19
+
+tp fp                       9 10
+fn tn                       1 4
+Acuracy                     0.541667
+Precision                   0.473684
+Recall                      0.900000
+F1                          0.620690
+Window_Diff                 0.458333
+Pk                          0.391304
+
+gold : 0 0 1 0 0 0 0 1 0 0 0 0 1 1 1 0 1 0 1 1 0 0 1 1 
+hypo : 1 1 1 0 1 1 1 1 1 1 0 0 1 1 0 1 1 0 1 1 1 1 1 1 
+# ===========//==========//==========
+
+Id = 182	 - Fabio/Ata 35 - 5a Reunião Extraodinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=0.80 nSegs=8 rakingSize=11, weitght=true | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        9
+Judge     boundaries        3
+Automatic boundaries        7
+
+tp fp                       3 4
+fn tn                       0 2
+Acuracy                     0.555556
+Precision                   0.428571
+Recall                      1.000000
+F1                          0.600000
+Window_Diff                 0.444444
+Pk                          0.250000
+
+gold : 0 0 0 0 1 1 0 0 1 
+hypo : 1 1 1 0 1 1 0 1 1 
+# ===========//==========//==========
+
+Id = 183	 - Fabio/Ata 33 - 29a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=0.80 nSegs=26 rakingSize=11, weitght=true | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        31
+Judge     boundaries        8
+Automatic boundaries        25
+
+tp fp                       8 17
+fn tn                       0 6
+Acuracy                     0.451613
+Precision                   0.320000
+Recall                      1.000000
+F1                          0.484848
+Window_Diff                 0.548387
+Pk                          0.500000
+
+gold : 0 0 0 1 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 0 1 0 0 0 1 0 1 1 1 
+hypo : 1 1 1 1 1 1 0 1 1 1 1 1 1 0 1 1 0 1 0 1 1 0 1 1 1 0 1 1 1 1 1 
+# ===========//==========//==========
+
+Id = 184	 - Fabio/Ata 30 - 26a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=0.80 nSegs=21 rakingSize=11, weitght=true | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        25
+Judge     boundaries        8
+Automatic boundaries        20
+
+tp fp                       7 13
+fn tn                       1 4
+Acuracy                     0.440000
+Precision                   0.350000
+Recall                      0.875000
+F1                          0.500000
+Window_Diff                 0.560000
+Pk                          0.541667
+
+gold : 1 1 0 0 1 0 0 0 1 0 0 0 0 0 0 1 1 0 0 0 1 1 0 0 0 
+hypo : 0 1 1 1 1 0 1 1 1 0 0 1 1 1 1 1 1 1 1 1 1 1 0 1 1 
+# ===========//==========//==========
+
+Id = 185	 - Fabio/Ata 32 - 28a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=0.80 nSegs=19 rakingSize=11, weitght=true | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        23
+Judge     boundaries        6
+Automatic boundaries        18
+
+tp fp                       5 13
+fn tn                       1 4
+Acuracy                     0.391304
+Precision                   0.277778
+Recall                      0.833333
+F1                          0.416667
+Window_Diff                 0.608696
+Pk                          0.545455
+
+gold : 1 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 1 0 1 
+hypo : 0 1 1 1 1 1 0 0 1 1 1 0 1 0 1 1 1 1 1 1 1 1 1 
+# ===========//==========//==========
+
+Id = 186	 - Gustavo/Ata 29 - 25a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=0.80 nSegs=14 rakingSize=11, weitght=true | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        17
+Judge     boundaries        14
+Automatic boundaries        13
+
+tp fp                       11 2
+fn tn                       3 1
+Acuracy                     0.705882
+Precision                   0.846154
+Recall                      0.785714
+F1                          0.814815
+Window_Diff                 0.294118
+Pk                          0.000000
+
+gold : 1 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 
+hypo : 0 1 1 0 1 0 1 1 1 0 1 1 1 1 1 1 1 
+# ===========//==========//==========
+
+Id = 187	 - Gustavo/Ata 36 - 31a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=0.80 nSegs=21 rakingSize=11, weitght=true | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        25
+Judge     boundaries        16
+Automatic boundaries        20
+
+tp fp                       14 6
+fn tn                       2 3
+Acuracy                     0.680000
+Precision                   0.700000
+Recall                      0.875000
+F1                          0.777778
+Window_Diff                 0.320000
+Pk                          0.000000
+
+gold : 1 0 0 1 0 1 1 1 1 1 0 0 0 1 0 1 1 1 1 1 1 0 0 1 1 
+hypo : 0 1 1 1 0 1 1 1 1 1 1 0 0 1 1 1 1 1 0 1 1 1 1 1 1 
+# ===========//==========//==========
+
+Id = 188	 - Gustavo/Ata 35 - 5a Reunião Extraodinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=0.80 nSegs=9 rakingSize=11, weitght=true | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        10
+Judge     boundaries        8
+Automatic boundaries        8
+
+tp fp                       6 2
+fn tn                       2 0
+Acuracy                     0.600000
+Precision                   0.750000
+Recall                      0.750000
+F1                          0.750000
+Window_Diff                 0.400000
+Pk                          0.000000
+
+gold : 1 0 0 1 1 1 1 1 1 1 
+hypo : 1 1 1 1 0 1 1 0 1 1 
+# ===========//==========//==========
+
+Id = 189	 - Gustavo/Ata 33 - 29a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=0.80 nSegs=26 rakingSize=11, weitght=true | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        32
+Judge     boundaries        16
+Automatic boundaries        25
+
+tp fp                       15 10
+fn tn                       1 6
+Acuracy                     0.656250
+Precision                   0.600000
+Recall                      0.937500
+F1                          0.731707
+Window_Diff                 0.343750
+Pk                          0.000000
+
+gold : 1 0 0 0 1 1 1 0 0 1 1 1 0 0 0 0 1 0 1 0 0 1 0 1 1 0 0 1 1 0 1 1 
+hypo : 0 1 1 1 1 1 1 0 1 1 1 1 1 1 0 1 1 0 1 0 1 1 0 1 1 1 0 1 1 1 1 1 
+# ===========//==========//==========
+
+Id = 190	 - Gustavo/Ata 30 - 26a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=0.80 nSegs=22 rakingSize=11, weitght=true | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        26
+Judge     boundaries        19
+Automatic boundaries        21
+
+tp fp                       15 6
+fn tn                       4 1
+Acuracy                     0.615385
+Precision                   0.714286
+Recall                      0.789474
+F1                          0.750000
+Window_Diff                 0.384615
+Pk                          0.000000
+
+gold : 1 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 1 0 1 1 0 0 1 
+hypo : 0 1 1 1 1 1 0 1 1 1 0 0 1 1 1 1 1 1 1 1 1 1 1 0 1 1 
+# ===========//==========//==========
+
+Id = 191	 - Gustavo/Ata 32 - 28a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=0.80 nSegs=22 rakingSize=11, weitght=true | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        26
+Judge     boundaries        14
+Automatic boundaries        21
+
+tp fp                       12 9
+fn tn                       2 3
+Acuracy                     0.576923
+Precision                   0.571429
+Recall                      0.857143
+F1                          0.685714
+Window_Diff                 0.423077
+Pk                          0.000000
+
+gold : 1 0 0 0 1 1 0 0 0 1 1 1 0 0 0 0 1 1 1 0 0 1 1 1 1 1 
+hypo : 0 1 1 1 1 1 1 0 0 1 1 1 1 1 0 1 1 1 1 1 1 1 1 0 1 1 
+# ===========//==========//==========
+
+
+12 files avaliated
+Id = 192	 - Fabio/Ata 29 - 25a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=1.00 nSegs=18 rakingSize=9, weitght=false | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        17
+Judge     boundaries        6
+Automatic boundaries        17
+
+tp fp                       6 11
+fn tn                       0 0
+Acuracy                     0.352941
+Precision                   0.352941
+Recall                      1.000000
+F1                          0.521739
+Window_Diff                 0.647059
+Pk                          0.687500
+
+gold : 1 1 0 1 0 1 0 1 0 0 0 0 0 0 0 0 1 
+hypo : 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+# ===========//==========//==========
+
+Id = 193	 - Fabio/Ata 36 - 31a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=1.00 nSegs=25 rakingSize=9, weitght=false | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        24
+Judge     boundaries        10
+Automatic boundaries        24
+
+tp fp                       10 14
+fn tn                       0 0
+Acuracy                     0.416667
+Precision                   0.416667
+Recall                      1.000000
+F1                          0.588235
+Window_Diff                 0.583333
+Pk                          0.521739
+
+gold : 0 0 1 0 0 0 0 1 0 0 0 0 1 1 1 0 1 0 1 1 0 0 1 1 
+hypo : 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+# ===========//==========//==========
+
+Id = 194	 - Fabio/Ata 35 - 5a Reunião Extraodinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=1.00 nSegs=10 rakingSize=9, weitght=false | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        9
+Judge     boundaries        3
+Automatic boundaries        9
+
+tp fp                       3 6
+fn tn                       0 0
+Acuracy                     0.333333
+Precision                   0.333333
+Recall                      1.000000
+F1                          0.500000
+Window_Diff                 0.666667
+Pk                          0.500000
+
+gold : 0 0 0 0 1 1 0 0 1 
+hypo : 1 1 1 1 1 1 1 1 1 
+# ===========//==========//==========
+
+Id = 195	 - Fabio/Ata 33 - 29a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=1.00 nSegs=32 rakingSize=9, weitght=false | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        31
+Judge     boundaries        8
+Automatic boundaries        31
+
+tp fp                       8 23
+fn tn                       0 0
+Acuracy                     0.258065
+Precision                   0.258065
+Recall                      1.000000
+F1                          0.410256
+Window_Diff                 0.741935
+Pk                          0.700000
+
+gold : 0 0 0 1 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 0 1 0 0 0 1 0 1 1 1 
+hypo : 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+# ===========//==========//==========
+
+Id = 196	 - Fabio/Ata 30 - 26a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=1.00 nSegs=26 rakingSize=9, weitght=false | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        25
+Judge     boundaries        8
+Automatic boundaries        25
+
+tp fp                       8 17
+fn tn                       0 0
+Acuracy                     0.320000
+Precision                   0.320000
+Recall                      1.000000
+F1                          0.484848
+Window_Diff                 0.680000
+Pk                          0.708333
+
+gold : 1 1 0 0 1 0 0 0 1 0 0 0 0 0 0 1 1 0 0 0 1 1 0 0 0 
+hypo : 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+# ===========//==========//==========
+
+Id = 197	 - Fabio/Ata 32 - 28a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=1.00 nSegs=24 rakingSize=9, weitght=false | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        23
+Judge     boundaries        6
+Automatic boundaries        23
+
+tp fp                       6 17
+fn tn                       0 0
+Acuracy                     0.260870
+Precision                   0.260870
+Recall                      1.000000
+F1                          0.413793
+Window_Diff                 0.739130
+Pk                          0.727273
+
+gold : 1 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 1 0 1 
+hypo : 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+# ===========//==========//==========
+
+Id = 198	 - Gustavo/Ata 29 - 25a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=1.00 nSegs=18 rakingSize=9, weitght=false | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        17
+Judge     boundaries        14
+Automatic boundaries        17
+
+tp fp                       14 3
+fn tn                       0 0
+Acuracy                     0.823529
+Precision                   0.823529
+Recall                      1.000000
+F1                          0.903226
+Window_Diff                 0.176471
+Pk                          0.000000
+
+gold : 1 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 
+hypo : 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+# ===========//==========//==========
+
+Id = 199	 - Gustavo/Ata 36 - 31a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=1.00 nSegs=26 rakingSize=9, weitght=false | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        25
+Judge     boundaries        16
+Automatic boundaries        25
+
+tp fp                       16 9
+fn tn                       0 0
+Acuracy                     0.640000
+Precision                   0.640000
+Recall                      1.000000
+F1                          0.780488
+Window_Diff                 0.360000
+Pk                          0.000000
+
+gold : 1 0 0 1 0 1 1 1 1 1 0 0 0 1 0 1 1 1 1 1 1 0 0 1 1 
+hypo : 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+# ===========//==========//==========
+
+Id = 200	 - Gustavo/Ata 35 - 5a Reunião Extraodinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=1.00 nSegs=11 rakingSize=9, weitght=false | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        10
+Judge     boundaries        8
+Automatic boundaries        10
+
+tp fp                       8 2
+fn tn                       0 0
+Acuracy                     0.800000
+Precision                   0.800000
+Recall                      1.000000
+F1                          0.888889
+Window_Diff                 0.200000
+Pk                          0.000000
+
+gold : 1 0 0 1 1 1 1 1 1 1 
+hypo : 1 1 1 1 1 1 1 1 1 1 
+# ===========//==========//==========
+
+Id = 201	 - Gustavo/Ata 33 - 29a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=1.00 nSegs=33 rakingSize=9, weitght=false | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        32
+Judge     boundaries        16
+Automatic boundaries        32
+
+tp fp                       16 16
+fn tn                       0 0
+Acuracy                     0.500000
+Precision                   0.500000
+Recall                      1.000000
+F1                          0.666667
+Window_Diff                 0.500000
+Pk                          0.000000
+
+gold : 1 0 0 0 1 1 1 0 0 1 1 1 0 0 0 0 1 0 1 0 0 1 0 1 1 0 0 1 1 0 1 1 
+hypo : 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+# ===========//==========//==========
+
+Id = 202	 - Gustavo/Ata 30 - 26a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=1.00 nSegs=27 rakingSize=9, weitght=false | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        26
+Judge     boundaries        19
+Automatic boundaries        26
+
+tp fp                       19 7
+fn tn                       0 0
+Acuracy                     0.730769
+Precision                   0.730769
+Recall                      1.000000
+F1                          0.844444
+Window_Diff                 0.269231
+Pk                          0.000000
+
+gold : 1 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 1 0 1 1 0 0 1 
+hypo : 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+# ===========//==========//==========
+
+Id = 203	 - Gustavo/Ata 32 - 28a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=1.00 nSegs=27 rakingSize=9, weitght=false | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        26
+Judge     boundaries        14
+Automatic boundaries        26
+
+tp fp                       14 12
+fn tn                       0 0
+Acuracy                     0.538462
+Precision                   0.538462
+Recall                      1.000000
+F1                          0.700000
+Window_Diff                 0.461538
+Pk                          0.000000
+
+gold : 1 0 0 0 1 1 0 0 0 1 1 1 0 0 0 0 1 1 1 0 0 1 1 1 1 1 
+hypo : 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+# ===========//==========//==========
+
+
+12 files avaliated
+Id = 204	 - Fabio/Ata 29 - 25a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=1.00 nSegs=18 rakingSize=9, weitght=true | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        17
+Judge     boundaries        6
+Automatic boundaries        17
+
+tp fp                       6 11
+fn tn                       0 0
+Acuracy                     0.352941
+Precision                   0.352941
+Recall                      1.000000
+F1                          0.521739
+Window_Diff                 0.647059
+Pk                          0.687500
+
+gold : 1 1 0 1 0 1 0 1 0 0 0 0 0 0 0 0 1 
+hypo : 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+# ===========//==========//==========
+
+Id = 205	 - Fabio/Ata 36 - 31a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=1.00 nSegs=25 rakingSize=9, weitght=true | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        24
+Judge     boundaries        10
+Automatic boundaries        24
+
+tp fp                       10 14
+fn tn                       0 0
+Acuracy                     0.416667
+Precision                   0.416667
+Recall                      1.000000
+F1                          0.588235
+Window_Diff                 0.583333
+Pk                          0.521739
+
+gold : 0 0 1 0 0 0 0 1 0 0 0 0 1 1 1 0 1 0 1 1 0 0 1 1 
+hypo : 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+# ===========//==========//==========
+
+Id = 206	 - Fabio/Ata 35 - 5a Reunião Extraodinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=1.00 nSegs=10 rakingSize=9, weitght=true | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        9
+Judge     boundaries        3
+Automatic boundaries        9
+
+tp fp                       3 6
+fn tn                       0 0
+Acuracy                     0.333333
+Precision                   0.333333
+Recall                      1.000000
+F1                          0.500000
+Window_Diff                 0.666667
+Pk                          0.500000
+
+gold : 0 0 0 0 1 1 0 0 1 
+hypo : 1 1 1 1 1 1 1 1 1 
+# ===========//==========//==========
+
+Id = 207	 - Fabio/Ata 33 - 29a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=1.00 nSegs=32 rakingSize=9, weitght=true | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        31
+Judge     boundaries        8
+Automatic boundaries        31
+
+tp fp                       8 23
+fn tn                       0 0
+Acuracy                     0.258065
+Precision                   0.258065
+Recall                      1.000000
+F1                          0.410256
+Window_Diff                 0.741935
+Pk                          0.700000
+
+gold : 0 0 0 1 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 0 1 0 0 0 1 0 1 1 1 
+hypo : 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+# ===========//==========//==========
+
+Id = 208	 - Fabio/Ata 30 - 26a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=1.00 nSegs=26 rakingSize=9, weitght=true | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        25
+Judge     boundaries        8
+Automatic boundaries        25
+
+tp fp                       8 17
+fn tn                       0 0
+Acuracy                     0.320000
+Precision                   0.320000
+Recall                      1.000000
+F1                          0.484848
+Window_Diff                 0.680000
+Pk                          0.708333
+
+gold : 1 1 0 0 1 0 0 0 1 0 0 0 0 0 0 1 1 0 0 0 1 1 0 0 0 
+hypo : 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+# ===========//==========//==========
+
+Id = 209	 - Fabio/Ata 32 - 28a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=1.00 nSegs=24 rakingSize=9, weitght=true | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        23
+Judge     boundaries        6
+Automatic boundaries        23
+
+tp fp                       6 17
+fn tn                       0 0
+Acuracy                     0.260870
+Precision                   0.260870
+Recall                      1.000000
+F1                          0.413793
+Window_Diff                 0.739130
+Pk                          0.727273
+
+gold : 1 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 1 0 1 
+hypo : 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+# ===========//==========//==========
+
+Id = 210	 - Gustavo/Ata 29 - 25a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=1.00 nSegs=18 rakingSize=9, weitght=true | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        17
+Judge     boundaries        14
+Automatic boundaries        17
+
+tp fp                       14 3
+fn tn                       0 0
+Acuracy                     0.823529
+Precision                   0.823529
+Recall                      1.000000
+F1                          0.903226
+Window_Diff                 0.176471
+Pk                          0.000000
+
+gold : 1 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 
+hypo : 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+# ===========//==========//==========
+
+Id = 211	 - Gustavo/Ata 36 - 31a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=1.00 nSegs=26 rakingSize=9, weitght=true | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        25
+Judge     boundaries        16
+Automatic boundaries        25
+
+tp fp                       16 9
+fn tn                       0 0
+Acuracy                     0.640000
+Precision                   0.640000
+Recall                      1.000000
+F1                          0.780488
+Window_Diff                 0.360000
+Pk                          0.000000
+
+gold : 1 0 0 1 0 1 1 1 1 1 0 0 0 1 0 1 1 1 1 1 1 0 0 1 1 
+hypo : 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+# ===========//==========//==========
+
+Id = 212	 - Gustavo/Ata 35 - 5a Reunião Extraodinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=1.00 nSegs=11 rakingSize=9, weitght=true | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        10
+Judge     boundaries        8
+Automatic boundaries        10
+
+tp fp                       8 2
+fn tn                       0 0
+Acuracy                     0.800000
+Precision                   0.800000
+Recall                      1.000000
+F1                          0.888889
+Window_Diff                 0.200000
+Pk                          0.000000
+
+gold : 1 0 0 1 1 1 1 1 1 1 
+hypo : 1 1 1 1 1 1 1 1 1 1 
+# ===========//==========//==========
+
+Id = 213	 - Gustavo/Ata 33 - 29a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=1.00 nSegs=33 rakingSize=9, weitght=true | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        32
+Judge     boundaries        16
+Automatic boundaries        32
+
+tp fp                       16 16
+fn tn                       0 0
+Acuracy                     0.500000
+Precision                   0.500000
+Recall                      1.000000
+F1                          0.666667
+Window_Diff                 0.500000
+Pk                          0.000000
+
+gold : 1 0 0 0 1 1 1 0 0 1 1 1 0 0 0 0 1 0 1 0 0 1 0 1 1 0 0 1 1 0 1 1 
+hypo : 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+# ===========//==========//==========
+
+Id = 214	 - Gustavo/Ata 30 - 26a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=1.00 nSegs=27 rakingSize=9, weitght=true | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        26
+Judge     boundaries        19
+Automatic boundaries        26
+
+tp fp                       19 7
+fn tn                       0 0
+Acuracy                     0.730769
+Precision                   0.730769
+Recall                      1.000000
+F1                          0.844444
+Window_Diff                 0.269231
+Pk                          0.000000
+
+gold : 1 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 1 0 1 1 0 0 1 
+hypo : 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+# ===========//==========//==========
+
+Id = 215	 - Gustavo/Ata 32 - 28a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=1.00 nSegs=27 rakingSize=9, weitght=true | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        26
+Judge     boundaries        14
+Automatic boundaries        26
+
+tp fp                       14 12
+fn tn                       0 0
+Acuracy                     0.538462
+Precision                   0.538462
+Recall                      1.000000
+F1                          0.700000
+Window_Diff                 0.461538
+Pk                          0.000000
+
+gold : 1 0 0 0 1 1 0 0 0 1 1 1 0 0 0 0 1 1 1 0 0 1 1 1 1 1 
+hypo : 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+# ===========//==========//==========
+
+
+12 files avaliated
+Id = 216	 - Fabio/Ata 29 - 25a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=1.00 nSegs=18 rakingSize=11, weitght=false | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        17
+Judge     boundaries        6
+Automatic boundaries        17
+
+tp fp                       6 11
+fn tn                       0 0
+Acuracy                     0.352941
+Precision                   0.352941
+Recall                      1.000000
+F1                          0.521739
+Window_Diff                 0.647059
+Pk                          0.687500
+
+gold : 1 1 0 1 0 1 0 1 0 0 0 0 0 0 0 0 1 
+hypo : 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+# ===========//==========//==========
+
+Id = 217	 - Fabio/Ata 36 - 31a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=1.00 nSegs=25 rakingSize=11, weitght=false | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        24
+Judge     boundaries        10
+Automatic boundaries        24
+
+tp fp                       10 14
+fn tn                       0 0
+Acuracy                     0.416667
+Precision                   0.416667
+Recall                      1.000000
+F1                          0.588235
+Window_Diff                 0.583333
+Pk                          0.521739
+
+gold : 0 0 1 0 0 0 0 1 0 0 0 0 1 1 1 0 1 0 1 1 0 0 1 1 
+hypo : 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+# ===========//==========//==========
+
+Id = 218	 - Fabio/Ata 35 - 5a Reunião Extraodinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=1.00 nSegs=10 rakingSize=11, weitght=false | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        9
+Judge     boundaries        3
+Automatic boundaries        9
+
+tp fp                       3 6
+fn tn                       0 0
+Acuracy                     0.333333
+Precision                   0.333333
+Recall                      1.000000
+F1                          0.500000
+Window_Diff                 0.666667
+Pk                          0.500000
+
+gold : 0 0 0 0 1 1 0 0 1 
+hypo : 1 1 1 1 1 1 1 1 1 
+# ===========//==========//==========
+
+Id = 219	 - Fabio/Ata 33 - 29a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=1.00 nSegs=32 rakingSize=11, weitght=false | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        31
+Judge     boundaries        8
+Automatic boundaries        31
+
+tp fp                       8 23
+fn tn                       0 0
+Acuracy                     0.258065
+Precision                   0.258065
+Recall                      1.000000
+F1                          0.410256
+Window_Diff                 0.741935
+Pk                          0.700000
+
+gold : 0 0 0 1 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 0 1 0 0 0 1 0 1 1 1 
+hypo : 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+# ===========//==========//==========
+
+Id = 220	 - Fabio/Ata 30 - 26a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=1.00 nSegs=26 rakingSize=11, weitght=false | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        25
+Judge     boundaries        8
+Automatic boundaries        25
+
+tp fp                       8 17
+fn tn                       0 0
+Acuracy                     0.320000
+Precision                   0.320000
+Recall                      1.000000
+F1                          0.484848
+Window_Diff                 0.680000
+Pk                          0.708333
+
+gold : 1 1 0 0 1 0 0 0 1 0 0 0 0 0 0 1 1 0 0 0 1 1 0 0 0 
+hypo : 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+# ===========//==========//==========
+
+Id = 221	 - Fabio/Ata 32 - 28a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=1.00 nSegs=24 rakingSize=11, weitght=false | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        23
+Judge     boundaries        6
+Automatic boundaries        23
+
+tp fp                       6 17
+fn tn                       0 0
+Acuracy                     0.260870
+Precision                   0.260870
+Recall                      1.000000
+F1                          0.413793
+Window_Diff                 0.739130
+Pk                          0.727273
+
+gold : 1 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 1 0 1 
+hypo : 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+# ===========//==========//==========
+
+Id = 222	 - Gustavo/Ata 29 - 25a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=1.00 nSegs=18 rakingSize=11, weitght=false | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        17
+Judge     boundaries        14
+Automatic boundaries        17
+
+tp fp                       14 3
+fn tn                       0 0
+Acuracy                     0.823529
+Precision                   0.823529
+Recall                      1.000000
+F1                          0.903226
+Window_Diff                 0.176471
+Pk                          0.000000
+
+gold : 1 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 
+hypo : 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+# ===========//==========//==========
+
+Id = 223	 - Gustavo/Ata 36 - 31a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=1.00 nSegs=26 rakingSize=11, weitght=false | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        25
+Judge     boundaries        16
+Automatic boundaries        25
+
+tp fp                       16 9
+fn tn                       0 0
+Acuracy                     0.640000
+Precision                   0.640000
+Recall                      1.000000
+F1                          0.780488
+Window_Diff                 0.360000
+Pk                          0.000000
+
+gold : 1 0 0 1 0 1 1 1 1 1 0 0 0 1 0 1 1 1 1 1 1 0 0 1 1 
+hypo : 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+# ===========//==========//==========
+
+Id = 224	 - Gustavo/Ata 35 - 5a Reunião Extraodinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=1.00 nSegs=11 rakingSize=11, weitght=false | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        10
+Judge     boundaries        8
+Automatic boundaries        10
+
+tp fp                       8 2
+fn tn                       0 0
+Acuracy                     0.800000
+Precision                   0.800000
+Recall                      1.000000
+F1                          0.888889
+Window_Diff                 0.200000
+Pk                          0.000000
+
+gold : 1 0 0 1 1 1 1 1 1 1 
+hypo : 1 1 1 1 1 1 1 1 1 1 
+# ===========//==========//==========
+
+Id = 225	 - Gustavo/Ata 33 - 29a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=1.00 nSegs=33 rakingSize=11, weitght=false | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        32
+Judge     boundaries        16
+Automatic boundaries        32
+
+tp fp                       16 16
+fn tn                       0 0
+Acuracy                     0.500000
+Precision                   0.500000
+Recall                      1.000000
+F1                          0.666667
+Window_Diff                 0.500000
+Pk                          0.000000
+
+gold : 1 0 0 0 1 1 1 0 0 1 1 1 0 0 0 0 1 0 1 0 0 1 0 1 1 0 0 1 1 0 1 1 
+hypo : 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+# ===========//==========//==========
+
+Id = 226	 - Gustavo/Ata 30 - 26a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=1.00 nSegs=27 rakingSize=11, weitght=false | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        26
+Judge     boundaries        19
+Automatic boundaries        26
+
+tp fp                       19 7
+fn tn                       0 0
+Acuracy                     0.730769
+Precision                   0.730769
+Recall                      1.000000
+F1                          0.844444
+Window_Diff                 0.269231
+Pk                          0.000000
+
+gold : 1 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 1 0 1 1 0 0 1 
+hypo : 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+# ===========//==========//==========
+
+Id = 227	 - Gustavo/Ata 32 - 28a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=1.00 nSegs=27 rakingSize=11, weitght=false | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        26
+Judge     boundaries        14
+Automatic boundaries        26
+
+tp fp                       14 12
+fn tn                       0 0
+Acuracy                     0.538462
+Precision                   0.538462
+Recall                      1.000000
+F1                          0.700000
+Window_Diff                 0.461538
+Pk                          0.000000
+
+gold : 1 0 0 0 1 1 0 0 0 1 1 1 0 0 0 0 1 1 1 0 0 1 1 1 1 1 
+hypo : 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+# ===========//==========//==========
+
+
+12 files avaliated
+Id = 228	 - Fabio/Ata 29 - 25a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=1.00 nSegs=18 rakingSize=11, weitght=true | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        17
+Judge     boundaries        6
+Automatic boundaries        17
+
+tp fp                       6 11
+fn tn                       0 0
+Acuracy                     0.352941
+Precision                   0.352941
+Recall                      1.000000
+F1                          0.521739
+Window_Diff                 0.647059
+Pk                          0.687500
+
+gold : 1 1 0 1 0 1 0 1 0 0 0 0 0 0 0 0 1 
+hypo : 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+# ===========//==========//==========
+
+Id = 229	 - Fabio/Ata 36 - 31a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=1.00 nSegs=25 rakingSize=11, weitght=true | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        24
+Judge     boundaries        10
+Automatic boundaries        24
+
+tp fp                       10 14
+fn tn                       0 0
+Acuracy                     0.416667
+Precision                   0.416667
+Recall                      1.000000
+F1                          0.588235
+Window_Diff                 0.583333
+Pk                          0.521739
+
+gold : 0 0 1 0 0 0 0 1 0 0 0 0 1 1 1 0 1 0 1 1 0 0 1 1 
+hypo : 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+# ===========//==========//==========
+
+Id = 230	 - Fabio/Ata 35 - 5a Reunião Extraodinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=1.00 nSegs=10 rakingSize=11, weitght=true | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        9
+Judge     boundaries        3
+Automatic boundaries        9
+
+tp fp                       3 6
+fn tn                       0 0
+Acuracy                     0.333333
+Precision                   0.333333
+Recall                      1.000000
+F1                          0.500000
+Window_Diff                 0.666667
+Pk                          0.500000
+
+gold : 0 0 0 0 1 1 0 0 1 
+hypo : 1 1 1 1 1 1 1 1 1 
+# ===========//==========//==========
+
+Id = 231	 - Fabio/Ata 33 - 29a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=1.00 nSegs=32 rakingSize=11, weitght=true | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        31
+Judge     boundaries        8
+Automatic boundaries        31
+
+tp fp                       8 23
+fn tn                       0 0
+Acuracy                     0.258065
+Precision                   0.258065
+Recall                      1.000000
+F1                          0.410256
+Window_Diff                 0.741935
+Pk                          0.700000
+
+gold : 0 0 0 1 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 0 1 0 0 0 1 0 1 1 1 
+hypo : 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+# ===========//==========//==========
+
+Id = 232	 - Fabio/Ata 30 - 26a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=1.00 nSegs=26 rakingSize=11, weitght=true | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        25
+Judge     boundaries        8
+Automatic boundaries        25
+
+tp fp                       8 17
+fn tn                       0 0
+Acuracy                     0.320000
+Precision                   0.320000
+Recall                      1.000000
+F1                          0.484848
+Window_Diff                 0.680000
+Pk                          0.708333
+
+gold : 1 1 0 0 1 0 0 0 1 0 0 0 0 0 0 1 1 0 0 0 1 1 0 0 0 
+hypo : 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+# ===========//==========//==========
+
+Id = 233	 - Fabio/Ata 32 - 28a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=1.00 nSegs=24 rakingSize=11, weitght=true | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        23
+Judge     boundaries        6
+Automatic boundaries        23
+
+tp fp                       6 17
+fn tn                       0 0
+Acuracy                     0.260870
+Precision                   0.260870
+Recall                      1.000000
+F1                          0.413793
+Window_Diff                 0.739130
+Pk                          0.727273
+
+gold : 1 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 1 0 1 
+hypo : 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+# ===========//==========//==========
+
+Id = 234	 - Gustavo/Ata 29 - 25a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=1.00 nSegs=18 rakingSize=11, weitght=true | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        17
+Judge     boundaries        14
+Automatic boundaries        17
+
+tp fp                       14 3
+fn tn                       0 0
+Acuracy                     0.823529
+Precision                   0.823529
+Recall                      1.000000
+F1                          0.903226
+Window_Diff                 0.176471
+Pk                          0.000000
+
+gold : 1 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 
+hypo : 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+# ===========//==========//==========
+
+Id = 235	 - Gustavo/Ata 36 - 31a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=1.00 nSegs=26 rakingSize=11, weitght=true | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        25
+Judge     boundaries        16
+Automatic boundaries        25
+
+tp fp                       16 9
+fn tn                       0 0
+Acuracy                     0.640000
+Precision                   0.640000
+Recall                      1.000000
+F1                          0.780488
+Window_Diff                 0.360000
+Pk                          0.000000
+
+gold : 1 0 0 1 0 1 1 1 1 1 0 0 0 1 0 1 1 1 1 1 1 0 0 1 1 
+hypo : 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+# ===========//==========//==========
+
+Id = 236	 - Gustavo/Ata 35 - 5a Reunião Extraodinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=1.00 nSegs=11 rakingSize=11, weitght=true | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        10
+Judge     boundaries        8
+Automatic boundaries        10
+
+tp fp                       8 2
+fn tn                       0 0
+Acuracy                     0.800000
+Precision                   0.800000
+Recall                      1.000000
+F1                          0.888889
+Window_Diff                 0.200000
+Pk                          0.000000
+
+gold : 1 0 0 1 1 1 1 1 1 1 
+hypo : 1 1 1 1 1 1 1 1 1 1 
+# ===========//==========//==========
+
+Id = 237	 - Gustavo/Ata 33 - 29a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=1.00 nSegs=33 rakingSize=11, weitght=true | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        32
+Judge     boundaries        16
+Automatic boundaries        32
+
+tp fp                       16 16
+fn tn                       0 0
+Acuracy                     0.500000
+Precision                   0.500000
+Recall                      1.000000
+F1                          0.666667
+Window_Diff                 0.500000
+Pk                          0.000000
+
+gold : 1 0 0 0 1 1 1 0 0 1 1 1 0 0 0 0 1 0 1 0 0 1 0 1 1 0 0 1 1 0 1 1 
+hypo : 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+# ===========//==========//==========
+
+Id = 238	 - Gustavo/Ata 30 - 26a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=1.00 nSegs=27 rakingSize=11, weitght=true | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        26
+Judge     boundaries        19
+Automatic boundaries        26
+
+tp fp                       19 7
+fn tn                       0 0
+Acuracy                     0.730769
+Precision                   0.730769
+Recall                      1.000000
+F1                          0.844444
+Window_Diff                 0.269231
+Pk                          0.000000
+
+gold : 1 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 1 0 1 1 0 0 1 
+hypo : 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+# ===========//==========//==========
+
+Id = 239	 - Gustavo/Ata 32 - 28a Reunião Odinária PPGCCS.txt - Automatic
+Algorithm: C99 - nSegsRate=1.00 nSegs=27 rakingSize=11, weitght=true | lc=F rp=F ra=F rs=F rn=F rh=F ieof=T rsw=F rst=F
+Candidate boundaries        26
+Judge     boundaries        14
+Automatic boundaries        26
+
+tp fp                       14 12
+fn tn                       0 0
+Acuracy                     0.538462
+Precision                   0.538462
+Recall                      1.000000
+F1                          0.700000
+Window_Diff                 0.461538
+Pk                          0.000000
+
+gold : 1 0 0 0 1 1 0 0 0 1 1 1 0 0 0 0 1 1 1 0 0 1 1 1 1 1 
+hypo : 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+# ===========//==========//==========
+
+
+12 files avaliated

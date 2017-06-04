@@ -23,18 +23,37 @@ public class Tests {
 
 		files.clear();
 		getFiles(folder);
+
 		
+		boolean useMyPreprocess = false;
+		
+//		useMyPreprocess = true;
 		
 		Preprocess preprocess = new Preprocess();
-		preprocess.setIdentifyEOS       (true);
-		preprocess.setRemoveAccents     (false);
-		preprocess.setRemoveHeaders     (false);
-		preprocess.setRemoveNumbers     (false);
-		preprocess.setRemovePunctuation (false);
-		preprocess.setRemoveShortThan   (false);
-		preprocess.setRemoveStem        (false);
-		preprocess.setRemoveStopWord    (false);
-		preprocess.setToLowCase         (false);
+
+		if(useMyPreprocess) {
+			preprocess.setIdentifyEOS       (true);
+			preprocess.setRemoveAccents     (true);
+			preprocess.setRemoveHeaders     (true);
+			preprocess.setRemoveNumbers     (true);
+			preprocess.setRemovePunctuation (true);
+			preprocess.setRemoveShortThan   (true);
+			preprocess.setRemoveStem        (true);
+			preprocess.setRemoveStopWord    (true);
+			preprocess.setToLowCase         (true);			
+		} else {
+			preprocess.setIdentifyEOS       (true);
+			preprocess.setRemoveAccents     (false);
+			preprocess.setRemoveHeaders     (false);
+			preprocess.setRemoveNumbers     (false);
+			preprocess.setRemovePunctuation (false);
+			preprocess.setRemoveShortThan   (false);
+			preprocess.setRemoveStem        (false);
+			preprocess.setRemoveStopWord    (false);
+			preprocess.setToLowCase         (false);						
+		}
+		
+		
 
 		
 		/*
@@ -44,8 +63,8 @@ public class Tests {
 		boolean testTT = false;
 		boolean testC9 = false;
 		
-		testTT = true;
-//		testC9 = true;
+//		testTT = true;
+		testC9 = true;
 		
 		if (testTT) {
 			
@@ -205,6 +224,46 @@ public class Tests {
 		
 		Files.closeCSV(csv);
 	
+	}
+	
+	public static String medias(ArrayList<ArrayList<EvaluationData>> evaluations) {
+		String result = "";
+		
+		double acuracy = 0;
+		double precision = 0;
+		double recall = 0;
+		double f1 = 0;
+		double pk = 0;
+		double windiff = 0;
+		
+		int count = 0;
+		
+		for(ArrayList<EvaluationData> a : evaluations) {
+			for(EvaluationData e : a) {
+				
+				acuracy   += e.getAcuracy();
+				precision += e.getPrecision();
+				recall    += e.getRecall();
+				f1        += e.getF1();
+				pk        += e.getPk();
+				windiff   += e.getWindowDiff();
+				
+				count++;
+			}
+		}
+		
+		result += "\n";
+		result +=               "Metric      avg\n";
+		result += String.format("Acuracy    %.3f\n", acuracy/count);
+		result += String.format("Precision  %.3f\n", precision/count);
+		result += String.format("Recall     %.3f\n", recall/count);
+		result += String.format("F1         %.3f\n", f1/count);
+		result += String.format("Pk         %.3f\n", pk/count);
+		result += String.format("Windiff    %.3f\n", windiff/count);
+
+
+		
+		return result;
 	}
 	
 

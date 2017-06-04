@@ -10,6 +10,7 @@ import java.io.File;
 import java.io.FileFilter;
 import java.util.ArrayList;
 
+import javax.print.attribute.standard.MediaSize;
 import javax.swing.JButton;
 import javax.swing.JCheckBox;
 import javax.swing.JComboBox;
@@ -233,6 +234,10 @@ public class EvaluateSegmentationsFrame extends JFrame {
 				
 				
 				showTests1(tests);
+				
+				
+				taOut.setText(taOut.getText() + Tests.medias(tests));
+
 				
 			}
 		});
