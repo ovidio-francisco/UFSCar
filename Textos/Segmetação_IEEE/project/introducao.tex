@@ -6,7 +6,8 @@
 %%%%%%%%%%
 % Descrição das Reuniões
 %%%%%%%%%%
-Reuniões são tarefas presentes em atividades corporativas, ambientes de gestão e nas organizações de um modo geral. O conteúdo das reuniões são frequentemente registradas em texto na forma de atas para fins de documentação e posterior consulta. A organização e consulta manual desses arquivos torna-se uma tarefa custosa, especialmente considerando o seu crescimento em uma instituição. 
+Reuniões são tarefas presentes em atividades corporativas, ambientes de gestão e nas organizações de um modo geral. O conteúdo das reuniões é frequentemente registrado
+em texto na forma de atas para fins de documentação e posterior consulta. A organização e consulta manual desses arquivos torna-se uma tarefa custosa, especialmente considerando o seu crescimento em uma instituição. 
 
 %%%%%%%%%%
 % Atas são documentos não estruturados e
@@ -16,7 +17,7 @@ As atas são documentos textuais e portanto constituem dados não estruturados. 
 %%%%%%%%%%
 % Segmentar e extrair tópicos
 %%%%%%%%%%
-Uma vez que a ata registra a sucessão de assuntos discutidos na reunião, há interesse em um sistema que aponte trechos de uma ata que tratam de um assunto específico. Tal sistema tem duas principais tarefas: descobrir quando há uma mudança de assunto e quais são esses assuntos~\cite{Banerjee2006}. Este trabalho tem foco principal na primeira tarefa, a segmentação textual automática. 
+Uma vez que a ata registra a sucessão de assuntos discutidos na reunião, há interesse em um sistema que aponte trechos de uma ata que tratam de um assunto específico. Tal sistema tem duas principais tarefas: descobrir quando há uma mudança de assunto e quais são esses assuntos~\cite{Banerjee2006}. Este trabalho tem foco principal na na primeira tarefa, detecção de mudança de assuntos, que pode ser atendida pela segmentação automática de textos.
 
 
 
@@ -28,7 +29,7 @@ A tarefa de segmentação textual consiste dividir um texto em partes que conten
 %%%%%%%%%%
 % Utilidade da segmentação (domínios onde é aplicada)
 %%%%%%%%%%
-A segmentação de textos é útil em aplicações que trabalham com textos sem indicações de quebras de assunto, ou seja, não apresentam parágrafos, seções ou capítulos, como transcrições automáticas de áudio, vídeos e grandes documentos que contêm vários assuntos como atas de reunião e notícias.
+A segmentação de textos é útil em aplicações que trabalham com textos sem indicações de quebras de assunto, ou seja, não apresentam seções ou capítulos, como transcrições automáticas de áudio, vídeos e grandes documentos que contêm vários assuntos como atas de reunião e notícias.
 
 
 %%%%%%%%%%
@@ -40,35 +41,29 @@ Essa técnica pode ser usada para aprimorar o acesso a informação quando essa 
 %
 Além disso, encontrar pontos onde o texto muda de assunto, pode ser útil como etapa de preprocessamento em aplicações voltadas ao entendimento do texto, principalmente em textos longos.
 %
-A sumarização de texto pode ser aprimorada ao processar segmentos separados por tópicos ao invés de documentos inteiros. 
-%
 A navegação pelo documento pode ser aprimorada, em especial na utilização por usuários com deficiência visual, os quais utilizam  sintetizadores de texto como ferramenta de acessibilidade~\cite{Choi2000}. 
+%
+A sumarização de texto pode ser aprimorada ao processar segmentos separados por tópicos ao invés de documentos inteiros. 
 
 
 
 %%%%%%%%%%
 % Descrição das Atas
 %%%%%%%%%%
-Frequentemente atas de reunião têm a característica de apresentar um texto com poucas quebras de parágrafo e sem marcações de estrutura, como capítulos, seções ou quaisquer indicações sobre o tema do texto. O estilo de escrita compacto e formal, desfavorece o processamento baseado em frequência de palavras.
-
-%%%%%%%%%%
-% Onde é usada
-%%%%%%%%%%
-O interesse por técnicas de segmentação textual acompanha o crescimento da produção de conteúdos, sendo estudada em aplicações voltadas principalmente a identificar divisões em
-textos longos como notícias e documentos da web, os quais são frequentemente uma concatenação de textos. 
+Frequentemente atas de reunião têm a característica de apresentar um texto com poucas quebras de parágrafo e sem marcações de estrutura, como capítulos, seções ou quaisquer indicações sobre o tema do texto. O estilo de escrita compacto e formal desfavorece o processamento baseado em frequência de palavras.
 
 
 %%%%%%%%%%
 % ... as lacunas
 %%%%%%%%%%
 Há também um maior foco no idioma inglês, presente na maioria dos artigos publicados. Embora haja abordagens voltadas para outros idiomas, falta ainda uma maior atenção na literatura sobre língua portuguesa e a documentos com características próprias como as atas de reunião.
-
+%
 %%%%%%%%%%
 % Diferenças de entre Línguas
 %%%%%%%%%%
 %Diferenças de performance podem ser vistas no mesmo algoritmo quando aplicando em documentos de diferentes idiomas, onde o inglês apresenta um taxa de erro significativamente menor que outro como o alemão e o espanhol~\cite{Kern2009}.
-
-
+%
+%
 %%%%%%%%%%
 % Foco nas atas
 %%%%%%%%%%
@@ -90,6 +85,11 @@ Por fim, na Seção~\ref{sec:conclusao} são apresentadas as considerações fin
 
 
 
+
+%%%%%%%%%%
+% Onde é usada
+%%%%%%%%%%
+%O interesse por técnicas de segmentação textual acompanha o crescimento da produção de conteúdos, sendo estudada em aplicações voltadas principalmente a identificar divisões em textos longos como notícias e documentos da web, os quais são frequentemente uma concatenação de textos. 
 
 
 
