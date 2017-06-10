@@ -1,4 +1,10 @@
 
+# Resumo
+
+	- "Foi feita adaptações ou os algoritmos foram apenas aplicados? Discutir."
+
+
+
 Definiar as palavras
 	- Técnica, método, modelo
 	- Acurácia, eficiência, eficácia, performance

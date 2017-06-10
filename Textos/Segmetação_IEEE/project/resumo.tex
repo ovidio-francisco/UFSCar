@@ -4,7 +4,7 @@
 %%%
 A tarefa de segmentação textual consiste em dividir um texto em porções com significado relativamente independente, de maneira que cada segmento contenha um assunto. 
 %
-% Literatura focada em documentos longos e em inglês
+% Literatura focada em documentos longos
 %%%
 Muitas pesquisas avaliam técnicas de segmentação texutal usando textos longos com a concatenação de notícias de vários assuntos ou com a transcrição de discursos ou reuniões com múltiplos participantes.  
 %
@@ -14,19 +14,19 @@ Além disso, a maior parte das pesquisas é realizada considerando o idioma ingl
 %
 % Peculiaridades das atas
 %%%
-As atas de reunião possuem estilo de redação mais formal e sucinto, o que desfavorece técnicas baseadas em frequência de palavras.
+Esse artigo tem como objeto de estudo atas de reunião escritas em português, as quais as além do idioma menos estudado sob essas técnicas, possuem estilo de redação mais formal e sucinto, o que desfavorece técnicas baseadas em frequência de palavras. 
 %
 % Utilidade
 %%%
 A segmentação desses documentos facilita a sua organização e acesso, oferecendo vantagens no processo de recuperação de informação em relação à busca por palavras-chave, pois é possível retornar porções de texto menores que contenham assuntos relevantes à intenção do usuário, ao invés de destacar as palavras-chave em um texto longo que pode conter informações menos pertinentes. 
 %
-% Objetivo: Adaptar algs e encontar modelo
+% Objetivo: Adaptar algs e encontar melhor técnica
 %%%
-Este artigo concentra-se nos principais algoritmos da literatura adaptando-os ao contexto das atas de reunião em português, bem como encontrar um modelo que ofereça segmentos coesos e contribua para aprimorar sistemas de recuperação de informação para que respondam melhor à buscas do usuário.
+Este artigo concentra-se nos principais algoritmos da literatura adaptando-os ao contexto das atas de reunião em português, bem como encontrar uma técnica que ofereça segmentos coesos e contribua para aprimorar sistemas de recuperação de informação para que respondam melhor à buscas do usuário.
 %
-% Modelo melhor avaliado
+% Configuração melhor avaliada
 %%%
-Para a avaliação experimental, um conjunto de atas do departamento de pós-graduação da UFSCar-Sorocaba foi manualmente segmentado por participantes das reuniões. Então, as divisões manuais foram comparadas com as divisões geradas automaticamente a fim de encontrar um método que melhor retorne segmentos coesos de atas de reunião. Ao final, chegou-se a um modelo capaz de segmentar as atas com performance similar a outros trabalhos da literatura. 
+Para a avaliação experimental, um conjunto de atas do departamento de pós-graduação da UFSCar-Sorocaba foi manualmente segmentado por participantes das reuniões. Então, as divisões manuais foram comparadas com as divisões geradas automaticamente a fim de encontrar uma configuração que melhor retorne segmentos coesos de atas de reunião. Ao final, chegou-se a uma técnica capaz de segmentar as atas com performance similar a outros trabalhos da literatura. 
 %
 %
 \end{abstract}
@@ -36,6 +36,7 @@ Para a avaliação experimental, um conjunto de atas do departamento de pós-gra
 
 
 
+% As atas de reunião possuem estilo de redação mais formal e sucinto, o que desfavorece técnicas baseadas em frequência de palavras.
 
 % Por conta disso, muitos segmentadores apresentam melhor performance nessas condições.
 
