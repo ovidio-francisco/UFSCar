@@ -4,17 +4,39 @@
 %%%%%%%%%%
 % Retomada das Definições
 %%%%%%%%%%	
-
-Um documento textual, sobre tudo quando longo, é frequentemente uma sucessão de tópicos. 
-%%%%%%%%%%
+%
+% Documento é uma sucessão de assuntos
+%%% 
+Um documento textual, sobre tudo quando longo, é frequentemente uma sucessão de assuntos. 
+%
 % Segmentação
-%%%%%%%%%%
+%%% 
 A segmentação textual ou segmentação topical é a tarefa de dividir um texto mantendo em cada parte um tópico com seu significado completo.
 	
+
+
+%%%%%%%%%%%%%%%
+% Unidades de Informação 
+%%%%%%%%%%%%%%% 
+%
+% O texto deve ser divido em unidades que não pode ser dividida entre segmentos 
+%%% 
+O texto deve ser previamente dividido em unidades de informação, que podem ser palavras, paragrafos e mais usualmente em sentenças. Essas unidades são processadas pelos algoritmos como a menor parte de um segmento, ou seja uma unidade não pode divida, mas deve pertencer integralmente a um segmento.
+%
+% Exemplos 
+%%% 
+Por exemplo, algoritmos baseados em janelas deslizantes, avançam uma unidade a cada passo. Da mesma forma, algoritmos baseados em matrizes de similaridade, devem considerar a similaridade entre essas unidades.
+%
+% Sentaças são mais usuais 
+%%% 
+Usualmente usa-se sentenças como unidades informação, ou seja, as janelas deslizam uma sentença a cada passo e matrizes de similaridades calculam e armazenam as similaridades entre as sentneças do texto.
+ 
 %%%%%%%%%%
 % Segmento
 %%%%%%%%%%	
-Um segmento pode ser visto como uma sucessão de unidades de informação que compartilham um tópico. Essas unidades podem ser, por exemplo, palavras, sentenças ou parágrafos. Sendo a menor parte de um segmento, portanto são consideradas candidatas a limite entre segmentos.
+Um segmento pode ser visto como uma sucessão de unidades de informação que compartilham o mesmo assunto. Sendo a menor parte de um segmento, cada ponto entre duas unidades de informação é considerado um candidato a limite entre segmentos. 
+
+
 
 %%%%%%%%%%
 % Coesão léxica como **presuposto básico**
@@ -225,6 +247,11 @@ Com isso, demonstram em seu trabalho que, em relação a P$_k$, \textit{WindowDi
 
 
 
+
+% portanto são consideradas candidatas a limite entre segmentos.
+
+% Uma unidade pode ser, por exemplo, palavras, sentenças ou parágrafos devem compartilhar o mesmo assunto.
+% que compartilham um assunto. 
 
 
 %apontam que a coesão léxica é um forte indicador da estrutura do texto, isto é, a mudança de tópicos é acompanhada de uma proporcional mudança de vocabulário. A partir disso, vários algoritmos foram propostos baseados na ideia de que um segmento pode ser identificado e delimitado pela análise das palavras que o compõe~\cite{Galley2003}~\cite{Boguraev2000}.
