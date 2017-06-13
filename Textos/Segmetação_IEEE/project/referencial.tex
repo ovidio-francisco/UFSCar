@@ -25,16 +25,19 @@ O texto deve ser previamente dividido em unidades de informação, que podem ser
 %
 % Exemplos 
 %%% 
-Por exemplo, algoritmos baseados em janelas deslizantes, avançam uma unidade a cada passo. Da mesma forma, algoritmos baseados em matrizes de similaridade, devem considerar a similaridade entre essas unidades.
+Por exemplo, algoritmos baseados em janelas deslizantes, avançam uma unidade a cada passo. Da mesma forma, algoritmos baseados em matrizes de similaridade, devem calcular a similaridade entre essas unidades.
 %
 % Sentaças são mais usuais 
 %%% 
-Usualmente usa-se sentenças como unidades informação, ou seja, as janelas deslizam uma sentença a cada passo e matrizes de similaridades calculam e armazenam as similaridades entre as sentneças do texto.
- 
+Usualmente usa-se sentenças como unidades informação, ou seja, as janelas deslizam uma sentença a cada passo e matrizes de similaridades armazenam as similaridades entre as sentneças do texto.
+%
+% O ponto entre unidades é um limite 
+%%% 
+Assim, cada ponto entre duas unidades de informação é considerado um candidato a limite entre segmentos.  
 %%%%%%%%%%
 % Segmento
 %%%%%%%%%%	
-Um segmento pode ser visto como uma sucessão de unidades de informação que compartilham o mesmo assunto. Sendo a menor parte de um segmento, cada ponto entre duas unidades de informação é considerado um candidato a limite entre segmentos. 
+Dessa forma, um segmento pode ser visto como uma sucessão de unidades de informação que compartilham o mesmo assunto. 
 
 
 
@@ -69,9 +72,9 @@ Entre os principais trabalhos da literatura podemos citar o  \textit{TextTiling}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%              TextTiling                 %%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-O \textit{TextTiling} é um algoritmo baseado em janelas deslizantes, onde para cada candidato a limite, analisa-se o texto circundante. Um limite ou quebra de segmento é identificado quando a similaridade entres os blocos apresenta uma queda considerável.
+O \textit{TextTiling} é um algoritmo baseado em janelas deslizantes, onde para cada candidato a limite, analisa-se o texto circundante. Um limite ou quebra de segmento é identificado quando sempre que a similaridade cai abaixo de um limiar.
+% \textit{threshold}. %TODO - explicar como se encontra os vales
 
-%Ela propõe um algoritmo baseado em janelas deslizante, para analisar blocos de texto adjacentes e identificar os limites com base nas similaridades dos blocos.
 
 O \textit{TextTiling} recebe uma lista de candidatos a limite, usualmente finais de parágrafo ou finais de sentenças. Para cada posição candidata são construídos 2 blocos, um contendo sentenças que a precedem e outro com as que a sucedem. O tamanho desses blocos é um parâmetro a ser fornecido ao algoritmo e determina o tamanho mínimo de um segmento.
 %
@@ -79,9 +82,9 @@ Em seguida, os blocos de texto são representados por vetores que contém as fre
 
 %TODO como apresentado na Figura~\ref{fig:curvadedissimilaridade}.
 
-%sempre que a similaridade cai abaixo de um \textit{threshold}.
 
-O \textit{TextTiling} apresenta baixa complexidade computacional devido a simplicidade do algoritmo e baixa eficiência quando comparado a outros métodos mais sofisticados como apresentados em~\cite{Choi2000, Kern2009, Misra2009}.
+O \textit{TextTiling} possui menor complexidade computacional. Por outro lado, algoritmos mais complexos apresentam acurácia relativamente superior como apresentado em~\cite{Choi2000, Kern2009, Misra2009}.
+
 
 
 
@@ -99,36 +102,13 @@ Além disso, o estilo da escrita pode não ser constante em todo o texto. Choi s
 % Complexidade O(n²)
 Devido a isso, as similaridades não podem ser comparadas em valores absolutos. Então, o autor contorna esse problema fazendo uso de \textit{rankings} de similaridade para encontrar os segmentos de texto. 
 
-apresenta um esquema de \textit{rankings} para contornar esse problema.
 
-
-%
-
-% 1 cria uma matrix de similaridades
-% 2 cria a matrix de ranking
-% 3 aplica divisive clustering
-
-% mask = quadro
-% pegar um exemplo --> mostrar os numeros dentro do quatro e pq o resultado foi aquele
-
-% colocar os passos na imagem
-
-
-Inicialmente é construída uma matriz que contém as similaridades de todas as unidades de texto. Em seguida, cada valor na matriz de similaridade é substituído por seu ranking local. Onde para cada elemento da matiz, seu \textit{ranking} é o número de elementos vizinhos com valor de similaridade menor que o seu.%, o qual é calculado com a Equação~\ref{equ:ranklocal}. 
+Inicialmente é construída uma matriz que contém as similaridades de todas as unidades de texto. Em seguida, cada valor na matriz de similaridade é substituído por seu ranking local. Onde para cada elemento da matiz, seu \textit{ranking} é o número de elementos vizinhos com valor de similaridade menor que o seu.
 
 % O que é a máscara
 Então, para cada elemento delimita-se uma região da matriz, denominada máscara, para comparar com seus vizinhos.
 %
-Na Figura~\ref{fig:exemplomatrixrank} é apresentado um quadro de dimensões 3~x~3 destacado na matriz de similaridades, que contém os valores  $\{0,3; 0,4; 0,4; 0,6; 0,5; 0,2; 0,9; 0,5; 0,7\}$, tomando como exemplo o elemento com valor $0,5$, a mesma posição na matriz de \textit{ranks} terá o valor $4$, pois esse é o número de vizinhos com valores inferiores a $0,5$ dentro do quadro analisado na matriz de similaridades. 
-
-
-%nesse exemplo, o valor $0,5$ é substituído por $4$ na matriz de ranks pois há 4 vizinhos com valor inferior
-
-%o valor $0,5$ é comparado com seus elementos vizinhos, o
-
-
-%Um exemplo é mostrado na Figura \ref{fig:exemplomatrixrank} abaixo, onde utiliza-se uma máscara de largura igual a 3.
-
+Na Figura~\ref{fig:exemplomatrixrank} é apresentado um quadro de dimensões 3~x~3 destacado na matriz de similaridades, que contém os valores $\{0,3; 0,4; 0,4; 0,6; 0,5; 0,2; 0,9; 0,5; 0,7\}$, onde cada elemento da matrix é a similaridade entre duas unidades de informação. Tomando como exemplo o elemento com valor $0,5$, a mesma posição na matriz de \textit{ranks} terá o valor $4$, pois esse é o número de vizinhos com valores inferiores a $0,5$ dentro do quadro analisado na matriz de similaridades. 
 
 
   \begin{figure}[!h]
@@ -142,39 +122,60 @@ Na Figura~\ref{fig:exemplomatrixrank} é apresentado um quadro de dimensões 3~x
 
 
 
-
-%\begin{equation}
-%r(x,y) = \frac
-%{Numero\ de\ elementos\ com\ similaridade\ menor}
-%{Numero\ de\ elementos\ examinados}
-%\label{equ:ranklocal}
-%\end{equation}
-
-
-% Clustering Reynar maximization
-	
-Finalmente, utiliza um método de divisão por \textit{clustering} baseado no algoritmo de maximização de Reynar~\cite{Reynar1998} para identificar os limites entre os segmentos. %Essa abordagem apresenta uma redução taxa de erros de 22\% para 10\%. Por outro lado, exige que a quantidade de segmentos seja conhecida.
-%Como melhoramento, os autores apresentam posteriormente uma versão do \textit{C99} que utiliza \textit{Latent Semantic Analisys} (LSA) para calcular as similaridades ao invês de cosseno~\cite{Choi2001-LSA}.
-
-
-
+Finalmente, utiliza um método de divisão por \textit{clustering} baseado no algoritmo de maximização de Reynar~\cite{Reynar1998} para identificar os limites entre os segmentos. 
 
 \subsection{Medidas de Avaliação}
+
+%%%%%%%%%%%%%%%
+% Medidas de avaliação tradicionais 
+%%%%%%%%%%%%%%%
+%
+% Utilizadas em RI e Classificação 
+%%% 
+As medidas de avaliação tradicionais como acurácia e precisão são usadas em recuperação de informação e classificação automática para medir o desempenho de modelos de classificação e predição.
+%
+% Baseadas em Matriz de Confusão 
+%%% 
+Essas medidas são baseadas na comparação dos valores produzidos por uma hipótese com os valores reais. Uma matriz de confusão é uma tabela que permite a visualização do desempenho de um algoritmo. Na Tabela~\ref{tab:matrizconfusao} é apresentado a matriz de confusão para duas classes (Positivo e Negativo).
+
+
+\begin{table}[!h]
+	\centering
+	
+	\begin{tabular}{|c|c|c|}
+		\hline
+		                & Predição Positiva         & Predição Negativa        \\ \hline
+		Positivo real   & VP (Verdadeiro Positivo)  & FN (Falso Negativo)      \\ \hline
+		Negativo real   & FP (Falso Positivo)       & VN (Verdadeiro Negativo) \\ \hline
+	
+	\end{tabular}
+	
+	\caption{Matriz de confusão.}
+	\label{tab:matrizconfusao}
+
+\end{table}
+
 
 %%%%%%%%%%
 %	Avaliações baseadas em hits 
 %%%%%%%%%%
-
-As medidas de avaliação tradicionais baseiam se na contagem de acertos. Quando um fim de segmento extraído automaticamente coincide com o limite de referência, têm-se um acerto.
-
-Essas medidas de avaliação tentam computar os erros do algoritmo, isto é falsos positivos e falsos negativos, a fim de calcular sua eficiência. 
+Essas medidas de avaliação tentam computar os erros do algoritmo, isto é, falsos positivos e falsos negativos, a fim de calcular sua eficiência. 
 %
-% falso positivo
-Um falso positivo é um limite identificado pelo algoritmo que não corresponde a nenhum limite na segmentação de referência. 
+% Falso Positivo 
+%%%
+No contexo de segmentação textual, um falso positivo é um limite identificado pelo algoritmo que não corresponde a nenhum limite na segmentação de referência, ou seja, o algoritmo indicou que em determinado ponto entre duas sentenças há uma quebra de segmento, mas que na segmentação de referência, no mesmo ponto, não há. 
 %
-% falso negativo
-Um falso negativo é quando o algoritmo não identifica um limite existente na segmentação de referência.
-
+% Falso Negativo 
+%%% 
+De maneira semelhante, um falso negativo é quando o algoritmo não identifica um limite existente na segmentação de referência, ou seja, em determnado ponto entre duas sentenças, há na segmentação de referência um limite entre segmento, contudo, o algoritmo não o identificou.
+%
+% Verdadeiro Positivo 
+%%% 
+Um verdadeiro positivo é um ponto no texto indicado pelo algoritmo e pela segmentação de referência como uma quebra de segmentos, ou seja, o algoritmo e a referência concordam que em determinado ponto há uma transição de assunto.
+%
+% O Verdadeiro Negativo, que não existe 
+%%%
+Na avaliação de segmentadores, não há o conceito de verdadeiro negativo. Este seria um ponto no texto indicado pelo algoritmo e pela segmentação de referência onde não há uma quebra de segmentos. Uma vez que os algoritmos apenas indicam onde há um limite, essa medida não é necessária. % Não há ou não e necessário?
 
 Nesse sentido, 
 %
@@ -186,11 +187,10 @@ trazem alguns problemas na avaliação de segmentadores automáticos.
  	
 	
 Conforme o algoritmo aponta mais segmentos no texto, este tende a melhorar a revocação e ao mesmo tempo, reduzir a precisão. Esse problema de avaliação pode ser contornado utilizado a medida $F^1$ que é uma média harmônica entre precisão e revocação onde ambas tem a o mesmo peso. 
-%Por por outro lado, tem a desvantagem de ser mais difícil de interpretar. 
 
-%As medidas apresentadas acima falham ao não serem sensíveis a \textit{near misses}, ou seja, quando um limite não coincide exatamente com o esperado, mas está próximo a ele~\cite{Kern2009}. --> Reescrito por Rafael.
 Além dessas medidas, que consideram apenas se um segmento foi corretamente definido, pode-se também considerar a distância entre o segmento extraído automaticamente e o segmento de referência~\cite{Kern2009}.
 
+% As medidas de avaliação tradicionais baseiam se na contagem de acertos. Quando um fim de segmento extraído automaticamente coincide com o limite de referência, têm-se um acerto.
 
 Na Figura~\ref{fig:exemplosegmentacaozoom} é apresentado um exemplo com duas segmentações extraídas automaticamente e uma referência. Na Figura~\ref{fig:exemplosegmentacao}, em ambos os casos não há nenhum verdadeiro positivo, o que implica em zero para os valores de precisão, acurácia, e revocação, embora a segunda hipótese possa ser considerada superior à primeira se levado em conta a proximidade dos limites.
 
@@ -245,6 +245,36 @@ Com isso, demonstram em seu trabalho que, em relação a P$_k$, \textit{WindowDi
 
 
 
+%nesse exemplo, o valor $0,5$ é substituído por $4$ na matriz de ranks pois há 4 vizinhos com valor inferior
+%, o qual é calculado com a Equação~\ref{equ:ranklocal}. 
+
+%o valor $0,5$ é comparado com seus elementos vizinhos, o
+
+
+%Um exemplo é mostrado na Figura \ref{fig:exemplomatrixrank} abaixo, onde utiliza-se uma máscara de largura igual a 3.
+
+
+
+%Por por outro lado, tem a desvantagem de ser mais difícil de interpretar. 
+%As medidas apresentadas acima falham ao não serem sensíveis a \textit{near misses}, ou seja, quando um limite não coincide exatamente com o esperado, mas está próximo a ele~\cite{Kern2009}. --> Reescrito por Rafael.
+
+
+
+%
+
+% 1 cria uma matrix de similaridades
+% 2 cria a matrix de ranking
+% 3 aplica divisive clustering
+
+% mask = quadro
+% pegar um exemplo --> mostrar os numeros dentro do quatro e pq o resultado foi aquele
+
+% colocar os passos na imagem
+
+
+%Ela propõe um algoritmo baseado em janelas deslizante, para analisar blocos de texto adjacentes e identificar os limites com base nas similaridades dos blocos.
+
+% baixa complexidade computacional devido a simplicidade do algoritmo e baixa eficiência quando comparado a outros métodos mais sofisticados como apresentados em~\cite{Choi2000, Kern2009, Misra2009}.
 
 
 
@@ -257,11 +287,28 @@ Com isso, demonstram em seu trabalho que, em relação a P$_k$, \textit{WindowDi
 %apontam que a coesão léxica é um forte indicador da estrutura do texto, isto é, a mudança de tópicos é acompanhada de uma proporcional mudança de vocabulário. A partir disso, vários algoritmos foram propostos baseados na ideia de que um segmento pode ser identificado e delimitado pela análise das palavras que o compõe~\cite{Galley2003}~\cite{Boguraev2000}.
 
 
+%\begin{equation}
+%r(x,y) = \frac
+%{Numero\ de\ elementos\ com\ similaridade\ menor}
+%{Numero\ de\ elementos\ examinados}
+%\label{equ:ranklocal}
+%\end{equation}
+
+
+% Clustering Reynar maximization
+	
+
 %Finalmente, os limites são identificados sempre que a similaridade entre blocos adjacentes entre cada candidato ultrapassa um determinado \textit{threshold}.
 
 
 
 % Mensionar que existem duas abordagens principais - Baseada em coesão léxiam e em discursos [ver a pg 2 do Text Segmentation With Topic Moeling and Entity Coherence]
+
+%Essa abordagem apresenta uma redução taxa de erros de 22\% para 10\%. Por outro lado, exige que a quantidade de segmentos seja conhecida.
+%Como melhoramento, os autores apresentam posteriormente uma versão do \textit{C99} que utiliza \textit{Latent Semantic Analisys} (LSA) para calcular as similaridades ao invês de cosseno~\cite{Choi2001-LSA}.
+
+
+
 
 
 
@@ -271,4 +318,12 @@ Com isso, demonstram em seu trabalho que, em relação a P$_k$, \textit{WindowDi
 %outros tipos de abordagem
 %	Segmentação funcional
 %	Segementação temática
-	
+
+
+% número de predições corretas com número de total predições
+
+% apresenta um esquema de \textit{rankings} para contornar esse problema.
+
+
+% As medidas de avaliação tradicionais baseiam se na contagem de acertos. Quando um fim de segmento extraído automaticamente coincide com o limite de referência, têm-se um acerto.
+

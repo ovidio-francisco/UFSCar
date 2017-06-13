@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.4.21)  9 JUN 2017 08:35
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.4.21)  12 JUN 2017 23:36
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -795,20 +795,31 @@ LaTeX Warning: No \author given.
 
 LaTeX Warning: No \author given.
 
-(./project/resumo.tex) (./project/introducao.tex) (./project/referencial.tex
-[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
+(./project/resumo.tex) (./project/introducao.tex [1{/var/lib/texmf/fonts/map/pd
+ftex/updmap/pdftex.map}
 
 
-]
-<images/exemplo-matrix-rank-noborder.jpg, id=9, 366.168pt x 193.2018pt>
+]) (./project/referencial.tex
+Underfull \hbox (badness 2126) in paragraph at lines 86--87
+[]\OT1/ptm/m/n/10 O \OT1/ptm/m/it/10 Text-Ti-ling \OT1/ptm/m/n/10 pos-sui me-no
+r com-ple-xi-dade com-pu-ta-ci-o-
+ []
+
+[2] <images/exemplo-matrix-rank-noborder.jpg, id=19, 366.168pt x 193.2018pt>
 File: images/exemplo-matrix-rank-noborder.jpg Graphic file (type jpg)
 
 <use images/exemplo-matrix-rank-noborder.jpg>
 Package pdftex.def Info: images/exemplo-matrix-rank-noborder.jpg used on input 
-line 115.
+line 117.
 (pdftex.def)             Requested size: 232.19843pt x 122.51668pt.
- [2 <./images/exemplo-matrix-rank-noborder.jpg>]
-Underfull \hbox (badness 2818) in paragraph at lines 173--174
+
+Underfull \hbox (badness 2884) in paragraph at lines 135--140
+[]\OT1/ptm/m/n/10 As me-di-das de avalia[][]ao tra-di-ci-o-nais como acur[]acia
+
+ []
+
+
+Underfull \hbox (badness 2818) in paragraph at lines 188--189
 []\OT1/ptm/m/n/10 Na Fi-gura 2[] []e apre-sen-tado um exem-plo com duas
  []
 
@@ -816,26 +827,27 @@ Underfull \hbox (badness 2818) in paragraph at lines 173--174
 File: images/windiffzoom.jpg Graphic file (type jpg)
 
 <use images/windiffzoom.jpg>
-Package pdftex.def Info: images/windiffzoom.jpg used on input line 180.
+Package pdftex.def Info: images/windiffzoom.jpg used on input line 195.
 (pdftex.def)             Requested size: 242.52063pt x 61.00415pt.
 
 <images/windiff.jpg, id=21, 661.0296pt x 79.0152pt>
 File: images/windiff.jpg Graphic file (type jpg)
  <use images/windiff.jpg>
-Package pdftex.def Info: images/windiff.jpg used on input line 189.
+Package pdftex.def Info: images/windiff.jpg used on input line 204.
 (pdftex.def)             Requested size: 242.52063pt x 28.9892pt.
 
-Underfull \hbox (badness 6725) in paragraph at lines 208--209
+Underfull \hbox (badness 6725) in paragraph at lines 223--224
 []\OT1/ptm/m/n/10 P$[]$ []e uma me-dida de dis-si-mi-la-ri-dade en-tre as
  []
 
-) (./project/trabalhosrelacionados.tex [3 <./images/windiffzoom.jpg> <./images/
-windiff.jpg>]) (./project/atas.tex
+[3 <./images/exemplo-matrix-rank-noborder.jpg> <./images/windiffzoom.jpg> <./im
+ages/windiff.jpg>]) (./project/trabalhosrelacionados.tex) (./project/atas.tex
+[4]
 Underfull \hbox (badness 4279) in paragraph at lines 19--20
 []\OT1/ptm/m/n/10 A presen[]a de ru[]^^Pdos como cabe[]alhos, ro-dap[]es e
  []
 
-[4]) (./project/adaptacaoasatas.tex
+) (./project/adaptacaoasatas.tex
 Underfull \hbox (badness 5260) in paragraph at lines 32--33
 []\OT1/ptm/m/n/10 Nas subse[][]oes a se-guir ser[]ao apre-sen-ta-dos o pr[]e-
  []
@@ -845,13 +857,12 @@ Underfull \hbox (badness 1400) in paragraph at lines 48--50
 \OT1/ptm/m/n/10 te-mente cont[]em tre-chos que po-dem ser con-si-de-ra-
  []
 
-<images/pre-processamento.jpg, id=28, 838.332pt x 209.1012pt>
+[5] <images/pre-processamento.jpg, id=32, 838.332pt x 209.1012pt>
 File: images/pre-processamento.jpg Graphic file (type jpg)
 
 <use images/pre-processamento.jpg>
 Package pdftex.def Info: images/pre-processamento.jpg used on input line 131.
 (pdftex.def)             Requested size: 516.0pt x 128.70335pt.
- [5]
 LaTeX Font Info:    Try loading font information for OT1+pcr on input line 187.
 
 
@@ -867,20 +878,21 @@ File: omspcr.fd
 LaTeX Font Info:    Font shape `OMS/pcr/m/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 187.
 )
-(./project/avaliacao.tex <images/construcao.png, id=33, 110.814pt x 69.861pt>
+(./project/avaliacao.tex [6]
+<images/construcao.png, id=37, 110.814pt x 69.861pt>
 File: images/construcao.png Graphic file (type png)
 
 <use images/construcao.png>
 Package pdftex.def Info: images/construcao.png used on input line 64.
 (pdftex.def)             Requested size: 103.19843pt x 65.05957pt.
 ) (./project/resultados.tex)
-(./project/conclusao.tex [6 <./images/pre-processamento.jpg> <./images/construc
-ao.png>]
+(./project/conclusao.tex
 Underfull \hbox (badness 2922) in paragraph at lines 14--15
 []\OT1/ptm/m/n/10 A segmenta[][]ao de atas de reuni[]ao pode aju-dar na
  []
 
-) (./segmentacao.bbl)
+) (./segmentacao.bbl [7 <./images/pre-processamento.jpg> <./images/construcao.p
+ng>])
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -892,20 +904,18 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[7] (./segmentacao.aux)
+[8
 
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
- )
+] (./segmentacao.aux) )
 (\end occurred inside a group at level 1)
 
 ### simple group (level 1) entered at line 1061 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 6392 strings out of 494884
- 98611 string characters out of 6179236
- 202909 words of memory out of 5000000
- 9569 multiletter control sequences out of 15000+600000
+ 6393 strings out of 494884
+ 98631 string characters out of 6179236
+ 203918 words of memory out of 5000000
+ 9570 multiletter control sequences out of 15000+600000
  43387 words of font info for 81 fonts, out of 8000000 for 9000
  41 hyphenation exceptions out of 8191
  39i,16n,39p,775b,3414s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -921,10 +931,10 @@ ier/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb>
 </usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/te
 xlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dis
 t/fonts/type1/urw/times/utmri8a.pfb>
-Output written on segmentacao.pdf (7 pages, 425972 bytes).
+Output written on segmentacao.pdf (8 pages, 428871 bytes).
 PDF statistics:
- 82 PDF objects out of 1000 (max. 8388607)
- 55 compressed objects within 1 object stream
+ 85 PDF objects out of 1000 (max. 8388607)
+ 57 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  26 words of extra memory for PDF output out of 10000 (max. 10000000)
 
