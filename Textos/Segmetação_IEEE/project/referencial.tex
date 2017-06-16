@@ -124,6 +124,48 @@ Na Figura~\ref{fig:exemplomatrixrank} é apresentado um quadro de dimensões 3~x
 
 Finalmente, utiliza um método de divisão por \textit{clustering} baseado no algoritmo de maximização de Reynar~\cite{Reynar1998} para identificar os limites entre os segmentos. 
 
+
+
+
+\subsection{Segmentação de Referência} % Recordado da seção Documentos em 15-06-2017
+
+
+%%%%%%%%%% 
+% Necessidade de uma referência
+%%%%%%%%%%
+Para que se possa avaliar um segmentador automático de textos é preciso uma referência, isto é, um texto com os limites entre os segmento conhecidos. Essa referência, deve ser confiável, sendo uma segmentação legítima que é capaz de dividir o texto em porções relativamente independentes, ou seja, uma segmentação ideal.
+
+
+
+%%%%%%%%%%
+% Formas de conseguir a Segentanção de Referência
+%%%%%%%%%%
+Entre as abordagens mais comuns para se conseguir essas referências, encontramos: 
+
+\begin{itemize}
+
+% Concatenação
+\item A concatenação aleatória de documentos distintos, onde o ponto entre o final de um texto e o início do seguinte é um limite entre eles. 
+
+% Segmentação manual
+\item A segmentação manual dos documentos, nesse caso, pessoas capacitadas, também chamadas de juízes, ou mesmo o autor do texto, são consultadas e indicam manualmente onde há uma quebra de segmento. 
+% Mediador em conversas
+\item Em transcrição de conversas faladas em reuniões com múltiplos participantes, um mediador é responsável por encerrar um assunto e iniciar um novo, nesse caso o mediador anota manualmente o tempo onde há uma transição de tópico. 
+
+\end{itemize}
+
+% Não avaliar
+Em aplicações onde a segmentação é uma tarefa secundária e quando essas abordagens são custosas ou não se aplicam, é possível, ao invés de avaliar o segmentador, analisar seu impacto na aplicação final.
+
+
+
+
+
+
+
+
+
+
 \subsection{Medidas de Avaliação}
 
 %%%%%%%%%%%%%%%
@@ -132,12 +174,15 @@ Finalmente, utiliza um método de divisão por \textit{clustering} baseado no al
 %
 % Utilizadas em RI e Classificação 
 %%% 
-As medidas de avaliação tradicionais como acurácia e precisão são usadas em recuperação de informação e classificação automática para medir o desempenho de modelos de classificação e predição.
+As medidas de avaliação tradicionais como precisão e revocação são usadas em recuperação de informação e classificação automática para medir o desempenho de modelos de classificação e predição. São baseadas na comparação dos valores produzidos por uma hipótese com os valores reais. 
+
+
 %
 % Baseadas em Matriz de Confusão 
 %%% 
-Essas medidas são baseadas na comparação dos valores produzidos por uma hipótese com os valores reais. Uma matriz de confusão é uma tabela que permite a visualização do desempenho de um algoritmo. Na Tabela~\ref{tab:matrizconfusao} é apresentado a matriz de confusão para duas classes (Positivo e Negativo).
+Esses valores são apresentados em uma tabela que permite a visualização do desempenho de um algoritmo, a qual e chamada de matriz de confusão. Na Tabela~\ref{tab:matrizconfusao} é apresentado a matriz de confusão para duas classes (Positivo e Negativo).
 
+%Uma matriz de confusão é uma tabela que permite a visualização do desempenho de um algoritmo. 
 
 \begin{table}[!h]
 	\centering
@@ -159,40 +204,93 @@ Essas medidas são baseadas na comparação dos valores produzidos por uma hipó
 %%%%%%%%%%
 %	Avaliações baseadas em hits 
 %%%%%%%%%%
-Essas medidas de avaliação tentam computar os erros do algoritmo, isto é, falsos positivos e falsos negativos, a fim de calcular sua eficiência. 
+Essas medidas de avaliação tentam computar os erros do algoritmo, isto é, falsos positivos e falsos negativos, a fim de calcular seu desempenho. 
+
 %
 % Falso Positivo 
 %%%
-No contexo de segmentação textual, um falso positivo é um limite identificado pelo algoritmo que não corresponde a nenhum limite na segmentação de referência, ou seja, o algoritmo indicou que em determinado ponto entre duas sentenças há uma quebra de segmento, mas que na segmentação de referência, no mesmo ponto, não há. 
+No contexto de segmentação textual, um falso positivo é um limite identificado pelo algoritmo que não corresponde a nenhum limite na segmentação de referência, ou seja, o algoritmo indicou que em determinado ponto entre duas sentenças há uma quebra de segmento, mas que na segmentação de referência, no mesmo ponto, não há. 
+
 %
 % Falso Negativo 
 %%% 
-De maneira semelhante, um falso negativo é quando o algoritmo não identifica um limite existente na segmentação de referência, ou seja, em determnado ponto entre duas sentenças, há na segmentação de referência um limite entre segmento, contudo, o algoritmo não o identificou.
+De maneira semelhante, um falso negativo é quando o algoritmo não identifica um limite existente na segmentação de referência, ou seja, em determinado ponto entre duas sentenças, há na segmentação de referência um limite entre segmento, contudo, o algoritmo não o identificou.
+
 %
 % Verdadeiro Positivo 
 %%% 
 Um verdadeiro positivo é um ponto no texto indicado pelo algoritmo e pela segmentação de referência como uma quebra de segmentos, ou seja, o algoritmo e a referência concordam que em determinado ponto há uma transição de assunto.
+
 %
 % O Verdadeiro Negativo, que não existe 
 %%%
 Na avaliação de segmentadores, não há o conceito de verdadeiro negativo. Este seria um ponto no texto indicado pelo algoritmo e pela segmentação de referência onde não há uma quebra de segmentos. Uma vez que os algoritmos apenas indicam onde há um limite, essa medida não é necessária. % Não há ou não e necessário?
 
-Nesse sentido, 
-%
-a precisão, que é a proporção de limites corretamente identificados pelo algoritmo, e 
-%
-a revocação, que é a proporção de limites verdadeiros que foram identificados pelo algoritmo,
-%
-trazem alguns problemas na avaliação de segmentadores automáticos.
- 	
-	
-Conforme o algoritmo aponta mais segmentos no texto, este tende a melhorar a revocação e ao mesmo tempo, reduzir a precisão. Esse problema de avaliação pode ser contornado utilizado a medida $F^1$ que é uma média harmônica entre precisão e revocação onde ambas tem a o mesmo peso. 
 
+
+Nesse sentido, 
+%%%%%%%%%%%%%%%
+% Precisão 
+%%%%%%%%%%%%%%%
+%
+% Definição 
+%%% 
+a precisão, é a proporção de limites corretamente identificados pelo algoritmo. 
+%
+% Cálculo 
+%%% 
+É calculada dividindo-se o número de limites identificados automaticamente pelo número de candidatos a limite(Equação~\ref{equ:precisao}).
+% 
+\begin{equation}
+	Presis\tilde{a}o = \frac{VP}{VP+FP}
+	\label{equ:precisao}
+\end{equation}
+%
+% Ideia 
+%%% 
+Essa medida varia entre $0,0$ e $1,0$, que indica a proporção de limites identificados pelo algoritmo que são corretos, ou seja, correspondem a um limite real na segmentação de referência. Porém não diz nada sobre quantos limites reais existem. 
+
+
+
+%%%%%%%%%%%%%%%
+% Revocação 
+%%%%%%%%%%%%%%% 
+%
+% Definição 
+%%% 
+A revocação, é a proporção de limites verdadeiros que foram identificados pelo algoritmo.
+%
+% Cálculo 
+%%%
+É calculada dividindo-se o número de limites identificados automaticamente pelo número limites verdadeiros.
+
+
+% 
+\begin{equation}
+	Revo\c{c}\tilde{a}o = \frac{VP}{VP+FN}
+	\label{equ:revocacao}
+\end{equation}
+%
+% Ideia 
+%%% 
+Pode variar entre $0,0$ e $1,0$, onde indica que a proporção de limites corretos que foram identificados. Porém não diz nada sobre quantos limites foram indentificados incorretamente. 
+
+%%%%%%%%%%%%%%%
+% Relação inversa entre precisão e revocação 
+%%%%%%%%%%%%%%% 
+Existe uma relação inversa entre precisão e revocação. Conforme o algoritmo aponta mais segmentos no texto, este tende a melhorar a revocação e ao mesmo tempo, reduzir a precisão. 
+%
+% Pode ser contornado com F1 
+%%% 
+Esse problema de avaliação pode ser contornado utilizado a medida $F^1$ que é uma média harmônica entre precisão e revocação onde ambas tem a o mesmo peso. 
+
+%%%%%%%%%%%%%%%
+% Medidas que consideram a distancia entre os segmentos 
+%%%%%%%%%%%%%%% 
 Além dessas medidas, que consideram apenas se um segmento foi corretamente definido, pode-se também considerar a distância entre o segmento extraído automaticamente e o segmento de referência~\cite{Kern2009}.
 
-% As medidas de avaliação tradicionais baseiam se na contagem de acertos. Quando um fim de segmento extraído automaticamente coincide com o limite de referência, têm-se um acerto.
 
-Na Figura~\ref{fig:exemplosegmentacaozoom} é apresentado um exemplo com duas segmentações extraídas automaticamente e uma referência. Na Figura~\ref{fig:exemplosegmentacao}, em ambos os casos não há nenhum verdadeiro positivo, o que implica em zero para os valores de precisão, acurácia, e revocação, embora a segunda hipótese possa ser considerada superior à primeira se levado em conta a proximidade dos limites.
+Na Figura~\ref{fig:exemplosegmentacaozoom} é apresentado um exemplo com duas segmentações extraídas automaticamente e uma referência. Em ambos os casos não há nenhum verdadeiro positivo, o que implica em zero para os valores de precisão, acurácia, e revocação, embora a segunda hipótese possa ser considerada superior à primeira se levado em conta a proximidade dos limites.
 
 
 
@@ -205,33 +303,61 @@ Na Figura~\ref{fig:exemplosegmentacaozoom} é apresentado um exemplo com duas se
 
   \end{figure}
   
-  \begin{figure}[!h]
-
-	\centering
-	\includegraphics[width=0.47\textwidth]{windiff.jpg}
-	\caption{
-	Exemplo de duas segmentações hipotéticas em comparação a uma ideal. 
-	}
-	\label{fig:exemplosegmentacao}
-
-  \end{figure}
-  
 
 Considerando o conceito de \textit{near misses}, algumas soluções foram propostas. As medidas de avaliação mais utilizadas são:
 
 \begin{enumerate}
 
-	\item Em~\cite{Beeferman1999} é apresentada uma medida denominada P$_k$, aqual atribui valores parciais a \textit{near misses}, ou seja, limites sempre receberão um peso proporcional à sua proximidade, desde que dentro de um janela de tamanho~$k$.
+%%%%%%%%%%%%%%%
+% Pk 
+%%%%%%%%%%%%%%% 
+\item Em~\cite{Beeferman1999} é apresentada uma medida denominada P$_k$, 
 %
-Para isso, esse método move uma janela de tamanho $k$ e a cada posição verifica se o início e o final da janela estão ou não dentro do mesmo segmento e penaliza o algoritmo em caso de discrepância. Ou seja, dado duas palavras de distancia $k$, uma discrepância é computada quando o algoritmo e a referência não concordam se as palavras estão ou não no mesmo segmento.
-
+% Valores Parciais 
+%%% 
+aqual atribui valores parciais a \textit{near misses}, ou seja, limites sempre receberão um peso proporcional à sua proximidade, desde que dentro de um janela de tamanho~$k$.
+%
+% Funcionamento 
+%%% 
+Para isso, esse método move uma janela de tamanho $k$ ao longo do texto. 
+%
+% Compara hipotese e referência		
+%%% 
+A cada passo verifica, na referência e na hipótese, se o início e o final da janela estão ou não dentro do mesmo segmento,
+%
+% Penalisa em caso de discrepânica 
+%%% 
+então, penaliza o algoritmo caso não concorde com a referência. Ou seja, dado duas palavras de distancia $k$, o algoritmo é penalizado quando não concordar com a segmentação de referência se as palavras estão ou não no mesmo segmento.
+%
+% Calculo de k 
+%%% 
 O valor de $k$ é calculado como a metade da média dos comprimentos dos segmentos reais. Como resultado, é retornado a contagem de discrepâncias divida pelo quantidade de segmentações analisadas. 
-
+%
+% Medida de dissimilaridade e interpretação 
+%%% 
 P$_k$ é uma medida de dissimilaridade entre as segmentações e pode ser interpretada como a probabilidade de duas sentenças extraídas aleatoriamente pertencerem ao mesmo segmento.
 
-\item \textit{WindowDiff}. Pevzner~\cite{Pevzner2002} aponta problemas na avaliação mais tradicional, P$_k$~\cite{Beeferman1999}. Eles apontam que esse método penaliza demasiadamente os falsos negativos em relação aos falsos positivos e a \textit{near misses}, além disso, desconsidera o tamanho dos segmentos. Como solução, propõem um método, que traz duas diferenças principais: a dobra da penalidade para os falsos positivos a fim de diminuir o problema da subestimação dessa medida e, diferente de P$_k$, ao mover a janela pelo texto, penaliza-se o algoritmo sempre que o número de limites proposto pelo algoritmo não coincidir com o número de limites esperados para aquela janela de texto. 
-
-Com isso, demonstram em seu trabalho que, em relação a P$_k$, \textit{WindowDiff} consegue resolver seus principais problemas e mantém sua proposta inicial de sensibilidade a \textit{near misses}, penalizando-os menos que os falsos positivos puros.
+%%%%%%%%%%%%%%%
+% WindowDiff 
+%%%%%%%%%%%%%%% 
+\item \textit{WindowDiff}. Pevzner~\cite{Pevzner2002} 
+%
+% Medida alternativa que considera outros aspectos 
+%%%
+apresenta uma medida alternativa à P$_k$~\cite{Beeferman1999} a fim de melhorar alguns aspectos. 
+%
+% Funcionamento do Windiff 
+%%% 
+De maneira semelhante, move uam janela pelo texto e penaliza o algoritmo sempre que o número de limites proposto pelo algoritmo não conicidir com o número de limites epeperados para aquela janela. Ou seja, o algoritmo é penalizado quando não concordar com a segmentação de referência quanto ao número de segmentos na janela. 
+%
+% Solução para considerar o tamanho das sentenças 
+%%% 
+Assim, consegue manter a sensiblidade a \textit{near misses} e além disso, considerar o tamanho das janelas.
+%
+% Solução para equilibrar falsos positivos e near missses 
+%%% 
+A fim de melhor equilibrar o peso dos falsos positivos em relação a \textit{near misses}, dobra-se a penalidade para falsos positivos, evitando-se a suparvalorização dessa medida. 
+% OBS: Os problemas de Pk ficaram subentendidos aqui :/ 
 
 
 \end{enumerate}
@@ -241,6 +367,17 @@ Com isso, demonstram em seu trabalho que, em relação a P$_k$, \textit{WindowDi
 
 
 
+
+%
+% Problemas do Pk 
+%%% 
+% aponta problemas na avaliação mais tradicional, P$_k$~\cite{Beeferman1999}. Eles apontam que esse método penaliza demasiadamente os falsos negativos em relação aos falsos positivos e a \textit{near misses}, além disso, desconsidera o tamanho dos segmentos. 
+%
+% Soluções do WinDiff 
+%%%
+% Como solução, propõem um método, que traz duas diferenças principais: a dobra da penalidade para os falsos positivos a fim de diminuir o problema da subestimação dessa medida e, diferente de P$_k$, ao mover a janela pelo texto, penaliza-se o algoritmo sempre que o número de limites proposto pelo algoritmo não coincidir com o número de limites esperados para aquela janela de texto. 
+
+% Com isso, demonstram em seu trabalho que, em relação a P$_k$, \textit{WindowDiff} consegue resolver seus principais problemas e mantém sua proposta inicial de sensibilidade a \textit{near misses}, penalizando-os menos que os falsos positivos puros.
 
 
 
@@ -326,4 +463,28 @@ Com isso, demonstram em seu trabalho que, em relação a P$_k$, \textit{WindowDi
 
 
 % As medidas de avaliação tradicionais baseiam se na contagem de acertos. Quando um fim de segmento extraído automaticamente coincide com o limite de referência, têm-se um acerto.
+
+% Essa medida varia entre $0,0$ e $1,0$, sendo $1,0$ uma pontuação onde todos os limites identificados pelo algoritmo são corretos, ou seja, correspondem a um limite real na segmentação de referência. Porém não diz nada sobre quantos limites reais existem. 
+
+
+% As medidas de avaliação tradicionais baseiam se na contagem de acertos. Quando um fim de segmento extraído automaticamente coincide com o limite de referência, têm-se um acerto.
+% https://mineracaodedados.wordpress.com/tag/matriz-de-confusao/
+
+
+% 		este e a referência não concordam se as palavras estão ou não no mesmo segmento.  uma discrepância é computada quando o algoritmo e a referência não concordam se as palavras estão ou não no mesmo segmento.
+
+
+% \item \textit{WindowDiff}. Pevzner~\cite{Pevzner2002} aponta problemas na avaliação mais tradicional, P$_k$~\cite{Beeferman1999}. Eles apontam que esse método penaliza demasiadamente os falsos negativos em relação aos falsos positivos e a \textit{near misses}, além disso, desconsidera o tamanho dos segmentos. Como solução, propõem um método, que traz duas diferenças principais: a dobra da penalidade para os falsos positivos a fim de diminuir o problema da subestimação dessa medida e, diferente de P$_k$, ao mover a janela pelo texto, penaliza-se o algoritmo sempre que o número de limites proposto pelo algoritmo não coincidir com o número de limites esperados para aquela janela de texto. 
+
+%  \begin{figure}[!h]
+%
+%	\centering
+%	\includegraphics[width=0.47\textwidth]{windiff.jpg}
+%	\caption{
+%	Exemplo de duas segmentações hipotéticas em comparação a uma ideal. 
+%	}
+%	\label{fig:exemplosegmentacao}
+%
+%  \end{figure}
+  
 

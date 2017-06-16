@@ -35,9 +35,10 @@ As próximas subseções mostram o conjunto de atas e a segmentação usada como
 %%%%%%%%%%
 % Como foram obtidas (software e especialistas)
 %%%%%%%%%%
-	A fim de obter um conjunto de documentos segmentados que possam servir como referência na avaliação, seis atas de reunião foram coletadas junto ao departamento de pós-graduação da UFSCar-Sorocaba\footnote{\urlatas}. Os documentos foram oferecidos à profissionais que participam de reuniões desse departamento e por meio de um \textit{software} segmentaram o texto das atas conforme o julgamento de cada um. Os segmentos gerados manualmente foram comparados à segmentação automática conforme os critérios descritos a seguir.
+A fim de obter um conjunto de documentos segmentados que possam servir como referência na avaliação, foram coletadas as atas de reuniões do Conselhos de Pós Graduação, Conselho de Cursos e Conselho de Departamento de da UFSCar-Sorocaba. Os documentos foram oferecidos à profissionais que participam de reuniões desse departamento para segmentá-las. Para isso, utilizou-se um \textit{software} que permitiu aos voluntários visualizar um documento, e indicar livremente as divisões entre segmentos com um assunto relativamente independente. Ao final, o software coletou os dados da segmentação de doze das os quais serviram como referência para a avaliação dos algoritmos.
 
-
+Os arquivos gerados foram tratados para que os segmentos sempre terminem em uma sentença reconhecida pelo algoritmo, uma vez que as sentenças são a unidade mínima de informação nesse trabalho.
+  
 
 \subsection{Configuração experimental}
 	\label{subsec:configuracaoexperimental}
@@ -55,6 +56,13 @@ O \textit{C99} permite ajustarmos três parâmetros, sendo, a quantidade segment
  Considerando todos os parâmetros, foram gerados 20 modelos para o algoritmo C99.% By Rafael 
 
 
+\subsection{Critérios de avaliação}
+
+
+Os critérios vão aqui 
+
+
+
 \subsection{Resultados}
 	\label{subsec:resultados}
 	
@@ -68,6 +76,9 @@ O \textit{C99} permite ajustarmos três parâmetros, sendo, a quantidade segment
   \end{figure}
 
 	
+
+% seis atas de reunião foram coletadas junto ao departamento de pós-graduação da UFSCar-Sorocaba\footnote{\urlatas}. Os documentos foram oferecidos à profissionais que participam de reuniões desse departamento e por meio de um \textit{software} segmentaram o texto das atas conforme o julgamento de cada um. Os segmentos gerados manualmente foram comparados à segmentação automática conforme os critérios descritos a seguir.
+
 
 %%%%%%%%%%
 % Objetivos
@@ -237,3 +248,4 @@ O \textit{C99} permite ajustarmos três parâmetros, sendo, a quantidade segment
 
 
 
+% para remoção de ruídos e ajustes 
