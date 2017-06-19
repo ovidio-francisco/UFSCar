@@ -51,55 +51,95 @@ As implementações dos algoritmos permitem ao usuário a configuração de seus
 O \textit{TextTiling} permite ajustarmos dois parâmetros, sendo, o tamanho da janela (distância entre a primeira e a última sentença) para o qual atribuiu-se os valores 20, 40 e 60. Para o segundo parâmetro, o passo (distância que a janela desliza), atribuiu-se os valores 3, 6, 9 e 12. Gerando ao final 20 modelos.
 %
 
-O \textit{C99} permite ajustarmos três parâmetros, sendo, a quantidade segmentos desejados, o qual é calculado como uma proporção dos candidatos a limite. Para isso atribuiu-se as proporções {0,2; 0,4; 0,6; 0,8; 1,0}. O segundo parâmetro, o tamanho do quadro utilizado para gerar a matriz de ranking, atribuiu-se os valores 9 e 11, sendo 11 o valor padrão da apresentado pelo autor. Permite ainda, definirmos se as sentenças serão representados por vetores contendo a frequência ou o peso de cada termo, onde ambas as representações foram utilizadas.
-%
- Considerando todos os parâmetros, foram gerados 20 modelos para o algoritmo C99.% By Rafael 
+O \textit{C99} permite ajustarmos três parâmetros, sendo, a quantidade segmentos desejados, o qual é calculado como uma proporção dos candidatos a limite. Para isso atribuiu-se as proporções {0,2; 0,4; 0,6; 0,8; 1,0}. O segundo parâmetro, o tamanho do quadro utilizado para gerar a matriz de ranking, atribuiu-se os valores 9 e 11, sendo 11 o valor padrão da apresentado pelo autor. Permite ainda, definirmos se as sentenças serão representados por vetores contendo a frequência ou o peso de cada termo, onde ambas as representações foram utilizadas. Considerando todos os parâmetros, foram gerados 20 modelos para o algoritmo C99.
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+% ==============================================================================
+% ==  Critérios de Avaliação                                                  ==
+% ==============================================================================
 \subsection{Critérios de avaliação}
 
+%%%%%%%%%%%%%%%
+% Testes estatísticos para encontrar os melhores parâmetros 
+%%%%%%%%%%%%%%% 
+A fim de encontrar a melhor configuração que divida uma ata em segmentos coerentes, realizou-se testes com o \textit{TextTiling} e \textit{C99} a fim de encontrar os melhores parâmetros para esses documentos.
 
-Os critérios vão aqui 
+
+
+%%%%%%%%%%%%%%%
+% Medidas calculadas pela comparação com a referência 
+%%%%%%%%%%%%%%% 
+Os algoritmos \textit{TextTiling} e \textit{C99} foram comparados com a segmentação fornecida pelos especialistas e calculou-se as medidas tradicionais acurácia, precisão, revocação, $F^1$. Além dessas, computou-se também as medidas mais aplicadas à segmentação textual, P$_k$ e \textit{WindowDiff}.
+
+
+
+%%%%%%%%%%
+% Teste de Friedman e CD
+% 1ª Etapa
+%%%%%%%%%%
+%
+% Teste de Friedman em múltilas atas  
+%%%
+O teste de Friedman foi utilizado para avaliar o desempenho dos algoritmos considerando a base de dados de atas. 
+%
+% Testa o rankings médios e testa hip. nula 
+%%%
+O teste comparou os ranks médios dos algoritmos em cada ata e testou a hipótese nula de que todos os algoritmos são são equivalentes. 
+
+%
+% Se a hip. nula for rejeitada, executa Nemenyi  
+%%%
+Quando a hipótese nula é rejeitada, executa-se o pos-teste de Nemenyi a fim de saber se há diferença significativa entre os algoritmos. O teste considera significamente diferente dois algoritmos cujos rankings médios diferem em um valor mínimo, chamado de diferença crítica.
+%
+% O digrama CD mostra se há diferença significativa e ordenas os melhores.
+%%%
+Os resultados desse teste podem ser visualizados graficamente pelo diagrama de difença crítica, o qual apresenta os melhores algoritmos ordenados no eixo $X$.
+% TODO: colocar uma imagem do digramca CD 
+% TODO: colocar a referência  
+
+
+%
+%%% 
+Com a análise do diagrama de diferença crítica, foi possível verificar qual é a melhor configuração para cada medida em relação às demais.
+
+
+
+% Executou-se o procedimento para ambos os algoritmos com e sem pré-processamento. 
+% 1ª Rodada
+	% TextTiling com todos os paramentros e SEM preprocess em todas as medidas
+	% C99        com todos os paramentros e SEM preprocess em todas as medidas
+	% TextTiling com todos os paramentros e COM preprocess em todas as medidas
+	% C99        com todos os paramentros e COM preprocess em todas as medidas
+
+% Dúvida: Mostrar um CD aqui?
+
+Uma vez sabendo quais valores de parâmetros melhor configuram um algoritmo para uma medida, resta então saber qual dos dois algoritmos é mais eficiente segundo essa medida. Para isso aplicou-se novamente o teste de Friedman com pós-teste de Nemenyi, dessa vez, com os melhores modelos dos dois algoritmos para cada medida. O resultado segue na Tabela~\ref{tab:melhoresmodelos}
+
+
+% Na análise do diagrama de diferença crítica verificou-se que o algoritmo \textit{C99} apresenta melhor eficiência em todas as medidas e os valores das quatro primeiras os valores de \texttt{S}, \texttt{M} e \texttt{W} se repetiram, sugerindo uma configuração otimizada para o problema da segmentação de atas de reunião.
 
 
 
 \subsection{Resultados}
 	\label{subsec:resultados}
 	
-	
-  \begin{figure}[!h]
-	\centering
-	\includegraphics[width=0.2\textwidth]{construcao.png}
-%	\caption{Exemplo de pré-processamento.}
-	\\Em Construção
-	\label{fig:emconstrucao}
-  \end{figure}
-
-	
-
-% seis atas de reunião foram coletadas junto ao departamento de pós-graduação da UFSCar-Sorocaba\footnote{\urlatas}. Os documentos foram oferecidos à profissionais que participam de reuniões desse departamento e por meio de um \textit{software} segmentaram o texto das atas conforme o julgamento de cada um. Os segmentos gerados manualmente foram comparados à segmentação automática conforme os critérios descritos a seguir.
 
 
-%%%%%%%%%%
-% Objetivos
-%%%%%%%%%%
-%A fim de encontrar o melhor método que divida uma ata em segmentos coerentes, realizou-se experimentos com o \textit{TextTiling} e \textit{C99} a fim de encontrar os melhores parâmetros para esses documentos.
-
-%%%%%%%%%%
-% Teste de Fiedman e CD
-% 1ª Etapa
-%%%%%%%%%%
-%Em seguida aplicou-se o teste de Friedman para saber se há diferenças significativas entre a eficácia dos modelos. O pós-teste de Nemenyi foi aplicado para descobrir quais diferenças são significativas. 
-%
-%Exite diferença quando seus \textit{rankings} médios diferirem em um valor mínimo, chamado de diferença critica (CD). 
-%
-
-%%%%%%%%%%
-% 
-%%%%%%%%%%
-%Com isso foi possível, pela análise do diagrama de diferença crítica, verificar qual é o melhor modelo para cada medida
-% e quão significativamente 
-%em relação aos demais. 
 
 %%%%%%%%%%
 % Dados obtidos com o C99
@@ -158,7 +198,6 @@ Os critérios vão aqui
 %\end{table}
 
 
-%Uma vez sabendo quais valores de parâmetros melhor configuram um algoritmo para uma medida, resta então saber qual dos dois algoritmos é mais eficiente segundo essa medida. Para isso aplicou-se novamente o teste de Friedman com pós-teste de Nemenyi, dessa vez, com os melhores modelos dos dois algoritmos para cada medida. O resultado segue na Tabela~\ref{tab:melhoresmodelos}
 
 %\begin{table}[!h]
 %	\centering
@@ -186,24 +225,12 @@ Os critérios vão aqui
 %\end{table}
 
 
-%Na análise do diagrama de diferença crítica verificou-se que o algoritmo \textit{C99} apresenta melhor eficiência em todas as medidas e os valores das quatro primeiras os valores de \texttt{S}, \texttt{M} e \texttt{W} se repetiram, sugerindo uma configuração otimizada para o problema da segmentação de atas de reunião.
 
 
 
 
 %tópicos retornando segmentos  que retorne segmentos coerentes 
 
-
-
-
-%%%%%%%%%%
-% Cálculo das medidas para cada modelo
-%%%%%%%%%%
-
-% --> Isso já foi falado no texto
-% Pela comparação dos resultados com a segmentação fornecida pelos especialistas, calculou-se para cada modelo as medidas tradicionais acurácia, precisão, revocação, F-medida. 
-
-% Além dessas, computou-se também as métricas mais aplicadas à segmentação textual P$_k$ e \textit{WindowDiff}.
 
 
 
@@ -248,4 +275,29 @@ Os critérios vão aqui
 
 
 
-% para remoção de ruídos e ajustes 
+% para remoção de ruídos e ajustes
+
+
+
+
+% seis atas de reunião foram coletadas junto ao departamento de pós-graduação da UFSCar-Sorocaba\footnote{\urlatas}. Os documentos foram oferecidos à profissionais que participam de reuniões desse departamento e por meio de um \textit{software} segmentaram o texto das atas conforme o julgamento de cada um. Os segmentos gerados manualmente foram comparados à segmentação automática conforme os critérios descritos a seguir.
+
+
+
+	
+  % \begin{figure}[!h]
+	% \centering
+	% \includegraphics[width=0.2\textwidth]{construcao.png}
+%	\caption{Exemplo de pré-processamento.}
+	% \\Em Construção
+	% \label{fig:emconstrucao}
+  % \end{figure}
+
+	
+
+
+
+
+
+
+
