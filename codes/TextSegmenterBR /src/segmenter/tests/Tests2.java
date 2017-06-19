@@ -16,61 +16,62 @@ public class Tests2 {
 		Tests.files.clear();
 		Tests.getFiles(folder);
 
-//		C99 Acuracy				C-40-11-t	C-40-9-t
-		TestSegmenterModel bestC99_Acuracy = new TestSegmenterModel(0.4, 11, true);
-		TestSegmenterModel viceC99_Acuracy = new TestSegmenterModel(0.4, 9, true);
-				
-//		C99 F1					C-60-9-t	C-80-9-t
-		TestSegmenterModel bestC99_F1 = new TestSegmenterModel(0.6, 9, true);
-		TestSegmenterModel viceC99_F1 = new TestSegmenterModel(0.8, 9, true);
-				
-//		C99 Precision			C-40-11-t	C-40-9-t
-		TestSegmenterModel bestC99_Precision = new TestSegmenterModel(0.4, 11, true);
-		TestSegmenterModel viceC99_Precision = new TestSegmenterModel(0.4, 9, true);
-				
-//		C99 Recall				C-100-9-f	C-100-9-t
-		TestSegmenterModel bestC99_Recall = new TestSegmenterModel(1.0, 9, false);
-		TestSegmenterModel viceC99_Recall = new TestSegmenterModel(1.0, 9, true);
-				
-//		C99 Pk					C-40-11-t	C-40-9-t
-		TestSegmenterModel bestC99_Pk = new TestSegmenterModel(0.4, 11, true);
-		TestSegmenterModel viceC99_Pk = new TestSegmenterModel(0.4, 9, true);
-				
-				
-//		C99 Windiff				C-40-11-t	C-40-9-t
-		TestSegmenterModel bestC99_Windiff = new TestSegmenterModel(0.4, 11, true);
-		TestSegmenterModel viceC99_Windiff = new TestSegmenterModel(0.4, 9, true);
-				
-				
-//		TextTiling Acuracy		TT-50-9		TT-60-12
-		TestSegmenterModel bestTT_Acuracy = new TestSegmenterModel(50, 9);
-		TestSegmenterModel viceTT_Acuracy = new TestSegmenterModel(60, 12);
-				
-				
-//		TextTiling F1			TT-50-3		TT-40-3
-		TestSegmenterModel bestTT_F1 = new TestSegmenterModel(50, 3);
-		TestSegmenterModel viceTT_F1 = new TestSegmenterModel(40, 3);
-				
-				
-//		TextTiling Precision	TT-60-12	TT-50-9
-		TestSegmenterModel bestTT_Precision = new TestSegmenterModel(60, 12);
-		TestSegmenterModel viceTT_Precision = new TestSegmenterModel(50, 9);
-				
-				
-//		TextTiling Recall		TT-50-3		TT-20-3
-		TestSegmenterModel bestTT_Recall = new TestSegmenterModel(50, 3);
-		TestSegmenterModel viceTT_Recall = new TestSegmenterModel(20, 3);
-				
-				
-//		TextTiling Pk			TT-30-9		TT-30-12
-		TestSegmenterModel bestTT_Pk = new TestSegmenterModel(30, 9);
-		TestSegmenterModel viceTT_Pk = new TestSegmenterModel(30, 12);
-				
-				
-//		TextTiling Windiff		TT-50-9		TT-60-12
-		TestSegmenterModel bestTT_Windiff = new TestSegmenterModel(50, 9);
-		TestSegmenterModel viceTT_Windiff = new TestSegmenterModel(60, 12);
 		
+		
+// ## Acuracy
+// ppC99 Acuracy           C9-60-9-t       |   0.609
+// ppTextTiling Acuracy    TT-40-9         |   0.603   
+// wpC99 Acuracy           C9-60-9-t       |   0.588   
+// wpTextTiling Acuracy    TT-50-6         |   0.612   
+		TestSegmenterModel acuracy_ppC9 = new TestSegmenterModel(0.6, 9, true);
+		TestSegmenterModel acuracy_ppTT = new TestSegmenterModel(40, 9); 
+		TestSegmenterModel acuracy_wpC9 = new TestSegmenterModel(0.6, 9, true);
+		TestSegmenterModel acuracy_wpTT = new TestSegmenterModel(50, 6); 		
+// ## F1
+// ppC99 F1                C9-80-11-t      |   0.655   
+// ppTextTiling F1         TT-40-3         |   0.648   
+// wpC99 F1                C9-80-9-t       |   0.638   
+// wpTextTiling F1         TT-30-6         |   0.605   
+		TestSegmenterModel f1_ppC9 = new TestSegmenterModel(0.8, 11, true);
+		TestSegmenterModel f1_ppTT = new TestSegmenterModel(40, 3);
+		TestSegmenterModel f1_wpC9 = new TestSegmenterModel(0.8, 9, true);
+		TestSegmenterModel f1_wpTT = new TestSegmenterModel(30, 6);
+// ## Precision
+// ppC99 Precision         C9-20-11-f      |   0.720   
+// ppTextTiling Precision  TT-50-12        |   0.613
+// wpC99 Precision         C9-40-9-t       |   0.645   
+// wpTextTiling Precision  TT-40-9         |   0.611   
+		TestSegmenterModel precision_ppC9 = new TestSegmenterModel(0.2, 11, false);
+		TestSegmenterModel precision_ppTT = new TestSegmenterModel(50, 12);
+		TestSegmenterModel precision_wpC9 = new TestSegmenterModel(0.4, 9, true);
+		TestSegmenterModel precision_wpTT = new TestSegmenterModel(40, 9);
+// ## Recall
+// ppC99 Recall            C9-80-11-t      |   0.897   
+// ppTextTiling Recall     TT-20-3         |   0.917   
+// wpC99 Recall            C9-80-9-t       |   0.869
+// wpTextTiling Recall     TT-20-3         |   0.886   
+		TestSegmenterModel recall_ppC9 = new TestSegmenterModel(0.8, 11, true);
+		TestSegmenterModel recall_ppTT = new TestSegmenterModel(20, 3);
+		TestSegmenterModel recall_wpC9 = new TestSegmenterModel(0.8, 9, true);
+		TestSegmenterModel recall_wpTT = new TestSegmenterModel(20, 3);
+// ## Pk
+// ppC99 Pk                C9-20-11-f      |   0.116   
+// ppTextTiling Pk         TT-50-9         |   0.144
+// wpC99 Pk                C9-20-9-t       |   0.134   
+// wpTextTiling Pk         TT-50-9         |   0.142   
+		TestSegmenterModel pk_ppC9 = new TestSegmenterModel(0.2, 11, false);
+		TestSegmenterModel pk_ppTT = new TestSegmenterModel(50, 9);
+		TestSegmenterModel pk_wpC9 = new TestSegmenterModel(0.2, 9, true);
+		TestSegmenterModel pk_wpTT = new TestSegmenterModel(50, 9);
+// ## Windiff
+// ppC99 Windiff           C9-60-9-t       |   0.390   
+// ppTextTiling Windiff    TT-40-9         |   0.396   
+// wpC99 Windiff           C9-60-9-t       |   0.411   
+// wpTextTiling Windiff    TT-50-6         |   0.387 
+		TestSegmenterModel windiff_ppC9 = new TestSegmenterModel(0.6, 9, true);
+		TestSegmenterModel windiff_ppTT = new TestSegmenterModel(40, 9);
+		TestSegmenterModel windiff_wpC9 = new TestSegmenterModel(0.6, 9, true);
+		TestSegmenterModel windiff_wpTT = new TestSegmenterModel(50, 6);
 		
 		
 		
@@ -81,36 +82,36 @@ public class Tests2 {
 		ArrayList<ArrayList<EvaluationData>> resultPk 			= new ArrayList<>();
 		ArrayList<ArrayList<EvaluationData>> resultWindiff 		= new ArrayList<>();
 		
-		resultAcuracy.add(Tests.testAll(folder, bestC99_Acuracy));
-		resultAcuracy.add(Tests.testAll(folder, viceC99_Acuracy));
-		resultAcuracy.add(Tests.testAll(folder, bestTT_Acuracy));
-		resultAcuracy.add(Tests.testAll(folder, viceTT_Acuracy));
+		resultAcuracy.add(Tests.testAll(folder, acuracy_ppC9));
+		resultAcuracy.add(Tests.testAll(folder, acuracy_ppTT));
+		resultAcuracy.add(Tests.testAll(folder, acuracy_wpC9));
+		resultAcuracy.add(Tests.testAll(folder, acuracy_wpTT));
 		
 
-		resultF1.add(Tests.testAll(folder, bestC99_F1));
-		resultF1.add(Tests.testAll(folder, viceC99_F1));
-		resultF1.add(Tests.testAll(folder, bestTT_F1));
-		resultF1.add(Tests.testAll(folder, viceTT_F1));
+		resultF1.add(Tests.testAll(folder, f1_ppC9));
+		resultF1.add(Tests.testAll(folder, f1_ppTT));
+		resultF1.add(Tests.testAll(folder, f1_wpC9));
+		resultF1.add(Tests.testAll(folder, f1_wpTT));
 	
-		resultPrecision.add(Tests.testAll(folder, bestC99_Precision));
-		resultPrecision.add(Tests.testAll(folder, viceC99_Precision));
-		resultPrecision.add(Tests.testAll(folder, bestTT_Precision));
-		resultPrecision.add(Tests.testAll(folder, viceTT_Precision));
+		resultPrecision.add(Tests.testAll(folder, precision_ppC9));
+		resultPrecision.add(Tests.testAll(folder, precision_ppTT));
+		resultPrecision.add(Tests.testAll(folder, precision_wpC9));
+		resultPrecision.add(Tests.testAll(folder, precision_wpTT));
 	
-		resultRecall.add(Tests.testAll(folder, bestC99_Recall));
-		resultRecall.add(Tests.testAll(folder, viceC99_Recall));
-		resultRecall.add(Tests.testAll(folder, bestTT_Recall));
-		resultRecall.add(Tests.testAll(folder, viceTT_Recall));
+		resultRecall.add(Tests.testAll(folder, recall_ppC9));
+		resultRecall.add(Tests.testAll(folder, recall_ppTT));
+		resultRecall.add(Tests.testAll(folder, recall_wpC9));
+		resultRecall.add(Tests.testAll(folder, recall_wpTT));
 	
-		resultPk.add(Tests.testAll(folder, bestC99_Pk));
-		resultPk.add(Tests.testAll(folder, viceC99_Pk));
-		resultPk.add(Tests.testAll(folder, bestTT_Pk));
-		resultPk.add(Tests.testAll(folder, viceTT_Pk));
+		resultPk.add(Tests.testAll(folder, pk_ppC9));
+		resultPk.add(Tests.testAll(folder, pk_ppTT));
+		resultPk.add(Tests.testAll(folder, pk_wpC9));
+		resultPk.add(Tests.testAll(folder, pk_wpTT));
 	
-		resultWindiff.add(Tests.testAll(folder, bestC99_Windiff));
-		resultWindiff.add(Tests.testAll(folder, viceC99_Windiff));
-		resultWindiff.add(Tests.testAll(folder, bestTT_Windiff));
-		resultWindiff.add(Tests.testAll(folder, viceTT_Windiff));
+		resultWindiff.add(Tests.testAll(folder, windiff_ppC9));
+		resultWindiff.add(Tests.testAll(folder, windiff_ppTT));
+		resultWindiff.add(Tests.testAll(folder, windiff_wpC9));
+		resultWindiff.add(Tests.testAll(folder, windiff_wpTT));
 	
 	
 		try {
