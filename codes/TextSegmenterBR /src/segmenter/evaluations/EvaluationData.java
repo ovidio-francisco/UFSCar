@@ -206,6 +206,10 @@ public class EvaluationData {
 			alg += "_";
 			alg += ((C99BR)getAlg()).isWeitght();
 		}
+		
+		String preprocess = "_" + (getAlg().getPreprocess().isRemoveStopWord() ? "T" : "F");
+		
+		alg = alg+preprocess;
 
 		return alg;
 	}

@@ -1,13 +1,13 @@
-WINDIFF DataSet\Algorithm,C99_60_9_true,TT_40_9,C99_60_9_true,TT_50_6
-Fabio/Ata 29 - 25a Reunião Odinária PPGCCS.txt.csv,0.352941,0.411765,0.352941,0.411765
-Fabio/Ata 36 - 31a Reunião Odinária PPGCCS.txt.csv,0.416667,0.416667,0.416667,0.416667
-Fabio/Ata 35 - 5a Reunião Extraodinária PPGCCS.txt.csv,0.222222,0.333333,0.222222,0.111111
-Fabio/Ata 33 - 29a Reunião Odinária PPGCCS.txt.csv,0.387097,0.387097,0.387097,0.451613
-Fabio/Ata 30 - 26a Reunião Odinária PPGCCS.txt.csv,0.600000,0.240000,0.600000,0.200000
-Fabio/Ata 32 - 28a Reunião Odinária PPGCCS.txt.csv,0.478261,0.347826,0.478261,0.565217
-Gustavo/Ata 29 - 25a Reunião Odinária PPGCCS.txt.csv,0.470588,0.470588,0.470588,0.411765
-Gustavo/Ata 36 - 31a Reunião Odinária PPGCCS.txt.csv,0.440000,0.400000,0.440000,0.400000
-Gustavo/Ata 35 - 5a Reunião Extraodinária PPGCCS.txt.csv,0.400000,0.600000,0.400000,0.600000
-Gustavo/Ata 33 - 29a Reunião Odinária PPGCCS.txt.csv,0.281250,0.437500,0.281250,0.437500
-Gustavo/Ata 30 - 26a Reunião Odinária PPGCCS.txt.csv,0.538462,0.576923,0.538462,0.538462
-Gustavo/Ata 32 - 28a Reunião Odinária PPGCCS.txt.csv,0.346154,0.384615,0.346154,0.423077
+WINDIFF DataSet\Algorithm,C99_60_9_true_T,TT_40_9_T,C99_60_9_true_F,TT_50_6_F
+Fabio/Ata 29 - 25a Reunião Odinária PPGCCS.txt.csv,0.470588,0.235294,0.352941,0.352941
+Fabio/Ata 36 - 31a Reunião Odinária PPGCCS.txt.csv,0.250000,0.416667,0.416667,0.333333
+Fabio/Ata 35 - 5a Reunião Extraodinária PPGCCS.txt.csv,0.222222,0.111111,0.222222,0.111111
+Fabio/Ata 33 - 29a Reunião Odinária PPGCCS.txt.csv,0.387097,0.483871,0.387097,0.451613
+Fabio/Ata 30 - 26a Reunião Odinária PPGCCS.txt.csv,0.520000,0.240000,0.600000,0.160000
+Fabio/Ata 32 - 28a Reunião Odinária PPGCCS.txt.csv,0.391304,0.391304,0.478261,0.521739
+Gustavo/Ata 29 - 25a Reunião Odinária PPGCCS.txt.csv,0.470588,0.470588,0.470588,0.352941
+Gustavo/Ata 36 - 31a Reunião Odinária PPGCCS.txt.csv,0.360000,0.320000,0.440000,0.400000
+Gustavo/Ata 35 - 5a Reunião Extraodinária PPGCCS.txt.csv,0.600000,0.600000,0.400000,0.600000
+Gustavo/Ata 33 - 29a Reunião Odinária PPGCCS.txt.csv,0.281250,0.406250,0.281250,0.437500
+Gustavo/Ata 30 - 26a Reunião Odinária PPGCCS.txt.csv,0.461538,0.576923,0.538462,0.500000
+Gustavo/Ata 32 - 28a Reunião Odinária PPGCCS.txt.csv,0.269231,0.500000,0.346154,0.423077

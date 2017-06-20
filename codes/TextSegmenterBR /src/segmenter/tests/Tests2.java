@@ -4,6 +4,7 @@ import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 
+import preprocessamento.Preprocess;
 import segmenter.evaluations.EvaluationData;
 import segmenter.tests.Tests.Metric;
 
@@ -15,6 +16,29 @@ public class Tests2 {
 
 		Tests.files.clear();
 		Tests.getFiles(folder);
+		
+		Preprocess myPreprocess = new Preprocess();
+		Preprocess noPreprocess = new Preprocess();
+
+		myPreprocess.setIdentifyEOS       (true);
+		myPreprocess.setRemoveAccents     (true);
+		myPreprocess.setRemoveHeaders     (true);
+		myPreprocess.setRemoveNumbers     (true);
+		myPreprocess.setRemovePunctuation (true);
+		myPreprocess.setRemoveShortThan   (true);
+		myPreprocess.setRemoveStem        (true);
+		myPreprocess.setRemoveStopWord    (true);
+		myPreprocess.setToLowCase         (true);			
+
+		noPreprocess.setIdentifyEOS       (true);
+		noPreprocess.setRemoveAccents     (false);
+		noPreprocess.setRemoveHeaders     (false);
+		noPreprocess.setRemoveNumbers     (false);
+		noPreprocess.setRemovePunctuation (false);
+		noPreprocess.setRemoveShortThan   (false);
+		noPreprocess.setRemoveStem        (false);
+		noPreprocess.setRemoveStopWord    (false);
+		noPreprocess.setToLowCase         (false);						
 
 		
 		
@@ -72,6 +96,36 @@ public class Tests2 {
 		TestSegmenterModel windiff_ppTT = new TestSegmenterModel(40, 9);
 		TestSegmenterModel windiff_wpC9 = new TestSegmenterModel(0.6, 9, true);
 		TestSegmenterModel windiff_wpTT = new TestSegmenterModel(50, 6);
+		
+		
+
+// With MyPreprocess
+		acuracy_ppC9   .setPreprocess(myPreprocess);
+		acuracy_ppTT   .setPreprocess(myPreprocess);
+		f1_ppC9        .setPreprocess(myPreprocess);
+		f1_ppTT        .setPreprocess(myPreprocess);
+		precision_ppC9 .setPreprocess(myPreprocess);
+		precision_ppTT .setPreprocess(myPreprocess);
+		recall_ppC9    .setPreprocess(myPreprocess);
+		recall_ppTT    .setPreprocess(myPreprocess);
+		pk_ppC9        .setPreprocess(myPreprocess);
+		pk_ppTT        .setPreprocess(myPreprocess);
+		windiff_ppC9   .setPreprocess(myPreprocess);
+		windiff_ppTT   .setPreprocess(myPreprocess);
+// Without Preprocess
+		acuracy_wpC9   .setPreprocess(noPreprocess);
+		acuracy_wpTT   .setPreprocess(noPreprocess);
+		f1_wpC9        .setPreprocess(noPreprocess);
+		f1_wpTT        .setPreprocess(noPreprocess);
+		precision_wpC9 .setPreprocess(noPreprocess);
+		precision_wpTT .setPreprocess(noPreprocess);
+		recall_wpC9    .setPreprocess(noPreprocess);
+		recall_wpTT    .setPreprocess(noPreprocess);
+		pk_wpC9        .setPreprocess(noPreprocess);
+		pk_wpTT        .setPreprocess(noPreprocess);
+		windiff_wpC9   .setPreprocess(noPreprocess);
+		windiff_wpTT   .setPreprocess(noPreprocess);
+		
 		
 		
 		
