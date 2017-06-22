@@ -1,0 +1,155 @@
+
+ 
+ Universidade Federal de São Carlos 
+
+Programa de Pós-Graduação em Ciência da 
+Computação - Campus Sorocaba 
+Rod. João Leme dos Santos (SP-264), Km 110, Itinga 
+18052-780, Sorocaba – SP 
+
+ 
+
+ 
+ 
+
+ Tel.: (15) 3229-5931 | Homepage: ht t p: / / www. ppgccs. net   |  E-mail: ppgccs@uf scar . br.  
+
+Ata da 25ª Reunião Ordinária da Comissão do Curso de Pós-Graduação em Ciência  
+da Computação da Universidade Federal de São Carlos campus Sorocaba a se  
+realizar:.  
+Local, Dia e Hora: No Laboratório de Redes e Segurança, situado nas dependências da  
+Universidade Federal de São Carlos - Campus Sorocaba, à Rodovia João Leme dos  
+Santos, quilômetro 110, Bairro do Itinga, na cidade de Sorocaba, Estado de São Paulo e  
+realizada no dia dez de dezembro de dois mil e quatorze, às 13h00. Convocação e  
+Presença: A convocação foi realizada dois dias antes da data da sua realização por e- 
+mail. Celebrou-se a primeira chamada às 13h05min e estavam presentes os seguintes  
+membros do Conselho do Curso de Pós-Graduação em Ciência da Computação da  
+UFSCar – Sorocaba: Prof. Dr. Alexandre Alvaro (presidindo a reunião), Profa. Dra.  
+Luciana Aparecida Martinez Zaina (representando a linha Arquiteturas Distribuídas de  
+Software), Profa. Dra. Katti Faceli e Profa. Dra. Cândida Nunes da Silva. Também  
+estavam presentes o Prof. Dr. Tiago Agostinho de Almeida, Prof. Dr. Murillo Rodrigo  
+Petrucelli Homem, o representante discente Johannes Von Lochter e o suplente discente  
+Gabriel Reis de Meira. O Prof. Alexandre agradeceu a presença de todos e iniciou a  
+reunião com a Comunicação da Presidência: (I) o Prof. Dr. Alexandre Alvaro informou  
+sobre a reunião do Fórum de Coordenadores de Pós-Graduação, ocorrida em novembro:  
+possibilidade de avaliação quadrienal dos programas, Plataforma Sucupira está aberta pra  
+inserção dos dados referentes a 2014 e entre março e abril estará disponível para ajustes  
+dos dados de 2013, a portaria PROAP está sendo revisada e deve ser divulgada uma nova  
+versão dando mais flexibilidade aos programas para utilização da verba; Comunicação  
+dos membros: (I) O Prof. Dr. Murillo Rodrigo Petrucelli Homem informou que irá se  
+transferir para o Departamento de Computação do campus de São Carlos, vindo em seu  
+lugar o Prof. Mario Augusto de Souza Lizier, para o DComp; Ordem do Dia: (I)  
+aprovada a ata da 4º reunião extraordinária e das reuniões 22º, 23º e 24º ordinárias; (II)  
+aprovada a convalidação das disciplinas Tópicos em Interface Humano-Computador -  
+conceito A, e Engenharia de Software - conceito B, cursadas como aluna especial por  
+Nathália Maria Rapuano de Lyra Novaes; (III) Aprovado a prorrogação de prazo para  
+defesa de dissertação dos alunos Anderson Parra de Paula, orientado pelo Prof. Dr.  
+Gustavo Maciel Dias Vieira, por 06 meses, André Breda Carneiro, orientado pela Prof.  
+Dra. Cândida Nunes da Silva, por 06 meses, Diego Heitzmann Quintale, orientado pela  
+Profa. Dra. Luciana Aparecida Martinez Zaina, por 06 meses, Elizeu Elieber Fachini,  
+orientado pelo Prof. Dr. Gustavo Maciel Dias Vieira, por 06 meses, Marcel Popolin de  
+Araújo Cunha, orientado pela Profa. Dra. Luciana Aparecida Martinez Zaina, por 06  
+meses; (IV) Homologado o relatório de defesa de dissertação do aluno Anderson Roque  
+do Amaral, orientado pela Profa. Dra. Luciana Aparecida Martinez Zaina; (V) Aprovado  
+o calendário de reuniões ordinárias da CPG para o primeiro semestre de 2015: a reunião  
+de janeiro ficou em aberto aguardando o retorno dos docentes das férias, dia 11 de  
+fevereiro, 11 de março, 08 de abril, 13 de maio, 10 de junho; (VI) Aprovado o relatório de  
+atividades do bolsista PNPD, Lucio Agostinho Rocha; (VII) Aprovado o calendário do  
+processo seletivo para alunos especiais do primeiro semestre de 2015: inscrições de 05 a  
+30 de janeiro, seleção dos aprovados de 02 a 19 de fevereiro, divulgação do resultado dia  
+20 de fevereiro; (IX) Aprovada a norma 4, sobre Avaliação de Credenciamento e  
+Permanência de Docentes (anexa a esta ata); (X) Devido a não divulgação do calendário acadêmico pela UFSCar e consequente adiamento da aprovação do calendário acadêmico  
+do PPGCCS, o prazo para rematrícula inicialmente marcado para os dias 22 e 23 de  
+dezembro, está cancelado, aguardando a divulgação do calendário para posterior  
+agendamento e divulgação das datas; 
+
+
+
+ 
+ <<cabeçalho>>. Universidade Federal de São Carlos 
+
+Programa de Pós-Graduação em Ciência da 
+Computação - Campus Sorocaba 
+Rod. João Leme dos Santos (SP-264), Km 110, Itinga 
+18052-780, Sorocaba – SP 
+
+ 
+
+ 
+ 
+
+ Tel.: (15) 3229-5931 | Homepage: ht t p: / / www. ppgccs. net   |  E-mail: ppgccs@uf scar . br  
+
+ Nada mais,  
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+Prof. Dr. Alexandre Alvaro 
+
+Presidente desta Reunião 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+Profa.Dra.Luciana Aparecida 
+
+Martinez Zaina 
+Professora Adjunta 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+       
+
+Profa. Dra. Katti Faceli 
+     Professora Adjunta 
+
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+
+Profa. Dra. Cândida Nunes da Silva 
+Professora Adjunta 
+
+          
+
+ 
+ 
+ 
+ 
+ 
+ 
+
+Johannes Von Lochter 
+ Representante Discente 
+
+  
+ 
+
+
+

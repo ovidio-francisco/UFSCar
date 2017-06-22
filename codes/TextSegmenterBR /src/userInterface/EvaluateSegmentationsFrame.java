@@ -8,9 +8,9 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.File;
 import java.io.FileFilter;
+import java.io.IOException;
 import java.util.ArrayList;
 
-import javax.print.attribute.standard.MediaSize;
 import javax.swing.JButton;
 import javax.swing.JCheckBox;
 import javax.swing.JComboBox;
@@ -34,6 +34,7 @@ import segmenter.algorithms.c99br.C99BR;
 import segmenter.algorithms.texttile.TextTilingBR;
 import segmenter.evaluations.Evaluation;
 import segmenter.evaluations.EvaluationData;
+import segmenter.tests.Tests3;
 import segmenter.tests.Tests;
 import segmenter.tests.Tests2;
 import utils.Files;
@@ -49,6 +50,7 @@ public class EvaluateSegmentationsFrame extends JFrame {
 	private JButton   btLoadFolder = new JButton("Load folder");
 	private JButton   btTests      = new JButton("Tests");
 	private JButton   btTests2     = new JButton("Tests 2");
+	private JButton   btTests3     = new JButton("Tests 3");
 
 	private JTabbedPane tpReal  = new JTabbedPane();
 	private JTabbedPane tpTest  = new JTabbedPane();
@@ -91,6 +93,8 @@ public class EvaluateSegmentationsFrame extends JFrame {
 		toolBar.add(btTests);
 		toolBar.addSeparator();
 		toolBar.add(btTests2);
+		toolBar.addSeparator();
+		toolBar.add(btTests3);
 		toolBar.addSeparator();
 		toolBar.addSeparator();
 		toolBar.add(btLoadFile);
@@ -230,13 +234,12 @@ public class EvaluateSegmentationsFrame extends JFrame {
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				
-				ArrayList<ArrayList<EvaluationData>> tests = Tests.doTestes(new File("./docs"));
+				ArrayList<ArrayList<EvaluationData>> tests = Tests.doTests(new File("./docs"));
 				
 				
 				showTests1(tests);
 				
 				
-				taOut.setText(taOut.getText() + Tests.medias(tests));
 
 				
 			}
@@ -249,6 +252,24 @@ public class EvaluateSegmentationsFrame extends JFrame {
 				Tests2.doTests();
 			}
 			
+		});
+		
+		btTests3.addActionListener(new ActionListener() {
+			
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				ArrayList<ArrayList<EvaluationData>> evaluations = Tests3.doTests(null, true);
+				
+				showTests1(evaluations);
+				
+				Tests3.createGreatTexTable(evaluations);
+				
+				try {
+					Tests3.createGreatCSV(evaluations);
+				} catch (IOException e1) {
+					e1.printStackTrace();
+				}
+			}
 		});
 		
 		setVisible(true);

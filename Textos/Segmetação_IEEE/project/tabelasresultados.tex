@@ -1,0 +1,156 @@
+% ========== TextTiling SEM preprocess =========== %
+% wpTextTiling Acuracy		TT-50-6			| 	0.612	
+% wpTextTiling Precision	TT-40-9			|	0.611	
+% wpTextTiling Recall		TT-20-3			| 	0.886	
+% wpTextTiling F1			TT-30-6			| 	0.605	
+% wpTextTiling Pk			TT-50-9			| 	0.142	
+% wpTextTiling Windiff		TT-50-6			| 	0.387	
+\begin{table}[!h]
+	\centering
+	\begin{tabular}{|l|c|c|c|} \hline
+		Medida & \textbf{J} & \textbf{P} & \textbf{Média}\\		\hline
+
+		Acuracy		& 50 & 6 & 0.612 \\ \hline	
+		Precision	& 40 & 9 & 0.611 \\ \hline			
+		Recall		& 20 & 3 & 0.886 \\ \hline		
+		F1			& 30 & 6 & 0.605 \\ \hline	
+		Pk			& 50 & 9 & 0.142 \\ \hline	
+		Windiff		& 50 & 6 & 0.387 \\ \hline		
+
+	\end{tabular}
+	\caption{Médias das medidas obtidas com o \textit{TextTiling}.}
+	\label{tab:TextTilingSemPreprocess}
+\end{table}
+
+
+% ========== C99 SEM preprocess =========== %
+% wpC99 Acuracy			C9-60-9-t		| 	0.588	
+% wpC99 Precision		C9-40-9-t		| 	0.645	
+% wpC99 Recall			C9-80-9-t       |   0.869
+% wpC99 F1				C9-80-9-t		| 	0.638	
+% wpC99 Pk				C9-20-9-t		| 	0.134	
+% wpC99 Windiff			C9-60-9-t		| 	0.411	
+
+\begin{table}[!h]
+	\centering
+
+	\begin{tabular}{|l|c|c|c|c|} \hline
+		\textbf{Medida} & \textbf{S} & \textbf{M} & \textbf{W} & \textbf{Média}\\	\hline
+
+		Acuracy		& 60 & 9 & Sim & 0.588 \\ \hline
+		Precision	& 40 & 9 & Sim & 0.645 \\ \hline
+		Recall		& 80 & 9 & Sim & 0.869 \\ \hline
+		F1			& 80 & 9 & Sim & 0.638 \\ \hline
+		Pk			& 20 & 9 & Sim & 0.134 \\ \hline
+		Windiff		& 60 & 9 & Sim & 0.411 \\ \hline
+		
+	\end{tabular}
+	
+	\caption{Médias das medidas obtidas com \textit{C99}. Onde \texttt{S} é a proporção de segmentos em relação a quantidade de candidatos, \texttt{M} é o tamanho do quadro utilizado para criar a matriz de \textit{ranking} e \texttt{W} indica se os segmentos são representados por vetores contendo a frequência ou um peso das palavras.}
+	\label{tab:C99SemPreprocess}
+\end{table}
+
+
+
+
+
+
+
+% ========== TextTiling COM preprocess =========== %
+% ppTextTiling Acuracy		TT-40-9			| 	0.603	
+% ppTextTiling Precision	TT-50-12		| 	0.613
+% ppTextTiling Recall		TT-20-3			| 	0.917	
+% ppTextTiling F1			TT-40-3			| 	0.648	
+% ppTextTiling Pk			TT-50-9			| 	0.144
+% ppTextTiling Windiff		TT-40-9			| 	0.396	
+
+% A tabelas~\ref{tab:mediasTextTiling} mostra os dados obtidos com o \textit{TextTiling}, onde \texttt{J} é o tamanho da janela e \texttt{P} é o passo.
+
+\begin{table}[!h]
+	\centering
+	\begin{tabular}{|l|c|c|c|} \hline
+		Medida & \textbf{J} & \textbf{P} & \textbf{Média}\\		\hline
+
+		Acuracy		& 40 & 9  & 0.603 \\ \hline	
+		Precision	& 50 & 12 & 0.613 \\ \hline			
+		Recall		& 20 & 3  & 0.917 \\ \hline		
+		F1			& 40 & 3  & 0.648 \\ \hline	
+		Pk			& 50 & 9  & 0.144 \\ \hline	
+		Windiff		& 40 & 9  & 0.396 \\ \hline		
+
+	\end{tabular}
+	\caption{Médias das medidas obtidas com o \textit{TextTiling}.}
+	\label{tab:TextTilingComPreprocess}
+\end{table}
+
+
+
+
+
+
+
+% ========== C99 COM preprocess =========== %
+% ppC99 Acuracy			C9-60-9-t		| 	0.609
+% ppC99 Precision		C9-20-11-f		| 	0.720	
+% ppC99 Recall			C9-80-11-t		| 	0.897	
+% ppC99 F1				C9-80-11-t		| 	0.655	
+% ppC99 Pk				C9-20-11-f		| 	0.116	
+% ppC99 Windiff			C9-60-9-t		| 	0.390 	
+\begin{table}[!h]
+	\centering
+
+	\begin{tabular}{|l|c|c|c|c|} \hline
+		\textbf{Medida} & \textbf{S} & \textbf{M} & \textbf{W} & \textbf{Média}\\	\hline
+
+		Acuracy		& 60 &  9 & Sim 	& 0.609 \\ \hline
+		Precision	& 20 & 11 & False 	& 0.720 \\ \hline
+		Recall		& 80 & 11 & Sim 	& 0.897 \\ \hline
+		F1			& 80 & 11 & Sim 	& 0.655 \\ \hline
+		Pk			& 20 & 11 & False 	& 0.116 \\ \hline
+		Windiff		& 60 &  9 & Sim 	& 0.390 \\ \hline
+
+	\end{tabular}
+	
+	\caption{Médias das medidas obtidas com \textit{C99}.}
+	\label{tab:C99ComPreprocess}
+\end{table}
+
+
+
+% ========== Final =========== %
+
+% ## Acuracy            C.60.9.t.T
+% ## Precision          C.20.11.f.T
+% ## F1                 C.80.11.t.T
+% ## Pk                 C.20.11.f.T
+% ## Windiff            C.60.9.t.T
+% ppC99 Acuracy			C9-60-9-t		| 	0.609
+% ppC99 Precision		C9-20-11-f		| 	0.720	
+% ppC99 F1				C9-80-11-t		| 	0.655	
+% ppC99 Pk				C9-20-11-f		| 	0.116	
+% ppC99 Windiff			C9-60-9-t		| 	0.390 	
+
+% ## Recall             TT.20.3.
+% ppTextTiling Recall	TT-20-3			| 	0.917	
+% 
+\ begin{table}[!h]
+	\centering
+
+	\begin{tabular}{|l|c|c|c|c|} \hline
+		\textbf{Medida} & \textbf{S} & \textbf{M} & \textbf{W} \textbf{P} & \textbf{Média}\\	\hline
+
+		Acuracy		& 60 &  9 & Sim & Sim & 0.609 \\ \hline
+		Precision	& 20 & 11 & Não & Sim & 0.720 \\ \hline
+		F1			& 80 & 11 & Sim & Sim & 0.655 \\ \hline
+		Pk			& 20 & 11 & Não & Sim & 0.116 \\ \hline
+		Windiff		& 60 &  9 & Sim & Sim & 0.390 \\ \hline
+
+	\end{tabular}
+	
+	\caption{Médias das medidas obtidas com \textit{C99}.}
+	\label{tab:configfinal}
+\end{table}
+
+
+		% Recall		& & & & & 0.\\ \hline
+

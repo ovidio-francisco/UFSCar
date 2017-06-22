@@ -215,6 +215,28 @@ public class EvaluationData {
 	}
 	
 	
+	public String getConfigurationLabel() {
+		String alg = "";
+		
+		if(getAlg() instanceof TextTilingBR) {
+			alg = "TextTiling";
+			alg += " " + String.format("%2d", ((TextTilingBR)getAlg()).getWindowSize()) ;
+			alg += " " + String.format("%2d", ((TextTilingBR)getAlg()).getStep());
+		}
+		
+		if(getAlg() instanceof C99BR) {
+			alg = "C99";
+			alg += " " + String.format("%2d", (int)(100*((C99BR)getAlg()).getnSegsRate())); 
+			alg += " " + String.format("%2d", ((C99BR)getAlg()).getRakingSize());
+			alg += " " + String.format("%b", ((C99BR)getAlg()).isWeitght());
+		}
+		
+		String preprocess = " " + (getAlg().getPreprocess().isRemoveStopWord() ? "T" : "F");
+		
+		alg = alg+preprocess;
+
+		return alg;
+	}
 	
 	
 	

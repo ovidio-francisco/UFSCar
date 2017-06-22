@@ -18,14 +18,14 @@ public class Tests {
 	
 	static ArrayList<File> files = new ArrayList<>();
 	
-	public static ArrayList<ArrayList<EvaluationData>> doTestes(File folder) {
+	public static ArrayList<ArrayList<EvaluationData>> doTests(File folder) {
 		ArrayList<ArrayList<EvaluationData>> result = new ArrayList<>();
 
 		files.clear();
 		getFiles(folder);
 
 		
-		boolean useMyPreprocess = false;
+		boolean useMyPreprocess = true;
 		
 //		useMyPreprocess = true;
 		
@@ -63,8 +63,8 @@ public class Tests {
 		boolean testTT = false;
 		boolean testC9 = false;
 		
-//		testTT = true;
-		testC9 = true;
+		testTT = true;
+//		testC9 = true;
 		
 		if (testTT) {
 			
@@ -226,45 +226,31 @@ public class Tests {
 	
 	}
 	
-	public static String medias(ArrayList<ArrayList<EvaluationData>> evaluations) {
-		String result = "";
-		
-		double acuracy = 0;
-		double precision = 0;
-		double recall = 0;
-		double f1 = 0;
-		double pk = 0;
-		double windiff = 0;
-		
+	
+	public static double media(ArrayList<EvaluationData> evaluations, Metric metric) {
 		int count = 0;
-		
-		for(ArrayList<EvaluationData> a : evaluations) {
-			for(EvaluationData e : a) {
-				
-				acuracy   += e.getAcuracy();
-				precision += e.getPrecision();
-				recall    += e.getRecall();
-				f1        += e.getF1();
-				pk        += e.getPk();
-				windiff   += e.getWindowDiff();
-				
-				count++;
+		double value = 0;
+
+		for(EvaluationData ev : evaluations) {
+			
+			switch (metric) {
+				case ACURACY   : value += ev.getAcuracy();    break;
+				case PRECISION : value += ev.getPrecision();  break;
+				case RECALL    : value += ev.getRecall();     break;
+				case F1        : value += ev.getF1();         break;
+				case WINDIFF   : value += ev.getWindowDiff(); break;
+				case PK        : value += ev.getPk();         break;
+
+				default: value = -1; break;
 			}
+			
+			count++;
 		}
 		
-		result += "\n";
-		result +=               "Metric      avg\n";
-		result += String.format("Acuracy    %.3f\n", acuracy/count);
-		result += String.format("Precision  %.3f\n", precision/count);
-		result += String.format("Recall     %.3f\n", recall/count);
-		result += String.format("F1         %.3f\n", f1/count);
-		result += String.format("Pk         %.3f\n", pk/count);
-		result += String.format("Windiff    %.3f\n", windiff/count);
-
-
-		
-		return result;
+		return value/count;
 	}
+	
+
 	
 
 	static ArrayList<EvaluationData> testAll(File folder, TestSegmenterModel model) {

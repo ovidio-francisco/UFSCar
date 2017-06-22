@@ -26,14 +26,16 @@ O texto deve ser previamente dividido em unidades de informação, que podem ser
 % Exemplos 
 %%% 
 Por exemplo, algoritmos baseados em janelas deslizantes, avançam uma unidade a cada passo. Da mesma forma, algoritmos baseados em matrizes de similaridade, devem calcular a similaridade entre essas unidades.
+
 %
 % Sentaças são mais usuais 
 %%% 
-Usualmente usa-se sentenças como unidades informação, ou seja, as janelas deslizam uma sentença a cada passo e matrizes de similaridades armazenam as similaridades entre as sentneças do texto.
+Usualmente, utiliza-se sentenças como unidades informação, ou seja, as janelas deslizam uma sentença a cada passo e matrizes de similaridades armazenam as similaridades entre as sentenças do texto.
 %
 % O ponto entre unidades é um limite 
 %%% 
-Assim, cada ponto entre duas unidades de informação é considerado um candidato a limite entre segmentos.  
+Assim, cada ponto entre duas sentenças e considerado um candidato a limite entre segmentos.
+  
 %%%%%%%%%%
 % Segmento
 %%%%%%%%%%	
@@ -180,7 +182,7 @@ As medidas de avaliação tradicionais como precisão e revocação são usadas 
 %
 % Baseadas em Matriz de Confusão 
 %%% 
-Esses valores são apresentados em uma tabela que permite a visualização do desempenho de um algoritmo, a qual e chamada de matriz de confusão. Na Tabela~\ref{tab:matrizconfusao} é apresentado a matriz de confusão para duas classes (Positivo e Negativo).
+Esses valores são apresentados em uma tabela que permite a visualização do desempenho de um algoritmo, a qual é chamada de matriz de confusão. Na Tabela~\ref{tab:matrizconfusao} é apresentada a matriz de confusão para duas classes (Positivo e Negativo).
 
 %Uma matriz de confusão é uma tabela que permite a visualização do desempenho de um algoritmo. 
 
@@ -209,12 +211,12 @@ Essas medidas de avaliação tentam computar os erros do algoritmo, isto é, fal
 %
 % Falso Positivo 
 %%%
-No contexto de segmentação textual, um falso positivo é um limite identificado pelo algoritmo que não corresponde a nenhum limite na segmentação de referência, ou seja, o algoritmo indicou que em determinado ponto entre duas sentenças há uma quebra de segmento, mas que na segmentação de referência, no mesmo ponto, não há. 
+No contexto de segmentação textual, um falso positivo é um limite identificado pelo algoritmo que não corresponde a nenhum limite na segmentação de referência, ou seja, o algoritmo indicou que em determinado ponto há uma quebra de segmento, mas na segmentação de referência, no mesmo ponto, não há. 
 
 %
 % Falso Negativo 
 %%% 
-De maneira semelhante, um falso negativo é quando o algoritmo não identifica um limite existente na segmentação de referência, ou seja, em determinado ponto entre duas sentenças, há na segmentação de referência um limite entre segmento, contudo, o algoritmo não o identificou.
+De maneira semelhante, um falso negativo é quando o algoritmo não identifica um limite existente na segmentação de referência, ou seja, em determinado ponto há, na segmentação de referência, um limite entre segmentos, contudo, o algoritmo não o identificou.
 
 %
 % Verdadeiro Positivo 
@@ -282,7 +284,7 @@ Existe uma relação inversa entre precisão e revocação. Conforme o algoritmo
 %
 % Pode ser contornado com F1 
 %%% 
-Esse problema de avaliação pode ser contornado utilizado a medida $F^1$ que é uma média harmônica entre precisão e revocação onde ambas tem a o mesmo peso. 
+Esse problema de avaliação pode ser contornado utilizado a medida $F^1$ que é a média harmônica entre precisão e revocação onde ambas tem o mesmo peso. 
 
 %%%%%%%%%%%%%%%
 % Medidas que consideram a distancia entre os segmentos 
@@ -311,11 +313,13 @@ Considerando o conceito de \textit{near misses}, algumas soluções foram propos
 %%%%%%%%%%%%%%%
 % Pk 
 %%%%%%%%%%%%%%% 
-\item Em~\cite{Beeferman1999} é apresentada uma medida denominada P$_k$, 
+%\item Em~\cite{Beeferman1999} é apresentada uma medida denominada P$_k$, 
 %
+
+\item P$_k$, proposta por Beeferman~\cite{Beeferman1999}, 
 % Valores Parciais 
 %%% 
-aqual atribui valores parciais a \textit{near misses}, ou seja, limites sempre receberão um peso proporcional à sua proximidade, desde que dentro de um janela de tamanho~$k$.
+atribui valores parciais a \textit{near misses}, ou seja, limites sempre receberão um peso proporcional à sua proximidade, desde que dentro de um janela de tamanho~$k$.
 %
 % Funcionamento 
 %%% 

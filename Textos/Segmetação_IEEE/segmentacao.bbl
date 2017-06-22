@@ -57,6 +57,18 @@ F.~Y.~Y. Choi, P.~Wiemer-Hastings, and J.~Moore.
 \newblock Latent semantic analysis for text segmentation.
 \newblock In {\em In Proceedings of EMNLP}, pages 109--117, 2001.
 
+\bibitem{Demsar2006}
+J.~Dem\v{s}ar.
+\newblock Statistical comparisons of classifiers over multiple data sets.
+\newblock {\em J. Mach. Learn. Res.}, 7:1--30, Dec. 2006.
+
+\bibitem{Dias2007}
+G.~Dias, E.~Alves, and J.~G.~P. Lopes.
+\newblock Topic segmentation algorithms for text summarization and passage
+  retrieval: An exhaustive evaluation.
+\newblock In {\em Proceedings of the 22Nd National Conference on Artificial
+  Intelligence - Volume 2}, AAAI'07, pages 1334--1339. AAAI Press, 2007.
+
 \bibitem{Galley2003}
 M.~Galley, K.~McKeown, E.~Fosler-Lussier, and H.~Jing.
 \newblock Discourse segmentation of multi-party conversation.
@@ -85,6 +97,11 @@ R.~Kern and M.~Granitzer.
 \newblock pages 167--171, 2009.
 \newblock cited By 10.
 
+\bibitem{Lee2011}
+J.-K. Lee, H.-J. Song, S.-B. Park, and N.~Bassiliades.
+\newblock Two-step sentence extraction for summarization of meeting minutes.
+\newblock volume~39, pages 614--619, 2011.
+
 \bibitem{Misra2009}
 H.~Misra, F.~Yvon, J.~M. Jose, and O.~Cappe.
 \newblock Text segmentation via topic modeling: An analytical study.
@@ -112,6 +129,25 @@ J.~C. Reynar.
   Computational Linguistics on Computational Linguistics}, ACL '99, pages
   357--364, Stroudsburg, PA, USA, 1999. Association for Computational
   Linguistics.
+
+\bibitem{Miriam2013}
+M.~Schwartz-Ziv and M.~S. Weisbach.
+\newblock What do boards really do? evidence from minutes of board meetings.
+\newblock {\em Journal of Financial Economics}, 108(13):349–366, 2013.
+
+\bibitem{Sitbon2004}
+L.~Sitbon and P.~Bellot.
+\newblock Adapting and comparing linear segmentation methods for french.
+\newblock In {\em Coupling Approaches, Coupling Media and Coupling Languages
+  for Information Retrieval}, RIAO '04, pages 623--637, Paris, France, France,
+  2004. LE CENTRE DE HAUTES ETUDES INTERNATIONALES D'INFORMATIQUE DOCUMENTAIRE.
+
+\bibitem{Masakazu2013}
+M.~TAKAHASHI, K.~KIDO, and K.~HASHIMOTO.
+\newblock Towards the profitability trend extraction from the board meeting
+  proceedings.
+\newblock {\em 17th International Conference in Knowledge Based and Intelligent
+  Information and Engineering Systems - KES2013}, 78, 2013.
 
 \bibitem{Tur2010}
 G.~Tur, A.~Stolcke, L.~Voss, S.~Peters, D.~Hakkani-T\"{u}r, J.~Dowding,

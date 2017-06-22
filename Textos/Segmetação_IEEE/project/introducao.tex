@@ -6,7 +6,8 @@
 %%%%%%%%%%
 % Descrição das Reuniões
 %%%%%%%%%%
-Reuniões são tarefas presentes em atividades corporativas, ambientes de gestão e nas organizações de um modo geral. O conteúdo das reuniões é frequentemente registrado em texto na forma de atas para fins de documentação e posterior consulta. A organização e consulta manual desses arquivos torna-se uma tarefa custosa, especialmente considerando o seu crescimento em uma instituição. 
+Reuniões são tarefas presentes em atividades corporativas, ambientes de gestão e nas organizações de um modo geral. O conteúdo das reuniões é frequentemente registrado em texto na forma de atas para fins de documentação e posterior consulta. A organização e consulta manual desses arquivos torna-se uma tarefa custosa, especialmente considerando o seu crescimento em uma instituição~\cite{Lee2011}~\cite{Masakazu2013}~\cite{Miriam2013}. 
+
 
 %%%%%%%%%%%%%%%
 % Busca manual por Assuntos
@@ -34,7 +35,7 @@ Então, apresentam um documento com as palavras buscadas em destaque, mantendo o
 %
 % Não é possível rankear os resultados
 %%%
-Assim, dificultando o rankeamento por relevância. 
+Assim, dificultando o ranqueamento por relevância. 
 %
 % Não evita que o texto circundante seja exibido, caso pertença a outro assunto
 %%% 
@@ -45,10 +46,11 @@ Além disso, não evita que textos próximos sejam retornados.
 % diferencial do sistema
 %%%%%%%%%%
 As atas são documentos textuais e portanto constituem dados não estruturados. Assim, um sistema que responde a consultas do usuário ao conteúdo das atas, retornando trechos de textos relevantes à sua intenção, é um desafio que envolve a compreensão de seu conteúdo~\cite{Bokaei2015}. 
+
 %%%%%%%%%%
 % Segmentar e extrair tópicos
 %%%%%%%%%%
-Uma vez que a ata registra a sucessão de assuntos discutidos na reunião, há interesse em um sistema que aponte trechos de uma ata que tratam de um assunto específico. Tal sistema tem duas principais tarefas: descobrir quando há uma mudança de assunto e quais são esses assuntos~\cite{Banerjee2006}. Este trabalho tem foco principal na na primeira tarefa, detecção de mudança de assuntos, que pode ser atendida pela segmentação automática de textos.
+Uma vez que a ata registra a sucessão de assuntos discutidos na reunião, há interesse em um sistema que aponte trechos de uma ata que tratam de um assunto específico. Tal sistema tem duas principais tarefas: descobrir quando há uma mudança de assunto e quais são esses assuntos. Este trabalho tem foco principal na na primeira tarefa, detecção de mudança de assuntos, que pode ser atendida pela segmentação automática de textos~\cite{Banerjee2006}~\cite{Beeferman1999}~\cite{Reynar1998}.
 
 
 
@@ -67,14 +69,14 @@ A segmentação de textos é útil em aplicações que trabalham com textos sem 
 % Utilidade da segmentação
 %%%%%%%%%%
 O interesse por segmentação textual tem crescido em em aplicações voltadas a recuperação de informação~\cite{Reynar1999} %citar o [15] ...
-e sumarização de textos~\cite{Boguraev2000}~\cite{Boguraev2000b}. % ... e [2] do "Efficient Linear T S"
+e sumarização de textos. % ... e [2] do "Efficient Linear T S"
 Essa técnica pode ser usada para aprimorar o acesso a informação quando essa é solicitada por meio de uma consulta, onde é possível oferecer porções menores de texto mais relevantes ao invés de exibir um documento maior que pode conter informações menos pertinentes. 
 %
 Além disso, encontrar pontos onde o texto muda de assunto, pode ser útil como etapa de preprocessamento em aplicações voltadas ao entendimento do texto, principalmente em textos longos.
 %
 A navegação pelo documento pode ser aprimorada, em especial na utilização por usuários com deficiência visual, os quais utilizam  sintetizadores de texto como ferramenta de acessibilidade~\cite{Choi2000}. 
 %
-A sumarização de texto pode ser aprimorada ao processar segmentos separados por tópicos ao invés de documentos inteiros. 
+A sumarização de texto pode ser aprimorada ao processar segmentos separados por tópicos ao invés de documentos inteiros~\cite{Boguraev2000}~\cite{Boguraev2000b}~\cite{Dias2007}. 
 
 
 
@@ -98,7 +100,7 @@ Há também um maior foco no idioma inglês, presente na maioria dos artigos pub
 %%%%%%%%%%
 % Diferenças de entre Línguas
 %%%%%%%%%%
-Diferenças de performance podem ser vistas no mesmo algoritmo quando aplicando em documentos de diferentes idiomas, onde o inglês apresenta um taxa de erro significativamente menor que outro como o alemão e o espanhol~\cite{Kern2009}.
+Diferenças de performance podem ser vistas no mesmo algoritmo quando aplicando em documentos de diferentes idiomas, onde o inglês apresenta um taxa de erro significativamente menor que outro como o alemão e o espanhol~\cite{Kern2009}~\cite{Sitbon2004}.
 %
 %
 %%%%%%%%%%
@@ -112,7 +114,7 @@ Na Seção~\ref{sec:referencial} o processo de segmentação textual é melhor d
 %
 Na Seção~\ref{sec:trabalhos} são apresentados trabalhos recentes que desenvolveram as técnicas existentes em contextos específicos. 
 %
-Na Seção~\ref{sec:conjutodedocumentos} as atas são descritas em suas principais caraterísticas.
+%Na Seção~\ref{sec:conjutodedocumentos} as atas são descritas em suas principais caraterísticas.
 %
 Na Seção~\ref{sec:proposta} é apresentada a proposta desse trabalho voltada às atas de reunião. 
 %             sec:avaliacao-experimental
