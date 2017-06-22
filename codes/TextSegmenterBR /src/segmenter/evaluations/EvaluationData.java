@@ -219,7 +219,7 @@ public class EvaluationData {
 		String alg = "";
 		
 		if(getAlg() instanceof TextTilingBR) {
-			alg = "TextTiling";
+			alg = "TT";
 			alg += " " + String.format("%2d", ((TextTilingBR)getAlg()).getWindowSize()) ;
 			alg += " " + String.format("%2d", ((TextTilingBR)getAlg()).getStep());
 		}
@@ -228,12 +228,12 @@ public class EvaluationData {
 			alg = "C99";
 			alg += " " + String.format("%2d", (int)(100*((C99BR)getAlg()).getnSegsRate())); 
 			alg += " " + String.format("%2d", ((C99BR)getAlg()).getRakingSize());
-			alg += " " + String.format("%b", ((C99BR)getAlg()).isWeitght());
+			alg += " " + String.format("%s", ((C99BR)getAlg()).isWeitght() ? "T":"F");
 		}
 		
-		String preprocess = " " + (getAlg().getPreprocess().isRemoveStopWord() ? "T" : "F");
+//		String preprocess = " " + (getAlg().getPreprocess().isRemoveStopWord() ? "T" : "F");
 		
-		alg = alg+preprocess;
+//		alg = alg+preprocess;
 
 		return alg;
 	}

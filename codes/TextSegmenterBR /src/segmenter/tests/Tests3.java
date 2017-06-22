@@ -195,8 +195,65 @@ public class Tests3 {
 		
 	}
 	
-	public static void createGreatTexTable(ArrayList<ArrayList<EvaluationData>> evaluations) {
+	private static ArrayList<String> joinLines(ArrayList<String> lines1, ArrayList<String> lines2, String sep) {
+		ArrayList<String> result = new ArrayList<>();
+		
+		for(int i=0; i<lines1.size(); i++) {
+			result.add(lines1.get(i) + sep + lines2.get(i));
+		}
+		
+		return result;
+	}
+	
+	public static void createGreatTexTable() {
 		File medidas = new File("./analysis/medidas.tex");
+
+		
+		SegmenterAlgorithms algorithm = null;
+		
+		boolean useMyPreprocess = false;
+		boolean includeAlgLabel = true;
+		ArrayList<String> lines_sem_preprocess = createTexTableLines(algorithm, useMyPreprocess, includeAlgLabel);
+
+		
+		useMyPreprocess = true;
+		includeAlgLabel = false;
+		ArrayList<String> lines_com_preprocess = createTexTableLines(algorithm, useMyPreprocess, includeAlgLabel);
+
+		
+		String sep = includeAlgLabel ? " & " : "";
+		ArrayList<String> greatLines = joinLines(lines_sem_preprocess, lines_com_preprocess, sep);
+		
+		closeLines(greatLines);
+		
+		String table = "\\documentclass{article} \n" + 
+				"\\usepackage{geometry} \n" + 
+		 "\\geometry{ \n" + 
+		 "a4paper, \n" + 
+		 "left=10mm, \n" + 
+		 "top=10mm, \n" + 
+		 "} \n" + 
+
+		                "\\begin{document} \n" +
+                        "\\begin{tabular}{|l|c|c|c|c|c|c|c|c|c|c|c|c|} \n"+ 
+		                "\\hline \n";
+		
+		for(String l : greatLines) table += l + "\n";
+		
+		table += "\\end{tabular} \n" +
+                 "\\end{document} \n ";
+		
+		System.out.println(table);
+		
+		Files.saveTxtFile(table, medidas);
+	}
+	
+//	https://tex.stackexchange.com/questions/22856/how-to-merge-columns-in-a-table
+	
+	public static ArrayList<String> createTexTableLines(SegmenterAlgorithms algorithm, boolean useMyPreprocess, boolean includeAlgLabel) {
+		
+		ArrayList<ArrayList<EvaluationData>> evaluations = doTests(algorithm, useMyPreprocess);
+		
 		String format = "%.3f";
 		
 		System.out.println("Great TEX " + evaluations.size());
@@ -211,7 +268,9 @@ public class Tests3 {
 		ArrayList<String> configs = new ArrayList<>();
 		
 		for(ArrayList<EvaluationData> ev : evaluations) {
-			configs.add(ev.get(0).getConfigurationLabel());
+			if(includeAlgLabel) {
+				configs.add(ev.get(0).getConfigurationLabel());
+			}
 			
 			pkList.add(Tests.media(ev, Tests.Metric.PK));
 			wdList.add(Tests.media(ev, Tests.Metric.WINDIFF));
@@ -231,38 +290,28 @@ public class Tests3 {
 		
 
 		ArrayList<String> lines = new ArrayList<>();
-		lines.add("Configuração");
-		for(String cfg : configs) { lines.add(cfg); }
+		
+		if(includeAlgLabel) {
+			lines.add("Configuração");
+			for(String cfg : configs) { lines.add(cfg); }
+		}
+		else {
+			for(int i=0; i<pkList.size()+1; i++) {
+				lines.add("");
+			}
+		}
+			
+			
+		
 		
 		addTexColumn(lines, pkList, "Pk", format, pkBest);
 		addTexColumn(lines, wdList, "WD", format, wdBest);
 		addTexColumn(lines, acList, "A ", format, acBest);
 		addTexColumn(lines, prList, "P ", format, prBest);
 		addTexColumn(lines, rcList, "R ", format, rcBest);
-		addTexColumn(lines, f1List, "F1", format, f1Best);
+		addTexColumn(lines, f1List, "F1", format, f1Best);		
 		
-		closeLines(lines);
-		
-		
-		String table = "\\documentclass{article} \n" + 
-		                "\\begin{document} \n" +
-                        "\\begin{tabular}{|l|c|c|c|c|c|c|} \n"+ 
-		                "\\hline \n";
-		
-		for(String l : lines) table += l + "\n";
-		
-		table += "\\end{tabular} \n" +
-                 "\\end{document} \n ";
-		
-		System.out.println(table);
-		
-		Files.saveTxtFile(table, medidas);
-	}
-	
-	public static ArrayList<String> createTexTableLines(SegmenterAlgorithms algorithm, boolean useMyPreprocess, boolean includeAlgLabel) {
-		ArrayList<String> result = new ArrayList<>();
-		
-		return result;
+		return lines;
 	}
 	
 }

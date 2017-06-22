@@ -258,17 +258,17 @@ public class EvaluateSegmentationsFrame extends JFrame {
 			
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				ArrayList<ArrayList<EvaluationData>> evaluations = Tests3.doTests(null, true);
+//				ArrayList<ArrayList<EvaluationData>> evaluations = Tests3.doTests(null, true);
 				
-				showTests1(evaluations);
+//				showTests1(evaluations);
 				
-				Tests3.createGreatTexTable(evaluations);
+				Tests3.createGreatTexTable();
 				
-				try {
-					Tests3.createGreatCSV(evaluations);
-				} catch (IOException e1) {
-					e1.printStackTrace();
-				}
+//				try {
+//					Tests3.createGreatCSV(evaluations);
+//				} catch (IOException e1) {
+//					e1.printStackTrace();
+//				}
 			}
 		});
 		
