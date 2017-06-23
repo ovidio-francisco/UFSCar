@@ -1,0 +1,187 @@
+
+
+\section{Introdução}
+	\label{sec:introducao}
+
+%%%%%%%%%%
+% Descrição das Reuniões
+%%%%%%%%%%
+Reuniões são tarefas presentes em atividades corporativas, ambientes de gestão e nas organizações de um modo geral. O conteúdo das reuniões é frequentemente registrado em texto na forma de atas para fins de documentação e posterior consulta. A organização e consulta manual desses arquivos torna-se uma tarefa custosa, especialmente considerando o seu crescimento em uma instituição~\cite{Lee2011, Masakazu2013,Miriam2013}. 
+
+
+%%%%%%%%%%%%%%%
+% Busca manual por Assuntos
+%%%%%%%%%%%%%%% 
+%
+% É custosa 
+%%% 
+Devido a fatores como a não estruturação e volume dos textos, a localização de assunto é uma tarefa custosa. 
+%
+% Memória e Buscas por KeyWords
+%%% 
+Usualmente, o que se faz são buscas manuais guiadas pela memória ou com uso de ferramentas computacionais baseadas em localização de palavras-chave.
+
+%%%%%%%%%%%%%%%
+%  Problemas na busca por palavras-chave
+%%%%%%%%%%%%%%% 
+%
+% O usuário deve inserir palavras acertadas
+%%% 
+Buscas por palavras-chave normalmente exigem a inserção de de termos exatos que devem necessariamente estar contidos no trecho onde está o assunto.
+%
+% O texto continua longo, apenas é apresentado com as palavras destacadas
+%%% 
+Então, apresentam um documento com as palavras buscadas em destaque, mantendo o texto longo. 
+%
+% Não é possível rankear os resultados
+%%%
+Assim, dificultando o ranqueamento por relevância. 
+%
+% Não evita que o texto circundante seja exibido, caso pertença a outro assunto
+%%% 
+Além disso, não evita que textos próximos sejam retornados.
+
+%%%%%%%%%%
+% Atas são documentos não estruturados e
+% diferencial do sistema
+%%%%%%%%%%
+As atas são documentos textuais e portanto constituem dados não estruturados. Assim, um sistema que responde a consultas do usuário ao conteúdo das atas, retornando trechos de textos relevantes à sua intenção, é um desafio que envolve a compreensão de seu conteúdo~\cite{Bokaei2015}. 
+
+%%%%%%%%%%
+% Segmentar e extrair tópicos
+%%%%%%%%%%
+Uma vez que a ata registra a sucessão de assuntos discutidos na reunião, há interesse em um sistema que aponte trechos de uma ata que tratam de um assunto específico. Tal sistema tem duas principais tarefas: descobrir quando há uma mudança de assunto e quais são esses assuntos. Este trabalho tem foco principal na na primeira tarefa, detecção de mudança de assuntos, que pode ser atendida pela segmentação automática de textos~\cite{Banerjee2006,Beeferman1999,Reynar1998}.
+
+
+
+%%%%%%%%%%
+% Definição da Tarefa
+%%%%%%%%%%
+A tarefa de segmentação textual consiste dividir um texto em partes que contenham um significado relativamente independente. Em outras palavras, é identificar as posições onde há uma mudança significativa de tópicos. 
+
+%%%%%%%%%%
+% Utilidade da segmentação (domínios onde é aplicada)
+%%%%%%%%%%
+A segmentação de textos é útil em aplicações que trabalham com textos sem indicações de quebras de assunto, ou seja, não apresentam seções ou capítulos, como transcrições automáticas de áudio, vídeos e grandes documentos que contêm vários assuntos como atas de reunião e notícias.
+
+
+%%%%%%%%%%
+% Utilidade da segmentação
+%%%%%%%%%%
+O interesse por segmentação textual tem crescido em em aplicações voltadas a recuperação de informação~\cite{Reynar1999} %citar o [15] ...
+e sumarização de textos. % ... e [2] do "Efficient Linear T S"
+Essa técnica pode ser usada para aprimorar o acesso a informação quando essa é solicitada por meio de uma consulta, onde é possível oferecer porções menores de texto mais relevantes ao invés de exibir um documento maior que pode conter informações menos pertinentes. 
+%
+Além disso, encontrar pontos onde o texto muda de assunto, pode ser útil como etapa de preprocessamento em aplicações voltadas ao entendimento do texto, principalmente em textos longos.
+%
+A navegação pelo documento pode ser aprimorada, em especial na utilização por usuários com deficiência visual, os quais utilizam  sintetizadores de texto como ferramenta de acessibilidade~\cite{Choi2000}. 
+%
+A sumarização de texto pode ser aprimorada ao processar segmentos separados por tópicos ao invés de documentos inteiros~\cite{Boguraev2000,Boguraev2000b,Dias2007}. 
+
+
+
+%%%%%%%%%%
+% Descrição das Atas
+%%%%%%%%%%
+%
+% Ausência de marcaçãoes 
+%%% 
+Frequentemente atas de reunião têm a característica de apresentar um texto com poucas quebras de parágrafo e sem marcações de estrutura, como capítulos, seções ou quaisquer indicações sobre o tema do texto. 
+%
+% Estilo compacto e formal desfavorece
+%%% 
+As atas de reunião diferem dos textos comumente estudados em outros trabalhos em alguns pontos. O estilo contribui para a escrita de textos sucintos com poucos detalhes, pois o ambiente dá preferência a textos curtos. Segundo Choi~\cite{Choi2001-LSA}, o segmentador tem a acurácia reduzida em segmentos curtos (em torno de 3 a 5 sentenças). 
+
+%%%%%%%%%%
+% ... as lacunas
+%%%%%%%%%%
+Há também um maior foco no idioma inglês, presente na maioria dos artigos publicados. Embora haja abordagens voltadas para outros idiomas, falta ainda uma maior atenção na literatura sobre língua portuguesa e a documentos com características próprias como as atas de reunião.
+%
+%%%%%%%%%%
+% Diferenças de entre Línguas
+%%%%%%%%%%
+Diferenças de performance podem ser vistas no mesmo algoritmo quando aplicando em documentos de diferentes idiomas, onde o inglês apresenta um taxa de erro significativamente menor que outro como o alemão e o espanhol~\cite{Kern2009,Sitbon2004}.
+%
+%
+%%%%%%%%%%
+% Foco nas atas
+%%%%%%%%%%
+Assim, esse trabalho trata da aplicação e avaliação de algoritmos tradicionais ao contexto de documentos em português do Brasil, com ênfase especial nas atas de reuniões.
+
+O restante deste artigo está dividido da seguinte forma. 
+%
+Na Seção~\ref{sec:referencial} o processo de segmentação textual é melhor descrito, bem como os principais algoritmos da literatura. 
+%
+Na Seção~\ref{sec:trabalhos} são apresentados trabalhos recentes que desenvolveram as técnicas existentes em contextos específicos. 
+%
+%Na Seção~\ref{sec:conjutodedocumentos} as atas são descritas em suas principais caraterísticas.
+%
+Na Seção~\ref{sec:proposta} é apresentada a proposta desse trabalho voltada às atas de reunião. 
+%             sec:avaliacao-experimental
+Na Seção~\ref{sec:avaliacao} é detalhado a avaliação dos experimentos e seus resultados reportados na Seção~\ref{subsec:resultados}. 
+%
+Por fim, na Seção~\ref{sec:conclusao} são apresentadas as considerações finais e trabalhos futuros.
+
+
+
+
+
+
+% ou seja, o texto da ata continua longo. 
+
+
+%%%%%%%%%%
+% Onde é usada
+%%%%%%%%%%
+%O interesse por técnicas de segmentação textual acompanha o crescimento da produção de conteúdos, sendo estudada em aplicações voltadas principalmente a identificar divisões em textos longos como notícias e documentos da web, os quais são frequentemente uma concatenação de textos. 
+
+
+
+
+%O restante deste artigo está dividido da seguinte forma. Na Seção 2 é apresentado XYZ. Na Seção 3, são apresentados ABC.... Por fim, Na Seção Z são apresentadas as considerações finais e os trabalhos futuros.
+
+%As atas, como frequentemente são, apresentam-se como uma sucessão de tópicos. Assim, o objetivo desse trabalho é identificar, automaticamente, onde há a mudança de um tópico para seus adjacentes.
+
+
+% Diversas aplicações fazem uso de segmentação textual, incluindo 
+
+% Entre as principais mais frequentes de segmentação textual estão a tra
+
+
+
+%É principalmente utilizada em aplicações que processam textos longos como transcrições de áudio e documentos longos, além de aprimorar técnicas de sumarização e information retrievel.
+
+
+
+% Usos:
+%	* quando não há identificações
+%	* em transcrições de áudio
+%	* em documentos longos
+% 	* text summarization (ver a referencia [2] de Efficient Linear Text...)
+
+
+
+
+%Isto é, dado um texto, identificar onde há mudança de tópicos.
+
+
+% Interest in automatic text segmentation has blossomed over the last few years, with applications ranging from information retrieval to text summariza-tion to story segmentation of video feeds. [A Critique and Improvement of an Evaluation Metric for Text Segmentation]
+
+
+
+%Em outras palavras é identificar divisões entre unidade de informação sucessivas
+
+%A tarefa de segmentação textual consiste em encontrar pontos onde há mudança de tópicos no texto.
+
+
+
+%[ The task of linear text segmentation is to split a large text document into shorter fragments, usually blocks of consecutive sentences. ]
+
+
+% **Segmentação é identificar divisiões entre unidades de informação sucessivas (Beeferman, Berger, and Lafferty (1997))**
+
+%   [Text segmentation is the task of determining the positions at which topics change in a stream of text]
+
+
+
+

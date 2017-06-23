@@ -1,0 +1,163 @@
+\section{Trabalhos Relacionados}
+	\label{sec:trabalhos}
+
+
+%%%%%%%%%%
+% Propostas dos trabalhos
+%%%%%%%%%%
+Semelhante a este trabalho, outras abordagens foram propostas no sentido de propor segmentadores para outros idiomas além do inglês bem como alvaliá-los em contextos específicos como discursos e conversas em reuniões.
+
+%%%%%%%%%%
+% Diferenças de entre Línguas
+%%%%%%%%%%
+Diferenças de performance podem ser vistas no mesmo algoritmo quando aplicando em documentos de diferentes idiomas. Se aplicado ao inglês, apresenta um taxa de erro significativamente menor do que quando apliacado a outro idioma como o alemão e o espanhol~\cite{Kern2009}.
+
+%%%%%%%%%%
+% Topic segmentation for textual document written in arabic language
+%%%%%%%%%%
+A fim de aplicar os algoritmos \textit{TextTiling} e \textit{C99} ao idioma árabe, foi utilizado como \textit{corpus} a concatenação de textos extraídos de notícias de diferentes países como Tunísia, Egito e Algeria, que tratam de assuntos distintos como política, esporte, cultura, história, tecnologia e artes, e que trazem particularidades nos estilos de escrita e até diferenças entre dialetos locais. 
+
+Foram propostos ajustes na etapa de preprocessamento onde verificou-se que diferenças no dialeto de cada pais devem ser consideradas no processo de segmentação pois que melhores resultados dependem da escolha de um \textit{stemmer} adequado à cada dialeto~\cite{CHAIBI2014}.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Reuniões com múltiplos participantes
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+As técnicas de segmentação tambem são aplicadas em conversas em reuniões com múltiplos participantes onde se estuda os textos extraídos dos discursos, ou seja, o texto a ser segmentado é uma transcrição das falas dos participantes durante a reunião.
+%%%%%%%%%%
+% A texttiling based apporach to topic boundary detection in meetings
+%%%%%%%%%%
+Nesse sentido, como parte do projeto \textit{CALO-MA}\footnote{\urlcaloproject}, foi apresentado um segmentador baseado no  \textit{TextTiling}, que foi aplicado em reuniões com múltiplos participantes. Os autores apoiaram-se em elementos da fala como pausas, trocas de falantes e entonação para encontrar melhores segmentos~\cite{Galley2003}. O \textit{corpus} utilizado contém a transcrição da fala dos participantes durante as reuniões que foram conduzidas por um mediador que propunha os tópicos e anotava o tempo onde os participantes mudavam de assunto~\cite{Banerjee2006,Tur2010}. 
+%%%%%%%%%%
+% Discourse segmentation of multi-party conversation
+%%%%%%%%%%
+
+
+%%%%%%%%%%
+% Linear discourse segmentation of multi-party meetings bases ond local and global information
+%%%%%%%%%%
+Ainda no contexto de reuniões com múltiplos participantes temos a segmentação funcional dos discursos, onde outros aspectos podem ser analisados, como a participação dos presentes na reunião. Nesse sentido, estuda-se a contribuição das pessoas as quais podem ser categorizadas,  por exemplo, em diálogos, discussões e monólogos. Sugere-se que alguns comportamentos podem dar pistas de mudança de discurso, como quando um participante toma a palavra por um tempo prolongado~\cite{Bokaei2015}. 
+
+
+%%%%%%%%%%
+% Palavras Pista
+%%%%%%%%%%
+
+A presença de \textit{pistas} pode ser um indicativo que ajuda a aprimorar a detecção de limites entre segmentos, uma vez que alguns elementos são frequentes na transição de tópicos. 
+%
+Essas \textit{pistas} podem ser palavras como \textit{``Ok''}, \textit{``continuando''} e frases como \textit{``Boa noite''}, \textit{``Dando prosseguimento''} ou pausas prolongadas, ajudam a indicar uma mudança de tópicos. 
+%
+Essas \textit{pistas} podem ser detectadas por meio de algoritmos de aprendizado de máquina ou anotadas manualmente~
+\cite{Hsueh2006, % Faz combinações com Lexical e Cue LC-CUE
+Galley2003, 
+%\cite{Boguraev2000}%\textit{por outro lado}
+Beeferman1999}.
+%\cite{Reynar1999}
+
+
+
+%%%%%%%%%%
+% Efficient linear text segmentation based on information retrieval techniques
+%%%%%%%%%%
+Quanto a eficácia dos algoritmos, observou-se que aqueles que apresentam melhor performance o fazem ao custo de maior complexidade computacional, que se deve muitas vezes à construção de matrizes de similaridade entre todas as sentenças como em~\cite{Choi2000}, nesses casos pode-se diminuir o tempo computacional evitando calcular a similaridade entre trechos muito distantes no texto.
+
+Nesse sentido, foi apresentada uma abordagem que otimiza o processo ao computar as médias das similaridades entre sentenças de cada bloco, a qual chamou de \textit{inner similarity} e em seguida usou esses valores para calcular as medias das similaridades entre todos os blocos a qual chamou de \textit{outter similarity}~\cite{Kern2009}. Dessa forma não é criada uma matriz que contem as similaridades de todas as sentenças, mas apenas daquelas mais próximas. Os autores reportaram uma eficiência superior e uma eficácia comparável aos algoritmos mais complexos.
+
+
+%%%%%%%%%%
+% Os Corpus {Corporea}
+%%%%%%%%%%
+
+Para a obtenção do corpus, bem como segmentações de referência, muitos trabalhos utilizam a concatenação de textos na avaliação, os quais foram extraídos de coleções documentos como 
+\textit{TDT}\footnote{\urltdt} e
+\textit{WSJ}\footnote{\urlwsj}.
+%\textit{Brow}\footnote{\urlbrowcorpus} e 
+%\textit{Reuters}\footnote{\urlreuterscorpus}
+Nesses casos, tem-se facilmente os segmentos de referência onde cada limite de segmento separa os documentos originais.
+%
+%
+Outros avaliam seus trabalhos utilizando coleções de transcrições de áudios gravados durante conversas de reuniões entre pessoas como \textit{ICSI}~\cite{Janin2003} e \textit{AMI}~\cite{Carletta2005}.
+% e o \textit{CALO-MA}\footnote{\urlcaloproject}
+Nesses casos, os segmentos de referência são dados por anotações feitas durante a reunião, onde registrou-se o tempo em que os participantes trocaram de assunto.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+%A fim de aprimorar a detecção de limites entre segmentos, a presença de \textit{pistas} pode ser um indicativo de finais ou inícios de segmentos, 
+
+
+
+%
+% Efficent Linear Text Segmentation ...    
+%	Brown   
+%	Reuters    
+%
+% Discurse Segmentation fo Multi-party Conversation   
+%	Brown    
+%	ICSI Meeting corpus   
+%		(Janin et al., 2003)
+%		http://www.ee.columbia.edu/~dpwe/pubs/icassp03-janin.pdf   
+%		ftp://ftp.icsi.berkeley.edu/pub/speech/papers/icassp03-janin.pdf
+%		http://www1.icsi.berkeley.edu/Speech/mr/    
+%		http://http.icsi.berkeley.edu/ftp/pub/speech/papers/nist2004-meeting-janin.pdf
+%		
+%	TDT   
+%		http://link.springer.com/chapter/10.1007%2F978-1-4615-0933-2_3     
+%		https://catalog.ldc.upenn.edu/LDC98T25    
+%
+% TextTiling Based Approach ... in Meetings
+%	CALO-MA
+%		THE CALO MEETING SPEECH RECOGNITION AND UNDERSTANDING SYSTEM
+%		The CALO meeting assistant system
+% 		https://www.sri.com/sites/default/files/publications/the_calo_meeting_speech_recognition_and_understanding_system.pdf
+%
+% Linear Discourse Segmentation of Multi-Party Meetings ...
+%	AMI
+%
+%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%	
+% SPEAKER SEGMENTATION AND CLUSTERING IN MEETINGS	
+%https://pdfs.semanticscholar.org/1ac5/fe1d2502dc04ebf1ed438a094dd9d798db59.pdf
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%		
+%
+
+
+
+
+
+%%%%%%%%%%
+% Tempo de preprocessamento
+%%%%%%%%%%
+%Nesse trabalho, não há preocupação com o tempo de processamento, uma vez que as atas são documentos relativamente curtos (com cerca de três páginas) e não chega a impactar na eficácia do sistema, estando o foco principal na eficácia em produzir boas segmentações.
+
+% 
+% usa vetores contendo o peso da palavra ao inves da frequencia.
+
+
+%Semelhante a esse trabalho, a principal motivação dos autores é adaptar os algoritmos mais influentes ao idioma árabe, devido a falta de trabalhos consistentes nesse sentido. 
+
+% Por outro lado, 
+
+%Os autores apoiaram-se em trabalhos anteriores que consideram elementos da fala como pausas, trocas de falantes e entonação para encontrar melhores segmentos~\cite{Galley2003}.
+% outros exemplos são
+
+
+
+
+
+%como em~\cite{CHAIBI2014} onde os autores adaptam os algoritmos \textit{TextTiling} e \textit{C99} ao idioma árabe. Eles apresentam os resultados de experimentos no qual avaliaram a performance em notícias de diferentes países em árabe. As adaptações consistem basicamente na etapa de pré-processamento e apontam que diferenças no dialeto de cada pais devem ser consideradas no processo de segmentação e que a adaptação depende da escolha de um \textit{stemmer} adequado.
+
+%Galley~\cite{Galley2003} por sua vez considera de elementos como pausas, trocas de falantes e entonação para encontrar melhores segmentos.
+
+%Bokaei~\cite{Bokaei2015}, traz um trabalho voltado à segmentação funcional do texto, que foca na atividade dos participantes, as quais categoriza, por exemplo em diálogos, discussões e monólogos e sugere que alguns comportamentos podem dar pistas de mudança de tópico, como quando um participante toma a palavra por um tempo prolongado. 
