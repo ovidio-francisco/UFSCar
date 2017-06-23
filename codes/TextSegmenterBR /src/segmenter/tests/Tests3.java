@@ -51,9 +51,9 @@ public class Tests3 {
 		
 		if (algorithm == SegmenterAlgorithms.TEXT_TILING || algorithm == null) {
 			
-			int initialWinSize   = 20;  
-			int limitWinSize     = 60;
-			int increaseWinSize  = 10;  
+			int initialWinSize   = 5;  
+			int limitWinSize     = 30;
+			int increaseWinSize  = 5;  
 			
 			int initialStep   = 3;  
 			int limitStep     = 12;   
@@ -191,6 +191,11 @@ public class Tests3 {
 		
 		for(int i=0; i<lines.size(); i++) {
 			lines.set(i, lines.get(i) + end);
+			
+			if(i>0 && lines.get(i-1).startsWith("T") && lines.get(i).startsWith("C9")) {
+				lines.set(i-1, lines.get(i-1)+ "\\hline");
+			}
+			
 		}
 		
 	}
@@ -235,9 +240,10 @@ public class Tests3 {
 		 "} \n" + 
 
 		                "\\begin{document} \n" +
-                        "\\begin{tabular}{|l|c|c|c|c|c|c|c|c|c|c|c|c|} \n"+ 
-		                "\\hline \n";
-		
+		                "\\begin{tabular}{|l|c|c|c|c|c|c||c|c|c|c|c|c|} \n"+ 
+
+		                "\\hline \n"+
+		                "&\\multicolumn{6}{c||}{Sem Preprocessamento} & \\multicolumn{6}{c|}{Com Preprocessamento}\\\\ \n";
 		for(String l : greatLines) table += l + "\n";
 		
 		table += "\\end{tabular} \n" +
@@ -248,7 +254,6 @@ public class Tests3 {
 		Files.saveTxtFile(table, medidas);
 	}
 	
-//	https://tex.stackexchange.com/questions/22856/how-to-merge-columns-in-a-table
 	
 	public static ArrayList<String> createTexTableLines(SegmenterAlgorithms algorithm, boolean useMyPreprocess, boolean includeAlgLabel) {
 		
