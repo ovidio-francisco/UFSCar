@@ -21,7 +21,7 @@ filename=$1$base'_'$hoje'.tar.gz'
 echo "destination --> \"$filename\""
 echo $filename
 
-tar -czvf $filename . --exclude=./.git
+tar -czvf $filename . --exclude='.git'
 #zip -r $filename .
 
 

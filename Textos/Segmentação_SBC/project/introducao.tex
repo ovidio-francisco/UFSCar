@@ -8,6 +8,11 @@
 %%%%%%%%%%
 Reuniões são tarefas presentes em atividades corporativas, ambientes de gestão e nas organizações de um modo geral. O conteúdo das reuniões é frequentemente registrado em texto na forma de atas para fins de documentação e posterior consulta. A organização e consulta manual desses arquivos torna-se uma tarefa custosa, especialmente considerando o seu crescimento em uma instituição~\cite{Lee2011, Masakazu2013,Miriam2013}. 
 
+%%%%%%%%%%
+% Atas são documentos não estruturados e
+% diferencial do sistema
+%%%%%%%%%%
+As atas são documentos textuais e portanto constituem dados não estruturados. Assim, um sistema que responde a consultas do usuário ao conteúdo das atas, retornando trechos de textos relevantes à sua intenção, é um desafio que envolve a compreensão de seu conteúdo~\cite{Bokaei2015}. 
 
 %%%%%%%%%%%%%%%
 % Busca manual por Assuntos
@@ -31,21 +36,17 @@ Buscas por palavras-chave normalmente exigem a inserção de de termos exatos que 
 %
 % O texto continua longo, apenas é apresentado com as palavras destacadas
 %%% 
-Então, apresentam um documento com as palavras buscadas em destaque, mantendo o texto longo. 
+Localizadas as palavras-chave as ferramentas desse tipo apresentam ao usuário um documento com as palavras buscadas em destaque, mantendo o texto longo. 
 %
 % Não é possível rankear os resultados
 %%%
-Assim, dificultando o ranqueamento por relevância. 
+Isso dificulta por exemplo o ranqueamento por relevância. 
+
 %
 % Não evita que o texto circundante seja exibido, caso pertença a outro assunto
 %%% 
-Além disso, não evita que textos próximos sejam retornados.
+%Além disso, não evita que textos próximos sejam retornados.
 
-%%%%%%%%%%
-% Atas são documentos não estruturados e
-% diferencial do sistema
-%%%%%%%%%%
-As atas são documentos textuais e portanto constituem dados não estruturados. Assim, um sistema que responde a consultas do usuário ao conteúdo das atas, retornando trechos de textos relevantes à sua intenção, é um desafio que envolve a compreensão de seu conteúdo~\cite{Bokaei2015}. 
 
 %%%%%%%%%%
 % Segmentar e extrair tópicos
@@ -57,7 +58,7 @@ Uma vez que a ata registra a sucessão de assuntos discutidos na reunião, há inte
 %%%%%%%%%%
 % Definição da Tarefa
 %%%%%%%%%%
-A tarefa de segmentação textual consiste dividir um texto em partes que contenham um significado relativamente independente. Em outras palavras, é identificar as posições onde há uma mudança significativa de tópicos. 
+A tarefa de segmentação textual consiste dividir um texto em partes que contenham um significado relativamente independente. Em outras palavras, é identificar as posições onde há uma mudança significativa de assuntos. 
 
 %%%%%%%%%%
 % Utilidade da segmentação (domínios onde é aplicada)
@@ -70,7 +71,7 @@ A segmentação de textos é útil em aplicações que trabalham com textos sem indica
 %%%%%%%%%%
 O interesse por segmentação textual tem crescido em em aplicações voltadas a recuperação de informação~\cite{Reynar1999} %citar o [15] ...
 e sumarização de textos. % ... e [2] do "Efficient Linear T S"
-Essa técnica pode ser usada para aprimorar o acesso a informação quando essa é solicitada por meio de uma consulta, onde é possível oferecer porções menores de texto mais relevantes ao invés de exibir um documento maior que pode conter informações menos pertinentes. 
+Essa técnica pode ser usada para aprimorar o acesso a informação quando essa é solicitada por meio de uma consulta, onde é possível oferecer porções menores de texto mais relevantes ao invés de exibir um documento grande que pode conter informações menos pertinentes. 
 %
 Além disso, encontrar pontos onde o texto muda de assunto, pode ser útil como etapa de preprocessamento em aplicações voltadas ao entendimento do texto, principalmente em textos longos.
 %
@@ -100,7 +101,7 @@ Há também um maior foco no idioma inglês, presente na maioria dos artigos public
 %%%%%%%%%%
 % Diferenças de entre Línguas
 %%%%%%%%%%
-Diferenças de performance podem ser vistas no mesmo algoritmo quando aplicando em documentos de diferentes idiomas, onde o inglês apresenta um taxa de erro significativamente menor que outro como o alemão e o espanhol~\cite{Kern2009,Sitbon2004}.
+Diferenças de performance podem ser vistas no mesmo algoritmo quando aplicado em documentos de diferentes idiomas, onde a aplicação em textos em inglês apresenta um taxa de erro significativamente menor que outro como o alemão e o espanhol~\cite{Kern2009,Sitbon2004}.
 %
 %
 %%%%%%%%%%
@@ -118,7 +119,7 @@ Na Seção~\ref{sec:trabalhos} são apresentados trabalhos recentes que desenvolver
 %
 Na Seção~\ref{sec:proposta} é apresentada a proposta desse trabalho voltada às atas de reunião. 
 %             sec:avaliacao-experimental
-Na Seção~\ref{sec:avaliacao} é detalhado a avaliação dos experimentos e seus resultados reportados na Seção~\ref{subsec:resultados}. 
+Na Seção~\ref{sec:avaliacao} é detalhado a avaliação dos experimentos e seus resultados são reportados. 
 %
 Por fim, na Seção~\ref{sec:conclusao} são apresentadas as considerações finais e trabalhos futuros.
 

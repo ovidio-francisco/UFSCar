@@ -7,7 +7,7 @@
 %
 % Documento é uma sucessão de assuntos
 %%% 
-Um documento textual, sobre tudo quando longo, é frequentemente uma sucessão de assuntos. 
+Um documento textual, sobretudo quando longo, é frequentemente uma sucessão de assuntos. 
 %
 % Segmentação
 %%% 
@@ -21,11 +21,16 @@ A segmentação textual ou segmentação topical é a tarefa de dividir um texto mant
 %
 % O texto deve ser divido em unidades que não pode ser dividida entre segmentos 
 %%% 
-O texto deve ser previamente dividido em unidades de informação, que podem ser palavras, paragrafos e mais usualmente em sentenças. Essas unidades são processadas pelos algoritmos como a menor parte de um segmento, ou seja uma unidade não pode divida, mas deve pertencer integralmente a um segmento.
+O texto deve ser previamente dividido em unidades de informação, que podem ser palavras, parágrafos e mais usualmente em sentenças. Essas unidades são processadas pelos algoritmos como a menor parte de um segmento, ou seja uma unidade não pode divida, mas deve pertencer integralmente a um segmento.
 %
 % Exemplos 
 %%% 
-Por exemplo, algoritmos baseados em janelas deslizantes, avançam uma unidade a cada passo. Da mesma forma, algoritmos baseados em matrizes de similaridade, devem calcular a similaridade entre essas unidades.
+Por exemplo, algoritmos baseados em janelas deslizantes avançam uma unidade a cada passo. Da mesma forma, algoritmos baseados em matrizes de similaridade, devem calcular a similaridade entre essas unidades.
+%%%%%%%%%%
+% Segmento
+%%%%%%%%%%	
+Dessa forma, um segmento pode ser visto como uma sucessão de unidades de informação que compartilham o mesmo assunto. 
+
 
 %
 % Sentaças são mais usuais 
@@ -36,17 +41,12 @@ Usualmente, utiliza-se sentenças como unidades informação, ou seja, as janelas d
 %%% 
 Assim, cada ponto entre duas sentenças e considerado um candidato a limite entre segmentos.
   
-%%%%%%%%%%
-% Segmento
-%%%%%%%%%%	
-Dessa forma, um segmento pode ser visto como uma sucessão de unidades de informação que compartilham o mesmo assunto. 
-
 
 
 %%%%%%%%%%
 % Coesão léxica como **presuposto básico**
 %%%%%%%%%%
-Trabalhos anteriores se apoiam na ideia de que a mudança de tópicos em um texto é acompanhada de uma proporcional mudança de vocabulário, essa ideia, chamada de coesão léxica, sugere que a distribuição das palavras é um forte indicador da estrutura do texto. A partir disso, vários algoritmos foram propostos baseados na ideia de que um segmento pode ser identificado e delimitado pela análise das palavras que o compõe~\cite{Galley2003,Boguraev2000}.
+Trabalhos anteriores se apoiam na ideia de que a mudança de tópicos em um texto é acompanhada de uma proporcional mudança de vocabulário. Essa ideia, chamada de coesão léxica, sugere que a distribuição das palavras é um forte indicador da estrutura do texto. A partir disso, vários algoritmos foram propostos baseados na ideia de que um segmento pode ser identificado e delimitado pela análise das palavras que o compõe~\cite{Galley2003,Boguraev2000}.
 
 
 
@@ -55,7 +55,7 @@ Trabalhos anteriores se apoiam na ideia de que a mudança de tópicos em um texto 
 %%%%%%%%%%
 % Porque cosseno
 %%%%%%%%%%
-Uma vez que a coesão léxica é pressuposto básico da maioria dos algoritmos, o cálculo da similaridade entre unidades de informação (comumente sentenças) é fundamental. Uma medida de similidade frequentemente utilizada é o cosseno, apresentada na Equação~\ref{equ:cosine}, onde $f_{x,j}$ a frequência da palavra $j$ na sentença $x$ e $f_{y,j}$ sendo a frequência da palavra $j$ na sentença $y$.
+Uma vez que a coesão léxica é pressuposto básico da maioria dos algoritmos, o cálculo da similaridade entre unidades de informação é fundamental. Uma medida de similidade frequentemente utilizada é o cosseno, apresentada na Equação~\ref{equ:cosine}, onde $f_{x,j}$ é a frequência da palavra $j$ na sentença $x$ e $f_{y,j}$ é a frequência da palavra $j$ na sentença $y$.
 
 
 \begin{equation}
@@ -74,7 +74,7 @@ Entre os principais trabalhos da literatura podemos citar o  \textit{TextTiling}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%              TextTiling                 %%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-O \textit{TextTiling} é um algoritmo baseado em janelas deslizantes, onde para cada candidato a limite, analisa-se o texto circundante. Um limite ou quebra de segmento é identificado quando sempre que a similaridade cai abaixo de um limiar.
+O \textit{TextTiling} é um algoritmo baseado em janelas deslizantes, em  que, para cada candidato a limite, analisa-se o texto circundante. Um limite ou quebra de segmento é identificado sempre que a similaridade cai abaixo de um limiar.
 % \textit{threshold}. %TODO - explicar como se encontra os vales
 
 
@@ -85,7 +85,7 @@ Em seguida, os blocos de texto são representados por vetores que contém as frequ
 %TODO como apresentado na Figura~\ref{fig:curvadedissimilaridade}.
 
 
-O \textit{TextTiling} possui menor complexidade computacional. Por outro lado, algoritmos mais complexos apresentam acurácia relativamente superior como apresentado em~\cite{Choi2000, Kern2009, Misra2009}.
+O \textit{TextTiling} possui baixa complexidade computacional. Por outro lado, algoritmos mais complexos apresentam acurácia relativamente superior como apresentado em~\cite{Choi2000, Kern2009, Misra2009}.
 
 
 
@@ -94,23 +94,24 @@ O \textit{TextTiling} possui menor complexidade computacional. Por outro lado, a
 %%%                  C99                    %%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-Choi \cite{Choi2000} apresenta um algoritmo baseado em ranking, o \textit{C99}. 
+O C99 é um algoritmo basedo em ranking.
+% Choi \cite{Choi2000} apresenta um algoritmo baseado em ranking, o \textit{C99}. 
 %
-Embora muitos trabalhos utilizem matrizes de similaridades, o autor traz obervações.
-%
-Ele aponta que para pequenos segmentos, o cálculo de suas similaridades não é confiável, pois uma ocorrência adicional de uma palavra causa um impacto que pode alterar significativamente o cálculo da similaridade.
+Embora muitos trabalhos utilizem matrizes de similaridades para pequenos segmentos, o cálculo de suas similaridades não é confiável, pois uma ocorrência adicional de uma palavra causa um impacto que pode alterar significativamente o cálculo da similaridade~\cite{Choi2000}.
 %
 Além disso, o estilo da escrita pode não ser constante em todo o texto. Choi sugere que, por exemplo, textos iniciais dedicados a introdução costumam apresentar menor coesão do que trechos dedicados a um tópico específico. Portanto, comparar a similaridade entre trechos de diferentes regiões não é apropriado.
 % Complexidade O(n²)
 Devido a isso, as similaridades não podem ser comparadas em valores absolutos. Então, o autor contorna esse problema fazendo uso de \textit{rankings} de similaridade para encontrar os segmentos de texto. 
 
 
-Inicialmente é construída uma matriz que contém as similaridades de todas as unidades de texto. Em seguida, cada valor na matriz de similaridade é substituído por seu ranking local. Onde para cada elemento da matiz, seu \textit{ranking} é o número de elementos vizinhos com valor de similaridade menor que o seu.
+Inicialmente é construída uma matriz que contém as similaridades de todas as unidades de texto. Em seguida, cada valor na matriz de similaridade é substituído por seu ranking local. Para cada elemento da matriz, seu \textit{ranking} é o número de elementos vizinhos com valor de similaridade menor que o seu.
 
 % O que é a máscara
 Então, para cada elemento delimita-se uma região da matriz, denominada máscara, para comparar com seus vizinhos.
 %
-Na Figura~\ref{fig:exemplomatrixrank} é apresentado um quadro de dimensões 3~x~3 destacado na matriz de similaridades, que contém os valores $\{0,3; 0,4; 0,4; 0,6; 0,5; 0,2; 0,9; 0,5; 0,7\}$, onde cada elemento da matrix é a similaridade entre duas unidades de informação. Tomando como exemplo o elemento com valor $0,5$, a mesma posição na matriz de \textit{ranks} terá o valor $4$, pois esse é o número de vizinhos com valores inferiores a $0,5$ dentro do quadro analisado na matriz de similaridades. 
+Na Figura~\ref{fig:exemplomatrixrank} é apresentado um quadro de dimensões 3~x~3 destacado na matriz de similaridades, 
+%que contém os valores $\{0,3; 0,4; 0,4; 0,6; 0,5; 0,2; 0,9; 0,5; 0,7\}$, 
+onde cada elemento da matrix é a similaridade entre duas unidades de informação. Tomando como exemplo o elemento com valor $0,5$, a mesma posição na matriz de \textit{ranks} terá o valor $4$, pois esse é o número de vizinhos com valores inferiores a $0,5$ dentro do quadro analisado na matriz de similaridades. 
 
 
   \begin{figure}[!h]
@@ -124,10 +125,11 @@ Na Figura~\ref{fig:exemplomatrixrank} é apresentado um quadro de dimensões 3~x~3
 
 
 
-Finalmente, utiliza um método de divisão por \textit{clustering} baseado no algoritmo de maximização de Reynar~\cite{Reynar1998} para identificar os limites entre os segmentos. 
+Com base na matriz de \textit{rank}, o \textit{C99} utiliza um método de \textit{clustering} baseado no algoritmo de maximização de Reynar~\cite{Reynar1998} para identificar os limites entre os segmentos. 
 
 
-
+% https://github.com/logological/C99 
+% https://github.com/DrDub/uima-text-segmenter
 
 \subsection{Segmentação de Referência} % Recordado da seção Documentos em 15-06-2017
 
@@ -150,14 +152,14 @@ Entre as abordagens mais comuns para se conseguir essas referências, encontramos
 \item A concatenação aleatória de documentos distintos, onde o ponto entre o final de um texto e o início do seguinte é um limite entre eles. 
 
 % Segmentação manual
-\item A segmentação manual dos documentos, nesse caso, pessoas capacitadas, também chamadas de juízes, ou mesmo o autor do texto, são consultadas e indicam manualmente onde há uma quebra de segmento. 
+\item A segmentação manual dos documentos, em que, pessoas capacitadas, também chamadas de juízes, ou mesmo o autor do texto, são consultadas e indicam manualmente onde há uma quebra de segmento. 
 % Mediador em conversas
 \item Em transcrição de conversas faladas em reuniões com múltiplos participantes, um mediador é responsável por encerrar um assunto e iniciar um novo, nesse caso o mediador anota manualmente o tempo onde há uma transição de tópico. 
 
 \end{itemize}
 
 % Não avaliar
-Em aplicações onde a segmentação é uma tarefa secundária e quando essas abordagens são custosas ou não se aplicam, é possível, ao invés de avaliar o segmentador, analisar seu impacto na aplicação final.
+Em aplicações em que a segmentação é uma tarefa secundária e quando essas abordagens são custosas ou não se aplicam, é possível, ao invés de avaliar o segmentador, analisar seu impacto na aplicação final.
 
 
 
@@ -206,7 +208,7 @@ As medidas de avaliação tradicionais como precisão e revocação são usadas em rec
 %%%%%%%%%%
 %	Avaliações baseadas em hits 
 %%%%%%%%%%
-Essas medidas de avaliação tentam computar os erros do algoritmo, isto é, falsos positivos e falsos negativos, a fim de calcular seu desempenho. 
+Essas medidas de avaliação computam os erros do algoritmo, isto é, falsos positivos e falsos negativos, a fim de calcular seu desempenho. 
 
 %
 % Falso Positivo 
@@ -241,7 +243,7 @@ a precisão, é a proporção de limites corretamente identificados pelo algoritmo.
 %
 % Cálculo 
 %%% 
-É calculada dividindo-se o número de limites identificados automaticamente pelo número de candidatos a limite(Equação~\ref{equ:precisao}).
+É calculada dividindo-se o número de limites identificados automaticamente pelo número de candidatos a limite (Equação~\ref{equ:precisao}).
 % 
 \begin{equation}
 	Presis\tilde{a}o = \frac{VP}{VP+FP}
@@ -269,7 +271,7 @@ A revocação, é a proporção de limites verdadeiros que foram identificados pelo a
 
 % 
 \begin{equation}
-	Revo\c{c}\tilde{a}o = \frac{VP}{VP+FN}
+	Revoca\c{c}\tilde{a}o = \frac{VP}{VP+FN}
 	\label{equ:revocacao}
 \end{equation}
 %
@@ -300,7 +302,7 @@ Na Figura~\ref{fig:exemplosegmentacaozoom} é apresentado um exemplo com duas seg
 
 	\centering
 	\includegraphics[width=0.8\textwidth]{windiffzoom.jpg}
-	\caption{Exemplos de \textit{near missing} e falso positivo puro. Os blocos indicam uma unidade de informação e as linha verticais representam os limites entre segmentos de texto representando um tópico do texto. }
+	\caption{Exemplos de \textit{near missing} e falso positivo puro. Os blocos indicam uma unidade de informação e as linha verticais representam uma transição de assunto. }
 	\label{fig:exemplosegmentacaozoom}
 
   \end{figure}
@@ -308,7 +310,8 @@ Na Figura~\ref{fig:exemplosegmentacaozoom} é apresentado um exemplo com duas seg
 
 Considerando o conceito de \textit{near misses}, algumas soluções foram propostas. As medidas de avaliação mais utilizadas são:
 
-\begin{enumerate}
+\begin{description}
+
 
 %%%%%%%%%%%%%%%
 % Pk 
@@ -352,19 +355,19 @@ apresenta uma medida alternativa à P$_k$~\cite{Beeferman1999} a fim de melhorar 
 %
 % Funcionamento do Windiff 
 %%% 
-De maneira semelhante, move uam janela pelo texto e penaliza o algoritmo sempre que o número de limites proposto pelo algoritmo não conicidir com o número de limites epeperados para aquela janela. Ou seja, o algoritmo é penalizado quando não concordar com a segmentação de referência quanto ao número de segmentos na janela. 
+De maneira semelhante, move uma janela pelo texto e penaliza o algoritmo sempre que o número de limites proposto pelo algoritmo não coincidir com o número de limites esperados para aquela janela. Ou seja, o algoritmo é penalizado quando não concordar com a segmentação de referência quanto ao número de segmentos na janela. 
 %
 % Solução para considerar o tamanho das sentenças 
 %%% 
-Assim, consegue manter a sensiblidade a \textit{near misses} e além disso, considerar o tamanho das janelas.
+Assim, consegue manter a sensibilidade a \textit{near misses} e além disso, considerar o tamanho das janelas.
 %
 % Solução para equilibrar falsos positivos e near missses 
 %%% 
-A fim de melhor equilibrar o peso dos falsos positivos em relação a \textit{near misses}, dobra-se a penalidade para falsos positivos, evitando-se a suparvalorização dessa medida. 
+A fim de melhor equilibrar o peso dos falsos positivos em relação a \textit{near misses}, dobra-se a penalidade para falsos positivos, evitando-se a supervalorização dessa medida. 
 % OBS: Os problemas de Pk ficaram subentendidos aqui :/ 
 
 
-\end{enumerate}
+\end{description}
 
 
 

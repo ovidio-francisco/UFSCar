@@ -38,32 +38,35 @@ Nas subseções a seguir serão apresentados o pré-processamento e a identificação 
 \subsection{Pré-processamento}
 	\label{subsec:preprocessamento}
 
-	O texto a ser segmentado frequentemente é extraído de documentos em formatos como \textit{pdf}, \textit{doc}, \textit{docx} ou \textit{odt}. Após a extração, uma ata tem em média 906 \textit{tokens}, incluindo elementos menos informativos. 
-A fim de preparar o texto e selecionar as palavras mais significativas, este passa por processos de transformação os quais serão apresentados a seguir.
+O texto a ser segmentado frequentemente é extraído de documentos do tipo \textit{pdf}, \textit{doc}, \textit{docx} ou \textit{odt} que normalmente possuem formato binário. A fim de extrair o texto desses documentos, aplicou-se um processo que transforma esses formatos em aquivos de texto plano. 
+Após isso, uma ata tem em média 906 \textit{tokens}, incluindo elementos menos informativos. A fim de preparar o texto e selecionar as palavras mais significativas, este passa por processos de transformação os quais serão apresentados a seguir.
 	
 
 \begin{enumerate}
 
 
 % Cabeçalhos e rodapés
-\item Remoção de Cabeçalhos e rodapés: 
-As atas frequentemente contém trechos que podem ser considerados pouco informativos e descartados durante o pré-processamento, como cabeçalhos e rodapés que se misturam aos tópicos tratados na reunião, podendo ser  inseridos no meio de um tópico e criando uma quebra que prejudica tanto o algoritmo de segmentação, quanto a leitura do texto pelo usuário.
+\item Remoção de cabeçalhos e rodapés: as atas frequentemente contém trechos que podem ser considerados pouco informativos e descartados durante o pré-processamento, como cabeçalhos e rodapés que se misturam aos tópicos tratados na reunião, podendo ser  inseridos no meio de um tópico prejudicando tanto o algoritmo de segmentação, quanto a leitura do texto pelo usuário.
 
 % Identificação de sentenças
-\item Identificação de finais sentenças: 
-Cada final de sentença é identificado e marcado com uma \textit{string} especial, esse processo é melhor descrito na Subseção~\ref{subsec:indentificacaosentencas}.
+\item Identificação de finais sentenças: cada final de sentença é identificado e marcado com uma \textit{string} especial, esse processo é melhor descrito na Subseção~\ref{subsec:indentificacaosentencas}.
 
 % Limpeza
-\item Limpeza: 
-Todos os caracteres são convertidos em caixa baixa e elimina-se a acentuação, sinais de pontuação e todos os \textit{tokens} menores que três caracteres.
+%\item Limpeza: 
+%Todos os caracteres foram convertidos em caixa baixa e eliminou-se a acentuação, sinais de pontuação e todos os \textit{tokens} menores que três caracteres.
+%
+%% Numerais
+%\item Remoção de numerais:
+%Nas atas, é comum o uso de numerais para marcação de páginas e linhas, da mesma forma, são pouco informativos e foram descartados.
+%
+%% Stop Words
+%\item Remoção de \textit{Stop Words}: 
+%Removeu-se as palavras consideradas menos informativas, para isso, utilizou-se uma lista contendo 438 palavras. 
 
-% Numerais
-\item Remoção de numerais:
-Nas atas, é comum o uso de numerais para marcação de páginas e linhas, da mesma forma, são pouco informativos e podem ser descartados.
 
-% Stop Words
-\item Remoção de \textit{Stop Words}: 
-Remove-se as palavras consideradas menos informativas, para isso, utiliza-se uma lista contendo 438 palavras. 
+% Remoção de termos
+\item Redução de termos: Eliminou-se a acentuação, sinais de pontuação, numerais e todos os \textit{tokens} menores que três caracteres. 
+Palavras de uso muito frequente como artigos, preposições e pronomes, chamadas de \textit{stop words}, foram removidas utilizando-se uma lista de 438 palavras.
 
 % Stemming
 \item \textit{Stemming}:
@@ -73,7 +76,7 @@ Extrai-se o radical de cada palavra, para isso, as letras são convertidas em cai
 	
 	
 
-Após cada passo, os \textit{tokens} menos significativos são removidos e, ao final, são extraídas em média 441 palavras de cada ata, conforme mostrado na Tabela~\ref{tab:preprocessamento}.
+% Após cada passo, reduziu-se a quantidade de \textit{tokens}. Ao final, extraiu-se em média 441 palavras de cada ata, conforme mostrado na Tabela~\ref{tab:preprocessamento}.
 
 %Testando Preprocessamento
 %
@@ -151,9 +154,9 @@ A Figura~\ref{fig:exemplopreprocessamento} mostra a etapa de pré-processamento e
 %	Os algoritmos de segmentação devem ser
 	É preciso fornecer aos algoritmos os candidatos iniciais a limites de segmento. Para isso, é necessário escolher qual será a unidade de informação mínima que constitui um segmento. Baseando-se no estilo de escrita e considerando as pontuações de um texto, é possível, em alguns casos, indicar quebras de parágrafo, finais de sentenças ou mesmo palavras como elementos que encerram um segmento. 
 
-	Ocorre que em atas de reunião é uma prática comum redigi-las de forma que o conteúdo discutido fica em parágrafo único, além disso, as quebras de parágrafo são usados para formatação de outros elementos como espaço para assinaturas. 
+	Ocorre que em atas de reunião é uma prática comum redigí-las de forma que o conteúdo discutido fica em parágrafo único. Além disso, as quebras de parágrafo são usadas para formatação de outros elementos como espaço para assinaturas. 
 %
-	Também não é conveniente indicar todo ponto entre \textit{token} como candidato pois obrigaria a ajustar posteriormente os segmentos de maneira a não quebrar uma ideia ou frase. 
+% Também não é conveniente indicar todo ponto entre \textit{token} como candidato pois obrigaria a ajustar posteriormente os segmentos de maneira a não quebrar uma ideia ou frase. 
 %	
 	Assim, neste trabalho, os finais de sentença são considerados unidades de informação e portanto, passíveis a limite entre segmentos. 
 	

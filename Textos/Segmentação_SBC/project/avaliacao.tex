@@ -16,7 +16,7 @@ De acordo com \cite{Pevzner2002} há duas principais dificuldades na avaliação de
 %%%%%%%%%%
 % Definição do que é um bom algoritmo de segmentação
 %%%%%%%%%%
-Para fins de avaliação desse trabalho, um bom método de segmentação é aquele cujo resultado melhor se aproxima do ideal, sem a obrigatoriedade de estar perfeitamente alinhado com tal. Ou seja, visto o contexto das atas de reunião, e a subjetividade da tarefa, não é necessário que os limites entre os segmentos (real e hipótese) sejam idênticos, mas que se assemelhem em localização e quantidade.
+Para fins de avaliação desse trabalho, um bom método de segmentação é aquele cujo resultado melhor se aproxima de uma segmentação manual, sem a obrigatoriedade de estar perfeitamente alinhado com tal. Ou seja, visto o contexto das atas de reunião, e a subjetividade da tarefa, não é necessário que os limites entre os segmentos (real e hipótese) sejam idênticos, mas que se assemelhem em localização e quantidade.
 
 
 
@@ -24,11 +24,11 @@ Para fins de avaliação desse trabalho, um bom método de segmentação é aquele cuj
 % Saber quais são as melhores configurações (para a segmentação de atas)
 % Saber qual a influênica do preprocessamento 
 %%%
-Para que ober um melhor resultado com as técnicas de segmentação texutal apresentadas nesse artigo, faz-se necessario conhecer quais valores otimizam a configuração de um algoritmo.
+Para obter um melhor resultado com as técnicas de segmentação textual apresentadas nesse artigo, faz-se necessário conhecer quais valores otimizam a configuração de um algoritmo.
 % 
-Deseja-se também saber qual a influência do preprocessamento no desmpenho dos algoritmos.
+Deseja-se também saber qual a influência do preprocessamento no desempenho dos algoritmos.
 % 
-Assim, nesse trabalho, refere-se como configuração os valores que foram atribuidos aos parâmentros de um algorítmo e à presença ou ausência da etapa de preprocessamento.
+Assim, nesse trabalho, refere-se como configuração os valores que foram atribuídos aos parâmetros de um algoritmo e à presença ou ausência da etapa de preprocessamento.
 
 
 
@@ -38,7 +38,7 @@ Assim, nesse trabalho, refere-se como configuração os valores que foram atribuid
 %%%%%%%%%%
 
 
-As próximas subseções mostram o conjunto de atas e a segmentação usada como referência em seguida são apresentadas as métricas de avaliação utilizadas neste trabalho e os testes realizados para avaliar os métodos.
+% As próximas subseções mostram o conjunto de atas e a segmentação usada como referência em seguida são apresentadas as métricas de avaliação utilizadas neste trabalho e os testes realizados para avaliar os métodos.
 
 
 
@@ -58,10 +58,10 @@ Os arquivos gerados foram tratados para que os segmentos sempre terminem em uma 
 %%%%%%%%%%
 As implementações dos algoritmos permitem ao usuário a configuração de seus parâmetros. 
 %
-O \textit{TextTiling} permite ajustarmos dois parâmetros, sendo, o tamanho da janela (distância entre a primeira e a última sentença) para o qual atribuiu-se os valores 20, 40 e 60. Para o segundo parâmetro, o passo (distância que a janela desliza), atribuiu-se os valores 3, 6, 9 e 12. Gerando ao final 20 modelos.
+O \textit{TextTiling} permite ajustarmos dois parâmetros, sendo o primeiro o tamanho da janela para o qual atribuiu-se os valores 20, 40 e 60. Para o segundo parâmetro, o passo, atribuiu-se os valores 3, 6, 9 e 12. Gerando ao final 20 configurações.
 %
 
-O \textit{C99} permite ajustarmos três parâmetros, sendo, a quantidade segmentos desejados, o qual é calculado como uma proporção dos candidatos a limite. Para isso atribuiu-se as proporções {0,2; 0,4; 0,6; 0,8; 1,0}. O segundo parâmetro, o tamanho do quadro utilizado para gerar a matriz de ranking, atribuiu-se os valores 9 e 11, sendo 11 o valor padrão da apresentado pelo autor. Permite ainda, definirmos se as sentenças serão representados por vetores contendo a frequência ou o peso de cada termo, onde ambas as representações foram utilizadas. Considerando todos os parâmetros, foram gerados 20 modelos para o algoritmo C99.
+O \textit{C99} permite ajustarmos três parâmetros, sendo, o primeiro a quantidade segmentos desejados, uma vez que, não se conhece o número ideal de segmentos, calcula-se uma proporção dos candidatos a limite. Para isso atribuiu-se os valores {0,2; 0,4; 0,6; 0,8; 1,0}. O segundo parâmetro, o tamanho do quadro utilizado para gerar a matriz de ranking, atribuiu-se os valores 9 e 11, sendo 11 o valor padrão da apresentado pelo autor. Permite ainda, definirmos se as sentenças serão representados por vetores contendo a frequência ou o peso de cada termo, onde ambas as representações foram utilizadas. Considerando todos os parâmetros, foram gerados 20 configurações para o algoritmo C99.
 
 % Neste artigo nos referimos como configuração a determinados valores que foram atribuidos aos parâmetros de um algoritmo
 
@@ -95,19 +95,19 @@ Os algoritmos foram comparados com a segmentação fornecida pelos especialistas e
 %
 % Teste de Friedman em múltilas atas  
 %%%
-O teste de Friedman foi utilizado para avaliar o desempenho dos algoritmos considerando a base de dados de atas. 
+% O teste de Friedman foi utilizado para avaliar o desempenho dos algoritmos considerando a base de dados de atas. 
 %
 % Testa o rankings médios e testa hip. nula 
 %%%
-O teste comparou os \textit{ranks} médios dos algoritmos em cada ata e testou a hipótese nula de que todos os algoritmos são são equivalentes. 
+% O teste comparou os \textit{rankings} médios dos algoritmos em cada ata e testou a hipótese nula de que todos os algoritmos são equivalentes. 
 %
 % Se a hip. nula for rejeitada, executa Nemenyi  
 %%%
-Quando a hipótese nula é rejeitada, executa-se o pós-teste de Nemenyi a fim de saber se há diferença significativa entre os algoritmos. O teste considera significativamente diferente dois algoritmos cujos \textit{rankings} médios diferem em um valor mínimo, chamado de diferença crítica~\cite{Demsar2006}.
+% Quando a hipótese nula foi rejeitada, executou-se o pós-teste de Nemenyi a fim de saber se há diferença significativa entre os algoritmos. O teste considera significativamente diferente dois algoritmos cujos \textit{rankings} médios diferem em um valor mínimo, chamado de diferença crítica~\cite{Demsar2006}.
 %
 % O digrama CD mostra se há diferença significativa e ordenas os melhores.
 %%%
-Os resultados desse teste podem ser visualizados graficamente pelo diagrama de difença crítica, o qual apresenta os melhores algoritmos ordenados no eixo $X$.
+% Os resultados desse teste podem ser visualizados graficamente pelo diagrama de diferença crítica, o qual apresenta os melhores algoritmos ordenados no eixo $X$.
 % TODO: colocar uma imagem do digramca CD 
 
 
@@ -186,7 +186,7 @@ Na Tabela~\ref{tab:c99sempreprocess} são apreentadas, para cada medida, as confi
 %%%%%%%%%%%%%%%
 % Testes com o Preprocessamento 
 %%%%%%%%%%%%%%%
-Repetiu-se os testes anteriores incluindo o preprocessando para verificar o impacto essa etapa na segmentação das atas e conhecer quais valores melhor configuram os algoritmos considerando o texto preprocessado. 
+Repetiu-se os testes anteriores incluindo o preprocessando para verificar o impacto dessa etapa na segmentação das atas e conhecer quais valores melhor configuram os algoritmos considerando o texto preprocessado. 
 %
 Nas Tabelas~\ref{tab:texttilingcompreprocess}~e~\ref{tab:c99compreprocess} são apresentadas as configurações que otimizam os algoritmos incluindo essa etapa.
 

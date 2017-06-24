@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.4.21)  22 JUN 2017 21:38
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.4.21)  23 JUN 2017 16:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -52,26 +52,6 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@layouthoffset=\dimen109
 \Gm@layoutvoffset=\dimen110
 \Gm@dimlist=\toks15
-)
-(/usr/share/texlive/texmf-dist/tex/latex/booktabs/booktabs.sty
-Package: booktabs 2016/04/27 v1.618033 publication quality tables
-\heavyrulewidth=\dimen111
-\lightrulewidth=\dimen112
-\cmidrulewidth=\dimen113
-\belowrulesep=\dimen114
-\belowbottomsep=\dimen115
-\aboverulesep=\dimen116
-\abovetopsep=\dimen117
-\cmidrulesep=\dimen118
-\cmidrulekern=\dimen119
-\defaultaddspace=\dimen120
-\@cmidla=\count90
-\@cmidlb=\count91
-\@aboverulesep=\dimen121
-\@belowrulesep=\dimen122
-\@thisruleclass=\count92
-\@lastruleclass=\count93
-\@thisrulewidth=\dimen123
 ) (./medidas.aux)
 \openout1 = `medidas.aux'.
 
@@ -87,6 +67,7 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 9.
 LaTeX Font Info:    ... okay on input line 9.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 9.
 LaTeX Font Info:    ... okay on input line 9.
+
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -125,12 +106,8 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 10.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 10.
-Missing character: There is no Ã in font cmr10!
-Missing character: There is no § in font cmr10!
-Missing character: There is no Ã in font cmr10!
-Missing character: There is no £ in font cmr10!
 
-Overfull \hbox (62.34818pt too wide) in paragraph at lines 10--67
+Overfull \hbox (65.15378pt too wide) in paragraph at lines 10--67
 [][] 
  []
 
@@ -138,17 +115,17 @@ Overfull \hbox (62.34818pt too wide) in paragraph at lines 10--67
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./medidas.aux) ) 
 Here is how much of TeX's memory you used:
- 781 strings out of 494884
- 10641 string characters out of 6179236
- 109812 words of memory out of 5000000
- 4150 multiletter control sequences out of 15000+600000
+ 722 strings out of 494884
+ 9865 string characters out of 6179236
+ 109065 words of memory out of 5000000
+ 4095 multiletter control sequences out of 15000+600000
  3948 words of font info for 15 fonts, out of 8000000 for 9000
  38 hyphenation exceptions out of 8191
- 23i,7n,19p,221b,129s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 23i,7n,19p,219b,129s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/sha
 re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/tex
 live/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb>
-Output written on medidas.pdf (1 page, 36371 bytes).
+Output written on medidas.pdf (1 page, 36312 bytes).
 PDF statistics:
  16 PDF objects out of 1000 (max. 8388607)
  10 compressed objects within 1 object stream

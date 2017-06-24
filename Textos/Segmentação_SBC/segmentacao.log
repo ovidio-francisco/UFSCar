@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.4.21)  23 JUN 2017 09:37
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.4.21)  24 JUN 2017 17:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -310,56 +310,54 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <13> not available
  [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]) (./project/referencial.te
-x [2] [3]
-Underfull \hbox (badness 1147) in paragraph at lines 111--114
-[]\OT1/ptm/m/n/12 Ent[]ao, para cada el-e-mento delimita-se uma regi[]ao da ma-
-triz, de-nom-i-nada
- []
+x
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-<images/exemplo-matrix-rank-noborder.jpg, id=22, 366.168pt x 193.2018pt>
+ [2]
+[3] <images/exemplo-matrix-rank-noborder.jpg, id=22, 366.168pt x 193.2018pt>
 File: images/exemplo-matrix-rank-noborder.jpg Graphic file (type jpg)
 
 <use images/exemplo-matrix-rank-noborder.jpg>
 Package pdftex.def Info: images/exemplo-matrix-rank-noborder.jpg used on input 
-line 119.
+line 120.
 (pdftex.def)             Requested size: 341.43437pt x 180.15633pt.
-LaTeX Font Info:    Try loading font information for OT1+phv on input line 120.
+LaTeX Font Info:    Try loading font information for OT1+phv on input line 121.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1phv.fd
 File: ot1phv.fd 2001/06/04 scalable font definitions for OT1/phv.
 )
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <10> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 120.
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 121.
  [4 <./images/exemplo-matrix-rank-noborder.jpg>]
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 150.
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 152.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omsptm.fd
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 150.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 152.
 
-Underfull \hbox (badness 1221) in paragraph at lines 179--180
+Underfull \hbox (badness 1221) in paragraph at lines 181--182
 \OT1/ptm/m/n/12 As me-di-das de avalia[][]ao tradi-cionais como pre-cis[]ao e r
 evoca[][]ao s[]ao us-adas em
  []
 
 [5]
 
-LaTeX Warning: Command \c invalid in math mode on input line 272.
+LaTeX Warning: Command \c invalid in math mode on input line 274.
 
 <images/windiffzoom.jpg, id=30, 312.2064pt x 78.5334pt>
 File: images/windiffzoom.jpg Graphic file (type jpg)
 
 <use images/windiffzoom.jpg>
-Package pdftex.def Info: images/windiffzoom.jpg used on input line 302.
+Package pdftex.def Info: images/windiffzoom.jpg used on input line 304.
 (pdftex.def)             Requested size: 341.43437pt x 85.8897pt.
 LaTeX Font Info:    Font shape `OT1/phv/bx/it' in size <10> not available
-(Font)              Font shape `OT1/phv/b/it' tried instead on input line 303.
+(Font)              Font shape `OT1/phv/b/it' tried instead on input line 305.
 LaTeX Font Info:    Font shape `OT1/phv/b/it' in size <10> not available
-(Font)              Font shape `OT1/phv/b/sl' tried instead on input line 303.
+(Font)              Font shape `OT1/phv/b/sl' tried instead on input line 305.
  [6 <./images/windiffzoom.jpg>])
 (./project/trabalhosrelacionados.tex
 LaTeX Font Info:    External font `cmex10' loaded for size
@@ -371,25 +369,25 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 File: images/pre-processamento.jpg Graphic file (type jpg)
 
 <use images/pre-processamento.jpg>
-Package pdftex.def Info: images/pre-processamento.jpg used on input line 132.
+Package pdftex.def Info: images/pre-processamento.jpg used on input line 135.
 (pdftex.def)             Requested size: 426.79135pt x 106.45195pt.
  [9]
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 188.
-LaTeX Font Info:    Try loading font information for OT1+pcr on input line 188.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 191.
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 191.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 )
-LaTeX Font Info:    Try loading font information for OMS+pcr on input line 188.
+LaTeX Font Info:    Try loading font information for OMS+pcr on input line 191.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omspcr.fd
 File: omspcr.fd 
 )
 LaTeX Font Info:    Font shape `OMS/pcr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 188.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 191.
 )
 (./project/avaliacao.tex [10 <./images/pre-processamento.jpg>]
 Underfull \hbox (badness 1616) in paragraph at lines 59--63
@@ -401,14 +399,12 @@ Underfull \hbox (badness 1616) in paragraph at lines 59--63
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
+[12]) (./project/conclusao.tex [13]) (./segmentacao.bbl [14]) [15]
+(./segmentacao.aux)
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[12]) (./project/conclusao.tex [13]) (./segmentacao.bbl [14] [15]) [16]
-(./segmentacao.aux) )
+ )
 (\end occurred inside a group at level 1)
 
 ### simple group (level 1) entered at line 1061 ({)
@@ -416,11 +412,11 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 Here is how much of TeX's memory you used:
  3999 strings out of 494884
  59413 string characters out of 6179236
- 150392 words of memory out of 5000000
+ 147392 words of memory out of 5000000
  7208 multiletter control sequences out of 15000+600000
  28666 words of font info for 53 fonts, out of 8000000 for 9000
  38 hyphenation exceptions out of 8191
- 39i,15n,28p,744b,2485s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 39i,15n,28p,750b,2485s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texl
@@ -434,10 +430,10 @@ hvb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvbo8a.pfb><
 ive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-dist
 /fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/ur
 w/times/utmri8a.pfb>
-Output written on segmentacao.pdf (16 pages, 408798 bytes).
+Output written on segmentacao.pdf (15 pages, 407420 bytes).
 PDF statistics:
- 112 PDF objects out of 1000 (max. 8388607)
- 77 compressed objects within 1 object stream
+ 109 PDF objects out of 1000 (max. 8388607)
+ 75 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  16 words of extra memory for PDF output out of 10000 (max. 10000000)
 
