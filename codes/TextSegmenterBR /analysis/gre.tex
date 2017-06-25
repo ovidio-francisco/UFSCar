@@ -1,0 +1,69 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage{graphicx}
+\usepackage{lscape}
+\title{Output tables for 1xN statistical comparisons.}
+\author{}
+\date{\today}
+\begin{document}
+\begin{landscape}
+\pagestyle{empty}
+\maketitle
+\thispagestyle{empty}
+
+\section{Average rankings of Friedman test}
+
+
+Average ranks obtained by each method in the Friedman test.
+
+\begin{table}[!htp]
+\centering
+\begin{tabular}{|c|c|}\hline
+Algorithm&Ranking\\\hline
+TT-20-3-T&18.4167\\TT-20-6-T&16.8333\\TT-20-9-T&12.375\\TT-20-12-T&17.0417\\TT-30-3-T&17.4167\\TT-30-6-T&15.4167\\TT-30-9-T&17.25\\TT-30-12-T&18.5417\\TT-40-3-T&12.5833\\TT-40-6-T&16.2917\\TT-40-9-T&11.6667\\TT-40-12-T&16.7083\\TT-50-3-T&15.8333\\TT-50-6-T&15.2917\\TT-50-9-T&15.625\\TT-50-12-T&13.5\\TT-60-3-T&12.4583\\TT-60-6-T&14.3333\\TT-60-9-T&13\\TT-60-12-T&13\\C99-20-9-false-T&15\\C99-20-9-true-T&16.4583\\C99-20-11-false-T&14.2083\\C99-20-11-true-T&15.4167\\C99-40-9-false-T&15.125\\C99-40-9-true-T&14.0833\\C99-40-11-false-T&13.625\\C99-40-11-true-T&12.9167\\C99-60-9-false-T&14.5833\\\hline\end{tabular}
+\caption{Average Rankings of the algorithms (Friedman)}
+\end{table}
+
+Friedman statistic (distributed according to chi-square with 28 degrees of freedom): 16.512644. \newline P-value computed by Friedman Test: 0.957605.\newline
+
+
+\newpage
+
+\section{Post hoc comparison (Friedman)}
+
+
+P-values obtained in by applying post hoc methods over the results of Friedman procedure.
+
+\begin{table}[!htp]
+\centering\footnotesize
+\begin{tabular}{cccc}
+$i$&algorithm&$z=(R_0 - R_i)/SE$&$p$\\
+\hline28&TT-30-12-T&1.977786&0.047953\\27&TT-20-3-T&1.941826&0.052158\\26&TT-30-3-T&1.654148&0.098097\\25&TT-30-9-T&1.606202&0.10823\\24&TT-20-12-T&1.546269&0.12204\\23&TT-20-6-T&1.486336&0.13719\\22&TT-40-12-T&1.450376&0.146954\\21&C99-20-9-true-T&1.378457&0.168062\\20&TT-40-6-T&1.330511&0.18335\\19&TT-50-3-T&1.198658&0.230661\\18&TT-50-9-T&1.138725&0.254818\\17&TT-30-6-T&1.078792&0.28068\\16&C99-20-11-true-T&1.078792&0.28068\\15&TT-50-6-T&1.042833&0.297026\\14&C99-40-9-false-T&0.994886&0.319792\\13&C99-20-9-false-T&0.958927&0.337596\\12&C99-60-9-false-T&0.839061&0.401435\\11&TT-60-6-T&0.767141&0.442998\\10&C99-20-11-false-T&0.731182&0.464668\\9&C99-40-9-true-T&0.695222&0.486916\\8&C99-40-11-false-T&0.563369&0.573183\\7&TT-50-12-T&0.52741&0.597909\\6&TT-60-9-T&0.383571&0.701297\\5&TT-60-12-T&0.383571&0.701297\\4&C99-40-11-true-T&0.359597&0.719148\\3&TT-40-3-T&0.263705&0.792007\\2&TT-60-3-T&0.227745&0.819844\\1&TT-20-9-T&0.203772&0.838532\\\hline
+\end{tabular}
+\caption{Post Hoc comparison Table for $\alpha=0.05$ (FRIEDMAN)}
+\end{table}
+\newpage
+
+\section{Adjusted P-Values (Friedman)}
+
+
+Adjusted P-values obtained through the application of the post hoc methods (Friedman).
+
+\begin{table}[!htp]
+\centering\small
+\begin{tabular}{ccc}
+i&algorithm&unadjusted $p$\\
+\hline1&TT-30-12-T&0.047953\\2&TT-20-3-T&0.052158\\3&TT-30-3-T&0.098097\\4&TT-30-9-T&0.10823\\5&TT-20-12-T&0.12204\\6&TT-20-6-T&0.13719\\7&TT-40-12-T&0.146954\\8&C99-20-9-true-T&0.168062\\9&TT-40-6-T&0.18335\\10&TT-50-3-T&0.230661\\11&TT-50-9-T&0.254818\\12&TT-30-6-T&0.28068\\13&C99-20-11-true-T&0.28068\\14&TT-50-6-T&0.297026\\15&C99-40-9-false-T&0.319792\\16&C99-20-9-false-T&0.337596\\17&C99-60-9-false-T&0.401435\\18&TT-60-6-T&0.442998\\19&C99-20-11-false-T&0.464668\\20&C99-40-9-true-T&0.486916\\21&C99-40-11-false-T&0.573183\\22&TT-50-12-T&0.597909\\23&TT-60-9-T&0.701297\\24&TT-60-12-T&0.701297\\25&C99-40-11-true-T&0.719148\\26&TT-40-3-T&0.792007\\27&TT-60-3-T&0.819844\\28&TT-20-9-T&0.838532\\\hline
+\end{tabular}
+\caption{Adjusted $p$-values (FRIEDMAN) (I)}
+\end{table}
+\begin{table}[!htp]
+\centering\small
+\begin{tabular}{ccc}
+i&algorithm&unadjusted $p$\\
+\hline1&TT-30-12-T&0.047953\\2&TT-20-3-T&0.052158\\3&TT-30-3-T&0.098097\\4&TT-30-9-T&0.10823\\5&TT-20-12-T&0.12204\\6&TT-20-6-T&0.13719\\7&TT-40-12-T&0.146954\\8&C99-20-9-true-T&0.168062\\9&TT-40-6-T&0.18335\\10&TT-50-3-T&0.230661\\11&TT-50-9-T&0.254818\\12&TT-30-6-T&0.28068\\13&C99-20-11-true-T&0.28068\\14&TT-50-6-T&0.297026\\15&C99-40-9-false-T&0.319792\\16&C99-20-9-false-T&0.337596\\17&C99-60-9-false-T&0.401435\\18&TT-60-6-T&0.442998\\19&C99-20-11-false-T&0.464668\\20&C99-40-9-true-T&0.486916\\21&C99-40-11-false-T&0.573183\\22&TT-50-12-T&0.597909\\23&TT-60-9-T&0.701297\\24&TT-60-12-T&0.701297\\25&C99-40-11-true-T&0.719148\\26&TT-40-3-T&0.792007\\27&TT-60-3-T&0.819844\\28&TT-20-9-T&0.838532\\\hline
+\end{tabular}
+\caption{Adjusted $p$-values (FRIEDMAN) (II)}
+\end{table}
+
+\newpage
+\end{landscape}\end{document}

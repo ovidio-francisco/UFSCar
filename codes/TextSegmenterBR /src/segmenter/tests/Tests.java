@@ -63,8 +63,8 @@ public class Tests {
 		boolean testTT = false;
 		boolean testC9 = false;
 		
-		testTT = true;
-//		testC9 = true;
+//		testTT = true;
+		testC9 = true;
 		
 		if (testTT) {
 			
