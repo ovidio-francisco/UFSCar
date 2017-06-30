@@ -14,7 +14,7 @@ import utils.Files;
 
 public class Tests {
 	
-	public enum Metric {ACURACY, PRECISION, RECALL, F1, WINDIFF, PK};
+	public enum Metric {ACURACY, PRECISION, RECALL, F1, WINDIFF, PK, AVR_SEGS_COUNT};
 	
 	static ArrayList<File> files = new ArrayList<>();
 	
@@ -240,6 +240,8 @@ public class Tests {
 				case F1        : value += ev.getF1();         break;
 				case WINDIFF   : value += ev.getWindowDiff(); break;
 				case PK        : value += ev.getPk();         break;
+				
+				case AVR_SEGS_COUNT : value += ev.getTestSegmentsCount(); break;
 
 				default: value = -1; break;
 			}

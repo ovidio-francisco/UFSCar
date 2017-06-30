@@ -6,7 +6,7 @@
 %%%%%%%%%%
 % Descrição das Reuniões
 %%%%%%%%%%
-Reuniões são tarefas presentes em atividades corporativas, ambientes de gestão e nas organizações de um modo geral. O conteúdo das reuniões é frequentemente registrado em texto na forma de atas para fins de documentação e posterior consulta. A organização e consulta manual desses arquivos torna-se uma tarefa custosa, especialmente considerando o seu crescimento em uma instituição~\cite{Lee2011, Masakazu2013,Miriam2013}. 
+%Reuniões são tarefas presentes em atividades corporativas, ambientes de gestão e nas organizações de um modo geral. O conteúdo das reuniões é frequentemente registrado em texto na forma de atas para fins de documentação e posterior consulta. A organização e consulta manual desses arquivos torna-se uma tarefa custosa, especialmente considerando o seu crescimento em uma instituição~\cite{Lee2011, Masakazu2013,Miriam2013}. 
 
 %%%%%%%%%%
 % Atas são documentos não estruturados e
@@ -25,22 +25,22 @@ Devido a fatores como a não estruturação e volume dos textos, a localização de a
 % Memória e Buscas por KeyWords
 %%% 
 Usualmente, o que se faz são buscas manuais guiadas pela memória ou com uso de ferramentas computacionais baseadas em localização de palavras-chave.
-
-%%%%%%%%%%%%%%%
+%
 %  Problemas na busca por palavras-chave
 %%%%%%%%%%%%%%% 
 %
 % O usuário deve inserir palavras acertadas
 %%% 
-Buscas por palavras-chave normalmente exigem a inserção de de termos exatos que devem necessariamente estar contidos no trecho onde está o assunto.
+Normalmente esse tipo de busca exige a inserção de termos exatos e 
+%de termos exatos que devem necessariamente estar contidos no trecho onde está o assunto.
 %
 % O texto continua longo, apenas é apresentado com as palavras destacadas
 %%% 
-Localizadas as palavras-chave as ferramentas desse tipo apresentam ao usuário um documento com as palavras buscadas em destaque, mantendo o texto longo. 
-%
+%Localizadas as palavras-chave as ferramentas desse tipo 
+apresentam ao usuário um documento com as palavras buscadas em destaque, mantendo o texto longo, o que dificulta por exemplo o ranqueamento por relevância. %
 % Não é possível rankear os resultados
 %%%
-Isso dificulta por exemplo o ranqueamento por relevância. 
+%Isso dificulta por exemplo o ranqueamento por relevância. 
 
 %
 % Não evita que o texto circundante seja exibido, caso pertença a outro assunto
@@ -63,7 +63,7 @@ A tarefa de segmentação textual consiste dividir um texto em partes que contenha
 %%%%%%%%%%
 % Utilidade da segmentação (domínios onde é aplicada)
 %%%%%%%%%%
-A segmentação de textos é útil em aplicações que trabalham com textos sem indicações de quebras de assunto, ou seja, não apresentam seções ou capítulos, como transcrições automáticas de áudio, vídeos e grandes documentos que contêm vários assuntos como atas de reunião e notícias.
+%A segmentação de textos é útil em aplicações que trabalham com textos sem indicações de quebras de assunto, ou seja, não apresentam seções ou capítulos, como transcrições automáticas de áudio, vídeos e grandes documentos que contêm vários assuntos como atas de reunião e notícias.
 
 
 %%%%%%%%%%
@@ -77,7 +77,7 @@ Além disso, encontrar pontos onde o texto muda de assunto, pode ser útil como et
 %
 A navegação pelo documento pode ser aprimorada, em especial na utilização por usuários com deficiência visual, os quais utilizam  sintetizadores de texto como ferramenta de acessibilidade~\cite{Choi2000}. 
 %
-A sumarização de texto pode ser aprimorada ao processar segmentos separados por tópicos ao invés de documentos inteiros~\cite{Boguraev2000,Boguraev2000b,Dias2007}. 
+A sumarização de texto pode ser aprimorada ao processar segmentos separados por tópicos ao invés de documentos inteiros~\cite{Boguraev2000,Dias2007}. 
 
 
 
@@ -87,16 +87,21 @@ A sumarização de texto pode ser aprimorada ao processar segmentos separados por 
 %
 % Ausência de marcaçãoes 
 %%% 
-Frequentemente atas de reunião têm a característica de apresentar um texto com poucas quebras de parágrafo e sem marcações de estrutura, como capítulos, seções ou quaisquer indicações sobre o tema do texto. 
+As atas de reunião diferem dos textos comumente estudados em outros trabalhos em alguns pontos.
+%
+O estilo de escrita mais sucinto, com poucos detalhes reduz dificulta o processo de segmentação~\cite{Choi2001-LSA}.
+%
+%Frequentemente atas de reunião têm a característica de apresentar um texto com poucas quebras de parágrafo e sem marcações de estrutura, como capítulos, seções ou quaisquer indicações sobre o tema do texto. 
 %
 % Estilo compacto e formal desfavorece
 %%% 
-As atas de reunião diferem dos textos comumente estudados em outros trabalhos em alguns pontos. O estilo contribui para a escrita de textos sucintos com poucos detalhes, pois o ambiente dá preferência a textos curtos. Segundo Choi~\cite{Choi2001-LSA}, o segmentador tem a acurácia reduzida em segmentos curtos (em torno de 3 a 5 sentenças). 
-
+% O estilo contribui para a escrita de textos sucintos com poucos detalhes, pois o ambiente dá preferência a textos curtos. Segundo Choi~\cite{Choi2001-LSA}, o segmentador tem a acurácia reduzida em segmentos curtos (em torno de 3 a 5 sentenças). 
+%
 %%%%%%%%%%
 % ... as lacunas
 %%%%%%%%%%
-Há também um maior foco no idioma inglês, presente na maioria dos artigos publicados. Embora haja abordagens voltadas para outros idiomas, falta ainda uma maior atenção na literatura sobre língua portuguesa e a documentos com características próprias como as atas de reunião.
+Há também um maior foco no idioma inglês, presente na maioria dos artigos publicados. 
+%Embora haja abordagens voltadas para outros idiomas, falta ainda uma maior atenção na literatura sobre língua portuguesa e a documentos com características próprias como as atas de reunião.
 %
 %%%%%%%%%%
 % Diferenças de entre Línguas
@@ -117,9 +122,10 @@ Na Seção~\ref{sec:trabalhos} são apresentados trabalhos recentes que desenvolver
 %
 %Na Seção~\ref{sec:conjutodedocumentos} as atas são descritas em suas principais caraterísticas.
 %
-Na Seção~\ref{sec:proposta} é apresentada a proposta desse trabalho voltada às atas de reunião. 
+Na Seção~\ref{sec:proposta} é apresentada a proposta desse trabalho voltada às atas de reunião 
 %             sec:avaliacao-experimental
-Na Seção~\ref{sec:avaliacao} é detalhado a avaliação dos experimentos e seus resultados são reportados. 
+%Na Seção~\ref{sec:avaliacao} é 
+e detalhado a avaliação dos experimentos e seus resultados são reportados. 
 %
 Por fim, na Seção~\ref{sec:conclusao} são apresentadas as considerações finais e trabalhos futuros.
 

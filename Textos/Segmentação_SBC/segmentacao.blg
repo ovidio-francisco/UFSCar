@@ -2,54 +2,54 @@ This is BibTeX, Version 0.99d (TeX Live 2016/Debian)
 Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: segmentacao.aux
 The style file: sbc.bst
-Database file #1: sbc-template.bib
-Repeated entry---line 286 of file sbc-template.bib
- : %@inproceedings{Janin2003
- :                          ,
+Database file #1: bibs.bib
+You're missing a field name---line 287 of file bibs.bib
+ : 
+ : %title = {The ICSI Meeting Corpus},
+(Error may have been on previous line)
 I'm skipping whatever remains of this entry
 Warning--empty booktitle in Banerjee2006
 Warning--empty booktitle in Kern2009
-Warning--empty booktitle in Lee2011
 Warning--empty school in Reynar1998
-You've used 25 entries,
+You've used 18 entries,
             1935 wiz_defined-function locations,
-            667 strings with 9735 characters,
-and the built_in function-call counts, 12806 in all, are:
-= -- 1279
-> -- 580
-< -- 27
-+ -- 215
-- -- 204
-* -- 1046
-:= -- 2091
-add.period$ -- 87
-call.type$ -- 25
-change.case$ -- 226
-chr.to.int$ -- 24
-cite$ -- 29
-duplicate$ -- 519
-empty$ -- 866
-format.name$ -- 243
-if$ -- 2634
-int.to.chr$ -- 2
+            617 strings with 7897 characters,
+and the built_in function-call counts, 9053 in all, are:
+= -- 924
+> -- 360
+< -- 20
++ -- 130
+- -- 124
+* -- 721
+:= -- 1459
+add.period$ -- 65
+call.type$ -- 18
+change.case$ -- 151
+chr.to.int$ -- 18
+cite$ -- 21
+duplicate$ -- 382
+empty$ -- 640
+format.name$ -- 152
+if$ -- 1889
+int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 24
-newline$ -- 132
-num.names$ -- 75
-pop$ -- 231
+missing$ -- 17
+newline$ -- 97
+num.names$ -- 54
+pop$ -- 152
 preamble$ -- 1
-purify$ -- 227
+purify$ -- 152
 quote$ -- 0
-skip$ -- 400
+skip$ -- 297
 stack$ -- 0
-substring$ -- 863
-swap$ -- 135
-text.length$ -- 15
+substring$ -- 650
+swap$ -- 103
+text.length$ -- 11
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 150
-warning$ -- 4
-while$ -- 98
+type$ -- 108
+warning$ -- 3
+while$ -- 72
 width$ -- 0
-write$ -- 354
+write$ -- 261
 (There was 1 error message)

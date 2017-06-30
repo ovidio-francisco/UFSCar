@@ -51,14 +51,21 @@ public class Tests3 {
 		
 		if (algorithm == SegmenterAlgorithms.TEXT_TILING || algorithm == null) {
 			
-			int initialWinSize   = 5;  
-			int limitWinSize     = 30;
-			int increaseWinSize  = 5;  
+//			int initialWinSize   = 20;  
+//			int limitWinSize     = 60;
+//			int increaseWinSize  = 10;  
+//			
+//			int initialStep   = 3;  
+//			int limitStep     = 12;   
+//			int increaseStep  = 3;  
+			
+			int initialWinSize   = 10;  
+			int limitWinSize     = 80;
+			int increaseWinSize  = 10;  
 			
 			int initialStep   = 3;  
 			int limitStep     = 12;   
 			int increaseStep  = 3;  
-			
 			
 			TestSegmenterModel textTilingModel = new TestSegmenterModel(initialWinSize, initialStep);
 			textTilingModel.setPreprocess(preprocess);
@@ -80,13 +87,21 @@ public class Tests3 {
 		
 		if (algorithm == SegmenterAlgorithms.C99 || algorithm == null) {
 			
+//			double initialSegsRate = 0.2;
+//			double increaseSegsRate =0.2;
+//			double limitSegsRate = 0.9;
+//			
+//			int initialRankingSize   = 9;  
+//			int increaseRankingSize  = 2;  
+//			int limitRankingSize     = 11;  
+			
 			double initialSegsRate = 0.2;
 			double increaseSegsRate =0.1;
-			double limitSegsRate = 0.8;
+			double limitSegsRate = 0.9;
 			
 			int initialRankingSize   = 9;  
 			int increaseRankingSize  = 2;  
-			int limitRankingSize     = 11;  
+			int limitRankingSize     = 11;  			
 			
 			boolean initialWeight = false;
 			
@@ -232,7 +247,8 @@ public class Tests3 {
 		closeLines(greatLines);
 		
 		String table = "\\documentclass{article} \n" + 
-				"\\usepackage{geometry} \n" + 
+				"\\usepackage[landscape]{geometry} \n" + 
+				 "\\usepackage{longtable} \n" +
 		 "\\geometry{ \n" + 
 		 "a4paper, \n" + 
 		 "left=10mm, \n" + 
@@ -240,13 +256,13 @@ public class Tests3 {
 		 "} \n" + 
 
 		                "\\begin{document} \n" +
-		                "\\begin{tabular}{|l|c|c|c|c|c|c||c|c|c|c|c|c|} \n"+ 
+		                "\\begin{longtable}[c]{|l|c|c|c|c|c|c||c|c|c|c|c|c|} \n"+ 
 
 		                "\\hline \n"+
 		                "&\\multicolumn{6}{c||}{Sem Preprocessamento} & \\multicolumn{6}{c|}{Com Preprocessamento}\\\\ \n";
 		for(String l : greatLines) table += l + "\n";
 		
-		table += "\\end{tabular} \n" +
+		table += "\\end{longtable} \n" +
                  "\\end{document} \n ";
 		
 		System.out.println(table);
@@ -269,6 +285,7 @@ public class Tests3 {
 		ArrayList<Double> prList = new ArrayList<>();
 		ArrayList<Double> rcList = new ArrayList<>();
 		ArrayList<Double> f1List = new ArrayList<>();
+		ArrayList<Double> msList = new ArrayList<>(); // média de segmentos
 		
 		ArrayList<String> configs = new ArrayList<>();
 		
@@ -283,6 +300,7 @@ public class Tests3 {
 			prList.add(Tests.media(ev, Tests.Metric.PRECISION));
 			rcList.add(Tests.media(ev, Tests.Metric.RECALL));
 			f1List.add(Tests.media(ev, Tests.Metric.F1));
+			msList.add(Tests.media(ev, Tests.Metric.AVR_SEGS_COUNT));
 		}
 		
 		double pkBest = Collections.min(pkList);
@@ -315,6 +333,7 @@ public class Tests3 {
 		addTexColumn(lines, prList, "P ", format, prBest);
 		addTexColumn(lines, rcList, "R ", format, rcBest);
 		addTexColumn(lines, f1List, "F1", format, f1Best);		
+		addTexColumn(lines, msList, "SG", format, 0);		
 		
 		return lines;
 	}

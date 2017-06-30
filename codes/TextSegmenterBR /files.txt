@@ -1,25 +1,61 @@
 	
 ./Fabio:
-Ata 29 - 25a Reunião Odinária PPGCCS.txt.csv			|	7  segmentos
-Ata 30 - 26a Reunião Odinária PPGCCS.txt.csv			|	9  segmentos
-Ata 32 - 28a Reunião Odinária PPGCCS.txt.csv			|	7  segmentos
-Ata 33 - 29a Reunião Odinária PPGCCS.txt.csv			|	9  segmentos
-Ata 35 - 5a Reunião Extraodinária PPGCCS.txt.csv		|	4  segmentos
-Ata 36 - 31a Reunião Odinária PPGCCS.txt.csv			|	11 segmentos
+Ata 29 - 25a Reunião Odinária PPGCCS.txt.csv		|	7  segmentos
+Ata 30 - 26a Reunião Odinária PPGCCS.txt.csv		|	9  segmentos
+Ata 32 - 28a Reunião Odinária PPGCCS.txt.csv		|	7  segmentos
+Ata 33 - 29a Reunião Odinária PPGCCS.txt.csv		|	9  segmentos
+Ata 35 - 5a Reunião Extraodinária PPGCCS.txt.csv	|	4  segmentos
+Ata 36 - 31a Reunião Odinária PPGCCS.txt.csv		|	11 segmentos
 
 ./Gustavo:
-Ata 29 - 25a Reunião Odinária PPGCCS.txt.csv			|	15 segmentos
-Ata 30 - 26a Reunião Odinária PPGCCS.txt.csv			|	20 segmentos
-Ata 32 - 28a Reunião Odinária PPGCCS.txt.csv			|	15 segmentos
-Ata 33 - 29a Reunião Odinária PPGCCS.txt.csv			|	17 segmentos
-Ata 35 - 5a Reunião Extraodinária PPGCCS.txt.csv		|	9  segmentos
-Ata 36 - 31a Reunião Odinária PPGCCS.txt.csv			|	17 segmentos
+Ata 29 - 25a Reunião Odinária PPGCCS.txt.csv		|	15 segmentos
+Ata 30 - 26a Reunião Odinária PPGCCS.txt.csv		|	20 segmentos
+Ata 32 - 28a Reunião Odinária PPGCCS.txt.csv		|	15 segmentos
+Ata 33 - 29a Reunião Odinária PPGCCS.txt.csv		|	17 segmentos
+Ata 35 - 5a Reunião Extraodinária PPGCCS.txt.csv	|	9  segmentos
+Ata 36 - 31a Reunião Odinária PPGCCS.txt.csv		|	17 segmentos
 
 
-Candidatos
-Ata 29 - 25a Reunião Odinária PPGCCS.txt.csv			|	17 candidatos
-Ata 30 - 26a Reunião Odinária PPGCCS.txt.csv			|	25 candidatos
-Ata 32 - 28a Reunião Odinária PPGCCS.txt.csv			|	23 candidatos
-Ata 33 - 29a Reunião Odinária PPGCCS.txt.csv			|	31 candidatos
-Ata 35 - 5a Reunião Extraodinária PPGCCS.txt.csv		|	9  candidatos
-Ata 36 - 31a Reunião Odinária PPGCCS.txt.csv			|	24 candidatos
+														Candidatos			Palavras
+Ata 29 - 25a Reunião Odinária PPGCCS.txt.csv		|	17 candidatos 	|	761
+Ata 30 - 26a Reunião Odinária PPGCCS.txt.csv		|	25 candidatos 	|	804
+Ata 32 - 28a Reunião Odinária PPGCCS.txt.csv		|	23 candidatos 	|	981
+Ata 33 - 29a Reunião Odinária PPGCCS.txt.csv		|	31 candidatos 	|	1347
+Ata 35 - 5a Reunião Extraodinária PPGCCS.txt.csv	|	9  candidatos 	|	480
+Ata 36 - 31a Reunião Odinária PPGCCS.txt.csv		|	24 candidatos 	|	797
+
+
+
+Geral ····························································
+Documento	|	Palavras	|	Candidatos	|	Segmentos Esp 1 |	Segmentos Esp 2
+Doc1		|	761 		|	17 			|	7 				|	15
+Doc2		|	804 		|	25 			|	9 				|	20
+Doc3		|	981 		|	23 			|	7 				|	15
+Doc4		|	1347		|	31 			|	9 				|	17
+Doc5		|	480 		|	9  			|	4 				|	9 
+Doc6		|	797 		|	24 			|	11				|	17
+
+
+Coleção ····························································
+Documento	|	Palavras	|	Candidatos	|	
+Doc1		|	761 		|	17 			|	
+Doc2		|	804 		|	25 			|	
+Doc3		|	981 		|	23 			|	
+Doc4		|	1347		|	31 			|	
+Doc5		|	480 		|	9  			|	
+Doc6		|	797 		|	24 			|	
+
+
+Referência ····························································
+Documento	|	Segmentos Esp 1 |	Segmentos Esp 2
+Doc1		|	7 				|	15
+Doc2		|	9 				|	20
+Doc3		|	7 				|	15
+Doc4		|	9 				|	17
+Doc5		|	4 				|	9 
+Doc6		|	11				|	17
+
+
+
+
+

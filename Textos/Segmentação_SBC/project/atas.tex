@@ -1,16 +1,45 @@
 
-\section{Conjunto de documentos}
-	\label{sec:conjutodedocumentos} 
+A fim de obter um conjunto de atas a serem segmentadas automaticamente, coletou-se 6 atas de reunião do Conselho de Pós-Graduação da UFSCar Sorocaba\footnote{\urlatas}. Selecionou-se atas que registram cinco reuniões ordinárias e uma extraordinária (Ata 6). Tomou-se esse cuidado para manter a representatividade e diversidade do conjunto. %A Tabela~\ref{tab:preprocessamento} contém as quantidades de palavras e sentenças para cada documento.
+
+
+
+ Os documentos apresentam um texto com poucas quebras de parágrafo e sem marcações de estrutura, como capítulos, seções ou quaisquer indicações sobre o assunto do texto. É comum a presença de cabeçalhos, rodapés e numeração de páginas e linhas o que pode prejudicar tanto similaridade entre sentenças como a apresentação dos segmentos ao usuário. %Esses elementos podem ser reduzidos ou eliminados como mostrado na Subseção~\ref{subsec:preprocessamento}, sobre preprocessamento.
+
+
+
+%O estilo de escrita favorece a escrita de textos sucintos com poucos detalhes, pois o ambiente dá preferência a textos curtos. Ao redigir o documento tem-se o cuidado de não repetir ideias e palavras. Tal característica enfraquece a coesão léxica e portanto o cálculo da similaridade é prejudicado. Por exemplo, duas sentenças diferem se uma contiver a palavra \textit{computadores} e na seguinte \textit{equipamentos}, mesmo que se refiram à mesma ideia. Além disso, o documento compartilha um certo vocabulário próprio do ambiente onde os assuntos são discutidos e com isso nota-se que os segmentos, embora tratem de assuntos diferentes, são semelhantes em vocabulário.
 
 
 
 
-Caracteristicas das atas
-  Tamanhos diferentes
-  # paginas
-  # palavras
-  # sentenÃ§as
-  # media de segmentos pelos especialistas
+
+
+% Coleção ····························································
+% Documento	|	Palavras	|	Candidatos	|	
+% Doc1		|	761 		|	17 			|	
+% Doc2		|	804 		|	25 			|	
+% Doc3		|	981 		|	23 			|	
+% Doc4		|	1347		|	31 			|	
+% Doc5		|	480 		|	9  			|	
+% Doc6		|	797 		|	24 			|	
+%\begin{table}[!h]
+%	\centering
+%	\begin{tabular}{|l|c|c|} \hline
+%		\textbf{Ata} & \textbf{Palavras} & \textbf{Sentenças} \\	\hline
+%
+%		Ata 1 & 761  & 18 \\ \hline 
+%		Ata 2 & 804  & 26 \\ \hline 
+%		Ata 3 & 981  & 24 \\ \hline 
+%		Ata 4 & 1347 & 32 \\ \hline 
+%		Ata 5 & 797  & 25 \\ \hline 
+%		Ata 6 & 480  & 10 \\ \hline 
+%
+%	\end{tabular}
+%	\caption{Quantidade de palavras e sentenças por ata.}
+%	\label{tab:atascoletadas}
+%\end{table}
+
+
 
 
 
@@ -24,15 +53,15 @@ Caracteristicas das atas
 
 
 %
-% 1 Atas coletadas para segemntaÃ§Ã£o automÃ¡tica 
+% 1 Atas coletadas para segemntação automática 
 %%% 
 
 %
-% 2 Atas segmentadas manualmente para referÃªncia 
+% 2 Atas segmentadas manualmente para referência 
 %%% 
-% A fim de obter referÃªncias para os algoritmos de segmentaÃ§Ã£o, extraÃ§Ã£o de tÃ³picos e classificaÃ§Ã£o, foram coletadas as atas de reuniÃµes do Conselhos de PÃ³s GraduaÃ§Ã£o, Conselho de Cursos e Conselho de Departamento de da UFSCar-Sorocaba. Os documentos foram oferecidos Ã  profissionais que participam de reuniÃµes desse departamento para segmentÃ¡-las. Para isso, utilizou-se um \textit{software} que permitiu aos voluntÃ¡rios visualizar um documento, e indicar livremente as divisÃµes entre segmentos com um assunto relativamente independente. Ao final, o software coletou os dados da segmentaÃ§Ã£o de doze das os quais serviram como referÃªncia para a avaliaÃ§Ã£o dos algoritmos.
+% A fim de obter referências para os algoritmos de segmentação, extração de tópicos e classificação, foram coletadas as atas de reuniões do Conselhos de Pós Graduação, Conselho de Cursos e Conselho de Departamento de da UFSCar-Sorocaba. Os documentos foram oferecidos à profissionais que participam de reuniões desse departamento para segmentá-las. Para isso, utilizou-se um \textit{software} que permitiu aos voluntários visualizar um documento, e indicar livremente as divisões entre segmentos com um assunto relativamente independente. Ao final, o software coletou os dados da segmentação de doze das os quais serviram como referência para a avaliação dos algoritmos.
 
-% Os arquivos gerados foram tratados para remoÃ§Ã£o de ruÃ­dos e ajustes para que os segmentos sempre terminem em uma sentenÃ§a reconhecida pelo algoritmo, uma vez que as sentenÃ§as sÃ£o a unidade mÃ­nima de informaÃ§Ã£o nesse trabalho.
+% Os arquivos gerados foram tratados para remoção de ruídos e ajustes para que os segmentos sempre terminem em uma sentença reconhecida pelo algoritmo, uma vez que as sentenças são a unidade mínima de informação nesse trabalho.
 
 
 
@@ -49,57 +78,65 @@ Caracteristicas das atas
 
 % ------------------------------------------------------------------------------
 
-% Para a conduÃ§Ã£o desse trabalho Ã© necessÃ¡rio que hajam documentos a serem segmentados automaticamente e que se conheÃ§a uma segmentaÃ§Ã£o de referÃªncia para comparÃ¡-los e avaliar a proposta. A seguir, Ã© apresentada a segmentaÃ§Ã£o de referÃªncia a ser utilizada.
-% A seguir, sÃ£o apresentadas as caraterÃ­sticas particulares das atas que foram coletadas para segmentaÃ§Ã£o automÃ¡tica em relaÃ§Ã£o a outros tipos de textos. Ã‰ apresentada tambÃ©m a segmentaÃ§Ã£o de referÃªncia a ser utilizada.
+% Para a condução desse trabalho é necessário que hajam documentos a serem segmentados automaticamente e que se conheça uma segmentação de referência para compará-los e avaliar a proposta. A seguir, é apresentada a segmentação de referência a ser utilizada.
+% A seguir, são apresentadas as caraterísticas particulares das atas que foram coletadas para segmentação automática em relação a outros tipos de textos. É apresentada também a segmentação de referência a ser utilizada.
 
-% Em outras palavras, uma ata Ã© a narraÃ§Ã£o de uma reuniÃ§Ã£o que poupa
-
-
+% Em outras palavras, uma ata é a narração de uma reunição que poupa
 
 
-% Mais detalhes referentes Ã s diferenÃ§as entre as atas e os textos analisados na maioria dos trabalhos sÃ£o mostrados na SubseÃ§Ã£o~\ref{subsec:conjunto-de-documentos}.
+
+
+% Mais detalhes referentes às diferenças entre as atas e os textos analisados na maioria dos trabalhos são mostrados na Subseção~\ref{subsec:conjunto-de-documentos}.
 
 
 %%%%%%%%%%
-% CaracterÃ­sticas particulares
+% Características particulares
 %%%%%%%%%%
 	
-% \subsection{SegmentaÃ§Ã£o de ReferÃªncia}
+% \subsection{Segmentação de Referência}
 
-% As atas de reuniÃ£o diferem dos textos comumente estudados em outros trabalhos em alguns pontos. O estilo contribui para a escrita de textos sucintos com poucos detalhes, pois o ambiente dÃ¡ preferÃªncia a textos curtos. Segundo Choi~\cite{Choi2001-LSA}, o segmentador tem a acurÃ¡cia reduzida em segmentos curtos (em torno de 3 a 5 sentenÃ§as). % JÃ¡ te vi 
+% As atas de reunião diferem dos textos comumente estudados em outros trabalhos em alguns pontos. O estilo contribui para a escrita de textos sucintos com poucos detalhes, pois o ambiente dá preferência a textos curtos. Segundo Choi~\cite{Choi2001-LSA}, o segmentador tem a acurácia reduzida em segmentos curtos (em torno de 3 a 5 sentenças). % Já te vi 
 	
-% Para evitar um texto monÃ³tono Ã  leitura, ao redigir o documento tem-se o cuidado de nÃ£o repetir ideias e palavras em favor da elegÃ¢ncia do documento. Tal caracterÃ­stica enfraquece a coesÃ£o lÃ©xica e portanto o cÃ¡lculo da similaridade Ã© prejudicado. Por exemplo, duas sentenÃ§as diferem se uma contiver a palavra \textit{computadores} e na seguinte \textit{equipamentos}, mesmo que se refiram Ã  mesma ideia. AlÃ©m disso, o documento compartilha um certo vocabulÃ¡rio prÃ³prio do ambiente onde os assuntos sÃ£o discutidos e com isso nota-se que os segmentos, embora tratem de assuntos diferentes, sÃ£o semelhantes em vocabulÃ¡rio.
+% Para evitar um texto monótono à leitura, ao redigir o documento tem-se o cuidado de não repetir ideias e palavras em favor da elegância do documento. Tal característica enfraquece a coesão léxica e portanto o cálculo da similaridade é prejudicado. Por exemplo, duas sentenças diferem se uma contiver a palavra \textit{computadores} e na seguinte \textit{equipamentos}, mesmo que se refiram à mesma ideia. Além disso, o documento compartilha um certo vocabulário próprio do ambiente onde os assuntos são discutidos e com isso nota-se que os segmentos, embora tratem de assuntos diferentes, são semelhantes em vocabulário.
 
 
-% A presenÃ§a de ruÃ­dos como cabeÃ§alhos, rodapÃ©s e numeraÃ§Ã£o de pÃ¡ginas e linhas prejudicam tanto similaridade entre sentenÃ§as como a apresentaÃ§Ã£o final ao usuÃ¡rio. PorÃ©m, esses ruÃ­dos podem ser reduzidos ou eliminados como mostrado na SubseÃ§Ã£o~\ref{subsec:preprocessamento}, sobre preprocessamento.
+% A presença de ruídos como cabeçalhos, rodapés e numeração de páginas e linhas prejudicam tanto similaridade entre sentenças como a apresentação final ao usuário. Porém, esses ruídos podem ser reduzidos ou eliminados como mostrado na Subseção~\ref{subsec:preprocessamento}, sobre preprocessamento.
 
 
 
 %%%%%%%%%%
-% HÃ¡ duas diferenÃ§as entre os tipos de documentos mais estudados
+% Há duas diferenças entre os tipos de documentos mais estudados
 %%%%%%%%%%
 % A maioria dos trabalhos enquadram-se em duas categorias no que se refere ao \textit{corpus} estudado.  
 %%%%%%%%%%
-% A concatenaÃ§Ã£o de textos favorece a segmentaÃ§Ã£o
-% E diferenÃ§as
+% A concatenação de textos favorece a segmentação
+% E diferenças
 % 
-%   1 - Mesmo autor e mesmo domÃ­nio --> mesmo estilo e vocabulÃ¡rio
+%   1 - Mesmo autor e mesmo domínio --> mesmo estilo e vocabulário
 %
 %%%%%%%%%%
-% A primeira utiliza a concatenaÃ§Ã£o de textos de diferentes fontes e assuntos. 
-% Ocorre que essas caracterÃ­sticas favorecem o processo de segmentaÃ§Ã£o uma vez que os documentos produzidos pela concatenaÃ§Ã£o contÃ©m tÃ³picos obtidos de domÃ­nios distintos que compartilham pouco vocabulÃ¡rio. Por outro lado, essas caracterÃ­sticas nÃ£o estÃ£o presentes no contexto das atas, onde um documento Ã© redigido por um mesmo autor, e todos tÃ³picos foram produzidos no mesmo domÃ­nio, e dessa forma, tÃªm estilo de escrita e vocabulÃ¡rio similares.
+% A primeira utiliza a concatenação de textos de diferentes fontes e assuntos. 
+% Ocorre que essas características favorecem o processo de segmentação uma vez que os documentos produzidos pela concatenação contém tópicos obtidos de domínios distintos que compartilham pouco vocabulário. Por outro lado, essas características não estão presentes no contexto das atas, onde um documento é redigido por um mesmo autor, e todos tópicos foram produzidos no mesmo domínio, e dessa forma, têm estilo de escrita e vocabulário similares.
 
 
 %%%%%%%%%%
 % Discursos falados
-% E difenÃ§as
+% E difenças
 %
-%   1 - texto sucinto, sem detalhes e reptiÃ§Ãµes --> segmentos mais curtos
+%   1 - texto sucinto, sem detalhes e reptições --> segmentos mais curtos
 %
 %%%%%%%%%%
-% A segunda estuda a segmentaÃ§Ã£o automÃ¡tica de textos obtidos da transcriÃ§Ã£o de Ã¡udios como de vÃ­deos e de gravaÃ§Ãµes de reuniÃµes com grupos de pessoas. 
-% A transcriÃ§Ã£o da fala de pessoas, difere desse trabalho, pois este possui caracterÃ­sticas tÃ­picas de um estilo formal, por exemplo, o texto sucinto, onde o autor se limita a relatar apenas o essencial de uma discussÃ£o e omite detalhes da discussÃ£o, poupando o leitor de diÃ¡logos repetitivos ou falas durante a transiÃ§Ã£o de tÃ³picos, o que resulta em segmentos mais curtos os quais desfavorecem algoritmos baseados em coesÃ£o lÃ©xica~\cite{Choi2000}. 
+% A segunda estuda a segmentação automática de textos obtidos da transcrição de áudios como de vídeos e de gravações de reuniões com grupos de pessoas. 
+% A transcrição da fala de pessoas, difere desse trabalho, pois este possui características típicas de um estilo formal, por exemplo, o texto sucinto, onde o autor se limita a relatar apenas o essencial de uma discussão e omite detalhes da discussão, poupando o leitor de diálogos repetitivos ou falas durante a transição de tópicos, o que resulta em segmentos mais curtos os quais desfavorecem algoritmos baseados em coesão léxica~\cite{Choi2000}. 
 
 
+
+
+% Caracteristicas das atas
+  % Tamanhos diferentes
+  % # paginas
+  % # palavras
+  % # sentenças
+  % # media de segmentos pelos especialistas
 
 

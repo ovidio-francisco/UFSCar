@@ -11,16 +11,11 @@ Beeferman, D., Berger, A., and Lafferty, J. (1999).
 \newblock Statistical models for text segmentation.
 \newblock {\em Machine Learning}, 34(1):177--210.
 
-\bibitem[Boguraev and Neff 2000a]{Boguraev2000}
-Boguraev, B.~K. and Neff, M.~S. (2000a).
+\bibitem[Boguraev and Neff 2000]{Boguraev2000}
+Boguraev, B.~K. and Neff, M.~S. (2000).
 \newblock Discourse segmentation in aid of document summarization.
 \newblock In {\em In Proceedings of Hawaii Int. Conf. on System Sciences
   (HICSS-33), Minitrack on Digital Documents Understanding, IEEE}.
-
-\bibitem[Boguraev and Neff 2000b]{Boguraev2000b}
-Boguraev, B.~K. and Neff, M.~S. (2000b).
-\newblock Lexical cohesion, discourse segmentation and document summarization.
-\newblock In {\em In RIAO-2000, Content-Based Multimedia Information Access}.
 
 \bibitem[Bokaei et~al. 2015]{Bokaei2015}
 Bokaei, M.~H., Sameti, H., and Liu, Y. (2015).
@@ -28,15 +23,6 @@ Bokaei, M.~H., Sameti, H., and Liu, Y. (2015).
   and global information.
 \newblock {\em IEEE/ACM Trans. Audio, Speech and Lang. Proc.},
   23(11):1879--1891.
-
-\bibitem[Carletta et~al. 2006]{Carletta2005}
-Carletta, J., Ashby, S., Bourban, S., Flynn, M., Guillemot, M., Hain, T.,
-  Kadlec, J., Karaiskos, V., Kraaij, W., Kronenthal, M., Lathoud, G., Lincoln,
-  M., Lisowska, A., McCowan, I., Post, W., Reidsma, D., and Wellner, P. (2006).
-\newblock The ami meeting corpus: A pre-announcement.
-\newblock In {\em Proceedings of the Second International Conference on Machine
-  Learning for Multimodal Interaction}, MLMI'05, pages 28--39, Berlin,
-  Heidelberg. Springer-Verlag.
 
 \bibitem[Chaibi et~al. 2014]{CHAIBI2014}
 Chaibi, A.~H., Naili, M., and Sammoud, S. (2014).
@@ -54,11 +40,6 @@ Choi, F. Y.~Y. (2000).
 Choi, F. Y.~Y., Wiemer-Hastings, P., and Moore, J. (2001).
 \newblock Latent semantic analysis for text segmentation.
 \newblock In {\em In Proceedings of EMNLP}, pages 109--117.
-
-\bibitem[Dem\v{s}ar 2006]{Demsar2006}
-Dem\v{s}ar, J. (2006).
-\newblock Statistical comparisons of classifiers over multiple data sets.
-\newblock {\em J. Mach. Learn. Res.}, 7:1--30.
 
 \bibitem[Dias et~al. 2007]{Dias2007}
 Dias, G., Alves, E., and Lopes, J. G.~P. (2007).
@@ -81,24 +62,12 @@ Hearst, M.~A. (1994).
   Computational Linguistics}, ACL '94, pages 9--16, Stroudsburg, PA, USA.
   Association for Computational Linguistics.
 
-\bibitem[Janin et~al. 2003]{Janin2003}
-Janin, A., Baron, D., Edwards, J., Ellis, D., Gelbart, D., Morgan, N., Peskin,
-  B., Pfau, T., Shriberg, E., Stolcke, A., and Wooters, C. (2003).
-\newblock The icsi meeting corpus.
-\newblock In {\em Proceedings of the IEEE International Conference on
-  Acoustics, Speech, and Signal Processing}, pages 364--367.
-
 \bibitem[Kern and Granitzer 2009]{Kern2009}
 Kern, R. and Granitzer, M. (2009).
 \newblock Efficient linear text segmentation based on information retrieval
   techniques.
 \newblock pages 167--171.
 \newblock cited By 10.
-
-\bibitem[Lee et~al. 2011]{Lee2011}
-Lee, J.-K., Song, H.-J., Park, S.-B., and Bassiliades, N. (2011).
-\newblock Two-step sentence extraction for summarization of meeting minutes.
-\newblock volume~39, pages 614--619.
 
 \bibitem[Misra et~al. 2009]{Misra2009}
 Misra, H., Yvon, F., Jose, J.~M., and Cappe, O. (2009).
@@ -126,24 +95,12 @@ Reynar, J.~C. (1999).
   Computational Linguistics on Computational Linguistics}, ACL '99, pages
   357--364, Stroudsburg, PA, USA. Association for Computational Linguistics.
 
-\bibitem[Schwartz-Ziv and Weisbach 2013]{Miriam2013}
-Schwartz-Ziv, M. and Weisbach, M.~S. (2013).
-\newblock What do boards really do? evidence from minutes of board meetings.
-\newblock {\em Journal of Financial Economics}, 108(13):349--366.
-
 \bibitem[Sitbon and Bellot 2004]{Sitbon2004}
 Sitbon, L. and Bellot, P. (2004).
 \newblock Adapting and comparing linear segmentation methods for french.
 \newblock In {\em Coupling Approaches, Coupling Media and Coupling Languages
   for Information Retrieval}, RIAO '04, pages 623--637, Paris, France, France.
   LE CENTRE DE HAUTES ETUDES INTERNATIONALES D'INFORMATIQUE DOCUMENTAIRE.
-
-\bibitem[TAKAHASHI et~al. 2013]{Masakazu2013}
-TAKAHASHI, M., KIDO, K., and HASHIMOTO, K. (2013).
-\newblock Towards the profitability trend extraction from the board meeting
-  proceedings.
-\newblock {\em 17th International Conference in Knowledge Based and Intelligent
-  Information and Engineering Systems - KES2013}, 78.
 
 \bibitem[Tur et~al. 2010]{Tur2010}
 Tur, G., Stolcke, A., Voss, L., Peters, S., Hakkani-T\"{u}r, D., Dowding, J.,

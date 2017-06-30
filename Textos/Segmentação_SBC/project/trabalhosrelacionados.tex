@@ -36,7 +36,7 @@ Nesse sentido, como parte do projeto \textit{CALO-MA}\footnote{\urlcaloproject},
 %%%%%%%%%%
 % Linear discourse segmentation of multi-party meetings bases ond local and global information
 %%%%%%%%%%
-Ainda no contexto de reuniões com múltiplos participantes temos a segmentação funcional dos discursos, onde outros aspectos podem ser analisados, como a participação dos presentes na reunião. Nesse sentido, estuda-se a contribuição das pessoas as quais podem ser categorizadas,  por exemplo, em diálogos, discussões e monólogos. Sugere-se que alguns comportamentos podem dar pistas de mudança de discurso, como quando um participante toma a palavra por um tempo prolongado~\cite{Bokaei2015}. 
+%Ainda no contexto de reuniões com múltiplos participantes temos a segmentação funcional dos discursos, onde outros aspectos podem ser analisados, como a participação dos presentes na reunião. Nesse sentido, estuda-se a contribuição das pessoas as quais podem ser categorizadas,  por exemplo, em diálogos, discussões e monólogos. Sugere-se que alguns comportamentos podem dar pistas de mudança de discurso, como quando um participante toma a palavra por um tempo prolongado~\cite{Bokaei2015}. 
 
 
 %%%%%%%%%%
@@ -59,26 +59,26 @@ Beeferman1999}.
 %%%%%%%%%%
 % Efficient linear text segmentation based on information retrieval techniques
 %%%%%%%%%%
-Quanto a eficácia dos algoritmos, observou-se que aqueles que apresentam melhor performance o fazem ao custo de maior complexidade computacional, que se deve muitas vezes à construção de matrizes de similaridade entre todas as sentenças como em~\cite{Choi2000}. Nesses casos pode-se diminuir o tempo computacional evitando calcular a similaridade entre trechos muito distantes no texto.
+%Quanto a eficácia dos algoritmos, observou-se que aqueles que apresentam melhor performance o fazem ao custo de maior complexidade computacional, que se deve muitas vezes à construção de matrizes de similaridade entre todas as sentenças como em~\cite{Choi2000}. Nesses casos pode-se diminuir o tempo computacional evitando calcular a similaridade entre trechos muito distantes no texto.
 
-Nesse sentido, foi apresentada uma abordagem que otimiza o processo ao computar as médias das similaridades entre sentenças de cada bloco, a qual chamou de \textit{inner similarity} e em seguida usou esses valores para calcular as medias das similaridades entre todos os blocos a qual chamou de \textit{outter similarity}~\cite{Kern2009}. Dessa forma não é criada uma matriz que contem as similaridades de todas as sentenças, mas apenas daquelas mais próximas. Os autores reportaram uma eficiência superior e uma eficácia comparável aos algoritmos mais complexos.
+%Nesse sentido, foi apresentada uma abordagem que otimiza o processo ao computar as médias das similaridades entre sentenças de cada bloco, a qual chamou de \textit{inner similarity} e em seguida usou esses valores para calcular as medias das similaridades entre todos os blocos a qual chamou de \textit{outter similarity}~\cite{Kern2009}. Dessa forma não é criada uma matriz que contem as similaridades de todas as sentenças, mas apenas daquelas mais próximas. Os autores reportaram uma eficiência superior e uma eficácia comparável aos algoritmos mais complexos.
 
 
 %%%%%%%%%%
 % Os Corpus {Corporea}
 %%%%%%%%%%
 
-Para a obtenção do corpus, bem como segmentações de referência, muitos trabalhos utilizam a concatenação de textos na avaliação, os quais foram extraídos de coleções documentos como 
-\textit{TDT}\footnote{\urltdt} e
-\textit{WSJ}\footnote{\urlwsj}.
-%\textit{Brow}\footnote{\urlbrowcorpus} e 
-%\textit{Reuters}\footnote{\urlreuterscorpus}
-Nesses casos, tem-se facilmente os segmentos de referência onde cada limite de segmento separa os documentos originais.
-%
-%
-Outros avaliam seus trabalhos utilizando coleções de transcrições de áudios gravados durante conversas de reuniões entre pessoas como \textit{ICSI}~\cite{Janin2003} e \textit{AMI}~\cite{Carletta2005}.
-% e o \textit{CALO-MA}\footnote{\urlcaloproject}
-Nesses casos, os segmentos de referência são dados por anotações feitas durante a reunião, onde registrou-se o tempo em que os participantes trocaram de assunto.
+%Para a obtenção do \textit{corpus}, bem como segmentações de referência, muitos trabalhos utilizam a concatenação de textos na avaliação, os quais foram extraídos de coleções documentos como 
+%\textit{TDT}\footnote{\urltdt} e
+%\textit{WSJ}\footnote{\urlwsj}.
+%%\textit{Brow}\footnote{\urlbrowcorpus} e 
+%%\textit{Reuters}\footnote{\urlreuterscorpus}
+%Nesses casos, tem-se facilmente os segmentos de referência onde cada limite de segmento separa os documentos originais.
+%%
+%%
+%Outros avaliam seus trabalhos utilizando coleções de transcrições de áudios gravados durante conversas de reuniões entre pessoas como \textit{ICSI}~\cite{Janin2003} e \textit{AMI}~\cite{Carletta2005}.
+%% e o \textit{CALO-MA}\footnote{\urlcaloproject}
+%Nesses casos, os segmentos de referência são dados por anotações feitas durante a reunião, onde registrou-se o tempo em que os participantes trocaram de assunto.
 
 
 

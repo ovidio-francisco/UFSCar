@@ -1,0 +1,208 @@
+
+
+Obteve-se, por meio dos testes estatísticos apresentados, as melhores configurações para as principais medidas de avaliação de segmentadores. Com essas configurações calculou-se a média de cada medida considerando o conjunto de documentos. Na Tabela~\ref{tab:resultadosTT} são apresentadas, as médias obtidas com o \textit{TextTiling} bem como as configurações utilizadas, onde \textbf{J} é o tamanho da janela e \textbf{P} é o passo.
+
+
+\begin{table}[!h]
+	\centering
+	\begin{tabular}{|l||c|c|c||c|c|c|} \hline
+
+		& \multicolumn{3}{c||}{Sem Pré-processamento} 
+		& \multicolumn{3}{c|}{Com Pré-processamento}\\			
+
+		\textbf{Medida} & 
+		\textbf{J} &
+		\textbf{P} & 
+		\textbf{Média} &
+		\textbf{J} &
+		\textbf{P} & 
+		\textbf{Média} \\	\hline
+
+		P$_k$				& 50 & 9 & 0,142 & 50 & 9  & 0,144 \\ \hline
+		\textit{WindowDiff}	& 50 & 6 & 0,387 & 40 & 9  & 0,396 \\ \hline
+		Acurácia			& 50 & 6 & 0,612 & 40 & 9  & 0,603 \\ \hline
+		Precisão			& 40 & 9 & 0,611 & 50 & 12 & 0,613 \\ \hline
+		Revocação			& 20 & 3 & 0,886 & 20 & 3  & 0,917 \\ \hline
+		F$^1$				& 30 & 6 & 0,605 & 40 & 3  & 0,648 \\ \hline
+
+	\end{tabular}
+	\caption{Resultados obtidos com o \textit{TextTiling}}
+	\label{tab:resultadosTT}
+\end{table}
+
+
+
+
+Na Tabela~\ref{tab:resultadosc99} são apresentadas, as médias obtidas com o \textit{C99} bem como as configurações utilizadas, onde \textbf{S} é a proporção de segmentos em relação a quantidade de candidatos, \textbf{M} é o tamanho do quadro utilizado para criar a matriz de \textit{ranking} e \textbf{W} indica se os segmentos são representados por vetores contendo a frequência ou um peso das palavras.
+
+
+\begin{table}[!h]
+	\centering
+	\begin{tabular}{|l||c|c|c|c||c|c|c|c|} \hline
+
+		& \multicolumn{4}{c||}{Sem Pré-processamento} 
+		& \multicolumn{4}{c|}{Com Pré-processamento}\\			
+
+		\textbf{Medida} & 
+		\textbf{S} & 
+		\textbf{M} & 
+		\textbf{W} & 
+		\textbf{Média} &
+		\textbf{S} & 
+		\textbf{M} & 
+		\textbf{W} & 
+		\textbf{Média} \\	\hline
+
+		P$_k$				& 20 & 9 & Sim & 0,134& 20 & 11 & False	& 0,116 \\ \hline  
+		\textit{WindowDiff}	& 60 & 9 & Sim & 0,411& 60 &  9 & Sim 	& 0,390 \\ \hline  
+		Acurácia			& 60 & 9 & Sim & 0,588& 60 &  9 & Sim 	& 0,609 \\ \hline  
+		Precisão			& 40 & 9 & Sim & 0,645& 20 & 11 & False	& 0,720 \\ \hline  
+		Revocação			& 80 & 9 & Sim & 0,869& 80 & 11 & Sim 	& 0,897 \\ \hline  
+		F$^1$				& 80 & 9 & Sim & 0,638& 80 & 11 & Sim 	& 0,655 \\ \hline  
+
+	\end{tabular}
+	\caption{Resultados obtidos com o \textit{C99}}
+	\label{tab:resultadosc99}
+\end{table}
+
+
+
+
+De acordo com os últimos testes, o algoritmo \textit{C99} obteve melhor desempenho em acurácia, precisão, $F^1$, $P_k$ e \textit{WindowDiff}, enquanto o \textit{TextTiling} obteve o melhor desempenho em revocação como pode ser visto na Tabela~\ref{tab:configfinal}. 
+
+
+\begin{table}[!h]
+	\centering
+
+	\begin{tabular}{|l|l|c|c|c|c|c|} \hline
+		\textbf{Algoritmo} & 
+		\textbf{Medida} & 
+		\textbf{Parâmetros} & 
+		\textbf{Pré-processamento} & 
+		\textbf{Média}\\	\hline
+
+	\textit{C99} & P$_k$			   & S=20 M=11 W=Não & Sim & 0,116 \\ \hline
+	\textit{C99} & \textit{WindowDiff} & S=60 M=09 W=Sim & Sim & 0,390 \\ \hline
+	\textit{C99} & Acurácia			   & S=60 M=09 W=Sim & Sim & 0,609 \\ \hline
+	\textit{C99} & Precisão			   & S=20 M=11 W=Não & Sim & 0,720 \\ \hline
+	\textit{C99} & F$^1$			   & S=80 M=11 W=Sim & Sim & 0,655 \\ \hline
+	\textit{TextTiling} &	Revocação  & J=20 P=3        & Sim & 0,917 \\ \hline
+
+	\end{tabular}
+	
+	\caption{Melhores resultados obtidos.}
+	\label{tab:configfinal}
+\end{table}
+
+
+
+
+
+
+
+De maneira geral, o algoritmo \textit{C99} apresentou melhores resultados em relação ao \textit{TextTiling}, sobre tudo quando aplicado o pré-processamento, contudo, testes estatísticos realizados indicaram que não houve diferença significativa entre os métodos. A etapa de preprocessamento proporciona melhora de desempenho quando aplicada, porém o seu maior benefício é a diminuição do custo computacional, uma vez que não prejudica a qualidade dos resultados.
+
+
+As medidas de avaliação tradicionais, podem não ser confiáveis, por não considerarem a distância entre os limites, mas penalizam o algoritmo sempre que um limite que não coincide perfeitamente com a referência. Essas medidas podem ser mais adequadas quando necessita-se de segmentações com maior exatidão. 
+
+
+As medidas \textit{WindowDiff} e P$_k$, consideram a quantidade e proximidade entre os limites, sendo mais tolerantes a pequenas imprecisões. Essa é uma característica desejável, visto que as segmentações de referência possuem diferenças consideráveis. 
+%
+\textit{WindowDiff} equilibra melhor os falsos positivos em relação a \textit{near misses}, ao passo que P$_k$ os penaliza com peso maior. Isso significa que segmentadores melhores avaliados em P$_k$ ajudam a selecionar as configurações que erram menos ao separar trechos de texto com o mesmo assunto, enquanto \textit{WindowDiff} é mais tolerante nesse aspecto.
+
+Observa-se  melhores resultados de \textit{WindowDiff} quando os algoritmos aproximam a quantidade de segmentos automáticos da quantidade de segmentos da referência. %em torno de 10. 
+Por outro lado, observa-se que P$_K$ avalia melhor as configurações que retornam menos segmentos. A configuração do tamanho do passo (P) e da proporção de segmentos em relação ao número de candidatos (S), influenciam os algoritmos na quantidade de segmentos extraídos. Contudo, não é possível definir um valor adequado, uma vez que os segmentadores humanos frequentemente apontam valores diferentes.
+
+
+
+
+% O \textit{TextTiling} obteve o melhor desempenho em revocação, utilizando-se janelas de tamanho igual a $20$ e passo igual a $3$, onde registrou-se uma média de $0,917$ para essa medida.
+%
+%
+%Embora haja melhora de desempenho com os valores apresentados, os testes apontam que não há diferença significativa de performance entre as configurações. O pré-processamento é capaz de reduzir o tamanho do texto mantendo a qualidade final dos algoritmos, sobre tudo em textos longos e grandes coleções de documentos.
+%
+%
+%%%%%%%%%%
+% Definição do que é um bom algoritmo de segmentação
+%%%%%%%%%%
+%Para fins de avaliação desse trabalho, um bom método de segmentação é aquele cujo resultado melhor se aproxima de uma segmentação manual, sem a obrigatoriedade de estar perfeitamente alinhado com tal. 
+%
+%
+%
+%Dado o contexto das atas de reunião, e a subjetividade da tarefa de segmentação, não é necessário que os limites entre os segmentos (real e hipótese) sejam idênticos, mas que se assemelhem em localização e quantidade.
+% 
+%
+%Nesse sentido, 
+
+
+% Desempenho dos métodos 
+% 
+% C99 é um pouco melhor mas tem mais complexidade
+% 
+
+
+
+%Na maioria das medidas, o algoritmo \textit{C99} sobressaiu-se em relação ao \textit{TextTiling}, contudo, testes estatísticos realizados indicaram que não houve diferença significativa. 
+%%%%%%%%%%%%%%%
+% O Impacto do Preprocessamento 
+%%%%%%%%%%%%%%%
+%Da mesma forma, a etapa de preprocessamento proporciona melhora de performance quando aplicada, porém o seu maior benefício é a diminuição do custo computacional, uma vez que não prejudica a qualidade dos resultados.
+
+
+
+%Em ambos os algoritmos os parâmetros que mais influenciam na quantidade de segmentos extraídos são para o \textit{TextTiling} o tamanho da janela e para o \textit{C99} a proporção de segmentos em relação a quantidade de candidatos. Observa-se que a quantidade de segmentos automáticos melhora os resultados principalmente e P$_k$ e \textit{WindowDiff}. 
+
+
+%Melhores resultados foram percebidos quando os algoritmos aproximam a quantidade de segmentos automáticos da quantidade de segmentos da referência. Embora os parâmetros \textit{S} e \textit{J} influenciem na quantidade de segmentos extraídos, não se conhece a 
+
+%melhores resultados de foram percebido com X e Y segmntos extraidos
+%
+%o que reforça o 
+%
+%Contudo, não possível conhecer esses valores e o parâmetros baseiam-se na quantidade de candidatos e 
+%
+%O parâmetro \textit{J} influência diretamente 
+%
+%
+%
+%A quantidade de segmentos extraídos
+%
+%A configuração da proporção de segmentos em relação ao número de candidatos (S) influencia diretamente n
+%
+%
+
+%
+%a quantidade de segmentos de referência é subjetiva
+
+
+%e Precisão melhores resultados quando retorna-se menos segmentos o que pode ser explica 
+%
+%Contudo, não possível conhecer esses valores e o parâmetros baseiam-se na quantidade de candidatos e 
+
+%Os resultados indicam que os algoritmos apresentam desempenho similar a outros trabalhos~\cite{arabi} 
+
+
+
+% Critcar as medidas tradicionais
+
+% Não houve diferença crítica
+% Não são confiáveis
+% Preferir o windiff por resolver alguns problenas do Pk. O Pk pode ser coniderádo se o falso-positivo for mais importante.
+% O Pk penaliza mais quando um limite é identificado quando não existe.
+
+% a metodologia + as ferra  mentas disponiblizadas podem ser úteis para outros trabalhos
+
+% Poderia colocar mais uma tabela referente ao terceiro teste, mas acho desnecessário
+
+
+
+% refletir melhor a performance 
+
+
+
+
+
+
+
+
+% Na Tabela~\ref{tab:texttilingsempreprocess} são apresentadas, para cada medida, as configurações que otimizam o \textit{TextTiling} e a média computada considerando as bases, onde \textbf{J} é o tamanho da janela e \textbf{P} é o passo.

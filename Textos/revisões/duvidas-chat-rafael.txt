@@ -1,0 +1,67 @@
+Como analisar tantos dados?
+
+
+----------------------------
+
+"Não dá para criar uma página do artigo, disponibilizar o software e colocar o software como contribuição do trabalho?"
+
+'Qual a base dos valores dos parâmetros?'
+
+
+
+"Falar os dados que foram considerados para o texte estatístico e se houve diferença estatisticamente significante. Depois conversar comigo sobre como foi realizado esse teste."
+
+
+Deixar as explicações das medidas tradicionais? 
+
+
+
+
+Explicar como se deu os testes!
+Nos testes:
+
+"Para mim o friedman funcionou como uma ferramenta para ranquear as configurações"
+ 
+   - Encontrar a melhor configuração para os 2 algoritmos com e sem preprocess.
+
+   - Gerar 20 configurações para cada algoritmo
+   - Calcular as 6 medidas para cada configuração
+	- Gera 24 arquivos csv. (6 medidas, 2 alg., com e sem preprocess)
+   - Rodar o test de Friedman para testas cada medida com as 20 configurações de cada alg. 
+	- São 24 rankings gerados 
+   - Pegar o melhor do ranking para cada medida/config. 
+   - Rodar os testes novamente com os primeiros de cada ranking para cada medida
+	- São 4 melhores para cada medida 
+	- Gera mais 6 rankings.
+   - Os melhores desses 6 rankings me dão a melhor configuração para cada medida. (considerando todas as configurações (2 algs; 20 config. cada; com e sem preprocess))
+
+
+---------------------------
+
+Rever as referências
+
+Falo das atas em dois momentos:
+	4.1 Coleção de documentos
+	4.4 Segmentação de referência	
+
+
+---------------------------
+
+O que colocar
+	Nos resultados
+	Nos critérios de avaliação
+	
+Como descrever as atas
+	Tamanhos diferentes
+
+
+
+
+
+Coisas online
+.....................
+
+
+Onde disponiblizar os softwares e as tabelas?
+
+

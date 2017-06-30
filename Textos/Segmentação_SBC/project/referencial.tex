@@ -21,7 +21,8 @@ A segmentação textual ou segmentação topical é a tarefa de dividir um texto mant
 %
 % O texto deve ser divido em unidades que não pode ser dividida entre segmentos 
 %%% 
-O texto deve ser previamente dividido em unidades de informação, que podem ser palavras, parágrafos e mais usualmente em sentenças. Essas unidades são processadas pelos algoritmos como a menor parte de um segmento, ou seja uma unidade não pode divida, mas deve pertencer integralmente a um segmento.
+O texto deve ser previamente dividido em unidades de informação, que podem ser palavras, parágrafos e mais usualmente em sentenças. Essas unidades são processadas pelos algoritmos como a menor parte de um segmento, ou seja uma unidade não pode divida.
+%, mas deve pertencer integralmente a um segmento.
 %
 % Exemplos 
 %%% 
@@ -29,17 +30,18 @@ Por exemplo, algoritmos baseados em janelas deslizantes avançam uma unidade a ca
 %%%%%%%%%%
 % Segmento
 %%%%%%%%%%	
-Dessa forma, um segmento pode ser visto como uma sucessão de unidades de informação que compartilham o mesmo assunto. 
-
-
+Dessa forma, um segmento pode ser visto como uma sucessão de unidades de informação que compartilham o mesmo assunto e cada ponto entre duas unidades é considerado um candidato a limite entre segmentos.
+%   
+%
+%
 %
 % Sentaças são mais usuais 
 %%% 
-Usualmente, utiliza-se sentenças como unidades informação, ou seja, as janelas deslizam uma sentença a cada passo e matrizes de similaridades armazenam as similaridades entre as sentenças do texto.
+%Usualmente, utiliza-se sentenças como unidades informação, ou seja, as janelas deslizam uma sentença a cada passo e matrizes de similaridades armazenam as similaridades entre as sentenças do texto.
 %
 % O ponto entre unidades é um limite 
 %%% 
-Assim, cada ponto entre duas sentenças e considerado um candidato a limite entre segmentos.
+%Assim, cada ponto entre duas sentenças e considerado um candidato a limite entre segmentos.
   
 
 
@@ -56,7 +58,7 @@ Trabalhos anteriores se apoiam na ideia de que a mudança de tópicos em um texto 
 % Porque cosseno
 %%%%%%%%%%
 Uma vez que a coesão léxica é pressuposto básico da maioria dos algoritmos, o cálculo da similaridade entre unidades de informação é fundamental. Uma medida de similidade frequentemente utilizada é o cosseno, apresentada na Equação~\ref{equ:cosine}, onde $f_{x,j}$ é a frequência da palavra $j$ na sentença $x$ e $f_{y,j}$ é a frequência da palavra $j$ na sentença $y$.
-
+				
 
 \begin{equation}
 Sim(x,y) = \frac
@@ -105,23 +107,54 @@ Devido a isso, as similaridades não podem ser comparadas em valores absolutos. E
 
 
 Inicialmente é construída uma matriz que contém as similaridades de todas as unidades de texto. Em seguida, cada valor na matriz de similaridade é substituído por seu ranking local. Para cada elemento da matriz, seu \textit{ranking} é o número de elementos vizinhos com valor de similaridade menor que o seu.
-
 % O que é a máscara
-Então, para cada elemento delimita-se uma região da matriz, denominada máscara, para comparar com seus vizinhos.
+Então, cada elemento e comparado com seus vizinhos dentro de uma região denominada máscara.
 %
-Na Figura~\ref{fig:exemplomatrixrank} é apresentado um quadro de dimensões 3~x~3 destacado na matriz de similaridades, 
-%que contém os valores $\{0,3; 0,4; 0,4; 0,6; 0,5; 0,2; 0,9; 0,5; 0,7\}$, 
-onde cada elemento da matrix é a similaridade entre duas unidades de informação. Tomando como exemplo o elemento com valor $0,5$, a mesma posição na matriz de \textit{ranks} terá o valor $4$, pois esse é o número de vizinhos com valores inferiores a $0,5$ dentro do quadro analisado na matriz de similaridades. 
+
+Na Figura~\ref{fig:a} é destacado um quadro 3~x~3 em uma matriz onde cada elemento é a similaridade entre duas unidades de informação. 
+%
+Tomando como exemplo o elemento com valor $0,5$, a mesma posição na matriz de \textit{rankings} terá o valor $4$, pois esse é o número de vizinhos com valores inferiores a $0,5$ dentro do quadro analisado na matriz de similaridades. Da mesma forma, na Figura~\ref{fig:b} para o valor $0,2$ a matriz de \textit{rankings} conterá o valor $1$ na mesma posição.
 
 
-  \begin{figure}[!h]
+%Na Figura~\ref{fig:exemplomatrixrank} é apresentado um quadro de dimensões 3~x~3 destacado na matriz de similaridades, 
+%%que contém os valores $\{0,3; 0,4; 0,4; 0,6; 0,5; 0,2; 0,9; 0,5; 0,7\}$, 
+%onde cada elemento da matriz é a similaridade entre duas unidades de informação. Tomando como exemplo o elemento com valor $0,5$, a mesma posição na matriz de \textit{ranks} terá o valor $4$, pois esse é o número de vizinhos com valores inferiores a $0,5$ dentro do quadro analisado na matriz de similaridades. 
 
-	\centering
-	\includegraphics[width=0.8\textwidth]{exemplo-matrix-rank-noborder.jpg}
-	\caption{Exemplo de construção de uma matriz de rank.~\cite{Choi2000}}
-	\label{fig:exemplomatrixrank}
 
-  \end{figure}
+
+\begin{figure}[!h]
+	\centering     %%% not \center
+
+	\subfigure[Passo 1]{\label{fig:a}\includegraphics[width=60mm]{exemplo-matrix-rank-A.png}}
+	\subfigure[Passo 2]{\label{fig:b}\includegraphics[width=60mm]{exemplo-matrix-rank-B.png}}
+	
+	\caption{Exemplo de construção de uma matriz de rankings.~\cite{Choi2000}}			\label{fig:exemplomatrixrank}
+\end{figure}
+
+%  \begin{figure}[!h]
+%
+%	\centering
+%	
+%	\begin{subfigure}[t]{0.3\textwidth}
+%	
+%	\end{subfigure}
+%
+%	\caption{Exemplo de construção de uma matriz de rank.~\cite{Choi2000}}
+%	\label{fig:exemplomatrixrank}
+%
+%  \end{figure}
+
+
+
+
+%  \begin{figure}[!h]
+%
+%	\centering
+%	\includegraphics[width=0.8\textwidth]{exemplo-matrix-rank2.png}
+%	\caption{Exemplo de construção de uma matriz de rank.~\cite{Choi2000}}
+%	\label{fig:exemplomatrixrank}
+%
+%  \end{figure}
 
 
 
@@ -145,18 +178,18 @@ Para que se possa avaliar um segmentador automático de textos é preciso uma refe
 % Formas de conseguir a Segentanção de Referência
 %%%%%%%%%%
 Entre as abordagens mais comuns para se conseguir essas referências, encontramos: 
-
-\begin{itemize}
-
+%
+%\begin{itemize}
+%
 % Concatenação
-\item A concatenação aleatória de documentos distintos, onde o ponto entre o final de um texto e o início do seguinte é um limite entre eles. 
-
+1) A concatenação aleatória de documentos distintos, onde o ponto entre o final de um texto e o início do seguinte é um limite entre eles. 
+%
 % Segmentação manual
-\item A segmentação manual dos documentos, em que, pessoas capacitadas, também chamadas de juízes, ou mesmo o autor do texto, são consultadas e indicam manualmente onde há uma quebra de segmento. 
+2) A segmentação manual dos documentos, em que, pessoas capacitadas, também chamadas de juízes, ou mesmo o autor do texto, são consultadas e indicam manualmente onde há uma quebra de segmento. 
 % Mediador em conversas
-\item Em transcrição de conversas faladas em reuniões com múltiplos participantes, um mediador é responsável por encerrar um assunto e iniciar um novo, nesse caso o mediador anota manualmente o tempo onde há uma transição de tópico. 
-
-\end{itemize}
+3) Em transcrição de conversas faladas em reuniões com múltiplos participantes, um mediador é responsável por encerrar um assunto e iniciar um novo, nesse caso o mediador anota manualmente o tempo onde há uma transição de tópico. 
+%
+%\end{itemize}
 
 % Não avaliar
 Em aplicações em que a segmentação é uma tarefa secundária e quando essas abordagens são custosas ou não se aplicam, é possível, ao invés de avaliar o segmentador, analisar seu impacto na aplicação final.
@@ -175,124 +208,15 @@ Em aplicações em que a segmentação é uma tarefa secundária e quando essas aborda
 %%%%%%%%%%%%%%%
 % Medidas de avaliação tradicionais 
 %%%%%%%%%%%%%%%
-%
-% Utilizadas em RI e Classificação 
-%%% 
-As medidas de avaliação tradicionais como precisão e revocação são usadas em recuperação de informação e classificação automática para medir o desempenho de modelos de classificação e predição. São baseadas na comparação dos valores produzidos por uma hipótese com os valores reais. 
+As medidas de avaliação tradicionais como precisão e revocação 
+computam os erros do algoritmo, isto é, falsos positivos e falsos negativos, a fim de calcular seu desempenho. 
+Além dessas medidas, que consideram apenas se um segmento foi corretamente definido, pode-se também considerar a distância entre o segmento extraído automaticamente e o segmento de referência~\cite{Kern2009}. Chama-se \textit{near misses} o caso em que um limite identificado automaticamente não coincide exatamente com a referência, mas é necessário considerar a proximidade entre eles.
 
 
-%
-% Baseadas em Matriz de Confusão 
-%%% 
-%Esses valores são apresentados em uma tabela que permite a visualização do desempenho de um algoritmo, a qual é chamada de matriz de confusão. Na Tabela~\ref{tab:matrizconfusao} é apresentada a matriz de confusão para duas classes (Positivo e Negativo).
-
-%Uma matriz de confusão é uma tabela que permite a visualização do desempenho de um algoritmo. 
-
-%\begin{table}[!h]
-%	\centering
-%	
-%	\begin{tabular}{|c|c|c|}
-%		\hline
-%		                & Predição Positiva         & Predição Negativa        \\ \hline
-%		Positivo real   & VP (Verdadeiro Positivo)  & FN (Falso Negativo)      \\ \hline
-%		Negativo real   & FP (Falso Positivo)       & VN (Verdadeiro Negativo) \\ \hline
-%	
-%	\end{tabular}
-%	
-%	\caption{Matriz de confusão.}
-%	\label{tab:matrizconfusao}
-%
-%\end{table}
-
-
-%%%%%%%%%%
-%	Avaliações baseadas em hits 
-%%%%%%%%%%
-Essas medidas de avaliação computam os erros do algoritmo, isto é, falsos positivos e falsos negativos, a fim de calcular seu desempenho. 
-
-%
-% Falso Positivo 
-%%%
-No contexto de segmentação textual, um falso positivo é um limite identificado pelo algoritmo que não corresponde a nenhum limite na segmentação de referência, ou seja, o algoritmo indicou que em determinado ponto há uma quebra de segmento, mas na segmentação de referência, no mesmo ponto, não há. 
-
-%
-% Falso Negativo 
-%%% 
-De maneira semelhante, um falso negativo é quando o algoritmo não identifica um limite existente na segmentação de referência, ou seja, em determinado ponto há, na segmentação de referência, um limite entre segmentos, contudo, o algoritmo não o identificou.
-
-%
-% Verdadeiro Positivo 
-%%% 
-Um verdadeiro positivo é um ponto no texto indicado pelo algoritmo e pela segmentação de referência como uma quebra de segmentos, ou seja, o algoritmo e a referência concordam que em determinado ponto há uma transição de assunto.
-
-%
-% O Verdadeiro Negativo, que não existe 
-%%%
-Na avaliação de segmentadores, não há o conceito de verdadeiro negativo. Este seria um ponto no texto indicado pelo algoritmo e pela segmentação de referência onde não há uma quebra de segmentos. Uma vez que os algoritmos apenas indicam onde há um limite, essa medida não é necessária. % Não há ou não e necessário?
-
-
-
-Nesse sentido, 
-%%%%%%%%%%%%%%%
-% Precisão 
-%%%%%%%%%%%%%%%
-%
-% Definição 
-%%% 
-a precisão, é a proporção de limites corretamente identificados pelo algoritmo. 
-%
-% Cálculo 
-%%% 
-É calculada dividindo-se o número de limites identificados automaticamente pelo número de candidatos a limite (Equação~\ref{equ:precisao}).
-% 
-\begin{equation}
-	Presis\tilde{a}o = \frac{VP}{VP+FP}
-	\label{equ:precisao}
-\end{equation}
-%
-% Ideia 
-%%% 
-Essa medida varia entre $0,0$ e $1,0$, que indica a proporção de limites identificados pelo algoritmo que são corretos, ou seja, correspondem a um limite real na segmentação de referência. Porém não diz nada sobre quantos limites reais existem. 
-
-
-
-%%%%%%%%%%%%%%%
-% Revocação 
-%%%%%%%%%%%%%%% 
-%
-% Definição 
-%%% 
-A revocação, é a proporção de limites verdadeiros que foram identificados pelo algoritmo.
-%
-% Cálculo 
-%%%
-É calculada dividindo-se o número de limites identificados automaticamente pelo número limites verdadeiros.
-
-
-% 
-\begin{equation}
-	Revoca\c{c}\tilde{a}o = \frac{VP}{VP+FN}
-	\label{equ:revocacao}
-\end{equation}
-%
-% Ideia 
-%%% 
-Pode variar entre $0,0$ e $1,0$, onde indica que a proporção de limites corretos que foram identificados. Porém não diz nada sobre quantos limites foram indentificados incorretamente. 
-
-%%%%%%%%%%%%%%%
-% Relação inversa entre precisão e revocação 
-%%%%%%%%%%%%%%% 
-Existe uma relação inversa entre precisão e revocação. Conforme o algoritmo aponta mais segmentos no texto, este tende a melhorar a revocação e ao mesmo tempo, reduzir a precisão. 
-%
-% Pode ser contornado com F1 
-%%% 
-Esse problema de avaliação pode ser contornado utilizado a medida $F^1$ que é a média harmônica entre precisão e revocação onde ambas tem o mesmo peso. 
 
 %%%%%%%%%%%%%%%
 % Medidas que consideram a distancia entre os segmentos 
 %%%%%%%%%%%%%%% 
-Além dessas medidas, que consideram apenas se um segmento foi corretamente definido, pode-se também considerar a distância entre o segmento extraído automaticamente e o segmento de referência~\cite{Kern2009}.
-
 
 Na Figura~\ref{fig:exemplosegmentacaozoom} é apresentado um exemplo com duas segmentações extraídas automaticamente e uma referência. Em ambos os casos não há nenhum verdadeiro positivo, o que implica em zero para os valores de precisão, acurácia, e revocação, embora a segunda hipótese possa ser considerada superior à primeira se levado em conta a proximidade dos limites.
 
@@ -301,16 +225,16 @@ Na Figura~\ref{fig:exemplosegmentacaozoom} é apresentado um exemplo com duas seg
   \begin{figure}[!h]
 
 	\centering
-	\includegraphics[width=0.8\textwidth]{windiffzoom.jpg}
+	\includegraphics[width=0.6\textwidth]{windiffzoom.jpg}
 	\caption{Exemplos de \textit{near missing} e falso positivo puro. Os blocos indicam uma unidade de informação e as linha verticais representam uma transição de assunto. }
 	\label{fig:exemplosegmentacaozoom}
 
   \end{figure}
   
 
-Considerando o conceito de \textit{near misses}, algumas soluções foram propostas. As medidas de avaliação mais utilizadas são:
+Considerando o conceito de \textit{near misses}, algumas soluções foram propostas. As medidas de avaliação mais utilizadas são a P$_k$ e \textit{WindowDiff}.
 
-\begin{description}
+
 
 
 %%%%%%%%%%%%%%%
@@ -319,7 +243,7 @@ Considerando o conceito de \textit{near misses}, algumas soluções foram proposta
 %\item Em~\cite{Beeferman1999} é apresentada uma medida denominada P$_k$, 
 %
 
-\item P$_k$, proposta por Beeferman~\cite{Beeferman1999}, 
+Proposta por~\cite{Beeferman1999}, P$_k$, 
 % Valores Parciais 
 %%% 
 atribui valores parciais a \textit{near misses}, ou seja, limites sempre receberão um peso proporcional à sua proximidade, desde que dentro de um janela de tamanho~$k$.
@@ -344,18 +268,22 @@ O valor de $k$ é calculado como a metade da média dos comprimentos dos segmentos
 %%% 
 P$_k$ é uma medida de dissimilaridade entre as segmentações e pode ser interpretada como a probabilidade de duas sentenças extraídas aleatoriamente pertencerem ao mesmo segmento.
 
+
+
+
 %%%%%%%%%%%%%%%
 % WindowDiff 
 %%%%%%%%%%%%%%% 
-\item \textit{WindowDiff}. Pevzner~\cite{Pevzner2002} 
+
+\cite{Pevzner2002} 
 %
 % Medida alternativa que considera outros aspectos 
 %%%
-apresenta uma medida alternativa à P$_k$~\cite{Beeferman1999} a fim de melhorar alguns aspectos. 
+apresentam uma medida alternativa à P$_k$ a fim de melhorar alguns aspectos. 
 %
 % Funcionamento do Windiff 
 %%% 
-De maneira semelhante, move uma janela pelo texto e penaliza o algoritmo sempre que o número de limites proposto pelo algoritmo não coincidir com o número de limites esperados para aquela janela. Ou seja, o algoritmo é penalizado quando não concordar com a segmentação de referência quanto ao número de segmentos na janela. 
+De maneira semelhante, \textit{WindowDiff} move uma janela pelo texto e penaliza o algoritmo sempre que o número de limites proposto pelo algoritmo não coincidir com o número de limites esperados para aquela janela. Ou seja, o algoritmo é penalizado quando não concordar com a segmentação de referência quanto ao número de segmentos na janela. 
 %
 % Solução para considerar o tamanho das sentenças 
 %%% 
@@ -367,7 +295,126 @@ A fim de melhor equilibrar o peso dos falsos positivos em relação a \textit{near
 % OBS: Os problemas de Pk ficaram subentendidos aqui :/ 
 
 
-\end{description}
+
+
+
+
+%
+% Utilizadas em RI e Classificação 
+%%% 
+%As medidas de avaliação tradicionais como precisão e revocação 
+%
+%são usadas em recuperação de informação e classificação automática para medir o desempenho de modelos de classificação e predição. São baseadas na comparação dos valores produzidos por uma hipótese com os valores reais. 
+%%%%%%%%%%
+%	Avaliações baseadas em hits 
+%%%%%%%%%%
+%Essas medidas de avaliação 
+%
+%
+%
+%
+% Baseadas em Matriz de Confusão 
+%%% 
+%Esses valores são apresentados em uma tabela que permite a visualização do desempenho de um algoritmo, a qual é chamada de matriz de confusão. Na Tabela~\ref{tab:matrizconfusao} é apresentada a matriz de confusão para duas classes (Positivo e Negativo).
+%
+%Uma matriz de confusão é uma tabela que permite a visualização do desempenho de um algoritmo. 
+%
+%\begin{table}[!h]
+%	\centering
+%	
+%	\begin{tabular}{|c|c|c|}
+%		\hline
+%		                & Predição Positiva         & Predição Negativa        \\ \hline
+%		Positivo real   & VP (Verdadeiro Positivo)  & FN (Falso Negativo)      \\ \hline
+%		Negativo real   & FP (Falso Positivo)       & VN (Verdadeiro Negativo) \\ \hline
+%	
+%	\end{tabular}
+%	
+%	\caption{Matriz de confusão.}
+%	\label{tab:matrizconfusao}
+%
+%\end{table}
+%
+%
+%
+%
+%
+% Falso Positivo 
+%%%
+%No contexto de segmentação textual, um falso positivo é um limite identificado pelo algoritmo que não corresponde a nenhum limite na segmentação de referência, ou seja, o algoritmo indicou que em determinado ponto há uma quebra de segmento, mas na segmentação de referência, no mesmo ponto, não há. 
+%
+% Falso Negativo 
+%%% 
+% De maneira semelhante, um falso negativo é quando o algoritmo não identifica um limite existente na segmentação de referência, ou seja, em determinado ponto há, na segmentação de referência, um limite entre segmentos, contudo, o algoritmo não o identificou.
+%
+%
+% Verdadeiro Positivo 
+%%% 
+% Um verdadeiro positivo é um ponto no texto indicado pelo algoritmo e pela segmentação de referência como uma quebra de segmentos, ou seja, o algoritmo e a referência concordam que em determinado ponto há uma transição de assunto.
+%
+%
+% O Verdadeiro Negativo, que não existe 
+%%%
+% Na avaliação de segmentadores, não há o conceito de verdadeiro negativo. Este seria um ponto no texto indicado pelo algoritmo e pela segmentação de referência onde não há uma quebra de segmentos. Uma vez que os algoritmos apenas indicam onde há um limite, essa medida não é necessária. % Não há ou não e necessário?
+%
+%
+%
+% Nesse sentido, 
+%%%%%%%%%%%%%%%
+% Precisão 
+%%%%%%%%%%%%%%%
+%
+% Definição 
+%%% 
+% a precisão, é a proporção de limites corretamente identificados pelo algoritmo. 
+%
+% Cálculo 
+%%% 
+% É calculada dividindo-se o número de limites identificados automaticamente pelo número de candidatos a limite (Equação~\ref{equ:precisao}).
+% 
+% \begin{equation}
+	% Presis\tilde{a}o = \frac{VP}{VP+FP}
+	% \label{equ:precisao}
+% \end{equation}
+%
+% Ideia 
+%%% 
+% Essa medida varia entre $0,0$ e $1,0$, que indica a proporção de limites identificados pelo algoritmo que são corretos, ou seja, correspondem a um limite real na segmentação de referência. Porém não diz nada sobre quantos limites reais existem. 
+%
+%
+%
+%%%%%%%%%%%%%%%
+% Revocação 
+%%%%%%%%%%%%%%% 
+%
+% Definição 
+%%% 
+% A revocação, é a proporção de limites verdadeiros que foram identificados pelo algoritmo.
+%
+% Cálculo 
+%%%
+% É calculada dividindo-se o número de limites identificados automaticamente pelo número limites verdadeiros.
+%
+%
+% 
+% \begin{equation}
+	% Revoca\c{c}\tilde{a}o = \frac{VP}{VP+FN}
+	% \label{equ:revocacao}
+% \end{equation}
+%
+% Ideia 
+%%% 
+% Pode variar entre $0,0$ e $1,0$, onde indica que a proporção de limites corretos que foram identificados. Porém não diz nada sobre quantos limites foram indentificados incorretamente. 
+%
+%%%%%%%%%%%%%%%
+% Relação inversa entre precisão e revocação 
+%%%%%%%%%%%%%%% 
+% Existe uma relação inversa entre precisão e revocação. Conforme o algoritmo aponta mais segmentos no texto, este tende a melhorar a revocação e ao mesmo tempo, reduzir a precisão. 
+%
+% Pode ser contornado com F1 
+%%% 
+% Esse problema de avaliação pode ser contornado utilizado a medida $F^1$ que é a média harmônica entre precisão e revocação onde ambas tem o mesmo peso. 
+%
 
 
 
@@ -495,3 +542,4 @@ A fim de melhor equilibrar o peso dos falsos positivos em relação a \textit{near
 %  \end{figure}
   
 
+%Então, para cada elemento delimita-se uma região da matriz, denominada máscara, para comparar com seus vizinhos.

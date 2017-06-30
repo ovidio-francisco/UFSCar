@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.4.21)  24 JUN 2017 17:32
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.4.21)  30 JUN 2017 11:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -119,14 +119,34 @@ Package: inputenc 2015/03/17 v1.2c Input encoding file
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/latin1.def
 File: latin1.def 2015/03/17 v1.2c Input encoding file
-)) (./algorithm2e.sty
-Package: algorithm2e 2013/01/06 v5.00 algorithms environments
-\c@AlgoLine=\count92
+))
+(/usr/share/texlive/texmf-dist/tex/latex/subfigure/subfigure.sty
+Package: subfigure 2002/03/15 v2.1.5 subfigure package
+\subfigtopskip=\skip45
+\subfigcapskip=\skip46
+\subfigcaptopadj=\dimen122
+\subfigbottomskip=\skip47
+\subfigcapmargin=\dimen123
+\subfiglabelskip=\skip48
+\c@subfigure=\count92
+\c@lofdepth=\count93
+\c@subtable=\count94
+\c@lotdepth=\count95
 
-(/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
+****************************************
+* Local config file subfigure.cfg used *
+****************************************
+(/usr/share/texlive/texmf-dist/tex/latex/subfigure/subfigure.cfg)
+\subfig@top=\skip49
+\subfig@bottom=\skip50
+)
+(./algorithm2e.sty
+Package: algorithm2e 2013/01/06 v5.00 algorithms environments
+\c@AlgoLine=\count96
+ (/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )
-\algocf@hangindent=\skip45
+\algocf@hangindent=\skip51
 
 (/usr/share/texlive/texmf-dist/tex/latex/tools/xspace.sty
 Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
@@ -141,56 +161,56 @@ Package `algorithm2e' Release 5.1 -- october 19 2015 --
 subscribe by emailing sympa@lirmm.fr with 'subscribe <list> <firstname name>'
 - Author: Christophe Fiorio (christophe.fiorio@umontpellier.fr)
 ********************************************************
-\skiptotal=\skip46
-\skiplinenumber=\skip47
-\skiprule=\skip48
-\skiphlne=\skip49
-\skiptext=\skip50
-\skiplength=\skip51
-\algomargin=\skip52
-\skipalgocfslide=\skip53
-\algowidth=\dimen122
-\inoutsize=\dimen123
-\inoutindent=\dimen124
-\interspacetitleruled=\dimen125
-\interspacealgoruled=\dimen126
-\interspacetitleboxruled=\dimen127
-\algocf@ruledwidth=\skip54
+\skiptotal=\skip52
+\skiplinenumber=\skip53
+\skiprule=\skip54
+\skiphlne=\skip55
+\skiptext=\skip56
+\skiplength=\skip57
+\algomargin=\skip58
+\skipalgocfslide=\skip59
+\algowidth=\dimen124
+\inoutsize=\dimen125
+\inoutindent=\dimen126
+\interspacetitleruled=\dimen127
+\interspacealgoruled=\dimen128
+\interspacetitleboxruled=\dimen129
+\algocf@ruledwidth=\skip60
 \algocf@inoutbox=\box27
 \algocf@inputbox=\box28
-\AlCapSkip=\skip55
-\AlCapHSkip=\skip56
-\algoskipindent=\skip57
+\AlCapSkip=\skip61
+\AlCapHSkip=\skip62
+\algoskipindent=\skip63
 \algocf@nlbox=\box29
 \algocf@hangingbox=\box30
 \algocf@untilbox=\box31
-\algocf@skipuntil=\skip58
+\algocf@skipuntil=\skip64
 \algocf@capbox=\box32
-\algoheightruledefault=\skip59
-\algoheightrule=\skip60
-\algotitleheightruledefault=\skip61
-\algotitleheightrule=\skip62
-\c@algocfline=\count93
-\c@algocfproc=\count94
-\c@algocf=\count95
+\algoheightruledefault=\skip65
+\algoheightrule=\skip66
+\algotitleheightruledefault=\skip67
+\algotitleheightrule=\skip68
+\c@algocfline=\count97
+\c@algocfproc=\count98
+\c@algocf=\count99
 \algocf@algoframe=\box33
 \algocf@algobox=\box34
 ) (./segmentacao.aux)
 \openout1 = `segmentacao.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Try loading font information for OT1+ptm on input line 53.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 55.
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
@@ -230,16 +250,16 @@ File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count96
-\scratchdimen=\dimen128
+\scratchcounter=\count100
+\scratchdimen=\dimen130
 \scratchbox=\box35
-\nofMPsegments=\count97
-\nofMParguments=\count98
+\nofMPsegments=\count101
+\nofMParguments=\count102
 \everyMPshowfont=\toks19
-\MPscratchCnt=\count99
-\MPscratchDim=\dimen129
-\MPnumerator=\count100
-\makeMPintoPDFobject=\count101
+\MPscratchCnt=\count103
+\MPscratchDim=\dimen131
+\MPnumerator=\count104
+\makeMPintoPDFobject=\count105
 \everyMPtoPDFconversion=\toks20
 ) (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2016/05/21 v0.22 Utility functions of pdfTeX for LuaTeX (HO
@@ -288,22 +308,22 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <16> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 55.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 57.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 55.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 57.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 55.
+(Font)              <12> on input line 57.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 55.
+(Font)              <8> on input line 57.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 55.
+(Font)              <6> on input line 57.
 
 
 LaTeX Warning: No \author given.
 
 (./project/resumo.tex
 LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1.
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 2.
 ) (./project/introducao.tex
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <13> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 3.
@@ -311,112 +331,89 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <13> not available
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]) (./project/referencial.te
 x
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 1888) has occurred while \output is active []
 
  [2]
-[3] <images/exemplo-matrix-rank-noborder.jpg, id=22, 366.168pt x 193.2018pt>
-File: images/exemplo-matrix-rank-noborder.jpg Graphic file (type jpg)
+<images/exemplo-matrix-rank-A.png, id=15, 269.50688pt x 141.52875pt>
+File: images/exemplo-matrix-rank-A.png Graphic file (type png)
 
-<use images/exemplo-matrix-rank-noborder.jpg>
-Package pdftex.def Info: images/exemplo-matrix-rank-noborder.jpg used on input 
-line 120.
-(pdftex.def)             Requested size: 341.43437pt x 180.15633pt.
-LaTeX Font Info:    Try loading font information for OT1+phv on input line 121.
+<use images/exemplo-matrix-rank-A.png>
+Package pdftex.def Info: images/exemplo-matrix-rank-A.png used on input line 12
+8.
+(pdftex.def)             Requested size: 170.71652pt x 89.65163pt.
+
+<images/exemplo-matrix-rank-B.png, id=17, 268.75406pt x 141.52875pt>
+File: images/exemplo-matrix-rank-B.png Graphic file (type png)
+
+<use images/exemplo-matrix-rank-B.png>
+Package pdftex.def Info: images/exemplo-matrix-rank-B.png used on input line 12
+9.
+(pdftex.def)             Requested size: 170.71652pt x 89.90215pt.
+LaTeX Font Info:    Try loading font information for OT1+phv on input line 131.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1phv.fd
 File: ot1phv.fd 2001/06/04 scalable font definitions for OT1/phv.
 )
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <10> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 121.
- [4 <./images/exemplo-matrix-rank-noborder.jpg>]
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 152.
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 131.
 
 
-(/usr/share/texlive/texmf-dist/tex/latex/psnfss/omsptm.fd
-File: omsptm.fd 
-)
-LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 152.
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-Underfull \hbox (badness 1221) in paragraph at lines 181--182
-\OT1/ptm/m/n/12 As me-di-das de avalia[][]ao tradi-cionais como pre-cis[]ao e r
-evoca[][]ao s[]ao us-adas em
- []
-
-[5]
-
-LaTeX Warning: Command \c invalid in math mode on input line 274.
-
-<images/windiffzoom.jpg, id=30, 312.2064pt x 78.5334pt>
+[3] <images/windiffzoom.jpg, id=25, 312.2064pt x 78.5334pt>
 File: images/windiffzoom.jpg Graphic file (type jpg)
 
 <use images/windiffzoom.jpg>
-Package pdftex.def Info: images/windiffzoom.jpg used on input line 304.
-(pdftex.def)             Requested size: 341.43437pt x 85.8897pt.
+Package pdftex.def Info: images/windiffzoom.jpg used on input line 228.
+(pdftex.def)             Requested size: 256.07741pt x 64.41817pt.
 LaTeX Font Info:    Font shape `OT1/phv/bx/it' in size <10> not available
-(Font)              Font shape `OT1/phv/b/it' tried instead on input line 305.
+(Font)              Font shape `OT1/phv/b/it' tried instead on input line 229.
 LaTeX Font Info:    Font shape `OT1/phv/b/it' in size <10> not available
-(Font)              Font shape `OT1/phv/b/sl' tried instead on input line 305.
- [6 <./images/windiffzoom.jpg>])
+(Font)              Font shape `OT1/phv/b/sl' tried instead on input line 229.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[4 <./images/exemplo-matrix-rank-A.png> <./images/exemplo-matrix-rank-B.png>])
 (./project/trabalhosrelacionados.tex
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 30.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 30.
- [7]) (./project/proposta.tex [8]
-<images/pre-processamento.jpg, id=42, 838.332pt x 209.1012pt>
-File: images/pre-processamento.jpg Graphic file (type jpg)
-
-<use images/pre-processamento.jpg>
-Package pdftex.def Info: images/pre-processamento.jpg used on input line 135.
-(pdftex.def)             Requested size: 426.79135pt x 106.45195pt.
- [9]
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 191.
-LaTeX Font Info:    Try loading font information for OT1+pcr on input line 191.
-
+ [5 <./images/windiffzoom.jpg>])
+(./project/proposta2.tex
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 16.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
-)
-LaTeX Font Info:    Try loading font information for OMS+pcr on input line 191.
-
-
-(/usr/share/texlive/texmf-dist/tex/latex/psnfss/omspcr.fd
-File: omspcr.fd 
-)
-LaTeX Font Info:    Font shape `OMS/pcr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 191.
-)
-(./project/avaliacao.tex [10 <./images/pre-processamento.jpg>]
-Underfull \hbox (badness 1616) in paragraph at lines 59--63
+) (./project/atas.tex) [6] (./project/segmentacaoreferencia.tex)
+Underfull \hbox (badness 1616) in paragraph at lines 233--237
 \OT1/ptm/m/n/12 As implementa[][]oes dos al-go-rit-mos per-mitem ao usu[]ario a
  configura[][]ao de seus
  []
 
-[11]
+[7] (./project/criteriosdeavaliacao.tex) (./project/resultados.tex
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[12]) (./project/conclusao.tex [13]) (./segmentacao.bbl [14]) [15]
-(./segmentacao.aux)
+[8] [9])) (./project/conclusao.tex) (./segmentacao.bbl
+Underfull \vbox (badness 5119) has occurred while \output is active []
 
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
- )
+ [10]
+[11]) [12] (./segmentacao.aux) )
 (\end occurred inside a group at level 1)
 
 ### simple group (level 1) entered at line 1061 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 3999 strings out of 494884
- 59413 string characters out of 6179236
- 147392 words of memory out of 5000000
- 7208 multiletter control sequences out of 15000+600000
- 28666 words of font info for 53 fonts, out of 8000000 for 9000
+ 4080 strings out of 494884
+ 60591 string characters out of 6179236
+ 151011 words of memory out of 5000000
+ 7280 multiletter control sequences out of 15000+600000
+ 27040 words of font info for 51 fonts, out of 8000000 for 9000
  38 hyphenation exceptions out of 8191
- 39i,15n,28p,750b,2485s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 39i,11n,28p,808b,2066s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texl
@@ -430,10 +427,10 @@ hvb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvbo8a.pfb><
 ive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-dist
 /fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/ur
 w/times/utmri8a.pfb>
-Output written on segmentacao.pdf (15 pages, 407420 bytes).
+Output written on segmentacao.pdf (12 pages, 205732 bytes).
 PDF statistics:
- 109 PDF objects out of 1000 (max. 8388607)
- 75 compressed objects within 1 object stream
+ 102 PDF objects out of 1000 (max. 8388607)
+ 69 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  16 words of extra memory for PDF output out of 10000 (max. 10000000)
 

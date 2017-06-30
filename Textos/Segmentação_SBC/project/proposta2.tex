@@ -1,0 +1,253 @@
+\section{Proposta: Segmentação Linear Automática de Atas de Reunião}
+	\label{sec:proposta}
+
+
+
+
+
+
+%%%%%%%%%%
+% TextTiling e C99 criados para inglês e independente de domínio
+%%%%%%%%%%
+Os algoritmos \textit{TextTiling} e \textit{C99} foram propostos para o inglês, independentemente de domínio, ou seja, a proposta inicial dos autores é trabalhar em qualquer texto nessa língua.
+%%%%%%%%%%
+% Adapatar para Atas em português
+%%%%%%%%%%
+Neste trabalho, propõe-se aplicá-los ao contexto das atas de reunião em português do Brasil, ou seja, em uma língua diferente e dentro de um contexto específico. As implementações utilizadas, bem como ferramentas utilizadas e os resultados completos estão disponíveis para utilização e consulta em \url{link}. As subseções seguintes tratam da aplicação desses algoritmos para esse nicho mais específico. 
+
+
+\subsection{Coleção de documentos}
+
+\input{project/atas}
+
+
+
+
+\subsection{Pré-processamento}
+	\label{subsec:preprocessamento}
+
+As atas a serem segmentadas são extraídas de documentos do tipo \textit{pdf}, \textit{doc}, \textit{docx} ou \textit{odt} que normalmente possuem formato binário. A fim de extrair o texto desses documentos, aplicou-se um processo que transforma esses formatos em aquivos de texto plano. 
+%Após isso, obteve-se uma média de 906 \textit{tokens} por ata. 
+A fim de preparar o texto e selecionar as palavras mais significativas, as atas passaram por processos de transformação os quais serão apresentados a seguir.
+	
+
+\begin{enumerate}
+
+
+% Cabeçalhos e rodapés
+\item Remoção de cabeçalhos e rodapés: as atas contém trechos que podem ser considerados pouco informativos e descartados durante o pré-processamento, como cabeçalhos e rodapés que se misturam aos tópicos tratados na reunião, podendo ser  inseridos no meio de um tópico prejudicando tanto o algoritmo de segmentação, quanto a leitura do texto pelo usuário.
+
+% Identificação de sentenças
+\item Identificação de finais sentenças: Devido ao estilo de pontuação desses documentos, como encerrar sentenças usando um \textit{";"} e inserção de linhas extras, foram usadas as regras especiais para identificação de finais de sentença. Os detalhes sobre essas regras estão disponíveis para consulta em \url{link}.
+
+
+%cada final de sentença é identificado e marcado com uma \textit{string} especial, esse processo é melhor descrito na Subseção~\ref{subsec:indentificacaosentencas}.
+
+% Remoção de termos
+\item Redução de termos: Eliminou-se a acentuação, sinais de pontuação, numerais e todos os \textit{tokens} menores que três caracteres. 
+Palavras de uso muito frequente como artigos, preposições e pronomes, chamadas de \textit{stop words}, foram removidas utilizando-se uma lista de 438 palavras.
+
+% Stemming
+\item \textit{Stemming}:
+Extraiu-se o radical de cada palavra. Para isso, as letras foram convertidas em caixa baixa e aplicou-se o algoritmo \textit{Orengo}\footnote{\urlorengo} para remoção de sufixos.
+
+\end{enumerate}
+	
+
+
+%Após os passo, reduziu-se a quantidade de tokens conforme mostrado na Tabela~\ref{tab:preprocessamento}.
+
+Na Tabela~\ref{tab:preprocessamento} é mostrado, para cada ata, a quantidade de \textit{tokens} após a extração dos documentos e durante o pré-processamento.
+
+%\begin{table}[!h]
+%	\centering
+%
+%	\begin{tabular}{|l|c|}
+%	
+%		\hline
+%		\textbf{Processo}      &  \textbf{Média de \textit{tokens}}\\		
+%
+%		\hline
+%
+%		Extração do texto                    & 906 \\ \hline
+%		Remoção de Cabeçalhos Rodapés        & 813 \\ \hline
+%		Identificação de finais de sentença  & 813 \\ \hline
+%%		Limpeza                              & 535 \\ \hline
+%%		Remoção de Numerais                  & 526 \\ \hline
+%%		Remoção de \textit{Stop Words}       & 441 \\ \hline
+%		Redução de termos     				 & 441 \\ \hline
+%		\textit{Stemming}                    & 441 \\ \hline
+%		
+%		
+%	\end{tabular}
+%	
+%	\caption{Quantidade média de \textit{tokens} extraídos após cada passo do pré-processamento.}
+%	\label{tab:preprocessamento}
+%\end{table}
+
+%Ata 29 - 25a Reunião Odinária PPGCCS.pdf.txt    Ata 1 - 18 sentenças
+%	 On Load = 			809
+%	 Header Removal = 	665
+%	 Term Reduction = 	461
+%Ata 30 - 26a Reunião Odinária PPGCCS.pdf.txt    Ata 2 - 26 sentenças
+%	 On Load = 			851
+%	 Header Removal = 	704
+%	 Term Reduction = 	489
+%Ata 32 - 28a Reunião Odinária PPGCCS.pdf.txt    Ata 3 - 24 sentenças 
+%	 On Load = 			1043
+%	 Header Removal = 	840
+%	 Term Reduction = 	566
+%Ata 33 - 29a Reunião Odinária PPGCCS.pdf.txt    Ata 4 - 32 sentenças
+%	 On Load = 			1407
+%	 Header Removal = 	1247
+%	 Term Reduction = 	872
+%Ata 36 - 31a Reunião Odinária PPGCCS.pdf.txt Ata 5 - 25 sentenças 
+%	 On Load = 			834
+%	 Header Removal = 	708
+%	 Term Reduction = 	485
+%Ata 35 - 5a Reunião Extraodinária PPGCCS.pdf.txt  Ata 6 - 10 sentenças
+%	 On Load =	 		496
+%	 Header Removal = 	392
+%	 Term Reduction = 	286
+
+\begin{table}[!h]
+	\centering
+	\begin{tabular}{|l|c|c|c|c|c|c|}
+		\hline
+		\textbf{Processo}   &  
+		\textbf{Ata 1}		&  
+		\textbf{Ata 2}		&  
+		\textbf{Ata 3}		&  
+		\textbf{Ata 4}		&	  
+		\textbf{Ata 5}		&  
+		\textbf{Ata 6}		\\	\hline
+
+		Extração do texto                    & 809 & 851 & 1043 & 1407 & 834 & 496 \\ \hline
+		Remoção de Cabeçalhos e Rodapés      & 665 & 704 & 840  & 1247 & 708 & 392 \\ \hline
+%		Identificação de finais de sentença  & 665 & 704 & 840  & 1247 & 708 & 392 \\ \hline
+		Redução de termos				     & 461 & 489 & 566  &  872 & 485 & 286 \\ \hline
+%		\textit{Stemming}                    & 461 & 489 & 566  &  872 & 485 & 286 \\ \hline
+		
+		
+	\end{tabular}
+	
+	\caption{Quantidade de \textit{tokens} por ata.}
+	\label{tab:preprocessamento}
+\end{table}
+
+
+
+
+
+
+%A Figura~\ref{fig:exemplopreprocessamento} mostra a etapa de pré-processamento em uma sentença em português.
+%	
+%
+%
+%  \begin{figure*}
+%	\centering
+%	\includegraphics[width=1\textwidth]{pre-processamento.jpg}
+%	\caption{Exemplo de pré-processamento.}
+%	\label{fig:exemplopreprocessamento}
+%  \end{figure*}
+%
+
+%\subsection{Identificação de candidatos}
+%	\label{subsec:indentificacaosentencas}
+%	
+%%%%%%%%%%%	
+%% Indicar unidade mínima de Segmento
+%%%%%%%%%%%
+%	
+%	
+%%	Como entrada para os 
+%%	Os algoritmos de segmentação devem ser
+%	É preciso fornecer aos algoritmos os candidatos iniciais a limites de segmento. Para isso, é necessário escolher qual será a unidade de informação mínima que constitui um segmento. %Baseando-se no estilo de escrita e considerando as pontuações de um texto, é possível, em alguns casos, indicar quebras de parágrafo, finais de sentenças ou mesmo palavras como elementos que encerram um segmento. 
+%
+%	Ocorre que em atas de reunião é uma prática comum redigí-las de forma que o conteúdo discutido fica em parágrafo único. Além disso, as quebras de parágrafo são usadas para formatação de outros elementos como espaço para assinaturas. 
+%%
+%% Também não é conveniente indicar todo ponto entre \textit{token} como candidato pois obrigaria a ajustar posteriormente os segmentos de maneira a não quebrar uma ideia ou frase. 
+%%	
+%	Assim, neste trabalho, os finais de sentença são considerados unidades de informação e portanto, passíveis a limite entre segmentos. 
+%	
+%	Devido ao estilo de pontuação desses documentos, como encerrar sentenças usando um \textit{";"} e inserção de linhas extras, foram usadas as regras apresentadas no Algoritmo 1 para identificar os finais de sentenças.  
+%
+%
+%\begin{algorithm}
+%	\SetKwInOut{Input}{Entrada}
+%	\SetKwInOut{Output}{Saída}
+%	\SetKwBlock{Inicio}{início}{fim}
+%	\SetKwFor{ParaTodo}{para todo}{}{fim para todo}
+%	\SetKwIF{Se}{SenaoSe}{Senao}{}{}{senao se}{senao}{fim se}
+%	\SetKwFor{Para}{}{}{}
+%%	\SetKwAlgorithm{Algorithm}{Algoritmo}{}
+%
+%	
+%	\Input{Texto}
+%	\Output{Texto com identificações de finais de sentença}
+%	
+%	\ParaTodo {token, marcá-lo como final de sentença se:} {	
+%
+%	Terminar com um \texttt{!}\\
+%	Terminar com um \texttt{.} e não for uma abreviação\\
+%	Terminar em \texttt{.?;} e:
+%		\Para{}{
+%			For seguido de uma quebra de parágrafo ou tabulação\\
+%			O próximo \textit{token} iniciar com  \texttt{(\{["'}\\
+%			O próximo \textit{token} iniciar com letra maiúscula\\
+%			O penúltimo caracter  for \texttt{)\}]"'}\\
+%		}
+%	}
+%	
+%	\caption{Identificação de finais de sentença}
+%	\label{alg:identificacaofinaisdesent}
+%\end{algorithm}
+%
+ 
+
+
+  
+
+
+
+\subsection{Segmentação de Referência}
+	\label{subsec:segmetacaoreferencia}
+
+\input{project/segmentacaoreferencia}	
+	
+%%%%%%%%%% % Como foram obtidas (software e especialistas) %%%%%%%%%%
+%A fim de obter um conjunto de documentos segmentados que possam servir como referência na avaliação, os documentos foram oferecidos à profissionais que participam de reuniões para segmentá-las. Para isso, utilizou-se um \textit{software} que permitiu aos voluntários visualizar um documento, e indicar livremente as divisões entre segmentos com um assunto relativamente independente. Ao final, o software coletou os dados de seis atas segmentatas por dois participantes das reuniões, os quais serviram como referência para a avaliação dos algoritmos.
+
+%Os arquivos gerados foram tratados para que os segmentos sempre terminem em uma sentença reconhecida pelo algoritmo, uma vez que as sentenças são a unidade mínima de informação nesse trabalho.
+  
+
+
+
+
+\subsection{Configuração experimental}
+	\label{subsec:configuracaoexperimental}
+
+%%%%%%%%%%
+% Parâmetros
+%%%%%%%%%%
+As implementações dos algoritmos permitem ao usuário a configuração de seus parâmetros. 
+%
+O \textit{TextTiling} permite ajustarmos dois parâmetros, sendo o tamanho da janela e o passo. Por meio de testes empíricos escolheu-se os valores os valores 20, 40 e 60 para o tamanho da janela e 3, 6, 9 e 12 para o passo. Gerando ao final 20 configurações.
+%
+
+O \textit{C99} permite o ajuste de três parâmetros, sendo, o primeiro a quantidade segmentos desejados, uma vez que, não se conhece o número ideal de segmentos e os documentos não apresentam muitos candidatos, calculou-se uma proporção dos candidatos a limite. Para isso atribuiu-se os valores {0,2; 0,4; 0,6; 0,8}. O segundo parâmetro, o tamanho do quadro utilizado para gerar a matriz de ranking, atribuiu-se os valores 9 e 11, sendo 11 o valor padrão da apresentado pelo autor. O algoritmo permite ainda indicar se as sentenças serão representados por vetores contendo a frequência ou o peso de cada termo. Ambas as representações foram utilizadas. Considerando todos os parâmetros, foram geradas 16 configurações para o algoritmo \textit{C99}.
+
+
+
+\subsection{Critérios de avaliação}
+\input{project/criteriosdeavaliacao}
+
+
+
+\subsection{Resultados}
+	\label{subsec:resultados}
+\input{project/resultados}
+
+
+
+
