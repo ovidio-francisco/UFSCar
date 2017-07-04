@@ -1,11 +1,11 @@
-package userInterface;
+package userInterfaces;
 
 public class Main {
 
 	public static void main(String[] args) {
-		
-		System.out.println("Meeting Miner");
 
+		System.out.println("Meeting Miner");
+		
 	}
 
 }
