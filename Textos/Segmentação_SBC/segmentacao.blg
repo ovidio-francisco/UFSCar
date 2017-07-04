@@ -3,53 +3,52 @@ Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: segmentacao.aux
 The style file: sbc.bst
 Database file #1: bibs.bib
-You're missing a field name---line 287 of file bibs.bib
+You're missing a field name---line 283 of file bibs.bib
  : 
  : %title = {The ICSI Meeting Corpus},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-Warning--empty booktitle in Banerjee2006
 Warning--empty booktitle in Kern2009
 Warning--empty school in Reynar1998
-You've used 18 entries,
+You've used 17 entries,
             1935 wiz_defined-function locations,
-            617 strings with 7897 characters,
-and the built_in function-call counts, 9053 in all, are:
-= -- 924
-> -- 360
-< -- 20
-+ -- 130
-- -- 124
-* -- 721
-:= -- 1459
-add.period$ -- 65
-call.type$ -- 18
-change.case$ -- 151
-chr.to.int$ -- 18
-cite$ -- 21
-duplicate$ -- 382
-empty$ -- 640
-format.name$ -- 152
-if$ -- 1889
+            608 strings with 7672 characters,
+and the built_in function-call counts, 8421 in all, are:
+= -- 850
+> -- 353
+< -- 16
++ -- 128
+- -- 122
+* -- 686
+:= -- 1374
+add.period$ -- 58
+call.type$ -- 17
+change.case$ -- 145
+chr.to.int$ -- 17
+cite$ -- 19
+duplicate$ -- 345
+empty$ -- 588
+format.name$ -- 149
+if$ -- 1737
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 17
-newline$ -- 97
-num.names$ -- 54
-pop$ -- 152
+missing$ -- 16
+newline$ -- 89
+num.names$ -- 51
+pop$ -- 144
 preamble$ -- 1
-purify$ -- 152
+purify$ -- 146
 quote$ -- 0
-skip$ -- 297
+skip$ -- 265
 stack$ -- 0
-substring$ -- 650
-swap$ -- 103
-text.length$ -- 11
+substring$ -- 601
+swap$ -- 86
+text.length$ -- 8
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 108
-warning$ -- 3
-while$ -- 72
+type$ -- 102
+warning$ -- 2
+while$ -- 66
 width$ -- 0
-write$ -- 261
+write$ -- 239
 (There was 1 error message)

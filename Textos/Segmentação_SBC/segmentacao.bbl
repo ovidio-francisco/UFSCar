@@ -3,8 +3,8 @@
 \bibitem[Banerjee and Rudnicky 2006]{Banerjee2006}
 Banerjee, S. and Rudnicky, A. (2006).
 \newblock A texttiling based approach to topic boundary detection in meetings.
-\newblock volume~1, pages 57--60.
-\newblock cited By 3.
+\newblock {\em Proceedings of the Annual Conference of the International Speech
+  Communication Association, INTERSPEECH}, 1:57--60.
 
 \bibitem[Beeferman et~al. 1999]{Beeferman1999}
 Beeferman, D., Berger, A., and Lafferty, J. (1999).
@@ -67,7 +67,6 @@ Kern, R. and Granitzer, M. (2009).
 \newblock Efficient linear text segmentation based on information retrieval
   techniques.
 \newblock pages 167--171.
-\newblock cited By 10.
 
 \bibitem[Misra et~al. 2009]{Misra2009}
 Misra, H., Yvon, F., Jose, J.~M., and Cappe, O. (2009).
@@ -80,20 +79,12 @@ Pevzner, L. and Hearst, M. (2002).
 \newblock A critique and improvement of an evaluation metric for text
   segmentation.
 \newblock {\em Computational Linguistics}, 28(1):19--36.
-\newblock cited By 154.
 
 \bibitem[Reynar 1998]{Reynar1998}
 Reynar, J.~C. (1998).
 \newblock {\em Topic Segmentation: Algorithms and Applications}.
 \newblock PhD thesis, Philadelphia, PA, USA.
 \newblock AAI9829978.
-
-\bibitem[Reynar 1999]{Reynar1999}
-Reynar, J.~C. (1999).
-\newblock Statistical models for topic segmentation.
-\newblock In {\em Proceedings of the 37th Annual Meeting of the Association for
-  Computational Linguistics on Computational Linguistics}, ACL '99, pages
-  357--364, Stroudsburg, PA, USA. Association for Computational Linguistics.
 
 \bibitem[Sitbon and Bellot 2004]{Sitbon2004}
 Sitbon, L. and Bellot, P. (2004).

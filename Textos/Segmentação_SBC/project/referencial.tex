@@ -11,7 +11,7 @@ Um documento textual, sobretudo quando longo, é frequentemente uma sucessão de a
 %
 % Segmentação
 %%% 
-A segmentação textual ou segmentação topical é a tarefa de dividir um texto mantendo em cada parte um tópico com seu significado completo.
+A segmentação textual ou segmentação topical é a tarefa de dividir um texto mantendo em cada parte um assunto com seu significado completo.
 	
 
 
@@ -21,12 +21,12 @@ A segmentação textual ou segmentação topical é a tarefa de dividir um texto mant
 %
 % O texto deve ser divido em unidades que não pode ser dividida entre segmentos 
 %%% 
-O texto deve ser previamente dividido em unidades de informação, que podem ser palavras, parágrafos e mais usualmente em sentenças. Essas unidades são processadas pelos algoritmos como a menor parte de um segmento, ou seja uma unidade não pode divida.
+O texto deve ser previamente dividido em unidades de informação, que podem ser palavras, parágrafos e mais usualmente em sentenças. Essas unidades são processadas pelos algoritmos como a menor parte de um segmento, ou seja uma unidade não pode sementada.
 %, mas deve pertencer integralmente a um segmento.
 %
 % Exemplos 
 %%% 
-Por exemplo, algoritmos baseados em janelas deslizantes avançam uma unidade a cada passo. Da mesma forma, algoritmos baseados em matrizes de similaridade, devem calcular a similaridade entre essas unidades.
+%Por exemplo, algoritmos baseados em janelas deslizantes avançam uma unidade a cada passo. Da mesma forma, algoritmos baseados em matrizes de similaridade, devem calcular a similaridade entre essas unidades.
 %%%%%%%%%%
 % Segmento
 %%%%%%%%%%	
@@ -128,7 +128,7 @@ Tomando como exemplo o elemento com valor $0,5$, a mesma posição na matriz de \t
 	\subfigure[Passo 1]{\label{fig:a}\includegraphics[width=60mm]{exemplo-matrix-rank-A.png}}
 	\subfigure[Passo 2]{\label{fig:b}\includegraphics[width=60mm]{exemplo-matrix-rank-B.png}}
 	
-	\caption{Exemplo de construção de uma matriz de rankings.~\cite{Choi2000}}			\label{fig:exemplomatrixrank}
+	\caption{Exemplo de construção de uma matriz de rankings~\cite{Choi2000}.}			\label{fig:exemplomatrixrank}
 \end{figure}
 
 %  \begin{figure}[!h]
@@ -158,7 +158,7 @@ Tomando como exemplo o elemento com valor $0,5$, a mesma posição na matriz de \t
 
 
 
-Com base na matriz de \textit{rank}, o \textit{C99} utiliza um método de \textit{clustering} baseado no algoritmo de maximização de Reynar~\cite{Reynar1998} para identificar os limites entre os segmentos. 
+Finalmente, com base na matriz de \textit{rank}, o \textit{C99} utiliza um método de \textit{clustering} baseado no algoritmo de maximização de Reynar~\cite{Reynar1998} para identificar os limites entre os segmentos. 
 
 
 % https://github.com/logological/C99 
