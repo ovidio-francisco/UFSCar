@@ -4,6 +4,8 @@ import java.io.File;
 import java.util.ArrayList;
 
 import preprocessamento.Preprocess;
+import topicExtraction.m4mUtils.M4MShowStatus;
+import utils.Files;
 import utils.TextExtractor;
 
 public abstract class AbstractSegmenter implements Segmenter {
@@ -42,5 +44,23 @@ public abstract class AbstractSegmenter implements Segmenter {
 		
 		return sb.toString();
 	}
+
+	@Override
+	public void segmentToFiles(File source, File Folder) {
+		ArrayList<String> segs = getSegments(source);
+		
+		int i=1;
+		for(String str : segs) {
+			File newFile = new File(Folder+"/"+source.getName()+"_seg-"+i++ + ".txt");
+			Files.saveTxtFile(str, newFile);
+		}
+		
+		
+		M4MShowStatus.setMessage(String.format("Segmentando o arquivo %s em %d partes.", source, segs.size()));
+		
+	}
+	
+	
+	
 
 }

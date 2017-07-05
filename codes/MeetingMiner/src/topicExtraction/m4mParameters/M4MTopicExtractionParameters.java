@@ -10,6 +10,7 @@ package topicExtraction.m4mParameters;
 
 import topicExtraction.TETConfigurations.TopicExtractionParameters;
 import topicExtraction.mining4meetings.Mining4Meetings;
+import utils.Files;
 
 
 public class M4MTopicExtractionParameters {
@@ -18,8 +19,8 @@ public class M4MTopicExtractionParameters {
         
         TopicExtractionParameters result = new TopicExtractionParameters();  
         
-        if (Mining4Meetings.getDocFolder() != null)
-            result.setDirEntrada(Mining4Meetings.getTxtFolder().getAbsolutePath());
+        if (Files.getSegmentedDocs() != null)
+            result.setDirEntrada(Files.getSegmentedDocs().getAbsolutePath());
         else
             result.setDirEntrada("");
 

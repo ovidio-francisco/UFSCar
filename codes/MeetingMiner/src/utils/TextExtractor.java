@@ -42,8 +42,7 @@ public class TextExtractor {
             Files.saveTxtFile(txt, txtFile);
             
         } catch (IOException | TikaException ex) {
-            System.err.println("Erro ao ler " + docFile);
-            ex.printStackTrace();
+            System.err.println("Erro ao extrair o texto de " + docFile);
         }
     }
     

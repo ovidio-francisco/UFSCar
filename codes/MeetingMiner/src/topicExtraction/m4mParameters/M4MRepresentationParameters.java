@@ -10,6 +10,7 @@ package topicExtraction.m4mParameters;
 
 import java.io.File;
 import topicExtraction.mining4meetings.Mining4Meetings;
+import utils.Files;
 
 
 public class M4MRepresentationParameters {
@@ -34,7 +35,8 @@ public class M4MRepresentationParameters {
     public static M4MRepresentationParameters getDefaultRepresentationParameters() {
         M4MRepresentationParameters result = new M4MRepresentationParameters();
 
-        result.dirIn           = Mining4Meetings.getTxtFolder();
+//      result.dirIn           = Mining4Meetings.getTxtFolder();
+        result.dirIn           = Files.getSegmentedDocs();
         result.dirOut          = Mining4Meetings.getArfFolder();
         result.relationName    = "representacao"; //arame
         result.dirClass        = false;

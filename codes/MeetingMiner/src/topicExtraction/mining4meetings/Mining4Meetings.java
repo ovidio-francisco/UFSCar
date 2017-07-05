@@ -17,8 +17,7 @@ import javax.swing.tree.DefaultMutableTreeNode;
 import javax.swing.tree.DefaultTreeModel;
 import topicExtraction.m4mUtils.M4MFiles;
 import topicExtraction.m4mUtils.M4MShowStatus;
-import topicExtraction.m4mUtils.M4MTextExtractor;
-import topicExtraction.m4mUtils.M4MUtils;
+import utils.Files;
 
 /**
  *
@@ -43,16 +42,21 @@ public class Mining4Meetings {
     }
 
     public static void prepareFolders() {
-        docFolder = new File(M4MUtils.searchFolder());
+//        docFolder = new File(M4MUtils.searchFolder());
         
-        arfFolder = new File(docFolder.getAbsolutePath() + "/arff");
-        txtFolder = new File(docFolder.getAbsolutePath() + "/txt");
-        outFolder = new File(docFolder.getAbsoluteFile() + "/out");
+//    	arfFolder = new File(docFolder.getAbsolutePath() + "/arff");
+//      txtFolder = new File(docFolder.getAbsolutePath() + "/txt");
+//      outFolder = new File(docFolder.getAbsoluteFile() + "/out");
     
+    	arfFolder = new File(Files.getSegmentedDocs().getAbsolutePath() + "/arff");
+//      txtFolder = new File(docFolder.getAbsolutePath() + "/txt");
+    	outFolder = new File(Files.getSegmentedDocs().getAbsoluteFile() + "/out");
+
+        
         foldersOK = true;
 
         
-        getRepresentationParameters().setDirIn(txtFolder);
+        getRepresentationParameters().setDirIn(Files.getSegmentedDocs());
         getRepresentationParameters().setDirOut(arfFolder);
 
         getExtractionParameters().setDirEntrada(arfFolder.getAbsolutePath());
@@ -66,7 +70,7 @@ public class Mining4Meetings {
         M4MShowStatus.setProgress(0);
         
         if(!arfFolder.exists()) arfFolder.mkdir();
-        if(!txtFolder.exists()) txtFolder.mkdir();
+//        if(!txtFolder.exists()) txtFolder.mkdir();
         if(!outFolder.exists()) outFolder.mkdir();
         
         M4MShowStatus.setProgress(2);        
@@ -96,7 +100,7 @@ public class Mining4Meetings {
     public static void extractRawTxt() {
 
 //        M4MTextExtractor.extractTxtFromAllPdfs(docFolder, txtFolder);
-        M4MTextExtractor.extractTxtFromAllFiles(docFolder, txtFolder);
+//        M4MTextExtractor.extractTxtFromAllFiles(docFolder, txtFolder);
 
     }
     
@@ -228,15 +232,7 @@ public class Mining4Meetings {
             M4MShowStatus.setMessage("Descriptors extracted and documents assigned to topics");
             M4MShowStatus.setMessage("Generating the topic tree...");
             
-//            M4MViewTopicsFrame viewFrame = new M4MViewTopicsFrame();
-            
-//            Mining4Meetings.setView((DefaultTreeModel)viewFrame.gettView().getModel());
-    
-//            
-//            viewFrame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-//            viewFrame.setLocationRelativeTo(null);
-//            viewFrame.setVisible(true);
-            
+           
             if (view instanceof DefaultTreeModel) {
                 
                 DefaultMutableTreeNode root = GererateTree(descTopics, docsPerTopics, numTopics, orderedTopics);
@@ -258,7 +254,7 @@ public class Mining4Meetings {
     
     public static void cleanFolders() {
         M4MFiles.deleteFolder(arfFolder);
-        M4MFiles.deleteFolder(txtFolder);
+//        M4MFiles.deleteFolder(txtFolder);
         M4MFiles.deleteFolder(outFolder);        
     } 
 
@@ -387,9 +383,9 @@ public class Mining4Meetings {
     private static M4MArffGenerationParameters arffGenerationParameters ;// = M4MArffGenerationConfiguration.getArffGenerationConf();
     private static int descriptorsByTopic = 10;
     
-    private static File docFolder = null;
+//    private static File docFolder = null;
     private static File arfFolder = null;
-    private static File txtFolder = null;
+//    private static File txtFolder = null;
     private static File outFolder = null;
     
     private static boolean foldersOK;
@@ -451,13 +447,13 @@ public class Mining4Meetings {
     }
     
     
-    public static File getDocFolder() {
-        return docFolder;
-    }
-
-    public static void setDocFolder(File docFolder) {
-        Mining4Meetings.docFolder = docFolder;
-    }
+//    public static File getDocFolder() {
+//        return docFolder;
+//    }
+//
+//    public static void setDocFolder(File docFolder) {
+//        Mining4Meetings.docFolder = docFolder;
+//    }
 
     public static File getArfFolder() {
         return arfFolder;
@@ -467,13 +463,13 @@ public class Mining4Meetings {
         Mining4Meetings.arfFolder = arfFolder;
     }
 
-    public static File getTxtFolder() {
-        return txtFolder;
-    }
+//    public static File getTxtFolder() {
+//        return txtFolder;
+//    }
 
-    public static void setTxtFolder(File txtFolder) {
-        Mining4Meetings.txtFolder = txtFolder;
-    }
+//    public static void setTxtFolder(File txtFolder) {
+//        Mining4Meetings.txtFolder = txtFolder;
+//    }
 
     public static File getOutFolder() {
         return outFolder;

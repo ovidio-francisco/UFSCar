@@ -30,6 +30,7 @@ import topicExtraction.m4mUtils.M4MShowStatus;
 import topicExtraction.mining4meetings.Mining4Meetings;
 import segmenter.Segmenter;
 import segmenter.algorithms.c99br.C99BR;
+import segmenter.algorithms.texttile.TextTilingBR;
 import utils.Files;
 import utils.TextExtractor;
 
@@ -55,6 +56,7 @@ public class TopicsFrame extends JFrame{
 		
 		
 		JButton btLoadFile = new JButton("Load File");
+		JButton btAddToTheBase = new JButton("Adicionar documentos");
 		JButton btExtractTopics = new JButton("Extract Topics");
 		JLabel  lbStatus = new JLabel("Status");
 		
@@ -63,6 +65,8 @@ public class TopicsFrame extends JFrame{
 		toolBar.add(btLoadFile);
 		toolBar.addSeparator();
 		toolBar.add(btExtractTopics);
+		toolBar.addSeparator();
+		toolBar.add(btAddToTheBase);
 		toolBar.addSeparator();
 		toolBar.add(lbStatus);
 		toolBar.addSeparator();
@@ -160,6 +164,35 @@ public class TopicsFrame extends JFrame{
 				Mining4Meetings.setView(view.getModel());
 				
 				Mining4Meetings.mining4Meetings();
+			}
+		});
+		
+		
+		
+		btAddToTheBase.addActionListener(new ActionListener() {
+			
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				JFileChooser fc = new JFileChooser();
+				fc.setCurrentDirectory(new File("./.."));
+				fc.setFileSelectionMode(JFileChooser.DIRECTORIES_ONLY);
+				
+				
+			 	int option =  fc.showOpenDialog(null);
+			 	if (option != JFileChooser.APPROVE_OPTION) return;
+			 	
+				File folder = fc.getSelectedFile();
+				
+//				=========================================================================
+				
+				Files.prepareBaseFolders();
+				Files.addToTheBase(folder);
+				Files.extractTextToTheBase();
+				
+				Segmenter segmenter = new TextTilingBR();
+				
+				Files.extractSegmentsToTheBase(segmenter);
+				
 			}
 		});
 		

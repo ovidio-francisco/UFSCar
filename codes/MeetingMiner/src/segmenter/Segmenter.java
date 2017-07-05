@@ -19,5 +19,7 @@ public interface Segmenter {
 	public String preprocessToString();
 	public String getAlgorithmName();
 	public String paramsToString();
+	
+	public void segmentToFiles(File source, File Folder);
 
 }

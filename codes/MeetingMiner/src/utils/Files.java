@@ -10,15 +10,24 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
+import java.nio.file.StandardCopyOption;
 import java.util.ArrayList;
 import java.util.List;
 
 import org.apache.commons.csv.CSVFormat;
 import org.apache.commons.csv.CSVPrinter;
 
+import segmenter.Segmenter;
+import topicExtraction.m4mUtils.M4MShowStatus;
+
 public class Files {
 	
     private static ArrayList<String> docExtentitions;
+    
+    private static File basesFolder   = new File("./bases");
+    private static File originalDocs  = new File(basesFolder+"/originalDocs");
+    private static File textDocs      = new File(basesFolder+"/textDocs");
+    private static File segmentedDocs = new File(basesFolder+"/segmentedDocs");    
 
     static {
         docExtentitions = new ArrayList<>();
@@ -169,6 +178,110 @@ public class Files {
     		e.printStackTrace();
     	}
     }
-    
 
+
+	public static boolean createDir(File folder) {
+		
+
+		if( !folder.exists()) {
+			boolean result = folder.mkdir(); 
+			
+			if(result) {
+				M4MShowStatus.setMessage(String.format("Criado diretório: %s", folder));
+			}
+			
+			return result;
+		}
+		
+		return false;
+		
+	}
+
+
+	public static void copy(File f, File originalDocs) {
+		File newfile = new File(originalDocs+"/"+f.getName());
+		
+		if (newfile.exists()) {
+			M4MShowStatus.setMessage(String.format("O arquivo %s já existe", newfile));
+			return;
+		}
+		
+		try {
+			java.nio.file.Files.copy(f.toPath(), newfile.toPath(), StandardCopyOption.COPY_ATTRIBUTES);
+			M4MShowStatus.setMessage("Arquivo copiado para a base: " + newfile);
+		} catch (IOException e) {
+//			e.printStackTrace();
+			M4MShowStatus.setMessage("Erro ao copiar o arquivo " + newfile);
+		}
+		
+	}
+    
+	public static void prepareBaseFolders() {
+		Files.createDir(basesFolder);
+		Files.createDir(originalDocs);
+		Files.createDir(textDocs);
+		Files.createDir(segmentedDocs);		
+	}
+	
+	
+	public static void addToTheBase(File folder) {
+		File files[] = folder.listFiles(new FileFilter() {
+			
+			@Override
+			public boolean accept(File pathname) {
+//				return Files.getFileExtension(pathname).equals("txt");
+				return true;
+			}
+		});		
+		
+		
+		for(File f : files) {
+			Files.copy(f, originalDocs);
+			
+		}
+	}
+
+	public static void extractTextToTheBase() {
+		TextExtractor.extractTxtFromAllFiles(originalDocs, textDocs);
+	}
+
+
+	public static void extractSegmentsToTheBase(Segmenter segmenter) {
+		File[] files = textDocs.listFiles(new FileFilter() {
+			@Override
+			public boolean accept(File file) {
+				return getFileExtension(file).equals("txt");
+			}
+		});
+		
+		for(File f : files) {
+			segmenter.segmentToFiles(f, segmentedDocs);
+		}
+		
+	}
+
+
+	public static File getBasesFolder() {
+		return basesFolder;
+	}
+
+
+	public static File getOriginalDocs() {
+		return originalDocs;
+	}
+
+
+	public static File getTextDocs() {
+		return textDocs;
+	}
+
+
+	public static File getSegmentedDocs() {
+		return segmentedDocs;
+	}
+	
+	
+	
+	
+	
 }
