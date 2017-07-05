@@ -18,7 +18,6 @@ import org.apache.commons.csv.CSVFormat;
 import org.apache.commons.csv.CSVPrinter;
 
 import segmenter.Segmenter;
-import topicExtraction.m4mUtils.M4MShowStatus;
 
 public class Files {
 	
@@ -182,19 +181,17 @@ public class Files {
 
 	public static boolean createDir(File folder) {
 		
-
 		if( !folder.exists()) {
 			boolean result = folder.mkdir(); 
 			
 			if(result) {
-				M4MShowStatus.setMessage(String.format("Criado diretório: %s", folder));
+				ShowStatus.setMessage(String.format("Criado diretório: %s", folder));
 			}
 			
 			return result;
 		}
 		
 		return false;
-		
 	}
 
 
@@ -202,16 +199,15 @@ public class Files {
 		File newfile = new File(originalDocs+"/"+f.getName());
 		
 		if (newfile.exists()) {
-			M4MShowStatus.setMessage(String.format("O arquivo %s já existe", newfile));
+			ShowStatus.setMessage(String.format("O arquivo %s já existe", newfile));
 			return;
 		}
 		
 		try {
 			java.nio.file.Files.copy(f.toPath(), newfile.toPath(), StandardCopyOption.COPY_ATTRIBUTES);
-			M4MShowStatus.setMessage("Arquivo copiado para a base: " + newfile);
+			ShowStatus.setMessage("Arquivo copiado para a base: " + newfile);
 		} catch (IOException e) {
-//			e.printStackTrace();
-			M4MShowStatus.setMessage("Erro ao copiar o arquivo " + newfile);
+			ShowStatus.setMessage("Erro ao copiar o arquivo " + newfile);
 		}
 		
 	}

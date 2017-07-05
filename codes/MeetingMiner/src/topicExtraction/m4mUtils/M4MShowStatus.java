@@ -15,7 +15,7 @@ import javax.swing.JTextArea;
 
 public class M4MShowStatus {
 
-    public static void setMessage(String message) {
+    public static void setMessage_old(String message) {
         
 //        if(!enable) {
 //            System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>");

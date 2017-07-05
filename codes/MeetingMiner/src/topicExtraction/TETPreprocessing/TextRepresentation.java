@@ -26,6 +26,7 @@ import java.util.Set;
 import topicExtraction.m4mUtils.M4MFiles;
 import topicExtraction.m4mUtils.M4MShowStatus;
 import topicExtraction.mining4meetings.Mining4Meetings;
+import utils.ShowStatus;
 import ptstemmer.Stemmer;
 import ptstemmer.implementations.OrengoStemmer;
 
@@ -47,18 +48,18 @@ public class TextRepresentation {
         StemmerEn               stemEn       = new StemmerEn(); //Objeto para a radicalização em inglês
         
         
-        M4MShowStatus.setMessage("Listing Files... Input Diretory: " + cfg.getDirIn());
+        ShowStatus.setMessage("Listing Files... Input Diretory: " + cfg.getDirIn());
         ListFiles.list(cfg.getDirIn(), filesIn); //Vetor para armazenar os documentos textuais
         
         Object[] orderedFiles = filesIn.toArray(); //Ordenando os arquivos pelo nome
         int numDocs = orderedFiles.length;
         Arrays.sort(orderedFiles);
         
-        M4MShowStatus.setMessage("Extracting Terms...");
+        ShowStatus.setMessage("Extracting Terms...");
         for(int i =0;i<orderedFiles.length;i++){ // criando vetores contendo os atributos e suas frquências em cada documento da coleção
             File fileIn =  (File)orderedFiles[i];
             
-            M4MShowStatus.setMessage(fileIn.getAbsoluteFile().getAbsolutePath());
+            ShowStatus.setMessage(fileIn.getAbsoluteFile().getAbsolutePath());
             
             FeatureList features = new FeatureList(); // Armazena a lista de atributos-frequencia dos termos nos textos
                       
@@ -151,7 +152,7 @@ public class TextRepresentation {
 
         int numTerms = (cfg.isDirClass()) ? names.size() + 2 : names.size() + 1;
         
-        M4MShowStatus.setMessage("Generating an ARFF file");
+        ShowStatus.setMessage("Generating an ARFF file");
 
         M4MArffGenerationParameters arffCfg = M4MArffGenerationParameters.getArffGenerationParameters();
         
@@ -177,7 +178,7 @@ public class TextRepresentation {
         
         GenerateARFF(arffCfg);
         
-        M4MShowStatus.setMessage("Document-term matrix was generated.");
+        ShowStatus.setMessage("Document-term matrix was generated.");
     }
     
     //Function to return the labels of text documents. Directories are treated as labels.
@@ -204,10 +205,10 @@ public class TextRepresentation {
     public static boolean GenerateARFF(M4MArffGenerationParameters cfg){
         
         try{
-            M4MShowStatus.setMessage("Saving ARFF file...");
+            ShowStatus.setMessage("Saving ARFF file...");
     
             if (! cfg.getDirOut().exists()) {
-                M4MShowStatus.setMessage("Creating output directory " + cfg.getDirOut());
+                ShowStatus.setMessage("Creating output directory " + cfg.getDirOut());
                 cfg.getDirOut().mkdir();
             }
             
@@ -343,7 +344,7 @@ public class TextRepresentation {
 //            ex.printStackTrace();
             System.exit(0);
         }
-        M4MShowStatus.setMessage("ARFF file was generated");
+        ShowStatus.setMessage("ARFF file was generated");
         return true;
     }
     

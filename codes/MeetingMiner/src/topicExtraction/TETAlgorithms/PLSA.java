@@ -9,6 +9,7 @@ import topicExtraction.TETStructures.IndexValue;
 import topicExtraction.TETStructures.Neighbor;
 import java.util.ArrayList;
 import topicExtraction.m4mUtils.M4MShowStatus;
+import utils.ShowStatus;
 import weka.core.Instances;
 
 /**
@@ -67,9 +68,9 @@ public class PLSA extends TopicExtractorOld{
         boolean sair = false;
         
         while(sair == false){
-            M4MShowStatus.setMessage("NumIt:" + numIt);
+            ShowStatus.setMessage("NumIt:" + numIt);
             // Definindo pesos dos documentos para os tópicos
-            M4MShowStatus.setMessage("Part1");
+            ShowStatus.setMessage("Part1");
             for(int doc=0;doc<numDocs;doc++){
                 for(int topic=0;topic<numTopics;topic++){
                     ArrayList<IndexValue> neighbors = adjListDocTerm[doc].getNeighbors();
@@ -110,10 +111,10 @@ public class PLSA extends TopicExtractorOld{
                     docTopics[doc][topic] = docTopicsTemp[doc][topic];
                 }
             }
-            M4MShowStatus.setMessage("Difference:" + acmDif);
+            ShowStatus.setMessage("Difference:" + acmDif);
 
             // Definindo pesos dos termos para os tópicos
-            M4MShowStatus.setMessage("Part2");
+            ShowStatus.setMessage("Part2");
             
             for(int topic=0;topic<numTopics;topic++){
                 for(int term=0;term<numTerms;term++){

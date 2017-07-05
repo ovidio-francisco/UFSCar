@@ -18,6 +18,8 @@ import java.io.OutputStreamWriter;
 import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
 
+import utils.ShowStatus;
+
 /**
  *
  * @author ovidiojf
@@ -90,7 +92,7 @@ public class M4MFiles {
         boolean result = folder.delete();
         
         if (result) 
-            M4MShowStatus.setMessage("Diretório " + folder + " deletado");
+            ShowStatus.setMessage("Diretório " + folder + " deletado");
             
         return result;
     }

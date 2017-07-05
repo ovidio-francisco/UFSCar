@@ -11,6 +11,7 @@ import java.io.RandomAccessFile;
 import java.util.ArrayList;
 import javax.swing.JOptionPane;
 import topicExtraction.m4mUtils.M4MShowStatus;
+import utils.ShowStatus;
 
 public class StopWords {
     static ArrayList<String> list = new ArrayList<String>();
@@ -19,7 +20,7 @@ public class StopWords {
         if(language.equals("port")){
             try{
                 RandomAccessFile arqStop = new RandomAccessFile("stopPort.txt", "r");
-                M4MShowStatus.setMessage("Aquivo '"+arqStop.toString()+"'carregado");
+                ShowStatus.setMessage("Aquivo '"+arqStop.toString()+"'carregado");
                 String line = "";
                 while((line = arqStop.readLine())!=null){
                     if(line.length()>0){

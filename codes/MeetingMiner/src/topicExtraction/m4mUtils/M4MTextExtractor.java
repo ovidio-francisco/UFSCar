@@ -19,6 +19,8 @@ import java.util.ArrayList;
 import org.apache.tika.Tika;
 import org.apache.tika.exception.TikaException;
 
+import utils.ShowStatus;
+
 
 public class M4MTextExtractor {
 //
@@ -96,7 +98,7 @@ public class M4MTextExtractor {
     }
     
     public static void extractTxtFromAllFiles(File docFolder, File txtFolder) {
-        M4MShowStatus.setMessage("Extractin raw text to ...");
+        ShowStatus.setMessage("Extractin raw text to ...");
 
         ArrayList<File> files = new ArrayList<>();
         
@@ -109,7 +111,7 @@ public class M4MTextExtractor {
                 continue;
             }
             
-            M4MShowStatus.setMessage("  '" + out +"'");
+            ShowStatus.setMessage("  '" + out +"'");
             docToText(f, out);
         }
 

@@ -18,6 +18,7 @@ import javax.swing.tree.DefaultTreeModel;
 import topicExtraction.m4mUtils.M4MFiles;
 import topicExtraction.m4mUtils.M4MShowStatus;
 import utils.Files;
+import utils.ShowStatus;
 
 /**
  *
@@ -84,7 +85,7 @@ public class Mining4Meetings {
         extractTopics();
         M4MShowStatus.setProgress(40);
         
-        M4MShowStatus.setMessage("Extração de tópicos concluída");
+        ShowStatus.setMessage("Extração de tópicos concluída");
         Mining4Meetings.visualise();
         
         saveTopics();
@@ -93,7 +94,7 @@ public class Mining4Meetings {
         
 //        cleanFolders();
 
-        M4MShowStatus.setMessage("Concluído em " + new SimpleDateFormat("mm:ss").format(new Date().getTime() - startTime));
+        ShowStatus.setMessage("Concluído em " + new SimpleDateFormat("mm:ss").format(new Date().getTime() - startTime));
         
     }
     
@@ -107,7 +108,7 @@ public class Mining4Meetings {
     public static void represent() {
         
         if(getArffFile().exists()) {
-            M4MShowStatus.setMessage("Arquivo '"+getArffFile() + "' encontrado");
+            ShowStatus.setMessage("Arquivo '"+getArffFile() + "' encontrado");
             return;
         }
         
@@ -123,7 +124,7 @@ public class Mining4Meetings {
     
     public static void visualise() {
         try{
-            M4MShowStatus.setMessage("Reading document-term matrix...");
+            ShowStatus.setMessage("Reading document-term matrix...");
                  
 //          BufferedReader fileDocTopic = new BufferedReader(new InputStreamReader(new FileInputStream(outFolder + "/" + Mining4Meetings.DOCUMENT_TOPIC_MATRIX_FILE_NAME), "ISO-8859-1"));
             
@@ -188,7 +189,7 @@ public class Mining4Meetings {
                 indMax = -1;
             }
             
-            M4MShowStatus.setMessage("Reading term-topic matrix...");
+            ShowStatus.setMessage("Reading term-topic matrix...");
             
 //          linha = "";
 //          BufferedReader fileTermTopic = new BufferedReader(new InputStreamReader(new FileInputStream(outFolder + "/" + Mining4Meetings.TERM_TOPIC_MATRIX_FILE_NAME), "ISO-8859-1"));
@@ -220,17 +221,17 @@ public class Mining4Meetings {
             M4MShowStatus.setProgress(60);
 
             
-            M4MShowStatus.setMessage("Matrices loaded");
-            M4MShowStatus.setMessage("Setting the documents and descriptors for the topics");
+            ShowStatus.setMessage("Matrices loaded");
+            ShowStatus.setMessage("Setting the documents and descriptors for the topics");
             
             StringBuffer[] descTopics    = ExtractTopicDescriptors(numTerms, numTopics, Mining4Meetings.descriptorsByTopic);
-            M4MShowStatus.setProgress(70);
+            ShowStatus.setProgress(70);
 
             StringBuffer[] docsPerTopics = ExtractDocsPerTopics(numDocs, numTopics); 
-            M4MShowStatus.setProgress(80);
+            ShowStatus.setProgress(80);
             
-            M4MShowStatus.setMessage("Descriptors extracted and documents assigned to topics");
-            M4MShowStatus.setMessage("Generating the topic tree...");
+            ShowStatus.setMessage("Descriptors extracted and documents assigned to topics");
+            ShowStatus.setMessage("Generating the topic tree...");
             
            
             if (view instanceof DefaultTreeModel) {
@@ -243,7 +244,7 @@ public class Mining4Meetings {
             }
 
             M4MShowStatus.setProgress(90);
-            M4MShowStatus.setMessage("Tree generated");
+            ShowStatus.setMessage("Tree generated");
             
         }catch(IOException | NumberFormatException e){
             System.err.println("Erro ao carregar as matrizes de tópicos");
@@ -300,7 +301,7 @@ public class Mining4Meetings {
             ex.printStackTrace();
         }
        
-        M4MShowStatus.setMessage("Saving topics to "+filename);
+        ShowStatus.setMessage("Saving topics to "+filename);
     }
     
 

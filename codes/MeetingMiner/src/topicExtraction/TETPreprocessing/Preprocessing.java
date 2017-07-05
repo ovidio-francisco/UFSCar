@@ -15,6 +15,7 @@ import java.util.HashMap;
 import java.util.Set;
 import javax.swing.JOptionPane;
 import topicExtraction.m4mUtils.M4MShowStatus;
+import utils.ShowStatus;
 import ptstemmer.Stemmer;
 
 public class Preprocessing {
@@ -46,7 +47,7 @@ public class Preprocessing {
 
         try{
             if (!file.exists()) {
-                M4MShowStatus.setMessage("File not found: " +file.getAbsolutePath());
+                ShowStatus.setMessage("File not found: " +file.getAbsolutePath());
             }
             RandomAccessFile txtFile = new RandomAccessFile(file, "r");
             String line;

@@ -6,6 +6,7 @@ import java.util.ArrayList;
 import preprocessamento.Preprocess;
 import topicExtraction.m4mUtils.M4MShowStatus;
 import utils.Files;
+import utils.ShowStatus;
 import utils.TextExtractor;
 
 public abstract class AbstractSegmenter implements Segmenter {
@@ -56,7 +57,7 @@ public abstract class AbstractSegmenter implements Segmenter {
 		}
 		
 		
-		M4MShowStatus.setMessage(String.format("Segmentando o arquivo %s em %d partes.", source, segs.size()));
+		ShowStatus.setMessage(String.format("Segmentando o arquivo %s em %d partes.", source, segs.size()));
 		
 	}
 	

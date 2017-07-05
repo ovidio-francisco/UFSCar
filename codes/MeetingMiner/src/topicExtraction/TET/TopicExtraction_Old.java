@@ -18,6 +18,7 @@ import javax.swing.JOptionPane;
 import topicExtraction.m4mUtils.M4MFiles;
 import topicExtraction.m4mUtils.M4MShowStatus;
 import topicExtraction.mining4meetings.Mining4Meetings;
+import utils.ShowStatus;
 import weka.core.Instances;
 
 /**
@@ -36,8 +37,8 @@ public class TopicExtraction_Old {
             if(!filesIn.get(i).getAbsolutePath().endsWith(".arff")){
                 continue;
             }
-            M4MShowStatus.setMessage("Loading ARFF file...");
-            M4MShowStatus.setMessage(filesIn.get(i).getAbsolutePath());
+            ShowStatus.setMessage("Loading ARFF file...");
+            ShowStatus.setMessage(filesIn.get(i).getAbsolutePath());
             try{
 
                 
@@ -50,21 +51,21 @@ public class TopicExtraction_Old {
                 //DataSource trainSource = new DataSource(new InputStreamReader(new FileInputStream(filesIn.get(i).getAbsolutePath().toString()), "ISO-8859-1")); //Carregando arquivo de Dados
                 //DataSource trainSource = new DataSource(filesIn.get(i).getAbsolutePath().toString()); //Carregando arquivo de Dados
                 //Instances data = trainSource.getDataSet();
-                M4MShowStatus.setMessage("Arff loaded");
+                ShowStatus.setMessage("Arff loaded");
                 
                 int numDocs = data.numInstances();
                 int numTerms = data.numAttributes();
                 int numTopics = configuration.getNumTopics();
                 
-                M4MShowStatus.setMessage("Extraction topics...");
+                ShowStatus.setMessage("Extraction topics...");
                 if(configuration.isPLSA()){
                     Parameters_PLSA parametersPLSA = configuration.getParametersPLSA();
-                    M4MShowStatus.setMessage("Algorithm: PLSA");
+                    ShowStatus.setMessage("Algorithm: PLSA");
                     PLSA2 plsa = new PLSA2(numDocs, numTerms, numTopics, parametersPLSA.getNumMaxIterations(), parametersPLSA.getMinDifference());
 //                    String output = "_PLSA_" + parametersPLSA.getNumMaxIterations() + "iterations_" + parametersPLSA.getMinDifference() + "mindiff_";
                     //Extract(configuration, plsa, data, output);
                     Extract(configuration, plsa, data);
-                    M4MShowStatus.setMessage("Topics Extracted!");
+                    ShowStatus.setMessage("Topics Extracted!");
                 }
                 
             }catch(Exception e){
@@ -72,7 +73,7 @@ public class TopicExtraction_Old {
                 e.printStackTrace();
             }
         }    
-        M4MShowStatus.setMessage("Process concluded successfully");
+        ShowStatus.setMessage("Process concluded successfully");
     }
     
     
