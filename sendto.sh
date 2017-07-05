@@ -15,11 +15,50 @@ fi
 
 path=`pwd`;
 base=`basename "$path"`;
-hoje=`date '+%d-%m-%y'`;
+hoje=`date '+%d-%m-%y_%Hh%M'`;
 filename=$1$base'_'$hoje'.tar.gz'
 
-echo "destination --> \"$filename\""
-echo $filename
+# echo $filename
+
+
+
+    tput bold
+    echo ""
+    echo " Made some work?"
+	echo ""
+	echo " You are about to backup this folter to \"$filename\""
+    echo ""
+    echo ""
+    tput sgr0
+
+    read -p " Continue? [y/n] " yn
+    case $yn in
+        [Nn]* ) echo "" ; 
+			echo "Ok. We didn't nothing! Good bye.";
+			echo "";
+			exit ;;
+
+        [Yy]* ) echo ""; 
+
+			echo "";;
+
+        * ) echo "Please answer yes or no.";
+			exit ;;
+    esac
+
+
+
+
+
+echo ""
+
+fortune | cowsay -f turtle
+
+echo ""
+echo "done!"
+
+
+
 
 tar -czvf $filename --exclude='.git' *
 #zip -r $filename .
