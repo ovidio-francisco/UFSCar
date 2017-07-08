@@ -11,6 +11,7 @@ import java.io.Serializable;
  *
  * @author Gaia
  */
+@SuppressWarnings("serial")
 public class Parameters_BisectingKMeans_NonParametric extends Parameters_KMeans_Parametric implements Serializable{
     
     private int maxValueK;

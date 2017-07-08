@@ -15,6 +15,7 @@ import weka.core.Instances;
  *
  * @author Gaia
  */
+@SuppressWarnings("unused")
 public class KMeans_NonParametric extends TopicExtractorOld{
     
     private int numMaxInteracoes;

@@ -1,5 +1,6 @@
 package topicExtraction.mining4meetings;
 
+import topicExtraction.MMTopic;
 import topicExtraction.TET.TopicExtraction;
 import topicExtraction.m4mParameters.M4MArffGenerationParameters;
 import topicExtraction.m4mParameters.M4MRepresentationParameters;
@@ -25,22 +26,6 @@ import utils.ShowStatus;
  * @author ovidiojf
  */
 public class Mining4Meetings {
-
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-    
-//        MainFrame f = new MainFrame();
-//        
-////        f.setSize(800, 600);
-//        f.setLocationRelativeTo(null);
-//        f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-//        f.setTitle("Mining 4 Meetings");
-//        f.setVisible(true);
-        
-        
-    }
 
     public static void prepareFolders() {
 //        docFolder = new File(M4MUtils.searchFolder());
@@ -126,8 +111,6 @@ public class Mining4Meetings {
         try{
             ShowStatus.setMessage("Reading document-term matrix...");
                  
-//          BufferedReader fileDocTopic = new BufferedReader(new InputStreamReader(new FileInputStream(outFolder + "/" + Mining4Meetings.DOCUMENT_TOPIC_MATRIX_FILE_NAME), "ISO-8859-1"));
-            
             BufferedReader fileDocTopic = M4MFiles.getBufferedReader(new File(outFolder + "/" + Mining4Meetings.DOCUMENT_TOPIC_MATRIX_FILE_NAME));
             
             String[] parts;
@@ -242,6 +225,9 @@ public class Mining4Meetings {
                 ((DefaultTreeModel)view).setRoot(root);
                 ((DefaultTreeModel)view).reload(root);
             }
+            
+            MMTopic topics = MMTopic.getTopics(descTopics, docsPerTopics, numTopics, orderedTopics);
+            
 
             M4MShowStatus.setProgress(90);
             ShowStatus.setMessage("Tree generated");
@@ -313,6 +299,9 @@ public class Mining4Meetings {
             int indTopic = orderedTopics[topic1];
             DefaultMutableTreeNode nodeDescTopic = new DefaultMutableTreeNode(descTopics[indTopic].toString());
             String[] parts  = docsPerTopics[indTopic].toString().split(";");
+            
+            
+//            System.out.println(docsPerTopics[indTopic].toString()+ "========================&&&&&&&&&&&&&&&&&&&&&&&");
         
             for(int part=0;part<parts.length;part++){
                 DefaultMutableTreeNode doc_Topic = new DefaultMutableTreeNode(parts[part]);
@@ -350,6 +339,7 @@ public class Mining4Meetings {
         return descriptors;
     }
 
+    // ver ojf   
     // Função para alocar os documentos aos tópicos
     private static StringBuffer[] ExtractDocsPerTopics(int numDocs, int numTopics){
         StringBuffer[] docsPerTopic = new StringBuffer[numTopics];

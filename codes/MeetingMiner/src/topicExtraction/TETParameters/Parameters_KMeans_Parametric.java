@@ -11,6 +11,7 @@ import java.io.Serializable;
  *
  * @author Gaia
  */
+@SuppressWarnings("serial")
 public class Parameters_KMeans_Parametric implements Serializable{
     
     int numMaxIterations;

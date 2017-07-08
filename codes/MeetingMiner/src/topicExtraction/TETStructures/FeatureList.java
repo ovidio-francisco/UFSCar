@@ -12,7 +12,7 @@ import java.util.ArrayList;
 public class FeatureList {
     private ArrayList<TermValue> features;
 
-    public void FeatureList(){
+    public FeatureList(){
         features = new ArrayList<TermValue>();
     }
     

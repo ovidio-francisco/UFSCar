@@ -17,6 +17,7 @@ import java.util.ArrayList;
  *
  * @author Gaia
  */
+@SuppressWarnings("serial")
 public class TopicExtractionConfiguration implements Serializable{
  
     private ArrayList<Integer> numTopics;

@@ -99,7 +99,8 @@ public class KMeans_Parametric extends TopicExtractor{
         }
         
         
-        ArrayList<Integer>[] docsPerTopic = new ArrayList[getNumTopics()];
+        @SuppressWarnings("unchecked")
+		ArrayList<Integer>[] docsPerTopic = new ArrayList[getNumTopics()];
         int numIt = 0;
         boolean sair = false;
         

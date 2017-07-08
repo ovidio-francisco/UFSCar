@@ -26,19 +26,18 @@ import javax.swing.border.EmptyBorder;
 import javax.swing.border.EtchedBorder;
 
 import topicExtraction.TETConfigurations.TopicExtractionConfiguration;
-import topicExtraction.m4mUtils.M4MShowStatus;
 import topicExtraction.mining4meetings.Mining4Meetings;
 import segmenter.Segmenter;
 import segmenter.algorithms.c99br.C99BR;
 import segmenter.algorithms.texttile.TextTilingBR;
 import utils.Files;
+import utils.ShowStatus;
 import utils.TextExtractor;
 
 public class TopicsFrame extends JFrame{
 
 	private static final long serialVersionUID = 1L;
 	
-//	private JTextArea taText = new JTextArea();
 	private JTree view = new JTree();
 	private JPanel pnSegments = new JPanel();
 
@@ -49,39 +48,34 @@ public class TopicsFrame extends JFrame{
 		setLocationRelativeTo(null);
 		setExtendedState(getExtendedState() | MAXIMIZED_BOTH );
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
-		setTitle("Topics");
+		setTitle("Meeting Miner");
 		
 
 		JToolBar toolBar = new JToolBar();
 		
-		
 		JButton btLoadFile = new JButton("Load File");
 		JButton btAddToTheBase = new JButton("Adicionar documentos");
 		JButton btExtractTopics = new JButton("Extract Topics");
-		JLabel  lbStatus = new JLabel("Status");
 		
 		toolBar.setFloatable(false);
 		toolBar.addSeparator();
 		toolBar.add(btLoadFile);
 		toolBar.addSeparator();
-		toolBar.add(btExtractTopics);
-		toolBar.addSeparator();
 		toolBar.add(btAddToTheBase);
 		toolBar.addSeparator();
-		toolBar.add(lbStatus);
+		toolBar.add(btExtractTopics);
 		toolBar.addSeparator();
 
-		
 		
 		JPanel pnToolBar = new JPanel();
 		pnToolBar.setLayout(new BorderLayout());
 		pnToolBar.add(toolBar, BorderLayout.NORTH);
 		
 		
-		JTabbedPane tpText = new JTabbedPane();
-//		JScrollPane spText = new JScrollPane(taText);
-		JScrollPane spText = new JScrollPane(view);
-		tpText.add("segments", spText);
+		JTabbedPane tpTopics = new JTabbedPane();
+		JScrollPane spTopics = new JScrollPane(view);
+		tpTopics.add("Tópicos", spTopics);
+		tpTopics.setBorder(new EmptyBorder(5, 5, 5, 5));
 		
 		pnSegments.setLayout(new BoxLayout(pnSegments, BoxLayout.Y_AXIS));
 		JScrollPane spSegments = new JScrollPane(pnSegments);
@@ -91,26 +85,34 @@ public class TopicsFrame extends JFrame{
 		pnResults.setLayout(new BorderLayout());
 		pnResults.setBorder(new EmptyBorder(5, 5, 5, 5));
 		JLabel lbSegments = new JLabel("Segments", SwingConstants.CENTER);
-		lbSegments.setBorder(new EmptyBorder(5, 0, 5, 0));
+		lbSegments.setBorder(new EmptyBorder(5, 0, 0, 0));
 
 		pnResults.add(lbSegments, BorderLayout.NORTH);
 		pnResults.add(spSegments, BorderLayout.CENTER);
 		
 		
 		
+		JPanel pnBottom = new JPanel();
+		pnBottom.setLayout(new BorderLayout());
+		pnBottom.setPreferredSize(new Dimension(100, 100));
+		pnBottom.setBorder(new EmptyBorder(5, 5, 5, 5));
+		JTextArea taStatus = new JTextArea("Status");
+		JScrollPane spStatus = new JScrollPane(taStatus);
+		pnBottom.add(spStatus);
+		
 		JPanel pnCenter = new JPanel();
 		pnCenter.setLayout(new GridLayout(1, 2));
-		pnCenter.add(tpText);
+		pnCenter.add(tpTopics);
 		pnCenter.add(pnResults);
 		
 		setLayout(new BorderLayout());	
 		add(pnToolBar, BorderLayout.NORTH);
 		add(pnCenter, BorderLayout.CENTER);
+		add(pnBottom, BorderLayout.SOUTH);
 		
 
-		
-		M4MShowStatus.setLabel(lbStatus);
-		
+		ShowStatus.setTextArea(taStatus);
+
 		
 		
 		
@@ -122,7 +124,7 @@ public class TopicsFrame extends JFrame{
 				File doc = null;
 				
 				JFileChooser fc = new JFileChooser();
-				fc.setCurrentDirectory(new File("./docs"));
+				fc.setCurrentDirectory(new File("./.."));
 				fc.setFileFilter(new javax.swing.filechooser.FileFilter() {
 					@Override
 					public String getDescription() {
@@ -141,13 +143,10 @@ public class TopicsFrame extends JFrame{
 				
 				ArrayList<String> segments = getSegments(doc);
 				
-//				taText.setText("");
+
 				for(String seg : segments) {
-//					taText.setText(taText.getText() + seg + "\n\n============================\n\n");
 					addSegmentPanel(seg);
 				}
-				
-				
 			}
 		});
 		
@@ -257,9 +256,9 @@ public class TopicsFrame extends JFrame{
         configuration.setDirEntrada(Mining4Meetings.getArfFolder().getAbsolutePath());
         configuration.setDirSaida  (Mining4Meetings.getOutFolder().getAbsolutePath());
         
-//        configuration.setKMeans(true); 
+//      configuration.setKMeans(true); 
         configuration.setPLSA(true);
-//        configuration.setBisectingKMeans(true);
+//      configuration.setBisectingKMeans(true);
 
         if (true) {
 

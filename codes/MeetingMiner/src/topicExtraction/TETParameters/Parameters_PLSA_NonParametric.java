@@ -11,6 +11,7 @@ import java.io.Serializable;
  *
  * @author Gaia
  */
+@SuppressWarnings({ "serial" })
 public class Parameters_PLSA_NonParametric extends Parameters_PLSA_Parametric implements Serializable{
     
     int maxTopics;

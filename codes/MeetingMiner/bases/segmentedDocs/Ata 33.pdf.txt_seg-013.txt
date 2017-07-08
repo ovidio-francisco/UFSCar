@@ -1,0 +1,1 @@
+Caso a distância seja superior a 220 35 km, será calculada a distância multiplicada por R$ 0,60. 

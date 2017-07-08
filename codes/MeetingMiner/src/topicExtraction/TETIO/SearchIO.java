@@ -43,7 +43,8 @@ public class SearchIO {
         return caminho;
     }
     
-    public static String AbreDir(){
+    @SuppressWarnings("static-access")
+	public static String AbreDir(){
         String diretorio = new String("");
         JFileChooser open = new JFileChooser();
         open.setFileSelectionMode(open.DIRECTORIES_ONLY);
@@ -56,7 +57,8 @@ public class SearchIO {
         return diretorio;
     }
 
-    public static String AbreArq(){
+    @SuppressWarnings("static-access")
+	public static String AbreArq(){
         String arquivo = new String("");
         JFileChooser open = new JFileChooser();
         open.setFileSelectionMode(open.FILES_ONLY);

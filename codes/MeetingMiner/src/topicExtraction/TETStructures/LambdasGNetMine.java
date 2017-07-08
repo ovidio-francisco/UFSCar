@@ -9,6 +9,7 @@ package topicExtraction.TETStructures;
 
 import java.io.Serializable;
 
+@SuppressWarnings("serial")
 public class LambdasGNetMine implements Serializable{
     public double lambdaDocDoc;
     public double lambdaDocTerm;

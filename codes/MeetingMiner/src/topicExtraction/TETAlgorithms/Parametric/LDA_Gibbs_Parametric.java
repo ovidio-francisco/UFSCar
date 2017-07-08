@@ -16,6 +16,7 @@ import weka.core.Instances;
  * 
  * @author heinrich
  */
+@SuppressWarnings("unused")
 public class LDA_Gibbs_Parametric extends TopicExtractor{
 
     private int numMaxInterations;

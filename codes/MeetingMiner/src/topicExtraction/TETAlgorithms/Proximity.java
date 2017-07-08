@@ -11,6 +11,7 @@ import topicExtraction.TETStructures.NeighborHash;
 import java.util.Set;
 import weka.core.Instance;
 
+@SuppressWarnings("unused")
 public class Proximity {
     
     public static double calcDistCosseno(NeighborHash instancia1, NeighborHash instancia2){

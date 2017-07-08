@@ -12,6 +12,7 @@ import java.io.Serializable;
  *
  * @author Gaia
  */
+@SuppressWarnings("serial")
 public class TopicExtractionParameters implements Serializable{
  
     private Integer numTopics;

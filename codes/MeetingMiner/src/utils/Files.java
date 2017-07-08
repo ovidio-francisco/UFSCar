@@ -23,7 +23,7 @@ public class Files {
 	
     private static ArrayList<String> docExtentitions;
     
-    private static File basesFolder   = new File("./bases");
+    private static File basesFolder   = new File("bases");
     private static File originalDocs  = new File(basesFolder+"/originalDocs");
     private static File textDocs      = new File(basesFolder+"/textDocs");
     private static File segmentedDocs = new File(basesFolder+"/segmentedDocs");    

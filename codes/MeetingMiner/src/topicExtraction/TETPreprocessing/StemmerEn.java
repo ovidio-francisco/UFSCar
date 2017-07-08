@@ -22,6 +22,7 @@ import java.util.HashMap;
   * by calling one of the various stem(something) methods.
   */
 
+@SuppressWarnings("unused")
 public class StemmerEn{
    private static char[] b;
    private static int i,     /* offset into b */

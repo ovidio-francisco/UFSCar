@@ -18,6 +18,7 @@ import topicExtraction.m4mUtils.M4MShowStatus;
 import utils.ShowStatus;
 import ptstemmer.Stemmer;
 
+@SuppressWarnings("unused")
 public class Preprocessing {
     
     /* Function to extract features from a textual document

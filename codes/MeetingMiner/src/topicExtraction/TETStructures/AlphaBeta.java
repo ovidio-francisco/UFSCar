@@ -9,6 +9,7 @@ package topicExtraction.TETStructures;
 
 import java.io.Serializable;
 
+@SuppressWarnings({ "serial" })
 public class AlphaBeta implements Serializable{
     
     private double alpha;

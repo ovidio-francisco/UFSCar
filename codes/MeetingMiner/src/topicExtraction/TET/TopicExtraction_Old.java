@@ -25,6 +25,7 @@ import weka.core.Instances;
  *
  * @author Gaia
  */
+@SuppressWarnings("unused")
 public class TopicExtraction_Old {
     
     public static void ExtractTopics(TopicExtractionParameters configuration){

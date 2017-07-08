@@ -17,6 +17,8 @@ import weka.core.Instances;
  *
  * @author Gaia
  */
+@SuppressWarnings("unused")
+
 public class BisectingKMeans_NonParametric extends TopicExtractor{
     
     private int numMaxInteracoes;

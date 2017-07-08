@@ -4,7 +4,6 @@ import java.io.File;
 import java.util.ArrayList;
 
 import preprocessamento.Preprocess;
-import topicExtraction.m4mUtils.M4MShowStatus;
 import utils.Files;
 import utils.ShowStatus;
 import utils.TextExtractor;
@@ -52,7 +51,7 @@ public abstract class AbstractSegmenter implements Segmenter {
 		
 		int i=1;
 		for(String str : segs) {
-			File newFile = new File(Folder+"/"+source.getName()+"_seg-"+i++ + ".txt");
+			File newFile = new File(Folder+"/"+source.getName()+"_seg-"+ String.format("%03d", i++) + ".txt");
 			Files.saveTxtFile(str, newFile);
 		}
 		

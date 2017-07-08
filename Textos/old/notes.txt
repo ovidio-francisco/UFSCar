@@ -1,0 +1,25 @@
+ 
+- Definir segmentos
+- Definir a tarefa de segmentação (encontar pontos onde há transição de tópicos)
+- Palavras Pista e AM
+- Algoritmos para achar sentenças
+- preprocessamento
+ - Exemplo de segmentação
+- Os testes
+- Calcular as médidas das medidas F1 e WinDiff
+- As metricas, quais são mais usadas, quais melhor refletem a performance dos algs.
+
+- -----subjetividade/dificuldades da tarefa
+- sementos sobrepostos
+- segementos dispersos no texto (Temas)
+- discordâncias das pessoas
+
+
+Abordagem endogenous e exogenous
+
+
+
+
+................................................................................................
+Google: → discourse segmentation of multi-party conversation
+

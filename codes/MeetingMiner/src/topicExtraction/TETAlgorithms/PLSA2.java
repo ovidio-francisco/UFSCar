@@ -16,6 +16,7 @@ import weka.core.Instances;
  *
  * @author Gaia
  */
+@SuppressWarnings("unused")
 public class PLSA2 extends TopicExtractorOld{
     
     private int numMaxInteracoes;

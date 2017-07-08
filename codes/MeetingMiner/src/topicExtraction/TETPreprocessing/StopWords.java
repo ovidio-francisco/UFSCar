@@ -13,6 +13,7 @@ import javax.swing.JOptionPane;
 import topicExtraction.m4mUtils.M4MShowStatus;
 import utils.ShowStatus;
 
+@SuppressWarnings("unused")
 public class StopWords {
     static ArrayList<String> list = new ArrayList<String>();
     

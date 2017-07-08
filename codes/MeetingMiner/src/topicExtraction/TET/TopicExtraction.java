@@ -26,7 +26,6 @@ import java.io.BufferedWriter;
 import java.io.File;
 import java.util.ArrayList;
 import topicExtraction.m4mUtils.M4MFiles;
-import topicExtraction.m4mUtils.M4MShowStatus;
 import topicExtraction.mining4meetings.Mining4Meetings;
 import utils.ShowStatus;
 //import preprocessamento.Encoding;
@@ -38,7 +37,8 @@ import weka.core.Instances;
  */
 public class TopicExtraction {
     
-    public static void ExtractTopics(TopicExtractionConfiguration configuration){
+    @SuppressWarnings("unused")
+	public static void ExtractTopics(TopicExtractionConfiguration configuration){
         
         ArrayList<File> filesIn = new ArrayList<File>();
         ListFiles.list(new File(configuration.getDirEntrada()), filesIn); //Vetor para armazenar os documentos textuais
@@ -224,7 +224,15 @@ public class TopicExtraction {
             fileOut.write("#Topics:"+numTopics+"\n");
             
             for(int doc=0;doc<numDocs;doc++){
-                fileOut.write(data.attribute(0).value((int)data.instance(doc).value(0)) + ",");
+            	
+//            	========================================== by ojf
+            	String filename = new File(data.attribute(0).value((int)data.instance(doc).value(0))).getName();
+//            	System.out.println(filename + "<<<<<<<<<<<<<<<<<<---------------------<<<<<<<<<<<<<");
+                fileOut.write(filename + ",");
+//            	========================================== by ojf
+            	
+            	
+//                fileOut.write(data.attribute(0).value((int)data.instance(doc).value(0)) + ",");
                 for(int topic=0;topic<numTopics;topic++){
                     fileOut.write(docTopic[doc][topic] + ",");
                 }

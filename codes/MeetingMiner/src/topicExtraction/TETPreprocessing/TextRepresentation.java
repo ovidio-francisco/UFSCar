@@ -30,11 +30,13 @@ import utils.ShowStatus;
 import ptstemmer.Stemmer;
 import ptstemmer.implementations.OrengoStemmer;
 
+@SuppressWarnings("unused")
 public class TextRepresentation {
     
 //    public static void Represent(File dirIn, File dirOut, String relationName, boolean dirClass, String language, boolean stemming, boolean removeStopWords, boolean binary, boolean TF, boolean TFIDF, boolean sparse, boolean cutDF, int dfMin, int topRanked, boolean replaceStem){
     //Function to read a text collection and generate a document-term matrix
-    public static void Represent(M4MRepresentationParameters cfg){
+    @SuppressWarnings({ "unchecked", "rawtypes" })
+	public static void Represent(M4MRepresentationParameters cfg){
         
         ArrayList<String>       names        = new ArrayList<>();
         ArrayList<FeatureList>  terms        = new ArrayList<>(); // lista constendo os termos com as respectivas frequencias de cada documento da coleção
