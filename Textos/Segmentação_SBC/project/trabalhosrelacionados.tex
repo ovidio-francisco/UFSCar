@@ -15,9 +15,13 @@ Semelhante a este trabalho, outras abordagens foram propostas no sentido de prop
 %%%%%%%%%%
 % Topic segmentation for textual document written in arabic language
 %%%%%%%%%%
-A fim de aplicar os algoritmos \textit{TextTiling} e \textit{C99} ao idioma árabe, foi utilizado como \textit{corpus} a concatenação de textos extraídos de notícias de diferentes países como Tunísia, Egito e Algeria, que tratam de assuntos distintos como política, esporte, cultura, história, tecnologia e artes, e que trazem particularidades nos estilos de escrita e até diferenças entre dialetos locais~\cite{CHAIBI2014}. 
+A fim de aplicar os algoritmos \textit{TextTiling} e \textit{C99} ao idioma árabe, foi utilizado como \textit{corpus} a concatenação de textos extraídos de notícias de diferentes países como Tunísia, Egito e Algeria, que tratam de assuntos distintos como política, esporte, cultura, história, tecnologia e artes, e que trazem particularidades nos estilos de escrita e até diferenças entre dialetos locais~\cite{CHAIBI2014}. Verificou-se que, devido as diferenças entre os dialetos de cada país, melhores resultados dependem da escolha de um stemmer adequado.
 
-Foram propostos ajustes na etapa de preprocessamento onde verificou-se que diferenças no dialeto de cada pais devem ser consideradas no processo de segmentação pois que melhores resultados dependem da escolha de um \textit{stemmer} adequado à cada dialeto.
+% Para a etapa de preprocessamento, considerou-se a as diferenças entre os dialetos de cada país e verificou-se que a melhores resultados dependem da escolha de um \textit{stemmer} adequado. 
+
+
+
+% Foram propostos ajustes na etapa de preprocessamento onde verificou-se que diferenças no dialeto de cada país devem ser consideradas no processo de segmentação pois que melhores resultados dependem da escolha de um \textit{stemmer} adequado à cada dialeto.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -48,10 +52,9 @@ A presença de \textit{pistas} pode ser um indicativo que ajuda a aprimorar a det
 Essas \textit{pistas} podem ser palavras como \textit{``Ok''}, \textit{``continuando''} e frases como \textit{``Boa noite''}, \textit{``Dando prosseguimento''} ou pausas prolongadas que ajudam a indicar uma mudança de tópicos. 
 %
 Essas \textit{pistas} podem ser detectadas por meio de algoritmos de aprendizado de máquina ou anotadas manualmente~
-\cite{Hsueh2006, % Faz combinações com Lexical e Cue LC-CUE
-Galley2003, 
+\cite{Hsueh2006, % Faz combinações com Lexical e Cue LC-CUE 
 %\cite{Boguraev2000}%\textit{por outro lado}
-Beeferman1999}.
+Bokaei2016}.
 %\cite{Reynar1999}
 
 

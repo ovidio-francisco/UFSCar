@@ -48,7 +48,7 @@ Dessa forma, um segmento pode ser visto como uma sucessão de unidades de informa
 %%%%%%%%%%
 % Coesão léxica como **presuposto básico**
 %%%%%%%%%%
-Trabalhos anteriores se apoiam na ideia de que a mudança de tópicos em um texto é acompanhada de uma proporcional mudança de vocabulário. Essa ideia, chamada de coesão léxica, sugere que a distribuição das palavras é um forte indicador da estrutura do texto. A partir disso, vários algoritmos foram propostos baseados na ideia de que um segmento pode ser identificado e delimitado pela análise das palavras que o compõe~\cite{Galley2003,Boguraev2000}.
+Trabalhos anteriores se apoiam na ideia de que a mudança de tópicos em um texto é acompanhada de uma proporcional mudança de vocabulário. Essa ideia, chamada de coesão léxica, sugere que a distribuição das palavras é um forte indicador da estrutura do texto. A partir disso, vários algoritmos foram propostos baseados na ideia de que um segmento pode ser identificado pela análise das palavras que o compõe~\cite{Chen2017,Ferret2009,Sakahara2014}.
 
 
 
@@ -87,7 +87,7 @@ Em seguida, os blocos de texto são representados por vetores que contém as frequ
 %TODO como apresentado na Figura~\ref{fig:curvadedissimilaridade}.
 
 
-O \textit{TextTiling} possui baixa complexidade computacional. Por outro lado, algoritmos mais complexos apresentam acurácia relativamente superior como apresentado em~\cite{Choi2000, Kern2009, Misra2009}.
+O \textit{TextTiling} possui baixa complexidade computacional. Por outro lado, algoritmos mais complexos, como os baseados em matrizes de similaridade, apresentam acurácia relativamente superior como apresentado em~\cite{Choi2000, Kern2009, Misra2009}.
 
 
 
@@ -96,7 +96,7 @@ O \textit{TextTiling} possui baixa complexidade computacional. Por outro lado, a
 %%%                  C99                    %%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-O C99 é um algoritmo basedo em ranking.
+O C99 é um algoritmo baseado em ranking.
 % Choi \cite{Choi2000} apresenta um algoritmo baseado em ranking, o \textit{C99}. 
 %
 Embora muitos trabalhos utilizem matrizes de similaridades para pequenos segmentos, o cálculo de suas similaridades não é confiável, pois uma ocorrência adicional de uma palavra causa um impacto que pode alterar significativamente o cálculo da similaridade~\cite{Choi2000}.
@@ -111,7 +111,7 @@ Inicialmente é construída uma matriz que contém as similaridades de todas as uni
 Então, cada elemento e comparado com seus vizinhos dentro de uma região denominada máscara.
 %
 
-Na Figura~\ref{fig:a} é destacado um quadro 3~x~3 em uma matriz onde cada elemento é a similaridade entre duas unidades de informação. 
+Na Figura~\ref{fig:a} é destacado um quadro 3~x~3 de uma matriz em que cada elemento é a similaridade entre duas unidades de informação. 
 %
 Tomando como exemplo o elemento com valor $0,5$, a mesma posição na matriz de \textit{rankings} terá o valor $4$, pois esse é o número de vizinhos com valores inferiores a $0,5$ dentro do quadro analisado na matriz de similaridades. Da mesma forma, na Figura~\ref{fig:b} para o valor $0,2$ a matriz de \textit{rankings} conterá o valor $1$ na mesma posição.
 
@@ -233,16 +233,16 @@ Na Figura~\ref{fig:exemplosegmentacaozoom} é apresentado um exemplo com duas seg
   
 
 Considerando o conceito de \textit{near misses}, algumas soluções foram propostas. As medidas de avaliação mais utilizadas são a P$_k$ e \textit{WindowDiff}.
-
-
-
-
+% 
+% 
+% 
+% 
 %%%%%%%%%%%%%%%
 % Pk 
 %%%%%%%%%%%%%%% 
 %\item Em~\cite{Beeferman1999} é apresentada uma medida denominada P$_k$, 
 %
-
+% 
 Proposta por~\cite{Beeferman1999}, P$_k$, 
 % Valores Parciais 
 %%% 
@@ -274,16 +274,18 @@ P$_k$ é uma medida de dissimilaridade entre as segmentações e pode ser interpret
 %%%%%%%%%%%%%%%
 % WindowDiff 
 %%%%%%%%%%%%%%% 
-
-\cite{Pevzner2002} 
+\textit{WindowDiff} é uma medida alternativa à P$_k$. % a fim de melhorar alguns aspectos. 
+%
+%
+%Em \cite{Pevzner2002} 
 %
 % Medida alternativa que considera outros aspectos 
 %%%
-apresentam uma medida alternativa à P$_k$ a fim de melhorar alguns aspectos. 
+%apresentam uma medida alternativa à P$_k$ a fim de melhorar alguns aspectos. 
 %
 % Funcionamento do Windiff 
 %%% 
-De maneira semelhante, \textit{WindowDiff} move uma janela pelo texto e penaliza o algoritmo sempre que o número de limites proposto pelo algoritmo não coincidir com o número de limites esperados para aquela janela. Ou seja, o algoritmo é penalizado quando não concordar com a segmentação de referência quanto ao número de segmentos na janela. 
+De maneira semelhante, move uma janela pelo texto e penaliza o algoritmo sempre que o número de limites proposto pelo algoritmo não coincidir com o número de limites esperados para aquela janela. Ou seja, o algoritmo é penalizado quando não concordar com a segmentação de referência quanto ao número de segmentos na janela. 
 %
 % Solução para considerar o tamanho das sentenças 
 %%% 

@@ -9,11 +9,16 @@
 %%%%%%%%%%
 % TextTiling e C99 criados para inglês e independente de domínio
 %%%%%%%%%%
-Os algoritmos \textit{TextTiling} e \textit{C99} foram propostos para o inglês, independentemente de domínio, ou seja, a proposta inicial dos autores é trabalhar em qualquer texto nessa língua.
+Os algoritmos \textit{TextTiling} e \textit{C99} foram propostos para o inglês, 
+% independentemente de domínio, 
+ou seja, a proposta inicial dos autores é trabalhar em qualquer texto nessa língua.
 %%%%%%%%%%
 % Adapatar para Atas em português
 %%%%%%%%%%
-Neste trabalho, propõe-se aplicá-los ao contexto das atas de reunião em português do Brasil, ou seja, em uma língua diferente e dentro de um contexto específico. As implementações utilizadas, bem como ferramentas utilizadas e os resultados completos estão disponíveis para utilização e consulta em \url{link}. As subseções seguintes tratam da aplicação desses algoritmos para esse nicho mais específico. 
+Neste trabalho, esses algoritmos foram aplicados em atas de reunião escritas em português, ou seja, em uma língua diferente e dentro de um contexto específico. As implementações dos algoritmos, bem como ferramentas utilizadas e os resultados completos estão disponíveis para utilização e consulta em \urlsoftwares. As subseções seguintes tratam da aplicação desses algoritmos para esse nicho mais específico. 
+% TODO: Melhorar
+
+
 
 
 \subsection{Coleção de documentos}
@@ -24,9 +29,11 @@ Neste trabalho, propõe-se aplicá-los ao contexto das atas de reunião em portuguê
 
 
 \subsection{Pré-processamento}
-	\label{subsec:preprocessamento}
+		\label{subsec:preprocessamento}
 
-As atas a serem segmentadas são extraídas de documentos do tipo \textit{pdf}, \textit{doc}, \textit{docx} ou \textit{odt} que normalmente possuem formato binário. A fim de extrair o texto desses documentos, aplicou-se um processo que transforma esses formatos em aquivos de texto plano. 
+As atas a serem segmentadas são extraídas de documentos do tipo \textit{pdf}, \textit{doc}, \textit{docx} ou \textit{odt} que normalmente possuem formato binário. Aplicou-se um processo para transformar esses arquivos em texto plano.
+% 
+% A fim de extrair o texto desses documentos, aplicou-se um processo que transforma esses formatos em aquivos de texto plano. 
 %Após isso, obteve-se uma média de 906 \textit{tokens} por ata. 
 A fim de preparar o texto e selecionar as palavras mais significativas, as atas passaram por processos de transformação os quais serão apresentados a seguir.
 	
@@ -38,18 +45,17 @@ A fim de preparar o texto e selecionar as palavras mais significativas, as atas 
 \item Remoção de cabeçalhos e rodapés: as atas contém trechos que podem ser considerados pouco informativos e descartados durante o pré-processamento, como cabeçalhos e rodapés que se misturam aos tópicos tratados na reunião, podendo ser  inseridos no meio de um tópico prejudicando tanto o algoritmo de segmentação, quanto a leitura do texto pelo usuário.
 
 % Identificação de sentenças
-\item Identificação de finais sentenças: Devido ao estilo de pontuação desses documentos, como encerrar sentenças usando um \textit{";"} e inserção de linhas extras, foram usadas as regras especiais para identificação de finais de sentença. Os detalhes sobre essas regras estão disponíveis para consulta em \url{link}.
+\item Identificação de finais sentenças: devido ao estilo de pontuação desses documentos, como encerrar sentenças usando um \textit{";"} e inserção de linhas extras, foram usadas as regras especiais para identificação de finais de sentença. Os detalhes sobre essas regras estão disponíveis para consulta em \urlsoftwares.
 
 
 %cada final de sentença é identificado e marcado com uma \textit{string} especial, esse processo é melhor descrito na Subseção~\ref{subsec:indentificacaosentencas}.
 
 % Remoção de termos
-\item Redução de termos: Eliminou-se a acentuação, sinais de pontuação, numerais e todos os \textit{tokens} menores que três caracteres. 
+\item Redução de termos: eliminou-se a acentuação, sinais de pontuação, numerais e todos os \textit{tokens} menores que três caracteres. 
 Palavras de uso muito frequente como artigos, preposições e pronomes, chamadas de \textit{stop words}, foram removidas utilizando-se uma lista de 438 palavras.
 
 % Stemming
-\item \textit{Stemming}:
-Extraiu-se o radical de cada palavra. Para isso, as letras foram convertidas em caixa baixa e aplicou-se o algoritmo \textit{Orengo}\footnote{\urlorengo} para remoção de sufixos.
+\item \textit{Stemming}: extraiu-se o radical de cada palavra. Para isso, as letras foram convertidas em caixa baixa e aplicou-se o algoritmo \textit{Orengo}\footnote{\urlorengo} para remoção de sufixos.
 
 \end{enumerate}
 	
@@ -230,7 +236,7 @@ Na Tabela~\ref{tab:preprocessamento} é mostrado, para cada ata, a quantidade de 
 %%%%%%%%%%
 % Parâmetros
 %%%%%%%%%%
-As implementações dos algoritmos permitem ao usuário a configuração de seus parâmetros. 
+% As implementações dos algoritmos permitem ao usuário a configuração de seus parâmetros. 
 %
 O \textit{TextTiling} permite ajustarmos dois parâmetros, sendo o tamanho da janela e o passo. Por meio de testes empíricos escolheu-se os valores os valores 20, 40 e 60 para o tamanho da janela e 3, 6, 9 e 12 para o passo. Gerando ao final 20 configurações.
 %
@@ -247,6 +253,14 @@ O \textit{C99} permite o ajuste de três parâmetros, sendo, o primeiro a quantida
 \subsection{Resultados}
 	\label{subsec:resultados}
 \input{project/resultados}
+
+
+
+
+%%%%%%%%%%
+% Adapatar para Atas em português
+%%%%%%%%%%
+% Neste trabalho, propõe-se aplicá-los ao contexto das atas de reunião em português do Brasil, ou seja, em uma língua diferente e dentro de um contexto específico. As implementações utilizadas, bem como ferramentas utilizadas e os resultados completos estão disponíveis para utilização e consulta em \url{link}. As subseções seguintes tratam da aplicação desses algoritmos para esse nicho mais específico. 
 
 
 
