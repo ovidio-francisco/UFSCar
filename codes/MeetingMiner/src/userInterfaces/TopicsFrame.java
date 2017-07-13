@@ -13,14 +13,12 @@ import javax.swing.BoxLayout;
 import javax.swing.JButton;
 import javax.swing.JFileChooser;
 import javax.swing.JFrame;
-import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JTabbedPane;
 import javax.swing.JTextArea;
 import javax.swing.JToolBar;
 import javax.swing.JTree;
-import javax.swing.SwingConstants;
 import javax.swing.border.CompoundBorder;
 import javax.swing.border.EmptyBorder;
 import javax.swing.border.EtchedBorder;
@@ -28,9 +26,9 @@ import javax.swing.border.EtchedBorder;
 import meetingMiner.MMTopic;
 import meetingMiner.MeetingMiner;
 import meetingMiner.Segment;
-import topicExtraction.TETConfigurations.TopicExtractionConfiguration;
 import segmenter.Segmenter;
 import segmenter.algorithms.texttile.TextTilingBR;
+import topicExtraction.TETConfigurations.TopicExtractionConfiguration;
 import utils.Files;
 import utils.ShowStatus;
 
@@ -49,8 +47,8 @@ public class TopicsFrame extends JFrame{
 		setExtendedState(getExtendedState() | MAXIMIZED_BOTH );
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
 		setTitle("Meeting Miner");
-		
 
+		
 		JToolBar toolBar = new JToolBar();
 		
 		JButton btLoadFile = new JButton("Load File");
@@ -87,12 +85,11 @@ public class TopicsFrame extends JFrame{
 		JPanel pnResults = new JPanel();
 		pnResults.setLayout(new BorderLayout());
 		pnResults.setBorder(new EmptyBorder(5, 5, 5, 5));
-		JLabel lbSegments = new JLabel("Segments", SwingConstants.CENTER);
-		lbSegments.setBorder(new EmptyBorder(5, 0, 0, 0));
 
-		pnResults.add(lbSegments, BorderLayout.NORTH);
-		pnResults.add(spSegments, BorderLayout.CENTER);
+		PnSearchSegments pnSearch = new PnSearchSegments();
 		
+		pnResults.add(pnSearch, BorderLayout.NORTH);
+		pnResults.add(spSegments, BorderLayout.CENTER);
 		
 		
 		JPanel pnBottom = new JPanel();
@@ -117,42 +114,6 @@ public class TopicsFrame extends JFrame{
 		ShowStatus.setTextArea(taStatus);
 
 		
-		
-		
-//		btLoadFile.addActionListener(new ActionListener() {
-//			
-//			@Override
-//			public void actionPerformed(ActionEvent e) {
-//				
-//				File doc = null;
-//				
-//				JFileChooser fc = new JFileChooser();
-//				fc.setCurrentDirectory(new File("./.."));
-//				fc.setFileFilter(new javax.swing.filechooser.FileFilter() {
-//					@Override
-//					public String getDescription() {
-//						return "Text files";
-//					}
-//					
-//					@Override
-//					public boolean accept(File arg0) {
-//						return "doc docx pdf".contains(Files.getFileExtension(arg0));
-//					}
-//				});
-//				fc.showOpenDialog(null);
-//
-//				doc = fc.getSelectedFile();
-//				if(doc==null) return;
-//				
-//				ArrayList<String> segments = getSegments(doc);
-//				
-//
-//				for(String seg : segments) {
-//					addSegmentPanel(seg);
-//				}
-//			}
-//		});
-		
 		btExtractTopics.addActionListener(new ActionListener() {
 			
 			@Override
@@ -168,7 +129,6 @@ public class TopicsFrame extends JFrame{
 				MeetingMiner.miningTheMeetings();
 			}
 		});
-		
 		
 		
 		btAddToTheBase.addActionListener(new ActionListener() {
@@ -221,64 +181,22 @@ public class TopicsFrame extends JFrame{
 		setVisible(true);
 	}
 	
-	private void addSegmentPanel(Segment seg) {
-		JPanel pnSeg = new JPanel();
-		JTextArea taSeg = new JTextArea();
-		JScrollPane spSeg = new JScrollPane(taSeg);
-		taSeg.setText(seg.getText());
 
+	private void addSegmentPanel(Segment seg) {
+		JPanel pnSeg = new PnSegment(seg); 
+		
 		int w = pnSegments.getWidth()-20;
-		int h = 150;
-		
-		taSeg.setLineWrap(true);
-		
-		pnSeg.setLayout(new BorderLayout());
-		pnSeg.add(spSeg, BorderLayout.CENTER);
-		pnSeg.setBorder(new CompoundBorder(new EmptyBorder(5, 10, 5, 10), BorderFactory.createEtchedBorder(EtchedBorder.LOWERED)));
+		int h = 150;		
 		pnSeg.setPreferredSize(new Dimension(w, h));
 		pnSeg.setMaximumSize(new Dimension(w, h));
-		
-		
-		StringBuilder sb = new StringBuilder();
-		for(String s : seg.getDescriptors()){
-			sb.append(s+", ");
-		}
-		String descriptors = sb.toString().substring(0, sb.length() - 2);
-			
-		JLabel lbDescriptors = new JLabel(descriptors);
-		pnSeg.add(lbDescriptors, BorderLayout.SOUTH);
-		
+	
 		
 		pnSegments.add(pnSeg);
 		
 		pnSegments.revalidate();
 		pnSegments.repaint();
-		
 	}
 	
-	
-//	private Segmenter createSegmenter() {
-//		C99BR c99 = new C99BR();
-//		c99.setnSegsRate(0.85);
-//		c99.setRakingSize(11);
-//		c99.setWeitght(true);
-//		
-//		c99.getPreprocess().setRemovePageNumbers(true);
-//		c99.getPreprocess().setRemoveHeaders(true);
-//		c99.getPreprocess().setRemoveExtraSpaces(true);		
-//		
-//		return c99;
-//	}
-	
-//	private ArrayList<String> getSegments(File doc) {
-//		
-//		String text = TextExtractor.docToString(doc);
-//		
-//		Segmenter segmenter = createSegmenter();
-//		
-//		return segmenter.getSegments(text);
-//	}
-//	
 	
     private void defineConfiguration(){
         

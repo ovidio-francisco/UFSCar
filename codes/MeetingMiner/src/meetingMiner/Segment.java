@@ -6,7 +6,6 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.HashMap;
-import java.util.Set;
 
 import utils.Files;
 
@@ -94,6 +93,10 @@ public class Segment {
 
 	public File getOriginalDocument() {
 		return originalDocument;
+	}
+	
+	public File getSegmentDoc() {
+		return segmentDoc;
 	}
 
 	public String getText() {
