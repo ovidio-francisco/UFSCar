@@ -101,9 +101,9 @@ O C99 é um algoritmo baseado em ranking.
 %
 Embora muitos trabalhos utilizem matrizes de similaridades para pequenos segmentos, o cálculo de suas similaridades não é confiável, pois uma ocorrência adicional de uma palavra causa um impacto que pode alterar significativamente o cálculo da similaridade~\cite{Choi2000}.
 %
-Além disso, o estilo da escrita pode não ser constante em todo o texto. Choi sugere que, por exemplo, textos iniciais dedicados a introdução costumam apresentar menor coesão do que trechos dedicados a um tópico específico. Portanto, comparar a similaridade entre trechos de diferentes regiões não é apropriado.
+Além disso, o estilo da escrita pode não ser constante em todo o texto. Por exemplo, textos iniciais dedicados a introdução costumam apresentar menor coesão do que trechos dedicados a um tópico específico. Portanto, comparar a similaridade entre trechos de diferentes regiões não é apropriado.
 % Complexidade O(n²)
-Devido a isso, as similaridades não podem ser comparadas em valores absolutos. Então, o autor contorna esse problema fazendo uso de \textit{rankings} de similaridade para encontrar os segmentos de texto. 
+Devido a isso, as similaridades não podem ser comparadas em valores absolutos. Então, contorna-se esse problema fazendo uso de \textit{rankings} de similaridade para encontrar os segmentos de texto. 
 
 
 Inicialmente é construída uma matriz que contém as similaridades de todas as unidades de texto. Em seguida, cada valor na matriz de similaridade é substituído por seu ranking local. Para cada elemento da matriz, seu \textit{ranking} é o número de elementos vizinhos com valor de similaridade menor que o seu.
@@ -258,7 +258,7 @@ A cada passo verifica, na referência e na hipótese, se o início e o final da jan
 %
 % Penalisa em caso de discrepânica 
 %%% 
-então, penaliza o algoritmo caso não concorde com a referência. Ou seja, dado duas palavras de distancia $k$, o algoritmo é penalizado quando não concordar com a segmentação de referência se as palavras estão ou não no mesmo segmento.
+então, penaliza o algoritmo caso não concorde com a referência. Ou seja, dado duas palavras de distância $k$, o algoritmo é penalizado quando não concordar com a segmentação de referência se as palavras estão ou não no mesmo segmento.
 %
 % Calculo de k 
 %%% 

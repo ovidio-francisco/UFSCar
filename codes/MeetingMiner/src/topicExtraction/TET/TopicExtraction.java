@@ -21,12 +21,14 @@ import topicExtraction.TETParameters.Parameters_KMeans_Parametric;
 import topicExtraction.TETParameters.Parameters_PLSA_NonParametric;
 import topicExtraction.TETParameters.Parameters_PLSA_Parametric;
 import topicExtraction.TETPreprocessing.Encoding;
+import topicExtraction.mmUtils.M4MFiles;
+
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.File;
 import java.util.ArrayList;
-import topicExtraction.m4mUtils.M4MFiles;
-import topicExtraction.mining4meetings.Mining4Meetings;
+
+import meetingMiner.MeetingMiner;
 import utils.ShowStatus;
 //import preprocessamento.Encoding;
 import weka.core.Instances;
@@ -208,8 +210,8 @@ public class TopicExtraction {
         
         algorithm.buildTopics(data);
         
-        printDocTopic(data, algorithm.getDocTopicMatrix(), algorithm.getNumTopics(), configuration.getDirSaida(), Mining4Meetings.DOCUMENT_TOPIC_MATRIX_FILE_NAME);
-        printTermTopic(data, algorithm.getTermTopicMatrix(), algorithm.getNumTopics(), configuration.getDirSaida(), Mining4Meetings.TERM_TOPIC_MATRIX_FILE_NAME);
+        printDocTopic(data, algorithm.getDocTopicMatrix(), algorithm.getNumTopics(), configuration.getDirSaida(), MeetingMiner.DOCUMENT_TOPIC_MATRIX_FILE_NAME);
+        printTermTopic(data, algorithm.getTermTopicMatrix(), algorithm.getNumTopics(), configuration.getDirSaida(), MeetingMiner.TERM_TOPIC_MATRIX_FILE_NAME);
         
     }
     

@@ -6,7 +6,7 @@
  * Last Modified 
  */
 
-package topicExtraction.m4mUtils;
+package topicExtraction.mmUtils;
 
 //import com.itextpdf.text.pdf.PdfReader;
 //import com.itextpdf.text.pdf.parser.PdfReaderContentParser;

@@ -86,13 +86,14 @@ M.~A. Hearst.
 R.~Kern and M.~Granitzer.
 \newblock Efficient linear text segmentation based on information retrieval
   techniques.
-\newblock pages 167--171, 2009.
+\newblock {\em Proceedings of the International Conference on Management of
+  Emergent Digital EcoSystems, MEDES '09}, pages 167--171, 2009.
 
 \bibitem{Maziero2016}
 E.~Maziero, G.~Hirst, and T.~Pardo.
 \newblock Adaptation of discourse parsing models for the portuguese language.
-\newblock pages 140--145, 2016.
-\newblock cited By 0.
+\newblock {\em Proceedings - 2015 Brazilian Conference on Intelligent Systems,
+  BRACIS 2015}, pages 140--145, 2016.
 
 \bibitem{Misra2009}
 H.~Misra, F.~Yvon, J.~M. Jose, and O.~Cappe.
@@ -106,12 +107,6 @@ M.~Naili, A.~H. Chaibi, and H.~H.~B. Ghezala.
 \newblock Exogenous approach to improve topic segmentation.
 \newblock {\em International Journal of Intelligent Computing and Cybernetics},
   9(2):165--178, 2016.
-
-\bibitem{Pevzner2002}
-L.~Pevzner and M.~Hearst.
-\newblock A critique and improvement of an evaluation metric for text
-  segmentation.
-\newblock {\em Computational Linguistics}, 28(1):19--36, 2002.
 
 \bibitem{Reynar1998}
 J.~C. Reynar.

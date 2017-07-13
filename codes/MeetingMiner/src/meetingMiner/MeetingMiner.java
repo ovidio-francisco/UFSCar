@@ -1,10 +1,6 @@
-package topicExtraction.mining4meetings;
+package meetingMiner;
 
-import topicExtraction.MMTopic;
 import topicExtraction.TET.TopicExtraction;
-import topicExtraction.m4mParameters.M4MArffGenerationParameters;
-import topicExtraction.m4mParameters.M4MRepresentationParameters;
-import topicExtraction.m4mParameters.M4MTopicExtractionParameters;
 import topicExtraction.TETConfigurations.TopicExtractionConfiguration;
 import topicExtraction.TETConfigurations.TopicExtractionParameters;
 import topicExtraction.TETPreprocessing.TextRepresentation;
@@ -13,11 +9,16 @@ import java.io.BufferedWriter;
 import java.io.File;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Date;
 import javax.swing.tree.DefaultMutableTreeNode;
 import javax.swing.tree.DefaultTreeModel;
-import topicExtraction.m4mUtils.M4MFiles;
-import topicExtraction.m4mUtils.M4MShowStatus;
+
+import topicExtraction.mmParameters.M4MArffGenerationParameters;
+import topicExtraction.mmParameters.M4MRepresentationParameters;
+import topicExtraction.mmParameters.M4MTopicExtractionParameters;
+import topicExtraction.mmUtils.M4MFiles;
+import topicExtraction.mmUtils.M4MShowStatus;
 import utils.Files;
 import utils.ShowStatus;
 
@@ -25,7 +26,7 @@ import utils.ShowStatus;
  *
  * @author ovidiojf
  */
-public class Mining4Meetings {
+public class MeetingMiner {
 
     public static void prepareFolders() {
 //        docFolder = new File(M4MUtils.searchFolder());
@@ -50,7 +51,7 @@ public class Mining4Meetings {
         
     }
     
-    public static void mining4Meetings() {
+    public static void miningTheMeetings() {
         long startTime = new Date().getTime();
 
         M4MShowStatus.setProgress(0);
@@ -61,7 +62,7 @@ public class Mining4Meetings {
         
         M4MShowStatus.setProgress(2);        
         
-        extractRawTxt();
+//        extractRawTxt();
         M4MShowStatus.setProgress(10);
         
         represent();
@@ -71,7 +72,7 @@ public class Mining4Meetings {
         M4MShowStatus.setProgress(40);
         
         ShowStatus.setMessage("Extração de tópicos concluída");
-        Mining4Meetings.visualise();
+        MeetingMiner.visualise();
         
         saveTopics();
 
@@ -83,12 +84,12 @@ public class Mining4Meetings {
         
     }
     
-    public static void extractRawTxt() {
-
-//        M4MTextExtractor.extractTxtFromAllPdfs(docFolder, txtFolder);
-//        M4MTextExtractor.extractTxtFromAllFiles(docFolder, txtFolder);
-
-    }
+//    public static void extractRawTxt() {
+//
+////        M4MTextExtractor.extractTxtFromAllPdfs(docFolder, txtFolder);
+////        M4MTextExtractor.extractTxtFromAllFiles(docFolder, txtFolder);
+//
+//    }
     
     public static void represent() {
         
@@ -97,13 +98,13 @@ public class Mining4Meetings {
             return;
         }
         
-        TextRepresentation.Represent(Mining4Meetings.getRepresentationParameters());                                             
+        TextRepresentation.Represent(MeetingMiner.getRepresentationParameters());                                             
         
     }
     
     public static void extractTopics() {
 
-        TopicExtraction.ExtractTopics(Mining4Meetings.getTopicExtractionconfiguration());      
+        TopicExtraction.ExtractTopics(MeetingMiner.getTopicExtractionconfiguration());      
     
     }
     
@@ -111,7 +112,7 @@ public class Mining4Meetings {
         try{
             ShowStatus.setMessage("Reading document-term matrix...");
                  
-            BufferedReader fileDocTopic = M4MFiles.getBufferedReader(new File(outFolder + "/" + Mining4Meetings.DOCUMENT_TOPIC_MATRIX_FILE_NAME));
+            BufferedReader fileDocTopic = M4MFiles.getBufferedReader(new File(outFolder + "/" + MeetingMiner.DOCUMENT_TOPIC_MATRIX_FILE_NAME));
             
             String[] parts;
             String linha;
@@ -176,7 +177,7 @@ public class Mining4Meetings {
             
 //          linha = "";
 //          BufferedReader fileTermTopic = new BufferedReader(new InputStreamReader(new FileInputStream(outFolder + "/" + Mining4Meetings.TERM_TOPIC_MATRIX_FILE_NAME), "ISO-8859-1"));
-            BufferedReader fileTermTopic = M4MFiles.getBufferedReader(new File(outFolder + "/" + Mining4Meetings.TERM_TOPIC_MATRIX_FILE_NAME));
+            BufferedReader fileTermTopic = M4MFiles.getBufferedReader(new File(outFolder + "/" + MeetingMiner.TERM_TOPIC_MATRIX_FILE_NAME));
             linha = fileTermTopic.readLine();
             parts = linha.split(":");
             int numTerms = Integer.parseInt(parts[1]);
@@ -207,7 +208,7 @@ public class Mining4Meetings {
             ShowStatus.setMessage("Matrices loaded");
             ShowStatus.setMessage("Setting the documents and descriptors for the topics");
             
-            StringBuffer[] descTopics    = ExtractTopicDescriptors(numTerms, numTopics, Mining4Meetings.descriptorsByTopic);
+            StringBuffer[] descTopics    = ExtractTopicDescriptors(numTerms, numTopics, MeetingMiner.descriptorsByTopic);
             ShowStatus.setProgress(70);
 
             StringBuffer[] docsPerTopics = ExtractDocsPerTopics(numDocs, numTopics); 
@@ -226,8 +227,20 @@ public class Mining4Meetings {
                 ((DefaultTreeModel)view).reload(root);
             }
             
-            MMTopic topics = MMTopic.getTopics(descTopics, docsPerTopics, numTopics, orderedTopics);
+            ArrayList<MMTopic> topics = MMTopic.getTopics(descTopics, docsPerTopics, numTopics, orderedTopics);
             
+			ArrayList<Segment> segments = Segment.getAllSegments(topics);
+			
+			
+//			int count = 1;
+//			for(MMTopic t : topics) {
+//				System.out.println(String.format("Tópico [%d]\n%s", count++, t));
+//			}
+			
+			for(Segment seg : segments) {
+				System.out.println("\n===========================================\n"+seg);
+			}
+
 
             M4MShowStatus.setProgress(90);
             ShowStatus.setMessage("Tree generated");
@@ -250,20 +263,20 @@ public class Mining4Meetings {
         DefaultTreeModel model = (DefaultTreeModel)view; 
         String filename = outFolder.getPath()+"/topics.txt";
         
-        if (Mining4Meetings.getTopicExtractionconfiguration().isPLSA()) {
+        if (MeetingMiner.getTopicExtractionconfiguration().isPLSA()) {
             filename = filename + " - PLSA";
         }
-        if (Mining4Meetings.getTopicExtractionconfiguration().isKMeans()) {
+        if (MeetingMiner.getTopicExtractionconfiguration().isKMeans()) {
             filename = filename + " - kMeans";
         }
-        if (Mining4Meetings.getTopicExtractionconfiguration().isBisectingKMeans()) {
+        if (MeetingMiner.getTopicExtractionconfiguration().isBisectingKMeans()) {
             filename = filename + " - BisectingkMeans";
         }
-        if (Mining4Meetings.getTopicExtractionconfiguration().isLDAGibbs()) {
+        if (MeetingMiner.getTopicExtractionconfiguration().isLDAGibbs()) {
             filename = filename + " - LDA Gibbs";
         }
         
-        if (Mining4Meetings.getTopicExtractionconfiguration().isAutoNumTopics()) {
+        if (MeetingMiner.getTopicExtractionconfiguration().isAutoNumTopics()) {
             filename = filename + " - Non Parametric";
         }
         
@@ -398,7 +411,7 @@ public class Mining4Meetings {
     }
 
     public static void setDescriptorsByTopic(int descriptorsByTopic) {
-        Mining4Meetings.descriptorsByTopic = descriptorsByTopic;
+        MeetingMiner.descriptorsByTopic = descriptorsByTopic;
     }
     
     public static TopicExtractionParameters getExtractionParameters() {
@@ -410,7 +423,7 @@ public class Mining4Meetings {
     }
 
     public static void setExtractionParameters(TopicExtractionParameters extractionParameters) {
-        Mining4Meetings.extractionParameters = extractionParameters;
+        MeetingMiner.extractionParameters = extractionParameters;
     }
 
     public static M4MRepresentationParameters getRepresentationParameters() {
@@ -422,7 +435,7 @@ public class Mining4Meetings {
     }
 
     public static void setRepresentationParameters(M4MRepresentationParameters representationParameters) {
-        Mining4Meetings.representationParameters = representationParameters;
+        MeetingMiner.representationParameters = representationParameters;
     }
 
     public static M4MArffGenerationParameters getArrffGenerationParameters() {
@@ -434,7 +447,7 @@ public class Mining4Meetings {
     }
 
     public static void setArrffGenerationParameters(M4MArffGenerationParameters arrffGenerationParameters) {
-        Mining4Meetings.arffGenerationParameters = arrffGenerationParameters;
+        MeetingMiner.arffGenerationParameters = arrffGenerationParameters;
     }
     
     
@@ -451,7 +464,7 @@ public class Mining4Meetings {
     }
 
     public static void setArfFolder(File arfFolder) {
-        Mining4Meetings.arfFolder = arfFolder;
+        MeetingMiner.arfFolder = arfFolder;
     }
 
 //    public static File getTxtFolder() {
@@ -467,7 +480,7 @@ public class Mining4Meetings {
     }
 
     public static void setOutFolder(File outFolder) {
-        Mining4Meetings.outFolder = outFolder;
+        MeetingMiner.outFolder = outFolder;
     }
     
     public static File getArffFile() {
@@ -480,7 +493,7 @@ public class Mining4Meetings {
     }
 
     public static void setView(Object view) {
-        Mining4Meetings.view = view;
+        MeetingMiner.view = view;
     }
 
     public static TopicExtractionConfiguration getTopicExtractionconfiguration() {
@@ -488,7 +501,7 @@ public class Mining4Meetings {
     }
     
     public static void setTopicExtractionconfiguration(TopicExtractionConfiguration topicExtractionconfiguration) {
-        Mining4Meetings.topicExtractionconfiguration = topicExtractionconfiguration;
+        MeetingMiner.topicExtractionconfiguration = topicExtractionconfiguration;
     }
 
     public static boolean isFoldersOK() {
@@ -496,7 +509,7 @@ public class Mining4Meetings {
     }
 
     public static void setFoldersOK(boolean foldersOK) {
-        Mining4Meetings.foldersOK = foldersOK;
+        MeetingMiner.foldersOK = foldersOK;
     }
 
     public static boolean isAlgorithmsOk() {
@@ -504,7 +517,7 @@ public class Mining4Meetings {
     }
 
     public static void setAlgorithmsOk(boolean algorithmsok) {
-        Mining4Meetings.algorithmsOk = algorithmsok;
+        MeetingMiner.algorithmsOk = algorithmsok;
     }
     
     

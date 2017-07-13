@@ -1,5 +1,5 @@
 
-package topicExtraction.m4mUtils;
+package topicExtraction.mmUtils;
 
 /**
  *

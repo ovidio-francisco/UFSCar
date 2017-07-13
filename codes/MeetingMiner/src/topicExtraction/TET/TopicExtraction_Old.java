@@ -10,14 +10,16 @@ import topicExtraction.TETAlgorithms.TopicExtractorOld;
 import topicExtraction.TETConfigurations.TopicExtractionParameters;
 import topicExtraction.TETIO.ListFiles;
 import topicExtraction.TETParameters.Parameters_PLSA;
+import topicExtraction.mmUtils.M4MFiles;
+import topicExtraction.mmUtils.M4MShowStatus;
+
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.File;
 import java.util.ArrayList;
 import javax.swing.JOptionPane;
-import topicExtraction.m4mUtils.M4MFiles;
-import topicExtraction.m4mUtils.M4MShowStatus;
-import topicExtraction.mining4meetings.Mining4Meetings;
+
+import meetingMiner.MeetingMiner;
 import utils.ShowStatus;
 import weka.core.Instances;
 
@@ -83,8 +85,8 @@ public class TopicExtraction_Old {
         
         algorithm.buildTopics(data);
         
-        printDocTopic(data, algorithm.getDocTopicMatrix(), algorithm.getNumTopics(), configuration.getDirSaida(), Mining4Meetings.DOCUMENT_TOPIC_MATRIX_FILE_NAME);
-        printTermTopic(data, algorithm.getTermTopicMatrix(), algorithm.getNumTopics(), configuration.getDirSaida(), Mining4Meetings.TERM_TOPIC_MATRIX_FILE_NAME);
+        printDocTopic(data, algorithm.getDocTopicMatrix(), algorithm.getNumTopics(), configuration.getDirSaida(), MeetingMiner.DOCUMENT_TOPIC_MATRIX_FILE_NAME);
+        printTermTopic(data, algorithm.getTermTopicMatrix(), algorithm.getNumTopics(), configuration.getDirSaida(), MeetingMiner.TERM_TOPIC_MATRIX_FILE_NAME);
         
     }
     

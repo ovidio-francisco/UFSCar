@@ -7,9 +7,11 @@ package topicExtraction.TETAlgorithms;
 
 import topicExtraction.TETStructures.IndexValue;
 import topicExtraction.TETStructures.Neighbor;
+import topicExtraction.mmUtils.M4MShowStatus;
+
 import java.util.ArrayList;
 import java.util.HashMap;
-import topicExtraction.m4mUtils.M4MShowStatus;
+
 import weka.core.Instances;
 
 /**

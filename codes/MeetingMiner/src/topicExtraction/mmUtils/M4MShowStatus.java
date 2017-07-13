@@ -6,7 +6,7 @@
  * Last Modified 
  */
 
-package topicExtraction.m4mUtils;
+package topicExtraction.mmUtils;
 
 import javax.swing.JLabel;
 import javax.swing.JProgressBar;

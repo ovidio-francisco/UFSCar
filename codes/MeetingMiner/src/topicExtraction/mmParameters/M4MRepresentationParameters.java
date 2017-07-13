@@ -6,10 +6,11 @@
  * Last Modified 
  */
 
-package topicExtraction.m4mParameters;
+package topicExtraction.mmParameters;
 
 import java.io.File;
-import topicExtraction.mining4meetings.Mining4Meetings;
+
+import meetingMiner.MeetingMiner;
 import utils.Files;
 
 
@@ -37,7 +38,7 @@ public class M4MRepresentationParameters {
 
 //      result.dirIn           = Mining4Meetings.getTxtFolder();
         result.dirIn           = Files.getSegmentedDocs();
-        result.dirOut          = Mining4Meetings.getArfFolder();
+        result.dirOut          = MeetingMiner.getArfFolder();
         result.relationName    = "representacao"; //arame
         result.dirClass        = false;
         result.language        = "port";

@@ -25,8 +25,10 @@ import javax.swing.border.CompoundBorder;
 import javax.swing.border.EmptyBorder;
 import javax.swing.border.EtchedBorder;
 
+import meetingMiner.MMTopic;
+import meetingMiner.MeetingMiner;
+import meetingMiner.Segment;
 import topicExtraction.TETConfigurations.TopicExtractionConfiguration;
-import topicExtraction.mining4meetings.Mining4Meetings;
 import segmenter.Segmenter;
 import segmenter.algorithms.c99br.C99BR;
 import segmenter.algorithms.texttile.TextTilingBR;
@@ -56,6 +58,7 @@ public class TopicsFrame extends JFrame{
 		JButton btLoadFile = new JButton("Load File");
 		JButton btAddToTheBase = new JButton("Adicionar documentos");
 		JButton btExtractTopics = new JButton("Extract Topics");
+		JButton btShowSegments = new JButton("Exibir Segmentos");
 		
 		toolBar.setFloatable(false);
 		toolBar.addSeparator();
@@ -64,6 +67,8 @@ public class TopicsFrame extends JFrame{
 		toolBar.add(btAddToTheBase);
 		toolBar.addSeparator();
 		toolBar.add(btExtractTopics);
+		toolBar.addSeparator();
+		toolBar.add(btShowSegments);
 		toolBar.addSeparator();
 
 		
@@ -155,14 +160,14 @@ public class TopicsFrame extends JFrame{
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				
-		        Mining4Meetings.prepareFolders();
+		        MeetingMiner.prepareFolders();
 
 				
 				defineConfiguration();
 				
-				Mining4Meetings.setView(view.getModel());
+				MeetingMiner.setView(view.getModel());
 				
-				Mining4Meetings.mining4Meetings();
+				MeetingMiner.miningTheMeetings();
 			}
 		});
 		
@@ -192,6 +197,18 @@ public class TopicsFrame extends JFrame{
 				
 				Files.extractSegmentsToTheBase(segmenter);
 				
+			}
+		});
+		
+		
+		btShowSegments.addActionListener(new ActionListener() {
+			
+			@Override
+			public void actionPerformed(ActionEvent e) {
+
+	            
+				
+	            				
 			}
 		});
 		
@@ -253,8 +270,8 @@ public class TopicsFrame extends JFrame{
         
         TopicExtractionConfiguration configuration = new TopicExtractionConfiguration();
 
-        configuration.setDirEntrada(Mining4Meetings.getArfFolder().getAbsolutePath());
-        configuration.setDirSaida  (Mining4Meetings.getOutFolder().getAbsolutePath());
+        configuration.setDirEntrada(MeetingMiner.getArfFolder().getAbsolutePath());
+        configuration.setDirSaida  (MeetingMiner.getOutFolder().getAbsolutePath());
         
 //      configuration.setKMeans(true); 
         configuration.setPLSA(true);
@@ -278,7 +295,7 @@ public class TopicsFrame extends JFrame{
             configuration.setNumTopics(numTopics);
         }
         
-        Mining4Meetings.setTopicExtractionconfiguration(configuration);
+        MeetingMiner.setTopicExtractionconfiguration(configuration);
     }
     
 

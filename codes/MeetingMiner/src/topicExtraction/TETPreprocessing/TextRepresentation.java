@@ -8,8 +8,6 @@
 
 package topicExtraction.TETPreprocessing;
 
-import topicExtraction.m4mParameters.M4MArffGenerationParameters;
-import topicExtraction.m4mParameters.M4MRepresentationParameters;
 import topicExtraction.TETStructures.TermValue;
 import topicExtraction.TETStructures.FeatureList;
 import topicExtraction.TETIO.ListFiles;
@@ -23,9 +21,12 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Locale;
 import java.util.Set;
-import topicExtraction.m4mUtils.M4MFiles;
-import topicExtraction.m4mUtils.M4MShowStatus;
-import topicExtraction.mining4meetings.Mining4Meetings;
+
+import meetingMiner.MeetingMiner;
+import topicExtraction.mmParameters.M4MArffGenerationParameters;
+import topicExtraction.mmParameters.M4MRepresentationParameters;
+import topicExtraction.mmUtils.M4MFiles;
+import topicExtraction.mmUtils.M4MShowStatus;
 import utils.ShowStatus;
 import ptstemmer.Stemmer;
 import ptstemmer.implementations.OrengoStemmer;
@@ -216,7 +217,7 @@ public class TextRepresentation {
             
 //          BufferedWriter outputArff = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(cfg.getDirOut() + "/" + cfg.getRelacao() + ".arff"), charCode));
 //          File arffFile = new File(cfg.getDirOut() + "/" + cfg.getRelacao() + ".arff");
-            BufferedWriter outputArff = M4MFiles.getBufferedWriter(Mining4Meetings.getArffFile());
+            BufferedWriter outputArff = M4MFiles.getBufferedWriter(MeetingMiner.getArffFile());
 
             //Saving Header
             

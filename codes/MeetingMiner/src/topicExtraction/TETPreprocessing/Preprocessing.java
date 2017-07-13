@@ -8,13 +8,15 @@
 package topicExtraction.TETPreprocessing;
 
 import topicExtraction.TETStructures.TermValue;
+import topicExtraction.mmUtils.M4MShowStatus;
+
 import java.io.File;
 import java.io.RandomAccessFile;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Set;
 import javax.swing.JOptionPane;
-import topicExtraction.m4mUtils.M4MShowStatus;
+
 import utils.ShowStatus;
 import ptstemmer.Stemmer;
 
@@ -53,6 +55,9 @@ public class Preprocessing {
             RandomAccessFile txtFile = new RandomAccessFile(file, "r");
             String line;
             while( (line = txtFile.readLine()) != null ) { txt.append(line + " "); } // Leitura do fileuivo texto e armazenamento na variável txt
+            
+            System.out.println("\n>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>\n" + txt.toString());
+            
             txtFile.close();
         }catch(Exception e){
             System.err.println("Error when reading the file " + file.getAbsolutePath() + ".");

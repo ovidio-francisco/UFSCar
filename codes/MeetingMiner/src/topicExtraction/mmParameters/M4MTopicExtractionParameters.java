@@ -6,10 +6,10 @@
  * Last Modified 
  */
 
-package topicExtraction.m4mParameters;
+package topicExtraction.mmParameters;
 
+import meetingMiner.MeetingMiner;
 import topicExtraction.TETConfigurations.TopicExtractionParameters;
-import topicExtraction.mining4meetings.Mining4Meetings;
 import utils.Files;
 
 
@@ -24,8 +24,8 @@ public class M4MTopicExtractionParameters {
         else
             result.setDirEntrada("");
 
-        if (Mining4Meetings.getOutFolder() != null)
-            result.setDirSaida(Mining4Meetings.getOutFolder().getAbsolutePath());
+        if (MeetingMiner.getOutFolder() != null)
+            result.setDirSaida(MeetingMiner.getOutFolder().getAbsolutePath());
         else
             result.setDirSaida("");
         

@@ -10,7 +10,8 @@ package topicExtraction.TETPreprocessing;
 import java.io.RandomAccessFile;
 import java.util.ArrayList;
 import javax.swing.JOptionPane;
-import topicExtraction.m4mUtils.M4MShowStatus;
+
+import topicExtraction.mmUtils.M4MShowStatus;
 import utils.ShowStatus;
 
 @SuppressWarnings("unused")

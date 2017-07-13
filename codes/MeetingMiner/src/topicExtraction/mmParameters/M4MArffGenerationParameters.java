@@ -6,7 +6,7 @@
  * Last Modified 
  */
 
-package topicExtraction.m4mParameters;
+package topicExtraction.mmParameters;
 
 import topicExtraction.TETStructures.FeatureList;
 import java.io.File;
