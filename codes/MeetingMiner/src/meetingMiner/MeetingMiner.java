@@ -72,7 +72,7 @@ public class MeetingMiner {
         M4MShowStatus.setProgress(40);
         
         ShowStatus.setMessage("Extração de tópicos concluída");
-        MeetingMiner.visualise();
+        MeetingMiner.extractDescriptorsAndFiles();
         
         saveTopics();
 
@@ -108,7 +108,7 @@ public class MeetingMiner {
     
     }
     
-    public static void visualise() {
+    public static ArrayList<MMTopic> extractDescriptorsAndFiles() { // antigo visualize by ojf
         try{
             ShowStatus.setMessage("Reading document-term matrix...");
                  
@@ -227,9 +227,43 @@ public class MeetingMiner {
                 ((DefaultTreeModel)view).reload(root);
             }
             
-            ArrayList<MMTopic> topics = MMTopic.getTopics(descTopics, docsPerTopics, numTopics, orderedTopics);
+//            ArrayList<MMTopic> topics = MMTopic.getTopics(descTopics, docsPerTopics, numTopics, orderedTopics);
             
-			ArrayList<Segment> segments = Segment.getAllSegments(topics);
+
+            
+            
+//          ======================================================================
+            
+/*            Criação dos Objetos que encapsulam os descritores e os documentos       */
+            
+//          ======================================================================
+
+            ArrayList<MMTopic> result = new ArrayList<>();
+    		
+            for(int i=0;i<numTopics;i++){
+                
+            	MMTopic topic = new MMTopic();
+            	
+                int indTopic = orderedTopics[i];
+                
+                for(String desc: descTopics[indTopic].toString().split(";")) {
+                	if (!desc.trim().isEmpty())
+//                		topic.descriptors.add(desc.trim());
+                	    topic.addDescriptor(desc);
+                }
+                
+                for(String doc : docsPerTopics[indTopic].toString().split(";")) {
+//                    topic.segmentsdoc.add(new File(doc));
+                    topic.addSegmentDoc(new File(doc));
+                }
+
+                result.add(topic);
+            }
+            
+            
+            
+            
+//			ArrayList<Segment> segments = Segment.getAllSegments(topics);
 			
 			
 //			int count = 1;
@@ -237,17 +271,21 @@ public class MeetingMiner {
 //				System.out.println(String.format("Tópico [%d]\n%s", count++, t));
 //			}
 			
-			for(Segment seg : segments) {
-				System.out.println("\n===========================================\n"+seg);
-			}
+//			for(Segment seg : segments) {
+//				System.out.println("\n===========================================\n"+seg);
+//			}
 
 
             M4MShowStatus.setProgress(90);
             ShowStatus.setMessage("Tree generated");
             
+            
+            return result;
+            
         }catch(IOException | NumberFormatException e){
             System.err.println("Erro ao carregar as matrizes de tópicos");
             e.printStackTrace();
+            return null;
         }
         
     }

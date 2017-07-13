@@ -6,33 +6,14 @@ import java.util.ArrayList;
 public class MMTopic {
 	
 	private ArrayList<String> descriptors = new ArrayList<>();
-	private ArrayList<File> segmentsdoc   = new ArrayList<>();
+	private ArrayList<File> segmentsDoc   = new ArrayList<>();
 	
 
-	public static ArrayList<MMTopic> getTopics(StringBuffer[] descTopics, StringBuffer[] docsPerTopics, int numTopics,	int[] orderedTopics) {
-
-		ArrayList<MMTopic> result = new ArrayList<>();
-		
-        for(int i=0;i<numTopics;i++){
-            
-        	MMTopic topic = new MMTopic();
-        	
-            int indTopic = orderedTopics[i];
-            
-            for(String desc: descTopics[indTopic].toString().split(";")) {
-            	if (!desc.trim().isEmpty())
-            		topic.descriptors.add(desc.trim());
-            }
-            
-            for(String doc : docsPerTopics[indTopic].toString().split(";")) {
-                topic.segmentsdoc.add(new File(doc));
-            }
-
-            result.add(topic);
-        }
-
-		return result;
-	}
+//	public static ArrayList<MMTopic> getTopics(StringBuffer[] descTopics, StringBuffer[] docsPerTopics, int numTopics,	int[] orderedTopics) {
+//
+//
+//		return result;
+//	}
 	
 	
 	public boolean containsDescriptor(String desc) {
@@ -40,14 +21,15 @@ public class MMTopic {
 	}
 		
 	public boolean containsSegmentDoc(File doc) {
-		return segmentsdoc.contains(doc);
+		return segmentsDoc.contains(doc);
 	}	
 	
 	public ArrayList<String> getDescriptors() {
 		return descriptors;
 	}
+	
 	public ArrayList<File> getSegmentsDoc() {
-		return segmentsdoc;
+		return segmentsDoc;
 	}
 
 
@@ -63,12 +45,20 @@ public class MMTopic {
 		sb.append("\n");
 
 		sb.append("Documents: ");
-		for(File f : segmentsdoc) {
+		for(File f : segmentsDoc) {
 			sb.append("\n"+f.getName()+";");
 		}
 		sb.append("\n");
 		
 		return sb.toString();
+	}
+
+	public void addDescriptor(String desc) {
+		descriptors.add(desc.trim());
+	}
+
+	public void addSegmentDoc(File file) {
+		segmentsDoc.add(file);
 	}
 	
 }

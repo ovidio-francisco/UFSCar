@@ -30,11 +30,9 @@ import meetingMiner.MeetingMiner;
 import meetingMiner.Segment;
 import topicExtraction.TETConfigurations.TopicExtractionConfiguration;
 import segmenter.Segmenter;
-import segmenter.algorithms.c99br.C99BR;
 import segmenter.algorithms.texttile.TextTilingBR;
 import utils.Files;
 import utils.ShowStatus;
-import utils.TextExtractor;
 
 public class TopicsFrame extends JFrame{
 
@@ -121,39 +119,39 @@ public class TopicsFrame extends JFrame{
 		
 		
 		
-		btLoadFile.addActionListener(new ActionListener() {
-			
-			@Override
-			public void actionPerformed(ActionEvent e) {
-				
-				File doc = null;
-				
-				JFileChooser fc = new JFileChooser();
-				fc.setCurrentDirectory(new File("./.."));
-				fc.setFileFilter(new javax.swing.filechooser.FileFilter() {
-					@Override
-					public String getDescription() {
-						return "Text files";
-					}
-					
-					@Override
-					public boolean accept(File arg0) {
-						return "doc docx pdf".contains(Files.getFileExtension(arg0));
-					}
-				});
-				fc.showOpenDialog(null);
-
-				doc = fc.getSelectedFile();
-				if(doc==null) return;
-				
-				ArrayList<String> segments = getSegments(doc);
-				
-
-				for(String seg : segments) {
-					addSegmentPanel(seg);
-				}
-			}
-		});
+//		btLoadFile.addActionListener(new ActionListener() {
+//			
+//			@Override
+//			public void actionPerformed(ActionEvent e) {
+//				
+//				File doc = null;
+//				
+//				JFileChooser fc = new JFileChooser();
+//				fc.setCurrentDirectory(new File("./.."));
+//				fc.setFileFilter(new javax.swing.filechooser.FileFilter() {
+//					@Override
+//					public String getDescription() {
+//						return "Text files";
+//					}
+//					
+//					@Override
+//					public boolean accept(File arg0) {
+//						return "doc docx pdf".contains(Files.getFileExtension(arg0));
+//					}
+//				});
+//				fc.showOpenDialog(null);
+//
+//				doc = fc.getSelectedFile();
+//				if(doc==null) return;
+//				
+//				ArrayList<String> segments = getSegments(doc);
+//				
+//
+//				for(String seg : segments) {
+//					addSegmentPanel(seg);
+//				}
+//			}
+//		});
 		
 		btExtractTopics.addActionListener(new ActionListener() {
 			
@@ -206,8 +204,15 @@ public class TopicsFrame extends JFrame{
 			@Override
 			public void actionPerformed(ActionEvent e) {
 
-	            
+				MeetingMiner.prepareFolders();	
+					
+				ArrayList<MMTopic> topics = MeetingMiner.extractDescriptorsAndFiles();
+				ArrayList<Segment> segments = Segment.getAllSegments(topics);
 				
+				for(Segment seg : segments) {
+					addSegmentPanel(seg);
+				}
+			
 	            				
 			}
 		});
@@ -216,23 +221,32 @@ public class TopicsFrame extends JFrame{
 		setVisible(true);
 	}
 	
-	private void addSegmentPanel(String seg) {
+	private void addSegmentPanel(Segment seg) {
 		JPanel pnSeg = new JPanel();
 		JTextArea taSeg = new JTextArea();
 		JScrollPane spSeg = new JScrollPane(taSeg);
-		taSeg.setText(seg);
+		taSeg.setText(seg.getText());
 
 		int w = pnSegments.getWidth()-20;
 		int h = 150;
 		
+		taSeg.setLineWrap(true);
+		
 		pnSeg.setLayout(new BorderLayout());
 		pnSeg.add(spSeg, BorderLayout.CENTER);
-		pnSeg.setBorder(new CompoundBorder(new EmptyBorder(5, 10, 5, 10) ,BorderFactory.createEtchedBorder(EtchedBorder.LOWERED)));
+		pnSeg.setBorder(new CompoundBorder(new EmptyBorder(5, 10, 5, 10), BorderFactory.createEtchedBorder(EtchedBorder.LOWERED)));
 		pnSeg.setPreferredSize(new Dimension(w, h));
 		pnSeg.setMaximumSize(new Dimension(w, h));
 		
-		JLabel lbTopics = new JLabel("[topics]");
-		pnSeg.add(lbTopics, BorderLayout.SOUTH);
+		
+		StringBuilder sb = new StringBuilder();
+		for(String s : seg.getDescriptors()){
+			sb.append(s+", ");
+		}
+		String descriptors = sb.toString().substring(0, sb.length() - 2);
+			
+		JLabel lbDescriptors = new JLabel(descriptors);
+		pnSeg.add(lbDescriptors, BorderLayout.SOUTH);
 		
 		
 		pnSegments.add(pnSeg);
@@ -243,28 +257,28 @@ public class TopicsFrame extends JFrame{
 	}
 	
 	
-	private Segmenter createSegmenter() {
-		C99BR c99 = new C99BR();
-		c99.setnSegsRate(0.85);
-		c99.setRakingSize(11);
-		c99.setWeitght(true);
-		
-		c99.getPreprocess().setRemovePageNumbers(true);
-		c99.getPreprocess().setRemoveHeaders(true);
-		c99.getPreprocess().setRemoveExtraSpaces(true);		
-		
-		return c99;
-	}
+//	private Segmenter createSegmenter() {
+//		C99BR c99 = new C99BR();
+//		c99.setnSegsRate(0.85);
+//		c99.setRakingSize(11);
+//		c99.setWeitght(true);
+//		
+//		c99.getPreprocess().setRemovePageNumbers(true);
+//		c99.getPreprocess().setRemoveHeaders(true);
+//		c99.getPreprocess().setRemoveExtraSpaces(true);		
+//		
+//		return c99;
+//	}
 	
-	private ArrayList<String> getSegments(File doc) {
-		
-		String text = TextExtractor.docToString(doc);
-		
-		Segmenter segmenter = createSegmenter();
-		
-		return segmenter.getSegments(text);
-	}
-	
+//	private ArrayList<String> getSegments(File doc) {
+//		
+//		String text = TextExtractor.docToString(doc);
+//		
+//		Segmenter segmenter = createSegmenter();
+//		
+//		return segmenter.getSegments(text);
+//	}
+//	
 	
     private void defineConfiguration(){
         

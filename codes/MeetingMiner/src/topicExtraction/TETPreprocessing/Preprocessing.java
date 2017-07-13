@@ -17,6 +17,7 @@ import java.util.HashMap;
 import java.util.Set;
 import javax.swing.JOptionPane;
 
+import utils.Files;
 import utils.ShowStatus;
 import ptstemmer.Stemmer;
 
@@ -46,19 +47,23 @@ public class Preprocessing {
         
         ArrayList<TermValue> atributos = new ArrayList<>();
         
-        StringBuilder txt = new StringBuilder();
-
+//        StringBuilder txt = new StringBuilder();
+          String txt="";	
+        
         try{
             if (!file.exists()) {
                 ShowStatus.setMessage("File not found: " +file.getAbsolutePath());
             }
-            RandomAccessFile txtFile = new RandomAccessFile(file, "r");
-            String line;
-            while( (line = txtFile.readLine()) != null ) { txt.append(line + " "); } // Leitura do fileuivo texto e armazenamento na variável txt
+//            RandomAccessFile txtFile = new RandomAccessFile(file, "r");
+//            String line;
+//            while( (line = txtFile.readLine()) != null ) { txt.append(line + " "); } // Leitura do fileuivo texto e armazenamento na variável txt
+//            
+//            System.out.println("\n>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>\n" + txt.toString());
+//            
+//            txtFile.close();
             
-            System.out.println("\n>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>\n" + txt.toString());
+              txt = Files.loadTxtFile(file);
             
-            txtFile.close();
         }catch(Exception e){
             System.err.println("Error when reading the file " + file.getAbsolutePath() + ".");
             System.exit(0);
@@ -70,7 +75,8 @@ public class Preprocessing {
 ////            cleanText = m4mUtils.M4MCleaner.clean(txt.toString());
 //        }
 //        else {
-            cleanText = cln.clean(txt.toString()); //Text cleaning
+//            cleanText = cln.clean(txt.toString()); //Text cleaning
+            cleanText = cln.clean(txt); //Text cleaning
 
             
 //        }
