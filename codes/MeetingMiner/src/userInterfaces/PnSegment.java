@@ -24,28 +24,40 @@ public class PnSegment extends JPanel {
 		
 		taSeg.setText(seg.getText());
 		taSeg.setLineWrap(true);
+		taSeg.setWrapStyleWord(true);
 		taSeg.setMargin(new Insets(4, 4, 4, 4));
 		
-		this.setBorder(new EmptyBorder(10, 10, 5, 10));
+		this.setBorder(new EmptyBorder(10, 10, 20, 10));
 		
 		this.setLayout(new BorderLayout());
 		this.add(spSeg, BorderLayout.CENTER);
 		
 		StringBuilder sb = new StringBuilder();
 		for(String s : seg.getDescriptors()){
-			sb.append(s+", ");
+			if(seg.getMatches().contains(s)) {
+//				sb.append("<b>"+s+"</b>, ");
+				sb.append("<font color=blue>"+s+"</font>, ");
+			}
+			else {
+				sb.append(s+", ");
+			}
 		}
+		String matches = String.format("[%d/%d] ", seg.matcheCount(), seg.descriptorsCount());
 		String descriptors = sb.toString().substring(0, sb.length() - 2);
+		descriptors = "<html>"+matches+descriptors+"</html>";
+		
+		JLabel   lbDescriptors = new JLabel(descriptors);
 
-		JLabel lbDescriptors = new JLabel(descriptors);
+//		lbDescriptors.setFont(new Font(Font.SANS_SERIF, Font.PLAIN, lbDescriptors.getFont().getSize()));
+		DocLabel lbOriginalDoc = new DocLabel(Files.getOriginalDocs() , this.segment.getOriginalDocument());
+		DocLabel lbSegmentDoc  = new DocLabel(Files.getSegmentedDocs(), this.segment.getSegmentDoc());
+		lbOriginalDoc.setBorder(new EmptyBorder(0, 0, 0, 2));
 		
 		JPanel pnBotton = new JPanel(new BorderLayout());
-		
 		JPanel pnFiles = new JPanel(new BorderLayout());
-		DocLabel lbOriginalDoc = new DocLabel(Files.getOriginalDocs(), this.segment.getOriginalDocument());
-		DocLabel lbSegmentDoc  = new DocLabel(Files.getSegmentedDocs(), this.segment.getSegmentDoc());
 		pnFiles.add(lbSegmentDoc, BorderLayout.WEST);
 		pnFiles.add(lbOriginalDoc, BorderLayout.EAST);
+		
 		
 		pnBotton.add(lbDescriptors, BorderLayout.NORTH);
 		pnBotton.add(pnFiles, BorderLayout.SOUTH);

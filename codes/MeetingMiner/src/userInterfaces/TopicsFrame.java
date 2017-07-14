@@ -3,6 +3,7 @@ package userInterfaces;
 import java.awt.BorderLayout;
 import java.awt.Dimension;
 import java.awt.GridLayout;
+import java.awt.Insets;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.File;
@@ -13,12 +14,12 @@ import javax.swing.BoxLayout;
 import javax.swing.JButton;
 import javax.swing.JFileChooser;
 import javax.swing.JFrame;
+import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
-import javax.swing.JTabbedPane;
 import javax.swing.JTextArea;
+import javax.swing.JTextField;
 import javax.swing.JToolBar;
-import javax.swing.JTree;
 import javax.swing.border.CompoundBorder;
 import javax.swing.border.EmptyBorder;
 import javax.swing.border.EtchedBorder;
@@ -36,10 +37,20 @@ public class TopicsFrame extends JFrame{
 
 	private static final long serialVersionUID = 1L;
 	
-	private JTree view = new JTree();
-	private JPanel pnSegments = new JPanel();
+	private JPanel  pnSegments      = new JPanel();
 
+	private JButton btAddToTheBase  = new JButton("Adicionar documentos");
+	private JButton btExtractTopics = new JButton("Extrair Tópicos");
+	private JButton btShowTree      = new JButton("Exibir tópicos");
+	private JButton btShowSegments  = new JButton("Exibir Segmentos");
+	
+	private JLabel lbSegmentsCount = new JLabel();
 
+	private JTextField tfSearchDescriptors = new JTextField(30);
+	private JButton btSearch = new JButton("Localizar");
+
+	ArrayList<PnSegment> pnSegs = new ArrayList<>();
+	
 	public TopicsFrame() {
 
 		setSize(new Dimension(800, 600));
@@ -47,22 +58,17 @@ public class TopicsFrame extends JFrame{
 		setExtendedState(getExtendedState() | MAXIMIZED_BOTH );
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
 		setTitle("Meeting Miner");
-
 		
 		JToolBar toolBar = new JToolBar();
-		
-		JButton btLoadFile = new JButton("Load File");
-		JButton btAddToTheBase = new JButton("Adicionar documentos");
-		JButton btExtractTopics = new JButton("Extract Topics");
-		JButton btShowSegments = new JButton("Exibir Segmentos");
+		toolBar.setMargin(new Insets(6, 0, 4, 0));
 		
 		toolBar.setFloatable(false);
-		toolBar.addSeparator();
-		toolBar.add(btLoadFile);
 		toolBar.addSeparator();
 		toolBar.add(btAddToTheBase);
 		toolBar.addSeparator();
 		toolBar.add(btExtractTopics);
+		toolBar.addSeparator();
+		toolBar.add(btShowTree);
 		toolBar.addSeparator();
 		toolBar.add(btShowSegments);
 		toolBar.addSeparator();
@@ -72,64 +78,78 @@ public class TopicsFrame extends JFrame{
 		pnToolBar.setLayout(new BorderLayout());
 		pnToolBar.add(toolBar, BorderLayout.NORTH);
 		
-		
-		JTabbedPane tpTopics = new JTabbedPane();
-		JScrollPane spTopics = new JScrollPane(view);
-		tpTopics.add("Tópicos", spTopics);
-		tpTopics.setBorder(new EmptyBorder(5, 5, 5, 5));
-		
 		pnSegments.setLayout(new BoxLayout(pnSegments, BoxLayout.Y_AXIS));
 		JScrollPane spSegments = new JScrollPane(pnSegments);
 		spSegments.setBorder(new CompoundBorder(BorderFactory.createEtchedBorder(EtchedBorder.LOWERED), new EmptyBorder(5, 5, 5, 5) ));
+		spSegments.getVerticalScrollBar().setUnitIncrement(12);
 		
 		JPanel pnResults = new JPanel();
 		pnResults.setLayout(new BorderLayout());
 		pnResults.setBorder(new EmptyBorder(5, 5, 5, 5));
 
-		PnSearchSegments pnSearch = new PnSearchSegments();
+		JPanel pnSearch = createPnSearchSegments(); 
+
+		JPanel pnResultsStatus = new JPanel(new BorderLayout());
+		lbSegmentsCount.setBorder(new EmptyBorder(0, 0, 0, 2));
+		pnResultsStatus.add(lbSegmentsCount, BorderLayout.EAST);
 		
 		pnResults.add(pnSearch, BorderLayout.NORTH);
 		pnResults.add(spSegments, BorderLayout.CENTER);
+		pnResults.add(pnResultsStatus, BorderLayout.SOUTH);
 		
 		
 		JPanel pnBottom = new JPanel();
 		pnBottom.setLayout(new BorderLayout());
 		pnBottom.setPreferredSize(new Dimension(100, 100));
 		pnBottom.setBorder(new EmptyBorder(5, 5, 5, 5));
-		JTextArea taStatus = new JTextArea("Status");
+		JTextArea taStatus = new JTextArea("");
 		JScrollPane spStatus = new JScrollPane(taStatus);
 		pnBottom.add(spStatus);
 		
+		
 		JPanel pnCenter = new JPanel();
 		pnCenter.setLayout(new GridLayout(1, 2));
-		pnCenter.add(tpTopics);
 		pnCenter.add(pnResults);
 		
 		setLayout(new BorderLayout());	
 		add(pnToolBar, BorderLayout.NORTH);
-		add(pnCenter, BorderLayout.CENTER);
-		add(pnBottom, BorderLayout.SOUTH);
+		add(pnCenter , BorderLayout.CENTER);
+		add(pnBottom , BorderLayout.SOUTH);
 		
-
+		
 		ShowStatus.setTextArea(taStatus);
-
+		addListeners();
+		setVisible(true);
+	}
+	
+	@Override
+	public void setVisible(boolean value) {
+	    super.setVisible(value);
+	    tfSearchDescriptors.requestFocusInWindow();
+	}
+	
+	private void addListeners() {
 		
 		btExtractTopics.addActionListener(new ActionListener() {
-			
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				
 		        MeetingMiner.prepareFolders();
-
-				
 				defineConfiguration();
-				
-				MeetingMiner.setView(view.getModel());
-				
 				MeetingMiner.miningTheMeetings();
 			}
 		});
 		
+		btShowTree.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+		        MeetingMiner.prepareFolders();
+		        MeetingMiner.extractDescriptorsAndFiles();
+
+		        FrShowTopicsTree f = new FrShowTopicsTree();
+				f.setTreeRoot(MeetingMiner.createTree());
+				f.setVisible(true);
+			}
+		});
 		
 		btAddToTheBase.addActionListener(new ActionListener() {
 			
@@ -158,43 +178,115 @@ public class TopicsFrame extends JFrame{
 			}
 		});
 		
-		
 		btShowSegments.addActionListener(new ActionListener() {
-			
 			@Override
 			public void actionPerformed(ActionEvent e) {
-
-				MeetingMiner.prepareFolders();	
-					
-				ArrayList<MMTopic> topics = MeetingMiner.extractDescriptorsAndFiles();
-				ArrayList<Segment> segments = Segment.getAllSegments(topics);
-				
-				for(Segment seg : segments) {
-					addSegmentPanel(seg);
-				}
-			
-	            				
+				showSegments(false);
 			}
 		});
 		
+		btSearch.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				showSegments(true);
+			}
+		});
 		
-		setVisible(true);
+	}
+	
+	
+	private ArrayList<MMTopic> filterTopicsByDescriptor(ArrayList<MMTopic> topics, ArrayList<String> descs) {
+		ArrayList<MMTopic> result = new ArrayList<>();
+
+		
+		for(MMTopic t : topics) {
+			ArrayList<String> descriptorsIntersections = t.descriptorsIntersection(descs);
+			if(descriptorsIntersections.size() > 0) {
+				result.add(t);
+			}
+		}
+		
+		return result;
+	}
+	
+	private void showSegments(boolean filter) {
+		MeetingMiner.prepareFolders();	
+		
+		MeetingMiner.extractDescriptorsAndFiles();
+		ArrayList<MMTopic> topics = MeetingMiner.getMMTopics();
+		
+		
+		ArrayList<String> userDescs = new ArrayList<>();
+		for(String s : tfSearchDescriptors.getText().split(" ")) { 
+			userDescs.add(s);
+		}
+		
+		/** Filtra os tópicos que contém algum descritor informado pelo usuário */
+		if (filter) {
+			topics = filterTopicsByDescriptor(topics, userDescs);
+		}
+
+		/** Carrega os segmentos que contém Documentos associados com os tópicos filtrados */
+		/** Para cada tópico associado ao segmento, associa os decritores dos tópico ao segmento */
+		ArrayList<Segment> segments = Segment.getAllSegments(topics);
+
+		for(Segment seg : segments) {
+			seg.matchUserDescriptors(userDescs);
+		}
+		Segment.sortSegmentsByMatcheCount(segments);
+		
+		System.out.println(String.format("==> %d tópicos selecionados %d segmentos encontrados", topics.size(), segments.size()));
+		
+		clearSegments();
+		int count = 0;
+		for(Segment seg : segments) {
+			addSegmentPanel(seg);
+			count++;
+		}
+		lbSegmentsCount.setText(count+" trechos relacionados");
 	}
 	
 
 	private void addSegmentPanel(Segment seg) {
-		JPanel pnSeg = new PnSegment(seg); 
+		PnSegment pnSeg = new PnSegment(seg); 
 		
-		int w = pnSegments.getWidth()-20;
-		int h = 150;		
+		pnSegs.add(pnSeg);
+		
+//		int w = pnSegments.getWidth()-20;
+		int w = 800;
+		int h = 170;		
 		pnSeg.setPreferredSize(new Dimension(w, h));
 		pnSeg.setMaximumSize(new Dimension(w, h));
 	
-		
 		pnSegments.add(pnSeg);
-		
 		pnSegments.revalidate();
 		pnSegments.repaint();
+	}
+	
+	private void clearSegments() {
+		pnSegments.removeAll();
+		pnSegments.revalidate();
+		pnSegments.repaint();
+	}
+	
+	
+	private JPanel createPnSearchSegments() {
+		JPanel pnSearch = new JPanel();
+		pnSearch.setLayout(new BorderLayout());
+		
+		JPanel pnComponents = new JPanel();
+		JLabel lbDescriptor = new JLabel("Digite um assunto: ");
+		pnComponents.add(lbDescriptor);
+		pnComponents.add(tfSearchDescriptors);
+		pnComponents.add(btSearch);
+		
+		tfSearchDescriptors.setMargin(new Insets(3, 4, 4, 3));
+		
+		pnSearch.setBorder(new EmptyBorder(15, 0, 15, 0));
+		
+		
+		pnSearch.add(pnComponents);
+		return pnSearch;
 	}
 	
 	
@@ -229,7 +321,5 @@ public class TopicsFrame extends JFrame{
         
         MeetingMiner.setTopicExtractionconfiguration(configuration);
     }
-    
-
 	
 }

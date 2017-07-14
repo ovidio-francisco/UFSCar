@@ -5,6 +5,7 @@ import java.io.FileFilter;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
+import java.util.Comparator;
 import java.util.HashMap;
 
 import utils.Files;
@@ -14,8 +15,9 @@ public class Segment {
 	private File originalDocument;
 	private File segmentDoc;
 	private String text = "";
-	private ArrayList<MMTopic> relationedTopics = new ArrayList<>();        // Tópicos que indicam estar relacionados com esse segmento 
+	private ArrayList<MMTopic> relationedTopics = new ArrayList<>();         // Tópicos que indicam estar relacionados com esse segmento 
 	private HashMap<String, Integer> topicDescriptors = new HashMap<>();     // Descritores relacionados com esse segmento
+	private ArrayList<String> matches = new ArrayList<>();                   // Descritores coincidentes com a pesquisa do usuário
 
 	
 	public static ArrayList<Segment> getAllSegments(ArrayList<MMTopic> topics) {
@@ -25,27 +27,52 @@ public class Segment {
 		File[] segmentDocs = listFiles(folder);
 		
 		for(File segmentDoc : segmentDocs) {
-			System.out.println("Criando objeto Segment para :" + segmentDoc);
-			
-			Segment segment = new Segment();
-			segment.segmentDoc = segmentDoc;
-			segment.originalDocument = extractOriginalDocFromSegmentDoc(segmentDoc);
-			segment.text = Files.loadTxtFile(segmentDoc).trim();
 			
 			for(MMTopic topic : topics) {
 				if (topic.containsSegmentDoc(new File(segmentDoc.getName()))) {
+					Segment segment = new Segment();
+					segment.segmentDoc = segmentDoc;
+					segment.originalDocument = extractOriginalDocFromSegmentDoc(segmentDoc);
+					segment.text = Files.loadTxtFile(segmentDoc).trim();
 					segment.relationedTopics.add(topic);
 					
 					for(String descriptor : topic.getDescriptors()) {
 						segment.addDescriptor(descriptor);
 					}
+
+					result.add(segment);
 				}
 			}
-			
-			result.add(segment);
 		}
 		
 		return result;
+	}
+	
+	/**	Compare the users descriptors and store the matches */
+	public void matchUserDescriptors(ArrayList<String> descs) {
+		this.matches.addAll(topicDescriptors.keySet());
+		this.matches.retainAll(descs);
+	}
+	
+	public static void sortSegmentsByMatcheCount(ArrayList<Segment> segs) {
+		segs.sort(new Comparator<Segment>() {
+			@Override
+			public int compare(Segment seg1, Segment seg2) {
+				return seg2.matcheCount() - seg1.matcheCount();
+			}
+		});
+	}
+	
+	public ArrayList<String> getMatches() {
+		return matches;
+	}
+
+	public int matcheCount() {
+		return matches.size();
+	}
+	
+	public int descriptorsCount() {
+		return topicDescriptors.size();
 	}
 	
 	private static File extractOriginalDocFromSegmentDoc(File segmentDoc) {

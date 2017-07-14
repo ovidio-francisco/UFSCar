@@ -9,11 +9,15 @@ public class MMTopic {
 	private ArrayList<File> segmentsDoc   = new ArrayList<>();
 	
 
-//	public static ArrayList<MMTopic> getTopics(StringBuffer[] descTopics, StringBuffer[] docsPerTopics, int numTopics,	int[] orderedTopics) {
-//
-//
-//		return result;
-//	}
+	
+	public ArrayList<String> descriptorsIntersection(ArrayList<String> descs) {
+		ArrayList<String> result = new ArrayList<>();
+		
+		result.addAll(descriptors);
+		result.retainAll(descs);
+		
+		return result;
+	}
 	
 	
 	public boolean containsDescriptor(String desc) {

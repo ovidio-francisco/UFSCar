@@ -1,19 +1,18 @@
 package meetingMiner;
 
-import topicExtraction.TET.TopicExtraction;
-import topicExtraction.TETConfigurations.TopicExtractionConfiguration;
-import topicExtraction.TETConfigurations.TopicExtractionParameters;
-import topicExtraction.TETPreprocessing.TextRepresentation;
 import java.io.BufferedReader;
-import java.io.BufferedWriter;
 import java.io.File;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
-import javax.swing.tree.DefaultMutableTreeNode;
-import javax.swing.tree.DefaultTreeModel;
 
+import javax.swing.tree.DefaultMutableTreeNode;
+
+import topicExtraction.TET.TopicExtraction;
+import topicExtraction.TETConfigurations.TopicExtractionConfiguration;
+import topicExtraction.TETConfigurations.TopicExtractionParameters;
+import topicExtraction.TETPreprocessing.TextRepresentation;
 import topicExtraction.mmParameters.M4MArffGenerationParameters;
 import topicExtraction.mmParameters.M4MRepresentationParameters;
 import topicExtraction.mmParameters.M4MTopicExtractionParameters;
@@ -23,25 +22,22 @@ import utils.Files;
 import utils.ShowStatus;
 
 /**
- *
  * @author ovidiojf
  */
 public class MeetingMiner {
 
+	private static StringBuffer[] descTopics;
+	private static StringBuffer[] docsPerTopics;
+	private static int numTopics;
+	private static int[] orderedTopics;
+	
+	
     public static void prepareFolders() {
-//        docFolder = new File(M4MUtils.searchFolder());
-        
-//    	arfFolder = new File(docFolder.getAbsolutePath() + "/arff");
-//      txtFolder = new File(docFolder.getAbsolutePath() + "/txt");
-//      outFolder = new File(docFolder.getAbsoluteFile() + "/out");
     
     	arfFolder = new File(Files.getSegmentedDocs().getAbsolutePath() + "/arff");
-//      txtFolder = new File(docFolder.getAbsolutePath() + "/txt");
     	outFolder = new File(Files.getSegmentedDocs().getAbsoluteFile() + "/out");
-
         
         foldersOK = true;
-
         
         getRepresentationParameters().setDirIn(Files.getSegmentedDocs());
         getRepresentationParameters().setDirOut(arfFolder);
@@ -49,47 +45,28 @@ public class MeetingMiner {
         getExtractionParameters().setDirEntrada(arfFolder.getAbsolutePath());
         getExtractionParameters().setDirSaida(outFolder.getAbsolutePath());
         
+        
+        
     }
     
     public static void miningTheMeetings() {
         long startTime = new Date().getTime();
 
-        M4MShowStatus.setProgress(0);
-        
         if(!arfFolder.exists()) arfFolder.mkdir();
-//        if(!txtFolder.exists()) txtFolder.mkdir();
         if(!outFolder.exists()) outFolder.mkdir();
         
-        M4MShowStatus.setProgress(2);        
-        
-//        extractRawTxt();
-        M4MShowStatus.setProgress(10);
-        
         represent();
-        M4MShowStatus.setProgress(30);
-          
         extractTopics();
-        M4MShowStatus.setProgress(40);
         
         ShowStatus.setMessage("Extração de tópicos concluída");
-        MeetingMiner.extractDescriptorsAndFiles();
+        extractDescriptorsAndFiles();
         
-        saveTopics();
+//        saveTopics();
 
-        M4MShowStatus.setProgress(100);
-        
-//        cleanFolders();
 
         ShowStatus.setMessage("Concluído em " + new SimpleDateFormat("mm:ss").format(new Date().getTime() - startTime));
-        
     }
     
-//    public static void extractRawTxt() {
-//
-////        M4MTextExtractor.extractTxtFromAllPdfs(docFolder, txtFolder);
-////        M4MTextExtractor.extractTxtFromAllFiles(docFolder, txtFolder);
-//
-//    }
     
     public static void represent() {
         
@@ -108,7 +85,7 @@ public class MeetingMiner {
     
     }
     
-    public static ArrayList<MMTopic> extractDescriptorsAndFiles() { // antigo visualize by ojf
+    public static void extractDescriptorsAndFiles() { // antigo visualize -- altered by ojf
         try{
             ShowStatus.setMessage("Reading document-term matrix...");
                  
@@ -215,79 +192,69 @@ public class MeetingMiner {
             ShowStatus.setProgress(80);
             
             ShowStatus.setMessage("Descriptors extracted and documents assigned to topics");
-            ShowStatus.setMessage("Generating the topic tree...");
+            
+            
+            MeetingMiner.descTopics = descTopics;
+            MeetingMiner.docsPerTopics = docsPerTopics;
+            MeetingMiner.numTopics = numTopics;
+            MeetingMiner.orderedTopics = orderedTopics;
             
            
-            if (view instanceof DefaultTreeModel) {
-                
-                DefaultMutableTreeNode root = GererateTree(descTopics, docsPerTopics, numTopics, orderedTopics);
-
-    //            model = (DefaultTreeModel)tView.getModel();
-                ((DefaultTreeModel)view).setRoot(root);
-                ((DefaultTreeModel)view).reload(root);
-            }
-            
-//            ArrayList<MMTopic> topics = MMTopic.getTopics(descTopics, docsPerTopics, numTopics, orderedTopics);
-            
-
-            
-            
-//          ======================================================================
-            
-/*            Criação dos Objetos que encapsulam os descritores e os documentos       */
-            
-//          ======================================================================
-
-            ArrayList<MMTopic> result = new ArrayList<>();
-    		
-            for(int i=0;i<numTopics;i++){
-                
-            	MMTopic topic = new MMTopic();
-            	
-                int indTopic = orderedTopics[i];
-                
-                for(String desc: descTopics[indTopic].toString().split(";")) {
-                	if (!desc.trim().isEmpty())
-//                		topic.descriptors.add(desc.trim());
-                	    topic.addDescriptor(desc);
-                }
-                
-                for(String doc : docsPerTopics[indTopic].toString().split(";")) {
-//                    topic.segmentsdoc.add(new File(doc));
-                    topic.addSegmentDoc(new File(doc));
-                }
-
-                result.add(topic);
-            }
-            
-            
-            
-            
-//			ArrayList<Segment> segments = Segment.getAllSegments(topics);
-			
-			
-//			int count = 1;
-//			for(MMTopic t : topics) {
-//				System.out.println(String.format("Tópico [%d]\n%s", count++, t));
-//			}
-			
-//			for(Segment seg : segments) {
-//				System.out.println("\n===========================================\n"+seg);
-//			}
-
-
-            M4MShowStatus.setProgress(90);
-            ShowStatus.setMessage("Tree generated");
-            
-            
-            return result;
+//            if (view instanceof DefaultTreeModel) {
+//
+//            	DefaultMutableTreeNode root = GererateTree(descTopics, docsPerTopics, numTopics, orderedTopics);
+//
+//                ((DefaultTreeModel)view).setRoot(root);
+//                ((DefaultTreeModel)view).reload(root);
+//            }
             
         }catch(IOException | NumberFormatException e){
             System.err.println("Erro ao carregar as matrizes de tópicos");
             e.printStackTrace();
-            return null;
+        }
+    }
+
+    
+    public static DefaultMutableTreeNode createTree() {
+//    	DefaultMutableTreeNode root = GererateTree(descTopics, docsPerTopics, numTopics, orderedTopics);
+//    	JTree tree = new JTree();
+//    	((DefaultTreeModel)tree.getModel()).setRoot(root);
+//    	((DefaultTreeModel)tree.getModel()).reload();
+//    	return tree;
+        ShowStatus.setMessage("Generating the topic tree...");
+        ShowStatus.setMessage("Tree generated");
+    	return GererateTree(descTopics, docsPerTopics, numTopics, orderedTopics);
+    }
+    
+/**
+ *  ======================================================================
+ *  Criação dos Objetos que encapsulam os descritores e os documentos       
+ *  ======================================================================
+ *                                                                       */
+    public static ArrayList<MMTopic> getMMTopics() {
+        ArrayList<MMTopic> result = new ArrayList<>();
+		
+        for(int i=0;i<numTopics;i++){
+            
+        	MMTopic topic = new MMTopic();
+        	
+            int indTopic = orderedTopics[i];
+            
+            for(String desc: descTopics[indTopic].toString().split(";")) {
+            	if (!desc.trim().isEmpty())
+//            		topic.descriptors.add(desc.trim());
+            	    topic.addDescriptor(desc);
+            }
+            
+            for(String doc : docsPerTopics[indTopic].toString().split(";")) {
+//                topic.segmentsdoc.add(new File(doc));
+                topic.addSegmentDoc(new File(doc));
+            }
+
+            result.add(topic);
         }
         
+        return result;
     }
     
     public static void cleanFolders() {
@@ -296,50 +263,50 @@ public class MeetingMiner {
         M4MFiles.deleteFolder(outFolder);        
     } 
 
-    public static void saveTopics() {
-        
-        DefaultTreeModel model = (DefaultTreeModel)view; 
-        String filename = outFolder.getPath()+"/topics.txt";
-        
-        if (MeetingMiner.getTopicExtractionconfiguration().isPLSA()) {
-            filename = filename + " - PLSA";
-        }
-        if (MeetingMiner.getTopicExtractionconfiguration().isKMeans()) {
-            filename = filename + " - kMeans";
-        }
-        if (MeetingMiner.getTopicExtractionconfiguration().isBisectingKMeans()) {
-            filename = filename + " - BisectingkMeans";
-        }
-        if (MeetingMiner.getTopicExtractionconfiguration().isLDAGibbs()) {
-            filename = filename + " - LDA Gibbs";
-        }
-        
-        if (MeetingMiner.getTopicExtractionconfiguration().isAutoNumTopics()) {
-            filename = filename + " - Non Parametric";
-        }
-        
-        BufferedWriter out = M4MFiles.getBufferedWriter(new File(filename));
-
-        try {
-
-            for(int i=0; i < model.getChildCount(model.getRoot()); i++) {
-                Object node = model.getChild(model.getRoot(), i);
-
-                if(!((DefaultMutableTreeNode)node).isLeaf()) {
-                    out.write("Topic : " + node);    
-                    out.newLine();
-                }
-            }
-
-            out.flush();
-            out.close();
-            
-        } catch (IOException ex) {
-            ex.printStackTrace();
-        }
-       
-        ShowStatus.setMessage("Saving topics to "+filename);
-    }
+//    public static void saveTopics() {
+//        
+//        DefaultTreeModel model = (DefaultTreeModel)view; 
+//        String filename = outFolder.getPath()+"/topics.txt";
+//        
+//        if (MeetingMiner.getTopicExtractionconfiguration().isPLSA()) {
+//            filename = filename + " - PLSA";
+//        }
+//        if (MeetingMiner.getTopicExtractionconfiguration().isKMeans()) {
+//            filename = filename + " - kMeans";
+//        }
+//        if (MeetingMiner.getTopicExtractionconfiguration().isBisectingKMeans()) {
+//            filename = filename + " - BisectingkMeans";
+//        }
+//        if (MeetingMiner.getTopicExtractionconfiguration().isLDAGibbs()) {
+//            filename = filename + " - LDA Gibbs";
+//        }
+//        
+//        if (MeetingMiner.getTopicExtractionconfiguration().isAutoNumTopics()) {
+//            filename = filename + " - Non Parametric";
+//        }
+//        
+//        BufferedWriter out = M4MFiles.getBufferedWriter(new File(filename));
+//
+//        try {
+//
+//            for(int i=0; i < model.getChildCount(model.getRoot()); i++) {
+//                Object node = model.getChild(model.getRoot(), i);
+//
+//                if(!((DefaultMutableTreeNode)node).isLeaf()) {
+//                    out.write("Topic : " + node);    
+//                    out.newLine();
+//                }
+//            }
+//
+//            out.flush();
+//            out.close();
+//            
+//        } catch (IOException ex) {
+//            ex.printStackTrace();
+//        }
+//       
+//        ShowStatus.setMessage("Saving topics to "+filename);
+//    }
     
 
     private static DefaultMutableTreeNode GererateTree(StringBuffer[] descTopics, StringBuffer[] docsPerTopics, int numTopics, int[] orderedTopics){
@@ -434,7 +401,7 @@ public class MeetingMiner {
     private static boolean algorithmsOk;
 
     
-    private static Object view = null;
+//    private static Object view = null;
     
     private static double[][] docTopic;
     private static double[][] termTopic;
@@ -526,13 +493,13 @@ public class MeetingMiner {
         return new File(arfFolder.getAbsolutePath() + "/representacao.arff");
     }
 
-    public static Object getView() {
-        return view;
-    }
-
-    public static void setView(Object view) {
-        MeetingMiner.view = view;
-    }
+//    public static Object getView() {
+//        return view;
+//    }
+//
+//    public static void setView(Object view) {
+//        MeetingMiner.view = view;
+//    }
 
     public static TopicExtractionConfiguration getTopicExtractionconfiguration() {
         return topicExtractionconfiguration;

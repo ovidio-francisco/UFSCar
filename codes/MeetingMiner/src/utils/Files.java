@@ -221,19 +221,11 @@ public class Files {
 	
 	
 	public static void addToTheBase(File folder) {
-		File files[] = folder.listFiles(new FileFilter() {
-			
-			@Override
-			public boolean accept(File pathname) {
-//				return Files.getFileExtension(pathname).equals("txt");
-				return true;
-			}
-		});		
-		
+		ArrayList<File> files = new ArrayList<>();
+		listDocs(folder, files);
 		
 		for(File f : files) {
 			Files.copy(f, originalDocs);
-			
 		}
 	}
 
