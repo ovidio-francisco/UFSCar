@@ -46,7 +46,7 @@ public abstract class AbstractSegmenter implements Segmenter {
 	}
 
 	@Override
-	public void segmentToFiles(File source, File Folder) {
+	public int segmentToFiles(File source, File Folder) {
 		ArrayList<String> segs = getSegments(source);
 		
 		int i=1;
@@ -58,6 +58,7 @@ public abstract class AbstractSegmenter implements Segmenter {
 		
 		ShowStatus.setMessage(String.format("Segmentando o arquivo %s em %d partes.", source, segs.size()));
 		
+		return segs.size();
 	}
 	
 	

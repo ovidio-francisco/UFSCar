@@ -100,7 +100,7 @@ public class TopicsFrame extends JFrame{
 		
 		JPanel pnBottom = new JPanel();
 		pnBottom.setLayout(new BorderLayout());
-		pnBottom.setPreferredSize(new Dimension(100, 100));
+		pnBottom.setPreferredSize(new Dimension(100, 200));
 		pnBottom.setBorder(new EmptyBorder(5, 5, 5, 5));
 		JTextArea taStatus = new JTextArea("");
 		JScrollPane spStatus = new JScrollPane(taStatus);
@@ -128,53 +128,79 @@ public class TopicsFrame extends JFrame{
 	    tfSearchDescriptors.requestFocusInWindow();
 	}
 	
+	private void extractTopics() {
+		
+		MeetingMiner.prepareFolders();
+		defineConfiguration();
+		MeetingMiner.miningTheMeetings();
+	}
+	
+	private void showTree() {
+		
+		MeetingMiner.prepareFolders();
+		MeetingMiner.extractDescriptorsAndFiles();
+		
+		FrShowTopicsTree f = new FrShowTopicsTree();
+		f.setTreeRoot(MeetingMiner.createTree());
+		f.setVisible(true);
+	}
+	
+	private void addToTheBase() {
+		JFileChooser fc = new JFileChooser();
+		fc.setCurrentDirectory(new File("./.."));
+		fc.setFileSelectionMode(JFileChooser.DIRECTORIES_ONLY);
+		
+		
+	 	int option =  fc.showOpenDialog(null);
+	 	if (option != JFileChooser.APPROVE_OPTION) return;
+	 	
+		File folder = fc.getSelectedFile();
+		
+//		=========================================================================
+		
+		Files.prepareBaseFolders();
+		int filesAdded = Files.addToTheBase(folder);
+		Files.extractTextToTheBase();
+		
+		Segmenter segmenter = new TextTilingBR();
+		
+		int segmentsExtracteds = Files.extractSegmentsToTheBase(segmenter);
+		
+		ShowStatus.setMessage("Concluído!");
+		ShowStatus.setMessage(filesAdded + " arquivos adicionados a base");
+		ShowStatus.setMessage(segmentsExtracteds + " segmentos extratídos");
+	}
+	
 	private void addListeners() {
 		
 		btExtractTopics.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) {
-		        MeetingMiner.prepareFolders();
-				defineConfiguration();
-				MeetingMiner.miningTheMeetings();
+				new Thread() {
+			        @Override
+			        public void run(){
+			        	extractTopics();
+			        }
+				}.start();
 			}
 		});
 		
 		btShowTree.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) {
-		        MeetingMiner.prepareFolders();
-		        MeetingMiner.extractDescriptorsAndFiles();
-
-		        FrShowTopicsTree f = new FrShowTopicsTree();
-				f.setTreeRoot(MeetingMiner.createTree());
-				f.setVisible(true);
+				showTree();
 			}
 		});
 		
 		btAddToTheBase.addActionListener(new ActionListener() {
-			
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				JFileChooser fc = new JFileChooser();
-				fc.setCurrentDirectory(new File("./.."));
-				fc.setFileSelectionMode(JFileChooser.DIRECTORIES_ONLY);
-				
-				
-			 	int option =  fc.showOpenDialog(null);
-			 	if (option != JFileChooser.APPROVE_OPTION) return;
-			 	
-				File folder = fc.getSelectedFile();
-				
-//				=========================================================================
-				
-				Files.prepareBaseFolders();
-				Files.addToTheBase(folder);
-				Files.extractTextToTheBase();
-				
-				Segmenter segmenter = new TextTilingBR();
-				
-				Files.extractSegmentsToTheBase(segmenter);
-				
+				new Thread() {
+			        @Override
+			        public void run(){
+			        	addToTheBase();
+			        }
+				}.start();
 			}
 		});
 		
@@ -191,7 +217,6 @@ public class TopicsFrame extends JFrame{
 				showSegments(true);
 			}
 		});
-		
 	}
 	
 	
@@ -321,5 +346,7 @@ public class TopicsFrame extends JFrame{
         
         MeetingMiner.setTopicExtractionconfiguration(configuration);
     }
+    
+ 
 	
 }

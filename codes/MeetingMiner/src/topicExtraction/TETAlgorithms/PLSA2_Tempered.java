@@ -5,13 +5,11 @@
  */
 package topicExtraction.TETAlgorithms;
 
-import topicExtraction.TETStructures.IndexValue;
-import topicExtraction.TETStructures.Neighbor;
-import topicExtraction.mmUtils.M4MShowStatus;
-
 import java.util.ArrayList;
 import java.util.HashMap;
 
+import topicExtraction.TETStructures.IndexValue;
+import topicExtraction.TETStructures.Neighbor;
 import utils.ShowStatus;
 import weka.core.Instances;
 

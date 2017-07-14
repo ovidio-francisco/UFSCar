@@ -5,11 +5,13 @@
  */
 package topicExtraction.TETAlgorithms.Parametric;
 
+import java.util.ArrayList;
+import java.util.HashMap;
+
 import topicExtraction.TETAlgorithms.TopicExtractorOld;
 import topicExtraction.TETStructures.IndexValue;
 import topicExtraction.TETStructures.Neighbor;
-import java.util.ArrayList;
-import java.util.HashMap;
+import utils.ShowStatus;
 import weka.core.Instances;
 
 /**
@@ -76,23 +78,23 @@ public class PLSA2_Tempered_Parametric extends TopicExtractorOld{
         double currentLog = 0;
         
         while(sair == false){
-            System.out.println("Iteração " + numIt + "---");
+        	ShowStatus.setMessage("Iteração " + numIt + "---");
             
-            System.out.println("- E-Step");
+        	ShowStatus.setMessage("- E-Step");
             EStep(probTopic, probDocTopic, probTermTopic, probTopicDocTerm, adjListDocTerm, beta);
             
             beta = beta * 0.8;
-            System.out.println("---Beta:" + beta);
+            ShowStatus.setMessage("---Beta:" + beta);
             
-            System.out.println("- M-Step");
+            ShowStatus.setMessage("- M-Step");
             MStep(probTopic, probDocTopic, probTermTopic, probTopicDocTerm, adjListTermDoc, adjListDocTerm, posTermDoc);
             
             double logLikelihood = getLogLikelihood(probTopic, probDocTopic, probTermTopic, adjListDocTerm);
-            System.out.println("---LogLikelihood: " + logLikelihood);
+            ShowStatus.setMessage("---LogLikelihood: " + logLikelihood);
             
             if(numIt > 0){
                 currentLog = logLikelihood;
-                System.out.println("Difference: " + Math.abs(currentLog - previousLog));
+                ShowStatus.setMessage("Difference: " + Math.abs(currentLog - previousLog));
                 if(Math.abs(currentLog - previousLog) < this.getMinDifference()){
                     sair = true;
                 }
@@ -127,7 +129,7 @@ public class PLSA2_Tempered_Parametric extends TopicExtractorOld{
     
     private void MStep(double[] probTopic, double[][] probDocTopic, double[][] probTermTopic, double[][][] probTopicDocTerm, Neighbor[] adjListTermDoc, Neighbor[] adjListDocTerm, HashMap<String,Integer> posTermDoc){
         //p(w|z) => probTermTopic
-        System.out.println("--P(term|topic)");
+    	ShowStatus.setMessage("--P(term|topic)");
         for(int topic=0;topic<getNumTopics();topic++){
             double norm = 0;
             for(int term=1;term<getNumTerms();term++){
@@ -147,7 +149,7 @@ public class PLSA2_Tempered_Parametric extends TopicExtractorOld{
         }
         
         //p(d|z) => probDocTopic
-        System.out.println("--P(document|topic)");
+        ShowStatus.setMessage("--P(document|topic)");
         for(int topic=0;topic<getNumTopics();topic++){
             double norm = 0;
             for(int doc=0;doc<getNumDocs();doc++){
@@ -165,7 +167,7 @@ public class PLSA2_Tempered_Parametric extends TopicExtractorOld{
         }
         
         //p(z) => probTopic
-        System.out.println("--P(topic)");
+        ShowStatus.setMessage("--P(topic)");
         double norm=0;
         for(int topic=0;topic<getNumTopics();topic++){
             double sum=0;

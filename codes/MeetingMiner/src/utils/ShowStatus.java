@@ -3,6 +3,7 @@ package utils;
 import javax.swing.JLabel;
 import javax.swing.JProgressBar;
 import javax.swing.JTextArea;
+import javax.swing.text.BadLocationException;
 
 
 public class ShowStatus {
@@ -14,13 +15,20 @@ public class ShowStatus {
 
 	public static void setMessage(String message) {
         
-        if(label != null) label.setText(message);
+		System.out.println(message);
+
+		if(label != null) label.setText(message);
         
         if (textArea != null) {
             textArea.append(message + "\n");
+            try {
+				textArea.setCaretPosition(textArea.getLineStartOffset(textArea.getLineCount() - 1));
+			} catch (BadLocationException e) {
+				e.printStackTrace();
+			}
+            
         }
         
-        System.out.println(message);
     }
 
     public static void setProgress(int value) {

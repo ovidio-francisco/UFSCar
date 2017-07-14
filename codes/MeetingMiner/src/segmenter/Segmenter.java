@@ -20,6 +20,6 @@ public interface Segmenter {
 	public String getAlgorithmName();
 	public String paramsToString();
 	
-	public void segmentToFiles(File source, File Folder);
+	public int segmentToFiles(File source, File Folder);
 
 }

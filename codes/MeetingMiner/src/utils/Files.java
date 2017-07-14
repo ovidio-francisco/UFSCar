@@ -220,13 +220,15 @@ public class Files {
 	}
 	
 	
-	public static void addToTheBase(File folder) {
+	public static int addToTheBase(File folder) {
 		ArrayList<File> files = new ArrayList<>();
 		listDocs(folder, files);
 		
 		for(File f : files) {
 			Files.copy(f, originalDocs);
 		}
+		
+		return files.size();
 	}
 
 	public static void extractTextToTheBase() {
@@ -234,7 +236,7 @@ public class Files {
 	}
 
 
-	public static void extractSegmentsToTheBase(Segmenter segmenter) {
+	public static int extractSegmentsToTheBase(Segmenter segmenter) {
 		File[] files = textDocs.listFiles(new FileFilter() {
 			@Override
 			public boolean accept(File file) {
@@ -242,10 +244,13 @@ public class Files {
 			}
 		});
 		
+		int count = 0;
+		
 		for(File f : files) {
-			segmenter.segmentToFiles(f, segmentedDocs);
+			count  += segmenter.segmentToFiles(f, segmentedDocs);
 		}
 		
+		return count;
 	}
 
 

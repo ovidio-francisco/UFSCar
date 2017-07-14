@@ -5,12 +5,10 @@
  */
 package topicExtraction.TETAlgorithms;
 
-import topicExtraction.TETStructures.IndexValue;
-import topicExtraction.TETStructures.Neighbor;
-import topicExtraction.mmUtils.M4MShowStatus;
-
 import java.util.ArrayList;
 
+import topicExtraction.TETStructures.IndexValue;
+import topicExtraction.TETStructures.Neighbor;
 import utils.ShowStatus;
 import weka.core.Instances;
 
@@ -18,7 +16,6 @@ import weka.core.Instances;
  *
  * @author Gaia
  */
-@SuppressWarnings("unused")
 public class PLSA extends TopicExtractorOld{
     
     private int numMaxInteracoes;

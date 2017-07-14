@@ -8,9 +8,6 @@
 
 package topicExtraction.TETPreprocessing;
 
-import topicExtraction.TETStructures.TermValue;
-import topicExtraction.TETStructures.FeatureList;
-import topicExtraction.TETIO.ListFiles;
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.IOException;
@@ -23,15 +20,16 @@ import java.util.Locale;
 import java.util.Set;
 
 import meetingMiner.MeetingMiner;
+import ptstemmer.Stemmer;
+import ptstemmer.implementations.OrengoStemmer;
+import topicExtraction.TETIO.ListFiles;
+import topicExtraction.TETStructures.FeatureList;
+import topicExtraction.TETStructures.TermValue;
 import topicExtraction.mmParameters.M4MArffGenerationParameters;
 import topicExtraction.mmParameters.M4MRepresentationParameters;
 import topicExtraction.mmUtils.M4MFiles;
-import topicExtraction.mmUtils.M4MShowStatus;
 import utils.ShowStatus;
-import ptstemmer.Stemmer;
-import ptstemmer.implementations.OrengoStemmer;
 
-@SuppressWarnings("unused")
 public class TextRepresentation {
     
 //    public static void Represent(File dirIn, File dirOut, String relationName, boolean dirClass, String language, boolean stemming, boolean removeStopWords, boolean binary, boolean TF, boolean TFIDF, boolean sparse, boolean cutDF, int dfMin, int topRanked, boolean replaceStem){

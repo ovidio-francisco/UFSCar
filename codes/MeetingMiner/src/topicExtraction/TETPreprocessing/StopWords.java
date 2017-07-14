@@ -9,12 +9,11 @@ package topicExtraction.TETPreprocessing;
 
 import java.io.RandomAccessFile;
 import java.util.ArrayList;
+
 import javax.swing.JOptionPane;
 
-import topicExtraction.mmUtils.M4MShowStatus;
 import utils.ShowStatus;
 
-@SuppressWarnings("unused")
 public class StopWords {
     static ArrayList<String> list = new ArrayList<String>();
     

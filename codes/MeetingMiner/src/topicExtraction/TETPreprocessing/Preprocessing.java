@@ -7,21 +7,16 @@
 
 package topicExtraction.TETPreprocessing;
 
-import topicExtraction.TETStructures.TermValue;
-import topicExtraction.mmUtils.M4MShowStatus;
-
 import java.io.File;
-import java.io.RandomAccessFile;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Set;
-import javax.swing.JOptionPane;
 
+import ptstemmer.Stemmer;
+import topicExtraction.TETStructures.TermValue;
 import utils.Files;
 import utils.ShowStatus;
-import ptstemmer.Stemmer;
 
-@SuppressWarnings("unused")
 public class Preprocessing {
     
     /* Function to extract features from a textual document

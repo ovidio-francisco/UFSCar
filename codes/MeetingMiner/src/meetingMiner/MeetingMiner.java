@@ -17,7 +17,6 @@ import topicExtraction.mmParameters.M4MArffGenerationParameters;
 import topicExtraction.mmParameters.M4MRepresentationParameters;
 import topicExtraction.mmParameters.M4MTopicExtractionParameters;
 import topicExtraction.mmUtils.M4MFiles;
-import topicExtraction.mmUtils.M4MShowStatus;
 import utils.Files;
 import utils.ShowStatus;
 
@@ -119,7 +118,7 @@ public class MeetingMiner {
                 
             }
             fileDocTopic.close();
-            M4MShowStatus.setProgress(40);
+            ShowStatus.setProgress(40);
 
             
 //            double[] topicRelevance = new double[numTopics];
@@ -179,7 +178,7 @@ public class MeetingMiner {
                 countTerm++;
             }
             fileTermTopic.close();
-            M4MShowStatus.setProgress(60);
+            ShowStatus.setProgress(60);
 
             
             ShowStatus.setMessage("Matrices loaded");
