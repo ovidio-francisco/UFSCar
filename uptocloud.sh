@@ -55,7 +55,7 @@ if [  "$(git status)" == *"up-to-date"*] ; then
 	echo "done!"
 else
 
-	"Something was wrong!" | cowsay -f turtle
+	cowsay "Something was wrong!" -f turtle
 
 	echo ""
 fi
