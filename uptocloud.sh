@@ -50,7 +50,7 @@ echo ""
 status=$(git status)
 echo "$status"
 
-if [ "$status" = *"up-to-date"* ] ; then 
+if [ "$status" == *"up-to-date"* ] ; then 
 
 	fortune | cowsay -f dragon
 
