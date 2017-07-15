@@ -47,7 +47,7 @@ git push -u origin master
 
 echo ""
 
-if [ -z "$(git status --porcelain)" ];then 
+if [ -z "$(git status --porcelain)" ] ; then 
 
 	fortune | cowsay -f dragon
 
