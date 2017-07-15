@@ -38,28 +38,32 @@ echo ""
 git add .
 git commit -m "$1"
 
-echo ""
-echo "commited"
-echo ""
+if [ $? -eq 0 ] ; then
+	echo ""
+	echo "commited"
+	echo ""
+fi
+
+
 
 
 git push -u origin master
-
 echo ""
+
+
 
 status=$(git status)
 echo -e "\nstatus:\n$status"
 
 if [[ "$status" == *"up-to-date"* ]] ; then 
 
+	echo ""
 	fortune | cowsay -f dragon
-
 	echo ""
 	echo "done!"
 else
 
 	cowsay -f duck "Something was wrong!" 
-
 	echo ""
 fi
 
