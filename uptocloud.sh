@@ -47,7 +47,10 @@ git push -u origin master
 
 echo ""
 
-if [ "$(git status)" == *"up-to-date"* ] ; then 
+status=$(git status)
+echo "$status"
+
+if [ "$status" = *"up-to-date"* ] ; then 
 
 	fortune | cowsay -f dragon
 
