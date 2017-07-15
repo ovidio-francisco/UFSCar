@@ -45,13 +45,22 @@ echo ""
 
 git push -u origin master
 
-
-if [ $? -eq 0 ] ; then echo "Foooii!" ; fi
-
-
 echo ""
 
-fortune | cowsay -f dragon
+if [ $? -eq 0 ] then 
 
-echo ""
-echo "done!"
+	fortune | cowsay -f dragon
+
+	echo ""
+	echo "done!"
+else
+	"Something was wrong!" | cowsay -f turtle
+	echo ""
+fi
+
+
+
+
+
+
+
