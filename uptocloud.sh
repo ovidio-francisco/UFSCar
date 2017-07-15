@@ -47,14 +47,16 @@ git push -u origin master
 
 echo ""
 
-if [ $? -eq 0 ] then 
+if [ $? -eq 0 ] ; then 
 
 	fortune | cowsay -f dragon
 
 	echo ""
 	echo "done!"
 else
+
 	"Something was wrong!" | cowsay -f turtle
+
 	echo ""
 fi
 
