@@ -45,6 +45,10 @@ echo ""
 
 git push -u origin master
 
+
+if [ $? -eq 0 ] ; then echo "Foooii!" ; fi
+
+
 echo ""
 
 fortune | cowsay -f dragon
