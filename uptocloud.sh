@@ -42,6 +42,10 @@ if [ $? -eq 0 ] ; then
 	echo ""
 	echo "commited"
 	echo ""
+else
+	echo ""
+	echo "commit failed!"
+	echo ""
 fi
 
 
