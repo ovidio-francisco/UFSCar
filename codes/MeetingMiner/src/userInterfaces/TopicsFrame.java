@@ -17,6 +17,7 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
+import javax.swing.JSplitPane;
 import javax.swing.JTextArea;
 import javax.swing.JTextField;
 import javax.swing.JToolBar;
@@ -85,7 +86,6 @@ public class TopicsFrame extends JFrame{
 		
 		JPanel pnResults = new JPanel();
 		pnResults.setLayout(new BorderLayout());
-		pnResults.setBorder(new EmptyBorder(5, 5, 5, 5));
 
 		JPanel pnSearch = createPnSearchSegments(); 
 
@@ -101,7 +101,7 @@ public class TopicsFrame extends JFrame{
 		JPanel pnBottom = new JPanel();
 		pnBottom.setLayout(new BorderLayout());
 		pnBottom.setPreferredSize(new Dimension(100, 200));
-		pnBottom.setBorder(new EmptyBorder(5, 5, 5, 5));
+		pnBottom.setBorder(new EmptyBorder(5, 0, 5, 0));
 		JTextArea taStatus = new JTextArea("");
 		JScrollPane spStatus = new JScrollPane(taStatus);
 		pnBottom.add(spStatus);
@@ -111,10 +111,17 @@ public class TopicsFrame extends JFrame{
 		pnCenter.setLayout(new GridLayout(1, 2));
 		pnCenter.add(pnResults);
 		
+		JSplitPane splitPane = new JSplitPane(JSplitPane.VERTICAL_SPLIT, pnCenter, pnBottom);
+		splitPane.setBorder(new EmptyBorder(0, 5, 0, 5));
+		splitPane.setDividerLocation(getHeight()); // try to put on de very botton position
+		pnCenter.setMinimumSize(new Dimension(100, 150));
+		pnBottom.setMinimumSize(new Dimension(100,  30));
+
 		setLayout(new BorderLayout());	
 		add(pnToolBar, BorderLayout.NORTH);
-		add(pnCenter , BorderLayout.CENTER);
-		add(pnBottom , BorderLayout.SOUTH);
+		add(splitPane, BorderLayout.CENTER);
+//		add(pnCenter , BorderLayout.CENTER);
+//		add(pnBottom , BorderLayout.SOUTH);
 		
 		
 		ShowStatus.setTextArea(taStatus);
@@ -207,14 +214,24 @@ public class TopicsFrame extends JFrame{
 		btShowSegments.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				showSegments(false);
+				new Thread() {
+			        @Override
+			        public void run(){
+			        	showSegments(false);
+			        }
+				}.start();
 			}
 		});
 		
 		btSearch.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				showSegments(true);
+				new Thread() {
+			        @Override
+			        public void run(){
+			        	showSegments(true);
+			        }
+				}.start();
 			}
 		});
 	}
@@ -260,15 +277,18 @@ public class TopicsFrame extends JFrame{
 		}
 		Segment.sortSegmentsByMatcheCount(segments);
 		
-		System.out.println(String.format("==> %d tópicos selecionados %d segmentos encontrados", topics.size(), segments.size()));
+		ShowStatus.setMessage(String.format("%d tópicos selecionados %d segmentos encontrados", topics.size(), segments.size()));
 		
 		clearSegments();
+		lbSegmentsCount.setText("Gerando visualização");
+		ShowStatus.setMessage  ("Gerando visualização");
 		int count = 0;
 		for(Segment seg : segments) {
 			addSegmentPanel(seg);
 			count++;
 		}
 		lbSegmentsCount.setText(count+" trechos relacionados");
+		ShowStatus.setMessage  (count+" trechos relacionados");
 	}
 	
 
