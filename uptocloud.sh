@@ -47,7 +47,7 @@ git push -u origin master
 
 echo ""
 
-if [ -z "$(git status --porcelain)" ] ; then 
+if [  "$(git status)" == *"up-to-date"*] ; then 
 
 	fortune | cowsay -f dragon
 
@@ -66,3 +66,4 @@ fi
 
 
 
+# if [ -z "$(git status --porcelain)" ] ; then 
