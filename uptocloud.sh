@@ -48,7 +48,7 @@ git push -u origin master
 echo ""
 
 status=$(git status)
-echo -e "\nstatus --> \n$status"
+echo -e "\nstatus:\n$status"
 
 if [[ "$status" == *"up-to-date"* ]] ; then 
 
