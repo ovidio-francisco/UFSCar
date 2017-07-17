@@ -41,6 +41,7 @@ public class TopicsFrame extends JFrame{
 	private JPanel  pnSegments      = new JPanel();
 
 	private JButton btAddToTheBase  = new JButton("Adicionar documentos");
+	private JButton btConfg         = new JButton("Configurações");
 	private JButton btExtractTopics = new JButton("Extrair Tópicos");
 	private JButton btShowTree      = new JButton("Exibir tópicos");
 	private JButton btShowSegments  = new JButton("Exibir Segmentos");
@@ -66,6 +67,8 @@ public class TopicsFrame extends JFrame{
 		toolBar.setFloatable(false);
 		toolBar.addSeparator();
 		toolBar.add(btAddToTheBase);
+		toolBar.addSeparator();
+		toolBar.add(btConfg);
 		toolBar.addSeparator();
 		toolBar.add(btExtractTopics);
 		toolBar.addSeparator();
@@ -208,6 +211,13 @@ public class TopicsFrame extends JFrame{
 			        	addToTheBase();
 			        }
 				}.start();
+			}
+		});
+		
+		btConfg.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				new FrConfgs().setVisible(true);
 			}
 		});
 		

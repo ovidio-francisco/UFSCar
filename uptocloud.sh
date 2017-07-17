@@ -1,12 +1,21 @@
 
+source ~/.myfunctions/myfunctions.sh
+
+checkOnline
+if [ $online -ne 0 ] ; then
+	echo ""
+	echo "Where is the internet?"
+	echo ""
+	exit 4
+fi
+
 
 if [ $# -lt 1 ] ; then
 	echo ""
-        echo "message commit expected"
+	echo "message commit expected"
 	echo ""
-        exit 3
+	exit 3
 fi
-
 
     tput bold
     echo ""
@@ -49,8 +58,6 @@ else
 fi
 
 
-
-
 git push -u origin master
 echo ""
 
@@ -71,10 +78,3 @@ else
 	echo ""
 fi
 
-
-
-
-
-
-
-# if [ -z "$(git status --porcelain)" ] ; then 
