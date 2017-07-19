@@ -103,7 +103,7 @@ public class TopicsFrame extends JFrame{
 		
 		JPanel pnBottom = new JPanel();
 		pnBottom.setLayout(new BorderLayout());
-		pnBottom.setPreferredSize(new Dimension(100, 200));
+		pnBottom.setPreferredSize(new Dimension(50, 50));
 		pnBottom.setBorder(new EmptyBorder(5, 0, 5, 0));
 		JTextArea taStatus = new JTextArea("");
 		JScrollPane spStatus = new JScrollPane(taStatus);
@@ -116,7 +116,7 @@ public class TopicsFrame extends JFrame{
 		
 		JSplitPane splitPane = new JSplitPane(JSplitPane.VERTICAL_SPLIT, pnCenter, pnBottom);
 		splitPane.setBorder(new EmptyBorder(0, 5, 0, 5));
-		splitPane.setDividerLocation(getHeight()); // try to put on de very botton position
+		splitPane.setDividerLocation(700); // try to put on de very botton position
 		pnCenter.setMinimumSize(new Dimension(100, 150));
 		pnBottom.setMinimumSize(new Dimension(100,  30));
 

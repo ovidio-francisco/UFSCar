@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="dist/lib/commons-csv-1.4.jar"/>
+	<classpathentry kind="lib" path="dist/lib/tika-app-1.11.jar"/>
+	<classpathentry kind="lib" path="dist/TextSegmentationTool.jar"/>
+	<classpathentry kind="lib" path="libs/commons-csv-1.4.jar"/>
+	<classpathentry kind="lib" path="libs/commons-csv-1.4/commons-csv-1.4-sources.jar"/>
+	<classpathentry kind="lib" path="libs/commons-csv-1.4/commons-csv-1.4.jar"/>
+	<classpathentry kind="lib" path="libs/tika-app-1.11.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="output" path="build/classes"/>
+</classpath>
