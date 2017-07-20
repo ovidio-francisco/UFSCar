@@ -62,7 +62,7 @@ git push -u origin master
 echo ""
 
 
-status="${git status}"
+status=$(git status)
 echo "$status"
 
 echo "status:"
