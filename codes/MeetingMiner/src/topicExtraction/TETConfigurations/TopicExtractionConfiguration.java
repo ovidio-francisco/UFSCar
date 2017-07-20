@@ -5,13 +5,14 @@
  */
 package topicExtraction.TETConfigurations;
 
+import java.io.Serializable;
+import java.util.ArrayList;
+
 import topicExtraction.TETParameters.Parameters_BisectingKMeans_NonParametric;
 import topicExtraction.TETParameters.Parameters_KMeans_NonParametric;
 import topicExtraction.TETParameters.Parameters_KMeans_Parametric;
 import topicExtraction.TETParameters.Parameters_PLSA_NonParametric;
 import topicExtraction.TETParameters.Parameters_PLSA_Parametric;
-import java.io.Serializable;
-import java.util.ArrayList;
 
 /**
  *
@@ -30,11 +31,11 @@ public class TopicExtractionConfiguration implements Serializable{
     private boolean KMeans;
     private boolean bisectingKMeans;
     
-    Parameters_PLSA_Parametric parametersPLSAParametric;
-    Parameters_PLSA_NonParametric parametersPLSANonParametric;
-    Parameters_KMeans_Parametric parametersKMeansParametric;
-    Parameters_KMeans_Parametric parametersBisectingKMeansParametric;
-    Parameters_KMeans_NonParametric parametersKMeansNonParametric;
+    Parameters_PLSA_Parametric               parametersPLSAParametric;
+    Parameters_PLSA_NonParametric            parametersPLSANonParametric;
+    Parameters_KMeans_Parametric             parametersKMeansParametric;
+    Parameters_KMeans_Parametric             parametersBisectingKMeansParametric;
+    Parameters_KMeans_NonParametric          parametersKMeansNonParametric;
     Parameters_BisectingKMeans_NonParametric parametersBisectingKMeansNonParametric;
     
     private boolean autoNumTopics; //Defining the number of topics automatically

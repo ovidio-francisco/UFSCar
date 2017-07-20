@@ -6,6 +6,8 @@ import java.awt.Dimension;
 import java.awt.Insets;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
 
 import javax.swing.ButtonGroup;
 import javax.swing.JCheckBox;
@@ -15,26 +17,38 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JRadioButton;
 import javax.swing.JTextField;
+import javax.swing.JToggleButton;
 import javax.swing.border.CompoundBorder;
 import javax.swing.border.EmptyBorder;
 import javax.swing.border.TitledBorder;
+import javax.swing.text.JTextComponent;
 
 import topicExtraction.TETConfigurations.TopicExtractionConfiguration;
+import topicExtraction.TETParameters.Parameters_BisectingKMeans_NonParametric;
+import topicExtraction.TETParameters.Parameters_KMeans_NonParametric;
+import topicExtraction.TETParameters.Parameters_KMeans_Parametric;
+import topicExtraction.TETParameters.Parameters_PLSA_NonParametric;
+import topicExtraction.TETParameters.Parameters_PLSA_Parametric;
+import utils.ShowStatus;
 
 
 public class FrConfgs extends JFrame {
 
 	private static final long serialVersionUID = -6203645257431028798L;
 
+	private TopicExtractionConfiguration cfg = null;
+
+	
 	private Dimension panelAlgDim      = new Dimension(300, 530);
 	private Dimension fieldsDim        = new Dimension(220, 30);
 	private Dimension panelsDim        = new Dimension(260, 100);
 
 
-	private JCheckBox cbPlsa            = new JCheckBox("PLSA", true);
-	private JCheckBox cbLda             = new JCheckBox("LDA Gibbs");
-	private JCheckBox cbKmeans          = new JCheckBox("k-Means");
-	private JCheckBox cbBisectingKmeans = new JCheckBox("Bisecting k-Means");
+	private JRadioButton rbPlsa           = new JRadioButton("PLSA", true);
+	private JRadioButton rbLda            = new JRadioButton("LDA Gibbs");
+	private JRadioButton rbKmeans         = new JRadioButton("k-Means");
+	private JRadioButton rbBisKmeans      = new JRadioButton("Bisecting k-Means");
+	private ButtonGroup  bgAlgs = new ButtonGroup();
 	
 	
 	private JPanel pnNumTopics = new JPanel();
@@ -85,29 +99,287 @@ public class FrConfgs extends JFrame {
 	
 	private JTextField   tfBisKmeans_maxIterations    = new JTextField("100", 3);
 	private JTextField   tfBisKmeans_minPercOfChanges = new JTextField("1.0", 3);
-	private JRadioButton rbBisKmeans_Centroid         = new JRadioButton("Centroid", true);
+	private JRadioButton rbBisKmeans_Centroid         = new JRadioButton("Bis Centroid", true);
 	private JRadioButton rbBisKmeans_F1               = new JRadioButton("F1 Measure");
 	private ButtonGroup  bgBisKmeans_CluseringLab     = new ButtonGroup();
 	private JTextField   tfBisKmeans_MaxK             = new JTextField("200", 3);
 	private JTextField   tfBisKmeans_MinVariation     = new JTextField("0.01", 3);
 	
-	public FrConfgs() {
+	public FrConfgs(TopicExtractionConfiguration cfg) {
 		setSize(new Dimension(1000, 800));
 		setLocationRelativeTo(null);
 		setDefaultCloseOperation(DISPOSE_ON_CLOSE);
 		setTitle("Meeting Miner");
 		configAppearance();
 		
+		this.cfg = cfg;
+		
 		add(createAlgorithmsPane());
+		
+		if (cfg != null) {
+			setParams(cfg);
+		}
+		else {
+			ShowStatus.setMessage("Nulllll");
+		}
 		
 		setListeners();
 		setComponentsEnable();
 	}
 	
-	public TopicExtractionConfiguration getUserConfiguration() {
-		TopicExtractionConfiguration config = new TopicExtractionConfiguration();
+	private void setParams(TopicExtractionConfiguration cfg) {
+
+		boolean isParametric = !cfg.isAutoNumTopics();
 		
-		return config;
+		rbParametric.setSelected(isParametric);
+		rbPlsa.setSelected(cfg.isPLSA());
+		rbLda.setSelected(cfg.isLDAGibbs());
+		rbKmeans.setSelected(cfg.isKMeans());
+		rbBisKmeans.setSelected(cfg.isBisectingKMeans());
+        
+        if (isParametric && cfg.getNumTopics().size() > 0) {
+        	cbNumTopics.setSelectedItem(cfg.getNumTopic(0));
+        }
+		                                      
+		if (cfg.isPLSA() && isParametric) {
+			
+			tfPlsa_maxIterations       .setText(cfg.getParametersPLSAParametric().getNumMaxIterations().toString());
+			tfPlsa_minDiffLoglikelihood.setText(cfg.getParametersPLSAParametric().getMinDifference().toString());
+		}
+		                                                                                 
+		if (cfg.isPLSA() && !isParametric) {
+			
+			tfPlsa_maxIterations       .setText(cfg.getParametersPLSANonParametric().getNumMaxIterations().toString());
+			tfPlsa_minDiffLoglikelihood.setText(cfg.getParametersPLSANonParametric().getMinDifference().toString());
+			tfPlsa_maxTopics           .setText(cfg.getParametersPLSANonParametric().getMaxTopics().toString());
+			tfPlsa_probThreshold       .setText(cfg.getParametersPLSANonParametric().getMinThreshold().toString());
+		}
+		                                  
+		if (cfg.isKMeans() && isParametric) {
+			tfKmeans_maxIterations   .setText(cfg.getParametersKMeansParametric().getNumMaxIterations().toString());
+			tfKmeans_minPercOfChanges.setText(cfg.getParametersKMeansParametric().getPercChange().toString());
+			
+			rbKmeans_Centroid        .setSelected( cfg.getParametersKMeansParametric().isCentroidLabel());
+			rbKmeans_F1              .setSelected(!cfg.getParametersKMeansParametric().isCentroidLabel());
+				
+			
+		}
+		
+		if (cfg.isKMeans() && !isParametric) {
+
+			tfKmeans_maxIterations   .setText(cfg.getParametersKMeansNonParametric().getNumMaxIterations().toString());
+			tfKmeans_minPercOfChanges.setText(cfg.getParametersKMeansNonParametric().getPercChange().toString());
+			
+			rbKmeans_Centroid        .setSelected( cfg.getParametersKMeansNonParametric().isCentroidLabel());
+			rbKmeans_F1              .setSelected(!cfg.getParametersKMeansNonParametric().isCentroidLabel());
+			
+			tfKmeans_MaxK            .setText(cfg.getParametersKMeansNonParametric().getMaxValueK().toString());
+			tfKmeans_MinK            .setText(cfg.getParametersKMeansNonParametric().getMinValueK().toString());
+			tfKmeans_Step            .setText(cfg.getParametersKMeansNonParametric().getStepSize().toString());
+
+			cbKmeans_UsingMovAvg     .setSelected(cfg.getParametersKMeansNonParametric().isMovingAverage());
+			tfKmeans_WinSize         .setText(cfg.getParametersKMeansNonParametric().getWindowSize().toString());
+			tfKmeans_MinVariation    .setText(cfg.getParametersKMeansNonParametric().getMinPercVariation().toString());
+			
+		}
+		                                                                                 
+		                                                                                 
+		if (cfg.isBisectingKMeans() && isParametric) {
+			tfBisKmeans_maxIterations    .setText(cfg.getParametersBisectingKMeansParametric().getNumMaxIterations().toString());
+			tfBisKmeans_minPercOfChanges .setText(cfg.getParametersBisectingKMeansParametric().getPercChange().toString());
+			
+			rbBisKmeans_Centroid         .setSelected( cfg.getParametersBisectingKMeansParametric().isCentroidLabel());
+			rbBisKmeans_F1               .setSelected(!cfg.getParametersBisectingKMeansParametric().isCentroidLabel());
+		}
+
+		if (cfg.isBisectingKMeans() && !isParametric) {
+			tfBisKmeans_maxIterations    .setText(cfg.getParametersNonKMeansNonParametric().getNumMaxIterations().toString());
+			tfBisKmeans_minPercOfChanges .setText(cfg.getParametersNonKMeansNonParametric().getPercChange().toString());
+
+			rbBisKmeans_Centroid         .setSelected( cfg.getParametersNonKMeansNonParametric().isCentroidLabel());
+			rbBisKmeans_F1               .setSelected(!cfg.getParametersNonKMeansNonParametric().isCentroidLabel());
+
+			tfBisKmeans_MaxK             .setText(cfg.getParametersNonKMeansNonParametric().getMaxValueK().toString());
+			tfBisKmeans_MinVariation     .setText(cfg.getParametersNonKMeansNonParametric().getMinPercVariation().toString());		
+		}
+
+	}
+
+	public void setUserConfiguration() {
+
+		boolean isParametric = rbParametric.isSelected();
+		boolean isPlsa       = rbPlsa      .isSelected();
+		boolean isLda        = rbLda       .isSelected();
+		boolean iskMeans     = rbKmeans    .isSelected();
+		boolean isBisKMeans  = rbBisKmeans .isSelected();
+		
+		cfg.setPLSA           (isPlsa);
+		cfg.setLDAGibbs       (isLda);
+		cfg.setKMeans         (iskMeans);
+		cfg.setBisectingKMeans(isBisKMeans);
+
+		cfg.getNumTopics().clear();
+		cfg.addNumTopics(isParametric ? readUserInt(cbNumTopics) : -1);
+		
+		cfg.setAutoNumTopics(!isParametric);
+
+		cfg.setParametersPLSAParametric   ((isPlsa &&  isParametric) ? getPlsaParametricUserParams()    : null);
+		cfg.setParametersPLSANonParametric((isPlsa && !isParametric) ? getPlsaNonParametricUserParams() : null);
+		
+		cfg.setParametersKMeansParametric   ((iskMeans &&  isParametric) ? getKmeansParametricUserParams()    : null);
+		cfg.setParametersKMeansNonParametric((iskMeans && !isParametric) ? getKmeansNonParametricUserParams() : null);
+		
+		cfg.setParametersBisectingKMeansParametric   ((isBisKMeans &&  isParametric) ? getBisKmeansParametricUserParams()    : null);
+		cfg.setParametersBisectingKMeansNonParametric((isBisKMeans && !isParametric) ? getBisKmeansNonParametricUserParams() : null);
+		
+	}
+	
+	
+	
+
+
+
+	private Parameters_PLSA_Parametric getPlsaParametricUserParams() {
+		Parameters_PLSA_Parametric result = new Parameters_PLSA_Parametric();
+		
+		
+		int numIt      = readUserInt(tfPlsa_maxIterations);
+		double minDiff = readUserDouble(tfPlsa_minDiffLoglikelihood);
+		
+		result.setNumMaxIterations(numIt);
+		result.setMinDifference(minDiff);
+		
+		return result;
+	}
+
+	private Parameters_PLSA_NonParametric getPlsaNonParametricUserParams() {
+		Parameters_PLSA_NonParametric result = new Parameters_PLSA_NonParametric();
+		
+		int numIt      = readUserInt(tfPlsa_maxIterations);
+		double minDiff = readUserDouble(tfPlsa_minDiffLoglikelihood);
+
+		int maxTopics       = readUserInt(tfPlsa_maxTopics);
+		double minThershold = readUserDouble(tfPlsa_probThreshold);
+
+		result.setNumMaxIterations(numIt);
+		result.setMinDifference(minDiff);
+
+		result.setMaxTopics(maxTopics);
+		result.setMinThreshold(minThershold);
+		
+		return result;
+	}
+
+	private Parameters_KMeans_Parametric getKmeansParametricUserParams() {
+		Parameters_KMeans_Parametric result = new Parameters_KMeans_Parametric();
+		
+		int numMaxIt   = readUserInt(tfKmeans_maxIterations);
+		double pChange = readUserDouble(tfKmeans_minPercOfChanges);
+		boolean label  = readUserBool(rbKmeans_Centroid);
+
+		
+		result.setNumMaxIterations(numMaxIt);
+		result.setPercChange(pChange);
+		result.setCentroidLabel(label);
+		
+		return result;
+	}
+
+	private Parameters_KMeans_NonParametric getKmeansNonParametricUserParams() {
+		Parameters_KMeans_NonParametric result = new Parameters_KMeans_NonParametric();
+
+		int numMaxIt                = readUserInt   (tfKmeans_maxIterations);
+		double pChange              = readUserDouble(tfKmeans_minPercOfChanges);
+		boolean label               = readUserBool  (rbKmeans_Centroid);
+		int maxValueK               = readUserInt   (tfKmeans_MaxK);
+		int minValueK               = readUserInt   (tfKmeans_MinK);
+		int stepSize                = readUserInt   (tfKmeans_Step);
+		boolean movingAverage       = readUserBool  (cbKmeans_UsingMovAvg);
+		int windowSize              = readUserInt   (tfKmeans_WinSize);
+		double minimumPercVariation = readUserDouble(tfKmeans_MinVariation);
+		
+		
+		result.setNumMaxIterations(numMaxIt);
+		result.setPercChange(pChange);
+		
+		result.setCentroidLabel(label);
+
+		result.setMaxValueK(maxValueK);
+		result.setMinValueK(minValueK);
+		result.setStepSize(stepSize);
+		
+		result.setMovingAverage(movingAverage);
+		result.setWindowSize(windowSize);
+		result.setMinimumPercVariation(minimumPercVariation);
+		
+		return result;
+	}
+
+	private Parameters_KMeans_Parametric getBisKmeansParametricUserParams() {
+		Parameters_KMeans_Parametric result = new Parameters_KMeans_Parametric();
+
+		int numMaxIt   = readUserInt   (tfBisKmeans_maxIterations);
+		double pChange = readUserDouble(tfBisKmeans_minPercOfChanges);
+		boolean label  = readUserBool  (rbBisKmeans_Centroid);
+
+		result.setNumMaxIterations(numMaxIt);
+		result.setPercChange(pChange);
+		result.setCentroidLabel(label);
+		
+		return result;
+	}
+
+	private Parameters_BisectingKMeans_NonParametric getBisKmeansNonParametricUserParams() {
+		Parameters_BisectingKMeans_NonParametric result = new Parameters_BisectingKMeans_NonParametric();
+		
+		int numMaxIt                = readUserInt   (tfBisKmeans_maxIterations);
+		double pChange              = readUserDouble(tfBisKmeans_minPercOfChanges);
+		boolean label               = readUserBool  (rbBisKmeans_Centroid);
+		int maxValueK               = readUserInt   (tfBisKmeans_MaxK);
+		double minimumPercVariation = readUserDouble(tfBisKmeans_MinVariation);
+		
+		result.setNumMaxIterations(numMaxIt);
+		result.setPercChange(pChange);
+		result.setCentroidLabel(label);
+		result.setMaxValueK(maxValueK);
+		result.setMinimumPercVariation(minimumPercVariation);
+		
+		return result;
+	}
+	
+	private double readUserDouble(JTextComponent comp) {
+		return comp.isEnabled() && comp.isVisible() ? Double.parseDouble(comp.getText()) : -1;
+	}
+
+	private int readUserInt(JTextComponent comp) {
+		return comp.isEnabled() && comp.isVisible() ? Integer.parseInt(comp.getText()) : -1;
+	}
+	
+	private int readUserInt(JComboBox<Integer> comp) {
+		
+		if (comp.isEnabled() && comp.isVisible()) {
+			Integer result = comp.getItemAt(comp.getSelectedIndex());
+			return result.intValue();
+		}
+		else {
+			return -1;
+		}
+	}
+
+
+	private boolean readUserBool(JToggleButton comp) {
+		if (comp.isEnabled() && comp.isVisible()) {
+			
+			ShowStatus.setMessage(" label = '" + comp.getText() + "' returning " + comp.isSelected());
+			
+			return comp.isSelected();
+			
+		}
+		else {
+			System.out.println(String.format("Warning: %s is disable or invisible and cannot be read. False returned.", comp.getName()));
+			return false;
+		}
+		
 	}
 	
 	private JPanel createAlgorthmsCheckPane() {
@@ -117,10 +389,15 @@ public class FrConfgs extends JFrame {
 		JPanel pnWest = new JPanel(new BorderLayout());
 		JPanel pnEast = new JPanel(new BorderLayout());
 		
-		pnWest.add(cbPlsa, BorderLayout.NORTH);
-		pnWest.add(cbLda, BorderLayout.SOUTH);
-		pnEast.add(cbKmeans, BorderLayout.NORTH);
-		pnEast.add(cbBisectingKmeans, BorderLayout.SOUTH);
+		bgAlgs.add(rbPlsa);
+		bgAlgs.add(rbLda);
+		bgAlgs.add(rbKmeans);
+		bgAlgs.add(rbBisKmeans);
+		
+		pnWest.add(rbPlsa, BorderLayout.NORTH);
+		pnWest.add(rbLda, BorderLayout.SOUTH);
+		pnEast.add(rbKmeans, BorderLayout.NORTH);
+		pnEast.add(rbBisKmeans, BorderLayout.SOUTH);
 
 		pnEast.setBorder(new EmptyBorder(0, 10, 0, 0));
 		
@@ -207,7 +484,6 @@ public class FrConfgs extends JFrame {
 	
 	private void createKMeansPane() {
 		
-		
 		pnKmeansStopCriteria.add(createLabeledField("Maximum Iterations:"  , tfKmeans_maxIterations   , fieldsDim));
 		pnKmeansStopCriteria.add(createLabeledField("Minimum % of Changes:", tfKmeans_minPercOfChanges, fieldsDim));
 		
@@ -260,7 +536,6 @@ public class FrConfgs extends JFrame {
 		JPanel pnField = new JPanel();
 		pnField.setLayout(new BorderLayout());
 		pnField.setPreferredSize(dim);
-
 		
 		JPanel pnlb = new JPanel(new BorderLayout());
 		JPanel pncp = new JPanel();
@@ -351,37 +626,83 @@ public class FrConfgs extends JFrame {
 		
 	}
 	
+	private void setVisible(JPanel p, boolean enable) {
+		
+		p.setVisible(enable);
+		
+		for(Component c : p.getComponents()) {
+			if( c instanceof JPanel ) {
+				setEnable((JPanel)c, enable);
+			}
+			else {
+				c.setVisible(enable);
+			}
+				
+				
+		}
+		
+	}
+	
+	
 	private void setComponentsEnable() {
 		
 		setEnable(pnNumTopics, rbParametric.isSelected());
 		
-		setEnable(pnPlsa                              , cbPlsa   .isSelected()                                 );
-		setEnable(pnPlsaSelectionParameters           , cbPlsa   .isSelected() && rbNonParametric.isSelected() );
+		setEnable(pnPlsa                              , rbPlsa   .isSelected()                                 );
+		setEnable(pnPlsaSelectionParameters           , rbPlsa   .isSelected() && rbNonParametric.isSelected() );
 		
-		setEnable(pnKmeans                            , cbKmeans .isSelected()                                 );
-		setEnable(pnKmeansKValueVariation             , cbKmeans .isSelected() && rbNonParametric.isSelected() );
-		setEnable(pnKmeansStopCriteriaCluesterAnalysis, cbKmeans .isSelected() && rbNonParametric.isSelected() );
+		setEnable(pnKmeans                            , rbKmeans .isSelected()                                 );
+		setEnable(pnKmeansKValueVariation             , rbKmeans .isSelected() && rbNonParametric.isSelected() );
+		setEnable(pnKmeansStopCriteriaCluesterAnalysis, rbKmeans .isSelected() && rbNonParametric.isSelected() );
 		
-		setEnable(pnBisectingKmeans                      , cbBisectingKmeans .isSelected()                                 );
-		setEnable(pnBisectingKmeans                      , cbBisectingKmeans .isSelected()                                 );
-		setEnable(pnBisKmeansKValueVariation             , cbBisectingKmeans .isSelected() && rbNonParametric.isSelected() );
-		setEnable(pnBisKmeansStopCriteriaCluesterAnalysis, cbBisectingKmeans .isSelected() && rbNonParametric.isSelected() );
+		setEnable(pnBisectingKmeans                      , rbBisKmeans .isSelected()                                 );
+		setEnable(pnBisectingKmeans                      , rbBisKmeans .isSelected()                                 );
+		setEnable(pnBisKmeansKValueVariation             , rbBisKmeans .isSelected() && rbNonParametric.isSelected() );
+		setEnable(pnBisKmeansStopCriteriaCluesterAnalysis, rbBisKmeans .isSelected() && rbNonParametric.isSelected() );
 		
 	}
 	
+	@SuppressWarnings("unused")
+	private void setComponentsVisible() {
+		
+		setVisible(pnNumTopics, rbParametric.isSelected());
+		
+		setVisible(pnPlsa                              , rbPlsa   .isSelected()                                 );
+		setVisible(pnPlsaSelectionParameters           , rbPlsa   .isSelected() && rbNonParametric.isSelected() );
+		
+		setVisible(pnKmeans                            , rbKmeans .isSelected()                                 );
+		setVisible(pnKmeansKValueVariation             , rbKmeans .isSelected() && rbNonParametric.isSelected() );
+		setVisible(pnKmeansStopCriteriaCluesterAnalysis, rbKmeans .isSelected() && rbNonParametric.isSelected() );
+		
+		setVisible(pnBisectingKmeans                      , rbBisKmeans .isSelected()                                 );
+		setVisible(pnBisectingKmeans                      , rbBisKmeans .isSelected()                                 );
+		setVisible(pnBisKmeansKValueVariation             , rbBisKmeans .isSelected() && rbNonParametric.isSelected() );
+		setVisible(pnBisKmeansStopCriteriaCluesterAnalysis, rbBisKmeans .isSelected() && rbNonParametric.isSelected() );
+		
+	}
+
 	private void setListeners(){
 		
 		ActionListener l = new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				setComponentsEnable();
+//				setComponentsVisible();
 			}
 		};
 		
-		cbPlsa           .addActionListener(l);
-		cbKmeans         .addActionListener(l);
-		cbBisectingKmeans.addActionListener(l);
-		cbLda            .addActionListener(l);
+		this.addWindowListener(new WindowAdapter() {
+			@Override
+			public void windowClosing(WindowEvent e) {
+				setUserConfiguration();
+			}
+		});
+		
+		
+		rbPlsa           .addActionListener(l);
+		rbKmeans         .addActionListener(l);
+		rbBisKmeans.addActionListener(l);
+		rbLda            .addActionListener(l);
 		rbParametric     .addActionListener(l);
 		rbNonParametric  .addActionListener(l);
 		

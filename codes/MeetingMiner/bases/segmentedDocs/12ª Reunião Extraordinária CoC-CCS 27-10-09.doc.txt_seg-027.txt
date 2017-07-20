@@ -1,1 +1,0 @@
-(V.I) Prof. Siovani expõe que devido ao rearranjo na grade fez-se necessário realizar algumas alterações nos requisitos das disciplinas Banco de Dados, alterando o requisito Estrutura de Dados 2, para Estrutura de Dados 1. 

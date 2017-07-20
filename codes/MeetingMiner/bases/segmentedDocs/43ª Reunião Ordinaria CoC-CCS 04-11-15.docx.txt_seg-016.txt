@@ -1,1 +1,0 @@
-Será criada uma lista para cada turma e também uma lista geral de alunos. 

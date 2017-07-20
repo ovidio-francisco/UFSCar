@@ -48,6 +48,9 @@ filename=$1$base'_'$hoje'.tar.gz'
 
 
 
+tar -czvf $filename --exclude='.git' *
+#zip -r $filename .
+
 
 
 echo ""
@@ -59,9 +62,6 @@ echo "done!"
 
 
 
-
-tar -czvf $filename --exclude='.git' *
-#zip -r $filename .
 
 
 

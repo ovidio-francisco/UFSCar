@@ -11,11 +11,9 @@ import javax.swing.tree.DefaultMutableTreeNode;
 
 import topicExtraction.TET.TopicExtraction;
 import topicExtraction.TETConfigurations.TopicExtractionConfiguration;
-import topicExtraction.TETConfigurations.TopicExtractionParameters;
 import topicExtraction.TETPreprocessing.TextRepresentation;
 import topicExtraction.mmParameters.M4MArffGenerationParameters;
 import topicExtraction.mmParameters.M4MRepresentationParameters;
-import topicExtraction.mmParameters.M4MTopicExtractionParameters;
 import topicExtraction.mmUtils.M4MFiles;
 import utils.Files;
 import utils.ShowStatus;
@@ -25,6 +23,33 @@ import utils.ShowStatus;
  */
 public class MeetingMiner {
 
+    public static final String DOCUMENT_TOPIC_MATRIX_FILE_NAME = "documentTopicMatrix.csv";
+    public static final String TERM_TOPIC_MATRIX_FILE_NAME     = "termTopicMatrix.csv";    
+
+    public static  TopicExtractionConfiguration topicExtractionconfiguration = new TopicExtractionConfiguration();
+    
+//  private static TopicExtractionParameters   extractionParameters     ;// = M4MTopicExtractionConfiguration.getDefaultTopicExtractionConf();
+    private static M4MRepresentationParameters representationParameters ;// = M4MRepresentationConfiguration.getDefaultRepresentationConf();
+    private static M4MArffGenerationParameters arffGenerationParameters ;// = M4MArffGenerationConfiguration.getArffGenerationConf();
+    private static int descriptorsByTopic = 10;
+    
+    private static File arfFolder = null;
+    private static File outFolder = null;
+    
+    private static boolean foldersOK;
+    private static boolean algorithmsOk;
+
+    
+//    private static Object view = null;
+    
+    private static double[][] docTopic;
+    private static double[][] termTopic;
+    
+    private static String[] listDocs;
+    private static String[] listTerms;
+
+	
+	
 	private static StringBuffer[] descTopics;
 	private static StringBuffer[] docsPerTopics;
 	private static int numTopics;
@@ -41,8 +66,8 @@ public class MeetingMiner {
         getRepresentationParameters().setDirIn(Files.getSegmentedDocs());
         getRepresentationParameters().setDirOut(arfFolder);
 
-        getExtractionParameters().setDirEntrada(arfFolder.getAbsolutePath());
-        getExtractionParameters().setDirSaida(outFolder.getAbsolutePath());
+//        getExtractionParameters().setDirEntrada(arfFolder.getAbsolutePath());
+//        getExtractionParameters().setDirSaida(outFolder.getAbsolutePath());
         
         
         
@@ -380,34 +405,6 @@ public class MeetingMiner {
         return docsPerTopic;
     }
     
-    public static final String DOCUMENT_TOPIC_MATRIX_FILE_NAME = "documentTopicMatrix.csv";
-    public static final String TERM_TOPIC_MATRIX_FILE_NAME     = "termTopicMatrix.csv";    
-//  public static final int    DESCRIPTORS_BY_TOPIC            = 10;
-
-    public static  TopicExtractionConfiguration topicExtractionconfiguration = new TopicExtractionConfiguration();
-    
-    private static TopicExtractionParameters   extractionParameters     ;// = M4MTopicExtractionConfiguration.getDefaultTopicExtractionConf();
-    private static M4MRepresentationParameters representationParameters ;// = M4MRepresentationConfiguration.getDefaultRepresentationConf();
-    private static M4MArffGenerationParameters arffGenerationParameters ;// = M4MArffGenerationConfiguration.getArffGenerationConf();
-    private static int descriptorsByTopic = 10;
-    
-//    private static File docFolder = null;
-    private static File arfFolder = null;
-//    private static File txtFolder = null;
-    private static File outFolder = null;
-    
-    private static boolean foldersOK;
-    private static boolean algorithmsOk;
-
-    
-//    private static Object view = null;
-    
-    private static double[][] docTopic;
-    private static double[][] termTopic;
-    
-    private static String[] listDocs;
-    private static String[] listTerms;
-
 
     
     public static int getDescriptorsByTopic() {
@@ -418,17 +415,17 @@ public class MeetingMiner {
         MeetingMiner.descriptorsByTopic = descriptorsByTopic;
     }
     
-    public static TopicExtractionParameters getExtractionParameters() {
-        if(extractionParameters == null) {
-            extractionParameters = M4MTopicExtractionParameters.getDefaultTopicExtractionParameters();
-        }
-        
-        return extractionParameters;
-    }
-
-    public static void setExtractionParameters(TopicExtractionParameters extractionParameters) {
-        MeetingMiner.extractionParameters = extractionParameters;
-    }
+//    public static TopicExtractionParameters getExtractionParameters() {
+//        if(extractionParameters == null) {
+//            extractionParameters = M4MTopicExtractionParameters.getDefaultTopicExtractionParameters();
+//        }
+//        
+//        return extractionParameters;
+//    }
+//
+//    public static void setExtractionParameters(TopicExtractionParameters extractionParameters) {
+//        MeetingMiner.extractionParameters = extractionParameters;
+//    }
 
     public static M4MRepresentationParameters getRepresentationParameters() {
         if(representationParameters == null) {
@@ -505,6 +502,7 @@ public class MeetingMiner {
     }
     
     public static void setTopicExtractionconfiguration(TopicExtractionConfiguration topicExtractionconfiguration) {
+    	ShowStatus.setMessage("setting");
         MeetingMiner.topicExtractionconfiguration = topicExtractionconfiguration;
     }
 

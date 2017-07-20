@@ -53,6 +53,9 @@ public class TopicsFrame extends JFrame{
 
 	ArrayList<PnSegment> pnSegs = new ArrayList<>();
 	
+	
+//	private TopicExtractionConfiguration cfg = new TopicExtractionConfiguration(); 
+	
 	public TopicsFrame() {
 
 		setSize(new Dimension(800, 600));
@@ -217,7 +220,9 @@ public class TopicsFrame extends JFrame{
 		btConfg.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				new FrConfgs().setVisible(true);
+				FrConfgs f = new FrConfgs(MeetingMiner.getTopicExtractionconfiguration());
+				f.setVisible(true);
+				
 			}
 		});
 		
@@ -230,6 +235,7 @@ public class TopicsFrame extends JFrame{
 			        	showSegments(false);
 			        }
 				}.start();
+
 			}
 		});
 		
