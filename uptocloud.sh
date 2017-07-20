@@ -63,11 +63,8 @@ echo ""
 
 
 
-status=$(git status)
-echo -e "\nstatus:\n$status"
-
 echo "status"
-git status | grep --color up-to-date
+git status | grep --color 'up-to-date\|nothing to commit'
 
 
 if [[ "$status" == *"up-to-date"* ]] ; then 
