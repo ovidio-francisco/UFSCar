@@ -62,8 +62,10 @@ git push -u origin master
 echo ""
 
 
+status="${git status}"
+echo "$status"
 
-echo "status"
+echo "status:"
 git status | grep --color 'up-to-date\|nothing to commit'
 
 
