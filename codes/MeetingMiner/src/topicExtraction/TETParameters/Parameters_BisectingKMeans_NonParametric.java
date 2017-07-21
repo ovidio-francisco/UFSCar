@@ -41,5 +41,25 @@ public class Parameters_BisectingKMeans_NonParametric extends Parameters_KMeans_
     public void setMinimumPercVariation(double minimumPercVariation){
         this.minimumPercVariation = minimumPercVariation;
     }
+
+	@Override
+	public String toString() {
+
+		StringBuilder sb = new StringBuilder();
+		
+		sb.append("=== k-Means Non-Parametric === \n");
+	    sb.append(String.format("   Maximum number of iterations:        %d\n"    , numMaxIterations));
+	    sb.append(String.format("   Minimum %% of Changes:                %3.3f\n", percChange));
+	    sb.append(String.format("   Cluster Labeling:                    %s\n"    , centroidLabel ? "Centroid" : "F1-Measure"));
+	    
+	    sb.append(String.format("   Maximum value of k:                  %d\n"    , maxValueK));
+
+	    sb.append(String.format("   %% Minimum Variation:                 %3.3f\n", minimumPercVariation));
+	    
+		
+		return sb.toString();
+	}
+    
+    
     
 }

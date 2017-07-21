@@ -31,7 +31,7 @@ public class MeetingMiner {
 //  private static TopicExtractionParameters   extractionParameters     ;// = M4MTopicExtractionConfiguration.getDefaultTopicExtractionConf();
     private static M4MRepresentationParameters representationParameters ;// = M4MRepresentationConfiguration.getDefaultRepresentationConf();
     private static M4MArffGenerationParameters arffGenerationParameters ;// = M4MArffGenerationConfiguration.getArffGenerationConf();
-    private static int descriptorsByTopic = 10;
+    private static int descriptorsByTopic = 13;
     
     private static File arfFolder = null;
     private static File outFolder = null;

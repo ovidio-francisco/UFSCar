@@ -2,6 +2,7 @@ package userInterfaces;
 
 import java.awt.BorderLayout;
 import java.awt.Dimension;
+import java.awt.Font;
 import java.awt.GridLayout;
 import java.awt.Insets;
 import java.awt.event.ActionEvent;
@@ -12,6 +13,7 @@ import java.util.ArrayList;
 import javax.swing.BorderFactory;
 import javax.swing.BoxLayout;
 import javax.swing.JButton;
+import javax.swing.JComboBox;
 import javax.swing.JFileChooser;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
@@ -50,6 +52,8 @@ public class TopicsFrame extends JFrame{
 
 	private JTextField tfSearchDescriptors = new JTextField(30);
 	private JButton btSearch = new JButton("Localizar");
+	
+	private JComboBox<Integer> cbDescriptorsByTopic = new JComboBox<>(new Integer[] {5, 10, 15, 20, 25});
 
 	ArrayList<PnSegment> pnSegs = new ArrayList<>();
 	
@@ -75,11 +79,19 @@ public class TopicsFrame extends JFrame{
 		toolBar.addSeparator();
 		toolBar.add(btExtractTopics);
 		toolBar.addSeparator();
+		toolBar.add(new JLabel("Descritores por tópico: "));
+		toolBar.add(cbDescriptorsByTopic);
+		toolBar.addSeparator();
 		toolBar.add(btShowTree);
+		toolBar.addSeparator();
 		toolBar.addSeparator();
 		toolBar.add(btShowSegments);
 		toolBar.addSeparator();
 
+		cbDescriptorsByTopic.setMaximumSize(new Dimension(50, 25));
+		cbDescriptorsByTopic.setSelectedItem(MeetingMiner.getDescriptorsByTopic());
+		cbDescriptorsByTopic.setEditable(true);
+		
 		
 		JPanel pnToolBar = new JPanel();
 		pnToolBar.setLayout(new BorderLayout());
@@ -109,6 +121,7 @@ public class TopicsFrame extends JFrame{
 		pnBottom.setPreferredSize(new Dimension(50, 50));
 		pnBottom.setBorder(new EmptyBorder(5, 0, 5, 0));
 		JTextArea taStatus = new JTextArea("");
+		taStatus.setFont(new Font(Font.MONOSPACED, taStatus.getFont().getStyle(), taStatus.getFont().getSize()));
 		JScrollPane spStatus = new JScrollPane(taStatus);
 		pnBottom.add(spStatus);
 		
@@ -119,16 +132,19 @@ public class TopicsFrame extends JFrame{
 		
 		JSplitPane splitPane = new JSplitPane(JSplitPane.VERTICAL_SPLIT, pnCenter, pnBottom);
 		splitPane.setBorder(new EmptyBorder(0, 5, 0, 5));
-		splitPane.setDividerLocation(700); // try to put on de very botton position
+		splitPane.setDividerLocation(500); // try to put on de very botton position
 		pnCenter.setMinimumSize(new Dimension(100, 150));
 		pnBottom.setMinimumSize(new Dimension(100,  30));
 
 		setLayout(new BorderLayout());	
 		add(pnToolBar, BorderLayout.NORTH);
 		add(splitPane, BorderLayout.CENTER);
-//		add(pnCenter , BorderLayout.CENTER);
-//		add(pnBottom , BorderLayout.SOUTH);
+
 		
+		/** Creating a default Topic Extraction Configuration */
+		MeetingMiner.prepareFolders();
+		defaultConfiguration();
+
 		
 		ShowStatus.setTextArea(taStatus);
 		addListeners();
@@ -143,8 +159,8 @@ public class TopicsFrame extends JFrame{
 	
 	private void extractTopics() {
 		
-		MeetingMiner.prepareFolders();
-		defineConfiguration();
+//		MeetingMiner.prepareFolders();
+//		defaultConfiguration();
 		MeetingMiner.miningTheMeetings();
 	}
 	
@@ -250,6 +266,13 @@ public class TopicsFrame extends JFrame{
 				}.start();
 			}
 		});
+		
+		cbDescriptorsByTopic.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				MeetingMiner.setDescriptorsByTopic(getUserDescriptorsByTopic());
+			}
+		});
 	}
 	
 	
@@ -345,13 +368,12 @@ public class TopicsFrame extends JFrame{
 		
 		pnSearch.setBorder(new EmptyBorder(15, 0, 15, 0));
 		
-		
 		pnSearch.add(pnComponents);
 		return pnSearch;
 	}
 	
 	
-    private void defineConfiguration(){
+    private void defaultConfiguration(){
         
         TopicExtractionConfiguration configuration = new TopicExtractionConfiguration();
 
@@ -381,6 +403,10 @@ public class TopicsFrame extends JFrame{
         }
         
         MeetingMiner.setTopicExtractionconfiguration(configuration);
+    }
+    
+    private int getUserDescriptorsByTopic() {
+    	return Integer.parseInt(cbDescriptorsByTopic.getSelectedItem().toString());
     }
     
  

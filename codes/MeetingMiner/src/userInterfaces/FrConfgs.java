@@ -10,6 +10,7 @@ import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 
 import javax.swing.ButtonGroup;
+import javax.swing.JButton;
 import javax.swing.JCheckBox;
 import javax.swing.JComboBox;
 import javax.swing.JFrame;
@@ -23,6 +24,7 @@ import javax.swing.border.EmptyBorder;
 import javax.swing.border.TitledBorder;
 import javax.swing.text.JTextComponent;
 
+import meetingMiner.MeetingMiner;
 import topicExtraction.TETConfigurations.TopicExtractionConfiguration;
 import topicExtraction.TETParameters.Parameters_BisectingKMeans_NonParametric;
 import topicExtraction.TETParameters.Parameters_KMeans_NonParametric;
@@ -37,26 +39,23 @@ public class FrConfgs extends JFrame {
 	private static final long serialVersionUID = -6203645257431028798L;
 
 	private TopicExtractionConfiguration cfg = null;
+	
+	private Dimension panelAlgDim     = new Dimension(300, 530);
+	private Dimension fieldsDim       = new Dimension(220, 30);
+	private Dimension panelsDim       = new Dimension(260, 100);
 
+	private JRadioButton rbPlsa       = new JRadioButton("PLSA", true);
+	private JRadioButton rbLda        = new JRadioButton("LDA Gibbs");
+	private JRadioButton rbKmeans     = new JRadioButton("k-Means");
+	private JRadioButton rbBisKmeans  = new JRadioButton("Bisecting k-Means");
+	private ButtonGroup  bgAlgs       = new ButtonGroup();
 	
-	private Dimension panelAlgDim      = new Dimension(300, 530);
-	private Dimension fieldsDim        = new Dimension(220, 30);
-	private Dimension panelsDim        = new Dimension(260, 100);
-
-
-	private JRadioButton rbPlsa           = new JRadioButton("PLSA", true);
-	private JRadioButton rbLda            = new JRadioButton("LDA Gibbs");
-	private JRadioButton rbKmeans         = new JRadioButton("k-Means");
-	private JRadioButton rbBisKmeans      = new JRadioButton("Bisecting k-Means");
-	private ButtonGroup  bgAlgs = new ButtonGroup();
+	private JPanel pnNumTopics        = new JPanel();
 	
-	
-	private JPanel pnNumTopics = new JPanel();
-	
-	private JPanel pnPlsa            = new JPanel();
-	private JPanel pnKmeans          = new JPanel();
-	private JPanel pnLda             = new JPanel();
-	private JPanel pnBisectingKmeans = new JPanel();
+	private JPanel pnPlsa             = new JPanel();
+	private JPanel pnKmeans           = new JPanel();
+	private JPanel pnLda              = new JPanel();
+	private JPanel pnBisectingKmeans  = new JPanel();
 
 	
 	private JPanel pnKmeansStopCriteria                    = new JPanel();
@@ -105,8 +104,11 @@ public class FrConfgs extends JFrame {
 	private JTextField   tfBisKmeans_MaxK             = new JTextField("200", 3);
 	private JTextField   tfBisKmeans_MinVariation     = new JTextField("0.01", 3);
 	
+	private JButton      btExtract = new JButton("Extract");
+	private JButton      btClose   = new JButton("Close");
+	
 	public FrConfgs(TopicExtractionConfiguration cfg) {
-		setSize(new Dimension(1000, 800));
+		setSize(new Dimension(1000, 750));
 		setLocationRelativeTo(null);
 		setDefaultCloseOperation(DISPOSE_ON_CLOSE);
 		setTitle("Meeting Miner");
@@ -114,7 +116,9 @@ public class FrConfgs extends JFrame {
 		
 		this.cfg = cfg;
 		
-		add(createAlgorithmsPane());
+		this.setLayout(new BorderLayout());
+		add(createAlgorithmsPane(), BorderLayout.CENTER);
+		add(createButtonsPane(), BorderLayout.SOUTH);
 		
 		if (cfg != null) {
 			setParams(cfg);
@@ -222,7 +226,7 @@ public class FrConfgs extends JFrame {
 		cfg.addNumTopics(isParametric ? readUserInt(cbNumTopics) : -1);
 		
 		cfg.setAutoNumTopics(!isParametric);
-
+		
 		cfg.setParametersPLSAParametric   ((isPlsa &&  isParametric) ? getPlsaParametricUserParams()    : null);
 		cfg.setParametersPLSANonParametric((isPlsa && !isParametric) ? getPlsaNonParametricUserParams() : null);
 		
@@ -241,7 +245,6 @@ public class FrConfgs extends JFrame {
 
 	private Parameters_PLSA_Parametric getPlsaParametricUserParams() {
 		Parameters_PLSA_Parametric result = new Parameters_PLSA_Parametric();
-		
 		
 		int numIt      = readUserInt(tfPlsa_maxIterations);
 		double minDiff = readUserDouble(tfPlsa_minDiffLoglikelihood);
@@ -369,11 +372,8 @@ public class FrConfgs extends JFrame {
 
 	private boolean readUserBool(JToggleButton comp) {
 		if (comp.isEnabled() && comp.isVisible()) {
-			
-			ShowStatus.setMessage(" label = '" + comp.getText() + "' returning " + comp.isSelected());
-			
+
 			return comp.isSelected();
-			
 		}
 		else {
 			System.out.println(String.format("Warning: %s is disable or invisible and cannot be read. False returned.", comp.getName()));
@@ -411,14 +411,30 @@ public class FrConfgs extends JFrame {
 		JPanel algorithmsPane = new JPanel(new BorderLayout());
 		
 		JPanel pnCheckAlgs = new JPanel();
-		pnCheckAlgs.add(createParametricsPane());
-		pnCheckAlgs.add(createAlgorthmsCheckPane());
+		JPanel pnAlgorthmsCheckPane = createAlgorthmsCheckPane();
+		JPanel pnParametricsPane = createParametricsPane();
+		
+		pnAlgorthmsCheckPane.setBorder(new EmptyBorder(10, 10, 10, 10) );
+		
+		pnCheckAlgs.add(pnAlgorthmsCheckPane);
+		pnCheckAlgs.add(pnParametricsPane);
 		pnCheckAlgs.setBorder(new EmptyBorder(20, 0, 0, 0));
 		
 		algorithmsPane.add(pnCheckAlgs, BorderLayout.NORTH);
 		algorithmsPane.add(createAlgorithmsConfgPane(), BorderLayout.CENTER);
 		
 		return algorithmsPane;
+	}
+	
+	private JPanel createButtonsPane() {
+		JPanel buttonsPane = new JPanel();
+		
+		buttonsPane.setBorder(new EmptyBorder(10, 10, 10, 10));
+		
+		buttonsPane.add(btExtract);
+		buttonsPane.add(btClose);
+		
+		return buttonsPane;
 	}
 	
 	private JPanel createAlgorithmsConfgPane() {
@@ -447,25 +463,23 @@ public class FrConfgs extends JFrame {
 	}
 	
 	private JPanel createParametricsPane() {
-		JPanel parametricsPane = new JPanel(new BorderLayout());
-		parametricsPane.setBorder(new CompoundBorder(new TitledBorder(""), new EmptyBorder(10, 10, 10, 10)) );
+		JPanel parametricsPane = new JPanel();
 		
 		btgr.add(rbNonParametric);
 		btgr.add(rbParametric);
 		
 		JPanel pnRadios = new JPanel(new BorderLayout());
-		
+		pnRadios.setBorder(new CompoundBorder(new TitledBorder(""), new EmptyBorder(10, 10, 10, 10)) );
 		
 		pnRadios.add(rbParametric   , BorderLayout.NORTH);
 		pnRadios.add(rbNonParametric, BorderLayout.SOUTH);
-		
 		
 		pnNumTopics.setLayout(new BorderLayout());
 		pnNumTopics.add(createLabeledField("Num Topics", cbNumTopics, new Dimension(150, 30)));
 		pnNumTopics.setBorder(new EmptyBorder(5, 5, 0, 5));
 		
-		parametricsPane.add(pnRadios   , BorderLayout.NORTH);
-		parametricsPane.add(pnNumTopics, BorderLayout.SOUTH);
+		parametricsPane.add(pnRadios   );
+		parametricsPane.add(pnNumTopics);
 		
 		return parametricsPane;
 	}
@@ -681,20 +695,49 @@ public class FrConfgs extends JFrame {
 		
 	}
 
+	private void goodBye() {
+		setUserConfiguration();
+		ShowStatus.setMessage(cfg.toString());
+		this.setVisible(false);
+		this.dispose();
+	}
+	
 	private void setListeners(){
 		
 		ActionListener l = new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				setComponentsEnable();
-//				setComponentsVisible();
 			}
 		};
 		
 		this.addWindowListener(new WindowAdapter() {
 			@Override
 			public void windowClosing(WindowEvent e) {
-				setUserConfiguration();
+				goodBye();
+			}
+		});
+		
+		btClose.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent arg0) {
+				goodBye();
+			}
+		});
+		
+		btExtract.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				new Thread() {
+			        @Override
+			        public void run(){
+			    		setUserConfiguration();
+			    		ShowStatus.setMessage(cfg.toString());
+
+			        	
+			    		MeetingMiner.miningTheMeetings();
+			        }
+				}.start();
 			}
 		});
 		

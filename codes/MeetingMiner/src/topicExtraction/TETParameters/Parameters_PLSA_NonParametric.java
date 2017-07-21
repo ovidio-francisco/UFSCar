@@ -39,4 +39,22 @@ public class Parameters_PLSA_NonParametric extends Parameters_PLSA_Parametric im
     public void setMinThreshold(double minThershold){
         this.minThreshold = minThershold;
     }
+
+	@Override
+	public String toString() {
+		StringBuilder sb = new StringBuilder();
+		
+		sb.append("=== PLSA Non-Parametric === \n");
+	    sb.append(String.format("   Maximum number of iterations:        %d\n"    , numMaxIterations));
+	    sb.append(String.format("   Minimum difference of log liklihood: %3.3f\n" , minDifference));	    
+	    sb.append(String.format("   Maximum number of topics:            %d\n"    , maxTopics));
+	    sb.append(String.format("   Probability threshold:               %3.3f\n" , minThreshold));
+	    
+	    
+		
+		return sb.toString();
+	}
+    
+    
+    
 }

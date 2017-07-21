@@ -180,5 +180,38 @@ public class TopicExtractionConfiguration implements Serializable{
     public void setPLSA(boolean PLSA){
         this.PLSA = PLSA;
     }
+
+	@Override
+	public String toString() {
+		StringBuilder sb = new StringBuilder();
+
+		sb.append("Topic Extraction Configuration\n");
+//	    private String dirEntrada;
+//	    private String dirSaida;
+		
+		sb.append(String.format("Input  Dir:  %s\n", dirEntrada));
+		sb.append(String.format("Output Dir:  %s\n", dirSaida));
+		
+		sb.append(String.format("Automatic Number of Topics:  %b\n", autoNumTopics));
+		if (!autoNumTopics) {
+			sb.append(String
+					    .format("Number of Topics:            %d\n", numTopics.get(0)));
+		}
+	    sb.append(String.format("   PLSA:                     %b\n", PLSA));
+	    sb.append(String.format("   LDAGibbs:                 %b\n", LDAGibbs));
+	    sb.append(String.format("   KMeans:                   %b\n", KMeans));
+	    sb.append(String.format("   Bisecting k-Means:        %b\n", bisectingKMeans));
+		
+		if (PLSA            && !autoNumTopics) sb.append(parametersPLSAParametric);
+		if (PLSA            &&  autoNumTopics) sb.append(parametersPLSANonParametric);
+		if (KMeans          && !autoNumTopics) sb.append(parametersKMeansParametric);
+		if (KMeans          &&  autoNumTopics) sb.append(parametersKMeansNonParametric);
+		if (bisectingKMeans && !autoNumTopics) sb.append(parametersBisectingKMeansParametric);
+		if (bisectingKMeans &&  autoNumTopics) sb.append(parametersBisectingKMeansNonParametric);
+
+		return sb.toString();
+	}
+    
+    
     
 }

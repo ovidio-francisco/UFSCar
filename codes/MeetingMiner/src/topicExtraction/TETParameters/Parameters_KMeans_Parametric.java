@@ -47,5 +47,23 @@ public class Parameters_KMeans_Parametric implements Serializable{
     public Integer getNumMaxIterations(){
         return this.numMaxIterations;
     }
+
+	@Override
+	public String toString() {
+	    
+		StringBuilder sb = new StringBuilder();
+		
+		sb.append("=== k-Means Parametric === \n");
+	    sb.append(String.format("   Maximum number of iterations:        %d\n"    , numMaxIterations));
+	    sb.append(String.format("   Minimum %% of Changes:                %3.3f\n" , percChange));
+	    sb.append(String.format("   Cluster Labeling:                    %s\n"    , centroidLabel ? "Centroid" : "F1-Measure"));
+	    
+	    
+		
+		return sb.toString();
+
+	}
+
+    
     
 }

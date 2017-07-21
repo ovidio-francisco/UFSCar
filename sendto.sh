@@ -57,6 +57,10 @@ echo ""
 
 fortune | cowsay -f turtle
 
+size=$(ls -lh $filename | cut -d\  -f5)
+
+echo -e "\nFile '$filename' created! \nSize: $size\n"
+
 echo ""
 echo "done!"
 

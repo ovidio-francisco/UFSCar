@@ -42,5 +42,18 @@ public class Parameters_PLSA_Parametric  implements Serializable{
     public Double getMinDifference(){
         return this.minDifference;
     }
+
+	@Override
+	public String toString() {
+		StringBuilder sb = new StringBuilder();
+		
+		sb.append("=== PLSA Parametric === \n");
+	    sb.append(String.format("   Maximum number of iterations:        %d\n"    , numMaxIterations));
+	    sb.append(String.format("   Minimum difference of log liklihood: %3.3f\n" , minDifference));
+		
+		return sb.toString();
+	}
+    
+    
     
 }
