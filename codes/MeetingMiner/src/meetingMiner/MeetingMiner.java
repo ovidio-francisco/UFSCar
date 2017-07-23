@@ -31,7 +31,7 @@ public class MeetingMiner {
 //  private static TopicExtractionParameters   extractionParameters     ;// = M4MTopicExtractionConfiguration.getDefaultTopicExtractionConf();
     private static M4MRepresentationParameters representationParameters ;// = M4MRepresentationConfiguration.getDefaultRepresentationConf();
     private static M4MArffGenerationParameters arffGenerationParameters ;// = M4MArffGenerationConfiguration.getArffGenerationConf();
-    private static int descriptorsByTopic = 13;
+    private static int descriptorsByTopic = 10;
     
     private static File arfFolder = null;
     private static File outFolder = null;
@@ -58,19 +58,14 @@ public class MeetingMiner {
 	
     public static void prepareFolders() {
     
-    	arfFolder = new File(Files.getSegmentedDocs().getAbsolutePath() + "/arff");
-    	outFolder = new File(Files.getSegmentedDocs().getAbsoluteFile() + "/out");
+    	arfFolder = new File(Files.getBasesFolder().getAbsolutePath() + "/arff");
+    	outFolder = new File(Files.getBasesFolder().getAbsoluteFile() + "/out");
         
         foldersOK = true;
         
         getRepresentationParameters().setDirIn(Files.getSegmentedDocs());
         getRepresentationParameters().setDirOut(arfFolder);
 
-//        getExtractionParameters().setDirEntrada(arfFolder.getAbsolutePath());
-//        getExtractionParameters().setDirSaida(outFolder.getAbsolutePath());
-        
-        
-        
     }
     
     public static void miningTheMeetings() {
@@ -502,7 +497,6 @@ public class MeetingMiner {
     }
     
     public static void setTopicExtractionconfiguration(TopicExtractionConfiguration topicExtractionconfiguration) {
-    	ShowStatus.setMessage("setting");
         MeetingMiner.topicExtractionconfiguration = topicExtractionconfiguration;
     }
 

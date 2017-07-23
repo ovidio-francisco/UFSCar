@@ -2,13 +2,16 @@ package meetingMiner;
 
 import java.io.File;
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Set;
+
+import preprocessamento.Preprocess;
 
 public class MMTopic {
 	
 	private ArrayList<String> descriptors = new ArrayList<>();
 	private ArrayList<File> segmentsDoc   = new ArrayList<>();
 	
-
 	
 	public ArrayList<String> descriptorsIntersection(ArrayList<String> descs) {
 		ArrayList<String> result = new ArrayList<>();
@@ -17,6 +20,24 @@ public class MMTopic {
 		result.retainAll(descs);
 		
 		return result;
+	}
+	
+	
+	public Set<String> descriptorsStemedIntersection(ArrayList<String> descs) {
+		
+		HashMap<String, String> stems = new HashMap<>();
+		for(String s : descriptors) {
+			stems.put(s, Preprocess.getStemmer().wordStemming(s));
+		}
+
+		ArrayList<String> descsStems = new ArrayList<>();
+		for(String s : descs) {
+			descsStems.add(Preprocess.getStemmer().wordStemming(s));
+		}
+		
+		stems.values().retainAll(descsStems);
+
+		return stems.keySet();
 	}
 	
 	

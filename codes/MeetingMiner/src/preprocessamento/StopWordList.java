@@ -12,8 +12,12 @@ public class StopWordList implements StopWords {
 	List<String> list = new ArrayList<>();
 	
 
-	public StopWordList(File file) {
-		list = Files.loadTxtFileToList(file);
+	public StopWordList(File file1, File file2) {
+		List<String> list1 = Files.loadTxtFileToList(file1);
+		List<String> list2 = Files.loadTxtFileToList(file2);
+		
+		list.addAll(list1);
+		list.addAll(list2);
 	}
 	
 	@Override
@@ -28,7 +32,7 @@ public class StopWordList implements StopWords {
 	
 
 	public static void showExample() {
-		StopWords sw = new StopWordList(new File("stopPort.txt"));
+		StopWords sw = new StopWordList(new File("stopPort.txt"), new File("stopPort2.txt"));
 		
 		System.out.println(String.format("Usando lista com %d palavras\n", sw.getStopWords().size()));
 		

@@ -35,6 +35,24 @@ public class StopWords {
                 e.printStackTrace();
                 System.exit(0);
             }   
+
+            /** Lista com Stopwords extras - by ojf */
+            try{
+                RandomAccessFile arqStop = new RandomAccessFile("stopPort2.txt", "r");
+                ShowStatus.setMessage("Aquivo '"+arqStop.toString()+"'carregado");
+                String line = "";
+                while((line = arqStop.readLine())!=null){
+                    if(line.length()>0){
+                        String elem = new String(line);
+                        list.add(elem);
+                    }
+                }
+                arqStop.close();
+            }catch(Exception e){
+            	ShowStatus.setMessage("Error when reading stopwords file (stopPort2.txt).");
+                e.printStackTrace();
+                System.exit(0);
+            }   
         }else{
             try{
                 RandomAccessFile arqStop = new RandomAccessFile("stopIngl.txt", "r");

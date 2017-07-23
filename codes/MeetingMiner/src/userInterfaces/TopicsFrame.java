@@ -9,6 +9,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.File;
 import java.util.ArrayList;
+import java.util.Set;
 
 import javax.swing.BorderFactory;
 import javax.swing.BoxLayout;
@@ -30,6 +31,7 @@ import javax.swing.border.EtchedBorder;
 import meetingMiner.MMTopic;
 import meetingMiner.MeetingMiner;
 import meetingMiner.Segment;
+import preprocessamento.Preprocess;
 import segmenter.Segmenter;
 import segmenter.algorithms.texttile.TextTilingBR;
 import topicExtraction.TETConfigurations.TopicExtractionConfiguration;
@@ -88,10 +90,6 @@ public class TopicsFrame extends JFrame{
 		toolBar.add(btShowSegments);
 		toolBar.addSeparator();
 
-		cbDescriptorsByTopic.setMaximumSize(new Dimension(50, 25));
-		cbDescriptorsByTopic.setSelectedItem(MeetingMiner.getDescriptorsByTopic());
-		cbDescriptorsByTopic.setEditable(true);
-		
 		
 		JPanel pnToolBar = new JPanel();
 		pnToolBar.setLayout(new BorderLayout());
@@ -145,6 +143,10 @@ public class TopicsFrame extends JFrame{
 		MeetingMiner.prepareFolders();
 		defaultConfiguration();
 
+		
+		cbDescriptorsByTopic.setMaximumSize(new Dimension(50, 25));
+		cbDescriptorsByTopic.setSelectedItem(MeetingMiner.getDescriptorsByTopic());
+		cbDescriptorsByTopic.setEditable(true);
 		
 		ShowStatus.setTextArea(taStatus);
 		addListeners();
@@ -273,15 +275,22 @@ public class TopicsFrame extends JFrame{
 				MeetingMiner.setDescriptorsByTopic(getUserDescriptorsByTopic());
 			}
 		});
+		
+		tfSearchDescriptors.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				btSearch.getActionListeners()[0].actionPerformed(null);
+			}
+		});
 	}
 	
 	
 	private ArrayList<MMTopic> filterTopicsByDescriptor(ArrayList<MMTopic> topics, ArrayList<String> descs) {
 		ArrayList<MMTopic> result = new ArrayList<>();
-
 		
 		for(MMTopic t : topics) {
-			ArrayList<String> descriptorsIntersections = t.descriptorsIntersection(descs);
+//			ArrayList<String> descriptorsIntersections = t.descriptorsIntersection(descs);
+			Set<String> descriptorsIntersections = t.descriptorsStemedIntersection(descs);
 			if(descriptorsIntersections.size() > 0) {
 				result.add(t);
 			}
@@ -296,27 +305,38 @@ public class TopicsFrame extends JFrame{
 		MeetingMiner.extractDescriptorsAndFiles();
 		ArrayList<MMTopic> topics = MeetingMiner.getMMTopics();
 		
+		ArrayList<Segment> segments = null;
 		
-		ArrayList<String> userDescs = new ArrayList<>();
-		for(String s : tfSearchDescriptors.getText().split(" ")) { 
-			userDescs.add(s);
-		}
-		
-		/** Filtra os tópicos que contém algum descritor informado pelo usuário */
 		if (filter) {
+			ArrayList<String> userDescs = new ArrayList<>();
+			for(String s : tfSearchDescriptors.getText().split(" ")) {
+				if (!Preprocess.getStopWords().isStopWord(s)) {
+					userDescs.add(s);
+				}
+//				userDescs.add(s);
+			}
+			ShowStatus.setMessage(String.format("\n=====%s=====\n", userDescs));
+			
+			/** Filtra os tópicos que contém algum descritor informado pelo usuário */
 			topics = filterTopicsByDescriptor(topics, userDescs);
-		}
 
-		/** Carrega os segmentos que contém Documentos associados com os tópicos filtrados */
-		/** Para cada tópico associado ao segmento, associa os decritores dos tópico ao segmento */
-		ArrayList<Segment> segments = Segment.getAllSegments(topics);
-
-		for(Segment seg : segments) {
-			seg.matchUserDescriptors(userDescs);
+			/** Carrega os (objetos) segmentos que contém Documentos(segmento de uma ata) associados com os tópicos filtrados */
+			/** Para cada tópico associado ao segmento, associa os decritores dos tópico ao segmento */
+			segments = Segment.getAllSegments(topics);
+			
+			for(Segment seg : segments) {
+				seg.matchUserDescriptors(userDescs);
+			}
+			Segment.sortSegmentsByMatcheCount(segments);
+			
+			ShowStatus.setMessage(String.format("%d tópicos selecionados %d segmentos encontrados", topics.size(), segments.size()));
 		}
-		Segment.sortSegmentsByMatcheCount(segments);
-		
-		ShowStatus.setMessage(String.format("%d tópicos selecionados %d segmentos encontrados", topics.size(), segments.size()));
+		else {
+
+			/** Carrega todos os segmentos que contém Documentos associados com todos os tópicos */
+			segments = Segment.getAllSegments(topics);
+		}
+			
 		
 		clearSegments();
 		lbSegmentsCount.setText("Gerando visualização");

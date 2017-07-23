@@ -16,7 +16,7 @@ public class StatisticsPreprocessamento {
 	
 	private static ArrayList<ArrayList<ArrayList<String>>> docs = new ArrayList<>();
 	
-	private static StopWordList stopWords = new StopWordList(new File("stopPort.txt"));
+	private static StopWordList stopWords = new StopWordList(new File("stopPort.txt"), new File("stopPort2.txt"));
 	private static ptstemmer.Stemmer stemmer =  new OrengoStemmer();
 	
 //	private static int wordRepetition(){

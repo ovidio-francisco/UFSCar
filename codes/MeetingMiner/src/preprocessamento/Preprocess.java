@@ -7,7 +7,7 @@ import utils.TextUtils;
 
 public class Preprocess {
 	
-	private static StopWordList stopWords = new StopWordList(new File("stopPort.txt"));
+	private static StopWordList stopWords = new StopWordList(new File("stopPort.txt"), new File("stopPort2.txt"));
 	private static ptstemmer.Stemmer stemmer =  new OrengoStemmer();
 	
 	private boolean toLowCase         = true;
