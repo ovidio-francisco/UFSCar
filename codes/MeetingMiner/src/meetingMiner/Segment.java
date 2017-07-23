@@ -8,6 +8,7 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.HashMap;
 
+import preprocessamento.Preprocess;
 import utils.Files;
 
 public class Segment {
@@ -48,10 +49,29 @@ public class Segment {
 		return result;
 	}
 	
+//	/**	Compare the users descriptors and store the matches */
+//	public void matchUserDescriptors(ArrayList<String> descs) {
+//		this.matches.addAll(topicDescriptors.keySet());
+//		this.matches.retainAll(descs);
+//	}
+	
 	/**	Compare the users descriptors and store the matches */
 	public void matchUserDescriptors(ArrayList<String> descs) {
-		this.matches.addAll(topicDescriptors.keySet());
-		this.matches.retainAll(descs);
+
+		HashMap<String, String> stems = new HashMap<>();
+		for(String s : descs) {
+			stems.put(s, Preprocess.getStemmer().wordStemming(s));
+		}
+		
+		ArrayList<String> descsStems = new ArrayList<>();
+		for(String s : descs) {
+			descsStems.add(Preprocess.getStemmer().wordStemming(s));
+		}
+
+		stems.values().retainAll(descsStems);
+		
+		this.matches.clear();
+		this.matches.addAll(stems.keySet());
 	}
 	
 	public static void sortSegmentsByMatcheCount(ArrayList<Segment> segs) {

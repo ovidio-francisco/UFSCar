@@ -315,7 +315,6 @@ public class TopicsFrame extends JFrame{
 				}
 //				userDescs.add(s);
 			}
-			ShowStatus.setMessage(String.format("\n=====%s=====\n", userDescs));
 			
 			/** Filtra os tópicos que contém algum descritor informado pelo usuário */
 			topics = filterTopicsByDescriptor(topics, userDescs);
