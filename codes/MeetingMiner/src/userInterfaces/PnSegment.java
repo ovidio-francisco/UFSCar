@@ -34,8 +34,10 @@ public class PnSegment extends JPanel {
 		
 		StringBuilder sb = new StringBuilder();
 		for(String s : seg.getDescriptors()){
-			if(seg.getMatches().contains(s)) {
-//				sb.append("<b>"+s+"</b>, ");
+			if(seg.getMatches().containsKey(s)) {               //se um descritor está contido no matches
+				if(seg.descriptorFrequency(s)>1) {
+					s = s+"["+seg.descriptorFrequency(s)+"]";
+				}
 				sb.append("<font color=blue>"+s+"</font>, ");
 			}
 			else {

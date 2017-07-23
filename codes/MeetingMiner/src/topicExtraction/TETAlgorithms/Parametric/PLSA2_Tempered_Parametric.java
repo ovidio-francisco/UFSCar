@@ -78,23 +78,23 @@ public class PLSA2_Tempered_Parametric extends TopicExtractorOld{
         double currentLog = 0;
         
         while(sair == false){
-        	ShowStatus.setMessage("Iteração " + numIt + "---");
+        	ShowStatus.setMessageVerbose("Iteração " + numIt + "---");
             
-        	ShowStatus.setMessage("- E-Step");
+        	ShowStatus.setMessageVerbose("- E-Step");
             EStep(probTopic, probDocTopic, probTermTopic, probTopicDocTerm, adjListDocTerm, beta);
             
             beta = beta * 0.8;
-            ShowStatus.setMessage("---Beta:" + beta);
+            ShowStatus.setMessageVerbose("---Beta:" + beta);
             
-            ShowStatus.setMessage("- M-Step");
+            ShowStatus.setMessageVerbose("- M-Step");
             MStep(probTopic, probDocTopic, probTermTopic, probTopicDocTerm, adjListTermDoc, adjListDocTerm, posTermDoc);
             
             double logLikelihood = getLogLikelihood(probTopic, probDocTopic, probTermTopic, adjListDocTerm);
-            ShowStatus.setMessage("---LogLikelihood: " + logLikelihood);
+            ShowStatus.setMessageVerbose("---LogLikelihood: " + logLikelihood);
             
             if(numIt > 0){
                 currentLog = logLikelihood;
-                ShowStatus.setMessage("Difference: " + Math.abs(currentLog - previousLog));
+                ShowStatus.setMessageVerbose("Difference: " + Math.abs(currentLog - previousLog));
                 if(Math.abs(currentLog - previousLog) < this.getMinDifference()){
                     sair = true;
                 }
@@ -129,7 +129,7 @@ public class PLSA2_Tempered_Parametric extends TopicExtractorOld{
     
     private void MStep(double[] probTopic, double[][] probDocTopic, double[][] probTermTopic, double[][][] probTopicDocTerm, Neighbor[] adjListTermDoc, Neighbor[] adjListDocTerm, HashMap<String,Integer> posTermDoc){
         //p(w|z) => probTermTopic
-    	ShowStatus.setMessage("--P(term|topic)");
+    	ShowStatus.setMessageVerbose("--P(term|topic)");
         for(int topic=0;topic<getNumTopics();topic++){
             double norm = 0;
             for(int term=1;term<getNumTerms();term++){
@@ -149,7 +149,7 @@ public class PLSA2_Tempered_Parametric extends TopicExtractorOld{
         }
         
         //p(d|z) => probDocTopic
-        ShowStatus.setMessage("--P(document|topic)");
+        ShowStatus.setMessageVerbose("--P(document|topic)");
         for(int topic=0;topic<getNumTopics();topic++){
             double norm = 0;
             for(int doc=0;doc<getNumDocs();doc++){
@@ -167,7 +167,7 @@ public class PLSA2_Tempered_Parametric extends TopicExtractorOld{
         }
         
         //p(z) => probTopic
-        ShowStatus.setMessage("--P(topic)");
+        ShowStatus.setMessageVerbose("--P(topic)");
         double norm=0;
         for(int topic=0;topic<getNumTopics();topic++){
             double sum=0;

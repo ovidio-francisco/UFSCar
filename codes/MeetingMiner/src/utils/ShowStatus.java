@@ -5,13 +5,12 @@ import javax.swing.JProgressBar;
 import javax.swing.JTextArea;
 import javax.swing.text.BadLocationException;
 
-
 public class ShowStatus {
-
 	
 	private static JLabel label = null;
 	private static JProgressBar progressBar = null;
 	private static JTextArea textArea = null;
+	private static boolean verbose = false;
 
 	public static void setMessage(String message) {
         
@@ -26,11 +25,17 @@ public class ShowStatus {
 			} catch (BadLocationException e) {
 				e.printStackTrace();
 			}
-            
         }
-        
     }
+	
+	
+	public static void setMessageVerbose(String message) {
+		if (verbose) {
+			setMessage(message);
+		}
+	}
 
+	
     public static void setProgress(int value) {
         if (progressBar != null) progressBar.setValue(value);
     }

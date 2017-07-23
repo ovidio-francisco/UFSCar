@@ -68,9 +68,9 @@ public class PLSA extends TopicExtractorOld{
         boolean sair = false;
         
         while(sair == false){
-            ShowStatus.setMessage("NumIt:" + numIt);
+            ShowStatus.setMessageVerbose("NumIt:" + numIt);
             // Definindo pesos dos documentos para os tópicos
-            ShowStatus.setMessage("Part1");
+            ShowStatus.setMessageVerbose("Part1");
             for(int doc=0;doc<numDocs;doc++){
                 for(int topic=0;topic<numTopics;topic++){
                     ArrayList<IndexValue> neighbors = adjListDocTerm[doc].getNeighbors();
@@ -111,10 +111,10 @@ public class PLSA extends TopicExtractorOld{
                     docTopics[doc][topic] = docTopicsTemp[doc][topic];
                 }
             }
-            ShowStatus.setMessage("Difference:" + acmDif);
+            ShowStatus.setMessageVerbose("Difference:" + acmDif);
 
             // Definindo pesos dos termos para os tópicos
-            ShowStatus.setMessage("Part2");
+            ShowStatus.setMessageVerbose("Part2");
             
             for(int topic=0;topic<numTopics;topic++){
                 for(int term=0;term<numTerms;term++){

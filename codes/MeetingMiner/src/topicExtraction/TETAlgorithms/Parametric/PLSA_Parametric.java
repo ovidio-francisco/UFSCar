@@ -5,10 +5,12 @@
  */
 package topicExtraction.TETAlgorithms.Parametric;
 
+import java.util.ArrayList;
+
 import topicExtraction.TETAlgorithms.TopicExtractorOld;
 import topicExtraction.TETStructures.IndexValue;
 import topicExtraction.TETStructures.Neighbor;
-import java.util.ArrayList;
+import utils.ShowStatus;
 import weka.core.Instances;
 
 /**
@@ -43,9 +45,9 @@ public class PLSA_Parametric extends TopicExtractorOld{
         boolean sair = false;
         
         while(sair == false){
-            System.out.println("NumIt:" + numIt);
+        	ShowStatus.setMessageVerbose("NumIt:" + numIt);
             // Definindo pesos dos documentos para os tópicos
-            System.out.println("Part1");
+        	ShowStatus.setMessageVerbose("Part1");
             for(int doc=0;doc<numDocs;doc++){
                 for(int topic=0;topic<numTopics;topic++){
                     ArrayList<IndexValue> neighbors = adjListDocTerm[doc].getNeighbors();
@@ -86,10 +88,10 @@ public class PLSA_Parametric extends TopicExtractorOld{
                     docTopics[doc][topic] = docTopicsTemp[doc][topic];
                 }
             }
-            System.out.println("Difference:" + acmDif);
+            ShowStatus.setMessageVerbose("Difference:" + acmDif);
 
             // Definindo pesos dos termos para os tópicos
-            System.out.println("Part2");
+            ShowStatus.setMessageVerbose("Part2");
             
             for(int topic=0;topic<numTopics;topic++){
                 for(int term=0;term<numTerms;term++){

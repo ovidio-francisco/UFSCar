@@ -5,8 +5,8 @@
  */
 package topicExtraction.TETAlgorithms.NonParametric;
 
-import topicExtraction.TETAlgorithms.Parametric.PLSA2_Parametric;
 import topicExtraction.TETAlgorithms.TopicExtractor;
+import topicExtraction.TETAlgorithms.Parametric.PLSA2_Parametric;
 import weka.core.Instances;
 
 /**
@@ -48,7 +48,7 @@ public class PLSA_NonParametric extends TopicExtractor {
             sumProb += sumTopic;
         }*/
         
-        System.out.println("teste");
+//        System.out.println("teste");
         /*for(int topic=0;topic<getNumTopics();topic++){
             probTopic[topic] = probTopic[topic] / sumProb;
         }*/

@@ -16,9 +16,9 @@ public class Segment {
 	private File originalDocument;
 	private File segmentDoc;
 	private String text = "";
-	private ArrayList<MMTopic> relationedTopics = new ArrayList<>();         // Tópicos que indicam estar relacionados com esse segmento 
-	private HashMap<String, Integer> topicDescriptors = new HashMap<>();     // Descritores relacionados com esse segmento
-	private ArrayList<String> matches = new ArrayList<>();                   // Descritores coincidentes com a pesquisa do usuário
+	private ArrayList<MMTopic> relationedTopics = new ArrayList<>();             // Tópicos que indicam estar relacionados com esse segmento 
+	private HashMap<String, Integer> topicDescriptors = new HashMap<>();         // Descritores relacionados com esse segmento, não necessárimente de um único tópico
+	private HashMap<String, String> matches = new HashMap<>();                   // Descritores coincidentes com a pesquisa do usuário e seus stems
 
 	
 	public static ArrayList<Segment> getAllSegments(ArrayList<MMTopic> topics) {
@@ -59,7 +59,7 @@ public class Segment {
 	public void matchUserDescriptors(ArrayList<String> descs) {
 
 		HashMap<String, String> stems = new HashMap<>();
-		for(String s : descs) {
+		for(String s : topicDescriptors.keySet()) {
 			stems.put(s, Preprocess.getStemmer().wordStemming(s));
 		}
 		
@@ -70,8 +70,7 @@ public class Segment {
 
 		stems.values().retainAll(descsStems);
 		
-		this.matches.clear();
-		this.matches.addAll(stems.keySet());
+		this.matches.putAll(stems);
 	}
 	
 	public static void sortSegmentsByMatcheCount(ArrayList<Segment> segs) {
@@ -83,7 +82,7 @@ public class Segment {
 		});
 	}
 	
-	public ArrayList<String> getMatches() {
+	public HashMap<String, String> getMatches() {
 		return matches;
 	}
 
