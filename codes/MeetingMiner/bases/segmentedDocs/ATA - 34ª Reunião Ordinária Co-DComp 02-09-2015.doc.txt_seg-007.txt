@@ -1,0 +1,1 @@
+O valor do pedido recusado é de R$ 3593,92, pretende-se tentar recuperar o valor para fazer um novo pedido, com item de outra natureza. 

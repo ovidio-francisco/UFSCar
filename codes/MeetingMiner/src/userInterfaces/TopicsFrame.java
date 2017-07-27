@@ -1,6 +1,7 @@
 package userInterfaces;
 
 import java.awt.BorderLayout;
+import java.awt.Container;
 import java.awt.Dimension;
 import java.awt.Font;
 import java.awt.GridLayout;
@@ -8,10 +9,15 @@ import java.awt.Insets;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.File;
+import java.io.FileInputStream;
+import java.io.IOException;
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Properties;
 import java.util.Set;
 
 import javax.swing.BorderFactory;
+import javax.swing.Box;
 import javax.swing.BoxLayout;
 import javax.swing.JButton;
 import javax.swing.JComboBox;
@@ -20,10 +26,12 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
+import javax.swing.JSeparator;
 import javax.swing.JSplitPane;
 import javax.swing.JTextArea;
 import javax.swing.JTextField;
 import javax.swing.JToolBar;
+import javax.swing.SwingConstants;
 import javax.swing.border.CompoundBorder;
 import javax.swing.border.EmptyBorder;
 import javax.swing.border.EtchedBorder;
@@ -37,30 +45,48 @@ import segmenter.algorithms.texttile.TextTilingBR;
 import topicExtraction.TETConfigurations.TopicExtractionConfiguration;
 import utils.Files;
 import utils.ShowStatus;
+import utils.UIUtils;
 
 public class TopicsFrame extends JFrame{
 
 	private static final long serialVersionUID = 1L;
 	
-	private JPanel  pnSegments      = new JPanel();
-
-	private JButton btAddToTheBase  = new JButton("Adicionar documentos");
-	private JButton btConfg         = new JButton("Configurações");
-	private JButton btExtractTopics = new JButton("Extrair Tópicos");
-	private JButton btShowTree      = new JButton("Exibir tópicos");
-	private JButton btShowSegments  = new JButton("Exibir Segmentos");
+	private JPanel  pnSegments          = new JPanel();
+	private JPanel  pnToolBar           = new JPanel();
+	private JPanel  pnCenter            = new JPanel();
+	private JPanel  pnStatusBar         = null;
+	private JPanel  pnSearch             = null;
 	
-	private JLabel lbSegmentsCount = new JLabel();
-
+	private JButton btAddToTheBase      = new JButton("Adicionar documentos");
+	private JButton btConfg             = new JButton("Configurações");
+	private JButton btExtractTopics     = new JButton("Extrair Tópicos");
+	private JButton btShowTree          = new JButton("Exibir tópicos");
+	private JButton btShowSegments      = new JButton("Exibir Segmentos");
+	
+	private JLabel lbSegmentsCount      = new JLabel();
+	private JLabel lbDocsCount          = new JLabel();
+	private JLabel lbTopicsExtracted    = new JLabel();
+	private JLabel lbAlgorithm          = new JLabel();
+	private JLabel lbDescriptorsByTopic = new JLabel("Descritores por tópico: ");
+			
 	private JTextField tfSearchDescriptors = new JTextField(30);
 	private JButton btSearch = new JButton("Localizar");
 	
 	private JComboBox<Integer> cbDescriptorsByTopic = new JComboBox<>(new Integer[] {5, 10, 15, 20, 25});
 
 	ArrayList<PnSegment> pnSegs = new ArrayList<>();
+
+	private JTextArea taStatus = new JTextArea("");
+
+
+	private JScrollPane spSegments = null;
+
 	
-	
-//	private TopicExtractionConfiguration cfg = new TopicExtractionConfiguration(); 
+	private boolean isBasesFolderFound = false;
+	private boolean isOrignalDocsFound = false;
+	private boolean isArffFileFound = false;
+	private boolean isMatricesFound = false;
+	private int     originalDocsCount = 0;
 	
 	public TopicsFrame() {
 
@@ -70,67 +96,35 @@ public class TopicsFrame extends JFrame{
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
 		setTitle("Meeting Miner");
 		
-		JToolBar toolBar = new JToolBar();
-		toolBar.setMargin(new Insets(6, 0, 4, 0));
+		pnToolBar = createPnToolBar();
 		
-		toolBar.setFloatable(false);
-		toolBar.addSeparator();
-		toolBar.add(btAddToTheBase);
-		toolBar.addSeparator();
-		toolBar.add(btConfg);
-		toolBar.addSeparator();
-		toolBar.add(btExtractTopics);
-		toolBar.addSeparator();
-		toolBar.add(new JLabel("Descritores por tópico: "));
-		toolBar.add(cbDescriptorsByTopic);
-		toolBar.addSeparator();
-		toolBar.add(btShowTree);
-		toolBar.addSeparator();
-		toolBar.addSeparator();
-		toolBar.add(btShowSegments);
-		toolBar.addSeparator();
-
 		
-		JPanel pnToolBar = new JPanel();
-		pnToolBar.setLayout(new BorderLayout());
-		pnToolBar.add(toolBar, BorderLayout.NORTH);
-		
-		pnSegments.setLayout(new BoxLayout(pnSegments, BoxLayout.Y_AXIS));
-		JScrollPane spSegments = new JScrollPane(pnSegments);
-		spSegments.setBorder(new CompoundBorder(BorderFactory.createEtchedBorder(EtchedBorder.LOWERED), new EmptyBorder(5, 5, 5, 5) ));
-		spSegments.getVerticalScrollBar().setUnitIncrement(12);
+		pnSearch               = createPnSearchSegments(); 
+		pnSegments             = createPnSegments();
+		JPanel pnResultsStatus = createPnResultsStatus();
 		
 		JPanel pnResults = new JPanel();
 		pnResults.setLayout(new BorderLayout());
 
-		JPanel pnSearch = createPnSearchSegments(); 
 
-		JPanel pnResultsStatus = new JPanel(new BorderLayout());
-		lbSegmentsCount.setBorder(new EmptyBorder(0, 0, 0, 2));
-		pnResultsStatus.add(lbSegmentsCount, BorderLayout.EAST);
 		
 		pnResults.add(pnSearch, BorderLayout.NORTH);
 		pnResults.add(spSegments, BorderLayout.CENTER);
 		pnResults.add(pnResultsStatus, BorderLayout.SOUTH);
 		
 		
-		JPanel pnBottom = new JPanel();
-		pnBottom.setLayout(new BorderLayout());
-		pnBottom.setPreferredSize(new Dimension(50, 50));
-		pnBottom.setBorder(new EmptyBorder(5, 0, 5, 0));
-		JTextArea taStatus = new JTextArea("");
-		taStatus.setFont(new Font(Font.MONOSPACED, taStatus.getFont().getStyle(), taStatus.getFont().getSize()));
-		JScrollPane spStatus = new JScrollPane(taStatus);
-		pnBottom.add(spStatus);
+		JPanel pnBottom = createPnBottom();
+		
+		pnStatusBar = createPnStatus();
+		pnBottom.add(pnStatusBar, BorderLayout.SOUTH);
 		
 		
-		JPanel pnCenter = new JPanel();
 		pnCenter.setLayout(new GridLayout(1, 2));
 		pnCenter.add(pnResults);
 		
 		JSplitPane splitPane = new JSplitPane(JSplitPane.VERTICAL_SPLIT, pnCenter, pnBottom);
 		splitPane.setBorder(new EmptyBorder(0, 5, 0, 5));
-		splitPane.setDividerLocation(500); // try to put on de very botton position
+		splitPane.setDividerLocation(500);                          // try to put on de very botton position
 		pnCenter.setMinimumSize(new Dimension(100, 150));
 		pnBottom.setMinimumSize(new Dimension(100,  30));
 
@@ -148,6 +142,8 @@ public class TopicsFrame extends JFrame{
 		cbDescriptorsByTopic.setSelectedItem(MeetingMiner.getDescriptorsByTopic());
 		cbDescriptorsByTopic.setEditable(true);
 		
+		verifyStatus();
+		
 		ShowStatus.setTextArea(taStatus);
 		addListeners();
 		setVisible(true);
@@ -157,6 +153,49 @@ public class TopicsFrame extends JFrame{
 	public void setVisible(boolean value) {
 	    super.setVisible(value);
 	    tfSearchDescriptors.requestFocusInWindow();
+	}
+	
+	private void verifyStatus() {
+		
+		isBasesFolderFound = Files.getBasesFolder().exists();
+		isOrignalDocsFound = Files.getOriginalDocs().exists();
+		if (isOrignalDocsFound) originalDocsCount = Files.getOriginalDocs().list().length;
+		isArffFileFound    = MeetingMiner.getArffFile().exists();
+		isMatricesFound    = MeetingMiner.getDocument_TopicMatrixFile().exists() && MeetingMiner.getTerm_TopicMatrixFile().exists();
+		
+		ShowStatus.setMessage(isBasesFolderFound ? "Diretório base econtrado" : "Diretório base não econtrado");
+		ShowStatus.setMessage(originalDocsCount > 0 ? String.format("%d documentos encontrados", originalDocsCount) : "Nenhum documento encontrado");
+		ShowStatus.setMessage(isArffFileFound ? "Arquivo arff encontrado" : "Arquivo arff não encontrado");
+		ShowStatus.setMessage(isMatricesFound ? "Matrizes encontradas" : "Matrizes não encontradas");
+		
+		if(isMatricesFound) {
+			MeetingMiner.extractDescriptorsAndFiles();
+		}
+		
+		if (isMatricesFound) {
+			lbTopicsExtracted.setText(String.format("%d topics extracted", MeetingMiner.getNumTopics()));
+			
+			Properties topicExtractionConfigSaveFile = new Properties();
+			try {
+				topicExtractionConfigSaveFile.load(new FileInputStream(MeetingMiner.getConfigSaveFile()));
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+			
+			lbAlgorithm.setText(topicExtractionConfigSaveFile.getProperty("Algorithm"));
+		}
+		else {
+			lbTopicsExtracted.setText(String.format("%d topics extracted", MeetingMiner.getNumTopics()));
+			
+			if (MeetingMiner.getConfigSaveFile().exists())
+				lbAlgorithm.setText("Please, extract the topics");
+			
+		}
+		
+		lbDocsCount.setText(String.format("%d documentos na base de dados", originalDocsCount));
+		
+		
+		setControlsEnable();
 	}
 	
 	private void extractTopics() {
@@ -176,14 +215,14 @@ public class TopicsFrame extends JFrame{
 		f.setVisible(true);
 	}
 	
-	private void addToTheBase() {
+	private int addToTheBase() {
 		JFileChooser fc = new JFileChooser();
 		fc.setCurrentDirectory(new File("./.."));
 		fc.setFileSelectionMode(JFileChooser.DIRECTORIES_ONLY);
 		
 		
 	 	int option =  fc.showOpenDialog(null);
-	 	if (option != JFileChooser.APPROVE_OPTION) return;
+	 	if (option != JFileChooser.APPROVE_OPTION) return 0;
 	 	
 		File folder = fc.getSelectedFile();
 		
@@ -200,7 +239,10 @@ public class TopicsFrame extends JFrame{
 		ShowStatus.setMessage("Concluído!");
 		ShowStatus.setMessage(filesAdded + " arquivos adicionados a base");
 		ShowStatus.setMessage(segmentsExtracteds + " segmentos extratídos");
+		
+		return filesAdded;
 	}
+	
 	
 	private void addListeners() {
 		
@@ -210,9 +252,11 @@ public class TopicsFrame extends JFrame{
 				new Thread() {
 			        @Override
 			        public void run(){
+			        	setWainting(true);
 			        	extractTopics();
+			    		setWainting(false);
 			        }
-				}.start();
+				}.start();  
 			}
 		});
 		
@@ -229,7 +273,12 @@ public class TopicsFrame extends JFrame{
 				new Thread() {
 			        @Override
 			        public void run(){
-			        	addToTheBase();
+			        	setWainting(true);
+			        	if (addToTheBase() > 0 ) {
+			        		MeetingMiner.represent(true);
+			        		MeetingMiner.removePreviousMatrices();
+			        	}
+			    		setWainting(false);
 			        }
 				}.start();
 			}
@@ -240,7 +289,6 @@ public class TopicsFrame extends JFrame{
 			public void actionPerformed(ActionEvent e) {
 				FrConfgs f = new FrConfgs(MeetingMiner.getTopicExtractionconfiguration());
 				f.setVisible(true);
-				
 			}
 		});
 		
@@ -250,10 +298,11 @@ public class TopicsFrame extends JFrame{
 				new Thread() {
 			        @Override
 			        public void run(){
+			        	setWainting(true);
 			        	showSegments(false);
+			    		setWainting(false);
 			        }
 				}.start();
-
 			}
 		});
 		
@@ -263,7 +312,9 @@ public class TopicsFrame extends JFrame{
 				new Thread() {
 			        @Override
 			        public void run(){
+			        	setWainting(true);
 			        	showSegments(true);
+			    		setWainting(false);
 			        }
 				}.start();
 			}
@@ -285,7 +336,7 @@ public class TopicsFrame extends JFrame{
 	}
 	
 	
-	private ArrayList<MMTopic> filterTopicsByDescriptor(ArrayList<MMTopic> topics, ArrayList<String> descs) {
+	private ArrayList<MMTopic> filterTopicsByDescriptor(ArrayList<MMTopic> topics, Set<String> descs) {
 		ArrayList<MMTopic> result = new ArrayList<>();
 		
 		for(MMTopic t : topics) {
@@ -308,23 +359,24 @@ public class TopicsFrame extends JFrame{
 		ArrayList<Segment> segments = null;
 		
 		if (filter) {
-			ArrayList<String> userDescs = new ArrayList<>();
+			
+			HashMap<String, String> userDescsStems = new HashMap<>();
 			for(String s : tfSearchDescriptors.getText().split(" ")) {
 				if (!Preprocess.getStopWords().isStopWord(s)) {
-					userDescs.add(s);
+					userDescsStems.put(s, Preprocess.getStemmer().wordStemming(s));
 				}
-//				userDescs.add(s);
 			}
-			
+
 			/** Filtra os tópicos que contém algum descritor informado pelo usuário */
-			topics = filterTopicsByDescriptor(topics, userDescs);
+			ShowStatus.setMessage("\nFiltering topics by: " + userDescsStems.values());
+			topics = filterTopicsByDescriptor(topics, userDescsStems.keySet());
 
 			/** Carrega os (objetos) segmentos que contém Documentos(segmento de uma ata) associados com os tópicos filtrados */
 			/** Para cada tópico associado ao segmento, associa os decritores dos tópico ao segmento */
 			segments = Segment.getAllSegments(topics);
 			
 			for(Segment seg : segments) {
-				seg.matchUserDescriptors(userDescs);
+				seg.matchUserDescriptors(userDescsStems.keySet());
 			}
 			Segment.sortSegmentsByMatcheCount(segments);
 			
@@ -347,6 +399,30 @@ public class TopicsFrame extends JFrame{
 		}
 		lbSegmentsCount.setText(count+" trechos relacionados");
 		ShowStatus.setMessage  (count+" trechos relacionados");
+
+	}
+	
+	
+	private void setWainting(boolean waiting) {
+		UIUtils.setWaiting(new Container[] {pnCenter, pnToolBar}, waiting);
+		
+		if (!waiting){
+			verifyStatus();
+		}
+	}
+	
+	private void setControlsEnable() {
+		btExtractTopics     .setEnabled(isArffFileFound);
+		btConfg             .setEnabled(isArffFileFound);
+		lbDescriptorsByTopic.setEnabled(isArffFileFound);
+		cbDescriptorsByTopic.setEnabled(isArffFileFound);
+		
+		boolean wasTopicsExtactionExecuted = isMatricesFound;
+		
+		btShowSegments.setEnabled(wasTopicsExtactionExecuted);
+		btShowTree    .setEnabled(wasTopicsExtactionExecuted);
+		
+		UIUtils.setEnable(pnSearch, wasTopicsExtactionExecuted);
 	}
 	
 
@@ -391,6 +467,96 @@ public class TopicsFrame extends JFrame{
 		return pnSearch;
 	}
 	
+	private JPanel createPnSegments() {
+		JPanel pnSegments = new JPanel();
+
+		pnSegments.setLayout(new BoxLayout(pnSegments, BoxLayout.Y_AXIS));
+
+		spSegments = new JScrollPane(pnSegments);
+
+		spSegments.setBorder(new CompoundBorder(BorderFactory.createEtchedBorder(EtchedBorder.LOWERED), new EmptyBorder(5, 5, 5, 5) ));
+		spSegments.getVerticalScrollBar().setUnitIncrement(12);
+
+		return pnSegments;
+	}
+	
+	private JPanel createPnResultsStatus() {
+		JPanel pnResultsStatus = new JPanel(new BorderLayout());
+		lbSegmentsCount.setBorder(new EmptyBorder(0, 0, 0, 2));
+		pnResultsStatus.add(lbSegmentsCount, BorderLayout.EAST);
+
+		return pnResultsStatus;
+	}
+	
+	private JPanel createPnToolBar() {
+		JPanel pnToolBar = new JPanel();
+
+		JToolBar toolBar = new JToolBar();
+		toolBar.setMargin(new Insets(6, 0, 4, 0));
+		
+		toolBar.setFloatable(false);
+		toolBar.addSeparator();
+		toolBar.add(btAddToTheBase);
+		toolBar.addSeparator();
+		toolBar.add(btConfg);
+		toolBar.addSeparator();
+		toolBar.add(btExtractTopics);
+		toolBar.addSeparator();
+		toolBar.add(lbDescriptorsByTopic);
+		toolBar.add(cbDescriptorsByTopic);
+		toolBar.addSeparator();
+		toolBar.add(btShowTree);
+		toolBar.addSeparator();
+		toolBar.add(btShowSegments);
+		toolBar.addSeparator();
+
+		
+		pnToolBar.setLayout(new BorderLayout());
+		pnToolBar.add(toolBar, BorderLayout.NORTH);
+		
+		return pnToolBar;
+	}
+	
+	private JPanel createPnBottom() {
+		JPanel pnBottom = new JPanel();
+
+		pnBottom.setLayout(new BorderLayout());
+		pnBottom.setPreferredSize(new Dimension(50, 50));
+		pnBottom.setBorder(new EmptyBorder(5, 0, 5, 0));
+		taStatus.setFont(new Font(Font.MONOSPACED, taStatus.getFont().getStyle(), taStatus.getFont().getSize()));
+		JScrollPane spStatus = new JScrollPane(taStatus);
+		pnBottom.add(spStatus);
+		
+		return pnBottom;
+	}
+	
+	private JPanel createPnStatus() {
+		JPanel pnStatusBar = new JPanel();
+		
+		pnStatusBar.setLayout(new BoxLayout(pnStatusBar, BoxLayout.LINE_AXIS));
+		JSeparator sep1 = new JSeparator(SwingConstants.VERTICAL);
+		JSeparator sep2 = new JSeparator(SwingConstants.VERTICAL);
+		sep1.setMaximumSize(new Dimension(1, 30));
+		sep2.setMaximumSize(new Dimension(1, 30));
+
+		pnStatusBar.add(lbDocsCount);
+		pnStatusBar.add(Box.createHorizontalStrut(5));
+		pnStatusBar.add(sep1);
+		pnStatusBar.add(Box.createHorizontalStrut(5));
+		pnStatusBar.add(lbTopicsExtracted);
+		pnStatusBar.add(Box.createHorizontalStrut(5));
+		pnStatusBar.add(sep2);
+		pnStatusBar.add(Box.createHorizontalStrut(5));
+		pnStatusBar.add(lbAlgorithm);
+
+		lbTopicsExtracted.setFont(lbTopicsExtracted.getFont().deriveFont(Font.PLAIN));
+		lbDocsCount      .setFont(lbDocsCount      .getFont().deriveFont(Font.PLAIN));
+		lbAlgorithm      .setFont(lbAlgorithm      .getFont().deriveFont(Font.PLAIN));
+		
+		pnStatusBar.setBorder(new EmptyBorder(2, 0, 2, 2));
+
+		return pnStatusBar;
+	}
 	
     private void defaultConfiguration(){
         

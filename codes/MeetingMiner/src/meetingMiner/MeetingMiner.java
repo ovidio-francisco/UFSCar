@@ -26,6 +26,15 @@ public class MeetingMiner {
     public static final String DOCUMENT_TOPIC_MATRIX_FILE_NAME = "documentTopicMatrix.csv";
     public static final String TERM_TOPIC_MATRIX_FILE_NAME     = "termTopicMatrix.csv";    
 
+    private static File arfFolder = null;
+    private static File outFolder = null;
+               
+    private static boolean foldersOK;
+    private static boolean algorithmsOk;
+
+    
+    private static File configSaveFileName = new File("parameters.txt");
+    
     public static  TopicExtractionConfiguration topicExtractionconfiguration = new TopicExtractionConfiguration();
     
 //  private static TopicExtractionParameters   extractionParameters     ;// = M4MTopicExtractionConfiguration.getDefaultTopicExtractionConf();
@@ -33,12 +42,6 @@ public class MeetingMiner {
     private static M4MArffGenerationParameters arffGenerationParameters ;// = M4MArffGenerationConfiguration.getArffGenerationConf();
     private static int descriptorsByTopic = 10;
     
-    private static File arfFolder = null;
-    private static File outFolder = null;
-    
-    private static boolean foldersOK;
-    private static boolean algorithmsOk;
-
     
 //    private static Object view = null;
     
@@ -74,22 +77,23 @@ public class MeetingMiner {
         if(!arfFolder.exists()) arfFolder.mkdir();
         if(!outFolder.exists()) outFolder.mkdir();
         
-        represent();
+        represent(false);
         extractTopics();
         
         ShowStatus.setMessage("Extração de tópicos concluída");
         extractDescriptorsAndFiles();
         
 //        saveTopics();
+        saveConfig();
 
 
         ShowStatus.setMessage("Concluído em " + new SimpleDateFormat("mm:ss").format(new Date().getTime() - startTime));
     }
     
     
-    public static void represent() {
+    public static void represent(boolean overrideArffFile) {
         
-        if(getArffFile().exists()) {
+        if(!overrideArffFile && getArffFile().exists()) {
             ShowStatus.setMessage("Arquivo '"+getArffFile() + "' encontrado");
             return;
         }
@@ -108,7 +112,7 @@ public class MeetingMiner {
         try{
             ShowStatus.setMessage("Reading document-term matrix...");
                  
-            BufferedReader fileDocTopic = M4MFiles.getBufferedReader(new File(outFolder + "/" + MeetingMiner.DOCUMENT_TOPIC_MATRIX_FILE_NAME));
+            BufferedReader fileDocTopic = M4MFiles.getBufferedReader(getDocument_TopicMatrixFile());
             
             String[] parts;
             String linha;
@@ -173,7 +177,7 @@ public class MeetingMiner {
             
 //          linha = "";
 //          BufferedReader fileTermTopic = new BufferedReader(new InputStreamReader(new FileInputStream(outFolder + "/" + Mining4Meetings.TERM_TOPIC_MATRIX_FILE_NAME), "ISO-8859-1"));
-            BufferedReader fileTermTopic = M4MFiles.getBufferedReader(new File(outFolder + "/" + MeetingMiner.TERM_TOPIC_MATRIX_FILE_NAME));
+            BufferedReader fileTermTopic = M4MFiles.getBufferedReader(getTerm_TopicMatrixFile());
             linha = fileTermTopic.readLine();
             parts = linha.split(":");
             int numTerms = Integer.parseInt(parts[1]);
@@ -213,9 +217,9 @@ public class MeetingMiner {
             ShowStatus.setMessage("Descriptors extracted and documents assigned to topics");
             
             
-            MeetingMiner.descTopics = descTopics;
+            MeetingMiner.descTopics    = descTopics;
             MeetingMiner.docsPerTopics = docsPerTopics;
-            MeetingMiner.numTopics = numTopics;
+            MeetingMiner.numTopics     = numTopics;
             MeetingMiner.orderedTopics = orderedTopics;
             
            
@@ -278,56 +282,14 @@ public class MeetingMiner {
     
     public static void cleanFolders() {
         M4MFiles.deleteFolder(arfFolder);
-//        M4MFiles.deleteFolder(txtFolder);
         M4MFiles.deleteFolder(outFolder);        
     } 
 
-//    public static void saveTopics() {
-//        
-//        DefaultTreeModel model = (DefaultTreeModel)view; 
-//        String filename = outFolder.getPath()+"/topics.txt";
-//        
-//        if (MeetingMiner.getTopicExtractionconfiguration().isPLSA()) {
-//            filename = filename + " - PLSA";
-//        }
-//        if (MeetingMiner.getTopicExtractionconfiguration().isKMeans()) {
-//            filename = filename + " - kMeans";
-//        }
-//        if (MeetingMiner.getTopicExtractionconfiguration().isBisectingKMeans()) {
-//            filename = filename + " - BisectingkMeans";
-//        }
-//        if (MeetingMiner.getTopicExtractionconfiguration().isLDAGibbs()) {
-//            filename = filename + " - LDA Gibbs";
-//        }
-//        
-//        if (MeetingMiner.getTopicExtractionconfiguration().isAutoNumTopics()) {
-//            filename = filename + " - Non Parametric";
-//        }
-//        
-//        BufferedWriter out = M4MFiles.getBufferedWriter(new File(filename));
-//
-//        try {
-//
-//            for(int i=0; i < model.getChildCount(model.getRoot()); i++) {
-//                Object node = model.getChild(model.getRoot(), i);
-//
-//                if(!((DefaultMutableTreeNode)node).isLeaf()) {
-//                    out.write("Topic : " + node);    
-//                    out.newLine();
-//                }
-//            }
-//
-//            out.flush();
-//            out.close();
-//            
-//        } catch (IOException ex) {
-//            ex.printStackTrace();
-//        }
-//       
-//        ShowStatus.setMessage("Saving topics to "+filename);
-//    }
-    
 
+    private static void saveConfig() {
+    	topicExtractionconfiguration.saveConfig(getConfigSaveFile());
+    }
+    
     private static DefaultMutableTreeNode GererateTree(StringBuffer[] descTopics, StringBuffer[] docsPerTopics, int numTopics, int[] orderedTopics){
         DefaultMutableTreeNode root = new DefaultMutableTreeNode("Tópicos");
         
@@ -337,8 +299,6 @@ public class MeetingMiner {
             DefaultMutableTreeNode nodeDescTopic = new DefaultMutableTreeNode(descTopics[indTopic].toString());
             String[] parts  = docsPerTopics[indTopic].toString().split(";");
             
-            
-//            System.out.println(docsPerTopics[indTopic].toString()+ "========================&&&&&&&&&&&&&&&&&&&&&&&");
         
             for(int part=0;part<parts.length;part++){
                 DefaultMutableTreeNode doc_Topic = new DefaultMutableTreeNode(parts[part]);
@@ -399,6 +359,21 @@ public class MeetingMiner {
         
         return docsPerTopic;
     }
+    
+	public static void removePreviousMatrices() {
+		File docTopic = MeetingMiner.getDocument_TopicMatrixFile();
+		File terTopic = MeetingMiner.getTerm_TopicMatrixFile();
+		
+		Files.deleteFile(docTopic);
+		Files.deleteFile(terTopic);
+		
+        MeetingMiner.descTopics    = null;
+        MeetingMiner.docsPerTopics = null;
+        MeetingMiner.numTopics     = 0;
+        MeetingMiner.orderedTopics = null;
+		
+	}
+
     
 
     
@@ -480,18 +455,17 @@ public class MeetingMiner {
     }
     
     public static File getArffFile() {
-//      File arffFile = new File(cfg.getDirOut() + "/" + cfg.getRelacao() + ".arff");
         return new File(arfFolder.getAbsolutePath() + "/representacao.arff");
     }
-
-//    public static Object getView() {
-//        return view;
-//    }
-//
-//    public static void setView(Object view) {
-//        MeetingMiner.view = view;
-//    }
-
+    
+    public static File getDocument_TopicMatrixFile() {
+    	return new File(outFolder + "/" + MeetingMiner.DOCUMENT_TOPIC_MATRIX_FILE_NAME);
+    }
+    
+    public static File getTerm_TopicMatrixFile() {
+    	return new File(outFolder + "/" + MeetingMiner.TERM_TOPIC_MATRIX_FILE_NAME);
+    }
+    
     public static TopicExtractionConfiguration getTopicExtractionconfiguration() {
         return topicExtractionconfiguration;
     }
@@ -515,7 +489,16 @@ public class MeetingMiner {
     public static void setAlgorithmsOk(boolean algorithmsok) {
         MeetingMiner.algorithmsOk = algorithmsok;
     }
+
+	public static int getNumTopics() {
+		return numTopics;
+	}
+
+	public static File getConfigSaveFile() {
+		return new File(outFolder+"/"+configSaveFileName);
+	}
     
+	
     
     
 }

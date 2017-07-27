@@ -1,0 +1,1 @@
+Para isso, as solicitações entregues deverão prever a ordem de preferencia dos alunos para a validação das atividades. 3.4. 

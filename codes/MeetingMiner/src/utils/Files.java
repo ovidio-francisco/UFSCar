@@ -26,7 +26,8 @@ public class Files {
     private static File basesFolder   = new File("bases");
     private static File originalDocs  = new File(basesFolder+"/originalDocs");
     private static File textDocs      = new File(basesFolder+"/textDocs");
-    private static File segmentedDocs = new File(basesFolder+"/segmentedDocs");    
+    private static File segmentedDocs = new File(basesFolder+"/segmentedDocs"); 
+    
 
     static {
         docExtentitions = new ArrayList<>();
@@ -94,7 +95,17 @@ public class Files {
         return result;
     }
     
-    
+    public static boolean deleteFile(File file) {
+    	
+    	
+    	if (file.exists()) {
+    		ShowStatus.setMessage(String.format("Deleting file '%s'", file));
+    		file.delete();
+    	}
+    	
+    	
+    	return false;
+    }
     
     
     

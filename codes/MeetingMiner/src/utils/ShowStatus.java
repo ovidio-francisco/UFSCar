@@ -10,7 +10,7 @@ public class ShowStatus {
 	private static JLabel label = null;
 	private static JProgressBar progressBar = null;
 	private static JTextArea textArea = null;
-	private static boolean verbose = false;
+	private static boolean verbose = true;
 
 	public static void setMessage(String message) {
         

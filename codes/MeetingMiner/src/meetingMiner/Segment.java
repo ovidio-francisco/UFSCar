@@ -7,6 +7,7 @@ import java.util.Collection;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.HashMap;
+import java.util.Set;
 
 import preprocessamento.Preprocess;
 import utils.Files;
@@ -56,7 +57,7 @@ public class Segment {
 //	}
 	
 	/**	Compare the users descriptors and store the matches */
-	public void matchUserDescriptors(ArrayList<String> descs) {
+	public void matchUserDescriptors(Set<String> descs) {
 
 		HashMap<String, String> stems = new HashMap<>();
 		for(String s : topicDescriptors.keySet()) {

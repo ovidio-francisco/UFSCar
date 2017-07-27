@@ -5,14 +5,19 @@
  */
 package topicExtraction.TETConfigurations;
 
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.IOException;
 import java.io.Serializable;
 import java.util.ArrayList;
+import java.util.Properties;
 
 import topicExtraction.TETParameters.Parameters_BisectingKMeans_NonParametric;
 import topicExtraction.TETParameters.Parameters_KMeans_NonParametric;
 import topicExtraction.TETParameters.Parameters_KMeans_Parametric;
 import topicExtraction.TETParameters.Parameters_PLSA_NonParametric;
 import topicExtraction.TETParameters.Parameters_PLSA_Parametric;
+import utils.ShowStatus;
 
 /**
  *
@@ -212,6 +217,31 @@ public class TopicExtractionConfiguration implements Serializable{
 		return sb.toString();
 	}
     
+	public void saveConfig(File configFile) {
+		
+		ShowStatus.setMessage(String.format("Saving Topic Extraction Configuration to '%s'", configFile));
+		
+		Properties prop = new Properties();
+		
+		if (PLSA            && !autoNumTopics) prop.setProperty("Algorithm", "PLSA Parametric");
+		if (PLSA            &&  autoNumTopics) prop.setProperty("Algorithm", "PLSA Non-Parametric");
+		if (KMeans          && !autoNumTopics) prop.setProperty("Algorithm", "k-Means Parametric");
+		if (KMeans          &&  autoNumTopics) prop.setProperty("Algorithm", "k-Means Non-Parametric");
+		if (bisectingKMeans && !autoNumTopics) prop.setProperty("Algorithm", "Bisecting k-Means Parametric");
+		if (bisectingKMeans &&  autoNumTopics) prop.setProperty("Algorithm", "Bisecting k-Means Non-Parametric");
+		if (LDAGibbs)                          prop.setProperty("Algorithm", "LDA Gibbs");
+
+		if (!autoNumTopics) prop.setProperty("Num-Topics", ""+numTopics.get(0));
+		
+		try {
+			FileOutputStream out = new FileOutputStream(configFile);
+			prop.store(out, "Last Topic Extraction Configuration Parameters");
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		
+	}
+	
     
     
 }

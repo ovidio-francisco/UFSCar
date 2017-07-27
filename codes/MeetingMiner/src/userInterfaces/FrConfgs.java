@@ -32,6 +32,7 @@ import topicExtraction.TETParameters.Parameters_KMeans_Parametric;
 import topicExtraction.TETParameters.Parameters_PLSA_NonParametric;
 import topicExtraction.TETParameters.Parameters_PLSA_Parametric;
 import utils.ShowStatus;
+import utils.UIUtils;
 
 
 public class FrConfgs extends JFrame {
@@ -623,75 +624,42 @@ public class FrConfgs extends JFrame {
 	}
 
 	
-	private void setEnable(JPanel p, boolean enable) {
-		
-		p.setEnabled(enable);
-		
-		for(Component c : p.getComponents()) {
-			if( c instanceof JPanel ) {
-				setEnable((JPanel)c, enable);
-			}
-			else {
-				c.setEnabled(enable);
-			}
-				
-				
-		}
-		
-	}
-	
-	private void setVisible(JPanel p, boolean enable) {
-		
-		p.setVisible(enable);
-		
-		for(Component c : p.getComponents()) {
-			if( c instanceof JPanel ) {
-				setEnable((JPanel)c, enable);
-			}
-			else {
-				c.setVisible(enable);
-			}
-				
-				
-		}
-		
-	}
 	
 	
 	private void setComponentsEnable() {
 		
-		setEnable(pnNumTopics, rbParametric.isSelected());
+		UIUtils.setEnable(pnNumTopics, rbParametric.isSelected());
 		
-		setEnable(pnPlsa                              , rbPlsa   .isSelected()                                 );
-		setEnable(pnPlsaSelectionParameters           , rbPlsa   .isSelected() && rbNonParametric.isSelected() );
+		UIUtils.setEnable(pnPlsa                              , rbPlsa   .isSelected()                                 );
+		UIUtils.setEnable(pnPlsaSelectionParameters           , rbPlsa   .isSelected() && rbNonParametric.isSelected() );
 		
-		setEnable(pnKmeans                            , rbKmeans .isSelected()                                 );
-		setEnable(pnKmeansKValueVariation             , rbKmeans .isSelected() && rbNonParametric.isSelected() );
-		setEnable(pnKmeansStopCriteriaCluesterAnalysis, rbKmeans .isSelected() && rbNonParametric.isSelected() );
+		UIUtils.setEnable(pnKmeans                            , rbKmeans .isSelected()                                 );
+		UIUtils.setEnable(pnKmeansKValueVariation             , rbKmeans .isSelected() && rbNonParametric.isSelected() );
+		UIUtils.setEnable(pnKmeansStopCriteriaCluesterAnalysis, rbKmeans .isSelected() && rbNonParametric.isSelected() );
 		
-		setEnable(pnBisectingKmeans                      , rbBisKmeans .isSelected()                                 );
-		setEnable(pnBisectingKmeans                      , rbBisKmeans .isSelected()                                 );
-		setEnable(pnBisKmeansKValueVariation             , rbBisKmeans .isSelected() && rbNonParametric.isSelected() );
-		setEnable(pnBisKmeansStopCriteriaCluesterAnalysis, rbBisKmeans .isSelected() && rbNonParametric.isSelected() );
+		UIUtils.setEnable(pnBisectingKmeans                      , rbBisKmeans .isSelected()                                 );
+		UIUtils.setEnable(pnBisectingKmeans                      , rbBisKmeans .isSelected()                                 );
+		UIUtils.setEnable(pnBisKmeansKValueVariation             , rbBisKmeans .isSelected() && rbNonParametric.isSelected() );
+		UIUtils.setEnable(pnBisKmeansStopCriteriaCluesterAnalysis, rbBisKmeans .isSelected() && rbNonParametric.isSelected() );
 		
 	}
 	
 	@SuppressWarnings("unused")
 	private void setComponentsVisible() {
 		
-		setVisible(pnNumTopics, rbParametric.isSelected());
+		UIUtils.setVisible(pnNumTopics, rbParametric.isSelected());
 		
-		setVisible(pnPlsa                              , rbPlsa   .isSelected()                                 );
-		setVisible(pnPlsaSelectionParameters           , rbPlsa   .isSelected() && rbNonParametric.isSelected() );
+		UIUtils.setVisible(pnPlsa                              , rbPlsa   .isSelected()                                 );
+		UIUtils.setVisible(pnPlsaSelectionParameters           , rbPlsa   .isSelected() && rbNonParametric.isSelected() );
 		
-		setVisible(pnKmeans                            , rbKmeans .isSelected()                                 );
-		setVisible(pnKmeansKValueVariation             , rbKmeans .isSelected() && rbNonParametric.isSelected() );
-		setVisible(pnKmeansStopCriteriaCluesterAnalysis, rbKmeans .isSelected() && rbNonParametric.isSelected() );
+		UIUtils.setVisible(pnKmeans                            , rbKmeans .isSelected()                                 );
+		UIUtils.setVisible(pnKmeansKValueVariation             , rbKmeans .isSelected() && rbNonParametric.isSelected() );
+		UIUtils.setVisible(pnKmeansStopCriteriaCluesterAnalysis, rbKmeans .isSelected() && rbNonParametric.isSelected() );
 		
-		setVisible(pnBisectingKmeans                      , rbBisKmeans .isSelected()                                 );
-		setVisible(pnBisectingKmeans                      , rbBisKmeans .isSelected()                                 );
-		setVisible(pnBisKmeansKValueVariation             , rbBisKmeans .isSelected() && rbNonParametric.isSelected() );
-		setVisible(pnBisKmeansStopCriteriaCluesterAnalysis, rbBisKmeans .isSelected() && rbNonParametric.isSelected() );
+		UIUtils.setVisible(pnBisectingKmeans                      , rbBisKmeans .isSelected()                                 );
+		UIUtils.setVisible(pnBisectingKmeans                      , rbBisKmeans .isSelected()                                 );
+		UIUtils.setVisible(pnBisKmeansKValueVariation             , rbBisKmeans .isSelected() && rbNonParametric.isSelected() );
+		UIUtils.setVisible(pnBisKmeansStopCriteriaCluesterAnalysis, rbBisKmeans .isSelected() && rbNonParametric.isSelected() );
 		
 	}
 

@@ -23,7 +23,7 @@ public class MMTopic {
 	}
 	
 	
-	public Set<String> descriptorsStemedIntersection(ArrayList<String> descs) {
+	public Set<String> descriptorsStemedIntersection(Set<String> descs) {
 		
 		HashMap<String, String> stems = new HashMap<>();
 		for(String s : descriptors) {
