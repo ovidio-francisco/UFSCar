@@ -8,15 +8,16 @@
 package topicExtraction.TETPreprocessing;
 
 import java.io.RandomAccessFile;
-import java.util.ArrayList;
+import java.util.HashSet;
 
 import javax.swing.JOptionPane;
 
 import utils.ShowStatus;
 
 public class StopWords {
-    static ArrayList<String> list = new ArrayList<String>();
-    
+//    static ArrayList<String> list = new ArrayList<String>();
+    static HashSet<String> list = new HashSet<>();
+
     public StopWords(String language){
         if(language.equals("port")){
             try{
