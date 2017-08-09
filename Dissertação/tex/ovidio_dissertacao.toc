@@ -1,0 +1,62 @@
+\changetocdepth {4}
+\select@language {brazil}
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\contentsline {chapter}{Pref\IeC {\'a}cio}{25}{chapter*.13}
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {1}\MakeTextUppercase {Resultados de comandos}}{27}{chapter.1}
+\contentsline {section}{\numberline {1.1}Cita\IeC {\c c}\IeC {\~o}es diretas}{27}{section.1.1}
+\select@language {english}
+\select@language {brazil}
+\contentsline {section}{\numberline {1.2}Notas de rodap\IeC {\'e}}{28}{section.1.2}
+\contentsline {section}{\numberline {1.3}Tabelas}{28}{section.1.3}
+\contentsline {section}{\numberline {1.4}Figuras}{28}{section.1.4}
+\contentsline {subsection}{\numberline {1.4.1}Figuras em \emph {minipages}}{29}{subsection.1.4.1}
+\contentsline {section}{\numberline {1.5}Express\IeC {\~o}es matem\IeC {\'a}ticas}{30}{section.1.5}
+\contentsline {section}{\numberline {1.6}Enumera\IeC {\c c}\IeC {\~o}es: al\IeC {\'\i }neas e subal\IeC {\'\i }neas}{31}{section.1.6}
+\contentsline {section}{\numberline {1.7}Espa\IeC {\c c}amento entre par\IeC {\'a}grafos e linhas}{32}{section.1.7}
+\contentsline {section}{\numberline {1.8}Inclus\IeC {\~a}o de outros arquivos}{33}{section.1.8}
+\contentsline {section}{\numberline {1.9}Compilar o documento \LaTeX }{33}{section.1.9}
+\contentsline {section}{\numberline {1.10}Remiss\IeC {\~o}es internas}{33}{section.1.10}
+\contentsline {section}{\numberline {1.11}Divis\IeC {\~o}es do documento: se\IeC {\c c}\IeC {\~a}o}{34}{section.1.11}
+\contentsline {subsection}{\numberline {1.11.1}Divis\IeC {\~o}es do documento: subse\IeC {\c c}\IeC {\~a}o}{34}{subsection.1.11.1}
+\contentsline {subsubsection}{\numberline {1.11.1.1}Divis\IeC {\~o}es do documento: subsubse\IeC {\c c}\IeC {\~a}o}{34}{subsubsection.1.11.1.1}
+\contentsline {subsubsection}{\numberline {1.11.1.2}Divis\IeC {\~o}es do documento: subsubse\IeC {\c c}\IeC {\~a}o}{34}{subsubsection.1.11.1.2}
+\contentsline {subsection}{\numberline {1.11.2}Divis\IeC {\~o}es do documento: subse\IeC {\c c}\IeC {\~a}o}{34}{subsection.1.11.2}
+\contentsline {subsubsection}{\numberline {1.11.2.1}Divis\IeC {\~o}es do documento: subsubse\IeC {\c c}\IeC {\~a}o}{34}{subsubsection.1.11.2.1}
+\contentsline {paragraph}{\numberline {1.11.2.1.1}Esta \IeC {\'e} uma subse\IeC {\c c}\IeC {\~a}o de quinto n\IeC {\'\i }vel}{34}{paragraph.1.11.2.1.1}
+\contentsline {paragraph}{\numberline {1.11.2.1.2}Esta \IeC {\'e} outra subse\IeC {\c c}\IeC {\~a}o de quinto n\IeC {\'\i }vel}{35}{paragraph.1.11.2.1.2}
+\contentsline {paragraph}{\numberline {1.11.2.1.3}Este \IeC {\'e} um par\IeC {\'a}grafo numerado}{35}{paragraph.1.11.2.1.3}
+\contentsline {paragraph}{\numberline {1.11.2.1.4}Esta \IeC {\'e} outro par\IeC {\'a}grafo numerado}{35}{paragraph.1.11.2.1.4}
+\contentsline {section}{\numberline {1.12}Outro exemplo de se\IeC {\c c}\IeC {\~a}o}{35}{section.1.12}
+\contentsline {section}{\numberline {1.13}Diferentes idiomas e hifeniza\IeC {\c c}\IeC {\~o}es}{35}{section.1.13}
+\contentsline {section}{\numberline {1.14}Consulte o manual da classe \textsf {abntex2}}{37}{section.1.14}
+\contentsline {section}{\numberline {1.15}Refer\IeC {\^e}ncias bibliogr\IeC {\'a}ficas}{37}{section.1.15}
+\contentsline {subsection}{\numberline {1.15.1}Acentua\IeC {\c c}\IeC {\~a}o de refer\IeC {\^e}ncias bibliogr\IeC {\'a}ficas}{37}{subsection.1.15.1}
+\contentsline {section}{\numberline {1.16}Precisa de ajuda?}{37}{section.1.16}
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {2}\MakeTextUppercase {Primeira contribui\IeC {\c c}\IeC {\~a}o}}{39}{chapter.2}
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {3}\MakeTextUppercase {Segunda contribui\IeC {\c c}\IeC {\~a}o}}{41}{chapter.3}
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\contentsline {chapter}{Conclus\IeC {\~a}o}{43}{chapter*.14}
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\cftinsert {A}
+\contentsline {appendix}{\chapternumberline {A}\MakeTextUppercase {T\IeC {\'\i }tulo}}{45}{appendix.A}
+\vspace {\cftbeforechapterskip }
+\renewcommand *{\cftappendixname }{AP\^ENDICE \space }
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\cftinsert {A}
+\contentsline {appendix}{\chapternumberline {A}\MakeTextUppercase {T\IeC {\'\i }tulo}}{47}{appendix.anexochapback.1}
+\cftinsert {AAA}
+\renewcommand *{\cftappendixname }{ANEXO \space }
+\vspace {\cftbeforechapterskip }
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\contentsline {chapter}{\'Indice}{49}{section*.19}
