@@ -1,14 +1,56 @@
 \chapter{Introdução}\label{chap:introducao}
 
-
-
 % -- Motivação
-
-% -- Classificação
-
+% -< Classificação
 % -- Tópicos
-
 % -- Gaps da área
+% -- Objetivos
+
+%%%%%%%%%%
+% Descrição das Reuniões
+%%%%%%%%%%
+Reuniões são tarefas presentes em atividades corporativas, ambientes de gestão e organizações de um modo geral. Seu conteúdo é frequentemente registrado em texto na forma de atas para fins de documentação e posterior consulta. 
+A organização e consulta manual desses arquivos torna-se uma tarefa custosa, especialmente considerando o seu crescimento em uma instituição~\cite{Lee2011, Masakazu2013,Miriam2013}. 
+
+
+%%%%%%%%%%
+% Atas são documentos não estruturados e
+% diferencial do sistema
+%%%%%%%%%%
+As atas são documentos textuais que em geral descrevem dados não estruturados. Assim, um sistema que responde a consultas do usuário ao conteúdo das atas, retornando trechos de textos relevantes à sua intenção, é um desafio que envolve a compreensão de seu conteúdo~\cite{Bokaei2015}. 
+
+%%%%%%%%%%%%%%%
+% Busca manual por Assuntos
+%%%%%%%%%%%%%%% 
+%  
+%  É custosa 
+Devido a fatores como a não estruturação e volume dos textos, a localização de assunto em uma ata é uma tarefa custosa. 
+%  
+%  Memória e Buscas por KeyWords
+Usualmente, o que se faz são buscas manuais guiadas pela memória ou com uso de ferramentas computacionais baseadas em localização de palavras-chave.
+%  
+%  === Problemas na busca por palavras-chave === 
+%      O usuário deve inserir palavras acertadas
+Normalmente esse tipo de busca exige a inserção de termos exatos e 
+% de termos exatos que devem necessariamente estar contidos no trecho onde está o assunto.
+%  
+%  O texto continua longo, apenas é apresentado com as palavras destacadas
+apresentam ao usuário um documento com as palavras buscadas em destaque, mantendo o texto longo, 
+%  
+%  Não é possível rankear os resultados
+o que dificulta por exemplo o ranqueamento por relevância. 
+
+% Não evita que o texto circundante seja exibido, caso pertença a outro assunto
+% Além disso, não evita que textos próximos sejam retornados.
+
+
+
+%%%%%%%%%%
+% Segmentar e extrair tópicos
+%%%%%%%%%%
+Uma vez que a ata registra a sucessão de assuntos discutidos na reunião, há interesse em um sistema que aponte trechos de uma ata que tratam de um assunto específico. Tal sistema tem duas principais tarefas: 1) Descobrir quando há uma mudança de assunto. 2) Descobrir quais são esses assuntos. Este trabalho tem como foco principal, a detecção de mudança de assuntos, que pode ser atendida pela segmentação automática de textos~\cite{Chen2017,Naili2016,Cardoso2017}. E a extração de automática de tópicos. 
+
+
 
 
 
