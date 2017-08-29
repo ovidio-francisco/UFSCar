@@ -1,0 +1,26 @@
+\providecommand{\abntreprintinfo}[1]{%
+ \citeonline{#1}}
+\setlength{\labelsep}{0pt}\begin{thebibliography}{}
+\providecommand{\abntrefinfo}[3]{}
+\providecommand{\abntbstabout}[1]{}
+\abntbstabout{v-1.9.2 }
+
+\bibitem[Lee et al. 2011]{Lee2011}
+\abntrefinfo{Lee et al.}{LEE et al.}{2011}
+{LEE, J.-K. et al. Two-step sentence extraction for summarization of meeting
+  minutes. In:  . [S.l.: s.n.], 2011. v.~39, p. 614--619.}
+
+\bibitem[Schwartz-Ziv e Weisbach 2013]{Miriam2013}
+\abntrefinfo{Schwartz-Ziv e Weisbach}{SCHWARTZ-ZIV; WEISBACH}{2013}
+{SCHWARTZ-ZIV, M.; WEISBACH, M.~S. What do boards really do? evidence from
+  minutes of board meetings.
+\emph{Journal of Financial Economics}, v.~108, n.~13, p. 349--366, 2013.}
+
+\bibitem[TAKAHASHI, KIDO e HASHIMOTO 2013]{Masakazu2013}
+\abntrefinfo{TAKAHASHI, KIDO e HASHIMOTO}{TAKAHASHI; KIDO; HASHIMOTO}{2013}
+{TAKAHASHI, M.; KIDO, K.; HASHIMOTO, K. Towards the profitability trend
+  extraction from the board meeting proceedings.
+\emph{17th International Conference in Knowledge Based and Intelligent
+  Information and Engineering Systems - KES2013}, v.~78, 2013.}
+
+\end{thebibliography}
