@@ -7,93 +7,34 @@
 % -- Objetivos
 
 
-% -? um paragrafo falando de mineração de texto?
-% -? o que é produzido nas reuniões e o que é registrado nas atas?
+%        ========== ==========   Reuniões   ========== ==========
 
-%%%%%%%%%%
-% Reuniões, seu reristro em atas e consultas manuais 
-%%%%%%%%%%
 Reuniões são tarefas presentes em atividades corporativas, ambientes de gestão e organizações de um modo geral. Seu conteúdo é frequentemente registrado em texto na forma de atas para fins de documentação e consulta posterior. 
 
 
 
 %        ========== ==========   Descrição das Atas   ========== ==========
 
-%%%%%%%%%%
-% Descrição das Atas
-%%%%%%%%%%
-%   
-%  Ausência de marcaçãoes 
-%  Estilo formal 
 As atas de reunião possuem características particulares, frequentemente apresentam um texto com poucas quebras de parágrafo e sem marcações de estrutura, como capítulos, seções ou quaisquer indicações sobre o tema do texto. Além disso, o estilo formal contribui para a escrita de textos com poucos detalhes, pois o ambiente dá preferência a textos sucintos. 
 
 
-% As atas, apresentam-se como uma sucessão de tópicos. Assim, o objetivo desse trabalho é identificar, automaticamente, onde há a mudança de um tópico para seus adjacentes.
 
-
-
-
-
-
-%        ========== ==========   Motivação   ========== ==========
-
-
-
-%%%%%%%%%%
-% Atas são documentos não estruturados e
-% diferencial do sistema
-%%%%%%%%%%
-As atas são documentos textuais que em geral descrevem dados não estruturados. Assim, um sistema que responde a consultas do usuário ao conteúdo das atas, retornando trechos de textos relevantes à sua intenção, é um desafio que envolve a compreensão de seu conteúdo~\cite{Bokaei2015}. 
-
-
-
-A busca por informações específicas nesses documentos torna-se uma tarefa custosa se realizada manualmente, especialmente considerando o seu crescimento em uma instituição~\cite{Lee2011, Masakazu2013, Miriam2013}.
-
-
-
-%        ========== ==========   Busca manual   ========== ==========
-
-
-
-
-%%%%%%%%%%%%%%%
-% Busca manual por Assuntos
-%%%%%%%%%%%%%%% 
-%  É custosa 
-%  Memória e Buscas por KeyWords
-%  Problemas na busca por palavras-chave
-%    O usuário deve inserir palavras acertadas
-%    O texto continua longo, apenas é apresentado com as palavras destacadas
-%    Não é possível rankear os resultados
-%  
-Devido a fatores como a não estruturação e volume dos textos, a localização de assunto em uma ata é uma tarefa custosa.  Usualmente, o que se faz são buscas manuais guiadas pela memória ou com uso de ferramentas computacionais baseadas em localização de palavras-chave.  Normalmente esse tipo de busca exige a inserção de termos exatos e 
+Devido a fatores como a não estruturação e volume dos textos, a localização de um assunto em uma coleção de atas é uma tarefa custosa, especialmente considerando o seu crescimento em uma instituição.  Usualmente, são feitas buscas manuais guiadas pela memória ou com uso de ferramentas computacionais baseadas em localização de palavras-chave.  Normalmente esse tipo de busca exige a inserção de termos exatos e 
+% falar de Boolean Retrieval Models?
 % de termos exatos que devem necessariamente estar contidos no trecho onde está o assunto.
 apresentam ao usuário um documento com as palavras buscadas em destaque, mantendo o texto longo, o que dificulta por exemplo o ranqueamento por relevância. 
 
-% Não evita que o texto circundante seja exibido, caso pertença a outro assunto
-% Além disso, não evita que textos próximos sejam retornados.
 
 
 
 
-%           ========== ==========  Segmentação  ========== ==========
-%  ==============================================================================
-
-%%%%%%%%%%
-% Segmentar e extrair tópicos
-%%%%%%%%%%
-Uma vez que a ata registra a sucessão de assuntos discutidos na reunião, há interesse em um sistema que aponte trechos de uma ata que tratam de um assunto específico. Tal sistema tem duas principais tarefas: 1) Descobrir quando há uma mudança de assunto. 2) Descobrir quais são esses assuntos. Este trabalho tem como foco principal, a detecção de mudança de assuntos, que pode ser atendida pela segmentação automática de textos~\cite{Chen2017,Naili2016,Cardoso2017}. E a extração de automática de tópicos. 
+%        ========== ==========   Segmentação  ========== ==========
 
 
+Uma vez que a ata registra a sucessão de assuntos discutidos na reunião, há interesse em um sistema que aponte trechos de uma ata que tratam de um assunto específico. Tal sistema tem duas principais tarefas: 1) Descobrir quando há uma mudança de assunto. 2) Descobrir quais são esses assuntos. Este trabalho tem como foco principal, a detecção de mudança de assuntos, que pode ser atendida pela segmentação automática de textos~\cite{Chen2017,Naili2016,Cardoso2017}. E a extração automática de tópicos. 
 
-%%%%%%%%%%
-% Definição da Tarefa de Segmentação
-%%%%%%%%%%
 A tarefa de segmentação textual consiste em dividir um texto em partes que contenham um significado relativamente independente. Em outras palavras, é identificar as posições nas quais há uma mudança significativa de assuntos. 
 
-%%%%%%%%%%
-% Utilidade da segmentação (domínios onde é aplicada)
-%%%%%%%%%%
 A segmentação de textos é útil em aplicações que trabalham com textos sem indicações de quebras de assunto, ou seja, não apresentam seções ou capítulos, como transcrições automáticas de áudio, vídeos e grandes documentos que contêm vários assuntos como atas de reunião e notícias.
 
 
@@ -103,17 +44,6 @@ Pode ser usada para melhorar o acesso a informação solicitada por meio de uma 
 A navegação pelo documento pode ser aprimorada, em especial na utilização por usuários com deficiência visual, os quais utilizam  sintetizadores de texto como ferramenta de acessibilidade~\cite{Choi2000}. 
 %
 Além disso, encontrar pontos onde o texto muda de assunto, pode ser útil como etapa de pré-processamento em aplicações voltadas ao entendimento do texto, principalmente em textos longos.
-
-
-
-
-%A tarefa de segmentação textual consiste em encontrar pontos onde há mudança de tópicos no texto.  %Em outras palavras é identificar divisões entre unidade de informação sucessivas
-
-%[ The task of linear text segmentation is to split a large text document into shorter fragments, usually blocks of consecutive sentences. ]
-
-% **Segmentação é identificar divisiões entre unidades de informação sucessivas (Beeferman, Berger, and Lafferty (1997))**
- 
-% [ Text segmentation is the task of determining the positions at which topics change in a stream of text ]
 
 
 

@@ -1,0 +1,49 @@
+
+As atas, apresentam-se como uma sucessão de tópicos. Assim, o objetivo desse trabalho é identificar, automaticamente, onde há a mudança de um tópico para seus adjacentes.
+
+
+
+%        ========== ==========   Motivação   ========== ==========
+% conclusão da motivação?
+
+As atas são documentos textuais que em geral descrevem dados não estruturados. Assim, um sistema que responde a consultas do usuário ao conteúdo das atas, retornando trechos de textos relevantes à sua intenção, é um desafio que envolve a compreensão de seu conteúdo~\cite{Bokaei2015}. 
+
+
+%        ========== ==========   Busca manual   ========== ==========
+
+A busca por informações específicas nesses documentos torna-se uma tarefa custosa se realizada manualmente, especialmente considerando o seu crescimento em uma instituição~\cite{Lee2011, Masakazu2013, Miriam2013}.
+
+
+
+
+
+Não evita que o texto circundante seja exibido, caso pertença a outro assunto
+Além disso, não evita que textos próximos sejam retornados.
+
+A tarefa de segmentação textual consiste em encontrar pontos onde há mudança de tópicos no texto.  %Em outras palavras é identificar divisões entre unidade de informação sucessivas
+
+
+
+ Os documentos apresentam um texto com poucas quebras de parágrafo e sem marcações de estrutura, como capítulos, seções ou quaisquer indicações sobre o assunto do texto. É comum a presença de cabeçalhos, rodapés e numeração de páginas e linhas o que pode prejudicar tanto similaridade entre sentenças como a apresentação dos segmentos ao usuário. %Esses elementos podem ser reduzidos ou eliminados como mostrado na Subseção~\ref{subsec:preprocessamento}, sobre preprocessamento.
+
+
+
+O estilo de escrita favorece a escrita de textos sucintos com poucos detalhes, pois o ambiente dá preferência a textos curtos. Ao redigir o documento tem-se o cuidado de não repetir ideias e palavras. Tal característica enfraquece a coesão léxica e portanto o cálculo da similaridade é prejudicado. Por exemplo, duas sentenças diferem se uma contiver a palavra \textit{computadores} e na seguinte \textit{equipamentos}, mesmo que se refiram à mesma ideia. Além disso, o documento compartilha um certo vocabulário próprio do ambiente onde os assuntos são discutidos e com isso nota-se que os segmentos, embora tratem de assuntos diferentes, são semelhantes em vocabulário.
+
+
+Para evitar um texto monótono à leitura, ao redigir o documento tem-se o cuidado de não repetir ideias e palavras em favor da elegância do documento. Tal característica enfraquece a coesão léxica e portanto o cálculo da similaridade é prejudicado. Por exemplo, duas sentenças diferem se uma contiver a palavra \textit{computadores} e na seguinte \textit{equipamentos}, mesmo que se refiram à mesma ideia. Além disso, o documento compartilha um certo vocabulário próprio do ambiente onde os assuntos são discutidos e com isso nota-se que os segmentos, embora tratem de assuntos diferentes, são semelhantes em vocabulário.
+
+
+"Em outras palavras, uma ata é a narração de uma reunião na forma de documento textual."
+
+A presença de ruídos como cabeçalhos, rodapés e numeração de páginas e linhas prejudicam tanto similaridade entre sentenças como a apresentação final ao usuário. Porém, esses ruídos podem ser reduzidos ou eliminados como mostrado na Subseção~\ref{subsec:preprocessamento}, sobre preprocessamento.
+
+
+ % ------------------
+  Cabeçalhos e rodapés
+  % É comum a presença de cabeçalhos, rodapés e numeração de páginas e linhas o que pode prejudicar tanto similaridade entre sentenças como a apresentação dos segmentos ao usuário. %Esses elementos podem ser reduzidos ou eliminados como mostrado na Subseção~\ref{subsec:preprocessamento}, sobre preprocessamento.
+ % ------------------
+
+
+
+
