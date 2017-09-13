@@ -32,7 +32,7 @@
 		# 2 - Conceituação teórica (Background) e Trabalhos relacionados
 			- Trabalho baseado tanto recuperação de informação e mineração de texto
 			- 34:15 Recuperação de Informação
-				- "Conseito da área"
+				- "Conceito da área"
 				- "Como eu faço"
 				- "Quais são as possibilidades" "bem basiconas"
 			- 35:00 Mineração de Textos

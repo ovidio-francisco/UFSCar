@@ -1,0 +1,30 @@
+\changetocdepth {4}
+\select@language {brazil}
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\contentsline {chapter}{Pref\IeC {\'a}cio}{25}{chapter*.13}
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {1}\MakeTextUppercase {Introdu\IeC {\c c}\IeC {\~a}o}}{27}{chapter.1}
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {2}\MakeTextUppercase {Primeira contribui\IeC {\c c}\IeC {\~a}o}}{29}{chapter.2}
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {3}\MakeTextUppercase {Segunda contribui\IeC {\c c}\IeC {\~a}o}}{31}{chapter.3}
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\contentsline {chapter}{Conclus\IeC {\~a}o}{33}{chapter*.14}
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\cftinsert {A}
+\contentsline {appendix}{\chapternumberline {A}\MakeTextUppercase {T\IeC {\'\i }tulo}}{35}{appendix.A}
+\vspace {\cftbeforechapterskip }
+\renewcommand *{\cftappendixname }{AP\^ENDICE \space }
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\cftinsert {A}
+\contentsline {appendix}{\chapternumberline {A}\MakeTextUppercase {T\IeC {\'\i }tulo}}{37}{appendix.anexochapback.1}
+\cftinsert {AAA}
+\renewcommand *{\cftappendixname }{ANEXO \space }

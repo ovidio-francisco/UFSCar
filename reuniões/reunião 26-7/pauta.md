@@ -22,7 +22,6 @@
 
 
 
-hi def link markdownLinkText              htmlLink
 
 
 
