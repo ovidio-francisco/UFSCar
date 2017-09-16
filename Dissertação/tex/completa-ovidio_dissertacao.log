@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.8.22)  13 SEP 2017 09:42
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.8.22)  13 SEP 2017 15:53
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1282,10 +1282,15 @@ Package hyperref Info: Option `colorlinks' set `true' on input line 127.
 \openout5 = `completa-ovidio_dissertacao.idx'.
 
 Writing index file completa-ovidio_dissertacao.idx 
-(./completa-ovidio_dissertacao.aux (./conteudo/capitulos/1-prefacio.aux)
-(./conteudo/capitulos/2-cap1.aux) (./conteudo/capitulos/3-cap2.aux)
-(./conteudo/capitulos/4-cap3.aux) (./conteudo/capitulos/5-conclusao.aux)
-(./conteudo/capitulos/6-apendice1.aux) (./conteudo/capitulos/7-anexo1.aux))
+(./completa-ovidio_dissertacao.aux
+No file conteudo/capitulos/1-prefacio.aux.
+No file conteudo/capitulos/2-cap1.aux.
+No file conteudo/capitulos/3-cap2.aux.
+No file conteudo/capitulos/4-cap3.aux.
+No file conteudo/capitulos/5-conclusao.aux.
+No file conteudo/capitulos/6-apendice1.aux.
+No file conteudo/capitulos/7-anexo1.aux.
+)
 \openout1 = `completa-ovidio_dissertacao.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 153.
@@ -1303,8 +1308,7 @@ LaTeX Font Info:    ... okay on input line 153.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 153.
 LaTeX Font Info:    ... okay on input line 153.
 LaTeX Font Info:    Try loading font information for T1+lmr on input line 153.
-
-(/usr/share/texmf/tex/latex/lm/t1lmr.fd
+ (/usr/share/texmf/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 \AtBeginShipoutBox=\box32
@@ -1523,33 +1527,43 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 ]) [33]
-No file completa-ovidio_dissertacao.bbl.
+(./completa-ovidio_dissertacao.bbl (./completa-ovidio_dissertacao.brf)
+\tf@brf=\write6
+\openout6 = `completa-ovidio_dissertacao.brf'.
+
+ [34
+
+
+]
+bibitemlist
+
+LaTeX Warning: Empty `thebibliography' environment on input line 8.
+
+) [35]
 \openout2 = `conteudo/capitulos/6-apendice1.aux'.
 
-(./conteudo/capitulos/6-apendice1.tex [34
-
-
-
-]) [35]
-\openout2 = `conteudo/capitulos/7-anexo1.aux'.
-
-
-(./conteudo/capitulos/7-anexo1.tex [36
-
+ (./conteudo/capitulos/6-apendice1.tex [36
 
 
 ]) [37]
-No file completa-ovidio_dissertacao.ind.
+\openout2 = `conteudo/capitulos/7-anexo1.aux'.
 
+
+(./conteudo/capitulos/7-anexo1.tex [38
+
+
+
+]) [39]
+(./completa-ovidio_dissertacao.ind) 
 AED: lastpage setting LastPage
-\tf@lof=\write6
-\openout6 = `completa-ovidio_dissertacao.lof'.
+\tf@lof=\write7
+\openout7 = `completa-ovidio_dissertacao.lof'.
 
-\tf@lot=\write7
-\openout7 = `completa-ovidio_dissertacao.lot'.
+\tf@lot=\write8
+\openout8 = `completa-ovidio_dissertacao.lot'.
 
-\tf@toc=\write8
-\openout8 = `completa-ovidio_dissertacao.toc'.
+\tf@toc=\write9
+\openout9 = `completa-ovidio_dissertacao.toc'.
 
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 307.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 307.
@@ -1558,18 +1572,24 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 307.
 (./conteudo/capitulos/4-cap3.aux) (./conteudo/capitulos/5-conclusao.aux)
 (./conteudo/capitulos/6-apendice1.aux) (./conteudo/capitulos/7-anexo1.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 307.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 307.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 307.
+Package rerunfilecheck Info: File `completa-ovidio_dissertacao.brf' has not cha
+nged.
+(rerunfilecheck)             Checksum: 65B92D3E5A23842BB8EBAFA67181CBF9;230.
 
 
 LaTeX Warning: There were undefined references.
 
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 307.
  ) 
 Here is how much of TeX's memory you used:
- 13694 strings out of 494884
- 202007 string characters out of 6179236
- 366713 words of memory out of 5000000
- 16569 multiletter control sequences out of 15000+600000
+ 13712 strings out of 494884
+ 202028 string characters out of 6179236
+ 358230 words of memory out of 5000000
+ 16590 multiletter control sequences out of 15000+600000
  86062 words of font info for 96 fonts, out of 8000000 for 9000
  38 hyphenation exceptions out of 8191
  41i,12n,38p,952b,489s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1583,10 +1603,10 @@ ype1/public/lm/lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></
 usr/share/texmf/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf/fonts/type1/
 public/lm/lmss17.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr
 /share/texmf/fonts/type1/public/lm/lmsy10.pfb>
-Output written on completa-ovidio_dissertacao.pdf (39 pages, 229185 bytes).
+Output written on completa-ovidio_dissertacao.pdf (41 pages, 229959 bytes).
 PDF statistics:
- 338 PDF objects out of 1000 (max. 8388607)
- 283 compressed objects within 3 object streams
- 72 named destinations out of 1000 (max. 500000)
- 27801 words of extra memory for PDF output out of 29859 (max. 10000000)
+ 354 PDF objects out of 1000 (max. 8388607)
+ 297 compressed objects within 3 object streams
+ 76 named destinations out of 1000 (max. 500000)
+ 27809 words of extra memory for PDF output out of 29859 (max. 10000000)
 

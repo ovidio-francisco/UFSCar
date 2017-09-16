@@ -2,7 +2,9 @@
 \select@language {brazil}
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {1}\MakeTextUppercase {Introdu\IeC {\c c}\IeC {\~a}o}}{3}{chapter.1}
+\contentsline {chapter}{\chapternumberline {1}\MakeTextUppercase {Proposta}}{3}{chapter.1}
+\contentsline {section}{\numberline {1.1}Prepara\IeC {\c c}\IeC {\~a}o dos documentos}{3}{section.1.1}
+\contentsline {subsection}{\numberline {1.1.1}Segmenta\IeC {\c c}\IeC {\~a}o}{4}{subsection.1.1.1}
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \contentsline {chapter}{Refer\^encias}{5}{section*.2}
 \renewcommand *{\cftappendixname }{AP\^ENDICE \space }
