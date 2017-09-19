@@ -1,20 +1,34 @@
 \chapter{Proposta}\label{cap3}
 
 
-
-Essa seção apresenta as etapas de desenvolvimento do sistema,  bem como o seu funcionamento geral, desde a preparação dos documentos até a entrega dos históricos de ocorrência ao usuário. Inicialmente será descrito a seleção e pré-processamento. Em seguida, será relatado como as técnicas de mineração de texto e resgate de informação são utilizadas nesse trabalho.
-
+Essa seção apresenta as etapas de desenvolvimento do sistema, bem como o seu funcionamento geral, desde a preparação dos documentos até a entrega dos históricos de ocorrência ao usuário. Inicialmente será descrito a seleção e pré-processamento. Em seguida, será relatado como as técnicas de mineração de texto e resgate de informação são utilizadas nesse trabalho.
 
 O objetivo do sistema é permitir ao usuário consultar uma coleção de documentos de reuniões a fim de obter todo o histórico de ocorrências de um determinado tema pesquisado, podendo identificar nos documentos onde o tema foi mencionado como informe ou onde houve uma decisão sobre o tema. Para isso, o sistema é divido em dois módulos principais: Módulo de preparação e manutenção e Módulo de consulta.
 
 
 
+O módulo de preparação e manutenção recebe uma coleção de documentos e produz uma estrutura de dados interna, que é utilizada pelo módulo de consulta, que por sua vez, é responsável por receber a intensão usuário, proceder a busca na estrutura de dados interna e retornar os trechos associados com a intensão do usuário, tanto quanto ao assunto como no tipo de ocorrência. A Figura \ref{fig:visao-geral} mostra a visão geral do sistema com suas principais entradas e saídas. 
 
-\section{Preparação dos documentos}
+
+  % --- Figura Visão Geral ---
+  \begin{figure}[!h]
+	  \centering
+	  \includegraphics[width=0.69\paperwidth]{conteudo/capitulos/figs/visao-geral-3.eps}
+	  \caption{Visão geral do sistema}
+	  \label{fig:visao-geral}
+  \end{figure}
+
+
+\section{Módulo de preparação e manutenção}
+
+
+O módulo de preparação e manutenção tem como funções principais dividir cada ata em em segmentos de texto que contêm um assunto predominante, e descrevê-los por meio de técnicas de extração tópicos e classificação. Além disso, produz uma estrutura de dados que registra quais assuntos foram tratados na reunião, bem como o trecho do documento onde é discutido.
+
+
+\subsection{Preparação dos documentos}
 
 As atas são normalmente armazenadas em arquivos do tipo \textit{pdf}, \textit{doc}, \textit{docx} ou \textit{odt} que normalmente possuem formato binário.
 O texto deve ser preparado para os métodos de MT e RI. Inicialmente, o texto puro é extraído e passa por processos de transformação conforme apresentados a seguir.
-
 
 
 \begin{enumerate}
@@ -35,50 +49,132 @@ O texto deve ser preparado para os métodos de MT e RI. Inicialmente, o texto pu
 \item \textit{Stemming}: extraiu-se o radical de cada palavra. Para isso, as letras foram convertidas em caixa baixa e aplicou-se o algoritmo \textit{Orengo}\footnote{\urlorengo} para remoção de sufixos.
 
 \end{enumerate}
+	
+
+A Figura~\ref{fig:exemplopreprocessamento} mostra a etapa de preparação de um documento em português.
+	
+
+
+  \begin{figure}
+	\centering
+	\includegraphics[width=1\textwidth]{conteudo/capitulos/figs/pre-processamento.jpg}
+	\caption{Exemplo de pré-processamento.}
+	\label{fig:exemplopreprocessamento}
+  \end{figure}
+
+Ao final .....
+
+
+\subsubsection{Segmentação}
+
+
+Como já mencionado, uma ata registra a sucessão de assuntos discutidos em uma reunião, porém apresenta-se com poucas quebras de parágrafo e sem marcações de estrutura, como capítulos, seções ou quaisquer indicações sobre o assunto do texto. Portanto, faz-se necessário descobrir quando há uma mudança de assunto no texto da ata. Para essa tarefa, as técnicas de segmentação de texto recebem uma lista de sentenças, da qual considera cada ponto entre duas sentenças como candidato a limite, ou seja, um ponto onde há transição entre assuntos. 
+
+
+Entre os principais trabalhos da literatura podemos citar o  \textit{TextTiling}~\cite{Hearst1994} e o \textit{C99}~\cite{Choi2000}.
+% 
+% ------   TextTiling
+O \textit{TextTiling} é um algoritmo baseado em janelas deslizantes, em  que, para cada candidato a limite, analisa-se o texto circundante. Um limite ou quebra de segmento é identificado sempre que a similaridade cai abaixo de um limiar. Possui baixa complexidade computacional e acurácia semelhante a algoritmos mais complexos baseados em matrizes de similaridade como o \textit(C99).
+
+Para cada posição candidata o \textit{TextTiling} constrói 2 blocos, um contendo sentenças que a precedem e outro com as que a sucedem. O tamanho desses blocos é um parâmetro a ser fornecido ao algoritmo e determina o tamanho mínimo de um segmento.
+
+% ------   C99
+O \textit{C99} usa matrizes de \textit{rakings} de similaridades e técnicas de \textit{clustering} para encontrar os limites entre os segmentos. Oferece resultados melhores que algoritmos baseados em janelas deslizantes ao custo de maior complexidade computacional.
+
+Inicialmente é construída uma matriz que contém as similaridades de todas as unidades de texto. Em seguida, essa é transformada substituindo-se cada elemento da matriz original pelo número de elementos vizinhos com similaridade inferior.  Finalmente, utiliza um método de \textit{clustering} baseado no algoritmo de maximização de Reynar % ~\cite{Reynar1998} 
+para identificar os limites entre os segmentos. 
 
 
 
-Ao final ...
+% ----------------------------------------------------------------------------- 
 
-
-\subsection{Segmentação}
-
-
-Como já mencionado, uma ata registra a sucessão de assuntos discutidos em uma reunião, porém apresenta-se com poucas quebras de parágrafo e sem marcações de estrutura, como capítulos, seções ou quaisquer indicações sobre o assunto do texto. Portanto, faz-se necessário descobrir quando há uma mudança de assunto no texto da ata. Para isso, considerou-se os algoritmos \textit{TextTiling} e \textit{C99)} os quais foram avaliados no contexto das atas de reunião conforme mostrado a seguir.
 
 % usando um conjunto de documentos e uma segmentação manual fornecida por participantes das reuniões. 
 
 
+% explicar o qe o segmentador faz --> encontrar limites
 
 
 
-
-\subsection{Avaliação dos Segmentadores}
+\subsubsection{Avaliação dos Segmentadores}
 
 
 %  Critérios de avaliação
 
+Para que se possa avaliar um segmentador automático de textos é preciso uma referência, isto é, um texto com os limites entre os segmentos conhecidos. Essa referência, deve ser confiável, sendo uma segmentação legítima que é capaz de dividir o texto em porções relativamente independentes, ou seja, uma segmentação ideal.
 
 Para este trabalho, um bom método de segmentação é aquele cujo resultado melhor se aproxima de uma segmentação manual, sem a obrigatoriedade de estar perfeitamente alinhado com tal. Ou seja, visto o contexto das atas de reunião, e a subjetividade da tarefa, não é necessário que os limites entre os segmentos (real e hipótese) sejam idênticos, mas que se assemelhem em localização e quantidade.
 
-Para que se possa avaliar um segmentador automático de textos é preciso uma referência, isto é, um texto com os limites entre os segmento conhecidos. Essa referência, deve ser confiável, sendo uma segmentação legítima que é capaz de dividir o texto em porções relativamente independentes, ou seja, uma segmentação ideal.
-
 Os algoritmos foram comparados com a segmentação fornecida pelos participantes das reuniões e calculou-se as medidas mais aplicadas à segmentação textual, P$_k$ e \textit{WindowDiff}. Além dessas, computou-se também as medidas tradicionais acurácia, precisão, revocação e $F^1$ para comparação com outros trabalhos que as utilizam.
 
-% --------------------------
-Verificou-se que de maneira geral, o algoritmo \textit{C99} apresentou melhores resultados em relação ao \textit{TextTiling}, contudo, testes estatísticos realizados indicaram que não houve diferença significativa entre os métodos. 
+
+
+O algoritmo \textit{C99} obteve melhor desempenho em acurácia, precisão, $F^1$, $P_k$ e \textit{WindowDiff}, enquanto o \textit{TextTiling} obteve o melhor desempenho em revocação como pode ser visto na Tabela~\ref{tab:configfinal}. 
+
+
+\begin{table}[!h]
+	\centering
+
+	\begin{tabular}{|l|l|c|c|c|c|c|} \hline
+		\textbf{Algoritmo} & 
+		\textbf{Medida} & 
+		\textbf{Média}\\	\hline
+
+	\textit{C99} & P$_k$			   & 0,116 \\ \hline
+	\textit{C99} & \textit{WindowDiff} & 0,390 \\ \hline
+	\textit{C99} & Acurácia			   & 0,609 \\ \hline
+	\textit{C99} & Precisão			   & 0,720 \\ \hline
+	\textit{C99} & F$^1$			   & 0,655 \\ \hline
+	\textit{TextTiling} &	Revocação  & 0,917 \\ \hline
+
+	\end{tabular}
+	
+	\caption{Melhores resultados obtidos.}
+	\label{tab:configfinal}
+\end{table}
+
+
+
+
+
+%  we have a winner
+Verificou-se que, de maneira geral, o algoritmo \textit{C99} apresenta melhores resultados em relação ao \textit{TextTiling}, contudo, testes estatísticos realizados indicaram que não houve diferença significativa entre os métodos. Nesse trabalho, escolheu-se o algoritmo \textit{C99} por apresentar resultados satisfatórios e sua ligeira superioridade em relação ao \textit{TextTiling}. 
 
 
 
 %  ==========   ==========   ==========   ==========   ==========   
 
 
+Após a extração e preparação do texto, o algoritmo recebe uma lista de sentenças 
 
-% we have a winner
 
-Nesse trabalho, escolheu-se o algoritmo \textit{C99} por apresentar resultados satisfatórios e sua ligeira superioridade em relação ao \textit{TextTiling}. 
 
-%  Medidas
+Após a identificação dos segmentos, o algoritmo retorna uma lista onde cada elemento é um texto com um assunto predominante.
+
+% -? Medidas
+
+% -- como ele faz?
+
+
+
+
+
+% representação computacional 
+% cada segmento é um documento
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
