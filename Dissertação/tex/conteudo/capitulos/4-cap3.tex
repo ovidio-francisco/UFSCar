@@ -74,7 +74,7 @@ Como já mencionado, uma ata registra a sucessão de assuntos discutidos em uma 
 Entre os principais trabalhos da literatura podemos citar o  \textit{TextTiling}~\cite{Hearst1994} e o \textit{C99}~\cite{Choi2000}.
 % 
 % ------   TextTiling
-O \textit{TextTiling} é um algoritmo baseado em janelas deslizantes, em  que, para cada candidato a limite, analisa-se o texto circundante. Um limite ou quebra de segmento é identificado sempre que a similaridade cai abaixo de um limiar. Possui baixa complexidade computacional e acurácia semelhante a algoritmos mais complexos baseados em matrizes de similaridade como o \textit(C99).
+O \textit{TextTiling} é um algoritmo baseado em janelas deslizantes, em  que, para cada candidato a limite, analisa-se o texto circundante. Um limite ou quebra de segmento é identificado sempre que a similaridade estiver abaixo de um limiar. Possui baixa complexidade computacional e acurácia semelhante a algoritmos mais complexos baseados em matrizes de similaridade como o \textit(C99).
 
 Para cada posição candidata o \textit{TextTiling} constrói 2 blocos, um contendo sentenças que a precedem e outro com as que a sucedem. O tamanho desses blocos é um parâmetro a ser fornecido ao algoritmo e determina o tamanho mínimo de um segmento.
 
@@ -145,11 +145,9 @@ Verificou-se que, de maneira geral, o algoritmo \textit{C99} apresenta melhores 
 %  ==========   ==========   ==========   ==========   ==========   
 
 
-Após a extração e preparação do texto, o algoritmo recebe uma lista de sentenças 
 
-
-
-Após a identificação dos segmentos, o algoritmo retorna uma lista onde cada elemento é um texto com um assunto predominante.
+% cada segmento é um documento
+Após a identificação dos segmentos, o algoritmo retorna uma lista onde cada elemento é um texto com um assunto predominante e será a partir de disso considerado um documento.
 
 % -? Medidas
 
@@ -159,22 +157,35 @@ Após a identificação dos segmentos, o algoritmo retorna uma lista onde cada e
 
 
 
-% representação computacional 
-% cada segmento é um documento
+\subsection{Representação Computacional}
+
+As etapas anteriores produzem fragmentos de documentos onde o texto esta em um estágio de processamento inicial, com menos atributos que as versões originais, onde cada fragmento está associado a um tema, porém, ainda não estruturado. Ocorre que as técnicas de mineração de texto exigem uma representação estruturada dos textos. % conforme será visto na Seção~\ref{subsection:RepTextos}.
+
+Uma das formas mais comuns é a representação no formato matricial conhecida como Modelo Espaço Vetorial (\textit{Vectorial Space Model} - VSM)~\cite{Rezende2003}, onde os documentos são representados como vetores em um espaço Euclidiano $t$-dimensional em que cada termo extraído da coleção é representado por um dimensão. Assim, cada componente de um vetor expressa a relação entre os documentos e as palavras. Essa estrutura é conhecida como \textit{document-term matrix} ou matriz documento-termo.
+
+A forma adotada nesse trabalho é a \textit{Bag Of Words} a qual sintetiza a base de documentos em um contêiner de palavras, ignorando a ordem em que ocorrem, bem como pontuações e outros detalhes, preservando apenas o peso de determinada palavra nos documentos. É uma simplificação de toda diversidade de informações contidas na base de documentos sem o propósito de ser uma representação fiel do documento, mas oferecer a relação entre as palavras e os documentos a qual é suficiente para a maioria dos métodos de aprendizado de máquina~\cite{Rezende2003}. 
+% será empregada por ser a mais utilizada e referenciada na literatura e por sua simplicidade e qualidade dos resultados que são obtidos. 
 
 
 
 
 
+\subsection{Extração de Tópicos / Classificação de Textos}
+
+% a tarefa é identificar qual assunto está presente em cada trecho e qual é o tipo de ocorrência.
+
+
+
+\section{Módulo Consulta}
+
+Uma vez que a estrutura de dados interna contem os assuntos abordados na coleção de documentos, o tipo de ocorrência para cada assunto e o trecho onde se encontram, caberá ao módulo de consulta receber a \textit{string} de consulta do usuário, resgatar os dados desejados e apresentá-los em ordem cronológica, dando condições para o usuário acessar os segmentos encontrados bem como os documentos originais.
 
 
 
 
 
+\section{Estudo de caso}
 
 
-
-
-
-
+% -- qual o ganho em relação a um sitema de busca por palavras-chave? 
 
