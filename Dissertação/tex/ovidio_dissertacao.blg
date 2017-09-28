@@ -1,6 +1,8 @@
 This is BibTeX, Version 0.99d (TeX Live 2016/Debian)
 Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: ovidio_dissertacao.aux
+A level-1 auxiliary file: conteudo/capitulos/2-cap1.aux
+A level-1 auxiliary file: conteudo/capitulos/3-cap2.aux
 A level-1 auxiliary file: conteudo/capitulos/4-cap3.aux
 The style file: abntex2-alf.bst
 Reallocated singl_function (elt_size=4) to 100 items from 50.
@@ -14,6 +16,7 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 Database file #1: abntex2-options.bib
 Database file #2: referencias.bib
+Warning--I didn't find a database entry for "Hashimi2015729"
 Warning--I didn't find a database entry for "Rezende2003"
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
@@ -24,45 +27,45 @@ Reallocated glb_str_end (elt_size=4) to 20 items from 10.
 | Em caso de dúvidas ou problemas com este estilo procure |
 | http://abntex2.googlecode.com                           |
 +---------------------------------------------------------+
-You've used 1 entry,
+You've used 17 entries,
             6711 wiz_defined-function locations,
-            1200 strings with 9402 characters,
-and the built_in function-call counts, 891 in all, are:
-= -- 192
-> -- 0
-< -- 0
-+ -- 46
-- -- 0
-* -- 36
-:= -- 175
-add.period$ -- 0
-call.type$ -- 1
-change.case$ -- 3
-chr.to.int$ -- 1
-cite$ -- 0
-duplicate$ -- 3
-empty$ -- 40
-format.name$ -- 0
-if$ -- 204
+            1343 strings with 13656 characters,
+and the built_in function-call counts, 27811 in all, are:
+= -- 3214
+> -- 600
+< -- 627
++ -- 863
+- -- 179
+* -- 1842
+:= -- 3365
+add.period$ -- 81
+call.type$ -- 17
+change.case$ -- 197
+chr.to.int$ -- 32
+cite$ -- 16
+duplicate$ -- 2523
+empty$ -- 1200
+format.name$ -- 845
+if$ -- 5789
 int.to.chr$ -- 0
 int.to.str$ -- 0
-missing$ -- 10
-newline$ -- 8
-num.names$ -- 0
-pop$ -- 28
+missing$ -- 306
+newline$ -- 89
+num.names$ -- 80
+pop$ -- 406
 preamble$ -- 1
-purify$ -- 3
+purify$ -- 72
 quote$ -- 0
-skip$ -- 80
+skip$ -- 2630
 stack$ -- 1
-substring$ -- 49
-swap$ -- 0
-text.length$ -- 0
+substring$ -- 1344
+swap$ -- 1014
+text.length$ -- 35
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 0
+type$ -- 9
 warning$ -- 0
-while$ -- 2
+while$ -- 145
 width$ -- 0
-write$ -- 8
-(There was 1 warning)
+write$ -- 289
+(There were 2 warnings)
