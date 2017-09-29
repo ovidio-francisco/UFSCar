@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.8.22)  28 SEP 2017 17:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.8.22)  29 SEP 2017 00:30
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1330,7 +1330,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 ]
 
-LaTeX Warning: Citation `Hashimi2015729' on page 4 undefined on input line 67.
+LaTeX Warning: Citation `Hashimi2015729' on page 4 undefined on input line 51.
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1475,15 +1475,15 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 307.
  ) 
 Here is how much of TeX's memory you used:
- 13872 strings out of 494884
- 204202 string characters out of 6179236
+ 13874 strings out of 494884
+ 204224 string characters out of 6179236
  373365 words of memory out of 5000000
  16734 multiletter control sequences out of 15000+600000
- 66069 words of font info for 112 fonts, out of 8000000 for 9000
+ 66160 words of font info for 113 fonts, out of 8000000 for 9000
  38 hyphenation exceptions out of 8191
- 43i,12n,38p,1134b,600s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 43i,12n,38p,1240b,600s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}</usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss10.pfb></usr/share/texmf/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss17.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb>
-Output written on ovidio_dissertacao.pdf (24 pages, 498384 bytes).
+Output written on ovidio_dissertacao.pdf (24 pages, 498266 bytes).
 PDF statistics:
  459 PDF objects out of 1000 (max. 8388607)
  407 compressed objects within 5 object streams
