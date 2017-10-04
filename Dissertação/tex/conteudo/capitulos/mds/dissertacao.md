@@ -1,5 +1,24 @@
 # Dissertação
 
+	# 2 - Conceituação teórica (Background) e Trabalhos relacionados
+		- Trabalho baseado tanto recuperação de informação e mineração de texto
+		- Recuperação de Informação
+			- "Conceito da área"
+			- "Como eu faço"
+			- "Quais são as possibilidades" "bem basiconas"
+		- Mineração de Textos
+			- Representação e padronização (Stopwords etc)
+			- Extração de padrões "o que eu usei"
+				- Segmentação
+				- Extração de tópicos
+				- Classificação
+				"Contextualiza as áreas e apresenta algumas abordagens básicas descrevendo as possibilidades mais utilizadas na área de cada uma"
+		- Trabalhos relacionados 
+			- O que eles fazem
+			- Gap
+
+
+
 	# 3 - Proposta: Sistema de ....
 		- Busca em seguimentos
 		- "Extração de tópicos pra facilitar o entendimento do resultado"

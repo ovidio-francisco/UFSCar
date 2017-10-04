@@ -40,6 +40,14 @@ Dispon{\'\i}vel em: \url{http://dx.doi.org/10.1023/A:1007506220214}.}
   n.~1, p. 112--123, Jan 2017.
 ISSN 2329-9290.}
 
+\bibitem[Cheng et al. 2013]{Cheng2013}
+\abntrefinfo{Cheng et al.}{CHENG et al.}{2013}
+{CHENG, X. et al. Learning topics in short texts by non-negative matrix
+  factorization on term correlation matrix. In:  \emph{SDM}. SIAM, 2013. p.
+  749--757.
+ISBN 978-1-61197-283-2. Dispon{\'\i}vel em:
+  \url{http://dblp.uni-trier.de/db/conf/sdm/sdm2013.html\#ChengGLWY13}.}
+
 \bibitem[Choi 2000]{Choi2000}
 \abntrefinfo{Choi}{CHOI}{2000}
 {CHOI, F. Y.~Y. Advances in domain independent linear text segmentation. In:

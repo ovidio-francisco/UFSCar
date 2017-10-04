@@ -1,0 +1,48 @@
+\section{Extração de Tópicos}
+
+
+Os modelos de extração de tópicos foram propostos para simplificar e organizar grandes coleções de documentos. Nesse contexto, um tópico é uma estrutura com valor semântico que formam grupos de palavras que frequentemente ocorrem próximas. Essas palavra ajudam a descrever um documento ou sub-conjunto de documentos e ajudam a entender o tema ou assunto do texto onde essa estrutura está presente.
+
+As técnicas de extração de tópicos são abordagens não-supervisionadas que visam encontrar a estrutura semântica de uma coleção de documentos a qual é latente, isto é, desconhecida. Os modelos de extração de tópicos baseiam-se na ideia de que um documento é produzido a partir de tópicos previamente definidos, os quais se deseja aborda no texto e determinam os termos a sem utilizados em um documento.
+
+O processo de elaboração do documento a partir desses tópicos é chamado de processo generativo ou modelo generativo, o qual é desconhecido porém, pode ser estimado  com base nos termos presentes no documento, aqui chamados de variáveis observáveis. Assim, o processo de extração de tópicos consiste em estimar o modelo generativo que de origem ao documento.
+
+Obtém-se ao final do processo de extração de tópicos uma representação documento-tópico que atribui um peso para cada tópico em cada documento da coleção e um representação termo-tópico que representa a probabilidade de ocorrência de um termo em um documento dado que o tópico está presente no documento.
+% Convencionalmente uma matrix documento-termo, extremamente esparsa, é decomposta em outras duas matrizes, sendo documento-tópico e termo-tópico~\cite{Cheng2013}.
+
+% Entre as principais abordagens da literatura está o \textit{Latent Dirichlet Allocation} (LDA) sendo referenciado em diversos trabalhos e considerado um dos primeiros modelos dessa área e base para outros trabalhos. 
+
+
+% Essas são técnicas não-supervisionadas, ou seja, os resultados são extraídos a partir da análise dos documentos sem a necessidade de informações extras como 
+
+
+% -- A maioria dos trabalho enquadram-se em duas duas principais categorias, os modelos não-probabilísticos e os modelos probabilísticos.
+
+\subsection{Modelos Não Probabilísticos}
+
+Nos modelos não-probabilísticos um tópico é um conjunto de termos e seus pesos que indicam o quão significante esses termos são para um assunto.
+
+A maioria das técnicas não-probabilísticas baseiam-se em técnicas de fatoração de matrizes, onde a matrix documento-termo é projetada em um espaço com menor dimensionalidade chamado \textit{Latent Semantic Space}. Por exemplo, o \textit{Latente Semantic Indexing} (LSI) usa a técnica chamada \textit{Singular Value Decomposition} (SVD) para encontrar padrões no relacionamento entre conceitos e termos em uma coleção de texto não estruturada. Entretanto, esse método não fornece uma interpretação para elementos com valores negativos~\cite{Cheng2013}. % Trocar essa referência do Cheng2013 pela que ele usa na seção 2 do trabalho dele.
+% Convencionalmente uma matrix documento-termo, extremamente esparsa, é decomposta em outras duas matrizes, sendo documento-tópico e termo-tópico~\cite{Cheng2013}.
+
+% -- NMF
+% Outra modelo popular é o \textit{Non-Negative Matrix Factorization} (NMF) o qual aborda a extração de tópicos como a fatoração de uma matriz documento-termo W, extremamente esparsa de dimensões m x n em uma matriz Z de dimensões n x k e um matriz A de dimensões k x m, onde n é o número de termos, m é o número de documentos da coleção e k é a quantidade de tópicos a serem extraídos. Diferente do LSI, o processo de fatoração garante que não as matrizes resultantes não possuem elementos negativos, permitindo uma interpretação mais intuitiva de seus valores. Além disso, o processo de fatoração proporciona a propriedade de \textit{clustering}, ou seja, automaticamente agrupar as colunas da matriz W, e dessa forma, oferece a característica interessante de agrupar os documentos da coleção. 
+Outra modelo popular é o \textit{Non-Negative Matrix Factorization} (NMF) o qual aborda a extração de tópicos como a fatoração de uma matriz documento-termo W, extremamente esparsa em duas matrizes não negativas $Z$ e $A$, tal que a resultante de $ZA$ é uma aproximação da matriz $W$ original.  A corresponde a matriz documento-tópico e possui dimensão $k \times m$. Z corresponde a matriz termo-tópico e possui dimensão $n \times k$ onde $n$ é o número de termos, $m$ é o número de documentos da coleção e $k$ é a quantidade de tópicos a serem extraídos.  Diferente do LSI, no processo de fatoração apenas operações aditivas são permitidas, o que garante que as matrizes resultantes não possuem elementos negativos, permitindo uma interpretação mais intuitiva de seus valores. Além disso, o processo de fatoração proporciona a propriedade de \textit{clustering}, ou seja, automaticamente agrupar as colunas da matriz $W$, e dessa forma, oferece a característica interessante de agrupar os documentos da coleção. Uma vez que $k$ é menor que $n$ e $m$, então $A$ e $Z$ são menores que a matriz de entrada, o que resulta em uma versão comprimida da matriz original.
+
+% -- Onde é utilizado
+
+
+
+
+
+\subsection{Modelos Probabilísticos}
+
+
+
+
+
+
+
+
+
+
