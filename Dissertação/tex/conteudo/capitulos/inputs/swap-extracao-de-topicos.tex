@@ -1,10 +1,29 @@
 
 
 
+
+Bom dia Katti,
+
+
+  Nos últimos dias acrescentei mais conteúdos à dissertação. Tenho a introdução, a revisão sobre tópicos e segmentação com algum conteúdo assim como a proposta do trabalho. 
+
+  Segue anexo a versão atualizada até hoje. 
+
+  Desde a última reunião não conversamos mais. Você acha que devo mandar mais essa versão para Rafael e Solange? Podemos marcar a próxima reunião?
+
+
+  []s
+
+
+% --> a extração de topicos resulta em um conjunto de termos que indicam aos temas ou assuntos de uma coleção de documentos
+
+
+
+
 [Wikipedia - LDA]
 "For example, if observations are words collected into documents, it posits that each document is a mixture of a small number of topics and that each word's creation is attributable to one of the document's topics."
 
-
+"A ideia básica dos modelos de tópicos é descobrir, nas relações entre documentos e termos, padrões latentes que sejam significativos para o entendimento dessas relações. Por exemplo, tais modelos podem ranquear um conjunto de termos como importantes para um ou mais temas. Bem como ranquear documentos como tendo relevância para um ou mais temas."
 
 
 
@@ -15,8 +34,10 @@ Página do autor "Xiaohui Yan" --> [http://xiaohuiyan.github.io/]
 
 
 
+% -- pLSA
+% que liga os tópicos aos documentos e as palavras a um tópico atribuindo as respectivas probabilidades a essas ligações.
 
-
+% Os modelos de extração de tópicos podem se utilizados para mensurar a relevância de termo ou conjunto de termos para determinado assunto ou documento.
 
 % ============= LSI =============
 
@@ -26,9 +47,26 @@ o LSI usa a técnica chamada \textit{Singular Value Decomposition} (SVD) para en
 baseia-se na premissa que palavras que ocorrem no mesmo contexto tendem a ter significado similar.
 
 
+% Os modelos probabilísticos analisam a frequência dos termos a fim de descobrir os assuntos que melhor representam os documentos.
+
+% modelos probabilísticos convencionais são o PLSA e o LDA 
+
+"'Assim, a modelagem probabilística de tópicos é uma abordagem para atacar o problema do agrupamento e organização de dados, principalmente de conteúdo textual e cujo objetivo principal é a descoberta de tópicos e a anotação de grandes coleções de documentos por classificação temática. Tais métodos analisam quantitativamente as palavras dos textos originais para descobrir os temas presentes nos mesmos. Os algoritmos de modelagem de tópicos não requerem nenhum conhecimento prévio dos elementos e os tópicos emergem da análise dos textos originais [Blei 2012].'"
 
 
 
+
+
+
+
+
+
+
+
+
+
+NMF
+% Outra modelo popular é o \textit{Non-Negative Matrix Factorization} (NMF) o qual aborda a extração de tópicos como a fatoração de uma matriz documento-termo W, extremamente esparsa de dimensões m x n em uma matriz Z de dimensões n x k e um matriz A de dimensões k x m, onde n é o número de termos, m é o número de documentos da coleção e k é a quantidade de tópicos a serem extraídos. Diferente do LSI, o processo de fatoração garante que não as matrizes resultantes não possuem elementos negativos, permitindo uma interpretação mais intuitiva de seus valores. Além disso, o processo de fatoração proporciona a propriedade de \textit{clustering}, ou seja, automaticamente agrupar as colunas da matriz W, e dessa forma, oferece a característica interessante de agrupar os documentos da coleção. 
 
 
 
