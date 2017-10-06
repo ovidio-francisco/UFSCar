@@ -18,7 +18,6 @@ Database file #1: abntex2-options.bib
 Database file #2: referencias.bib
 A bad cross reference---entry "Cheng2013"
 refers to entry "conf/sdm/2013", which doesn't exist
-Warning--I didn't find a database entry for "Hashimi2015729"
 Warning--I didn't find a database entry for "Rezende2003"
 Warning--I didn't find a database entry for "conf/sdm/2013"
 Reallocated singl_function (elt_size=4) to 100 items from 50.
@@ -32,7 +31,7 @@ Reallocated glb_str_end (elt_size=4) to 20 items from 10.
 +---------------------------------------------------------+
 You've used 18 entries,
             6711 wiz_defined-function locations,
-            1354 strings with 13960 characters,
+            1352 strings with 13932 characters,
 and the built_in function-call counts, 30076 in all, are:
 = -- 3490
 > -- 641
