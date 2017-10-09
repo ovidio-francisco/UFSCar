@@ -1,26 +1,18 @@
-\section{Extração de Tópicos}
+\section{Modelos de Extração de Tópicos}
 
+A popularidade dos computares facilita a criação e compartilhamento de textos onde a quantidade de informação facilmente extrapola a capacidade de humana de leitura e análise de coleções de textos, estejam eles disponíveis na Internet ou em computadores pessoais. A necessidade de simplificar e organizar grandes coleções de documentos criou uma demanda por modelos de aprendizado de máquina para extração de conhecimento em bases textuais. Para esse fim, foram desenvolvidas técnicas para descobrir, extrair e agrupar textos de grandes coleções, as quais são chamadas de modelagem de tópicos.
+% Na venda do peixe, citar que a busca é tão difícil quanto a leitura e análise de coleções de documentos.
 
-Os modelos de extração de tópicos foram propostos para simplificar e organizar grandes coleções de documentos. Nesse contexto, um tópico é uma estrutura com valor semântico que formam grupos de palavras que frequentemente ocorrem próximas. Essas palavra ajudam a descrever um documento ou sub-conjunto de documentos e ajudam a entender o tema ou assunto do texto onde essa estrutura está presente.
+As modelos de extração de tópicos são abordagens não-supervisionadas que visam descobrir padrões latentes nas relações entre os documentos e seus termos.  Baseiam-se na premissa de que um documento é produzido a partir de tópicos previamente definidos e determinam os termos a serem utilizados em um documento.  Nesse contexto, um documento é uma mistura de tópicos onde cada termo presente no documento pode ser associado a um tópico. Um tópico é uma estrutura com valor semântico que representa um conjunto de termos significantes para o entendimento do tema ao qual o tópico trata. O processo de elaboração do documento a partir desses tópicos é chamado de processo generativo ou modelo generativo, o qual é desconhecido porém pode ser estimado com base nos termos presentes no documento, aqui chamados de variáveis observáveis. Assim, o processo de extração de tópicos consiste em estimar o modelo generativo que deu origem ao documento.
 
-As técnicas de extração de tópicos são abordagens não-supervisionadas que visam encontrar a estrutura semântica de uma coleção de documentos a qual é latente, isto é, desconhecida. Os modelos de extração de tópicos baseiam-se na premissa de que um documento é produzido a partir de tópicos previamente definidos, os quais se deseja abordar no texto e determinam os termos a sem utilizados em um documento.
-
-O processo de elaboração do documento a partir desses tópicos é chamado de processo generativo ou modelo generativo, o qual é desconhecido porém, pode ser estimado  com base nos termos presentes no documento, aqui chamados de variáveis observáveis. Assim, o processo de extração de tópicos consiste em estimar o modelo generativo que deu origem ao documento.
-
-Obtém-se ao final do processo de extração de tópicos uma representação documento-tópico que atribui um peso para cada tópico em cada documento da coleção e um representação termo-tópico que representa a probabilidade de ocorrência de um termo em um documento dado que o tópico está presente no documento.
-% Convencionalmente uma matrix documento-termo, extremamente esparsa, é decomposta em outras duas matrizes, sendo documento-tópico e termo-tópico~\cite{Cheng2013}.
-
-% Entre as principais abordagens da literatura está o \textit{Latent Dirichlet Allocation} (LDA) sendo referenciado em diversos trabalhos e considerado um dos primeiros modelos dessa área e base para outros trabalhos. 
-
-
-% Essas são técnicas não-supervisionadas, ou seja, os resultados são extraídos a partir da análise dos documentos sem a necessidade de informações extras como 
+Ao final, obtém-se uma representação documento-tópico que atribui um peso para cada tópico em cada documento da coleção e um representação termo-tópico que representa a probabilidade de ocorrência de um termo em um documento dado que o tópico está presente no documento.
 
 
 % -- A maioria dos trabalho enquadram-se em duas duas principais categorias, os modelos não-probabilísticos e os modelos probabilísticos.
 
 \subsection{Modelos Não Probabilísticos}
 
-Nos modelos não-probabilísticos um tópico é um conjunto de termos e seus pesos que indicam o quão significante esses termos são para um assunto. A maioria das técnicas não-probabilísticas baseiam-se em técnicas de fatoração de matrizes, onde a matrix documento-termo é projetada em um espaço com menor dimensionalidade chamado \textit{Latent Semantic Space}. Por exemplo, o \textit{Latente Semantic Indexing} (LSI) usa a técnica chamada \textit{Singular Value Decomposition} (SVD) para encontrar padrões no relacionamento entre assuntos e termos em uma coleção de texto não estruturada. Entretanto, esse método não fornecem uma interpretação para elementos com valores negativos~\cite{Cheng2013}. % Trocar essa referência do Cheng2013 pela que ele usa na seção 2 do trabalho dele.
+Nos modelos não-probabilísticos um tópico é um conjunto de termos e seus pesos que indicam o quão significante esses termos são para um assunto. A maioria das técnicas não-probabilísticas baseiam-se em técnicas de fatoração de matrizes, onde a matrix documento-termo é projetada em um espaço com menor dimensionalidade chamado \textit{Latent Semantic Space}. Por exemplo, o \textit{Latente Semantic Indexing} (LSI) usa a técnica chamada \textit{Singular Value Decomposition} (SVD) para encontrar padrões no relacionamento entre assuntos e termos em uma coleção de texto não estruturada. Entretanto, esse método não fornece uma interpretação para elementos com valores negativos~\cite{Cheng2013}. % Trocar essa referência do Cheng2013 pela que ele usa na seção 2 do trabalho dele.
 % Convencionalmente uma matrix documento-termo, extremamente esparsa, é decomposta em outras duas matrizes, sendo documento-tópico e termo-tópico~\cite{Cheng2013}.
 
 % -- NMF

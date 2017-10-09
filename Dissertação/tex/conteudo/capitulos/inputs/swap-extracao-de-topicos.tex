@@ -1,22 +1,24 @@
 
 
 
+Os modelos de extração de tópicos são usados para simplificar e organizar grandes coleções de documentos. Nesse contexto, um tópico é uma estrutura com valor semântico que formam grupos de palavras que frequentemente ocorrem próximas. Essas palavra ajudam a descrever um documento ou sub-conjunto de documentos e ajudam a entender o tema ou assunto do texto onde essa estrutura está presente.
 
-Bom dia Katti,
+As principais abordagens propostas nesse sentido serão descritos a seguir.
 
-
-  Nos últimos dias acrescentei mais conteúdos à dissertação. Tenho a introdução, a revisão sobre tópicos e segmentação com algum conteúdo assim como a proposta do trabalho. 
-
-  Segue anexo a versão atualizada até hoje. 
-
-  Desde a última reunião não conversamos mais. Você acha que devo mandar mais essa versão para Rafael e Solange? Podemos marcar a próxima reunião?
+Os modelos de extração de tópicos são abordagens não supervisionadas 
 
 
-  []s
 
+
+
+
+[Minicurso4] 
+"Na modelagem, cada documento é representado como uma combinação de tópicos e cada tópico é representado por um conjunto de termos, ambos com probabilidades associadas. Assim, cada tópico extraído da coleção possui termos mais relevantes. Analogamente, cada documento possui tópicos mais relevantes de acordo com as respectivas probabilidades."
+"Para essa tarefa foram desenvolvidas técnicas probabilísticas chamadas de modelagem de tópicos, que são utilizadas para descobrir, extrair e agrupar documentos de grandes coleções em estruturas temáticas." [Blei 2012]
+"Após a aplicação da modelagem dos tópicos, normalmente o resultado é um conjunto de termos que nos indicam ou induzem ao(s) tema(s) ou assunto(s) de uma coleção."
+"A modelagem de tópicos, apesar de ser um método estatístico para descobrir temas na estrutura de um corpus, também é vista como uma “clusterização” 1 fuzzy ou soft."[De Oliveira et al. 2007]
 
 % --> a extração de topicos resulta em um conjunto de termos que indicam aos temas ou assuntos de uma coleção de documentos
-
 
 
 
@@ -26,6 +28,22 @@ Bom dia Katti,
 "A ideia básica dos modelos de tópicos é descobrir, nas relações entre documentos e termos, padrões latentes que sejam significativos para o entendimento dessas relações. Por exemplo, tais modelos podem ranquear um conjunto de termos como importantes para um ou mais temas. Bem como ranquear documentos como tendo relevância para um ou mais temas."
 
 
+% --> Definição de Tópico
+[Modelos probabilísticos de tópicos: desvendando o Latent Dirichlet Allocation]
+"Os tópicos são estruturas com valor semântico e que, no contexto de mineração de texto, formam grupos de palavras que frequentemente ocorrem juntas. Esses grupos de palavras quando analisados, dão indícios a um tema ou assunto que ocorre em um subconjunto de documentos. A expressão tópico é usada levando-se em conta que o assunto tratado em uma coleção de documentos é extraído automaticamente, ou seja, tópico é definido como um conjunto de palavras que frequentemente ocorrem em documentos semanticamente relacionados."
+
+
+
+
+
+% Na modelagem, cada documento é representado como uma combinação de tópicos e cada tópico é representado por um conjunto de termos, ambos com probabilidades associadas.  [Minicurso4] 
+% a maioria dos modelos convencionais como NMF e NMF
+% Convencionalmente uma matrix documento-termo, extremamente esparsa, é decomposta em outras duas matrizes, sendo documento-tópico e termo-tópico~\cite{Cheng2013}.
+
+% Entre as principais abordagens da literatura está o \textit{Latent Dirichlet Allocation} (LDA) sendo referenciado em diversos trabalhos e considerado um dos primeiros modelos dessa área e base para outros trabalhos. 
+
+
+% Essas são técnicas não-supervisionadas, ou seja, os resultados são extraídos a partir da análise dos documentos sem a necessidade de informações extras como 
 
 
 
