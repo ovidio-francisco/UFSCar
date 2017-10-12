@@ -10,8 +10,8 @@
 \contentsline {subsection}{\numberline {2.1.2}Modelos Probabil\IeC {\'\i }sticos}{8}{subsection.2.1.2}
 \contentsline {section}{\numberline {2.2}Segmenta\IeC {\c c}\IeC {\~a}o Textual}{9}{section.2.2}
 \contentsline {subsection}{\numberline {2.2.1}Principais algoritmos}{10}{subsection.2.2.1}
-\contentsline {subsection}{\numberline {2.2.2}Avalia\IeC {\c c}\IeC {\~a}o}{11}{subsection.2.2.2}
-\contentsline {subsubsection}{\numberline {2.2.2.1}Medidas de Avalia\IeC {\c c}\IeC {\~a}o}{11}{subsubsection.2.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}Avalia\IeC {\c c}\IeC {\~a}o}{12}{subsection.2.2.2}
+\contentsline {subsubsection}{\numberline {2.2.2.1}Medidas de Avalia\IeC {\c c}\IeC {\~a}o}{12}{subsubsection.2.2.2.1}
 \contentsline {section}{\numberline {2.3}Trabalhos Relacionados}{13}{section.2.3}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \contentsline {chapter}{\chapternumberline {3}\MakeTextUppercase {Proposta}}{15}{chapter.3}

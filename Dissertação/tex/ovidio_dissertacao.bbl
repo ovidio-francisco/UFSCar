@@ -19,6 +19,13 @@ Dispon{\'\i}vel em: \url{http://dx.doi.org/10.1023/A:1007506220214}.}
   review. In:  \emph{2016 6th International Conference - Cloud System and Big
   Data Engineering (Confluence)}. [S.l.: s.n.], 2016. p. 65--72.}
 
+\bibitem[Blei 2012]{Blei2012}
+\abntrefinfo{Blei}{BLEI}{2012}
+{BLEI, D.~M. Probabilistic topic models.
+\emph{Commun. ACM}, ACM, New York, NY, USA, v.~55, n.~4, p. 77--84, abr. 2012.
+ISSN 0001-0782.
+Dispon{\'\i}vel em: \url{http://doi.acm.org/10.1145/2133806.2133826}.}
+
 \bibitem[BOKAEI, SAMETI e LIU 2016]{Bokaei2016}
 \abntrefinfo{BOKAEI, SAMETI e LIU}{BOKAEI; SAMETI; LIU}{2016}
 {BOKAEI, M.~H.; SAMETI, H.; LIU, Y. Extractive summarization of multiparty
@@ -61,6 +68,12 @@ ISBN 978-1-61197-283-2. Dispon{\'\i}vel em:
 {CHOI, F. Y.~Y.; WIEMER-HASTINGS, P.; MOORE, J. Latent semantic analysis for
   text segmentation. In:  \emph{In Proceedings of EMNLP}. [S.l.: s.n.], 2001.
   p. 109--117.}
+
+\bibitem[Deerwester et al. 1990]{Deerwester1990}
+\abntrefinfo{Deerwester et al.}{DEERWESTER et al.}{1990}
+{DEERWESTER, S. et al. Indexing by latent semantic analysis.
+\emph{Journal of the American Society for Information Science}, v.~41, n.~6, p.
+  391--407, 1990.}
 
 \bibitem[Ferret 2009]{Ferret2009}
 \abntrefinfo{Ferret}{FERRET}{2009}
