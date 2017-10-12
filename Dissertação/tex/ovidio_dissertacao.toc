@@ -5,8 +5,8 @@
 \contentsline {chapter}{\chapternumberline {1}\MakeTextUppercase {Introdu\IeC {\c c}\IeC {\~a}o}}{3}{chapter.1}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \contentsline {chapter}{\chapternumberline {2}\MakeTextUppercase {Conceitua\IeC {\c c}\IeC {\~a}o Te\IeC {\'o}rica}}{7}{chapter.2}
-\contentsline {section}{\numberline {2.1}Extra\IeC {\c c}\IeC {\~a}o de T\IeC {\'o}picos}{7}{section.2.1}
-\contentsline {subsection}{\numberline {2.1.1}Modelos N\IeC {\~a}o Probabil\IeC {\'\i }sticos}{7}{subsection.2.1.1}
+\contentsline {section}{\numberline {2.1}Modelos de Extra\IeC {\c c}\IeC {\~a}o de T\IeC {\'o}picos}{7}{section.2.1}
+\contentsline {subsection}{\numberline {2.1.1}Modelos N\IeC {\~a}o Probabil\IeC {\'\i }sticos}{8}{subsection.2.1.1}
 \contentsline {subsection}{\numberline {2.1.2}Modelos Probabil\IeC {\'\i }sticos}{8}{subsection.2.1.2}
 \contentsline {section}{\numberline {2.2}Segmenta\IeC {\c c}\IeC {\~a}o Textual}{9}{section.2.2}
 \contentsline {subsection}{\numberline {2.2.1}Principais algoritmos}{10}{subsection.2.2.1}

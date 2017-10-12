@@ -1,14 +1,17 @@
 
-
-
 Os modelos de extração de tópicos são usados para simplificar e organizar grandes coleções de documentos. Nesse contexto, um tópico é uma estrutura com valor semântico que formam grupos de palavras que frequentemente ocorrem próximas. Essas palavra ajudam a descrever um documento ou sub-conjunto de documentos e ajudam a entender o tema ou assunto do texto onde essa estrutura está presente.
 
-As principais abordagens propostas nesse sentido serão descritos a seguir.
 
-Os modelos de extração de tópicos são abordagens não supervisionadas 
+% usam analisam quantitativamente os termos 
+% encontrar palavras que frequentemente ocorrem próximas
+% aprendem decompondo uma matriz documento-termo em matrizes menores usualmente 
+% Convencionalmente uma matrix documento-termo, extremamente esparsa, é decomposta em outras duas matrizes, sendo documento-tópico e termo-tópico~\cite{Cheng2013}.
+Mais formalmente, os dados podem ser expressos como:
+% -> W ~ Ŵ = Z·A
+% -> Z·A = Ŵ ~ W
 
-
-
+Dado um \textit{corpus} com $N$ 
+Os documentos podem ser expressos como vetores: $ d \in D = \{d_1,\dots,d_N\}$ onde $N$ é o numero documentos na coleção. 
 
 
 
@@ -41,7 +44,6 @@ Os modelos de extração de tópicos são abordagens não supervisionadas
 % Convencionalmente uma matrix documento-termo, extremamente esparsa, é decomposta em outras duas matrizes, sendo documento-tópico e termo-tópico~\cite{Cheng2013}.
 
 % Entre as principais abordagens da literatura está o \textit{Latent Dirichlet Allocation} (LDA) sendo referenciado em diversos trabalhos e considerado um dos primeiros modelos dessa área e base para outros trabalhos. 
-
 
 % Essas são técnicas não-supervisionadas, ou seja, os resultados são extraídos a partir da análise dos documentos sem a necessidade de informações extras como 
 

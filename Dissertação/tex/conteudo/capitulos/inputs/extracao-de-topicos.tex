@@ -1,26 +1,36 @@
 \section{Modelos de Extração de Tópicos}
 
-A popularidade dos computares facilita a criação e compartilhamento de textos onde a quantidade de informação facilmente extrapola a capacidade de humana de leitura e análise de coleções de textos, estejam eles disponíveis na Internet ou em computadores pessoais. A necessidade de simplificar e organizar grandes coleções de documentos criou uma demanda por modelos de aprendizado de máquina para extração de conhecimento em bases textuais. Para esse fim, foram desenvolvidas técnicas para descobrir, extrair e agrupar textos de grandes coleções, as quais são chamadas de modelagem de tópicos.
+A popularidade dos computares permite a criação e compartilhamento de textos onde a quantidade de informação facilmente extrapola a capacidade de humana de leitura e análise de coleções de documentos, estejam eles disponíveis na Internet ou em computadores pessoais. A necessidade de simplificar e organizar grandes coleções de documentos criou uma demanda por modelos de aprendizado de máquina para extração de conhecimento em bases textuais. Para esse fim, foram desenvolvidas técnicas para descobrir, extrair e agrupar textos de grandes coleções, as quais são chamadas de modelagem de tópicos.
 % Na venda do peixe, citar que a busca é tão difícil quanto a leitura e análise de coleções de documentos.
 
-As modelos de extração de tópicos são abordagens não-supervisionadas que visam descobrir padrões latentes nas relações entre os documentos e seus termos.  Baseiam-se na premissa de que um documento é produzido a partir de tópicos previamente definidos e determinam os termos a serem utilizados em um documento.  Nesse contexto, um documento é uma mistura de tópicos onde cada termo presente no documento pode ser associado a um tópico. Um tópico é uma estrutura com valor semântico que representa um conjunto de termos significantes para o entendimento do tema ao qual o tópico trata. O processo de elaboração do documento a partir desses tópicos é chamado de processo generativo ou modelo generativo, o qual é desconhecido porém pode ser estimado com base nos termos presentes no documento, aqui chamados de variáveis observáveis. Assim, o processo de extração de tópicos consiste em estimar o modelo generativo que deu origem ao documento.
-
-Ao final, obtém-se uma representação documento-tópico que atribui um peso para cada tópico em cada documento da coleção e um representação termo-tópico que representa a probabilidade de ocorrência de um termo em um documento dado que o tópico está presente no documento.
+Os modelos de extração de tópicos são abordagens não-supervisionadas que visam descobrir padrões latentes nas relações entre os documentos e seus termos.  Baseiam-se na premissa de que um documento é produzido a partir de tópicos previamente definidos que determinam os termos a serem utilizados em um documento. Nesse contexto, um documento é uma mistura de tópicos onde cada termo presente no documento pode ser associado a um tópico. Um tópico por sua vez, é uma estrutura com valor semântico que representa um conjunto de termos significantes para o entendimento do tema ao qual o tópico trata. O processo de elaboração do documento a partir desses tópicos é chamado de processo generativo ou modelo generativo, o qual é desconhecido porém pode ser estimado com base nos termos presentes no documento, também chamados de variáveis observáveis. Assim, o processo de extração de tópicos consiste em estimar o modelo generativo que deu origem ao documento.
 
 
-% -- A maioria dos trabalho enquadram-se em duas duas principais categorias, os modelos não-probabilísticos e os modelos probabilísticos.
+Esses métodos analisam estatisticamente os termos presentes nos documento para descobrir os tópicos relacionados. Seja 
+$d \in D = \{d_1,\cdots,d_n\}$ o vetor que representa a coleção de documentos, 
+$t \in T = \{t_1,\cdots,t_m\}$ seus termos distintos e 
+$z \in Z = \{z_1,\cdots,z_k\}$ seus tópicos. 
+A maioria dos métodos aprendem decompondo a matriz documento-termo $W$, em duas matrizes $Z$ e $A$, tal que a resultante de $ZA$ seja uma aproximação da matriz $W$ original. Mais formalmente tem-se:
+
+\begin{equation}
+	Z\cdot A = \hat{W} \approx W
+\end{equation}
+
+A matrix
+$A$ corresponde a matriz documento-tópico e possui dimensão $k \times m$. $Z$ corresponde a matriz termo-tópico e possui dimensão $n \times k$ onde $n$ é o número de termos, $m$ é o número de documentos da coleção e $k$ é a quantidade de tópicos a serem extraídos.
+Uma vez que $k \ll n,m$, então $A$ e $Z$ são menores que a matriz de entrada, o que resulta em uma versão comprimida da matriz original, pois $n \cdot k + k \cdot m \ll n \cdot m$.
+% 
+% 
+Ao final, obtém-se uma representação documento-tópico que atribui um peso para cada tópico em cada documento da coleção e uma representação termo-tópico que representa a probabilidade de ocorrência de um termo em um documento dado que o tópico está presente no documento.
+
+% Em termos de metodologia, a maioria dos trabalho enquadram-se em duas duas principais categorias, os modelos não-probabilísticos e os modelos probabilísticos.
 
 \subsection{Modelos Não Probabilísticos}
 
 Nos modelos não-probabilísticos um tópico é um conjunto de termos e seus pesos que indicam o quão significante esses termos são para um assunto. A maioria das técnicas não-probabilísticas baseiam-se em técnicas de fatoração de matrizes, onde a matrix documento-termo é projetada em um espaço com menor dimensionalidade chamado \textit{Latent Semantic Space}. Por exemplo, o \textit{Latente Semantic Indexing} (LSI) usa a técnica chamada \textit{Singular Value Decomposition} (SVD) para encontrar padrões no relacionamento entre assuntos e termos em uma coleção de texto não estruturada. Entretanto, esse método não fornece uma interpretação para elementos com valores negativos~\cite{Cheng2013}. % Trocar essa referência do Cheng2013 pela que ele usa na seção 2 do trabalho dele.
-% Convencionalmente uma matrix documento-termo, extremamente esparsa, é decomposta em outras duas matrizes, sendo documento-tópico e termo-tópico~\cite{Cheng2013}.
 
 % -- NMF
-Outro modelo popular é o \textit{Non-Negative Matrix Factorization} (NMF) o qual aborda a extração de tópicos como a fatoração de uma matriz documento-termo $W$, extremamente esparsa em duas matrizes não negativas $Z$ e $A$, tal que a resultante de $ZA$ é uma aproximação da matriz $W$ original.  $A$ corresponde a matriz documento-tópico e possui dimensão $k \times m$. $Z$ corresponde a matriz termo-tópico e possui dimensão $n \times k$ onde $n$ é o número de termos, $m$ é o número de documentos da coleção e $k$ é a quantidade de tópicos a serem extraídos.  Diferente do LSI, no processo de fatoração apenas operações aditivas são permitidas, o que garante que as matrizes resultantes não possuem elementos negativos, permitindo uma interpretação mais intuitiva de seus valores. Além disso, o processo de fatoração proporciona a propriedade de \textit{clustering}, ou seja, automaticamente agrupar as colunas da matriz $W$, e dessa forma, oferece a característica interessante de agrupar os documentos da coleção. Uma vez que $k$ é menor que $n$ e $m$, então $A$ e $Z$ são menores que a matriz de entrada, o que resulta em uma versão comprimida da matriz original.
-
-
-% -> W ~ Ŵ = Z·A
-% -> Z·A = Ŵ ~ W
+Outro modelo popular é o \textit{Non-Negative Matrix Factorization} (NMF).  Diferente do LSI, no processo de fatoração apenas operações aditivas são permitidas, o que garante que as matrizes resultantes não possuem elementos negativos, permitindo uma interpretação mais intuitiva de seus valores. Além disso, o processo de fatoração proporciona a propriedade de \textit{clustering}, ou seja, automaticamente agrupar as colunas da matriz $W$, e dessa forma, oferece a característica interessante de agrupar os documentos da coleção. 
 
 % -- Onde é utilizado
 
@@ -28,8 +38,8 @@ Outro modelo popular é o \textit{Non-Negative Matrix Factorization} (NMF) o qua
 \subsection{Modelos Probabilísticos}
 
 Os modelos probabilísticos utilizam um modelo generativo probabilístico para descobrir os tópicos. Consideram os documentos como uma mistura de tópicos e um tópico como uma distribuição probabilística sobre os termos.
-% falar em algum ponto sobre o problema das matrizes esparsas
-O PLSA foi um dos primeiros a estender o modelo LSA e formalizar a extração de tópicos probabilísticos. De maneira similar ao LSA, o esse modelo decompõe uma matriz esparsa a fim de reduzir a dimensionalidade. O PLSA cria um modelo estatístico chamado \textit{aspect model} que associa os tópicos as variáveis observáveis atribuindo probabilidades às ligações entre os tópicos e os documentos e entre as palavras e os tópicos. Assim, em comparação ao LSA, é considerado uma método mais robusto por proporcionar uma interpretação probabilística. Por outro lado, esse modelo apresenta desvantagens como o número de parâmetros do modelo que cresce linearmente com o número de documentos da coleção que pode ocasionar \textit{overfitting}. Além disso, não permite calcular as probabilidades de um novo documento acrescentado após a criação da modelo.  % -- E o Expectation Maximization?
+% falar em algum ponto sobre o problema das matrizes esparsas. Principalmente com documentos pequenos
+O PLSA foi um dos primeiros a estender o modelo LSA e formalizar a extração de tópicos probabilísticos. De maneira similar ao LSA, o esse modelo decompõe uma matriz esparsa a fim de reduzir a dimensionalidade. O PLSA cria um modelo estatístico chamado \textit{aspect model} que associa os tópicos as variáveis observáveis atribuindo probabilidades às ligações entre os tópicos e os documentos e entre as palavras e os tópicos. Assim, cada documento pode ser representado como a probabilidade de um tópico estar presente, $P(z|d)$ e a probabilidade de um termo ocorrer, dado que um tópico esta presente, $P(t|z)$. Em comparação ao LSA, é considerado uma método mais robusto por proporcionar uma interpretação probabilística. Por outro lado, esse modelo apresenta desvantagens como o número de parâmetros do modelo que cresce linearmente com o número de documentos da coleção que pode ocasionar \textit{overfitting}. Além disso, não permite calcular as probabilidades de um novo documento acrescentado após a criação da modelo.  % -- E o Expectation Maximization?
 
 
 A fim de contornar esses problemas, o LDA estende o modelo PLSA incorporando um modelo generativo onde os cada tópico obedece à distribuição multivariada de \textit{Dirichlet} o que o torna menos propenso ao \textit{overfitting} e capaz de inferir tópicos a documentos ainda não observados. É referenciado na literatura como estado da arte sobre modelos probabilísticos de extração de tópicos e influencia uma grande quantidade de trabalhos, tornando-se base para novos modelos.

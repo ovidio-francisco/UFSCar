@@ -6,6 +6,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 
 import org.apache.commons.csv.CSVPrinter;
+
 import preprocessamento.Preprocess;
 import segmenter.Segmenter.SegmenterAlgorithms;
 import segmenter.evaluations.EvaluationData;
@@ -124,9 +125,14 @@ public class Tests3 {
 				
 				c99Model.icreaseSegmentsRate(increaseSegsRate);
 			}
-			
 		}
 
+		if (algorithm == SegmenterAlgorithms.SENTENCES || algorithm == null) {
+			TestSegmenterModel sentencesSegmenterModel = new TestSegmenterModel();
+			result.add(Tests.testAll(folder, sentencesSegmenterModel));
+			
+		}
+		
 		
 		return result;
 	
@@ -256,10 +262,10 @@ public class Tests3 {
 		 "} \n" + 
 
 		                "\\begin{document} \n" +
-		                "\\begin{longtable}[c]{|l|c|c|c|c|c|c||c|c|c|c|c|c|} \n"+ 
+		                "\\begin{longtable}[c]{|l|c|c|c|c|c|c|c||c|c|c|c|c|c|c|} \n"+ 
 
 		                "\\hline \n"+
-		                "&\\multicolumn{6}{c||}{Sem Preprocessamento} & \\multicolumn{6}{c|}{Com Preprocessamento}\\\\ \n";
+		                "&\\multicolumn{7}{c||}{Sem Preprocessamento} & \\multicolumn{7}{c|}{Com Preprocessamento}\\\\ \n";
 		for(String l : greatLines) table += l + "\n";
 		
 		table += "\\end{longtable} \n" +

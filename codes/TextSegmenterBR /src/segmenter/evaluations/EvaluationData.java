@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 
 import segmenter.Segmenter;
+import segmenter.algorithms.SentencesSegmenter;
 import segmenter.algorithms.c99br.C99BR;
 import segmenter.algorithms.texttile.TextTilingBR;
 import segmenter.evaluations.measure.PkMeasure;
@@ -207,6 +208,10 @@ public class EvaluationData {
 			alg += ((C99BR)getAlg()).isWeitght();
 		}
 		
+		if(getAlg() instanceof SentencesSegmenter) {
+			alg = "Sentenças";
+		}
+		
 		String preprocess = "_" + (getAlg().getPreprocess().isRemoveStopWord() ? "T" : "F");
 		
 		alg = alg+preprocess;
@@ -231,6 +236,9 @@ public class EvaluationData {
 			alg += " " + String.format("%s", ((C99BR)getAlg()).isWeitght() ? "T":"F");
 		}
 		
+		if(getAlg() instanceof SentencesSegmenter) {
+			alg = "Sentenças só";
+		}
 //		String preprocess = " " + (getAlg().getPreprocess().isRemoveStopWord() ? "T" : "F");
 		
 //		alg = alg+preprocess;

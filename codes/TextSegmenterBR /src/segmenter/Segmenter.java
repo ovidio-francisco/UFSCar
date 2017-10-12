@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import preprocessamento.Preprocess;
 
 public interface Segmenter {
-	public enum SegmenterAlgorithms {TEXT_TILING, C99}
+	public enum SegmenterAlgorithms {TEXT_TILING, C99, SENTENCES}
 	
 	public static final String EOS_MARK = "_EOS_";
 	

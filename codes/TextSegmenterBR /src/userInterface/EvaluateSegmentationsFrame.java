@@ -8,6 +8,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.File;
 import java.io.FileFilter;
+import java.io.IOException;
 import java.util.ArrayList;
 
 import javax.swing.JButton;
@@ -33,9 +34,9 @@ import segmenter.algorithms.c99br.C99BR;
 import segmenter.algorithms.texttile.TextTilingBR;
 import segmenter.evaluations.Evaluation;
 import segmenter.evaluations.EvaluationData;
-import segmenter.tests.Tests3;
 import segmenter.tests.Tests;
 import segmenter.tests.Tests2;
+import segmenter.tests.Tests3;
 import utils.Files;
 
 public class EvaluateSegmentationsFrame extends JFrame {
@@ -257,17 +258,17 @@ public class EvaluateSegmentationsFrame extends JFrame {
 			
 			@Override
 			public void actionPerformed(ActionEvent e) {
-//				ArrayList<ArrayList<EvaluationData>> evaluations = Tests3.doTests(null, true);
+				ArrayList<ArrayList<EvaluationData>> evaluations = Tests3.doTests(null, true);
 				
-//				showTests1(evaluations);
+				showTests1(evaluations);
 				
 				Tests3.createGreatTexTable();
 				
-//				try {
-//					Tests3.createGreatCSV(evaluations);
-//				} catch (IOException e1) {
-//					e1.printStackTrace();
-//				}
+				try {
+					Tests3.createGreatCSV(evaluations);
+				} catch (IOException e1) {
+					e1.printStackTrace();
+				}
 			}
 		});
 		

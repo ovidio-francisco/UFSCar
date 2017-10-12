@@ -5,6 +5,7 @@ import java.io.File;
 import preprocessamento.Preprocess;
 import segmenter.Segmenter;
 import segmenter.Segmenter.SegmenterAlgorithms;
+import segmenter.algorithms.SentencesSegmenter;
 import segmenter.algorithms.c99br.C99BR;
 import segmenter.algorithms.texttile.TextTilingBR;
 import segmenter.evaluations.Evaluation;
@@ -44,6 +45,10 @@ public class TestSegmenterModel {
 		
 	}
 	
+	public TestSegmenterModel() {
+		this.alg = SegmenterAlgorithms.SENTENCES;
+	}
+	
 	public EvaluationData test(File txt) {
 		File gold = new File(txt.getAbsoluteFile()+".csv");
 		
@@ -61,6 +66,10 @@ public class TestSegmenterModel {
 			((C99BR)seg).setnSegsRate(this.segmentsRate);
 			((C99BR)seg).setRakingSize(this.rankingSize);
 			((C99BR)seg).setWeitght(this.weight);
+		}
+		
+		if(alg == SegmenterAlgorithms.SENTENCES) {
+			seg = new SentencesSegmenter();
 		}
 		
 		
