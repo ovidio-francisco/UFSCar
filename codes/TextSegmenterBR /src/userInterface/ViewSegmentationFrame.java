@@ -20,9 +20,9 @@ import javax.swing.JTextArea;
 import javax.swing.JToolBar;
 import javax.swing.border.EmptyBorder;
 
-import segmenter.Segmenter;
-import segmenter.algorithms.c99br.C99BR;
-import segmenter.algorithms.texttile.TextTilingBR;
+import segmenters.Segmenter;
+import segmenters.algorithms.c99br.C99BR;
+import segmenters.algorithms.texttile.TextTilingBR;
 import utils.TextExtractor;
 
 public class ViewSegmentationFrame extends JFrame {

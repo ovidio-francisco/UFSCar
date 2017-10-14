@@ -28,8 +28,8 @@ import javax.swing.border.EtchedBorder;
 import TETConfigurations.TopicExtractionConfiguration;
 import m4mUtils.M4MShowStatus;
 import mining4meetings.Mining4Meetings;
-import segmenter.Segmenter;
-import segmenter.algorithms.c99br.C99BR;
+import segmenters.Segmenter;
+import segmenters.algorithms.c99br.C99BR;
 import utils.Files;
 import utils.TextExtractor;
 

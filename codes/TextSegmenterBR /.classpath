@@ -6,5 +6,11 @@
 	<classpathentry kind="lib" path="libs/tika-app-1.11.jar"/>
 	<classpathentry kind="lib" path="libs/icu4j-56_1.jar"/>
 	<classpathentry kind="lib" path="libs/weka.jar"/>
+	<classpathentry kind="lib" path="libs/colt.jar"/>
+	<classpathentry kind="lib" path="libs/lingpipe-3.4.0.jar"/>
+	<classpathentry kind="lib" path="libs/log4j-1.2.14.jar"/>
+	<classpathentry kind="lib" path="libs/MinCutSeg.jar"/>
+	<classpathentry kind="lib" path="libs/mtj.jar"/>
+	<classpathentry kind="lib" path="libs/options.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

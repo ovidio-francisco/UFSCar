@@ -27,16 +27,16 @@ import javax.swing.JToolBar;
 import javax.swing.SpinnerNumberModel;
 import javax.swing.border.EmptyBorder;
 
-import segmenter.AbstractSegmenter;
-import segmenter.Segmenter;
-import segmenter.Segmenter.SegmenterAlgorithms;
-import segmenter.algorithms.c99br.C99BR;
-import segmenter.algorithms.texttile.TextTilingBR;
-import segmenter.evaluations.Evaluation;
-import segmenter.evaluations.EvaluationData;
-import segmenter.tests.Tests;
-import segmenter.tests.Tests2;
-import segmenter.tests.Tests3;
+import segmenters.AbstractSegmenter;
+import segmenters.Segmenter;
+import segmenters.Segmenter.SegmenterAlgorithms;
+import segmenters.algorithms.c99br.C99BR;
+import segmenters.algorithms.texttile.TextTilingBR;
+import segmenters.evaluations.Evaluation;
+import segmenters.evaluations.EvaluationData;
+import segmenters.tests.Tests;
+import segmenters.tests.Tests2;
+import segmenters.tests.Tests3;
 import utils.Files;
 
 public class EvaluateSegmentationsFrame extends JFrame {

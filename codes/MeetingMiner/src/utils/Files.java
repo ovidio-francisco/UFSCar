@@ -17,7 +17,7 @@ import java.util.List;
 import org.apache.commons.csv.CSVFormat;
 import org.apache.commons.csv.CSVPrinter;
 
-import segmenter.Segmenter;
+import segmenters.Segmenter;
 
 public class Files {
 	

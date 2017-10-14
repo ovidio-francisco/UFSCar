@@ -1,8 +1,9 @@
 package segmenter.algorithms.c99br;
 
 import java.util.ArrayList;
-import segmenter.AbstractSegmenter;
+
 import segmenter.algorithms.c99br.uima.Stringx;
+import segmenters.AbstractSegmenter;
 
 public class C99BR extends AbstractSegmenter {
 	

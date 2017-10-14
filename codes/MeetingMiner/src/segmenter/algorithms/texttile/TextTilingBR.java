@@ -8,8 +8,8 @@ import org.apache.commons.csv.CSVPrinter;
 
 import ptstemmer.Stemmer;
 import ptstemmer.implementations.OrengoStemmer;
-import segmenter.AbstractSegmenter;
 import segmenter.algorithms.texttile.struct.*;
+import segmenters.AbstractSegmenter;
 import utils.Files;
 /**
  * An implementation of Marti Hearst's text tiling algorithm.
