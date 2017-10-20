@@ -1,20 +1,10 @@
 \chapter{Introdução}\label{chap:introducao}
 
-% -- Motivação
-% -< Classificação
-% -- Tópicos
-% -- Gaps da área
-% -- Objetivos
 
-
-A popularização dos computadores possibilitou o armazenamento cada vez maior de conteúdos digitais, entre esses, o formato textual como em livros, documentos, e-mails, redes sociais e páginas web. A produção de textos gera fontes de informações em volumes crescentes que podem superar a capacidade humana de analisá-los manualmente. Essa dificuldade incentiva a pesquisa de ferramentas automáticas para manipulação de dados não estruturados. Assim, os processos de extração automática de conhecimento em coleções textuais são essenciais, e ao mesmo tempo, constituem um desafio, devido às características de documentos textuais como o formato não estruturado e conteúdos pouco informativos ou irrelevantes.
-
+A popularização dos computadores possibilitou o armazenamento cada vez maior de conteúdos digitais, entre esses, o formato textual como em livros, documentos, e-mails, redes sociais e páginas web. A produção de textos gera fontes de informações em volumes crescentes que podem superar a capacidade humana de analisá-los manualmente. Essa dificuldade incentiva a pesquisa de ferramentas automáticas para manipulação de dados não estruturados. Assim, os processos de extração automática de conhecimento em coleções textuais são essenciais, e ao mesmo tempo, constituem um desafio, devido às características de documentos textuais como o formato não estruturado e trechos com diferentes níveis e importância, desde informações essenciais até textos pouco informativos e em alguns casos até irrelevantes. 
  % -< falar disso mais adiante -->
 
-
-% -- Fazer uma ligação entre produção de texto e reuniões 
-
-O uso de computadores permitiu às organizações a documentação oficial de reuniões em arquivos digitais, facilitando a confecção, compartilhamento e consulta às decisões tomadas.
+Além dos tipos de informações mais comuns que são armazenados no formato textual, como e-mails, relatórios, artigos e postagens em redes sociais, têm-se também o armazenamento das atas de reuniões, as quais com permitem às organizações a documentação oficial de reuniões em arquivos digitais, facilitando a confecção, compartilhamento e consulta às decisões tomadas.
 % 
 % 
 % 
@@ -23,51 +13,39 @@ O uso de computadores permitiu às organizações a documentação oficial de re
 %Seu conteúdo é frequentemente registrado em texto na forma de atas para fins de documentação e consulta posterior. 
 Reuniões são tarefas presentes em atividades corporativas, ambientes de gestão e organizações de um modo geral, onde discute-se problemas, soluções, propostas, planos, questionamentos, alterações de projetos e frequentemente são tomadas decisões importantes. A comunicação entre os membros da reunião é feita de forma majoritariamente verbal. Para que seu conteúdo possa ser registrado e externalizado, adota-se a prática de registrar seu conteúdo em documentos, os quais chamamos de atas de reunião. 
 
-Usualmente as atas são escritas manualmente por uma pessoa designada a tomar notas durante a reunião, o que e eventualmente ocasiona certa perca de detalhes, seja por manter o documento sucinto ou pela perca de atenção enquanto se faz anotações. Outra forma possível de registro é a gravação do áudio durante toda a reunião, o que garante que nenhum detalhe é perdido. Por outro lado, dificulta a tarefa de busca, mesmo com apoio de ferramentas voltadas para esse fim como~\cite{Schiller2009}. 
-
-
-% -< ... que tambem é observando na produção de atas de reunião
-
-%        ========== ==========   Descrição das Atas   ========== ==========
-
-As atas de reunião possuem características particulares, frequentemente apresentam um texto com poucas quebras de parágrafo e sem marcações de estrutura, como capítulos, seções ou quaisquer indicações sobre o tema do texto. Além disso, o estilo formal contribui para a escrita de textos com poucos detalhes, pois o ambiente dá preferência a textos sucintos. Quanto ao conteúdo, registram os principais assuntos tratados durante reuniões de uma organização como a sequência de acontecimentos sobre o que foi decidido e debatido durante as reuniões. Frequentemente são mantidas em arquivos digitais e disponibilizadas para consulta posterior. Assim, as atas são utilizadas como fonte de consulta, referência e embasamento para o funcionamento da organização, bem como para outros documentos e decisões.
-
-
-% de termos exatos que devem necessariamente estar contidos no trecho onde está o assunto.
-% falar de Boolean Retrieval Models?
-
-
-%        ========== ==========   Busca manual   ========== ==========
-
-
-Devido a fatores como a não estruturação e volume dos textos, a localização de um assunto em uma coleção de atas é uma tarefa custosa, especialmente considerando o seu crescimento em uma instituição. 
+Porém, armazenar e recuperar atas em formato textual oferece desafios. As atas de reunião possuem características particulares, frequentemente apresentam um texto com poucas quebras de parágrafo e sem marcações de estrutura, como capítulos, seções ou quaisquer indicações sobre o tema do texto. Devido a fatores como a não estruturação e volume dos textos, a localização de um assunto em uma coleção de atas é uma tarefa custosa, especialmente considerando o seu crescimento em uma instituição. 
 %%  -->
-As organizações costumam manter seus documentos eletrônicos organizados em pastas e nomeá-los com informações básicas sobre a reunião a que a ate se refere como a data e alguma referência cronológica como "37ª Reunião Ordinária do Conselho ...". Essa forma de organização facilita a localização dos arquivos com ferramentas que fazem buscas pelo nome dos arquivos e pastas. Contudo, essa prática costuma ser insuficiente. Para uma busca pelo conteúdo dos textos usa-se ferramentas computacionais baseadas em localização de palavras-chave que além de encontrar ocorrências das palavras podem oferecer recursos como operadores \textit{and} e \textit{not} ou ainda suporte às expressões regulares. Esse recurso, conhecido como \textit{grepping}\footnote{O nome \textit{grepping} é uma referência ao comando \texttt{grep} do Unix}, traz resultados satisfatórios em muitos casos. Por outro lado, o \textit{grepping} traz algumas desvantagens como: 1) transfere certa complexidade da tarefa ao usuário. 2) Buscas em grandes coleções de documentos tornam-se mais lentas. 3) Não há suporte a padrões mais flexíveis como a proximidade entre as palavras ou palavras que estejam na mesma sentença. 4) O retorno ao usuário são os documento integrais, o que pode exigir uma segunda busca dentro de um documento para encontrar o trecho desejado. 5) Não permite o ranqueamento dos resultados, que se apresentam sem indicações da relevância com a intenção do usuário.
-% 6) não trata a string de busca
-% 7) sinonímia e polissemia 
-% --> falar da string de busca?
+As organizações costumam manter seus documentos eletrônicos organizados em pastas e nomeá-los com informações básicas sobre a reunião a que a ate se refere como a data e alguma referência cronológica como "37ª Reunião Ordinária do Conselho ...". Essa forma de organização facilita a localização dos arquivos com ferramentas que fazem buscas pelo nome dos arquivos e pastas. Contudo, essa prática costuma ser insuficiente, pois uma busca pelo conteúdo dos textos usa-se ferramentas computacionais baseadas em localização de palavras-chave que além de encontrar ocorrências das palavras podem oferecer recursos como operadores \textit{and} e \textit{not} ou ainda suporte às expressões regulares. Esse recurso, conhecido como \textit{grepping}\footnote{O nome \textit{grepping} é uma referência ao comando \texttt{grep} do Unix}, traz resultados satisfatórios em muitos casos. Por outro lado, o \textit{grepping} traz algumas desvantagens como: 1) transfere certa complexidade da tarefa ao usuário. 2) buscas em grandes coleções de documentos tornam-se mais lentas. 3) não há suporte a padrões mais flexíveis como a proximidade entre as palavras ou palavras que estejam na mesma sentença. 4) o retorno ao usuário são os documento integrais, o que pode exigir uma segunda busca dentro de um documento para encontrar o trecho desejado. 
 
-Para essa classe de problema, frequentemente tem sido utilizadas técnicas de mineração de texto, por meio de diversas abordagens. Por exemplo, elas  vêm sendo empregadas na organização, gerenciamento, recuperação de informação e extração de conhecimento, como a extração de tópicos e a categorização de automática de documentos. Essas técnicas são aplicas em diversos domínios como: biologia, medicina, genética, patentes, indústria e marketing. %Acrescentar Mais uma referência que fale sobre análise de sentimentos.
+Para superar essas limitações tem sido utilizadas técnicas de aprendizado de máquina por meio de diversas abordagens. Por exemplo, elas  vêm sendo empregadas na organização, gerenciamento, recuperação de informação e extração de conhecimento, como a extração de tópicos e a categorização de automática de documentos. Essas técnicas permitem melhorar a busca por informações em atas de reunião. 
 
 
 %        ========== ==========   Estudo de Caso UFSCar   ========== ==========
-% O teor das atas é diversificado, contendo menções a assuntos como agendamentos, sugestões, reclamações, informes e, com maior atenção, as que foram decisões tomadas pelos participantes. 
-Nas reuniões do conselho de um programa de pós-graduação de uma universidade, são decididos, por exemplo, quais são os critérios para credenciamento e permanência de docentes no programa. Ao longo do tempo, esse tema pode ser discutido e mencionado diversas vezes, podendo os critérios inclusive sofrer significativas alterações, devido a diversos fatores. O coordenador do programa pode desejar recuperar qual foi a decisão mais recente, para poder aplicar os critérios a um potencial novo membro do programa, ou os membros do conselho podem desejar rever o histórico de tudo o que já foi discutido/decidido sobre o tema, para poder propor alterações nas regras, de forma mais adequada.
+
+Nas reuniões do conselho de um programa de pós-graduação de uma universidade, são decididos, por exemplo, quais são os critérios para credenciamento e permanência de docentes no programa. Ao longo do tempo, esse tema pode ser discutido e mencionado diversas vezes, podendo os critérios inclusive passar por significativas alterações, devido a diversos fatores. O coordenador do programa pode desejar recuperar qual foi a decisão mais recente, para poder aplicar os critérios a um potencial novo membro do programa, ou os membros do conselho podem desejar rever o histórico de tudo o que já foi discutido/decidido sobre o tema, para poder propor alterações nas regras, de forma mais adequada.
 
 
 
 %        ========== ==========   Necessidade de consultas   ========== ==========
 
-% -- Objetivos 
-Uma vez que a ata registra a sucessão de assuntos discutidos na reunião, há interesse em um sistema que aponte trechos de uma ata que tratam de um assunto específico. Tal sistema tem três principais tarefas: 1) Descobrir quando há uma mudança de assunto. 2) Descobrir quais são esses assuntos. 3) Fornecer um mecanismo de busca ao usuário. Assim, este trabalho tem como foco principal, a detecção de mudança de assuntos, que pode ser atendida pela segmentação automática de textos~\cite{Chen2017,Naili2016,Cardoso2017}, técnicas de mineração de texto a fim de extrair informações interessantes e técnicas de resgate de informação a fim de apresentar resultados mais relevantes. 
+Uma vez que a ata registra a sucessão de assuntos discutidos na reunião, um sistema de recuperação de informação deve retornar ao usuário apenas o trecho que trate do assunto pesquisado ao invés do documento inteiro. Assim, cada trecho com um assunto predominate pode ser considerado um subdocumento. Portanto, em primeiro lugar, há a necessidade de descobrir onde há mudanças de assunto no texto, que pode ser atendida com técnicas de segmentação automática de textos. 
 
-
+%--> explicar cada um dos 3, e no final colocar esse texto com os objetivos.
 
 %        ========== ==========|   Segmentação  |========== ==========
 
-A tarefa de segmentação textual consiste em dividir um texto em partes que contenham um significado relativamente independente. Em outras palavras, é identificar as posições nas quais há uma mudança significativa de assuntos. É útil em aplicações que trabalham com textos sem indicações de quebras de assunto, ou seja, não apresentam seções ou capítulos, como transcrições automáticas de áudio, vídeos e grandes documentos que contêm vários assuntos como atas de reunião e notícias. Pode ser usada para melhorar o acesso a informação solicitada por meio de uma consulta, onde é possível oferecer porções menores de texto mais relevantes ao invés de exibir um documento grande que pode conter informações menos pertinentes. A navegação pelo documento pode ser aprimorada, em especial na utilização por usuários com deficiência visual, os quais utilizam  sintetizadores de texto como ferramenta de acessibilidade. Além disso, encontrar pontos onde o texto muda de assunto, pode ser útil como etapa de pré-processamento em aplicações voltadas ao entendimento do texto, principalmente em textos longos~\cite{Choi2000}.
+% --> 1) Descobrir quando há uma mudança de assunto. 
+A tarefa de segmentação automática de textos, ou segmentação textual consiste em dividir um texto em partes que contenham um significado relativamente independente. Em outras palavras, é identificar as posições nas quais há uma mudança significativa de assunto. É útil em aplicações que trabalham com textos sem indicações de quebras de assunto, ou seja, não apresentam seções ou capítulos, como transcrições automáticas de áudio, vídeos e grandes documentos que contêm vários assuntos como atas de reunião e notícias. Pode ser usada para melhorar o acesso a informação solicitada por meio de uma consulta, onde é possível oferecer porções menores de texto mais relevantes ao invés de exibir um documento grande que pode conter informações menos pertinentes. A navegação pelo documento pode ser aprimorada, em especial na utilização por usuários com deficiência visual, os quais utilizam  sintetizadores de texto como ferramenta de acessibilidade. Além disso, encontrar pontos onde o texto muda de assunto, pode ser útil como etapa de pré-processamento em aplicações voltadas ao entendimento do texto, principalmente em textos longos~\cite{Choi2000}.
+
+% onde é usada e como pode ser usada aqui
+
 
 
 %        ========== ==========   Final   ========== ==========
 
 Assim, nesse contexto, este trabalho propõe a investigação do uso de mineração de texto e as técnicas que constituem o estado da arte na área para o desenvolvimento de uma ferramenta para extração automática de históricos de decisão em atas de reuniões.
+
+
+
+
+

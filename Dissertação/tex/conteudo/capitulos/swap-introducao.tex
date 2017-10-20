@@ -1,29 +1,52 @@
 
+% -- Motivação
+% -< Classificação
+% -- Tópicos
+% -- Gaps da área
+% -- Objetivos
+
+
+% -- Objetivos 
+Assim, este trabalho tem como foco principal empregar técnicas de Recuperação de informação para encontrar histórico de assuntos mencionados em atas de reunião. Tal sistema tem três principais tarefas: 
+1) Descobrir quando há uma mudança de assunto. 
+2) Descobrir quais são esses assuntos. 
+3) Fornecer um mecanismo de busca ao usuário. 
 
 
 
-não trata a string de busca
+Uma ata frequentemente trada de vários assuntos
 
---> falar da string de busca?
+Uma vez que a ata trata de vários assuntos, 
+há interesse em um sistema que aponte trechos de uma ata que tratam de um assunto específico. 
 
-segunda busca
+Assim, este trabalho tem como foco principal, a detecção de mudança de assuntos, que pode ser atendida pela segmentação automática de textos~\cite{Chen2017,Naili2016,Cardoso2017}, técnicas de mineração de texto a fim de extrair informações interessantes e técnicas de resgate de informação a fim de apresentar resultados mais relevantes. 
+
+
+
+Quanto ao conteúdo, registram os principais assuntos tratados durante reuniões de uma organização como a sequência de acontecimentos sobre o que foi decidido e debatido durante as reuniões. Frequentemente são mantidas em arquivos digitais e disponibilizadas para consulta posterior.  Além disso, o estilo formal contribui para a escrita de textos com poucos detalhes, pois o ambiente dá preferência a textos sucintos.  Assim, as atas são utilizadas como fonte de consulta, referência e embasamento para o funcionamento da organização, bem como para outros documentos e decisões.
+
+
+
+% 1) transfere certa complexidade da tarefa ao usuário.  % 2) buscas em grandes coleções de documentos tornam-se mais lentas.  % 3) não há suporte a padrões mais flexíveis como a proximidade entre as palavras ou palavras que estejam na mesma sentença.  % 4) o retorno ao usuário são os documento integrais, o que pode exigir uma segunda busca dentro de um documento para encontrar o trecho desejado.  % 5) não permite o ranqueamento dos resultados, que se apresentam sem indicações da relevância com a intenção do usuário.  % 6) não trata a string de busca % 7) sinonímia e polissemia 
+
+não trata a string de busca --> falar da string de busca?
+
+% -< ... que tambem é observando na produção de atas de reunião
+
+%        ========== ==========   Descrição das Atas   ========== ==========
+%        ========== ==========   Busca manual   ========== ==========
+
+
+
+% de termos exatos que devem necessariamente estar contidos no trecho onde está o assunto.
+% falar de Boolean Retrieval Models?
+
 
 
 Usualmente, são feitas buscas manuais guiadas pela memória ou com uso de ferramentas computacionais baseadas em localização de palavras-chave. Normalmente esse tipo de busca exige a inserção de termos exatos e apresentam ao usuário um documento com as palavras-chave em destaque, mantendo o texto longo, o que dificulta por exemplo o ranqueamento por relevância. 
 
 
-
-
-
 , e buscas pelo conteúdo dos textos são desaviadoras e exigem ferramentas especializadas.
-
-
-
-
-
-
-
-
 
 
 Reuniões são tarefas presentes em atividades corporativas, ambientes de gestão e organizações de um modo geral, onde discute-se problemas, soluções, propostas, planos, questionamentos, alterações de projetos e decisões são tomadas. 
@@ -31,22 +54,6 @@ Reuniões são tarefas presentes em atividades corporativas, ambientes de gestã
 % discussões,
 % agendamento
 % recomendações, sugestões
-
-
-
-% nesse contexto, o registo em texto ainda é o mais utilizado, embora haja iniciativas de registro de atas em áudio
-
-Citação [7]
-
-Pesquisar sobre o IBIS --> um método pra apoioar discussões em grupo.
-IBIS exige um modelo retórico para garantir seus resultados.
-
- esse registro torna-se oficial, e serve de referência para outros membros. 
-
- com o passar do tempo, as decisões eventos perdem-se pela memória ou pelos membros que saem
-
-
-
 
 
 
@@ -96,5 +103,23 @@ A presença de ruídos como cabeçalhos, rodapés e numeração de páginas e li
  % ------------------
 
 
+% O teor das atas é diversificado, contendo menções a assuntos como agendamentos, sugestões, reclamações, informes e, com maior atenção, as que foram decisões tomadas pelos participantes. 
+
+
+
+
+
+Citação [7]
+
+Pesquisar sobre o IBIS --> um método pra apoioar discussões em grupo.
+IBIS exige um modelo retórico para garantir seus resultados.
+
+ esse registro torna-se oficial, e serve de referência para outros membros. 
+
+ com o passar do tempo, as decisões eventos perdem-se pela memória ou pelos membros que saem
+
+
+
+Para essa classe de problema, frequentemente tem sido utilizadas técnicas de mineração de texto, por meio de diversas abordagens.  
 
 
