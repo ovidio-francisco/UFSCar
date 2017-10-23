@@ -13,25 +13,12 @@
 ISSN 1573-0565.
 Dispon{\'\i}vel em: \url{http://dx.doi.org/10.1023/A:1007506220214}.}
 
-\bibitem[Bhatia e Jaiswal 2016]{Bhatia2016}
-\abntrefinfo{Bhatia e Jaiswal}{BHATIA; JAISWAL}{2016}
-{BHATIA, N.; JAISWAL, A. Automatic text summarization and it's methods - a
-  review. In:  \emph{2016 6th International Conference - Cloud System and Big
-  Data Engineering (Confluence)}. [S.l.: s.n.], 2016. p. 65--72.}
-
 \bibitem[Blei 2012]{Blei2012}
 \abntrefinfo{Blei}{BLEI}{2012}
 {BLEI, D.~M. Probabilistic topic models.
 \emph{Commun. ACM}, ACM, New York, NY, USA, v.~55, n.~4, p. 77--84, abr. 2012.
 ISSN 0001-0782.
 Dispon{\'\i}vel em: \url{http://doi.acm.org/10.1145/2133806.2133826}.}
-
-\bibitem[BOKAEI, SAMETI e LIU 2016]{Bokaei2016}
-\abntrefinfo{BOKAEI, SAMETI e LIU}{BOKAEI; SAMETI; LIU}{2016}
-{BOKAEI, M.~H.; SAMETI, H.; LIU, Y. Extractive summarization of multiparty
-  meetings through discourse segmentation.
-\emph{Natural Language Engineering}, Cambridge University Press, v.~22, n.~1,
-  p. 41--72, 2016.}
 
 \bibitem[Chen et al. 2017]{Chen2017}
 \abntrefinfo{Chen et al.}{CHEN et al.}{2017}
@@ -56,12 +43,6 @@ ISBN 978-1-61197-283-2. Dispon{\'\i}vel em:
   Computational Linguistics Conference}. Stroudsburg, PA, USA: Association for
   Computational Linguistics, 2000.  (NAACL 2000), p. 26--33. Dispon{\'\i}vel
   em: \url{http://dl.acm.org/citation.cfm?id=974305.974309}.}
-
-\bibitem[Choi, Wiemer-Hastings e Moore 2001]{Choi2001-LSA}
-\abntrefinfo{Choi, Wiemer-Hastings e Moore}{CHOI; WIEMER-HASTINGS; MOORE}{2001}
-{CHOI, F. Y.~Y.; WIEMER-HASTINGS, P.; MOORE, J. Latent semantic analysis for
-  text segmentation. In:  \emph{In Proceedings of EMNLP}. [S.l.: s.n.], 2001.
-  p. 109--117.}
 
 \bibitem[Deerwester et al. 1990]{Deerwester1990}
 \abntrefinfo{Deerwester et al.}{DEERWESTER et al.}{1990}
@@ -92,15 +73,6 @@ ISBN 978-1-61197-283-2. Dispon{\'\i}vel em:
 Dispon{\'\i}vel em:
   \url{https://www.scopus.com/inward/record.uri?eid=2-s2.0-74549147972&doi=10.1145\%2f1643823.1643854&partnerID=40&md5=1c6f73bc0e07446fcc178440e48bbc40}.}
 
-\bibitem[Maziero, Hirst e Pardo 2016]{Maziero2016}
-\abntrefinfo{Maziero, Hirst e Pardo}{MAZIERO; HIRST; PARDO}{2016}
-{MAZIERO, E.; HIRST, G.; PARDO, T. Adaptation of discourse parsing models for
-  the portuguese language.
-\emph{Proceedings - 2015 Brazilian Conference on Intelligent Systems, BRACIS
-  2015}, p. 140--145, 2016.
-Dispon{\'\i}vel em:
-  \url{https://www.scopus.com/inward/record.uri?eid=2-s2.0-84964607676&doi=10.1109\%2fBRACIS.2015.24&partnerID=40&md5=740eaa18c50274435374ba773a399112}.}
-
 \bibitem[Misra et al. 2009]{Misra2009}
 \abntrefinfo{Misra et al.}{MISRA et al.}{2009}
 {MISRA, H. et al. Text segmentation via topic modeling: An analytical study.
@@ -116,14 +88,5 @@ ISBN 978-1-60558-512-3. Dispon{\'\i}vel em:
   segmentation for data management. In:  \emph{2014 IEEE International
   Conference on Data Mining Workshop}. [S.l.: s.n.], 2014. p. 481--487.
 ISSN 2375-9232.}
-
-\bibitem[Sitbon e Bellot 2004]{Sitbon2004}
-\abntrefinfo{Sitbon e Bellot}{SITBON; BELLOT}{2004}
-{SITBON, L.; BELLOT, P. Adapting and comparing linear segmentation methods for
-  french. In:  \emph{Coupling Approaches, Coupling Media and Coupling Languages
-  for Information Retrieval}. Paris, France, France: LE CENTRE DE HAUTES ETUDES
-  INTERNATIONALES D'INFORMATIQUE DOCUMENTAIRE, 2004.  (RIAO '04), p. 623--637.
-ISBN 905450-09-6. Dispon{\'\i}vel em:
-  \url{http://dl.acm.org/citation.cfm?id=2816272.2816329}.}
 
 \end{thebibliography}
