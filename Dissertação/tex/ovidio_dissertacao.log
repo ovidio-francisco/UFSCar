@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.8.22)  18 OCT 2017 13:04
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.8.22)  23 OCT 2017 00:53
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1307,7 +1307,10 @@ Non-PDF special ignored!
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2
 
-] (./ovidio_dissertacao.toc)pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
+] (./ovidio_dissertacao.toc
+LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <12> not available
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 9.
+)pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.237 \cleardoublepage
@@ -1324,12 +1327,12 @@ l.237 \cleardoublepage
 
  (./conteudo/capitulos/2-cap1.tex
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 18.
+(Font)              <10> on input line 17.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 18.
+(Font)              <7> on input line 17.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 18.
-LaTeX Font Info:    Try loading font information for T1+lmtt on input line 18.
+(Font)              <5> on input line 17.
+LaTeX Font Info:    Try loading font information for T1+lmtt on input line 17.
  (/usr/share/texmf/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
@@ -1337,23 +1340,48 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             `lmtt' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
  [3
 
 
-]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [4]) [5]
+] [4]) [5]
 \openout2 = `conteudo/capitulos/3-cap2.aux'.
 
  (./conteudo/capitulos/3-cap2.tex [6
 
 
 
-] (./conteudo/capitulos/inputs/extracao-de-topicos.tex [7] [8]) (./conteudo/capitulos/inputs/segmentacao.tex [9]
-Underfull \vbox (badness 1253) has occurred while \output is active []
+] (./conteudo/capitulos/inputs/representacao.tex
 
- [10]
+LaTeX Warning: Citation `Rezende2003' on page 7 undefined on input line 6.
+
+LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <14.4> not available
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 12.
+
+LaTeX Warning: Citation `Rezende2003' on page 7 undefined on input line 13.
+
+
+./conteudo/capitulos/inputs/representacao.tex:31: LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.31 	\label{table:bagofwords}\\
+                                
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: Citation `Rezende2003' on page 7 undefined on input line 36.
+
+[7]) (./conteudo/capitulos/inputs/segmentacao.tex [8] [9]
 ./conteudo/capitulos/inputs/segmentacao.tex:105: Undefined control sequence.
 l.105 	\subfigure
                  [Passo 1]{\label{fig:a}\includegraphics[width=60mm]{conteud...
@@ -1363,7 +1391,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-<conteudo/capitulos/figs/exemplo-matrix-rank-A.png, id=204, 269.50688pt x 141.52875pt>
+<conteudo/capitulos/figs/exemplo-matrix-rank-A.png, id=181, 269.50688pt x 141.52875pt>
 File: conteudo/capitulos/figs/exemplo-matrix-rank-A.png Graphic file (type png)
  <use conteudo/capitulos/figs/exemplo-matrix-rank-A.png>
 Package pdftex.def Info: conteudo/capitulos/figs/exemplo-matrix-rank-A.png used on input line 105.
@@ -1378,31 +1406,23 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-<conteudo/capitulos/figs/exemplo-matrix-rank-B.png, id=206, 268.75406pt x 141.52875pt>
+<conteudo/capitulos/figs/exemplo-matrix-rank-B.png, id=183, 268.75406pt x 141.52875pt>
 File: conteudo/capitulos/figs/exemplo-matrix-rank-B.png Graphic file (type png)
  <use conteudo/capitulos/figs/exemplo-matrix-rank-B.png>
 Package pdftex.def Info: conteudo/capitulos/figs/exemplo-matrix-rank-B.png used on input line 106.
 (pdftex.def)             Requested size: 170.71652pt x 89.90215pt.
 
+Underfull \vbox (badness 1596) has occurred while \output is active []
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [11] <conteudo/capitulos/figs/windiffzoom.jpg, id=216, 312.2064pt x 78.5334pt>
+ [10 <./conteudo/capitulos/figs/exemplo-matrix-rank-A.png> <./conteudo/capitulos/figs/exemplo-matrix-rank-B.png>] <conteudo/capitulos/figs/windiffzoom.jpg, id=195, 312.2064pt x 78.5334pt>
 File: conteudo/capitulos/figs/windiffzoom.jpg Graphic file (type jpg)
  <use conteudo/capitulos/figs/windiffzoom.jpg>
 Package pdftex.def Info: conteudo/capitulos/figs/windiffzoom.jpg used on input line 145.
 (pdftex.def)             Requested size: 273.00278pt x 68.6758pt.
- [12 <./conteudo/capitulos/figs/exemplo-matrix-rank-A.png> <./conteudo/capitulos/figs/exemplo-matrix-rank-B.png> <./conteudo/capitulos/figs/windiffzoom.jpg>])) [13]
+ [11 <./conteudo/capitulos/figs/windiffzoom.jpg>]) (./conteudo/capitulos/inputs/extracao-de-topicos.tex [12] [13])) [14]
 \openout2 = `conteudo/capitulos/4-cap3.aux'.
 
- (./conteudo/capitulos/4-cap3.tex [14
-
-
-
-]
+ (./conteudo/capitulos/4-cap3.tex
 Package epstopdf Info: Source file: <conteudo/capitulos/figs/visao-geral-3.eps>
 (epstopdf)                    date: 2016-08-04 09:13:03
 (epstopdf)                    size: 341154 bytes
@@ -1412,12 +1432,16 @@ Package epstopdf Info: Source file: <conteudo/capitulos/figs/visao-geral-3.eps>
 (epstopdf)             Command: <repstopdf --outfile=conteudo/capitulos/figs/visao-geral-3-eps-converted-to.pdf conteudo/capitulos/figs/visao-geral-3.eps>
 (epstopdf)             \includegraphics on input line 14.
 Package epstopdf Info: Output file is already uptodate.
- <conteudo/capitulos/figs/visao-geral-3-eps-converted-to.pdf, id=237, 1084.05pt x 542.025pt>
+ <conteudo/capitulos/figs/visao-geral-3-eps-converted-to.pdf, id=233, 1084.05pt x 542.025pt>
 File: conteudo/capitulos/figs/visao-geral-3-eps-converted-to.pdf Graphic file (type pdf)
  <use conteudo/capitulos/figs/visao-geral-3-eps-converted-to.pdf>
 Package pdftex.def Info: conteudo/capitulos/figs/visao-geral-3-eps-converted-to.pdf used on input line 14.
 (pdftex.def)             Requested size: 412.28189pt x 206.13704pt.
- [15 <./conteudo/capitulos/figs/visao-geral-3-eps-converted-to.pdf>] <conteudo/capitulos/figs/pre-processamento.jpg, id=246, 838.332pt x 209.1012pt>
+ [15
+
+
+
+ <./conteudo/capitulos/figs/visao-geral-3-eps-converted-to.pdf>] <conteudo/capitulos/figs/pre-processamento.jpg, id=242, 838.332pt x 209.1012pt>
 File: conteudo/capitulos/figs/pre-processamento.jpg Graphic file (type jpg)
  <use conteudo/capitulos/figs/pre-processamento.jpg>
 Package pdftex.def Info: conteudo/capitulos/figs/pre-processamento.jpg used on input line 63.
@@ -1469,14 +1493,9 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 307.
  (./ovidio_dissertacao.aux (./conteudo/capitulos/2-cap1.aux) (./conteudo/capitulos/3-cap2.aux) (./conteudo/capitulos/4-cap3.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 307.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 307.
+Package rerunfilecheck Info: File `ovidio_dissertacao.brf' has not changed.
+(rerunfilecheck)             Checksum: F0CB8BF1D31FB36769472CBEBEB1BBDC;1659.
 
-
-Package rerunfilecheck Warning: File `ovidio_dissertacao.brf' has changed.
-(rerunfilecheck)                Rerun to get bibliographical references right.
-
-Package rerunfilecheck Info: Checksums for `ovidio_dissertacao.brf':
-(rerunfilecheck)             Before: 0FE3EE5A351CA0CB47370721591F7C5B;1760
-(rerunfilecheck)             After:  451E87AE875BF8BB0AE09C5DBDBABF9F;1716.
 
 LaTeX Warning: There were undefined references.
 
@@ -1486,18 +1505,18 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 307.
  ) 
 Here is how much of TeX's memory you used:
- 14023 strings out of 494884
- 206634 string characters out of 6179236
- 374891 words of memory out of 5000000
- 16837 multiletter control sequences out of 15000+600000
- 83760 words of font info for 130 fonts, out of 8000000 for 9000
+ 14024 strings out of 494884
+ 206701 string characters out of 6179236
+ 374644 words of memory out of 5000000
+ 16820 multiletter control sequences out of 15000+600000
+ 90454 words of font info for 140 fonts, out of 8000000 for 9000
  38 hyphenation exceptions out of 8191
- 40i,12n,38p,1513b,601s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}</usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr7.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss10.pfb></usr/share/texmf/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss17.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt10.pfb>
-Output written on ovidio_dissertacao.pdf (26 pages, 554713 bytes).
+ 40i,13n,38p,1515b,601s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}</usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr7.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss10.pfb></usr/share/texmf/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss17.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsso12.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt10.pfb>
+Output written on ovidio_dissertacao.pdf (26 pages, 576444 bytes).
 PDF statistics:
- 519 PDF objects out of 1000 (max. 8388607)
- 463 compressed objects within 5 object streams
- 92 named destinations out of 1000 (max. 500000)
- 27386 words of extra memory for PDF output out of 29859 (max. 10000000)
+ 506 PDF objects out of 1000 (max. 8388607)
+ 449 compressed objects within 5 object streams
+ 90 named destinations out of 1000 (max. 500000)
+ 31482 words of extra memory for PDF output out of 35830 (max. 10000000)
 

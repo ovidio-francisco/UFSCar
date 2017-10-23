@@ -33,12 +33,6 @@ Dispon{\'\i}vel em: \url{http://doi.acm.org/10.1145/2133806.2133826}.}
 \emph{Natural Language Engineering}, Cambridge University Press, v.~22, n.~1,
   p. 41--72, 2016.}
 
-\bibitem[Cardoso, Pardo e Taboada 2017]{Cardoso2017}
-\abntrefinfo{Cardoso, Pardo e Taboada}{CARDOSO; PARDO; TABOADA}{2017}
-{CARDOSO, P.; PARDO, T.; TABOADA, M. Subtopic annotation and automatic
-  segmentation for news texts in brazilian portuguese.
-\emph{Corpora}, Edinburgh University Press, v.~12, n.~1, p. 23--54, 2017.}
-
 \bibitem[Chen et al. 2017]{Chen2017}
 \abntrefinfo{Chen et al.}{CHEN et al.}{2017}
 {CHEN, H. et al. Modeling latent topics and temporal distance for story
@@ -116,29 +110,12 @@ Dispon{\'\i}vel em:
 ISBN 978-1-60558-512-3. Dispon{\'\i}vel em:
   \url{http://doi.acm.org/10.1145/1645953.1646170}.}
 
-\bibitem[Naili, Chaibi e Ghezala 2016]{Naili2016}
-\abntrefinfo{Naili, Chaibi e Ghezala}{NAILI; CHAIBI; GHEZALA}{2016}
-{NAILI, M.; CHAIBI, A.~H.; GHEZALA, H. H.~B. Exogenous approach to improve
-  topic segmentation.
-\emph{International Journal of Intelligent Computing and Cybernetics}, v.~9,
-  n.~2, p. 165--178, 2016.
-Dispon{\'\i}vel em: \url{https://doi.org/10.1108/IJICC-01-2016-0001}.}
-
 \bibitem[Sakahara, Okada e Nitta 2014]{Sakahara2014}
 \abntrefinfo{Sakahara, Okada e Nitta}{SAKAHARA; OKADA; NITTA}{2014}
 {SAKAHARA, M.; OKADA, S.; NITTA, K. Domain-independent unsupervised text
   segmentation for data management. In:  \emph{2014 IEEE International
   Conference on Data Mining Workshop}. [S.l.: s.n.], 2014. p. 481--487.
 ISSN 2375-9232.}
-
-\bibitem[Schiller 2009]{Schiller2009}
-\abntrefinfo{Schiller}{SCHILLER}{2009}
-{SCHILLER, J. Modern meeting management and information retrieval: Automatic
-  protocol generation and meeting work. In:  \emph{Proceedings of the 24th ACM
-  SIGPLAN Conference Companion on Object Oriented Programming Systems Languages
-  and Applications}. New York, NY, USA: ACM, 2009.  (OOPSLA '09), p. 875--880.
-ISBN 978-1-60558-768-4. Dispon{\'\i}vel em:
-  \url{http://doi.acm.org/10.1145/1639950.1640050}.}
 
 \bibitem[Sitbon e Bellot 2004]{Sitbon2004}
 \abntrefinfo{Sitbon e Bellot}{SITBON; BELLOT}{2004}
