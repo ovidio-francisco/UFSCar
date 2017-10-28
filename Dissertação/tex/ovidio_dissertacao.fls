@@ -234,6 +234,8 @@ INPUT ./conteudo/capitulos/figs/exemplo-matrix-rank-A.png
 INPUT conteudo/capitulos/figs/exemplo-matrix-rank-B.png
 INPUT ./conteudo/capitulos/figs/exemplo-matrix-rank-B.png
 INPUT ./conteudo/capitulos/figs/exemplo-matrix-rank-B.png
+INPUT conteudo/capitulos/inputs/medidas-avaliacao-tradicionais-em-segmentacao.tex
+INPUT conteudo/capitulos/inputs/medidas-avaliacao-tradicionais-em-segmentacao.tex
 INPUT conteudo/capitulos/figs/windiffzoom.jpg
 INPUT ./conteudo/capitulos/figs/windiffzoom.jpg
 INPUT ./conteudo/capitulos/figs/windiffzoom.jpg

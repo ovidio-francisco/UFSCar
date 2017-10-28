@@ -1,5 +1,8 @@
 \backcite {Choi2000}{{5}{1}{chapter.1}}
-\backcite {Blei2012}{{7}{2}{chapter.2}}
+\backcite {Hofmann1999,Deerwester1990,Lee1999,Blei2012}{{7}{2}{chapter.2}}
+\backcite {Hofmann1999,Deerwester1990,Lee1999,Blei2012}{{7}{2}{chapter.2}}
+\backcite {Hofmann1999,Deerwester1990,Lee1999,Blei2012}{{7}{2}{chapter.2}}
+\backcite {Hofmann1999,Deerwester1990,Lee1999,Blei2012}{{7}{2}{chapter.2}}
 \backcite {Chen2017,Ferret2009,Sakahara2014}{{7}{2.1}{section.2.1}}
 \backcite {Chen2017,Ferret2009,Sakahara2014}{{7}{2.1}{section.2.1}}
 \backcite {Chen2017,Ferret2009,Sakahara2014}{{7}{2.1}{section.2.1}}
@@ -9,14 +12,20 @@
 \backcite {Choi2000, Kern2009, Misra2009}{{8}{2.1.1}{subsection.2.1.1}}
 \backcite {Choi2000, Kern2009, Misra2009}{{8}{2.1.1}{subsection.2.1.1}}
 \backcite {Choi2000}{{8}{2.1.1}{subsection.2.1.1}}
-\backcite {Kern2009}{{9}{2.1.2}{subsection.2.1.2}}
-\backcite {Beeferman1999}{{10}{2.1.2}{figure.2.2}}
-\backcite {Rezende2003}{{11}{2.2}{section.2.2}}
-\backcite {Rezende2003}{{11}{2.2.1}{subsection.2.2.1}}
-\backcite {Rezende2003}{{11}{2.2.1}{table.2.1}}
-\backcite {Deerwester1990}{{13}{2.3}{equation.2.3.2}}
-\backcite {Cheng2013}{{13}{2.3}{equation.2.3.2}}
-\backcite {Blei2012}{{14}{2.3}{Item.4}}
-\backcite {Hearst1994}{{17}{3.1.1.1}{subsubsection.3.1.1.1}}
-\backcite {Choi2000}{{17}{3.1.1.1}{subsubsection.3.1.1.1}}
-\backcite {Rezende2003}{{20}{3.1.3}{subsection.3.1.3}}
+\backcite {Kern2009}{{10}{2.1.2}{equation.2.1.3}}
+\backcite {Beeferman1999}{{11}{2.1.2}{figure.2.2}}
+\backcite {Rezende2003}{{12}{2.2}{section.2.2}}
+\backcite {Rezende2003}{{12}{2.2.1}{subsection.2.2.1}}
+\backcite {Rezende2003}{{13}{2.2.1}{table.2.2}}
+\backcite {Steyvers2007,Blei2012}{{13}{2.3}{section.2.3}}
+\backcite {Steyvers2007,Blei2012}{{13}{2.3}{section.2.3}}
+\backcite {Deerwester1990}{{14}{2.3}{equation.2.3.4}}
+\backcite {Deerwester1990}{{14}{2.3}{equation.2.3.4}}
+\backcite {Cheng2013}{{14}{2.3}{equation.2.3.4}}
+\backcite {Lee1999}{{14}{2.3}{equation.2.3.4}}
+\backcite {Hofmann1999}{{14}{2.3}{equation.2.3.4}}
+\backcite {Blei2003}{{14}{2.3}{equation.2.3.4}}
+\backcite {Blei2012}{{15}{2.3}{Item.4}}
+\backcite {Hearst1994}{{19}{3.1.1.1}{subsubsection.3.1.1.1}}
+\backcite {Choi2000}{{19}{3.1.1.1}{subsubsection.3.1.1.1}}
+\backcite {Rezende2003}{{22}{3.1.3}{subsection.3.1.3}}

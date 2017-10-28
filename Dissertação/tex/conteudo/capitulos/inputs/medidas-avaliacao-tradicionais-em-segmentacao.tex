@@ -1,0 +1,122 @@
+
+
+
+%
+% Utilizadas em RI e Classificação 
+%%% 
+As medidas de avaliação tradicionais como precisão e revocação são usadas em recuperação de informação e classificação automática para medir o desempenho de modelos de classificação e predição. São baseadas na comparação dos valores produzidos por uma hipótese com os valores reais. 
+
+%	Avaliações baseadas em hits 
+Esses valores são apresentados em uma tabela que permite a visualização do desempenho de um algoritmo, a qual é chamada de matriz de confusão. Na Tabela~\ref{tab:matrizconfusao} é apresentada a matriz de confusão para duas classes (Positivo e Negativo). Uma matriz de confusão é uma tabela que permite a visualização do desempenho de um algoritmo. 
+
+\begin{table}[!h]
+	\centering
+	
+	\begin{tabular}{|c|c|c|}
+		\hline
+		                & Predição Positiva         & Predição Negativa        \\ \hline
+		Positivo real   & VP (Verdadeiro Positivo)  & FN (Falso Negativo)      \\ \hline
+		Negativo real   & FP (Falso Positivo)       & VN (Verdadeiro Negativo) \\ \hline
+	
+	\end{tabular}
+	
+	\caption{Matriz de confusão.}
+	\label{tab:matrizconfusao}
+
+\end{table}
+
+
+
+
+
+% Falso Positivo 
+No contexto de segmentação textual, um falso positivo é um limite identificado pelo algoritmo que não corresponde a nenhum limite na segmentação de referência, ou seja, o algoritmo indicou que em determinado ponto há uma quebra de segmento, mas na segmentação de referência, no mesmo ponto, não há. 
+%
+% Falso Negativo 
+%%% 
+ De maneira semelhante, um falso negativo é quando o algoritmo não identifica um limite existente na segmentação de referência, ou seja, em determinado ponto há, na segmentação de referência, um limite entre segmentos, contudo, o algoritmo não o identificou.
+%
+%
+% Verdadeiro Positivo 
+%%% 
+ Um verdadeiro positivo é um ponto no texto indicado pelo algoritmo e pela segmentação de referência como uma quebra de segmentos, ou seja, o algoritmo e a referência concordam que em determinado ponto há uma transição de assunto.
+%
+%
+% O Verdadeiro Negativo, que não existe 
+%%%
+ Na avaliação de segmentadores, não há o conceito de verdadeiro negativo. Este seria um ponto no texto indicado pelo algoritmo e pela segmentação de referência onde não há uma quebra de segmentos. Uma vez que os algoritmos apenas indicam onde há um limite, essa medida não é necessária. % Não há ou não e necessário?
+%
+%
+%
+ Nesse sentido, a precisão, é a proporção de limites corretamente identificados pelo algoritmo. É calculada dividindo-se o número de limites identificados automaticamente pelo número de candidatos a limite (Equação~\ref{equ:precisao}).
+ 
+ \begin{equation}
+	 Presis\tilde{a}o = \frac{VP}{VP+FP}
+	 \label{equ:precisao}
+ \end{equation}
+%
+% Ideia 
+%%% 
+ Essa medida varia entre $0,0$ e $1,0$, que indica a proporção de limites identificados pelo algoritmo que são corretos, ou seja, correspondem a um limite real na segmentação de referência. Porém não diz nada sobre quantos limites reais existem. 
+%
+%
+%
+%%%%%%%%%%%%%%%
+% Revocação 
+%%%%%%%%%%%%%%% 
+%
+% Definição 
+%%% 
+ A revocação, é a proporção de limites verdadeiros que foram identificados pelo algoritmo.
+%
+% Cálculo 
+%%%
+ É calculada dividindo-se o número de limites identificados automaticamente pelo número limites verdadeiros.
+%
+%
+% 
+ \begin{equation}
+	 Revoca\c{c}\tilde{a}o = \frac{VP}{VP+FN}
+	 \label{equ:revocacao}
+ \end{equation}
+%
+% Ideia 
+%%% 
+ Pode variar entre $0,0$ e $1,0$, onde indica que a proporção de limites corretos que foram identificados. Porém não diz nada sobre quantos limites foram identificados incorretamente. 
+% Relação inversa entre precisão e revocação 
+ Existe uma relação inversa entre precisão e revocação. Conforme o algoritmo aponta mais segmentos no texto, este tende a melhorar a revocação e ao mesmo tempo, reduzir a precisão. 
+%
+% Pode ser contornado com F1 
+%%% 
+ Esse problema de avaliação pode ser contornado utilizado a medida $F^1$ que é a média harmônica entre precisão e revocação onde ambas tem o mesmo peso. 
+%
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

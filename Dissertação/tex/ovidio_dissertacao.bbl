@@ -20,6 +20,13 @@ Dispon{\'\i}vel em: \url{http://dx.doi.org/10.1023/A:1007506220214}.}
 ISSN 0001-0782.
 Dispon{\'\i}vel em: \url{http://doi.acm.org/10.1145/2133806.2133826}.}
 
+\bibitem[Blei, Ng e Jordan 2003]{Blei2003}
+\abntrefinfo{Blei, Ng e Jordan}{BLEI; NG; JORDAN}{2003}
+{BLEI, D.~M.; NG, A.~Y.; JORDAN, M.~I. Latent dirichlet allocation.
+\emph{J. Mach. Learn. Res.}, JMLR.org, v.~3, p. 993--1022, mar. 2003.
+ISSN 1532-4435.
+Dispon{\'\i}vel em: \url{http://dl.acm.org/citation.cfm?id=944919.944937}.}
+
 \bibitem[Chen et al. 2017]{Chen2017}
 \abntrefinfo{Chen et al.}{CHEN et al.}{2017}
 {CHEN, H. et al. Modeling latent topics and temporal distance for story
@@ -64,6 +71,15 @@ ISBN 978-1-61197-283-2. Dispon{\'\i}vel em:
   Linguistics, 1994.  (ACL '94), p. 9--16. Dispon{\'\i}vel em:
   \url{http://dx.doi.org/10.3115/981732.981734}.}
 
+\bibitem[Hofmann 1999]{Hofmann1999}
+\abntrefinfo{Hofmann}{HOFMANN}{1999}
+{HOFMANN, T. Probabilistic latent semantic indexing. In:  \emph{Proceedings of
+  the 22Nd Annual International ACM SIGIR Conference on Research and
+  Development in Information Retrieval}. New York, NY, USA: ACM, 1999.  (SIGIR
+  '99), p. 50--57.
+ISBN 1-58113-096-1. Dispon{\'\i}vel em:
+  \url{http://doi.acm.org/10.1145/312624.312649}.}
+
 \bibitem[Kern e Granitzer 2009]{Kern2009}
 \abntrefinfo{Kern e Granitzer}{KERN; GRANITZER}{2009}
 {KERN, R.; GRANITZER, M. Efficient linear text segmentation based on
@@ -72,6 +88,12 @@ ISBN 978-1-61197-283-2. Dispon{\'\i}vel em:
   Digital EcoSystems, MEDES '09}, p. 167--171, 2009.
 Dispon{\'\i}vel em:
   \url{https://www.scopus.com/inward/record.uri?eid=2-s2.0-74549147972&doi=10.1145\%2f1643823.1643854&partnerID=40&md5=1c6f73bc0e07446fcc178440e48bbc40}.}
+
+\bibitem[Lee e Seung 1999]{Lee1999}
+\abntrefinfo{Lee e Seung}{LEE; SEUNG}{1999}
+{LEE, D.; SEUNG, H. S. Learning the parts of objects by non-negative matrix
+  factorization.
+v.~401, p. 788--91, 11 1999.}
 
 \bibitem[Misra et al. 2009]{Misra2009}
 \abntrefinfo{Misra et al.}{MISRA et al.}{2009}
@@ -88,5 +110,13 @@ ISBN 978-1-60558-512-3. Dispon{\'\i}vel em:
   segmentation for data management. In:  \emph{2014 IEEE International
   Conference on Data Mining Workshop}. [S.l.: s.n.], 2014. p. 481--487.
 ISSN 2375-9232.}
+
+\bibitem[Steyvers e Griffiths 2007]{Steyvers2007}
+\abntrefinfo{Steyvers e Griffiths}{STEYVERS; GRIFFITHS}{2007}
+{STEYVERS, M.; GRIFFITHS, T. Probabilistic topic models. In:  LANDAUER, T.;
+  MCNAMARA, S.~D.; KINTSCH, W. (Ed.). \emph{Latent Semantic Analysis: A Road to
+  Meaning}. Laurence Erlbaum, 2007. cap. Probabilistic topic models.
+Dispon{\'\i}vel em:
+  \url{http://psiexp.ss.uci.edu/research/papers/SteyversGriffithsLSABookFormatted.pdf}.}
 
 \end{thebibliography}

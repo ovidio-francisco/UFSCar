@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.8.22)  10 OCT 2017 01:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.8.22)  27 OCT 2017 23:06
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -341,18 +341,13 @@ Overfull \hbox (4.48613pt too wide) in paragraph at lines 2--3
  []
 
 
-Overfull \hbox (4.72223pt too wide) in alignment at lines 3--5
- [][][] []
- []
-
-
 ! LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.8  O
+l.5  O
       s documentos apresentam um texto com poucas quebras de parágrafo e sem...
 
 You're in trouble here.  Try typing  <return>  to proceed.
@@ -651,7 +646,7 @@ Missing character: There is no i in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no . in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 8--9
+Overfull \hbox (20.0pt too wide) in paragraph at lines 5--6
 []
  []
 

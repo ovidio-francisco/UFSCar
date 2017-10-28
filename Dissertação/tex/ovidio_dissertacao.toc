@@ -8,29 +8,29 @@
 \contentsline {section}{\numberline {2.1}Segmenta\IeC {\c c}\IeC {\~a}o Textual}{7}{section.2.1}
 \contentsline {subsection}{\numberline {2.1.1}Algoritmos}{8}{subsection.2.1.1}
 \contentsline {subsection}{\numberline {2.1.2}Medidas de Avalia\IeC {\c c}\IeC {\~a}o}{9}{subsection.2.1.2}
-\contentsline {section}{\numberline {2.2}Representa\IeC {\c c}\IeC {\~a}o de Textos}{11}{section.2.2}
-\contentsline {subsection}{\numberline {2.2.1}\textit {Bag Of Words}}{11}{subsection.2.2.1}
-\contentsline {section}{\numberline {2.3}Modelos de Extra\IeC {\c c}\IeC {\~a}o de T\IeC {\'o}picos}{12}{section.2.3}
-\contentsline {section}{\numberline {2.4}Trabalhos Relacionados}{14}{section.2.4}
+\contentsline {section}{\numberline {2.2}Representa\IeC {\c c}\IeC {\~a}o de Textos}{12}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}\textit {Bag Of Words}}{12}{subsection.2.2.1}
+\contentsline {section}{\numberline {2.3}Modelos de Extra\IeC {\c c}\IeC {\~a}o de T\IeC {\'o}picos}{13}{section.2.3}
+\contentsline {section}{\numberline {2.4}Trabalhos Relacionados}{15}{section.2.4}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {3}\MakeTextUppercase {Proposta}}{15}{chapter.3}
-\contentsline {section}{\numberline {3.1}M\IeC {\'o}dulo de prepara\IeC {\c c}\IeC {\~a}o e manuten\IeC {\c c}\IeC {\~a}o}{15}{section.3.1}
-\contentsline {subsection}{\numberline {3.1.1}Prepara\IeC {\c c}\IeC {\~a}o dos documentos}{16}{subsection.3.1.1}
-\contentsline {subsubsection}{\numberline {3.1.1.1}Segmenta\IeC {\c c}\IeC {\~a}o}{17}{subsubsection.3.1.1.1}
-\contentsline {subsubsection}{\numberline {3.1.1.2}Avalia\IeC {\c c}\IeC {\~a}o dos Segmentadores}{17}{subsubsection.3.1.1.2}
-\contentsline {subsubsection}{\numberline {3.1.1.3}Segmenta\IeC {\c c}\IeC {\~a}o de Refer\IeC {\^e}ncia}{17}{subsubsection.3.1.1.3}
-\contentsline {subsection}{\numberline {3.1.2}Configura\IeC {\c c}\IeC {\~a}o experimental}{17}{subsection.3.1.2}
-\contentsline {subsubsection}{\numberline {3.1.2.1}Crit\IeC {\'e}rios de avalia\IeC {\c c}\IeC {\~a}o}{18}{subsubsection.3.1.2.1}
-\contentsline {subsubsection}{\numberline {3.1.2.2}Resultados}{19}{subsubsection.3.1.2.2}
-\contentsline {subsection}{\numberline {3.1.3}Representa\IeC {\c c}\IeC {\~a}o Computacional}{20}{subsection.3.1.3}
-\contentsline {subsection}{\numberline {3.1.4}Extra\IeC {\c c}\IeC {\~a}o de T\IeC {\'o}picos / Classifica\IeC {\c c}\IeC {\~a}o de Textos}{21}{subsection.3.1.4}
-\contentsline {section}{\numberline {3.2}M\IeC {\'o}dulo Consulta}{21}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}Sele\IeC {\c c}\IeC {\~a}o dos t\IeC {\'o}picos}{21}{subsection.3.2.1}
-\contentsline {subsection}{\numberline {3.2.2}Visualiza\IeC {\c c}\IeC {\~a}o}{21}{subsection.3.2.2}
-\contentsline {section}{\numberline {3.3}Estudo de caso}{21}{section.3.3}
-\contentsline {section}{\numberline {3.4}Avalia\IeC {\c c}\IeC {\~a}o}{21}{section.3.4}
+\contentsline {chapter}{\chapternumberline {3}\MakeTextUppercase {Proposta}}{17}{chapter.3}
+\contentsline {section}{\numberline {3.1}M\IeC {\'o}dulo de prepara\IeC {\c c}\IeC {\~a}o e manuten\IeC {\c c}\IeC {\~a}o}{17}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}Prepara\IeC {\c c}\IeC {\~a}o dos documentos}{18}{subsection.3.1.1}
+\contentsline {subsubsection}{\numberline {3.1.1.1}Segmenta\IeC {\c c}\IeC {\~a}o}{19}{subsubsection.3.1.1.1}
+\contentsline {subsubsection}{\numberline {3.1.1.2}Avalia\IeC {\c c}\IeC {\~a}o dos Segmentadores}{19}{subsubsection.3.1.1.2}
+\contentsline {subsubsection}{\numberline {3.1.1.3}Segmenta\IeC {\c c}\IeC {\~a}o de Refer\IeC {\^e}ncia}{19}{subsubsection.3.1.1.3}
+\contentsline {subsection}{\numberline {3.1.2}Configura\IeC {\c c}\IeC {\~a}o experimental}{19}{subsection.3.1.2}
+\contentsline {subsubsection}{\numberline {3.1.2.1}Crit\IeC {\'e}rios de avalia\IeC {\c c}\IeC {\~a}o}{20}{subsubsection.3.1.2.1}
+\contentsline {subsubsection}{\numberline {3.1.2.2}Resultados}{21}{subsubsection.3.1.2.2}
+\contentsline {subsection}{\numberline {3.1.3}Representa\IeC {\c c}\IeC {\~a}o Computacional}{22}{subsection.3.1.3}
+\contentsline {subsection}{\numberline {3.1.4}Extra\IeC {\c c}\IeC {\~a}o de T\IeC {\'o}picos / Classifica\IeC {\c c}\IeC {\~a}o de Textos}{23}{subsection.3.1.4}
+\contentsline {section}{\numberline {3.2}M\IeC {\'o}dulo Consulta}{23}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Sele\IeC {\c c}\IeC {\~a}o dos t\IeC {\'o}picos}{23}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Visualiza\IeC {\c c}\IeC {\~a}o}{23}{subsection.3.2.2}
+\contentsline {section}{\numberline {3.3}Estudo de caso}{23}{section.3.3}
+\contentsline {section}{\numberline {3.4}Avalia\IeC {\c c}\IeC {\~a}o}{23}{section.3.4}
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
-\contentsline {chapter}{Refer\^encias}{23}{section*.2}
+\contentsline {chapter}{Refer\^encias}{25}{section*.2}
 \renewcommand *{\cftappendixname }{AP\^ENDICE \space }
 \cftinsert {AAA}
 \renewcommand *{\cftappendixname }{ANEXO \space }
