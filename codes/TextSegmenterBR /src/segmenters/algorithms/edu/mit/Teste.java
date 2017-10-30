@@ -3,7 +3,7 @@ package segmenters.algorithms.edu.mit;
 import java.io.File;
 
 import segmenters.Segmenter;
-import segmenters.algorithms.UISeg;
+import segmenters.algorithms.mincutseg.MinCutSeg;
 
 public class Teste {
 
@@ -11,10 +11,9 @@ public class Teste {
 		System.out.println("Testando os segmentadores do artido do MIT");
 		
 		
-//		Segmenter seg = new CuCo();
-		Segmenter seg = new UISeg();
+//		Segmenter seg = new UISeg();
 //		Segmenter seg = new DPSeg();
-//		Segmenter seg = new MinCutSeg();
+		Segmenter seg = new MinCutSeg();
 		
 //		File doc = new File("lorem-ipsum.md");
 		File doc = new File("Ata 32.txt");
