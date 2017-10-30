@@ -1,14 +1,17 @@
 package segmenters.algorithms.edu.mit.nlp.segmenter.wrappers;
 
-import java.util.List;
+import java.io.BufferedReader;
+import java.io.FileInputStream;
+import java.io.InputStreamReader;
+import java.io.PrintStream;
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Properties;
 
 import edu.mit.nlp.segmenter.MinCutSeg;
 import segmenters.algorithms.edu.mit.nlp.MyTextWrapper;
-import segmenters.algorithms.edu.mit.nlp.segmenter.*;
-
-import java.io.*;
+import segmenters.algorithms.edu.mit.nlp.segmenter.SegTesterParams;
+import segmenters.algorithms.edu.mit.nlp.segmenter.Segmenter;
 
 /** wraps the Utiyama & Isahara segmenter **/
 public class UIWrapper implements Segmenter {
@@ -21,7 +24,8 @@ public class UIWrapper implements Segmenter {
             props.load(new FileInputStream(config_filename));
             num_segs_known = SegTesterParams.getBoolProp(props,"num-segs-known",true);
             is_windowing_enabled = SegTesterParams.getBoolProp(props,"use-fixed-blocks",false);
-	    ui_path = props.getProperty("ui-path","Seg");
+//            ui_path = props.getProperty("ui-path","Seg");
+            ui_path = "baselines/uiseg/Seg";
         } catch (Exception e){
             e.printStackTrace();
         }
@@ -34,6 +38,7 @@ public class UIWrapper implements Segmenter {
             try {
                 String segline = ui_path+" ";
 		if (num_segs_known) segline = segline+ "-n "+num_segs[i];
+		System.out.println(segline);
 		Process proc = runtime.exec(segline); //it doesn't seem to be getting the arguments
                 PrintStream out = new PrintStream(proc.getOutputStream());
                 for (int j = 0; j < texts[i].getWindowCount(); j++){

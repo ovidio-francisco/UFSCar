@@ -52,7 +52,7 @@ public class MinCutSeg extends AbstractSegmenter {
 		MCSWrapper seg = new MCSWrapper();
 		String config = "src/segmenters/algorithms/mincutseg/mcsopt.ai.config";
 
-		seg.initialize(config); fazer o initialize para o DPSeg
+		seg.initialize(config); //fazer o initialize para o DPSeg
 		
 		MyTextWrapper text = new MyTextWrapper(doc.getPath());
         SegTester.preprocessText(text, false, false, false, false, 0);
