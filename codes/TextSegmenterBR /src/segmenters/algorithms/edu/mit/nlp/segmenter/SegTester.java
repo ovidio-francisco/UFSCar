@@ -157,6 +157,16 @@ public class SegTester {
         loadStopWords();
     }
 
+    public SegTester(String config) throws Exception { // OJF
+        //deal with options
+        String config_filename = config;
+        File config_file = new File(config_filename);
+        Utils.ensure(config_file.canRead(), "File: "+config_filename+" is not accessible");
+        FileInputStream fis = new FileInputStream(config_file);
+        params = new SegTesterParams(config_file);
+        loadStopWords();
+    }
+
     protected void loadFiles(OptionSet optset){
         //load the files...
         final String the_suff = optset.getOption("suff").getResultValue(0).trim();

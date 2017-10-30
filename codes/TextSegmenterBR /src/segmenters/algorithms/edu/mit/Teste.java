@@ -11,12 +11,13 @@ public class Teste {
 		System.out.println("Testando os segmentadores do artido do MIT");
 		
 		
+//		Segmenter seg = new CuCo();
 		Segmenter seg = new UISeg();
 //		Segmenter seg = new DPSeg();
 //		Segmenter seg = new MinCutSeg();
 		
-		File doc = new File("lorem-ipsum.md");
-//		File doc = new File("Ata 32.txt");
+//		File doc = new File("lorem-ipsum.md");
+		File doc = new File("Ata 32.txt");
 		
 		
 //		ArrayList<String> segments = seg.getSegments(new File("lorem-ipsum.md"));

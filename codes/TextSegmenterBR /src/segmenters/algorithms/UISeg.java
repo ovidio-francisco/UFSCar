@@ -3,8 +3,7 @@ package segmenters.algorithms;
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
-
-import org.apache.commons.lang.StringUtils;
+import java.util.List;
 
 import segmenters.AbstractSegmenter;
 import utils.Files;
@@ -14,76 +13,79 @@ public class UISeg extends AbstractSegmenter {
 
 	@Override
 	public ArrayList<String> getSegments(String text) {
+		
 		text = getPreprocess().cleanTextMeating(text);
-		File tmp = new File("/home/ovidiojf/temp.txt");
-		File out = new File("/home/ovidiojf/out1.txt");
-		File uiseg = new File("/ext4Data/UFSCar/codes/baselines/uiseg/ojf.sh");
 		text = getPreprocess().identifyEOS(text, EOS);
-		int sentences_count = StringUtils.countMatches(text, EOS)+1; 
  		text = text.replaceAll(EOS, "\n");
+ 		File tmp = new File("temp.txt");
+ 		File out = new File("out5.txt");
  		Files.saveTxtFile(text, tmp);
- 		
- 		int num_segs = sentences_count/2;
- 		
- 		System.out.println("#sentencess = " + sentences_count);
- 		System.out.println("#segs = " + num_segs);
-//		ArrayList<String> segments = getRawSegmentedText(tmp, getBoundaries(tmp, num_segs));
-		ArrayList<String> segments = new ArrayList<>();
- 		
- 		String ui_path = "/ext4Data/UFSCar/codes/baselines/uiseg/Seg";
-// 		String ui_path = uiseg.getAbsolutePath();
- 		String cmd = "sh -c " + ui_path + " < " + tmp.getAbsolutePath() + " > " + out.getAbsolutePath();
-// 		String cmd = uiseg.getAbsolutePath();
- 		try {
- 			System.out.println(cmd);
- 			Runtime runtime = Runtime.getRuntime();
-			Process process = runtime.exec(cmd);
-			
-			
-		} catch (IOException e) {
+
+
+		
+		ArrayList<String> result = new ArrayList<>();
+		try {
+			result = getSegs(tmp, out);
+		} catch (IOException | InterruptedException e) {
 			e.printStackTrace();
 		}
 
-//		tmp.delete();
-
- 		System.out.println(out.exists());
- 		System.out.println(uiseg.exists());
- 		
-		return segments;
+		return result;
 	}
-
 	@Override
 	public String preprocessToString() {
-		// TODO Auto-generated method stub
-		return null;
+		return "No preprocess";
 	}
 
 	@Override
 	public String getAlgorithmName() {
-		// TODO Auto-generated method stub
-		return null;
+		return "TextSeg";
 	}
 
 	@Override
 	public String paramsToString() {
-		// TODO Auto-generated method stub
-		return null;
+		return "Params ???";
 	}
-	
-//	@SuppressWarnings({ "rawtypes", "unchecked" })
-//	private List<Integer> getBoundaries(File doc, int num_segs) {
-//		UIWrapper seg = new UIWrapper();
-//		String config = "config/ui.config";
-//
-//		seg.initialize(config); //fazer o initialize para o DPSeg
-//		
-//		MyTextWrapper text = new MyTextWrapper(doc.getPath());
-//        SegTester.preprocessText(text, false, false, false, false, 0);
-//		List[] hyp_segs = seg.segmentTexts(new MyTextWrapper[]{text}, new int[]{num_segs});
-////		System.out.println(hyp_segs[0]);
-////		System.out.println("Sentence count = " + text.getSentenceCount());
-//
-//		return hyp_segs[0];
-//	}
+
+
+	private ArrayList<String> getSegs(File temp, File out) throws IOException, InterruptedException {
+		
+        List<String> commands = new ArrayList<String>();
+        commands.add("/bin/csh");
+        commands.add("Seg");
+
+        ProcessBuilder pb = new ProcessBuilder(commands);
+        pb.directory(new File("/ext4Data/UFSCar/codes/baselines/uiseg/"));
+        pb.redirectInput(temp);
+        pb.redirectOutput(out);
+        pb.redirectErrorStream(true);
+        Process process = pb.start();
+        
+        //Check result
+        if (process.waitFor() != 0) {
+            System.exit(1);
+            System.err.println(commands);
+        }
+
+        List<String> text = Files.loadTxtFileToList(out); 
+        StringBuilder sb = new StringBuilder();
+        ArrayList<String> segs = new ArrayList<>();
+
+        for(String line : text) {
+        	if(line.startsWith("================[")) {
+        		if (!sb.toString().trim().isEmpty()) {
+        			segs.add(sb.toString().trim());
+        			sb.setLength(0);
+        		}
+        	}
+        	else {
+        		sb.append(line);
+        	}
+
+        }
+        segs.add(sb.toString().trim());
+
+		return segs;
+	}
 
 }
