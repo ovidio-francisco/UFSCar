@@ -5,8 +5,11 @@ import java.io.File;
 import preprocessamento.Preprocess;
 import segmenters.Segmenter;
 import segmenters.Segmenter.SegmenterAlgorithms;
+import segmenters.algorithms.DPSeg;
 import segmenters.algorithms.SentencesSegmenter;
+import segmenters.algorithms.UISeg;
 import segmenters.algorithms.c99br.C99BR;
+import segmenters.algorithms.mincutseg.MinCutSeg;
 import segmenters.algorithms.texttile.TextTilingBR;
 import segmenters.evaluations.Evaluation;
 import segmenters.evaluations.EvaluationData;
@@ -14,69 +17,87 @@ import segmenters.evaluations.EvaluationData;
 public class TestSegmenterModel {
 	
 	private SegmenterAlgorithms alg = null;
-	private int winSize = 0;
-	private int step = 0;
+	
+	private int       winSize = 20;
+	private int       step = 3;
+	
+	private double    segmentsRate = 0.4;
+	private int       rankingSize = 11;
+	private boolean   weight = true;
+	
 //	private int segmentsNumber = 0;
-	private double segmentsRate = 0.75;
-	private int rankingSize = 0;
-	private boolean weight = false;
+	private Segmenter segmenter = null;
 	
 	private Preprocess preprocess = new Preprocess();
 
+	
+	
 	public TestSegmenterModel(int winSize, int step) {
+		this.alg = SegmenterAlgorithms.TEXT_TILING;
+		this.segmenter = new TextTilingBR();
 		this.winSize = winSize;
 		this.step = step;
-		this.alg = SegmenterAlgorithms.TEXT_TILING;
-		
-//		((TextTilingBR)this.alg).setWindowSize(winSize);
-//		((TextTilingBR)this.alg).setStep(step);
 	}
 
 	public TestSegmenterModel(double segmentsRate, int rankingSize, boolean weight) {
-//		this.segmentsNumber = segmentsNumber;
+		this.alg = SegmenterAlgorithms.C99;
+		this.segmenter = new C99BR();	
 		this.segmentsRate = segmentsRate;
 		this.rankingSize = rankingSize;
 		this.weight = weight;
-		this.alg = SegmenterAlgorithms.C99;
-		
-//		((C99BR)this.alg).setnSegs(segmentsNumber);
-//		((C99BR)this.alg).setRakingSize(rankingSize);
-//		((C99BR)this.alg).setWeitght(weight);
-		
 	}
 	
 	public TestSegmenterModel() {
 		this.alg = SegmenterAlgorithms.SENTENCES;
+		this.segmenter = new SentencesSegmenter();
 	}
+
+	
+	public TestSegmenterModel(SegmenterAlgorithms alg) {
+		this.alg = alg;
+		
+		if(alg == SegmenterAlgorithms.TEXT_TILING) {
+			this.segmenter = new TextTilingBR();
+			((TextTilingBR)this.segmenter).setWindowSize(this.winSize);
+			((TextTilingBR)this.segmenter).setStep(this.step);
+		} 
+
+		if(alg == SegmenterAlgorithms.C99) {
+			this.segmenter = new C99BR();
+			((C99BR)this.segmenter).setnSegsRate(this.segmentsRate);
+			((C99BR)this.segmenter).setRakingSize(this.rankingSize);
+			((C99BR)this.segmenter).setWeitght(this.weight);
+		}
+		
+		if(alg == SegmenterAlgorithms.SENTENCES) {
+			this.segmenter = new SentencesSegmenter();
+		}
+
+		if(alg == SegmenterAlgorithms.MINCUT) {
+			this.segmenter = new MinCutSeg();
+		}
+
+		if(alg == SegmenterAlgorithms.TEXT_SEG) {
+			this.segmenter = new UISeg();
+		}
+
+		if(alg == SegmenterAlgorithms.BAYESSEG) {
+			this.segmenter = new DPSeg();
+		}
+
+	}
+	
+	
+	
+	
 	
 	public EvaluationData test(File txt) {
 		File gold = new File(txt.getAbsoluteFile()+".csv");
 		
-		Segmenter seg = null;
-
-		if(alg == SegmenterAlgorithms.TEXT_TILING) {
-			seg = new TextTilingBR();
-			((TextTilingBR)seg).setWindowSize(this.winSize);
-			((TextTilingBR)seg).setStep(this.step);
-		} 
-
-		if(alg == SegmenterAlgorithms.C99) {
-			seg = new C99BR();
-//			((C99BR)seg).setnSegs(this.segmentsNumber);
-			((C99BR)seg).setnSegsRate(this.segmentsRate);
-			((C99BR)seg).setRakingSize(this.rankingSize);
-			((C99BR)seg).setWeitght(this.weight);
-		}
-		
-		if(alg == SegmenterAlgorithms.SENTENCES) {
-			seg = new SentencesSegmenter();
-		}
-		
-		
-		seg.setPreprocess(preprocess);
+		segmenter.setPreprocess(preprocess);
 		
 		try {
-			return Evaluation.evalueate(gold, txt, seg);
+			return Evaluation.evalueate(gold, txt, segmenter);
 		} catch (Exception e) {
 			System.out.println(String.format("[Erro ao testar arquivo: %s [%s %s]]", txt, e.getClass(), e.getMessage()));
 			e.printStackTrace();
@@ -165,15 +186,7 @@ public class TestSegmenterModel {
 		this.segmentsRate = segmentsRate;
 	}
 
-	
-	
-	
-	
-	
-
-	
-	
-	
-	
-
+	public SegmenterAlgorithms getAlg() {
+		return alg;
+	}
 }

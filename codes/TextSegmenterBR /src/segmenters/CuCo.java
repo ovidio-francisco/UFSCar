@@ -77,4 +77,16 @@ public class CuCo extends AbstractSegmenter {
 		return hyp_segs[0];
 	}
 
+	@Override
+	public String getLabel() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public String getConfigurationLabel() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 }

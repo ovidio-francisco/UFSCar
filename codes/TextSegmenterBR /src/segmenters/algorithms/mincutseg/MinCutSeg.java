@@ -57,18 +57,22 @@ public class MinCutSeg extends AbstractSegmenter {
 		MyTextWrapper text = new MyTextWrapper(doc.getPath());
         SegTester.preprocessText(text, false, false, false, false, 0);
         
-        
-       
-        
-        
 		List[] hyp_segs = seg.segmentTexts(new MyTextWrapper[]{text}, new int[]{num_segs});
-//		System.out.println(hyp_segs[0]);
-//		System.out.println("Sentence count = " + text.getSentenceCount());
 
 		return hyp_segs[0];
-	}
-
 //        int nu = text.getReferenceSeg().size();
 //        System.out.println(String.format("%d", nu));
-//	List[] hyp_segs = segmenter.segmentTexts(texts,MyTextWrapper.getNumSegs(texts));
+//	      List[] hyp_segs = segmenter.segmentTexts(texts,MyTextWrapper.getNumSegs(texts));
+	}
+
+	@Override
+	public String getLabel() {
+		return "MinCut";
+	}
+
+	@Override
+	public String getConfigurationLabel() {
+		return "MinCut";
+	}
+
 }

@@ -2,14 +2,17 @@ package segmenters.algorithms.texttile;
 
 import java.io.File;
 import java.io.IOException;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Enumeration;
+import java.util.Hashtable;
+import java.util.Vector;
 
 import org.apache.commons.csv.CSVPrinter;
 
 import ptstemmer.Stemmer;
 import ptstemmer.implementations.OrengoStemmer;
 import segmenters.AbstractSegmenter;
-import segmenters.algorithms.texttile.struct.*;
+import segmenters.algorithms.texttile.struct.RawText;
 import utils.Files;
 /**
  * An implementation of Marti Hearst's text tiling algorithm.
@@ -802,6 +805,18 @@ public String getAlgorithmName() {
 @Override
 public String paramsToString() {
 	return String.format("winSize=%d step=%d | %s", windowSize, step, getPreprocess().configToString());
+}
+
+
+@Override
+public String getLabel() {
+	return String.format("TextTiling") ;
+}
+
+
+@Override
+public String getConfigurationLabel() {
+	return String.format("TT %2d %2d", this.getWindowSize(), this.getStep()) ;
 }
 
 	

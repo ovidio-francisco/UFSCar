@@ -57,4 +57,14 @@ public class LCSeg extends AbstractSegmenter {
 		return hyp_segs[0];
 	}
 
+	@Override
+	public String getLabel() {
+		return "LCSeg";
+	}
+
+	@Override
+	public String getConfigurationLabel() {
+		return "LCSeg";
+	}
+
 }

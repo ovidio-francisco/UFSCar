@@ -54,9 +54,17 @@ public class DPSeg extends AbstractSegmenter {
         SegTester.preprocessText(text, false, false, false, false, 0);
 		seg.num_segs_known = false;
 		List[] hyp_segs = seg.segmentTexts(new MyTextWrapper[]{text}, new int[]{4});
-//		System.out.println(hyp_segs[0]);
-//		System.out.println("Sentence count = " + text.getSentenceCount());
 
 		return hyp_segs[0];
+	}
+
+	@Override
+	public String getLabel() {
+		return "BayesSeg";
+	}
+
+	@Override
+	public String getConfigurationLabel() {
+		return "BayesSeg";
 	}
 }

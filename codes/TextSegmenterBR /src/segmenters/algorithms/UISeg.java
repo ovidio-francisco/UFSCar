@@ -87,5 +87,13 @@ public class UISeg extends AbstractSegmenter {
 
 		return segs;
 	}
+	@Override
+	public String getLabel() {
+		return "TextSeg";
+	}
+	@Override
+	public String getConfigurationLabel() {
+		return "TextSeg";
+	}
 
 }

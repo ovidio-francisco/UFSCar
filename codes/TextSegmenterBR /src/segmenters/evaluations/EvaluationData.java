@@ -185,7 +185,7 @@ public class EvaluationData {
 	
 	
 	public String getAlg_Param() {
-		String alg = "";
+		String alg = "" + getAlg().getLabel();
 		
 		if(getAlg() instanceof TextTilingBR) {
 			alg = "TT";
@@ -221,29 +221,32 @@ public class EvaluationData {
 	
 	
 	public String getConfigurationLabel() {
-		String alg = "";
-		
-		if(getAlg() instanceof TextTilingBR) {
-			alg = "TT";
-			alg += " " + String.format("%2d", ((TextTilingBR)getAlg()).getWindowSize()) ;
-			alg += " " + String.format("%2d", ((TextTilingBR)getAlg()).getStep());
-		}
-		
-		if(getAlg() instanceof C99BR) {
-			alg = "C99";
-			alg += " " + String.format("%2d", (int)(100*((C99BR)getAlg()).getnSegsRate())); 
-			alg += " " + String.format("%2d", ((C99BR)getAlg()).getRakingSize());
-			alg += " " + String.format("%s", ((C99BR)getAlg()).isWeitght() ? "T":"F");
-		}
-		
-		if(getAlg() instanceof SentencesSegmenter) {
-			alg = "Sentenças só";
-		}
+//		String alg = "";
+//		
+//		if(getAlg() instanceof TextTilingBR) {
+//			alg = "TT";
+//			alg += " " + String.format("%2d", ((TextTilingBR)getAlg()).getWindowSize()) ;
+//			alg += " " + String.format("%2d", ((TextTilingBR)getAlg()).getStep());
+//		}
+//		
+//		if(getAlg() instanceof C99BR) {
+//			alg = "C99";
+//			alg += " " + String.format("%2d", (int)(100*((C99BR)getAlg()).getnSegsRate())); 
+//			alg += " " + String.format("%2d", ((C99BR)getAlg()).getRakingSize());
+//			alg += " " + String.format("%s", ((C99BR)getAlg()).isWeitght() ? "T":"F");
+//		}
+//		
+//		if(getAlg() instanceof SentencesSegmenter) {
+//			alg = "Sentenças só";
+//		}
 //		String preprocess = " " + (getAlg().getPreprocess().isRemoveStopWord() ? "T" : "F");
 		
 //		alg = alg+preprocess;
 
-		return alg;
+		return alg.getConfigurationLabel();
+	}
+	public String getAlgLabel() {
+		return alg.getLabel();
 	}
 	
 	

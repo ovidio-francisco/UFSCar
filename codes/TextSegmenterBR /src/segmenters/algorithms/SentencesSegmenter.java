@@ -37,4 +37,14 @@ public class SentencesSegmenter extends AbstractSegmenter {
 		return "No Params";
 	}
 
+	@Override
+	public String getLabel() {
+		return "Senten\\c{c}as";
+	}
+
+	@Override
+	public String getConfigurationLabel() {
+		return "Sentenças";
+	}
+
 }

@@ -37,6 +37,7 @@ import segmenters.evaluations.EvaluationData;
 import segmenters.tests.Tests;
 import segmenters.tests.Tests2;
 import segmenters.tests.Tests3;
+import segmenters.tests.Tests4;
 import utils.Files;
 
 public class EvaluateSegmentationsFrame extends JFrame {
@@ -51,6 +52,8 @@ public class EvaluateSegmentationsFrame extends JFrame {
 	private JButton   btTests      = new JButton("Tests");
 	private JButton   btTests2     = new JButton("Tests 2");
 	private JButton   btTests3     = new JButton("Tests 3");
+	private JButton   btTests4_1     = new JButton("Tests (Create TeX Table)");
+	private JButton   btTests4_2     = new JButton("Tests (Show Results)");
 
 	private JTabbedPane tpReal  = new JTabbedPane();
 	private JTabbedPane tpTest  = new JTabbedPane();
@@ -90,11 +93,14 @@ public class EvaluateSegmentationsFrame extends JFrame {
 		
 		JToolBar toolBar = new JToolBar();
 		toolBar.setFloatable(false);
-		toolBar.add(btTests);
+//		toolBar.add(btTests);
+//		toolBar.addSeparator();
+//		toolBar.add(btTests2);
+//		toolBar.addSeparator();
+//		toolBar.add(btTests3);
 		toolBar.addSeparator();
-		toolBar.add(btTests2);
-		toolBar.addSeparator();
-		toolBar.add(btTests3);
+		toolBar.add(btTests4_1);
+		toolBar.add(btTests4_2);
 		toolBar.addSeparator();
 		toolBar.addSeparator();
 		toolBar.add(btLoadFile);
@@ -137,8 +143,8 @@ public class EvaluateSegmentationsFrame extends JFrame {
 
 		
 		pnToolBars.add(toolBar, BorderLayout.NORTH);
-		pnToolBars.add(textTilingToolBar, BorderLayout.CENTER);
-		pnToolBars.add(c99ToolBar, BorderLayout.SOUTH);
+//		pnToolBars.add(textTilingToolBar, BorderLayout.CENTER);
+//		pnToolBars.add(c99ToolBar, BorderLayout.SOUTH);
 		
 		add(pnToolBars, BorderLayout.NORTH);
 		
@@ -272,8 +278,45 @@ public class EvaluateSegmentationsFrame extends JFrame {
 			}
 		});
 		
+		btTests4_1.addActionListener(new ActionListener() {
+			
+			@Override
+			public void actionPerformed(ActionEvent e) {
+//				ArrayList<ArrayList<EvaluationData>> evaluations = Tests4.doTests(null, true);
+//				showTests1(evaluations);
+				
+				Tests4.createGreatTexTable();
+				
+//				try {
+//					Tests4.createGreatCSV(evaluations);
+//				} catch (IOException e1) {
+//					e1.printStackTrace();
+//				}
+			}
+		});
+		
+		btTests4_2.addActionListener(new ActionListener() {
+			
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				ArrayList<ArrayList<EvaluationData>> evaluations = Tests4.doTests(null, true);
+				
+				showTests1(evaluations);
+				
+//				Tests4.createGreatTexTable();
+				
+				try {
+					Tests4.createGreatCSV(evaluations);
+				} catch (IOException e1) {
+					e1.printStackTrace();
+				}
+			}
+		});
+		
 		setVisible(true);
 	}
+	
+	
 	
 	private void load(File doc, File real, Segmenter alg) {
 		

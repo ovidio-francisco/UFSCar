@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import preprocessamento.Preprocess;
 
 public interface Segmenter {
-	public enum SegmenterAlgorithms {TEXT_TILING, C99, SENTENCES}
+	public enum SegmenterAlgorithms {SENTENCES, TEXT_TILING, C99, MINCUT, TEXT_SEG, BAYESSEG}
 	
 	public static final String EOS_MARK = "_EOS_";
 	
@@ -19,5 +19,6 @@ public interface Segmenter {
 	public String preprocessToString();
 	public String getAlgorithmName();
 	public String paramsToString();
-
+	public String getLabel();
+	public String getConfigurationLabel();
 }
