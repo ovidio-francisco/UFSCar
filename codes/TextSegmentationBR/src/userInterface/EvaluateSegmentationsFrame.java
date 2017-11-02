@@ -243,13 +243,7 @@ public class EvaluateSegmentationsFrame extends JFrame {
 			public void actionPerformed(ActionEvent e) {
 				
 				ArrayList<ArrayList<EvaluationData>> tests = Tests.doTests(new File("./docs"));
-				
-				
 				showTests1(tests);
-				
-				
-
-				
 			}
 		});
 		
@@ -332,8 +326,6 @@ public class EvaluateSegmentationsFrame extends JFrame {
 				}
 			}
 		});
-		
-		
 		
 		setVisible(true);
 	}

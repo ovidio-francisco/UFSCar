@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Enumeration;
 import java.util.Hashtable;
+import java.util.List;
 import java.util.Vector;
 
 import org.apache.commons.csv.CSVPrinter;
@@ -745,9 +746,9 @@ public void setSource(String source) {
 //}
 
 
-public Vector<Integer> getSegmentation() {
-	return segmentation;
-}
+//public Vector<Integer> getSegmentation() {
+//	return segmentation;
+//}
 
 
 
@@ -817,6 +818,18 @@ public String getLabel() {
 @Override
 public String getConfigurationLabel() {
 	return String.format("TT %2d %2d", this.getWindowSize(), this.getStep()) ;
+}
+
+
+@Override
+public List<Integer> getBoundaries(String text) {
+	ArrayList<Integer> result = new ArrayList<>();
+	
+	for(Integer i : segmentation) {
+		result.add(i);
+	}
+	
+	return result;
 }
 
 	

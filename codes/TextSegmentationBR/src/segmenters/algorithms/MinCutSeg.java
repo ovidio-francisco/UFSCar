@@ -1,4 +1,4 @@
-package segmenters.algorithms.mincutseg;
+package segmenters.algorithms;
 
 import java.io.File;
 import java.util.ArrayList;
@@ -50,8 +50,8 @@ public class MinCutSeg extends AbstractSegmenter {
 	@SuppressWarnings({ "rawtypes", "unchecked" })
 	private List<Integer> getBoundaries(File doc, int num_segs) {
 		MCSWrapper seg = new MCSWrapper();
-		String config = "src/segmenters/algorithms/mincutseg/mcsopt.ai.config";
-
+		String config = "config/mcsopt.ai.config";
+		
 		seg.initialize(config); //fazer o initialize para o DPSeg
 		
 		MyTextWrapper text = new MyTextWrapper(doc.getPath());
@@ -60,9 +60,6 @@ public class MinCutSeg extends AbstractSegmenter {
 		List[] hyp_segs = seg.segmentTexts(new MyTextWrapper[]{text}, new int[]{num_segs});
 
 		return hyp_segs[0];
-//        int nu = text.getReferenceSeg().size();
-//        System.out.println(String.format("%d", nu));
-//	      List[] hyp_segs = segmenter.segmentTexts(texts,MyTextWrapper.getNumSegs(texts));
 	}
 
 	@Override
@@ -75,4 +72,33 @@ public class MinCutSeg extends AbstractSegmenter {
 		return "MinCut";
 	}
 
+	@SuppressWarnings({ "rawtypes", "unchecked" })
+	@Override
+	public List<Integer> getBoundaries(String text) {
+		text = getPreprocess().cleanTextMeating(text);
+		File tmp = new File("temp.txt");
+		text = getPreprocess().identifyEOS(text, EOS);
+ 		text = text.replaceAll(EOS, "\n");
+ 		Files.saveTxtFile(text, tmp);	
+ 	
+		MCSWrapper seg = new MCSWrapper();
+		String config = "config/mcsopt.ai.config";
+		
+		seg.initialize(config); //fazer o initialize para o DPSeg
+		
+		MyTextWrapper textw = new MyTextWrapper(tmp.getPath());
+        SegTester.preprocessText(textw, false, false, false, false, 0);
+        
+		List[] hyp_segs = seg.segmentTexts(new MyTextWrapper[]{textw}, new int[]{4});
+
+		return hyp_segs[0];
+	}
+
 }
+
+
+
+
+//int nu = text.getReferenceSeg().size();
+//System.out.println(String.format("%d", nu));
+//List[] hyp_segs = segmenter.segmentTexts(texts,MyTextWrapper.getNumSegs(texts));

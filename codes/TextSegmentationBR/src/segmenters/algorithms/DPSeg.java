@@ -25,7 +25,7 @@ public class DPSeg extends AbstractSegmenter {
  		text = text.replaceAll(EOS, "\n");
  		Files.saveTxtFile(text, tmp);
 		
- 		ArrayList<String> segments = getRawSegmentedText(tmp, getBoundaries(tmp));
+ 		ArrayList<String> segments = getRawSegmentedText(tmp, getBoundaries1(tmp));
 		
 		tmp.delete();
 
@@ -48,7 +48,7 @@ public class DPSeg extends AbstractSegmenter {
 	}
 
 	@SuppressWarnings({ "rawtypes", "unchecked" })
-	private List<Integer> getBoundaries(File doc) {
+	private List<Integer> getBoundaries1(File doc) {
 		BayesWrapper seg = new BayesWrapper();
 		MyTextWrapper text = new MyTextWrapper(doc.getPath());
         SegTester.preprocessText(text, false, false, false, false, 0);
@@ -66,5 +66,26 @@ public class DPSeg extends AbstractSegmenter {
 	@Override
 	public String getConfigurationLabel() {
 		return "BayesSeg";
+	}
+
+	@SuppressWarnings({ "unchecked", "rawtypes" })
+	@Override
+	public List<Integer> getBoundaries(String text) {
+		
+		text = getPreprocess().cleanTextMeating(text);
+		File tmp = new File("temp.txt");
+		text = getPreprocess().identifyEOS(text, EOS);
+		
+ 		text = text.replaceAll(EOS, "\n");
+ 		Files.saveTxtFile(text, tmp);
+		
+		BayesWrapper seg = new BayesWrapper();
+		MyTextWrapper textw = new MyTextWrapper(tmp.getPath());
+		tmp.delete();
+        SegTester.preprocessText(textw, false, false, false, false, 0);
+		seg.num_segs_known = false;
+		List[] hyp_segs = seg.segmentTexts(new MyTextWrapper[]{textw}, new int[]{4});
+
+		return hyp_segs[0];
 	}
 }

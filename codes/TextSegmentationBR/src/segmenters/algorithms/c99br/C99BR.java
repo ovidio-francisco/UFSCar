@@ -1,6 +1,7 @@
 package segmenters.algorithms.c99br;
 
 import java.util.ArrayList;
+import java.util.List;
 
 import segmenters.AbstractSegmenter;
 import segmenters.algorithms.c99br.uima.Stringx;
@@ -111,6 +112,28 @@ public class C99BR extends AbstractSegmenter {
 	@Override
 	public String getConfigurationLabel() {
 		return String.format("C99 %2d %2d %s", (int)(100*this.getnSegsRate()), this.getRakingSize(), this.isWeitght()?"T":"F");
+	}
+
+	@Override
+	public List<Integer> getBoundaries(String text) {
+		ArrayList<Integer> result = new ArrayList<>();
+
+		text = getPreprocess().cleanTextMeating(text);
+		text = getPreprocess().identifyEOS(text, EOS_MARK);
+		
+		String[] sentences = text.split(EOS_MARK);		
+		String[][] D = Stringx.tokenize(sentences, " ");	
+
+		int [] bounds = weitght ? C99.getBoundariesW(D, nSegs, rakingSize, getPreprocess()) :
+			                      C99.getBoundaries (D, nSegs, rakingSize, getPreprocess());
+		
+		
+		for(int i : bounds) {
+			result.add(i);
+		}
+		
+		
+		return result;
 	}
 	
 	

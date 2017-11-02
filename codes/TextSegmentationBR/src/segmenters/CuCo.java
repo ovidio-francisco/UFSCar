@@ -89,4 +89,10 @@ public class CuCo extends AbstractSegmenter {
 		return null;
 	}
 
+	@Override
+	public List<Integer> getBoundaries(String text) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 }

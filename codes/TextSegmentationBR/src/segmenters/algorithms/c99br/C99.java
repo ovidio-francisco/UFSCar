@@ -10,8 +10,9 @@ import java.util.Vector;
 
 import preprocessamento.Preprocess;
 import segmenters.algorithms.c99br.math.Convolution;
-import segmenters.algorithms.c99br.statistics.*;
-import segmenters.algorithms.c99br.struct.*;
+import segmenters.algorithms.c99br.statistics.Accumulator;
+import segmenters.algorithms.c99br.struct.ContextVector;
+import segmenters.algorithms.c99br.struct.EntropyVector;
 
 
 /** Choi's C99 algorithm for linear text segmentation
@@ -803,7 +804,61 @@ public class C99
 	public static ArrayList<String> getWords() {
 		return words;
 	}
+	
+	
+	// By OJF
+	
+	/**
+	 * A mesma função segmentW(), mas que retorna apenas os bounds
+	 * */
+	public static int[] getBoundariesW(   
+	        final String[][] document ,
+	        final int n ,
+	        final int s ,
+//	        StopWords stopWords ,
+//	        Stemmer stemmer
+	        Preprocess preprocess
+	    )
+	    {
+        ContextVector tf        = new ContextVector();
+        ContextVector[] vectors = normalize( document , tf , preprocess );
+        EntropyVector ev        = new EntropyVector( tf );
+        double[][] sim          = similarity( vectors , ev );
+        vectors = null;
+        double[][] rank         = rank( sim , s );
+        sim     = null;
+        double[][] sum          = sum( rank );
+        rank    = null;
+        int[] bounds            = boundaries( sum , n );
+        Arrays.sort( bounds );
 
+        return bounds;
+    }
+
+	/**
+	 * A mesma função segment(), mas que retorna apenas os bounds
+	 * */
+	public static int[] getBoundaries
+    (
+        final String[][] document ,
+        final int n ,
+        final int s ,
+//        StopWords stopWords ,
+//        Stemmer stemmer
+        Preprocess preprocess
+    )
+    {
+        ContextVector[] vectors = normalize( document , preprocess );
+        double[][] sim          = similarity( vectors );
+        vectors = null;
+        double[][] rank         = rank( sim , s );
+        sim = null;
+        double[][] sum          = sum( rank );
+        rank    = null;
+        int[] bounds            = boundaries( sum , n );
+        Arrays.sort( bounds );
+        return bounds;
+    }
     
 }
 
