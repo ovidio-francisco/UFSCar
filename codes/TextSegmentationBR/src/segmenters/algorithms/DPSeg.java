@@ -45,7 +45,7 @@ public class DPSeg extends AbstractSegmenter {
 		
  		ArrayList<String> segments = getRawSegmentedText(lines, bounds);
 		
-//		tmp1.delete();
+		tmp1.delete();
 
 		return segments;
 	}

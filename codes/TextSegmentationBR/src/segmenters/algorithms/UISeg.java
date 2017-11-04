@@ -56,7 +56,8 @@ public class UISeg extends AbstractSegmenter {
 		
  		ArrayList<String> segments = getRawSegmentedText(lines, bounds);
 		
-//		tmp1.delete();
+		tmp1.delete();
+		out.delete();
 
  		return segments;
 	}
