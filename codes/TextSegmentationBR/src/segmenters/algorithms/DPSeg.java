@@ -13,21 +13,39 @@ import utils.Files;
 public class DPSeg extends AbstractSegmenter {
 	private static final String EOS = "-EOF-"; 
 	
-	public DPSeg() {
-	}
-
 	@Override
 	public ArrayList<String> getSegments(String text) {
+		
 		text = getPreprocess().cleanTextMeating(text);
-		File tmp = new File("temp.txt");
 		text = getPreprocess().identifyEOS(text, EOS);
 		
- 		text = text.replaceAll(EOS, "\n");
- 		Files.saveTxtFile(text, tmp);
+ 		/** Cria um arquivo com o texto preprocessado */
+		String[] pt = text.split(EOS);
 		
- 		ArrayList<String> segments = getRawSegmentedText(tmp, getBoundaries1(tmp));
+		for(int i=0; i<pt.length; i++) {
+			pt[i] = preprocessLines(pt[i]);
+		}
+		for(int i=0; i<pt.length-1; i++) {
+			pt[i] = pt[i]+"\n";
+		}
+ 		
+ 		File tmp1 = new File("temp1.txt");
+ 		Files.saveLinesToTxtFile(pt, tmp1);
+ 		
+ 		/** Pega os bounds do texto arquivo com o texto preprocessado*/
+ 		List<Integer> bounds = getBoundaries(tmp1);
+ 		
+ 		/** Pega as linas do texto original*/
+ 		String[] originalLines = text.split(EOS);
+ 		List<String> lines = new ArrayList<String>();
+		for(String s : originalLines) {
+			lines.add(s);
+		}
+
 		
-		tmp.delete();
+ 		ArrayList<String> segments = getRawSegmentedText(lines, bounds);
+		
+//		tmp1.delete();
 
 		return segments;
 	}
@@ -48,7 +66,7 @@ public class DPSeg extends AbstractSegmenter {
 	}
 
 	@SuppressWarnings({ "rawtypes", "unchecked" })
-	private List<Integer> getBoundaries1(File doc) {
+	private List<Integer> getBoundaries(File doc) {
 		BayesWrapper seg = new BayesWrapper();
 		MyTextWrapper text = new MyTextWrapper(doc.getPath());
         SegTester.preprocessText(text, false, false, false, false, 0);
@@ -66,26 +84,5 @@ public class DPSeg extends AbstractSegmenter {
 	@Override
 	public String getConfigurationLabel() {
 		return "BayesSeg";
-	}
-
-	@SuppressWarnings({ "unchecked", "rawtypes" })
-	@Override
-	public List<Integer> getBoundaries(String text) {
-		
-		text = getPreprocess().cleanTextMeating(text);
-		File tmp = new File("temp.txt");
-		text = getPreprocess().identifyEOS(text, EOS);
-		
- 		text = text.replaceAll(EOS, "\n");
- 		Files.saveTxtFile(text, tmp);
-		
-		BayesWrapper seg = new BayesWrapper();
-		MyTextWrapper textw = new MyTextWrapper(tmp.getPath());
-		tmp.delete();
-        SegTester.preprocessText(textw, false, false, false, false, 0);
-		seg.num_segs_known = false;
-		List[] hyp_segs = seg.segmentTexts(new MyTextWrapper[]{textw}, new int[]{4});
-
-		return hyp_segs[0];
 	}
 }

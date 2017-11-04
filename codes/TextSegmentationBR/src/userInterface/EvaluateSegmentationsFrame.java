@@ -30,8 +30,8 @@ import javax.swing.border.EmptyBorder;
 import segmenters.AbstractSegmenter;
 import segmenters.Segmenter;
 import segmenters.Segmenter.SegmenterAlgorithms;
-import segmenters.algorithms.c99br.C99BR;
-import segmenters.algorithms.texttile.TextTilingBR;
+import segmenters.algorithms.C99BR;
+import segmenters.algorithms.TextTilingBR;
 import segmenters.evaluations.Evaluation;
 import segmenters.evaluations.EvaluationData;
 import segmenters.tests.Tests;
@@ -243,7 +243,13 @@ public class EvaluateSegmentationsFrame extends JFrame {
 			public void actionPerformed(ActionEvent e) {
 				
 				ArrayList<ArrayList<EvaluationData>> tests = Tests.doTests(new File("./docs"));
+				
+				
 				showTests1(tests);
+				
+				
+
+				
 			}
 		});
 		
@@ -326,6 +332,8 @@ public class EvaluateSegmentationsFrame extends JFrame {
 				}
 			}
 		});
+		
+		
 		
 		setVisible(true);
 	}

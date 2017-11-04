@@ -5,9 +5,9 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 
 import segmenters.Segmenter;
+import segmenters.algorithms.C99BR;
 import segmenters.algorithms.SentencesSegmenter;
-import segmenters.algorithms.c99br.C99BR;
-import segmenters.algorithms.texttile.TextTilingBR;
+import segmenters.algorithms.TextTilingBR;
 import segmenters.evaluations.measure.PkMeasure;
 import segmenters.evaluations.measure.WinPR;
 import segmenters.evaluations.measure.WindowdiffMeasure;

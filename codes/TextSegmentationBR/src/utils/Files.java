@@ -104,6 +104,21 @@ public class Files {
 		}
     }
 
+    public static void saveLinesToTxtFile(String[] lines, File txtFile) {
+        BufferedWriter out = Files.getBufferedWriter(txtFile); 
+
+        try {
+        	for(String line: lines) {
+        		out.write(line);
+        	}
+			out.flush();
+			out.close();
+		} catch (IOException e) {
+			System.err.println("Erro ao salvar o arquivo " + txtFile.getName());
+			e.printStackTrace();
+		}
+    }
+
     public static BufferedWriter getBufferedWriter(File file) {
         //  BufferedWriter fileOut = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(dirOut + "/" + output),"ISO-8859-1"));
         BufferedWriter result = null;

@@ -2,7 +2,7 @@ package segmenters.algorithms.texttile.struct;
 
 import java.util.*;
 
-import segmenters.algorithms.texttile.TextTilingBR;
+import segmenters.algorithms.TextTilingBR;
 
 import java.io.*;
 

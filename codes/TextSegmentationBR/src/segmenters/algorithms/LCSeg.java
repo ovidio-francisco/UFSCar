@@ -67,10 +67,4 @@ public class LCSeg extends AbstractSegmenter {
 		return "LCSeg";
 	}
 
-	@Override
-	public List<Integer> getBoundaries(String text) {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
 }

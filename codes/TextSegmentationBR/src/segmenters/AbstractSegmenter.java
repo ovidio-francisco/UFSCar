@@ -7,11 +7,27 @@ import java.util.List;
 import preprocessamento.Preprocess;
 import utils.Files;
 import utils.TextExtractor;
+import utils.TextUtils;
 
 public abstract class AbstractSegmenter implements Segmenter {
 
 	
 	private Preprocess preprocess = new Preprocess();
+	
+	
+	protected String preprocessLines(String line) {
+		StringBuilder sb = new StringBuilder();
+		
+		String[] tokens = TextUtils.getTokens(line);
+		
+		for(int i=0; i<tokens.length; i++) {
+			sb.append(getPreprocess().transform(tokens[i]) + " "); 
+		}
+		
+		return sb.toString();
+	}
+
+	
 	
 	@Override
 	public Preprocess getPreprocess() {

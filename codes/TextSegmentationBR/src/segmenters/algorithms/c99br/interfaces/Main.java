@@ -2,7 +2,7 @@ package segmenters.algorithms.c99br.interfaces;
 
 import java.io.File;
 
-import segmenters.algorithms.c99br.C99BR;
+import segmenters.algorithms.C99BR;
 
 public class Main {
 

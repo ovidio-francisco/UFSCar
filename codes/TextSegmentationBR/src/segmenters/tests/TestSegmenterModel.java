@@ -5,12 +5,12 @@ import java.io.File;
 import preprocessamento.Preprocess;
 import segmenters.Segmenter;
 import segmenters.Segmenter.SegmenterAlgorithms;
+import segmenters.algorithms.C99BR;
 import segmenters.algorithms.DPSeg;
 import segmenters.algorithms.MinCutSeg;
 import segmenters.algorithms.SentencesSegmenter;
+import segmenters.algorithms.TextTilingBR;
 import segmenters.algorithms.UISeg;
-import segmenters.algorithms.c99br.C99BR;
-import segmenters.algorithms.texttile.TextTilingBR;
 import segmenters.evaluations.Evaluation;
 import segmenters.evaluations.EvaluationData;
 

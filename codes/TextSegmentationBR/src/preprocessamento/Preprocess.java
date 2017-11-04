@@ -28,8 +28,7 @@ public class Preprocess {
 	
 	private int headerOccurrence = 0;
 
-	
-	
+		
 	public  boolean remove(String token) {
 		
 		token = token.toLowerCase();
