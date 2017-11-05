@@ -96,14 +96,15 @@ public class UISeg extends AbstractSegmenter {
 	private ArrayList<Integer> findBounds(File temp, File out) throws IOException, InterruptedException {
 		ArrayList<Integer> b = new ArrayList<>();
 		
-		
         List<String> commands = new ArrayList<String>();
-        commands.add("/bin/csh");
-        commands.add("Seg");
-
+        commands.add("/bin/bash");
+        commands.add("mySeg.sh");
+        commands.add(temp.getAbsolutePath());
+        commands.add("-1");
+        
         ProcessBuilder pb = new ProcessBuilder(commands);
         pb.directory(new File("/ext4Data/UFSCar/codes/baselines/uiseg/"));
-        pb.redirectInput(temp);
+//        pb.redirectInput(temp);
         pb.redirectOutput(out);
         pb.redirectErrorStream(true);
         Process process = pb.start();

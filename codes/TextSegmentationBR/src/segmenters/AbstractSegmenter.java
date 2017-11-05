@@ -54,8 +54,11 @@ public abstract class AbstractSegmenter implements Segmenter {
 		ArrayList<String> segs = getSegments(source);
 		StringBuilder sb = new StringBuilder();
 		
+		int c = 1;
+		String sep = "================";
 		for(String str : segs) {
-			sb.append(str + "\n=======//=======//=======//=======\n\n");
+//			sb.append(str + "\n=======//=======//=======//=======\n");
+			sb.append(String.format("%s[%d]%s\n%s\n", sep,c++,sep,str));
 		}
 		
 		return sb.toString();

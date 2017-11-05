@@ -26,8 +26,8 @@ public class Teste {
 		preprocess.setRemoveStopWord    (true);
 		preprocess.setToLowCase         (true);	
 		
-		File doc = new File("Ata 32-int.txt");
-//		File doc = new File("Ata 32.txt");
+//		File doc = new File("Ata 32-int.txt");
+		File doc = new File("Ata 32.txt");
 //		File doc = new File("lorem-ipsum.md");
 
 		Segmenter seg = new SentencesSegmenter();
@@ -44,6 +44,7 @@ public class Teste {
 		
 		seg.setPreprocess(preprocess);
 		
+		System.out.println(String.format("===== %s =====\n", seg.getLabel()));
 		System.out.println(seg.segmentsToString(doc));
 //		System.out.println(seg.getAlgorithmName());
 //		System.out.println(seg.showBoundaries(seg.getBoundaries()));

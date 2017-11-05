@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.8.22)  4 NOV 2017 10:04
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.8.22)  5 NOV 2017 01:06
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -70,7 +70,8 @@ Package: longtable 2014/10/28 v4.11 Multi-page Table package (DPC)
 \c@LT@tables=\count93
 \c@LT@chunks=\count94
 \LT@p@ftn=\toks16
-) (./medidas.aux)
+)
+No file medidas.aux.
 \openout1 = `medidas.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 9.
@@ -85,7 +86,6 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 9.
 LaTeX Font Info:    ... okay on input line 9.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 9.
 LaTeX Font Info:    ... okay on input line 9.
-
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -128,13 +128,13 @@ Underfull \vbox (badness 10000) detected at line 20
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./medidas.aux) ) 
 Here is how much of TeX's memory you used:
- 813 strings out of 494884
- 10918 string characters out of 6179236
- 85015 words of memory out of 5000000
+ 811 strings out of 494884
+ 10894 string characters out of 6179236
+ 84785 words of memory out of 5000000
  4182 multiletter control sequences out of 15000+600000
  3948 words of font info for 15 fonts, out of 8000000 for 9000
  38 hyphenation exceptions out of 8191
- 23i,4n,19p,245b,134s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 23i,4n,19p,245b,135s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/sha
 re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/tex
 live/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb>

@@ -1,0 +1,2 @@
+cat lorem-ipsum.md | ./prep-seg | ./seg -maxNumSegs 5 | tail -1 > vai.md
+./seg-comb vai.md lorem-ipsum.md
