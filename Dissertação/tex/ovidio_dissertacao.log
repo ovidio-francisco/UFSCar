@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.8.22)  28 OCT 2017 16:47
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.8.22)  12 NOV 2017 11:14
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1353,9 +1353,9 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-] (./conteudo/capitulos/inputs/segmentacao.tex [7]
-./conteudo/capitulos/inputs/segmentacao.tex:54: Undefined control sequence.
-l.54 	\subfigure
+] (./conteudo/capitulos/inputs/segmentacao.tex (./conteudo/capitulos/inputs/algoritmos-segmentacao.tex [7]
+./conteudo/capitulos/inputs/algoritmos-segmentacao.tex:33: Undefined control sequence.
+l.33 	\subfigure
                 [Passo 1]{\label{fig:a}\includegraphics[width=60mm]{conteudo...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1366,11 +1366,11 @@ and I'll forget about whatever was undefined.
 <conteudo/capitulos/figs/exemplo-matrix-rank-A.png, id=154, 269.50688pt x 141.52875pt>
 File: conteudo/capitulos/figs/exemplo-matrix-rank-A.png Graphic file (type png)
  <use conteudo/capitulos/figs/exemplo-matrix-rank-A.png>
-Package pdftex.def Info: conteudo/capitulos/figs/exemplo-matrix-rank-A.png used on input line 54.
+Package pdftex.def Info: conteudo/capitulos/figs/exemplo-matrix-rank-A.png used on input line 33.
 (pdftex.def)             Requested size: 170.71652pt x 89.65163pt.
 
-./conteudo/capitulos/inputs/segmentacao.tex:55: Undefined control sequence.
-l.55 	\subfigure
+./conteudo/capitulos/inputs/algoritmos-segmentacao.tex:34: Undefined control sequence.
+l.34 	\subfigure
                 [Passo 2]{\label{fig:b}\includegraphics[width=60mm]{conteudo...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1381,12 +1381,12 @@ and I'll forget about whatever was undefined.
 <conteudo/capitulos/figs/exemplo-matrix-rank-B.png, id=156, 268.75406pt x 141.52875pt>
 File: conteudo/capitulos/figs/exemplo-matrix-rank-B.png Graphic file (type png)
  <use conteudo/capitulos/figs/exemplo-matrix-rank-B.png>
-Package pdftex.def Info: conteudo/capitulos/figs/exemplo-matrix-rank-B.png used on input line 55.
+Package pdftex.def Info: conteudo/capitulos/figs/exemplo-matrix-rank-B.png used on input line 34.
 (pdftex.def)             Requested size: 170.71652pt x 89.90215pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [8] (./conteudo/capitulos/inputs/medidas-avaliacao-tradicionais-em-segmentacao.tex [9 <./conteudo/capitulos/figs/exemplo-matrix-rank-A.png> <./conteudo/capitulos/figs/exemplo-matrix-rank-B.png>]
+ [8]) (./conteudo/capitulos/inputs/medidas-segmentacao.tex (./conteudo/capitulos/inputs/medidas-avaliacao-tradicionais-em-segmentacao.tex [9 <./conteudo/capitulos/figs/exemplo-matrix-rank-A.png> <./conteudo/capitulos/figs/exemplo-matrix-rank-B.png>]
 
 LaTeX Warning: Command \c invalid in math mode on input line 52.
 
@@ -1399,7 +1399,7 @@ LaTeX Warning: Command \c invalid in math mode on input line 60.
 ) <conteudo/capitulos/figs/windiffzoom.jpg, id=180, 312.2064pt x 78.5334pt>
 File: conteudo/capitulos/figs/windiffzoom.jpg Graphic file (type jpg)
  <use conteudo/capitulos/figs/windiffzoom.jpg>
-Package pdftex.def Info: conteudo/capitulos/figs/windiffzoom.jpg used on input line 90.
+Package pdftex.def Info: conteudo/capitulos/figs/windiffzoom.jpg used on input line 20.
 (pdftex.def)             Requested size: 318.49861pt x 80.11977pt.
 
 
@@ -1408,7 +1408,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 [10]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [11 <./conteudo/capitulos/figs/windiffzoom.jpg>]) (./conteudo/capitulos/inputs/representacao.tex
+ [11 <./conteudo/capitulos/figs/windiffzoom.jpg>])) (./conteudo/capitulos/inputs/representacao.tex
 
 LaTeX Warning: Citation `Rezende2003' on page 12 undefined on input line 5.
 
@@ -1522,15 +1522,15 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 307.
  ) 
 Here is how much of TeX's memory you used:
- 14026 strings out of 494884
- 206928 string characters out of 6179236
+ 14036 strings out of 494884
+ 207401 string characters out of 6179236
  374519 words of memory out of 5000000
- 16815 multiletter control sequences out of 15000+600000
+ 16819 multiletter control sequences out of 15000+600000
  90492 words of font info for 140 fonts, out of 8000000 for 9000
  38 hyphenation exceptions out of 8191
- 40i,12n,38p,1515b,600s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 40i,12n,38p,1542b,600s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}</usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr7.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss10.pfb></usr/share/texmf/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss17.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsso12.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt10.pfb>
-Output written on ovidio_dissertacao.pdf (28 pages, 580284 bytes).
+Output written on ovidio_dissertacao.pdf (28 pages, 580099 bytes).
 PDF statistics:
  520 PDF objects out of 1000 (max. 8388607)
  461 compressed objects within 5 object streams
