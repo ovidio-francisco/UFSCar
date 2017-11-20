@@ -30,9 +30,69 @@ Lexical cohesion e.g.,
 
 "The Bayesian framework provides a principled way to incorporate additional features such as cue phrases, a powerful indicator of discourse structure"
 
+%  ----------------------------------------
+
+"We formalize lexical cohesion in a generative model in which the text for each segment is produced by a distinct lexical distribution." 
+
+%  ----------------------------------------
+
+"More formally, we treat the words in each sentence as draws from a language model associated with the topic segment. This is related to topic-modeling methods such as latent Dirichlet allocation (LDA; Blei et al. 2003), but here the induced topics are tied to a linear discourse structure. This property enables a dynamic programming solution to find the exact maximum-likelihood segmentation." 
+
+%  ----------------------------------------
 
 
-fulano e fulana apresentam uma aboradagem baseada em um modelo baysesiano  
+"Lexical cohesion can be placed in a probabilistic context by modeling the words in each topic segment as draws from a multinomial language model associated with the segment."
+
+"Formally, if sentence t is in segment j, then the bag of words xt is drawn from the multinomial language model θ j."
+
+%  ---------------------------------------- 
+
+This is similar in spirit to hidden topic models such
+as latent Dirichlet allocation (Blei et al., 2003), but
+rather than assigning a hidden topic to each word,
+we constrain the topics to yield a linear segmenta-
+tion of the document.
+
+%  ---------------------------------------- 
 
 
 
+
+{As palavras que formam a sentença t em um segmento j provem de um modelo de linguagem multinomial θ j}
+
+
+
+
+They then build a linear segmentation by adding a switching variable to indicate whether the topic distribution for each sentence is identical to that of its predecessor. Unlike Purver et al., we do not assume a dataset in which topics are shared across multiple documents; indeed, our model can be applied to single documents individually.
+
+fulano mostra que a coesão léxica pode ser enquadrada em um contexto bayesiano modelando as palavras em cada tópico como 
+
+
+
+
+
+
+
+
+
+
+% Galley et al. (2003) encontra as pistas minerando segmentos rotulados em busca de palavras que ocorrem próximas aos limites; Elsner and Charniak (2008) construíram uma lista de frases-pista manualmente;
+
+Fulano e fulana apresentam um método para aproveitar essas pistas
+
+% -< Alguns termos são usados para expressar uma estrutura do texto
+% -< Alguns termos são usados para expressar uma estrutura do texto
+
+% -< Alguns termos são usados em tópicos específicos, mas outros são neutros em relação aos tópicos sendo usados para expressar uma estrutura do discurso.
+
+% Beltrano mostra que essas palavras não pertencem a um tópico específico, mas são neutras em relação a algum assunto sendo usadas para expressar a estrutura do discurso.
+
+
+Fulano e fulana mostram em seu trabalho que a coesão léxica pode ser enquadrada em um contexto bayesiano onde as palavras de um segmento surgem de um modelo de linguagem multinomial o qual é associado a um tópico.
+% -< e com isso aproveitam as pistas.
+
+
+
+
+
+fulano e fulana apresentam uma abordagem baseada em um modelo bayesiano que permite aproveitar esses indicadores para encontrar segmentos melhores.
