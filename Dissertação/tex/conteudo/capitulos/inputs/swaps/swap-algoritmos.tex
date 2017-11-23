@@ -1,13 +1,8 @@
 
 
-
-
 1 - TextSeg
 2 - MinCut
 3 - BayesSeg
-
-
-
 
 
 Lexical cohesion e.g., 
@@ -27,6 +22,7 @@ Lexical cohesion e.g.,
 - 
 - Impossibilidade de combinar cue-frases com as métricas tradicionais (cosine)
 - {enquadra a coesão léxica em um contexto Bayesiano}
+- usa programação dinâmica
 
 "The Bayesian framework provides a principled way to incorporate additional features such as cue phrases, a powerful indicator of discourse structure"
 
@@ -55,20 +51,31 @@ Lexical cohesion e.g.,
 
 %  ---------------------------------------- 
 
+"We model cue phrases as generated from a separate multinomial that is shared across all topics and documents in the dataset"
+As frases-pista vem de um único modelo generativo.
 
+%  ---------------------------------------- 
 
+"This is achieved by biasing the selection of samples towards boundaries with known cue phrases"
+{Isto é conseguido através da influência da seleção de amostras em direção a fronteiras com frases conhecidas}
+
+%  ---------------------------------------- 
 
 {As palavras que formam a sentença t em um segmento j provem de um modelo de linguagem multinomial θ j}
 
+%  ---------------------------------------- 
 
 
+"They then build a linear segmentation by adding a switching variable to indicate whether the topic distribution for each sentence is identical to that of its predecessor. Unlike Purver et al., we do not assume a dataset in which topics are shared across multiple documents; indeed, our model can be applied to single documents individually."
 
-They then build a linear segmentation by adding a switching variable to indicate whether the topic distribution for each sentence is identical to that of its predecessor. Unlike Purver et al., we do not assume a dataset in which topics are shared across multiple documents; indeed, our model can be applied to single documents individually.
+{Detecta-se um limite entre sentenças, quando a distribuição de tópicos entre elas for diferente}
+
+%  ---------------------------------------- 
+
+
+para as frases pistas, o modelo é adaptado para refletir essa ideia. Muda-se a probabilidade de ser um limite quando for uma pista.
 
 fulano mostra que a coesão léxica pode ser enquadrada em um contexto bayesiano modelando as palavras em cada tópico como 
-
-
-
 
 
 
