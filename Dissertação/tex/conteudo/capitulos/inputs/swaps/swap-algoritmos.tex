@@ -1,19 +1,4 @@
 
-
-1 - TextSeg
-2 - MinCut
-3 - BayesSeg
-
-
-Lexical cohesion e.g., 
-	- Utiyama and Isahara,     2001; {TextSeg}
-	- Galley et al.            2003; {LCSeg}
-	- Malioutov and Barzilay,  2006  {}
-
-
-
-
-
 ***************************
 # Bayesian Unsupervised Topic Segmentation
 ***************************
@@ -43,11 +28,7 @@ Lexical cohesion e.g.,
 
 %  ---------------------------------------- 
 
-	This is similar in spirit to hidden topic models such
-	as latent Dirichlet allocation (Blei et al., 2003), but
-	rather than assigning a hidden topic to each word,
-	we constrain the topics to yield a linear segmenta-
-	tion of the document.
+This is similar in spirit to hidden topic models such as latent Dirichlet allocation (Blei et al., 2003), but rather than assigning a hidden topic to each word, we constrain the topics to yield a linear segmentation of the document.
 
 %  ---------------------------------------- 
 
@@ -99,7 +80,50 @@ Fulano e fulana mostram em seu trabalho que a coesão léxica pode ser enquadrad
 % -< e com isso aproveitam as pistas.
 
 
+onde as palavras de um segmento surgem de um modelo de linguagem multinomial o qual é associado a um tópico.
+
+onde as palavras de um segmento surgem de modelo generativo em que o texto de cada segmento é produzido por uma distribuição léxica distinta. 
+
+
+
+
+
+
+
+
+
+
+
+% O método BayesSeg~\cite{} aborda a coesão léxica em um contexto bayesiano onde as palavras de um segmento surgem de um modelo generativo em que o texto de cada segmento é produzido por uma distribuição léxica distinta. Assim, considera-se que as palavras de cada sentença surgem de um modelo de linguagem multinomial o qual está associado ao assunto.		
+
+
+
+
+
 
 
 
 fulano e fulana apresentam uma abordagem baseada em um modelo bayesiano que permite aproveitar esses indicadores para encontrar segmentos melhores.
+
+
+
+
+
+
+
+1 - TextSeg
+2 - MinCut
+3 - BayesSeg
+
+
+Lexical cohesion e.g., 
+	- Utiyama and Isahara,     2001; {TextSeg}
+	- Galley et al.            2003; {LCSeg}
+	- Malioutov and Barzilay,  2006  {}
+
+
+
+
+% Utiyama ==>
+% https://github.com/jacobeisenstein/bayes-seg/tree/master/baselines/textseg-1.211
+

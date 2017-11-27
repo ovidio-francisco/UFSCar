@@ -57,6 +57,14 @@ ISBN 978-1-61197-283-2. Dispon{\'\i}vel em:
 \emph{Journal of the American Society for Information Science}, v.~41, n.~6, p.
   391--407, 1990.}
 
+\bibitem[Eisenstein e Barzilay 2008]{Eisenstein2008}
+\abntrefinfo{Eisenstein e Barzilay}{EISENSTEIN; BARZILAY}{2008}
+{EISENSTEIN, J.; BARZILAY, R. Bayesian unsupervised topic segmentation. In:
+  \emph{Proceedings of the Conference on Empirical Methods in Natural Language
+  Processing}. Stroudsburg, PA, USA: Association for Computational Linguistics,
+  2008.  (EMNLP '08), p. 334--343. Dispon{\'\i}vel em:
+  \url{http://dl.acm.org/citation.cfm?id=1613715.1613760}.}
+
 \bibitem[Ferret 2009]{Ferret2009}
 \abntrefinfo{Ferret}{FERRET}{2009}
 {FERRET, O. Improving text segmentation by combining endogenous and exogenous

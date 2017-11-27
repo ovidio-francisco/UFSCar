@@ -236,6 +236,7 @@ INPUT ./conteudo/capitulos/figs/exemplo-matrix-rank-A.png
 INPUT conteudo/capitulos/figs/exemplo-matrix-rank-B.png
 INPUT ./conteudo/capitulos/figs/exemplo-matrix-rank-B.png
 INPUT ./conteudo/capitulos/figs/exemplo-matrix-rank-B.png
+INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmbx12.tfm
 INPUT conteudo/capitulos/inputs/medidas-segmentacao.tex
 INPUT conteudo/capitulos/inputs/medidas-segmentacao.tex
 INPUT conteudo/capitulos/inputs/medidas-avaliacao-tradicionais-em-segmentacao.tex
@@ -245,7 +246,6 @@ INPUT ./conteudo/capitulos/figs/windiffzoom.jpg
 INPUT ./conteudo/capitulos/figs/windiffzoom.jpg
 INPUT conteudo/capitulos/inputs/representacao.tex
 INPUT conteudo/capitulos/inputs/representacao.tex
-INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmbx12.tfm
 INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmsso12.tfm
 INPUT conteudo/capitulos/inputs/extracao-de-topicos.tex
 INPUT conteudo/capitulos/inputs/extracao-de-topicos.tex
