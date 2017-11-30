@@ -1,11 +1,16 @@
 \chapter{Proposta}\label{cap3}
 
 
-Essa seção apresenta as etapas de desenvolvimento do sistema, bem como o seu funcionamento geral, desde a preparação dos documentos até a entrega dos históricos de ocorrência ao usuário. Inicialmente serão descritos a seleção e pré-processamento. Em seguida, será relatado como as técnicas de mineração de texto e resgate de informação são utilizadas nesse trabalho.
+Essa seção apresenta as etapas de desenvolvimento do sistema de recuperação de atas proposto, bem como o seu funcionamento geral, desde a preparação dos documentos até a entrega dos históricos de ocorrência ao usuário. Inicialmente serão descritos a seleção e pré-processamento das atas. Em seguida, será relatado como as técnicas de mineração de texto e recuperação de informação são utilizadas nesse trabalho.
 
-O objetivo do sistema é permitir ao usuário consultar uma coleção de documentos de reuniões a fim de obter todo o histórico de ocorrências de um determinado tema pesquisado, podendo identificar nos documentos onde o tema foi mencionado como informe ou onde houve uma decisão sobre o tema. Para isso, o sistema é divido em dois módulos principais: Módulo de preparação e manutenção e Módulo de consulta.
+A Figura \ref{fig:visao-geral} mostra a visão geral do sistema proposto cujo objetivo é permitir ao usuário consultar uma coleção de documentos de reuniões a fim de obter todo o histórico de ocorrências de um determinado tema pesquisado, podendo identificar nos documentos onde o tema foi mencionado como informe ou onde houve uma decisão sobre o tema. Para isso, o sistema é divido em dois módulos principais: módulo de preparação e manutenção e módulo de consulta.
 
-O módulo de preparação e manutenção recebe uma coleção de documentos e produz uma estrutura de dados interna, que é utilizada pelo módulo de consulta, que por sua vez, é responsável por receber a intensão usuário, proceder a busca na estrutura de dados interna e retornar os trechos associados com a intensão do usuário, tanto quanto ao assunto como no tipo de ocorrência. A Figura \ref{fig:visao-geral} mostra a visão geral do sistema com suas principais entradas e saídas. 
+
+% Apenas uma menção de que nas próximas seções vão ser apresentados detalhes dos módulos.
+
+
+
+A Figura \ref{fig:visao-geral} mostra a visão geral do sistema com suas principais entradas e saídas. 
 
 
   %--- Figura Visão Geral ---
@@ -23,33 +28,71 @@ O módulo de preparação e manutenção recebe uma coleção de documentos e pr
 
 \section{Módulo de preparação e manutenção}
 
-O módulo de preparação e manutenção tem como funções principais dividir cada ata em em segmentos de texto que contêm um assunto predominante, e descrevê-los por meio de técnicas de extração tópicos e classificação. Além disso, produz uma estrutura de dados que registra quais assuntos foram tratados na reunião, bem como o trecho do documento onde é discutido.
+O módulo de preparação e manutenção tem como funções principais dividir cada ata em em segmentos de texto que contêm um assunto predominante, e separá-los em categorias por meio de técnicas de extração tópicos e classificação. Além disso, produz uma estrutura de dados que registra quais assuntos foram tratados na reunião, bem como o trecho do documento onde é discutido.
 
 
+% ↓↓ Texto introdutório ↓↓
 \subsection{Preparação dos documentos}
 
-As atas são normalmente armazenadas em arquivos do tipo \textit{pdf}, \textit{doc}, \textit{docx} ou \textit{odt} que normalmente possuem formato binário.
-O texto deve ser preparado para os métodos de MT e RI. Inicialmente, o texto puro é extraído e passa por processos de transformação conforme apresentados a seguir.
+As atas são normalmente armazenadas em arquivos binários do tipo \textit{pdf}, \textit{doc}, \textit{docx} ou \textit{odt}. As atas devem ser pré-processadas e estruturadas para que posam ser aplicados métodos de MI e RI. Inicialmente, o texto puro é extraído e passa por processos de transformação conforme apresentados a seguir.
 
 
 \begin{enumerate}
 
 %  Cabeçalhos e rodapés
-\item Remoção de cabeçalhos e rodapés: as atas contém trechos que podem ser considerados pouco informativos e descartados durante o pré-processamento, como cabeçalhos e rodapés que se misturam aos tópicos tratados na reunião, podendo ser  inseridos no meio de um tópico prejudicando tanto os algoritmos de MT e RI, quanto a leitura do texto pelo usuário.
+\item Remoção de cabeçalhos e rodapés: as atas contém trechos que podem ser considerados pouco informativos e descartados durante o pré-processamento, como cabeçalhos e rodapés que se misturam aos tópicos tratados na reunião, podendo ser inseridos no meio de um tópico prejudicando tanto os algoritmos de MT e RI, quanto a leitura do texto pelo usuário. Um cabeçalho é a porção de texto que inicia cada página do documento e, de forma semelhante, um rodapé e a porção que as encerra. Detecta-se os cabeçalhos e os rodapés sempre que há uma repetição das primeiras e últimas palavras do documento.
+
 
 %  Identificação de sentenças
 \item Identificação de finais sentenças: devido ao estilo de pontuação desses documentos, como encerrar sentenças usando um \textit{";"} e inserção de linhas extras, foram usadas as regras especiais para identificação de finais de sentença. Cada final de sentença é identificado e marcado com uma \textit{string} especial.%, esse processo é melhor descrito na Subseção~\ref{subsec:indentificacaosentencas}. % Os detalhes sobre essas regras estão disponíveis para consulta em \urlsoftwares.
 
 
-% \item Segmentação
+
+\begin{algorithm}
+	\SetKwInOut{Input}{Entrada}
+	\SetKwInOut{Output}{Saída}
+	\SetKwBlock{Inicio}{início}{fim}
+	\SetKwFor{ParaTodo}{para todo}{}{fim para todo}
+	\SetKwIF{Se}{SenaoSe}{Senao}{}{}{senao se}{senao}{fim se}
+	\SetKwFor{Para}{}{}{}
+%	\SetKwAlgorithm{Algorithm}{Algoritmo}{}
+
+	
+	\Input{Texto}
+	\Output{Texto com identificações de finais de sentença}
+	
+	\ParaTodo {token, marcá-lo como final de sentença se:} {	
+
+	Terminar com um \texttt{!}\\
+	Terminar com um \texttt{.} e não for uma abreviação\\
+	Terminar em \texttt{.?;} e:
+		\Para{}{
+			For seguido de uma quebra de parágrafo ou tabulação\\
+			O próximo \textit{token} iniciar com  \texttt{(\{["'}\\
+			O próximo \textit{token} iniciar com letra maiúscula\\
+			O penúltimo caracter  for \texttt{)\}]"'}\\
+		}
+	}
+	
+	\caption{Identificação de finais de sentença}
+	\label{alg:identificacaofinaisdesent}
+\end{algorithm}
+
+
 
 
 %  Remoção de termos
-\item Redução de termos: eliminou-se as \textit{stop words} por meio de uma lista de 438 palavras. Além disso, eliminou-se a acentuação, sinais de pontuação, numerais e todos os \textit{tokens} menores que três caracteres. 
+\item Redução de termos: algumas palavras irrelevantes que não contribuem para a distinção do texto em tópicos ou categorias devem ser removidas, como artigos, preposições, pronomes, verbos de estado\footnote{Apresentam uma situação inativa, onde o verbo não expressa uma alteração, mas apenas uma propriedade ou condição dos envolvidos.}. 
+ARRUMAR -------------------------------------
+	Trata-se também \textit{stop words} as palavras de uso muito frequente dentro de um determinado domínio as quais não são capazes de discriminar documentos, portanto também não devem fazer parte dos atributos~\cite{Rezende2003}. Essas palavras são chamadas de \textit{stopwords}. 
+
+Para removê-las, 
+
+	Essas são removidas por meio de uma lista de 438 palavras. Além disso, eliminou-se a acentuação, sinais de pontuação, numerais e todos os \textit{tokens} menores que três caracteres.
 
 %  Stemming
-\item \textit{Stemming}: extraiu-se o radical de cada palavra. Para isso, as letras foram convertidas em caixa baixa e aplicou-se o algoritmo \textit{Orengo}%\footnote{\urlorengo} 
-	para remoção de sufixos.
+\item \textit{Stemming}: extraiu-se o radical de cada palavra. Para isso, as letras foram convertidas em caixa baixa e aplicou-se o algoritmo \textit{Orengo} %\footnote{http://www.inf.ufrgs.br/~viviane/rslp/} 
+	para remoção de sufixos~\cite{Alvares2005}.
 
 \end{enumerate}
 	

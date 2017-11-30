@@ -18,17 +18,17 @@
 \contentsline {subsection}{\numberline {3.1.1}Prepara\IeC {\c c}\IeC {\~a}o dos documentos}{18}{subsection.3.1.1}
 \contentsline {subsubsection}{\numberline {3.1.1.1}Segmenta\IeC {\c c}\IeC {\~a}o}{19}{subsubsection.3.1.1.1}
 \contentsline {subsubsection}{\numberline {3.1.1.2}Avalia\IeC {\c c}\IeC {\~a}o dos Segmentadores}{19}{subsubsection.3.1.1.2}
-\contentsline {subsubsection}{\numberline {3.1.1.3}Segmenta\IeC {\c c}\IeC {\~a}o de Refer\IeC {\^e}ncia}{19}{subsubsection.3.1.1.3}
-\contentsline {subsection}{\numberline {3.1.2}Configura\IeC {\c c}\IeC {\~a}o experimental}{19}{subsection.3.1.2}
-\contentsline {subsubsection}{\numberline {3.1.2.1}Crit\IeC {\'e}rios de avalia\IeC {\c c}\IeC {\~a}o}{20}{subsubsection.3.1.2.1}
+\contentsline {subsubsection}{\numberline {3.1.1.3}Segmenta\IeC {\c c}\IeC {\~a}o de Refer\IeC {\^e}ncia}{20}{subsubsection.3.1.1.3}
+\contentsline {subsection}{\numberline {3.1.2}Configura\IeC {\c c}\IeC {\~a}o experimental}{20}{subsection.3.1.2}
+\contentsline {subsubsection}{\numberline {3.1.2.1}Crit\IeC {\'e}rios de avalia\IeC {\c c}\IeC {\~a}o}{21}{subsubsection.3.1.2.1}
 \contentsline {subsubsection}{\numberline {3.1.2.2}Resultados}{21}{subsubsection.3.1.2.2}
-\contentsline {subsection}{\numberline {3.1.3}Representa\IeC {\c c}\IeC {\~a}o Computacional}{22}{subsection.3.1.3}
+\contentsline {subsection}{\numberline {3.1.3}Representa\IeC {\c c}\IeC {\~a}o Computacional}{23}{subsection.3.1.3}
 \contentsline {subsection}{\numberline {3.1.4}Extra\IeC {\c c}\IeC {\~a}o de T\IeC {\'o}picos / Classifica\IeC {\c c}\IeC {\~a}o de Textos}{23}{subsection.3.1.4}
 \contentsline {section}{\numberline {3.2}M\IeC {\'o}dulo Consulta}{23}{section.3.2}
 \contentsline {subsection}{\numberline {3.2.1}Sele\IeC {\c c}\IeC {\~a}o dos t\IeC {\'o}picos}{23}{subsection.3.2.1}
 \contentsline {subsection}{\numberline {3.2.2}Visualiza\IeC {\c c}\IeC {\~a}o}{23}{subsection.3.2.2}
-\contentsline {section}{\numberline {3.3}Estudo de caso}{23}{section.3.3}
-\contentsline {section}{\numberline {3.4}Avalia\IeC {\c c}\IeC {\~a}o}{23}{section.3.4}
+\contentsline {section}{\numberline {3.3}Estudo de caso}{24}{section.3.3}
+\contentsline {section}{\numberline {3.4}Avalia\IeC {\c c}\IeC {\~a}o}{24}{section.3.4}
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \contentsline {chapter}{Refer\^encias}{25}{section*.2}
 \renewcommand *{\cftappendixname }{AP\^ENDICE \space }

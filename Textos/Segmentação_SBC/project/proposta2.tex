@@ -179,35 +179,35 @@ Na Tabela~\ref{tab:preprocessamento} é mostrado, para cada ata, a quantidade de 
 %	Devido ao estilo de pontuação desses documentos, como encerrar sentenças usando um \textit{";"} e inserção de linhas extras, foram usadas as regras apresentadas no Algoritmo 1 para identificar os finais de sentenças.  
 %
 %
-%\begin{algorithm}
-%	\SetKwInOut{Input}{Entrada}
-%	\SetKwInOut{Output}{Saída}
-%	\SetKwBlock{Inicio}{início}{fim}
-%	\SetKwFor{ParaTodo}{para todo}{}{fim para todo}
-%	\SetKwIF{Se}{SenaoSe}{Senao}{}{}{senao se}{senao}{fim se}
-%	\SetKwFor{Para}{}{}{}
-%%	\SetKwAlgorithm{Algorithm}{Algoritmo}{}
-%
-%	
-%	\Input{Texto}
-%	\Output{Texto com identificações de finais de sentença}
-%	
-%	\ParaTodo {token, marcá-lo como final de sentença se:} {	
-%
-%	Terminar com um \texttt{!}\\
-%	Terminar com um \texttt{.} e não for uma abreviação\\
-%	Terminar em \texttt{.?;} e:
-%		\Para{}{
-%			For seguido de uma quebra de parágrafo ou tabulação\\
-%			O próximo \textit{token} iniciar com  \texttt{(\{["'}\\
-%			O próximo \textit{token} iniciar com letra maiúscula\\
-%			O penúltimo caracter  for \texttt{)\}]"'}\\
-%		}
-%	}
-%	
-%	\caption{Identificação de finais de sentença}
-%	\label{alg:identificacaofinaisdesent}
-%\end{algorithm}
+\begin{algorithm}
+	\SetKwInOut{Input}{Entrada}
+	\SetKwInOut{Output}{Saída}
+	\SetKwBlock{Inicio}{início}{fim}
+	\SetKwFor{ParaTodo}{para todo}{}{fim para todo}
+	\SetKwIF{Se}{SenaoSe}{Senao}{}{}{senao se}{senao}{fim se}
+	\SetKwFor{Para}{}{}{}
+%	\SetKwAlgorithm{Algorithm}{Algoritmo}{}
+
+	
+	\Input{Texto}
+	\Output{Texto com identificações de finais de sentença}
+	
+	\ParaTodo {token, marcá-lo como final de sentença se:} {	
+
+	Terminar com um \texttt{!}\\
+	Terminar com um \texttt{.} e não for uma abreviação\\
+	Terminar em \texttt{.?;} e:
+		\Para{}{
+			For seguido de uma quebra de parágrafo ou tabulação\\
+			O próximo \textit{token} iniciar com  \texttt{(\{["'}\\
+			O próximo \textit{token} iniciar com letra maiúscula\\
+			O penúltimo caracter  for \texttt{)\}]"'}\\
+		}
+	}
+	
+	\caption{Identificação de finais de sentença}
+	\label{alg:identificacaofinaisdesent}
+\end{algorithm}
 %
  
 

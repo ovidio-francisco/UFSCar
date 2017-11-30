@@ -131,14 +131,18 @@ INPUT /usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
+INPUT algorithm2e.sty
+INPUT algorithm2e.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/tools/xspace.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/tools/xspace.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/relsize/relsize.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/relsize/relsize.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/hyperref/backref.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/hyperref/backref.sty
 INPUT abntex2cite.sty
 INPUT abntex2cite.sty
 INPUT abntex2abrev.sty
 INPUT abntex2abrev.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/relsize/relsize.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/relsize/relsize.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/relsize/relsize.sty
 INPUT macros.tex
 INPUT macros.tex
@@ -236,7 +240,6 @@ INPUT ./conteudo/capitulos/figs/exemplo-matrix-rank-A.png
 INPUT conteudo/capitulos/figs/exemplo-matrix-rank-B.png
 INPUT ./conteudo/capitulos/figs/exemplo-matrix-rank-B.png
 INPUT ./conteudo/capitulos/figs/exemplo-matrix-rank-B.png
-INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmbx12.tfm
 INPUT conteudo/capitulos/inputs/medidas-segmentacao.tex
 INPUT conteudo/capitulos/inputs/medidas-segmentacao.tex
 INPUT conteudo/capitulos/inputs/medidas-avaliacao-tradicionais-em-segmentacao.tex
@@ -261,6 +264,9 @@ INPUT ./conteudo/capitulos/figs/visao-geral-3.eps
 INPUT ./conteudo/capitulos/figs/visao-geral-3-eps-converted-to.pdf
 INPUT ./conteudo/capitulos/figs/visao-geral-3-eps-converted-to.pdf
 INPUT ./conteudo/capitulos/figs/visao-geral-3-eps-converted-to.pdf
+INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmbx12.tfm
+INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmbx8.tfm
+INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmtt12.tfm
 INPUT conteudo/capitulos/figs/pre-processamento.jpg
 INPUT ./conteudo/capitulos/figs/pre-processamento.jpg
 INPUT ./conteudo/capitulos/figs/pre-processamento.jpg
@@ -287,6 +293,7 @@ INPUT /usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc
 INPUT /usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc
 INPUT /usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc
 INPUT /usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb
+INPUT /usr/share/texmf/fonts/type1/public/lm/lmbx8.pfb
 INPUT /usr/share/texmf/fonts/type1/public/lm/lmex10.pfb
 INPUT /usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb
 INPUT /usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb
@@ -303,3 +310,4 @@ INPUT /usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb
 INPUT /usr/share/texmf/fonts/type1/public/lm/lmsso12.pfb
 INPUT /usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb
 INPUT /usr/share/texmf/fonts/type1/public/lm/lmtt10.pfb
+INPUT /usr/share/texmf/fonts/type1/public/lm/lmtt12.pfb

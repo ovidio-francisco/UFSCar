@@ -18,7 +18,6 @@ Database file #1: abntex2-options.bib
 Database file #2: referencias.bib
 A bad cross reference---entry "Cheng2013"
 refers to entry "conf/sdm/2013", which doesn't exist
-Warning--I didn't find a database entry for "Rezende2003"
 Warning--I didn't find a database entry for "conf/sdm/2013"
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
@@ -29,45 +28,45 @@ Reallocated glb_str_end (elt_size=4) to 20 items from 10.
 | Em caso de dúvidas ou problemas com este estilo procure |
 | http://abntex2.googlecode.com                           |
 +---------------------------------------------------------+
-You've used 17 entries,
+You've used 19 entries,
             6711 wiz_defined-function locations,
-            1350 strings with 13330 characters,
-and the built_in function-call counts, 28084 in all, are:
-= -- 3307
-> -- 538
-< -- 672
-+ -- 885
-- -- 161
-* -- 1826
-:= -- 3415
-add.period$ -- 86
-call.type$ -- 17
-change.case$ -- 186
-chr.to.int$ -- 35
-cite$ -- 16
-duplicate$ -- 2646
-empty$ -- 1188
-format.name$ -- 779
-if$ -- 5789
+            1368 strings with 13777 characters,
+and the built_in function-call counts, 30607 in all, are:
+= -- 3567
+> -- 604
+< -- 711
++ -- 947
+- -- 181
+* -- 2000
+:= -- 3726
+add.period$ -- 97
+call.type$ -- 19
+change.case$ -- 207
+chr.to.int$ -- 37
+cite$ -- 18
+duplicate$ -- 2847
+empty$ -- 1336
+format.name$ -- 872
+if$ -- 6344
 int.to.chr$ -- 0
 int.to.str$ -- 0
-missing$ -- 303
-newline$ -- 92
-num.names$ -- 81
-pop$ -- 386
+missing$ -- 342
+newline$ -- 101
+num.names$ -- 91
+pop$ -- 436
 preamble$ -- 1
-purify$ -- 69
+purify$ -- 77
 quote$ -- 0
-skip$ -- 2730
+skip$ -- 2929
 stack$ -- 1
-substring$ -- 1339
-swap$ -- 1051
-text.length$ -- 37
+substring$ -- 1443
+swap$ -- 1135
+text.length$ -- 39
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 9
+type$ -- 10
 warning$ -- 0
-while$ -- 145
+while$ -- 161
 width$ -- 0
-write$ -- 294
+write$ -- 328
 (There was 1 error message)

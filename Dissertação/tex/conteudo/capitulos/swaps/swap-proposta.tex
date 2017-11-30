@@ -1,3 +1,42 @@
+
+
+
+% O módulo de preparação e manutenção recebe uma coleção de documentos e produz uma estrutura de dados interna, que é utilizada pelo módulo de consulta, que por sua vez, é responsável por receber a intensão usuário, proceder a busca na estrutura de dados interna e retornar os trechos associados com a intensão do usuário, tanto quanto ao assunto como no tipo de ocorrência. A Figura \ref{fig:visao-geral} mostra a visão geral do sistema com suas principais entradas e saídas. 
+
+
+% O objetivo do sistema é permitir ao usuário consultar uma coleção de documentos de reuniões a fim de obter todo o histórico de ocorrências de um determinado tema pesquisado, podendo identificar nos documentos onde o tema foi mencionado como informe ou onde houve uma decisão sobre o tema. Para isso, o sistema é divido em dois módulos principais: Módulo de preparação e manutenção e Módulo de consulta.
+
+
+
+
+
+
+ 
+% Um cabeçalho é a porção de texto que inicia cada página do documento e se repete ao longo do texto, de forma semelhante, um rodapé encerra as páginas. 
+	% Um cabeçalho é a porção de texto inicial de documento que se repete ao longo do texto, da mesma forma um rodapé se repete. Detecta-se um cabeçalho sempre que há uma repetição das primeiras palavras do documento.
+
+% ==========| Stop words |==========
+
+
+
+% verbo inativo --> http://www.lpeu.com.br/q/sj8n2
+
+% Redução de termos: eliminou-se as \textit{stop words} por meio de uma lista de 438 palavras. Além disso, eliminou-se a acentuação, sinais de pontuação, numerais e todos os \textit{tokens} menores que três caracteres. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 o módulo de preparação/manutenção recebe como entrada os documentos que compõe a base de consultas e produz uma estrutura de dados interna que será utilizada pelo módulo de consulta. Resumidamente, divide cada documento em segmentos de texto, que contêm um assunto predominante. Em seguida cada segmento será classificado de acordo o tipo da ocorrência de cada assunto, que pode ser, por exemplo, uma decisão ou um informe. Assim, a estrutura de dados interna registrará quais assuntos foram tratados na reunião, bem como o trecho do documento onde é discutido e seu tipo. Os tipos de ocorrência, que serão tratadas pelo sistema, serão ainda estabelecidos em conjunto com usuários especialistas, com base em uma amostra de documentos.
 
 Uma vez que os segmentos estejam rotulados e representados computacionalmente, a tarefa é identificar qual assunto está presente em cada trecho e qual é o tipo de ocorrência. A fim de encontrar o principal assunto abordado em um trecho, pretende-se usar uma ferramenta de extração de tópicos para produzir uma base de trecho/tópicos, a qual será parte da estrutura de dados interna.

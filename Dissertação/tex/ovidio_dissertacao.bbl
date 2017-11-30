@@ -5,6 +5,15 @@
 \providecommand{\abntbstabout}[1]{}
 \abntbstabout{v-1.9.2 }
 
+\bibitem[Alvares, Garcia e Ferraz 2005]{Alvares2005}
+\abntrefinfo{Alvares, Garcia e Ferraz}{ALVARES; GARCIA; FERRAZ}{2005}
+{ALVARES, R.~V.; GARCIA, A. C.~B.; FERRAZ, I. Stembr: A stemming algorithm for
+  the brazilian portuguese language. In:  \emph{Proceedings of the 12th
+  Portuguese Conference on Progress in Artificial Intelligence}. Berlin,
+  Heidelberg: Springer-Verlag, 2005.  (EPIA'05), p. 693--701.
+ISBN 3-540-30737-0, 978-3-540-30737-2. Dispon{\'\i}vel em:
+  \url{http://dx.doi.org/10.1007/11595014\_67}.}
+
 \bibitem[Beeferman, Berger e Lafferty 1999]{Beeferman1999}
 \abntrefinfo{Beeferman, Berger e Lafferty}{BEEFERMAN; BERGER; LAFFERTY}{1999}
 {BEEFERMAN, D.; BERGER, A.; LAFFERTY, J. Statistical models for text
@@ -111,6 +120,11 @@ v.~401, p. 788--91, 11 1999.}
   1553--1556.
 ISBN 978-1-60558-512-3. Dispon{\'\i}vel em:
   \url{http://doi.acm.org/10.1145/1645953.1646170}.}
+
+\bibitem[Rezende 2003]{Rezende2003}
+\abntrefinfo{Rezende}{REZENDE}{2003}
+{REZENDE, S.~O. \emph{Sistemas Inteligentes}. Barueri, SP: Manole, 2003. 337 -
+  270~p.}
 
 \bibitem[Sakahara, Okada e Nitta 2014]{Sakahara2014}
 \abntrefinfo{Sakahara, Okada e Nitta}{SAKAHARA; OKADA; NITTA}{2014}
