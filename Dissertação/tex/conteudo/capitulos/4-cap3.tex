@@ -3,12 +3,7 @@
 
 Essa seção apresenta as etapas de desenvolvimento do sistema de recuperação de atas proposto, bem como o seu funcionamento geral, desde a preparação dos documentos até a entrega dos históricos de ocorrência ao usuário. Inicialmente serão descritos a seleção e pré-processamento das atas. Em seguida, será relatado como as técnicas de mineração de texto e recuperação de informação são utilizadas nesse trabalho.
 
-A Figura \ref{fig:visao-geral} mostra a visão geral do sistema proposto cujo objetivo é permitir ao usuário consultar uma coleção de documentos de reuniões a fim de obter todo o histórico de ocorrências de um determinado tema pesquisado, podendo identificar nos documentos onde o tema foi mencionado como informe ou onde houve uma decisão sobre o tema. Para isso, o sistema é divido em dois módulos principais: módulo de preparação e manutenção e módulo de consulta.
-
-
-% Apenas uma menção de que nas próximas seções vão ser apresentados detalhes dos módulos.
-
-
+A Figura \ref{fig:visao-geral} mostra a visão geral do sistema proposto cujo objetivo é permitir ao usuário consultar uma coleção de documentos de reuniões a fim de obter todo o histórico de ocorrências de um determinado tema relacionado à pesquisa do usuário, podendo identificar nos documentos onde esse tema foi mencionado, bem como se houve uma decisão sobre o tema. Para isso, o sistema é divido em dois módulos principais: módulo de preparação e manutenção e módulo de consulta, os quais serão detalhados nas próximas seções.  % "isso envolve a classificação. Onde entram os tópicos?" --> Rafael
 
 A Figura \ref{fig:visao-geral} mostra a visão geral do sistema com suas principais entradas e saídas. 
 
@@ -28,13 +23,34 @@ A Figura \ref{fig:visao-geral} mostra a visão geral do sistema com suas princip
 
 \section{Módulo de preparação e manutenção}
 
-O módulo de preparação e manutenção tem como funções principais dividir cada ata em em segmentos de texto que contêm um assunto predominante, e separá-los em categorias por meio de técnicas de extração tópicos e classificação. Além disso, produz uma estrutura de dados que registra quais assuntos foram tratados na reunião, bem como o trecho do documento onde é discutido.
+O módulo de preparação e manutenção tem como funções principais dividir cada ata em em segmentos de texto que contêm um assunto predominante, e separá-los em categorias por meio de técnicas de extração tópicos e classificação. Além disso, produz uma estrutura de dados que registra quais assuntos foram tratados na reunião, bem como o trecho do documento onde é discutido.  
+% melhorar ↓↓↓↓↓
+% --> ↓↓  Texto introdutório  ↓↓
+% --> ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓
+A seguir são apresentadas as etapas do módulo de preparação e manutenção desde a preparação dos documentos até a entrega da estrutura interna ao módulo de consulta. 
 
 
-% ↓↓ Texto introdutório ↓↓
 \subsection{Preparação dos documentos}
 
 As atas são normalmente armazenadas em arquivos binários do tipo \textit{pdf}, \textit{doc}, \textit{docx} ou \textit{odt}. As atas devem ser pré-processadas e estruturadas para que posam ser aplicados métodos de MI e RI. Inicialmente, o texto puro é extraído e passa por processos de transformação conforme apresentados a seguir.
+
+A Figura~\ref{fig:exemplopreprocessamento} mostra a etapa de preparação de um documento em português que inclui a remoção de elementos menos significativos e a identificação de sentenças e segmentos.
+	
+% -<? Colocar aqui uma explicação do que é um segmento e uma sentença?
+
+\begin{center}
+	\begin{figure}
+
+	\includegraphics[trim={ 0 180 0 180 },clip,page=1,width=\textwidth]{conteudo/capitulos/figs/pre-process.pdf}
+
+	\caption{Etapa de pré-processamento}
+	\label{fig:exemplopreprocessamento}
+	\end{figure}
+\end{center}
+
+
+
+
 
 
 \begin{enumerate}
@@ -82,34 +98,17 @@ As atas são normalmente armazenadas em arquivos binários do tipo \textit{pdf},
 
 
 %  Remoção de termos
-\item Redução de termos: algumas palavras irrelevantes que não contribuem para a distinção do texto em tópicos ou categorias devem ser removidas, como artigos, preposições, pronomes, verbos de estado\footnote{Apresentam uma situação inativa, onde o verbo não expressa uma alteração, mas apenas uma propriedade ou condição dos envolvidos.}. 
-ARRUMAR -------------------------------------
-	Trata-se também \textit{stop words} as palavras de uso muito frequente dentro de um determinado domínio as quais não são capazes de discriminar documentos, portanto também não devem fazer parte dos atributos~\cite{Rezende2003}. Essas palavras são chamadas de \textit{stopwords}. 
-
-Para removê-las, 
-
-	Essas são removidas por meio de uma lista de 438 palavras. Além disso, eliminou-se a acentuação, sinais de pontuação, numerais e todos os \textit{tokens} menores que três caracteres.
+\item Redução de termos: Removeu-se do as palavras que não contribuem para a distinção do texto em tópicos ou categorias, as quais são chamadas de \textit{stop words}. Palavras como artigos, preposições, pronomes, verbos de estado\footnote{Apresentam uma situação inativa, onde o verbo não expressa uma alteração, mas apenas uma propriedade ou condição dos envolvidos.}. Trata-se também como \textit{stop words} as palavras de uso muito frequente dentro de um determinado domínio as quais não são capazes de discriminar documentos, portanto também não devem fazer parte dos atributos~\cite{Rezende2003}. Para removê-las, as letras foram convertidas em caixa baixa e usou-se uma lista de 438 palavras para identificá-las. Além disso, eliminou-se a acentuação, sinais de pontuação, numerais e todos os \textit{tokens} menores que três caracteres.
 
 %  Stemming
-\item \textit{Stemming}: extraiu-se o radical de cada palavra. Para isso, as letras foram convertidas em caixa baixa e aplicou-se o algoritmo \textit{Orengo} %\footnote{http://www.inf.ufrgs.br/~viviane/rslp/} 
+\item \textit{Stemming}: extraiu-se o radical de cada palavra. Para isso, aplicou-se o algoritmo \textit{Orengo} %\footnote{http://www.inf.ufrgs.br/~viviane/rslp/} 
 	para remoção de sufixos~\cite{Alvares2005}.
 
 \end{enumerate}
 	
 
-A Figura~\ref{fig:exemplopreprocessamento} mostra a etapa de preparação de um documento em português.
-	
-
-
-  \begin{figure}
-	\centering
-	\includegraphics[width=1\textwidth]{conteudo/capitulos/figs/pre-processamento.jpg}
-	\caption{Exemplo de pré-processamento.}
-	\label{fig:exemplopreprocessamento}
-  \end{figure}
 
 % -< Ao final .....
-
 
 
 
@@ -149,20 +148,17 @@ Para esse trabalho, os algoritmos \textit{TextTiling} ~\cite{Hearst1994} e \text
 
 
 
-\subsubsection{Avaliação dos Segmentadores}
-
-
-%  Critérios de avaliação
-Para que se possa avaliar um segmentador automático de textos é preciso uma referência, isto é, um texto com os limites entre os segmentos conhecidos. Essa referência, deve ser confiável, sendo uma segmentação legítima que é capaz de dividir o texto em porções relativamente independentes, ou seja, uma segmentação ideal.
 
 
 
 \subsubsection{Segmentação de Referência}
 	 \label{subsubsec:segmetacaoreferencia}
 
-
+ % \subsubsection{Avaliação dos Segmentadores}
+ %  Critérios de avaliação
+ Para que se possa avaliar um segmentador automático de textos é preciso uma referência, isto é, um texto com os limites entre os segmentos conhecidos. Essa referência, deve ser confiável, sendo uma segmentação legítima que é capaz de dividir o texto em porções relativamente independentes, ou seja, uma segmentação ideal.
 % Como foram obtidas (software e especialistas) 
-A fim de obter um conjunto de documentos segmentados que possam servir como referência na avaliação, os documentos coletados foram segmentados manualmente por profissionais que participam de reuniões. Para isso, utilizou-se um \textit{software}, desenvolvido com esse objetivo especifico, que permitiu aos voluntários visualizar um documento, e indicar livremente as divisões entre segmentos. Com o uso desse \textit{software} foram coletados os dados de seis atas segmentadas por dois participantes das reuniões, os quais serviram como referência para a avaliação dos algoritmos. O \textit{software} desenvolvido para segmentação manual está disponível para utilização e consulta em~\urlsoftwares
+A fim de obter um conjunto de documentos segmentados que possam servir como referência na avaliação, os documentos coletados foram segmentados manualmente por dois coordenadores de curso que participam de reuniões. Para isso, utilizou-se um \textit{software}, desenvolvido com esse objetivo especifico, que permitiu aos voluntários visualizar um documento, e indicar livremente as divisões entre segmentos. Com o uso desse \textit{software} foram coletados os dados de seis atas segmentadas por dois participantes das reuniões, os quais serviram como referência para a avaliação dos algoritmos. O \textit{software} desenvolvido para segmentação manual está disponível para utilização e consulta em~\urlsoftwares
 
 Os arquivos gerados foram tratados para que os segmentos sempre terminem em uma sentença reconhecida pelo algoritmo, uma vez que as sentenças são a unidade mínima de informação nesse trabalho.
 
@@ -315,29 +311,61 @@ De acordo com os últimos testes, o algoritmo \textit{C99} obteve melhor desempe
 
 
 
-O algoritmo \textit{C99} obteve melhor desempenho em acurácia, precisão, $F^1$, $P_k$ e \textit{WindowDiff}, enquanto o \textit{TextTiling} obteve o melhor desempenho em revocação como pode ser visto na Tabela~\ref{tab:configfinal}. 
+% O algoritmo \textit{C99} obteve melhor desempenho em acurácia, precisão, $F^1$, $P_k$ e \textit{WindowDiff}, enquanto o \textit{TextTiling} obteve o melhor desempenho em revocação como pode ser visto na Tabela~\ref{tab:configfinal}. 
+
+
+% \begin{table}[!h]
+	% \centering
+
+	% \begin{tabular}{|l|l|c|c|c|c|c|} \hline
+		% \textbf{Algoritmo} & 
+		% \textbf{Medida} & 
+		% \textbf{Média}\\	\hline
+
+	% \textit{C99} & P$_k$			   & 0,116 \\ \hline
+	% \textit{C99} & \textit{WindowDiff} & 0,390 \\ \hline
+	% \textit{C99} & Acurácia			   & 0,609 \\ \hline
+	% \textit{C99} & Precisão			   & 0,720 \\ \hline
+	% \textit{C99} & F$^1$			   & 0,655 \\ \hline
+	% \textit{TextTiling} &	Revocação  & 0,917 \\ \hline
+
+	% \end{tabular}
+	
+	% \caption{Melhores resultados obtidos.}
+	% \label{tab:configfinal}
+% \end{table}
+
+
 
 
 \begin{table}[!h]
 	\centering
+\begin{tabular}{|l||c|c|c|c|c|c|c|} 
+\hline 
+\textbf{M\'{e}todo} & 
+\textbf{Pk} & 
+\textbf{WD} & 
+\textbf{A } & 
+\textbf{P } & 
+\textbf{R } & 
+\textbf{F1} & 
+\textbf{Segmentos}\\ \hline
 
-	\begin{tabular}{|l|l|c|c|c|c|c|} \hline
-		\textbf{Algoritmo} & 
-		\textbf{Medida} & 
-		\textbf{Média}\\	\hline
+Senten\c{c}as & 0.320 & 0.502 & 0.498 & 0.498 & \textbf{1.000} & \textbf{0.642} & 22.083\\ \hline
+TextTiling    & 0.275 & 0.469 & 0.531 & 0.514 & 0.937 & 0.640 & 19.583\\ \hline
+C99           & 0.142 & 0.426 & 0.574 & 0.601 & 0.473 & 0.506 & 8.167\\ \hline
+BayesSeg      & 0.148 & 0.414 & 0.586 & 0.599 & 0.526 & 0.528 & 8.750\\ \hline
+MinCut        & 0.226 & 0.532 & 0.468 & 0.464 & 0.438 & 0.432 & 10.333\\ \hline
+TextSeg       & \textbf{0.085} & \textbf{0.387} & \textbf{0.613} & \textbf{0.714} & 0.412 & 0.497 & 5.167\\ \hline
+\end{tabular} 
 
-	\textit{C99} & P$_k$			   & 0,116 \\ \hline
-	\textit{C99} & \textit{WindowDiff} & 0,390 \\ \hline
-	\textit{C99} & Acurácia			   & 0,609 \\ \hline
-	\textit{C99} & Precisão			   & 0,720 \\ \hline
-	\textit{C99} & F$^1$			   & 0,655 \\ \hline
-	\textit{TextTiling} &	Revocação  & 0,917 \\ \hline
-
-	\end{tabular}
-	
 	\caption{Melhores resultados obtidos.}
 	\label{tab:configfinal}
 \end{table}
+
+
+
+
 
 
 

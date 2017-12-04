@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.8.22)  29 NOV 2017 23:53
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.8.22)  4 DEC 2017 00:57
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1410,7 +1410,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-<conteudo/capitulos/figs/exemplo-matrix-rank-A.png, id=154, 269.50688pt x 141.52875pt>
+<conteudo/capitulos/figs/exemplo-matrix-rank-A.png, id=152, 269.50688pt x 141.52875pt>
 File: conteudo/capitulos/figs/exemplo-matrix-rank-A.png Graphic file (type png)
  <use conteudo/capitulos/figs/exemplo-matrix-rank-A.png>
 Package pdftex.def Info: conteudo/capitulos/figs/exemplo-matrix-rank-A.png used on input line 31.
@@ -1425,7 +1425,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-<conteudo/capitulos/figs/exemplo-matrix-rank-B.png, id=156, 268.75406pt x 141.52875pt>
+<conteudo/capitulos/figs/exemplo-matrix-rank-B.png, id=154, 268.75406pt x 141.52875pt>
 File: conteudo/capitulos/figs/exemplo-matrix-rank-B.png Graphic file (type png)
  <use conteudo/capitulos/figs/exemplo-matrix-rank-B.png>
 Package pdftex.def Info: conteudo/capitulos/figs/exemplo-matrix-rank-B.png used on input line 32.
@@ -1443,7 +1443,7 @@ LaTeX Warning: Command \c invalid in math mode on input line 60.
 
 LaTeX Warning: Command \c invalid in math mode on input line 60.
 
-[10]) <conteudo/capitulos/figs/windiffzoom.jpg, id=192, 312.2064pt x 78.5334pt>
+[10]) <conteudo/capitulos/figs/windiffzoom.jpg, id=190, 312.2064pt x 78.5334pt>
 File: conteudo/capitulos/figs/windiffzoom.jpg Graphic file (type jpg)
  <use conteudo/capitulos/figs/windiffzoom.jpg>
 Package pdftex.def Info: conteudo/capitulos/figs/windiffzoom.jpg used on input line 18.
@@ -1476,25 +1476,28 @@ Package epstopdf Info: Source file: <conteudo/capitulos/figs/visao-geral-3.eps>
 (epstopdf)                    date: 2017-09-19 00:46:42
 (epstopdf)                    size: 66255 bytes
 (epstopdf)             Command: <repstopdf --outfile=conteudo/capitulos/figs/visao-geral-3-eps-converted-to.pdf conteudo/capitulos/figs/visao-geral-3.eps>
-(epstopdf)             \includegraphics on input line 19.
+(epstopdf)             \includegraphics on input line 14.
 Package epstopdf Info: Output file is already uptodate.
- <conteudo/capitulos/figs/visao-geral-3-eps-converted-to.pdf, id=262, 1084.05pt x 542.025pt>
+ <conteudo/capitulos/figs/visao-geral-3-eps-converted-to.pdf, id=260, 1084.05pt x 542.025pt>
 File: conteudo/capitulos/figs/visao-geral-3-eps-converted-to.pdf Graphic file (type pdf)
  <use conteudo/capitulos/figs/visao-geral-3-eps-converted-to.pdf>
-Package pdftex.def Info: conteudo/capitulos/figs/visao-geral-3-eps-converted-to.pdf used on input line 19.
+Package pdftex.def Info: conteudo/capitulos/figs/visao-geral-3-eps-converted-to.pdf used on input line 14.
 (pdftex.def)             Requested size: 412.28189pt x 206.13704pt.
  [17
 
 
 
- <./conteudo/capitulos/figs/visao-geral-3-eps-converted-to.pdf>] [18] <conteudo/capitulos/figs/pre-processamento.jpg, id=300, 838.332pt x 209.1012pt>
-File: conteudo/capitulos/figs/pre-processamento.jpg Graphic file (type jpg)
- <use conteudo/capitulos/figs/pre-processamento.jpg>
-Package pdftex.def Info: conteudo/capitulos/figs/pre-processamento.jpg used on input line 106.
-(pdftex.def)             Requested size: 455.0pt x 113.49046pt.
+ <./conteudo/capitulos/figs/visao-geral-3-eps-converted-to.pdf>] <conteudo/capitulos/figs/pre-process.pdf, id=270, page=1, 844.15375pt x 597.23125pt>
+File: conteudo/capitulos/figs/pre-process.pdf Graphic file (type pdf)
+ <use conteudo/capitulos/figs/pre-process.pdf, page 1>
+Package pdftex.def Info: conteudo/capitulos/figs/pre-process.pdf, page1 used on input line 44.
+(pdftex.def)             Requested size: 455.0pt x 127.14316pt.
+ [18 <./conteudo/capitulos/figs/pre-process.pdf
 
-./conteudo/capitulos/4-cap3.tex:165: Undefined control sequence.
-l.165 ... utilização e consulta em~\urlsoftwares
+pdfTeX warning: pdflatex (file ./conteudo/capitulos/figs/pre-process.pdf): PDF inclusion: invalid other resource which is no dict (key 'ProcSets', type <array>); ignored.
+>]
+./conteudo/capitulos/4-cap3.tex:161: Undefined control sequence.
+l.161 ... utilização e consulta em~\urlsoftwares
                                                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1502,9 +1505,9 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-[19 <./conteudo/capitulos/figs/pre-processamento.jpg>] [20]
-./conteudo/capitulos/4-cap3.tex:234: Undefined control sequence.
-l.234 ...sponíveis para consulta em~\urlsoftwares
+[19] [20]
+./conteudo/capitulos/4-cap3.tex:230: Undefined control sequence.
+l.230 ...sponíveis para consulta em~\urlsoftwares
                                                   .
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1518,10 +1521,10 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[21]
-Underfull \vbox (badness 7944) has occurred while \output is active []
 
- [22] [23]) [24] (./ovidio_dissertacao.bbl (./ovidio_dissertacao.brf)
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[21] [22] [23]) [24] (./ovidio_dissertacao.bbl (./ovidio_dissertacao.brf)
 \tf@brf=\write6
 \openout6 = `ovidio_dissertacao.brf'.
 
@@ -1542,7 +1545,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 309.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 309.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 309.
 Package rerunfilecheck Info: File `ovidio_dissertacao.brf' has not changed.
-(rerunfilecheck)             Checksum: 457F496A0BBB8E97830D342477B4F608;1979.
+(rerunfilecheck)             Checksum: 71769A005EEFF34936DFCB3ED9680EF0;1979.
 
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
@@ -1554,18 +1557,18 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 309.
 ### simple group (level 1) entered at line 1061 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 15236 strings out of 494884
- 227700 string characters out of 6179236
- 415912 words of memory out of 5000000
- 17994 multiletter control sequences out of 15000+600000
- 94025 words of font info for 144 fonts, out of 8000000 for 9000
+ 15228 strings out of 494884
+ 227584 string characters out of 6179236
+ 418907 words of memory out of 5000000
+ 17993 multiletter control sequences out of 15000+600000
+ 93676 words of font info for 141 fonts, out of 8000000 for 9000
  38 hyphenation exceptions out of 8191
- 47i,15n,40p,1542b,3598s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 47i,15n,40p,1542b,3596s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}</usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx8.pfb></usr/share/texmf/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr7.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss10.pfb></usr/share/texmf/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss17.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsso12.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt12.pfb>
-Output written on ovidio_dissertacao.pdf (28 pages, 628732 bytes).
+Output written on ovidio_dissertacao.pdf (28 pages, 562811 bytes).
 PDF statistics:
- 576 PDF objects out of 1000 (max. 8388607)
- 514 compressed objects within 6 object streams
- 109 named destinations out of 1000 (max. 500000)
- 32498 words of extra memory for PDF output out of 35830 (max. 10000000)
+ 582 PDF objects out of 1000 (max. 8388607)
+ 517 compressed objects within 6 object streams
+ 108 named destinations out of 1000 (max. 500000)
+ 32496 words of extra memory for PDF output out of 35830 (max. 10000000)
 

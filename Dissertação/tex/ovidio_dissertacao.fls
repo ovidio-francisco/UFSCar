@@ -264,12 +264,12 @@ INPUT ./conteudo/capitulos/figs/visao-geral-3.eps
 INPUT ./conteudo/capitulos/figs/visao-geral-3-eps-converted-to.pdf
 INPUT ./conteudo/capitulos/figs/visao-geral-3-eps-converted-to.pdf
 INPUT ./conteudo/capitulos/figs/visao-geral-3-eps-converted-to.pdf
+INPUT conteudo/capitulos/figs/pre-process.pdf
+INPUT ./conteudo/capitulos/figs/pre-process.pdf
+INPUT ./conteudo/capitulos/figs/pre-process.pdf
 INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmbx12.tfm
 INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmbx8.tfm
 INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmtt12.tfm
-INPUT conteudo/capitulos/figs/pre-processamento.jpg
-INPUT ./conteudo/capitulos/figs/pre-processamento.jpg
-INPUT ./conteudo/capitulos/figs/pre-processamento.jpg
 INPUT ovidio_dissertacao.bbl
 INPUT ovidio_dissertacao.bbl
 INPUT ovidio_dissertacao.brf
