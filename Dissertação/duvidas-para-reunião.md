@@ -19,3 +19,14 @@
 	Ainda falo sobre decisão no trabalho. Devo continuar ou remover isso do trabalho?
 	"Acho que nessa parte compensa dar exemplos sobre possíveis classes para as atas, porém, mencionar que o sistema é aberto para que o usuário insira as classes que desejar." --> Rafael na Correção 3.
 	
+	
+	
+	O que mais analisar da segmentação?
+	
+	Como os a extração de tópicos pode ajudar na pesquisa?
+	Como usar os tópicos?
+	
+	
+	Escrever sobre RI?
+	
+	
