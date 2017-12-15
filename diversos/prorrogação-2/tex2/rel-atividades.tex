@@ -1,0 +1,118 @@
+	\thispagestyle{empty}
+	\singlespacing
+
+	\noindent
+	\ovalbox{
+
+		\begin{minipage}{0.8\linewidth}
+			{\Large\bf Universidade Federal de São Carlos}\\
+			{\sc  Programa de Pós-Graduação em Ciência da Computação}\\
+			{\sc Campus Sorocaba}
+		\end{minipage} 
+		\hfill 
+		
+		\begin{minipage}{0.19\linewidth}
+				\epsfxsize=2.50cm
+				\centerline{\epsffile{ufscar_logo.eps}}
+		\end{minipage}
+	}
+
+	\vi
+	\vi
+	\vi
+
+	\begin{center}
+		\Large Solicitação de Prorrogação de Prazo de Defesa\\
+		\vi
+		\large Relatório de Atividades Desenvolvidas
+
+	\end{center}
+	\vi
+	
+	
+% - Artigo ENIAC
+% - Softwares
+% 	- Ferramenta para segmentação textual automática
+%		- Ajustes no preprocessamento
+%		- Visualização
+%		- Configuração de parâmetros com base em testes estatísticos
+%	- Ferramenta para segmentação e rotulação manual
+%	- Ferramenta para segmentação e extração de tópicos 
+% - Revisão Bibliográfica 
+% 	- Segmentação textual
+%	- 
+% - Experimento com especialistas
+
+\newcommand{\urlatas}{http://www.ppgccs.net/?page\_id=1150}
+
+\newcommand{\urleniac}{http://www.bracis2017.ufu.br/eniac-encontro-nacional-de-inteligencia-artificial-e-computacional\#tab-0-0}
+
+Aprovado como aluno regular em agosto de 2015, concluí as disciplinas exigidas para obtenção dos créditos e fui qualificado em agosto do ano seguinte. 
+
+O objetivo do trabalho é aplicar técnicas de recuperação de informação e mineração de texto em atas de reunião para fornecer históricos de menções a assuntos de interesse por meio de um sistema de busca. O desenvolvimento envolve basicamente 
+o tratamento de uma base de documentos e a identificação dos assuntos nela contidos por meio de técnicas de segmentação textual e extração de tópicos. Por meio de uma interface, o sistema receberá uma consulta do usuário para proceder a busca e devolver um histórico de menções relacionadas a intenção do usuário.
+
+
+% Identificar assuntos relevantes em atas de reunião
+% Identificar mudanças de assuntos e identificar do que se trata o assunto.
+% Receber consultas dos usuários
+% Envolve:
+	% Preprocessamento
+	% Segmentação textual
+	% Extração de toópicos
+%
+
+Segue as principais atividades desenvolvidas:
+
+\begin{description}
+	
+	 
+	\item[Contribuições:] Como parte do sistema proposto, desenvolveu-se uma ferramenta que visa a segmentação automática de documentos permitindo a configuração do preprocessamento, a detecção de sentenças e os parâmetros dos algoritmos de segmentação. Oferece uma interface gráfica para configuração e visualização dos segmentos extraídos bem como as \textit{features} selecionadas na etapa de preprocessamento. 
+Os algoritmos de segmentação foram avaliados comparando-os com atas segmentadas manualmente por participantes das reuniões. Por meio de análises estatísticas chegou-se ao modelo que melhor segmenta os textos no contexto das atas de reunião. 		
+	A biblioteca desenvolvida para a ferramenta está disponibilizada para estudo e pode ser aproveitada na etapa de preprocessamento em outros projetos.
+% Utilizada nos testes.	
+
+	\item[Experimento com usuários:] A fim de obter referências para os algoritmos de segmentação e  extração de tópicos, foram obtidas atas de reuniões do Conselhos de Pós Graduação, Conselho de Cursos e Conselho de Departamento de da UFSCar-Sorocaba. Um conjunto de seis documentos foi oferecido à profissionais que participam de reuniões desse departamento para dividir cada documento em segmentos e rotulá-los. Para isso, desenvolveu-se um \textit{software} que permitiu aos voluntários visualizar um documento, selecionar o texto correspondente a um assunto e removê-lo para então indicar quais palavras melhor indicavam o tópico. O software possibilitou a segmentação e rotulação das atas e ao final gerou-se um aquivo contendo os dados coletados, o qual foi tratado e serviu como referência para a avaliação dos algoritmos de segmentação.
+	Os arquivos gerados foram tratados para remoção de ruídos e ajustes para que os segmentos sempre terminem em uma sentença reconhecida pelo algoritmo, uma vez que as medidas de avaliação de segmentos recebem sentenças como unidade mínima de informação.
+	
+	
+	\item[Submissão de Artigo:] Como parte da revisão bibliográfica e desenvolvimento do sistema proposto, a segmentação automática das atas resultou em um artigo submetido ao ENIAC -- Encontro Nacional de Inteligência Artificial e Computacional. 
+%	
+No artigo são descritos as principais técnicas empregadas nessa tarefa, bem como métodos mais utilizados para avaliação de segmentadores. Mostra também como o pré-processamento e configurações de parâmetros podem ser ajustados para esse tipo de documento. Para isso, utilizou-se a segmentação manual como referência de segmentação ideal a qual foi comparada com os segmentos extraídos automaticamente. Por meio de testes estatísticos descritos no artigo, chegou-se a um modelo que melhor identifica mudanças de assunto no contexto das atas.
+	
+
+	\item[Sistema proposto:] Atualmente o sistema proposto recebe um conjunto de documentos divide cada um em segmentos com assunto relativamente independente. Em seguida, utiliza técnicas de extração de tópicos para fornecer as palavras que podem melhor representar o tópico de cada segmento. Para isso, possui a implementação das principais técnicas de extração de tópicos como LDA (\textit{Latent Dirichlet Allocation}) e PLSA (\textit{Probabilistic Latent Semantic Analysis}). Após a extração, os segmentos rotulados ficam disponíveis para consulta ou armazenamento. A segmentação dos documentos e a extração de tópicos permite a identificação trechos com um assunto de interesse.
+	
+	
+	
+	
+	
+\end{description}
+
+
+
+
+
+
+
+%	\item[Sistema proposto:] Iniciou-se o desenvolvimento de um  sistema que é capaz de receber um conjunto de atas, segmentá-las em trechos um assunto relativamente independente e fornecer, por meio de técnicas de extração tópicos, as palavras que podem representar o assunto de cada trecho. 
+
+
+
+% onde os voluntários segmentaram e rotularam o texto. O que resultou em um conjunto de referências para avaliação das ferramentas propostas.
+
+%	\item[Revisão bibliográfica:] Foi iniciada uma revisão bibliográfica sobre as principais técnicas de mineração textual como extração automática de tópicos e extração de conhecimento em documentos com vistas ao desenvolvimento do sistema proposto.
+
+
+%	\item[Redação da dissertação: ] A dissertação contém os primeiros textos introdutórios referentes à mineração de textos, segmentação textos, extração de tópicos e resultados obtidos com as ferramentas já desenvolvidas.
+
+
+
+
+
+
+
+
+
+
+
