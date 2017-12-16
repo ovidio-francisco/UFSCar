@@ -6,7 +6,7 @@ A tarefa de segmentação textual consiste em dividir um texto em partes ou segm
 
 
 %  Coesão léxica como presuposto básico
-Para encontrar essas posições, trabalhos anteriores se apoiam na ideia de que a mudança de assunto em um texto é acompanhada de uma proporcional mudança de vocabulário. Essa ideia, chamada de coesão léxica, sugere que a distribuição das palavras é um forte indicador da estrutura do texto. A partir disso, vários algoritmos foram propostos baseados na ideia de que um segmento pode ser identificado pela análise das palavras que o compõe~\cite{Chen2017,Ferret2009,Sakahara2014}.
+Para encontrar essas posições, trabalhos anteriores se apoiam na ideia de que a mudança de assunto em um texto é acompanhada de uma proporcional mudança de vocabulário. Essa ideia, chamada de coesão léxica, sugere que a distribuição das palavras é um forte indicador da estrutura do texto~\cite{Kozima1993}. A partir disso, vários algoritmos foram propostos baseados na ideia de que um segmento pode ser identificado pela análise das palavras que o compõe~\cite{Chen2017,Ferret2009,Sakahara2014}.
 
 % -- Porque cosseno
 Uma vez que a coesão léxica é pressuposto básico da maioria dos algoritmos, o cálculo da similaridade entre unidades de informação é fundamental. Uma medida de similidade frequentemente utilizada é o cosseno, apresentada na Equação~\ref{equ:cosine}, onde dadas duas unidades de informação, $x$ e $y$, $f_{x,j}$ é a frequência do termo $j$ em $x$ e $f_{y,j}$ é a frequência do termo $j$ em $y$.
