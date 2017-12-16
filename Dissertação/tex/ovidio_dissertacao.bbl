@@ -97,6 +97,15 @@ ISBN 978-1-61197-283-2. Dispon{\'\i}vel em:
 \emph{Journal of the American Society for Information Science}, v.~41, n.~6, p.
   391--407, 1990.}
 
+\bibitem[Dias, Alves e Lopes 2007]{Dias2007}
+\abntrefinfo{Dias, Alves e Lopes}{DIAS; ALVES; LOPES}{2007}
+{DIAS, G.; ALVES, E.; LOPES, J. G.~P. Topic segmentation algorithms for text
+  summarization and passage retrieval: An exhaustive evaluation. In:
+  \emph{Proceedings of the 22Nd National Conference on Artificial Intelligence
+  - Volume 2}. AAAI Press, 2007.  (AAAI'07), p. 1334--1339.
+ISBN 978-1-57735-323-2. Dispon{\'\i}vel em:
+  \url{http://dl.acm.org/citation.cfm?id=1619797.1619859}.}
+
 \bibitem[Eisenstein e Barzilay 2008]{Eisenstein2008}
 \abntrefinfo{Eisenstein e Barzilay}{EISENSTEIN; BARZILAY}{2008}
 {EISENSTEIN, J.; BARZILAY, R. Bayesian unsupervised topic segmentation. In:
@@ -110,6 +119,14 @@ ISBN 978-1-61197-283-2. Dispon{\'\i}vel em:
 {FERRET, O. Improving text segmentation by combining endogenous and exogenous
   methods. In:  \emph{International Conference Recent Advances in Natural
   Language Processing, RANLP}. [S.l.: s.n.], 2009. p. 88--93.}
+
+\bibitem[Galley et al. 2003]{Galley2003}
+\abntrefinfo{Galley et al.}{GALLEY et al.}{2003}
+{GALLEY, M. et al. Discourse segmentation of multi-party conversation. In:
+  \emph{Proceedings of the 41st Annual Meeting on Association for Computational
+  Linguistics - Volume 1}. Stroudsburg, PA, USA: Association for Computational
+  Linguistics, 2003.  (ACL '03), p. 562--569. Dispon{\'\i}vel em:
+  \url{http://dx.doi.org/10.3115/1075096.1075167}.}
 
 \bibitem[Hearst 1994]{Hearst1994}
 \abntrefinfo{Hearst}{HEARST}{1994}
