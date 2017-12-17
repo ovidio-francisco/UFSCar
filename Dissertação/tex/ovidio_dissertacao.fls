@@ -234,6 +234,9 @@ INPUT conteudo/capitulos/inputs/segmentacao.tex
 INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmss17.tfm
 INPUT conteudo/capitulos/inputs/algoritmos-segmentacao.tex
 INPUT conteudo/capitulos/inputs/algoritmos-segmentacao.tex
+INPUT conteudo/capitulos/figs/janelas-deslizantes.pdf
+INPUT ./conteudo/capitulos/figs/janelas-deslizantes.pdf
+INPUT ./conteudo/capitulos/figs/janelas-deslizantes.pdf
 INPUT conteudo/capitulos/figs/exemplo-matrix-rank-A.png
 INPUT ./conteudo/capitulos/figs/exemplo-matrix-rank-A.png
 INPUT ./conteudo/capitulos/figs/exemplo-matrix-rank-A.png

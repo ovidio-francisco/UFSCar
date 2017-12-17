@@ -1,4 +1,32 @@
 
+% A partir desses conceitos, vários algoritmos foram propostos baseados na ideia de que um segmento pode ser identificado pela análise das palavras que o compõe~\cite{Chen2017,Ferret2009,Sakahara2014}.
+% Acho que dá pra melhorar essas referências;
+
+
+% vários algoritmos foram propostos baseados na ideia de que um segmento pode ser identificado pela análise das palavras que o compõe~\cite{Chen2017,Ferret2009,Sakahara2014}.
+
+
+% A partir desses conceitos, um dos primeiros algoritmos baseados na ideia que um segmento pode ser identificado pela análise das palavras que o compõe foi o \textit{TextTiling}. O \textit{TextTiling} é um algoritmo baseado em janelas deslizantes, em  que, para cada candidato a limite, analisa-se o texto circundante. Um limite ou quebra entre segmentos é identificado sempre que a similaridade entre as unidades que antecedem e precedem o ponto candidato cai abaixo de um limiar. O \textit{TextTiling} recebe uma lista de candidatos a limite, usualmente finais de parágrafo ou finais de sentenças. Para cada posição candidata são construídos 2 blocos, um contendo sentenças que a precedem e outro com as que a sucedem. O tamanho desses blocos é um parâmetro a ser fornecido ao algoritmo e determina o tamanho mínimo de um segmento. Em seguida, os blocos de texto são representados por vetores que contém as frequências de suas palavras. Então, usa-se cosseno (Equação~\ref{equ:cosine}) para calcular a similaridade entre os blocos adjacentes a cada candidato e identifica-se uma transição entre segmentos pelos vales na curva de dissimilaridade.
+
+
+
+% Então, usa-se cosseno (Equação~\ref{equ:cosine}) para calcular a similaridade entre os blocos adjacentes a cada candidato e identifica-se uma transição entre segmentos pelos vales na curva de dissimilaridade.
+
+
+
+
+% -- Porque cosseno
+% Uma vez que a coesão léxica é pressuposto básico da maioria dos algoritmos, o cálculo da similaridade entre unidades de informação é fundamental. Uma medida de similidade frequentemente utilizada é o cosseno, apresentada na Equação~\ref{equ:cosine}, onde dadas duas unidades de informação, $x$ e $y$, $f_{x,j}$ é a frequência do termo $j$ em $x$ e $f_{y,j}$ é a frequência do termo $j$ em $y$.
+
+% \begin{equation}
+	% Sim(x,y) = \frac
+	% {\Sigma_j f_{x,j} \times f_{y,j}}
+	% {\sqrt{\Sigma_j f^2_{x,j} \times \Sigma f^2_{y,j}}}
+	% \label{equ:cosine}
+% \end{equation}
+
+
+
 % --> falar um pouco sobre TT e C99, sobre como foram pioneiros, influenciáram muitos outros e são empregrados até hoje;
 
 
@@ -35,15 +63,39 @@ o significado de um palavra somente pode ser determinado quando está dentro de 
 
 
 
-Um dos primeiros algoritmos a aplicar essa técnica foi proposto por Kosima. Em seu trabalho, utilizou uma rede semântica para calcular a coesão léxica de uma janela de palavras. Contudo, sua adaptação para outros domínios dependia da construção de uma rede adequada. 
+% Um dos primeiros algoritmos a aplicar essa técnica foi proposto por Kosima. Em seu trabalho, utilizou uma rede semântica para calcular a coesão léxica de uma janela de palavras. Contudo, sua adaptação para outros domínios dependia da construção de uma rede adequada. 
 
 
 % ==========  Janelas deslizantes  ==========
 
+% Kosima uniu as tecnicas de SW e CL.
+% Os algoritmos que se baseiam no cálculo da similaridade entre sentenças, frequentemente o fazem por meio de janelas deslizantes, onde se verifica a frequência dos termos em um fragmento do documento. Inicialmente, estabelece-se a partir do início do texto, um \textit{range} de $w$ termos, chamado janela que é deslocada $k$ termos adiante até o final do texto. A cada passo, calcula-se a coesão léxica das palavras contidas na janela. Kosima demonstrou que há uma estreita correlação entre quedas na coesão léxica em janelas de texto e a transição de assuntos. Em seu trabalho, calculou a coesão léxica de uma janela de palavras usando \textit{spreading activation} em uma rede semântica especialmente elaborada para o idioma Inglês. Contudo, sua implementação de um algoritmo para outros domínios dependia da construção de uma rede adequada. 
 
-Um dos primeiros algoritmos a aplicar essa técnica para segmentação textual foi proposto por Kosima. Em seu trabalho, calculou a coesão léxica de uma janela de palavras usando \textit{spreading activation} em uma rede semântica especialmente elaborada para o idioma Inglês. Contudo, sua adaptação para outros domínios dependia da construção de uma rede adequada. 
 
-.
+
+% Os algoritmos que se baseiam no cálculo da similaridade entre sentenças, frequentemente o fazem por meio de janelas deslizantes, onde se verifica a frequência dos termos em um fragmento do texto. Inicialmente, estabelece-se um range de $w$ termos, chamado janela, e calcula-se a coerência léxica das palavras contidas nessa janela. Em seguida, esta é deslocada $k$ termos adiante e novamente se calcula a coerência léxica de seus termos. Repete-se esse processo até o final do texto. 
+
+
+% Os algoritmos que se baseiam no cálculo da similaridade entre sentenças, frequentemente o fazem por meio de janelas deslizantes, onde se verifica a frequência dos termos em um fragmento do texto. Inicialmente, estabelece-se um range de $w$ termos, chamado janela, e calcula-se a coerência léxica das palavras contidas nessa janela. Em seguida, esta é deslocada $k$ termos adiante até o final do texto e calcula-se ao coerência léxica de cada janela. Quando a co
+
+
+
+% e calcula-se a coerência léxica das palavras contidas nessa janela. Em seguida, esta é deslocada $k$ termos adiante até o final do texto e calcula-se ao coerência léxica de cada janela. Quando a co
+
+
+
+
+Trocar o "Uma vez que a coesão léxica é pressuposto básico" por "outra forma de de calcula a similaridade entre sentenças e "
+
+ou no final justificar que é melhor que a do cozima por ser independente de domínio.
+
+
+
+
+
+
+
+
 
 
 

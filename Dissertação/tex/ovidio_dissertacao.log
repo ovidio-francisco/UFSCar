@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.8.22)  16 DEC 2017 12:51
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.8.22)  17 DEC 2017 03:48
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1356,7 +1356,7 @@ Non-PDF special ignored!
 
 ] (./ovidio_dissertacao.toc
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <12> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 12.
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 11.
 )pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
@@ -1400,9 +1400,14 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-] (./conteudo/capitulos/inputs/segmentacao.tex (./conteudo/capitulos/inputs/algoritmos-segmentacao.tex [7]
-./conteudo/capitulos/inputs/algoritmos-segmentacao.tex:26: Undefined control sequence.
-l.26 ...Kern2009,Galley2003}, e usado com \texttit
+] (./conteudo/capitulos/inputs/segmentacao.tex (./conteudo/capitulos/inputs/algoritmos-segmentacao.tex [7] <conteudo/capitulos/figs/janelas-deslizantes.pdf, id=123, page=1, 844.15375pt x 597.23125pt>
+File: conteudo/capitulos/figs/janelas-deslizantes.pdf Graphic file (type pdf)
+ <use conteudo/capitulos/figs/janelas-deslizantes.pdf, page 1>
+Package pdftex.def Info: conteudo/capitulos/figs/janelas-deslizantes.pdf, page1 used on input line 57.
+(pdftex.def)             Requested size: 364.00139pt x 257.53346pt.
+
+./conteudo/capitulos/inputs/algoritmos-segmentacao.tex:84: Undefined control sequence.
+l.84 ...Kern2009,Galley2003}, e usado com \texttit
                                                   {base line} em outros trab...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1410,12 +1415,12 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
+[8 <./conteudo/capitulos/figs/janelas-deslizantes.pdf
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [8]
-./conteudo/capitulos/inputs/algoritmos-segmentacao.tex:38: Undefined control sequence.
-l.38 	\subfigure
+pdfTeX warning: pdflatex (file ./conteudo/capitulos/figs/janelas-deslizantes.pdf): PDF inclusion: invalid other resource which is no dict (key 'ProcSets', type <array>); ignored.
+>]
+./conteudo/capitulos/inputs/algoritmos-segmentacao.tex:96: Undefined control sequence.
+l.96 	\subfigure
                 [Passo 1]{\label{fig:a}\includegraphics[width=60mm]{conteudo...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1423,14 +1428,14 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-<conteudo/capitulos/figs/exemplo-matrix-rank-A.png, id=185, 269.50688pt x 141.52875pt>
+<conteudo/capitulos/figs/exemplo-matrix-rank-A.png, id=177, 269.50688pt x 141.52875pt>
 File: conteudo/capitulos/figs/exemplo-matrix-rank-A.png Graphic file (type png)
  <use conteudo/capitulos/figs/exemplo-matrix-rank-A.png>
-Package pdftex.def Info: conteudo/capitulos/figs/exemplo-matrix-rank-A.png used on input line 38.
+Package pdftex.def Info: conteudo/capitulos/figs/exemplo-matrix-rank-A.png used on input line 96.
 (pdftex.def)             Requested size: 170.71652pt x 89.65163pt.
 
-./conteudo/capitulos/inputs/algoritmos-segmentacao.tex:39: Undefined control sequence.
-l.39 	\subfigure
+./conteudo/capitulos/inputs/algoritmos-segmentacao.tex:97: Undefined control sequence.
+l.97 	\subfigure
                 [Passo 2]{\label{fig:b}\includegraphics[width=60mm]{conteudo...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1438,37 +1443,27 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-<conteudo/capitulos/figs/exemplo-matrix-rank-B.png, id=187, 268.75406pt x 141.52875pt>
+<conteudo/capitulos/figs/exemplo-matrix-rank-B.png, id=179, 268.75406pt x 141.52875pt>
 File: conteudo/capitulos/figs/exemplo-matrix-rank-B.png Graphic file (type png)
  <use conteudo/capitulos/figs/exemplo-matrix-rank-B.png>
-Package pdftex.def Info: conteudo/capitulos/figs/exemplo-matrix-rank-B.png used on input line 39.
+Package pdftex.def Info: conteudo/capitulos/figs/exemplo-matrix-rank-B.png used on input line 97.
 (pdftex.def)             Requested size: 170.71652pt x 89.90215pt.
-) (./conteudo/capitulos/inputs/medidas-segmentacao.tex (./conteudo/capitulos/inputs/medidas-avaliacao-tradicionais-em-segmentacao.tex
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [9 <./conteudo/capitulos/figs/exemplo-matrix-rank-A.png> <./conteudo/capitulos/figs/exemplo-matrix-rank-B.png>]
+ [9 <./conteudo/capitulos/figs/exemplo-matrix-rank-A.png> <./conteudo/capitulos/figs/exemplo-matrix-rank-B.png>]) (./conteudo/capitulos/inputs/medidas-segmentacao.tex (./conteudo/capitulos/inputs/medidas-avaliacao-tradicionais-em-segmentacao.tex [10]
 
 LaTeX Warning: Command \c invalid in math mode on input line 52.
 
 
-Underfull \vbox (badness 2591) has occurred while \output is active []
-
- [10]
-
 LaTeX Warning: Command \c invalid in math mode on input line 60.
 
 
 LaTeX Warning: Command \c invalid in math mode on input line 60.
 
-) <conteudo/capitulos/figs/windiffzoom.jpg, id=214, 312.2064pt x 78.5334pt>
+) [11] <conteudo/capitulos/figs/windiffzoom.jpg, id=224, 312.2064pt x 78.5334pt>
 File: conteudo/capitulos/figs/windiffzoom.jpg Graphic file (type jpg)
  <use conteudo/capitulos/figs/windiffzoom.jpg>
 Package pdftex.def Info: conteudo/capitulos/figs/windiffzoom.jpg used on input line 18.
 (pdftex.def)             Requested size: 318.49861pt x 80.11977pt.
- [11 <./conteudo/capitulos/figs/windiffzoom.jpg>])) (./conteudo/capitulos/inputs/representacao.tex
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [12]
+ [12 <./conteudo/capitulos/figs/windiffzoom.jpg>])) (./conteudo/capitulos/inputs/representacao.tex
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <14.4> not available
 (Font)              Font shape `T1/lmss/m/sl' tried instead on input line 8.
 
@@ -1485,6 +1480,9 @@ Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
 [13]) (./conteudo/capitulos/inputs/extracao-de-topicos.tex [14] [15])) [16]
 \openout2 = `conteudo/capitulos/4-cap3.aux'.
 
@@ -1498,7 +1496,7 @@ Package epstopdf Info: Source file: <conteudo/capitulos/figs/visao-geral-3.eps>
 (epstopdf)             Command: <repstopdf --outfile=conteudo/capitulos/figs/visao-geral-3-eps-converted-to.pdf conteudo/capitulos/figs/visao-geral-3.eps>
 (epstopdf)             \includegraphics on input line 14.
 Package epstopdf Info: Output file is already uptodate.
- <conteudo/capitulos/figs/visao-geral-3-eps-converted-to.pdf, id=285, 1084.05pt x 542.025pt>
+ <conteudo/capitulos/figs/visao-geral-3-eps-converted-to.pdf, id=287, 1084.05pt x 542.025pt>
 File: conteudo/capitulos/figs/visao-geral-3-eps-converted-to.pdf Graphic file (type pdf)
  <use conteudo/capitulos/figs/visao-geral-3-eps-converted-to.pdf>
 Package pdftex.def Info: conteudo/capitulos/figs/visao-geral-3-eps-converted-to.pdf used on input line 14.
@@ -1507,7 +1505,7 @@ Package pdftex.def Info: conteudo/capitulos/figs/visao-geral-3-eps-converted-to.
 
 
 
- <./conteudo/capitulos/figs/visao-geral-3-eps-converted-to.pdf>] <conteudo/capitulos/figs/pre-process.pdf, id=296, page=1, 844.15375pt x 597.23125pt>
+ <./conteudo/capitulos/figs/visao-geral-3-eps-converted-to.pdf>] <conteudo/capitulos/figs/pre-process.pdf, id=298, page=1, 844.15375pt x 597.23125pt>
 File: conteudo/capitulos/figs/pre-process.pdf Graphic file (type pdf)
  <use conteudo/capitulos/figs/pre-process.pdf, page 1>
 Package pdftex.def Info: conteudo/capitulos/figs/pre-process.pdf, page1 used on input line 44.
@@ -1571,7 +1569,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 309.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 309.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 309.
 Package rerunfilecheck Info: File `ovidio_dissertacao.brf' has not changed.
-(rerunfilecheck)             Checksum: 212F8F6C5A0653489E44E57C40EA7FA8;3268.
+(rerunfilecheck)             Checksum: 99409F11B0C6D51ED71000B6F650D337;2914.
 
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
@@ -1583,18 +1581,18 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 309.
 ### simple group (level 1) entered at line 1061 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 15319 strings out of 494884
- 228975 string characters out of 6179236
- 419385 words of memory out of 5000000
- 18073 multiletter control sequences out of 15000+600000
- 93805 words of font info for 142 fonts, out of 8000000 for 9000
+ 15299 strings out of 494884
+ 228852 string characters out of 6179236
+ 418874 words of memory out of 5000000
+ 18056 multiletter control sequences out of 15000+600000
+ 93718 words of font info for 141 fonts, out of 8000000 for 9000
  38 hyphenation exceptions out of 8191
  47i,15n,40p,1542b,3596s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}</usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx8.pfb></usr/share/texmf/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr7.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss10.pfb></usr/share/texmf/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss17.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsso12.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt12.pfb>
-Output written on ovidio_dissertacao.pdf (29 pages, 568789 bytes).
+Output written on ovidio_dissertacao.pdf (29 pages, 595307 bytes).
 PDF statistics:
- 650 PDF objects out of 1000 (max. 8388607)
- 584 compressed objects within 6 object streams
- 117 named destinations out of 1000 (max. 500000)
- 32496 words of extra memory for PDF output out of 35830 (max. 10000000)
+ 647 PDF objects out of 1000 (max. 8388607)
+ 575 compressed objects within 6 object streams
+ 115 named destinations out of 1000 (max. 500000)
+ 32499 words of extra memory for PDF output out of 35830 (max. 10000000)
 

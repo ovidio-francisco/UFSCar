@@ -6,8 +6,7 @@
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \contentsline {chapter}{\chapternumberline {2}\MakeTextUppercase {Conceitua\IeC {\c c}\IeC {\~a}o Te\IeC {\'o}rica}}{7}{chapter.2}
 \contentsline {section}{\numberline {2.1}Segmenta\IeC {\c c}\IeC {\~a}o Textual}{7}{section.2.1}
-\contentsline {subsection}{\numberline {2.1.1}Algoritmos}{8}{subsection.2.1.1}
-\contentsline {subsection}{\numberline {2.1.2}Medidas de Avalia\IeC {\c c}\IeC {\~a}o}{10}{subsection.2.1.2}
+\contentsline {subsection}{\numberline {2.1.1}Medidas de Avalia\IeC {\c c}\IeC {\~a}o}{10}{subsection.2.1.1}
 \contentsline {section}{\numberline {2.2}Representa\IeC {\c c}\IeC {\~a}o de Textos}{13}{section.2.2}
 \contentsline {subsection}{\numberline {2.2.1}\textit {Bag Of Words}}{13}{subsection.2.2.1}
 \contentsline {section}{\numberline {2.3}Modelos de Extra\IeC {\c c}\IeC {\~a}o de T\IeC {\'o}picos}{14}{section.2.3}

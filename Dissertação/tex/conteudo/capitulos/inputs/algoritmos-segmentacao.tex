@@ -1,6 +1,4 @@
 
-\subsection{Algoritmos}
-	\label{subsec:principaisalgoritimos}
 % Lembrando que tem muuuuitos outros. Principalmente os baseados em tópicos. -- Rafael % -? antes falar das técnicas (janelas, agrupamento, tópicos, etc..) ?
 % falar um pouco sobre TT e C99, sobre como foram pioneiros, influenciáram muitos outros e são empregrados até hoje;
 % Nem mencionou janelas deslizantes anteriormente. --> Rafael
@@ -8,18 +6,78 @@
 % \textit{threshold}. %TODO - explicar como se encontra os vales
 
 
+
+
+
+
+
+
+
+
+% ==========  Janelas deslizantes  ==========
+
+% Kosima uniu as tecnicas de SW e CL.
+Para encontrar os segmentos de um texto, alguns dos primeiros algoritmos utilizam a técnica de janelas deslizantes, onde se verifica a frequência dos termos em um fragmento do documento. Inicialmente, estabelece-se a partir do início do texto, um \textit{range} de $w$ termos, chamado janela que em seguida é deslocada em passos de $k$ termos adiante até o final do texto. A cada passo, analisa-se os termos contidos na janela.
+% calcula-se a coesão léxica das palavras contidas na janela. 
+% Os algoritmos que se baseiam no cálculo da similaridade entre sentenças, frequentemente o fazem por meio de janelas deslizantes, 
+
+
+%  Coesão léxica como presuposto básico
+% Para encontrar essas posições, 
+Trabalhos anteriores se apoiam na ideia de que a mudança de assunto em um texto é acompanhada de uma proporcional mudança de vocabulário. Essa ideia, chamada de coesão léxica, sugere que a distribuição das palavras é um forte indicador da estrutura do texto~\cite{Kozima1993}. O autor demonstrou que há uma estreita correlação entre quedas na coesão léxica em janelas de texto e a transição de assuntos. Em seu trabalho, calculou a coesão léxica de uma janela de palavras usando \textit{spreading activation} em uma rede semântica especialmente elaborada para o idioma Inglês. Contudo, a implementação de um algoritmo para outros domínios dependia da construção de uma rede adequada. 
+
+
+
+
+
+
+
+
+
+
+
+
+% \subsection{Algoritmos}
+	% \label{subsec:principaisalgoritimos}
+
+
+
+
 % ==========  TextTiling  ==========
 
-Entre os trabalhos tradicionais da literatura podemos citar o  \textit{TextTiling}~\cite{Hearst1994} e o \textit{C99}~\cite{Choi2000}.
-% TT pioneiro e simples, mas pouco acurado
-% C99 utiliz
-
-
-
-
-O \textit{TextTiling} é um algoritmo baseado em janelas deslizantes, em  que, para cada candidato a limite, analisa-se o texto circundante. Um limite ou quebra entre segmentos é identificado sempre que a similaridade entre as unidades que antecedem e precedem o ponto candidato cai abaixo de um limiar. O \textit{TextTiling} recebe uma lista de candidatos a limite, usualmente finais de parágrafo ou finais de sentenças. Para cada posição candidata são construídos 2 blocos, um contendo sentenças que a precedem e outro com as que a sucedem. O tamanho desses blocos é um parâmetro a ser fornecido ao algoritmo e determina o tamanho mínimo de um segmento. Em seguida, os blocos de texto são representados por vetores que contém as frequências de suas palavras. Então, usa-se cosseno (Equação~\ref{equ:cosine}) para calcular a similaridade entre os blocos adjacentes a cada candidato e identifica-se uma transição entre tópicos pelos vales na curva de dissimilaridade.
 % Rafael --> Podem ter vários tipos de cursa. Ser mais objetivo. Quando a similaridade fica abaixo de um limiar fornecido pelo usuário.? Na verdade, dá pra fazer uma mescla. 
 %TODO como apresentado na Figura~\ref{fig:curvadedissimilaridade}.
+
+
+A partir desses conceitos, um dos primeiros algoritmos baseados na ideia que um segmento pode ser identificado pela análise das palavras que o compõe foi o \textit{TextTiling}. O \textit{TextTiling} é um algoritmo baseado em janelas deslizantes, em  que, para cada candidato a limite, analisa-se o texto circundante.  O \textit{TextTiling} recebe uma lista de candidatos a limite, usualmente finais de parágrafo ou finais de sentenças. Para cada posição candidata são construídos 2 blocos, um contendo sentenças que a precedem e outro com as que a sucedem. O tamanho desses blocos é um parâmetro a ser fornecido ao algoritmo e determina o tamanho mínimo de um segmento. Esse processo é ilustrado na Figura~\ref{fig:TT-slidingwindow}
+
+
+\begin{figure}
+\center
+	\includegraphics[trim={ 0 0 0 0 },clip,page=1,width=0.8\textwidth]{conteudo/capitulos/figs/janelas-deslizantes.pdf}
+
+	\caption{Processo de deslocamento da janela deslizante. Os quadrados numerados representam as sentenças e os retângulos representam os blocos de texto a serem comparados. O deslocamento movimenta o candidato a limite e por consequência os blocos que o antecede e precede.}
+	\label{fig:TT-slidingwindow}
+\end{figure}
+
+
+Em seguida, os blocos de texto são representados por vetores que contém as frequências de suas palavras.  Diferente da proposta de Kosima, utiliza \textit{cosine} como medida para a similaridade entre os blocos adjacentes, conforme apresentada na Equação~\ref{equ:cosine}, onde dados dois blocos de texto, $x$ e $y$, $f_{x,j}$ é a frequência do termo $j$ em $x$ e $f_{y,j}$ é a frequência do termo $j$ em $y$.
+
+\begin{equation}
+	Sim(x,y) = \frac
+	{\Sigma_j f_{x,j} \times f_{y,j}}
+	{\sqrt{\Sigma_j f^2_{x,j} \times \Sigma f^2_{y,j}}}
+	\label{equ:cosine}
+\end{equation}
+
+ 
+Um limite ou transição entre segmentos é identificado sempre que a similaridade entre as unidades que antecedem e precedem o ponto candidato cai abaixo de um limiar, ou seja, identifica-se uma transição entre segmentos pelos vales na curva de dissimilaridade.
+
+
+
+
+% --> fazer um gráfico-rascunho e usar bolinhas para indicar os limites e usar 1 vale para demostrar o cálculo do depth score.
+
 
 
 

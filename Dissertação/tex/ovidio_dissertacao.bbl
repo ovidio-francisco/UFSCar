@@ -67,14 +67,6 @@ ISSN 1877-0509.
 Dispon{\'\i}vel em:
   \url{http://www.sciencedirect.com/science/article/pii/S1877050914010898}.}
 
-\bibitem[Chen et al. 2017]{Chen2017}
-\abntrefinfo{Chen et al.}{CHEN et al.}{2017}
-{CHEN, H. et al. Modeling latent topics and temporal distance for story
-  segmentation of broadcast news.
-\emph{IEEE/ACM Transactions on Audio, Speech, and Language Processing}, v.~25,
-  n.~1, p. 112--123, Jan 2017.
-ISSN 2329-9290.}
-
 \bibitem[Cheng et al. 2013]{Cheng2013}
 \abntrefinfo{Cheng et al.}{CHENG et al.}{2013}
 {CHENG, X. et al. Learning topics in short texts by non-negative matrix
@@ -113,12 +105,6 @@ ISBN 978-1-57735-323-2. Dispon{\'\i}vel em:
   Processing}. Stroudsburg, PA, USA: Association for Computational Linguistics,
   2008.  (EMNLP '08), p. 334--343. Dispon{\'\i}vel em:
   \url{http://dl.acm.org/citation.cfm?id=1613715.1613760}.}
-
-\bibitem[Ferret 2009]{Ferret2009}
-\abntrefinfo{Ferret}{FERRET}{2009}
-{FERRET, O. Improving text segmentation by combining endogenous and exogenous
-  methods. In:  \emph{International Conference Recent Advances in Natural
-  Language Processing, RANLP}. [S.l.: s.n.], 2009. p. 88--93.}
 
 \bibitem[Galley et al. 2003]{Galley2003}
 \abntrefinfo{Galley et al.}{GALLEY et al.}{2003}
