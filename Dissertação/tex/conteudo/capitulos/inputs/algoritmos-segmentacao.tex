@@ -49,12 +49,12 @@ Trabalhos anteriores se apoiam na ideia de que a mudança de assunto em um texto
 %TODO como apresentado na Figura~\ref{fig:curvadedissimilaridade}.
 
 
-A partir desses conceitos, um dos primeiros algoritmos baseados na ideia que um segmento pode ser identificado pela análise das palavras que o compõe foi o \textit{TextTiling}. O \textit{TextTiling} é um algoritmo baseado em janelas deslizantes, em  que, para cada candidato a limite, analisa-se o texto circundante.  O \textit{TextTiling} recebe uma lista de candidatos a limite, usualmente finais de parágrafo ou finais de sentenças. Para cada posição candidata são construídos 2 blocos, um contendo sentenças que a precedem e outro com as que a sucedem. O tamanho desses blocos é um parâmetro a ser fornecido ao algoritmo e determina o tamanho mínimo de um segmento. Esse processo é ilustrado na Figura~\ref{fig:TT-slidingwindow}
+A partir desses conceitos, um dos primeiros algoritmos baseados na ideia que um segmento pode ser identificado pela análise das palavras que o compõe foi o \textit{TextTiling}. O \textit{TextTiling} é um algoritmo baseado em janelas deslizantes, em  que, para cada candidato a limite, analisa-se o texto circundante.  O \textit{TextTiling} recebe uma lista de candidatos a limite, usualmente finais de parágrafo ou finais de sentenças. Para cada posição candidata são construídos 2 blocos, um contendo sentenças que a precedem e outro com as que a sucedem. O tamanho desses blocos é um parâmetro a ser fornecido ao algoritmo e determina o tamanho mínimo de um segmento. Esse processo é ilustrado na Figura~\ref{fig:TT-slidingwindow}.
 
 
-\begin{figure}
+\begin{figure}[h!]
 \center
-	\includegraphics[trim={ 0 0 0 0 },clip,page=1,width=0.8\textwidth]{conteudo/capitulos/figs/janelas-deslizantes.pdf}
+	\includegraphics[trim={ 0 60 0 66 },clip,page=1,width=0.8\textwidth]{conteudo/capitulos/figs/janelas-deslizantes.pdf}
 
 	\caption{Processo de deslocamento da janela deslizante. Os quadrados numerados representam as sentenças e os retângulos representam os blocos de texto a serem comparados. O deslocamento movimenta o candidato a limite e por consequência os blocos que o antecede e precede.}
 	\label{fig:TT-slidingwindow}
@@ -71,9 +71,16 @@ Em seguida, os blocos de texto são representados por vetores que contém as fre
 \end{equation}
 
  
-Um limite ou transição entre segmentos é identificado sempre que a similaridade entre as unidades que antecedem e precedem o ponto candidato cai abaixo de um limiar, ou seja, identifica-se uma transição entre segmentos pelos vales na curva de dissimilaridade.
+Um limite ou transição entre segmentos é identificado sempre que a similaridade entre as unidades que antecedem e precedem o ponto candidato cai abaixo de um limiar, indicando uma diminuição da similaridade entre os blocos adjacentes. Ou seja, identifica-se uma transição entre segmentos pelos vales na curva de dissimilaridades. Para cada final de sentença representada por $y_i$ atribui-se uma profundidade dada por $(y_{i-1}-y_{i}) + (y_{i+1}-y_{i})$ e será um limite entre segmentos caso a profundidade exceda $\overline{s} - \sigma$, onde $\overline{s}$ é a média da profundidade de todos os vales do documento e $\sigma$, o desvio padrão. Na Figura~\ref{fig:curvasimilaridade} é ilustrado os deslocamentos da janela deslizante e a curva de dissimilaridade entre os blocos adjacentes.  
 
+   
+\begin{figure}[h!]
+\center
+	\includegraphics[trim={ 10 320 180 0 },clip,page=1,width=\textwidth]{conteudo/capitulos/figs/curva-similaridade.pdf}
 
+	\caption{Curva de dissimilaridades entre blocos de texto adjacentes. As linhas pontilhadas representam diminuições de similaridade que indicam limites entre segmentos.}
+	\label{fig:curvasimilaridade}
+\end{figure}
 
 
 % --> fazer um gráfico-rascunho e usar bolinhas para indicar os limites e usar 1 vale para demostrar o cálculo do depth score.

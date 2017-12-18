@@ -237,6 +237,9 @@ INPUT conteudo/capitulos/inputs/algoritmos-segmentacao.tex
 INPUT conteudo/capitulos/figs/janelas-deslizantes.pdf
 INPUT ./conteudo/capitulos/figs/janelas-deslizantes.pdf
 INPUT ./conteudo/capitulos/figs/janelas-deslizantes.pdf
+INPUT conteudo/capitulos/figs/curva-similaridade.pdf
+INPUT ./conteudo/capitulos/figs/curva-similaridade.pdf
+INPUT ./conteudo/capitulos/figs/curva-similaridade.pdf
 INPUT conteudo/capitulos/figs/exemplo-matrix-rank-A.png
 INPUT ./conteudo/capitulos/figs/exemplo-matrix-rank-A.png
 INPUT ./conteudo/capitulos/figs/exemplo-matrix-rank-A.png
@@ -250,6 +253,7 @@ INPUT conteudo/capitulos/inputs/medidas-avaliacao-tradicionais-em-segmentacao.te
 INPUT conteudo/capitulos/figs/windiffzoom.jpg
 INPUT ./conteudo/capitulos/figs/windiffzoom.jpg
 INPUT ./conteudo/capitulos/figs/windiffzoom.jpg
+INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmbx12.tfm
 INPUT conteudo/capitulos/inputs/representacao.tex
 INPUT conteudo/capitulos/inputs/representacao.tex
 INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmsso12.tfm
@@ -270,7 +274,6 @@ INPUT ./conteudo/capitulos/figs/visao-geral-3-eps-converted-to.pdf
 INPUT conteudo/capitulos/figs/pre-process.pdf
 INPUT ./conteudo/capitulos/figs/pre-process.pdf
 INPUT ./conteudo/capitulos/figs/pre-process.pdf
-INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmbx12.tfm
 INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmbx8.tfm
 INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmtt12.tfm
 INPUT ovidio_dissertacao.bbl
@@ -291,9 +294,9 @@ INPUT conteudo/capitulos/4-cap3.aux
 INPUT ./ovidio_dissertacao.brf
 INPUT ./ovidio_dissertacao.brf
 INPUT /usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc
+INPUT /usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc
 INPUT /usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc
 INPUT /usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc
-INPUT /usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc
 INPUT /usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc
 INPUT /usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb
 INPUT /usr/share/texmf/fonts/type1/public/lm/lmbx8.pfb
@@ -312,5 +315,6 @@ INPUT /usr/share/texmf/fonts/type1/public/lm/lmss17.pfb
 INPUT /usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb
 INPUT /usr/share/texmf/fonts/type1/public/lm/lmsso12.pfb
 INPUT /usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb
+INPUT /usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb
 INPUT /usr/share/texmf/fonts/type1/public/lm/lmtt10.pfb
 INPUT /usr/share/texmf/fonts/type1/public/lm/lmtt12.pfb

@@ -4,42 +4,43 @@
 \backcite {Hofmann1999,Deerwester1990,Lee1999,Blei2012}{{7}{2}{chapter.2}}
 \backcite {Hofmann1999,Deerwester1990,Lee1999,Blei2012}{{7}{2}{chapter.2}}
 \backcite {Kozima1993}{{7}{2.1}{section.2.1}}
-\backcite {Naili2016,Bokaei2015,CHAIBI2014,Kern2009,Galley2003}{{9}{2.1}{equation.2.1.1}}
-\backcite {Naili2016,Bokaei2015,CHAIBI2014,Kern2009,Galley2003}{{9}{2.1}{equation.2.1.1}}
-\backcite {Naili2016,Bokaei2015,CHAIBI2014,Kern2009,Galley2003}{{9}{2.1}{equation.2.1.1}}
-\backcite {Naili2016,Bokaei2015,CHAIBI2014,Kern2009,Galley2003}{{9}{2.1}{equation.2.1.1}}
-\backcite {Naili2016,Bokaei2015,CHAIBI2014,Kern2009,Galley2003}{{9}{2.1}{equation.2.1.1}}
-\backcite {Cardoso2017,Dias2007}{{9}{2.1}{equation.2.1.1}}
-\backcite {Cardoso2017,Dias2007}{{9}{2.1}{equation.2.1.1}}
-\backcite {Choi2000, Kern2009, Misra2009}{{9}{2.1}{equation.2.1.1}}
-\backcite {Choi2000, Kern2009, Misra2009}{{9}{2.1}{equation.2.1.1}}
-\backcite {Choi2000, Kern2009, Misra2009}{{9}{2.1}{equation.2.1.1}}
-\backcite {Choi2000}{{9}{2.1}{equation.2.1.1}}
-\backcite {Eisenstein2008}{{10}{2.1}{figure.2.2}}
-\backcite {Blei2003}{{10}{2.1}{figure.2.2}}
-\backcite {Kern2009}{{11}{2.1.1}{equation.2.1.4}}
-\backcite {Beeferman1999}{{12}{2.1.1}{figure.2.3}}
-\backcite {Rezende2003}{{13}{2.2}{section.2.2}}
-\backcite {Rezende2003}{{13}{2.2.1}{subsection.2.2.1}}
+\backcite {Naili2016,Bokaei2015,CHAIBI2014,Kern2009,Galley2003}{{9}{2.1}{figure.2.2}}
+\backcite {Naili2016,Bokaei2015,CHAIBI2014,Kern2009,Galley2003}{{9}{2.1}{figure.2.2}}
+\backcite {Naili2016,Bokaei2015,CHAIBI2014,Kern2009,Galley2003}{{9}{2.1}{figure.2.2}}
+\backcite {Naili2016,Bokaei2015,CHAIBI2014,Kern2009,Galley2003}{{9}{2.1}{figure.2.2}}
+\backcite {Naili2016,Bokaei2015,CHAIBI2014,Kern2009,Galley2003}{{9}{2.1}{figure.2.2}}
+\backcite {Cardoso2017,Dias2007}{{9}{2.1}{figure.2.2}}
+\backcite {Cardoso2017,Dias2007}{{9}{2.1}{figure.2.2}}
+\backcite {Choi2000, Kern2009, Misra2009}{{9}{2.1}{figure.2.2}}
+\backcite {Choi2000, Kern2009, Misra2009}{{9}{2.1}{figure.2.2}}
+\backcite {Choi2000, Kern2009, Misra2009}{{9}{2.1}{figure.2.2}}
+\backcite {Choi2000}{{9}{2.1}{figure.2.2}}
+\backcite {Eisenstein2008}{{10}{2.1}{figure.2.3}}
+\backcite {Blei2003}{{10}{2.1}{figure.2.3}}
+\backcite {Kern2009}{{12}{2.1.1}{equation.2.1.4}}
+\backcite {Beeferman1999}{{12}{2.1.1}{figure.2.4}}
+\backcite {Pevzner2002}{{13}{2.1.1}{figure.2.4}}
+\backcite {Rezende2003}{{14}{2.2}{section.2.2}}
+\backcite {Rezende2003}{{14}{2.2.1}{subsection.2.2.1}}
 \backcite {Rezende2003}{{14}{2.2.1}{table.2.2}}
-\backcite {Steyvers2007,Blei2012}{{14}{2.3}{section.2.3}}
-\backcite {Steyvers2007,Blei2012}{{14}{2.3}{section.2.3}}
+\backcite {Steyvers2007,Blei2012}{{15}{2.3}{section.2.3}}
+\backcite {Steyvers2007,Blei2012}{{15}{2.3}{section.2.3}}
 \backcite {Deerwester1990}{{15}{2.3}{equation.2.3.5}}
-\backcite {Deerwester1990}{{15}{2.3}{equation.2.3.5}}
-\backcite {Cheng2013}{{15}{2.3}{equation.2.3.5}}
-\backcite {Lee1999}{{15}{2.3}{equation.2.3.5}}
-\backcite {Hofmann1999}{{15}{2.3}{equation.2.3.5}}
+\backcite {Deerwester1990}{{16}{2.3}{equation.2.3.5}}
+\backcite {Cheng2013}{{16}{2.3}{equation.2.3.5}}
+\backcite {Lee1999}{{16}{2.3}{equation.2.3.5}}
+\backcite {Hofmann1999}{{16}{2.3}{equation.2.3.5}}
 \backcite {Blei2003}{{16}{2.3}{equation.2.3.5}}
-\backcite {Blei2012}{{16}{2.3}{Item.4}}
-\backcite {Rezende2003}{{19}{3}{Item.7}}
-\backcite {Alvares2005}{{19}{4}{Item.8}}
-\backcite {Bokaei2015, Bokaei2016, Misra2009, Sakahara2014}{{19}{3.1.1.1}{subsubsection.3.1.1.1}}
-\backcite {Bokaei2015, Bokaei2016, Misra2009, Sakahara2014}{{19}{3.1.1.1}{subsubsection.3.1.1.1}}
-\backcite {Bokaei2015, Bokaei2016, Misra2009, Sakahara2014}{{19}{3.1.1.1}{subsubsection.3.1.1.1}}
-\backcite {Bokaei2015, Bokaei2016, Misra2009, Sakahara2014}{{19}{3.1.1.1}{subsubsection.3.1.1.1}}
-\backcite {Hearst1994}{{19}{3.1.1.1}{subsubsection.3.1.1.1}}
-\backcite {Choi2000}{{19}{3.1.1.1}{subsubsection.3.1.1.1}}
-\backcite {CHAIBI2014, Naili2016, Cardoso2017}{{19}{3.1.1.1}{subsubsection.3.1.1.1}}
-\backcite {CHAIBI2014, Naili2016, Cardoso2017}{{19}{3.1.1.1}{subsubsection.3.1.1.1}}
-\backcite {CHAIBI2014, Naili2016, Cardoso2017}{{19}{3.1.1.1}{subsubsection.3.1.1.1}}
-\backcite {Rezende2003}{{23}{3.1.3}{subsection.3.1.3}}
+\backcite {Blei2012}{{17}{2.3}{Item.4}}
+\backcite {Rezende2003}{{20}{3}{Item.7}}
+\backcite {Alvares2005}{{20}{4}{Item.8}}
+\backcite {Bokaei2015, Bokaei2016, Misra2009, Sakahara2014}{{20}{2.5.1.1}{subsubsection.2.5.1.1}}
+\backcite {Bokaei2015, Bokaei2016, Misra2009, Sakahara2014}{{20}{2.5.1.1}{subsubsection.2.5.1.1}}
+\backcite {Bokaei2015, Bokaei2016, Misra2009, Sakahara2014}{{20}{2.5.1.1}{subsubsection.2.5.1.1}}
+\backcite {Bokaei2015, Bokaei2016, Misra2009, Sakahara2014}{{20}{2.5.1.1}{subsubsection.2.5.1.1}}
+\backcite {Hearst1994}{{20}{2.5.1.1}{subsubsection.2.5.1.1}}
+\backcite {Choi2000}{{20}{2.5.1.1}{subsubsection.2.5.1.1}}
+\backcite {CHAIBI2014, Naili2016, Cardoso2017}{{20}{2.5.1.1}{subsubsection.2.5.1.1}}
+\backcite {CHAIBI2014, Naili2016, Cardoso2017}{{20}{2.5.1.1}{subsubsection.2.5.1.1}}
+\backcite {CHAIBI2014, Naili2016, Cardoso2017}{{20}{2.5.1.1}{subsubsection.2.5.1.1}}
+\backcite {Rezende2003}{{24}{2.5.3}{subsection.2.5.3}}
