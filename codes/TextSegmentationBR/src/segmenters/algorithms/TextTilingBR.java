@@ -497,6 +497,7 @@ protected void similarityDetermination() {
 		site_loc[j] = site.elementAt(j+1).intValue();
 	}
 	
+	
 }
 
 
@@ -540,6 +541,9 @@ public TextTilingBR() {
 //}
 
 
+
+
+
 public void segmentToFileParts(File source) {
 	
 	ArrayList<String> lines = getSegments(source);
@@ -551,6 +555,25 @@ public void segmentToFileParts(File source) {
 	}
 
 }
+
+public float[] getSim_score() {
+	return sim_score;
+}
+
+
+public int[] getSite_loc() {
+	return site_loc;
+}
+
+
+public float[] getDepth_score() {
+	return depth_score;
+}
+
+public int getBoundariesCount() {
+	return collection.boundaries.size();
+}
+
 
 /**
  * Create the segements of the document

@@ -51,6 +51,7 @@ public abstract class AbstractSegmenter implements Segmenter {
 
 	@Override
 	public final String segmentsToString(File source) {
+		
 		ArrayList<String> segs = getSegments(source);
 		StringBuilder sb = new StringBuilder();
 		

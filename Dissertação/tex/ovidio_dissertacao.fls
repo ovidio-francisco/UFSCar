@@ -253,7 +253,6 @@ INPUT conteudo/capitulos/inputs/medidas-avaliacao-tradicionais-em-segmentacao.te
 INPUT conteudo/capitulos/figs/windiffzoom.jpg
 INPUT ./conteudo/capitulos/figs/windiffzoom.jpg
 INPUT ./conteudo/capitulos/figs/windiffzoom.jpg
-INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmbx12.tfm
 INPUT conteudo/capitulos/inputs/representacao.tex
 INPUT conteudo/capitulos/inputs/representacao.tex
 INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmsso12.tfm
@@ -274,6 +273,7 @@ INPUT ./conteudo/capitulos/figs/visao-geral-3-eps-converted-to.pdf
 INPUT conteudo/capitulos/figs/pre-process.pdf
 INPUT ./conteudo/capitulos/figs/pre-process.pdf
 INPUT ./conteudo/capitulos/figs/pre-process.pdf
+INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmbx12.tfm
 INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmbx8.tfm
 INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmtt12.tfm
 INPUT ovidio_dissertacao.bbl

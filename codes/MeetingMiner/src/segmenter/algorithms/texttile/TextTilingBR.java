@@ -2,13 +2,16 @@ package segmenter.algorithms.texttile;
 
 import java.io.File;
 import java.io.IOException;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Enumeration;
+import java.util.Hashtable;
+import java.util.Vector;
 
 import org.apache.commons.csv.CSVPrinter;
 
 import ptstemmer.Stemmer;
 import ptstemmer.implementations.OrengoStemmer;
-import segmenter.algorithms.texttile.struct.*;
+import segmenter.algorithms.texttile.struct.RawText;
 import segmenters.AbstractSegmenter;
 import utils.Files;
 /**
@@ -493,6 +496,7 @@ protected void similarityDetermination() {
 		sim_score[j] = (score.elementAt(j).floatValue() + score.elementAt(j+1).floatValue() + score.elementAt(j+2).floatValue()) / 3;
 		site_loc[j] = site.elementAt(j+1).intValue();
 	}
+	
 	
 }
 
