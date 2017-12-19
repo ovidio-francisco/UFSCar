@@ -1,6 +1,7 @@
 package segmenters;
 
 import java.io.File;
+import java.util.Vector;
 
 import segmenters.algorithms.TextTilingBR;
 
@@ -32,11 +33,13 @@ public class TesteCurvaSimilaridade {
 		float[] sim_score = tt.getSim_score();
 		int[]   site_loc  = tt.getSite_loc();
 		float[] depth_scr = tt.getDepth_score();
+		Vector<Integer> segmentation = tt.getSegmentation();
 		
 //		System.out.println("score -->" + score.size());
 		System.out.println("sim_score     --> " + sim_score.length);
 		System.out.println("site_loc      --> " + site_loc.length);
 		System.out.println("depth_score   --> " + depth_scr.length);
+		System.out.println("segmentation  --> " + segmentation.size());
 		System.out.println("win size      --> " + tt.getWindowSize());
 		System.out.println("Bounds Count  --> " + tt.getBoundariesCount());
 		
@@ -53,8 +56,16 @@ public class TesteCurvaSimilaridade {
 		for(float s : depth_scr) {
 			System.out.print(String.format("%f ", s));
 		}
+		System.out.print("\nsite_loc ");
+		for(int s : site_loc) {
+			System.out.print(String.format("%d ", s));
+		}
+		System.out.print("\nsegmentation ");
+		for(int s : segmentation) {
+			System.out.print(String.format("%d ", s));
+		}
 		
-		System.out.println("\n\n");ss
+		System.out.println("\n\n");
 		
 	}
 
