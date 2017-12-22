@@ -13,5 +13,7 @@
 	<classpathentry kind="lib" path="libs/tika-app-1.11.jar"/>
 	<classpathentry kind="lib" path="libs/weka.jar"/>
 	<classpathentry kind="lib" path="libs/commons-csv-1.4/commons-csv-1.4.jar"/>
+	<classpathentry kind="lib" path="libs/jcommon-1.0.23.jar"/>
+	<classpathentry kind="lib" path="libs/jfreechart-1.0.19.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

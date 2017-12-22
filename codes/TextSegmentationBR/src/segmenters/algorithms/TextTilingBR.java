@@ -214,6 +214,11 @@ protected void boundaryIdentification() {
 	int distance; // Distance between pseudo and true boundary
 	int smallest_distance; // Shortest distance
 	int closest_boundary; // Nearest real boundary
+	
+//	int myBound=-1; // ojf
+	
+//	ArrayList<Integer> myBoundaries = new ArrayList<>(); // ojf
+	
 	for (int i=pseudo_boundaries.size(); i-->0;) {
 		pseudo_boundary = pseudo_boundaries.elementAt(i).intValue();
 
@@ -225,11 +230,22 @@ protected void boundaryIdentification() {
 			if (distance <= smallest_distance) {
 				smallest_distance = distance;
 				closest_boundary = true_boundaries[j];
+//				myBound = j;
+				
 			}
 		}
 
+//		System.out.println("peseudo_boundaries---> " + pseudo_boundaries);
+//		System.out.println("peseudo_boundaries.size---> " + pseudo_boundaries.size());
+//		System.out.println("true_boundaries   ---> " + true_boundaries.length);
+		
+		
+//		myBoundaries.add(myBound);
+//		boundariesIndexes.add(myBound);
+		
 		segmentation.addElement(new Integer(closest_boundary));
 	}
+//	System.out.println(">>> "+myBoundaries);
 }
 
 
@@ -451,16 +467,24 @@ protected void similarityDetermination() {
 	
 	/* Slide window and compute score */
 	final int end = text.size() - windowSize; // Last index to check
+	System.out.println("end = =========== " + end);
 	String token; //  A stem
 	int step2=0; // Step counter
 	int i; // Counter
 
+	int loopconunt = 0;
+//	int blockcount = 0;
+	
 	for (i=windowSize; i<end; i++) {
+		loopconunt++;
 		/* Compute score for a step */
 		if (step2 == 0) {
 			score.addElement(new Float(blockCosine(left, right)));
 			site.addElement(new Integer(i));
 			step2 = step;
+//			blockcount++;
+			
+//			System.out.println(String.format("loop = %d; block %d = step = %d", loopconunt, blockcount, step));
 		}
 
 		/* Remove word which is at the very left of the left window */
@@ -482,6 +506,9 @@ protected void similarityDetermination() {
 
 		step2--;
 	}
+	
+	System.out.println("loooooooooooooooooooooooooooooooooooop = " +loopconunt);
+	
 	/* Compute score for the last step */
 	if (step2 == 0) {
 		score.addElement(new Float(blockCosine(left, right)));
@@ -498,6 +525,10 @@ protected void similarityDetermination() {
 	}
 	
 	
+	for(int j=1;j<score.size()-1;j++) {
+		sim_no_smooth.add(score.get(j));		
+	}
+	System.out.println(String.format("&&&&&&&&&&&&&&&&& %d %d", score.size(), sim_no_smooth.size()));
 }
 
 
@@ -506,14 +537,18 @@ protected void similarityDetermination() {
  * Date: 25-01-2017                                                                       * 
  * ****************************************************************************************/
 
+
 //	public enum StemmingAlgorithms {PORTER, ORENGO, NONE}
+
+
 
 	private int    segmentsCount = 0;
 //	public static String EOS_MARK = "^^";
 	private Stemmer stemmer = null;
 	private ArrayList<Hashtable<String, Integer>> windows = new ArrayList<>();
 //	private int minTokenSize = 2;
-
+//	private ArrayList<Integer> boundariesIndexes = new ArrayList<>(); // indice das sentenças que são final de segmento.
+	private ArrayList<Float> sim_no_smooth = new ArrayList<>();
 	
 
 
@@ -555,6 +590,17 @@ public void segmentToFileParts(File source) {
 	}
 
 }
+
+//public ArrayList<Integer> getBoundariesIndexes() {
+//	return boundariesIndexes;
+//}
+
+
+
+public ArrayList<Float> getSim_no_smooth() {
+	return sim_no_smooth;
+}
+
 
 public float[] getSim_score() {
 	return sim_score;
