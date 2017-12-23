@@ -467,16 +467,16 @@ protected void similarityDetermination() {
 	
 	/* Slide window and compute score */
 	final int end = text.size() - windowSize; // Last index to check
-	System.out.println("end = =========== " + end);
+//	System.out.println("end = =========== " + end);
 	String token; //  A stem
 	int step2=0; // Step counter
 	int i; // Counter
 
-	int loopconunt = 0;
+//	int loopconunt = 0;
 //	int blockcount = 0;
 	
 	for (i=windowSize; i<end; i++) {
-		loopconunt++;
+//		loopconunt++;
 		/* Compute score for a step */
 		if (step2 == 0) {
 			score.addElement(new Float(blockCosine(left, right)));
@@ -507,7 +507,7 @@ protected void similarityDetermination() {
 		step2--;
 	}
 	
-	System.out.println("loooooooooooooooooooooooooooooooooooop = " +loopconunt);
+//	System.out.println("loooooooooooooooooooooooooooooooooooop = " +loopconunt);
 	
 	/* Compute score for the last step */
 	if (step2 == 0) {
@@ -528,7 +528,7 @@ protected void similarityDetermination() {
 	for(int j=1;j<score.size()-1;j++) {
 		sim_no_smooth.add(score.get(j));		
 	}
-	System.out.println(String.format("&&&&&&&&&&&&&&&&& %d %d", score.size(), sim_no_smooth.size()));
+//	System.out.println(String.format("&&&&&&&&&&&&&&&&& %d %d", score.size(), sim_no_smooth.size()));
 }
 
 
