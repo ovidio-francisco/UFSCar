@@ -43,7 +43,7 @@ public class TesteCurvaSimilaridade3 {
 	private static void createFigure_CoesaoLexica(File file) {
 		TextTilingBR tt = new TextTilingBR();
 		
-//		tt.setWindowSize(50);
+		tt.setWindowSize(50);
 		tt.setStep(10);
 		
 		File textFile = file;
