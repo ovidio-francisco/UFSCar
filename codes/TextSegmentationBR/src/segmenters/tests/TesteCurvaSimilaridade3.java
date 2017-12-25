@@ -3,16 +3,15 @@ package segmenters.tests;
 import java.awt.BasicStroke;
 import java.awt.Color;
 import java.io.File;
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashSet;
+import java.util.TreeSet;
 import java.util.Vector;
 
 import javax.swing.JFrame;
 
 import org.jfree.chart.ChartFactory;
 import org.jfree.chart.ChartPanel;
-import org.jfree.chart.ChartUtilities;
 import org.jfree.chart.JFreeChart;
 import org.jfree.chart.plot.ValueMarker;
 import org.jfree.chart.renderer.xy.XYItemRenderer;
@@ -36,22 +35,23 @@ public class TesteCurvaSimilaridade3 {
 	
 	public static void main(String[] args) {
 
-		createFigure_CoesaoLexica(new File("./docs/Fabio/Ata 32 - 28a Reunião Odinária PPGCCS.txt"));
+//		createFigure_CoesaoLexica(new File("./docs/Fabio/Ata 32 - 28a Reunião Odinária PPGCCS.txt"));
+		createFigure_CoesaoLexica(new File("Generos-Musicais.txt"));
 	}
 	
 	
 	private static void createFigure_CoesaoLexica(File file) {
 		TextTilingBR tt = new TextTilingBR();
 		
-		tt.setWindowSize(50);
+//		tt.setWindowSize(40);
 		tt.setStep(10);
 		
 		File textFile = file;
 		
 		
-//		System.out.println(
+		System.out.println(
 				tt.segmentsToString(textFile)
-//				)
+				)
 				;
 
 
@@ -99,7 +99,6 @@ public class TesteCurvaSimilaridade3 {
 			
 			if (similaridades.get(j)==0 && limites.get(j)!=0 ) {
 				try {
-					
 					similaridades.set(j, (similaridades.get(j-1)+similaridades.get(j+1))/2);
 				} catch (Exception e) {
 				}
@@ -136,34 +135,39 @@ public class TesteCurvaSimilaridade3 {
 
 		dataset.addSeries(serie_coesao);
 //		dataset.addSeries(serie_deapthscore);
+
+		File filePNGImage = new File(textFile+".png");
+		
+		createChartXY(dataset, filePNGImage);
 		
 		
 		HashSet<Integer> boundsHyp = new HashSet<>();
-		
 		for(int s : segmentation) {
 			if(s<qtdPalavras) boundsHyp.add(s);
 		}
-		
-
-		HashSet<Integer> boundsRef = new HashSet<>();
-		File fileRef = new File(textFile+".bonds");
-		for(String s : Files.loadTxtFileToList(fileRef)) {
-			boundsRef.add(Integer.parseInt(s));
-		}
-		
-		for(int s : boundsRef)
-			System.out.println(String.format("[[%s]]+++%d+++", tt.getCollection().text.get(s), s));
-		
-		File filePNGImage = new File(textFile+".png");
-		createChartXY(dataset, filePNGImage);
 
 		for(int s : boundsHyp) {
 			addHypMarker(s);
 		}
 		
-		for(int b : boundsRef) {
-			addRefMarker(b); 
+
+		
+		
+		HashSet<Integer> boundsRef = new HashSet<>();
+		File fileRef = new File(textFile+".bounds");
+		
+		if (fileRef.exists()) {
+			
+			for(String s : Files.loadTxtFileToList(fileRef)) {
+				boundsRef.add(Integer.parseInt(s));
+			}
+					
+	
+			for(int b : boundsRef) {
+				addRefMarker(b); 
+			}
 		}
+		
 		
 //		printTokens(tt);
 		
@@ -183,26 +187,45 @@ public class TesteCurvaSimilaridade3 {
 		return result;
 	}
 	
+	private static String nextWords(int nextOne, int nextWordsCount, TextTilingBR tt) {
+		String result = "";
+		
+		for(int i=0; i<nextWordsCount; i++) {
+			result = result + " " + tt.getCollection().text.get(nextOne+i+1);
+		}
+		
+		return result;
+	}
+	
 	private static void saveSummary(File fileOriginal, File fileRef, HashSet<Integer> segHyp, HashSet<Integer> segRef, TextTilingBR tt) {
 		
+		TreeSet<Integer> ref = new TreeSet<>(segRef);
+		TreeSet<Integer> hyp = new TreeSet<>(segHyp);
+		
 		sbOut.append("Coesão léxica em e segmentações automática e manual ao longo do arquivo '" + fileOriginal + "'\n");
-		sbOut.append("Arquivo de Referêcia: '" + fileRef+"'\n\n");
+		if(fileRef.exists()) {
+			sbOut.append("Arquivo de Referêcia: '" + fileRef+"'\n\n");
+		}
+		else {
+			sbOut.append("Arquivo de Referência: '"+ fileRef + "' não encontrado\n\n");
+		}
+			
 		
 		sbOut.append("Palvras = " + tt.getCollection().text.size());
 		sbOut.append("\n\n"+tt.getConfigurationLabel());
 		sbOut.append("\nSegmentos Hyp = " + tt.getSegmentsCount());
-		sbOut.append("\nSegmentos Ref = " + segRef.size());
+		sbOut.append("\nSegmentos Ref = " + (ref.size()+1));
 
 		int lastWordsCount = 4;
 		
 		
         sbOut.append("\n\nFinais dos segmentos automáticos:\n");
-        for(int s : segHyp) {
-        	sbOut.append(String.format("  ... %s [%d]\n", lastWords(s-1, lastWordsCount, tt), s));
+        for(int s : hyp) {
+        	sbOut.append(String.format("  ... %s | [%d] | %s ...\n", lastWords(s-1, lastWordsCount, tt), s, nextWords(s-1, lastWordsCount, tt)));
         }
         sbOut.append("\n\nFinais dos segmentos referência:\n");
-        for(int s : segRef) {
-        	sbOut.append(String.format("  ... %s [%d]\n", lastWords(s, lastWordsCount, tt), s));
+        for(int s : ref) {
+        	sbOut.append(String.format("  ... %s | [%d] | %s ...\n", lastWords(s, lastWordsCount, tt), s, nextWords(s, lastWordsCount, tt)));
         }
 		
         
@@ -228,14 +251,14 @@ public class TesteCurvaSimilaridade3 {
 	    xyrenderer.setSeriesPaint(0, Color.black);
 
 	    
-	    try {
-			ChartUtilities.saveChartAsPNG(file, chart, 1400, 300);
-			sbOut.append("Arquivo de imagem salvo como: " + file);
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
+//	    try {
+//			ChartUtilities.saveChartAsPNG(file, chart, 1400, 300);
+//			sbOut.append("Arquivo de imagem salvo como: " + file);
+//		} catch (IOException e) {
+//			e.printStackTrace();
+//		}
 	    
-	    JFrame f = new JFrame("Coesão Lexica");
+	    JFrame f = new JFrame("Coesão Lexica - " + file.getName());
 	    f.setContentPane(pn);
 	    f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 	    f.pack();

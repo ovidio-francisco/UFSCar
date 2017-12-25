@@ -1,0 +1,77 @@
+como está,
+o que falta.
+o que se pretende,
+
+
+
+Atualmente o sistema 
+
+	* recebe documentos 
+	* extrai segmentos
+	* extrai tópicos
+
+Foi feito
+
+	* Coleta com usuários
+	* Tramento dos dados coletados
+	* Disponibilização de ferramentas
+	* Submissão ao ENIAC
+
+Pretende-se
+
+	* Oferecer uma interface de buscas para o usuário
+	* Avaliar o sistema final
+	* Classificar os segmentos (decisão ou não)
+	
+	
+O Sistema necessita
+	
+	* módulo de busca (tratar a string de busca)
+	* aprimorar os resultados da extração de tópicos
+	* avaliado 
+	
+	
+	
+		
+	
+	
+	Atualmente o sistema proposto recebe um conjunto de documentos divide cada um em segmentos com assunto relativamente independente. Por meito de técnicas de extração de tópicos fornece as palavras que podem melhor representar o tópico de cada segmento.
+	O sistema 
+	
+	
+	O sistem deve permitir ao usuário buscar por menções a decisões sobre um assunto. Bem como encontrar e navegar pelos documentos.
+	
+		possui a implementação das principais técnicas de extração de tópicos como LDA e PLSA 	 
+
+
+	Para isso, o sistema necessita de um módulo de busca por assuntos. Nesse módulo, a string de entrada do usuário deve ser tratada e comparada à uma base de dados dos documentos já processados. 
+	
+	As técnicas utilizadas devem ser avaliadas comparando-se os rótulos fornecidos pelo classificador e extrator e classificador, obtendo assim uma perpectiva dessas técnicas no contexto das atas. 
+	
+	Os sistema final deve ser experimentado por volutantários a fim de avaliar sua eficiência.
+	
+	
+	
+	
+	Os resultados da extração de tópicos devem ser avaliados junto a rotulação manual e eventualmente aprimorado. 
+	
+
+
+
+
+
+
+
+
+	
+		
+	A fim de avaliar o sistema, realizou-se um experimento onde participantes das re
+	
+	
+	
+	Os algoritmos de segmentação foram avaliados comparando-os com atas segmentadas manualmente por participantes das reuniões por meio de analises estatísticas chegou-se ao modelo que melhor segmenta os textos no contexto das atas de reunião. 
+
+
+		
+	A fim de avaliar os algoritmos de de segmentação textual, foram coletados
+	Os algoritmos de segmentação textual foram ajustados ao contexto das atas avaliados junto 

@@ -1,0 +1,303 @@
+@Article{Krallinger2005,
+author="Krallinger, Martin
+and Padron, Maria
+and Valencia, Alfonso",
+title="A sentence sliding window approach to extract protein annotations from biomedical articles",
+journal="BMC Bioinformatics",
+year="2005",
+volume="6",
+number="1",
+pages="1--12",
+abstract="Within the emerging field of text mining and statistical natural language processing (NLP) applied to biomedical articles, a broad variety of techniques have been developed during the past years. Nevertheless, there is still a great ned of comparative assessment of the performance of the proposed methods and the development of common evaluation criteria. This issue was addressed by the Critical Assessment of Text Mining Methods in Molecular Biology (BioCreative) contest. The aim of this contest was to assess the performance of text mining systems applied to biomedical texts including tools which recognize named entities such as genes and proteins, and tools which automatically extract protein annotations.",
+issn="1471-2105",
+doi="10.1186/1471-2105-6-S1-S19",
+url="http://dx.doi.org/10.1186/1471-2105-6-S1-S19"
+}
+
+
+@Book{Rezende2003,
+author = {Solange Oliveira Rezende},
+title = {Sistemas Inteligentes},
+publisher = {Manole},
+year = {2003},
+chapter = {13},
+pages = "337 - 270",
+}
+
+%%
+@article{Noh20154348,
+title = "Keyword selection and processing strategy for applying text mining to patent analysis ",
+journal = "Expert Systems with Applications ",
+volume = "42",
+number = "9",
+pages = "4348 - 4360",
+year = "2015",
+note = "",
+issn = "0957-4174",
+doi = "http://dx.doi.org/10.1016/j.eswa.2015.01.050",
+url = "http://www.sciencedirect.com/science/article/pii/S0957417415000652",
+author = "Heeyong Noh and Yeongran Jo and Sungjoo Lee",
+keywords = "Patent analysis",
+keywords = "Text-mining",
+keywords = "Keyword selection",
+keywords = "Keyword processing",
+keywords = "Document clustering ",
+}
+%%
+@InProceedings{Tan99textmining,
+    title = "Text Mining: The state of the art and the challenges",
+    author = "Ah-hwee Tan",
+    booktitle = "In Proceedings of the PAKDD 1999 Workshop on Knowledge Disocovery from Advanced Databases",
+    year = "1999",
+    pages = "65--70"
+}
+
+%%
+@article{Hashimi2015729,
+title = "Selection criteria for text mining approaches ",
+journal = "Computers in Human Behavior ",
+volume = "51, Part B",
+number = "",
+pages = "729 - 733",
+year = "2015",
+note = "Computing for Human Learning, Behaviour and Collaboration in the Social and Mobile Networks Era ",
+issn = "0747-5632",
+doi = "http://dx.doi.org/10.1016/j.chb.2014.10.062",
+url = "http://www.sciencedirect.com/science/article/pii/S0747563214007201",
+author = "Hussein Hashimi and Alaaeldin Hafez and Hassan Mathkour",
+keywords = "Text mining approaches",
+keywords = "Classification",
+keywords = "Clustering",
+keywords = "Selection criteria "
+}
+
+%%
+@article{Onan2016232,
+title = "Ensemble of keyword extraction methods and classifiers in text classification ",
+journal = "Expert Systems with Applications ",
+volume = "57",
+number = "",
+pages = "232 - 247",
+year = "2016",
+note = "",
+issn = "0957-4174",
+doi = "http://dx.doi.org/10.1016/j.eswa.2016.03.045",
+url = "http://www.sciencedirect.com/science/article/pii/S0957417416301464",
+author = "Aytuğ Onan and Serdar Korukoğlu and Hasan Bulut",
+keywords = "Keyword extraction",
+keywords = "Text classification",
+keywords = "Ensemble learning",
+keywords = "Scientific text classification "
+}
+
+%%
+@ARTICLE{daSilvaConrado2014,
+author={da Silva Conrado, M. and Felippo, A.D. and Salgueiro Pardo, T.A. and 
+Rezende, S.O.},
+title={A survey of automatic term extraction for Brazilian Portuguese},
+journal={Journal of the Brazilian Computer Society},
+year={2014},
+volume={20},
+number={1},
+page_count={28},
+doi={10.1186/1678-4804-20-12},
+art_number={12},
+note={cited By 4},
+url={
+http://www.scopus.com/inward/record.url?eid=2-s2.0-84914677674&partnerID=40&md5=
+8aec6bce61b88e59791ab0886a549efe},
+document_type={Article},
+source={Scopus},
+}
+
+%%
+@ARTICLE{Viera2007,
+author={Viera, A.F.G. and Virgil, J.},
+title={Uma revisão dos algoritmos de radicalização em língua portuguesa},
+journal={Information Research},
+year={2007},
+volume={12},
+number={3},
+note={cited By 1},
+url={
+http://www.scopus.com/inward/record.url?eid=2-s2.0-34247498325&partnerID=40&md5=
+03fd04aa37f37a17ac5d626e8ce9b3a4},
+document_type={Article},
+source={Scopus},
+}
+
+@InProceedings{Rossi:2014,
+ author = {Rafael Geraldeli Rossi and Alneu de Andrade Lopes and Thiago de Paulo Faleiros and Solange Oliveira Rezende},
+ title = {Inductive Model Generation for Text Classification Using a Bipartite Heterogeneous Network},
+ journal = {Journal of Computer Science and Technology},
+ local = {Institute of Mathematics and Computer Science, University of Sao Paulo, Sao Carlos, Brasil},
+ year = {2014},
+ volume = {14},
+ pages = {361--375}
+}
+
+@ARTICLE{Miriam:2013,
+ author = {Miriam Schwartz-Ziv and Michael S. Weisbach},
+ title = {What do boards really do? Evidence from minutes of board meetings},
+ journal = {Journal of Financial Economics},
+ year = {2013},
+ volume = {108},
+ number = {13},
+ pages = {349–366}
+}
+
+@ARTICLE{Merley:2014,
+ author = {Merley da Silva Conrado and Ariani Di Felippo and Thiago Alexandre Salgueiro Pardo and Solange Oliveira Rezende},
+ title = {A survey of automatic term extraction for Brazilian Portuguese},
+ journal = {Journal of the Brazilian Computer Society},
+ year = {2014},
+ volume = {20},
+ number = {12},
+ pages = {1--12}
+}
+
+@ARTICLE{Ricardo:2014,
+ author = {Ricardo Campos and Gael Dias and Alipio Mario Jorge and Celia Nunes},
+ title = {GTE-Cluster: A Temporal Search Interface for Implicit Temporal Queries},
+ journal = {35th European Conference on Information Retrieval},
+ year = {2014},
+ local = {Amtersdam, Netherlands},
+ volume = {40},
+ number = {12},
+ pages = {1--7}
+}
+
+@ARTICLE{Fayyad:1996,
+ author = {U. M. Fayyad},
+ title = {From data mining to knowledge discovery in Databases: an Overview},
+ journal = {Advances in Knowledge Discovery and Data mining},
+ volume = {12},
+ year = {1996},
+ local = {The MIT Press}
+}
+
+@InProceedings{Lee:2011,
+ author = {Jae-Kul Lee and Hyun-Je Song and Seong-Bae Park and Nick Bassiliades},
+ title = {Two-Step Sentence Extraction for Summarization of Meeting Minutes},
+ journal = {Eighth International Conference on Information Technology: New Generations},
+ year = {2011},
+ volume = {39},
+ pages = {614--619}
+}
+
+@ARTICLE{Masakazu:2013,
+ author = {Masakazu TAKAHASHI and Kenji KIDO and Kazuhiro HASHIMOTO},
+ title = {Towards the Profitability Trend Extraction from the Board Meeting Proceedings},
+ journal = {17th International Conference in Knowledge Based and Intelligent Information and Engineering Systems - KES2013},
+ volume = {78},
+ year = {2013}
+}
+
+@ARTICLE{ZHANG:2009,
+ author = {Chengzhi ZHANG},
+ title = {Document Clustering Description Based on Combination Strategy},
+ journal = { Fourth International Conference on Innovative Computing, Information and Control},
+ volume = {90},
+ year = {2009}
+}
+
+@ARTICLE{Yafooz:2013,
+ author = {Wael M.S. Yafooz and Siti Z.Z. Abidin,Nasiroh Omar and Rosenah A. Halim},
+ title = {Dynamic Semantic Textual Document Clustering Using Frequent Terms and Named Entity},
+ journal = {3rd International Conference on System Engineering and Technology},
+ volume = {63},
+ year = {2013}
+}
+
+@ARTICLE{Huang:2015,
+ author = {Dong Huang and Jian-Huang Lai and Chang-Dong Wang},
+ title = {Ensemble clustering using factor graph},
+ journal = {Pattern Recognition},
+ volume = {38},
+ year = {2015}
+}
+
+@ARTICLE{Beppler,
+ author = {Márcio Duarte Beppler and Anita Maria da Rocha Fernandes},
+ title = {Aplicação de Text mining para a Extração de Conhecimento Jurisprudencial},
+ journal = {CTTMar - UNIVALI},
+ volume = {56},
+ year = {2010}
+}
+
+@ARTICLE{Zhang:2008,
+ author = {Zhenya Zhang and Hongmei Cheng and Shuguang Zhang and Wanli Chen and Qiansheng Fang},
+ title = {Clustering Aggregation Based on Genetic Algorithm for Documents Clustering},
+ journal = {Congress on Evolutionary Computation},
+ year = {2008}
+}
+
+@ARTICLE{Song:2009,
+ author = {Wei Song and Cheng Hua Li and Soon Cheol Park},
+ title = {Genetic algorithm for text clustering using ontology and evaluating the validity of various semantic similarity measures},
+ journal = {Expert Systems with Applications},
+ year = {2009},
+ volume = {36},
+ pages = {9095--9104}
+}
+
+@ARTICLE{TAKAHASHI:2013,
+ author = {Masakazu Takahashi and Kenji Kido and Kazuhiro Hashimoto},
+ title = {Towards the Profitability Trend Extraction from the Board Meeting Proceedings},
+ journal = {17th International Conference in Knowledge Based and Intelligent Information and Engineering Systems - KES2013},
+ year = {2013},
+ volume = {22},
+ number = {13},
+ pages = {1328--1335}
+}
+
+@ARTICLE{Zaidy:2012,
+ author = {Rabeah Al-Zaidy and Benjamin C.M. Fung and Amr M. Youssef and Francis Fortin},
+ title = {Mining criminal networks from unstructured text documents},
+ journal = {Digital Investigation 8},
+ year = {2012},
+ pages = {147--160}
+}
+
+@ARTICLE{Li:2015,
+ author = {Yanjun Li and Congnan Luo and Soon M. Chung},
+ title = {A parallel text document clustering algorithm based on neighbors},
+ journal = {Cluster Comput},
+ year = {2015},
+ volume = {18},
+ pages = {933--948}
+}
+
+@ARTICLE{Chitra:2015,
+ author = {A. Chitra and Anupriya Rajkumar},
+ title = {Paraphrase Extraction using fuzzy hierarchical clustering},
+ journal = {Applied Soft Computing},
+ year = {2015},
+ volume = {34},
+ number = {90},
+ pages = {426--437}
+}
+
+@ARTICLE{Kim:2015,
+ author = {Se-Jong Kim and Jong-Hyeok Lee},
+ title = {Subtopic mining using simple patterns and hierarchical structure of subtopic candidates from web documents},
+ journal = {Information Processing and Management},
+ year = {2015},
+ volume = {51},
+ pages = {773--785}
+}
+
+@ARTICLE{DHILLON:2001,
+ author = {Inderjit S. Dhillon and Dharmendra S. Modha},
+ title = {Concept Decompositions for Large Sparse Text Data Using Clustering},
+ journal = {Machine Learning},
+ year = {2001},
+ volume = {42},
+ pages = {143--175}
+}
+
+
+
+
+
+

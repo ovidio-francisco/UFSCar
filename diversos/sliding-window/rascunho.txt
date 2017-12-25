@@ -1,0 +1,35 @@
+quantas palavras   = 330?
+tamanho da janela  = 15
+tamanho do passo   = 10
+
+end                = qtd palavras - tam janela = 315
+i                  = tam janela                = 15
+
+
+um loop de 15 até 315 com 300 loops
+   calcula os blocos na 1ª iteração e a cada 3 iterações = 100 scores
+   Calcula o último bloco fora do loop = 101 scores
+   
+apos a suavisação = 99 scores de similaridades
+
+
+primeira palavra do loop??? = janela + passo 
+  - pq na suavisação perde o primeiro e o último score
+
+
+o gráfico tem que ter 330 posições!
+o depth score tem que dizer qual palavra foi o vale
+  apos o ajuste
+o bounds tem que dizer qual palavra foi o corte
+
+
+
+exemplo didático para um texto simples:
+  Uma profssora conta dois casos ocorridos na aula
+  1 Aluno A e B brigam por causa do brinquedo X
+  2 Aluno C e D querem rever as notas da prova
+
+
+
+
+

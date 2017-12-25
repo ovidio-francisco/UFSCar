@@ -1,0 +1,81 @@
+
+
+Atas coletadas do
+
+	CPG
+	Conselho de curso
+	Conselho do Departamento
+
+
+Os documentos
+
+		Foram obtidos atas de reuniões do Conselhos de Pós Graduação, Conselho de Cursos e Conselho de Departamento de da UFSCar-Sorocaba. 
+
+
+Tratamento
+
+	Os arquivos gerados foram tratados para que os segmentos sempre terminem em uma sentença reconhecida pelo algoritmo. (uma vez que as medidas de avaliação de segmentos recebem senteças como unidade mínima de informação)
+
+O software
+	
+	O software denvolvido pemitiu aos voluntários visualizar o texto de um documento, selecionar o texto correspondente a um assunto e removê-lo para então rotulá-lo em classes prédefinidas e indicar quais palavras melhor indicavam o tópico. O software possibilitou a segmentação e rotulação de 6 atas e ao final gerou um aquivo contendo os dados coletados, o qual foi tratado e serviou como referência para a avaliação dos algorítmos de segmentação.
+
+
+Ferramenta Disponibilizada
+
+	A ferramenta visa a configuração do pré processamento, a detecção de sentenças e parâmetros dos algoritmos de segmentação. Permite a visualização de 
+
+
+	(pode ser usada como parte de preprocessamento).
+	
+Sistema proposto
+
+
+
+Submissão ao ENIAC	
+
+
+implementação
+
+melhorar extração de tópicos
+
+classificação
+
+avaliação
+
+	
+	
+Implementação 
+  Módulo de pesquisa
+  	Tratamento da string
+  	filtro
+  Módulo de classificação
+  	Treinamento 
+  	  aproveitar os rótulo já obtidos
+  Módulo de manutenção
+  	para fins de atualização/inserção de novos documentos e recalibragem dos classificadores e manutenção, 
+  		
+  Avaliação junto a voluntários
+     Funcionalidades do ponto de vista de experiência do usuário
+     Eficiência
+  Otimização extrator de tópicos
+  	Após avaliação, uma eventual otimização das técnicas deve ser considerada para aprimorameto das ferramentas.
+	
+	
+	
+	
+	
+	
+	Recebe documentos e realiza o préprocessamento e produz uma estrutura dados com os segmentos e rótulos . 
+	
+	
+	Assim, essa estrutura registrará quais assuntos foram tratados bem como o trecho do 
+	
+	A estrutura de dados, matriz segmento/termo 
+	
+	
+	
+	
+	
+	
+	
