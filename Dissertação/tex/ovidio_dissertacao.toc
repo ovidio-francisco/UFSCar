@@ -18,8 +18,8 @@
 \contentsline {subsubsection}{\numberline {3.1.1.1}Segmenta\IeC {\c c}\IeC {\~a}o}{21}{subsubsection.3.1.1.1}
 \contentsline {subsubsection}{\numberline {3.1.1.2}Segmenta\IeC {\c c}\IeC {\~a}o de Refer\IeC {\^e}ncia}{22}{subsubsection.3.1.1.2}
 \contentsline {subsection}{\numberline {3.1.2}Configura\IeC {\c c}\IeC {\~a}o experimental}{22}{subsection.3.1.2}
-\contentsline {subsubsection}{\numberline {3.1.2.1}Crit\IeC {\'e}rios de avalia\IeC {\c c}\IeC {\~a}o}{24}{subsubsection.3.1.2.1}
-\contentsline {subsubsection}{\numberline {3.1.2.2}Resultados}{24}{subsubsection.3.1.2.2}
+\contentsline {subsubsection}{\numberline {3.1.2.1}Crit\IeC {\'e}rios de avalia\IeC {\c c}\IeC {\~a}o}{23}{subsubsection.3.1.2.1}
+\contentsline {subsubsection}{\numberline {3.1.2.2}Resultados}{23}{subsubsection.3.1.2.2}
 \contentsline {subsection}{\numberline {3.1.3}Representa\IeC {\c c}\IeC {\~a}o Computacional}{26}{subsection.3.1.3}
 \contentsline {subsection}{\numberline {3.1.4}Extra\IeC {\c c}\IeC {\~a}o de T\IeC {\'o}picos / Classifica\IeC {\c c}\IeC {\~a}o de Textos}{26}{subsection.3.1.4}
 \contentsline {section}{\numberline {3.2}M\IeC {\'o}dulo Consulta}{26}{section.3.2}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.8.22)  26 DEC 2017 21:08
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.8.22)  27 DEC 2017 13:43
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1545,19 +1545,9 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-[22] <conteudo/capitulos/figs/coesaolexicaTT-15-10.png, id=403, 1413.28pt x 306.14375pt>
-File: conteudo/capitulos/figs/coesaolexicaTT-15-10.png Graphic file (type png)
- <use conteudo/capitulos/figs/coesaolexicaTT-15-10.png>
-Package pdftex.def Info: conteudo/capitulos/figs/coesaolexicaTT-15-10.png used on input line 199.
-(pdftex.def)             Requested size: 455.0pt x 98.56125pt.
- <conteudo/capitulos/figs/generos-musicais-TT-40-20.png, id=405, 1413.28pt x 306.14375pt>
-File: conteudo/capitulos/figs/generos-musicais-TT-40-20.png Graphic file (type png)
- <use conteudo/capitulos/figs/generos-musicais-TT-40-20.png>
-Package pdftex.def Info: conteudo/capitulos/figs/generos-musicais-TT-40-20.png used on input line 211.
-(pdftex.def)             Requested size: 455.0pt x 98.56125pt.
- [23 <./conteudo/capitulos/figs/coesaolexicaTT-15-10.png> <./conteudo/capitulos/figs/generos-musicais-TT-40-20.png>]
-./conteudo/capitulos/4-cap3.tex:260: Undefined control sequence.
-l.260 ...sponíveis para consulta em~\urlsoftwares
+[22]
+./conteudo/capitulos/4-cap3.tex:206: Undefined control sequence.
+l.206 ...sponíveis para consulta em~\urlsoftwares
                                                   .
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1568,7 +1558,21 @@ and I'll forget about whatever was undefined.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[24] [25] [26]) [27] (./ovidio_dissertacao.bbl (./ovidio_dissertacao.brf)
+[23] <conteudo/capitulos/figs/coesaolexicaTT-50-9.png, id=411, 1413.28pt x 306.14375pt>
+File: conteudo/capitulos/figs/coesaolexicaTT-50-9.png Graphic file (type png)
+ <use conteudo/capitulos/figs/coesaolexicaTT-50-9.png>
+Package pdftex.def Info: conteudo/capitulos/figs/coesaolexicaTT-50-9.png used on input line 267.
+(pdftex.def)             Requested size: 455.0pt x 98.56125pt.
+ <conteudo/capitulos/figs/generos-musicais-TT-40-20.png, id=413, 1413.28pt x 306.14375pt>
+File: conteudo/capitulos/figs/generos-musicais-TT-40-20.png Graphic file (type png)
+ <use conteudo/capitulos/figs/generos-musicais-TT-40-20.png>
+Package pdftex.def Info: conteudo/capitulos/figs/generos-musicais-TT-40-20.png used on input line 280.
+(pdftex.def)             Requested size: 455.0pt x 98.56125pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[24 <./conteudo/capitulos/figs/coesaolexicaTT-50-9.png>] [25 <./conteudo/capitulos/figs/generos-musicais-TT-40-20.png>] [26]) [27] (./ovidio_dissertacao.bbl (./ovidio_dissertacao.brf)
 \tf@brf=\write6
 \openout6 = `ovidio_dissertacao.brf'.
 
@@ -1602,14 +1606,14 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 309.
 ### bottom level 
 Here is how much of TeX's memory you used:
  15335 strings out of 494884
- 229887 string characters out of 6179236
- 419207 words of memory out of 5000000
+ 229882 string characters out of 6179236
+ 417213 words of memory out of 5000000
  18080 multiletter control sequences out of 15000+600000
  93676 words of font info for 141 fonts, out of 8000000 for 9000
  38 hyphenation exceptions out of 8191
  47i,15n,40p,1542b,3602s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}</usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx8.pfb></usr/share/texmf/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr7.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss10.pfb></usr/share/texmf/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss17.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsso12.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt12.pfb>
-Output written on ovidio_dissertacao.pdf (33 pages, 683314 bytes).
+Output written on ovidio_dissertacao.pdf (33 pages, 683660 bytes).
 PDF statistics:
  699 PDF objects out of 1000 (max. 8388607)
  613 compressed objects within 7 object streams

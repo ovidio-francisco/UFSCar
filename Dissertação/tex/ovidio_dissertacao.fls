@@ -276,9 +276,9 @@ INPUT ./conteudo/capitulos/figs/pre-process.pdf
 INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmbx12.tfm
 INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmbx8.tfm
 INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmtt12.tfm
-INPUT conteudo/capitulos/figs/coesaolexicaTT-15-10.png
-INPUT ./conteudo/capitulos/figs/coesaolexicaTT-15-10.png
-INPUT ./conteudo/capitulos/figs/coesaolexicaTT-15-10.png
+INPUT conteudo/capitulos/figs/coesaolexicaTT-50-9.png
+INPUT ./conteudo/capitulos/figs/coesaolexicaTT-50-9.png
+INPUT ./conteudo/capitulos/figs/coesaolexicaTT-50-9.png
 INPUT conteudo/capitulos/figs/generos-musicais-TT-40-20.png
 INPUT ./conteudo/capitulos/figs/generos-musicais-TT-40-20.png
 INPUT ./conteudo/capitulos/figs/generos-musicais-TT-40-20.png

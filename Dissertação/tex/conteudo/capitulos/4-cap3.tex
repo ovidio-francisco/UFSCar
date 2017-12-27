@@ -175,65 +175,11 @@ A Tabela~\ref{tab:segmentacaoreferencia} contém, para cada ata, a quantidade de
 \subsection{Configuração experimental}
 \label{subsec:configuracaoexperimental}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Falar dos parametros do TT
-% falar dos testes e qual foi a melhor configuração.
-% mostrar um gráfico com essa configuração.
-% mostrar o gráfico dos generos musicais.
-% 
-% e depois justificar o por que de usar outras técnicas
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
   
-% --> Falar da coesão léxica peculiar das atas!!
-
-Uma vez a coesão léxica é pressuposto de muitas abordagens em segmentação textual, fez-se uma análise desses documentos quanto a similaridade dos termos ao longo do texto. Verificou-se que a técnica de janelas deslizantes empregada pelo TextTiling encontra os vales que indicam transições entre segmentos, contudo ao comparar esses vales com a segmentação de referência, nota-se que a maioria dos limites coincide  ou estão próximos aos vales, porém há casos onde a referência indica limites em trechos com alta coesão léxica e outros onde a queda da coesão, indicada por vales, não coincide com nenhum limite de referência. 
-
-
-
-Na Figura~\ref{fig:coesaolexicaTT} a linha horizontal representa a variação da coesão léxica ao longo de uma ata e as linha verticais azuis e vermelhas representam os limites entre segmentos atribuidos pela referência e pelo algoritmo respectivamente. 
-
-  %--- ---
-  \begin{figure}[!h]
-	  \centering
-	  \includegraphics[width=\textwidth]{conteudo/capitulos/figs/coesaolexicaTT-15-10.png}
-	  \caption{Variação da coesão léxica ao longo de uma ata junto a uma segmentação automática em contraste com uma segmentação de referência.}
-	  \label{fig:coesaolexicaTT}
-  \end{figure}
-
-
-Analisou-se também o desempenho da mesma técnica aplicada a um texto contínuo extraído de artigo da Interent que descreve seis gêneros musicais brasileiros um após um outro separados em seções. Ao observar a Figura~\ref{fig:coesaolexicaTT-generos-musicais}, nota-se que os vales são mais definidos e a maioria dos segmentos coincidem ou estão próximos a segmentação de referência. A segmentação de refência possui sete segementos que separam uma introdução do assuntos e respeitam cada uma das subseções que tratam de um gênero músical. Obtem-se nesse cenário uma eficiência maior em relação a segmentação da ata, o que sugere que textos mais estruturados podem se beneficiar mais dessa técnica.
-
-
-  %--- ---
-  \begin{figure}[!h]
-	  \centering
-	  \includegraphics[width=\textwidth]{conteudo/capitulos/figs/generos-musicais-TT-40-20.png}
-	  \caption{Variação da coesão léxica ao longo de um artigo melhor estruturado seções junto a uma segmentação automática em contraste com uma segmentação de referência.}
-	  \label{fig:coesaolexicaTT-generos-musicais}
-  \end{figure}
-
-
-
-
-
-
-
-  % a falta de coesão lexica das atas sugere 
-  % a menor eficiencia do TT nas atas sugere uma menor coesão léxica desses documentos ou a premissa do algoritmo não é tão boa.
-
-
-
-
-
-
-
-
 %%%%%%%%%%
-% Parâmetros
+% Parâmetros do TT
 %%%%%%%%%%
-% As implementações dos algoritmos permitem ao usuário a configuração de seus parâmetros. 
-%
+
 O \textit{TextTiling} permite ajustarmos dois parâmetros, sendo o tamanho da janela e o passo. Por meio de testes empíricos escolheu-se os valores os valores 20, 40 e 60 para o tamanho da janela e 3, 6, 9 e 12 para o passo. Gerando ao final 20 configurações.
 %
 
@@ -295,6 +241,49 @@ Obteve-se, por meio dos testes estatísticos apresentados, as melhores configura
 	\label{tab:resultadosTT}
 \end{table}
 
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%
+% Análise da Coesão Léxica e eficiência da técnica do TT
+%%%%%%%%%%%%%%%%%%%%%%
+
+% --> Falar da coesão léxica peculiar das atas!!
+
+Uma vez a coesão léxica é pressuposto de muitas abordagens em segmentação textual, fez-se uma análise desses documentos quanto a similaridade dos termos ao longo do texto. Verificou-se que a técnica de janelas deslizantes empregada pelo TextTiling encontra os vales que indicam transições entre segmentos, contudo ao comparar esses vales com a segmentação de referência, nota-se que a maioria dos limites coincide  ou estão próximos aos vales, porém há casos onde a referência indica limites em trechos com alta coesão léxica e outros onde a queda da coesão, indicada por vales, não coincide com nenhum limite de referência. 
+
+
+
+% Na Figura~\ref{fig:coesaolexicaTT}a linha horizontal representa a variação da coesão léxica ao longo de uma ata e as linha verticais azuis e vermelhas representam os limites entre segmentos atribuidos pela referência e pelo algoritmo respectivamente. 
+Na Figura~\ref{fig:coesaolexicaTT} é apresentado a variação da coesão léxica ao longo de uma ata e a segmentação obtida pelo \textit{TextTiling} usando tamanho de janela igual a 50 e passo 9. A linha horizontal representa a variação da coesão léxica e as linha verticais azuis e vermelhas representam os limites entre segmentos atribuidos pela referência e pelo algoritmo respectivamente. 
+
+
+
+
+
+  %--- ---
+  \begin{figure}[!h]
+	  \centering
+	  \includegraphics[width=\textwidth]{conteudo/capitulos/figs/coesaolexicaTT-50-9.png}
+	  \caption{Variação da coesão léxica ao longo de uma ata junto a uma segmentação automática em contraste com uma segmentação de referência.}
+	  \label{fig:coesaolexicaTT}
+  \end{figure}
+
+
+Analisou-se também o desempenho da mesma técnica aplicada a um texto contínuo extraído de artigo da Interent que descreve seis gêneros musicais brasileiros um após um outro separados em seções. Ao observar a Figura~\ref{fig:coesaolexicaTT-generos-musicais}, nota-se que os vales são mais definidos e a maioria dos segmentos coincidem ou estão próximos a segmentação de referência. A segmentação de refência possui sete segementos que separam uma introdução do assuntos e respeitam cada uma das subseções que tratam de um gênero músical.  Obtem-se nesse cenário uma eficiência maior em relação a segmentação da ata, o que sugere que textos organizados em seções podem ter melhores benefícios com técnicas baseadas em coesão léxica que as atas, onde esse fator é menos significativo.  % ou a premissa do algoritmo não é tão boa.
+
+
+
+  %--- ---
+  \begin{figure}[!h]
+	  \centering
+	  \includegraphics[width=\textwidth]{conteudo/capitulos/figs/generos-musicais-TT-40-20.png}
+	  \caption{Variação da coesão léxica ao longo de um artigo melhor estruturado em seções junto a uma segmentação automática em contraste com uma segmentação de referência.}
+	  \label{fig:coesaolexicaTT-generos-musicais}
+  \end{figure}
+
+
+  % De certa forma, tratar o C99 e o TT como pertencentes a mesma técnica = coesão léxica!!  % e depois justificar o por que de usar outras técnicas
 
 
 
