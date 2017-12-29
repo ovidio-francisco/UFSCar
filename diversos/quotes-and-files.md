@@ -341,7 +341,7 @@ http://www.scitepress.org/Documents/2008/17282/17282.pdf
 
 
 
-
+http://ijarcet.org/wp-content/uploads/IJARCET-VOL-4-ISSUE-5-1858-1862.pdf
 
 
 
@@ -350,13 +350,33 @@ http://www.scitepress.org/Documents/2008/17282/17282.pdf
 
 ****************************************************************************
 ****************************************************************************
+Fuzzy Implementation of proposed hybrid algorithm using Topic Tilling & C99 for Text Segmentation
+=======================
 
+"Martin Riedl and Chris Biemann in 2012 [13] formed
+TopicTiling algorithm. This algorithm is not based on
+words, but on the last topic IDs assigned by the
+Bayesian Inference method of LDA. This increases
+sparsity since the word space is reduced to a topic
+space of much lower dimension."
+
+http://ijarcet.org/wp-content/uploads/IJARCET-VOL-4-ISSUE-5-1858-1862.pdf
 
 
 ****************************************************************************
 ****************************************************************************
 
+"2.2 DotPlotting
+Another well known text segmentation algorithm is an adaptation of DotPlotting to text
+segmentation proposed by [10]. This algorithm is based on a graphical representation of
+the text, where each word is one or more dots on a bi-dimensional graphic. The number
+and positions of dots depend on where and how many times the word appears in the
+text. For example, a word appearing in sentence i and sentence j will be represented by
+four dots : (i, i), (i, j), (j, i) and (j, j). Parts of the text where a strong term is repeated
+appear on the graphic as dot clouds. Then, the algorithm try to regroup dots on the
+graphic in clouds with an optimal density. These dots clouds are the topical segments."
 
+http://www.scitepress.org/Documents/2008/17282/17282.pdf
 
 ****************************************************************************
 ****************************************************************************
