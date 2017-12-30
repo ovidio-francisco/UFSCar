@@ -235,6 +235,13 @@ Um gráfico que mostra 3 medidas (Pk, Pk' e WinDiff) para 3 agls (DTTS, C99 e TT
 
 file:///ext4Data/UFSCar/papers/Segmentação/more papers/papers/Text Mining for Meeting Transcript Analysis to Extract Key Decision Elements.pdf
 
+Quando colocar o gráfico com A P R F1, falar antes que a segmentação por segmentos atribui um
+segmento a todo final de segmento, ou seja, todo candidato a segmento é um segmento, e por tanto
+tem revocação = 0.
+
+A quantidade de segmentos influencia na revocação
+
+
 ****************************************************************************
 ****************************************************************************
 
