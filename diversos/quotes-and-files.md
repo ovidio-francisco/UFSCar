@@ -388,11 +388,22 @@ http://www.scitepress.org/Documents/2008/17282/17282.pdf
 ****************************************************************************
 ****************************************************************************
 
+TAS pg 31
+Tabalhos que usam Sentenças e trabalhos que usam paragrafos como unidade básica de informação
 
+TAS pg 34 e 36
+Exemplos de trabalhos onde os juizes não concordaram devido ao alto grau de subjetividade da tarefa
+
+TAS pg 35
+"For each subtopic each annotator was asked to indenfity it with a brief description using keywords "
 
 ****************************************************************************
 ****************************************************************************
+TAS explora a estrutura do discurso
 
+"our focus was on exploring the discourse structure influence in subtopic segmentation"
+
+pg 40
 
 
 ****************************************************************************

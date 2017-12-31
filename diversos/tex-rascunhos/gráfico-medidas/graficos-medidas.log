@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.8.22)  30 DEC 2017 16:35
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.8.22)  30 DEC 2017 18:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -525,21 +525,21 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-LaTeX Font Info:    Try loading font information for U+msa on input line 20.
+LaTeX Font Info:    Try loading font information for U+msa on input line 19.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 20.
+LaTeX Font Info:    Try loading font information for U+msb on input line 19.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 
-LaTeX Warning: Reference `xx' on page 1 undefined on input line 20.
+LaTeX Warning: Reference `xx' on page 1 undefined on input line 19.
 
 
-Overfull \hbox (9.36844pt too wide) in paragraph at lines 24--42
+Overfull \hbox (9.36844pt too wide) in paragraph at lines 23--41
  [][] 
  []
 
@@ -552,14 +552,14 @@ Package epstopdf Info: Source file: <grafico-medidas-APRF1.eps>
 (epstopdf)                    size: 13048 bytes
 (epstopdf)             Command: <repstopdf --outfile=grafico-medidas-APRF1-eps-
 converted-to.pdf grafico-medidas-APRF1.eps>
-(epstopdf)             \includegraphics on input line 63.
+(epstopdf)             \includegraphics on input line 54.
 Package epstopdf Info: Output file is already uptodate.
 <grafico-medidas-APRF1-eps-converted-to.pdf, id=1, 484.81125pt x 172.645pt>
 File: grafico-medidas-APRF1-eps-converted-to.pdf Graphic file (type pdf)
 
 <use grafico-medidas-APRF1-eps-converted-to.pdf>
 Package pdftex.def Info: grafico-medidas-APRF1-eps-converted-to.pdf used on inp
-ut line 63.
+ut line 54.
 (pdftex.def)             Requested size: 345.0pt x 122.8633pt.
 Package epstopdf Info: Source file: <grafico-medidas-Pk-Wd.eps>
 (epstopdf)                    date: 2017-12-30 09:29:52
@@ -570,7 +570,7 @@ Package epstopdf Info: Source file: <grafico-medidas-Pk-Wd.eps>
 (epstopdf)                    size: 14487 bytes
 (epstopdf)             Command: <repstopdf --outfile=grafico-medidas-Pk-Wd-eps-
 converted-to.pdf grafico-medidas-Pk-Wd.eps>
-(epstopdf)             \includegraphics on input line 82.
+(epstopdf)             \includegraphics on input line 66.
 Package epstopdf Info: Output file is already uptodate.
 
 <grafico-medidas-Pk-Wd-eps-converted-to.pdf, id=2, 433.62pt x 180.675pt>
@@ -578,7 +578,7 @@ File: grafico-medidas-Pk-Wd-eps-converted-to.pdf Graphic file (type pdf)
 
 <use grafico-medidas-Pk-Wd-eps-converted-to.pdf>
 Package pdftex.def Info: grafico-medidas-Pk-Wd-eps-converted-to.pdf used on inp
-ut line 82.
+ut line 66.
 (pdftex.def)             Requested size: 345.0pt x 143.75723pt.
 
 
