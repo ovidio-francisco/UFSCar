@@ -172,6 +172,7 @@ public class TestSegmenterModel {
 
 	public void setRankingSize(int rankingSize) {
 		this.rankingSize = rankingSize;
+//		((C99BR) segmenter).setRakingSize(rankingSize);  
 	}
 
 	public boolean isWeight() {

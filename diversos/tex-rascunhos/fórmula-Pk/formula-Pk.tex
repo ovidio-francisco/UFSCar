@@ -9,7 +9,7 @@
 
 Considerando o conceito de \textit{near misses}, algumas soluções foram propostas. Proposta por~\cite{Beeferman1999}, P$_k$ atribui valores parciais a \textit{near misses}, ou seja, limites sempre receberão um peso proporcional à sua proximidade, desde que dentro de um janela de tamanho~$k$.  Para isso, esse método move uma janela de tamanho $k$ ao longo do texto. A cada passo verifica, na referência e na hipótese, se as extremidades (a primeira e última sentença) da janela estão ou não dentro do mesmo segmento, então, penaliza o algoritmo caso este não concorde com a referência. Ou seja, dado duas palavras de distância $k$, o algoritmo é penalizado caso não concorde com a segmentação de referência se as palavras estão ou não no mesmo segmento. 
 
-Dado uma segmentação de referência $ref$ e uma segmentação automática $hyp$, ambas com $N$ sentenças, P$_k$ é computada como: 
+Dadas uma segmentação de referência $ref$ e uma segmentação automática $hyp$, ambas com $N$ sentenças, P$_k$ é computada como: 
 
 
 \begin{equation}
