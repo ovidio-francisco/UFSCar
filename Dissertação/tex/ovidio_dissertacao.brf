@@ -15,23 +15,24 @@
 \backcite {Choi2000, Kern2009, Misra2009}{{9}{2.1}{figure.2.2}}
 \backcite {Choi2000, Kern2009, Misra2009}{{9}{2.1}{figure.2.2}}
 \backcite {Choi2000}{{9}{2.1}{figure.2.2}}
-\backcite {Eisenstein2008}{{10}{2.1}{figure.2.3}}
-\backcite {Blei2003}{{10}{2.1}{figure.2.3}}
-\backcite {Kern2009}{{12}{2.1.1}{equation.2.1.4}}
-\backcite {Beeferman1999}{{12}{2.1.1}{figure.2.4}}
-\backcite {Pevzner2002}{{13}{2.1.1}{figure.2.4}}
-\backcite {Rezende2003}{{14}{2.2}{section.2.2}}
-\backcite {Rezende2003}{{14}{2.2.1}{subsection.2.2.1}}
-\backcite {Rezende2003}{{15}{2.2.1}{table.2.2}}
-\backcite {Steyvers2007,Blei2012}{{15}{2.3}{section.2.3}}
-\backcite {Steyvers2007,Blei2012}{{15}{2.3}{section.2.3}}
-\backcite {Deerwester1990}{{16}{2.3}{equation.2.3.6}}
-\backcite {Deerwester1990}{{16}{2.3}{equation.2.3.6}}
-\backcite {Cheng2013}{{16}{2.3}{equation.2.3.6}}
-\backcite {Lee1999}{{16}{2.3}{equation.2.3.6}}
-\backcite {Hofmann1999}{{16}{2.3}{equation.2.3.6}}
-\backcite {Blei2003}{{16}{2.3}{equation.2.3.6}}
-\backcite {Blei2012}{{17}{2.3}{Item.4}}
+\backcite {Reynar1998}{{10}{2.1}{figure.2.4}}
+\backcite {Eisenstein2008}{{11}{2.1}{equation.2.1.2}}
+\backcite {Blei2003}{{11}{2.1}{equation.2.1.2}}
+\backcite {Kern2009}{{13}{2.1.1}{equation.2.1.5}}
+\backcite {Beeferman1999}{{13}{2.1.1}{figure.2.5}}
+\backcite {Pevzner2002}{{14}{2.1.1}{equation.2.1.6}}
+\backcite {Rezende2003}{{15}{2.2}{section.2.2}}
+\backcite {Rezende2003}{{15}{2.2.1}{subsection.2.2.1}}
+\backcite {Rezende2003}{{16}{2.2.1}{table.2.2}}
+\backcite {Steyvers2007,Blei2012}{{16}{2.3}{section.2.3}}
+\backcite {Steyvers2007,Blei2012}{{16}{2.3}{section.2.3}}
+\backcite {Deerwester1990}{{17}{2.3}{equation.2.3.8}}
+\backcite {Deerwester1990}{{17}{2.3}{equation.2.3.8}}
+\backcite {Cheng2013}{{17}{2.3}{equation.2.3.8}}
+\backcite {Lee1999}{{17}{2.3}{equation.2.3.8}}
+\backcite {Hofmann1999}{{17}{2.3}{equation.2.3.8}}
+\backcite {Blei2003}{{18}{2.3}{equation.2.3.8}}
+\backcite {Blei2012}{{18}{2.3}{Item.4}}
 \backcite {Rezende2003}{{21}{3}{Item.7}}
 \backcite {Alvares2005}{{21}{4}{Item.8}}
 \backcite {Bokaei2015, Bokaei2016, Misra2009, Sakahara2014}{{21}{3.1.1.1}{subsubsection.3.1.1.1}}

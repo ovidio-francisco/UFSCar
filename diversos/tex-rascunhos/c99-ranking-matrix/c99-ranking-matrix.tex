@@ -16,7 +16,7 @@ Na Figura~\ref{fig:matrix-similarity} é mostrado um exemplo de uma matriz de si
   %--- Figura Visão Geral ---
   \begin{figure}[!h]
 	  \centering
-	  \includegraphics[width=1\textwidth]{c99.png}
+	  \includegraphics[width=1\textwidth]{c99-ranking-matrix.png}
 	  \caption{\textit{DotPlot} da similaridade entre sentenças onde as linha verticais representam segmentos reais.}
 	  \label{fig:matrix-similarity}
   \end{figure}
@@ -31,24 +31,26 @@ Na Figura~\ref{fig:matrix-similarity} é mostrado um exemplo de uma matriz de si
 % -? Após a contrução da matriz de ranking obtem-se um maior contraste entre facilitando a detecção de limites quando a queda de similaridade entre sentenças é mais sutil.
 
 
-O processo de intentificação dos limites é baseado no método DotPloting~\cite{Reynar} que usa regiões com maior densidade em uma matriz de similaridades para determinar como os segmentos são distribuídos. Um segmento é definido por duas sentenças $i$ e $j$ que representam uma região quadrada ao longo da diagonal da matriz. 
+O processo de intentificação dos limites é baseado no método DotPloting~\cite{Reynar} que usa regiões com maior densidade em uma matriz de similaridades para determinar como os segmentos são distribuídos. Um segmento é definido por duas sentenças $i$ e $j$ que representam uma região quadrada ao longo da diagonal da matriz. Calcula-se a densidade dessa região como mostrado na Equação~\ref{equ:densidade-c99}.
 %
 %
 %%%%%%%%%%%%%%
 %
-Seja $s_{i,j}$ a somatória dos \textit{rakings} de um segmento e $a_{i,j}$ sua área interior. Seja $B = \{b1,...,b_m\}$ a lista de $m$ segmentos.
-
-
-Calcula-se a medida de densidade de uma região por 
+%
+%Calcula-se a densidade de uma região da seguinte forma:
+Seja $s_{i,j}$ a somatória dos \textit{rakings} de um segmento e $a_{i,j}$ sua área interior. 
+Seja $B = \{b1,...,b_m\}$ a lista de $m$ segmentos e$s_k$  $a_k$ são a somatória dos valores dos rankings e a área de um segmento $k$ em $B$. Então, a densidade é computada por: 
 
 \begin{equation}
-D = 
+D = \frac{\sum_{k=1}^m s_k}{\sum_{k=1}^m a_k}
+\label{equ:densidade-c99}
 \end{equation}
 
 
-onde $s_k$  $a_k$ são a somatória dos valores dos rankings e a área de um segmento $k$ em $B$.
 
-O processo incia com um único segmento formado por todas as sentenças do documento e o divide recursivamente em $m$ segmentos. Cada passo divide um dos segmentos em B no ponto $ij$ que maximiza D. O processo ser repte até que se atinja o número de segmento desejados ou um limiar de similaridade.
+
+
+O processo incia com um único segmento formado por todas as sentenças do documento e o divide recursivamente em $m$ segmentos. Cada passo divide um dos segmentos em B no ponto $ij$ que maximiza D~(Equação \ref{equ:densidade-c99}). O processo ser repte até atingir o número de segmento desejados ou um limiar de similaridade.
  
 
 
@@ -59,8 +61,9 @@ O processo incia com um único segmento formado por todas as sentenças do docum
 \end{document}
 
 
+%file:///ext4Data/UFSCar/papers/Segmentação/more papers/papers 2/Adapting and comparing linear segmentation methods for French.pdf
 
-
+%Calcula-se a medida de densidade de uma região por: 
 
 
 

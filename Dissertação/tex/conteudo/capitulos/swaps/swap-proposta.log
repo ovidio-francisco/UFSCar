@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.8.22)  4 DEC 2017 11:54
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.8.22)  1 JAN 2018 16:57
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -7,15 +7,67 @@ entering extended mode
 (./swap-proposta.tex
 LaTeX2e <2017/01/01> patch level 3
 Babel <3.9r> and hyphenation patterns for 6 language(s) loaded.
+./swap-proposta.tex:9: Undefined control sequence.
+l.9 \subsection
+               {Configuração experimental}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
 
-./swap-proposta.tex:3: LaTeX Error: Missing \begin{document}.
+
+./swap-proposta.tex:9: LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.3 A
-      seguir...
+l.9 \subsection{C
+                 onfiguração experimental}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no C in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no � in font nullfont!
+Missing character: There is no � in font nullfont!
+Missing character: There is no � in font nullfont!
+Missing character: There is no � in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no x in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 9--11
+[]
+ []
+
+
+./swap-proposta.tex:54: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.54 A
+       seguir...
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -30,19 +82,19 @@ Missing character: There is no . in font nullfont!
 Missing character: There is no . in font nullfont!
 Missing character: There is no . in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 3--4
+Overfull \hbox (20.0pt too wide) in paragraph at lines 54--55
 []
  []
 
 
-./swap-proposta.tex:5: LaTeX Error: Missing \begin{document}.
+./swap-proposta.tex:56: LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.5 A
-     ntes de ...
+l.56 A
+      ntes de ...
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -57,19 +109,19 @@ Missing character: There is no . in font nullfont!
 Missing character: There is no . in font nullfont!
 Missing character: There is no . in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 5--6
+Overfull \hbox (20.0pt too wide) in paragraph at lines 56--57
 []
  []
 
 
-./swap-proposta.tex:72: LaTeX Error: Missing \begin{document}.
+./swap-proposta.tex:123: LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.72 o
-       módulo de preparação/manutenção recebe como entrada os documento...
+l.123 o
+        módulo de preparação/manutenção recebe como entrada os document...
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -712,19 +764,19 @@ Missing character: There is no o in font nullfont!
 Missing character: There is no s in font nullfont!
 Missing character: There is no . in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 72--73
+Overfull \hbox (20.0pt too wide) in paragraph at lines 123--124
 []
  []
 
 
-./swap-proposta.tex:74: LaTeX Error: Missing \begin{document}.
+./swap-proposta.tex:125: LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.74 U
-      ma vez que os segmentos estejam rotulados e representados computaciona...
+l.125 U
+       ma vez que os segmentos estejam rotulados e representados computacion...
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -1059,19 +1111,19 @@ Missing character: There is no n in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no . in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 74--75
+Overfull \hbox (20.0pt too wide) in paragraph at lines 125--126
 []
  []
 
 
-./swap-proposta.tex:76: LaTeX Error: Missing \begin{document}.
+./swap-proposta.tex:127: LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.76 E
-      ssa estrutura irá descrever cada segmento de texto. Essa descrição ...
+l.127 E
+       ssa estrutura irá descrever cada segmento de texto. Essa descrição...
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -1302,19 +1354,19 @@ Missing character: There is no t in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no . in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 76--77
+Overfull \hbox (20.0pt too wide) in paragraph at lines 127--128
 []
  []
 
 
-./swap-proposta.tex:78: LaTeX Error: Missing \begin{document}.
+./swap-proposta.tex:129: LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.78 D
-      e maneira geral, esse módulo divide cada documento em segmentos de te...
+l.129 D
+       e maneira geral, esse módulo divide cada documento em segmentos de t...
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -1415,19 +1467,19 @@ Missing character: There is no t in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no . in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 78--79
+Overfull \hbox (20.0pt too wide) in paragraph at lines 129--130
 []
  []
 
 
-./swap-proposta.tex:81: LaTeX Error: Missing \begin{document}.
+./swap-proposta.tex:132: LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.81 E
-      m seguida cada segmento será classificado de acordo o tipo da ocorrê...
+l.132 E
+       m seguida cada segmento será classificado de acordo o tipo da ocorr�...
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -1824,18 +1876,18 @@ Missing character: There is no o in font nullfont!
 Missing character: There is no s in font nullfont!
 Missing character: There is no . in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 81--82
+Overfull \hbox (20.0pt too wide) in paragraph at lines 132--133
 []
  []
 
 
-./swap-proposta.tex:105: LaTeX Error: Missing \begin{document}.
+./swap-proposta.tex:156: LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.105 E
+l.156 E
        ntre os principais trabalhos da literatura podemos citar o  \textit{T...
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -1893,10 +1945,10 @@ Missing character: There is no r in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no [ in font nullfont!
 \citation{Hearst1994}
-./swap-proposta.tex:105: Undefined control sequence.
+./swap-proposta.tex:156: Undefined control sequence.
 <write> ...: Citation `\@citeb ' on page \thepage 
                                                   \space undefined\on@line .
-l.105 ... o  \textit{TextTiling}~\cite{Hearst1994}
+l.156 ... o  \textit{TextTiling}~\cite{Hearst1994}
                                                    e o \textit{C99}~\cite{Ch...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1905,17 +1957,17 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-LaTeX Warning: Citation `Hearst1994' on page  undefined on input line 105.
+LaTeX Warning: Citation `Hearst1994' on page  undefined on input line 156.
 
 Missing character: There is no ] in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no [ in font nullfont!
 \citation{Choi2000}
-./swap-proposta.tex:105: Undefined control sequence.
+./swap-proposta.tex:156: Undefined control sequence.
 <write> ...: Citation `\@citeb ' on page \thepage 
                                                   \space undefined\on@line .
-l.105 ...rst1994} e o \textit{C99}~\cite{Choi2000}
+l.156 ...rst1994} e o \textit{C99}~\cite{Choi2000}
                                                   .
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1924,7 +1976,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-LaTeX Warning: Citation `Choi2000' on page  undefined on input line 105.
+LaTeX Warning: Citation `Choi2000' on page  undefined on input line 156.
 
 Missing character: There is no ] in font nullfont!
 Missing character: There is no . in font nullfont!
@@ -2112,53 +2164,53 @@ Missing character: There is no a in font nullfont!
 Missing character: There is no r in font nullfont!
 Missing character: There is no . in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 105--112
+Overfull \hbox (20.0pt too wide) in paragraph at lines 156--163
 []
  []
 
 
-Overfull \hbox (22.5276pt too wide) in paragraph at lines 105--112
+Overfull \hbox (22.5276pt too wide) in paragraph at lines 156--163
 \OT1/cmr/m/it/10 Text-
  []
 
 
-Overfull \hbox (16.35544pt too wide) in paragraph at lines 105--112
+Overfull \hbox (16.35544pt too wide) in paragraph at lines 156--163
 \OT1/cmr/m/it/10 Til-
  []
 
 
-Overfull \hbox (19.60405pt too wide) in paragraph at lines 105--112
+Overfull \hbox (19.60405pt too wide) in paragraph at lines 156--163
 \OT1/cmr/m/it/10 ing []
  []
 
 
-Overfull \hbox (24.16376pt too wide) in paragraph at lines 105--112
+Overfull \hbox (24.16376pt too wide) in paragraph at lines 156--163
 \OT1/cmr/m/it/10 C99 []
  []
 
 
-Overfull \hbox (22.5276pt too wide) in paragraph at lines 105--112
+Overfull \hbox (22.5276pt too wide) in paragraph at lines 156--163
 \OT1/cmr/m/it/10 Text-
  []
 
 
-Overfull \hbox (16.35544pt too wide) in paragraph at lines 105--112
+Overfull \hbox (16.35544pt too wide) in paragraph at lines 156--163
 \OT1/cmr/m/it/10 Til-
  []
 
 
-Overfull \hbox (13.2888pt too wide) in paragraph at lines 105--112
+Overfull \hbox (13.2888pt too wide) in paragraph at lines 156--163
 \OT1/cmr/m/it/10 ing
  []
 
 
-./swap-proposta.tex:114: LaTeX Error: Missing \begin{document}.
+./swap-proposta.tex:165: LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.114 O
+l.165 O
         \textit{TextTiling} recebe uma lista de candidatos a limite, usualme...
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -2569,10 +2621,10 @@ Missing character: There is no � in font nullfont!
 Missing character: There is no � in font nullfont!
 Missing character: There is no � in font nullfont!
 Missing character: There is no o in font nullfont!
-./swap-proposta.tex:116: Undefined control sequence.
+./swap-proposta.tex:167: Undefined control sequence.
 <write> ...eference `equ:cosine' on page \thepage 
                                                   \space undefined\on@line .
-l.116 ...sa-se cosseno (Equação~\ref{equ:cosine}
+l.167 ...sa-se cosseno (Equação~\ref{equ:cosine}
                                                   ) para calcular a similari...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2581,7 +2633,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-LaTeX Warning: Reference `equ:cosine' on page  undefined on input line 116.
+LaTeX Warning: Reference `equ:cosine' on page  undefined on input line 167.
 
 Missing character: There is no ) in font nullfont!
 Missing character: There is no p in font nullfont!
@@ -2723,38 +2775,38 @@ Missing character: There is no d in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no . in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 114--117
+Overfull \hbox (20.0pt too wide) in paragraph at lines 165--168
 []
  []
 
 
-Overfull \hbox (22.5276pt too wide) in paragraph at lines 114--117
+Overfull \hbox (22.5276pt too wide) in paragraph at lines 165--168
 \OT1/cmr/m/it/10 Text-
  []
 
 
-Overfull \hbox (16.35544pt too wide) in paragraph at lines 114--117
+Overfull \hbox (16.35544pt too wide) in paragraph at lines 165--168
 \OT1/cmr/m/it/10 Til-
  []
 
 
-Overfull \hbox (13.2888pt too wide) in paragraph at lines 114--117
+Overfull \hbox (13.2888pt too wide) in paragraph at lines 165--168
 \OT1/cmr/m/it/10 ing
  []
 
 
-Overfull \hbox (10.86105pt too wide) in paragraph at lines 114--117
+Overfull \hbox (10.86105pt too wide) in paragraph at lines 165--168
 []
  []
 
 
-./swap-proposta.tex:121: LaTeX Error: Missing \begin{document}.
+./swap-proposta.tex:172: LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.121 O
+l.172 O
         \textit{TextTiling} possui baixa complexidade computacional. Por out...
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -2932,10 +2984,10 @@ Missing character: There is no e in font nullfont!
 Missing character: There is no m in font nullfont!
 Missing character: There is no [ in font nullfont!
 \citation{Choi2000}
-./swap-proposta.tex:121: Undefined control sequence.
+./swap-proposta.tex:172: Undefined control sequence.
 <write> ...: Citation `\@citeb ' on page \thepage 
                                                   \space undefined\on@line .
-l.121 ...o em~\cite{Choi2000, Kern2009, Misra2009}
+l.172 ...o em~\cite{Choi2000, Kern2009, Misra2009}
                                                   .
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2944,14 +2996,14 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-LaTeX Warning: Citation `Choi2000' on page  undefined on input line 121.
+LaTeX Warning: Citation `Choi2000' on page  undefined on input line 172.
 
 Missing character: There is no , in font nullfont!
 \citation{Kern2009}
-./swap-proposta.tex:121: Undefined control sequence.
+./swap-proposta.tex:172: Undefined control sequence.
 <write> ...: Citation `\@citeb ' on page \thepage 
                                                   \space undefined\on@line .
-l.121 ...o em~\cite{Choi2000, Kern2009, Misra2009}
+l.172 ...o em~\cite{Choi2000, Kern2009, Misra2009}
                                                   .
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2960,14 +3012,14 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-LaTeX Warning: Citation `Kern2009' on page  undefined on input line 121.
+LaTeX Warning: Citation `Kern2009' on page  undefined on input line 172.
 
 Missing character: There is no , in font nullfont!
 \citation{Misra2009}
-./swap-proposta.tex:121: Undefined control sequence.
+./swap-proposta.tex:172: Undefined control sequence.
 <write> ...: Citation `\@citeb ' on page \thepage 
                                                   \space undefined\on@line .
-l.121 ...o em~\cite{Choi2000, Kern2009, Misra2009}
+l.172 ...o em~\cite{Choi2000, Kern2009, Misra2009}
                                                   .
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2976,53 +3028,53 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-LaTeX Warning: Citation `Misra2009' on page  undefined on input line 121.
+LaTeX Warning: Citation `Misra2009' on page  undefined on input line 172.
 
 Missing character: There is no ] in font nullfont!
 Missing character: There is no . in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 121--122
+Overfull \hbox (20.0pt too wide) in paragraph at lines 172--173
 []
  []
 
 
-Overfull \hbox (22.5276pt too wide) in paragraph at lines 121--122
+Overfull \hbox (22.5276pt too wide) in paragraph at lines 172--173
 \OT1/cmr/m/it/10 Text-
  []
 
 
-Overfull \hbox (16.35544pt too wide) in paragraph at lines 121--122
+Overfull \hbox (16.35544pt too wide) in paragraph at lines 172--173
 \OT1/cmr/m/it/10 Til-
  []
 
 
-Overfull \hbox (13.2888pt too wide) in paragraph at lines 121--122
+Overfull \hbox (13.2888pt too wide) in paragraph at lines 172--173
 \OT1/cmr/m/it/10 ing
  []
 
 
-Overfull \hbox (5.43053pt too wide) in paragraph at lines 121--122
+Overfull \hbox (5.43053pt too wide) in paragraph at lines 172--173
 []
  []
 
 
-Overfull \hbox (5.43053pt too wide) in paragraph at lines 121--122
+Overfull \hbox (5.43053pt too wide) in paragraph at lines 172--173
 []
  []
 
 
-Overfull \hbox (5.43053pt too wide) in paragraph at lines 121--122
+Overfull \hbox (5.43053pt too wide) in paragraph at lines 172--173
 [] 
  []
 
 
-./swap-proposta.tex:127: LaTeX Error: Missing \begin{document}.
+./swap-proposta.tex:178: LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.127 O
+l.178 O
         C99 é um algoritmo baseado em ranking.
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -3290,10 +3342,10 @@ Missing character: There is no d in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no [ in font nullfont!
 \citation{Choi2000}
-./swap-proposta.tex:130: Undefined control sequence.
+./swap-proposta.tex:181: Undefined control sequence.
 <write> ...: Citation `\@citeb ' on page \thepage 
                                                   \space undefined\on@line .
-l.130 ... cálculo da similaridade~\cite{Choi2000}
+l.181 ... cálculo da similaridade~\cite{Choi2000}
                                                   .
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3302,7 +3354,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-LaTeX Warning: Citation `Choi2000' on page  undefined on input line 130.
+LaTeX Warning: Citation `Choi2000' on page  undefined on input line 181.
 
 Missing character: There is no ] in font nullfont!
 Missing character: There is no . in font nullfont!
@@ -3722,33 +3774,33 @@ Missing character: There is no t in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no . in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 127--135
+Overfull \hbox (20.0pt too wide) in paragraph at lines 178--186
 []
  []
 
 
-Overfull \hbox (5.43053pt too wide) in paragraph at lines 127--135
+Overfull \hbox (5.43053pt too wide) in paragraph at lines 178--186
 []
  []
 
 
-Overfull \hbox (22.61649pt too wide) in paragraph at lines 127--135
+Overfull \hbox (22.61649pt too wide) in paragraph at lines 178--186
 \OT1/cmr/m/it/10 rank-
  []
 
 
-Overfull \hbox (17.37767pt too wide) in paragraph at lines 127--135
+Overfull \hbox (17.37767pt too wide) in paragraph at lines 178--186
 \OT1/cmr/m/it/10 ings
  []
 
 
-./swap-proposta.tex:137: LaTeX Error: Missing \begin{document}.
+./swap-proposta.tex:188: LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.137 I
+l.188 I
        nicialmente é construída uma matriz que contém as similaridades de...
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -4085,28 +4137,28 @@ Missing character: There is no r in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no . in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 137--141
+Overfull \hbox (20.0pt too wide) in paragraph at lines 188--192
 []
  []
 
 
-Overfull \hbox (22.61649pt too wide) in paragraph at lines 137--141
+Overfull \hbox (22.61649pt too wide) in paragraph at lines 188--192
 \OT1/cmr/m/it/10 rank-
  []
 
 
-Overfull \hbox (13.2888pt too wide) in paragraph at lines 137--141
+Overfull \hbox (13.2888pt too wide) in paragraph at lines 188--192
 \OT1/cmr/m/it/10 ing
  []
 
 
-./swap-proposta.tex:142: LaTeX Error: Missing \begin{document}.
+./swap-proposta.tex:193: LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.142 N
+l.193 N
        a Figura~\ref{fig:a} é destacado um quadro 3~x~3 de uma matriz em qu...
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -4119,10 +4171,10 @@ Missing character: There is no g in font nullfont!
 Missing character: There is no u in font nullfont!
 Missing character: There is no r in font nullfont!
 Missing character: There is no a in font nullfont!
-./swap-proposta.tex:142: Undefined control sequence.
+./swap-proposta.tex:193: Undefined control sequence.
 <write> ...ng: Reference `fig:a' on page \thepage 
                                                   \space undefined\on@line .
-l.142 Na Figura~\ref{fig:a}
+l.193 Na Figura~\ref{fig:a}
                             é destacado um quadro 3~x~3 de uma matriz em qu...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -4131,7 +4183,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-LaTeX Warning: Reference `fig:a' on page  undefined on input line 142.
+LaTeX Warning: Reference `fig:a' on page  undefined on input line 193.
 
 Missing character: There is no � in font nullfont!
 Missing character: There is no � in font nullfont!
@@ -4266,9 +4318,9 @@ Missing character: There is no l in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no r in font nullfont!
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 144.
+(Font)              <7> on input line 195.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 144.
+(Font)              <5> on input line 195.
 Missing character: There is no , in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no m in font nullfont!
@@ -4424,10 +4476,10 @@ Missing character: There is no g in font nullfont!
 Missing character: There is no u in font nullfont!
 Missing character: There is no r in font nullfont!
 Missing character: There is no a in font nullfont!
-./swap-proposta.tex:144: Undefined control sequence.
+./swap-proposta.tex:195: Undefined control sequence.
 <write> ...ng: Reference `fig:b' on page \thepage 
                                                   \space undefined\on@line .
-l.144 ...es. Da mesma forma, na Figura~\ref{fig:b}
+l.195 ...es. Da mesma forma, na Figura~\ref{fig:b}
                                                    para o valor $0,2$ a matr...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -4436,7 +4488,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-LaTeX Warning: Reference `fig:b' on page  undefined on input line 144.
+LaTeX Warning: Reference `fig:b' on page  undefined on input line 195.
 
 Missing character: There is no p in font nullfont!
 Missing character: There is no a in font nullfont!
@@ -4489,63 +4541,376 @@ Missing character: There is no � in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no . in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 142--145
+Overfull \hbox (20.0pt too wide) in paragraph at lines 193--196
 []
  []
 
 
-Overfull \hbox (10.86105pt too wide) in paragraph at lines 142--145
+Overfull \hbox (10.86105pt too wide) in paragraph at lines 193--196
 []
  []
 
 
-Overfull \hbox (14.44444pt too wide) in paragraph at lines 142--145
+Overfull \hbox (14.44444pt too wide) in paragraph at lines 193--196
 \OT1/cmr/m/n/10 0\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 5$
  []
 
 
-Overfull \hbox (22.61649pt too wide) in paragraph at lines 142--145
+Overfull \hbox (22.61649pt too wide) in paragraph at lines 193--196
 \OT1/cmr/m/it/10 rank-
  []
 
 
-Overfull \hbox (17.37767pt too wide) in paragraph at lines 142--145
+Overfull \hbox (17.37767pt too wide) in paragraph at lines 193--196
 \OT1/cmr/m/it/10 ings
  []
 
 
-Overfull \hbox (5.00002pt too wide) in paragraph at lines 142--145
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 193--196
 \OT1/cmr/m/n/10 4$
  []
 
 
-Overfull \hbox (14.44444pt too wide) in paragraph at lines 142--145
+Overfull \hbox (14.44444pt too wide) in paragraph at lines 193--196
 \OT1/cmr/m/n/10 0\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 5$
  []
 
 
-Overfull \hbox (10.86105pt too wide) in paragraph at lines 142--145
+Overfull \hbox (10.86105pt too wide) in paragraph at lines 193--196
 []
  []
 
 
-Overfull \hbox (14.44444pt too wide) in paragraph at lines 142--145
+Overfull \hbox (14.44444pt too wide) in paragraph at lines 193--196
 \OT1/cmr/m/n/10 0\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 2$
  []
 
 
-Overfull \hbox (22.61649pt too wide) in paragraph at lines 142--145
+Overfull \hbox (22.61649pt too wide) in paragraph at lines 193--196
 \OT1/cmr/m/it/10 rank-
  []
 
 
-Overfull \hbox (17.37767pt too wide) in paragraph at lines 142--145
+Overfull \hbox (17.37767pt too wide) in paragraph at lines 193--196
 \OT1/cmr/m/it/10 ings
  []
 
 
-Overfull \hbox (5.00002pt too wide) in paragraph at lines 142--145
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 193--196
 \OT1/cmr/m/n/10 1$
+ []
+
+
+./swap-proposta.tex:312: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.312 E
+       ntre os primeiros trabalhos voltados a segmentação textual, da lite...
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no E in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no � in font nullfont!
+Missing character: There is no � in font nullfont!
+Missing character: There is no � in font nullfont!
+Missing character: There is no � in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no x in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no a in font nullfont!
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 312--313
+[]
+ []
+
+
+./swap-proposta.tex:314: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.314 E
+       ntre os principais trabalhos da literatura podemos citar o \textit{Te...
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no E in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no [ in font nullfont!
+\citation{Hearst1994}
+./swap-proposta.tex:314: Undefined control sequence.
+<write> ...: Citation `\@citeb ' on page \thepage 
+                                                  \space undefined\on@line .
+l.314 ... o \textit{TextTiling} ~\cite{Hearst1994}
+                                                   e o \textit{C99}~\cite{Ch...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Citation `Hearst1994' on page  undefined on input line 314.
+
+Missing character: There is no ] in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no [ in font nullfont!
+\citation{Choi2000}
+./swap-proposta.tex:314: Undefined control sequence.
+<write> ...: Citation `\@citeb ' on page \thepage 
+                                                  \space undefined\on@line .
+l.314 ...rst1994} e o \textit{C99}~\cite{Choi2000}
+                                                   são considerados um dos ...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Citation `Choi2000' on page  undefined on input line 314.
+
+Missing character: There is no ] in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no � in font nullfont!
+Missing character: There is no � in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no z in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no m in font nullfont!
+./swap-proposta.tex:314: Undefined control sequence.
+l.314 ... influentes sendo utilizados com \textiit
+                                                  {base lines} em trabalhos ...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no b in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no . in font nullfont!
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 314--315
+[]
+ []
+
+
+Overfull \hbox (22.5276pt too wide) in paragraph at lines 314--315
+\OT1/cmr/m/it/10 Text-
+ []
+
+
+Overfull \hbox (16.35544pt too wide) in paragraph at lines 314--315
+\OT1/cmr/m/it/10 Til-
+ []
+
+
+Overfull \hbox (13.2888pt too wide) in paragraph at lines 314--315
+\OT1/cmr/m/it/10 ing
+ []
+
+
+Overfull \hbox (5.43053pt too wide) in paragraph at lines 314--315
+[]
+ []
+
+
+Overfull \hbox (24.16376pt too wide) in paragraph at lines 314--315
+\OT1/cmr/m/it/10 C99 []
  []
 
 )

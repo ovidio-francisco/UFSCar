@@ -240,6 +240,9 @@ INPUT ./conteudo/capitulos/figs/janelas-deslizantes.pdf
 INPUT conteudo/capitulos/figs/curva-similaridade.pdf
 INPUT ./conteudo/capitulos/figs/curva-similaridade.pdf
 INPUT ./conteudo/capitulos/figs/curva-similaridade.pdf
+INPUT conteudo/capitulos/figs/c99-ranking-matrix.png
+INPUT ./conteudo/capitulos/figs/c99-ranking-matrix.png
+INPUT ./conteudo/capitulos/figs/c99-ranking-matrix.png
 INPUT conteudo/capitulos/figs/exemplo-matrix-rank-A.png
 INPUT ./conteudo/capitulos/figs/exemplo-matrix-rank-A.png
 INPUT ./conteudo/capitulos/figs/exemplo-matrix-rank-A.png
@@ -253,6 +256,7 @@ INPUT conteudo/capitulos/inputs/medidas-avaliacao-tradicionais-em-segmentacao.te
 INPUT conteudo/capitulos/figs/windiffzoom.jpg
 INPUT ./conteudo/capitulos/figs/windiffzoom.jpg
 INPUT ./conteudo/capitulos/figs/windiffzoom.jpg
+INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmtt12.tfm
 INPUT conteudo/capitulos/inputs/representacao.tex
 INPUT conteudo/capitulos/inputs/representacao.tex
 INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmsso12.tfm
@@ -275,7 +279,6 @@ INPUT ./conteudo/capitulos/figs/pre-process.pdf
 INPUT ./conteudo/capitulos/figs/pre-process.pdf
 INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmbx12.tfm
 INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmbx8.tfm
-INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmtt12.tfm
 INPUT conteudo/capitulos/figs/coesaolexicaTT-50-9.png
 INPUT ./conteudo/capitulos/figs/coesaolexicaTT-50-9.png
 INPUT ./conteudo/capitulos/figs/coesaolexicaTT-50-9.png

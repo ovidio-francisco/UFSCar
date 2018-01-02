@@ -1,4 +1,19 @@
 
+% Lembrando que tem muuuuitos outros. Principalmente os baseados em tópicos. -- Rafael % -? antes falar das técnicas (janelas, agrupamento, tópicos, etc..) ?
+% falar um pouco sobre TT e C99, sobre como foram pioneiros, influenciáram muitos outros e são empregrados até hoje;
+% Nem mencionou janelas deslizantes anteriormente. --> Rafael
+% -? Criar um texto sobre janelas deslizantes?
+% \textit{threshold}. %TODO - explicar como se encontra os vales
+
+
+
+
+
+
+
+
+
+
 % ==========  Janelas deslizantes  ==========
 
 % Kosima uniu as tecnicas de SW e CL.
@@ -10,6 +25,14 @@ Para encontrar os segmentos de um texto, alguns dos primeiros algoritmos utiliza
 %  Coesão léxica como presuposto básico
 % Para encontrar essas posições, 
 Trabalhos anteriores se apoiam na ideia de que a mudança de assunto em um texto é acompanhada de uma proporcional mudança de vocabulário. Essa ideia, chamada de coesão léxica, sugere que a distribuição das palavras é um forte indicador da estrutura do texto~\cite{Kozima1993}. O autor demonstrou que há uma estreita correlação entre quedas na coesão léxica em janelas de texto e a transição de assuntos. Em seu trabalho, calculou a coesão léxica de uma janela de palavras usando \textit{spreading activation} em uma rede semântica especialmente elaborada para o idioma Inglês. Contudo, a implementação de um algoritmo para outros domínios dependia da construção de uma rede adequada. 
+
+
+
+
+
+
+
+
 
 
 
@@ -70,7 +93,8 @@ O TextTiling apresenta como vantagens a facilidade de implementação e baixa co
 
 % ==========  C99  ==========
 
-Outro algoritmo frequentemente referenciado na literatura é o C99~\cite{Choi2000} o qual é baseado em uma matriz de \textit{ranking} das similaridades. Embora muitos trabalhos utilizem a coesão léxica do texto, para pequenos segmentos pode não ser confiável, pois a ocorrência adicional de uma palavra pode causar certo impacto e alterar o cálculo da similaridade. Além disso, o estilo da escrita normalmente não é constante em todo o texto. Por exemplo, textos iniciais dedicados a introdução costumam apresentar menor coesão do que trechos dedicados a um tópico específico. Portanto, comparar a similaridade entre trechos de diferentes regiões não é apropriado. Devido a isso, as similaridades não podem ser comparadas em valores absolutos. Então, contorna-se esse problema fazendo uso de matrizes de similaridade para encontrar os segmentos de texto. Para isso, o C99 constrói uma matriz que contém as similaridades de todas as unidades de informação (normalmente sentenças ou parágrafos). 
+Outro algoritmo frequentemente referenciado na literatura é o C99 o qual é baseado em \textit{ranking}. Embora muitos trabalhos utilizem matrizes de similaridades para pequenos segmentos, o cálculo de suas similaridades não é confiável, pois uma ocorrência adicional de uma palavra pode causar certo impacto e alterar o cálculo da similaridade~\cite{Choi2000}. Além disso, o estilo da escrita normalmente não ser constante em todo o texto. Por exemplo, textos iniciais dedicados a introdução costumam apresentar menor coesão do que trechos dedicados a um tópico específico. Portanto, comparar a similaridade entre trechos de diferentes regiões não é apropriado. Devido a isso, as similaridades não podem ser comparadas em valores absolutos. Então, contorna-se esse problema fazendo uso de \textit{rankings} de similaridade para encontrar os segmentos de texto. Para isso, o C99 constrói uma matriz que contém as similaridades de todas as unidades de informação (normalmente sentenças ou parágrafos). Em seguida, cada valor na matriz de similaridade é substituído por seu \textit{ranking local}. Para cada elemento da matriz, seu \textit{ranking} é o número de elementos vizinhos com valor de similaridade menor que o seu. Então, cada elemento e comparado com seus vizinhos dentro de uma região denominada máscara.
+
 
 %%%%%% 
 %%%%%% 
@@ -81,7 +105,7 @@ Na Figura~\ref{fig:matrix-similarity} é mostrado um exemplo de uma matriz de si
   %--- Figura Visão Geral ---
   \begin{figure}[!h]
 	  \centering
-	  \includegraphics[width=0.6\textwidth]{conteudo/capitulos/figs/c99-ranking-matrix.png}
+	  \includegraphics[width=1\textwidth]{conteudo/capitulos/figs/c99-ranking-matrix.png}
 	  \caption{\textit{DotPlot} da similaridade entre sentenças onde as linha verticais representam segmentos reais.}
 	  \label{fig:matrix-similarity}
   \end{figure}
@@ -93,9 +117,9 @@ Na Figura~\ref{fig:matrix-similarity} é mostrado um exemplo de uma matriz de si
 % - Imagem com os passos e máscara 3x3;
 %%%%%%%%%%%%%%%%%%%%%%%
 
-Em seguida, cada valor na matriz de similaridade é substituído por seu \textit{ranking local}. Para cada elemento da matriz, seu \textit{ranking} será o número de elementos vizinhos com valor de similaridade menor que o seu. Assim, cada elemento é comparado com seus vizinhos dentro de uma região denominada máscara.
-% 
-% 
+
+
+
 Na Figura~\ref{fig:a} é destacado um quadro 3~x~3 de uma matriz em que cada elemento é a similaridade entre duas unidades de informação. Tomando como exemplo o elemento com valor $0,5$, a mesma posição na matriz de \textit{rankings} terá o valor $4$, pois esse é o número de vizinhos com valores inferiores a $0,5$ dentro do quadro analisado na matriz de similaridades. Da mesma forma, na Figura~\ref{fig:b} para o valor $0,2$ a matriz de \textit{rankings} conterá o valor $1$ na mesma posição. Após a construção da matriz de ranking obtêm-se um maior contraste entre facilitando a detecção de limites quando a queda de similaridade entre sentenças é mais sutil.
 
 \begin{figure}[!h]
@@ -112,8 +136,7 @@ Na Figura~\ref{fig:a} é destacado um quadro 3~x~3 de uma matriz em que cada ele
 
 
 
-
-Finalmente, com base na matriz de \textit{ranking}, o C99 utiliza um método de \textit{clustering} baseado no algoritmo \textit{DotPloting}~\cite{Reynar1998} que usa regiões com maior densidade em uma matriz de similaridades para determinar como os segmentos estão distribuídos. Um segmento é definido por duas sentenças $i$ e $j$ que representam uma região quadrada ao longo da diagonal da matriz. Calcula-se a densidade dessa região como mostrado na Equação~\ref{equ:densidade-c99}. Seja $s_{i,j}$ a somatória dos \textit{rakings} de um segmento e $a_{i,j}$ sua área interior. Seja $B = \{b1,...,b_m\}$ a lista de $m$ segmentos e $s_k$ e $a_k$ são a somatória dos valores dos rankings e a área de um segmento $k$ em $B$. Então, a densidade é computada por: 
+Finalmente, com base na matriz de \textit{ranking}, o C99 utiliza um método de \textit{clustering} baseado no algoritmo de \textit{DotPloting} que usa regiões com maior densidade em uma matriz de similaridades para determinar como os segmentos estão distribuídos. Um segmento é definido por duas sentenças $i$ e $j$ que representam uma região quadrada ao longo da diagonal da matriz. Calcula-se a densidade dessa região como mostrado na Equação~\ref{equ:densidade-c99}. Seja $s_{i,j}$ a somatória dos \textit{rakings} de um segmento e $a_{i,j}$ sua área interior. Seja $B = \{b1,...,b_m\}$ a lista de $m$ segmentos e$s_k$  $a_k$ são a somatória dos valores dos rankings e a área de um segmento $k$ em $B$. Então, a densidade é computada por: 
 
 \begin{equation}
 D = \frac{\sum_{k=1}^m s_k}{\sum_{k=1}^m a_k}
@@ -121,12 +144,8 @@ D = \frac{\sum_{k=1}^m s_k}{\sum_{k=1}^m a_k}
 \end{equation}
 
 
-O processo incia com um único segmento formado por todas as sentenças do documento e o divide recursivamente em $m$ segmentos. Cada passo divide um dos segmentos em $B$ no ponto ($i,j$) que maximiza $D$~(Equação \ref{equ:densidade-c99}). O processo ser repte até atingir o número de segmentos desejados ou um limiar de similaridade.
+O processo incia com um único segmento formado por todas as sentenças do documento e o divide recursivamente em $m$ segmentos. Cada passo divide um dos segmentos em B no ponto $ij$ que maximiza D~(Equação \ref{equ:densidade-c99}). O processo ser repte até atingir o número de segmento desejados ou um limiar de similaridade.
  
-
-
-
-
 
 
 

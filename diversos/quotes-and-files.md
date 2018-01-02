@@ -145,7 +145,11 @@ Usa TT e C99 como baseline
 
 file:///ext4Data/UFSCar/papers/Segmentação/more papers/papers recentes/Exogenous approach to improve topic segmentation.pdf
 
+****************************************************************************
+****************************************************************************
 
+Densidade do c99
+http://ijarcet.org/wp-content/uploads/IJARCET-VOL-4-ISSUE-5-1858-1862.pdf
 ****************************************************************************
 ****************************************************************************
 
@@ -155,6 +159,11 @@ file:///ext4Data/UFSCar/papers/Segmentação/more papers/papers 2/Adapting_and_c
 Mostra uma imagen do C99
 
 Fórumla do Pk e WinDiff e explica BEM:
+"Precision and recall statistics are a popular means of assessing the quality of clas-
+sification algorithms. For the segmentation task, recall measures the fraction of
+actual boundaries which an automatic segmenter correctly identifies, and precision
+measures the fraction of boundaries identified by an automatic segmenter which
+are actual boundaries."
 file:///ext4Data/UFSCar/papers/Segmentação/novos/ml.pdf
 
 Fórumla do Pk e WinDiff e explica BEM:
