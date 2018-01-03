@@ -78,7 +78,6 @@ Outro algoritmo frequentemente referenciado na literatura é o C99~\cite{Choi200
 Na Figura~\ref{fig:matrix-similarity} é mostrado um exemplo de uma matriz de similaridade onde a intensidade do ponto($i,j$) representa a similaridade entre as sentenças $i$ e $j$. Observa-se que a matriz é simétrica, assim cada ponto na linha diagonal representa a similaridade quanto $i = j$ (ou seja, com a mesma sentença) e revela quadrados com maior concentração de pontos ao longo da diagonal. Essas regiões indicam porções de texto com maior coesão léxica.
 
 
-  %--- Figura Visão Geral ---
   \begin{figure}[!h]
 	  \centering
 	  \includegraphics[width=0.6\textwidth]{conteudo/capitulos/figs/c99-ranking-matrix.png}
@@ -125,19 +124,12 @@ O processo incia com um único segmento formado por todas as sentenças do docum
  
 
 
-
-
-
-
-
-%%%%%%%%%%%%%%
-
-% para identificar os limites entre os segmentos. 
-% ~\cite{Reynar1998} 
-% Rafael: Esse passo aqui tá meio obscuro ainda. Não dá pra fazer uma figura ilustrativa?
-
-
-
+  \begin{figure}[!h]
+	  \centering
+	  \includegraphics[width=0.6\textwidth]{conteudo/capitulos/figs/influencia-qtd-Segs-WD-C99.eps}
+	  \caption{Influência da quantidade de segmentos em \textit{WindowDiff}}
+	  \label{fig:influencia-NSegs-WD}
+  \end{figure}
 
 
 
