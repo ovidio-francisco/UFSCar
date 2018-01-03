@@ -37,6 +37,9 @@ public class TestSegmenterModel {
 		this.segmenter = new TextTilingBR();
 		this.winSize = winSize;
 		this.step = step;
+		
+		((TextTilingBR)this.segmenter).setWindowSize(winSize);
+		((TextTilingBR)this.segmenter).setStep(step);;
 	}
 
 	public TestSegmenterModel(double segmentsRate, int rankingSize, boolean weight) {

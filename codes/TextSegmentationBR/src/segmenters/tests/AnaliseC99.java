@@ -45,18 +45,17 @@ public class AnaliseC99 {
 		sb.append("SegRate\tWinDiff\tPk\n");
 		
 		while ((segmentsRate*100) < 95) {
+
 			segmentsRate += segmentesRateIncrease;
-			
-			c99Model.setPreprocess(preprocess);
-			
+			c99Model = new TestSegmenterModel(segmentsRate, rankingSize, weight);
 			ArrayList<EvaluationData> ev = Tests.testAll(folder, c99Model);
 
 			double mediaPk = Tests.media(ev, Tests.Metric.PK);
 			double mediaWD = Tests.media(ev, Tests.Metric.WINDIFF);
+			double mediaSegs   = Tests.media(ev, Tests.Metric.AVR_SEGS_COUNT);
 
 			sb.append(String.format("%.0f%%\t%f\t%f\n", segmentsRate*100,mediaWD, mediaPk));
 			
-			c99Model = new TestSegmenterModel(segmentsRate, rankingSize, weight);
 		}
 		
 		
