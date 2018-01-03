@@ -45,6 +45,12 @@ public class TestSegmenterModel {
 		this.segmentsRate = segmentsRate;
 		this.rankingSize = rankingSize;
 		this.weight = weight;
+		
+		((C99BR)this.segmenter).setnSegsRate(this.segmentsRate);
+		((C99BR)this.segmenter).setRakingSize(this.rankingSize);
+		((C99BR)this.segmenter).setWeitght(this.weight);
+
+		
 	}
 	
 	public TestSegmenterModel() {

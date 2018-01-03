@@ -1,11 +1,9 @@
 package segmenters.tests;
 
 import java.io.File;
-import java.io.IOException;
 import java.util.ArrayList;
 
 import preprocessamento.Preprocess;
-import segmenters.Segmenter.SegmenterAlgorithms;
 import segmenters.evaluations.EvaluationData;
 
 public class AnaliseC99 {
@@ -14,12 +12,11 @@ public class AnaliseC99 {
 		
 		System.out.println("Analise do C99");
 		
-		
-		ArrayList<ArrayList<EvaluationData>> result = new ArrayList<>();
 
 		File folder = new File("./docs");
 		Tests.files.clear();
 		Tests.getFiles(folder);
+		System.out.println(Tests.files.size()+ " files");
 		
 		Preprocess preprocess = new Preprocess();
 
@@ -33,37 +30,41 @@ public class AnaliseC99 {
 		preprocess.setRemoveStopWord    (true);
 		preprocess.setToLowCase         (true);			
 
+		
+		double    segmentsRate = 0.15;
+		int       rankingSize = 11;
+		boolean   weight = true;
 
-		TestSegmenterModel c99Model = new TestSegmenterModel(SegmenterAlgorithms.C99);
+		double segmentesRateIncrease = 0.05;
 		
-		c99Model.setRankingSize(22);
-		
-		
+		TestSegmenterModel c99Model = null; 
+		c99Model = new TestSegmenterModel(segmentsRate, rankingSize, weight);
 		c99Model.setPreprocess(preprocess);
-//		result.add(Tests.testAll(folder, c99Model));
 		
+		StringBuilder sb = new StringBuilder();
+		sb.append("SegRate\tWinDiff\tPk\n");
 		
-		result.add(Tests.testAll(folder, c99Model));
+		while ((segmentsRate*100) < 95) {
+			segmentsRate += segmentesRateIncrease;
+			
+			c99Model.setPreprocess(preprocess);
+			
+			ArrayList<EvaluationData> ev = Tests.testAll(folder, c99Model);
 
-		
-		
-		
-		
-		
-		
-		ArrayList<ArrayList<EvaluationData>> evaluations = Tests3.doTests(null, true);
-				
-		Tests3.createGreatTexTable();
-		
-		try {
-			Tests3.createGreatCSV(evaluations);
-		} catch (IOException e1) {
-			e1.printStackTrace();
+			double mediaPk = Tests.media(ev, Tests.Metric.PK);
+			double mediaWD = Tests.media(ev, Tests.Metric.WINDIFF);
+
+			sb.append(String.format("%.0f%%\t%f\t%f\n", segmentsRate*100,mediaWD, mediaPk));
+			
+			c99Model = new TestSegmenterModel(segmentsRate, rankingSize, weight);
 		}
+		
+		
 
+		System.out.println("Result:\n\n" + sb);
 		
 		
-		
+
 		
 		System.out.println("done!");
 		

@@ -87,7 +87,8 @@ public class EvaluationData {
 		this.recall     = tp / (tp+fn);
 		this.f1         = (2*tp)/((2*tp)+fp+fn);
 		this.windowDiff = WinDiffMeasure(gold, hypo);
-		this.pk         = pkMeasure((int)total, boundariesReal, boundariesHypo);
+//		this.pk         = pkMeasure((int)total, boundariesReal, boundariesHypo);
+		this.pk         = pkMeasure(len, boundariesReal, boundariesHypo);
 		
 
 		
@@ -137,6 +138,8 @@ public class EvaluationData {
 		
 		String r = sbRefe.toString().trim();
 		String h = sbHypo.toString().trim();
+		
+//		System.out.println(String.format("----------------- %d, '%s', '%s'", sentenceCount, r, h));
 		
 		pk.read(sentenceCount, r, h);
 		
