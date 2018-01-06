@@ -88,6 +88,7 @@ such as latent Dirichlet allocation[7]
 
 file:///ext4Data/UFSCar/papers/atalhos/Domain-independent unsupervised text segmentation for data management.pdf
 
+[ mas vamos usar só o BayesSeg como representante ]
 
 ****************************************************************************
 ****************************************************************************

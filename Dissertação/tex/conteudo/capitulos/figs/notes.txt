@@ -1,0 +1,171 @@
+
+Lembrar como foi feitos os CDs
+
+
+As sentenças fazem parte da estrutura do texto!
+os algoritmos aproveitam isso
+
+
+{ Todas as sentenças são consideradas como possíveis finais de segmento. }
+
+C99 usa DotPloting??
+
+-->Preferiu-se uma interface para segmentação para evitar erros comuns em editores de texto comuns.
+
+
+chupinhar a formula do WindowDiff do TAS Pardo
+chupinhar também do → file:///media/ovidiojf/Data/UFSCar-Bk/UFSCar-2016/Qualificação/Pesquisa/Quali/sentence sliding window/Linear text segmentation using affinity propagation.pdf
+
+Um gráfico mostrando a quantidade de segmentos obtidos com diferentes configurações. ?????
+
+Reynar's algorithm == DotPlot !!?
+
+
+
+
+
+CONTRIBUIÇÕES
+
+A metodologia aplicada as atas de reunião pode ser aproveitada em outros dominios como Discursos de políticos, conversas em mensageiros eletrôticos; trascrições de audios.
+
+Criar um algoritmo bem simples para testar as diferentes medidas cosine, jakarta, etc..
+
+
+*********************
+Reportar numero de resultados da busca? 
+Como reportar a qualidade dos resultados??
+Comparar lista de ranking com navegação por clusters?
+
+
+--> Coloar a proposta na introdução da Dissertação
+  
+
+Nome 
+   - Sub-documentos
+   - Organização / Agrupamento
+   - 
+
+http://labic.icmc.usp.br/material/6
+
+http://sites.labic.icmc.usp.br/torch/
+http://sites.labic.icmc.usp.br/torch/wfa2010/
+http://sites.labic.icmc.usp.br/torch/msd2011/
+http://sites.labic.icmc.usp.br/torch/msd2011/clustermap/
+http://sites.labic.icmc.usp.br/torch/datasets/
+java -Xmx1G -cp clustermap.jar torch.clustermap.Explorer ./config.ini
+
+
+
+Minha proposta é encerrar a parte de segmentação
+ (com esses resultados)
+e fazer os seguintes resultados com extração de tópicos e RI
+
+
+--> O ajuste dos faz com que o limite caia em um lugar próximo ao depht-score. Ou seja no final de sentença mais próximo.
+
+--> Explicar que a segmentação é linear e não hierarquica. E pq.
+
+
+Figure 1: DotPlotting : each dot reveals the presence of a word at the coordinates place
+file:///ext4Data/UFSCar/papers/Segmentação/more papers/papers 2/Adapting_and_comparing_linear_segmentation_methods.pdf
+
+Os termos latentes podem ajudar nas atas pq o redator do documento evita a repetição de termos em favor da elegância do texto. 
+
+
+Vendo a segmentação dos generos musicais, os vales são mais bem definidos e a maioria dos segmentos mais coincidem ou estão próximos.
+Por ser um texto com certa estrutura
+
+sugere que textos mais estruturados ganham melhores segmentos com técnicas baseadas em coesão léxica
+
+
+
+
+??? nos criterios de avaliação, mostrar a mesma ata com as configurações padrão do TT e com as configurações obtidas pelos testes estatísticos.
+
+
+
+Furos :
+  3.1.4 Extração de Tópicos
+  3.2.1 Seleção de tópicos
+  3.3 Estudo de caso
+  3.4 Avaliação
+
+Jeito de escrever os Trabalhos Relacionados em 
+file:///ext4Data/UFSCar/papers/Segmentação/novos/Subtopic annotation and automatic segmentation for news texts in Brazilian Portuguese.pdf
+
+................
+Kazantseva and Szpakowicz (2012), in turn, chose a fiction book ...
+...
+Passonneau and Litman (1997) used a corpus consisting of twenty ...
+...
+Galley et al. (2003) worked on a sample of twenty-five meetings ...
+...
+Gruenstein et al. (2007) used forty tran ...
+................
+
+... MAS é em um artigo não em uma dissertação....
+
+
+
+
+CALO-MA como Trabalho Relacionado ??
+
+
+--> Mais experimentos
+
+--> Uma subseção com Definições ??
+file:///ext4Data/UFSCar/papers/Extração automática de relações semânticas a partir de textos escritos em português do Brasil.pdf
+
+Antes do TT falar o Lexical cohesion profile do Kozima (1993) 
+file:///ext4Data/UFSCar/papers/Segmentação/Segmentação Textual Automática - Uma Revisão Bibliográfica.pdf
+
+
+
+--> "Eisenstein in 2009 [6] created a hierarchical Bayesian
+algorithm based on LDA. " --> Seria o MinCut???
+[6]Jacob Eisenstein “Hierarchical text segmentation
+from multi-scale lexical cohesion”. In Proceedings of
+NAACL09 2009.
+
+
+ HBayesSeg
+
+Discussão:
+  - o que mudou de um para outro
+  - o que melhorou não melhorou de um para outro
+
+
+--> {A avaliação foi feita em duas etapas, a segmentação dos documentos e sistema de recuperação de informação.}
+
+--> O objetivo principal do Sistema de RI é entregar ao usuários os trechos relacionados ao assunto pesquisado. 
+[[Nesse caso, a eficiência da segmentação é secundária, i.e mesmo que o segmeto traga mais conteúdo que o desejado, e preferível a trazer o assunto fragementado ]]
+[[É melhor trazer mais texto que necessário, do que trazer um trecho incompleto.]]
+
+-->{A segmentação deve prezar por trazer o conteúdo em trechos com significado completo/independente. } 
+↑↑↑↑↑  isso pode ser uma pergunta a ser feita em um expermento.
+
+
+--> Incluir nos trabalhos relacionados os trabalhos de confecção de corpus --> ver TAS pg 27
+
+--> Descrever o processo de anotação das atas (segmentação e palavras que melhor descrevem o segmento)
+    -- Importância da referência
+    -- Pq usar o software
+    -- Descrever os anotadores
+    -- Como os anotadores foram selecionados
+      -- Sem treinamento
+      -- Com informações básicas de como proceder, (para não envisar)
+
+Trabalhos relacionados
+   -- Segmentação
+   -- RI com extração de tópicos
+   -- RI considerando cada segmento como sub-documento
+
+--> Pegar um trecho de uma ata que mostra uma transição de tópico
+
+--> dá pra dizer que não sigo os 7 passos pq as atas são documentos peculiares? 
+
+--> Usar aquela interface que mostra todas as senteças para mostrar também os limites e as tags (palavras que melhor representam o segmento)
+
+--> Achar uma configuração melhor para o TT simplesmente gerando uma tabela que registra os dados para as configurações (Tam da Jan.  e Passo)
+
+--> Colocar as referências para o TT

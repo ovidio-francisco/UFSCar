@@ -52,7 +52,7 @@ public class AnaliseC99 {
 
 			double mediaPk = Tests.media(ev, Tests.Metric.PK);
 			double mediaWD = Tests.media(ev, Tests.Metric.WINDIFF);
-			double mediaSegs   = Tests.media(ev, Tests.Metric.AVR_SEGS_COUNT);
+//			double mediaSegs   = Tests.media(ev, Tests.Metric.AVR_SEGS_COUNT);
 
 			sb.append(String.format("%.0f%%\t%f\t%f\n", segmentsRate*100,mediaWD, mediaPk));
 			
