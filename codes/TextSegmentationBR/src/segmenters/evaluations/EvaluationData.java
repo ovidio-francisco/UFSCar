@@ -223,7 +223,7 @@ public class EvaluationData {
 	}
 	
 	
-	public String getConfigurationLabel() {
+//	public String getConfigurationLabel() {
 //		String alg = "";
 //		
 //		if(getAlg() instanceof TextTilingBR) {
@@ -245,12 +245,12 @@ public class EvaluationData {
 //		String preprocess = " " + (getAlg().getPreprocess().isRemoveStopWord() ? "T" : "F");
 		
 //		alg = alg+preprocess;
-
-		return alg.getConfigurationLabel();
-	}
-	public String getAlgLabel() {
-		return alg.getLabel();
-	}
+//
+//		return alg.getConfigurationLabel();
+//	}
+//	public String getAlgLabel() {
+//		return alg.getLabel();
+//	}
 	
 	
 	

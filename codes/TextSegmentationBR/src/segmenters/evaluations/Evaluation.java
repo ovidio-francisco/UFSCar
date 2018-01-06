@@ -159,7 +159,6 @@ public class Evaluation {
 		else {
 			return segmentsToTokens(alg.getSegments(file));
 		}
-
 	}
 	
 	public static EvaluationData evalueate(File real, File test, Segmenter alg) {

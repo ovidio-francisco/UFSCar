@@ -106,7 +106,7 @@ public class Tests4 {
 		System.out.println("Great CSV " + evaluations.size());
 		
 		for(ArrayList<EvaluationData> ev : evaluations) {
-			String alg = ev.get(0).getConfigurationLabel();
+			String alg = ev.get(0).getAlg().getConfigurationLabel();//getConfigurationLabel();
 
 			String pk  = String.format(format, Tests.media(ev, Tests.Metric.PK));
 			String win = String.format(format, Tests.media(ev, Tests.Metric.WINDIFF));
@@ -241,7 +241,7 @@ public class Tests4 {
 		
 		for(ArrayList<EvaluationData> ev : evaluations) {
 			if(includeAlgLabel) {
-				configs.add(ev.get(0).getAlgLabel());
+				configs.add(ev.get(0).getAlg().getLabel());//getAlgLabel());
 			}
 			
 			pkList.add(Tests.media(ev, Tests.Metric.PK));
