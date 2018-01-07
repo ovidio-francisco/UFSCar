@@ -5,9 +5,6 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 
 import segmenters.Segmenter;
-import segmenters.algorithms.C99BR;
-import segmenters.algorithms.SentencesSegmenter;
-import segmenters.algorithms.TextTilingBR;
 import segmenters.evaluations.measure.PkMeasure;
 import segmenters.evaluations.measure.WinPR;
 import segmenters.evaluations.measure.WindowdiffMeasure;
@@ -187,40 +184,40 @@ public class EvaluationData {
 	}
 	
 	
-	public String getAlg_Param() {
-		String alg = "" + getAlg().getLabel();
-		
-		if(getAlg() instanceof TextTilingBR) {
-			alg = "TT";
+//	public String getAlg_Param() {
+//		String alg = "" + getAlg().getLabel();
+//		
+//		if(getAlg() instanceof TextTilingBR) {
+//			alg = "TT";
+////			alg += "_";
+////			alg += "ws=";
 //			alg += "_";
-//			alg += "ws=";
-			alg += "_";
-			alg += ((TextTilingBR)getAlg()).getWindowSize();
-//			alg += "st=";
-			alg += "_";
-			alg += ((TextTilingBR)getAlg()).getStep();
-		}
-		
-		if(getAlg() instanceof C99BR) {
-			alg = "C99";
-			alg += "_";
-			alg += String.format("%d", (int)(100*((C99BR)getAlg()).getnSegsRate())); 
-			alg += "_";
-			alg += ((C99BR)getAlg()).getRakingSize();
-			alg += "_";
-			alg += ((C99BR)getAlg()).isWeitght();
-		}
-		
-		if(getAlg() instanceof SentencesSegmenter) {
-			alg = "Sentenças";
-		}
-		
-		String preprocess = "_" + (getAlg().getPreprocess().isRemoveStopWord() ? "T" : "F");
-		
-		alg = alg+preprocess;
-
-		return alg;
-	}
+//			alg += ((TextTilingBR)getAlg()).getWindowSize();
+////			alg += "st=";
+//			alg += "_";
+//			alg += ((TextTilingBR)getAlg()).getStep();
+//		}
+//		
+//		if(getAlg() instanceof C99BR) {
+//			alg = "C99";
+//			alg += "_";
+//			alg += String.format("%d", (int)(100*((C99BR)getAlg()).getnSegsRate())); 
+//			alg += "_";
+//			alg += ((C99BR)getAlg()).getRakingSize();
+//			alg += "_";
+//			alg += ((C99BR)getAlg()).isWeitght();
+//		}
+//		
+//		if(getAlg() instanceof SentencesSegmenter) {
+//			alg = "Sentenças";
+//		}
+//		
+//		String preprocess = "_" + (getAlg().getPreprocess().isRemoveStopWord() ? "T" : "F");
+//		
+//		alg = alg+preprocess;
+//
+//		return alg;
+//	}
 	
 	
 //	public String getConfigurationLabel() {

@@ -181,7 +181,7 @@ public class Tests {
 		csv.print(metric + " " + "DataSet\\Algorithm");
 		
 		for(ArrayList<EvaluationData> ev : evaluations) {
-			String alg = ev.get(0).getAlg_Param();
+			String alg = ev.get(0).getAlg().paramsToString();//getAlg_Param();
 			System.out.print(alg+" ");
 			csv.print(alg);
 		}
@@ -263,7 +263,7 @@ public class Tests {
 			
 			result.add(ev);
 			
-			System.out.println(String.format("Segmentando : %s - %s", ev.getAlg_Param(), f.getName()));
+			System.out.println(String.format("Segmentando : %s - %s", ev.getAlg().paramsToString()/*getAlg_Param()*/, f.getName()));
 			
 		}
 		
@@ -271,7 +271,6 @@ public class Tests {
 			if(ev.getBoundariesReal().size() != ev.getBoundariesHypo().size())
 				System.out.println(String.format("Diferença na quantidade de segmentos: %2d %2d - %s", ev.getBoundariesReal().size(), ev.getBoundariesHypo().size(), ev.getReal()));
 		}
-		
 
 		return result;
 	}
