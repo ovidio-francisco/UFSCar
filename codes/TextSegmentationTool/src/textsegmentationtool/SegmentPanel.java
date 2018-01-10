@@ -33,6 +33,7 @@ import javax.swing.border.CompoundBorder;
 import javax.swing.border.EmptyBorder;
 import javax.swing.border.TitledBorder;
 import preprocessamento.TextUtils;
+import textsegmentationtool.mainFrame.MainFrame;
 
 /**
  * @author ovidiojf
@@ -95,6 +96,8 @@ public class SegmentPanel extends JPanel {
 
     private boolean irrelevante = false;
     
+    private MainFrame mainFrame = null;
+    
     
     private Border createBorder(String title) {
         Border       marginIn  = new EmptyBorder( 0, 10, 0, 10);
@@ -108,7 +111,7 @@ public class SegmentPanel extends JPanel {
     
     private JPanel createInstructionLabel(String txt) {
         JLabel lb = new JLabel(txt);
-        lb.setFont(new Font(Font.SERIF, Font.PLAIN, 16));
+        lb.setFont(new Font(lb.getFont().getName(), Font.PLAIN, 16));
 
         JPanel pn = new JPanel();
         pn.setBorder(new EmptyBorder(10, 0, 0, 0));
@@ -304,6 +307,7 @@ public class SegmentPanel extends JPanel {
         pnSegmentOkButton.setBorder(new EmptyBorder(10, 0, 0, 0));
         
         btSegmentOk = new JButton("Finalizar esse techo");
+//        btSegmentOk.setFont(new Font(btSegmentOk.getFont().getName(), btSegmentOk.getFont().getStyle(), 24));
         btSegmentOk.setEnabled(false);
         
         
@@ -329,7 +333,7 @@ public class SegmentPanel extends JPanel {
             estrato += " " + content + ". ";
         estrato += "</b><br><br>";
                 
-        estrato += "<br>Tópicos que melhor descrevem o trecho:<b> <br>"; 
+        estrato += "<br>Palavras que melhor descrevem o trecho:<b> <br>"; 
         for(String topic : seg.getTopics())
             estrato += " " + topic + ". ";
                 
@@ -346,7 +350,7 @@ public class SegmentPanel extends JPanel {
         lbEstrato.setFont(TextSegmentationTool.getTextAreaFont());
         
         JLabel lb = new JLabel("Trecho Finalizado");
-        lb.setFont(new Font(Font.SERIF, Font.ITALIC, 24));
+//        lb.setFont(new Font(Font.SERIF, Font.ITALIC, 24));
         
         pnFinished.add(lb);
         pnFinished.add(lbEstrato);
@@ -361,7 +365,7 @@ public class SegmentPanel extends JPanel {
         sepRadiosCheks.setVisible(false);
         sepCheksButton.setVisible(false);
  
-        pnLabels.setBorder(createBorder("Rótulos"));
+        pnLabels.setBorder(createBorder("Anotações"));
         
         createPnRadios();
         pnLabels.add(sepRadiosCheks);
@@ -492,7 +496,7 @@ public class SegmentPanel extends JPanel {
         
 //        =============================================
 
-        for(JRadioButton rad : tagRad) {
+        for(final JRadioButton rad : tagRad) {
             
             rad.addActionListener(new ActionListener() {
                 @Override
@@ -559,7 +563,7 @@ public class SegmentPanel extends JPanel {
 //              pnSegmentOkButton.setVisible(!visible);
                 pnSegmentOkButton.setVisible(tagging);
                 
-                btOkContet.setText(!tagging ? "Ok" : "Exibir rótulos");
+                btOkContet.setText(!tagging ? "Ok" : "Exibir Anotações");
                     
                 
             }
@@ -586,10 +590,15 @@ public class SegmentPanel extends JPanel {
                 
                 if(finished) {
                     TextSegmentationTool.getMainFrame().goToNextDoc();
+                    mainFrame.setStatus(MainFrame.Status.SELECT);
+                    mainFrame.enableDocPanel();
                     lbEstrato.setText(getEstrato()); 
                }
 
                 btSegmentOk.setText(!finished ? "Finalizar esse segmento" : "Editar esse segmento");
+                
+               
+                
             }
             
         });
@@ -663,6 +672,8 @@ public class SegmentPanel extends JPanel {
         
     }
     
-    
+    public void setMainFrame(MainFrame mainFrame) {
+        this.mainFrame = mainFrame;
+    }
     
 }

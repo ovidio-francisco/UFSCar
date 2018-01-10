@@ -11,7 +11,6 @@ import org.apache.commons.csv.CSVRecord;
 import preprocessamento.Preprocess;
 import segmenters.Segmenter;
 import segmenters.algorithms.TextTilingBR;
-import utils.Files;
 
 public class MeasureUtils {
 
@@ -174,16 +173,16 @@ public class MeasureUtils {
 	}
 
 	
-	public static ArrayList<String> getSentences(File file, Segmenter alg) {
-		
-		if(Files.getFileExtension(file).equals("csv")) {
-			return segmentsToSentences(CSVSegmentsToArray(file), alg.getPreprocess());
-		}
-		else {
-			return segmentsToSentences(alg.getSegments(file), alg.getPreprocess());
-		}
-			
-	}
+//	public static ArrayList<String> getSentences(File file, Segmenter alg) {
+//		
+//		if(Files.getFileExtension(file).equals("csv")) {
+//			return segmentsToSentences(CSVSegmentsToArray(file), alg.getPreprocess());
+//		}
+//		else {
+//			return segmentsToSentences(alg.getSegments(file), alg.getPreprocess());
+//		}
+//			
+//	}
 	
 	public static void main(String[] args) {
 		File doc = new File("Ata 32 Real.txt");
@@ -195,27 +194,30 @@ public class MeasureUtils {
 		tt.setStep(10);
 		Segmenter segmenter = tt;
 	
-		
-		ArrayList<String> segRef = MeasureUtils.getSentences(ref, segmenter);
-		ArrayList<String> segHyp = MeasureUtils.getSentences(doc, segmenter);
+
+		ArrayList<String> segsRef = MeasureUtils.CSVSegmentsToArray(ref);
+		ArrayList<String> segsHyp = segmenter.getSegments(doc);
+
+		ArrayList<String> sentRef = MeasureUtils.segmentsToSentences(segsRef, segmenter.getPreprocess());
+		ArrayList<String> sentHyp = MeasureUtils.segmentsToSentences(segsHyp, segmenter.getPreprocess());
 	
-		MeasureUtils.printSegmentedSentences(segRef, "=============");
+		MeasureUtils.printSegmentedSentences(sentRef, "=============");
 		System.out.println("\n*********\n");
-		MeasureUtils.printSegmentedSentences(segHyp, "-------------");
+		MeasureUtils.printSegmentedSentences(sentHyp, "-------------");
 		
-		System.out.println("Ref Ind: " + MeasureUtils.getSegmentedIndexes(segRef));
-		System.out.println("Hyp Ind: " + MeasureUtils.getSegmentedIndexes(segHyp));
-		
-		System.out.println();
-		
-		System.out.println("    Ind: " + MeasureUtils.getIndexes(segRef));
-		System.out.println("Ref Bin: " + MeasureUtils.arrayToString(MeasureUtils.getBinarySegmentation(segRef)));
-		System.out.println("Hyp Bin: " + MeasureUtils.arrayToString(MeasureUtils.getBinarySegmentation(segHyp)));
+		System.out.println("Ref Ind: " + MeasureUtils.getSegmentedIndexes(sentRef));
+		System.out.println("Hyp Ind: " + MeasureUtils.getSegmentedIndexes(sentHyp));
 		
 		System.out.println();
 		
-		System.out.println("Ref Num: " + MeasureUtils.arrayToString(MeasureUtils.getNumeredSegmentation(segRef)));
-		System.out.println("Hyp Num: " + MeasureUtils.arrayToString(MeasureUtils.getNumeredSegmentation(segHyp)));
+		System.out.println("    Ind: " + MeasureUtils.getIndexes(sentRef));
+		System.out.println("Ref Bin: " + MeasureUtils.arrayToString(MeasureUtils.getBinarySegmentation(sentRef)));
+		System.out.println("Hyp Bin: " + MeasureUtils.arrayToString(MeasureUtils.getBinarySegmentation(sentHyp)));
+		
+		System.out.println();
+		
+		System.out.println("Ref Num: " + MeasureUtils.arrayToString(MeasureUtils.getNumeredSegmentation(sentRef)));
+		System.out.println("Hyp Num: " + MeasureUtils.arrayToString(MeasureUtils.getNumeredSegmentation(sentHyp)));
 	
 		
 		System.out.println("\n\nFim");

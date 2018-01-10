@@ -14,6 +14,7 @@ import java.io.File;
 import java.io.IOException;
 import java.io.Serializable;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.Enumeration;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -43,7 +44,7 @@ public class MainFrame extends javax.swing.JFrame implements Serializable {
 
     private final UndoManager undoManeger = new UndoManager();
     
-    private enum Status  {LOAD, SELECT, CUT, LABEL, SALVE};
+    public enum Status  {LOAD, SELECT, CUT, LABEL, SALVE};
     
     private int fontSize = 12;
     
@@ -247,18 +248,18 @@ public class MainFrame extends javax.swing.JFrame implements Serializable {
         }
     }    
     
-    private void setStatus(Status status) {
+    public void setStatus(Status status) {
         switch (status) {
             case LOAD: {
                 lbStatus.setText("Aguarde carregar o documento");//Clique em 'Iniciar' para carregar um documento");
                 break;
             }
             case SELECT: {
-                lbStatus.setText("Use a função arrastar do mouse e selecione um trecho do documento, em seguida clique em 'Rotular'");                
+                lbStatus.setText("Use a função arrastar do mouse e selecione um trecho do documento");                
                 break;
             }
             case CUT: {
-                lbStatus.setText("Clique em 'Rotular' para rotular o trecho selecionado");                
+                lbStatus.setText("Clique em 'Rotular' para classificar o trecho selecionado");                
                 break;
             }
             case LABEL: {
@@ -291,6 +292,8 @@ public class MainFrame extends javax.swing.JFrame implements Serializable {
     private JPanel newSegmentPanel(String txt) {
         SegmentPanel newseg = new SegmentPanel(txt);
         segPanels.add(newseg);
+        
+        newseg.setMainFrame(this);
         
         return newseg;
     }
@@ -343,9 +346,11 @@ public class MainFrame extends javax.swing.JFrame implements Serializable {
         btUndo = new javax.swing.JButton();
         jSeparator2 = new javax.swing.JToolBar.Separator();
         btCut = new javax.swing.JButton();
-        filler2 = new javax.swing.Box.Filler(new java.awt.Dimension(50, 0), new java.awt.Dimension(50, 0), new java.awt.Dimension(50, 32767));
+        filler3 = new javax.swing.Box.Filler(new java.awt.Dimension(0, 0), new java.awt.Dimension(0, 0), new java.awt.Dimension(32767, 0));
         lbStatus = new javax.swing.JLabel();
         filler1 = new javax.swing.Box.Filler(new java.awt.Dimension(0, 0), new java.awt.Dimension(0, 0), new java.awt.Dimension(32767, 0));
+        filler2 = new javax.swing.Box.Filler(new java.awt.Dimension(50, 0), new java.awt.Dimension(50, 0), new java.awt.Dimension(50, 32767));
+        btClose2 = new javax.swing.JButton();
         btClose = new javax.swing.JButton();
         filler5 = new javax.swing.Box.Filler(new java.awt.Dimension(10, 0), new java.awt.Dimension(10, 0), new java.awt.Dimension(10, 32767));
 
@@ -372,6 +377,7 @@ public class MainFrame extends javax.swing.JFrame implements Serializable {
         taTexto.setLineWrap(true);
         taTexto.setRows(5);
         taTexto.setWrapStyleWord(true);
+        taTexto.setBorder(javax.swing.BorderFactory.createEmptyBorder(5, 5, 5, 5));
         jScrollPane1.setViewportView(taTexto);
 
         tabbedPanelDocumento.addTab("<Vazio>", jScrollPane1);
@@ -469,13 +475,27 @@ public class MainFrame extends javax.swing.JFrame implements Serializable {
             }
         });
         jToolBar1.add(btCut);
-        jToolBar1.add(filler2);
+        jToolBar1.add(filler3);
 
         lbStatus.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
+        lbStatus.setForeground(new java.awt.Color(51, 51, 255));
         lbStatus.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lbStatus.setText("jLabel1");
+        lbStatus.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jToolBar1.add(lbStatus);
         jToolBar1.add(filler1);
+        jToolBar1.add(filler2);
+
+        btClose2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/question-mark24.png"))); // NOI18N
+        btClose2.setFocusable(false);
+        btClose2.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
+        btClose2.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        btClose2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btClose2ActionPerformed(evt);
+            }
+        });
+        jToolBar1.add(btClose2);
 
         btClose.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/exit-door-symbol-24.png"))); // NOI18N
         btClose.setText("Fechar");
@@ -522,11 +542,25 @@ public class MainFrame extends javax.swing.JFrame implements Serializable {
             return;
         }
         
+        desableDocPanel();
         setStatus(Status.LABEL);
         
     }//GEN-LAST:event_btCutActionPerformed
 
+    public void desableDocPanel() {
+        jPanel1.setEnabled(false);
+        tabbedPanelDocumento.setEnabled(false);
+        taTexto.setEnabled(false);
+    }
+
+    public void enableDocPanel() {
+        jPanel1.setEnabled(true);
+        tabbedPanelDocumento.setEnabled(true);
+        taTexto.setEnabled(true);
+    }
+    
     private void gerarCSV() {
+        
 
         if(taTexto.getText().trim().length() > 0 ) {
             JOptionPane.showMessageDialog(this, "Ainda há texto não segmentado no documento \n \"" + doc.getName() + "\"");
@@ -577,6 +611,20 @@ public class MainFrame extends javax.swing.JFrame implements Serializable {
         
         JOptionPane.showMessageDialog(this, "Arquivo "+Utils.getCSVFile(doc)+" criado");
         
+        File log = new File("./log.txt");
+        StringBuilder sbLog = new StringBuilder();
+
+        try {
+            if (log.exists()) {
+                String strLog = Utils.loadTxtFile(log);
+                sbLog.append(strLog);            
+            }
+            sbLog.append(String.format("Arquivo CSV gerado: \"%s\" em [%s]", Utils.getCSVFile(doc), new Date()));
+            Utils.saveTxtFile(sbLog.toString(), log);
+            
+        } catch (Exception e) {
+                System.err.println("Falha ao escrever arquivo log");
+        }
     }
     
     private void btUndoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btUndoActionPerformed
@@ -589,6 +637,8 @@ public class MainFrame extends javax.swing.JFrame implements Serializable {
             btUndo.setEnabled(undoManeger.canUndo());
             
 //            btSavlarSegmentos.setEnabled(false);
+
+            enableDocPanel();
         }
     }//GEN-LAST:event_btUndoActionPerformed
 
@@ -665,11 +715,24 @@ public class MainFrame extends javax.swing.JFrame implements Serializable {
         setFontSizeForAll(this.getContentPane());
     }//GEN-LAST:event_btDecFontSizeActionPerformed
 
+    private void btClose2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btClose2ActionPerformed
+        
+        IntroduceFrame f = new IntroduceFrame();
+        f.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        f.setLocationRelativeTo(null);
+        f.setTitle("Instruções");
+        f.setButtonLabel("Ok");
+        f.setVisible(true);
+        
+
+    }//GEN-LAST:event_btClose2ActionPerformed
+
 
     
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btClose;
+    private javax.swing.JButton btClose2;
     private javax.swing.JButton btCut;
     private javax.swing.JButton btDecFontSize;
     private javax.swing.JButton btIncreaseFont;
@@ -677,6 +740,7 @@ public class MainFrame extends javax.swing.JFrame implements Serializable {
     private javax.swing.JButton btUndo;
     private javax.swing.Box.Filler filler1;
     private javax.swing.Box.Filler filler2;
+    private javax.swing.Box.Filler filler3;
     private javax.swing.Box.Filler filler5;
     private javax.swing.JEditorPane jEditorPane1;
     private javax.swing.JPanel jPanel1;

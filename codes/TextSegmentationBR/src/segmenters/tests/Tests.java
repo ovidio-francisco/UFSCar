@@ -263,7 +263,7 @@ public class Tests {
 			
 			result.add(ev);
 			
-			System.out.println(String.format("Segmentando : %s - %s", ev.getAlg().paramsToString()/*getAlg_Param()*/, f.getName()));
+			System.out.println(String.format("Segmentando : %s - %s", ev.getAlg().getConfigurationLabel()/*getAlg_Param()*/, f.getName()));
 			
 		}
 		

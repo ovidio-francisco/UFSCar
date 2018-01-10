@@ -17,12 +17,18 @@ public class IntroduceFrame extends javax.swing.JFrame {
     public IntroduceFrame() {
         initComponents();
         
-        jLabel1.setText("<html>Tarefas:<br>"
-                + "<ul>"
-                + "<li>Separar a ata em trechos/segmentos em que cada trecho contenha um assunto/conteúdo distinto.(Use a função arrastar do mouse)</li>"
+        jLabel1.setText("<html>"
+                + "<p><b>Objetivo:</b></p>"
+                + "<p>Segmentar o texto em trechos com um assunto predominante e anotar informações a respeito de cada trecho. "
+                + "Essas anotações irão ajudar o sistema a localizar informações úteis para os usuários</p><br/>"
+                + "<p><b>Tarefas:</b></p>"
+                + "<ol>"
+                + "<li>Separar a ata em trechos/segmentos que contenham um assunto/tópico predominate.(Use a função arrastar do mouse)</li>"
                 + "<li>Classificar tipo de conteúdo de cada trecho</li>"
                 + "<li>Selecionar termos do texto que representem o(s) tópico(s)/assunto(s) principais do trecho</li>"
-                + "</ul>"
+                + "</ol>"
+                + "</br><p>Ao final, enviar a pasta CSV que conterá as informações coletadas</p>"
+                
                 + "</html>");
     }
 
@@ -40,6 +46,7 @@ public class IntroduceFrame extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
+        jLabel1.setFont(new java.awt.Font("Dialog", 0, 12)); // NOI18N
         jLabel1.setText("jLabel1");
 
         jButton1.setText("OK, Iniciar");
@@ -66,10 +73,10 @@ public class IntroduceFrame extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, 190, Short.MAX_VALUE)
                 .addGap(18, 18, 18)
                 .addComponent(jButton1)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap())
         );
 
         pack();
@@ -114,6 +121,10 @@ public class IntroduceFrame extends javax.swing.JFrame {
         });
     }
 
+    public void setButtonLabel(String label) {
+        jButton1.setText(label);
+    }
+    
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;

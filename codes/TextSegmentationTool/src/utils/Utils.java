@@ -100,6 +100,20 @@ public class Utils {
         return buffer.toString();
     }
         
+            public static void saveTxtFile(String txt, File txtFile) {
+        BufferedWriter out = getBufferedWriter(txtFile); 
+
+        try {
+			out.write(txt);
+			out.flush();
+			out.close();
+		} catch (IOException e) {
+			System.err.println("Erro ao salvar o arquivo " + txtFile.getName());
+			e.printStackTrace();
+		}
+    }
+
+        
     public static ArrayList<String> loadTxtFileToArray(File file) {
 
         String line;

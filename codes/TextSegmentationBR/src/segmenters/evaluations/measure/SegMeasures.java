@@ -7,16 +7,18 @@ import segmenters.Segmenter;
 
 public class SegMeasures {
 	
-	private File doc = null;
+	private File doc = null;	
 	private File ref = null;
 	private Segmenter segmenter = null;
-
-	private ArrayList<String> segRef = null;
-	private ArrayList<String> segHyp = null;
+	
+	private ArrayList<String> segmentsRef = null;
+	private ArrayList<String> segmentsHyp = null;
+	
+	private ArrayList<String> sentencesRef = null;
+	private ArrayList<String> sentencesHyp = null;
 	
 	private double pk = -1;
 	private double wd = -1;
-	
 	
 	private int tp;
 	private int tn;
@@ -35,14 +37,17 @@ public class SegMeasures {
 		this.ref = ref;
 		this.segmenter = segmenter;
 		
-		segRef = MeasureUtils.getSentences(ref, segmenter);
-		segHyp = MeasureUtils.getSentences(doc, segmenter);
+		segmentsRef = MeasureUtils.CSVSegmentsToArray(ref);
+		segmentsHyp = segmenter.getSegments(doc);
 		
-		int[] numbRef = MeasureUtils.getNumeredSegmentation(segRef);
-		int[] numbHyp = MeasureUtils.getNumeredSegmentation(segHyp);
+		sentencesRef = MeasureUtils.segmentsToSentences(segmentsRef, segmenter.getPreprocess());
+		sentencesHyp = MeasureUtils.segmentsToSentences(segmentsHyp, segmenter.getPreprocess());
 		
-		int[] binRef = MeasureUtils.getBinarySegmentation(segRef);
-		int[] binHyp = MeasureUtils.getBinarySegmentation(segHyp);
+		int[] numbRef = MeasureUtils.getNumeredSegmentation(sentencesRef);
+		int[] numbHyp = MeasureUtils.getNumeredSegmentation(sentencesHyp);
+		
+		int[] binRef = MeasureUtils.getBinarySegmentation(sentencesRef);
+		int[] binHyp = MeasureUtils.getBinarySegmentation(sentencesHyp);
 		
 		calcTraditionalMeasures(binRef, binHyp);
 		
@@ -106,11 +111,11 @@ public class SegMeasures {
 	}
 
 	public ArrayList<String> getSegRef() {
-		return segRef;
+		return sentencesRef;
 	}
 
 	public ArrayList<String> getSegHyp() {
-		return segHyp;
+		return sentencesHyp;
 	}
 
 	public double getPk() {
@@ -151,6 +156,15 @@ public class SegMeasures {
 
 	public double getF1() {
 		return f1;
+	}
+
+
+	public double getSegmentsCountHyp() {
+		return segmentsHyp.size();
+	}
+
+	public double getSegmentsCountRef() {
+		return segmentsHyp.size();
 	}
 
 }

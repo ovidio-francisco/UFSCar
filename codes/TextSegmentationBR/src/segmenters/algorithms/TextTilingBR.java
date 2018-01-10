@@ -885,7 +885,7 @@ public String getLabel() {
 
 @Override
 public String getConfigurationLabel() {
-	return String.format("TT %2d %2d", this.getWindowSize(), this.getStep()) ;
+	return String.format("TT - ws|step: %d|%d", this.getWindowSize(), this.getStep()) ;
 }
 
 	
