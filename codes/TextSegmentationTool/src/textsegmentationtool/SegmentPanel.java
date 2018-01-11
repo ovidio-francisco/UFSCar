@@ -459,7 +459,7 @@ public class SegmentPanel extends JPanel {
             public void actionPerformed(ActionEvent e) {
                 if(listTopics.getSelectedIndex() >= 0) {
                     Object remove = topicModel.remove(listTopics.getSelectedIndex());
-                    if(wordsModel.contains(remove)) {
+                    if(!wordsModel.contains(remove)) {
                         wordsModel.addElement(remove);
                         words.add((String)remove);
                     }

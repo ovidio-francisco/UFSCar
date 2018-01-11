@@ -13,6 +13,8 @@ import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Comparator;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.DefaultListModel;
@@ -240,5 +242,25 @@ public class Utils {
             }
         }
     }
+    
+    public static void sortFiles(File[] files) {
+        Arrays.sort(files, new Comparator<File>() {
+            @Override
+            public int compare(File f1, File f2) {
+                return f1.getName().compareTo(f2.getName());
+            }
+        } );
+
+        for(File f : files) {
+            System.out.println(f);
+        }
+        
+    }
+    
+    
+    public static void main(String[] args) {
+        System.out.println("vai");
+    }
+    
     
 }

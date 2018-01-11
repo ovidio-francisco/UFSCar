@@ -119,6 +119,8 @@ public class MainFrame extends javax.swing.JFrame implements Serializable {
         assertFolders();
                 
         File[] files = docsFolder.listFiles(utils.Utils.getM4M_FileFilter()); 
+        
+        Utils.sortFiles(files);
 
         if (files!= null && files.length > 0) {
             doc = files[0];
