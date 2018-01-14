@@ -172,6 +172,7 @@ public class MainFrame extends javax.swing.JFrame implements Serializable {
         btUndo.setEnabled(false);
 //        btSavlarSegmentos.setEnabled(false);
         
+        btSave.setVisible(false);
         
         taTexto.addCaretListener(new CaretListener() {
             @Override
@@ -645,7 +646,7 @@ public class MainFrame extends javax.swing.JFrame implements Serializable {
     }//GEN-LAST:event_btUndoActionPerformed
 
     private void btSaveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btSaveActionPerformed
-        TextSegmentationTool.saveState(segPanels, taTexto.getText(), doc);
+       // TextSegmentationTool.saveState(segPanels, taTexto.getText(), doc);
         
         JOptionPane.showMessageDialog(this, "Edição salva! Você pode contiuar desse ponto na próxima execução da ferramenta!");
     }//GEN-LAST:event_btSaveActionPerformed
@@ -657,16 +658,26 @@ public class MainFrame extends javax.swing.JFrame implements Serializable {
             return;
         }
         
+        
+        if (false) {
+            
         Object[] buttons = {"Salvar e sair", "Sair sem salvar", "Cancelar"};
         int resp = JOptionPane.showOptionDialog(this, "Salvar esse trabalho antes de sair?", "Sair?", JOptionPane.YES_NO_CANCEL_OPTION, JOptionPane.QUESTION_MESSAGE, null, buttons, null );
         if(resp == JOptionPane.YES_OPTION) {
             dispose();
             TextSegmentationTool.saveState(segPanels, taTexto.getText(), doc);
         }
+
+        resp = JOptionPane.NO_OPTION;
         
         if(resp == JOptionPane.NO_OPTION) {
             dispose();
         }
+        }
+        
+        
+        dispose();
+        
     }//GEN-LAST:event_btCloseActionPerformed
 
     private void onShow(java.awt.event.ComponentEvent evt) {//GEN-FIRST:event_onShow

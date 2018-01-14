@@ -1,8 +1,0 @@
-Arquivo CSV gerado: "./CSV/20ª Reunião Ordinária CoC-CCS 01-06-11.txt.csv" em [Tue Jan 09 23:43:30 BRST 2018]
-Arquivo CSV gerado: "./CSV/25ª Reunião Ordinária CoC-CCS 04-04-12.txt.csv" em [Tue Jan 09 23:56:28 BRST 2018]
-Arquivo CSV gerado: "./CSV/Ata 32 - 28a Reunião Odinária PPGCCS.txt.csv" em [Wed Jan 10 23:20:33 BRST 2018]
-Arquivo CSV gerado: "./CSV/10ª Reunião Ordinária CoC-CCS 05-04-10.txt.csv" em [Wed Jan 10 23:37:17 BRST 2018]
-Arquivo CSV gerado: "./CSV/Ata 33 - 29a Reunião Odinária PPGCCS.txt.csv" em [Wed Jan 10 23:48:51 BRST 2018]
-Arquivo CSV gerado: "./CSV/20ª Reunião Extraordinária CoC-CCS 08-12-10.txt.csv" em [Wed Jan 10 23:56:51 BRST 2018]
-Arquivo CSV gerado: "./CSV/Ata 29 - 25a Reunião Odinária PPGCCS.txt.csv" em [Thu Jan 11 00:05:10 BRST 2018]
-Arquivo CSV gerado: "./CSV/Ata 35 - 5a Reunião Extraodinária PPGCCS.txt.csv" em [Thu Jan 11 00:07:53 BRST 2018]

@@ -5,6 +5,7 @@ import java.util.ArrayList;
 
 import preprocessamento.Preprocess;
 import segmenters.algorithms.TextTilingBR;
+import segmenters.evaluations.measure.MeasureUtils;
 import segmenters.evaluations.measure.SegMeasures;
 
 public class AnaliseTT {
@@ -16,16 +17,8 @@ public class AnaliseTT {
 
 		System.out.println("Analise do TextTiling");
 
-		preprocess.setIdentifyEOS       (true);
-		preprocess.setRemoveAccents     (true);
-		preprocess.setRemoveHeaders     (true);
-		preprocess.setRemoveNumbers     (true);
-		preprocess.setRemovePunctuation (true);
-		preprocess.setRemoveShortThan   (true);
-		preprocess.setRemoveStem        (true);
-		preprocess.setRemoveStopWord    (true);
-		preprocess.setToLowCase         (true);			
-
+		preprocess = MeasureUtils.getMyDefaultPreprocess();
+		
 		varingStep();
 		
 		
@@ -35,7 +28,7 @@ public class AnaliseTT {
 		int       winSize = 20;
 		int       step = 3;
 
-		int       stepIncrease = 1;
+		int       stepIncrease = 10;
 		
 		
 		StringBuilder sb = new StringBuilder();

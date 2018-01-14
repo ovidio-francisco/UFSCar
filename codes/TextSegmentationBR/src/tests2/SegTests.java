@@ -21,6 +21,11 @@ public class SegTests {
 		SegTests.getFiles().clear();
 		SegTests.getFiles(folder);
 		
+		System.out.println(files.size() + " Reference files\n");
+//		for (File f : files) {
+//			System.out.println(String.format("file --> %s", f));
+//		}
+		
 		ArrayList<SegMeasures> result = new ArrayList<>();
 		
 		for(File doc : files) {

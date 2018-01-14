@@ -1,3 +1,4 @@
 Arquivo CSV gerado: ./CSV/Ata 29 - 25a Reunião Odinária PPGCCS.txt.csv -- Mon Jan 08 20:05:17 BRST 2018
 Arquivo CSV gerado: ./CSV/Ata 35 - 5a Reunião Extraodinária PPGCCS.txt.csv -- Mon Jan 08 20:08:00 BRST 2018
 Arquivo CSV gerado: "./CSV/Ata 29 - 25a Reunião Odinária PPGCCS.txt.csv" em [Tue Jan 09 23:19:00 BRST 2018]
+Arquivo CSV gerado: "./CSV/01 Ata 30 - 26a Reunião Odinária PPGCCS.txt.csv" em [Sun Jan 14 03:35:56 BRST 2018]

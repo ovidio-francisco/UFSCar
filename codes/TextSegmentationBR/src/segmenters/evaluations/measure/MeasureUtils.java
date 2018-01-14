@@ -135,6 +135,22 @@ public class MeasureUtils {
 	}
 	
 	
+	public static Preprocess getMyDefaultPreprocess() {
+		Preprocess preprocess = new Preprocess();
+		
+		preprocess.setIdentifyEOS       (true);
+		preprocess.setRemoveAccents     (true);
+		preprocess.setRemoveHeaders     (true);
+		preprocess.setRemoveNumbers     (true);
+		preprocess.setRemovePunctuation (true);
+		preprocess.setRemoveShortThan   (true);
+		preprocess.setRemoveStem        (true);
+		preprocess.setRemoveStopWord    (true);
+		preprocess.setToLowCase         (true);			
+		
+		return preprocess;
+	}
+	
 	/**
 	 * Split a segment in sentences  and return it on an array
 	 * @param preprocess 
