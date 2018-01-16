@@ -1,229 +1,55 @@
-"PAGE  
-UNIVERSIDADE FEDERAL DE SÃO CARLOS ? Campus Sorocaba
-
-BACHARELADO EM CIÊNCIA DA COMPUTAÇÃO
-
-Rodovia João Leme dos Santos, Km 110 (SP-264)
-
-Bairro do Itinga - Sorocaba-SP - CEP 18052-780
-
-Telefone: (15) 3202-2022 / www. ufscar. br
-
-Ata da 13ª Reunião Ordinária do Conselho do Curso de Bacharelado em Ciência da Computação, UFSCar ? Sorocaba
-
-Local, Dia e Hora: Na AT 09, situado nas dependências da Universidade Federal de São Carlos - campus Sorocaba, à Rodovia João Leme dos Santos, quilômetro 110, Bairro do Itinga, na cidade de Sorocaba, Estado de São Paulo e realizada aos cinco dias do mês de agosto de dois mil e dez, às 9h00. Convocação e Presença: A convocação foi realizada dois dias antes da data de realização, sendo que se celebrou a primeira chamada às 9h00, e a segunda às 9h15 estavam presentes após a segunda chamada os seguintes membros do Conselho do Curso de Bacharelado em Ciência da Computação - Sorocaba, professores: Luciana Martinez Zaina; Yeda Regina Venturini, Katti Faceli, Tiemi C. Sakata, Cândida Nunes da Silva, Márcio K. Oikawa, Murillo Rodrigo P. Homem, Gustavo Maciel Dias Vieira, Siovani Cintra Felipussi, Alexandre Álvaro. Também presente a Sra. Sonia Vieira Dal Pian Nunes Silva, como secretária desta reunião, o Sr. João Guilherme Júnior, representante dos técnicos administrativos, o Sr. Alessandro Visotto Piccoli, representante discente turma 2010. Os professores Fábio Luciano Verdi e José de Oliveira Guimarães estavam em férias. Não justificaram a ausência o professor Laércio José dos Santos e também os representantes discentes de (2008) Sr. Rubens Onari Júnior e de (2009) Fellipe Augusto Ruiz de Souza.",irrelevante,,
-" Comunicações da Presidência: A profª Luciana informou que a partir do dia trinta de junho de dois mil e dez, as Atas anteriores serão lidas sempre nas reuniões seguintes, informou também que os empréstimos de livros na nossa biblioteca é muito importante devido ao fato de que a aquisição dos livros são realizadas conforme demanda, sendo assim pediu aos professores que incentivem os alunos para que façam mais empréstimos, também pediu que os professores orientem os alunos para que os mesmos procurem os monitores, pois segundo informações a procura durante todo o semestre foi muito pequena. Sobre a questão dos empréstimos dos livros o prof. Murillo colocou que essa questão é bem complicada, pois muitos livros podem ser baixados da internet, e embora ele já tenha avisado que essa prática é ilegal, eles preferem usar o que está na internet a vir até a biblioteca, todos já foram avisados sobre a ilegalidade de tal procedimento e também já sabem que não podem postar esse tipo de cópia no moodle. A profª Katti diz que muitos dos livros necessários ainda não temos na nossa biblioteca, sendo assim nesse caso podemos pedir para vir de São Carlos e se eles tiverem uma quantidade grande pode mandar como empréstimo para que possamos usar durante o semestre e aproveitou para enfatizar novamente a importância do empréstimo realizado pelos alunos e ressaltou que quando o MEC vir para reconhecimento do curso pode pedir para ver a lista de empréstimos. A profª Luciana informou que hoje dia cinco de agosto às 14 horas acontecerá a reunião de estruturação do campus e a profª Katti aproveita para esclarecer que essas reuniões tem como objetivo fechar as propostas para que sejam enviadas juntamente com as propostas dos departamentos. A respeito do PPP do curso da Ciência da Computação a profª Luciana informou que o mesmo já está em fase de avaliação na ProGrad e que a comissão que irá avaliá-lo já foi definida. Comunicação dos Membros: O prof. Murillo informou que o prof. Kamel desistiu de pedir transferência para o nosso campus. O prof. Alexandre informou que alguns professores participaram da reunião do FINEP 4 e foi pedido no projeto cem metros quadrados para laboratórios e vinte e cinco metros quadrados para os servidores, e que esse projeto será submetido para São Carlos, e colocou também que como no ano passado todos os professores entraram no projeto, por esse motivo eles estavam temerosos de que ninguém pudesse entrar esse ano, porém em conversa com o prof. Antonio Riul descobriu que somente o proponente do ano passado não poderia participar esse ano, e também informou que a profª Yeda fará parte da comissão de pareceristas do projeto FINEP 4 não podendo compor o grupo de proponentes da Computação. ",informe,orientação;,empréstimos;biblioteca;reunião;finep;
-"Ordem do Dia: (I) DISTRIBUIÇÃO DOS PARECERISTAS. (I.I) A profª Luciana colocou que assim que voltou da férias, verificou que precisaria convocar uma reunião do conselho para definição dos pareceristas dos planos de ensino até do dia trinta de julho, sendo assim teve que fazer a referida distribuição ad referendum, pois a maioria do conselho estava em férias. Porém, tomou o cuidado de distribuir de maneira equilibrada e de acordo os conhecimentos de área de cada um e também distribuir os planos através dos membros pareceristas já cadastrados. A distribuição dos pareceristas foi realizada conforme segue:
-	DISCIPLINA
-	DOCENTE
-	PARECERISTA
-
-	Algoritmos e programação II (turma A e B)
-	Tiemi
-	Márcio
-
-	Aplicações em TI para Sustentabilidade 
-	Luciana/ Katti
-	Márcio
-
-	Banco de Dados 
-	Márcio
-	Katti
-
-	Cálculo Diferencial e Séries
-	Adilson
-	Laércio
-
-	Circuitos Digitais (turma A e B)
-	Yeda
-	Gustavo
-
-	Empreendorismo e Inovação em TI (turma A e B)
-	Alexandre
-	Murillo
-
-	Engenharia de Software 1
-	Luciana
-	Alexandre
-
-	Estrutura de Dados 2
-	Márcio
-	Cândida
-
-	Gestão de Pequenas Empresas
-	Neila
-	Alexandre
-
-	IHM
-	Murillo
-	Siovani
-
-	Inteligência Artificial
-	Katti 
-	Tiemi
-
-	Introdução à Conceitos Comp. e Algoritmos
-	José
-	Siovani
-
-	Introdução à Informática
-	Murillo
-	José
-
-	Introdução à Robótica
-	Siovani
-	Yeda
-
-	Laboratório de Compiladores
-	José
-	Tiemi
-
-	Laboratório de Redes de Computadores
-	Fábio 
-	Yeda
-
-	Laboratório de Sistemas Operacionais
-	Gustavo
-	Fábio
-
-	Matemática Discreta (turma A e B)
-	Cândida
-	José
-
-	Noções de Gestão Ambiental (turma A)
-	Rogério
-	Luciana
-
-	Noções de Gestão Ambiental (turma B)
-	Fernando
-	Luciana
-
-	Probabilidade e Estatística
-	Marina
-	Laércio
-
-	Processamento de Imagens e Visão Comp.
-	Siovani
-	Murillo
-
-	Projeto e Desenvolvimento de Sistemas
-	Alexandre
-	Luciana
-
-	Sistemas Distribuídos
-	Fábio 
-	Gustavo
-
-	Sistemas Operacionais
-	Gustavo
-	Fábio
-
-	Teoria da Computação
-	José
-	Cândida
-
-	Tópicos Avançados em Banco de Dados
-	Márcio
-	Katti
-
-
-E acrescenta que o parecer deverá ser realizado até o dia dezoito de agosto, porém sugere que a mesma seja realizada até o dia onze de agosto para que uma nova reunião de conselho de curso possa ser feita para referender a avaliação dos pareceristas. (I.II) Aprovado. (II) FORMAÇÃO DO NDE (NÚCLEO DOCENTE ESTRUTURANTE). (II.I) A profª Luciana que colocou que em reuniões anteriores o prof Siovani já havia comentado sobre o NDE e sobre a necessidade da formação desse núcleo no curso de Bacharelado em Ciência da Computação, e diante dessa necessidade procurou se informar mais sobre o assunto e descobriu que devido ao fato do MEC identificar vários problemas no implantação do Projeto Político Pedagógico de diversos cursos, a partir de 2008 o NDE passaria a integrar todos os cursos de licenciatura e bacharelado. E explicou como o NDE deve ser composto (no mínimo cinco membros) sendo que ela como coordenadora do curso deve fazer parte dessa composição, e que é preciso que se faça reuniões periódicas devidamente registradas em Atas e ressaltou que o comprometimento do NDE é com a condução pedagógica do curso. Portanto sugere que já façamos a escolha do professores que farão parte do NDE do curso da Ciência da Computação. Após dicussões foram indicados para o NDE os seguintes professores: José de Oliveira Guimarães, Yeda Regina Venturini, Katti Faceli, Luciana Ap. Martinez Zaina, Gustavo Maciel Dias Vieira, Murillo Rodrigo Petrucelli Homem. (II.II) A indicação dos membros foi aprovada. (III) REVISÃO DO CONSELHO DE CURSO. (III.I) A profª Katti diz que se informou sobre a composição dos membros que devem fazer parte do conselho de curso e que de acordo com a portaria 662/03, o conselho de curso deve ser composto pelo presidente (coordenação do curso), vice-presidente (vice-coordenador), representantes docentes das áreas de conhecimento de disciplinas do curso (e suplentes), representante discentes de todas as turmas do curso e secretário do curso (o qual não possui direito a voto) e o que seria necessário definir na reunião sobre essa composição. A prof. Katti fez uma revisão das formações de conselho que já haviam sido realizadas e colocou que em agosto de dois mil e oito foi realizada a primeira formulação. A reformulação foi realizada em feveiro de dois mil e nova, a qual na época ficou decidido pelas seguintes áreas de conhecimento: Teoria da Computação, Inteligência Artificial, Linguagem de Programação, Processamentos de Imagens, Arquitetura e Redes, Engenharia de Software, Banco de Dados, Geometria Diferencial e Topologia, porém o ofício com as referidas reformulações não foram encaminhadas à CoG (Comissão de Graduação) para a aprovação. Por isto ela sugeriu que estas areas sejam reavaliadas de maneira a alinhar a composição do conselho com as disciplinas que compõem o Projeto Político Pedagógico. O prof. Siovani ressalta sobre a importância de termos um representante da área da Matemática e a profª Luciana diz que irá conversar com a profª Magda sobre essa representatividade e na possibilidade de termos um representante da área e um suplente. O prof. Siovani sugere que a área dele poderia ser alterada para Processamento Gráfico, e com isso abarcaria diversas disciplinas. A profª Luciana diz que acha importante que se tenha uma area de Algoritmos, por entender que essa seja fundamental para o nosso curso. O prof. Gustavo sugere que seja mudado o nome da área de conhecimento Arquiteura e Redes para Sistemas de Computação. A profª Luciana ressalta a importância de termos uma área Interdisciplinar, já que o PPP possui disciplinas que se encaixam neste viés. A profª Katti coloca que a área de Inteligência Artificial e Banco de Dados poderiam ser unificadas em uma única área denominada de Gestão do Conhecimento, já que estas possuem afinidades entre si. O prof. Márcio concorda com tal colocação. A profª Luciana diz que o representante da área de Matemática será negociado com a coordenadora do curso de Matemática e o Interdisciplinar com os demais cursos os quais possuem professores que lecionam disciplinas na Computação. Após as dicussões ficou decidido sobre as seguintes áreas, bem como seus representantes e suplentes:
-	Áreas de Conhecimento
-	Docente (Titular)
-	Suplente
-
-	Algoritmos
-	Tiemi
-	Gustavo
-
-	Teoria da Computação
-	Cândida
-	José Guimarães
-
-	Processamento Gráfico
-	Siovani
-	Murillo
-
-	Sistema de Computação
-	Fábio
-	Yeda
-
-	Engenharia de Software
-	Alexandre
-	a ser definido
-
-	Gestão de Conhecimento
-	Márcio
-	Katti
-
-	Matemática
-	a ser definido
-	a ser definido
-
-	Interdisciplinar
-	a ser definido
-	a ser definido
-
-
- (III.II) Aprovada a distribuição e alterações nas áreas de conhecimento. (IV) CRITÉRIO PARA ALOCAÇÃO DE BOLSA MONITORIA DO CURSO. (IV.I) A profª Luciana informou que no semestre passado houveram muitas reclamações por parte dos professores da área de humanas, devido ao fato de que a maioria das bolsas monitorias contemplavam disciplinas dos cursos de exatas, pois um dos critérios de alocação para referida bolsa é o índice de reprovas; a profª esclareceu que houve uma reunião da Coordenação Acadêmica com os coordenadores de cursos e que foi deliberado que todos os cursos seriam contemplados com uma bolsa monitoria, as bolsas restantes seriam distribuidas mediante edital, e informa que o nosso curso foi contemplado com três bolsas nas disciplinas de Circuitos Digitais (Yeda), Matemática Discreta (Cândida), Sistemas Operacionais e Labaratório de Sistemas Operacionais (Gustavo) através do edital do campus, e que também há uma bolsa vinculada ao curso, onde o próprio coordenador terá que enviar projeto, e para que não haja injustiça a decisão sobre a disciplina que seria contemplada com esta bolsa seria realizada em Conselho, e que talvez fosse interessante fazer um rodízio conforme demanda. (IV.II) O prof. Márcio ressalta que a idéia do rodízio absolutamente razoável, mas acha que não deve ser uma regra algo fixo, e sim algo que possa ser revisto e mudado dependendo da demanda. A profª Luciana concorda e diz que dependendo da situação e demanda a decisão será tomada pelo conselho. A profª Yeda coloca que uma regra importante seria que a bolsa só poderia contemplar disciplinas que já tivessem concorrido no edital do campus e não tivessem sido contempladas, e todos concordam. A profª Luciana pergunta aos professores sobre o interesse na bolsa monitoria do curso para esse semestre. O prof. Márcio diz que tem interesse na bolsa monitoria para Banco de Dados e Estrutura de Dados, e que participiou do edital do campus, mas não foi contemplado. Nenhum outro docente manifestou interesse. O prof. Márcio foi contemplado com a bolsa. (IV.III) Aprovado",decisão,discussão;,pareceristas;núcleo;docente;bolsas;
-".Encerramento: Estando todos de acordo e nada mais havendo a deliberar, lavra-se, leia-se, aprova-se e assina-se esta Ata por todos os membros do Conselho do Curso de Bacharelado em Ciência da Computação, Campus Sorocaba, participantes desta reunião que, em 02 (duas) vias, será levada a registro e arquivamento junto à Coordenação do Conselho do Curso de Bacharelado em Ciência da Computação - Sorocaba, ficando ali à disposição para consulta restrita aos professores da UFSCar - Sorocaba. Nada mais.
-
-	Profª Drª Luciana Aparecida Martinez Zaina
-Presidente desta Reunião
-
-	Sonia Vieira Dal Pian N. Silva
-
-Secretária desta Reunião
-	Profª. Drª Katti Faceli
-Professora Adjunta
-
-	Profª. Drª Cândida Nunes da Silva
-Professora Adjunta
-	Profª. Drª. Tiemi Chistine Sakata
-Professora Adjunta
-
-	Prof. Me. Gustavo Maciel Dias Vieira
-
-Professor Assistente
-	Prof. Dr. Márcio K. Oikawa
-
-Professor Adjunto
-
-
-	Prof. Dr. Murillo Rodrigo Petrucelli Homem
-Professor Adjunto
-	Prof. Dr. Siovani Cintra Felipussi
-
-Professor Adjunto
-
-
-	Prof. Dr.Alexandre Álvaro
-
-Professor Adjunto
-	Profª. Drª. Yeda Regina Venturini
-
-Professora Adjunta
-
-	Alessandro Visotto Piccoli
-
- Representante Discente - 2010
-
-
-	João Guilherme Júnior
-
-Representante Técnico Administrativo
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-",irrelevante,,
+"PAGE UNIVERSIDADE FEDERAL DE SÃƒO CARLOS â€“ Campus Sorocaba BACHARELADO EM CIÃŠNCIA DA COMPUTAÃ‡ÃƒO Rodovia JoÃ£o Leme dos Santos, Km 110 (SP-264) Bairro do Itinga - Sorocaba-SP - CEP 18052-780 Telefone: (15) 3202-2022 / www. ufscar. br.
+Ata da 13Âª ReuniÃ£o OrdinÃ¡ria do Conselho do Curso de Bacharelado em CiÃªncia da ComputaÃ§Ã£o, UFSCar â€“ Sorocaba.
+Local, Dia e Hora: Na AT 09, situado nas dependÃªncias da Universidade Federal de SÃ£o Carlos - campus Sorocaba, Ã  Rodovia JoÃ£o Leme dos Santos, quilÃ´metro 110, Bairro do Itinga, na cidade de Sorocaba, Estado de SÃ£o Paulo e realizada aos cinco dias do mÃªs de agosto de dois mil e dez, Ã s 9h00.
+ConvocaÃ§Ã£o e PresenÃ§a: A convocaÃ§Ã£o foi realizada dois dias antes da data de realizaÃ§Ã£o, sendo que se celebrou a primeira chamada Ã s 9h00, e a segunda Ã s 9h15 estavam presentes apÃ³s a segunda chamada os seguintes membros do Conselho do Curso de Bacharelado em CiÃªncia da ComputaÃ§Ã£o - Sorocaba, professores: Luciana Martinez Zaina;
+Yeda Regina Venturini, Katti Faceli, Tiemi C. Sakata, CÃ¢ndida Nunes da Silva, MÃ¡rcio K. Oikawa, Murillo Rodrigo P. Homem, Gustavo Maciel Dias Vieira, Siovani Cintra Felipussi, Alexandre Ãlvaro.
+TambÃ©m presente a Sra. Sonia Vieira Dal Pian Nunes Silva, como secretÃ¡ria desta reuniÃ£o, o Sr. JoÃ£o Guilherme JÃºnior, representante dos tÃ©cnicos administrativos, o Sr. Alessandro Visotto Piccoli, representante discente turma 2010.
+Os professores FÃ¡bio Luciano Verdi e JosÃ© de Oliveira GuimarÃ£es estavam em fÃ©rias.
+NÃ£o justificaram a ausÃªncia o professor LaÃ©rcio JosÃ© dos Santos e tambÃ©m os representantes discentes de (2008) Sr. Rubens Onari JÃºnior e de (2009) Fellipe Augusto Ruiz de Souza.",irrelevante,,
+"ComunicaÃ§Ãµes da PresidÃªncia: A profÂª Luciana informou que a partir do dia trinta de junho de dois mil e dez, as Atas anteriores serÃ£o lidas sempre nas reuniÃµes seguintes, informou tambÃ©m que os emprÃ©stimos de livros na nossa biblioteca Ã© muito importante devido ao fato de que a aquisiÃ§Ã£o dos livros sÃ£o realizadas conforme demanda, sendo assim pediu aos professores que incentivem os alunos para que faÃ§am mais emprÃ©stimos, tambÃ©m pediu que os professores orientem os alunos para que os mesmos procurem os monitores, pois segundo informaÃ§Ãµes a procura durante todo o semestre foi muito pequena.
+Sobre a questÃ£o dos emprÃ©stimos dos livros o prof. Murillo colocou que essa questÃ£o Ã© bem complicada, pois muitos livros podem ser baixados da internet, e embora ele jÃ¡ tenha avisado que essa prÃ¡tica Ã© ilegal, eles preferem usar o que estÃ¡ na internet a vir atÃ© a biblioteca, todos jÃ¡ foram avisados sobre a ilegalidade de tal procedimento e tambÃ©m jÃ¡ sabem que nÃ£o podem postar esse tipo de cÃ³pia no moodle.
+A profÂª Katti diz que muitos dos livros necessÃ¡rios ainda nÃ£o temos na nossa biblioteca, sendo assim nesse caso podemos pedir para vir de SÃ£o Carlos e se eles tiverem uma quantidade grande pode mandar como emprÃ©stimo para que possamos usar durante o semestre e aproveitou para enfatizar novamente a importÃ¢ncia do emprÃ©stimo realizado pelos alunos e ressaltou que quando o MEC vir para reconhecimento do curso pode pedir para ver a lista de emprÃ©stimos.
+A profÂª Luciana informou que hoje dia cinco de agosto Ã s 14 horas acontecerÃ¡ a reuniÃ£o de estruturaÃ§Ã£o do campus e a profÂª Katti aproveita para esclarecer que essas reuniÃµes tem como objetivo fechar as propostas para que sejam enviadas juntamente com as propostas dos departamentos.
+A respeito do PPP do curso da CiÃªncia da ComputaÃ§Ã£o a profÂª Luciana informou que o mesmo jÃ¡ estÃ¡ em fase de avaliaÃ§Ã£o na ProGrad e que a comissÃ£o que irÃ¡ avaliÃ¡-lo jÃ¡ foi definida.
+ComunicaÃ§Ã£o dos Membros: O prof. Murillo informou que o prof. Kamel desistiu de pedir transferÃªncia para o nosso campus.
+O prof. Alexandre informou que alguns professores participaram da reuniÃ£o do FINEP 4 e foi pedido no projeto cem metros quadrados para laboratÃ³rios e vinte e cinco metros quadrados para os servidores, e que esse projeto serÃ¡ submetido para SÃ£o Carlos, e colocou tambÃ©m que como no ano passado todos os professores entraram no projeto, por esse motivo eles estavam temerosos de que ninguÃ©m pudesse entrar esse ano, porÃ©m em conversa com o prof. Antonio Riul descobriu que somente o proponente do ano passado nÃ£o poderia participar esse ano, e tambÃ©m informou que a profÂª Yeda farÃ¡ parte da comissÃ£o de pareceristas do projeto FINEP 4 nÃ£o podendo compor o grupo de proponentes da ComputaÃ§Ã£o. Ordem do Dia: (I) DISTRIBUIÃ‡ÃƒO DOS PARECERISTAS.
+(I.I) A profÂª Luciana colocou que assim que voltou da fÃ©rias, verificou que precisaria convocar uma reuniÃ£o do conselho para definiÃ§Ã£o dos pareceristas dos planos de ensino atÃ© do dia trinta de julho, sendo assim teve que fazer a referida distribuiÃ§Ã£o ad referendum, pois a maioria do conselho estava em fÃ©rias.
+PorÃ©m, tomou o cuidado de distribuir de maneira equilibrada e de acordo os conhecimentos de Ã¡rea de cada um e tambÃ©m distribuir os planos atravÃ©s dos membros pareceristas jÃ¡ cadastrados.
+A distribuiÃ§Ã£o dos pareceristas foi realizada conforme segue: DISCIPLINA DOCENTE PARECERISTA Algoritmos e programaÃ§Ã£o II (turma A e B) Tiemi MÃ¡rcio AplicaÃ§Ãµes em TI para Sustentabilidade Luciana/ Katti MÃ¡rcio Banco de Dados MÃ¡rcio Katti CÃ¡lculo Diferencial e SÃ©ries Adilson LaÃ©rcio Circuitos Digitais (turma A e B) Yeda Gustavo Empreendorismo e InovaÃ§Ã£o em TI (turma A e B) Alexandre Murillo Engenharia de Software 1 Luciana Alexandre Estrutura de Dados 2 MÃ¡rcio CÃ¢ndida GestÃ£o de Pequenas Empresas Neila Alexandre IHM Murillo Siovani InteligÃªncia Artificial Katti Tiemi IntroduÃ§Ã£o Ã  Conceitos Comp. e Algoritmos JosÃ© Siovani IntroduÃ§Ã£o Ã  InformÃ¡tica Murillo JosÃ© IntroduÃ§Ã£o Ã  RobÃ³tica Siovani Yeda LaboratÃ³rio de Compiladores JosÃ© Tiemi LaboratÃ³rio de Redes de Computadores FÃ¡bio Yeda LaboratÃ³rio de Sistemas Operacionais Gustavo FÃ¡bio MatemÃ¡tica Discreta (turma A e B) CÃ¢ndida JosÃ© NoÃ§Ãµes de GestÃ£o Ambiental (turma A) RogÃ©rio Luciana NoÃ§Ãµes de GestÃ£o Ambiental (turma B) Fernando Luciana Probabilidade e EstatÃ­stica Marina LaÃ©rcio Processamento de Imagens e VisÃ£o Comp.
+Siovani Murillo Projeto e Desenvolvimento de Sistemas Alexandre Luciana Sistemas DistribuÃ­dos FÃ¡bio Gustavo Sistemas Operacionais Gustavo FÃ¡bio Teoria da ComputaÃ§Ã£o JosÃ© CÃ¢ndida TÃ³picos AvanÃ§ados em Banco de Dados MÃ¡rcio Katti E acrescenta que o parecer deverÃ¡ ser realizado atÃ© o dia dezoito de agosto, porÃ©m sugere que a mesma seja realizada atÃ© o dia onze de agosto para que uma nova reuniÃ£o de conselho de curso possa ser feita para referender a avaliaÃ§Ã£o dos pareceristas.
+(I.II) Aprovado.
+(II) FORMAÃ‡ÃƒO DO NDE (NÃšCLEO DOCENTE ESTRUTURANTE).
+(II.I) A profÂª Luciana que colocou que em reuniÃµes anteriores o prof Siovani jÃ¡ havia comentado sobre o NDE e sobre a necessidade da formaÃ§Ã£o desse nÃºcleo no curso de Bacharelado em CiÃªncia da ComputaÃ§Ã£o, e diante dessa necessidade procurou se informar mais sobre o assunto e descobriu que devido ao fato do MEC identificar vÃ¡rios problemas no implantaÃ§Ã£o do Projeto PolÃ­tico PedagÃ³gico de diversos cursos, a partir de 2008 o NDE passaria a integrar todos os cursos de licenciatura e bacharelado.
+E explicou como o NDE deve ser composto (no mÃ­nimo cinco membros) sendo que ela como coordenadora do curso deve fazer parte dessa composiÃ§Ã£o, e que Ã© preciso que se faÃ§a reuniÃµes periÃ³dicas devidamente registradas em Atas e ressaltou que o comprometimento do NDE Ã© com a conduÃ§Ã£o pedagÃ³gica do curso.
+Portanto sugere que jÃ¡ faÃ§amos a escolha do professores que farÃ£o parte do NDE do curso da CiÃªncia da ComputaÃ§Ã£o.
+ApÃ³s dicussÃµes foram indicados para o NDE os seguintes professores: JosÃ© de Oliveira GuimarÃ£es, Yeda Regina Venturini, Katti Faceli, Luciana Ap.
+Martinez Zaina, Gustavo Maciel Dias Vieira, Murillo Rodrigo Petrucelli Homem.
+(II.II) A indicaÃ§Ã£o dos membros foi aprovada.
+(III) REVISÃƒO DO CONSELHO DE CURSO.
+(III.I) A profÂª Katti diz que se informou sobre a composiÃ§Ã£o dos membros que devem fazer parte do conselho de curso e que de acordo com a portaria 662/03, o conselho de curso deve ser composto pelo presidente (coordenaÃ§Ã£o do curso), vice-presidente (vice-coordenador), representantes docentes das Ã¡reas de conhecimento de disciplinas do curso (e suplentes), representante discentes de todas as turmas do curso e secretÃ¡rio do curso (o qual nÃ£o possui direito a voto) e o que seria necessÃ¡rio definir na reuniÃ£o sobre essa composiÃ§Ã£o.
+A prof. Katti fez uma revisÃ£o das formaÃ§Ãµes de conselho que jÃ¡ haviam sido realizadas e colocou que em agosto de dois mil e oito foi realizada a primeira formulaÃ§Ã£o.
+A reformulaÃ§Ã£o foi realizada em feveiro de dois mil e nova, a qual na Ã©poca ficou decidido pelas seguintes Ã¡reas de conhecimento: Teoria da ComputaÃ§Ã£o, InteligÃªncia Artificial, Linguagem de ProgramaÃ§Ã£o, Processamentos de Imagens, Arquitetura e Redes, Engenharia de Software, Banco de Dados, Geometria Diferencial e Topologia, porÃ©m o ofÃ­cio com as referidas reformulaÃ§Ãµes nÃ£o foram encaminhadas Ã  CoG (ComissÃ£o de GraduaÃ§Ã£o) para a aprovaÃ§Ã£o.
+Por isto ela sugeriu que estas areas sejam reavaliadas de maneira a alinhar a composiÃ§Ã£o do conselho com as disciplinas que compÃµem o Projeto PolÃ­tico PedagÃ³gico.
+O prof. Siovani ressalta sobre a importÃ¢ncia de termos um representante da Ã¡rea da MatemÃ¡tica e a profÂª Luciana diz que irÃ¡ conversar com a profÂª Magda sobre essa representatividade e na possibilidade de termos um representante da Ã¡rea e um suplente.
+O prof. Siovani sugere que a Ã¡rea dele poderia ser alterada para Processamento GrÃ¡fico, e com isso abarcaria diversas disciplinas.
+A profÂª Luciana diz que acha importante que se tenha uma area de Algoritmos, por entender que essa seja fundamental para o nosso curso.
+O prof. Gustavo sugere que seja mudado o nome da Ã¡rea de conhecimento Arquiteura e Redes para Sistemas de ComputaÃ§Ã£o.
+A profÂª Luciana ressalta a importÃ¢ncia de termos uma Ã¡rea Interdisciplinar, jÃ¡ que o PPP possui disciplinas que se encaixam neste viÃ©s.
+A profÂª Katti coloca que a Ã¡rea de InteligÃªncia Artificial e Banco de Dados poderiam ser unificadas em uma Ãºnica Ã¡rea denominada de GestÃ£o do Conhecimento, jÃ¡ que estas possuem afinidades entre si.
+O prof. MÃ¡rcio concorda com tal colocaÃ§Ã£o.
+A profÂª Luciana diz que o representante da Ã¡rea de MatemÃ¡tica serÃ¡ negociado com a coordenadora do curso de MatemÃ¡tica e o Interdisciplinar com os demais cursos os quais possuem professores que lecionam disciplinas na ComputaÃ§Ã£o.
+ApÃ³s as dicussÃµes ficou decidido sobre as seguintes Ã¡reas, bem como seus representantes e suplentes: Ãreas de Conhecimento Docente (Titular) Suplente Algoritmos Tiemi Gustavo Teoria da ComputaÃ§Ã£o CÃ¢ndida JosÃ© GuimarÃ£es Processamento GrÃ¡fico Siovani Murillo Sistema de ComputaÃ§Ã£o FÃ¡bio Yeda Engenharia de Software Alexandre a ser definido GestÃ£o de Conhecimento MÃ¡rcio Katti MatemÃ¡tica a ser definido a ser definido Interdisciplinar a ser definido a ser definido (III.II) Aprovada a distribuiÃ§Ã£o e alteraÃ§Ãµes nas Ã¡reas de conhecimento.
+(IV) CRITÃ‰RIO PARA ALOCAÃ‡ÃƒO DE BOLSA MONITORIA DO CURSO.
+(IV.I) A profÂª Luciana informou que no semestre passado houveram muitas reclamaÃ§Ãµes por parte dos professores da Ã¡rea de humanas, devido ao fato de que a maioria das bolsas monitorias contemplavam disciplinas dos cursos de exatas, pois um dos critÃ©rios de alocaÃ§Ã£o para referida bolsa Ã© o Ã­ndice de reprovas; a profÂª esclareceu que houve uma reuniÃ£o da CoordenaÃ§Ã£o AcadÃªmica com os coordenadores de cursos e que foi deliberado que todos os cursos seriam contemplados com uma bolsa monitoria, as bolsas restantes seriam distribuidas mediante edital, e informa que o nosso curso foi contemplado com trÃªs bolsas nas disciplinas de Circuitos Digitais (Yeda), MatemÃ¡tica Discreta (CÃ¢ndida), Sistemas Operacionais e LabaratÃ³rio de Sistemas Operacionais (Gustavo) atravÃ©s do edital do campus, e que tambÃ©m hÃ¡ uma bolsa vinculada ao curso, onde o prÃ³prio coordenador terÃ¡ que enviar projeto, e para que nÃ£o haja injustiÃ§a a decisÃ£o sobre a disciplina que seria contemplada com esta bolsa seria realizada em Conselho, e que talvez fosse interessante fazer um rodÃ­zio conforme demanda.
+(IV.II) O prof. MÃ¡rcio ressalta que a idÃ©ia do rodÃ­zio absolutamente razoÃ¡vel, mas acha que nÃ£o deve ser uma regra algo fixo, e sim algo que possa ser revisto e mudado dependendo da demanda.
+A profÂª Luciana concorda e diz que dependendo da situaÃ§Ã£o e demanda a decisÃ£o serÃ¡ tomada pelo conselho.
+A profÂª Yeda coloca que uma regra importante seria que a bolsa sÃ³ poderia contemplar disciplinas que jÃ¡ tivessem concorrido no edital do campus e nÃ£o tivessem sido contempladas, e todos concordam.
+A profÂª Luciana pergunta aos professores sobre o interesse na bolsa monitoria do curso para esse semestre.
+O prof. MÃ¡rcio diz que tem interesse na bolsa monitoria para Banco de Dados e Estrutura de Dados, e que participiou do edital do campus, mas nÃ£o foi contemplado.
+Nenhum outro docente manifestou interesse.
+O prof. MÃ¡rcio foi contemplado com a bolsa.
+(IV.III) Aprovado.",decisÃ£o,discussÃ£o;,pareceristas;nÃºcleo;docente;bolsas;
+"Encerramento: Estando todos de acordo e nada mais havendo a deliberar, lavra-se, leia-se, aprova-se e assina-se esta Ata por todos os membros do Conselho do Curso de Bacharelado em CiÃªncia da ComputaÃ§Ã£o, Campus Sorocaba, participantes desta reuniÃ£o que, em 02 (duas) vias, serÃ¡ levada a registro e arquivamento junto Ã  CoordenaÃ§Ã£o do Conselho do Curso de Bacharelado em CiÃªncia da ComputaÃ§Ã£o - Sorocaba, ficando ali Ã  disposiÃ§Ã£o para consulta restrita aos professores da UFSCar - Sorocaba.
+Nada mais.
+ProfÂª DrÂª Luciana Aparecida Martinez Zaina Presidente desta ReuniÃ£o Sonia Vieira Dal Pian N. Silva SecretÃ¡ria desta ReuniÃ£o ProfÂª. DrÂª Katti Faceli Professora Adjunta ProfÂª. DrÂª CÃ¢ndida Nunes da Silva Professora Adjunta ProfÂª. DrÂª. Tiemi Chistine Sakata Professora Adjunta Prof. Me.
+Gustavo Maciel Dias Vieira Professor Assistente Prof. Dr. MÃ¡rcio K. Oikawa Professor Adjunto Prof. Dr. Murillo Rodrigo Petrucelli Homem Professor Adjunto Prof. Dr. Siovani Cintra Felipussi Professor Adjunto Prof. Dr.Alexandre Ãlvaro Professor Adjunto ProfÂª. DrÂª. Yeda Regina Venturini Professora Adjunta Alessandro Visotto Piccoli Representante Discente - 2010 JoÃ£o Guilherme JÃºnior Representante TÃ©cnico Administrativo",irrelevante,,

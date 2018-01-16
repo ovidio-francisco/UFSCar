@@ -102,6 +102,15 @@ and the next token following whitespace is uppercase, it is EOS
 				continue;
 			}
 			
+			if (isANumber(tokens[i+1])) {
+				tokens[i] = tokens[i] + eosMark;
+				continue;
+			}  // by OJF - 15-01-2018
+			
+				
+			
+			
+			
 //			[2] - ok - If " or ' appears before period, it is EOS
 //			[3] - ok - If )}] before period, it is EOS
 			if ("\"')}]".contains(""+tokens[i].charAt(tokens[i].length()-2))) {

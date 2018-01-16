@@ -13,6 +13,8 @@ import utils.Files;
 
 public class ReferenceSegmentation {
 	
+	private static final int MIN_AGREEMENT = 3;
+	
 	public static void main(String[] args) {
 		System.out.println("Creating the Golden Refernce Segmentation\n");
 		
@@ -23,14 +25,23 @@ public class ReferenceSegmentation {
 
 		
 		File folder = new File("./docs3");
-		System.out.println(createReferenceSegmentation(folder));
+		File refFolder = new File("./SegReferences");
 		
-		File txtFile = new File("./txtDocs/01 Ata 30 - 26a Reunião Odinária PPGCCS.txt");
-		fileToSentences(txtFile);
+		if(!refFolder.exists()) {
+			refFolder.mkdirs();
+		}
+		
+		System.out.println(createReferenceSegmentation(folder, refFolder));
+		
+//		File txtFile = new File("./txtDocs/01 Ata 30 - 26a Reunião Odinária PPGCCS.txt");
+//		fileToSentences(txtFile);
 		
 //		createDocsInSentences(new File("./txtDocs"));
 	}
 	
+//	public static void createReferenceSegmentation() {
+//		
+//	}
 	
 	public static String getSegmentedSentences(ArrayList<String> sentences) {
 		String result = "";
@@ -59,17 +70,49 @@ public class ReferenceSegmentation {
 		return result+"\n";
 	}
 
-	public static String getBinarySegmentation(ArrayList<String> sentences) {
+//	public static int[] getIntegersBinarySegmentation(File file) {
+//		ArrayList<String> refSegments  = MeasureUtils.CSVSegmentsToArray(file);
+//		ArrayList<String> refSentences = MeasureUtils.segmentsToSentences(refSegments, MeasureUtils.getMyDefaultPreprocess());
+//		
+//		int[] binRef = MeasureUtils.getBinarySegmentation(refSentences);
+//		
+//		return binRef;
+//	}
+	
+	public static String getStringBinarySegmentation(File file) {
 		String result = "";
 
-		int[] binRef = MeasureUtils.getBinarySegmentation(sentences);
+		int[] binRef = MeasureUtils.getIntegersBinarySegmentation(file);
 		
 		for(int i : binRef) {
 			result += String.format("%d ", i);
 		}
 		
 		return result;
+		
+		
+		
+//		ArrayList<String> refSegments  = MeasureUtils.CSVSegmentsToArray(file);
+//		ArrayList<String> refSentences = MeasureUtils.segmentsToSentences(refSegments, MeasureUtils.getMyDefaultPreprocess());
+//		
+//		String bin = getStringBinarySegmentation(refSentences);
+//
+//		return bin;
 	}
+
+	
+//	public static String getStringBinarySegmentation(ArrayList<String> sentences) {
+//		String result = "";
+//
+//		int[] binRef = MeasureUtils.getBinarySegmentation(sentences);
+//		
+//		for(int i : binRef) {
+//			result += String.format("%d ", i);
+//		}
+//		
+//		return result;
+//	}
+
 
 	
 	public static File[] getFiles(File folder) {
@@ -95,15 +138,109 @@ public class ReferenceSegmentation {
 		return listFolders;
 	}
 	
+	private static void createReferenceSegmentationFiles(File refFolder, ArrayList<ArrayList<File>> allAnotations) {
+//		StringBuilder sb = new StringBuilder();
+//		for(ArrayList<File> aa : allAnotations) {
+//			for(File a : aa) {
+//				
+//				String bin = getStringBinarySegmentation(a);
+//				
+//				sb.append(String.format("\n%s >> %s", a, bin));
+//			}
+//			sb.append("\n.........");
+//		}
+//		
+//		System.out.println(String.format("\n%s\n", sb));
+		
+		System.out.println(allAnotations.size());
+		
+		for(ArrayList<File> sameNameFiles: allAnotations) {
+			String name = sameNameFiles.get(0).getName();
+			File refFile = new File(refFolder+"/"+name);
+			ArrayList<Integer> refSeg = new ArrayList<>();
+			
+			System.out.println("\n"+name);
+			
+			ArrayList<int[]> annotations = new ArrayList<>();
+			for(File fileAnnotation : sameNameFiles) {
+				annotations.add(MeasureUtils.getIntegersBinarySegmentation(fileAnnotation));
+				System.out.println(String.format("%s", getStringBinarySegmentation(fileAnnotation)));
+			}
+			
+//			for(int[] a : annotations) {
+//				int count = 0;
+//				for(int isEOS : a) {
+//					if(isEOS == 1) count++;
+//				}
+//
+//				refSeg.add(count >= MIN_AGREEMENT ? 1 : 0);
+//			}
+			
+			int len = annotations.get(0).length;
+			for(int i=0; i<len; i++) {
+				int count = 0;
+				for(int[] a : annotations) {
+					count += a[i];
+				}
+				refSeg.add(count >= MIN_AGREEMENT ? 1 : 0);
+			}
+
+			for(int i=0; i<len; i++) {
+				System.out.print("--");
+			}
+			System.out.println();
+			
+			for(int i : refSeg) {
+				System.out.print(String.format("%d ", i));
+			}
+			
+			System.out.println(String.format("\n-->%s\n", refFile));
+			
+			
+			saveRefFile(refFile, refSeg);
+		}
+		
+	}
 	
 	
-	public static String createReferenceSegmentation(File folder) {
+	
+	private static void saveRefFile(File refFile, ArrayList<Integer> refSeg) {
+		String txtName = refFile.getName().substring(0, refFile.getName().length()-".csv".length());
+		String[] sentences = fileToSentencesArray(new File("./txtDocs/"+txtName));
+		
+		if(sentences.length != refSeg.size()) {
+			System.out.println(String.format("Diferença entre sentenças identificadas no arquivo '%s' e na segmentação de referência. %d==%d", refFile, sentences.length, refSeg.size()));
+		}
+		
+		StringBuilder sb = new StringBuilder();
+		String seg = "";
+		
+		int i= 0;
+		for(i= 0; i<sentences.length; i++) {
+			if(refSeg.get(i) == 1) {
+				seg += sentences[i];
+				sb.append(String.format("\"%s\",automatic-reference\n", seg));
+				seg = "";
+			}
+			else {
+				seg += sentences[i];
+			}
+		}
+		seg += sentences[i-1];
+		sb.append(String.format("\"%s\",automatic-reference\n", seg));
+
+		Files.saveTxtFile(sb.toString(), refFile);
+		
+		
+	}
+
+	public static String createReferenceSegmentation(File folder, File refFolder) {
 		String result = "";
 		
+		
+		/** Mapping the File Names */
 		HashMap<String, Integer> fileNames =  new HashMap<>();
-		
 		File[] folders = getFolders(folder);
-		
 		for(File d : folders) {
 //			System.out.println(String.format("+ %s", d));
 			
@@ -132,8 +269,9 @@ public class ReferenceSegmentation {
 		
 		System.out.println(String.format("%d names", names.size()));
 
-		ArrayList<ArrayList<File>> allRefs = new ArrayList<>();
 		
+		/** Get all the annotation files. And the final Reference Files*/
+		ArrayList<ArrayList<File>> allAnotations = new ArrayList<>();
 		for(String name : names) {
 			ArrayList<File> refs = new ArrayList<>();
 			
@@ -141,39 +279,16 @@ public class ReferenceSegmentation {
 				File ref = new File(dir+"/"+name);
 				if(ref.exists())
 					refs.add(ref);
-//				System.out.println(String.format("-->%s -- %b", ref, ref.exists()));
 			}
-			allRefs.add(refs);
+			allAnotations.add(refs);
 		}
 		
-//		for(ArrayList<File> r : allRefs) {
-//			for(File f : r) {
-//				System.out.println(String.format("==> %s", f));
-//			}
-//			System.out.println(".......");
-//		}
-	
-		StringBuilder sb = new StringBuilder();
 		
-		for(ArrayList<File> r : allRefs) {
-			for(File f : r) {
-				
-				ArrayList<String> refSegments  = MeasureUtils.CSVSegmentsToArray(f);
-				ArrayList<String> refSentences = MeasureUtils.segmentsToSentences(refSegments, MeasureUtils.getMyDefaultPreprocess());
-				
-				String bin = getBinarySegmentation(refSentences);
-
-				
-				sb.append(String.format("\n%s >> %s", f, bin));
-			}
-			sb.append("\n.........");
-		}
-		
-		System.out.println(String.format("\n%s\n", sb));
+		/** Get binary annotations and compile the Refernce Segmentation */
+		createReferenceSegmentationFiles(refFolder, allAnotations);
 		
 		return result;
 	}
-	
 	
 	
 	
@@ -199,20 +314,13 @@ public class ReferenceSegmentation {
 		result += getSegmentedSentences(refSentences);
 		result += "\n";
 		result += getIndexSentences(refSentences);
-		result += getBinarySegmentation(refSentences);
+		result += getStringBinarySegmentation(csvFile);
 		
 		return result;
 	}
 	
 	public static String fileToSentences(File txtFile) {
-		Preprocess preproces = MeasureUtils.getMyDefaultPreprocess();
-		
-		String txt = Files.loadTxtFile(txtFile);
-		txt = txt.replace('\n', ' ');
-		
-		String s1 = preproces.identifyEOS(txt, MeasureUtils.END_SENTENCE_MARK);
-		
-		String[] s2 = s1.split(MeasureUtils.END_SENTENCE_MARK);
+		String[] s2 = fileToSentencesArray(txtFile);
 		
 		StringBuilder sb =  new StringBuilder();
 		for(String s : s2) {
@@ -220,6 +328,18 @@ public class ReferenceSegmentation {
 		}
 		
 		return sb.toString();
+	}
+
+	public static String[] fileToSentencesArray(File txtFile) {
+		Preprocess preproces = MeasureUtils.getMyDefaultPreprocess();
+		
+		String txt = Files.loadTxtFile(txtFile);
+		txt = txt.replace('\n', ' ');
+		
+		String s1 = preproces.identifyEOS(txt, MeasureUtils.END_SENTENCE_MARK);
+		
+		
+		return s1.split(MeasureUtils.END_SENTENCE_MARK);
 	}
 
 	@SuppressWarnings("unused")

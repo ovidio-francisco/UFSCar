@@ -52,7 +52,14 @@ public class MeasureUtils {
 		return result;
 	}
 	
-
+	public static int[] getIntegersBinarySegmentation(File file) {
+		ArrayList<String> refSegments  = MeasureUtils.CSVSegmentsToArray(file);
+		ArrayList<String> refSentences = MeasureUtils.segmentsToSentences(refSegments, MeasureUtils.getMyDefaultPreprocess());
+		
+		int[] binRef = MeasureUtils.getBinarySegmentation(refSentences);
+		
+		return binRef;
+	}
 	
 	public static boolean isEndOfSegment(String s) {
 		return s.endsWith(END_SEGMENT_MARK);
