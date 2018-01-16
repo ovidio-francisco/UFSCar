@@ -11,3 +11,27 @@
 
 
 Doralice
+
+
+Enviado:
+
+- Veneranda
+- Luciana
+- Rafael
+- Eliane
+- Débora
+- Elie
+- Alini
+- Veridiana
+
+
+Enviar:
+
+
+emails
+debora.lala.nero@gmail.com
+allinipaschoal2009@hotmail.com
+elianeoliveira.422@gmail.com
+veripaschoal@hotmail.com
+elliepaschoal@gmail.com
+
