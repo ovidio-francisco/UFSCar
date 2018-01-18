@@ -5,12 +5,16 @@
 \contentsline {chapter}{\chapternumberline {1}\MakeTextUppercase {Introdu\IeC {\c c}\IeC {\~a}o}}{3}{chapter.1}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \contentsline {chapter}{\chapternumberline {2}\MakeTextUppercase {Conceitua\IeC {\c c}\IeC {\~a}o Te\IeC {\'o}rica}}{7}{chapter.2}
-\contentsline {section}{\numberline {2.1}Segmenta\IeC {\c c}\IeC {\~a}o Textual}{7}{section.2.1}
-\contentsline {subsection}{\numberline {2.1.1}Medidas de Avalia\IeC {\c c}\IeC {\~a}o}{12}{subsection.2.1.1}
-\contentsline {section}{\numberline {2.2}Representa\IeC {\c c}\IeC {\~a}o de Textos}{15}{section.2.2}
-\contentsline {subsection}{\numberline {2.2.1}\textit {Bag Of Words}}{16}{subsection.2.2.1}
-\contentsline {section}{\numberline {2.3}Modelos de Extra\IeC {\c c}\IeC {\~a}o de T\IeC {\'o}picos}{16}{section.2.3}
-\contentsline {section}{\numberline {2.4}Trabalhos Relacionados}{19}{section.2.4}
+\contentsline {section}{\numberline {2.1}Recupera\IeC {\c c}\IeC {\~a}o de Informa\IeC {\c c}\IeC {\~a}o}{7}{section.2.1}
+\contentsline {subsection}{\numberline {2.1.1}Modelos de Recupera\IeC {\c c}\IeC {\~a}o de Informa\IeC {\c c}\IeC {\~a}o}{7}{subsection.2.1.1}
+\contentsline {subsubsection}{\numberline {2.1.1.1}Modelo Booleano}{7}{subsubsection.2.1.1.1}
+\contentsline {subsubsection}{\numberline {2.1.1.2}Modelo Vetorial}{8}{subsubsection.2.1.1.2}
+\contentsline {section}{\numberline {2.2}Segmenta\IeC {\c c}\IeC {\~a}o Textual}{9}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Medidas de Avalia\IeC {\c c}\IeC {\~a}o}{14}{subsection.2.2.1}
+\contentsline {section}{\numberline {2.3}Representa\IeC {\c c}\IeC {\~a}o de Textos}{17}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}\textit {Bag Of Words}}{17}{subsection.2.3.1}
+\contentsline {section}{\numberline {2.4}Modelos de Extra\IeC {\c c}\IeC {\~a}o de T\IeC {\'o}picos}{18}{section.2.4}
+\contentsline {section}{\numberline {2.5}Trabalhos Relacionados}{20}{section.2.5}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \contentsline {chapter}{\chapternumberline {3}\MakeTextUppercase {Sistema Proposto}}{21}{chapter.3}
 \contentsline {section}{\numberline {3.1}M\IeC {\'o}dulo de prepara\IeC {\c c}\IeC {\~a}o e manuten\IeC {\c c}\IeC {\~a}o}{21}{section.3.1}

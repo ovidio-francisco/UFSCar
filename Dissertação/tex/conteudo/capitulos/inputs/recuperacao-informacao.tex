@@ -1,0 +1,57 @@
+\section{Recuperação de Informação}
+
+% Necessidade de encontrar informação
+
+Devido à popularização dos computadores e à grande disponibilidade de documentos em formato digital, em especial na Web a área da Recuperação de Informação (RI) tem recebido atenção de pesquisadores nas últimas décadas.
+% 
+Recuperação de informação é área da computação que envolve a aplicação de métodos computacionais no tratamento e busca de informação em bases de dados não estruturados, usualmente grandes coleções de documentos textuais armazenados em dispositivos eletrônicos.
+% Tratamento == Classificação e Agrupamento?
+A tarefa central da recuperação de informação é encontrar informações de interesse dos usuários e exibi-las. A principal ferramenta empregada nesse problema é o desenvolvimento de sistemas de recuperação de informação (SRI). Nesses sistemas o usuário expressa sua necessidade por meio da formulação de uma consulta, usualmente composta por um conjunto de palavras-chave. Então, o sistema apresenta os resultados da busca, frequentemente documentos, em ordem de relevância com a consulta.
+
+
+
+\subsection{Modelos de Recuperação de Informação}
+
+Um modelo de recuperação de informação deve criar representações de documentos e consultas a fim de predizer a necessidade expressa nos termos da consulta. Com base na entrada do usuário esses modelos buscam por documentos similares aos termos da consulta. Segue abaixo a descrição dos três modelos clássicos para recuperação de informação.
+
+\subsubsection{Modelo Booleano}
+
+O modelo booleano ou modelo lógico foi um dos primeiros modelos aplicados a recuperação informação sendo utilizado a partir de 1960. Nesse modelo uma consulta é considerada uma sequencia de termos conectador por operadores lógicos como AND, OR e NOT. Como resultado, classifica cada documento como relevante ou não relevante à consulta, sem gradação de relevância. Esse operadores lógicos poder ser manipulados por usuários com algum conhecimento em álgebra booleana para aumentar a quantidade de resultados ou restringi-la.
+
+Esse modelo apresenta como principal desvantagem a impossibilidade de ordenação dos resultados por relevância, uma vez que para muitos sistemas de RI o \textit{ranking} dos resultados é uma característica essencial, principalmente em grades bases de dados. 
+
+As vantagens desse modelo são a facilidade de implementação e a possibilidade de usuários experientes usarem os operadores lógicos como uma forma de controle sobre os resultados da busca. Por outro lado, para usuários inexperientes isso pode ser considerado uma desvantagem, uma vez que o uso expressões lógicas não é intuitivo. Apesar dos problemas apresentados, visto sua simplicidade, esse modelo foi largamente utilizado em sistemas comerciais. 
+
+
+
+\subsubsection{Modelo Vetorial}
+
+
+Uma das formas mais comuns para representação textual é conhecida como Modelo Espaço Vetorial (\textit{Vectorial Space Model} - VSM)~\cite{Rezende2003}, onde os documentos e consultas são representados como vetores em um espaço Euclidiano $t$-dimensional em que cada termo extraído da coleção é representado por uma dimensão. 
+% 
+Considera-se que um documento pode ser representado pelo seu conjunto de termos, onde cada termo $k_i$ de um documento $d_j$ associa-se um peso $w_{ij}\geq0$ que indica a importância desse termo no documento. 
+%
+De forma similar, para uma consulta $q$, associa-se um peso $w_{i,q}$ ao par termo consulta que representa a similaridade entre a necessidade do usuário e o termo $k_i$. 
+%
+Assim o vetor associado ao documento $d_j$ é dado por $\vec{d}_{j} = (w_{1,j}, w_{2,j}, ..., w_{t,j})$. 
+%
+De forma similar, o vetor associado a consulta $q$ é dado por $\vec{q} = (w_{1,q}, w_{2,q}, ..., w_{t,q})$.
+
+
+No modelo vetorial, a similidade entre um documento $d_j$ e uma consulta $q$ é calculada pela correlação entre os vetores $\vec{d_j}$ e $\vec{q}$, a qual pode ser medida pelo cosseno do  ângulo entre esses vetores, conforme mostrado na Equação~\ref{equ:cosseno-doc-consulta}.
+
+
+
+\begin{equation}
+sim(d_j, q) = \frac{ \vec{d_j} \bullet \vec{q} }
+                   { |\vec{d_j}| \times | \vec{q}|}
+            = \frac{ \sum_{i=1}^{t} w_{i,j} \cdot w_{i,q} }
+                   { \sqrt{\sum_{i=1}^{t} w_{i,j}^2} \times \sqrt{\sum_{i=1}^{t} w_{i,q}^2 } }                   \label{equ:cosseno-doc-consulta}		                   
+\end{equation} 
+
+
+
+Avaliar o quanto um termo é relevante para um documento é fundamental para os modelos de RI. Entre as formas mais utilizadas para quantificar essa relevância é mostrada a seguir. 
+
+Seja $N$ o número de documentos de uma coleção e $n_i$ o número de documentos onde o termo $k_i$ ocorre. 
+

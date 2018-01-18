@@ -1,0 +1,28 @@
+ \documentclass[10pt,a4paper]{article}
+ \usepackage[utf8]{inputenc}
+ \usepackage{amsmath}
+ \usepackage{amsfonts}
+ \usepackage{amssymb}
+ \begin{document}
+ 
+ 
+ Equação~\ref{equ:cosseno-doc-consulta}	
+ 
+\begin{equation}
+sim(d_j, q) = \frac{ \vec{d_j} \bullet \vec{q} }
+                   { |\vec{d_j}| \times | \vec{q}|}
+            = \frac{ \sum_{i=1}^{t} w_{i,j} \cdot w_{i,q} }
+                   { \sqrt{\sum_{i=1}^{t}} w_{i,j}^2 \times \sqrt{\sum_{i=1}^{t} w_{i,q}^2 } }                   \label{equ:cosseno-doc-consulta}		                   
+\end{equation} 
+ 
+ 
+ 
+A fim de diminuir o peso de termos altamente frequentes, usa-se o fator IDF (\textit{Inverted Document Frequency}), que é a frequencia inversa de documentos que contem um termo, dada por $IDF(k_i) = log\frac{N}{n_i}$ 
+ 
+ 
+\begin{equation}
+IDF(k_i) = log\frac{N}{n_i}
+\label{equ:IDF}
+\end{equation}
+ 
+\end{document}

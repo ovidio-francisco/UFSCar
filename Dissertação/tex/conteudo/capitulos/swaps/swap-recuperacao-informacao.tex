@@ -1,0 +1,118 @@
+
+
+Avaliar o quanto um termo é relevante para um documento é fundamental para os modelos de RI. 
+Para isso pode utilizar medidas estatísticas simples como a frequência do termo, conhecida como TF (do inglês \textit{Term Frequecy}) e a frequência de documentos, conhecida como DF (do inglês \textit{Document Frequency}). 
+A frequencia do termo indica o número de vezes que um termo ocorre na coleção de documentos. A frequencia de documentos, indica o número de documentos que contem ao menos uma ocorrencia de um determinado termo. Considera-se que os termos que ocorrem frequentemente em muitos documentos, em geral, não trazem informações úteis para discriminar a relevância dos documentos. 
+A fim de diminuir o peso de termos altamente frequentes, usa-se o fator IDF (\textit{Inverted Document Frequency}), que é a frequencia inversa de documentos que contem um termo, dada por:
+
+o qual fornece uma medida de quanta informação um termo fornece com base em quão raro ou comum esse termo é para a coleção. TF-IDF é a medida que pondera a frequencia de um termo em um documento com sua frequencia na coleção total de documentos. Assim o relevância de um termo para um documento é dada por:
+
+w_ij = 
+
+A medida TF-IDF atribui valores 
+altos para termos que ocorrem frequentemente em um documentos, e valores 
+menores para termos que ocorrem poucas vezes em um documento ou em muitos documentos da coleção.
+
+
+
+
+
+
+TF é ... fornece uma medida de como o termo descreve o conteúdo do documento
+DF é ... 
+IDF é ... 
+
+idf fornece uma medida avalia da frequencia de um termo em toda a coleção de documentos.
+
+TF.IDF da um geralzão
+
+
+
+Cossseno é ... 
+
+
+A medida TF-IDF atribui valores altos para termos que ocorrem frequentemente em um número pequeno de documentos, e valores menores para termos que ocorrem poucas vezes em um documento
+
+A fim de diminuir o peso de termos altamente frequentes, usa-se o fator IDF (\textit{Inverted Document Frequency}), o qual fornece uma medida de quanta informação um termo fornece com base em quão raro ou comum esse termo é para a coleção.
+
+A fim de diminuir esse problema, usa-se o fator IDF (\textit{Inverted Document Frequency}) para diminuir o peso de termos muito frequentes. 
+
+termos muito frequentes não são bons para distinguir documentos relevantes de não relevantes. A fim de diminuir esse problema, usa-se o fator IDF para diminuir o peso de termos muito frequentes.
+
+
+A ideia da medida tf.idf e quantificar a imoportacia de um termo em um docupendo com base em sua frequencia no próprio documento e sua distribuição ao longo da coleção de documentos.
+
+
+quando ocorre muito não é discriminativo
+quando ocorre pouco não é significante
+
+
+
+" Outras formas, baseadas em critérios de
+ponderação e normalização, podem ser encontradas em
+[24] e [25] " --> Ricardo
+
+
+
+
+
+
+
+Entre as formas mais utilizadas para quantificar essa relevância é mostrada a seguir. 
+
+para que a grande maioria dos algoritmos de aprendizado de máquina possa extrair padrões das coleções de textos é a representação no formato matricial conhecido como Modelo Espaço Vetorial (\textit{Vectorial Space Model} - VSM)~\cite{Rezende2003}, onde os documentos são representados como vetores em um espaço Euclidiano $T$-dimensional em que cada termo extraído da coleção é representado por uma dimensão. Assim, cada componente de um vetor expressa a relação entre os documentos e as palavras. Essa estrutura é conhecida como \textit{document-term matrix} ou matriz documento-termo. Uma das formas mais populares para representação de textos é conhecida como \textit{Bag Of Words} a qual é detalhada a seguir.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+% Apresenta como vantagem a facilidade de implementação e a possibilidade de usuários experientes usarem os operadores lógicos como uma forma de controle sobre os resultados da busca. Por outro lado, para usuários inexperientes isso pode ser considerado uma desvantagem, uma vez que o uso expressões lógicas não é intuitivo.
+
+
+% Outra desvantagem desse modelo é a impossibilidade de ordenação dos resultados. Uma vez que muitos para sistemas de RI o ranking dos resultados é essencial, principalmente em grandes bases de dados.
+
+
+
+
+% A natureza booleana desse modelo
+
+% Uma vez que esse modelo impossibilita a ordenação dos resultados, 
+
+% Para $q$ o conjunto de termos de uma consulta, 
+% Esses modelos comparam documentos com a consulta e retorna 
+
+
+
+
+
+o Modelo de Ri busca por documentos e consultas similares
+
+
+Devido à popularização dos computadores e à grande disponibilidade de documentos em formato digital, em especial na Web. A área da Recuperação de Informação tem recebido atenção de pesquisadores nas últimas décadas.
+
+
+
+Recuperação de informação é uma área da computação que visa encontrar conteúdos em uma base de dados não estruturada, usualmente documentos textuais que atendam a uma necessidade. 
+
+
+Recuperação de informação é uma área da computação que visa encontrar conteúdos que atendam a uma necessidade em uma base de dados não estruturados, usualmente grandes coleções de documentos armazenados em computadores.
+
+
+Recuperação de informação é área da computação que envolve a aplicação de métodos computacionais no tratamento e busca de informação em bases de dados não estrudados, usualmente grandes coleções de documentos textuais armazenados em computadores.
+
+
+
+
+
+
+
+Os modelos clássicos, utilizados no processo de recuperação de informação, apresentam estratégias de busca de documentos similares à consulta. Estes modelos consideram que cada documento é descrito por um conjunto de termos, considerados como mutuamente independentes. Associa-se a cada termo k i e um documento d j um peso w i,j ≥ 0, que quantifica o peso do termo k i no docu- 92.1 Modelos Clássicos 10 mento d j . Este peso reflete a importância do termo k i no documento d j . Analogamente a cada par termo-consulta (k i , q) associa-se o peso w i,q .

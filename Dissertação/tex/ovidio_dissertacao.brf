@@ -3,37 +3,38 @@
 \backcite {Hofmann1999,Deerwester1990,Lee1999,Blei2012}{{7}{2}{chapter.2}}
 \backcite {Hofmann1999,Deerwester1990,Lee1999,Blei2012}{{7}{2}{chapter.2}}
 \backcite {Hofmann1999,Deerwester1990,Lee1999,Blei2012}{{7}{2}{chapter.2}}
-\backcite {Kozima1993}{{7}{2.1}{section.2.1}}
-\backcite {Naili2016,Bokaei2015,CHAIBI2014,Kern2009,Galley2003}{{9}{2.1}{figure.2.2}}
-\backcite {Naili2016,Bokaei2015,CHAIBI2014,Kern2009,Galley2003}{{9}{2.1}{figure.2.2}}
-\backcite {Naili2016,Bokaei2015,CHAIBI2014,Kern2009,Galley2003}{{9}{2.1}{figure.2.2}}
-\backcite {Naili2016,Bokaei2015,CHAIBI2014,Kern2009,Galley2003}{{9}{2.1}{figure.2.2}}
-\backcite {Naili2016,Bokaei2015,CHAIBI2014,Kern2009,Galley2003}{{9}{2.1}{figure.2.2}}
-\backcite {Cardoso2017,Dias2007}{{9}{2.1}{figure.2.2}}
-\backcite {Cardoso2017,Dias2007}{{9}{2.1}{figure.2.2}}
-\backcite {Choi2000, Kern2009, Misra2009}{{9}{2.1}{figure.2.2}}
-\backcite {Choi2000, Kern2009, Misra2009}{{9}{2.1}{figure.2.2}}
-\backcite {Choi2000, Kern2009, Misra2009}{{9}{2.1}{figure.2.2}}
-\backcite {Choi2000}{{9}{2.1}{figure.2.2}}
-\backcite {Eisenstein2008}{{10}{3}{figure.2.3}}
-\backcite {Reynar1998}{{10}{2.1}{figure.2.4}}
-\backcite {Eisenstein2008}{{12}{2.1}{figure.2.5}}
-\backcite {Blei2003}{{12}{2.1}{figure.2.5}}
-\backcite {Kern2009}{{13}{2.1.1}{equation.2.1.5}}
-\backcite {Beeferman1999}{{14}{2.1.1}{figure.2.6}}
-\backcite {Pevzner2002}{{14}{2.1.1}{equation.2.1.6}}
-\backcite {Rezende2003}{{15}{2.2}{section.2.2}}
-\backcite {Rezende2003}{{16}{2.2.1}{subsection.2.2.1}}
-\backcite {Rezende2003}{{16}{2.2.1}{table.2.2}}
-\backcite {Steyvers2007,Blei2012}{{17}{2.3}{section.2.3}}
-\backcite {Steyvers2007,Blei2012}{{17}{2.3}{section.2.3}}
-\backcite {Deerwester1990}{{17}{2.3}{equation.2.3.8}}
-\backcite {Deerwester1990}{{17}{2.3}{equation.2.3.8}}
-\backcite {Cheng2013}{{17}{2.3}{equation.2.3.8}}
-\backcite {Lee1999}{{17}{2.3}{equation.2.3.8}}
-\backcite {Hofmann1999}{{18}{2.3}{equation.2.3.8}}
-\backcite {Blei2003}{{18}{2.3}{equation.2.3.8}}
-\backcite {Blei2012}{{18}{2.3}{Item.4}}
+\backcite {Rezende2003}{{8}{2.1.1.2}{subsubsection.2.1.1.2}}
+\backcite {Kozima1993}{{9}{2.2}{section.2.2}}
+\backcite {Naili2016,Bokaei2015,CHAIBI2014,Kern2009,Galley2003}{{10}{2.2}{figure.2.2}}
+\backcite {Naili2016,Bokaei2015,CHAIBI2014,Kern2009,Galley2003}{{10}{2.2}{figure.2.2}}
+\backcite {Naili2016,Bokaei2015,CHAIBI2014,Kern2009,Galley2003}{{10}{2.2}{figure.2.2}}
+\backcite {Naili2016,Bokaei2015,CHAIBI2014,Kern2009,Galley2003}{{10}{2.2}{figure.2.2}}
+\backcite {Naili2016,Bokaei2015,CHAIBI2014,Kern2009,Galley2003}{{10}{2.2}{figure.2.2}}
+\backcite {Cardoso2017,Dias2007}{{10}{2.2}{figure.2.2}}
+\backcite {Cardoso2017,Dias2007}{{10}{2.2}{figure.2.2}}
+\backcite {Choi2000, Kern2009, Misra2009}{{10}{2.2}{figure.2.2}}
+\backcite {Choi2000, Kern2009, Misra2009}{{10}{2.2}{figure.2.2}}
+\backcite {Choi2000, Kern2009, Misra2009}{{10}{2.2}{figure.2.2}}
+\backcite {Choi2000}{{10}{2.2}{figure.2.2}}
+\backcite {Eisenstein2008}{{12}{3}{figure.2.3}}
+\backcite {Reynar1998}{{12}{2.2}{figure.2.4}}
+\backcite {Eisenstein2008}{{13}{2.2}{figure.2.5}}
+\backcite {Blei2003}{{13}{2.2}{figure.2.5}}
+\backcite {Kern2009}{{15}{2.2.1}{equation.2.2.6}}
+\backcite {Beeferman1999}{{16}{2.2.1}{figure.2.6}}
+\backcite {Pevzner2002}{{16}{2.2.1}{equation.2.2.7}}
+\backcite {Rezende2003}{{17}{2.3}{section.2.3}}
+\backcite {Rezende2003}{{17}{2.3.1}{subsection.2.3.1}}
+\backcite {Rezende2003}{{18}{2.3.1}{table.2.2}}
+\backcite {Steyvers2007,Blei2012}{{18}{2.4}{section.2.4}}
+\backcite {Steyvers2007,Blei2012}{{18}{2.4}{section.2.4}}
+\backcite {Deerwester1990}{{19}{2.4}{equation.2.4.9}}
+\backcite {Deerwester1990}{{19}{2.4}{equation.2.4.9}}
+\backcite {Cheng2013}{{19}{2.4}{equation.2.4.9}}
+\backcite {Lee1999}{{19}{2.4}{equation.2.4.9}}
+\backcite {Hofmann1999}{{19}{2.4}{equation.2.4.9}}
+\backcite {Blei2003}{{20}{2.4}{equation.2.4.9}}
+\backcite {Blei2012}{{20}{2.4}{Item.4}}
 \backcite {Rezende2003}{{23}{3}{Item.7}}
 \backcite {Alvares2005}{{23}{4}{Item.8}}
 \backcite {Bokaei2015, Bokaei2016, Misra2009, Sakahara2014}{{23}{3.1.1.1}{subsubsection.3.1.1.1}}
