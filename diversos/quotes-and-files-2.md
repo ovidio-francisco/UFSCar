@@ -147,6 +147,14 @@ file:///ext4Data/UFSCar/papers/dissertações/Recuperação de Informação/Cont
 file:///home/ovidiojf/Desktop/TOPIC MODELS IN INFORMATION RETRIEVAL.pdf
 -------------------------------------------------------------------
 
+"The inversion component is the core of the indexing process. Its task is to change
+the stream of document-term information coming from the text transformatio"
+
+5.3 Inverted Indexes . . . . . . . . . . . . . . 129
+7 Retrieval Models . . . . . . . . . . . . . . . 233
+
+
+file:///home/ovidiojf/Desktop/Livros/Search Engines: Information Retrieval in Practice.pdf
 -------------------------------------------------------------------
 
 -------------------------------------------------------------------
