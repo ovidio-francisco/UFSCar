@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.8.22)  18 JAN 2018 18:25
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.8.22)  19 JAN 2018 00:43
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1400,7 +1400,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-] (./conteudo/capitulos/inputs/recuperacao-informacao.tex [7]) (./conteudo/capitulos/inputs/segmentacao.tex [8] (./conteudo/capitulos/inputs/algoritmos-segmentacao.tex <conteudo/capitulos/figs/janelas-deslizantes.pdf, id=142, page=1, 844.15375pt x 597.23125pt>
+] (./conteudo/capitulos/inputs/recuperacao-informacao.tex [7] [8]) (./conteudo/capitulos/inputs/segmentacao.tex [9] (./conteudo/capitulos/inputs/algoritmos-segmentacao.tex <conteudo/capitulos/figs/janelas-deslizantes.pdf, id=149, page=1, 844.15375pt x 597.23125pt>
 File: conteudo/capitulos/figs/janelas-deslizantes.pdf Graphic file (type pdf)
  <use conteudo/capitulos/figs/janelas-deslizantes.pdf, page 1>
 Package pdftex.def Info: conteudo/capitulos/figs/janelas-deslizantes.pdf, page1 used on input line 34.
@@ -1409,17 +1409,11 @@ Package pdftex.def Info: conteudo/capitulos/figs/janelas-deslizantes.pdf, page1 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [9] <conteudo/capitulos/figs/curva-similaridade.pdf, id=153, page=1, 845.1575pt x 597.23125pt>
+[10] <conteudo/capitulos/figs/curva-similaridade.pdf, id=161, page=1, 845.1575pt x 597.23125pt>
 File: conteudo/capitulos/figs/curva-similaridade.pdf Graphic file (type pdf)
  <use conteudo/capitulos/figs/curva-similaridade.pdf, page 1>
 Package pdftex.def Info: conteudo/capitulos/figs/curva-similaridade.pdf, page1 used on input line 56.
 (pdftex.def)             Requested size: 455.0pt x 191.91011pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 ./conteudo/capitulos/inputs/algoritmos-segmentacao.tex:68: Undefined control sequence.
 l.68 ...Kern2009,Galley2003}, e usado com \texttit
@@ -1430,10 +1424,10 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-[10 <./conteudo/capitulos/figs/janelas-deslizantes.pdf
+[11 <./conteudo/capitulos/figs/janelas-deslizantes.pdf
 
 pdfTeX warning: pdflatex (file ./conteudo/capitulos/figs/janelas-deslizantes.pdf): PDF inclusion: invalid other resource which is no dict (key 'ProcSets', type <array>); ignored.
->] <conteudo/capitulos/figs/c99-ranking-matrix.png, id=210, 647.41875pt x 642.4pt>
+> <./conteudo/capitulos/figs/curva-similaridade.pdf>] <conteudo/capitulos/figs/c99-ranking-matrix.png, id=225, 647.41875pt x 642.4pt>
 File: conteudo/capitulos/figs/c99-ranking-matrix.png Graphic file (type png)
  <use conteudo/capitulos/figs/c99-ranking-matrix.png>
 Package pdftex.def Info: conteudo/capitulos/figs/c99-ranking-matrix.png used on input line 83.
@@ -1442,10 +1436,6 @@ Package pdftex.def Info: conteudo/capitulos/figs/c99-ranking-matrix.png used on 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [11 <./conteudo/capitulos/figs/curva-similaridade.pdf>]
 ./conteudo/capitulos/inputs/algoritmos-segmentacao.tex:103: Undefined control sequence.
 l.103 	\subfigure
                  [Passo 1]{\label{fig:a}\includegraphics[width=60mm]{conteud...
@@ -1455,7 +1445,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-<conteudo/capitulos/figs/exemplo-matrix-rank-A.png, id=232, 269.50688pt x 141.52875pt>
+<conteudo/capitulos/figs/exemplo-matrix-rank-A.png, id=233, 269.50688pt x 141.52875pt>
 File: conteudo/capitulos/figs/exemplo-matrix-rank-A.png Graphic file (type png)
  <use conteudo/capitulos/figs/exemplo-matrix-rank-A.png>
 Package pdftex.def Info: conteudo/capitulos/figs/exemplo-matrix-rank-A.png used on input line 103.
@@ -1470,15 +1460,19 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-<conteudo/capitulos/figs/exemplo-matrix-rank-B.png, id=233, 268.75406pt x 141.52875pt>
+<conteudo/capitulos/figs/exemplo-matrix-rank-B.png, id=234, 268.75406pt x 141.52875pt>
 File: conteudo/capitulos/figs/exemplo-matrix-rank-B.png Graphic file (type png)
  <use conteudo/capitulos/figs/exemplo-matrix-rank-B.png>
 Package pdftex.def Info: conteudo/capitulos/figs/exemplo-matrix-rank-B.png used on input line 104.
 (pdftex.def)             Requested size: 170.71652pt x 89.90215pt.
 
-Underfull \vbox (badness 2547) has occurred while \output is active []
 
- [12 <./conteudo/capitulos/figs/c99-ranking-matrix.png> <./conteudo/capitulos/figs/exemplo-matrix-rank-A.png> <./conteudo/capitulos/figs/exemplo-matrix-rank-B.png>]
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [12]
 Package epstopdf Info: Source file: <conteudo/capitulos/figs/influencia-qtd-Segs-WD-C99.eps>
 (epstopdf)                    date: 2018-01-02 23:38:06
 (epstopdf)                    size: 13572 bytes
@@ -1488,12 +1482,16 @@ Package epstopdf Info: Source file: <conteudo/capitulos/figs/influencia-qtd-Segs
 (epstopdf)             Command: <repstopdf --outfile=conteudo/capitulos/figs/influencia-qtd-Segs-WD-C99-eps-converted-to.pdf conteudo/capitulos/figs/influencia-qtd-Segs-WD-C99.eps>
 (epstopdf)             \includegraphics on input line 129.
 Package epstopdf Info: Output file is already uptodate.
- <conteudo/capitulos/figs/influencia-qtd-Segs-WD-C99-eps-converted-to.pdf, id=249, 545.03625pt x 321.2pt>
+ <conteudo/capitulos/figs/influencia-qtd-Segs-WD-C99-eps-converted-to.pdf, id=247, 545.03625pt x 321.2pt>
 File: conteudo/capitulos/figs/influencia-qtd-Segs-WD-C99-eps-converted-to.pdf Graphic file (type pdf)
  <use conteudo/capitulos/figs/influencia-qtd-Segs-WD-C99-eps-converted-to.pdf>
 Package pdftex.def Info: conteudo/capitulos/figs/influencia-qtd-Segs-WD-C99-eps-converted-to.pdf used on input line 129.
 (pdftex.def)             Requested size: 409.49722pt x 241.3258pt.
- [13 <./conteudo/capitulos/figs/influencia-qtd-Segs-WD-C99-eps-converted-to.pdf>]) (./conteudo/capitulos/inputs/medidas-segmentacao.tex (./conteudo/capitulos/inputs/medidas-avaliacao-tradicionais-em-segmentacao.tex [14]
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[13 <./conteudo/capitulos/figs/c99-ranking-matrix.png> <./conteudo/capitulos/figs/exemplo-matrix-rank-A.png> <./conteudo/capitulos/figs/exemplo-matrix-rank-B.png>]) (./conteudo/capitulos/inputs/medidas-segmentacao.tex (./conteudo/capitulos/inputs/medidas-avaliacao-tradicionais-em-segmentacao.tex [14 <./conteudo/capitulos/figs/influencia-qtd-Segs-WD-C99-eps-converted-to.pdf>]
 
 LaTeX Warning: Command \c invalid in math mode on input line 52.
 
@@ -1503,12 +1501,12 @@ LaTeX Warning: Command \c invalid in math mode on input line 60.
 
 LaTeX Warning: Command \c invalid in math mode on input line 60.
 
-) <conteudo/capitulos/figs/windiffzoom.jpg, id=279, 312.2064pt x 78.5334pt>
+[15]) <conteudo/capitulos/figs/windiffzoom.jpg, id=287, 312.2064pt x 78.5334pt>
 File: conteudo/capitulos/figs/windiffzoom.jpg Graphic file (type jpg)
  <use conteudo/capitulos/figs/windiffzoom.jpg>
 Package pdftex.def Info: conteudo/capitulos/figs/windiffzoom.jpg used on input line 18.
 (pdftex.def)             Requested size: 318.49861pt x 80.11977pt.
- [15 <./conteudo/capitulos/figs/windiffzoom.jpg>] [16])) (./conteudo/capitulos/inputs/representacao.tex
+ [16 <./conteudo/capitulos/figs/windiffzoom.jpg>] [17])) (./conteudo/capitulos/inputs/representacao.tex
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <14.4> not available
 (Font)              Font shape `T1/lmss/m/sl' tried instead on input line 8.
 
@@ -1525,13 +1523,17 @@ Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
+[18]) (./conteudo/capitulos/inputs/extracao-de-topicos.tex [19]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[17]) (./conteudo/capitulos/inputs/extracao-de-topicos.tex [18] [19])) [20]
+ [20])) [21]
 \openout2 = `conteudo/capitulos/4-cap3.aux'.
 
- (./conteudo/capitulos/4-cap3.tex
+ (./conteudo/capitulos/4-cap3.tex [22
+
+
+
+]
 Package epstopdf Info: Source file: <conteudo/capitulos/figs/visao-geral-3.eps>
 (epstopdf)                    date: 2016-08-04 09:13:03
 (epstopdf)                    size: 341154 bytes
@@ -1541,21 +1543,17 @@ Package epstopdf Info: Source file: <conteudo/capitulos/figs/visao-geral-3.eps>
 (epstopdf)             Command: <repstopdf --outfile=conteudo/capitulos/figs/visao-geral-3-eps-converted-to.pdf conteudo/capitulos/figs/visao-geral-3.eps>
 (epstopdf)             \includegraphics on input line 14.
 Package epstopdf Info: Output file is already uptodate.
- <conteudo/capitulos/figs/visao-geral-3-eps-converted-to.pdf, id=357, 1084.05pt x 542.025pt>
+ <conteudo/capitulos/figs/visao-geral-3-eps-converted-to.pdf, id=368, 1084.05pt x 542.025pt>
 File: conteudo/capitulos/figs/visao-geral-3-eps-converted-to.pdf Graphic file (type pdf)
  <use conteudo/capitulos/figs/visao-geral-3-eps-converted-to.pdf>
 Package pdftex.def Info: conteudo/capitulos/figs/visao-geral-3-eps-converted-to.pdf used on input line 14.
 (pdftex.def)             Requested size: 412.28189pt x 206.13704pt.
- [21
-
-
-
- <./conteudo/capitulos/figs/visao-geral-3-eps-converted-to.pdf>] <conteudo/capitulos/figs/pre-process.pdf, id=366, page=1, 844.15375pt x 597.23125pt>
+ [23 <./conteudo/capitulos/figs/visao-geral-3-eps-converted-to.pdf>] <conteudo/capitulos/figs/pre-process.pdf, id=378, page=1, 844.15375pt x 597.23125pt>
 File: conteudo/capitulos/figs/pre-process.pdf Graphic file (type pdf)
  <use conteudo/capitulos/figs/pre-process.pdf, page 1>
 Package pdftex.def Info: conteudo/capitulos/figs/pre-process.pdf, page1 used on input line 44.
 (pdftex.def)             Requested size: 455.0pt x 127.14316pt.
- [22 <./conteudo/capitulos/figs/pre-process.pdf
+ [24 <./conteudo/capitulos/figs/pre-process.pdf
 
 pdfTeX warning: pdflatex (file ./conteudo/capitulos/figs/pre-process.pdf): PDF inclusion: invalid other resource which is no dict (key 'ProcSets', type <array>); ignored.
 >]
@@ -1568,7 +1566,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-[23]
+[25]
 ./conteudo/capitulos/4-cap3.tex:137: Undefined control sequence.
 l.137 ... utilização e consulta em~\urlsoftwares
                                                   
@@ -1578,7 +1576,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-[24]
+[26]
 ./conteudo/capitulos/4-cap3.tex:206: Undefined control sequence.
 l.206 ...sponíveis para consulta em~\urlsoftwares
                                                   .
@@ -1591,12 +1589,12 @@ and I'll forget about whatever was undefined.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[25] <conteudo/capitulos/figs/coesaolexicaTT-50-9.png, id=453, 1413.28pt x 306.14375pt>
+[27] <conteudo/capitulos/figs/coesaolexicaTT-50-9.png, id=464, 1413.28pt x 306.14375pt>
 File: conteudo/capitulos/figs/coesaolexicaTT-50-9.png Graphic file (type png)
  <use conteudo/capitulos/figs/coesaolexicaTT-50-9.png>
 Package pdftex.def Info: conteudo/capitulos/figs/coesaolexicaTT-50-9.png used on input line 267.
 (pdftex.def)             Requested size: 455.0pt x 98.56125pt.
- <conteudo/capitulos/figs/generos-musicais-TT-40-20.png, id=455, 1413.28pt x 306.14375pt>
+ <conteudo/capitulos/figs/generos-musicais-TT-40-20.png, id=466, 1413.28pt x 306.14375pt>
 File: conteudo/capitulos/figs/generos-musicais-TT-40-20.png Graphic file (type png)
  <use conteudo/capitulos/figs/generos-musicais-TT-40-20.png>
 Package pdftex.def Info: conteudo/capitulos/figs/generos-musicais-TT-40-20.png used on input line 280.
@@ -1605,14 +1603,14 @@ Package pdftex.def Info: conteudo/capitulos/figs/generos-musicais-TT-40-20.png u
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[26 <./conteudo/capitulos/figs/coesaolexicaTT-50-9.png>]
+[28 <./conteudo/capitulos/figs/coesaolexicaTT-50-9.png>]
 
-LaTeX Warning: Reference `xx' on page 27 undefined on input line 334.
+LaTeX Warning: Reference `xx' on page 29 undefined on input line 334.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[27 <./conteudo/capitulos/figs/generos-musicais-TT-40-20.png>]
+[29 <./conteudo/capitulos/figs/generos-musicais-TT-40-20.png>]
 Package epstopdf Info: Source file: <conteudo/capitulos/figs/grafico-medidas-APRF1.eps>
 (epstopdf)                    date: 2017-12-30 10:14:06
 (epstopdf)                    size: 30670 bytes
@@ -1622,7 +1620,7 @@ Package epstopdf Info: Source file: <conteudo/capitulos/figs/grafico-medidas-APR
 (epstopdf)             Command: <repstopdf --outfile=conteudo/capitulos/figs/grafico-medidas-APRF1-eps-converted-to.pdf conteudo/capitulos/figs/grafico-medidas-APRF1.eps>
 (epstopdf)             \includegraphics on input line 369.
 Package epstopdf Info: Output file is already uptodate.
- <conteudo/capitulos/figs/grafico-medidas-APRF1-eps-converted-to.pdf, id=474, 484.81125pt x 172.645pt>
+ <conteudo/capitulos/figs/grafico-medidas-APRF1-eps-converted-to.pdf, id=486, 484.81125pt x 172.645pt>
 File: conteudo/capitulos/figs/grafico-medidas-APRF1-eps-converted-to.pdf Graphic file (type pdf)
  <use conteudo/capitulos/figs/grafico-medidas-APRF1-eps-converted-to.pdf>
 Package pdftex.def Info: conteudo/capitulos/figs/grafico-medidas-APRF1-eps-converted-to.pdf used on input line 369.
@@ -1636,7 +1634,7 @@ Package epstopdf Info: Source file: <conteudo/capitulos/figs/grafico-medidas-Pk-
 (epstopdf)             Command: <repstopdf --outfile=conteudo/capitulos/figs/grafico-medidas-Pk-Wd-eps-converted-to.pdf conteudo/capitulos/figs/grafico-medidas-Pk-Wd.eps>
 (epstopdf)             \includegraphics on input line 381.
 Package epstopdf Info: Output file is already uptodate.
- <conteudo/capitulos/figs/grafico-medidas-Pk-Wd-eps-converted-to.pdf, id=476, 433.62pt x 180.675pt>
+ <conteudo/capitulos/figs/grafico-medidas-Pk-Wd-eps-converted-to.pdf, id=488, 433.62pt x 180.675pt>
 File: conteudo/capitulos/figs/grafico-medidas-Pk-Wd-eps-converted-to.pdf Graphic file (type pdf)
  <use conteudo/capitulos/figs/grafico-medidas-Pk-Wd-eps-converted-to.pdf>
 Package pdftex.def Info: conteudo/capitulos/figs/grafico-medidas-Pk-Wd-eps-converted-to.pdf used on input line 381.
@@ -1645,18 +1643,18 @@ Package pdftex.def Info: conteudo/capitulos/figs/grafico-medidas-Pk-Wd-eps-conve
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[28 <./conteudo/capitulos/figs/grafico-medidas-APRF1-eps-converted-to.pdf>] [29 <./conteudo/capitulos/figs/grafico-medidas-Pk-Wd-eps-converted-to.pdf>]) [30] (./ovidio_dissertacao.bbl (./ovidio_dissertacao.brf)
+[30 <./conteudo/capitulos/figs/grafico-medidas-APRF1-eps-converted-to.pdf>] [31 <./conteudo/capitulos/figs/grafico-medidas-Pk-Wd-eps-converted-to.pdf>]) [32] (./ovidio_dissertacao.bbl (./ovidio_dissertacao.brf)
 \tf@brf=\write6
 \openout6 = `ovidio_dissertacao.brf'.
 
 
 bibitemlist
-[31
+[33
 
 
-] [32]) 
+] [34]) 
 AED: lastpage setting LastPage
-[33]
+[35]
 \tf@toc=\write7
 \openout7 = `ovidio_dissertacao.toc'.
 
@@ -1666,7 +1664,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 309.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 309.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 309.
 Package rerunfilecheck Info: File `ovidio_dissertacao.brf' has not changed.
-(rerunfilecheck)             Checksum: E51DFA930E0030246942E7B1138AC38B;3089.
+(rerunfilecheck)             Checksum: DF6F89B9D33EB495E0C4EC2E524E5860;3096.
 
 
 LaTeX Warning: There were undefined references.
@@ -1681,18 +1679,18 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 309.
 ### simple group (level 1) entered at line 1061 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 15405 strings out of 494884
- 231939 string characters out of 6179236
- 419559 words of memory out of 5000000
- 18118 multiletter control sequences out of 15000+600000
- 94412 words of font info for 147 fonts, out of 8000000 for 9000
+ 15413 strings out of 494884
+ 232035 string characters out of 6179236
+ 419671 words of memory out of 5000000
+ 18120 multiletter control sequences out of 15000+600000
+ 94541 words of font info for 148 fonts, out of 8000000 for 9000
  38 hyphenation exceptions out of 8191
- 47i,15n,40p,1496b,3607s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 47i,15n,40p,1496b,3608s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}</usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx8.pfb></usr/share/texmf/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr7.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss10.pfb></usr/share/texmf/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss17.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsso12.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt12.pfb>
-Output written on ovidio_dissertacao.pdf (35 pages, 939247 bytes).
+Output written on ovidio_dissertacao.pdf (37 pages, 943662 bytes).
 PDF statistics:
- 776 PDF objects out of 1000 (max. 8388607)
- 673 compressed objects within 7 object streams
- 137 named destinations out of 1000 (max. 500000)
+ 792 PDF objects out of 1000 (max. 8388607)
+ 687 compressed objects within 7 object streams
+ 141 named destinations out of 1000 (max. 500000)
  32564 words of extra memory for PDF output out of 35830 (max. 10000000)
 

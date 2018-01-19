@@ -131,6 +131,10 @@ Olhar o livro
 Olhar a dissertação e escrever sobre os 3 modelos
 procurar por teses em RI
 
+Olhar os livros
+Pesquisar sobre Modelo Probabilístico
+Rechear com referências
+
 -------------------------------------------------------------------
 2.1.2 Retrieval Models
 

@@ -1,22 +1,7 @@
 
 
-Avaliar o quanto um termo é relevante para um documento é fundamental para os modelos de RI. 
-Para isso pode utilizar medidas estatísticas simples como a frequência do termo, conhecida como TF (do inglês \textit{Term Frequecy}) e a frequência de documentos, conhecida como DF (do inglês \textit{Document Frequency}). 
-A frequencia do termo indica o número de vezes que um termo ocorre na coleção de documentos. A frequencia de documentos, indica o número de documentos que contem ao menos uma ocorrencia de um determinado termo. Considera-se que os termos que ocorrem frequentemente em muitos documentos, em geral, não trazem informações úteis para discriminar a relevância dos documentos. 
-A fim de diminuir o peso de termos altamente frequentes, usa-se o fator IDF (\textit{Inverted Document Frequency}), que é a frequencia inversa de documentos que contem um termo, dada por:
-
-o qual fornece uma medida de quanta informação um termo fornece com base em quão raro ou comum esse termo é para a coleção. TF-IDF é a medida que pondera a frequencia de um termo em um documento com sua frequencia na coleção total de documentos. Assim o relevância de um termo para um documento é dada por:
-
-w_ij = 
-
-A medida TF-IDF atribui valores 
-altos para termos que ocorrem frequentemente em um documentos, e valores 
-menores para termos que ocorrem poucas vezes em um documento ou em muitos documentos da coleção.
-
-
-
-
-
+% --> http://www.tfidf.com/
+% --> https://nlp.stanford.edu/IR-book/html/htmledition/tf-idf-weighting-1.html
 
 TF é ... fornece uma medida de como o termo descreve o conteúdo do documento
 DF é ... 
@@ -40,12 +25,13 @@ A fim de diminuir esse problema, usa-se o fator IDF (\textit{Inverted Document F
 termos muito frequentes não são bons para distinguir documentos relevantes de não relevantes. A fim de diminuir esse problema, usa-se o fator IDF para diminuir o peso de termos muito frequentes.
 
 
-A ideia da medida tf.idf e quantificar a imoportacia de um termo em um docupendo com base em sua frequencia no próprio documento e sua distribuição ao longo da coleção de documentos.
 
 
 quando ocorre muito não é discriminativo
 quando ocorre pouco não é significante
 
+
+% Avaliar o quanto um termo é relevante para um documento é fundamental para os modelos de RI. Entre as formas mais utilizadas para quantificar essa relevância é mostrada a seguir.  Seja $N$ o número de documentos de uma coleção e $n_i$ o número de documentos onde o termo $k_i$ ocorre. 
 
 
 " Outras formas, baseadas em critérios de
