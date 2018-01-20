@@ -157,7 +157,34 @@ the stream of document-term information coming from the text transformatio"
 file:///home/ovidiojf/Desktop/Livros/Search Engines: Information Retrieval in Practice.pdf
 -------------------------------------------------------------------
 
+
+Exemplo de ponderação TF-IDF
+Dado um documento contendo termos com as seguintes
+freqüências:
+A(3), B(2), C(1)
+Assumindo que a coleção tem 10.000 docs e freqüência de
+documentos destes termos são:
+A(50), B(1300), C(250)
+Então:
+A: tf = 3/3; idf = log2 (10000/50) = 7,64; tf-idf = 7,64
+B: tf = 2/3; idf = log2 (10000/1300) = 2,94; tf-idf = 1,96
+C: tf = 1/3; idf = log2 (10000/250) = 5,32; tf-idf = 1,77
+
+file:///home/ovidiojf/Pictures/tattoos/Aula2a-WebMining.pdf
 -------------------------------------------------------------------
+
+
+file:///home/ovidiojf/Desktop/Livros/Search Engines: Information Retrieval in Practice.pdf 
+267
+file:///ext4Data/UFSCar/papers/dissertações/LCHOliveiraDISSPRT.pdf
+file:///home/ovidiojf/Pictures/tattoos/Tópico 5 - Modelo probabilistico.pdf
+
+.....
+
+file:///home/ovidiojf/Pictures/tattoos/Modelos de Linguagem para Recuperação de Informação.pdf
+file:///home/ovidiojf/Desktop/UMA ANÁLISE DE MODELOS E SISTEMAS PROBABILÍSTICOS EM RECUPERAÇÃO DE INFORMAÇÃO EM BASES TEXTUAIS.pdf
+file:///ext4Data/UFSCar/papers/dissertações/RECUPERAÇÃO DE DOCUMENTOS TEXTO USANDO UM MODELO PROBABILÍSTICO ESTENDIDO - Marcelo Bonfim.pdf
+
 
 -------------------------------------------------------------------
 
