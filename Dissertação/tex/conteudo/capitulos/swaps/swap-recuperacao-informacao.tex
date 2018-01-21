@@ -1,3 +1,58 @@
+No modelo probabilístico um documento é representado por um vetor de pesos binários 
+
+
+
+O modelo probabilístico
+
+A fim de obter-se uma estimativa númeica, o modelo aplica uma série de transformações para calcular as probabilidades de P(R_q|dj) e P(\overline{R_q}|dj) como 
+aplicação da Regra de Bayes 
+e conversão do produtório do logarítmos em somatório dos logaritmos.
+
+% chega-se então a fórmula conhecida como Robertson-Spark
+
+
+
+
+
+
+
+
+
+
+O modelo probabilístico é baseado no princípio da ordenação probabilística (\textit{Probability Ranking Principle}) onde dada um consulta q e um documento $d_j$ <perfeitamente> relevante a $q$, o modelo tenta estimar a probabiliade do usuário encontrar o documento $d_j$. O modelo assumente que para uma consulta $q$ há um conjunto de documentos $R$ que contém exatamente os documentos relevantes e nenhum outro, sendo este um conjunto resposta ideal que maximiza a probablidade do usuário encontrar um documento $d_j$ relevante a $q$. 
+
+Seja $\bar{R_q}$ o complemento de $R$ de forma que $\bar{R_q}$ contém todos os documentos não relevantes à consulta $q$. Seja $P(R_q|d_j)$ a probabilidade do documento $d_j$ ser relevante à consulta $q$ e $P(R_q|d_j)$ a probabilidade de $d_j$ não ser relevante à $q$. A similaridade entre um documento $d_j$ e uma consulta $q$ é definada por:
+
+
+
+
+
+
+
+
+
+Diferente do modelo vetorial, o probabilístico atribui pesos binários.
+
+O modelo probabilístico é basead no princípio da ordenação probabilística (Probability Ranking Principle) onde dada um consulta q e um documento d_j <perfeitamente> relevante a q, o modelo tenta estimar a probabiliade do usuário encontrar o documento d_j. 
+
+
+O modelo assumente que, dado uma consulta do usuário $q$ há um conjunto que contém exatamente os documentos relevantes e nenhum outro, sendo este um conjunto resposta ideal que maximiza a probablidade 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
