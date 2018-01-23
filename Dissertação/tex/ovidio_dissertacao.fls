@@ -232,7 +232,6 @@ INPUT conteudo/capitulos/3-cap2.tex
 INPUT conteudo/capitulos/inputs/recuperacao-informacao.tex
 INPUT conteudo/capitulos/inputs/recuperacao-informacao.tex
 INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmss17.tfm
-INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmbx12.tfm
 INPUT conteudo/capitulos/inputs/segmentacao.tex
 INPUT conteudo/capitulos/inputs/segmentacao.tex
 INPUT conteudo/capitulos/inputs/algoritmos-segmentacao.tex
@@ -289,6 +288,7 @@ INPUT ./conteudo/capitulos/figs/visao-geral-3-eps-converted-to.pdf
 INPUT conteudo/capitulos/figs/pre-process.pdf
 INPUT ./conteudo/capitulos/figs/pre-process.pdf
 INPUT ./conteudo/capitulos/figs/pre-process.pdf
+INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmbx12.tfm
 INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmbx8.tfm
 INPUT conteudo/capitulos/figs/coesaolexicaTT-50-9.png
 INPUT ./conteudo/capitulos/figs/coesaolexicaTT-50-9.png
@@ -333,13 +333,14 @@ INPUT ./ovidio_dissertacao.brf
 INPUT ./ovidio_dissertacao.brf
 INPUT /usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc
 INPUT /usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc
+INPUT /usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc
 INPUT /usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc
 INPUT /usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc
-INPUT /usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc
 INPUT /usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb
 INPUT /usr/share/texmf/fonts/type1/public/lm/lmbx8.pfb
 INPUT /usr/share/texmf/fonts/type1/public/lm/lmex10.pfb
 INPUT /usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb
+INPUT /usr/share/texmf/fonts/type1/public/lm/lmmi6.pfb
 INPUT /usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb
 INPUT /usr/share/texmf/fonts/type1/public/lm/lmr10.pfb
 INPUT /usr/share/texmf/fonts/type1/public/lm/lmr12.pfb
