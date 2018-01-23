@@ -181,14 +181,32 @@ file:///home/ovidiojf/Pictures/tattoos/Tópico 5 - Modelo probabilistico.pdf
 
 .....
 
-file:///home/ovidiojf/Pictures/tattoos/Modelos de Linguagem para Recuperação de Informação.pdf
+file:///ext4Data/UFSCar/papers/geral/RI/Modelos de Linguagem para Recuperação de Informação.pdf
 file:///home/ovidiojf/Desktop/UMA ANÁLISE DE MODELOS E SISTEMAS PROBABILÍSTICOS EM RECUPERAÇÃO DE INFORMAÇÃO EM BASES TEXTUAIS.pdf
 file:///ext4Data/UFSCar/papers/dissertações/RECUPERAÇÃO DE DOCUMENTOS TEXTO USANDO UM MODELO PROBABILÍSTICO ESTENDIDO - Marcelo Bonfim.pdf
 
 
 -------------------------------------------------------------------
+Assim, é possível definir um subconjunto V contendo os r
+documentos de maior similaridade, que é utilizado para
+refinar as seguintes fórmulas de probabilidade para as
+próximas interações:
 
+P ( k i | R ) = ... 
+
+• V é o número de documentos do próprio subconjunto;
+• V i é o número de documentos de V que contém o termo k i
+
+
+↑↑↑↑↑↑↑ Formula para recalibrar as probabilidades??
+
+file:///ext4Data/UFSCar/papers/geral/RI/Modelos de Linguagem para Recuperação de Informação.pdf
 -------------------------------------------------------------------
+
+--> Seleção das atas
+--> Seleção dos documentos
+--> Processo para geração das atas de referência
+--> Imagem das concordâncias.
 
 -------------------------------------------------------------------
 

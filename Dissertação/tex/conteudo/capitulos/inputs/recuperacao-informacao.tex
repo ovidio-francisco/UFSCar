@@ -4,7 +4,9 @@
 
 Devido à popularização dos computadores e à grande disponibilidade de documentos em formato digital, em especial na Web a área da Recuperação de Informação (RI) tem recebido atenção de pesquisadores nas últimas décadas.
 % 
-Recuperação de informação é área da computação que envolve a aplicação de métodos computacionais no tratamento e busca de informação em bases de dados não estruturados, usualmente grandes coleções de documentos textuais armazenados em dispositivos eletrônicos.
+Recuperação de informação é área da computação que envolve a aplicação de métodos computacionais no tratamento e busca de informação em bases de dados não estruturados, usualmente grandes coleções de documentos textuais armazenados em dispositivos eletrônicos. De fato, não há dados completamente não estruturados ao se considerar a estrutura linguística latente em documentos textuais. O termo 'não estruturado' se refere a dados que oferecem uma estrutura claramente estruturada para sistemas computadorizados, a exemplo de documentos 
+textuais~\cite{Manning2008}.
+
 % Tratamento == Classificação e Agrupamento?
 A tarefa central da recuperação de informação é encontrar informações de interesse dos usuários e exibi-las. A principal ferramenta empregada nesse problema é o desenvolvimento de sistemas de recuperação de informação (SRI). Nesses sistemas o usuário expressa sua necessidade por meio da formulação de uma consulta, usualmente composta por um conjunto de palavras-chave. Então, o sistema apresenta os resultados da busca, frequentemente documentos, em ordem de relevância com a consulta.
 
@@ -79,10 +81,9 @@ Uma vez que o sistema calcula os graus de similaridade entre os documentos e a b
 \subsubsection{Modelo Probabilístico}
 
  
-O modelo probabilístico é baseado no princípio da ordenação probabilística (\textit{Probability Ranking Principle}) onde dada um consulta $q$ e um documento $d_j$ relevante a $q$, o modelo tenta estimar a probabilidade do usuário encontrar o documento $d_j$. O modelo assumente que para uma consulta $q$ há um conjunto de documentos $R$ que contém exatamente os documentos relevantes e nenhum outro, sendo este um conjunto resposta ideal que maximiza a probabilidade do usuário encontrar um documento $d_j$ relevante a $q$. 
+O modelo probabilístico é baseado no princípio da ordenação probabilística (\textit{Probability Ranking Principle}) onde dada um consulta $q$ e um documento $d_j$ relevante a $q$, o modelo tenta estimar a probabilidade do usuário encontrar o documento $d_j$. O modelo assumente que para uma consulta $q$ há um conjunto de documentos $R_q$ que contém exatamente os documentos relevantes e nenhum outro, sendo este um conjunto resposta ideal que maximiza a probabilidade do usuário encontrar um documento $d_j$ relevante a $q$. 
 
-Seja $\overline{R_q}$ o complemento de $R$ de forma que $\overline{R_q}$ contém todos os documentos não relevantes à consulta $q$. 
-Seja $P(R_q|d_j)$ a probabilidade do documento $d_j$ ser relevante à consulta $q$ e $P(\overline{R_q}|d_j)$ a probabilidade de $d_j$ não ser relevante à $q$. A similaridade entre um documento $d_j$ e uma consulta $q$ é definida por:
+Seja $\overline{R_q}$ o complemento de $R$ de forma que $\overline{R_q}$ contém todos os documentos não relevantes à consulta $q$. Seja $P(R_q|d_j)$ a probabilidade do documento $d_j$ ser relevante à consulta $q$ e $P(\overline{R_q}|d_j)$ a probabilidade de $d_j$ não ser relevante à $q$. A similaridade entre um documento $d_j$ e uma consulta $q$ é definida por:
 
 
 
@@ -125,6 +126,14 @@ Partindo dessas suposições, a Equação~\ref{equ:simprob-numeric} passa por tr
 \begin{equation}
 	\sigma_{i/R} = \log \frac{p_i}{1-p_i} + \log \frac{1-s_i}{s_i}
 \end{equation}
+
+
+Esse modelo tem com principal desvantagem a necessidade de estimar a separação inicial entre entre $R_q$ e $\overline{R_q}$, pois o não se conhece inicialmente o conjunto dos documentos relevantes a uma consulta, o qual deve ser aprimorado por meio de interações com o usuário. Além disso, o modelo não leva em consideração a frequência dos termos na indexação do documento. Apresenta como vantagem a característica de atribuir probabilidades as similaridades entre documentos e consultas, o que permite ranquear dos resultados por ordem de relevância. 
+
+
+
+
+
 
 
 

@@ -7,32 +7,32 @@
 \contentsline {chapter}{\chapternumberline {2}\MakeTextUppercase {Conceitua\IeC {\c c}\IeC {\~a}o Te\IeC {\'o}rica}}{7}{chapter.2}
 \contentsline {section}{\numberline {2.1}Recupera\IeC {\c c}\IeC {\~a}o de Informa\IeC {\c c}\IeC {\~a}o}{7}{section.2.1}
 \contentsline {subsection}{\numberline {2.1.1}Modelos de Recupera\IeC {\c c}\IeC {\~a}o de Informa\IeC {\c c}\IeC {\~a}o}{7}{subsection.2.1.1}
-\contentsline {subsubsection}{\numberline {2.1.1.1}Modelo Booleano}{7}{subsubsection.2.1.1.1}
+\contentsline {subsubsection}{\numberline {2.1.1.1}Modelo Booleano}{8}{subsubsection.2.1.1.1}
 \contentsline {subsubsection}{\numberline {2.1.1.2}Modelo Vetorial}{8}{subsubsection.2.1.1.2}
-\contentsline {subsubsection}{\numberline {2.1.1.3}Modelo Probabil\IeC {\'\i }stico}{9}{subsubsection.2.1.1.3}
+\contentsline {subsubsection}{\numberline {2.1.1.3}Modelo Probabil\IeC {\'\i }stico}{10}{subsubsection.2.1.1.3}
 \contentsline {section}{\numberline {2.2}Segmenta\IeC {\c c}\IeC {\~a}o Textual}{11}{section.2.2}
 \contentsline {subsection}{\numberline {2.2.1}Medidas de Avalia\IeC {\c c}\IeC {\~a}o}{16}{subsection.2.2.1}
 \contentsline {section}{\numberline {2.3}Representa\IeC {\c c}\IeC {\~a}o de Textos}{19}{section.2.3}
-\contentsline {subsection}{\numberline {2.3.1}\textit {Bag Of Words}}{19}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.1}\textit {Bag Of Words}}{20}{subsection.2.3.1}
 \contentsline {section}{\numberline {2.4}Modelos de Extra\IeC {\c c}\IeC {\~a}o de T\IeC {\'o}picos}{20}{section.2.4}
-\contentsline {section}{\numberline {2.5}Trabalhos Relacionados}{22}{section.2.5}
+\contentsline {section}{\numberline {2.5}Trabalhos Relacionados}{23}{section.2.5}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {3}\MakeTextUppercase {Sistema Proposto}}{23}{chapter.3}
-\contentsline {section}{\numberline {3.1}M\IeC {\'o}dulo de prepara\IeC {\c c}\IeC {\~a}o e manuten\IeC {\c c}\IeC {\~a}o}{23}{section.3.1}
-\contentsline {subsection}{\numberline {3.1.1}Prepara\IeC {\c c}\IeC {\~a}o dos documentos}{24}{subsection.3.1.1}
-\contentsline {subsubsection}{\numberline {3.1.1.1}Segmenta\IeC {\c c}\IeC {\~a}o}{25}{subsubsection.3.1.1.1}
-\contentsline {subsubsection}{\numberline {3.1.1.2}Segmenta\IeC {\c c}\IeC {\~a}o de Refer\IeC {\^e}ncia}{26}{subsubsection.3.1.1.2}
-\contentsline {subsection}{\numberline {3.1.2}Configura\IeC {\c c}\IeC {\~a}o experimental}{26}{subsection.3.1.2}
-\contentsline {subsubsection}{\numberline {3.1.2.1}Crit\IeC {\'e}rios de avalia\IeC {\c c}\IeC {\~a}o}{27}{subsubsection.3.1.2.1}
-\contentsline {subsubsection}{\numberline {3.1.2.2}Resultados}{27}{subsubsection.3.1.2.2}
-\contentsline {subsection}{\numberline {3.1.3}Representa\IeC {\c c}\IeC {\~a}o Computacional}{30}{subsection.3.1.3}
-\contentsline {subsection}{\numberline {3.1.4}Extra\IeC {\c c}\IeC {\~a}o de T\IeC {\'o}picos}{31}{subsection.3.1.4}
-\contentsline {section}{\numberline {3.2}M\IeC {\'o}dulo Consulta}{31}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}Visualiza\IeC {\c c}\IeC {\~a}o}{31}{subsection.3.2.1}
-\contentsline {section}{\numberline {3.3}Estudo de caso}{32}{section.3.3}
-\contentsline {section}{\numberline {3.4}Avalia\IeC {\c c}\IeC {\~a}o}{32}{section.3.4}
+\contentsline {chapter}{\chapternumberline {3}\MakeTextUppercase {Sistema Proposto}}{25}{chapter.3}
+\contentsline {section}{\numberline {3.1}M\IeC {\'o}dulo de prepara\IeC {\c c}\IeC {\~a}o e manuten\IeC {\c c}\IeC {\~a}o}{25}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}Prepara\IeC {\c c}\IeC {\~a}o dos documentos}{26}{subsection.3.1.1}
+\contentsline {subsubsection}{\numberline {3.1.1.1}Segmenta\IeC {\c c}\IeC {\~a}o}{27}{subsubsection.3.1.1.1}
+\contentsline {subsubsection}{\numberline {3.1.1.2}Segmenta\IeC {\c c}\IeC {\~a}o de Refer\IeC {\^e}ncia}{28}{subsubsection.3.1.1.2}
+\contentsline {subsection}{\numberline {3.1.2}Configura\IeC {\c c}\IeC {\~a}o experimental}{28}{subsection.3.1.2}
+\contentsline {subsubsection}{\numberline {3.1.2.1}Crit\IeC {\'e}rios de avalia\IeC {\c c}\IeC {\~a}o}{29}{subsubsection.3.1.2.1}
+\contentsline {subsubsection}{\numberline {3.1.2.2}Resultados}{29}{subsubsection.3.1.2.2}
+\contentsline {subsection}{\numberline {3.1.3}Representa\IeC {\c c}\IeC {\~a}o Computacional}{32}{subsection.3.1.3}
+\contentsline {subsection}{\numberline {3.1.4}Extra\IeC {\c c}\IeC {\~a}o de T\IeC {\'o}picos}{33}{subsection.3.1.4}
+\contentsline {section}{\numberline {3.2}M\IeC {\'o}dulo Consulta}{33}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Visualiza\IeC {\c c}\IeC {\~a}o}{33}{subsection.3.2.1}
+\contentsline {section}{\numberline {3.3}Estudo de caso}{34}{section.3.3}
+\contentsline {section}{\numberline {3.4}Avalia\IeC {\c c}\IeC {\~a}o}{34}{section.3.4}
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
-\contentsline {chapter}{Refer\^encias}{33}{section*.2}
+\contentsline {chapter}{Refer\^encias}{35}{section*.2}
 \renewcommand *{\cftappendixname }{AP\^ENDICE \space }
 \cftinsert {AAA}
 \renewcommand *{\cftappendixname }{ANEXO \space }
