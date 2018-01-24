@@ -5,26 +5,38 @@
 % -> Imagem das concordâncias.
 % -> Mostrar a segmentação de referência como resultado
 
+Falar como deve ser o processo de anotação conforme feito por Holy...
 
  % \subsubsection{Avaliação dos Segmentadores}
  %  Critérios de avaliação
-A avaliação de um segmentador automático de textos é preciso uma referência, isto é, um texto com os limites entre os segmentos conhecidos. Essa referência, deve ser confiável, sendo uma segmentação legítima que é capaz de dividir o texto em porções relativamente independentes, ou seja, uma segmentação ideal.
-
+A avaliação de um segmentador automático de textos exige uma referência, isto é, um texto com os limites entre os segmentos conhecidos. Essa referência, deve ser confiável, sendo uma segmentação legítima que é capaz de dividir o texto em porções relativamente independentes, ou seja, uma segmentação ideal.
 
 % ->------> Seleção das atas
-Selecionou-se um conjunto de atas reais coletadas do Departamento de Computação da UFSCar campus Sorocaba. Analisou-se as atas das reuniões do Conselho de Pós-Graduação e Conselho de Graduação desse departamento das quais foram selecionadas seis atas cinco referentes a reuniões ordinária e uma reunião extraordinária de cada conselho totalizando doze documentos. Esses documentos foram escolhidos de forma que o conjunto final contenha atas com tamanhos diferentes (entre 1 e 4 páginas), e maior diversidade de conteúdo.
+Para isso, selecionou-se um conjunto de atas reais coletadas do Departamento de Computação da UFSCar campus Sorocaba. Analisou-se as atas públicas das reuniões do Conselho de Pós-Graduação e Conselho de Graduação desse departamento das quais foram selecionadas seis atas de cada conselho, sendo cinco referentes a reuniões ordinária e uma reunião extraordinária, totalizando doze documentos. Esses documentos foram escolhidos de forma que o conjunto final contenha atas com tamanhos diferentes (entre 1 e 4 páginas), e maior diversidade de conteúdo.
  % contém tabelas e listas
 
-Em seguida, selecionou-se um grupo de anotadores para analisar e coletar dados referentes a segmentação cada ata. 
-Os grupo de anotadores foi formado por profissionais com alguma afinidade com atas de reuniões, como profissionais administrativos, professores e coordenadores de curso. 
-Optou-se por utilizar um \textit{software} como ferramenta para a coleta dos dados a fim de facilitar o trabalho e diminuir eventuais erros. Essa ferramenta permitiu aos anotadores visualizar os documentos e indicar livremente as divisões entre segmentos, bem como rotulá-los em classes para descrever o assunto central do segmento e indicar palavras que melhor descrevem o assunto central do segmento.
-Os anotadores receberam informações básicas sobre o objetivo da pesquisa e instruções de como operar o \textit{software}.
+Em seguida, selecionou-se um grupo de anotadores para analisar e coletar dados referentes a segmentação de cada ata. O grupo de anotadores foi formado por profissionais com alguma afinidade com atas de reunião, como profissionais administrativos, professores e coordenadores de curso. Optou-se por utilizar um \textit{software} como ferramenta para a coleta dos dados a fim de facilitar o trabalho de anotação e diminuir eventuais erros, conforme sugerido por~\cite{}. Essa ferramenta permitiu aos anotadores visualizar os documentos e indicar livremente as divisões entre segmentos, bem como rotulá-los em classes e indicar palavras que melhor descrevem o assunto central do segmento.
+Os anotadores receberam informações básicas sobre o objetivo da pesquisa e instruções de como operar o \textit{software}. Contudo, nenhum critério foi estabelecido para o procedimento ficando os anotadores livres para segmentar e rotular as atas orientados apenas pela interface da ferramenta. Na Figura~\ref{fig:interfaceanotacoes} é mostrada a interface da ferramenta utilizada para as anotações.
 
-Para isso, utilizou-se um \textit{software}, desenvolvido com esse objetivo especifico, que permitiu aos anotadores visualizar um documento, e indicar livremente as divisões entre segmentos. 
+  \begin{figure}[!h]
+	  \centering
+	  \includegraphics[width=0.9\paperwidth]{conteudo/capitulos/figs/interface-anotacoes.png}
+	  \caption{Interface da ferramenta utilizada para anotações onde o texto a ser segmentado é exibido no painel a esquerda e os controles para anotação estão disponíveis a direita}
+	  \label{fig:interfaceanotacoes}
+  \end{figure}
+
+
+--> falar que foi usado maior concordânica igual feio por Hearts.
+  
+Após o processo de anotação, os dados coletados foram analisados para gerar as segmentações de referência. Considerou-se que
+
+
+
 
 
 % ->----------------------------------------------------------------------------------
 
+  Para isso, utilizou-se um \textit{software}, desenvolvido com esse objetivo especifico, que permitiu aos anotadores visualizar um documento, e indicar livremente as divisões entre segmentos. 
 
 %%%%%%%%%%%	
 	03 Ata 36 - 31a Reunião Odinária PPGCCS.txt.csv
