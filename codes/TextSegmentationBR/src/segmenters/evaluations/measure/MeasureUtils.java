@@ -253,6 +253,16 @@ public class MeasureUtils {
 		
 	}
 
+	public static int countSegments(int[] binSegmentaion) {
+		int result = 1;
+		
+		for(int i : binSegmentaion) {
+			result += i;
+		}
+		
+		return result;
+	}
+
 
 
 }

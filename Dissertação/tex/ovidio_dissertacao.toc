@@ -22,13 +22,13 @@
 \contentsline {subsection}{\numberline {3.1.1}Prepara\IeC {\c c}\IeC {\~a}o dos documentos}{26}{subsection.3.1.1}
 \contentsline {subsubsection}{\numberline {3.1.1.1}Segmenta\IeC {\c c}\IeC {\~a}o}{27}{subsubsection.3.1.1.1}
 \contentsline {subsubsection}{\numberline {3.1.1.2}Segmenta\IeC {\c c}\IeC {\~a}o de Refer\IeC {\^e}ncia}{28}{subsubsection.3.1.1.2}
-\contentsline {subsection}{\numberline {3.1.2}Configura\IeC {\c c}\IeC {\~a}o experimental}{28}{subsection.3.1.2}
+\contentsline {subsection}{\numberline {3.1.2}Configura\IeC {\c c}\IeC {\~a}o experimental}{29}{subsection.3.1.2}
 \contentsline {subsubsection}{\numberline {3.1.2.1}Crit\IeC {\'e}rios de avalia\IeC {\c c}\IeC {\~a}o}{29}{subsubsection.3.1.2.1}
-\contentsline {subsubsection}{\numberline {3.1.2.2}Resultados}{29}{subsubsection.3.1.2.2}
-\contentsline {subsection}{\numberline {3.1.3}Representa\IeC {\c c}\IeC {\~a}o Computacional}{32}{subsection.3.1.3}
+\contentsline {subsubsection}{\numberline {3.1.2.2}Resultados}{30}{subsubsection.3.1.2.2}
+\contentsline {subsection}{\numberline {3.1.3}Representa\IeC {\c c}\IeC {\~a}o Computacional}{33}{subsection.3.1.3}
 \contentsline {subsection}{\numberline {3.1.4}Extra\IeC {\c c}\IeC {\~a}o de T\IeC {\'o}picos}{33}{subsection.3.1.4}
 \contentsline {section}{\numberline {3.2}M\IeC {\'o}dulo Consulta}{33}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}Visualiza\IeC {\c c}\IeC {\~a}o}{33}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.1}Visualiza\IeC {\c c}\IeC {\~a}o}{34}{subsection.3.2.1}
 \contentsline {section}{\numberline {3.3}Estudo de caso}{34}{section.3.3}
 \contentsline {section}{\numberline {3.4}Avalia\IeC {\c c}\IeC {\~a}o}{34}{section.3.4}
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}

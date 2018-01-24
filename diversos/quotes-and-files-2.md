@@ -204,7 +204,7 @@ file:///ext4Data/UFSCar/papers/geral/RI/Modelos de Linguagem para Recuperação 
 -------------------------------------------------------------------
 
 --> Seleção das atas
---> Seleção dos documentos
+--> Seleção dos anotadores
 --> Processo para geração das atas de referência
 --> Imagem das concordâncias.
 

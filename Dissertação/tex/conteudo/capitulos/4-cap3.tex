@@ -122,7 +122,7 @@ Como já mencionado, uma ata registra a sucessão de assuntos discutidos em uma 
 
 % Para esse trabalho, os algoritmos \textit{TextTiling} ~\cite{Hearst1994} e \textit{C99}~\cite{Choi2000} foram avaliados na tarefa de segmentação dos textos extraídos das atas conforme apresentado a seguir.
 
-Entre os principais trabalhos da literatura podemos citar o \textit{TextTiling} ~\cite{Hearst1994} e o \textit{C99}~\cite{Choi2000} são considerados um dos primeiros mais influentes sendo utilizados com \textiit{base lines} em trabalhos recentes\cite{CHAIBI2014, Naili2016, Cardoso2017}
+Entre os principais trabalhos da literatura podemos citar o \textit{TextTiling} ~\cite{Hearst1994} e o \textit{C99}~\cite{Choi2000} são considerados um dos primeiros mais influentes sendo utilizados com \textiit{base lines} em trabalhos recentes~\cite{CHAIBI2014, Naili2016, Cardoso2017}
 
 % --> CONTINUA ....
 
@@ -133,7 +133,8 @@ Entre os principais trabalhos da literatura podemos citar o \textit{TextTiling} 
  % \subsubsection{Avaliação dos Segmentadores}
  %  Critérios de avaliação
  Para que se possa avaliar um segmentador automático de textos é preciso uma referência, isto é, um texto com os limites entre os segmentos conhecidos. Essa referência, deve ser confiável, sendo uma segmentação legítima que é capaz de dividir o texto em porções relativamente independentes, ou seja, uma segmentação ideal.
-% Como foram obtidas (software e especialistas) 
+
+ % Como foram obtidas (software e especialistas) 
 A fim de obter um conjunto de documentos segmentados que possam servir como referência na avaliação, os documentos coletados foram segmentados manualmente por dois coordenadores de curso que participam de reuniões. Para isso, utilizou-se um \textit{software}, desenvolvido com esse objetivo especifico, que permitiu aos voluntários visualizar um documento, e indicar livremente as divisões entre segmentos. Com o uso desse \textit{software} foram coletados os dados de seis atas segmentadas pelos participantes das reuniões, os quais serviram como referência para a avaliação dos algoritmos. O \textit{software} desenvolvido para segmentação manual está disponível para utilização e consulta em~\urlsoftwares	
 
 Os arquivos gerados foram tratados para que os segmentos sempre terminem em uma sentença reconhecida pelo algoritmo, uma vez que as sentenças são a unidade mínima de informação nesse trabalho.
@@ -141,15 +142,6 @@ Os arquivos gerados foram tratados para que os segmentos sempre terminem em uma 
 A Tabela~\ref{tab:segmentacaoreferencia} contém, para cada ata, a quantidade de sentenças e a quantidade de segmentos identificadas pelos participantes.
 
 
-
-% Referência ····························································
-% Documento	|	Segmentos Esp 1 |	Segmentos Esp 2
-% Doc1		|	7 				|	15
-% Doc2		|	9 				|	20
-% Doc3		|	7 				|	15
-% Doc4		|	9 				|	17
-% Doc5		|	4 				|	9 
-% Doc6		|	11				|	17
 \begin{table}[!h]
 	\centering
 	\begin{tabular}{|l|c|c|c|} \hline
@@ -157,12 +149,18 @@ A Tabela~\ref{tab:segmentacaoreferencia} contém, para cada ata, a quantidade de
 		\textbf{Participante 1}  & 
 		\textbf{Participante 2} \\	\hline
 
-		Ata 1 & 18 & 7  & 15 \\ \hline 
-		Ata 2 & 26 & 9  & 20 \\ \hline 
-		Ata 3 & 24 & 7  & 15 \\ \hline 
-		Ata 4 & 32 & 9  & 17 \\ \hline 
-		Ata 5 & 25 & 11 & 17 \\ \hline 
-		Ata 6 & 10 & 4  & 9  \\ \hline 
+		Ata 1  & 18 & 7  & 15 \\ \hline 
+		Ata 2  & 26 & 9  & 20 \\ \hline 
+		Ata 3  & 24 & 7  & 15 \\ \hline 
+		Ata 4  & 32 & 9  & 17 \\ \hline 
+		Ata 5  & 25 & 11 & 17 \\ \hline 
+		Ata 6  & 10 & 4  & 9  \\ \hline 
+		Ata 7  & 10 & 4  & 9  \\ \hline 
+		Ata 8  & 10 & 4  & 9  \\ \hline 
+		Ata 9  & 10 & 4  & 9  \\ \hline 
+		Ata 10 & 10 & 4  & 9  \\ \hline 
+		Ata 11 & 10 & 4  & 9  \\ \hline 
+		Ata 12 & 10 & 4  & 9  \\ \hline 
 
 	\end{tabular}
 	\caption{Quantidade de sentenças e segmentos de referência por ata.}

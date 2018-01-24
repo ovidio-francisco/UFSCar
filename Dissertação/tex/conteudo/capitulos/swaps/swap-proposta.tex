@@ -1,4 +1,175 @@
 
+% -> Seleção das atas
+% -> Seleção dos anotadores
+% -> Processo para geração das atas de referência
+% -> Imagem das concordâncias.
+% -> Mostrar a segmentação de referência como resultado
+
+
+ % \subsubsection{Avaliação dos Segmentadores}
+ %  Critérios de avaliação
+A avaliação de um segmentador automático de textos é preciso uma referência, isto é, um texto com os limites entre os segmentos conhecidos. Essa referência, deve ser confiável, sendo uma segmentação legítima que é capaz de dividir o texto em porções relativamente independentes, ou seja, uma segmentação ideal.
+
+
+% ->------> Seleção das atas
+Selecionou-se um conjunto de atas reais coletadas do Departamento de Computação da UFSCar campus Sorocaba. Analisou-se as atas das reuniões do Conselho de Pós-Graduação e Conselho de Graduação desse departamento das quais foram selecionadas seis atas cinco referentes a reuniões ordinária e uma reunião extraordinária de cada conselho totalizando doze documentos. Esses documentos foram escolhidos de forma que o conjunto final contenha atas com tamanhos diferentes (entre 1 e 4 páginas), e maior diversidade de conteúdo.
+ % contém tabelas e listas
+
+Em seguida, selecionou-se um grupo de anotadores para analisar e coletar dados referentes a segmentação cada ata. 
+Os grupo de anotadores foi formado por profissionais com alguma afinidade com atas de reuniões, como profissionais administrativos, professores e coordenadores de curso. 
+Optou-se por utilizar um \textit{software} como ferramenta para a coleta dos dados a fim de facilitar o trabalho e diminuir eventuais erros. Essa ferramenta permitiu aos anotadores visualizar os documentos e indicar livremente as divisões entre segmentos, bem como rotulá-los em classes para descrever o assunto central do segmento e indicar palavras que melhor descrevem o assunto central do segmento.
+Os anotadores receberam informações básicas sobre o objetivo da pesquisa e instruções de como operar o \textit{software}.
+
+Para isso, utilizou-se um \textit{software}, desenvolvido com esse objetivo especifico, que permitiu aos anotadores visualizar um documento, e indicar livremente as divisões entre segmentos. 
+
+
+% ->----------------------------------------------------------------------------------
+
+
+%%%%%%%%%%%	
+	03 Ata 36 - 31a Reunião Odinária PPGCCS.txt.csv
+	0 0 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 1 0 0 0 1 0 
+	1 0 0 1 0 1 1 1 1 1 0 0 0 1 0 1 1 1 1 1 1 0 0 1 1 0 
+	0 0 0 1 0 0 0 0 1 0 0 0 0 0 1 1 0 1 0 1 1 0 0 1 1 0 
+	0 0 0 1 0 1 1 0 1 1 1 0 0 1 0 1 0 1 0 1 1 0 0 1 1 0 
+	----------------------------------------------------
+	0 0 0 1 0 0 0 0 1 0 0 0 0 0 0 1 0 1 0 1 1 0 0 1 1 0 
+	-->./SegReferences/03 Ata 36 - 31a Reunião Odinária PPGCCS.txt.csv
+%%%%%%%%%%%	
+
+
+
+
+%%%%%%%%%%%	
+
+12 Nomes de Aquivos de referência
+
+01 Ata 30 - 26a Reunião Odinária PPGCCS.txt.csv
+	Anotador N   7 segmetnos |  25 sentenças
+	Anotador N  15 segmetnos |  25 sentenças
+	Anotador N   8 segmetnos |  25 sentenças
+	Anotador N  16 segmetnos |  25 sentenças
+02 Ata 29 - 25a Reunião Odinária PPGCCS.txt.csv
+	Anotador N   4 segmetnos |  17 sentenças
+	Anotador N  14 segmetnos |  17 sentenças
+	Anotador N   6 segmetnos |  17 sentenças
+	Anotador N  14 segmetnos |  17 sentenças
+03 Ata 36 - 31a Reunião Odinária PPGCCS.txt.csv
+	Anotador N   6 segmetnos |  26 sentenças
+	Anotador N  17 segmetnos |  26 sentenças
+	Anotador N  10 segmetnos |  26 sentenças
+	Anotador N  14 segmetnos |  26 sentenças
+04 Ata 32 - 28a Reunião Odinária PPGCCS.txt.csv
+	Anotador N   5 segmetnos |  26 sentenças
+	Anotador N  12 segmetnos |  26 sentenças
+	Anotador N   7 segmetnos |  26 sentenças
+	Anotador N  12 segmetnos |  26 sentenças
+05 Ata 33 - 29a Reunião Odinária PPGCCS.txt.csv
+	Anotador N   4 segmetnos |  33 sentenças
+	Anotador N  17 segmetnos |  33 sentenças
+	Anotador N   9 segmetnos |  33 sentenças
+	Anotador N  16 segmetnos |  33 sentenças
+06 Ata 35 - 5a Reunião Extraodinária PPGCCS.txt.csv
+	Anotador N   3 segmetnos |  11 sentenças
+	Anotador N   9 segmetnos |  11 sentenças
+	Anotador N   4 segmetnos |  11 sentenças
+	Anotador N   5 segmetnos |  11 sentenças
+07 20ª Reunião Extraordinária CoC-CCS 08-12-10.txt.csv
+	Anotador N   3 segmetnos |  20 sentenças
+	Anotador N   5 segmetnos |  20 sentenças
+	Anotador N   4 segmetnos |  20 sentenças
+08 25ª Reunião Ordinária CoC-CCS 04-04-12.txt.csv
+	Anotador N   4 segmetnos |  35 sentenças
+	Anotador N   5 segmetnos |  35 sentenças
+	Anotador N   9 segmetnos |  35 sentenças
+09 40ª Reunião Ordinária CoC-CCS 06-05-15.txt.csv
+	Anotador N   3 segmetnos |  24 sentenças
+	Anotador N   3 segmetnos |  24 sentenças
+	Anotador N   9 segmetnos |  24 sentenças
+10 20ª Reunião Ordinária CoC-CCS 01-06-11.txt.csv
+	Anotador N   4 segmetnos |  50 sentenças
+	Anotador N   5 segmetnos |  50 sentenças
+	Anotador N   8 segmetnos |  50 sentenças
+11 10ª Reunião Ordinária CoC-CCS 05-04-10.txt.csv
+	Anotador N   4 segmetnos |  43 sentenças
+	Anotador N   5 segmetnos |  43 sentenças
+	Anotador N  12 segmetnos |  43 sentenças
+12 13ª Reunião Ordinária CoC-CCS 05-08-10.txt.csv
+	Anotador N   3 segmetnos |  56 sentenças
+	Anotador N   4 segmetnos |  56 sentenças
+	Anotador N  11 segmetnos |  56 sentenças
+
+
+%%%%%%%%%%%	
+
+
+
+
+
+
+
+
+
+
+Como foram obtidas (software e especialistas) 
+A fim de obter um conjunto de documentos segmentados que possam servir como referência na avaliação, os documentos coletados foram segmentados manualmente por dois coordenadores de curso que participam de reuniões. 
+
+
+Com o uso desse \textit{software} foram coletados os dados de seis atas segmentadas pelos participantes das reuniões, os quais serviram como referência para a avaliação dos algoritmos. O \textit{software} desenvolvido para segmentação manual está disponível para utilização e consulta em~\urlsoftwares	
+
+Os arquivos gerados foram tratados para que os segmentos sempre terminem em uma sentença reconhecida pelo algoritmo, uma vez que as sentenças são a unidade mínima de informação nesse trabalho.
+
+A Tabela~\ref{tab:segmentacaoreferencia} contém, para cada ata, a quantidade de sentenças e a quantidade de segmentos identificadas pelos participantes.
+
+
+% Referência ····························································
+% Documento	|	Segmentos Esp 1 |	Segmentos Esp 2
+% Doc1		|	7 				|	15
+% Doc2		|	9 				|	20
+% Doc3		|	7 				|	15
+% Doc4		|	9 				|	17
+% Doc5		|	4 				|	9 
+% Doc6		|	11				|	17
+\begin{table}[!h]
+	\centering
+	\begin{tabular}{|l|c|c|c|} \hline
+		\textbf{Ata} & \textbf{Sentenças}  & 
+		\textbf{Participante 1}  & 
+		\textbf{Participante 2} \\	\hline
+
+		Ata 1 & 18 & 7  & 15 \\ \hline 
+		Ata 2 & 26 & 9  & 20 \\ \hline 
+		Ata 3 & 24 & 7  & 15 \\ \hline 
+		Ata 4 & 32 & 9  & 17 \\ \hline 
+		Ata 5 & 25 & 11 & 17 \\ \hline 
+		Ata 6 & 10 & 4  & 9  \\ \hline 
+
+	\end{tabular}
+	\caption{Quantidade de sentenças e segmentos de referência por ata.}
+	\label{tab:segmentacaoreferencia}
+\end{table}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 % Obtem-se nesse cenário uma eficiência maior em relação a segmentação da ata, o que sugere que textos mais estruturados podem ter melhores benefícios com essa técnica e que as atas possuem menor coesão léxica em comparação à textos organizados em seções.  % ou a premissa do algoritmo não é tão boa.

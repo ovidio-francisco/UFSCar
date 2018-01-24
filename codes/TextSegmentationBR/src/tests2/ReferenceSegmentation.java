@@ -152,18 +152,30 @@ public class ReferenceSegmentation {
 //		
 //		System.out.println(String.format("\n%s\n", sb));
 		
-		System.out.println(allAnotations.size());
+		StringBuilder table = new StringBuilder();
+		
+		System.out.println(allAnotations.size() + " Anotations");
+		
+		table.append(allAnotations.size() + " Nomes de Aquivos de referência\n\n");
 		
 		for(ArrayList<File> sameNameFiles: allAnotations) {
+//			System.out.println(sameNameFiles.size()+" Anotadores ");
+			
+			
 			String name = sameNameFiles.get(0).getName();
 			File refFile = new File(refFolder+"/"+name);
 			ArrayList<Integer> refSeg = new ArrayList<>();
 			
 			System.out.println("\n"+name);
+			table.append(name+"\n");
 			
 			ArrayList<int[]> annotations = new ArrayList<>();
 			for(File fileAnnotation : sameNameFiles) {
-				annotations.add(MeasureUtils.getIntegersBinarySegmentation(fileAnnotation));
+				int[] binSegmentaion = MeasureUtils.getIntegersBinarySegmentation(fileAnnotation); 
+				annotations.add(binSegmentaion);
+				int qtdSegments = MeasureUtils.countSegments(binSegmentaion);
+//				table.append("\tAnotador N "+ qtdSegments + " segmentos | " + binSegmentaion.length +" sentenças \n");
+				table.append(String.format("\tAnotador N %3d segmetnos | %3d sentenças\n", qtdSegments, binSegmentaion.length));
 				System.out.println(String.format("%s", getStringBinarySegmentation(fileAnnotation)));
 			}
 			
@@ -197,9 +209,11 @@ public class ReferenceSegmentation {
 			System.out.println(String.format("\n-->%s\n", refFile));
 			
 			
+			
 			saveRefFile(refFile, refSeg);
 		}
 		
+		System.out.println(table);
 	}
 	
 	
