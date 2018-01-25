@@ -5,7 +5,7 @@
 % -> Imagem das concordâncias.
 % -> Mostrar a segmentação de referência como resultado
 
-Falar como deve ser o processo de anotação conforme feito por Holy...
+% -? Falar como deve ser o processo de anotação conforme feito por Holy...
 
  % \subsubsection{Avaliação dos Segmentadores}
  %  Critérios de avaliação
@@ -26,11 +26,26 @@ Os anotadores receberam informações básicas sobre o objetivo da pesquisa e in
   \end{figure}
 
 
---> falar que foi usado maior concordânica igual feio por Hearts.
+% --> falar que foi usado maior concordânica igual feio por Hearts.
   
-Após o processo de anotação, os dados coletados foram analisados para gerar as segmentações de referência. Considerou-se que
+% Os arquivos gerados foram tratados para que os segmentos sempre terminem em uma sentença reconhecida pelo algoritmo, uma vez que as sentenças são a unidade mínima de informação nesse trabalho.
+Após o processo de anotação, os dados coletados foram analisados para gerar as segmentações de referência. A segmentação de referência foi gerada utilizando o critério de maior concordância, como já relatado em outros trabalhos~\cite{Hearts; TAS}. Considerou-se que ocorre um limite entre segmentos quando a maioria dos anotadores (metade mais um) concordaram que a mesma sentença é um final de segmento. A concordância entre os anotadores é uma medida importante que mostra como os anotadores compreendem os textos analisados e o nível de confiabilidade da segmentação de referência.
+Para mensurar a concordância entre anotadores, a medida kappa (k) é frequentemente utilizada~\cite{Heart;TAS,}. Essa medida retorna um valor no intervalo de 0 até 1, onde 1 significa uma concordância perfeita e 0 que não houve concordância. Embora fulano afirme que valores de k > 0.8 indicam que os dados são confiáveis, visto a subjetividade da tarefa de segmentação textual, medidas menores podem ser aceitaveis, como reportado em~\cite{Hearst;TAS} que alcançou k = 0,64 e ~\cite{TAS}, 0,56.  
+
+ 
+ 
+
+% ->----------------------------------------------------------------------------------
 
 
+ % \subsubsection{Avaliação dos Segmentadores}
+ %  Critérios de avaliação
+ % Para que se possa avaliar um segmentador automático de textos é preciso uma referência, isto é, um texto com os limites entre os segmentos conhecidos. Essa referência, deve ser confiável, sendo uma segmentação legítima que é capaz de dividir o texto em porções relativamente independentes, ou seja, uma segmentação ideal.
+
+ % Como foram obtidas (software e especialistas) 
+% A fim de obter um conjunto de documentos segmentados que possam servir como referência na avaliação, os documentos coletados foram segmentados manualmente por dois coordenadores de curso que participam de reuniões. Para isso, utilizou-se um \textit{software}, desenvolvido com esse objetivo especifico, que permitiu aos voluntários visualizar um documento, e indicar livremente as divisões entre segmentos. Com o uso desse \textit{software} foram coletados os dados de seis atas segmentadas pelos participantes das reuniões, os quais serviram como referência para a avaliação dos algoritmos. O \textit{software} desenvolvido para segmentação manual está disponível para utilização e consulta em~\urlsoftwares.
+
+% Os arquivos gerados foram tratados para que os segmentos sempre terminem em uma sentença reconhecida pelo algoritmo, uma vez que as sentenças são a unidade mínima de informação nesse trabalho.
 
 
 
