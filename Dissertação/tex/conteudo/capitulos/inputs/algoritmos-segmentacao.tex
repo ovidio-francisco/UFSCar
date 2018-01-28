@@ -100,8 +100,8 @@ Na Figura~\ref{fig:a} é destacado um quadro 3~x~3 de uma matriz em que cada ele
 \begin{figure}[!h]
 	\centering     %%% not \center
 
-	\subfigure[Passo 1]{\label{fig:a}\includegraphics[width=60mm]{conteudo/capitulos/figs/exemplo-matrix-rank-A.png}}
-	\subfigure[Passo 2]{\label{fig:b}\includegraphics[width=60mm]{conteudo/capitulos/figs/exemplo-matrix-rank-B.png}}
+	\subfigure[Passo 1]{\label{fig:a}\includegraphics[width=60mm]{conteudo/capitulos/figs/exemplo-matrix-rank-A.png}
+	\subfigure[Passo 2]{\label{fig:b}\includegraphics[width=60mm]{conteudo/capitulos/figs/exemplo-matrix-rank-B.png}
 	
 	\caption{Exemplo de construção de uma matriz de rankings.%~\cite{Choi2000}.
 	}
@@ -120,9 +120,10 @@ D = \frac{\sum_{k=1}^m s_k}{\sum_{k=1}^m a_k}
 \end{equation}
 
 
-O processo incia com um único segmento formado por todas as sentenças do documento e o divide recursivamente em $m$ segmentos. Cada passo divide um dos segmentos em $B$ no ponto ($i,j$) que maximiza $D$~(Equação \ref{equ:densidade-c99}). O processo ser repte até atingir o número de segmentos desejados ou um limiar de similaridade.
+O processo incia com um único segmento formado por todas as sentenças do documento e o divide recursivamente em $m$ segmentos. Cada passo divide um dos segmentos em $B$ no ponto ($i,j$) que maximiza $D$~(Equação \ref{equ:densidade-c99}). O processo se repte até atingir o número de segmentos desejados ou um limiar de similaridade.
  
 
+O \textit{C99}, assim como outros métodos baseados em divisão, tem sua performance fortemente influenciado pela quantidade segmentos desejados. Esses métodos alcançam melhores resultados em contextos onde a quantidade de segmentos é conhecida~\cite{Bokaei2015,Ferret2009,Kern2009,Naili2016}. Na Figura~\ref{fig:influencia-NSegs-WD} é mostrado a variação de \textit{WindowDiff} em função da quantidade de segmentos solicitada ao algoritmo. Observa-se que há um ponto ótimo próximo 0,45 indicando que para o conjunto de atas analisado o método dá melhores resultados com número de segmentos desejados próximo a 45\% do número de sentenças.
 
   \begin{figure}[!h]
 	  \centering

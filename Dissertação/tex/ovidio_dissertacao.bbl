@@ -5,6 +5,12 @@
 \providecommand{\abntbstabout}[1]{}
 \abntbstabout{v-1.9.2 }
 
+\bibitem[Aggarwal e Zhai 2012]{Aggarwal2012}
+\abntrefinfo{Aggarwal e Zhai}{AGGARWAL; ZHAI}{2012}
+{AGGARWAL, C.~C.; ZHAI, C.~X. \emph{Mining Text Data}. [S.l.]: Springer
+  Publishing Company, Incorporated, 2012.
+ISBN 1461432227, 9781461432227.}
+
 \bibitem[Alvares, Garcia e Ferraz 2005]{Alvares2005}
 \abntrefinfo{Alvares, Garcia e Ferraz}{ALVARES; GARCIA; FERRAZ}{2005}
 {ALVARES, R.~V.; GARCIA, A. C.~B.; FERRAZ, I. Stembr: A stemming algorithm for
@@ -51,6 +57,14 @@ Dispon{\'\i}vel em: \url{http://dx.doi.org/10.1109/TASLP.2015.2456430}.}
   meetings through discourse segmentation.
 \emph{Natural Language Engineering}, Cambridge University Press, v.~22, n.~1,
   p. 41--72, 2016.}
+
+\bibitem[Cao 2017]{Cao:2017}
+\abntrefinfo{Cao}{CAO}{2017}
+{CAO, L. Data science: A comprehensive overview.
+\emph{ACM Comput. Surv.}, ACM, New York, NY, USA, v.~50, n.~3, p. 43:1--43:42,
+  jun. 2017.
+ISSN 0360-0300.
+Dispon{\'\i}vel em: \url{http://doi.acm.org/10.1145/3076253}.}
 
 \bibitem[Cardoso, Pardo e Taboada 2017]{Cardoso2017}
 \abntrefinfo{Cardoso, Pardo e Taboada}{CARDOSO; PARDO; TABOADA}{2017}
@@ -127,6 +141,12 @@ ISBN 978-1-57735-323-2. Dispon{\'\i}vel em:
   Analyzing Unstructured Data}. New York, NY, USA: Cambridge University Press,
   2006.
 ISBN 0521836573, 9780521836579.}
+
+\bibitem[Ferret 2009]{Ferret2009}
+\abntrefinfo{Ferret}{FERRET}{2009}
+{FERRET, O. Improving text segmentation by combining endogenous and exogenous
+  methods. In:  \emph{International Conference Recent Advances in Natural
+  Language Processing, RANLP}. [S.l.: s.n.], 2009. p. 88--93.}
 
 \bibitem[Galley et al. 2003]{Galley2003}
 \abntrefinfo{Galley et al.}{GALLEY et al.}{2003}
@@ -207,6 +227,11 @@ Dispon{\'\i}vel em:
   factorization.
 v.~401, p. 788--91, 11 1999.}
 
+\bibitem[Lee et al. 2011]{Lee2011}
+\abntrefinfo{Lee et al.}{LEE et al.}{2011}
+{LEE, J.-K. et al. Two-step sentence extraction for summarization of meeting
+  minutes. In:  . [S.l.: s.n.], 2011. v.~39, p. 614--619.}
+
 \bibitem[Manning, Raghavan e Sch\"{u}tze 2008]{Manning2008}
 \abntrefinfo{Manning, Raghavan e Sch\"{u}tze}{MANNING; RAGHAVAN;
   SCH\"{u}TZE}{2008}
@@ -248,6 +273,15 @@ Dispon{\'\i}vel em: \url{http://dl.acm.org/citation.cfm?id=972684.972689}.}
 Dispon{\'\i}vel em:
   \url{https://www.scopus.com/inward/record.uri?eid=2-s2.0-0037870455&doi=10.1162\%2f089120102317341756&partnerID=40&md5=279abc4e76fcfc2c4a1896e76a245034}.}
 
+\bibitem[Purver et al. 2006]{Purver2006}
+\abntrefinfo{Purver et al.}{PURVER et al.}{2006}
+{PURVER, M. et al. Unsupervised topic modelling for multi-party spoken
+  discourse. In:  \emph{Proceedings of the 21st International Conference on
+  Computational Linguistics and the 44th Annual Meeting of the Association for
+  Computational Linguistics}. Stroudsburg, PA, USA: Association for
+  Computational Linguistics, 2006.  (ACL-44), p. 17--24. Dispon{\'\i}vel em:
+  \url{https://doi.org/10.3115/1220175.1220178}.}
+
 \bibitem[Reynar 1998]{Reynar1998}
 \abntrefinfo{Reynar}{REYNAR}{1998}
 {REYNAR, J.~C.
@@ -287,6 +321,12 @@ ISSN 2375-9232.}
   n.~5, p. 513--523, ago. 1988.
 ISSN 0306-4573.
 Dispon{\'\i}vel em: \url{http://dx.doi.org/10.1016/0306-4573(88)90021-0}.}
+
+\bibitem[Schwartz-Ziv e Weisbach 2013]{Miriam2013}
+\abntrefinfo{Schwartz-Ziv e Weisbach}{SCHWARTZ-ZIV; WEISBACH}{2013}
+{SCHWARTZ-ZIV, M.; WEISBACH, M.~S. What do boards really do? evidence from
+  minutes of board meetings.
+\emph{Journal of Financial Economics}, v.~108, n.~13, p. 349--366, 2013.}
 
 \bibitem[Shamsinejadbabki e Saraee 2012]{Shamsinejadbabki2012}
 \abntrefinfo{Shamsinejadbabki e Saraee}{SHAMSINEJADBABKI; SARAEE}{2012}

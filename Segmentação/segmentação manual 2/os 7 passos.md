@@ -9,4 +9,14 @@ following 7 steps:
 (3) Selecting and training the annotators, 
 (4) Specifying the annotation procedure, 
 (5) Designing the annotation interface, 
-(6) Choosing and applying the evaluation measures, and (7) delivering and maintaining the product.
+(6) Choosing and applying the evaluation measures, and 
+(7) delivering and maintaining the product.
+
+
+(1) Escolher o fenomeno a ser anotado e a teoria que se baseia,
+(2) Selecionar o corpus apropriado,
+(3) Selecionar e treinar os anotadores,
+(4) Especificar o procedimento para anotação,
+(5) Projetar a interface para anotação,
+(6) Escolher e aplicar medidas de avaliação,
+(7) Disponibilizar o produto.

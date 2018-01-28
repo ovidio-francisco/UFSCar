@@ -203,15 +203,33 @@ P ( k i | R ) = ...
 file:///ext4Data/UFSCar/papers/geral/RI/Modelos de Linguagem para Recuperação de Informação.pdf
 -------------------------------------------------------------------
 
---> Seleção das atas
---> Seleção dos anotadores
---> Processo para geração das atas de referência
---> Imagem das concordâncias.
+"Nesse cenário, este trabalho de mestrado surge como alternativa ao processo custoso de
+identificação manual de informações semânticas, pois se propõe a desenvolver sistemas que realizem a extração de relações semânticas automaticamente a partir de textos escritos em lı́ngua natural. Dessa forma, busca-se superar o gargalo existente devido à grande demanda por dados semânticos e a escassez de tal conhecimento e de mão de obra qualificada e disponı́vel para gerálo em tempo hábil."
+
+file:///ext4Data/UFSCar/papers/dissertações/Extração automática de relações semânticas a partir de textos escritos em português do Brasil.pdf
 
 -------------------------------------------------------------------
 
+
+O objetivo geral deste projeto de mestrado é dividido em dois objetivos específicos:
+  * Avaliar os métodos de agrupamento incremental, investigados neste trabalho, na
+tarefa de obtenção de representação condensada dos textos; e
+  * Analisar a qualidade do agrupamento hierárquico obtido a partir de representações
+condensadas dos textos, em comparação com a qualidade agrupamento hierárquico
+obtido de forma totalmente não incremental.
+
+
+  
+file:///ext4Data/UFSCar/papers/dissertações/Ricardo Marcondes Marcacini.pdf
+  
 -------------------------------------------------------------------
 
+"Assim, o desafio da geração de rótulos para os tópicos extraídos é de representar
+cada tópico de forma automática ao usuário de maneira que se identifique melhor o
+assunto em questão. Auxiliando na interpretação tanto ajudando o trabalho de quem
+conhece o domínio quanto facilitando a definição para quem não é familiarizado ao tema."
+
+file:///ext4Data/UFSCar/papers/Tópicos/Modelagem de Tópicos e Criação de Rótulos - Identificando Temas em Dados Semi-Estruturados e Não-Estruturados.pdf
 -------------------------------------------------------------------
 
 -------------------------------------------------------------------

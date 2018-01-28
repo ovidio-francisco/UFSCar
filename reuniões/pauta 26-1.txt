@@ -1,4 +1,102 @@
 
-
 - Discutir as críticas recebidas dos avaliadores de ENIAC
-  - Mostrar oque foi corrigido
+
+.................
+
+- Ponto Fraco
+  - Avaliação
+    - Quantidade de documentos
+  - Grande discrepância entre os anotadores
+
+
+Sugestões:
+
+	- Discutir o fato de que: "No caso de atas, não há um único tópico
+principal, mas diversos." E, se possível, mensurar o impacto disso. 
+    
+
+	- Alinhar as atas com as pautas para criar a segmentação de referência.
+
+	- Incluir exemplos de trechos de atas e segmentações corretas e incorretas.
+
+	- Usar 'segmentação topical' no texto e no título
+
+.................
+
+  
+  
+  
+=================================================================
+
+Andamento das anotações
+
+  6 atas da Pós
+  	11 anotadores
+  6 atas da Graduação 
+  	10 anotadores
+  	
+  	Possíveis problemas como a concordânica... Utilizar kappa para medir (cortes ?)
+
+
+
+
+  	
+=================================================================
+
+Aproveitar as atas rotuladas para escrever novo artigo. 
+
+    Proposta do artigo
+    
+    1) Segmentação Topical de Atas de Reunião
+    
+    
+    2) Criação e publicação de um corpus de atas anotadas
+
+		Verificar se os passos propostos por Hovy foram seguidos.
+
+			(1) Escolher o fenomeno a ser anotado e a teoria em que se baseia,
+			(2) Selecionar o corpus apropriado,
+			(3) Selecionar e treinar os anotadores,
+			(4) Especificar o procedimento para anotação,
+			(5) Projetar a interface para anotação,
+			(6) Escolher e aplicar medidas de avaliação,
+			(7) Disponibilizar o produto.
+
+		- Niveis altos de concordância
+	
+	
+	
+
+=================================================================
+
+Dissertação
+
+Cap 1 - Introdução
+	Melhorar
+
+Cap 2 - Conceituação Teórica
+	Segmentação
+		- Melhorar Algoritmos
+	Extração de Tópicos
+	
+	Recuperação de Informação
+
+Cap 3 - Sistema Proposto
+
+	Módulo Preparação
+		Extração de texto
+		Segmentação 
+		Extração de tópicos
+		Base de dados
+	Módulo Consulta
+		Técnicas de RI
+		Visualização
+	Avaliação
+		Aplicação de questionários
+	Resultados		
+
+
+
+Dissertação 1ª Versão Pronta   01/05
+Dissertação Corrigida          01/07
+Defesa					       01-08

@@ -165,30 +165,32 @@ Os anotadores receberam informações básicas sobre o objetivo da pesquisa e in
 \end{center}
 
 
-Para mensurar a concordância entre anotadores, a medida kappa (k)~\cite{Carletta1996} é frequentemente utilizada~\cite{Gruenstein2007, Cardoso2017, Hearst1997}. Essa medida retorna um valor no intervalo de 0 até 1, onde 1 significa uma concordância perfeita e 0 que não houve concordância. Embora~\cite{Carletta1996} afirme que valores de k > 0.8 indicam que os dados são confiáveis, visto a subjetividade da tarefa de segmentação textual, medidas menores podem ser aceitaveis, como reportado em~\cite{Hearst1997} que alcançou k = 0,64 e~\cite{Cardoso2017}, k = 0,56.  
+Para mensurar a concordância entre anotadores, a medida kappa (k)~\cite{Carletta1996} é frequentemente utilizada~\cite{Gruenstein2007, Cardoso2017, Hearst1997}. Essa medida retorna um valor no intervalo de 0 até 1, onde 1 significa uma concordância perfeita e 0 que não houve concordância. Embora~\cite{Carletta1996} afirme que valores de k~>~0.8 indicam que os dados são confiáveis, visto a subjetividade da tarefa de segmentação textual, medidas menores podem ser aceitaveis, como reportado em~\cite{Hearst1997} que alcançou k~=~0,64 e~\cite{Cardoso2017}, k~=~0,56.  
 
 A Tabela~\ref{tab:segmentacaoreferencia} contém, para cada ata, a quantidade de sentenças e a quantidade de segmentos identificadas pelos participantes.
 
 
 \begin{table}[!h]
 	\centering
-	\begin{tabular}{|l|c|c|c|} \hline
+	\begin{tabular}{|l|c|c|c|c|c|c|} \hline
 		\textbf{Ata} & \textbf{Sentenças}  & 
-		\textbf{Participante 1}  & 
-		\textbf{Participante 2} \\	\hline
+		\textbf{A1}  & 
+		\textbf{A2}  & 
+		\textbf{A3}  & 
+		\textbf{A4} \\	\hline
 
-		Ata 1  & 18 & 7  & 15 \\ \hline 
-		Ata 2  & 26 & 9  & 20 \\ \hline 
-		Ata 3  & 24 & 7  & 15 \\ \hline 
-		Ata 4  & 32 & 9  & 17 \\ \hline 
-		Ata 5  & 25 & 11 & 17 \\ \hline 
-		Ata 6  & 10 & 4  & 9  \\ \hline 
-		Ata 7  & 10 & 4  & 9  \\ \hline 
-		Ata 8  & 10 & 4  & 9  \\ \hline 
-		Ata 9  & 10 & 4  & 9  \\ \hline 
-		Ata 10 & 10 & 4  & 9  \\ \hline 
-		Ata 11 & 10 & 4  & 9  \\ \hline 
-		Ata 12 & 10 & 4  & 9  \\ \hline 
+		Ata 1  & 25 & 7  & 15 & 8  & 16 \\ \hline 
+		Ata 2  & 17 & 4  & 14 & 6  & 14 \\ \hline 
+		Ata 3  & 26 & 6  & 17 & 10 & 14 \\ \hline 
+		Ata 4  & 26 & 5  & 12 & 7  & 12 \\ \hline 
+		Ata 5  & 33 & 4  & 17 & 9  & 16 \\ \hline 
+		Ata 6  & 11 & 3  & 9  & 4  & 5  \\ \hline 
+		Ata 7  & 20 & 3  & 5  & 4  & 0  \\ \hline 
+		Ata 8  & 35 & 4  & 5  & 9  & 0  \\ \hline 
+		Ata 9  & 24 & 3  & 3  & 9  & 0  \\ \hline 
+		Ata 10 & 50 & 4  & 5  & 8  & 0  \\ \hline 
+		Ata 11 & 43 & 4  & 5  & 12 & 0  \\ \hline 
+		Ata 12 & 56 & 3  & 4  & 11 & 0  \\ \hline 
 
 	\end{tabular}
 	\caption{Quantidade de sentenças e segmentos de referência por ata.}
@@ -296,7 +298,7 @@ Na Figura~\ref{fig:coesaolexicaTT} é apresentado a variação da coesão léxic
   \end{figure}
 
 
-Analisou-se também o desempenho da mesma técnica aplicada a um texto contínuo extraído de artigo da Interent que descreve seis gêneros musicais brasileiros um após um outro separados em seções. Ao observar a Figura~\ref{fig:coesaolexicaTT-generos-musicais}, nota-se que os vales são mais definidos e a maioria dos segmentos coincidem ou estão próximos a segmentação de referência. A segmentação de refência possui sete segementos que separam uma introdução do assuntos e respeitam cada uma das subseções que tratam de um gênero músical.  Obtem-se nesse cenário uma eficiência maior em relação a segmentação da ata, o que sugere que textos organizados em seções podem ter melhores benefícios com técnicas baseadas em coesão léxica que as atas, onde esse fator é menos significativo.  % ou a premissa do algoritmo não é tão boa.
+Analisou-se também o desempenho da mesma técnica aplicada a um texto contínuo extraído de artigo da Internet que descreve seis gêneros musicais brasileiros um após um outro separados em seções. Ao observar a Figura~\ref{fig:coesaolexicaTT-generos-musicais}, nota-se que os vales são mais definidos e a maioria dos segmentos coincidem ou estão próximos a segmentação de referência. A segmentação de referência possui sete segmentos que separam uma introdução do assuntos e respeitam cada uma das subseções que tratam de um gênero musical. Obtém-se nesse cenário uma eficiência maior em relação a segmentação da ata, o que sugere que textos organizados em seções podem ter melhores benefícios com técnicas baseadas em coesão léxica que as atas, onde esse fator é menos significativo.  % ou a premissa do algoritmo não é tão boa.
 
 
 
@@ -393,7 +395,7 @@ mais segmentos em relação aos demais, e com isso tem-se valores maiores de rev
   \begin{figure}[!h]
 	  \centering
 	  \includegraphics[width=1\textwidth]{conteudo/capitulos/figs/grafico-medidas-APRF1.eps}
-	  \caption{...}
+	  \caption{Performance dos algoritmos de segmentação textual com as medidas tradicionais}
 	  \label{fig:grafico-medidas-tradicionais}
   \end{figure}
   
@@ -405,7 +407,7 @@ Na Figura~\ref{fig:grafico-medidas-Pk-Wd} é apresentada a performance dos algor
   \begin{figure}[!h]
 	  \centering
 	  \includegraphics[width=1\textwidth]{conteudo/capitulos/figs/grafico-medidas-Pk-Wd.eps}
-	  \caption{...}
+	  \caption{Performance dos algoritmos de segmentação textual com as medidas P$_k$ e \textit{WindowDiff}.}
 	  \label{fig:grafico-medidas-Pk-Wd}
   \end{figure}
 
@@ -440,7 +442,7 @@ Uma das formas mais comuns é a representação no formato matricial conhecida c
 
 
 
-\subsection{Extração de Tópicos}
+% --> \subsection{Extração de Tópicos}
 
 % a tarefa é identificar qual assunto está presente em cada trecho e qual é o tipo de ocorrência.
 
@@ -454,28 +456,20 @@ Uma vez que a estrutura de dados interna contem os assuntos abordados na coleç�
 
 \subsection{Visualização}
 
-O usuário final precisa de uma interface adequada para visualizar os resultados da busca considerando-se a relevância dos tópicos selecionados e a sequência cronológica.
+O usuário final precisa de uma interface adequada para visualizar os resultados da busca considerando-se a relevância dos tópicos selecionados e a sequência cronológica. Uma boa apresentação deve permitir ao usuário identificar a relevância os resultados e ser relativante independente para compreensão do conteúdo, evitando a leitura do texto completo. Ou seja, o texto de cada tópico apresentado deve ser suficiente para compreensão do assunto mencionado, sem necessidade de visualizar o documento original.
 
-Uma boa apresentação deve permitir ao usuário identificar a relevância os resultados e ser relativante independente para compreensão do conteúdo, evitando a leitura do texto completo. Ou seja, o texto de cada tópico apresentado deve ser suficiente para compreensão do assunto mencionado, sem necessidade de visualizar o documento original.
-
-As informações apresentadas, incluem dados obtidos do documento como o nome do arquivo e data do original e o texto onde o assunto é mencionado. Além disso, apresenta-se as informação extraídas pelas técnicas de mineração de texto como os descritores e rótulos.
-
-% o sistema traz vários resultados para uma consulta, alguns mais relevantes que outros. Para cada resultado (que podem tratar de coisas diferentes) o sistema apresenta um histórico de menções para aquele assunto;
-
-Para cada busca, é retornada uma lista de resultados ordenados pela relevância com a \textit{string} de entrada, sendo cada item referente a uma menção a um assunto. Um tópico é abordado em diferentes momentos e registrado em atas distintas, onde cada menção é um resultado a ser apresentado. 
+As informações apresentadas, incluem dados obtidos do documento como o nome do arquivo, e o texto onde o assunto é mencionado. Além disso, apresenta-se as informação extraídas pelas técnicas de mineração de texto como os descritores e rótulos. Para cada busca, é retornada uma lista de resultados ordenados pela relevância com a \textit{string} de entrada, sendo cada item referente a uma menção a um assunto. Um tópico é abordado em diferentes momentos e registrado em atas distintas, onde cada menção é um resultado a ser apresentado. 
 
 Como parte da proposta, o sistema apresenta cada resultado dentro de um histórico de menções. Para isso, abaixo do texto é exibida uma linha com links para os resultados que compartilham o mesmo tópico ordenados por data. Os links, ao ser acionado, direciona para o resultado que aponta, além disso, quando o cursor do mouse está sobre o link, é apresentado um pre-visualização do texto. Dessa forma o usuário tem acesso uma interface que lhe fornece uma visão temporal das menções.
 
+
 % Uma vez que um item faz menção a um tópico específico, 
+% o sistema traz vários resultados para uma consulta, alguns mais relevantes que outros. Para cada resultado (que podem tratar de coisas diferentes) o sistema apresenta um histórico de menções para aquele assunto;
 
 
-% um histórico de menções para o assunto pesquisado.
-% O sistema também apresenta junto com cada resultado, 
-
-
-\section{Estudo de caso}
+% \section{Estudo de caso}
 % -- qual o ganho em relação a um sitema de busca por palavras-chave? 
 
 
-\section{Avaliação}
+% --> \section{Avaliação}
 
