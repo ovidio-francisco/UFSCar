@@ -232,8 +232,33 @@ conhece o domínio quanto facilitando a definição para quem não é familiariz
 file:///ext4Data/UFSCar/papers/Tópicos/Modelagem de Tópicos e Criação de Rótulos - Identificando Temas em Dados Semi-Estruturados e Não-Estruturados.pdf
 -------------------------------------------------------------------
 
--------------------------------------------------------------------
+"Our measurement of K follows that suggested in (Carletta, 1996)
+and described fully in (Siegel and N. J. Castellan, 1988):"
 
+
+file:///ext4Data/UFSCar/papers/2018/MEETING STRUCTURE ANNOTATION -- Annotations Collected with a General Purpose Toolkit.pdf
+
+-------------------------------------------------------------------
+"5.2.2 Ajuste de Parâmetros dos Algoritmos de Agrupamento"
+
+"5.2.3 Seleção de Descritores para o Agrupamento"
+
+
+
+5 Avaliação Experimental
+5.1 Coleções de Textos
+5.2 Conguração dos Experimentos
+5.2.1 Pré-processamento de Textos
+5.2.2 Ajuste de Parâmetros dos Algoritmos de Agrupamento
+5.2.3 Seleção de Descritores para o Agrupamento
+5.2.4 Critérios de Avaliação
+Experimentos Realizados e Análise dos Resultados . . . . . . . . . . . . . . 65
+5.3.1 Qualidade da Representação Condensada dos Textos 66
+5.3.2 Ecácia de Recuperação do Agrupamento Hierárquico de Documentos 68
+5.3.3 Ecácia de Recuperação dos Descritores
+Considerações Finais
+
+file:///ext4Data/UFSCar/papers/dissertações/Ricardo Marcondes Marcacini.pdf
 -------------------------------------------------------------------
 
 -------------------------------------------------------------------
