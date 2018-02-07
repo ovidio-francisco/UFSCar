@@ -1,0 +1,44 @@
+% Este é um exemplo de Ficha Catalografica, ou ``Dados internacionais de
+% catalogacao-na-publicacao''. Voce pode utilizar este modelo como referencia. 
+% Porem, a biblioteca da universidade irá lhe fornecer um PDF
+% com a ficha catalografica definitiva apos a defesa do trabalho. Quando estiver
+% com o documento, salve-o como PDF no diretorio do seu projeto e substitua todo
+% o conteudo de implementacao deste arquivo pelo comando abaixo:
+%
+% \begin{fichacatalografica}
+%     \includepdf{fig_fichaCatalografica.pdf}
+% \end{fichacatalografica}
+
+\begin{fichacatalografica}
+	\vspace*{\fill}					% Posicao vertical
+	\hrule							% Linha horizontal
+	\begin{center}					% Minipage Centralizado
+	\begin{minipage}[c]{12.5cm}		% Largura
+	
+	<<Sobrenome>>, <<Nome do aluno>> %Substituir pelos seus dados. Exemplo: Silva, Pedro da
+	
+	\hspace{0.5cm} \imprimirtitulo  / \imprimirautor. --
+	\the\year.
+	
+	\hspace{0.5cm} \pageref{LastPage} f. : 30 cm.\\
+	
+	\hspace{0.5cm}
+	\parbox[t]{\textwidth}{\imprimirtipotrabalho~--~\imprimirinstituicao.\\ \imprimirorientadorRotulo~\imprimirorientador\\
+	Banca examinadora: \imprimirorientador, Prof. Dr. <<Membro 1>>, Prof. Dr. <<Membro 2>>\\
+	Bibliografia}\\
+
+	\vspace{0.5cm}
+	\hspace{0.5cm}
+		1. <<Palavra-chave1>>. % Substituir
+		2. <<Palavra-chave2>>. % Substituir
+		3. <<Palavra-chave3>>. % Substituir
+		I. Orientador.
+		II. Universidade Federal de S\~{a}o Carlos.
+		III. Título\\ 			
+	
+	
+	\end{minipage}
+	\end{center}
+	\hrule
+\end{fichacatalografica}
+% ---
