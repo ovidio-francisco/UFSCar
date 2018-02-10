@@ -1,5 +1,5 @@
 # Fdb version 3
-["bibtex ovidio_dissertacao"] 1516971703 "ovidio_dissertacao.aux" "ovidio_dissertacao.bbl" "ovidio_dissertacao" 1518034528
+["bibtex ovidio_dissertacao"] 1516971703 "ovidio_dissertacao.aux" "ovidio_dissertacao.bbl" "ovidio_dissertacao" 1518181730
   "./abntex2-alf.bst" 1405615040 63287 1073317cf2aaa1ae7cb902d84de1bb0a ""
   "abntex2-options.bib" 1503974450 5396 4eb260dac60f150ae608d45252853090 ""
   "conteudo/capitulos/2-cap1.aux" 1516971700 3862 39ac0a851a0922774bfb092c71dc6420 ""
@@ -9,14 +9,14 @@
   "ovidio_dissertacao.bcf" 0 -1 0 ""
   "referencias.bib" 1516935925 32953 23efe5be896772e8f90274a8d25f704f ""
   (generated)
-  "ovidio_dissertacao.bbl"
   "ovidio_dissertacao.blg"
-["makeindex ovidio_dissertacao.idx"] 1511992618 "ovidio_dissertacao.idx" "ovidio_dissertacao.ind" "ovidio_dissertacao" 1518034528
+  "ovidio_dissertacao.bbl"
+["makeindex ovidio_dissertacao.idx"] 1511992618 "ovidio_dissertacao.idx" "ovidio_dissertacao.ind" "ovidio_dissertacao" 1518181730
   "ovidio_dissertacao.idx" 1516971700 0 d41d8cd98f00b204e9800998ecf8427e ""
   (generated)
-  "ovidio_dissertacao.ind"
   "ovidio_dissertacao.ilg"
-["pdflatex"] 1516971699 "ovidio_dissertacao.tex" "ovidio_dissertacao.pdf" "ovidio_dissertacao" 1518034528
+  "ovidio_dissertacao.ind"
+["pdflatex"] 1518181730 "ovidio_dissertacao.tex" "ovidio_dissertacao.pdf" "ovidio_dissertacao" 1518181730
   "/etc/texmf/web2c/texmf.cnf" 1489454511 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1272929888 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecrm1200.tfm" 1136768653 3584 f80ddd985bd00e29e9a6047ebd9d4781 ""
@@ -166,7 +166,7 @@
   "conteudo/capitulos/2-cap1.aux" 1516971700 3862 39ac0a851a0922774bfb092c71dc6420 ""
   "conteudo/capitulos/2-cap1.tex" 1516971692 8214 cd8209c0f1c89c27f786dedf2902fd75 ""
   "conteudo/capitulos/3-cap2.aux" 1516971700 15152 b5f5382b8118f064d2ebacf6842aa9a5 ""
-  "conteudo/capitulos/3-cap2.tex" 1516890862 1334 1d362f830eb002c34f2fba84c26e956f ""
+  "conteudo/capitulos/3-cap2.tex" 1518181729 1338 627157c4b732613fa9c75680bcba775a ""
   "conteudo/capitulos/4-cap3.aux" 1516971701 13105 6df14acf5b5d917e5bc8b10b1f0f7e92 ""
   "conteudo/capitulos/4-cap3.tex" 1516891891 30617 445b8effb787d740402ae459c5a9667c ""
   "conteudo/capitulos/figs/c99-ranking-matrix.png" 1514505691 258742 13173e49139e3995fb328dfd93e51c09 ""
@@ -199,12 +199,12 @@
   "ovidio_dissertacao.tex" 1511992847 8951 bdf60500476e3b2436ba40f31174744e ""
   "ovidio_dissertacao.toc" 1516971701 3232 83bfa16d9de987cee50709bdad4e9351 ""
   (generated)
+  "ovidio_dissertacao.toc"
+  "ovidio_dissertacao.aux"
+  "conteudo/capitulos/2-cap1.aux"
+  "ovidio_dissertacao.idx"
+  "ovidio_dissertacao.brf"
+  "ovidio_dissertacao.log"
+  "conteudo/capitulos/3-cap2.aux"
   "ovidio_dissertacao.pdf"
   "conteudo/capitulos/4-cap3.aux"
-  "conteudo/capitulos/3-cap2.aux"
-  "ovidio_dissertacao.brf"
-  "ovidio_dissertacao.idx"
-  "ovidio_dissertacao.log"
-  "ovidio_dissertacao.toc"
-  "conteudo/capitulos/2-cap1.aux"
-  "ovidio_dissertacao.aux"

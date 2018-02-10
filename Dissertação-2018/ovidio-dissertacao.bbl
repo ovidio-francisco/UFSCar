@@ -1,0 +1,36 @@
+\providecommand{\abntreprintinfo}[1]{%
+ \citeonline{#1}}
+\setlength{\labelsep}{0pt}\begin{thebibliography}{}
+\providecommand{\abntrefinfo}[3]{}
+\providecommand{\abntbstabout}[1]{}
+\abntbstabout{v-1.9.2 }
+
+\bibitem[Blei 2012]{Blei2012}
+\abntrefinfo{Blei}{BLEI}{2012}
+{BLEI, D.~M. Probabilistic topic models.
+\emph{Commun. ACM}, ACM, New York, NY, USA, v.~55, n.~4, p. 77--84, abr. 2012.
+ISSN 0001-0782.
+Dispon{\'\i}vel em: \url{http://doi.acm.org/10.1145/2133806.2133826}.}
+
+\bibitem[Deerwester et al. 1990]{Deerwester1990}
+\abntrefinfo{Deerwester et al.}{DEERWESTER et al.}{1990}
+{DEERWESTER, S. et al. Indexing by latent semantic analysis.
+\emph{Journal of the American Society for Information Science}, v.~41, n.~6, p.
+  391--407, 1990.}
+
+\bibitem[Hofmann 1999]{Hofmann1999}
+\abntrefinfo{Hofmann}{HOFMANN}{1999}
+{HOFMANN, T. Probabilistic latent semantic indexing. In:  \emph{Proceedings of
+  the 22Nd Annual International ACM SIGIR Conference on Research and
+  Development in Information Retrieval}. New York, NY, USA: ACM, 1999.  (SIGIR
+  '99), p. 50--57.
+ISBN 1-58113-096-1. Dispon{\'\i}vel em:
+  \url{http://doi.acm.org/10.1145/312624.312649}.}
+
+\bibitem[Lee e Seung 1999]{Lee1999}
+\abntrefinfo{Lee e Seung}{LEE; SEUNG}{1999}
+{LEE, D.; SEUNG, H. S. Learning the parts of objects by non-negative matrix
+  factorization.
+v.~401, p. 788--91, 11 1999.}
+
+\end{thebibliography}
