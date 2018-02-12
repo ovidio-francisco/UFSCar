@@ -221,10 +221,10 @@ INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmss17.tfm
 INPUT conteudo/capitulos/inputs/algoritmos-segmentacao.tex
 INPUT conteudo/capitulos/inputs/algoritmos-segmentacao.tex
 INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmri12.tfm
-INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmbx12.tfm
 INPUT /usr/share/texmf/tex/latex/lm/t1lmtt.fd
 INPUT /usr/share/texmf/tex/latex/lm/t1lmtt.fd
 INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmtt12.tfm
+INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmbx12.tfm
 INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmri10.tfm
 INPUT conteudo/capitulos/inputs/medidas-segmentacao.tex
 INPUT conteudo/capitulos/inputs/medidas-segmentacao.tex
@@ -248,11 +248,11 @@ INPUT conteudo/capitulos/4-cap3.aux
 INPUT conteudo/capitulos/4-cap3.aux
 INPUT ./ovidio-dissertacao.brf
 INPUT ./ovidio-dissertacao.brf
+INPUT /usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc
 INPUT /usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc
 INPUT /usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc
 INPUT /usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc
 INPUT /usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc
-INPUT /usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc
 INPUT /usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb
 INPUT /usr/share/texmf/fonts/type1/public/lm/lmex10.pfb
 INPUT /usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb

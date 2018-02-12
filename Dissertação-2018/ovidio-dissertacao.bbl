@@ -27,6 +27,14 @@ Dispon{\'\i}vel em: \url{http://doi.acm.org/10.1145/2133806.2133826}.}
 ISBN 1-58113-096-1. Dispon{\'\i}vel em:
   \url{http://doi.acm.org/10.1145/312624.312649}.}
 
+\bibitem[Kozima 1993]{Kozima1993}
+\abntrefinfo{Kozima}{KOZIMA}{1993}
+{KOZIMA, H. Text segmentation based on similarity between words. In:
+  \emph{Proceedings of the 31st Annual Meeting on Association for Computational
+  Linguistics}. Stroudsburg, PA, USA: Association for Computational
+  Linguistics, 1993.  (ACL '93), p. 286--288. Dispon{\'\i}vel em:
+  \url{http://dx.doi.org/10.3115/981574.981616}.}
+
 \bibitem[Lee e Seung 1999]{Lee1999}
 \abntrefinfo{Lee e Seung}{LEE; SEUNG}{1999}
 {LEE, D.; SEUNG, H. S. Learning the parts of objects by non-negative matrix

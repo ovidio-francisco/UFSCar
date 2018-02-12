@@ -16,7 +16,6 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 Database file #1: abntex2-options.bib
 Database file #2: referencias.bib
-Warning--I didn't find a database entry for "Kozima1993"
 Warning--I didn't find a database entry for "Naili2016"
 Warning--I didn't find a database entry for "Bokaei2015"
 Warning--I didn't find a database entry for "CHAIBI2014"
@@ -39,45 +38,45 @@ Reallocated glb_str_end (elt_size=4) to 20 items from 10.
 | Em caso de dúvidas ou problemas com este estilo procure |
 | http://abntex2.googlecode.com                           |
 +---------------------------------------------------------+
-You've used 5 entries,
+You've used 6 entries,
             6711 wiz_defined-function locations,
-            1266 strings with 10488 characters,
-and the built_in function-call counts, 5842 in all, are:
-= -- 699
-> -- 106
-< -- 96
-+ -- 168
-- -- 32
-* -- 368
-:= -- 787
-add.period$ -- 18
-call.type$ -- 5
-change.case$ -- 42
-chr.to.int$ -- 14
-cite$ -- 4
-duplicate$ -- 434
-empty$ -- 293
-format.name$ -- 154
-if$ -- 1261
+            1275 strings with 10755 characters,
+and the built_in function-call counts, 7442 in all, are:
+= -- 891
+> -- 121
+< -- 137
++ -- 213
+- -- 37
+* -- 465
+:= -- 976
+add.period$ -- 24
+call.type$ -- 6
+change.case$ -- 49
+chr.to.int$ -- 15
+cite$ -- 5
+duplicate$ -- 598
+empty$ -- 376
+format.name$ -- 177
+if$ -- 1592
 int.to.chr$ -- 0
 int.to.str$ -- 0
-missing$ -- 81
-newline$ -- 30
-num.names$ -- 20
-pop$ -- 106
+missing$ -- 99
+newline$ -- 34
+num.names$ -- 25
+pop$ -- 126
 preamble$ -- 1
-purify$ -- 18
+purify$ -- 21
 quote$ -- 0
-skip$ -- 504
+skip$ -- 668
 stack$ -- 1
-substring$ -- 285
-swap$ -- 186
-text.length$ -- 11
+substring$ -- 374
+swap$ -- 251
+text.length$ -- 13
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 1
+type$ -- 2
 warning$ -- 0
-while$ -- 37
+while$ -- 47
 width$ -- 0
-write$ -- 80
-(There were 14 warnings)
+write$ -- 98
+(There were 13 warnings)
