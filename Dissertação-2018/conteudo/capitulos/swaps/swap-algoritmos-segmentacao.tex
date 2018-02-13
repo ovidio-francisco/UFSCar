@@ -2,6 +2,57 @@
 
 
 
+Assim, cada elemento é comparado com seus vizinhos dentro de uma região denominada máscara.
+Nesse capítulo, inicialmente serão introduzidos alguns conceitos comuns 
+
+
+
+Embora muitos trabalhos utilizem a coesão léxica do texto, para pequenos segmentos pode não ser confiável,
+
+
+
+
+
+, em que dado dois blocos de texto $x$ e $y$,
+
+conforme apresentada na , onde dados dois blocos de texto, $x$ e $y$, $f_{x,j}$ é a frequência do termo $j$ em $x$ e $f_{y,j}$ é a frequência do termo $j$ em $y$.
+
+\begin{equation}
+	Sim(x,y) = \frac
+	{\Sigma_j f_{x,j} \times f_{y,j}}
+	{\sqrt{\Sigma_j f^2_{x,j} \times \Sigma f^2_{y,j}}}
+	\label{equ:cosine}
+\end{equation}
+
+
+
+
+analisa-se o texto circundante a cada candidato a limite.
+
+
+
+
+A partir dos conceitos de coesão léxica, o \textit{TextTiling} foi um dos primeiros algoritmos propostos para segmentação textual. Baseia-se na
+
+A partir desses conceitos, um dos primeiros algoritmos baseados na ideia que um segmento pode ser identificado pela análise das palavras que o compõe foi o \textit{TextTiling}. O \textit{TextTiling} é um algoritmo baseado em janelas deslizantes, em  que, para cada candidato a limite, analisa-se o texto circundante. O \textit{TextTiling} recebe uma lista de candidatos a limite, usualmente finais de parágrafo ou finais de sentenças. Para cada posição candidata são construídos 2 blocos, um contendo sentenças que a precedem e outro com as que a sucedem. O tamanho desses blocos é um parâmetro a ser fornecido ao algoritmo e determina o tamanho mínimo de um segmento. Esse processo é ilustrado na Figura~\ref{fig:TT-slidingwindow}.
+
+
+
+
+
+% Kosima uniu as tecnicas de SW e CL.
+% calcula-se a coesão léxica das palavras contidas na janela. 
+% Os algoritmos que se baseiam no cálculo da similaridade entre sentenças, frequentemente o fazem por meio de janelas deslizantes, 
+
+% 
+
+% Os primeiros trabalhos dessa área se apoiam na ideia de que a mudança de assunto em um texto é acompanhada de uma proporcional mudança de vocabulário. Essa ideia, chamada de coesão léxica, sugere que a distribuição das palavras é um forte indicador da estrutura do texto~\cite{Kozima1993}. Demonstrou-se que há uma estreita correlação entre quedas na coesão léxica em janelas de texto e a transição de assuntos. Em seu trabalho, calculou a coesão léxica de uma janela de palavras usando \textit{spreading activation} em uma rede semântica especialmente elaborada para o idioma Inglês. Contudo, a implementação de um algoritmo para outros domínios depende da construção de uma rede adequada. 
+
+
+
+
+
+
 
 
 % % ==========  Janelas deslizantes  ==========

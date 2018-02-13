@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.8.22)  11 FEB 2018 09:58
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.8.22)  12 FEB 2018 19:51
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1358,15 +1358,15 @@ Non-PDF special ignored!
 ] (./conteudo/8-simbolos.texpdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.8 \end{simbolos}
-                   [1
+l.11 \end{simbolos}
+                    [1
 
 
 ]pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.8 \end{simbolos}
-                   [2
+l.11 \end{simbolos}
+                    [2
 
 ]) (./ovidio-dissertacao.toc) [3] [4
 
@@ -1383,18 +1383,29 @@ l.8 \end{simbolos}
 
 
 
-] (./conteudo/capitulos/inputs/medidas.tex) (./conteudo/capitulos/inputs/segmentacao.tex (./conteudo/capitulos/inputs/algoritmos-segmentacao.tex [7]
+] (./conteudo/capitulos/inputs/medidas.tex) (./conteudo/capitulos/inputs/segmentacao.tex (./conteudo/capitulos/inputs/algoritmos-segmentacao.tex
+Underfull \vbox (badness 2564) has occurred while \output is active []
 
-LaTeX Warning: File `conteudo/capitulos/figs/janelas-deslizantes.pdf' not found on input line 36.
+ [7] <conteudo/capitulos/figs/janelas-deslizantes.pdf, id=81, page=1, 844.15375pt x 597.23125pt>
+File: conteudo/capitulos/figs/janelas-deslizantes.pdf Graphic file (type pdf)
+ <use conteudo/capitulos/figs/janelas-deslizantes.pdf, page 1>
+Package pdftex.def Info: conteudo/capitulos/figs/janelas-deslizantes.pdf, page1 used on input line 24.
+(pdftex.def)             Requested size: 364.00139pt x 202.99684pt.
 
 
-./conteudo/capitulos/inputs/algoritmos-segmentacao.tex:36: Package pdftex.def Error: File `conteudo/capitulos/figs/janelas-deslizantes.pdf' not found.
+LaTeX Warning: Reference `equ:cosine' on page 8 undefined on input line 31.
+
+
+LaTeX Warning: File `conteudo/capitulos/figs/curva-similaridade.pdf' not found on input line 36.
+
+
+./conteudo/capitulos/inputs/algoritmos-segmentacao.tex:36: Package pdftex.def Error: File `conteudo/capitulos/figs/curva-similaridade.pdf' not found.
 
 See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.36 ...do/capitulos/figs/janelas-deslizantes.pdf}
+l.36 ...udo/capitulos/figs/curva-similaridade.pdf}
                                                   
 Using draft setting for this image.
 Try typing  <return>  to proceed.
@@ -1410,44 +1421,13 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             See the microtype manual for details.
 
 
-LaTeX Warning: File `conteudo/capitulos/figs/curva-similaridade.pdf' not found on input line 58.
-
-
-./conteudo/capitulos/inputs/algoritmos-segmentacao.tex:58: Package pdftex.def Error: File `conteudo/capitulos/figs/curva-similaridade.pdf' not found.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.58 ...udo/capitulos/figs/curva-similaridade.pdf}
-                                                  
-Using draft setting for this image.
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-LaTeX Warning: Float too large for page by 294.14145pt on input line 62.
+LaTeX Warning: Float too large for page by 294.14145pt on input line 40.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-
-LaTeX Warning: Citation `Naili2016' on page 8 undefined on input line 70.
-
-
-LaTeX Warning: Citation `Bokaei2015' on page 8 undefined on input line 70.
-
-
-LaTeX Warning: Citation `CHAIBI2014' on page 8 undefined on input line 70.
-
-
-LaTeX Warning: Citation `Kern2009' on page 8 undefined on input line 70.
-
-
-LaTeX Warning: Citation `Galley2003' on page 8 undefined on input line 70.
-
-./conteudo/capitulos/inputs/algoritmos-segmentacao.tex:70: Undefined control sequence.
-l.70 ...Kern2009,Galley2003}, e usado com \texttit
+./conteudo/capitulos/inputs/algoritmos-segmentacao.tex:45: Undefined control sequence.
+l.45 ...ley2003}, e sua utiliza√ß√£o como \texttit
                                                   {base line} em outros trab...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1455,58 +1435,32 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
+[8 <./conteudo/capitulos/figs/janelas-deslizantes.pdf
 
-LaTeX Warning: Citation `Cardoso2017' on page 8 undefined on input line 70.
+pdfTeX warning: pdflatex (file ./conteudo/capitulos/figs/janelas-deslizantes.pdf): PDF inclusion: invalid other resource which is no dict (key 'ProcSets', type <array>); ignored.
+>]
 
-
-LaTeX Warning: Citation `Dias2007' on page 8 undefined on input line 70.
-
-
-LaTeX Warning: Citation `Choi2000' on page 8 undefined on input line 70.
+LaTeX Warning: File `conteudo/capitulos/figs/c99-ranking-matrix.png' not found on input line 60.
 
 
-LaTeX Warning: Citation `Kern2009' on page 8 undefined on input line 70.
-
-
-LaTeX Warning: Citation `Misra2009' on page 8 undefined on input line 70.
-
-
-Overfull \hbox (8.2276pt too wide) in paragraph at lines 70--71
-\T1/lmr/m/n/12 (-20) ple-xi-dade com-pu-ta-ci-o-nal, fa-vo-re-cendo a im-ple-men-ta-Á„o de tra-ba-lhos si-mi-la-res  (\T1/lmr/bx/n/12 ??[]??[]??[]??[]??[]\T1/lmr/m/n/12 (-20) ),
- []
-
-
-LaTeX Warning: Citation `Choi2000' on page 8 undefined on input line 75.
-
-[8]
-
-LaTeX Warning: File `conteudo/capitulos/figs/c99-ranking-matrix.png' not found on input line 85.
-
-
-./conteudo/capitulos/inputs/algoritmos-segmentacao.tex:85: Package pdftex.def Error: File `conteudo/capitulos/figs/c99-ranking-matrix.png' not found.
+./conteudo/capitulos/inputs/algoritmos-segmentacao.tex:60: Package pdftex.def Error: File `conteudo/capitulos/figs/c99-ranking-matrix.png' not found.
 
 See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.85 ...udo/capitulos/figs/c99-ranking-matrix.png}
+l.60 ...udo/capitulos/figs/c99-ranking-matrix.png}
                                                   
 Using draft setting for this image.
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
-
-
-LaTeX Warning: Citation `Eisenstein2008' on page 9 undefined on input line 86.
-
-
-LaTeX Warning: Citation `Eisenstein2008' on page 9 undefined on input line 86.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-./conteudo/capitulos/inputs/algoritmos-segmentacao.tex:105: Undefined control sequence.
-l.105 	\subfigure
-                 [Passo 1]{\label{fig:a}\includegraphics[width=60mm]{conteud...
+./conteudo/capitulos/inputs/algoritmos-segmentacao.tex:80: Undefined control sequence.
+l.80 	\subfigure
+                [Passo 1]{\label{fig:a}\includegraphics[width=60mm]{conteudo...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -1514,24 +1468,24 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-LaTeX Warning: File `conteudo/capitulos/figs/exemplo-matrix-rank-A.png' not found on input line 105.
+LaTeX Warning: File `conteudo/capitulos/figs/exemplo-matrix-rank-A.png' not found on input line 80.
 
 
-./conteudo/capitulos/inputs/algoritmos-segmentacao.tex:105: Package pdftex.def Error: File `conteudo/capitulos/figs/exemplo-matrix-rank-A.png' not found.
+./conteudo/capitulos/inputs/algoritmos-segmentacao.tex:80: Package pdftex.def Error: File `conteudo/capitulos/figs/exemplo-matrix-rank-A.png' not found.
 
 See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.105 ...capitulos/figs/exemplo-matrix-rank-A.png}
+l.80 .../capitulos/figs/exemplo-matrix-rank-A.png}
                                                   
 Using draft setting for this image.
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-./conteudo/capitulos/inputs/algoritmos-segmentacao.tex:106: Undefined control sequence.
-l.106 	\subfigure
-                 [Passo 2]{\label{fig:b}\includegraphics[width=60mm]{conteud...
+./conteudo/capitulos/inputs/algoritmos-segmentacao.tex:81: Undefined control sequence.
+l.81 	\subfigure
+                [Passo 2]{\label{fig:b}\includegraphics[width=60mm]{conteudo...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -1539,37 +1493,37 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-LaTeX Warning: File `conteudo/capitulos/figs/exemplo-matrix-rank-B.png' not found on input line 106.
+LaTeX Warning: File `conteudo/capitulos/figs/exemplo-matrix-rank-B.png' not found on input line 81.
 
 
-./conteudo/capitulos/inputs/algoritmos-segmentacao.tex:106: Package pdftex.def Error: File `conteudo/capitulos/figs/exemplo-matrix-rank-B.png' not found.
+./conteudo/capitulos/inputs/algoritmos-segmentacao.tex:81: Package pdftex.def Error: File `conteudo/capitulos/figs/exemplo-matrix-rank-B.png' not found.
 
 See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.106 ...capitulos/figs/exemplo-matrix-rank-B.png}
+l.81 .../capitulos/figs/exemplo-matrix-rank-B.png}
                                                   
 Using draft setting for this image.
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-./conteudo/capitulos/inputs/algoritmos-segmentacao.tex:111: Missing } inserted.
+./conteudo/capitulos/inputs/algoritmos-segmentacao.tex:86: Missing } inserted.
 <inserted text> 
                 }
-l.111 \end{figure}
-                  
+l.86 \end{figure}
+                 
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
 With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-./conteudo/capitulos/inputs/algoritmos-segmentacao.tex:111: Missing } inserted.
+./conteudo/capitulos/inputs/algoritmos-segmentacao.tex:86: Missing } inserted.
 <inserted text> 
                 }
-l.111 \end{figure}
-                  
+l.86 \end{figure}
+                 
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
 With luck, this will get me unwedged. But if you
@@ -1580,37 +1534,37 @@ my insertion and my current dilemma will both disappear.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-LaTeX Warning: Citation `Reynar1998' on page 9 undefined on input line 117.
-
-[9]
-
-LaTeX Warning: Citation `Bokaei2015' on page 10 undefined on input line 128.
+LaTeX Warning: Citation `Reynar1998' on page 9 undefined on input line 92.
 
 
-LaTeX Warning: Citation `Ferret2009' on page 10 undefined on input line 128.
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [9]) (./conteudo/capitulos/inputs/medidas-segmentacao.tex
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[10]
+
+LaTeX Warning: Command \c invalid in math mode on input line 50.
 
 
-LaTeX Warning: Citation `Kern2009' on page 10 undefined on input line 128.
+LaTeX Warning: Command \c invalid in math mode on input line 58.
 
 
-LaTeX Warning: Citation `Naili2016' on page 10 undefined on input line 128.
+LaTeX Warning: Command \c invalid in math mode on input line 58.
+
+[11]
+
+LaTeX Warning: File `conteudo/capitulos/figs/windiffzoom.jpg' not found on input line 82.
 
 
-LaTeX Warning: File `conteudo/capitulos/figs/influencia-qtd-Segs-WD-C99.eps' not found on input line 132.
-
-Package epstopdf Info: Source file: <conteudo/capitulos/figs/influencia-qtd-Segs-WD-C99.eps>
-(epstopdf)             Output file: <conteudo/capitulos/figs/influencia-qtd-Segs-WD-C99-eps-converted-to.pdf>
-(epstopdf)             Command: <repstopdf --outfile=conteudo/capitulos/figs/influencia-qtd-Segs-WD-C99-eps-converted-to.pdf conteudo/capitulos/figs/influencia-qtd-Segs-WD-C99.eps>
-(epstopdf)             \includegraphics on input line 132.
-Package epstopdf Info: Output file is already uptodate.
-
-./conteudo/capitulos/inputs/algoritmos-segmentacao.tex:132: Package pdftex.def Error: File `conteudo/capitulos/figs/influencia-qtd-Segs-WD-C99-eps-converted-to.pdf' not found.
+./conteudo/capitulos/inputs/medidas-segmentacao.tex:82: Package pdftex.def Error: File `conteudo/capitulos/figs/windiffzoom.jpg' not found.
 
 See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.132 ...ulos/figs/influencia-qtd-Segs-WD-C99.eps}
+l.82 ...]{conteudo/capitulos/figs/windiffzoom.jpg}
                                                   
 Using draft setting for this image.
 Try typing  <return>  to proceed.
@@ -1620,34 +1574,34 @@ If that doesn't work, type  X <return>  to quit.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-LaTeX Warning: Citation `Eisenstein2008' on page 10 undefined on input line 149.
+LaTeX Warning: Citation `Beeferman1999' on page 12 undefined on input line 92.
 
 
-LaTeX Warning: Citation `Blei2003' on page 10 undefined on input line 151.
+LaTeX Warning: Citation `Pevzner2002' on page 12 undefined on input line 116.
 
-) (./conteudo/capitulos/inputs/medidas-segmentacao.tex)
+[12])
 
-LaTeX Warning: Reference `section:RepTextos' on page 10 undefined on input line 20.
+LaTeX Warning: Reference `section:RepTextos' on page 13 undefined on input line 20.
 
-)) [10] [11] [12] [13]
+)) [13] [14] [15] [16]
 \openout2 = `conteudo/capitulos/4-cap3.aux'.
 
- (./conteudo/capitulos/4-cap3.tex [14
+ (./conteudo/capitulos/4-cap3.tex) [17
 
 
 
-]) [15] (./ovidio-dissertacao.bbl (./ovidio-dissertacao.brf)
+] (./ovidio-dissertacao.bbl (./ovidio-dissertacao.brf)
 \tf@brf=\write6
 \openout6 = `ovidio-dissertacao.brf'.
 
- [16
+ [18
 
 
 ]
 bibitemlist
-) 
+[19]) 
 AED: lastpage setting LastPage
-[17]
+[20]
 \tf@toc=\write7
 \openout7 = `ovidio-dissertacao.toc'.
 
@@ -1657,7 +1611,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 312.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 312.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 312.
 Package rerunfilecheck Info: File `ovidio-dissertacao.brf' has not changed.
-(rerunfilecheck)             Checksum: 7C6A777C26F4237C418B058A919C6BAC;1628.
+(rerunfilecheck)             Checksum: E2C6A056ECE402584C14C5C0E146F651;1470.
 
 
 LaTeX Warning: There were undefined references.
@@ -1672,18 +1626,18 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 312.
 ### simple group (level 1) entered at line 1061 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 14846 strings out of 494884
- 220913 string characters out of 6179236
- 406957 words of memory out of 5000000
- 17766 multiletter control sequences out of 15000+600000
- 61090 words of font info for 89 fonts, out of 8000000 for 9000
+ 14949 strings out of 494884
+ 222501 string characters out of 6179236
+ 411470 words of memory out of 5000000
+ 17819 multiletter control sequences out of 15000+600000
+ 62633 words of font info for 104 fonts, out of 8000000 for 9000
  38 hyphenation exceptions out of 8191
- 48i,13n,38p,1215b,2732s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}</usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss17.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt12.pfb>
-Output written on ovidio-dissertacao.pdf (19 pages, 269456 bytes).
+ 48i,12n,38p,1335b,2861s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}</usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss17.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt12.pfb>
+Output written on ovidio-dissertacao.pdf (22 pages, 319328 bytes).
 PDF statistics:
- 241 PDF objects out of 1000 (max. 8388607)
- 202 compressed objects within 3 object streams
- 40 named destinations out of 1000 (max. 500000)
- 21049 words of extra memory for PDF output out of 24883 (max. 10000000)
+ 361 PDF objects out of 1000 (max. 8388607)
+ 310 compressed objects within 4 object streams
+ 60 named destinations out of 1000 (max. 500000)
+ 21068 words of extra memory for PDF output out of 24883 (max. 10000000)
 
