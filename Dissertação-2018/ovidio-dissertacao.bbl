@@ -131,4 +131,11 @@ ISBN 978-1-60558-512-3. Dispon{\'\i}vel em:
   n.~2, p. 165--178, 2016.
 Dispon{\'\i}vel em: \url{https://doi.org/10.1108/IJICC-01-2016-0001}.}
 
+\bibitem[Shi e Malik 2000]{Shi2000}
+\abntrefinfo{Shi e Malik}{SHI; MALIK}{2000}
+{SHI, J.; MALIK, J. Normalized cuts and image segmentation.
+\emph{IEEE Transactions on Pattern Analysis and Machine Intelligence}, v.~22,
+  n.~8, p. 888--905, Aug 2000.
+ISSN 0162-8828.}
+
 \end{thebibliography}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.8.22)  13 FEB 2018 23:08
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.8.22)  14 FEB 2018 15:48
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1484,17 +1484,24 @@ my insertion and my current dilemma will both disappear.
 
 LaTeX Warning: Citation `Reynar1998' on page 10 undefined on input line 92.
 
-[10 <./conteudo/capitulos/figs/c99-ranking-matrix.png> <./conteudo/capitulos/figs/exemplo-matrix-rank-A.png> <./conteudo/capitulos/figs/exemplo-matrix-rank-B.png>]) (./conteudo/capitulos/inputs/medidas-segmentacao.tex [11]
+[10 <./conteudo/capitulos/figs/c99-ranking-matrix.png> <./conteudo/capitulos/figs/exemplo-matrix-rank-A.png> <./conteudo/capitulos/figs/exemplo-matrix-rank-B.png>]) (./conteudo/capitulos/inputs/medidas-segmentacao.tex
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [11]
 
 LaTeX Warning: Command \c invalid in math mode on input line 50.
 
 
+Underfull \vbox (badness 2591) has occurred while \output is active []
+
+ [12]
+
 LaTeX Warning: Command \c invalid in math mode on input line 58.
 
 
 LaTeX Warning: Command \c invalid in math mode on input line 58.
 
-[12] <conteudo/capitulos/figs/windiffzoom.jpg, id=209, 312.2064pt x 78.5334pt>
+<conteudo/capitulos/figs/windiffzoom.jpg, id=211, 312.2064pt x 78.5334pt>
 File: conteudo/capitulos/figs/windiffzoom.jpg Graphic file (type jpg)
  <use conteudo/capitulos/figs/windiffzoom.jpg>
 Package pdftex.def Info: conteudo/capitulos/figs/windiffzoom.jpg used on input line 82.
@@ -1548,7 +1555,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 312.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 312.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 312.
 Package rerunfilecheck Info: File `ovidio-dissertacao.brf' has not changed.
-(rerunfilecheck)             Checksum: C9BF3C95A552503317F22C343A976DD9;1471.
+(rerunfilecheck)             Checksum: C56A436AA020B50C56E34639BF5D9605;1518.
 
 
 LaTeX Warning: There were undefined references.
@@ -1563,18 +1570,18 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 312.
 ### simple group (level 1) entered at line 1061 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 14969 strings out of 494884
- 223541 string characters out of 6179236
- 411469 words of memory out of 5000000
- 17839 multiletter control sequences out of 15000+600000
+ 14980 strings out of 494884
+ 223681 string characters out of 6179236
+ 411618 words of memory out of 5000000
+ 17849 multiletter control sequences out of 15000+600000
  62633 words of font info for 104 fonts, out of 8000000 for 9000
  38 hyphenation exceptions out of 8191
  48i,13n,38p,1335b,2861s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}</usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss17.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt12.pfb>
-Output written on ovidio-dissertacao.pdf (22 pages, 570176 bytes).
+Output written on ovidio-dissertacao.pdf (22 pages, 571489 bytes).
 PDF statistics:
- 379 PDF objects out of 1000 (max. 8388607)
- 317 compressed objects within 4 object streams
- 60 named destinations out of 1000 (max. 500000)
+ 384 PDF objects out of 1000 (max. 8388607)
+ 322 compressed objects within 4 object streams
+ 61 named destinations out of 1000 (max. 500000)
  21099 words of extra memory for PDF output out of 24883 (max. 10000000)
 
