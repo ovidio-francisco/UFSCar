@@ -78,7 +78,14 @@ Figure 2.3: The general framework of the similarity-based text segmentation algo
 
 ==================================================
 ==================================================
+"In informa-
+tion retrieval, users are often interested in par-
+ticular topics (parts) of retrieved documents, in-
+stead of the documents themselves. To meet such
+needs, documents should be segmented into co-
+herent topics."
 
+file:///ext4Data/UFSCar/papers/Segmentação/Novos Segmentadores/Utiyama/p499-utiyama.pdf
 
 ==================================================
 ==================================================
