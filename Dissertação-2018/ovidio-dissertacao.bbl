@@ -114,6 +114,15 @@ Dispon{\'\i}vel em:
   factorization.
 v.~401, p. 788--91, 11 1999.}
 
+\bibitem[Malioutov e Barzilay 2006]{Malioutov:2006a}
+\abntrefinfo{Malioutov e Barzilay}{MALIOUTOV; BARZILAY}{2006}
+{MALIOUTOV, I.; BARZILAY, R. Minimum cut model for spoken lecture segmentation.
+  In:  \emph{Proceedings of the 21st International Conference on Computational
+  Linguistics and the 44th Annual Meeting of the Association for Computational
+  Linguistics}. Stroudsburg, PA, USA: Association for Computational
+  Linguistics, 2006.  (ACL-44), p. 25--32. Dispon{\'\i}vel em:
+  \url{https://doi.org/10.3115/1220175.1220179}.}
+
 \bibitem[Misra et al. 2009]{Misra2009}
 \abntrefinfo{Misra et al.}{MISRA et al.}{2009}
 {MISRA, H. et al. Text segmentation via topic modeling: An analytical study.
@@ -137,5 +146,13 @@ Dispon{\'\i}vel em: \url{https://doi.org/10.1108/IJICC-01-2016-0001}.}
 \emph{IEEE Transactions on Pattern Analysis and Machine Intelligence}, v.~22,
   n.~8, p. 888--905, Aug 2000.
 ISSN 0162-8828.}
+
+\bibitem[Utiyama e Isahara 2001]{Utiyama2001}
+\abntrefinfo{Utiyama e Isahara}{UTIYAMA; ISAHARA}{2001}
+{UTIYAMA, M.; ISAHARA, H. A statistical model for domain-independent text
+  segmentation. In:  \emph{Proceedings of the 39th Annual Meeting on
+  Association for Computational Linguistics}. Stroudsburg, PA, USA: Association
+  for Computational Linguistics, 2001.  (ACL '01), p. 499--506. Dispon{\'\i}vel
+  em: \url{https://doi.org/10.3115/1073012.1073076}.}
 
 \end{thebibliography}

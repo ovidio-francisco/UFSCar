@@ -90,6 +90,21 @@ file:///ext4Data/UFSCar/papers/Segmentação/Novos Segmentadores/Utiyama/p499-ut
 ==================================================
 ==================================================
 
+"This paper explores the use of topic modeling properties
+of LDA for the task of text segmentation. Our approach is
+based on the premise that using a topic model may allow bet-
+ter detection of segment boundaries because segment change
+should be associated with a significant change in the topic
+distribution.
+LDA adopts the traditional view that texts are repre-
+sented as word count vectors, and relies upon a two step
+generation process for these vectors. A key assumption is
+that each document is represented by a specific topic dis-
+tribution and each topic has an underlying word distribu-
+tion.
+"
+
+file:///ext4Data/UFSCar/papers/Segmentação/Novos Segmentadores/Text Segmentation via Topic Modeling: An Analytical Study.pdf
 
 ==================================================
 ==================================================
