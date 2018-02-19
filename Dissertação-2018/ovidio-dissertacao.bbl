@@ -74,6 +74,13 @@ ISBN 978-1-57735-323-2. Dispon{\'\i}vel em:
   2008.  (EMNLP '08), p. 334--343. Dispon{\'\i}vel em:
   \url{http://dl.acm.org/citation.cfm?id=1613715.1613760}.}
 
+\bibitem[Feldman e Sanger 2006]{Feldman2006}
+\abntrefinfo{Feldman e Sanger}{FELDMAN; SANGER}{2006}
+{FELDMAN, R.; SANGER, J. \emph{Text Mining Handbook: Advanced Approaches in
+  Analyzing Unstructured Data}. New York, NY, USA: Cambridge University Press,
+  2006.
+ISBN 0521836573, 9780521836579.}
+
 \bibitem[Galley et al. 2003]{Galley2003}
 \abntrefinfo{Galley et al.}{GALLEY et al.}{2003}
 {GALLEY, M. et al. Discourse segmentation of multi-party conversation. In:
@@ -159,6 +166,13 @@ Dispon{\'\i}vel em:
 \emph{IEEE Transactions on Pattern Analysis and Machine Intelligence}, v.~22,
   n.~8, p. 888--905, Aug 2000.
 ISSN 0162-8828.}
+
+\bibitem[Tan, Steinbach e Kumar 2005]{Tan2005}
+\abntrefinfo{Tan, Steinbach e Kumar}{TAN; STEINBACH; KUMAR}{2005}
+{TAN, P.-N.; STEINBACH, M.; KUMAR, V. \emph{Introduction to Data Mining, (First
+  Edition)}. Boston, MA, USA: Addison-Wesley Longman Publishing Co., Inc.,
+  2005.
+ISBN 0321321367.}
 
 \bibitem[Utiyama e Isahara 2001]{Utiyama2001}
 \abntrefinfo{Utiyama e Isahara}{UTIYAMA; ISAHARA}{2001}

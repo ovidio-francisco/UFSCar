@@ -219,6 +219,7 @@ INPUT conteudo/capitulos/inputs/representacao-textos.tex
 INPUT conteudo/capitulos/inputs/representacao-textos.tex
 INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmri12.tfm
 INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmsso12.tfm
+INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmr8.tfm
 INPUT conteudo/capitulos/inputs/medidas.tex
 INPUT conteudo/capitulos/inputs/medidas.tex
 INPUT conteudo/capitulos/inputs/segmentacao.tex
@@ -245,7 +246,6 @@ INPUT ./conteudo/capitulos/figs/exemplo-matrix-rank-B.png
 INPUT conteudo/capitulos/figs/graph-representation-of-text.png
 INPUT ./conteudo/capitulos/figs/graph-representation-of-text.png
 INPUT ./conteudo/capitulos/figs/graph-representation-of-text.png
-INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmr8.tfm
 INPUT /usr/share/texmf/fonts/tfm/public/lm/rm-lmr10.tfm
 INPUT /usr/share/texmf/fonts/tfm/public/lm/rm-lmr7.tfm
 INPUT /usr/share/texmf/fonts/tfm/public/lm/rm-lmr5.tfm
@@ -285,8 +285,8 @@ INPUT conteudo/capitulos/4-cap3.aux
 INPUT ./ovidio-dissertacao.brf
 INPUT ./ovidio-dissertacao.brf
 INPUT /usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc
-INPUT /usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc
 INPUT /usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc
+INPUT /usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc
 INPUT /usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc
 INPUT /usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc
 INPUT /usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb

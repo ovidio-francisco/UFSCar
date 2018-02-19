@@ -232,6 +232,7 @@ INPUT conteudo/capitulos/3-cap2.tex
 INPUT conteudo/capitulos/inputs/recuperacao-informacao.tex
 INPUT conteudo/capitulos/inputs/recuperacao-informacao.tex
 INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmss17.tfm
+INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmbx12.tfm
 INPUT conteudo/capitulos/inputs/segmentacao.tex
 INPUT conteudo/capitulos/inputs/segmentacao.tex
 INPUT conteudo/capitulos/inputs/algoritmos-segmentacao.tex
@@ -288,7 +289,6 @@ INPUT ./conteudo/capitulos/figs/visao-geral-3-eps-converted-to.pdf
 INPUT conteudo/capitulos/figs/pre-process.pdf
 INPUT ./conteudo/capitulos/figs/pre-process.pdf
 INPUT ./conteudo/capitulos/figs/pre-process.pdf
-INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmbx12.tfm
 INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmbx8.tfm
 INPUT conteudo/capitulos/figs/interface-anotacoes.png
 INPUT ./conteudo/capitulos/figs/interface-anotacoes.png
