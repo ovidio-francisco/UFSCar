@@ -148,10 +148,57 @@ Essa abordagem é similar à métodos probabilísticos de extração de tópicos
 
 % file:///ext4Data/UFSCar/Dissertação-2018/referencias/Minimum Cut Model for Spoken Lecture Segmentation - article.pdf
 
-O \textit{MinCutSeg} aborda a segmentação textual como um problema de particionamento de grafo, em que cada nó representa um sentença e os pesos das arestas representam a similaridade entre duas sentenças. Essa abordagem utiliza a técnica \textit{normalized-cut criterion}~\cite{Shi2000} a qual foi desenvolvida para segmentação de imagens estáticas, porém, nesse contexto aproveita a restrição de linearidade dos textos para segmentação textual.
 
 
-% Similar a abordagem do C99, o MinCutSeg vê o texto como uma matrix 
+
+O \textit{MinCutSeg} ~\cite{Malioutov:2006a} aborda a segmentação textual como um problema de particionamento de grafo, em que cada nó representa um sentença e os pesos das arestas representam a similaridade entre duas sentenças (Figura~\ref{fig:representacao-texto-grafo}). Nessa abordagem, a segmentação textual corresponde ao particionamento do grafo que representa o texto.
+
+
+  \begin{figure}[!h]
+	  \centering
+	  \includegraphics[width=0.6\textwidth]{conteudo/capitulos/figs/graph-representation-of-text.png}
+	  \caption{Representação de texto baseada em grafo~\cite{Malioutov:2006a}}
+	  \label{fig:representacao-texto-grafo}
+  \end{figure}
+
+
+Essa abordagem é inspirada no trabalho de~\cite{Shi2000} que propõe um critério para particionamento de grafos chamado \textit{normalized-cut criterion} inicialmente desenvolvido para segmentação de imagens estáticas a qual foi aproveita a restrição de linearidade dos textos para segmentação textual.
+
+Seja $G = {V,E}$ um grafo ponderado, unidimensional em que $V$ é o conjunto de vértices que correspondem às sentenças e $E$ é o conjunto de arestas que correspondem as similaridades entre as sentenças. Seja $w(u, v)$ o valor de similaridade entre o par de vértices $u$ e $v$. O \textit{MinCutSeg} visa particionar $G$ em dois grafos disjuntos $A$ e $B$ de modo a minimizar o corte definido pela somatória das arestas que ligam $u\inA$ à $v\inB$(Equação~\ref{equ:corte-grafo}):
+
+\begin{equation} 
+	corte(A,B) = \sum_{u \in A,v \in B} w(u, v) 
+	\label{equ:corte-grafo}
+\end{equation}
+
+
+
+Além de maximizar a diferença entre as partições $A$ e $B$, é necessário que essas seja homogenias em relação a similaridade de suas sentenças, conforme requerimento definido por~\cite{Shi2000} em que o valor do corte deve ser normalizado pelo volume das partições dado por:
+
+\begin{equation}
+	vol(A) = \sum_{u \in A, v \in V} w(u, v)
+\end{equation}
+
+
+Em seguida, define-se o critério de corte normalizado (NCorte) como o resultado da normalização do corte pelo volume, conforme mostrado na Equação~\ref{equ:NCorte}.
+
+\begin{equation}
+	NCorte(A,B) = \frac{corte(A,B)}{vol(A} + \frac{corte(A,B)}{vol(B)}
+	\label{equ:NCorte}
+\end{equation}
+
+
+Uma vez que um texto normalmente é dividido em mais que dois segmentos, é necessário extender o modelo para atender a essa necessidade. Seja $A_1\dotsA_k$ uma partição e $V - A_k$ a diferença entre o grafo $V$ e a partição $k$. O critério para múltiplos cortes normalizados é então estendido para: 
+
+\begin{equation} 
+	NCorte_k(V) = \frac{corte(A_1, V-A_1)}{vol(A_1)} + \dots + \frac{corte(A_k, V-A_k)}{vol(A_k)} 
+	\label{equ:NCorte-k}
+\end{equation}
+
+
+A decomposição do modelo em uma somatória de termos individuais permite empregar técnicas de programação dinâmica para o problema de cortes multidirecionais em grafos. Mais detalhes da formulação dessa solução estão disponíveis em~\cite{Malioutov:2006a}.
+
+Embora o problema minimizar cortes normalizados em grafos seja um problema do tipo NP-Completo\footnote{NP-Completo configura um tipo de problema para o qual não se conhece uma solução determinística que possa ser computada em tempo polinomial. Papadimitriou provou que o problema de corte mínimo em grafos está incluso nessa categoria.}, no contexto de segmentação textual esse problema é restrito a manter a linearidade dos vertices. A segmentação linear em um grafo implica que todos os vértices entre as extremidades esquerda e direitas de uma partição pertencem à essa partição, consequentemente o espaço de soluções possíveis é reduzido o que permite a execução do algoritmo em tempo polinomial.  
 
 % ===
 
