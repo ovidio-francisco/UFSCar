@@ -1,7 +1,5 @@
 \chapter{Conceituação Teórica}\label{cap2}
 
-
-
 A popularidade dos computares permite a criação e compartilhamento de textos onde a quantidade de informação facilmente extrapola a capacidade de humana de leitura e análise de coleções de documentos, estejam eles disponíveis na Internet ou em computadores pessoais. A necessidade de simplificar e organizar grandes coleções de documentos criou uma demanda por modelos de aprendizado de máquina para extração de conhecimento em bases textuais. Para esse fim, foram desenvolvidas técnicas para descobrir, extrair e agrupar textos de grandes coleções, entre essas, a modelagem de tópicos~\cite{Hofmann1999,Deerwester1990,Lee1999,Blei2012}.  %--> não falar só de modelagem de tópicos. Falar de RI com referências
 
 
@@ -12,29 +10,12 @@ A popularidade dos computares permite a criação e compartilhamento de textos o
 \input{conteudo/capitulos/inputs/representacao-textos.tex}
 
 
-\subsection{Medidas de Proximidade}
-% -- Movido para "Medidas de Proximidade " ↓↓↓↓
-No modelo espaço vetorial, a similidade entre um documentos $x$ e $y$ é calculada pela correlação entre os vetores $\vec{x}$ e $\vec{y}$, a qual pode ser medida pelo cosseno do  ângulo entre esses vetores. Dados dois documentos $x = (x_1, x_1, \dots, x_t)$ e $y = (y_1, y_1, \dots, y_t)$, calcula-se: 
-
-
-% conforme mostrado na Equação~\ref{equ:cosseno-doc-consulta}.
-
-
-\begin{equation}
-cosseno(x, y) = \frac{ \vec{x} \bullet \vec{y} }
-                   { |\vec{x}| \times | \vec{y}|}
-            = \frac{ \sum_{i=1}^{t} x_i \cdot y_i}
-                   { \sqrt{\sum_{i=1}^{t} x_i^2} \times \sqrt{\sum_{i=1}^{t} y_i^2 } }                   \label{equ:cosseno-doc-consulta}		                   
-\end{equation} 
-
-aa
-Valores de cosseno próximos a 0 indicam um ângulo próximo a 90º entre $\vec{x}$ e $\vec{y}$, ou seja, o documento $x$ compartilha poucos termos com a consulta $y$, enquanto valores próximos a 1 indicam um ângulo próximo a 0º, ou seja, $x$ e $y$ compartilham termos e são similares~\cite{Tan2005,Feldman2006}.
-
-
 % -> Medidas utilizadas nessa dissertação
 \input{conteudo/capitulos/inputs/medidas.tex}
 
 
+% -> Recuperação de Informação
+\input{conteudo/capitulos/inputs/recuperacao-informacao.tex}
 
 
 % -> Segmentação 

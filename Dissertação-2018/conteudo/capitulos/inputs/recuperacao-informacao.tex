@@ -1,3 +1,4 @@
+
 \section{Recuperação de Informação}
 
 % Necessidade de encontrar informação
@@ -40,7 +41,7 @@ Assim o vetor associado ao documento $d_j$ é dado por $\vec{d}_{j} = (w_{1,j}, 
 De forma similar, o vetor associado a consulta $q$ é dado por $\vec{q} = (w_{1,q}, w_{2,q}, ..., w_{t,q})$.
 
 % -- Movido para "Medidas de Proximidade " ↓↓↓↓
-No modelo vetorial, a similidade entre um documento $d_j$ e uma consulta $q$ é calculada pela correlação entre os vetores $\vec{d_j}$ e $\vec{q}$, a qual pode ser medida pelo cosseno do  ângulo entre esses vetores, conforme mostrado na Equação~\ref{equ:cosseno-doc-consulta}.
+No modelo vetorial, a similidade entre um documento $d_j$ e uma consulta $q$ é calculada pela correlação entre os vetores $\vec{d_j}$ e $\vec{q}$, a qual pode ser medida pelo cosseno (Equação~\ref{equ:cosine}) do ângulo entre esses vetores, conforme já mostrado na Seção~\ref{subsec:MedidasProximidade}. 
 
 
 
@@ -52,8 +53,8 @@ No modelo vetorial, a similidade entre um documento $d_j$ e uma consulta $q$ é 
 % \end{equation} 
 
 
-\begin{equation}
-	sim(d_j, q) = cosseno(d_j, q) 
+% \begin{equation}
+	% sim(d_j, q) = cosseno(d_j, q) 
 % 
 % = \frac{ \vec{d_j} \bullet \vec{q} } { |\vec{d_j}| \times | \vec{q}|}
 % 
@@ -62,8 +63,8 @@ No modelo vetorial, a similidade entre um documento $d_j$ e uma consulta $q$ é 
 % = \frac{ \sum_{i=1}^{t} w_{i,j} \cdot w_{i,q} }
 	   % { \sqrt{\sum_{i=1}^{t} w_{i,j}^2} \times \sqrt{\sum_{i=1}^{t} w_{i,q}^2 } }
 % 
-\label{equ:cosseno-doc-consulta}		                   
-\end{equation} 
+% \label{equ:cosseno-doc-consulta}		                   
+% \end{equation} 
 
 % Valores de cosseno próximos a 0 indicam um ângulo próximo a 90º entre $\vec{d_j}$ e $\vec{q}$, ou seja, o documento $d_j$ compartilha poucos termos com a consulta $q$, enquanto valores próximos a 1 indicam um ângulo próximo a 0º, ou seja, $d_j$ e $q$ compartilham termos e são similares~\cite{Tan2005,Feldman2006}.
 

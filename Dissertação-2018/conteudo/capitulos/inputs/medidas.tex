@@ -1,0 +1,21 @@
+
+\subsection{Medidas de Proximidade}
+\label{subsec:MedidasProximidade}
+No modelo espaço vetorial, a similidade entre um documentos $x$ e $y$ é calculada pela correlação entre os vetores $\vec{x}$ e $\vec{y}$, a qual pode ser medida pelo cosseno do  ângulo entre esses vetores. Dados dois documentos $x = (x_1, x_1, \dots, x_t)$ e $y = (y_1, y_1, \dots, y_t)$, calcula-se: 
+
+
+% conforme mostrado na Equação~\ref{equ:cosseno-doc-consulta}.
+
+
+\begin{equation}
+cosseno(x, y) = \frac{ \vec{x} \bullet \vec{y} }
+                   { |\vec{x}| \times | \vec{y}|}
+            = \frac{ \sum_{i=1}^{t} x_i \cdot y_i}
+                   { \sqrt{\sum_{i=1}^{t} x_i^2} \times \sqrt{\sum_{i=1}^{t} y_i^2 } }                   \label{equ:cosseno-doc-consulta}		                   
+   \label{equ:cosine}
+\end{equation} 
+
+
+Valores de cosseno próximos a 0 indicam um ângulo próximo a 90º entre $\vec{x}$ e $\vec{y}$, ou seja, o documento $x$ compartilha poucos termos com a consulta $y$, enquanto valores próximos a 1 indicam um ângulo próximo a 0º, ou seja, $x$ e $y$ compartilham termos e são similares~\cite{Tan2005,Feldman2006}.
+
+

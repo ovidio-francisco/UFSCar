@@ -51,6 +51,13 @@ Dispon{\'\i}vel em:
   Computational Linguistics, 2000.  (NAACL 2000), p. 26--33. Dispon{\'\i}vel
   em: \url{http://dl.acm.org/citation.cfm?id=974305.974309}.}
 
+\bibitem[Croft, Metzler e Strohman 2009]{Croft2009}
+\abntrefinfo{Croft, Metzler e Strohman}{CROFT; METZLER; STROHMAN}{2009}
+{CROFT, B.; METZLER, D.; STROHMAN, T. \emph{Search Engines: Information
+  Retrieval in Practice}. 1st. ed. USA: Addison-Wesley Publishing Company,
+  2009.
+ISBN 0136072240, 9780136072249.}
+
 \bibitem[Deerwester et al. 1990]{Deerwester1990}
 \abntrefinfo{Deerwester et al.}{DEERWESTER et al.}{1990}
 {DEERWESTER, S. et al. Indexing by latent semantic analysis.
@@ -130,6 +137,13 @@ v.~401, p. 788--91, 11 1999.}
   Linguistics, 2006.  (ACL-44), p. 25--32. Dispon{\'\i}vel em:
   \url{https://doi.org/10.3115/1220175.1220179}.}
 
+\bibitem[Manning, Raghavan e Sch\"{u}tze 2008]{Manning2008}
+\abntrefinfo{Manning, Raghavan e Sch\"{u}tze}{MANNING; RAGHAVAN;
+  SCH\"{u}TZE}{2008}
+{MANNING, C.~D.; RAGHAVAN, P.; SCH\"{u}TZE, H. \emph{Introduction to
+  Information Retrieval}. New York, NY, USA: Cambridge University Press, 2008.
+ISBN 0521865719, 9780521865715.}
+
 \bibitem[Misra et al. 2009]{Misra2009}
 \abntrefinfo{Misra et al.}{MISRA et al.}{2009}
 {MISRA, H. et al. Text segmentation via topic modeling: An analytical study.
@@ -155,10 +169,47 @@ Dispon{\'\i}vel em: \url{https://doi.org/10.1108/IJICC-01-2016-0001}.}
 Dispon{\'\i}vel em:
   \url{https://www.scopus.com/inward/record.uri?eid=2-s2.0-0037870455&doi=10.1162\%2f089120102317341756&partnerID=40&md5=279abc4e76fcfc2c4a1896e76a245034}.}
 
+\bibitem[Reynar 1998]{Reynar1998}
+\abntrefinfo{Reynar}{REYNAR}{1998}
+{REYNAR, J.~C.
+\emph{Topic Segmentation: Algorithms and Applications}.
+Tese (Doutorado), Philadelphia, PA, USA, 1998. AAI9829978.}
+
 \bibitem[Rezende 2003]{Rezende2003}
 \abntrefinfo{Rezende}{REZENDE}{2003}
 {REZENDE, S.~O. \emph{Sistemas Inteligentes}. Barueri, SP: Manole, 2003. 337 -
   270~p.}
+
+\bibitem[Rijsbergen 1979]{Rijsbergen1979}
+\abntrefinfo{Rijsbergen}{RIJSBERGEN}{1979}
+{RIJSBERGEN, C. J.~V. \emph{Information Retrieval}. 2nd. ed. Newton, MA, USA:
+  Butterworth-Heinemann, 1979.
+ISBN 0408709294.}
+
+\bibitem[Salton e Allan 1994]{Salton:1994}
+\abntrefinfo{Salton e Allan}{SALTON; ALLAN}{1994}
+{SALTON, G.; ALLAN, J. Automatic text decomposition and structuring. In:
+  \emph{Intelligent Multimedia Information Retrieval Systems and Management -
+  Volume 1}. Paris, France, France: LE CENTRE DE HAUTES ETUDES INTERNATIONALES
+  D'INFORMATIQUE DOCUMENTAIRE, 1994.  (RIAO '94), p. 6--20. Dispon{\'\i}vel em:
+  \url{http://dl.acm.org/citation.cfm?id=2856823.2856826}.}
+
+\bibitem[Salton e Buckley 1988]{Salton1988}
+\abntrefinfo{Salton e Buckley}{SALTON; BUCKLEY}{1988}
+{SALTON, G.; BUCKLEY, C. Term-weighting approaches in automatic text retrieval.
+\emph{Inf. Process. Manage.}, Pergamon Press, Inc., Tarrytown, NY, USA, v.~24,
+  n.~5, p. 513--523, ago. 1988.
+ISSN 0306-4573.
+Dispon{\'\i}vel em: \url{http://dx.doi.org/10.1016/0306-4573(88)90021-0}.}
+
+\bibitem[Shamsinejadbabki e Saraee 2012]{Shamsinejadbabki2012}
+\abntrefinfo{Shamsinejadbabki e Saraee}{SHAMSINEJADBABKI; SARAEE}{2012}
+{SHAMSINEJADBABKI, P.; SARAEE, M. A new unsupervised feature selection method
+  for text clustering based on genetic algorithms.
+\emph{J. Intell. Inf. Syst.}, Kluwer Academic Publishers, Hingham, MA, USA,
+  v.~38, n.~3, p. 669--684, jun. 2012.
+ISSN 0925-9902.
+Dispon{\'\i}vel em: \url{http://dx.doi.org/10.1007/s10844-011-0172-5}.}
 
 \bibitem[Shi e Malik 2000]{Shi2000}
 \abntrefinfo{Shi e Malik}{SHI; MALIK}{2000}
