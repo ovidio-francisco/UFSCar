@@ -58,6 +58,14 @@ Dispon{\'\i}vel em: \url{http://dx.doi.org/10.1109/TASLP.2015.2456430}.}
   segmentation for news texts in brazilian portuguese.
 \emph{Corpora}, Edinburgh University Press, v.~12, n.~1, p. 23--54, 2017.}
 
+\bibitem[Carletta 1996]{Carletta1996}
+\abntrefinfo{Carletta}{CARLETTA}{1996}
+{CARLETTA, J. Assessing agreement on classification tasks: The kappa statistic.
+\emph{Comput. Linguist.}, MIT Press, Cambridge, MA, USA, v.~22, n.~2, p.
+  249--254, jun. 1996.
+ISSN 0891-2017.
+Dispon{\'\i}vel em: \url{http://dl.acm.org/citation.cfm?id=230386.230390}.}
+
 \bibitem[Chaibi, Naili e Sammoud 2014]{CHAIBI2014}
 \abntrefinfo{Chaibi, Naili e Sammoud}{CHAIBI; NAILI; SAMMOUD}{2014}
 {CHAIBI, A.~H.; NAILI, M.; SAMMOUD, S. Topic segmentation for textual document
@@ -119,6 +127,12 @@ ISBN 0521836573, 9780521836579.}
   Linguistics - Volume 1}. Stroudsburg, PA, USA: Association for Computational
   Linguistics, 2003.  (ACL '03), p. 562--569. Dispon{\'\i}vel em:
   \url{http://dx.doi.org/10.3115/1075096.1075167}.}
+
+\bibitem[Gruenstein, Niekrasz e Purver 2007]{Gruenstein2007}
+\abntrefinfo{Gruenstein, Niekrasz e Purver}{GRUENSTEIN; NIEKRASZ; PURVER}{2007}
+{GRUENSTEIN, A.; NIEKRASZ, J.; PURVER, M. \emph{MEETING STRUCTURE ANNOTATION --
+  Annotations Collected with a General Purpose Toolkit}. [S.l.]: Springer,
+  Dordrecht, 2007.}
 
 \bibitem[Hearst 1994]{Hearst1994}
 \abntrefinfo{Hearst}{HEARST}{1994}

@@ -23,14 +23,14 @@
 \contentsline {subsection}{\numberline {3.1.1}Prepara\IeC {\c c}\IeC {\~a}o dos documentos}{24}{subsection.3.1.1}
 \contentsline {subsubsection}{\numberline {3.1.1.1}Segmenta\IeC {\c c}\IeC {\~a}o}{25}{subsubsection.3.1.1.1}
 \contentsline {subsubsection}{\numberline {3.1.1.2}Segmenta\IeC {\c c}\IeC {\~a}o de Refer\IeC {\^e}ncia}{26}{subsubsection.3.1.1.2}
-\contentsline {subsection}{\numberline {3.1.2}Configura\IeC {\c c}\IeC {\~a}o experimental}{27}{subsection.3.1.2}
-\contentsline {subsubsection}{\numberline {3.1.2.1}Crit\IeC {\'e}rios de avalia\IeC {\c c}\IeC {\~a}o}{29}{subsubsection.3.1.2.1}
-\contentsline {subsubsection}{\numberline {3.1.2.2}Resultados}{30}{subsubsection.3.1.2.2}
-\contentsline {subsection}{\numberline {3.1.3}Representa\IeC {\c c}\IeC {\~a}o Computacional}{34}{subsection.3.1.3}
-\contentsline {section}{\numberline {3.2}M\IeC {\'o}dulo Consulta}{35}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}Visualiza\IeC {\c c}\IeC {\~a}o}{36}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.1.2}Configura\IeC {\c c}\IeC {\~a}o experimental}{28}{subsection.3.1.2}
+\contentsline {subsubsection}{\numberline {3.1.2.1}Crit\IeC {\'e}rios de avalia\IeC {\c c}\IeC {\~a}o}{28}{subsubsection.3.1.2.1}
+\contentsline {subsubsection}{\numberline {3.1.2.2}Resultados}{29}{subsubsection.3.1.2.2}
+\contentsline {subsection}{\numberline {3.1.3}Representa\IeC {\c c}\IeC {\~a}o Computacional}{32}{subsection.3.1.3}
+\contentsline {section}{\numberline {3.2}M\IeC {\'o}dulo Consulta}{32}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Visualiza\IeC {\c c}\IeC {\~a}o}{33}{subsection.3.2.1}
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
-\contentsline {chapter}{Refer\^encias}{37}{section*.4}
+\contentsline {chapter}{Refer\^encias}{35}{section*.4}
 \renewcommand *{\cftappendixname }{AP\^ENDICE \space }
 \cftinsert {AAA}
 \renewcommand *{\cftappendixname }{ANEXO \space }

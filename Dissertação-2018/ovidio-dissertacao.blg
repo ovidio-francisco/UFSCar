@@ -16,8 +16,6 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 Database file #1: abntex2-options.bib
 Database file #2: referencias.bib
-Warning--I didn't find a database entry for "Carletta1996"
-Warning--I didn't find a database entry for "Gruenstein2007"
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
 Reallocated global_strs (elt_size=20001) to 20 items from 10.
@@ -28,45 +26,45 @@ Warning--faltando school em Reynar1998
 | Em caso de dúvidas ou problemas com este estilo procure |
 | http://abntex2.googlecode.com                           |
 +---------------------------------------------------------+
-You've used 40 entries,
+You've used 42 entries,
             6711 wiz_defined-function locations,
-            1555 strings with 18723 characters,
-and the built_in function-call counts, 62728 in all, are:
-= -- 7116
-> -- 1388
-< -- 1418
-+ -- 1894
-- -- 416
-* -- 4198
-:= -- 7571
-add.period$ -- 195
-call.type$ -- 40
-change.case$ -- 453
-chr.to.int$ -- 97
-cite$ -- 40
-duplicate$ -- 5775
-empty$ -- 2702
-format.name$ -- 1958
-if$ -- 13022
+            1565 strings with 19093 characters,
+and the built_in function-call counts, 65301 in all, are:
+= -- 7381
+> -- 1455
+< -- 1470
++ -- 1966
+- -- 436
+* -- 4375
+:= -- 7888
+add.period$ -- 203
+call.type$ -- 42
+change.case$ -- 474
+chr.to.int$ -- 102
+cite$ -- 42
+duplicate$ -- 5997
+empty$ -- 2827
+format.name$ -- 2051
+if$ -- 13563
 int.to.chr$ -- 0
 int.to.str$ -- 0
-missing$ -- 743
-newline$ -- 217
-num.names$ -- 195
-pop$ -- 926
+missing$ -- 779
+newline$ -- 228
+num.names$ -- 205
+pop$ -- 970
 preamble$ -- 1
-purify$ -- 166
+purify$ -- 174
 quote$ -- 0
-skip$ -- 5834
+skip$ -- 6060
 stack$ -- 1
-substring$ -- 2876
-swap$ -- 2338
-text.length$ -- 87
+substring$ -- 2979
+swap$ -- 2430
+text.length$ -- 91
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 16
 warning$ -- 1
-while$ -- 337
+while$ -- 352
 width$ -- 0
-write$ -- 707
-(There were 3 warnings)
+write$ -- 742
+(There was 1 warning)
