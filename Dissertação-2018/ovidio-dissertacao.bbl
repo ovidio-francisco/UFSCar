@@ -5,6 +5,23 @@
 \providecommand{\abntbstabout}[1]{}
 \abntbstabout{v-1.9.2 }
 
+\bibitem[Alvares, Garcia e Ferraz 2005]{Alvares2005}
+\abntrefinfo{Alvares, Garcia e Ferraz}{ALVARES; GARCIA; FERRAZ}{2005}
+{ALVARES, R.~V.; GARCIA, A. C.~B.; FERRAZ, I. Stembr: A stemming algorithm for
+  the brazilian portuguese language. In:  \emph{Proceedings of the 12th
+  Portuguese Conference on Progress in Artificial Intelligence}. Berlin,
+  Heidelberg: Springer-Verlag, 2005.  (EPIA'05), p. 693--701.
+ISBN 3-540-30737-0, 978-3-540-30737-2. Dispon{\'\i}vel em:
+  \url{http://dx.doi.org/10.1007/11595014\_67}.}
+
+\bibitem[Beeferman, Berger e Lafferty 1999]{Beeferman1999}
+\abntrefinfo{Beeferman, Berger e Lafferty}{BEEFERMAN; BERGER; LAFFERTY}{1999}
+{BEEFERMAN, D.; BERGER, A.; LAFFERTY, J. Statistical models for text
+  segmentation.
+\emph{Machine Learning}, v.~34, n.~1, p. 177--210, 1999.
+ISSN 1573-0565.
+Dispon{\'\i}vel em: \url{http://dx.doi.org/10.1023/A:1007506220214}.}
+
 \bibitem[Blei 2012]{Blei2012}
 \abntrefinfo{Blei}{BLEI}{2012}
 {BLEI, D.~M. Probabilistic topic models.
@@ -27,6 +44,13 @@ Dispon{\'\i}vel em: \url{http://dl.acm.org/citation.cfm?id=944919.944937}.}
   NJ, USA, v.~23, n.~11, p. 1879--1891, nov. 2015.
 ISSN 2329-9290.
 Dispon{\'\i}vel em: \url{http://dx.doi.org/10.1109/TASLP.2015.2456430}.}
+
+\bibitem[BOKAEI, SAMETI e LIU 2016]{Bokaei2016}
+\abntrefinfo{BOKAEI, SAMETI e LIU}{BOKAEI; SAMETI; LIU}{2016}
+{BOKAEI, M.~H.; SAMETI, H.; LIU, Y. Extractive summarization of multiparty
+  meetings through discourse segmentation.
+\emph{Natural Language Engineering}, Cambridge University Press, v.~22, n.~1,
+  p. 41--72, 2016.}
 
 \bibitem[Cardoso, Pardo e Taboada 2017]{Cardoso2017}
 \abntrefinfo{Cardoso, Pardo e Taboada}{CARDOSO; PARDO; TABOADA}{2017}
@@ -96,6 +120,23 @@ ISBN 0521836573, 9780521836579.}
   Linguistics, 2003.  (ACL '03), p. 562--569. Dispon{\'\i}vel em:
   \url{http://dx.doi.org/10.3115/1075096.1075167}.}
 
+\bibitem[Hearst 1994]{Hearst1994}
+\abntrefinfo{Hearst}{HEARST}{1994}
+{HEARST, M.~A. Multi-paragraph segmentation of expository text. In:
+  \emph{Proceedings of the 32Nd Annual Meeting on Association for Computational
+  Linguistics}. Stroudsburg, PA, USA: Association for Computational
+  Linguistics, 1994.  (ACL '94), p. 9--16. Dispon{\'\i}vel em:
+  \url{http://dx.doi.org/10.3115/981732.981734}.}
+
+\bibitem[Hearst 1997]{Hearst1997}
+\abntrefinfo{Hearst}{HEARST}{1997}
+{HEARST, M.~A. Texttiling: Segmenting text into multi-paragraph subtopic
+  passages.
+\emph{Comput. Linguist.}, MIT Press, Cambridge, MA, USA, v.~23, n.~1, p.
+  33--64, mar. 1997.
+ISSN 0891-2017.
+Dispon{\'\i}vel em: \url{http://dl.acm.org/citation.cfm?id=972684.972687}.}
+
 \bibitem[Hofmann 1999]{Hofmann1999}
 \abntrefinfo{Hofmann}{HOFMANN}{1999}
 {HOFMANN, T. Probabilistic latent semantic indexing. In:  \emph{Proceedings of
@@ -104,6 +145,22 @@ ISBN 0521836573, 9780521836579.}
   '99), p. 50--57.
 ISBN 1-58113-096-1. Dispon{\'\i}vel em:
   \url{http://doi.acm.org/10.1145/312624.312649}.}
+
+\bibitem[Hovy e Lavid 2010]{Hovy2010}
+\abntrefinfo{Hovy e Lavid}{HOVY; LAVID}{2010}
+{HOVY, E.; LAVID, J. Towards a 'science' of corpus annotation: A new
+  methodological challenge for corpus linguistics.
+v.~22, p. 13--36, 01 2010.}
+
+\bibitem[Kazantseva e Szpakowicz 2012]{Kazantseva2012}
+\abntrefinfo{Kazantseva e Szpakowicz}{KAZANTSEVA; SZPAKOWICZ}{2012}
+{KAZANTSEVA, A.; SZPAKOWICZ, S. Topical segmentation: A study of human
+  performance and a new measure of quality. In:  \emph{Proceedings of the 2012
+  Conference of the North American Chapter of the Association for Computational
+  Linguistics: Human Language Technologies}. Stroudsburg, PA, USA: Association
+  for Computational Linguistics, 2012.  (NAACL HLT '12), p. 211--220.
+ISBN 978-1-937284-20-6. Dispon{\'\i}vel em:
+  \url{http://dl.acm.org/citation.cfm?id=2382029.2382058}.}
 
 \bibitem[Kern e Granitzer 2009]{Kern2009}
 \abntrefinfo{Kern e Granitzer}{KERN; GRANITZER}{2009}
@@ -161,6 +218,15 @@ ISBN 978-1-60558-512-3. Dispon{\'\i}vel em:
   n.~2, p. 165--178, 2016.
 Dispon{\'\i}vel em: \url{https://doi.org/10.1108/IJICC-01-2016-0001}.}
 
+\bibitem[Passonneau e Litman 1997]{Passonneau1997}
+\abntrefinfo{Passonneau e Litman}{PASSONNEAU; LITMAN}{1997}
+{PASSONNEAU, R.~J.; LITMAN, D.~J. Discourse segmentation by human and automated
+  means.
+\emph{Comput. Linguist.}, MIT Press, Cambridge, MA, USA, v.~23, n.~1, p.
+  103--139, mar. 1997.
+ISSN 0891-2017.
+Dispon{\'\i}vel em: \url{http://dl.acm.org/citation.cfm?id=972684.972689}.}
+
 \bibitem[Pevzner e Hearst 2002]{Pevzner2002}
 \abntrefinfo{Pevzner e Hearst}{PEVZNER; HEARST}{2002}
 {PEVZNER, L.; HEARST, M. A critique and improvement of an evaluation metric for
@@ -185,6 +251,13 @@ Tese (Doutorado), Philadelphia, PA, USA, 1998. AAI9829978.}
 {RIJSBERGEN, C. J.~V. \emph{Information Retrieval}. 2nd. ed. Newton, MA, USA:
   Butterworth-Heinemann, 1979.
 ISBN 0408709294.}
+
+\bibitem[Sakahara, Okada e Nitta 2014]{Sakahara2014}
+\abntrefinfo{Sakahara, Okada e Nitta}{SAKAHARA; OKADA; NITTA}{2014}
+{SAKAHARA, M.; OKADA, S.; NITTA, K. Domain-independent unsupervised text
+  segmentation for data management. In:  \emph{2014 IEEE International
+  Conference on Data Mining Workshop}. [S.l.: s.n.], 2014. p. 481--487.
+ISSN 2375-9232.}
 
 \bibitem[Salton e Allan 1994]{Salton:1994}
 \abntrefinfo{Salton e Allan}{SALTON; ALLAN}{1994}
