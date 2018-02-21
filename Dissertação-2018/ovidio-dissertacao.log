@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.8.22)  20 FEB 2018 16:53
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.8.22)  20 FEB 2018 23:18
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1421,7 +1421,7 @@ Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 ) (./conteudo/capitulos/inputs/recuperacao-informacao.tex [8] [9] [10]
-Underfull \hbox (badness 10000) in paragraph at lines 122--123
+Underfull \hbox (badness 10000) in paragraph at lines 126--128
 
  []
 
@@ -1601,7 +1601,7 @@ Package epstopdf Info: Source file: <conteudo/capitulos/figs/visao-geral-3.eps>
 (epstopdf)             Command: <repstopdf --outfile=conteudo/capitulos/figs/visao-geral-3-eps-converted-to.pdf conteudo/capitulos/figs/visao-geral-3.eps>
 (epstopdf)             \includegraphics on input line 14.
 Package epstopdf Info: Output file is already uptodate.
- <conteudo/capitulos/figs/visao-geral-3-eps-converted-to.pdf, id=408, 1084.05pt x 542.025pt>
+ <conteudo/capitulos/figs/visao-geral-3-eps-converted-to.pdf, id=407, 1084.05pt x 542.025pt>
 File: conteudo/capitulos/figs/visao-geral-3-eps-converted-to.pdf Graphic file (type pdf)
  <use conteudo/capitulos/figs/visao-geral-3-eps-converted-to.pdf>
 Package pdftex.def Info: conteudo/capitulos/figs/visao-geral-3-eps-converted-to.pdf used on input line 14.
@@ -1610,7 +1610,7 @@ Package pdftex.def Info: conteudo/capitulos/figs/visao-geral-3-eps-converted-to.
 
 
 
- <./conteudo/capitulos/figs/visao-geral-3-eps-converted-to.pdf>] <conteudo/capitulos/figs/pre-process.pdf, id=418, page=1, 844.15375pt x 597.23125pt>
+ <./conteudo/capitulos/figs/visao-geral-3-eps-converted-to.pdf>] <conteudo/capitulos/figs/pre-process.pdf, id=417, page=1, 844.15375pt x 597.23125pt>
 File: conteudo/capitulos/figs/pre-process.pdf Graphic file (type pdf)
  <use conteudo/capitulos/figs/pre-process.pdf, page 1>
 Package pdftex.def Info: conteudo/capitulos/figs/pre-process.pdf, page1 used on input line 44.
@@ -1628,7 +1628,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-[25] <conteudo/capitulos/figs/interface-anotacoes.png, id=493, 1445.4pt x 872.25874pt>
+[25] <conteudo/capitulos/figs/interface-anotacoes.png, id=492, 1445.4pt x 872.25874pt>
 File: conteudo/capitulos/figs/interface-anotacoes.png Graphic file (type png)
  <use conteudo/capitulos/figs/interface-anotacoes.png>
 Package pdftex.def Info: conteudo/capitulos/figs/interface-anotacoes.png used on input line 146.
@@ -1637,7 +1637,7 @@ Package pdftex.def Info: conteudo/capitulos/figs/interface-anotacoes.png used on
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[26] <conteudo/capitulos/figs/segmentacao-referencia.pdf, id=517, page=1, 844.15375pt x 597.23125pt>
+[26] <conteudo/capitulos/figs/segmentacao-referencia.pdf, id=516, page=1, 844.15375pt x 597.23125pt>
 File: conteudo/capitulos/figs/segmentacao-referencia.pdf Graphic file (type pdf)
  <use conteudo/capitulos/figs/segmentacao-referencia.pdf, page 1>
 Package pdftex.def Info: conteudo/capitulos/figs/segmentacao-referencia.pdf, page1 used on input line 160.
@@ -1655,7 +1655,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-[29] <conteudo/capitulos/figs/coesaolexicaTT-50-9.png, id=698, 1413.28pt x 306.14375pt>
+[29] <conteudo/capitulos/figs/coesaolexicaTT-50-9.png, id=697, 1413.28pt x 306.14375pt>
 File: conteudo/capitulos/figs/coesaolexicaTT-50-9.png Graphic file (type png)
  <use conteudo/capitulos/figs/coesaolexicaTT-50-9.png>
 Package pdftex.def Info: conteudo/capitulos/figs/coesaolexicaTT-50-9.png used on input line 295.
@@ -1674,7 +1674,7 @@ Package epstopdf Info: Source file: <conteudo/capitulos/figs/grafico-medidas-APR
 (epstopdf)             Command: <repstopdf --outfile=conteudo/capitulos/figs/grafico-medidas-APRF1-eps-converted-to.pdf conteudo/capitulos/figs/grafico-medidas-APRF1.eps>
 (epstopdf)             \includegraphics on input line 386.
 Package epstopdf Info: Output file is already uptodate.
- <conteudo/capitulos/figs/grafico-medidas-APRF1-eps-converted-to.pdf, id=709, 484.81125pt x 172.645pt>
+ <conteudo/capitulos/figs/grafico-medidas-APRF1-eps-converted-to.pdf, id=708, 484.81125pt x 172.645pt>
 File: conteudo/capitulos/figs/grafico-medidas-APRF1-eps-converted-to.pdf Graphic file (type pdf)
  <use conteudo/capitulos/figs/grafico-medidas-APRF1-eps-converted-to.pdf>
 Package pdftex.def Info: conteudo/capitulos/figs/grafico-medidas-APRF1-eps-converted-to.pdf used on input line 386.
@@ -1688,7 +1688,7 @@ Package epstopdf Info: Source file: <conteudo/capitulos/figs/grafico-medidas-Pk-
 (epstopdf)             Command: <repstopdf --outfile=conteudo/capitulos/figs/grafico-medidas-Pk-Wd-eps-converted-to.pdf conteudo/capitulos/figs/grafico-medidas-Pk-Wd.eps>
 (epstopdf)             \includegraphics on input line 398.
 Package epstopdf Info: Output file is already uptodate.
- <conteudo/capitulos/figs/grafico-medidas-Pk-Wd-eps-converted-to.pdf, id=711, 433.62pt x 180.675pt>
+ <conteudo/capitulos/figs/grafico-medidas-Pk-Wd-eps-converted-to.pdf, id=710, 433.62pt x 180.675pt>
 File: conteudo/capitulos/figs/grafico-medidas-Pk-Wd-eps-converted-to.pdf Graphic file (type pdf)
  <use conteudo/capitulos/figs/grafico-medidas-Pk-Wd-eps-converted-to.pdf>
 Package pdftex.def Info: conteudo/capitulos/figs/grafico-medidas-Pk-Wd-eps-converted-to.pdf used on input line 398.
@@ -1718,7 +1718,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 312.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 312.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 312.
 Package rerunfilecheck Info: File `ovidio-dissertacao.brf' has not changed.
-(rerunfilecheck)             Checksum: 6EECF458C330AA6D69128257BA3B6BC5;5022.
+(rerunfilecheck)             Checksum: 637A83841E9367B423CBB2C6BBA97DD9;5022.
 
 
 LaTeX Warning: There were undefined references.
@@ -1735,16 +1735,16 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 312.
 Here is how much of TeX's memory you used:
  15608 strings out of 494884
  235140 string characters out of 6179236
- 425098 words of memory out of 5000000
+ 424952 words of memory out of 5000000
  18274 multiletter control sequences out of 15000+600000
  94911 words of font info for 154 fonts, out of 8000000 for 9000
  38 hyphenation exceptions out of 8191
  47i,15n,40p,1335b,3112s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}</usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx8.pfb></usr/share/texmf/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi6.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr7.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss10.pfb></usr/share/texmf/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss17.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsso12.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt12.pfb>
-Output written on ovidio-dissertacao.pdf (40 pages, 1066616 bytes).
+Output written on ovidio-dissertacao.pdf (40 pages, 1066588 bytes).
 PDF statistics:
- 1056 PDF objects out of 1200 (max. 8388607)
- 940 compressed objects within 10 object streams
+ 1054 PDF objects out of 1200 (max. 8388607)
+ 938 compressed objects within 10 object streams
  166 named destinations out of 1000 (max. 500000)
  32055 words of extra memory for PDF output out of 35830 (max. 10000000)
 
