@@ -87,9 +87,15 @@ Na Figura~\ref{fig:a} é destacado um quadro 3~x~3 de uma matriz. Tomando como e
 % -< Colocar uma explicação mais detalhada para esses passos
 
 
+Finalmente, com base na matriz de \textit{ranking}, o C99 utiliza um método de \textit{clustering} baseado no algoritmo \textit{DotPloting}~\cite{Reynar1998} que usa regiões com maior densidade em uma matriz de similaridades para determinar como os segmentos estão distribuídos.  
+% 
+Um segmento é definido por duas sentenças $i$ e $j$ (respectivamente a primeira e última sentença) que representam uma região quadrada ao longo da diagonal da matriz. 
+% 
+Seja $B = \{b1,...,b_m\}$ a lista de $m$ segmentos,  $s_k$ a somatória dos valores dos \textit{rankings} de um segmento $k \in B$ e $a_k$ a sua área. Então, a densidade é computada por: 
+% 
+Calcula-se a densidade dessa região como mostrado na Equação~\ref{equ:densidade-c99}. 
 
 
-Finalmente, com base na matriz de \textit{ranking}, o C99 utiliza um método de \textit{clustering} baseado no algoritmo \textit{DotPloting}~\cite{Reynar1998} que usa regiões com maior densidade em uma matriz de similaridades para determinar como os segmentos estão distribuídos. Um segmento é definido por duas sentenças $i$ e $j$ que representam uma região quadrada ao longo da diagonal da matriz. Calcula-se a densidade dessa região como mostrado na Equação~\ref{equ:densidade-c99}. Seja $s_{i,j}$ a somatória dos \textit{rakings} de um segmento e $a_{i,j}$ sua área interior. Seja $B = \{b1,...,b_m\}$ a lista de $m$ segmentos e $s_k$ e $a_k$ são a somatória dos valores dos rankings e a área de um segmento $k$ em $B$. Então, a densidade é computada por: 
 
 \begin{equation}
 D = \frac{\sum_{k=1}^m s_k}{\sum_{k=1}^m a_k}
@@ -97,7 +103,7 @@ D = \frac{\sum_{k=1}^m s_k}{\sum_{k=1}^m a_k}
 \end{equation}
 
 
-O processo inicia com um único segmento formado por todas as sentenças do documento e o divide recursivamente em $m$ segmentos. Cada passo divide um dos segmentos em $B$ no ponto ($i,j$) que maximiza $D$~(Equação \ref{equ:densidade-c99}). O processo se repte até atingir o número de segmentos desejados ou um limiar de similaridade.
+O processo inicia com um único segmento formado por todas as sentenças do documento e o divide recursivamente em $m$ segmentos. Cada passo divide $B$ no ponto ($i,j$) que maximiza $D$~(Equação \ref{equ:densidade-c99}). O processo se repte até atingir o número de segmentos desejados ou um limiar de similaridade.
 
 % ===
 
@@ -137,9 +143,9 @@ A suposição de independência entre segmentos e as palavras neles contidas, s�
 
 % ==========  BayesSeg  ==========
 
-Os métodos baseados em coesão léxica que utilizam métricas como cosseno quantificam a similaridade entre sentenças baseando-se apenas na frequência das palavras, Essa abordagem, ignora certas características do texto que podem dar pistas sobre a estrutura do texto. Por exemplo, frases como "Prosseguindo", "Dando continuidade", "Ao final da reunião" podem dar ajudar a detectar o inicio ou final de segmento. A fim de aproveitar esses indicadores, pode-se usar um framework bayesiano que permite incorporar fontes externas ao modelo. O método \textit{BayesSeg}~\cite{Eisenstein2008} aborda a coesão léxica em um contexto bayesiano onde as palavas de um segmento surgem de um modelo de linguagem multinomial o qual é associado a um assunto. 
+Os métodos baseados em coesão léxica que utilizam métricas como cosseno quantificam a similaridade entre sentenças baseando-se apenas na frequência das palavras, Essa abordagem, ignora certas características do texto que podem dar pistas sobre a estrutura do texto. Por exemplo, frases como ``Prosseguindo'', ``Dando continuidade'', ``Ao final da reunião'' podem ajudar a detectar o inicio ou final de segmento. A fim de aproveitar esses indicadores, pode-se usar um framework bayesiano que permite incorporar fontes externas ao modelo. O método \textit{BayesSeg}~\cite{Eisenstein2008} aborda a coesão léxica em um contexto bayesiano onde as palavas de um segmento surgem de um modelo de linguagem multinomial o qual é associado a um assunto. 
 
-Essa abordagem é similar à métodos probabilísticos de extração de tópicos como o Latent Dirichlet Allocation (LDA)~\cite{Blei2003}, com a diferença que ao invés de atribuir tópicos ocultos a cada palavra, esses são usados para segmentar o documento. Nesse sentido, detecta-se um limite entre sentenças quando a distribuição de tópicos entre elas for diferente. O \textit{BayesSeg} baseia-se na ideia que alguns termos são usados em tópicos específicos enquanto outros são neutros em relação aos tópicos do documento e são usados para expressar uma estrutura do documento, ou seja, as "frases-pista" vem de um único modelo generativo. A fim de refletir essa ideia, o modelo é adaptado para influenciar a probabilidade da sentença de ser uma final ou início de segmento conforme a presença de "frases pista".
+Essa abordagem é similar à métodos probabilísticos de extração de tópicos como o Latent Dirichlet Allocation (LDA)~\cite{Blei2003}, com a diferença que ao invés de atribuir tópicos ocultos a cada palavra, esses são usados para segmentar o documento. Nesse sentido, detecta-se um limite entre sentenças quando a distribuição de tópicos entre elas for diferente. O \textit{BayesSeg} baseia-se na ideia que alguns termos são usados em tópicos específicos enquanto outros são neutros em relação aos tópicos do documento e são usados para expressar uma estrutura do documento, ou seja, as frases-pista vem de um único modelo generativo. A fim de refletir essa ideia, o modelo é adaptado para influenciar a probabilidade da sentença de ser uma final ou início de segmento conforme a presença de frases pista.
 
 % ===
 

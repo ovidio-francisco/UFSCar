@@ -151,6 +151,9 @@ file:///ext4Data/UFSCar/papers/Segmentação/more papers/papers recentes/Exogeno
 
 Densidade do c99
 http://ijarcet.org/wp-content/uploads/IJARCET-VOL-4-ISSUE-5-1858-1862.pdf
+
+Usa as medidas tradicionais em 2015
+
 ****************************************************************************
 ****************************************************************************
 
@@ -427,11 +430,21 @@ http://www.aclweb.org/anthology/N13-1019
 ****************************************************************************
 ****************************************************************************
 
+Figure 1: Illustration of counting boundaries in windows
+
+file:///ext4Data/UFSCar/papers/Segmentação/Getting More from Segmentation Evaluation.pdf
 
 
 ****************************************************************************
 ****************************************************************************
 
+Fig. 2. Illustration of the usefulness of the
+
+"High changes corresponds to a transition between segments"
+"Stable region means no severe change in the active speaker set (inside a segment)"
+"Rapid changes in the active speaker set corresponds to a long transition between to segments"
+
+file:///ext4Data/UFSCar/papers/Segmentação/Linear Discourse Segmentation of Multi-Party Mettings Based on Local and Global Information.pdf
 
 
 ****************************************************************************

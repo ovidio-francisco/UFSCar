@@ -16,6 +16,10 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 Database file #1: abntex2-options.bib
 Database file #2: referencias.bib
+A bad cross reference---entry "Cheng2013"
+refers to entry "conf/sdm/2013", which doesn't exist
+Warning--I didn't find a database entry for "Steyvers2007"
+Warning--I didn't find a database entry for "conf/sdm/2013"
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
 Reallocated global_strs (elt_size=20001) to 20 items from 10.
@@ -26,45 +30,45 @@ Warning--faltando school em Reynar1998
 | Em caso de dúvidas ou problemas com este estilo procure |
 | http://abntex2.googlecode.com                           |
 +---------------------------------------------------------+
-You've used 42 entries,
+You've used 43 entries,
             6711 wiz_defined-function locations,
-            1565 strings with 19093 characters,
-and the built_in function-call counts, 65301 in all, are:
-= -- 7381
-> -- 1455
-< -- 1470
-+ -- 1966
-- -- 436
-* -- 4375
-:= -- 7888
-add.period$ -- 203
-call.type$ -- 42
-change.case$ -- 474
-chr.to.int$ -- 102
-cite$ -- 42
-duplicate$ -- 5997
-empty$ -- 2827
-format.name$ -- 2051
-if$ -- 13563
+            1578 strings with 19421 characters,
+and the built_in function-call counts, 67566 in all, are:
+= -- 7657
+> -- 1496
+< -- 1533
++ -- 2044
+- -- 448
+* -- 4521
+:= -- 8154
+add.period$ -- 210
+call.type$ -- 43
+change.case$ -- 488
+chr.to.int$ -- 103
+cite$ -- 43
+duplicate$ -- 6229
+empty$ -- 2913
+format.name$ -- 2112
+if$ -- 14024
 int.to.chr$ -- 0
 int.to.str$ -- 0
-missing$ -- 779
-newline$ -- 228
-num.names$ -- 205
-pop$ -- 970
+missing$ -- 797
+newline$ -- 233
+num.names$ -- 210
+pop$ -- 993
 preamble$ -- 1
-purify$ -- 174
+purify$ -- 179
 quote$ -- 0
-skip$ -- 6060
+skip$ -- 6297
 stack$ -- 1
-substring$ -- 2979
-swap$ -- 2430
-text.length$ -- 91
+substring$ -- 3086
+swap$ -- 2519
+text.length$ -- 93
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 16
+type$ -- 17
 warning$ -- 1
-while$ -- 352
+while$ -- 361
 width$ -- 0
-write$ -- 742
-(There was 1 warning)
+write$ -- 760
+(There was 1 error message)

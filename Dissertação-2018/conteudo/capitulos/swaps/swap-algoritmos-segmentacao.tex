@@ -4,15 +4,72 @@
 
 
 
+
+
+
+
+% Finalmente, com base na matriz de \textit{ranking}, o C99 utiliza um método de \textit{clustering} baseado no algoritmo \textit{DotPloting}~\cite{Reynar1998} que usa regiões com maior densidade em uma matriz de similaridades para determinar como os segmentos estão distribuídos. Um segmento é definido por duas sentenças $i$ e $j$ que representam uma região quadrada ao longo da diagonal da matriz. Calcula-se a densidade dessa região como mostrado na Equação~\ref{equ:densidade-c99}. Seja $s_{i,j}$ a somatória dos \textit{rakings} de um segmento e $a_{i,j}$ sua área interior. Seja $B = \{b1,...,b_m\}$ a lista de $m$ segmentos e $s_k$ e $a_k$ são a somatória dos valores dos rankings e a área de um segmento $k$ em $B$. Então, a densidade é computada por: 
+
+
+
+
+
+
+
+Seja $B = \{b1,...,b_m\}$ a lista de $m$ segmentos e $s_k$ e $a_k$ são a somatória dos valores dos rankings e a área de um segmento $k$ em $B$. Então, a densidade é computada por: 
+
+
+
+Seja $s_{i,j}$ a somatória dos \textit{rakings} de um segmento 
+Seja $s_{i,j}$ a somatória dos \textit{rakings} de um segmento e $a_{i,j}$ a área quadrada que contém o segmento. 
+
+
+
+
+
+% --> % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % 
+Papers falando da densidade do C99
+
+file:///ext4Data/UFSCar/papers/Segmentação/Clássicos/Advances in domain independent linear text segmentation.pdf
+file:///ext4Data/UFSCar/papers/Segmentação/recentes/A Study on Statistical Generation of a Hierarchical Structure of Topic-information for Multi-documents.pdf
+file:///ext4Data/UFSCar/papers/Segmentação/An analysis of quantitative aspects in the evaluation of thematic segmentation algorithms.pdf
+file:///ext4Data/UFSCar/papers/Segmentação/COMPARATIVE ANALYSIS OF C99 AND TOPICTILING TEXT SEGMENTATION ALGORITHMS.pdf
+file:///ext4Data/UFSCar/papers/Segmentação/Fuzzy Implementation of proposed hybrid algorithm using Topic Tilling and C99 for Text Segmentation.pdf
+% --> % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 O objetivo final no modelo é simultaneamente maximizar a dissimilaridade entre partições e maximizar
 encontrar múltiplas partições. 
-
-
-
-
-
-
-
 
 
 

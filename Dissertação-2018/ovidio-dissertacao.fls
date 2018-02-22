@@ -266,6 +266,9 @@ INPUT ./conteudo/capitulos/figs/windiffzoom.jpg
 INPUT /usr/share/texmf/tex/latex/lm/t1lmtt.fd
 INPUT /usr/share/texmf/tex/latex/lm/t1lmtt.fd
 INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmtt12.tfm
+INPUT conteudo/capitulos/inputs/extracao-de-topicos.tex
+INPUT conteudo/capitulos/inputs/extracao-de-topicos.tex
+INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmbx12.tfm
 OUTPUT conteudo/capitulos/4-cap3.aux
 INPUT conteudo/capitulos/4-cap3.tex
 INPUT conteudo/capitulos/4-cap3.tex
@@ -281,7 +284,6 @@ INPUT ./conteudo/capitulos/figs/visao-geral-3-eps-converted-to.pdf
 INPUT conteudo/capitulos/figs/pre-process.pdf
 INPUT ./conteudo/capitulos/figs/pre-process.pdf
 INPUT ./conteudo/capitulos/figs/pre-process.pdf
-INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmbx12.tfm
 INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmbx8.tfm
 INPUT conteudo/capitulos/figs/interface-anotacoes.png
 INPUT ./conteudo/capitulos/figs/interface-anotacoes.png
