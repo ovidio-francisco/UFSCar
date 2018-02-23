@@ -57,7 +57,10 @@ Na Figura~\ref{fig:matrix-similarity} é mostrado um exemplo de uma matriz de si
 
   \begin{figure}[!h]
 	  \centering
-	  \includegraphics[width=0.6\textwidth]{conteudo/capitulos/figs/c99-ranking-matrix.png}
+	  % \includegraphics[width=0.6\textwidth]{conteudo/capitulos/figs/c99-ranking-matrix.png}
+	  \includegraphics[width=0.6\textwidth]{conteudo/capitulos/figs/similarity-matrix-l.g}
+
+	  % \includegraphics[width=0.6\textwidth]{conteudo/capitulos/figs/lda-sim-matrix.png}
 	  \caption{\textit{DotPlot} da similaridade entre sentenças onde as linha verticais representam segmentos reais~\cite{Eisenstein2008}.}
 	  \label{fig:matrix-similarity}
   \end{figure}
@@ -77,9 +80,15 @@ Na Figura~\ref{fig:a} é destacado um quadro 3~x~3 de uma matriz. Tomando como e
 \begin{figure}[!h]
 	\centering     %%% not \center
 
-	\subfigure[Passo 1]{\label{fig:a}\includegraphics[width=60mm]{conteudo/capitulos/figs/exemplo-matrix-rank-A.png}
-	\subfigure[Passo 2]{\label{fig:b}\includegraphics[width=60mm]{conteudo/capitulos/figs/exemplo-matrix-rank-B.png}
-	
+	\subfigure[Passo 1]{
+		\label{fig:a}
+		\includegraphics[trim={ 10 250 80 40 },clip,page=1,width=60mm]{conteudo/capitulos/figs/c99-matrizes.pdf}
+	}	
+	\subfigure[Passo 2]{
+		\label{fig:b}
+		\includegraphics[trim={ 10 250 80 40 },clip,page=2,width=60mm]{conteudo/capitulos/figs/c99-matrizes.pdf}
+		% \includegraphics[width=60mm]{conteudo/capitulos/figs/exemplo-matrix-rank-B.png}
+	}
 	\caption{Exemplo de construção de uma matriz de rankings.%~\cite{Choi2000}.
 	}
 	\label{fig:exemplomatrixrank}

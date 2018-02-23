@@ -142,14 +142,6 @@ ISBN 0521836573, 9780521836579.}
   Annotations Collected with a General Purpose Toolkit}. [S.l.]: Springer,
   Dordrecht, 2007.}
 
-\bibitem[Hearst 1994]{Hearst1994}
-\abntrefinfo{Hearst}{HEARST}{1994}
-{HEARST, M.~A. Multi-paragraph segmentation of expository text. In:
-  \emph{Proceedings of the 32Nd Annual Meeting on Association for Computational
-  Linguistics}. Stroudsburg, PA, USA: Association for Computational
-  Linguistics, 1994.  (ACL '94), p. 9--16. Dispon{\'\i}vel em:
-  \url{http://dx.doi.org/10.3115/981732.981734}.}
-
 \bibitem[Hearst 1997]{Hearst1997}
 \abntrefinfo{Hearst}{HEARST}{1997}
 {HEARST, M.~A. Texttiling: Segmenting text into multi-paragraph subtopic
@@ -312,6 +304,14 @@ Dispon{\'\i}vel em: \url{http://dx.doi.org/10.1007/s10844-011-0172-5}.}
 \emph{IEEE Transactions on Pattern Analysis and Machine Intelligence}, v.~22,
   n.~8, p. 888--905, Aug 2000.
 ISSN 0162-8828.}
+
+\bibitem[Steyvers e Griffiths 2007]{Steyvers2007}
+\abntrefinfo{Steyvers e Griffiths}{STEYVERS; GRIFFITHS}{2007}
+{STEYVERS, M.; GRIFFITHS, T. Probabilistic topic models. In:  LANDAUER, T.;
+  MCNAMARA, S.~D.; KINTSCH, W. (Ed.). \emph{Latent Semantic Analysis: A Road to
+  Meaning}. Laurence Erlbaum, 2007. cap. Probabilistic topic models.
+Dispon{\'\i}vel em:
+  \url{http://psiexp.ss.uci.edu/research/papers/SteyversGriffithsLSABookFormatted.pdf}.}
 
 \bibitem[Tan, Steinbach e Kumar 2005]{Tan2005}
 \abntrefinfo{Tan, Steinbach e Kumar}{TAN; STEINBACH; KUMAR}{2005}

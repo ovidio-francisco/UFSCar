@@ -18,7 +18,6 @@ Database file #1: abntex2-options.bib
 Database file #2: referencias.bib
 A bad cross reference---entry "Cheng2013"
 refers to entry "conf/sdm/2013", which doesn't exist
-Warning--I didn't find a database entry for "Steyvers2007"
 Warning--I didn't find a database entry for "conf/sdm/2013"
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
@@ -32,43 +31,43 @@ Warning--faltando school em Reynar1998
 +---------------------------------------------------------+
 You've used 43 entries,
             6711 wiz_defined-function locations,
-            1578 strings with 19421 characters,
-and the built_in function-call counts, 67566 in all, are:
-= -- 7657
-> -- 1496
-< -- 1533
-+ -- 2044
-- -- 448
-* -- 4521
-:= -- 8154
-add.period$ -- 210
+            1577 strings with 19465 characters,
+and the built_in function-call counts, 68519 in all, are:
+= -- 7787
+> -- 1525
+< -- 1572
++ -- 2095
+- -- 456
+* -- 4588
+:= -- 8261
+add.period$ -- 211
 call.type$ -- 43
-change.case$ -- 488
+change.case$ -- 495
 chr.to.int$ -- 103
 cite$ -- 43
-duplicate$ -- 6229
-empty$ -- 2913
-format.name$ -- 2112
-if$ -- 14024
+duplicate$ -- 6349
+empty$ -- 2912
+format.name$ -- 2158
+if$ -- 14186
 int.to.chr$ -- 0
 int.to.str$ -- 0
-missing$ -- 797
-newline$ -- 233
-num.names$ -- 210
-pop$ -- 993
+missing$ -- 799
+newline$ -- 234
+num.names$ -- 211
+pop$ -- 1003
 preamble$ -- 1
-purify$ -- 179
+purify$ -- 180
 quote$ -- 0
-skip$ -- 6297
+skip$ -- 6412
 stack$ -- 1
-substring$ -- 3086
-swap$ -- 2519
+substring$ -- 3106
+swap$ -- 2558
 text.length$ -- 93
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 17
 warning$ -- 1
-while$ -- 361
+while$ -- 359
 width$ -- 0
 write$ -- 760
 (There was 1 error message)
