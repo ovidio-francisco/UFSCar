@@ -24,7 +24,7 @@ public class ReferenceSegmentation {
 //		System.out.println("\n===\n\n");
 
 		
-		File folder = new File("./docs3");
+		File folder = new File("./docs4");
 		File refFolder = new File("./SegReferences");
 		
 		if(!refFolder.exists()) {
