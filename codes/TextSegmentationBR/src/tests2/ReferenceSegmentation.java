@@ -24,7 +24,7 @@ public class ReferenceSegmentation {
 //		System.out.println("\n===\n\n");
 
 		
-		File folder = new File("./docs4");
+		File folder = new File("./docs");
 		File refFolder = new File("./SegReferences");
 		
 		if(!refFolder.exists()) {
@@ -169,13 +169,15 @@ public class ReferenceSegmentation {
 			System.out.println("\n"+name);
 			table.append(name+"\n");
 			
+			
+			int anotador_count = 1;
 			ArrayList<int[]> annotations = new ArrayList<>();
 			for(File fileAnnotation : sameNameFiles) {
 				int[] binSegmentaion = MeasureUtils.getIntegersBinarySegmentation(fileAnnotation); 
 				annotations.add(binSegmentaion);
 				int qtdSegments = MeasureUtils.countSegments(binSegmentaion);
 //				table.append("\tAnotador N "+ qtdSegments + " segmentos | " + binSegmentaion.length +" sentenças \n");
-				table.append(String.format("\tAnotador N %3d segmetnos | %3d sentenças\n", qtdSegments, binSegmentaion.length));
+				table.append(String.format("\tAnotador %2d %3d segmetnos | %3d sentenças\n",anotador_count++, qtdSegments, binSegmentaion.length));
 				System.out.println(String.format("%s", getStringBinarySegmentation(fileAnnotation)));
 			}
 			
@@ -256,7 +258,7 @@ public class ReferenceSegmentation {
 		HashMap<String, Integer> fileNames =  new HashMap<>();
 		File[] folders = getFolders(folder);
 		for(File d : folders) {
-//			System.out.println(String.format("+ %s", d));
+			System.out.println(String.format("+ %s", d));
 			
 			File[] files = getFiles(d);
 			for(File f : files) {

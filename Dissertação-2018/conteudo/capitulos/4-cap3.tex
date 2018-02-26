@@ -142,7 +142,7 @@ A avaliação de um segmentador automático de textos exige uma referência, ist
 
 
 % ----- Anotação -----
-Selecionou-se um grupo de anotadores para analisar e coletar dados referentes a segmentação de cada ata. O grupo de anotadores foi formado por profissionais com alguma afinidade com atas de reunião, como profissionais administrativos, professores e coordenadores de curso. Optou-se por utilizar um \textit{software} como ferramenta para a coleta dos dados a fim de facilitar o trabalho de anotação e diminuir eventuais erros, conforme sugerido por~\cite{Hovy2010}. Essa ferramenta permitiu aos anotadores visualizar os documentos e indicar livremente as divisões entre segmentos, bem como rotulá-los em classes e indicar palavras que melhor descrevem o assunto central do segmento.
+Selecionou-se um grupo de anotadores para analisar e coletar dados referentes a segmentação de cada ata. O grupo de anotadores foi formado por profissionais com alguma afinidade com atas de reunião, como profissionais administrativos, professores e coordenadores de curso. Optou-se por desenvolver um \textit{software} como ferramenta para a coleta dos dados a fim de facilitar o trabalho de anotação e diminuir eventuais erros, conforme sugerido por~\cite{Hovy2010}. Essa ferramenta foi modelada para permitir aos anotadores visualizar os documentos e indicar livremente as divisões entre segmentos, bem como rotulá-los em classes e indicar palavras que melhor descrevem o assunto central do segmento.
 Os anotadores receberam informações básicas sobre o objetivo da pesquisa e instruções de como operar o \textit{software}. Contudo, nenhum critério foi estabelecido para o procedimento ficando os anotadores livres para segmentar e rotular as atas orientados apenas pela interface da ferramenta. Na Figura~\ref{fig:interfaceanotacoes} é mostrada a interface da ferramenta utilizada para as anotações.
 
   \begin{figure}[!h]
@@ -153,9 +153,89 @@ Os anotadores receberam informações básicas sobre o objetivo da pesquisa e in
   \end{figure}
 
 
+
+
+% ----------------- Exemplo Segmentação de Referência ----------------------
+
+Na Tabela~\ref{tab:segmentacaoreferencia} é mostrado um exemplo em que x dos 9 anotadores concordaram a respeito de um segmento. O trecho mostra três segmentos extraídos da segmentação de referência. O primeiro trata ...
+Os números a esquerda indicam o índice da sentença.
+
+Anexo a cada segmento é mostrado a classe uma amostra das classes e descritores rotulados por um dos anotadores. Esses rótulos não foram utilizados no processo de segmentação e não têm nenhuma influência sobre a segmentação de referência. Nesse trabalho, essas anotações são utilizadas na avaliação dos extratores de tópicos e do Módulo de consulta.
+
+\begin{table}[!h]
+	\centering 
+\footnotesize
+% \scriptsize
+	\begin{tabular}{|p{0.2cm}p{14,5cm}|} \hline
+
+
+$^{[7]}$&
+(II) Encerrada a etapa de inscrição para o processo seletivo como aluno regular para o segundo semestre de 2015: foram quarenta e nove inscrições on-line e dezoito candidatos entregaram a documentação; 
+\textit{<informe>} \textit{<processo;seletivo>}
+\\ \hline
+
+
+$^{[8]}$ &
+(III) O Prof. Dr. Alexandre Alvaro informou que a Pró- Reitora comunicou a oferta de mais uma bolsa pela cota da Pró-Reitoria, mas não havia aluno disponível para alocação da bolsa.\\
+$^{[9]}$ &
+(III) O Prof. Dr. Alexandre Alvaro informou que a Pró- Reitora comunicou a oferta de mais uma bolsa pela cota da Pró-Reitoria, mas não havia aluno disponível para alocação da bolsa.\\
+$^{[10]}$ &
+O Prof. Dr. José de Oliveira Guimarães informou que havia uma aluna interessada, mas não informada durante o processo de elaboração do ranking no início do semestre.\\
+$^{[11]}$ &
+Ficou decidido enviar e-mail aos docentes solicitando que comuniquem permanentemente interesse de alunos em bolsa pra atualização do ranking;
+\textit{<informe>} \textit{<solicitação;bolsa;cota;ranking;alunos>}
+\\ \hline
+
+
+$^{[12]}$ &
+(IV) Com a mudança do Prof. Dr. Murillo Rodrigo Petrucelli Homem para o campus de São Carlos, o Prof. Dr. José de Oliveira Guimarães assume o posto de suplente da linha Teoria Aplicada à Computação na CPG;
+\textit{<informe>} \textit{<mudança;suplente;teoria;aplicada;computação>}
+\\ \hline
+
+$^{[13]}$ &
+	Comunicação dos membros: Não houve;
+	\textit{<irrelevante>} 
+\\ \hline
+
+
+
+% $^{[14]}$ &
+% Ordem do Dia: (I) Foram apresentadas regras para participação de membro externo em banca de defesa do mestrado.\\
+% $^{[15]}$ &
+% O Prof. Dr. Alexandre Alvaro comentou que está sendo pago aos participantes externos das bancas a diária pelo PROAP e o pró-labore pelo DComp, além do programa fornecer o transporte, que onera a verba PROAP.\\
+% $^{[16]}$ &
+% O Prof. Dr. Tiago Agostinho de Almeida sugeriu o seguinte cálculo para pagamento: se o participante vier de uma Instituição com distância até 220 km será feito o cálculo de R\$ 1,00 multiplicado pela quilometragem.\\
+% $^{[17]}$ &
+% Caso a distância seja superior a 220 km, será calculada a distância multiplicada por R\$ 0,60. O menor valor entre o custo do transporte e o pagamento de verba e pró-labore será utilizado para custear a vinda do participante;
+% \\ \hline
+
+
+
+% $^{[18]}$ &
+% (II) Foi discutida a forma de convalidação de disciplinas cursadas como aluno regular anterior a três anos do reingresso do aluno.
+% Foi decidido que fica a cargo da CPG decidir sobre as disciplinas que serão aproveitadas quando do reingresso do aluno;
+% \\ \hline
+
+
+
+% $^{[13]}$ &
+
+	\end{tabular}
+	\caption{Exemplo de }
+	\label{tab:segmentacaoreferencia}
+\end{table}
+
+
+
+
+
+
+
+
+
   
 % Os arquivos gerados foram tratados para que os segmentos sempre terminem em uma sentença reconhecida pelo algoritmo, uma vez que as sentenças são a unidade mínima de informação nesse trabalho.
-  Após o processo de anotação, os dados coletados foram analisados para gerar as segmentações de referência. A segmentação de referência foi gerada utilizando o critério de maior concordância, como já relatado em outros trabalhos~\cite{Hearst1997, Cardoso2017, Kazantseva2012, Passonneau1997, Galley2003}. Considerou-se que ocorre um limite entre segmentos quando a maioria dos anotadores (metade mais um) concordaram que a mesma sentença é um final de segmento. A concordância entre os anotadores é uma medida importante que mostra como os anotadores compreendem os textos analisados e o nível de confiabilidade da segmentação de referência. Na Figura~\ref{fig:concordanciasegref} é mostrado um exemplo de criação de uma segmentação de referência por meio da concordância entre anotadores. A primeiras linhas representam segmentações fornecidas por anotadores e a última linha representa a segmentação resultante da concordânica entre a maioria dos segmentadores e portanto mais confiável. 
+  Após o processo de anotação, os dados coletados foram analisados para gerar as segmentações de referência. A segmentação de referência foi gerada utilizando o critério de maior concordância, como já relatado em outros trabalhos~\cite{Hearst1997, Cardoso2017, Kazantseva2012, Passonneau1997, Galley2003}. Considerou-se que ocorre um limite entre segmentos quando a maioria dos anotadores (metade mais um) concordaram que a mesma sentença é um final de segmento. A concordância entre os anotadores é uma medida importante que mostra como os anotadores compreendem os textos analisados e o nível de confiabilidade da segmentação de referência. Na Figura~\ref{fig:concordanciasegref} é mostrado um exemplo de criação de uma segmentação de referência por meio da concordância entre anotadores. As primeiras linhas representam segmentações fornecidas por anotadores e a última linha representa a segmentação resultante da concordânica entre a maioria dos segmentadores e portanto mais confiável. 
 
 
 \begin{center}
@@ -176,25 +256,31 @@ A Tabela~\ref{tab:segmentacaoreferencia} contém, para cada ata, a quantidade de
 
 \begin{table}[!h]
 	\centering
-	\begin{tabular}{|l|c|c|c|c|c|c|} \hline
+	\begin{tabular}{|l|c|c|c|c|c|c|c|c|c|c|} \hline
 		\textbf{Ata} & \textbf{Sentenças}  & 
 		\textbf{A1}  & 
 		\textbf{A2}  & 
 		\textbf{A3}  & 
-		\textbf{A4} \\	\hline
+		\textbf{A4}  & 
+		\textbf{A5}  & 
+		\textbf{A6}  & 
+		\textbf{A7}  & 
+		\textbf{A8}  & 
+		\textbf{A9} \\	\hline
 
-		Ata 1  & 25 & 7  & 15 & 8  & 16 \\ \hline 
-		Ata 2  & 17 & 4  & 14 & 6  & 14 \\ \hline 
-		Ata 3  & 26 & 6  & 17 & 10 & 14 \\ \hline 
-		Ata 4  & 26 & 5  & 12 & 7  & 12 \\ \hline 
-		Ata 5  & 33 & 4  & 17 & 9  & 16 \\ \hline 
-		Ata 6  & 11 & 3  & 9  & 4  & 5  \\ \hline 
-		Ata 7  & 20 & 3  & 5  & 4  & 0  \\ \hline 
-		Ata 8  & 35 & 4  & 5  & 9  & 0  \\ \hline 
-		Ata 9  & 24 & 3  & 3  & 9  & 0  \\ \hline 
-		Ata 10 & 50 & 4  & 5  & 8  & 0  \\ \hline 
-		Ata 11 & 43 & 4  & 5  & 12 & 0  \\ \hline 
-		Ata 12 & 56 & 3  & 4  & 11 & 0  \\ \hline 
+% 		              A1   A2   A3  A4    A5   A6   A7   A8   A9   
+		Ata 1  & 25 & 7  & 4  & 11 & 6  & 16 & 8  & 8  & 15 & 16 \\ \hline 
+		Ata 2  & 17 & 4  & 4  & 8  & 6  & 11 & 6  & 6  & 15 & 14 \\ \hline 
+		Ata 3  & 26 & 6  & 6  & 8  & 4  & 15 & 9  & 10 & 18 & 14 \\ \hline 
+		Ata 4  & 26 & 5  & 5  & 10 & 6  & 14 & 17 & 7  & 11 & 12 \\ \hline 
+		Ata 5  & 33 & 4  & 4  & 6  & 5  & 17 & 22 & 9  & 18 & 16 \\ \hline 
+		Ata 6  & 11 & 3  & 4  & 6  & 4  & 9  & 9  & 4  & 7  &  5 \\ \hline 
+		Ata 7  & 20 & 3  & 7  & 5  & 4  & 11 & 14 & 5  & 5  &  4 \\ \hline 
+		Ata 8  & 35 & 4  & 8  & 3  & 8  & 12 & 17 & 5  & 11 &  9 \\ \hline 
+		Ata 9  & 24 & 3  & 5  & 3  & 6  & 11 & 11 & 3  & 9  &  9 \\ \hline 
+		Ata 10 & 50 & 4  & 5  & 4  & 7  & 31 & 29 & 5  & 9  &  8 \\ \hline 
+		Ata 11 & 43 & 4  & 7  & 5  & 7  & 29 & 19 & 5  & 9  & 12 \\ \hline 
+		Ata 12 & 56 & 3  & 10 & 4  & 16 & 33 & 25 & 4  & 13 & 11 \\ \hline 
 
 	\end{tabular}
 	\caption{Quantidade de sentenças e segmentos de referência por ata.}
