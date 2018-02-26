@@ -1,0 +1,81 @@
+\section{Anotação de Subtópicos}
+
+A avaliação de segmentadores frequentemente requer uma segmentação de referência. Essa referência deve refletir um segmentação real sendo confiável para apoiar a avaliação da qualidade de técnicas de segmentação. 
+
+A construção de um corpus anotado demanda tempo e disponibilidade de anotadores humanos, o que a torna uma tarefa relativamente custosa. 
+Assim, é necessário seguir procedimentos que assegurem que a tarefa seja concluída com o exito esperado que o resultado produzido seja válido, confiável e consistente para fins de pesquisas científicas. Para isso,~\cite{Hovy2010} propuseram uma metodologia para anotação em corpus que pode ser resumida em sete passos: 
+(1) Escolha do evento a ser anotado, %e a teoria que o embasa,
+(2) Seleção do corpus,% apropriado,
+(3) Selecionar e treinar os anotadores,
+(4) Especificar o processo de anotação,
+(5) Modelar uma interface para anotação,
+(6) Escolher e aplicar medidas de avaliação,
+(7) Disponibilizar e manter o produto.
+% 
+A seguir, serão descritos outros trabalhos relacionados a anotação de corpus e em seguida a os passos dessa metodologia. %  propostos por~\cite{Hovy2010}.
+
+Um dos primeiros trabalhos a produzir um corpus com anotações de segmentos foi~\cite{Hearst1997} no qual um corpus constituído por doze artigos de revistas foram anotados por sete técnicos pesquisadores. Cada artigo continha entre 1.800 e 2500 palavras. O autor considerou um limite entre segmentos real onde pelo menos três anotadores marcavam uma transição de tópico. No trabalho de~\cite{Kazantseva2012} utilizou-se um livro ficcional contendo vinte capítulos que foi segmentado por seis xxx que além de marcar os pontos de transição entre segmentos, forneceram um descrição breve sobre cada segmento identificado. 
+
+Outros trabalhos abordaram corpus compostos pela transcrição de audios. Por exemplo,~\cite{Passonneau1997} transcreveu vinte narrativas sobre um filme que foi segmentada e anotada por sete voluntários. Cada narrativa, continha cerca de 13.500 palavras. Os anotadores não receberam nenhum treinamento formal para a tarefa, mas apenas solicitados a usar suas noções de comunicabilidade para identificar as mudanças de tópicos. No trabalho de~\cite{Galley2003} investigou-se a transcrição de um conjunto de vinte e cinco reuniões obtidas do \textit{ICSI Meeting corpus}~\cite{Janin2003} em que pelo menos três anotadores analisaram os pontos onde ocorreu troca da pessoa que fala e apontaram como sendo ou não uma mudança de assunto.  
+
+Nesses trabalhos utilizou-se os anotadores como juízes para produzir uma referência em que decidiu-se sobre cada candidato a limite entre segmentos por meio da opinião da maioria. Além desses trabalhos, outros se valeram de segmentações produzidas artificialmente. Por exemplo,~\cite{Choi2000} produziu um corpos formado por 700 documentos. As referências foram gerada pela concatenação de sentenças extraídas de documentos diferentes. De maneira semelhante,~\cite{CHAIBI2014} utilizou a concatenação de artigos de noticias para produzir os documentos. Os autores consideram um limite real o ponto que divide dois artigos originais. 
+
+\subsection{Metodologia para anotações em corpus}
+
+
+Os trabalhos citados anteriormente utilizaram procedimentos diferentes para produzir segmentações de referência para seus trabalhos. Como já citado,~\cite{Hovy2010} propôs que o processo de anotação em corpus pode der sintetizado e dividido em sete passos. 
+
+
+\subsubsection{Escolha do corpus}
+A criação de corpus raramente é restrita a um único propósito. O material original deve ser preferencialmente constituído de documentos disponíveis livremente à comunidade, a fim de facilitar a comparação, extensão e avaliação de trabalhos futuros. 
+Devido a diversidade linguística de diferentes domínios e gêneros de textos, a escolha dos documentos de amostra deve procurar ser representativa ao domínio a ser abordado. O corpus é considerado representativo quando o assunto a abordado na amostra tem correspondência com a interpretação do público geral desse domínio.
+
+% \subsubsection{Fundamentação da teoria}
+\subsubsection{Escolha da teoria a ser explicada}
+A anotação deve ajudar a explicar uma teoria, ou seja, fornecer informações úteis a sua compreensão. Essa teoria irá guiar a especificação do processo de anotação, quais informações deseja-se extrair e como interpretá-las. Quanto mais complexa for a teoria ser explicada, mais complexa será a tarefa de anotação bem como as instruções que os anotadores deverão seguir. Além disso, deve-se estabelecer de início o nível de detalhamento necessário. 
+A complexidade da teoria e nível de detalhamento impactam na condução da anotação e da estabilidade da anotação.
+
+% quanto é necessário se aprofundar em detalhes
+
+
+\subsubsection{Selecionar e treinar os anotadores}
+
+O treinamento e o nível conhecimento dos anotadores ainda é uma questão em aberto. Alguns pesquisadores afirmam que estes devem ser experts no domínio do corpus. Outros afirmam que pessoas adequadamente treinadas podem produzir resultados satisfatórios. 
+Considerando a necessidade de treinamento, tem-se a subjetividade das tarefas que dificulta a elaboração de instruções precisas. Tarefas que permitem a especificação de procedimentos que leva em conta a possibilidade de diferentes casos e variáveis, põem em dúvida a necessidade da criação de um corpus anotado.
+Por outro lado, a ausência de treinamento implica que as anotações terão como base o conhecimento prévio dos anotadores e sua preconcepção a cerca do domínio o que diminui o nível de concordância entre os anotadores e dificulta a replicação a replicação de outros trabalhos.
+
+
+\subsubsection{Especificar o procedimento de anotação}
+Alguns processos de anotações podem levar longos períodos, criando a necessidade de dividir a tarefa em fases. Nesses casos, frequentemente os anotadores fazem reuniões periódicas a fim de relatar eventuais problemas.  
+Em alguns projetos, abre-se espaço para discussão de pontos com baixa concordância, a qual é chamada de fase de ``reconciliação''. Essa fase é recomendada para aumentar o nível de concordância, contudo pode ocasionar um enviesamento dos resultados. 
+Em caso de baixa concordância, pode-se abrir espaço para discussão de pontos com baixa concordância, a qual é chamada de fase de ``reconciliação''. A fase de reconciliação pode ocasionar um enviesamento dos resultados. Outra estratégia para baixa concordância é que solicitar que os anotadores marquem o nível de certeza sobre as anotações.
+
+\subsubsection{Modelar uma interface para anotação}
+Um software com interface amigável, além de facilitar o trabalho, evita erros durante o processo. 
+O ganho em tempo e a melhoria na qualidade dos resultados justifica a criação de uma interface. 
+Exemplos softwares para anotação na área de Processamento de linguagem natural e Bioinformática podem ser encontrados em~\cite{Gruenstein2007}.
+
+
+
+\subsubsection{Escolher e aplicar medidas de avaliação}
+
+Quando observa-se baixa concordância entre os anotadores, entende-se que há uma falha no processo de anotação ou na teoria a ser explicada, o que implica que o dados produzidos não servem para a fins de pesquisa ou aplicações práticas. A medida dessa concordância deve determina a confiabilidade dos resultados.
+A medida mais utilizada em Processamento de linguagem natural é o coeficiente \textit{kappa}~\cite{Carletta1996} que retorna um valor no intervalo de 0 até 1, onde 1 significa uma concordância perfeita e 0 que não houve concordância. Seja, $P(A)$ a proporção de vezes que os anotadores concordam e $P(E)$ a proporção de concordância esperada ao acaso. O cálculo de \textit{kappa} é dado por:
+
+\begin{equation}
+	kappa = \frac{P(A) - P(E)}{1 - P(E)}
+\end{equation}
+
+Essa medida, apresenta como limitação a entrada de apenas dois casos. Como alternativa, a medida conhecida como \textit{Fleiss's k}~\cite{Fleiss1979} pode ser utilizada quando há mais que dois anotadores, porém restringe-se a anotações com apenas duas categorias. 
+Na avaliação de segmentadores, as medidas $P_k$ (Equação~\ref{equ:Pk}) e \textit{WindowDiff} (Equação~\ref{equ:windiff}) podem ser utilizadas, uma vez que são medidas de similaridade, como visto em~\cite{Kazantseva2012,Cardoso2017}.
+
+
+
+\subsubsection{Disponibilizar e manter o produto}
+
+Uma vez criado, o corpus anotado deve ser disponibilizado para uso em outros trabalhos. 
+Recomenda-se fornecer o corpus original além dos resultados obtidos, observando-se desde o início e ao longo do tempo a propriedade e eventuais licenças sob o corpus original.
+
+
+
+

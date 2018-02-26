@@ -263,6 +263,8 @@ INPUT ./conteudo/capitulos/figs/near-missing.pdf
 INPUT /usr/share/texmf/tex/latex/lm/t1lmtt.fd
 INPUT /usr/share/texmf/tex/latex/lm/t1lmtt.fd
 INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmtt12.tfm
+INPUT conteudo/capitulos/inputs/anotacoes.tex
+INPUT conteudo/capitulos/inputs/anotacoes.tex
 INPUT conteudo/capitulos/inputs/extracao-de-topicos.tex
 INPUT conteudo/capitulos/inputs/extracao-de-topicos.tex
 OUTPUT conteudo/capitulos/4-cap3.aux

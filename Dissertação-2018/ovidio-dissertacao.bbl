@@ -166,6 +166,12 @@ ISBN 1-58113-096-1. Dispon{\'\i}vel em:
   methodological challenge for corpus linguistics.
 v.~22, p. 13--36, 01 2010.}
 
+\bibitem[Janin et al. 2003]{Janin2003}
+\abntrefinfo{Janin et al.}{JANIN et al.}{2003}
+{JANIN, A. et al. The icsi meeting corpus. In:  \emph{Proceedings of the IEEE
+  International Conference on Acoustics, Speech, and Signal Processing}. [S.l.:
+  s.n.], 2003. p. 364--367.}
+
 \bibitem[Kazantseva e Szpakowicz 2012]{Kazantseva2012}
 \abntrefinfo{Kazantseva e Szpakowicz}{KAZANTSEVA; SZPAKOWICZ}{2012}
 {KAZANTSEVA, A.; SZPAKOWICZ, S. Topical segmentation: A study of human
@@ -304,6 +310,12 @@ Dispon{\'\i}vel em: \url{http://dx.doi.org/10.1007/s10844-011-0172-5}.}
 \emph{IEEE Transactions on Pattern Analysis and Machine Intelligence}, v.~22,
   n.~8, p. 888--905, Aug 2000.
 ISSN 0162-8828.}
+
+\bibitem[Shrout e Fleiss 1979]{Fleiss1979}
+\abntrefinfo{Shrout e Fleiss}{SHROUT; FLEISS}{1979}
+{SHROUT, P. E.; FLEISS, J. L. Intraclass correlations: Uses in assessing rater
+  reliability.
+v.~86, p. 420--8, 04 1979.}
 
 \bibitem[Steyvers e Griffiths 2007]{Steyvers2007}
 \abntrefinfo{Steyvers e Griffiths}{STEYVERS; GRIFFITHS}{2007}
