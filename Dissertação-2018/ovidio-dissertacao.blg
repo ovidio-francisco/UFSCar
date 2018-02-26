@@ -1,7 +1,6 @@
 This is BibTeX, Version 0.99d (TeX Live 2016/Debian)
 Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: ovidio-dissertacao.aux
-A level-1 auxiliary file: conteudo/capitulos/2-cap1.aux
 A level-1 auxiliary file: conteudo/capitulos/3-cap2.aux
 A level-1 auxiliary file: conteudo/capitulos/4-cap3.aux
 The style file: abntex2-alf.bst
@@ -29,45 +28,45 @@ Warning--faltando school em Reynar1998
 | Em caso de dúvidas ou problemas com este estilo procure |
 | http://abntex2.googlecode.com                           |
 +---------------------------------------------------------+
-You've used 45 entries,
+You've used 47 entries,
             6711 wiz_defined-function locations,
-            1591 strings with 19943 characters,
-and the built_in function-call counts, 70393 in all, are:
-= -- 7930
-> -- 1599
-< -- 1576
-+ -- 2124
-- -- 478
-* -- 4725
-:= -- 8499
-add.period$ -- 219
-call.type$ -- 45
-change.case$ -- 520
-chr.to.int$ -- 108
-cite$ -- 45
-duplicate$ -- 6441
-empty$ -- 3046
-format.name$ -- 2266
-if$ -- 14641
+            1607 strings with 20386 characters,
+and the built_in function-call counts, 72929 in all, are:
+= -- 8189
+> -- 1656
+< -- 1622
++ -- 2187
+- -- 495
+* -- 4896
+:= -- 8815
+add.period$ -- 229
+call.type$ -- 47
+change.case$ -- 541
+chr.to.int$ -- 113
+cite$ -- 47
+duplicate$ -- 6653
+empty$ -- 3182
+format.name$ -- 2350
+if$ -- 15193
 int.to.chr$ -- 0
 int.to.str$ -- 0
-missing$ -- 835
-newline$ -- 243
-num.names$ -- 221
-pop$ -- 1052
+missing$ -- 870
+newline$ -- 254
+num.names$ -- 231
+pop$ -- 1087
 preamble$ -- 1
-purify$ -- 189
+purify$ -- 197
 quote$ -- 0
-skip$ -- 6517
+skip$ -- 6731
 stack$ -- 1
-substring$ -- 3184
-swap$ -- 2607
-text.length$ -- 96
+substring$ -- 3302
+swap$ -- 2699
+text.length$ -- 101
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 18
+type$ -- 19
 warning$ -- 1
-while$ -- 375
+while$ -- 392
 width$ -- 0
-write$ -- 791
+write$ -- 828
 (There was 1 error message)

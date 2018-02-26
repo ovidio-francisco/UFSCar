@@ -128,6 +128,12 @@ ISBN 978-1-57735-323-2. Dispon{\'\i}vel em:
   2006.
 ISBN 0521836573, 9780521836579.}
 
+\bibitem[Ferret 2009]{Ferret2009}
+\abntrefinfo{Ferret}{FERRET}{2009}
+{FERRET, O. Improving text segmentation by combining endogenous and exogenous
+  methods. In:  \emph{International Conference Recent Advances in Natural
+  Language Processing, RANLP}. [S.l.: s.n.], 2009. p. 88--93.}
+
 \bibitem[Galley et al. 2003]{Galley2003}
 \abntrefinfo{Galley et al.}{GALLEY et al.}{2003}
 {GALLEY, M. et al. Discourse segmentation of multi-party conversation. In:
@@ -141,6 +147,14 @@ ISBN 0521836573, 9780521836579.}
 {GRUENSTEIN, A.; NIEKRASZ, J.; PURVER, M. \emph{MEETING STRUCTURE ANNOTATION --
   Annotations Collected with a General Purpose Toolkit}. [S.l.]: Springer,
   Dordrecht, 2007.}
+
+\bibitem[Gutierrez et al. 2016]{Gutierrez2016}
+\abntrefinfo{Gutierrez et al.}{GUTIERREZ et al.}{2016}
+{GUTIERREZ, F. et al. A hybrid ontology-based information extraction system.
+\emph{J. Inf. Sci.}, Sage Publications, Inc., Thousand Oaks, CA, USA, v.~42,
+  n.~6, p. 798--820, dez. 2016.
+ISSN 0165-5515.
+Dispon{\'\i}vel em: \url{https://doi.org/10.1177/0165551515610989}.}
 
 \bibitem[Hearst 1997]{Hearst1997}
 \abntrefinfo{Hearst}{HEARST}{1997}

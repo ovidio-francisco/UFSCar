@@ -109,7 +109,10 @@ file:///ext4Data/UFSCar/papers/Segmentação/Novos Segmentadores/Text Segmentati
 ==================================================
 ==================================================
 
+file:///ext4Data/UFSCar/papers/Segmentação/more papers/papers recentes/Exogenous approach to improve topic segmentation.pdf
 
+usa TT e C99 como base line
+\cite{Naili2016}
 ==================================================
 ==================================================
 
