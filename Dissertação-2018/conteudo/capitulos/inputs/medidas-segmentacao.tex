@@ -37,7 +37,7 @@ Porém, não diz nada sobre quantos limites reais existem.
 É calculada dividindo-se o número de limites identificados automaticamente pelo número de candidatos a limite (Equação~\ref{equ:precisao}).
  
  \begin{equation}
-	 Precis\tilde{a}o = \frac{VP}{VP+FP}
+	 Precis\tilde{a}o_{seg} = \frac{VP}{VP+FP}
 	 \label{equ:precisao}
  \end{equation}
 
@@ -47,14 +47,14 @@ Porém, não diz nada sobre quantos limites reais existem.
  A revocação, é a proporção de limites verdadeiros que foram identificados pelo algoritmo. Porém não diz nada sobre quantos limites foram identificados incorretamente. É calculada dividindo-se o número de limites identificados automaticamente pelo número limites verdadeiros (Equação~\ref{equ:revocacao}).
  
  \begin{equation}
-	 Revoca\c{c}\tilde{a}o = \frac{VP}{VP+FN}
+	 Revoca\c{c}\tilde{a}o_{seg} = \frac{VP}{VP+FN}
 	 \label{equ:revocacao}
  \end{equation}
 
  Existe uma relação inversa entre precisão e revocação. Conforme o algoritmo aponta mais segmentos no texto, este tende a melhorar a revocação e ao mesmo tempo, reduzir a precisão. Esse problema de avaliação pode ser contornado utilizado a medida $F^1$ que é a média harmônica entre precisão e revocação onde ambas tem o mesmo peso (Equação~\ref{equ:f1}). 
 
  \begin{equation}
-	 F^1 = \frac{2 \times Precis\tilde{a}o \times Revoca\c{c}\tilde{a}o}
+	 {F^1}_{seg} = \frac{2 \times Precis\tilde{a}o \times Revoca\c{c}\tilde{a}o}
 		        {Precis\tilde{a}o + Revoca\c{c}\tilde{a}o}
 	 \label{equ:f1}
  \end{equation}
@@ -104,7 +104,7 @@ P_k(ref,hyp) = \frac{1}{N - k}
 \end{equation}
 
 
-onde $\delta_S(i,j)$ é a função indicadora que retorna 1 se as sentenças i e j estão no mesmo segmento e 0 caso contrário, $\bar{\oplus}$ é o operador \texttt{XNOR} (ambos ou nenhum) que retorna 1 se ambos os argumentos forem diferentes. 
+Onde $\delta_S(i,j)$ é a função indicadora que retorna 1 se as sentenças $c_i$ e $c_j$ estão no mesmo segmento e 0 caso contrário, $\bar{\oplus}$ é o operador \texttt{XNOR} (ambos ou nenhum) que retorna 1 se ambos os argumentos forem diferentes. 
 %
 %
 O valor de $k$ é calculado como a metade da média dos comprimentos dos segmentos reais. Como resultado, é retornada a dissimilaridade entre a segmentação calculada pela contagem de discrepâncias divida pela quantidade de segmentos analisados. Essa medida pode ser interpretada como a probabilidade de duas sentenças extraídas aleatoriamente pertencerem ao mesmo segmento.  

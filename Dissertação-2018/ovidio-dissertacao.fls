@@ -231,6 +231,9 @@ INPUT ./conteudo/capitulos/figs/janelas-deslizantes.pdf
 INPUT conteudo/capitulos/figs/curva-similaridade.pdf
 INPUT ./conteudo/capitulos/figs/curva-similaridade.pdf
 INPUT ./conteudo/capitulos/figs/curva-similaridade.pdf
+INPUT conteudo/capitulos/figs/similarity-matrix-l.png
+INPUT ./conteudo/capitulos/figs/similarity-matrix-l.png
+INPUT ./conteudo/capitulos/figs/similarity-matrix-l.png
 INPUT conteudo/capitulos/figs/c99-matrizes.pdf
 INPUT ./conteudo/capitulos/figs/c99-matrizes.pdf
 INPUT ./conteudo/capitulos/figs/c99-matrizes.pdf

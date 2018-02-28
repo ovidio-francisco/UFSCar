@@ -58,7 +58,7 @@ Na Figura~\ref{fig:matrix-similarity} é mostrado um exemplo de uma matriz de si
   \begin{figure}[!h]
 	  \centering
 	  % \includegraphics[width=0.6\textwidth]{conteudo/capitulos/figs/c99-ranking-matrix.png}
-	  \includegraphics[width=0.6\textwidth]{conteudo/capitulos/figs/similarity-matrix-l.g}
+	  \includegraphics[width=0.6\textwidth]{conteudo/capitulos/figs/similarity-matrix-l.png}
 
 	  % \includegraphics[width=0.6\textwidth]{conteudo/capitulos/figs/lda-sim-matrix.png}
 	  \caption{\textit{DotPlot} da similaridade entre sentenças onde as linha verticais representam segmentos reais~\cite{Eisenstein2008}.}
@@ -72,7 +72,7 @@ Na Figura~\ref{fig:matrix-similarity} é mostrado um exemplo de uma matriz de si
 % - Imagem com os passos e máscara 3x3;
 %%%%%%%%%%%%%%%%%%%%%%%
 
-Em seguida, cada valor na matriz de similaridade é substituído por seu \textit{ranking} local. Para cada elemento da matriz, seu \textit{ranking} será o número de elementos vizinhos com valor de similaridade menor que o seu. Assim, para cada elemento determina-se uma região quadrada de tamanho $n$ em que o elemento em questão será comparado com $n \times n - 1$ elementos vizinhos.
+Em seguida, cada valor na matriz de similaridade é substituído por seu \textit{ranking} local. Para cada elemento da matriz, seu \textit{ranking} será o número de elementos vizinhos com valor de similaridade menor que o seu. Assim, para cada elemento determina-se uma região quadrada de tamanho $l$ em que o elemento em questão será comparado com $l \times l - 1$ elementos vizinhos.
 % 
 % 
 Na Figura~\ref{fig:a} é destacado um quadro 3~x~3 de uma matriz. Tomando como exemplo o elemento com valor $0,5$, a mesma posição na matriz de \textit{rankings} terá o valor $4$, pois esse é o número de vizinhos com valores inferiores a $0,5$ dentro do quadro analisado na matriz de similaridades. Da mesma forma, na Figura~\ref{fig:b} para o valor $0,2$ a matriz de \textit{rankings} conterá o valor $1$ na mesma posição. Após a construção da matriz de ranking obtêm-se um maior contraste entre os pontos, o que facilita a detecção de limites quando a queda de similaridade entre sentenças é mais sutil.
@@ -98,21 +98,21 @@ Na Figura~\ref{fig:a} é destacado um quadro 3~x~3 de uma matriz. Tomando como e
 
 Finalmente, com base na matriz de \textit{ranking}, o C99 utiliza um método de \textit{clustering} baseado no algoritmo \textit{DotPloting}~\cite{Reynar1998} que usa regiões com maior densidade em uma matriz de similaridades para determinar como os segmentos estão distribuídos.  
 % 
-Um segmento é definido por duas sentenças $i$ e $j$ (respectivamente a primeira e última sentença) que representam uma região quadrada ao longo da diagonal da matriz. 
+Um segmento é definido por duas sentenças $c_i$ e $c_j$ (respectivamente a primeira e última sentença do segmento) que representam uma região quadrada ao longo da diagonal da matriz. 
 % 
-Seja $B = \{b1,...,b_m\}$ a lista de $m$ segmentos,  $s_k$ a somatória dos valores dos \textit{rankings} de um segmento $k \in B$ e $a_k$ a sua área. Então, a densidade é computada por: 
+Seja $B = \{b1,...,b_m\}$ a lista de $m$ segmentos,  $s_b$ a somatória dos valores dos \textit{rankings} de um segmento $b \in B$ e $a_b$ a sua área. Então, a densidade é computada por: 
 % 
 Calcula-se a densidade dessa região como mostrado na Equação~\ref{equ:densidade-c99}. 
 
 
 
 \begin{equation}
-D = \frac{\sum_{k=1}^m s_k}{\sum_{k=1}^m a_k}
+Den = \frac{\sum_{b=1}^m s_b}{\sum_{b=1}^m a_b}
 \label{equ:densidade-c99}
 \end{equation}
 
 
-O processo inicia com um único segmento formado por todas as sentenças do documento e o divide recursivamente em $m$ segmentos. Cada passo divide $B$ no ponto ($i,j$) que maximiza $D$~(Equação \ref{equ:densidade-c99}). O processo se repte até atingir o número de segmentos desejados ou um limiar de similaridade.
+O processo inicia com um único segmento formado por todas as sentenças do documento e o divide recursivamente em $m$ segmentos. Cada passo divide $B$ no ponto ($i,j$) que maximiza $Den$~(Equação \ref{equ:densidade-c99}). O processo se repte até atingir o número de segmentos desejados ou um limiar de similaridade.
 
 % ===
 
