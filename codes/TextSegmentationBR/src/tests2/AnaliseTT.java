@@ -11,7 +11,7 @@ import segmenters.evaluations.measure.SegMeasures;
 public class AnaliseTT {
 
 	private static Preprocess preprocess = new Preprocess();
-	private static File folder = new File("./docs");
+	private static File folder = new File("./SegReferences");
 
 	public static void main(String[] args) {
 

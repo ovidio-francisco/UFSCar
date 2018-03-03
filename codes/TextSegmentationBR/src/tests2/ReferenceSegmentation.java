@@ -9,6 +9,7 @@ import java.util.HashMap;
 
 import preprocessamento.Preprocess;
 import segmenters.evaluations.measure.MeasureUtils;
+import segmenters.evaluations.measure.SegMeasures;
 import utils.Files;
 
 public class ReferenceSegmentation {
@@ -38,10 +39,6 @@ public class ReferenceSegmentation {
 		
 //		createDocsInSentences(new File("./txtDocs"));
 	}
-	
-//	public static void createReferenceSegmentation() {
-//		
-//	}
 	
 	public static String getSegmentedSentences(ArrayList<String> sentences) {
 		String result = "";
@@ -160,7 +157,7 @@ public class ReferenceSegmentation {
 		
 		for(ArrayList<File> sameNameFiles: allAnotations) {
 //			System.out.println(sameNameFiles.size()+" Anotadores ");
-			
+		
 			
 			String name = sameNameFiles.get(0).getName();
 			File refFile = new File(refFolder+"/"+name);
@@ -209,8 +206,6 @@ public class ReferenceSegmentation {
 			}
 			
 			System.out.println(String.format("\n-->%s\n", refFile));
-			
-			
 			
 			saveRefFile(refFile, refSeg);
 		}
@@ -295,18 +290,37 @@ public class ReferenceSegmentation {
 				File ref = new File(dir+"/"+name);
 				if(ref.exists())
 					refs.add(ref);
+				
+				
+//				System.out.println(String.format("Ref ------>>>>>>> %s ", ref));
 			}
 			allAnotations.add(refs);
 		}
+
+		
 		
 		
 		/** Get binary annotations and compile the Refernce Segmentation */
 		createReferenceSegmentationFiles(refFolder, allAnotations);
+
+		checkAgreement(allAnotations);
 		
 		return result;
 	}
 	
 	
+	private static void checkAgreement(ArrayList<ArrayList<File>> allAnotations) {
+		for(ArrayList<File> a : allAnotations ) {
+			for (File f : a) {
+				System.out.println(String.format("Ref --->>> %s", f));
+			}
+			System.out.println("---------------");
+			
+			SegMeasures sm = new SegMeasures(ref, doc, segmenter)
+			
+		}
+		
+	}
 	
 
     public static void sortNames(ArrayList<String> names) {

@@ -171,6 +171,10 @@ INPUT conteudo/capitulos/3-cap2.aux
 INPUT conteudo/capitulos/3-cap2.aux
 INPUT conteudo/capitulos/4-cap3.aux
 INPUT conteudo/capitulos/4-cap3.aux
+INPUT conteudo/capitulos/cap-avaliacao-segmentadores.aux
+INPUT conteudo/capitulos/cap-avaliacao-segmentadores.aux
+INPUT conteudo/capitulos/cap-avaliacao-extratores.aux
+INPUT conteudo/capitulos/cap-avaliacao-extratores.aux
 OUTPUT ovidio-dissertacao.aux
 INPUT /usr/share/texmf/tex/latex/lm/t1lmr.fd
 INPUT /usr/share/texmf/tex/latex/lm/t1lmr.fd
@@ -282,6 +286,9 @@ INPUT ./conteudo/capitulos/figs/pre-process.pdf
 INPUT ./conteudo/capitulos/figs/pre-process.pdf
 INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmbx12.tfm
 INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmbx8.tfm
+OUTPUT conteudo/capitulos/cap-avaliacao-segmentadores.aux
+INPUT conteudo/capitulos/cap-avaliacao-segmentadores.tex
+INPUT conteudo/capitulos/cap-avaliacao-segmentadores.tex
 INPUT conteudo/capitulos/figs/interface-anotacoes.png
 INPUT ./conteudo/capitulos/figs/interface-anotacoes.png
 INPUT ./conteudo/capitulos/figs/interface-anotacoes.png
@@ -327,6 +334,9 @@ INPUT ./conteudo/capitulos/figs/grafico-medidas-Pk-Wd.eps
 INPUT ./conteudo/capitulos/figs/grafico-medidas-Pk-Wd-eps-converted-to.pdf
 INPUT ./conteudo/capitulos/figs/grafico-medidas-Pk-Wd-eps-converted-to.pdf
 INPUT ./conteudo/capitulos/figs/grafico-medidas-Pk-Wd-eps-converted-to.pdf
+OUTPUT conteudo/capitulos/cap-avaliacao-extratores.aux
+INPUT conteudo/capitulos/cap-avaliacao-extratores.tex
+INPUT conteudo/capitulos/cap-avaliacao-extratores.tex
 INPUT ovidio-dissertacao.bbl
 INPUT ovidio-dissertacao.bbl
 INPUT ovidio-dissertacao.brf
@@ -340,6 +350,10 @@ INPUT conteudo/capitulos/3-cap2.aux
 INPUT conteudo/capitulos/3-cap2.aux
 INPUT conteudo/capitulos/4-cap3.aux
 INPUT conteudo/capitulos/4-cap3.aux
+INPUT conteudo/capitulos/cap-avaliacao-segmentadores.aux
+INPUT conteudo/capitulos/cap-avaliacao-segmentadores.aux
+INPUT conteudo/capitulos/cap-avaliacao-extratores.aux
+INPUT conteudo/capitulos/cap-avaliacao-extratores.aux
 INPUT ./ovidio-dissertacao.brf
 INPUT ./ovidio-dissertacao.brf
 INPUT /usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc
