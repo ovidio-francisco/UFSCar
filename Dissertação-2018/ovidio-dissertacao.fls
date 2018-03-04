@@ -210,6 +210,8 @@ INPUT ovidio-dissertacao.toc
 INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmssbx10.tfm
 INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmsso12.tfm
 INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmss10.tfm
+INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmr10.tfm
+INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmri10.tfm
 OUTPUT conteudo/capitulos/3-cap2.aux
 INPUT conteudo/capitulos/3-cap2.tex
 INPUT conteudo/capitulos/3-cap2.tex
@@ -218,13 +220,13 @@ INPUT conteudo/capitulos/inputs/representacao-textos.tex
 INPUT conteudo/capitulos/inputs/representacao-textos.tex
 INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmri12.tfm
 INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmsso12.tfm
-INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmr10.tfm
+INPUT conteudo/capitulos/inputs/preprocessamento.tex
+INPUT conteudo/capitulos/inputs/preprocessamento.tex
 INPUT conteudo/capitulos/inputs/medidas.tex
 INPUT conteudo/capitulos/inputs/medidas.tex
 INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmr8.tfm
 INPUT conteudo/capitulos/inputs/recuperacao-informacao.tex
 INPUT conteudo/capitulos/inputs/recuperacao-informacao.tex
-INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmri10.tfm
 INPUT conteudo/capitulos/inputs/segmentacao.tex
 INPUT conteudo/capitulos/inputs/segmentacao.tex
 INPUT conteudo/capitulos/inputs/algoritmos-segmentacao.tex
@@ -281,9 +283,9 @@ INPUT ./conteudo/capitulos/figs/visao-geral-3.eps
 INPUT ./conteudo/capitulos/figs/visao-geral-3-eps-converted-to.pdf
 INPUT ./conteudo/capitulos/figs/visao-geral-3-eps-converted-to.pdf
 INPUT ./conteudo/capitulos/figs/visao-geral-3-eps-converted-to.pdf
-INPUT conteudo/capitulos/figs/pre-process.pdf
-INPUT ./conteudo/capitulos/figs/pre-process.pdf
-INPUT ./conteudo/capitulos/figs/pre-process.pdf
+INPUT conteudo/capitulos/figs/preparacao-docs.pdf
+INPUT ./conteudo/capitulos/figs/preparacao-docs.pdf
+INPUT ./conteudo/capitulos/figs/preparacao-docs.pdf
 INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmbx12.tfm
 INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmbx8.tfm
 OUTPUT conteudo/capitulos/cap-avaliacao-segmentadores.aux

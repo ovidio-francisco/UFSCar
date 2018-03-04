@@ -1,4 +1,151 @@
 
+Na etapa de pré-processamento, os documentos são pré-processados individualmente conforme são recebidos pelos algoritmos de segmentação extração de tópicos. 
+Inicialmente, cada texto passou por um processo de transformação em que as letras foram convertidas em caixa baixa e eliminou-se sinais de pontuação, numerais e termos menores que três caracteres. Em seguida removeu-se os termos que não contribuem para a etapa de segmentação, as quais são chamadas de \textit{stop words}, para identificá-las usou-se uma lista de 438 palavras. Em seguida, extraiu-se o radical de cada palavra por meio da técnica \textit{stemming}. Por fim, selecionou-se os termos com DF \textit{Document Frequency} \leq 2 os quais são considerados mais significativos para tarefas de mineração de texto.
+
+
+
+\textit{Stemming}: extraiu-se o radical de cada palavra. Para isso, aplicou-se o algoritmo \textit{Orengo} %\footnote{http://www.inf.ufrgs.br/~viviane/rslp/} para remoção de sufixos~\cite{Alvares2005}.
+
+
+
+
+
+
+
+
+
+
+
+
+
+esses elementos são removidos utilizando uma heurística que varre o texto, detecta a repetição desses elementos e os remove.
+
+
+Os cabeçalhos são removidos utilizando uma heurística que varre o texto, detecta a repetição desses elementos e os remove.
+
+A eliminação desses termos reduz significativamente o número de termos diminuindo o custo computacional (Manning et al., 2008).
+
+
+
+
+
+
+% As atas são normalmente armazenadas em arquivos binários do tipo \textit{pdf}, \textit{doc}, \textit{docx} ou \textit{odt}. As atas devem ser pré-processadas e estruturadas para que possam ser aplicados métodos de MI e RI. Inicialmente, o texto puro é extraído e passa por processos de transformação que incluem o pré-processamento do texto, remoção de elementos considerados menos significativos e a identificação de sentenças. Esse processo é ilustrado na Figura~\ref{fig:preprocessamento-segmentacao} e descrito a seguir.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+% ---------------------------------------------------------------------------------
+% ---------------------------------------------------------------------------------
+
+\subsection{Preparação dos documentos}
+
+
+% ========== Pré-Processamento dos Documentos ==========
+
+
+\subsection{Pré-Processamento dos Documentos}
+
+As atas são normalmente armazenadas em arquivos binários do tipo \textit{pdf}, \textit{doc}, \textit{docx} ou \textit{odt}. As atas devem ser pré-processadas e estruturadas para que possam ser aplicados métodos de MI e RI. Inicialmente, o texto puro é extraído e passa por processos de transformação que incluem o pré-processamento do texto, remoção de elementos considerados menos significativos e a identificação de sentenças. Esse processo é ilustrado na Figura~\ref{fig:preprocessamento-segmentacao} e descrito a seguir.
+
+	
+% -<? Colocar aqui uma explicação do que é um segmento e uma sentença?
+
+\begin{center}
+	\begin{figure}[h!]
+
+	\includegraphics[trim={ 0 180 0 180 },clip,page=1,width=\textwidth]{conteudo/capitulos/figs/pre-process.pdf}
+
+	\caption{Etapa de pré-processamento de um documento que inclui da remoção de elementos menos significativos e a identificação de sentenças}
+	\label{fig:preprocessamento-segmentacao}
+	\end{figure}
+\end{center}
+
+
+
+\begin{enumerate}
+
+%  Cabeçalhos e rodapés
+\item Remoção de cabeçalhos: as atas contém trechos que podem ser considerados pouco informativos e descartados durante o pré-processamento, como cabeçalhos e rodapés que se misturam aos tópicos tratados na reunião, podendo ser inseridos no meio de um tópico prejudicando tanto os algoritmos de MT e RI, quanto a leitura do texto pelo usuário. Um cabeçalho é a porção de texto que inicia cada página do documento e, de forma semelhante, um rodapé e a porção que as encerra. Detecta-se os cabeçalhos e os rodapés sempre que há uma repetição das primeiras e últimas palavras do documento.
+
+
+%  Identificação de sentenças
+\item Identificação sentenças: Nesse trabalho considera-se as sentenças as menor unidade de informação a ser processada pelos algoritmos de segmentação, por tanto, devem ser identificadas. Ao considerar intuitivamente que uma sentença seja uma sequência de palavras entre sinais de pontuação como ``.'', ``!'' e ``?'', alguns erros poderiam ocorrer quando esses tiverem outra função dentro do texto como em abreviações\footnote{As abreviações são identificadas por meio de uma lista com 234 abreviações conhecidas.}, endereços de internet e datas. Outro problema seriam frases curtas com poucas palavras e que não expressam um conceito completo, mas parte dele. Devido ao estilo de pontuação desses documentos, como encerrar sentenças usando um \textit{``;''} e inserção de linhas extras, foram usadas as regras especiais para identificação de finais de sentença. No Algoritmo~\ref{alg:identificacaofinaisdesent} é mostrado como cada \textit{token} é identificado e marcado com final de sentença.%, esse processo é melhor descrito na Subseção~\ref{subsec:indentificacaosentencas}. % Os detalhes sobre essas regras estão disponíveis para consulta em \urlsoftwares.
+
+
+
+\begin{algorithm}
+	\SetKwInOut{Input}{Entrada}
+	\SetKwInOut{Output}{Saída}
+	\SetKwBlock{Inicio}{início}{fim}
+	\SetKwFor{ParaTodo}{para todo}{}{fim para todo}
+	\SetKwIF{Se}{SenaoSe}{Senao}{}{}{senao se}{senao}{fim se}
+	\SetKwFor{Para}{}{}{}
+%	\SetKwAlgorithm{Algorithm}{Algoritmo}{}
+
+	
+	\Input{Texto}
+	\Output{Texto com identificações de finais de sentença}
+	
+	\ParaTodo {token, marcá-lo como final de sentença se:} {	
+
+	Terminar com um \texttt{!}\\
+	Terminar com um \texttt{.} e não for uma abreviação\\
+	Terminar em \texttt{.?;} e:
+		\Para{}{
+			For seguido de uma quebra de parágrafo ou tabulação\\
+			O próximo \textit{token} iniciar com  \texttt{(\{["'}\\
+			O próximo \textit{token} iniciar com letra maiúscula\\
+			O penúltimo caracter  for \texttt{)\}]"'}\\
+		}
+	}
+	
+	\caption{Identificação de finais de sentença.}
+	\label{alg:identificacaofinaisdesent}
+\end{algorithm}
+
+
+% TODO: "Pra que fazer isso?"
+
+
+%  Remoção de termos
+\item Redução de elementos menos significativos: Removeu-se do textos os termos que não contribuem para a etapa de segmentação, 
+	as quais são chamadas de \textit{stop words}. Palavras como artigos, preposições, pronomes, verbos de estado\footnote{Apresentam uma situação inativa, onde o verbo não expressa uma alteração, mas apenas uma propriedade ou condição dos envolvidos.}. Trata-se também como \textit{stop words} as palavras de uso muito frequente dentro de um determinado domínio as quais não são capazes de discriminar textos, portanto também não devem fazer parte dos atributos~\cite{Rezende2003}. Para removê-las, as letras foram convertidas em caixa baixa e usou-se uma lista de 438 palavras para identificá-las. Além disso, eliminou-se a acentuação, sinais de pontuação, numerais e todos os termos menores que três caracteres.
+
+%  Stemming
+\item \textit{Stemming}: extraiu-se o radical de cada palavra. Para isso, aplicou-se o algoritmo \textit{Orengo} %\footnote{http://www.inf.ufrgs.br/~viviane/rslp/} 
+	para remoção de sufixos~\cite{Alvares2005}.
+
+\end{enumerate}
+	
+
+
+% ---------------------------------------------------------------------------------
+% ---------------------------------------------------------------------------------
+
+
+
+
 
 
 
