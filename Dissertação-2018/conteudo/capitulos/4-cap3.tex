@@ -14,28 +14,26 @@ O sistema proposto tem como objetivo permitir ao usuário consultar uma coleçã
 	  \label{fig:visao-geral}
   \end{figure}
 
-A Figura \ref{fig:visao-geral} mostra a visão geral do sistema com suas principais entradas e saídas. Inicialmente o sistema recebe um conjunto inicial de documentos. A função de Módulo de preparação/manutenção é processar esses texto e gerar uma base de dados interna que codifica os textos extraídos com seus respetivos tópicos. O Módulo de consulta recebe a consulta do usuário que expressa o assunto de interesse. Em seguida, os trechos de texto que fazem menção ao esse assunto são exibidos ao usuário.
+A Figura \ref{fig:visao-geral} mostra a visão geral do sistema com suas principais entradas e saídas. Inicialmente o sistema recebe um conjunto inicial de documentos. A função de Módulo de preparação/manutenção é processar e manter esses textos para gerar uma base de dados interna que codifica os textos extraídos com seus respetivos tópicos. O Módulo de consulta recebe a consulta do usuário que expressa o assunto de interesse. Em seguida, os trechos de texto que fazem menção ao esse assunto são exibidos ao usuário.
 
 
 \section{Módulo de preparação e manutenção}\label{sec:modulo-preparacao}
 
-O módulo de preparação e manutenção tem como funções principais dividir cada ata em em segmentos de texto que contêm um assunto predominante, e separá-los em categorias por meio de técnicas de extração tópicos e classificação. Além disso, produz uma estrutura de dados que registra quais assuntos foram tratados na reunião, bem como o trecho do documento onde é discutido.  
+
+O módulo de preparação e manutenção tem como função principal manter uma base de dados necessária para os processos de recuperação de informação. Inicialmente, esse módulo deve receber um conjunto inicial de documentos os quais devem ser divididos em segmentos de texto que contêm um assunto predominante, e agrupá-los em categorias por meio de técnicas de extração de tópicos. Além disso, considera-se o crescimento da bases de documentos, assim, deve receber novos documentos a medida que são gerados. 
+
+
+
+
+
+
+
 
 % melhorar ↓↓↓↓↓
 % A seguir são apresentadas as etapas do módulo de preparação e manutenção desde a preparação dos documentos até a entrega da estrutura interna ao módulo de consulta. 
 
 
-
-
-
 % ==================== O Corpus ===================== %
-\subsection{O Corpus}
-
-% Colocar um trecho de uma ata??
-
-% ->------> Seleção das atas
-Selecionou-se um conjunto de atas reais coletadas do Departamento de Computação da UFSCar campus Sorocaba. Analisou-se as atas públicas das reuniões do Conselho de Pós-Graduação e Conselho de Graduação desse departamento das quais foram selecionadas seis atas de cada conselho, sendo cinco referentes a reuniões ordinária e uma reunião extraordinária, totalizando doze documentos. Esses documentos foram escolhidos de forma que o conjunto final contenha atas com tamanhos diferentes (entre 1 e 4 páginas), e maior diversidade de conteúdo.
- % contém tabelas e listas
 
 
 
@@ -49,9 +47,10 @@ As atas são normalmente armazenadas em arquivos binários do tipo \textit{pdf},
 \begin{center}
 	\begin{figure}[h!]
 
-		\includegraphics[trim={ 0 180 0 180 },clip,page=1,width=\textwidth]{conteudo/capitulos/figs/preparacao-docs.pdf}
+		% \includegraphics[trim={ 0 140 0 140 },clip,page=1,width=\textwidth]{conteudo/capitulos/figs/preparacao-docs.pdf}
+		\includegraphics[trim={ 0 100 0 100 },clip,page=1,width=\textwidth]{conteudo/capitulos/figs/preparacao-docs.pdf}
 
-		\caption{Etapa de pré-processamento de um documento que inclui da remoção de elementos menos significativos e a identificação de sentenças}
+		\caption{Etapa de preparação de um documento que inclui da extração de texto puro,  remoção de elementos menos significativos e a identificação de sentenças}
 		\label{fig:preprocessamento-segmentacao}
 	\end{figure}
 \end{center}
@@ -151,7 +150,7 @@ As técnicas de segmentação aboradas na Subseção~\ref{sec:segmentacao} divdi
 
 
 
-\section{Estrutura de Dados Interna}
+\subsection{Estrutura de Dados Interna}
 
 
 

@@ -43,5 +43,23 @@ dos algoritmos, foi utilizado o software KEEL Data Mining (Alcalá et al., 2011)
 -------------------------------------------------------------------------
 -------------------------------------------------------------------------
 
+Atualmente, estão disponíveis em diversas linguagens de programação,
+bibliotecas que implementam algoritmos de modelagem de tópicos para a extração de
+tópicos como nos exemplos vistos. Dentre elas, pode-se destacar a “lda-c” 2 para a
+linguagem C, “mallet” 3 para Java e “gensim” 4 para Python, porém muitas outras
+linguagens já possuem os algoritmos implementados. Devido ao seu caráter probabilístico, não é necessário realizar nenhum pré-processamento complexo no corpus
+para a utilização, bastando uma simples tokenização do conteúdo textual. As palavras
+comuns são irrelevantes para o resultado da execução e quaisquer demais processamentos
+podem ser utilizados como forma de limpeza ou de melhorar desempenho, porém
+opcionais.
+
+
+4.3.3.1 Ranqueamento
+As principais técnicas apresentadas aqui são: A Frequência de termos (tf), a
+Relação Grau/Frequência (deg/tf) [Berry 2010] e o Grau modificado de rótulo
+[Nolasco e Oliveira 2016].
+
+
+file:///ext4Data/UFSCar/papers/Tópicos/Modelagem de Tópicos e Criação de Rótulos - Identificando Temas em Dados Semi-Estruturados e Não-Estruturados.pdf
 
 

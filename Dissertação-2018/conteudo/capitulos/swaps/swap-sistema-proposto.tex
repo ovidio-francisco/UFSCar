@@ -1,3 +1,51 @@
+\subsection{O Corpus}
+
+% Colocar um trecho de uma ata??
+
+% ->------> Seleção das atas
+Selecionou-se um conjunto de atas reais coletadas do Departamento de Computação da UFSCar campus Sorocaba. Analisou-se as atas públicas das reuniões do Conselho de Pós-Graduação e Conselho de Graduação desse departamento das quais foram selecionadas seis atas de cada conselho, sendo cinco referentes a reuniões ordinária e uma reunião extraordinária, totalizando doze documentos. Esses documentos foram escolhidos de forma que o conjunto final contenha atas com tamanhos diferentes (entre 1 e 4 páginas), e maior diversidade de conteúdo.
+ % contém tabelas e listas
+
+
+
+
+
+
+Nas subseções seguintes são apresentadas as etapas do módulo de preparação e manutenção desde a preparação dos documentos até a entrega da estrutura interna ao módulo de consulta. 
+e a descrição da base de dados interna.
+
+
+
+
+% O módulo de preparação e manutenção tem como funções principais dividir cada ata em em segmentos de texto que contêm um assunto predominante, e separá-los em categorias por meio de técnicas de extração tópicos e classificação. Além disso, produz uma estrutura de dados que registra quais assuntos foram tratados na reunião, bem como o trecho do documento onde é discutido.  
+
+
+
+ é processsar e manter a base de dados interna
+
+% o crescimento esperado da base de documentos.
+
+
+
+
+
+
+
+
+
+
+O processo de extração de tópicos produziu 
+
+
+
+
+
+
+
+
+
+
+
 
 Na etapa de pré-processamento, os documentos são pré-processados individualmente conforme são recebidos pelos algoritmos de segmentação extração de tópicos. 
 Inicialmente, cada texto passou por um processo de transformação em que as letras foram convertidas em caixa baixa e eliminou-se sinais de pontuação, numerais e termos menores que três caracteres. Em seguida removeu-se os termos que não contribuem para a etapa de segmentação, as quais são chamadas de \textit{stop words}, para identificá-las usou-se uma lista de 438 palavras. Em seguida, extraiu-se o radical de cada palavra por meio da técnica \textit{stemming}. Por fim, selecionou-se os termos com DF \textit{Document Frequency} \leq 2 os quais são considerados mais significativos para tarefas de mineração de texto.
