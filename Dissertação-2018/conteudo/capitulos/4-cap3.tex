@@ -121,7 +121,8 @@ Nesse trabalho considera-se as sentenças as menores unidades de informação a 
 
 
 Na etapa de pré-processamento, os documentos são pré-processados individualmente conforme são recebidos pelos algoritmos de segmentação extração de tópicos. Inicialmente, cada texto passou por um processo de transformação em que as letras foram convertidas em caixa baixa e eliminou-se sinais de pontuação, numerais e termos menores que três caracteres. Em seguida removeu-se os termos que não contribuem para a etapa de segmentação, as quais são chamadas de \textit{stop words}, para identificá-las usou-se uma lista de 438 palavras. Em seguida, extraiu-se o radical de cada palavra por meio da técnica \textit{stemming}. 
-Nesse trabalho, todos os termos restantes após a remoção de \textit{stop words} e \textit{stemming} foram mantidas independentemente de valores de   \textit{Document Frequency} devido a característica das atas de possuir múltiplos assuntos em um documento que posteriormente serão considerados sub-documentos relativamente independentes. 
+
+Nesse trabalho, todos os termos restantes após a remoção de \textit{stop words} e \textit{stemming} foram mantidas independentemente de valores de   \textit{Document Frequency} devido a característica das atas de possuir múltiplos assuntos em um documento que posteriormente serão considerados sub-documentos relativamente independentes os quais contém em média 70 termos. 
 
 
 
@@ -167,6 +168,7 @@ O agrupamento por tópicos e seus descritores são utilizados para ajudar o usu�
 % os descritores são utilizados;
 
 
+% ==================== Estrutura de Dados Interna ===================== %
 
 \subsection{Estrutura de Dados Interna}
 
@@ -181,9 +183,31 @@ Na Figura~\ref{fig:estrutura-dados-interna} é apresentado a visão geral da est
 
 
 
+	\begin{figure}[h!]
+\center
+		\includegraphics[trim={ 61 0 61 0 },clip,page=1,width=0.9\textwidth]{conteudo/capitulos/figs/estrutura-de-dados-interna.pdf}
+
+		\caption{Visão geral da estrutura de dados interna e seu processo de geração.}
+		\label{fig:estrutura-dados-interna}
+	\end{figure}
 
 
-\section{Módulo Consulta}
+
+
+Os arquivos da coleção de documentos $(D)$ são mantidos para reverência aos textos integrais fincando disponíveis para visualização e fonte original das informações.  
+Os segmentos de textos $(S)$ gerados pela segmentação dos documentos originais $(D)$ são armazenadas em arquivos de texto plano que são tratados como sub-documentos pelo sistema os quais contém os textos a serem exibidos ao usuário pelo módulo de consulta.  
+É a partir desses sub-documentos que o extrator de tópicos constrói as matrizes documento-tópico e termo-tópico. Uma vez construídas, essas matrizes são armazenadas em arquivos e usadas para identificar os melhores descritores para cada tópicos bem como o agrupamento dos sub-documentos.
+
+
+
+
+
+
+
+
+% ==================== Módulo de Consulta ===================== %
+
+\section{Módulo de Consulta}
 
 
 Uma vez que a estrutura de dados interna contem os assuntos abordados na coleção de documentos, o tipo de ocorrência para cada assunto e o trecho onde se encontram, 

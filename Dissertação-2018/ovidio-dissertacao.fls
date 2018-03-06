@@ -288,6 +288,9 @@ INPUT ./conteudo/capitulos/figs/preparacao-docs.pdf
 INPUT ./conteudo/capitulos/figs/preparacao-docs.pdf
 INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmbx12.tfm
 INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmbx8.tfm
+INPUT conteudo/capitulos/figs/estrutura-de-dados-interna.pdf
+INPUT ./conteudo/capitulos/figs/estrutura-de-dados-interna.pdf
+INPUT ./conteudo/capitulos/figs/estrutura-de-dados-interna.pdf
 OUTPUT conteudo/capitulos/cap-avaliacao-segmentadores.aux
 INPUT conteudo/capitulos/cap-avaliacao-segmentadores.tex
 INPUT conteudo/capitulos/cap-avaliacao-segmentadores.tex
