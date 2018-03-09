@@ -1,0 +1,382 @@
+\providecommand{\abntreprintinfo}[1]{%
+ \citeonline{#1}}
+\setlength{\labelsep}{0pt}\begin{thebibliography}{}
+\providecommand{\abntrefinfo}[3]{}
+\providecommand{\abntbstabout}[1]{}
+\abntbstabout{v-1.9.2 }
+
+\bibitem[Aggarwal e Zhai 2012]{Aggarwal2012}
+\abntrefinfo{Aggarwal e Zhai}{AGGARWAL; ZHAI}{2012}
+{AGGARWAL, C.~C.; ZHAI, C.~X. \emph{Mining Text Data}. [S.l.]: Springer
+  Publishing Company, Incorporated, 2012.
+ISBN 1461432227, 9781461432227.}
+
+\bibitem[Beeferman, Berger e Lafferty 1999]{Beeferman1999}
+\abntrefinfo{Beeferman, Berger e Lafferty}{BEEFERMAN; BERGER; LAFFERTY}{1999}
+{BEEFERMAN, D.; BERGER, A.; LAFFERTY, J. Statistical models for text
+  segmentation.
+\emph{Machine Learning}, v.~34, n.~1, p. 177--210, 1999.
+ISSN 1573-0565.
+Dispon{\'\i}vel em: \url{http://dx.doi.org/10.1023/A:1007506220214}.}
+
+\bibitem[Blei 2012]{Blei2012}
+\abntrefinfo{Blei}{BLEI}{2012}
+{BLEI, D.~M. Probabilistic topic models.
+\emph{Commun. ACM}, ACM, New York, NY, USA, v.~55, n.~4, p. 77--84, abr. 2012.
+ISSN 0001-0782.
+Dispon{\'\i}vel em: \url{http://doi.acm.org/10.1145/2133806.2133826}.}
+
+\bibitem[Blei, Ng e Jordan 2003]{Blei2003}
+\abntrefinfo{Blei, Ng e Jordan}{BLEI; NG; JORDAN}{2003}
+{BLEI, D.~M.; NG, A.~Y.; JORDAN, M.~I. Latent dirichlet allocation.
+\emph{J. Mach. Learn. Res.}, JMLR.org, v.~3, p. 993--1022, mar. 2003.
+ISSN 1532-4435.
+Dispon{\'\i}vel em: \url{http://dl.acm.org/citation.cfm?id=944919.944937}.}
+
+\bibitem[Bokaei, Sameti e Liu 2015]{Bokaei2015}
+\abntrefinfo{Bokaei, Sameti e Liu}{BOKAEI; SAMETI; LIU}{2015}
+{BOKAEI, M.~H.; SAMETI, H.; LIU, Y. Linear discourse segmentation of
+  multi-party meetings based on local and global information.
+\emph{IEEE/ACM Trans. Audio, Speech and Lang. Proc.}, IEEE Press, Piscataway,
+  NJ, USA, v.~23, n.~11, p. 1879--1891, nov. 2015.
+ISSN 2329-9290.
+Dispon{\'\i}vel em: \url{http://dx.doi.org/10.1109/TASLP.2015.2456430}.}
+
+\bibitem[BOKAEI, SAMETI e LIU 2016]{Bokaei2016}
+\abntrefinfo{BOKAEI, SAMETI e LIU}{BOKAEI; SAMETI; LIU}{2016}
+{BOKAEI, M.~H.; SAMETI, H.; LIU, Y. Extractive summarization of multiparty
+  meetings through discourse segmentation.
+\emph{Natural Language Engineering}, Cambridge University Press, v.~22, n.~1,
+  p. 41--72, 2016.}
+
+\bibitem[Cao 2017]{Cao:2017}
+\abntrefinfo{Cao}{CAO}{2017}
+{CAO, L. Data science: A comprehensive overview.
+\emph{ACM Comput. Surv.}, ACM, New York, NY, USA, v.~50, n.~3, p. 43:1--43:42,
+  jun. 2017.
+ISSN 0360-0300.
+Dispon{\'\i}vel em: \url{http://doi.acm.org/10.1145/3076253}.}
+
+\bibitem[Cardoso, Pardo e Taboada 2017]{Cardoso2017}
+\abntrefinfo{Cardoso, Pardo e Taboada}{CARDOSO; PARDO; TABOADA}{2017}
+{CARDOSO, P.; PARDO, T.; TABOADA, M. Subtopic annotation and automatic
+  segmentation for news texts in brazilian portuguese.
+\emph{Corpora}, Edinburgh University Press, v.~12, n.~1, p. 23--54, 2017.}
+
+\bibitem[Carletta 1996]{Carletta1996}
+\abntrefinfo{Carletta}{CARLETTA}{1996}
+{CARLETTA, J. Assessing agreement on classification tasks: The kappa statistic.
+\emph{Comput. Linguist.}, MIT Press, Cambridge, MA, USA, v.~22, n.~2, p.
+  249--254, jun. 1996.
+ISSN 0891-2017.
+Dispon{\'\i}vel em: \url{http://dl.acm.org/citation.cfm?id=230386.230390}.}
+
+\bibitem[Chaibi, Naili e Sammoud 2014]{CHAIBI2014}
+\abntrefinfo{Chaibi, Naili e Sammoud}{CHAIBI; NAILI; SAMMOUD}{2014}
+{CHAIBI, A.~H.; NAILI, M.; SAMMOUD, S. Topic segmentation for textual document
+  written in arabic language.
+\emph{Procedia Computer Science}, v.~35, p. 437 -- 446, 2014.
+ISSN 1877-0509.
+Dispon{\'\i}vel em:
+  \url{http://www.sciencedirect.com/science/article/pii/S1877050914010898}.}
+
+\bibitem[Cheng et al. 2013]{Cheng2013}
+\abntrefinfo{Cheng et al.}{CHENG et al.}{2013}
+{CHENG, X. et al. Learning topics in short texts by non-negative matrix
+  factorization on term correlation matrix. In:  \emph{SDM}. SIAM, 2013. p.
+  749--757.
+ISBN 978-1-61197-283-2. Dispon{\'\i}vel em:
+  \url{http://dblp.uni-trier.de/db/conf/sdm/sdm2013.html\#ChengGLWY13}.}
+
+\bibitem[Choi 2000]{Choi2000}
+\abntrefinfo{Choi}{CHOI}{2000}
+{CHOI, F. Y.~Y. Advances in domain independent linear text segmentation. In:
+  \emph{Proceedings of the 1st North American Chapter of the Association for
+  Computational Linguistics Conference}. Stroudsburg, PA, USA: Association for
+  Computational Linguistics, 2000.  (NAACL 2000), p. 26--33. Dispon{\'\i}vel
+  em: \url{http://dl.acm.org/citation.cfm?id=974305.974309}.}
+
+\bibitem[Croft, Metzler e Strohman 2009]{Croft2009}
+\abntrefinfo{Croft, Metzler e Strohman}{CROFT; METZLER; STROHMAN}{2009}
+{CROFT, B.; METZLER, D.; STROHMAN, T. \emph{Search Engines: Information
+  Retrieval in Practice}. 1st. ed. USA: Addison-Wesley Publishing Company,
+  2009.
+ISBN 0136072240, 9780136072249.}
+
+\bibitem[Deerwester et al. 1990]{Deerwester1990}
+\abntrefinfo{Deerwester et al.}{DEERWESTER et al.}{1990}
+{DEERWESTER, S. et al. Indexing by latent semantic analysis.
+\emph{Journal of the American Society for Information Science}, v.~41, n.~6, p.
+  391--407, 1990.}
+
+\bibitem[Dias, Alves e Lopes 2007]{Dias2007}
+\abntrefinfo{Dias, Alves e Lopes}{DIAS; ALVES; LOPES}{2007}
+{DIAS, G.; ALVES, E.; LOPES, J. G.~P. Topic segmentation algorithms for text
+  summarization and passage retrieval: An exhaustive evaluation. In:
+  \emph{Proceedings of the 22Nd National Conference on Artificial Intelligence
+  - Volume 2}. AAAI Press, 2007.  (AAAI'07), p. 1334--1339.
+ISBN 978-1-57735-323-2. Dispon{\'\i}vel em:
+  \url{http://dl.acm.org/citation.cfm?id=1619797.1619859}.}
+
+\bibitem[Eisenstein e Barzilay 2008]{Eisenstein2008}
+\abntrefinfo{Eisenstein e Barzilay}{EISENSTEIN; BARZILAY}{2008}
+{EISENSTEIN, J.; BARZILAY, R. Bayesian unsupervised topic segmentation. In:
+  \emph{Proceedings of the Conference on Empirical Methods in Natural Language
+  Processing}. Stroudsburg, PA, USA: Association for Computational Linguistics,
+  2008.  (EMNLP '08), p. 334--343. Dispon{\'\i}vel em:
+  \url{http://dl.acm.org/citation.cfm?id=1613715.1613760}.}
+
+\bibitem[Feldman e Sanger 2006]{Feldman2006}
+\abntrefinfo{Feldman e Sanger}{FELDMAN; SANGER}{2006}
+{FELDMAN, R.; SANGER, J. \emph{Text Mining Handbook: Advanced Approaches in
+  Analyzing Unstructured Data}. New York, NY, USA: Cambridge University Press,
+  2006.
+ISBN 0521836573, 9780521836579.}
+
+\bibitem[Ferret 2009]{Ferret2009}
+\abntrefinfo{Ferret}{FERRET}{2009}
+{FERRET, O. Improving text segmentation by combining endogenous and exogenous
+  methods. In:  \emph{International Conference Recent Advances in Natural
+  Language Processing, RANLP}. [S.l.: s.n.], 2009. p. 88--93.}
+
+\bibitem[Galley et al. 2003]{Galley2003}
+\abntrefinfo{Galley et al.}{GALLEY et al.}{2003}
+{GALLEY, M. et al. Discourse segmentation of multi-party conversation. In:
+  \emph{Proceedings of the 41st Annual Meeting on Association for Computational
+  Linguistics - Volume 1}. Stroudsburg, PA, USA: Association for Computational
+  Linguistics, 2003.  (ACL '03), p. 562--569. Dispon{\'\i}vel em:
+  \url{http://dx.doi.org/10.3115/1075096.1075167}.}
+
+\bibitem[Gruenstein, Niekrasz e Purver 2007]{Gruenstein2007}
+\abntrefinfo{Gruenstein, Niekrasz e Purver}{GRUENSTEIN; NIEKRASZ; PURVER}{2007}
+{GRUENSTEIN, A.; NIEKRASZ, J.; PURVER, M. \emph{MEETING STRUCTURE ANNOTATION --
+  Annotations Collected with a General Purpose Toolkit}. [S.l.]: Springer,
+  Dordrecht, 2007.}
+
+\bibitem[Gutierrez et al. 2016]{Gutierrez2016}
+\abntrefinfo{Gutierrez et al.}{GUTIERREZ et al.}{2016}
+{GUTIERREZ, F. et al. A hybrid ontology-based information extraction system.
+\emph{J. Inf. Sci.}, Sage Publications, Inc., Thousand Oaks, CA, USA, v.~42,
+  n.~6, p. 798--820, dez. 2016.
+ISSN 0165-5515.
+Dispon{\'\i}vel em: \url{https://doi.org/10.1177/0165551515610989}.}
+
+\bibitem[Hearst 1997]{Hearst1997}
+\abntrefinfo{Hearst}{HEARST}{1997}
+{HEARST, M.~A. Texttiling: Segmenting text into multi-paragraph subtopic
+  passages.
+\emph{Comput. Linguist.}, MIT Press, Cambridge, MA, USA, v.~23, n.~1, p.
+  33--64, mar. 1997.
+ISSN 0891-2017.
+Dispon{\'\i}vel em: \url{http://dl.acm.org/citation.cfm?id=972684.972687}.}
+
+\bibitem[Hofmann 1999]{Hofmann1999}
+\abntrefinfo{Hofmann}{HOFMANN}{1999}
+{HOFMANN, T. Probabilistic latent semantic indexing. In:  \emph{Proceedings of
+  the 22Nd Annual International ACM SIGIR Conference on Research and
+  Development in Information Retrieval}. New York, NY, USA: ACM, 1999.  (SIGIR
+  '99), p. 50--57.
+ISBN 1-58113-096-1. Dispon{\'\i}vel em:
+  \url{http://doi.acm.org/10.1145/312624.312649}.}
+
+\bibitem[Hovy e Lavid 2010]{Hovy2010}
+\abntrefinfo{Hovy e Lavid}{HOVY; LAVID}{2010}
+{HOVY, E.; LAVID, J. Towards a 'science' of corpus annotation: A new
+  methodological challenge for corpus linguistics.
+v.~22, p. 13--36, 01 2010.}
+
+\bibitem[Janin et al. 2003]{Janin2003}
+\abntrefinfo{Janin et al.}{JANIN et al.}{2003}
+{JANIN, A. et al. The icsi meeting corpus. In:  \emph{Proceedings of the IEEE
+  International Conference on Acoustics, Speech, and Signal Processing}. [S.l.:
+  s.n.], 2003. p. 364--367.}
+
+\bibitem[Kazantseva e Szpakowicz 2012]{Kazantseva2012}
+\abntrefinfo{Kazantseva e Szpakowicz}{KAZANTSEVA; SZPAKOWICZ}{2012}
+{KAZANTSEVA, A.; SZPAKOWICZ, S. Topical segmentation: A study of human
+  performance and a new measure of quality. In:  \emph{Proceedings of the 2012
+  Conference of the North American Chapter of the Association for Computational
+  Linguistics: Human Language Technologies}. Stroudsburg, PA, USA: Association
+  for Computational Linguistics, 2012.  (NAACL HLT '12), p. 211--220.
+ISBN 978-1-937284-20-6. Dispon{\'\i}vel em:
+  \url{http://dl.acm.org/citation.cfm?id=2382029.2382058}.}
+
+\bibitem[Kern e Granitzer 2009]{Kern2009}
+\abntrefinfo{Kern e Granitzer}{KERN; GRANITZER}{2009}
+{KERN, R.; GRANITZER, M. Efficient linear text segmentation based on
+  information retrieval techniques.
+\emph{Proceedings of the International Conference on Management of Emergent
+  Digital EcoSystems, MEDES '09}, p. 167--171, 2009.
+Dispon{\'\i}vel em:
+  \url{https://www.scopus.com/inward/record.uri?eid=2-s2.0-74549147972&doi=10.1145\%2f1643823.1643854&partnerID=40&md5=1c6f73bc0e07446fcc178440e48bbc40}.}
+
+\bibitem[Kozima 1993]{Kozima1993}
+\abntrefinfo{Kozima}{KOZIMA}{1993}
+{KOZIMA, H. Text segmentation based on similarity between words. In:
+  \emph{Proceedings of the 31st Annual Meeting on Association for Computational
+  Linguistics}. Stroudsburg, PA, USA: Association for Computational
+  Linguistics, 1993.  (ACL '93), p. 286--288. Dispon{\'\i}vel em:
+  \url{http://dx.doi.org/10.3115/981574.981616}.}
+
+\bibitem[Lee e Seung 1999]{Lee1999}
+\abntrefinfo{Lee e Seung}{LEE; SEUNG}{1999}
+{LEE, D.; SEUNG, H. S. Learning the parts of objects by non-negative matrix
+  factorization.
+v.~401, p. 788--91, 11 1999.}
+
+\bibitem[Lee et al. 2011]{Lee2011}
+\abntrefinfo{Lee et al.}{LEE et al.}{2011}
+{LEE, J.-K. et al. Two-step sentence extraction for summarization of meeting
+  minutes. In:  . [S.l.: s.n.], 2011. v.~39, p. 614--619.}
+
+\bibitem[Malioutov e Barzilay 2006]{Malioutov:2006a}
+\abntrefinfo{Malioutov e Barzilay}{MALIOUTOV; BARZILAY}{2006}
+{MALIOUTOV, I.; BARZILAY, R. Minimum cut model for spoken lecture segmentation.
+  In:  \emph{Proceedings of the 21st International Conference on Computational
+  Linguistics and the 44th Annual Meeting of the Association for Computational
+  Linguistics}. Stroudsburg, PA, USA: Association for Computational
+  Linguistics, 2006.  (ACL-44), p. 25--32. Dispon{\'\i}vel em:
+  \url{https://doi.org/10.3115/1220175.1220179}.}
+
+\bibitem[Manning, Raghavan e Sch\"{u}tze 2008]{Manning2008}
+\abntrefinfo{Manning, Raghavan e Sch\"{u}tze}{MANNING; RAGHAVAN;
+  SCH\"{u}TZE}{2008}
+{MANNING, C.~D.; RAGHAVAN, P.; SCH\"{u}TZE, H. \emph{Introduction to
+  Information Retrieval}. New York, NY, USA: Cambridge University Press, 2008.
+ISBN 0521865719, 9780521865715.}
+
+\bibitem[Misra et al. 2009]{Misra2009}
+\abntrefinfo{Misra et al.}{MISRA et al.}{2009}
+{MISRA, H. et al. Text segmentation via topic modeling: An analytical study.
+  In:  \emph{Proceedings of the 18th ACM Conference on Information and
+  Knowledge Management}. New York, NY, USA: ACM, 2009.  (CIKM '09), p.
+  1553--1556.
+ISBN 978-1-60558-512-3. Dispon{\'\i}vel em:
+  \url{http://doi.acm.org/10.1145/1645953.1646170}.}
+
+\bibitem[Naili, Chaibi e Ghezala 2016]{Naili2016}
+\abntrefinfo{Naili, Chaibi e Ghezala}{NAILI; CHAIBI; GHEZALA}{2016}
+{NAILI, M.; CHAIBI, A.~H.; GHEZALA, H. H.~B. Exogenous approach to improve
+  topic segmentation.
+\emph{International Journal of Intelligent Computing and Cybernetics}, v.~9,
+  n.~2, p. 165--178, 2016.
+Dispon{\'\i}vel em: \url{https://doi.org/10.1108/IJICC-01-2016-0001}.}
+
+\bibitem[Passonneau e Litman 1997]{Passonneau1997}
+\abntrefinfo{Passonneau e Litman}{PASSONNEAU; LITMAN}{1997}
+{PASSONNEAU, R.~J.; LITMAN, D.~J. Discourse segmentation by human and automated
+  means.
+\emph{Comput. Linguist.}, MIT Press, Cambridge, MA, USA, v.~23, n.~1, p.
+  103--139, mar. 1997.
+ISSN 0891-2017.
+Dispon{\'\i}vel em: \url{http://dl.acm.org/citation.cfm?id=972684.972689}.}
+
+\bibitem[Pevzner e Hearst 2002]{Pevzner2002}
+\abntrefinfo{Pevzner e Hearst}{PEVZNER; HEARST}{2002}
+{PEVZNER, L.; HEARST, M. A critique and improvement of an evaluation metric for
+  text segmentation.
+\emph{Computational Linguistics}, v.~28, n.~1, p. 19--36, 2002.
+Dispon{\'\i}vel em:
+  \url{https://www.scopus.com/inward/record.uri?eid=2-s2.0-0037870455&doi=10.1162\%2f089120102317341756&partnerID=40&md5=279abc4e76fcfc2c4a1896e76a245034}.}
+
+\bibitem[Purver et al. 2006]{Purver2006}
+\abntrefinfo{Purver et al.}{PURVER et al.}{2006}
+{PURVER, M. et al. Unsupervised topic modelling for multi-party spoken
+  discourse. In:  \emph{Proceedings of the 21st International Conference on
+  Computational Linguistics and the 44th Annual Meeting of the Association for
+  Computational Linguistics}. Stroudsburg, PA, USA: Association for
+  Computational Linguistics, 2006.  (ACL-44), p. 17--24. Dispon{\'\i}vel em:
+  \url{https://doi.org/10.3115/1220175.1220178}.}
+
+\bibitem[Reynar 1998]{Reynar1998}
+\abntrefinfo{Reynar}{REYNAR}{1998}
+{REYNAR, J.~C.
+\emph{Topic Segmentation: Algorithms and Applications}.
+Tese (Doutorado), Philadelphia, PA, USA, 1998. AAI9829978.}
+
+\bibitem[Rezende 2003]{Rezende2003}
+\abntrefinfo{Rezende}{REZENDE}{2003}
+{REZENDE, S.~O. \emph{Sistemas Inteligentes}. Barueri, SP: Manole, 2003. 337 -
+  270~p.}
+
+\bibitem[Rijsbergen 1979]{Rijsbergen1979}
+\abntrefinfo{Rijsbergen}{RIJSBERGEN}{1979}
+{RIJSBERGEN, C. J.~V. \emph{Information Retrieval}. 2nd. ed. Newton, MA, USA:
+  Butterworth-Heinemann, 1979.
+ISBN 0408709294.}
+
+\bibitem[Sakahara, Okada e Nitta 2014]{Sakahara2014}
+\abntrefinfo{Sakahara, Okada e Nitta}{SAKAHARA; OKADA; NITTA}{2014}
+{SAKAHARA, M.; OKADA, S.; NITTA, K. Domain-independent unsupervised text
+  segmentation for data management. In:  \emph{2014 IEEE International
+  Conference on Data Mining Workshop}. [S.l.: s.n.], 2014. p. 481--487.
+ISSN 2375-9232.}
+
+\bibitem[Salton e Allan 1994]{Salton:1994}
+\abntrefinfo{Salton e Allan}{SALTON; ALLAN}{1994}
+{SALTON, G.; ALLAN, J. Automatic text decomposition and structuring. In:
+  \emph{Intelligent Multimedia Information Retrieval Systems and Management -
+  Volume 1}. Paris, France, France: LE CENTRE DE HAUTES ETUDES INTERNATIONALES
+  D'INFORMATIQUE DOCUMENTAIRE, 1994.  (RIAO '94), p. 6--20. Dispon{\'\i}vel em:
+  \url{http://dl.acm.org/citation.cfm?id=2856823.2856826}.}
+
+\bibitem[Salton e Buckley 1988]{Salton1988}
+\abntrefinfo{Salton e Buckley}{SALTON; BUCKLEY}{1988}
+{SALTON, G.; BUCKLEY, C. Term-weighting approaches in automatic text retrieval.
+\emph{Inf. Process. Manage.}, Pergamon Press, Inc., Tarrytown, NY, USA, v.~24,
+  n.~5, p. 513--523, ago. 1988.
+ISSN 0306-4573.
+Dispon{\'\i}vel em: \url{http://dx.doi.org/10.1016/0306-4573(88)90021-0}.}
+
+\bibitem[Schwartz-Ziv e Weisbach 2013]{Miriam2013}
+\abntrefinfo{Schwartz-Ziv e Weisbach}{SCHWARTZ-ZIV; WEISBACH}{2013}
+{SCHWARTZ-ZIV, M.; WEISBACH, M.~S. What do boards really do? evidence from
+  minutes of board meetings.
+\emph{Journal of Financial Economics}, v.~108, n.~13, p. 349--366, 2013.}
+
+\bibitem[Shamsinejadbabki e Saraee 2012]{Shamsinejadbabki2012}
+\abntrefinfo{Shamsinejadbabki e Saraee}{SHAMSINEJADBABKI; SARAEE}{2012}
+{SHAMSINEJADBABKI, P.; SARAEE, M. A new unsupervised feature selection method
+  for text clustering based on genetic algorithms.
+\emph{J. Intell. Inf. Syst.}, Kluwer Academic Publishers, Hingham, MA, USA,
+  v.~38, n.~3, p. 669--684, jun. 2012.
+ISSN 0925-9902.
+Dispon{\'\i}vel em: \url{http://dx.doi.org/10.1007/s10844-011-0172-5}.}
+
+\bibitem[Shi e Malik 2000]{Shi2000}
+\abntrefinfo{Shi e Malik}{SHI; MALIK}{2000}
+{SHI, J.; MALIK, J. Normalized cuts and image segmentation.
+\emph{IEEE Transactions on Pattern Analysis and Machine Intelligence}, v.~22,
+  n.~8, p. 888--905, Aug 2000.
+ISSN 0162-8828.}
+
+\bibitem[Shrout e Fleiss 1979]{Fleiss1979}
+\abntrefinfo{Shrout e Fleiss}{SHROUT; FLEISS}{1979}
+{SHROUT, P. E.; FLEISS, J. L. Intraclass correlations: Uses in assessing rater
+  reliability.
+v.~86, p. 420--8, 04 1979.}
+
+\bibitem[Steyvers e Griffiths 2007]{Steyvers2007}
+\abntrefinfo{Steyvers e Griffiths}{STEYVERS; GRIFFITHS}{2007}
+{STEYVERS, M.; GRIFFITHS, T. Probabilistic topic models. In:  LANDAUER, T.;
+  MCNAMARA, S.~D.; KINTSCH, W. (Ed.). \emph{Latent Semantic Analysis: A Road to
+  Meaning}. Laurence Erlbaum, 2007. cap. Probabilistic topic models.
+Dispon{\'\i}vel em:
+  \url{http://psiexp.ss.uci.edu/research/papers/SteyversGriffithsLSABookFormatted.pdf}.}
+
+\bibitem[Tan, Steinbach e Kumar 2005]{Tan2005}
+\abntrefinfo{Tan, Steinbach e Kumar}{TAN; STEINBACH; KUMAR}{2005}
+{TAN, P.-N.; STEINBACH, M.; KUMAR, V. \emph{Introduction to Data Mining, (First
+  Edition)}. Boston, MA, USA: Addison-Wesley Longman Publishing Co., Inc.,
+  2005.
+ISBN 0321321367.}
+
+\bibitem[Utiyama e Isahara 2001]{Utiyama2001}
+\abntrefinfo{Utiyama e Isahara}{UTIYAMA; ISAHARA}{2001}
+{UTIYAMA, M.; ISAHARA, H. A statistical model for domain-independent text
+  segmentation. In:  \emph{Proceedings of the 39th Annual Meeting on
+  Association for Computational Linguistics}. Stroudsburg, PA, USA: Association
+  for Computational Linguistics, 2001.  (ACL '01), p. 499--506. Dispon{\'\i}vel
+  em: \url{https://doi.org/10.3115/1073012.1073076}.}
+
+\end{thebibliography}
