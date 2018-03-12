@@ -1,0 +1,57 @@
+UNIVERSIDADE FEDERAL DE SÃO CARLOS – Campus Sorocaba
+
+BACHARELADO EM CIÊNCIA DA COMPUTAÇÃO
+
+Rodovia João Leme dos Santos, Km 110 (SP-264)
+
+Bairro do Itinga - Sorocaba-SP - CEP 18052-780
+
+Telefone: (15) 3202-2022 / www. ufscar. br
+
+ Ata da 18ª Reunião Ordinária do Conselho do Curso de Bacharelado em Ciência da Computação, UFSCar – Sorocaba
+
+Local, Dia e Hora: Na AT Lab 110, situada nas dependências da Universidade Federal de São Carlos - campus Sorocaba, à Rodovia João Leme dos Santos, quilômetro 110, Bairro do Itinga, na cidade de Sorocaba, Estado de São Paulo e realizada aos seis dias do mês de março de dois mil e onze, às 14h00. Convocação e Presença: A convocação foi realizada três dias antes da data da sua realização, celebrou-se a primeira chamada as 14h00 e a segunda chamada as 14h15 estavam presentes após a segunda chamada os seguintes membros do Conselho do Curso de Bacharelado em Ciência da Computação – Sorocaba: Luciana Aparecida Martinez Zaina (presidindo a reunião), Katti Faceli, Cândida Nunes da Silva, Tiemi C. Sakata, Sahudy Montenegro Gonzáles, Yeda Regina Venturini, José Geraldo Vidal, Adilson José Vieira Brandão e Siovani Cintra Felipussi, e os representantes discentes, Sr. Rubens Onari (2008),  Sr. Alessandro V. Piccoli (2010), Sr. Vitor Casadei (2011) também presente a Sra Sonia Vieira Dal Pian secretariando esta reunião. Comunicação da Presidência: A profa Luciana agradeceu a presença de todos e informou que agora é oficial a disponibilidade da verba para a conclusão dos laboratórios, a mesma já foi aprovada e já está no jurídico para aprovação do edital para realização do pregão de compra, a outra boa notícia é que as cento e treze máquinas em breve irão chegar, a sétima colocada será a fornecedora, pois entrou com recurso contra as outras seis alegando que as mesmas não atendiam ao edital. Com relação ao reconhecimento do curso ainda não recebemos nenhum aviso, talvez só aconteça somente no segundo semestre e informou que os cursos de turismo e engenharia de produção tiveram nota cinco,e a biologia licenciatura noturno nota quatro. A profa. Luciana apresentou a todos o representante discente de 2011, Sr. Vitor Casadei. Comunicação dos membros: Os representantes discentes informaram que irão fazer um rodízio entre eles em relação aos titulares e suplentes, assim os representantes de 2008 será o Sr. Winícius Reis de Jesus (titular), Sr. Rubens Onari Júnior ( suplente), para 2010 será o Sr. Lúcio Mitsuru seki (titular) e o Sr. Alesandro Visotto Piccoli (suplente). A profa. Tiemi pede inclusão de pauta para o modelo de relatório técnico. Ordem do Dia: (I) APROVAÇÃO DO EDITAL DO CONCURSO PARA PROFESSOR EFETIVO. (I.I) A profa Luciana colocou que na reunião anterior foi discutido sobre a abertura ou não de um novo concurso e ficou decidido pela abertura de um novo concurso, assim entramos em contato com o RH para dar início aos trâmites, e o mesmo informou que não há necessidade passar pelo CoAc e ConCam, então tivemos o cuidado de reunir os professores da área para acertar os temas do edital, tudo isto devido a urgência da publicação do mesmo, pois pretendemos deixá-lo no ar o maior tempo possível, devido a este fator o mesmo foi aprovado Ad referendum. A profa. Luciana expôs o edital aos membros para aprovação. (I.II) Aprovado. (II) APROVAÇÃO DAS FICHAS DE CARACTERIZAÇÃO. (I.II) A profa. Luciana esclareceu que as fichas de caracterização devem ser um recorte fiel do PPP, sendo assim a única ação que propusemos foi a de pesquisar junto aos professores quais seriam as disciplinas optativas que serão oferecidas no próximo semestre, e segundo a resposta dos professores teremos como opções as seguintes disciplinas: Introdução à Robótica, IHM, Mineração de Dados, Tópicos Avançados em Desenvolvimento de Software, Algoritmos Distribuídos. e colocou também que a única coisa que teremos que decidir e é se a disciplina comporta ou não exercícios domiciliares, para a disciplina Tópicos Avançados em Desenvolvimento de Software a decisão é que comporta, já para disciplina Algoritmos Distribuídos que será oferecida pelo professor Gustavo teremos que decidir. A profa. Katti colocou que se for seguir o padrão das outras disciplinas teóricas a resposta seria que comporta exercícios domiciliares. Aprovado exercícios domiciliares nas duas disciplinas, aprovado também a oferta das disciplinas optativas acima relacionadas. (III) INCLUSÃO DA SeCoT NO CALENDÁRIO ACADÊMICO. (III.I) A profa Luciana colocou que esta em discussão começou principalmente devido ao atraso do ano letivo, fazendo a contagem verificou que teremos apenas 14 semanas para as quartas e quintas-feiras, então pensou na possibilidade de contar a SeCoT como dia letivo, porém se a mesma for contada como dia letivo, não poderá ser contada como atividade complementar e também tem um outro problema, pois na SeCoT é cobrada taxa, e por este motivo não pode ser contada como dia letivoe segundo os organizadores da Semana, eles não podem abrir mão da cobrança da referida taxa. A profa. Luciana diz que conversou com a Coordenadora Acadêmica a respeito das atividades não presenciais e descobriu que pode ser usado até vinte por cento do total de horas, e também gostaria de abrir a discussão para saber se alguém tem alguma outra sugestão. O prof. José Vidal diz que tomou a liberdade de fechar com os alunos que vinte por cento das atividades eles irão desenvolver em casa, mas mesmo assim o tempo ficará bem apertado. O prof. Adilson questionou se vai haver prorrogação para lançar as notas, a profa. Luciana esclareceu que está havendo uma discussão entre a Coordenação Acadêmica e a Prograd, porém a mesma não concorda com a prorrogação sob a alegação de prejuízo na oferta das disciplinas, a profa Luciana complementou dizendo que não acredita que o prazo das aulas será estendido e na opinião dela a melhor solução seria a de se utilizar os vinte por cento permitido. Foi posto em votação se a SeCoT será ou não incluída no calendário acadêmico. (III.II) Ficou decidido por unanimidade a não inclusão da SeCoT no calendário acadêmico, somente será computada como atividades complementares. (IV) APROVAÇÃO DO TEMPLATE PARA DIVULGAÇÃO DE RELATÓRIOS TÉCNICOS. (IV.I) A profa. Tiemi apresentou o modelo do relatório, e colocou que a idéia é que todos possam ter acesso e sigam o padrão o qual poderá ser preenchido de acordo com a necessidade de cada um, essa medida é para conseguir documentar as atividades e ter um controle maior, a professora Katti complementou que a idéia é ter um modelo bastante flexível, sem maiores especificações, e este formulário será disponibilizado no site. A profa Luciana colocou então que teremos que aprovar o modelo de formulário e também quem irá controlá-lo, e sugeriu que a profa. Tiemi seja responsável. (IV.II) Foram aprovados o formulário, e também a profa. Tiemi como reponsável. Encerramento: Estando todos de acordo e nada mais havendo a deliberar, lavra-se, leia-se, aprova-se e assina-se esta Ata por todos os membros do Conselho do Curso de Bacharelado em Ciência da Computação, Campus Sorocaba, participantes desta reunião que, em 02 (duas) vias, será levada à registro e arquivamento junto à Coordenação do Conselho do Curso de Bacharelado em Ciência da Computação - Sorocaba, ficando ali à disposição para consulta restrita aos professores da UFSCar - Sorocaba. Nada mais.
+	Profª Drª Luciana Aparecida Martinez Zaina
+Presidente desta Reunião
+
+	Sonia Vieira Dal Pian N. Silva
+
+Secretária desta Reunião
+	Profa. Dra. Katti Faceli
+Professora Adjunta
+
+	Profa. Dra Cândida Nunes da Silva
+
+Professora Adjunta
+	Profa. Dra. Tiemi Chistine Sakata
+
+Professor Adjunto
+
+	Prof. Dr. Adilson José V. Brandão
+Professor Associado
+	   Profa. Dra. Sahudy Montenegro González
+Professora Adjunta
+
+	Prof. Dr. Siovani Cintra Felipussi
+Professor Adjunto
+	Prof. Dr. José Geraldo Vidal vieira
+Professor Adjunto
+
+	Winícius Reis de Jesus Ferreira
+ Representante Discente - 2008
+
+	Profa. Dra. Yeda Regina Venturini
+
+Professora Adjunta 
+
+
+	Lúcio Mitsuru Seki 
+ Representante Discente - 2010
+
+	Vitor Casadei
+ Representante Discente - 2011
+
+
+
+
+

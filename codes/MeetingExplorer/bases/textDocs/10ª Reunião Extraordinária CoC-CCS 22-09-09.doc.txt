@@ -1,0 +1,194 @@
+PAGE  
+UNIVERSIDADE FEDERAL DE SÃO CARLOS – Campus Sorocaba
+
+BACHARELADO EM CIÊNCIA DA COMPUTAÇÃO
+
+Rodovia João Leme dos Santos, Km 110 (SP-264)
+
+Bairro do Itinga - Sorocaba-SP - CEP 18052-780
+
+Telefone: (15) 3202-2022 / www. ufscar. br
+
+Ata da 10ª Reunião Extraordinária do Conselho do Curso de Bacharelado em Ciência da Computação, UFSCar – Sorocaba
+
+Local, Dia e Hora: Na sala de Reuniões do Prédio Administrativo, situado nas dependências da Universidade Federal de São Carlos - campus Sorocaba, à Rodovia João Leme dos Santos, quilômetro 110, Bairro do Itinga, na cidade de Sorocaba, Estado de São Paulo e realizada aos vinte e dois dias do mês de setembro do ano de dois mil e nove, às 14:00 horas. Convocação e Presença: A convocação foi realizada três dias antes da data de sua realização, por e-mails enviados a todos os interessados, sendo que se celebrou a primeira chamada as 14:00, a segunda chamada as 14h15 e a terceira chamada as 14h30, estando presente após a terceira chamada os membros do Conselho do Curso de Bacharelado em Ciência da Computação - Sorocaba, sendo eles os professores doutores Siovani Cintra Felipussi;  Yeda Regina Venturini,  Katti Faceli, Luciana Martinez Zaina , Cândida Nunes da Silva, Gustavo Maciel Dias Vieira,  José de Oliveira Guimarães , Márcio K. Oikawa, Laércio José dos Santos, José Fernando Rodrigues Jr., Murillo Rodrigo Petrucelli Homem, Fábio Luciano Verdi. Também presente a Sra. Sonia Vieira Dal Pian Nunes Silva, como secretária desta reunião. Donizetti. O Sr. João Victor B. Zanata, representante dos Calouros justificou sua ausência. Comunicações da Presidência: (I) Não houve comunicados. Comunicação dos Membros: (I) Não houve. Ordem do Dia: (I) FICHAS DE CARACTERIZAÇÃO REFERENTES ÀS DISCIPLINAS DO PRIMEIRO PERÍODO LETIVO DE 2010: (I.I) Siovani esclarece que no dia dezessete de setembro foi comunicado que o prazo para entrega das fichas de caracterização será até dia vinte e três de setembro. (I.II) A Profª Cândida faz questionamentos sobre a ficha de caracterização. (I.III) O Prof. Siovani explicou que a ficha de caracterização, possui dados sobre a disciplina, como objetivo, ementa, equivalência, número de créditos, entre outras. Explicou também que foi feito um levantamento e que será realizadas algumas modificações que precisa ser definida, como número de vagas, definição de docente para cada disciplina.(I.IV) O Prof. Siovani faz demonstração dos perfis do primeiro semestre de dois mil e dez (perfil um, três e cinco). (I.V) O Prof. Murillo coloca que seria muito conveniente que a disciplina Geometria Analítica e Álgebra Linear fosse alterada para Álgebra Linear, que todo conteúdo seria coberto pela álgebra, e que os alunos sairiam ganhando com essa alteração. (I.VI) A Profª Luciana questiona sobre a importância da descrição Geometria Analítica no nome da disciplina. (I.VII) O Prof. Siovani diz que se a mudança não é para agora, poderia então fazer mudanças na ementa, mas manter o nome, pois é possível fazer alterações de até trinta por cento, sem alterar o nome da disciplina. (I.VIII) O Prof. Murillo esclarece que a mudança seria para o próximo semestre. (I.IX) O Prof. Laércio concorda com essa alteração. (I.X) Os membros do Conselho decidiram que a disciplina permanecerá com o mesmo código e nome, sofrerá alteração apenas na ementa. (I.XI)  O Prof. Siovani expõe o perfil 1, que possui uma nova disciplina - Pesquisa Acadêmica em Computação, a qual deverá ser oferecida aos perfis um, três e cinco, já a disciplina Noções de Economia antes oferecida no perfil três, agora será oferecida no perfil um, sendo assim será oferecida aos perfis um e três para acerto de grade. No perfil três temos duas disciplinas novas, Laboratório de Arquitetura de Computadores e Automação de Cadeias de Produção, ambas serão oferecidas aos perfis três e cinco. No perfil cinco todas as disciplinas estarão sendo oferecidas pela primeira vez, então terá que ser preenchida as fichas de caracterização de todas elas. (I.XII) A Prof. Yeda quer saber qual é a prioridade neste momento as fichas de caracterização ou a distribuição da grade horária. (I.XIII) O Prof. Siovani esclarece que a prioridade são as fichas de caracterização, pois  o prazo seria até o dia vinte e três, porém nossa reunião para aprovação das mesmas será no dia vinte e quatro.(I.XIV) O Prof. Siovani faz uma distribuição entre os professores para preenchimento das fichas de caracterização.
+	Algorítmos e Programação I
+	Siovani
+
+	Pesquisa Acadêmica em Computação
+	Cândida
+
+	Laboratório de Arquitetura de Computação
+	José Fernando
+
+	Automação de Cadeias de Produção
+	José Geraldo
+
+	Redes de Computadores
+	Fábio
+
+	Paradigmas de Linguagem de Programação
+	José Guimarães
+
+	Compiladores
+	José Guimarães
+
+	Engenharia de Software II
+	Luciana
+
+	Laboratório de Banco de Dados
+	Márcio
+
+	Desenvolvimento para Web
+	Luciana
+
+	Computação Gráfica
+	Murillo
+
+
+ (I.X) Ficou decidido que a reunião para aprovação das fichas de caracterização, será na quinta feira, dia vinte e quatro de setembro as quatorze horas na sala de reuniões do prédio administrativo (II) DISTRIBUIÇÃO DA GRADE HORARIO DAS DISCIPLINAS DO PRIMEIRO PERÍODO LETIVO DE 2010
+	DISCIPLINAS
+	PROFESSORES
+	PERFIL
+
+	Algoritmos e Programação I
+	Siovani Cintra Felipussi
+	1
+
+	Cálculo Diferencial e Integral I
+	Magda da Silva Peixoto
+	1
+
+	Geometria Analítica e Álgebra Linear
+	Laércio José dos Santos
+	1
+
+	Física para Computação
+	Tersio Guilherme de S.Cruz
+	1
+
+	Pesquisa Acadêmica em Computação
+	Gustavo Maciel
+	1
+
+	Lógica para Computação
+	José de Oliveira Guimarães
+	1
+
+	Informática, Ética e Sociedade
+	Murillo Rodrigo Petrucelli
+	1
+
+	Noções Básicas de Economia
+	Arlei Luiz Fachinello
+	1
+
+	Arquitetura e Organização de Comp.
+	José Fernando Rodrigues Jr
+	3
+
+	Laboratório de Arquitetura de Comp.
+	Yeda Regina Venturini
+	3
+
+	Teoria dos Grafos
+	José Fernando Rodrigues Jr
+	3
+
+	Algoritmos e Complexidade
+	Cândida Nunes da Silva
+	3
+
+	Introdução aos Sist. de Informações
+	Luciana Aparecida M. Zaina
+	3
+
+	Programação Orientada a Objetos
+	Katti Faceli
+	3
+
+	Estruturas de Dados I
+	Tiemi Christine Sakata
+	3
+
+	Automação de Cadeias de Produção
+	José Geraldo Vidal Vieira
+	3
+
+	Redes de Computadores
+	Fábio Luciano Verdi
+	5
+
+	Paradigmas de Linguagem de Progr.
+	José Oliveira Guimarães
+	5
+
+	Compiladores
+	Tiemi Christine Sakata
+	5
+
+	Engenharia de Software II
+	a ser definido
+	5
+
+	Laboratório de Banco de Dados
+	Márcio Katsumi Oikawa
+	5
+
+	Desenvolvimento para Web
+	Luciana Aparecida M. Zaina
+	5
+
+	Computação Gráfica
+	Murillo Rodrigo Petrucelli
+	5
+
+
+ (II.I) O Prof. Siovani esclarece que foi realizado apenas uma pré-distribuição, sendo assim está sujeita a alterações. (II.II)  Prof. Siovani solicita que seja encaminhado ofícios (solicitando a designação de professores) para os seguintes coordenadores : Curso de Matemática (Magda da Silva Peixoto), professores para as disciplinas de Cálculo Diferencial e Integral I e Geometria Analítica e Álgebra Linear. Curso de Licenciatura em Física (Ana Lúcia Brandl), professor para a disciplina de Física para a Computação. Curso de Ciências Econômicas (Danilo Rolim Dias Aguiar), professor para disciplina de Noções de Economia (duas turmas). Curso de Engenharia de Produção (Isaías Torres), professor para a disciplina de Automação de Cadeias de Produção (duas turmas). (III) AFASTAMENTO DA PROFª CÂNDIDA NUNES DA SILVA. (III.I) O afastamento da Profª Cândida é parcial nas segundas e sextas feiras a partir de primeiro de setembro de dois mil e nove até vinte e seis de fevereiro de dois mil e dez, para Desenvolvimento de pesquisa na Unicamp e finalização da elaboração da tese de Doutorado. (III.II) O afastamento é aprovado pelo Conselho. (IV) AFASTAMENTO DO PROF. GUSTAVO MACIEL DIAS VIEIRA. (IV.I) O Afastamento do professor é parcial nas segundas e terças feiras, para cursar Doutorado junto a Unicamp. (IV.II) Aprovado pelo Conselho.Encerramento: Estando todos de acordo e nada mais havendo a deliberar, lavra-se, leia-se, aprova-se e assina-se esta Ata por todos os membros do Conselho do Curso de Bacharelado em Ciência da Computação, Campus Sorocaba, participantes desta reunião que, em 02 (duas) vias, será levada a registro e arquivamento junto à Coordenação do Conselho do Curso de Bacharelado em Ciência da Computação - Sorocaba, ficando ali à disposição para consulta restrita aos professores da UFSCar - Sorocaba. Nada mais.
+	Prof. Dr. Siovani Cintra Felipussi
+Presidente desta Reunião
+
+	Sonia Vieira Dal Pian Nunes Silva
+Secretária desta Reunião
+	Profa. Dra. Yeda Regina Venturini
+
+Professor Adjunto
+
+	Profa. Dra. Katti Faceli
+
+Professor Adjunto
+	Profa. Dra. Luciana A. Martinez Zaina
+Professor Adjunto
+
+	Prof. Dr. José de Oliveira Guimarães
+Professor Associado
+	Prof. Dr. Laércio José dos Santos
+Professor Adjunto
+
+	Profa. Me. Cândida Nunes da Silva
+
+Professor Adjunto
+	Prof. Me. Gustavo Maciel Dias Vieira Professor Adjunto
+
+	Prof. Dr. Fábio Luciano Verdi
+
+Professor Adjunto
+	Prof. Dr. José Fernando Rodrigues Jr
+Professor Adjunto
+
+	Prof. Dr. Márcio K. Oikawa
+Professor Adjunto
+	Prof. Dr. Murillo Rodrigo Petrucelli Homem
+Professor Adjunto
+
+
+
+
+
+
+
+
+
+
+
+
