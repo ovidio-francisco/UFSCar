@@ -63,3 +63,22 @@ Relação Grau/Frequência (deg/tf) [Berry 2010] e o Grau modificado de rótulo
 file:///ext4Data/UFSCar/papers/Tópicos/Modelagem de Tópicos e Criação de Rótulos - Identificando Temas em Dados Semi-Estruturados e Não-Estruturados.pdf
 
 
+--------------------------------------------------
+
+
+file:///ext4Data/UFSCar/papers/clustering/A Segment-based Approach To Clustering Multi-Topic Documents.pdf
+file:///ext4Data/UFSCar/papers/Segmentação/Multi-document Topic Segmentation.pdf
+file:///ext4Data/UFSCar/papers/Segmentação/Statistical topic models for multi-label document classification.pdf
+file:///ext4Data/UFSCar/papers/dissertações/dissertacao_bruno_schneider.pdf.pdf
+file:///ext4Data/UFSCar/papers/Segmentação/Multi-Topic Multi-Document Summarizer.pdf
+
+Multi-topic Aspects in Clinical Text Classification
+Learning from multi-topic web documents for contextual advertisement
+
+
+
+--------------------
+
+
+
+

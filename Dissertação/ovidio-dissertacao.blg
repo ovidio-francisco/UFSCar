@@ -6,6 +6,7 @@ A level-1 auxiliary file: conteudo/capitulos/3-cap2.aux
 A level-1 auxiliary file: conteudo/capitulos/4-cap3.aux
 A level-1 auxiliary file: conteudo/capitulos/cap-avaliacao-segmentadores.aux
 A level-1 auxiliary file: conteudo/capitulos/cap-avaliacao-extratores.aux
+A level-1 auxiliary file: conteudo/capitulos/cap-avaliacao-modulo-consulta.aux
 The style file: abntex2-alf.bst
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
@@ -33,7 +34,7 @@ Warning--faltando school em Reynar1998
 +---------------------------------------------------------+
 You've used 51 entries,
             6711 wiz_defined-function locations,
-            1635 strings with 21049 characters,
+            1636 strings with 21101 characters,
 and the built_in function-call counts, 77069 in all, are:
 = -- 8568
 > -- 1769

@@ -1,12 +1,22 @@
-\chapter{Sistema Proposto}\label{cap3}
+% \chapter{Sistema Proposto}
+% \chapter{Sistema de recuperação de informação em documentos multi-tópicos}
+\chapter{Sistema de recuperação de informação em documentos multi-temáticos}
+\label{cap3}
 
 
 
-O foco principal deste trabalho de mestrado é a exploração e recuperação de informação em atas de reunião. A escolha foi feita baseada nas características desses documentos como textos relativamente curtos, em comparação com outros documentos como notícias, artigos, sites da \textit{web}; o estilo de escrita formal em que o redator evita repetições de temos e conceitos em benefício da estética do texto; Multiplicidade de assuntos contidos em uma mesma ata, a qual é difícil determinar um assunto central, mas diversos assuntos independentes que foram tratados durante a reunião.
 
-O sistema proposto tem como objetivo permitir ao usuário consultar uma coleção de documentos de reuniões a fim de obter todo o histórico de ocorrências de um determinado tema relacionado à pesquisa do usuário, podendo identificar nos documentos onde esse tema foi mencionado, bem como se houve uma decisão sobre o tema. Para isso, o sistema é divido em dois módulos principais: módulo de preparação e manutenção e módulo de consulta, os quais serão detalhados nas próximas seções.  % "isso envolve a classificação. Onde entram os tópicos?" --> Rafael
+O sistema proposto tem como objetivo recuperar informações em uma coleção de documentos em que cada documento contém assuntos diversos e relativamente independentes entre si. Esse sistema deve identificar os assuntos de cada documento e disponibilizá-los de forma que o usuário consiga consultar a coleção de documentos e obter todo o histórico de ocorrências de um determinado tema de forma que possa identificar onde esse tema foi mencionado, bem como se houve uma decisão relacionada ao tema.
 
-Essa seção apresenta as etapas de desenvolvimento do sistema de recuperação de atas proposto, bem como o seu funcionamento geral, desde a preparação dos documentos até a entrega dos históricos de ocorrência ao usuário. 
+A proposta original deste trabalho contempla funcionalidades de classificação para identificar automaticamente o tipo de ocorrência onde um assunto é mencionado, o qual pode ser classificado como uma decisão, informe ou menção. Contudo essas funcionalidades configuram trabalhos futuros para continuação do sistema como concebido inicialmente. Assim, esse trabalho de mestrado está focado na segmentação de atas de reunião, no agrupamento desses segmentos em tópicos e na recuperação de trechos de atas relacionados ao assunto da pesquisa.
+
+Esse Capítulo está organizado da seguinte forma: primeiramente é apresentada uma visão geral do sistema proposto, seu funcionamento e como as técnicas de segmentação textual e extração de tópicos e recuperação de informação são empregadas para entregar ao usuário os trechos relacionados a pesquisa, os quais originalmente estão distribuídos na coleção de documentos.
+
+
+\section{Sistema Proposto}
+
+Essa Seção apresenta as etapas de desenvolvimento do sistema de recuperação de atas proposto, bem como o seu funcionamento geral, desde a preparação dos documentos até a entrega dos históricos de ocorrência ao usuário. 
+
 
   %--- Figura Visão Geral ---
   \begin{figure}[!h]
@@ -16,19 +26,19 @@ Essa seção apresenta as etapas de desenvolvimento do sistema de recuperação 
 	  \label{fig:visao-geral}
   \end{figure}
 
+
 A Figura \ref{fig:visao-geral} mostra a visão geral do sistema com suas principais entradas e saídas. Inicialmente o sistema recebe um conjunto inicial de documentos. A função de Módulo de preparação/manutenção é processar e manter esses textos para gerar uma base de dados interna que codifica os textos extraídos com seus respetivos tópicos. O Módulo de consulta recebe a consulta do usuário que expressa o assunto de interesse. Em seguida, os trechos de texto que fazem menção ao esse assunto são exibidos ao usuário.
 
 
 
 
-A proposta original deste trabalho contempla funcionalidades de classificação para identificar automaticamente, contudo essas funcionalidades configuram trabalhos futuros para continuação do sistema como concebido inicialmente. Assim, está focada na segmentação de atas de reunião, no agrupamento desses segmentos em tópicos e na recuperação de trechos de atas relacionados ao assunto da pesquisa.
 
 
 
 
 % ========== Módulo de Preparação e manutenção ==========
 
-\section{Módulo de preparação e manutenção}\label{sec:modulo-preparacao}
+\subsection{Módulo de preparação e manutenção}\label{sec:modulo-preparacao}
 
 
 O módulo de preparação e manutenção tem como função principal manter uma base de dados necessária para os processos de recuperação de informação. Inicialmente, esse módulo deve receber um conjunto inicial de documentos os quais devem ser divididos em segmentos de texto que contêm um assunto predominante, e agrupá-los em categorias por meio de técnicas de extração de tópicos. Além disso, considera-se o crescimento da bases de documentos, assim, o sistema deve receber novos documentos a medida que são gerados. 
@@ -53,7 +63,7 @@ O módulo de preparação e manutenção tem como função principal manter uma 
 
 % ========== Preparação dos Documentos ==========
 
-\subsection{Preparação dos documentos}
+\subsubsection{Preparação dos documentos}
 
 
 As atas são normalmente armazenadas em arquivos binários do tipo \textit{pdf}, \textit{doc}, \textit{docx} ou \textit{odt}. A partir desses arquivos, elas devem ser pré-processadas e estruturadas para que possam ser aplicados métodos de MI e RI. Para isso, o texto puro é extraído e passa por processos de transformação que incluem remoção de elementos considerados menos significativos e a identificação de sentenças. Esse processo é ilustrado na Figura~\ref{fig:preprocessamento-segmentacao} e descrito a seguir.
@@ -89,7 +99,7 @@ Nesse trabalho considera-se as sentenças as menores unidades de informação a 
 % ========== Pré-Processamento dos Documentos ==========
 
 
-\subsection{Pré-Processamento dos Documentos}
+\subsubsection{Pré-Processamento dos Documentos}
 
 
 Na etapa de pré-processamento, os documentos são pré-processados individualmente conforme são recebidos pelos algoritmos de segmentação extração de tópicos. Inicialmente, cada texto passou por um processo de transformação em que as letras foram convertidas em caixa baixa e eliminou-se sinais de pontuação, numerais e termos menores que três caracteres. Em seguida removeu-se os termos que não contribuem para a etapa de segmentação, as quais são chamadas de \textit{stop words}, para identificá-las usou-se uma lista de 438 palavras. Em seguida, extraiu-se o radical de cada palavra por meio da técnica \textit{stemming}. 
@@ -114,7 +124,7 @@ Nesse trabalho, todos os termos restantes após a remoção de \textit{stop word
 
 
 % ==================== Segmentação ===================== %
-\subsection{Segmentação}
+\subsubsection{Segmentação}
 
 Como já mencionado, uma ata registra a sucessão de assuntos discutidos em uma reunião, porém apresenta-se com poucas quebras de parágrafo e sem marcações de estrutura, como capítulos, seções ou quaisquer indicações sobre o assunto do texto. Portanto, faz-se necessário descobrir quando há uma mudança de assunto no texto da ata. Para essa tarefa, as técnicas de segmentação de texto recebem uma lista de sentenças, da qual considera cada ponto entre duas sentenças como candidato a limite, ou seja, um ponto onde há transição entre assuntos~\cite{Bokaei2015, Bokaei2016, Misra2009, Sakahara2014}.
 
@@ -126,7 +136,7 @@ As técnicas de segmentação abordadas na Subseção~\ref{sec:segmentacao} divi
 
 % ==================== Extração de Tópicos ===================== %
 
-\subsection{Extração de Tópicos}
+\subsubsection{Extração de Tópicos}
 
 Após a segmentação da coleção e identificação das transições de assuntos em cada documento da coleção, o sistema inicia a etapa de extração de padrões por meio das técnicas de extração de tópicos, ou seja, uma vez identificado onde há uma mudança de assunto, o próximo passo é obter conhecimento sobre os assuntos.
 
@@ -145,7 +155,7 @@ O agrupamento por tópicos e seus descritores são utilizados para ajudar o usu�
 
 % ==================== Estrutura de Dados Interna ===================== %
 
-\subsection{Estrutura de Dados Interna}
+\subsubsection{Estrutura de Dados Interna}
 
 A estrutura de dados interna é o resultado dos processos de segmentação e extração de tópicos. Constituída por: 
 (1) documentos originais para referência, 
@@ -176,7 +186,7 @@ Os arquivos da coleção de documentos $(D)$ são mantidos para reverência aos 
 
 % ==================== Módulo de Consulta ===================== %
 
-\section{Módulo de Consulta}
+\subsection{Módulo de Consulta}
 
 
 Uma vez que a estrutura de dados interna contem os assuntos abordados na coleção de documentos, o tipo de ocorrência para cada assunto e o trecho onde se encontram, 
@@ -184,9 +194,9 @@ Uma vez que a estrutura de dados interna contem os assuntos abordados na coleç�
 
 % \subsection{Seleção dos tópicos}
 
-\subsection{Ranqueamento}
+\subsubsection{Ranqueamento}
 
-\subsection{Visualização}
+\subsubsection{Visualização}
 
 O usuário final precisa de uma interface adequada para visualizar os resultados da busca considerando-se a relevância dos tópicos selecionados e a sequência cronológica. Uma boa apresentação deve permitir ao usuário identificar a relevância os resultados e ser relativante independente para compreensão do conteúdo, evitando a leitura do texto completo. Ou seja, o texto de cada tópico apresentado deve ser suficiente para compreensão do assunto mencionado, sem necessidade de visualizar o documento original.
 
@@ -201,5 +211,14 @@ Como parte da proposta, o sistema apresenta cada resultado dentro de um históri
 
 % \section{Estudo de caso}
 % -- qual o ganho em relação a um sitema de busca por palavras-chave? 
+
+
+% \section{Aplicação em um copus de atas de reunião}	
+\section{Validação em um copus de atas de reunião}	
+
+O foco principal deste trabalho de mestrado é a exploração e recuperação de informação em atas de reunião. A escolha foi feita baseada nas características desses documentos como textos relativamente curtos, em comparação com outros documentos como notícias, artigos, sites da \textit{web}; o estilo de escrita formal em que o redator evita repetições de temos e conceitos em benefício da estética do texto; Multiplicidade de assuntos contidos em uma mesma ata, a qual é difícil determinar um assunto central, mas diversos assuntos independentes que foram tratados durante a reunião.
+
+
+
 
 

@@ -177,6 +177,8 @@ INPUT conteudo/capitulos/cap-avaliacao-segmentadores.aux
 INPUT conteudo/capitulos/cap-avaliacao-segmentadores.aux
 INPUT conteudo/capitulos/cap-avaliacao-extratores.aux
 INPUT conteudo/capitulos/cap-avaliacao-extratores.aux
+INPUT conteudo/capitulos/cap-avaliacao-modulo-consulta.aux
+INPUT conteudo/capitulos/cap-avaliacao-modulo-consulta.aux
 OUTPUT ovidio-dissertacao.aux
 INPUT /usr/share/texmf/tex/latex/lm/t1lmr.fd
 INPUT /usr/share/texmf/tex/latex/lm/t1lmr.fd
@@ -350,6 +352,9 @@ INPUT ./conteudo/capitulos/figs/grafico-medidas-Pk-Wd-eps-converted-to.pdf
 OUTPUT conteudo/capitulos/cap-avaliacao-extratores.aux
 INPUT conteudo/capitulos/cap-avaliacao-extratores.tex
 INPUT conteudo/capitulos/cap-avaliacao-extratores.tex
+OUTPUT conteudo/capitulos/cap-avaliacao-modulo-consulta.aux
+INPUT conteudo/capitulos/cap-avaliacao-modulo-consulta.tex
+INPUT conteudo/capitulos/cap-avaliacao-modulo-consulta.tex
 INPUT ovidio-dissertacao.bbl
 INPUT ovidio-dissertacao.bbl
 INPUT ovidio-dissertacao.brf
@@ -369,6 +374,8 @@ INPUT conteudo/capitulos/cap-avaliacao-segmentadores.aux
 INPUT conteudo/capitulos/cap-avaliacao-segmentadores.aux
 INPUT conteudo/capitulos/cap-avaliacao-extratores.aux
 INPUT conteudo/capitulos/cap-avaliacao-extratores.aux
+INPUT conteudo/capitulos/cap-avaliacao-modulo-consulta.aux
+INPUT conteudo/capitulos/cap-avaliacao-modulo-consulta.aux
 INPUT ./ovidio-dissertacao.brf
 INPUT ./ovidio-dissertacao.brf
 INPUT /usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc
