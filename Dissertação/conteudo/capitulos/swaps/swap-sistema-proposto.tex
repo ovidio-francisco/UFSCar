@@ -1,8 +1,64 @@
 
 
 
-Esse Capítulo está organizado da seguinte forma: 
-primeiramente, na Seção~\ref{} é apresentada uma visão geral do sistema proposto, seu funcionamento e como as técnicas de segmentação textual e extração de tópicos são empregadas para gerar uma base de dados que concentra as informações necessárias para identificar e agrupar os diversos assuntos distribuidos na coleção de documentos. Ainda nessa Seção, o são apresentadas as técnicas de recuperação de informação utilizadas para entregar os segementos de acordo com a consulta do usuário bem como permitir a exploração de segmentos relacionados ao mesmo tema, os quais originalemnte estão distribuidos na coleção de documentos.
+
+
+
+irão passar pelo processo de segmentação 
+
+incorporados
+
+o qual será incrementado pela adicção de novos documentos a medida que esses são gerados.
+
+
+
+
+identificar os melhores descritores para cada tópicos bem como o agrupamento dos segmentos.
+
+
+
+
+
+
+Os segmentos são tratados como sub-documentos pelo sistema sendo a partir deles que o extrator de tópicos constrói as matrizes documento-tópico e termo-tópico. Uma vez construídas, essas matrizes são armazenadas em arquivos e usadas para identificar os melhores descritores para cada tópicos bem como o agrupamento dos segmentos.
+
+
+
+
+
+
+
+
+
+
+
+Os arquivos da coleção de documentos $(D)$ são mantidos para reverência aos textos integrais fincando disponíveis para visualização e fonte original das informações. Os segmentos de textos $(S)$ gerados pela segmentação dos documentos originais $(D)$ são armazenadas em arquivos de texto plano que são tratados como sub-documentos pelo sistema os quais contém os textos a serem exibidos ao usuário pelo módulo de consulta. É a partir desses segmentos que o extrator de tópicos constrói as matrizes documento-tópico e termo-tópico. Uma vez construídas, essas matrizes são armazenadas em arquivos e usadas para identificar os melhores descritores para cada tópicos bem como o agrupamento dos segmentos.
+
+
+
+
+
+
+
+
+
+A partir do texto extraído dos documentos originais é gerado o conjunto de segmentos de texto ($S$)
+Os segmentos de textos $(S)$ gerados pela segmentação dos documentos originais $(D)$ contém os textos em formato legível a serem exibidos ao usuário pelo módulo de consulta e são armazenadas em arquivos de texto plano. Para se conheça o arquivo que deu origem a cada segmento, o sistema gera metadados que mantém a ligação entre os documentos e seus segmentos. 
+
+
+
+
+Os arquivos originais são usados pelos segmentador para gerar os segmentos de texto
+
+
+
+
+
+
+% Esse Capítulo está organizado da seguinte forma: primeiramente é apresentada uma visão geral do sistema proposto, seu funcionamento e como as técnicas de segmentação textual e extração de tópicos e recuperação de informação são empregadas para entregar ao usuário os trechos relacionados a pesquisa, os quais originalmente estão distribuídos na coleção de documentos.
+
+uma vez que uma coleção atas de reunião configuram um corpus com documentos multi-temáticos
+como forma de validação da proposta e análise da eficiência das técnicas empregadas em um corpus em conformidade com a proposta desse trabalho de mestrado.
 
 Na Seção~\ref{} é apresentado o sistema proposto aplicado ao contexto das atas de reunião como forma de validação da proposta e análise da eficiência das técnicas empregadas em um corpus em conformidade com a proposta desse trabalho de mestrado.
 

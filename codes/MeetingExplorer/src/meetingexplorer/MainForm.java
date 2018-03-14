@@ -336,8 +336,8 @@ public class MainForm extends javax.swing.JFrame {
 
             ArrayList<Integer> numTopics = new ArrayList<>();
             
-            numTopics.add(10);
-//            numTopics.add(50);
+//            numTopics.add(10);
+            numTopics.add(50);
             
             
 //            ListModel model = lNumTopics.getModel();

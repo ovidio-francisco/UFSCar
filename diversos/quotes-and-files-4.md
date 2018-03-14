@@ -67,6 +67,7 @@ file:///ext4Data/UFSCar/papers/Tópicos/Modelagem de Tópicos e Criação de Ró
 
 
 file:///ext4Data/UFSCar/papers/clustering/A Segment-based Approach To Clustering Multi-Topic Documents.pdf
+https://github.com/rashmigulhane/soft-clustering-of-multi-topic-documents
 file:///ext4Data/UFSCar/papers/Segmentação/Multi-document Topic Segmentation.pdf
 file:///ext4Data/UFSCar/papers/Segmentação/Statistical topic models for multi-label document classification.pdf
 file:///ext4Data/UFSCar/papers/dissertações/dissertacao_bruno_schneider.pdf.pdf
