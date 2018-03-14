@@ -191,6 +191,14 @@ v.~22, p. 13--36, 01 2010.}
   International Conference on Acoustics, Speech, and Signal Processing}. [S.l.:
   s.n.], 2003. p. 364--367.}
 
+\bibitem[Jeong e Titov 2010]{Jeong:2010}
+\abntrefinfo{Jeong e Titov}{JEONG; TITOV}{2010}
+{JEONG, M.; TITOV, I. Multi-document topic segmentation. In:  \emph{Proceedings
+  of the 19th ACM International Conference on Information and Knowledge
+  Management}. New York, NY, USA: ACM, 2010.  (CIKM '10), p. 1119--1128.
+ISBN 978-1-4503-0099-5. Dispon{\'\i}vel em:
+  \url{http://doi.acm.org/10.1145/1871437.1871579}.}
+
 \bibitem[Kazantseva e Szpakowicz 2012]{Kazantseva2012}
 \abntrefinfo{Kazantseva e Szpakowicz}{KAZANTSEVA; SZPAKOWICZ}{2012}
 {KAZANTSEVA, A.; SZPAKOWICZ, S. Topical segmentation: A study of human
@@ -244,6 +252,14 @@ v.~401, p. 788--91, 11 1999.}
 {MANNING, C.~D.; RAGHAVAN, P.; SCH\"{u}TZE, H. \emph{Introduction to
   Information Retrieval}. New York, NY, USA: Cambridge University Press, 2008.
 ISBN 0521865719, 9780521865715.}
+
+\bibitem[Masao e K\^{o}iti 2000]{Masao:2000}
+\abntrefinfo{Masao e K\^{o}iti}{MASAO; K\^{o}ITI}{2000}
+{MASAO, U.; K\^{o}ITI, H. Multi-topic multi-document summarization. In:
+  \emph{Proceedings of the 18th Conference on Computational Linguistics -
+  Volume 2}. Stroudsburg, PA, USA: Association for Computational Linguistics,
+  2000.  (COLING '00), p. 892--898. Dispon{\'\i}vel em:
+  \url{https://doi.org/10.3115/992730.992775}.}
 
 \bibitem[Misra et al. 2009]{Misra2009}
 \abntrefinfo{Misra et al.}{MISRA et al.}{2009}
@@ -299,11 +315,28 @@ Tese (Doutorado), Philadelphia, PA, USA, 1998. AAI9829978.}
 {REZENDE, S.~O. \emph{Sistemas Inteligentes}. Barueri, SP: Manole, 2003. 337 -
   270~p.}
 
+\bibitem[Rezende, Marcacini e Moura 2011]{Rezende2011}
+\abntrefinfo{Rezende, Marcacini e Moura}{REZENDE; MARCACINI; MOURA}{2011}
+{REZENDE, S.~O.; MARCACINI, R.~M.; MOURA, M.~F. O uso da mineração de textos
+  para extração e organização não supervisionada de conhecimento.
+\emph{Revista de Sistemas de Informação da FSMA}, v.~7, p. 7--21, 2011.
+ISSN 19835604.
+Dispon{\'\i}vel em: \url{http://www.fsma.edu.br/si/7edicao.html}.}
+
 \bibitem[Rijsbergen 1979]{Rijsbergen1979}
 \abntrefinfo{Rijsbergen}{RIJSBERGEN}{1979}
 {RIJSBERGEN, C. J.~V. \emph{Information Retrieval}. 2nd. ed. Newton, MA, USA:
   Butterworth-Heinemann, 1979.
 ISBN 0408709294.}
+
+\bibitem[Rubin et al. 2012]{Rubin:2012}
+\abntrefinfo{Rubin et al.}{RUBIN et al.}{2012}
+{RUBIN, T.~N. et al. Statistical topic models for multi-label document
+  classification.
+\emph{Mach. Learn.}, Kluwer Academic Publishers, Hingham, MA, USA, v.~88,
+  n.~1-2, p. 157--208, jul. 2012.
+ISSN 0885-6125.
+Dispon{\'\i}vel em: \url{https://doi.org/10.1007/s10994-011-5272-5}.}
 
 \bibitem[Sakahara, Okada e Nitta 2014]{Sakahara2014}
 \abntrefinfo{Sakahara, Okada e Nitta}{SAKAHARA; OKADA; NITTA}{2014}
@@ -327,6 +360,15 @@ ISSN 2375-9232.}
   n.~5, p. 513--523, ago. 1988.
 ISSN 0306-4573.
 Dispon{\'\i}vel em: \url{http://dx.doi.org/10.1016/0306-4573(88)90021-0}.}
+
+\bibitem[Sasaki, Rea e Ananiadou 2007]{Sasaki:2007}
+\abntrefinfo{Sasaki, Rea e Ananiadou}{SASAKI; REA; ANANIADOU}{2007}
+{SASAKI, Y.; REA, B.; ANANIADOU, S. Multi-topic aspects in clinical text
+  classification. In:  \emph{Proceedings of the 2007 IEEE International
+  Conference on Bioinformatics and Biomedicine}. Washington, DC, USA: IEEE
+  Computer Society, 2007.  (BIBM '07), p. 62--70.
+ISBN 0-7695-3031-1. Dispon{\'\i}vel em:
+  \url{http://dx.doi.org/10.1109/BIBM.2007.53}.}
 
 \bibitem[Schwartz-Ziv e Weisbach 2013]{Miriam2013}
 \abntrefinfo{Schwartz-Ziv e Weisbach}{SCHWARTZ-ZIV; WEISBACH}{2013}
@@ -363,6 +405,14 @@ v.~86, p. 420--8, 04 1979.}
   Meaning}. Laurence Erlbaum, 2007. cap. Probabilistic topic models.
 Dispon{\'\i}vel em:
   \url{http://psiexp.ss.uci.edu/research/papers/SteyversGriffithsLSABookFormatted.pdf}.}
+
+\bibitem[Tagarelli e Karypis 2013]{Tagarelli2013}
+\abntrefinfo{Tagarelli e Karypis}{TAGARELLI; KARYPIS}{2013}
+{TAGARELLI, A.; KARYPIS, G. A segment-based approach to clustering multi-topic
+  documents.
+\emph{Knowledge and Information Systems}, v.~34, n.~3, p. 563--595, Mar 2013.
+ISSN 0219-3116.
+Dispon{\'\i}vel em: \url{https://doi.org/10.1007/s10115-012-0556-z}.}
 
 \bibitem[Tan, Steinbach e Kumar 2005]{Tan2005}
 \abntrefinfo{Tan, Steinbach e Kumar}{TAN; STEINBACH; KUMAR}{2005}

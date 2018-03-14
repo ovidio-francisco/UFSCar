@@ -193,11 +193,29 @@ Uma vez que a estrutura de dados interna contem os assuntos abordados na coleç�
 
 \subsubsection{Visualização}
 
-O usuário final precisa de uma interface adequada para visualizar os resultados da busca considerando-se a relevância dos tópicos selecionados e a sequência cronológica. Uma boa apresentação deve permitir ao usuário identificar a relevância os resultados e ser relativante independente para compreensão do conteúdo, evitando a leitura do texto completo. Ou seja, o texto de cada tópico apresentado deve ser suficiente para compreensão do assunto mencionado, sem necessidade de visualizar o documento original.
+O usuário final precisa de uma interface adequada para visualizar os resultados retornados pela busca considerando-se a relevância dos segmentos selecionados e a navegação pelos tópicos. Uma boa apresentação deve permitir ao usuário identificar a os resultados e ser relativante suficiente para compreensão do conteúdo, evitando a leitura do texto completo. Ou seja, o texto de cada segmento apresentado deve ser suficiente para compreensão do assunto mencionado, sem necessidade de visualizar o documento original.
 
-As informações apresentadas, incluem dados obtidos do documento como o nome do arquivo, e o texto onde o assunto é mencionado. Além disso, apresenta-se as informação extraídas pelas técnicas de mineração de texto como os descritores e grupos. Para cada busca, é retornada uma lista de resultados ordenados pela relevância com a \textit{string} de entrada, sendo cada item referente a uma menção a um assunto. Um tópico é apresentado em diferentes momentos conforme foi registrado em atas distintas, onde cada menção é um resultado a ser apresentado. 
 
-Como parte da proposta, o sistema apresenta cada resultado dentro de um histórico de menções. Para isso, abaixo do texto é exibida uma linha com links para os resultados que compartilham o mesmo tópico ordenados por data. Os links, ao ser acionado, direciona para o resultado que aponta, além disso, quando o cursor do mouse está sobre o link, é apresentado um pre-visualização do texto. Dessa forma o usuário tem acesso uma interface que lhe fornece uma visão temporal das menções.
+
+Na Figura~\ref{fig:tela-principal} é apresenta a tela principal do sistema. Observa-se a esquerda os segmentos agrupados por tópicos, os quais são representados por um componente para visualização em árvore onde as pastas, identificadas pelos descritores, representam um tópico. Uma pasta quando expandida revela os segmentos agrupados no tópico que representa. À direita, como resultado da consulta, são apresentados os segmentos selecionados pela relevância com a \textit{string} de busca do usuário. 
+
+  \begin{figure}[!h]
+	  \centering
+	  \includegraphics[width=\textwidth]{conteudo/capitulos/figs/tela-principal-2-1.png}
+	  \caption{Tela principal do sistema.}
+	  \label{fig:tela-principal}
+  \end{figure}
+
+
+
+
+
+O sistema apresenta os cada resultado da busca exibindo o texto contido no segmento e um \textit{link} para visualizar o arquivo original.	
+Como parte da proposta, o sistema oferece como opção a ordenação cronológica dos resultados a fim de apresentar cada resultado dentro de um histórico de menções. Dessa forma o usuário tem acesso uma interface que lhe fornece uma visão temporal das menções ao tema pesquisado.
+
+% As informações apresentadas, incluem dados obtidos do documento como o nome do arquivo, e o texto onde o assunto é mencionado. Além disso, apresenta-se as informação extraídas pelas técnicas de mineração de texto como os descritores e grupos. Para cada busca, é retornada uma lista de resultados ordenados pela relevância com a \textit{string} de entrada, sendo cada item referente a uma menção a um assunto. Um tópico é apresentado em diferentes momentos conforme foi registrado em atas distintas, onde cada menção é um resultado a ser apresentado. 
+
+% Como parte da proposta, o sistema apresenta cada resultado dentro de um histórico de menções. Para isso, abaixo do texto é exibida uma linha com links para os resultados que compartilham o mesmo tópico ordenados por data. Um link, ao ser acionado, direciona para o resultado que aponta, além disso, quando o cursor do mouse está sobre o link, é apresentado um pre-visualização do texto. Dessa forma o usuário tem acesso uma interface que lhe fornece uma visão temporal das menções.
 
 
 % Uma vez que um item faz menção a um tópico específico, 
@@ -208,15 +226,6 @@ Como parte da proposta, o sistema apresenta cada resultado dentro de um históri
 % -- qual o ganho em relação a um sitema de busca por palavras-chave? 
 
 
-
-
-
-  \begin{figure}[!h]
-	  \centering
-	  \includegraphics[width=\textwidth]{conteudo/capitulos/figs/tela-principal-2-1.png}
-	  \caption{Tela principal do sistema.}
-	  \label{fig:tela-principal}
-  \end{figure}
 
 
 
