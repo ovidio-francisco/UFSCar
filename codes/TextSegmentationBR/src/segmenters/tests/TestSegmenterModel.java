@@ -51,9 +51,7 @@ public class TestSegmenterModel {
 		
 		((C99BR)this.segmenter).setnSegsRate(this.segmentsRate);
 		((C99BR)this.segmenter).setRakingSize(this.rankingSize);
-		((C99BR)this.segmenter).setWeitght(this.weight);
-
-		
+		((C99BR)this.segmenter).setWeitght(this.weight);	
 	}
 	
 	public TestSegmenterModel() {
@@ -93,7 +91,6 @@ public class TestSegmenterModel {
 		if(alg == SegmenterAlgorithms.BAYESSEG) {
 			this.segmenter = new DPSeg();
 		}
-
 	}
 	
 	

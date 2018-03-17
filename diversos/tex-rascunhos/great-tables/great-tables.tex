@@ -1,0 +1,26 @@
+% >>    Test Segmenters With The References    << 
+
+
+\documentclass{article} 
+\usepackage[landscape]{geometry} 
+\usepackage{longtable} 
+\geometry{a4paper, left=10mm, top=10mm} 
+\begin{document} 
+
+\begin{longtable}[c]{|l|c|c|c|c|c|c|c|} 
+\hline 
+Algoritmo & Step & WinSize & WINDIFF & ACURACY & PRECISION & RECALL & RECALL\\ \hline 
+TextTiling & 3 & 15 & 0.608848 & 0.515143 & 0.487278 & 0.884644 & 0.610754 \\ \hline 
+TextTiling & 6 & 30 & 0.476342 & 0.604058 & 0.541578 & 0.761150 & 0.620038 \\ \hline 
+\end{longtable} 
+
+
+\begin{longtable}[c]{|l|c|c|c|c|c|} 
+\hline 
+Algoritmo & WINDIFF & ACURACY & PRECISION & RECALL & F1\\ \hline 
+C99 & 0.640279 & 0.505785 & 0.488040 & 1.000000 & 0.637921 \\ \hline 
+C99 & 0.473787 & 0.594510 & 0.566292 & 0.581178 & 0.555458 \\ \hline 
+\end{longtable} 
+
+\end{document} 
+ 

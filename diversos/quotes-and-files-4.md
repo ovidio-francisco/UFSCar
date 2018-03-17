@@ -72,6 +72,7 @@ file:///ext4Data/UFSCar/papers/Segmentação/Multi-document Topic Segmentation.p
 file:///ext4Data/UFSCar/papers/Segmentação/Statistical topic models for multi-label document classification.pdf
 file:///ext4Data/UFSCar/papers/dissertações/dissertacao_bruno_schneider.pdf.pdf
 file:///ext4Data/UFSCar/papers/Segmentação/Multi-Topic Multi-Document Summarizer.pdf
+file:///ext4Data/UFSCar/papers/Segmentação/Multi-Topic Multi-Documente Summarization.pdf
 
 Multi-topic Aspects in Clinical Text Classification
 Learning from multi-topic web documents for contextual advertisement

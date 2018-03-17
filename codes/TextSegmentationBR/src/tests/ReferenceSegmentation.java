@@ -1,4 +1,4 @@
-package tests2;
+package tests;
 
 import java.io.File;
 import java.io.FileFilter;
@@ -9,7 +9,6 @@ import java.util.HashMap;
 
 import preprocessamento.Preprocess;
 import segmenters.evaluations.measure.MeasureUtils;
-import segmenters.evaluations.measure.SegMeasures;
 import utils.Files;
 
 public class ReferenceSegmentation {
@@ -316,7 +315,7 @@ public class ReferenceSegmentation {
 			}
 			System.out.println("---------------");
 			
-			SegMeasures sm = new SegMeasures(ref, doc, segmenter)
+//			SegMeasures sm = new SegMeasures(ref, doc, segmenter) here here TODO 
 			
 		}
 		

@@ -1,4 +1,4 @@
-package tests2;
+package tests;
 
 import java.io.File;
 import java.io.FileFilter;

@@ -92,12 +92,17 @@ public class SegMeasures {
 			fn += ((ref[i] == 1) && (hyp[i] == 0)) ? 1 : 0;  // ref says Yes and hyp says No  
 		}
 		
-		this.accuracy   = (tp+tn)/ total;
-		this.precision  =  tp    / (tp+fp);
-		this.recall     =  tp    / (tp+fn);
-		this.f1         = (2*tp) / ((2*tp)+fp+fn);
+		
+		this.accuracy   = (double)(tp+tn)/ (double) total;
+		this.precision  = (double)tp     / (double)(tp+fp);
+		this.recall     = (double)tp     / (double)(tp+fn);
+		this.f1         = (double)(2*tp) / (double)((2*tp)+fp+fn);
 	}
 
+	public String getModelLabel() {
+		return segmenter.getLabel();
+	}
+	
 	public File getDoc() {
 		return doc;
 	}
