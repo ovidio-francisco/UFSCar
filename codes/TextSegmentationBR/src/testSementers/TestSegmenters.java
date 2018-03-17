@@ -24,7 +24,7 @@ public class TestSegmenters {
 	
 	public static void main(String[] args) {
 
-		System.out.println("% >>    Test Segmenters With The References   !! << \n\n");
+		System.out.println("% >>    Test Segmenters With The References    << \n\n");
 		getTxtFiles(txtFolder);
 
 		TexArticle at = new TexArticle();
