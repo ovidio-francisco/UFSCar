@@ -67,4 +67,10 @@ public class LCSeg extends AbstractSegmenter {
 		return "LCSeg";
 	}
 
+	@Override
+	public String getParamByName(ParamName paramName) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 }

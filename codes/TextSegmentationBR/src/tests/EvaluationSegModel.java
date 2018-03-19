@@ -38,8 +38,8 @@ public class EvaluationSegModel {
 	}
 	
 	public String getModelLabel() {
-		return segmenter.getLabel();
-//		return segmenter.getConfigurationLabel();
+//		return segmenter.getLabel();
+		return segmenter.getConfigurationLabel();
 	}
 
 	@Override

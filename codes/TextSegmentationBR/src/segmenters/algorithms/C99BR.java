@@ -113,6 +113,24 @@ public class C99BR extends AbstractSegmenter {
 	public String getConfigurationLabel() {
 		return String.format("C99 %2d %2d %s", (int)(100*this.getnSegsRate()), this.getRakingSize(), this.isWeitght()?"T":"F");
 	}
+
+	@Override
+	public String getParamByName(ParamName paramName) {
+		String result = "???";
+		
+		switch (paramName) {
+		case NSEG: 	    result = String.format("%d"  , getnSegs()); break;
+		case NSEGRATE: 	result = String.format("%.3f", getnSegsRate()); break;
+		case RANKINGSIZE:  result = String.format("%d"  , getRakingSize()); break;
+		case WEITGHT: 	    result = String.format("%b"  , isWeitght()); break;
+
+		default:		    break;
+		
+		}
+		
+		
+		return result;
+	}
 	
 	
 	

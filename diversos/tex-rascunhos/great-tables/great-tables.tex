@@ -4,23 +4,31 @@
 \documentclass{article} 
 \usepackage[landscape]{geometry} 
 \usepackage{longtable} 
-\geometry{a4paper, left=10mm, top=10mm} 
+\usepackage[table]{xcolor}\geometry{a4paper, left=10mm, top=10mm} 
 \begin{document} 
+
+\begin{longtable}[c]{|l|c|c|c|c|c|c|c|c|c|} 
+\hline 
+Algoritmo & Step & Win Size & $WinDiff$ & $P_k$ & Acurácia & Precisão & Revocação & $F^1$ & \#Segs\\ \hline 
+TextTilin w:15 s:3 & 3 & 15 & 0.609 & 0.490 & 0.515 & 0.487 & \cellcolor{gray!20} \textbf{0.885} & 0.611 & 26.750  \\ \hline 
+ TextTilin w:30 s:6 & 6 & 30 & \cellcolor{gray!20} \textbf{0.476} & \cellcolor{gray!20} \textbf{0.418} & \cellcolor{gray!20} \textbf{0.604} & \cellcolor{gray!20} \textbf{0.542} & 0.761 & \cellcolor{gray!20} \textbf{0.620} & 20.333  \\ \hline 
+ \end{longtable} 
+
+
+\begin{longtable}[c]{|l|c|c|c|c|c|c|c|c|c|c|} 
+\hline 
+Algoritmo & Seg Rate & Raking Size & Weitght & $WinDiff$ & $P_k$ & Acurácia & Precisão & Revocação & $F^1$ & \#Segs\\ \hline 
+C99 100 11 T & 1.000 & 11 & true & 0.640 & 0.490 & 0.506 & 0.488 & \cellcolor{gray!20} \textbf{1.000} & \cellcolor{gray!20} \textbf{0.638} & 30.500  \\ \hline 
+ C99 50 15 T & 0.500 & 15 & true & \cellcolor{gray!20} \textbf{0.474} & \cellcolor{gray!20} \textbf{0.429} & \cellcolor{gray!20} \textbf{0.595} & \cellcolor{gray!20} \textbf{0.566} & 0.581 & 0.555 & 15.500  \\ \hline 
+ \end{longtable} 
+
 
 \begin{longtable}[c]{|l|c|c|c|c|c|c|c|} 
 \hline 
-Algoritmo & Step & WinSize & WINDIFF & ACURACY & PRECISION & RECALL & RECALL\\ \hline 
-TextTiling & 3 & 15 & 0.608848 & 0.515143 & 0.487278 & 0.884644 & 0.610754 \\ \hline 
-TextTiling & 6 & 30 & 0.476342 & 0.604058 & 0.541578 & 0.761150 & 0.620038 \\ \hline 
-\end{longtable} 
-
-
-\begin{longtable}[c]{|l|c|c|c|c|c|} 
-\hline 
-Algoritmo & WINDIFF & ACURACY & PRECISION & RECALL & F1\\ \hline 
-C99 & 0.640279 & 0.505785 & 0.488040 & 1.000000 & 0.637921 \\ \hline 
-C99 & 0.473787 & 0.594510 & 0.566292 & 0.581178 & 0.555458 \\ \hline 
-\end{longtable} 
+Algoritmo & $WinDiff$ & $P_k$ & Acurácia & Precisão & Revocação & $F^1$ & \#Segs\\ \hline 
+MinCut & \cellcolor{gray!20} \textbf{0.447} & \cellcolor{gray!20} \textbf{0.391} & \cellcolor{gray!20} \textbf{0.617} & \cellcolor{gray!20} \textbf{0.603} & \cellcolor{gray!20} \textbf{0.618} & \cellcolor{gray!20} \textbf{0.585} & 15.000  \\ \hline 
+ MinCut & \cellcolor{gray!20} \textbf{0.447} & \cellcolor{gray!20} \textbf{0.391} & \cellcolor{gray!20} \textbf{0.617} & \cellcolor{gray!20} \textbf{0.603} & \cellcolor{gray!20} \textbf{0.618} & \cellcolor{gray!20} \textbf{0.585} & 15.000  \\ \hline 
+ \end{longtable} 
 
 \end{document} 
  

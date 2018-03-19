@@ -885,9 +885,23 @@ public String getLabel() {
 
 @Override
 public String getConfigurationLabel() {
-	return String.format("TT - ws|step: %d|%d", this.getWindowSize(), this.getStep()) ;
+	return String.format("TextTilin w:%d s:%d", this.getWindowSize(), this.getStep()) ;
 }
 
 	
+@Override
+public String getParamByName(ParamName paramName) {
+	String result = "???";
+	
+	switch (paramName) {
+	case STEP: 	    result = String.format("%d"  , getStep());       break;
+	case WINSIZE:  result = String.format("%d"  , getWindowSize()); break;
+
+	default:		    break;
+	}
+	
+	
+	return result;
+}
 
 }

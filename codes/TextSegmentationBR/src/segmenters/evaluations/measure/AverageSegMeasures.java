@@ -13,6 +13,10 @@ public class AverageSegMeasures {
 	private double pr = -99;
 	private double rc = -99;
 	private double f1 = -99;
+	private double segCount = -99;
+
+
+	
 //	private String modelLabel = "Model Label";
 	private EvaluationSegModel evSegModel = null;
 
@@ -23,11 +27,15 @@ public class AverageSegMeasures {
 		this.pr = average(sms, Metric.PRECISION);
 		this.rc = average(sms, Metric.RECALL);
 		this.f1 = average(sms, Metric.F1);
+		
+
+		
+		this.segCount = average(sms, Metric.AVR_SEGS_COUNT);
+		
 		this.evSegModel = evSegModel;
 	}
 	
 	private double average(ArrayList<SegMeasures> segMeasures, Metric metric) {
-		
 		int count = 0;
 		double value = 0;
 
@@ -70,10 +78,55 @@ public class AverageSegMeasures {
 	public double getF1() {
 		return f1;
 	}
-
+	public double getSegCount() {
+		return segCount;
+	}
 	public EvaluationSegModel getEvSegModel() {
 		return evSegModel;
 	}
+
+
+	public double metricValueByName(Metric metric) {
+		double result = -99;
+		
+		switch (metric) {
+			case PK:             result = getPk(); break;
+			case WINDIFF:        result = getWd(); break;
+			case ACURACY:        result = getAc(); break;
+			case PRECISION:      result = getPr(); break;
+			case RECALL:         result = getRc(); break;
+			case F1:             result = getF1(); break;
+			case AVR_SEGS_COUNT: result = getSegCount(); break;
+			
+			default: break;
+		
+		}
+		
+		return result;
+	}
+
+//	public String getFormatedMetricByName(Metric metric) {
+//		String result = "???";
+//		
+//		switch (metric) {
+//			case PK:             result = getPk(); break;
+//			case WINDIFF:        result = getWd(); break;
+//			case ACURACY:        result = getAc(); break;
+//			case PRECISION:      result = getPr(); break;
+//			case RECALL:         result = getRc(); break;
+//			case F1:             result = getF1(); break;
+//			case AVR_SEGS_COUNT: result = getSegCount(); break;
+//			
+//			default: break;
+//		
+//		}
+//		
+//		return result;
+//	}
 	
+
 	
 }
+
+
+

@@ -100,4 +100,10 @@ public class MinCutSeg extends AbstractSegmenter {
 		return "MinCut";
 	}
 
+	@Override
+	public String getParamByName(ParamName paramName) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 }

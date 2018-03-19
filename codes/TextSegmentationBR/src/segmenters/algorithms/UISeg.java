@@ -128,4 +128,10 @@ public class UISeg extends AbstractSegmenter {
         }
 		return b;
 	}
+
+	@Override
+	public String getParamByName(ParamName paramName) {
+		// TODO Auto-generated method stub
+		return null;
+	}
 }

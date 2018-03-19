@@ -90,4 +90,10 @@ public class CuCo extends AbstractSegmenter {
 		return null;
 	}
 
+	@Override
+	public String getParamByName(ParamName paramName) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 }

@@ -85,4 +85,10 @@ public class DPSeg extends AbstractSegmenter {
 	public String getConfigurationLabel() {
 		return "BayesSeg";
 	}
+
+	@Override
+	public String getParamByName(ParamName paramName) {
+		// TODO Auto-generated method stub
+		return null;
+	}
 }

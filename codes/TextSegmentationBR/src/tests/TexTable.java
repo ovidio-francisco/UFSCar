@@ -2,25 +2,30 @@ package tests;
 
 import java.util.ArrayList;
 
-import segmenters.algorithms.TextTilingBR;
+import segmenters.Segmenter.ParamName;
 import segmenters.evaluations.measure.AverageSegMeasures;
+import segmenters.evaluations.measure.AverageSegMeasuresList;
 import testSementers.TestSegmenters.Metric;
 
 public class TexTable {
 
-	private ArrayList<Metric> metrics = new ArrayList<>();
+	private static final String longTableFooter = "\\end{longtable} \n";
+
 	private String modelColumn = "Algoritmo";
 	
-	private ArrayList<String> params = new ArrayList<>();
-	ArrayList<AverageSegMeasures> averages = new ArrayList<>();
+	private ArrayList<Metric> metrics = new ArrayList<>();
+	private ArrayList<ParamName> params = new ArrayList<>();
+	private ArrayList<AverageSegMeasures> averages = new ArrayList<>();
 
 	public void setModelColumnl(String modelColumn) {
 		this.modelColumn = modelColumn;
 	}
 
-	public void addMetric(Metric metric) {
-		metrics.add(metric);
-	}
+//	public void addMetric(Metric metric) {
+//		metrics.add(metric);
+//	}
+	
+	
 	
 	public String createTexTable() {
 		String table =  
@@ -33,6 +38,7 @@ public class TexTable {
 
 
 	
+
 	private String longTableHeader() {
 		String header = "\\begin{longtable}[c]{"; 
 		
@@ -51,11 +57,11 @@ public class TexTable {
 		header += "\\hline \n";
 		
 		header += modelColumn;
-		for(String c : params) {
-			header += String.format(" & %s", c);
+		for(ParamName c : params) {
+			header += String.format(" & %s", ParamNameToString(c));
 		}
 		for(Metric c : metrics) {
-			header += String.format(" & %s", c);
+			header += String.format(" & %s", MetricToString(c));
 		}
 		
 		header += "\\\\ \\hline \n";
@@ -67,59 +73,107 @@ public class TexTable {
 	private String createLines() {
 		StringBuilder lines = new StringBuilder();
 		
+		AverageSegMeasuresList averageList = new AverageSegMeasuresList(averages);
+		
 		for(AverageSegMeasures a : averages) {
 			String params = "";
-			
 			params = getParamsValues(a.getEvSegModel());
-			
 			String l = "";
 			
 			l += a.getEvSegModel().getModelLabel() + " & ";
 			l += params;
-			if (metrics.contains(Metric.PK)) l += String.format("%f & ", a.getPk());
-			l += String.format("%f & ", a.getWd());
-			l += String.format("%f & ", a.getAc());
-			l += String.format("%f & ", a.getPr());
-			l += String.format("%f & ", a.getRc());
-			l += String.format("%f \\\\ \\hline \n", a.getF1());
+			
+			for(int i=0; i< metrics.size()-1; i++) {
+				double value = a.metricValueByName(metrics.get(i));
+				boolean isBest = averageList.isBest(metrics.get(i), value);
+				String txt = formatedMetricValue(value, isBest) + " & ";
+				l += txt;
+			}
+			double value = a.metricValueByName(metrics.get(metrics.size()-1));
+			boolean isBest = averageList.isBest(metrics.get(metrics.size()-1), value);
+			String txt = formatedMetricValue(value, isBest) + "  \\\\ \\hline \n ";
+			l += txt;
 			
 			lines.append(l);
 		}
-		
 		
 		return lines.toString();
 	}
 	
 	private String getParamsValues(EvaluationSegModel ev) {
 		String result = "";
-		
-		if (ev.getSegmenter() instanceof TextTilingBR) {
-			TextTilingBR tt = (TextTilingBR)ev.getSegmenter();
-			
-			if (params.contains("Step")) {
-				result += String.format("%d & ", tt.getStep());
-			}
-			
-			if (params.contains("WinSize")) {
-				result += String.format("%d & ", tt.getWindowSize());
-			}
+
+		for(ParamName p : params) {
+			result += String.format("%s & ", ev.getSegmenter().getParamByName(p));
 		}
 		
 		return result;
 	}
 	
-	public void addParam(String param) {
-		params.add(param);
-	}
-
-	public ArrayList<String> getParams() {
+//	public void addAverage(AverageSegMeasures average) {
+//		averages.add(average);
+//	}
+	
+	public ArrayList<ParamName> getParams() {
 		return params;
 	}
-	
-	public void addAverage(AverageSegMeasures average) {
-		averages.add(average);
+
+	public void setParams(ArrayList<ParamName> params) {
+		this.params = params;
+	}
+
+	private String ParamNameToString(ParamName paramName) {
+		String result = "???";
+		
+		switch (paramName) {
+		case NSEG:		  result = "\\# Segs";		break;
+		case NSEGRATE:	  result = "Seg Rate";		break;
+		case RANKINGSIZE: result = "Raking Size";	break;
+		case STEP:		  result = "Step";			break;
+		case WEITGHT:	  result = "Weitght";		break;
+		case WINSIZE:	  result = "Win Size";		break;
+		
+		default: break;
+		}
+		return result;
 	}
 	
-	private static final String longTableFooter = "\\end{longtable} \n";
+	private String MetricToString(Metric metric) {
+		String result = "???";
+		
+		switch (metric) {
+		case ACURACY:		 result = "Acurácia"; break;
+		case AVR_SEGS_COUNT: result = "\\#Segs"; break;
+		case F1:			 result = "$F^1$"; break;
+		case PK:			 result = "$P_k$"; break;
+		case PRECISION:		 result = "Precisão"; break;
+		case RECALL:		 result = "Revocação"; break;
+		case WINDIFF:		 result = "$WinDiff$"; break;
+		default:			 break;
+		}
+		return result;
+	}
+
+	private String formatedMetricValue(double value, boolean isBest) {
+		return String.format(isBest ? "\\cellcolor{gray!20} \\textbf{%.3f}" : "%.3f" , value);
+	}
 	
+	
+	public ArrayList<Metric> getMetrics() {
+		return metrics;
+	}
+	public void setMetrics(ArrayList<Metric> metrics) {
+		this.metrics = metrics;
+	}
+
+	public ArrayList<AverageSegMeasures> getAverages() {
+		return averages;
+	}
+
+	public void setAverages(ArrayList<AverageSegMeasures> averages) {
+		this.averages = averages;
+	}
+	
+	
+
 }

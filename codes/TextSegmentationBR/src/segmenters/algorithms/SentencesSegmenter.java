@@ -47,4 +47,10 @@ public class SentencesSegmenter extends AbstractSegmenter {
 		return "Sentenças";
 	}
 
+	@Override
+	public String getParamByName(ParamName paramName) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 }

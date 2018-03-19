@@ -8,6 +8,8 @@ import preprocessamento.Preprocess;
 public interface Segmenter {
 	public enum SegmenterAlgorithms {SENTENCES, TEXT_TILING, C99, MINCUT, TEXT_SEG, BAYESSEG}
 	
+	public enum ParamName {STEP, WINSIZE, NSEG, NSEGRATE, RANKINGSIZE, WEITGHT}
+	
 	public static final String EOS_MARK = "_EOS_";
 	
 	public Preprocess getPreprocess();
@@ -21,4 +23,5 @@ public interface Segmenter {
 	public String paramsToString();
 	public String getLabel();
 	public String getConfigurationLabel();
+	public String getParamByName(ParamName paramName);
 }

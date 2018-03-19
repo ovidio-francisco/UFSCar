@@ -2,13 +2,17 @@ package testSementers;
 
 import java.io.File;
 import java.io.FileFilter;
+import java.io.IOException;
 import java.util.ArrayList;
 
 import preprocessamento.Preprocess;
+import segmenters.Segmenter.ParamName;
 import segmenters.algorithms.C99BR;
+import segmenters.algorithms.MinCutSeg;
 import segmenters.algorithms.TextTilingBR;
 import segmenters.evaluations.measure.AverageSegMeasures;
 import segmenters.evaluations.measure.SegMeasures;
+import tests.CsvOut;
 import tests.EvaluationSegModel;
 import tests.TexArticle;
 import tests.TexTable;
@@ -18,25 +22,50 @@ public class TestSegmenters {
 	
 	public static enum Metric {ACURACY, PRECISION, RECALL, F1, WINDIFF, PK, AVR_SEGS_COUNT};
 	
+	private static File folder = new File("./analysis");
+	
 	public static  File refFolder = new File("./SegReferences");
 	public static  File txtFolder = new File("./txtDocs");
 	private static ArrayList<File> txtFiles = new ArrayList<>();
+	
+	private static ArrayList<Metric> metrics = new ArrayList<>();
+
+	private static ArrayList<CsvOut> csvOuts = new ArrayList<>();
+	private static TexArticle article = new TexArticle();
+	
 	
 	public static void main(String[] args) {
 
 		System.out.println("% >>    Test Segmenters With The References    << \n\n");
 		getTxtFiles(txtFolder);
 
-		TexArticle at = new TexArticle();
-		at.addTable(createTTTable());
-		at.addTable(createC99Table());
+		metrics.add(Metric.WINDIFF);
+		metrics.add(Metric.PK);
+		metrics.add(Metric.ACURACY);
+		metrics.add(Metric.PRECISION);
+		metrics.add(Metric.RECALL);
+		metrics.add(Metric.F1);
+		metrics.add(Metric.AVR_SEGS_COUNT);
 		
-		System.out.println(at.createTexArticle());
+		createTTTest();
+		createC99Test();
+		createMinCutTest();
+		
+		System.out.println(article.createTexArticle());
+		
+		for(CsvOut csv : csvOuts) {
+			try {
+				csv.saveCsvOut();
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+		}
+		
 	}
 	
 
 	
-	private static TexTable createTTTable() {
+	private static void createTTTest() {
 		
 		ArrayList<EvaluationSegModel> evModels = new ArrayList<>();
 
@@ -50,28 +79,37 @@ public class TestSegmenters {
 
 		evModels.add(tt1);
 		evModels.add(tt2);
+		
+		ArrayList<ParamName> params = new ArrayList<>();
 
-		TexTable tex = new TexTable();
-//		tex.addMetric(Metric.PK);
-		tex.addMetric(Metric.WINDIFF);
-		tex.addMetric(Metric.ACURACY);
-		tex.addMetric(Metric.PRECISION);
-		tex.addMetric(Metric.RECALL);
-		tex.addMetric(Metric.RECALL);
-
-		tex.addParam("Step");
-		tex.addParam("WinSize");
+		params.add(ParamName.STEP);
+		params.add(ParamName.WINSIZE);
+		
+		ArrayList<AverageSegMeasures> averages = new ArrayList<>();
 		
 		for(EvaluationSegModel m : evModels) {
 			ArrayList<SegMeasures> sms = m.getMeasures(txtFiles);
 
-			tex.addAverage(new AverageSegMeasures(sms, m));
+			averages.add(new AverageSegMeasures(sms, m));
 		}
+		
+		TexTable tex = new TexTable();
+		tex.setMetrics(metrics);
+		tex.setParams(params);
+		tex.setAverages(averages);
+		
+		CsvOut csvOut = new CsvOut();
+		csvOut.setMetrics(metrics);
+		csvOut.setParams(params);
+		csvOut.setAverages(averages);
+		csvOut.setCsvFile(new File(folder+"/tt.csv"));
+		
+		article.addTable(tex);
+		csvOuts.add(csvOut);
 
-		return tex;
 	}
 	
-	private static TexTable createC99Table() {
+	private static void createC99Test() {
 		
 		ArrayList<EvaluationSegModel> evModels = new ArrayList<>();
 
@@ -87,21 +125,72 @@ public class TestSegmenters {
 		evModels.add(cm1);
 		evModels.add(cm2);
 		
-		TexTable tex = new TexTable();
-//		tex.addMetric(Metric.PK);
-		tex.addMetric(Metric.WINDIFF);
-		tex.addMetric(Metric.ACURACY);
-		tex.addMetric(Metric.PRECISION);
-		tex.addMetric(Metric.RECALL);
-		tex.addMetric(Metric.F1);
+		ArrayList<ParamName> params = new ArrayList<>();
+		
+		params.add(ParamName.NSEGRATE);
+		params.add(ParamName.RANKINGSIZE);
+		params.add(ParamName.WEITGHT);
+		
+		ArrayList<AverageSegMeasures> averages = new ArrayList<>();
 		
 		for(EvaluationSegModel m : evModels) {
 			ArrayList<SegMeasures> sms = m.getMeasures(txtFiles);
 
-			tex.addAverage(new AverageSegMeasures(sms, m));
+			averages.add(new AverageSegMeasures(sms, m));
 		}
+		
+		TexTable tex = new TexTable();
+		tex.setMetrics(metrics);
+		tex.setParams(params);
+		tex.setAverages(averages);
 
-		return tex;
+		CsvOut csvOut = new CsvOut();
+		csvOut.setMetrics(metrics);
+		csvOut.setParams(params);
+		csvOut.setAverages(averages);
+		csvOut.setCsvFile(new File(folder+"/c99.csv"));
+		
+		article.addTable(tex);
+		csvOuts.add(csvOut);
+	}
+	
+	
+	
+	private static void createMinCutTest() {
+		ArrayList<EvaluationSegModel> evModels = new ArrayList<>();
+
+		
+		MinCutSeg mc1 = new MinCutSeg();
+		MinCutSeg mc2 = new MinCutSeg();
+		
+		EvaluationSegModel emc1 = new EvaluationSegModel(mc1, getPreprocess(true));
+		EvaluationSegModel emc2 = new EvaluationSegModel(mc2, getPreprocess(true));
+
+		evModels.add(emc1);
+		evModels.add(emc2);
+		
+		ArrayList<AverageSegMeasures> averages = new ArrayList<>();
+		
+		for(EvaluationSegModel m : evModels) {
+			ArrayList<SegMeasures> sms = m.getMeasures(txtFiles);
+
+			averages.add(new AverageSegMeasures(sms, m));
+		}
+		
+		TexTable tex = new TexTable();
+		tex.setMetrics(metrics);
+//		tex.setParams(params);
+		tex.setAverages(averages);
+
+		CsvOut csvOut = new CsvOut();
+		csvOut.setMetrics(metrics);
+//		csvOut.setParams(params);
+		csvOut.setAverages(averages);
+		csvOut.setCsvFile(new File(folder+"/mc.csv"));
+		
+		article.addTable(tex);
+		csvOuts.add(csvOut);
+
 	}
 	
 	

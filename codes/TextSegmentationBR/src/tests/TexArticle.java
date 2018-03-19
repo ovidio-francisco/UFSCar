@@ -1,6 +1,9 @@
 package tests;
 
+import java.io.File;
 import java.util.ArrayList;
+
+import utils.Files;
 
 public class TexArticle {
 	
@@ -8,10 +11,13 @@ public class TexArticle {
 			"\\documentclass{article} \n" + 
 			"\\usepackage[landscape]{geometry} \n" + 
 			"\\usepackage{longtable} \n" +
+			"\\usepackage[table]{xcolor}" +
 			"\\geometry{a4paper, left=10mm, top=10mm} \n" + 
 	        "\\begin{document} \n";
 	
 	private static final String articleFooter = "\\end{document} \n ";
+	
+	private String article = "";
 	
 	ArrayList<TexTable> tables = new ArrayList<>();
 	
@@ -22,7 +28,7 @@ public class TexArticle {
 	
 	
 	public String createTexArticle() {
-		String article = "";
+		article = "";
 		
 		article += articleHeader;
 		
@@ -35,6 +41,10 @@ public class TexArticle {
 		article += articleFooter;
 		
 		return article;
+	}
+	
+	public void save(File file) {
+		Files.saveTxtFile(article, file);
 	}
 	
 
