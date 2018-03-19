@@ -1,0 +1,25 @@
+\documentclass{article} 
+\usepackage{geometry} 
+\usepackage{longtable} 
+\usepackage[table]{xcolor}\geometry{a4paper, left=10mm, top=10mm} 
+\begin{document} 
+
+\begin{longtable}[c]{|l|c|c|c|c|c|c|c|c|c|} 
+\hline 
+Algoritmo & Seg Rate & LenCutoff & $WinDiff$ & $P_k$ & Acurácia & Precisão & Revocação & $F^1$ & \#Segs\\ \hline 
+MinCutSeg SRate:0.20 LCO:5 & 0.200 & 5 & 0.523 & 0.499 & 0.530 & 0.512 & 0.167 & 0.241 & 5.833  \\ \hline 
+ MinCutSeg SRate:0.20 LCO:7 & 0.200 & 7 & 0.516 & 0.490 & 0.544 & 0.556 & 0.183 & 0.263 & 5.833  \\ \hline 
+ MinCutSeg SRate:0.20 LCO:9 & 0.200 & 9 & 0.516 & 0.490 & 0.545 & 0.564 & 0.189 & 0.268 & 5.833  \\ \hline 
+ MinCutSeg SRate:0.20 LCO:11 & 0.200 & 11 & 0.493 & 0.467 & 0.561 & 0.617 & 0.208 & 0.296 & 5.833  \\ \hline 
+ MinCutSeg SRate:0.20 LCO:13 & 0.200 & 13 & 0.491 & 0.464 & 0.564 & 0.626 & 0.206 & 0.296 & 5.833  \\ \hline 
+ MinCutSeg SRate:0.20 LCO:15 & 0.200 & 15 & 0.490 & 0.458 & 0.568 & \cellcolor{gray!20} \textbf{0.637} & 0.219 & 0.311 & 5.833  \\ \hline 
+ MinCutSeg SRate:0.40 LCO:5 & 0.400 & 5 & 0.484 & 0.447 & 0.571 & 0.566 & 0.453 & 0.477 & 11.917  \\ \hline 
+ MinCutSeg SRate:0.40 LCO:7 & 0.400 & 7 & 0.477 & 0.430 & 0.589 & 0.595 & 0.456 & 0.491 & 11.917  \\ \hline 
+ MinCutSeg SRate:0.40 LCO:9 & 0.400 & 9 & \cellcolor{gray!20} \textbf{0.444} & \cellcolor{gray!20} \textbf{0.408} & \cellcolor{gray!20} \textbf{0.614} & 0.629 & \cellcolor{gray!20} \textbf{0.494} & \cellcolor{gray!20} \textbf{0.526} & 11.917  \\ \hline 
+ MinCutSeg SRate:0.40 LCO:11 & 0.400 & 11 & 0.450 & 0.412 & 0.601 & 0.609 & 0.483 & 0.512 & 11.917  \\ \hline 
+ MinCutSeg SRate:0.40 LCO:13 & 0.400 & 13 & 0.462 & 0.422 & 0.589 & 0.592 & 0.472 & 0.499 & 11.917  \\ \hline 
+ MinCutSeg SRate:0.40 LCO:15 & 0.400 & 15 & 0.471 & 0.432 & 0.580 & 0.579 & 0.468 & 0.490 & 11.917  \\ \hline 
+ \end{longtable} 
+
+\end{document} 
+ 

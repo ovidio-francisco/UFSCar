@@ -3,6 +3,7 @@ package segmenters.algorithms.edu.mit.nlp.segmenter.wrappers;
 import java.util.List;
 
 import edu.mit.nlp.segmenter.MinCutSeg;
+import edu.mit.nlp.segmenter.SegmenterParams;
 import segmenters.algorithms.edu.mit.nlp.MyTextWrapper;
 import segmenters.algorithms.edu.mit.nlp.segmenter.Segmenter;
 
@@ -14,6 +15,12 @@ public class MCSWrapper implements Segmenter {
         mcs.setConfigFile(config_filename);
         mcs.globalInit();
         mcs.loadSegmenterParams(); //eh?
+    }
+    
+    /* by OJF */
+    public void configure(SegmenterParams params) {
+    	mcs.setParams(params);
+//    	mcs.loadSegmenterParams();
     }
 
     public List[] segmentTexts(MyTextWrapper[] texts, int[] num_segs){ 

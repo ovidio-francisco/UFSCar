@@ -51,6 +51,17 @@ public class CsvOut {
 		Files.closeCSV(csv);
 	}
 
+	
+
+	public CsvOut(File csvFile, ArrayList<Metric> metrics, ArrayList<ParamName> params,
+			ArrayList<AverageSegMeasures> averages) {
+		this.csvFile = csvFile;
+		this.metrics = metrics;
+		this.params = params;
+		this.averages = averages;
+	}
+
+
 
 	public File getCsvFile() {
 		return csvFile;

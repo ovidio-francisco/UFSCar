@@ -6,6 +6,7 @@ import java.util.List;
 
 import org.apache.commons.lang.StringUtils;
 
+import edu.mit.nlp.segmenter.SegmenterParams;
 import segmenters.AbstractSegmenter;
 import segmenters.algorithms.edu.mit.nlp.MyTextWrapper;
 import segmenters.algorithms.edu.mit.nlp.segmenter.SegTester;
@@ -15,6 +16,17 @@ import utils.Files;
 public class MinCutSeg extends AbstractSegmenter {
 	private static final String EOS = "-EOF-";
 	
+	private SegmenterParams segmenterParams = null;
+	private double nSegsRate = 0.5;	
+	
+	public SegmenterParams getSegmenterParams() {
+		return segmenterParams;
+	}
+
+	public void setSegmenterParams(SegmenterParams segmenterParams) {
+		this.segmenterParams = segmenterParams;
+	}
+
 	@Override
 	public ArrayList<String> getSegments(String text) {
 		
@@ -22,7 +34,9 @@ public class MinCutSeg extends AbstractSegmenter {
 		text = getPreprocess().identifyEOS(text, EOS);
 		
 		int sentences_count = StringUtils.countMatches(text, EOS)+1; 
-		int num_segs = sentences_count/2;
+		int num_segs = (int)(sentences_count * nSegsRate);
+		
+//		System.out.println(String.format("num_segs ========== %d", num_segs));
 
  		/** Cria um arquivo com o texto preprocessado */
 		String[] pt = text.split(EOS);
@@ -79,6 +93,11 @@ public class MinCutSeg extends AbstractSegmenter {
 
 		seg.initialize(config); //fazer o initialize para o DPSeg
 		
+		if(segmenterParams != null) {
+			seg.configure(segmenterParams);
+//			System.out.println("Configured by OJF -----------------------------");
+		}
+		
 		MyTextWrapper text = new MyTextWrapper(doc.getPath());
         SegTester.preprocessText(text, false, false, false, false, 0);
         
@@ -97,13 +116,29 @@ public class MinCutSeg extends AbstractSegmenter {
 
 	@Override
 	public String getConfigurationLabel() {
-		return "MinCut";
+		return String.format("MinCutSeg SRate:%.2f LCO:%d", nSegsRate, segmenterParams.getSegLenCutoff());
 	}
 
 	@Override
 	public String getParamByName(ParamName paramName) {
-		// TODO Auto-generated method stub
-		return null;
+
+		switch (paramName) {
+			case NSEGRATE: return String.format("%.3f", nSegsRate);			
+			case PARZEMALPHA: return String.format("%.3f", segmenterParams.getParzenAlpha());			
+			case LENCUTOFF: return (segmenterParams == null) ? "disabilitado" : String.format("%d", segmenterParams.getSegLenCutoff());			
+			case SMOOTHINGRANGE: return (segmenterParams == null) ? "disabilitado" : String.format("%d", segmenterParams.getParzenSmoothingRange());			
+			default: return "???"; 
+		}
 	}
+
+	public double getnSegsRate() {
+		return nSegsRate;
+	}
+
+	public void setnSegsRate(double nSegsRate) {
+		this.nSegsRate = nSegsRate;
+	}
+	
+	
 
 }

@@ -7,6 +7,7 @@ import utils.Files;
 
 public class TexArticle {
 	
+//	"\\usepackage{geometry} \n" + 
 	private static final String articleHeader = 
 			"\\documentclass{article} \n" + 
 			"\\usepackage[landscape]{geometry} \n" + 
@@ -19,7 +20,7 @@ public class TexArticle {
 	
 	private String article = "";
 	
-	ArrayList<TexTable> tables = new ArrayList<>();
+	private ArrayList<TexTable> tables = new ArrayList<>();
 	
 	
 	public void addTable(TexTable table) {
@@ -35,7 +36,7 @@ public class TexArticle {
 		for(TexTable t : tables) {
 			article += "\n";
 			article += t.createTexTable();
-			article += "\n";
+			article += "\\newpage";
 		}
 		
 		article += articleFooter;

@@ -39,6 +39,12 @@ public class TexTable {
 
 	
 
+	public TexTable(ArrayList<Metric> metrics, ArrayList<ParamName> params, ArrayList<AverageSegMeasures> averages) {
+		this.metrics = metrics;
+		this.params = params;
+		this.averages = averages;
+	}
+
 	private String longTableHeader() {
 		String header = "\\begin{longtable}[c]{"; 
 		
@@ -132,6 +138,8 @@ public class TexTable {
 		case STEP:		  result = "Step";			break;
 		case WEITGHT:	  result = "Weitght";		break;
 		case WINSIZE:	  result = "Win Size";		break;
+		case SMOOTHINGRANGE: result = "Smoothing Range"; break;
+		case LENCUTOFF: result = "LenCutoff"; break;
 		
 		default: break;
 		}
