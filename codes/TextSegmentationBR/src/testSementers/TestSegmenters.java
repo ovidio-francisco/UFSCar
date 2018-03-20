@@ -9,6 +9,7 @@ import edu.mit.nlp.segmenter.SegmenterParams;
 import preprocessamento.Preprocess;
 import segmenters.Segmenter.ParamName;
 import segmenters.algorithms.C99BR;
+import segmenters.algorithms.DPSeg;
 import segmenters.algorithms.MinCutSeg;
 import segmenters.algorithms.TextTilingBR;
 import segmenters.evaluations.measure.AverageSegMeasures;
@@ -55,6 +56,8 @@ public class TestSegmenters {
 		createTT_Models();
 		createC99_Models();
 		createMinCut_Models();
+		createBayesSeg_Models();
+		
 		
 		System.out.println("\n\n\n");
 		System.out.println(article.createTexArticle());
@@ -67,8 +70,7 @@ public class TestSegmenters {
 			} catch (IOException e) {
 				e.printStackTrace();
 			}
-		}
-		
+		}	
 	}
 	
 	private static void createTT_Models() {
@@ -252,6 +254,148 @@ public class TestSegmenters {
 		
 	}
 	
+	
+	private static void createBayesSeg_Models() {
+		ArrayList<EvaluationSegModel> evModels = new ArrayList<>();
+
+		int count = 0;
+
+//		double initialprior = 0.07;
+//		double prior = initialprior;
+//		double finalprior = 0.12;
+//		double increaseprior = 0.01;
+////		double increaseprior = 0.005;
+//		
+//		while(prior <= finalprior) {
+//			
+//			DPSeg dpseg = new DPSeg();
+//			dpseg.getWrapper().prior = prior;
+//			
+//			evModels.add(new EvaluationSegModel(dpseg, getPreprocess(true)));
+//			System.out.println(String.format("BayesSeg prior:%f", dpseg.getWrapper().prior));
+//
+//			prior += increaseprior;
+//			count++;
+//		}
+		
+		
+		
+		
+////		double initialdispersion = 0.01;
+////		double dispersion = initialdispersion;
+////		double finaldispersion = 0.2;
+////		double increasedispersion = 0.02;
+//
+//		double initialdispersion = 0.1;
+//		double dispersion = initialdispersion;
+//		double finaldispersion = 2;
+//		double increasedispersion = 0.2;
+//		
+//		while(dispersion <= finaldispersion) {
+//			
+//			DPSeg dpseg = new DPSeg();
+//			dpseg.getWrapper().dispersion = dispersion;
+//			dpseg.getWrapper().prior = 0.0950;
+//			dpseg.getWrapper().use_duration = true;
+//			
+////			dpseg.getWrapper().num_segs_known = true;
+//			
+//			evModels.add(new EvaluationSegModel(dpseg, getPreprocess(true)));
+//			System.out.println(String.format("BayesSeg prior:%f dispersion:%f", dpseg.getWrapper().prior, dpseg.getWrapper().dispersion));
+//			
+//			dispersion += increasedispersion;
+//			count++;
+//		}
+		
+		
+//		double initialprior = 0.07;
+//		double prior = initialprior;
+//		double finalprior = 0.12;
+//		double increaseprior = 0.01;
+		double initialprior = 0.08;
+		double prior = initialprior;
+		double finalprior = 0.11;
+		double increaseprior = 0.01;
+		
+		
+		double initialnSegsRate = 0;
+		double nSegsRate = initialnSegsRate;
+		double finalnSegsRate = 0.9;
+		double increasenSegsRate = 0.3;
+
+		double initialdispersion = 0.1;
+		double dispersion = initialdispersion;
+		double finaldispersion = 0.7;
+		double increasedispersion = 0.2;
+
+		while (nSegsRate <= finalnSegsRate) {
+
+			
+			
+			dispersion = initialdispersion;
+			while(dispersion <= finaldispersion) {
+				
+				
+				
+				
+				
+			 	prior = initialprior;
+				while(prior <= finalprior) {
+				
+					DPSeg dpseg = new DPSeg();
+					dpseg.getWrapper().dispersion = dispersion;
+					dpseg.getWrapper().prior = prior;
+					dpseg.getWrapper().use_duration = true;
+					dpseg.setnSegsRate(nSegsRate);
+					dpseg.setNumSegsKnown(nSegsRate > 0);
+	
+					evModels.add(new EvaluationSegModel(dpseg, getPreprocess(true)));
+					
+					System.out.println(String.format("BayesSeg prior:%f dispersion:%f", dpseg.getWrapper().prior, dpseg.getWrapper().dispersion));
+					count++;
+
+					
+					prior += increaseprior;
+				}
+
+				
+				
+				
+				
+				
+				
+				dispersion += increasedispersion;
+			}
+
+			
+			
+			nSegsRate += increasenSegsRate;
+		}
+		
+		
+		System.out.println(String.format("MinCutSeg - %d modelos", count));
+		
+		ArrayList<ParamName> params = new ArrayList<>();
+		params.add(ParamName.NUM_SEGS_KNOWN);
+		params.add(ParamName.NSEGRATE);
+		params.add(ParamName.PRIOR);
+		params.add(ParamName.DISPERSION);
+		
+		ArrayList<AverageSegMeasures> averages = new ArrayList<>();
+		
+		for(EvaluationSegModel m : evModels) {
+			ArrayList<SegMeasures> sms = m.getMeasures(txtFiles);
+
+			averages.add(new AverageSegMeasures(sms, m));
+		}
+		
+		TexTable tex = new TexTable(metrics, params, averages);
+		CsvOut csvOut = new CsvOut(new File(folder+"/bayes.csv"), metrics, params, averages);
+		
+		article.addTable(tex);
+		csvOuts.add(csvOut);
+		
+	}
 	
 	
 	
@@ -711,6 +855,118 @@ private static void createTT_Models() {
 		csvOuts.add(csvOut);
 	}
 
+	
+	
+	private static void createBayesSeg_Models() {
+		ArrayList<EvaluationSegModel> evModels = new ArrayList<>();
+
+		int count = 0;
+
+//		double initialprior = 0.07;
+//		double prior = initialprior;
+//		double finalprior = 0.12;
+//		double increaseprior = 0.01;
+////		double increaseprior = 0.005;
+//		
+//		while(prior <= finalprior) {
+//			
+//			DPSeg dpseg = new DPSeg();
+//			dpseg.getWrapper().prior = prior;
+//			
+//			evModels.add(new EvaluationSegModel(dpseg, getPreprocess(true)));
+//			System.out.println(String.format("BayesSeg prior:%f", dpseg.getWrapper().prior));
+//
+//			prior += increaseprior;
+//			count++;
+//		}
+		
+		
+		
+		
+////		double initialdispersion = 0.01;
+////		double dispersion = initialdispersion;
+////		double finaldispersion = 0.2;
+////		double increasedispersion = 0.02;
+//
+//		double initialdispersion = 0.1;
+//		double dispersion = initialdispersion;
+//		double finaldispersion = 2;
+//		double increasedispersion = 0.2;
+//		
+//		while(dispersion <= finaldispersion) {
+//			
+//			DPSeg dpseg = new DPSeg();
+//			dpseg.getWrapper().dispersion = dispersion;
+//			dpseg.getWrapper().prior = 0.0950;
+//			dpseg.getWrapper().use_duration = true;
+//			
+////			dpseg.getWrapper().num_segs_known = true;
+//			
+//			evModels.add(new EvaluationSegModel(dpseg, getPreprocess(true)));
+//			System.out.println(String.format("BayesSeg prior:%f dispersion:%f", dpseg.getWrapper().prior, dpseg.getWrapper().dispersion));
+//			
+//			dispersion += increasedispersion;
+//			count++;
+//		}
+		
+		
+		
+		double initialnSegsRate = 0;
+		double nSegsRate = initialnSegsRate;
+		double finalnSegsRate = 0.7;
+		double increasenSegsRate = 0.1;
+
+		while (nSegsRate <= finalnSegsRate) {
+			DPSeg dpseg = new DPSeg();
+			dpseg.getWrapper().dispersion = 0.5;
+			dpseg.getWrapper().prior = 0.0950;
+			dpseg.getWrapper().use_duration = true;
+			dpseg.setnSegsRate(nSegsRate);
+			
+			if (nSegsRate <=0) {
+				dpseg.setNumSegsKnown(false);
+			}
+			else {
+				dpseg.setNumSegsKnown(true);
+//				dpseg.getWrapper().num_segs_known = true;
+			}
+			
+			evModels.add(new EvaluationSegModel(dpseg, getPreprocess(true)));
+			
+			System.out.println(String.format("BayesSeg prior:%f dispersion:%f", dpseg.getWrapper().prior, dpseg.getWrapper().dispersion));
+			
+			nSegsRate += increasenSegsRate;
+			count++;
+		}
+		
+		
+		System.out.println(String.format("MinCutSeg - %d modelos", count));
+		
+		ArrayList<ParamName> params = new ArrayList<>();
+		params.add(ParamName.NUM_SEGS_KNOWN);
+		params.add(ParamName.NSEGRATE);
+		params.add(ParamName.PRIOR);
+		params.add(ParamName.DISPERSION);
+		
+		ArrayList<AverageSegMeasures> averages = new ArrayList<>();
+		
+		for(EvaluationSegModel m : evModels) {
+			ArrayList<SegMeasures> sms = m.getMeasures(txtFiles);
+
+			averages.add(new AverageSegMeasures(sms, m));
+		}
+		
+		TexTable tex = new TexTable(metrics, params, averages);
+		CsvOut csvOut = new CsvOut(new File(folder+"/bayes.csv"), metrics, params, averages);
+		
+		article.addTable(tex);
+		csvOuts.add(csvOut);
+		
+	}
+	
+	
+	
+	
 	
 	
  */

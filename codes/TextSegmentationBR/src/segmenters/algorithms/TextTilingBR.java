@@ -885,7 +885,7 @@ public String getLabel() {
 
 @Override
 public String getConfigurationLabel() {
-	return String.format("TextTilin w:%d s:%d", this.getWindowSize(), this.getStep()) ;
+	return String.format("TextTiling w:%d s:%d", this.getWindowSize(), this.getStep()) ;
 }
 
 	

@@ -139,7 +139,10 @@ public class TexTable {
 		case WEITGHT:	  result = "Weitght";		break;
 		case WINSIZE:	  result = "Win Size";		break;
 		case SMOOTHINGRANGE: result = "Smoothing Range"; break;
-		case LENCUTOFF: result = "LenCutoff"; break;
+		case LENCUTOFF: 	result = "LenCutoff"; break;
+		case PRIOR: 	result = "Prior"; break;
+		case DISPERSION: 	result = "Dispertion"; break;
+		case NUM_SEGS_KNOWN: 	result = "\\#SegsKnown"; break;
 		
 		default: break;
 		}

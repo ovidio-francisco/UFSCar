@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.8.22)  19 MAR 2018 16:01
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.8.22)  20 MAR 2018 10:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -222,24 +222,50 @@ Missing character: There is no £ in font cmr10!
 Underfull \vbox (badness 10000) detected at line 104
  []
 
-[3] (./article.aux) ) 
+
+Package longtable Warning: Column widths have changed
+(longtable)                in table 3 on input line 122.
+
+[3]
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¡ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no £ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no § in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no £ in font cmr10!
+
+Underfull \vbox (badness 10000) detected at line 145
+ []
+
+[4]
+
+Package longtable Warning: Column widths have changed
+(longtable)                in table 4 on input line 191.
+
+[5]
+
+Package longtable Warning: Table widths have changed. Rerun LaTeX.
+
+(./article.aux) ) 
 Here is how much of TeX's memory you used:
- 2084 strings out of 494884
- 27002 string characters out of 6179236
- 130389 words of memory out of 5000000
- 5425 multiletter control sequences out of 15000+600000
+ 2085 strings out of 494884
+ 27007 string characters out of 6179236
+ 167082 words of memory out of 5000000
+ 5426 multiletter control sequences out of 15000+600000
  3948 words of font info for 15 fonts, out of 8000000 for 9000
  38 hyphenation exceptions out of 8191
- 41i,5n,35p,263b,146s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
-mi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pf
-b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr
-/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb>
-Output written on article.pdf (3 pages, 67420 bytes).
+ 41i,5n,35p,263b,198s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10
+.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></
+usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/sha
+re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb>
+Output written on article.pdf (5 pages, 77612 bytes).
 PDF statistics:
- 34 PDF objects out of 1000 (max. 8388607)
- 23 compressed objects within 1 object stream
+ 40 PDF objects out of 1000 (max. 8388607)
+ 27 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -32,9 +32,9 @@ public class BayesWrapper implements Segmenter {
             num_segs_known = SegTesterParams.getBoolProp(props,"num-segs-known",true);
             em_params = SegTesterParams.getBoolProp(props,"em-param-search",false);
             use_duration = SegTesterParams.getBoolProp(props,"use-duration",true);
-            if (debug){
+//            if (debug){
                 System.out.println(String.format("windowing: %b\tprior: %.3f\tdispersion %.3f",is_windowing_enabled, prior, dispersion));
-            }
+//            }
         } catch (Exception e){
             e.printStackTrace();
         }

@@ -8,7 +8,7 @@ import preprocessamento.Preprocess;
 public interface Segmenter {
 	public enum SegmenterAlgorithms {SENTENCES, TEXT_TILING, C99, MINCUT, TEXT_SEG, BAYESSEG}
 	
-	public enum ParamName {STEP, WINSIZE, NSEG, NSEGRATE, RANKINGSIZE, WEITGHT, PARZEMALPHA, SMOOTHINGRANGE, LENCUTOFF}
+	public enum ParamName {STEP, WINSIZE, NSEG, NSEGRATE, RANKINGSIZE, WEITGHT, PARZEMALPHA, SMOOTHINGRANGE, LENCUTOFF, PRIOR, DISPERSION, NUM_SEGS_KNOWN}
 	
 	public static final String EOS_MARK = "_EOS_";
 	

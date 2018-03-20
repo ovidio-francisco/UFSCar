@@ -13,6 +13,13 @@ import utils.Files;
 public class DPSeg extends AbstractSegmenter {
 	private static final String EOS = "-EOF-"; 
 	
+	private int nSegs = 10;
+	private double nSegsRate = 0.5;
+	private int nSentences = 0;
+	private boolean numSegsKnown = false;
+
+	
+	
 	@Override
 	public ArrayList<String> getSegments(String text) {
 		
@@ -21,6 +28,7 @@ public class DPSeg extends AbstractSegmenter {
 		
  		/** Cria um arquivo com o texto preprocessado */
 		String[] pt = text.split(EOS);
+		nSentences = pt.length;
 		
 		for(int i=0; i<pt.length; i++) {
 			pt[i] = preprocessLines(pt[i]);
@@ -67,11 +75,19 @@ public class DPSeg extends AbstractSegmenter {
 
 	@SuppressWarnings({ "rawtypes", "unchecked" })
 	private List<Integer> getBoundaries(File doc) {
-		BayesWrapper seg = new BayesWrapper();
 		MyTextWrapper text = new MyTextWrapper(doc.getPath());
         SegTester.preprocessText(text, false, false, false, false, 0);
-		seg.num_segs_known = false;
-		List[] hyp_segs = seg.segmentTexts(new MyTextWrapper[]{text}, new int[]{4});
+        
+//      seg.initialize("config/dp.config");
+//		seg.num_segs_known = false;  
+		seg.num_segs_known = numSegsKnown;  
+        
+        if (seg.num_segs_known) {
+        	nSegs =  Math.round((float)nSentences * (float)nSegsRate);
+//        	System.out.println(seg.num_segs_known+"======"+nSentences+"---------------------------"+nSegs +"....."+nSegsRate);
+        }
+        
+		List[] hyp_segs = seg.segmentTexts(new MyTextWrapper[]{text}, new int[]{nSegs});
 
 		return hyp_segs[0];
 	}
@@ -88,7 +104,45 @@ public class DPSeg extends AbstractSegmenter {
 
 	@Override
 	public String getParamByName(ParamName paramName) {
-		// TODO Auto-generated method stub
-		return null;
+
+		switch (paramName) {
+			case PRIOR: return String.format("%.4f", getWrapper().prior);			
+			case DISPERSION: return String.format("%.4f", getWrapper().dispersion);			
+			case NUM_SEGS_KNOWN: return String.format("%b", getWrapper().num_segs_known);			
+			case NSEGRATE: return nSegsRate <= 0 ? "Auto" : String.format("%.3f", nSegsRate);			
+			default: return "???"; 
+		}
+
 	}
+	
+	/*by OJF */
+	private BayesWrapper seg = new BayesWrapper();
+
+	public BayesWrapper getWrapper() {
+		return seg;
+	}
+	public int getnSegs() {
+		return nSegs;
+	}
+	public void setnSegs(int nSegs) {
+		this.nSegs = nSegs;
+	}
+	public double getnSegsRate() {
+		return nSegsRate;
+	}
+	public void setnSegsRate(double nSegsRate) {
+		this.nSegsRate = nSegsRate;
+	}
+	public int getnSentences() {
+		return nSentences;
+	}
+
+	public boolean isNumSegsKnown() {
+		return numSegsKnown;
+	}
+
+	public void setNumSegsKnown(boolean numSegsKnown) {
+		this.numSegsKnown = numSegsKnown;
+	}
+	
 }

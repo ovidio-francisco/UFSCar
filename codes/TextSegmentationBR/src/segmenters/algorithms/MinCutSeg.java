@@ -124,9 +124,9 @@ public class MinCutSeg extends AbstractSegmenter {
 
 		switch (paramName) {
 			case NSEGRATE: return String.format("%.3f", nSegsRate);			
-			case PARZEMALPHA: return String.format("%.3f", segmenterParams.getParzenAlpha());			
+//			case PARZEMALPHA: return String.format("%.3f", segmenterParams.getParzenAlpha());			
 			case LENCUTOFF: return (segmenterParams == null) ? "disabilitado" : String.format("%d", segmenterParams.getSegLenCutoff());			
-			case SMOOTHINGRANGE: return (segmenterParams == null) ? "disabilitado" : String.format("%d", segmenterParams.getParzenSmoothingRange());			
+//			case SMOOTHINGRANGE: return (segmenterParams == null) ? "disabilitado" : String.format("%d", segmenterParams.getParzenSmoothingRange());			
 			default: return "???"; 
 		}
 	}
