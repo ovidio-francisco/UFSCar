@@ -41,7 +41,6 @@ public class TestSegmenters {
 
 	private static boolean doPreprocess = true;
 
-	
 	public static void main(String[] args) {
 
 		System.out.println("% >>    Test Segmenters With The References    << \n\n");

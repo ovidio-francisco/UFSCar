@@ -140,6 +140,12 @@ INPUT abntex2abrev.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/relsize/relsize.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/relsize/relsize.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/relsize/relsize.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
+INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
+INPUT /usr/share/texlive/texmf-dist/tex/latex/colortbl/colortbl.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/colortbl/colortbl.sty
 INPUT algorithm2e.sty
 INPUT algorithm2e.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/tools/xspace.sty
@@ -336,6 +342,8 @@ INPUT ./conteudo/capitulos/figs/CDs/Recall.png
 INPUT conteudo/capitulos/figs/CDs/F1.png
 INPUT ./conteudo/capitulos/figs/CDs/F1.png
 INPUT ./conteudo/capitulos/figs/CDs/F1.png
+INPUT conteudo/capitulos/inputs/tabela-resumo.tex
+INPUT conteudo/capitulos/inputs/tabela-resumo.tex
 INPUT conteudo/capitulos/figs/grafico-medidas-APRF1.eps
 INPUT ./conteudo/capitulos/figs/grafico-medidas-APRF1.eps
 INPUT ./conteudo/capitulos/figs/grafico-medidas-APRF1.eps

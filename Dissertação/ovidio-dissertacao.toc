@@ -54,14 +54,14 @@
 \contentsline {section}{\numberline {4.3}Crit\IeC {\'e}rios de avalia\IeC {\c c}\IeC {\~a}o}{42}{section.4.3}
 \contentsline {section}{\numberline {4.4}Resultados}{43}{section.4.4}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase {Avalia\IeC {\c c}\IeC {\~a}o dos Extratores de T\IeC {\'o}picos}}{47}{chapter.5}
-\contentsline {section}{\numberline {5.1}Configura\IeC {\c c}\IeC {\~a}o experimental}{47}{section.5.1}
-\contentsline {section}{\numberline {5.2}Crit\IeC {\'e}rios de avalia\IeC {\c c}\IeC {\~a}o}{47}{section.5.2}
-\contentsline {section}{\numberline {5.3}Resultados}{47}{section.5.3}
+\contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase {Avalia\IeC {\c c}\IeC {\~a}o dos Extratores de T\IeC {\'o}picos}}{49}{chapter.5}
+\contentsline {section}{\numberline {5.1}Configura\IeC {\c c}\IeC {\~a}o experimental}{49}{section.5.1}
+\contentsline {section}{\numberline {5.2}Crit\IeC {\'e}rios de avalia\IeC {\c c}\IeC {\~a}o}{49}{section.5.2}
+\contentsline {section}{\numberline {5.3}Resultados}{49}{section.5.3}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {6}\MakeTextUppercase {Avalia\IeC {\c c}\IeC {\~a}o do M\IeC {\'o}dulo de Consulta}}{49}{chapter.6}
+\contentsline {chapter}{\chapternumberline {6}\MakeTextUppercase {Avalia\IeC {\c c}\IeC {\~a}o do M\IeC {\'o}dulo de Consulta}}{51}{chapter.6}
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
-\contentsline {chapter}{Refer\^encias}{51}{section*.4}
+\contentsline {chapter}{Refer\^encias}{53}{section*.4}
 \renewcommand *{\cftappendixname }{AP\^ENDICE \space }
 \cftinsert {AAA}
 \renewcommand *{\cftappendixname }{ANEXO \space }

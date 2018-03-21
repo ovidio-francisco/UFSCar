@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.8.22)  21 MAR 2018 10:04
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.8.22)  21 MAR 2018 18:57
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -991,10 +991,32 @@ Package: relsize 2013/03/29 ver 4.1
 LaTeX Info: Redefining \newblock on input line 675.
 LaTeX Info: Redefining \cite on input line 702.
 \ABCItoken=\toks32
+) (/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+ (/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+ (/usr/share/texlive/texmf-dist/tex/latex/colortbl/colortbl.sty
+Package: colortbl 2012/02/13 v1.0a Color table columns (DPC)
+\everycr=\toks33
+\minrowclearance=\skip264
+)
+LaTeX Info: Redefining \color on input line 709.
+\rownum=\count182
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
 ) (./algorithm2e.sty
 Package: algorithm2e 2013/01/06 v5.00 algorithms environments
-\c@AlgoLine=\count182
-\algocf@hangindent=\skip264
+\c@AlgoLine=\count183
+\algocf@hangindent=\skip265
  (/usr/share/texlive/texmf-dist/tex/latex/tools/xspace.sty
 Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
 )
@@ -1005,38 +1027,38 @@ Package `algorithm2e' Release 5.1 -- october 19 2015 --
 subscribe by emailing sympa@lirmm.fr with 'subscribe <list> <firstname name>'
 - Author: Christophe Fiorio (christophe.fiorio@umontpellier.fr)
 ********************************************************
-\skiptotal=\skip265
-\skiplinenumber=\skip266
-\skiprule=\skip267
-\skiphlne=\skip268
-\skiptext=\skip269
-\skiplength=\skip270
-\algomargin=\skip271
-\skipalgocfslide=\skip272
+\skiptotal=\skip266
+\skiplinenumber=\skip267
+\skiprule=\skip268
+\skiphlne=\skip269
+\skiptext=\skip270
+\skiplength=\skip271
+\algomargin=\skip272
+\skipalgocfslide=\skip273
 \algowidth=\dimen169
 \inoutsize=\dimen170
 \inoutindent=\dimen171
 \interspacetitleruled=\dimen172
 \interspacealgoruled=\dimen173
 \interspacetitleboxruled=\dimen174
-\algocf@ruledwidth=\skip273
+\algocf@ruledwidth=\skip274
 \algocf@inoutbox=\box32
 \algocf@inputbox=\box33
-\AlCapSkip=\skip274
-\AlCapHSkip=\skip275
-\algoskipindent=\skip276
+\AlCapSkip=\skip275
+\AlCapHSkip=\skip276
+\algoskipindent=\skip277
 \algocf@nlbox=\box34
 \algocf@hangingbox=\box35
 \algocf@untilbox=\box36
-\algocf@skipuntil=\skip277
+\algocf@skipuntil=\skip278
 \algocf@capbox=\box37
-\algoheightruledefault=\skip278
-\algoheightrule=\skip279
-\algotitleheightruledefault=\skip280
-\algotitleheightrule=\skip281
-\c@algocfline=\count183
-\c@algocfproc=\count184
-\c@algocf=\count185
+\algoheightruledefault=\skip279
+\algoheightrule=\skip280
+\algotitleheightruledefault=\skip281
+\algotitleheightrule=\skip282
+\c@algocfline=\count184
+\c@algocfproc=\count185
+\c@algocf=\count186
 \algocf@algoframe=\box38
 \algocf@algobox=\box39
 ) (./macros.tex
@@ -1063,202 +1085,200 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <8> on input line 19.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <6> on input line 19.
-\c@teorema=\count186
-\c@lema=\count187
-\c@corolario=\count188
-\c@definicao=\count189
+\c@teorema=\count187
+\c@lema=\count188
+\c@corolario=\count189
+\c@definicao=\count190
 )
-Package color Info: Redefining color blue on input line 116.
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\@ifnextchar' on input line 134.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\@ifnextchar' on input line 133.
+(hyperref)                removing `\begingroup' on input line 134.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\begingroup' on input line 133.
+(hyperref)                removing `\catcode' on input line 134.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\catcode' on input line 133.
+(hyperref)                removing `\active' on input line 134.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\active' on input line 133.
+(hyperref)                removing `\<def>-command' on input line 134.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\<def>-command' on input line 133.
+(hyperref)                removing `\csname\endcsname' on input line 134.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\csname\endcsname' on input line 133.
+(hyperref)                removing `\catcode' on input line 134.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\catcode' on input line 133.
+(hyperref)                removing `\active' on input line 134.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\active' on input line 133.
+(hyperref)                removing `\<let>-command' on input line 134.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\<let>-command' on input line 133.
+(hyperref)                removing `\csname\endcsname' on input line 134.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\csname\endcsname' on input line 133.
+(hyperref)                removing `\<let>-command' on input line 134.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\<let>-command' on input line 133.
+(hyperref)                removing `\%' on input line 134.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\%' on input line 133.
+(hyperref)                removing `\catcode' on input line 134.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\catcode' on input line 133.
+(hyperref)                removing `\active' on input line 134.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\active' on input line 133.
+(hyperref)                removing `\<def>-command' on input line 134.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\<def>-command' on input line 133.
+(hyperref)                removing `\csname\endcsname' on input line 134.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\csname\endcsname' on input line 133.
+(hyperref)                removing `\<def>-command' on input line 134.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\<def>-command' on input line 133.
+(hyperref)                removing `\#' on input line 134.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\#' on input line 133.
+(hyperref)                removing `\catcode' on input line 134.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\catcode' on input line 133.
+(hyperref)                removing `\<def>-command' on input line 134.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\<def>-command' on input line 133.
+(hyperref)                removing `\csname\endcsname' on input line 134.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\csname\endcsname' on input line 133.
+(hyperref)                removing `\<def>-command' on input line 134.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\<def>-command' on input line 133.
+(hyperref)                removing `\&' on input line 134.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\&' on input line 133.
+(hyperref)                removing `\<def>-command' on input line 134.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\<def>-command' on input line 133.
+(hyperref)                removing `\textunderscore' on input line 134.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\textunderscore' on input line 133.
+(hyperref)                removing `\<let>-command' on input line 134.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\<let>-command' on input line 133.
+(hyperref)                removing `\_' on input line 134.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\_' on input line 133.
+(hyperref)                removing `\catcode' on input line 134.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\catcode' on input line 133.
+(hyperref)                removing `\active' on input line 134.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\active' on input line 133.
+(hyperref)                removing `\<let>-command' on input line 134.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\<let>-command' on input line 133.
+(hyperref)                removing `\csname\endcsname' on input line 134.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\csname\endcsname' on input line 133.
+(hyperref)                removing `\<let>-command' on input line 134.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\<let>-command' on input line 133.
+(hyperref)                removing `\csname\endcsname' on input line 134.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\csname\endcsname' on input line 133.
+(hyperref)                removing `\<let>-command' on input line 134.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\<let>-command' on input line 133.
+(hyperref)                removing `\~' on input line 134.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\~' on input line 133.
+(hyperref)                removing `\<let>-command' on input line 134.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\<let>-command' on input line 133.
+(hyperref)                removing `\textasciitilde' on input line 134.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\textasciitilde' on input line 133.
+(hyperref)                removing `\<let>-command' on input line 134.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\<let>-command' on input line 133.
+(hyperref)                removing `\\' on input line 134.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\\' on input line 133.
+(hyperref)                removing `\<def>-command' on input line 134.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\<def>-command' on input line 133.
+(hyperref)                removing `\csname\endcsname' on input line 134.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\csname\endcsname' on input line 133.
+(hyperref)                removing `\<def>-command' on input line 134.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\<def>-command' on input line 133.
+(hyperref)                removing `\Hy@tempa' on input line 134.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\Hy@tempa' on input line 133.
+(hyperref)                removing `\<def>-command' on input line 134.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\<def>-command' on input line 133.
+(hyperref)                removing `\Hy@tempa' on input line 134.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\Hy@tempa' on input line 133.
+(hyperref)                removing `\<let>-command' on input line 134.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\<let>-command' on input line 133.
+(hyperref)                removing `\nextToken' on input line 134.
 
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\nextToken' on input line 133.
-
-Package hyperref Info: Option `colorlinks' set `true' on input line 133.
+Package hyperref Info: Option `colorlinks' set `true' on input line 134.
 \ovidio-dissertacao@idxfile=\write5
 \openout5 = `ovidio-dissertacao.idx'.
 
@@ -1276,57 +1296,57 @@ LaTeX Warning: Label `fig:b' multiply defined.
 ) (./conteudo/capitulos/cap-avaliacao-extratores.aux) (./conteudo/capitulos/cap-avaliacao-modulo-consulta.aux))
 \openout1 = `ovidio-dissertacao.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 159.
-LaTeX Font Info:    ... okay on input line 159.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 159.
-LaTeX Font Info:    ... okay on input line 159.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 159.
-LaTeX Font Info:    ... okay on input line 159.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 159.
-LaTeX Font Info:    ... okay on input line 159.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 159.
-LaTeX Font Info:    ... okay on input line 159.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 159.
-LaTeX Font Info:    ... okay on input line 159.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 159.
-LaTeX Font Info:    ... okay on input line 159.
-LaTeX Font Info:    Try loading font information for T1+lmr on input line 159.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 160.
+LaTeX Font Info:    ... okay on input line 160.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 160.
+LaTeX Font Info:    ... okay on input line 160.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 160.
+LaTeX Font Info:    ... okay on input line 160.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 160.
+LaTeX Font Info:    ... okay on input line 160.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 160.
+LaTeX Font Info:    ... okay on input line 160.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 160.
+LaTeX Font Info:    ... okay on input line 160.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 160.
+LaTeX Font Info:    ... okay on input line 160.
+LaTeX Font Info:    Try loading font information for T1+lmr on input line 160.
  (/usr/share/texmf/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 \AtBeginShipoutBox=\box40
-Package hyperref Info: Link coloring ON on input line 159.
+Package hyperref Info: Link coloring ON on input line 160.
  (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
  (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count190
+\c@section@level=\count191
 )
 Redoing nameref's sectioning
 Redoing nameref's label
-LaTeX Info: Redefining \nameref on input line 159.
-LaTeX Info: Redefining \ref on input line 159.
-LaTeX Info: Redefining \pageref on input line 159.
-LaTeX Info: Redefining \nameref on input line 159.
+LaTeX Info: Redefining \nameref on input line 160.
+LaTeX Info: Redefining \ref on input line 160.
+LaTeX Info: Redefining \pageref on input line 160.
+LaTeX Info: Redefining \nameref on input line 160.
 \myptabbox=\box41
-\myptabboxwidth=\skip282
+\myptabboxwidth=\skip283
 Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             https://www.ctan.org/pkg/pageslts
-(lastpage)             ! on input line 159.
+(lastpage)             ! on input line 160.
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count191
+\scratchcounter=\count192
 \scratchdimen=\dimen176
 \scratchbox=\box42
-\nofMPsegments=\count192
-\nofMParguments=\count193
-\everyMPshowfont=\toks33
-\MPscratchCnt=\count194
+\nofMPsegments=\count193
+\nofMParguments=\count194
+\everyMPshowfont=\toks34
+\MPscratchCnt=\count266
 \MPscratchDim=\dimen177
-\MPnumerator=\count266
-\makeMPintoPDFobject=\count267
-\everyMPtoPDFconversion=\toks34
+\MPnumerator=\count267
+\makeMPintoPDFobject=\count268
+\everyMPtoPDFconversion=\toks35
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
  (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
@@ -1339,7 +1359,7 @@ Package grfext Info: Graphics extension search list:
  (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-LaTeX Info: Redefining \microtypecontext on input line 159.
+LaTeX Info: Redefining \microtypecontext on input line 160.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -1352,7 +1372,7 @@ Package microtype Info: No adjustment of character kerning.
  (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-cmr.cfg
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman (RS)
 )
-LaTeX Font Info:    Try loading font information for T1+lmss on input line 173.
+LaTeX Font Info:    Try loading font information for T1+lmss on input line 174.
  (/usr/share/texmf/tex/latex/lm/t1lmss.fd
 File: t1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
@@ -1795,6 +1815,19 @@ File: conteudo/capitulos/figs/CDs/F1.png Graphic file (type png)
  <use conteudo/capitulos/figs/CDs/F1.png>
 Package pdftex.def Info: conteudo/capitulos/figs/CDs/F1.png used on input line 334.
 (pdftex.def)             Requested size: 199.16928pt x 51.12025pt.
+
+
+LaTeX Warning: Reference `tab:configfinal' on page 45 undefined on input line 343.
+
+(./conteudo/capitulos/inputs/tabela-resumo.tex
+Overfull \hbox (89.96286pt too wide) in paragraph at lines 4--109
+ [][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+)
 Package epstopdf Info: Source file: <conteudo/capitulos/figs/grafico-medidas-APRF1.eps>
 (epstopdf)                    date: 2017-12-30 10:14:06
 (epstopdf)                    size: 30670 bytes
@@ -1802,18 +1835,17 @@ Package epstopdf Info: Source file: <conteudo/capitulos/figs/grafico-medidas-APR
 (epstopdf)                    date: 2018-02-20 16:53:21
 (epstopdf)                    size: 13048 bytes
 (epstopdf)             Command: <repstopdf --outfile=conteudo/capitulos/figs/grafico-medidas-APRF1-eps-converted-to.pdf conteudo/capitulos/figs/grafico-medidas-APRF1.eps>
-(epstopdf)             \includegraphics on input line 378.
+(epstopdf)             \includegraphics on input line 379.
 Package epstopdf Info: Output file is already uptodate.
- <conteudo/capitulos/figs/grafico-medidas-APRF1-eps-converted-to.pdf, id=1624, 484.81125pt x 172.645pt>
+ <conteudo/capitulos/figs/grafico-medidas-APRF1-eps-converted-to.pdf, id=1623, 484.81125pt x 172.645pt>
 File: conteudo/capitulos/figs/grafico-medidas-APRF1-eps-converted-to.pdf Graphic file (type pdf)
  <use conteudo/capitulos/figs/grafico-medidas-APRF1-eps-converted-to.pdf>
-Package pdftex.def Info: conteudo/capitulos/figs/grafico-medidas-APRF1-eps-converted-to.pdf used on input line 378.
+Package pdftex.def Info: conteudo/capitulos/figs/grafico-medidas-APRF1-eps-converted-to.pdf used on input line 379.
 (pdftex.def)             Requested size: 455.0pt x 162.03604pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[45 <./conteudo/capitulos/figs/CDs/WinDiff.png> <./conteudo/capitulos/figs/CDs/Pk.png> <./conteudo/capitulos/figs/CDs/Acuracy.png> <./conteudo/capitulos/figs/CDs/Precision.png> <./conteudo/capitulos/figs/CDs/Recall.png> <./conteudo/capitulos/figs/CDs/F1.png>]
 Package epstopdf Info: Source file: <conteudo/capitulos/figs/grafico-medidas-Pk-Wd.eps>
 (epstopdf)                    date: 2017-12-30 09:29:52
 (epstopdf)                    size: 30983 bytes
@@ -1821,72 +1853,79 @@ Package epstopdf Info: Source file: <conteudo/capitulos/figs/grafico-medidas-Pk-
 (epstopdf)                    date: 2018-02-20 16:53:43
 (epstopdf)                    size: 14487 bytes
 (epstopdf)             Command: <repstopdf --outfile=conteudo/capitulos/figs/grafico-medidas-Pk-Wd-eps-converted-to.pdf conteudo/capitulos/figs/grafico-medidas-Pk-Wd.eps>
-(epstopdf)             \includegraphics on input line 390.
+(epstopdf)             \includegraphics on input line 391.
 Package epstopdf Info: Output file is already uptodate.
- <conteudo/capitulos/figs/grafico-medidas-Pk-Wd-eps-converted-to.pdf, id=1640, 433.62pt x 180.675pt>
+<conteudo/capitulos/figs/grafico-medidas-Pk-Wd-eps-converted-to.pdf, id=1625, 433.62pt x 180.675pt>
 File: conteudo/capitulos/figs/grafico-medidas-Pk-Wd-eps-converted-to.pdf Graphic file (type pdf)
  <use conteudo/capitulos/figs/grafico-medidas-Pk-Wd-eps-converted-to.pdf>
-Package pdftex.def Info: conteudo/capitulos/figs/grafico-medidas-Pk-Wd-eps-converted-to.pdf used on input line 390.
+Package pdftex.def Info: conteudo/capitulos/figs/grafico-medidas-Pk-Wd-eps-converted-to.pdf used on input line 391.
 (pdftex.def)             Requested size: 455.0pt x 189.59303pt.
-) [46 <./conteudo/capitulos/figs/grafico-medidas-APRF1-eps-converted-to.pdf> <./conteudo/capitulos/figs/grafico-medidas-Pk-Wd-eps-converted-to.pdf>]
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+) [45 <./conteudo/capitulos/figs/CDs/WinDiff.png> <./conteudo/capitulos/figs/CDs/Pk.png> <./conteudo/capitulos/figs/CDs/Acuracy.png> <./conteudo/capitulos/figs/CDs/Precision.png> <./conteudo/capitulos/figs/CDs/Recall.png> <./conteudo/capitulos/figs/CDs/F1.png>] [46 <./conteudo/capitulos/figs/grafico-medidas-APRF1-eps-converted-to.pdf>] [47 <./conteudo/capitulos/figs/grafico-medidas-Pk-Wd-eps-converted-to.pdf>]
 \openout2 = `conteudo/capitulos/cap-avaliacao-extratores.aux'.
 
- (./conteudo/capitulos/cap-avaliacao-extratores.tex) [47
+ (./conteudo/capitulos/cap-avaliacao-extratores.tex [48
 
 
 
-]
+]) [49]
 \openout2 = `conteudo/capitulos/cap-avaliacao-modulo-consulta.aux'.
 
- (./conteudo/capitulos/cap-avaliacao-modulo-consulta.tex [48
+ (./conteudo/capitulos/cap-avaliacao-modulo-consulta.tex [50
 
 
 
-]) [49] (./ovidio-dissertacao.bbl (./ovidio-dissertacao.brf)
+]) [51] (./ovidio-dissertacao.bbl (./ovidio-dissertacao.brf)
 \tf@brf=\write6
 \openout6 = `ovidio-dissertacao.brf'.
 
- [50
+ [52
 
 
 ]
 bibitemlist
-[51] [52] [53] [54] [55]) 
+[53] [54] [55] [56] [57]) 
 AED: lastpage setting LastPage
-[56]
+[58]
 \tf@toc=\write7
 \openout7 = `ovidio-dissertacao.toc'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 315.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 315.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 316.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 316.
  (./ovidio-dissertacao.aux (./conteudo/capitulos/2-cap1.aux) (./conteudo/capitulos/3-cap2.aux) (./conteudo/capitulos/4-cap3.aux) (./conteudo/capitulos/cap-avaliacao-segmentadores.aux) (./conteudo/capitulos/cap-avaliacao-extratores.aux) (./conteudo/capitulos/cap-avaliacao-modulo-consulta.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 315.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 315.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 316.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 316.
 Package rerunfilecheck Info: File `ovidio-dissertacao.brf' has not changed.
 (rerunfilecheck)             Checksum: CC37AD6FB5DE17BB5D56A3064E19C48D;7165.
 
 
+LaTeX Warning: There were undefined references.
+
+
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 315.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 316.
  )
 (\end occurred inside a group at level 1)
 
 ### simple group (level 1) entered at line 1061 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 15963 strings out of 494884
- 242833 string characters out of 6179236
- 438771 words of memory out of 5000000
- 18506 multiletter control sequences out of 15000+600000
+ 16424 strings out of 494884
+ 248354 string characters out of 6179236
+ 464354 words of memory out of 5000000
+ 18952 multiletter control sequences out of 15000+600000
  95698 words of font info for 161 fonts, out of 8000000 for 9000
  38 hyphenation exceptions out of 8191
- 50i,15n,40p,1529b,3002s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 50i,15n,40p,1529b,3005s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc}</usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx8.pfb></usr/share/texmf/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi6.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr7.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss10.pfb></usr/share/texmf/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss17.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsso12.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt12.pfb>
-Output written on ovidio-dissertacao.pdf (57 pages, 1706692 bytes).
+Output written on ovidio-dissertacao.pdf (59 pages, 1710593 bytes).
 PDF statistics:
- 2140 PDF objects out of 2487 (max. 8388607)
- 1388 compressed objects within 14 object streams
- 234 named destinations out of 1000 (max. 500000)
+ 2148 PDF objects out of 2487 (max. 8388607)
+ 1394 compressed objects within 14 object streams
+ 236 named destinations out of 1000 (max. 500000)
  32855 words of extra memory for PDF output out of 35830 (max. 10000000)
 
