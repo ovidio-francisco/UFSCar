@@ -37,7 +37,7 @@ public class DPSeg extends AbstractSegmenter {
 			pt[i] = pt[i]+"\n";
 		}
  		
- 		File tmp1 = new File("temp1.txt");
+ 		File tmp1 = new File("temp0.txt");
  		Files.saveLinesToTxtFile(pt, tmp1);
  		
  		/** Pega os bounds do texto arquivo com o texto preprocessado*/
@@ -99,7 +99,7 @@ public class DPSeg extends AbstractSegmenter {
 
 	@Override
 	public String getConfigurationLabel() {
-		return "BayesSeg";
+		return String.format("BayesSeg Pr:%.2f dp:%.2f sr:%s", getWrapper().prior, getWrapper().dispersion, nSegsRate <= 0 ? "auto" : String.format("%.3f", nSegsRate));
 	}
 
 	@Override

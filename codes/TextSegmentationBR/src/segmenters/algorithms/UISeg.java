@@ -11,6 +11,10 @@ import utils.Files;
 public class UISeg extends AbstractSegmenter {
 	private static final String EOS = "-EOF-";
 
+	private int nSegs = 10;
+	private double nSegsRate = 0.5;
+	private int nSentences = 0;
+	
 	@Override
 	public ArrayList<String> getSegments(String text) {
 	
@@ -26,6 +30,8 @@ public class UISeg extends AbstractSegmenter {
 
  		/** Cria um arquivo com o texto preprocessado */
 		String[] pt = text.split(EOS);
+		nSentences = pt.length;
+
 		
 		for(int i=0; i<pt.length; i++) {
 			pt[i] = preprocessLines(pt[i]);
@@ -96,11 +102,21 @@ public class UISeg extends AbstractSegmenter {
 	private ArrayList<Integer> findBounds(File temp, File out) throws IOException, InterruptedException {
 		ArrayList<Integer> b = new ArrayList<>();
 		
+		nSegs =  Math.round((float)nSentences * (float)nSegsRate);
+		
+		String nSegsParam = "-1";
+
+		if (nSegs <=0 ) {
+		} else {
+        	nSegsParam = String.format("%d", nSegs);
+        }
+
         List<String> commands = new ArrayList<String>();
         commands.add("/bin/bash");
         commands.add("mySeg.sh");
         commands.add(temp.getAbsolutePath());
-        commands.add("-1");
+//        commands.add("-1");
+        commands.add(nSegsParam);
         
         ProcessBuilder pb = new ProcessBuilder(commands);
         pb.directory(new File("/ext4Data/UFSCar/codes/baselines/uiseg/"));
@@ -131,7 +147,24 @@ public class UISeg extends AbstractSegmenter {
 
 	@Override
 	public String getParamByName(ParamName paramName) {
-		// TODO Auto-generated method stub
-		return null;
+		switch (paramName) {
+			case NSEGRATE: return nSegsRate <= 0 ? "Auto" : String.format("%.3f", nSegsRate);			
+		default: return "???"; 
 	}
+	}
+
+	public double getnSegsRate() {
+		return nSegsRate;
+	}
+
+	public void setnSegsRate(double nSegsRate) {
+		this.nSegsRate = nSegsRate;
+	}
+
+	public int getnSegs() {
+		return nSegs;
+	}
+	
+	
+	
 }

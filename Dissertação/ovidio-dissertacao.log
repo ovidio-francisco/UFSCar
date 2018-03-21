@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.8.22)  14 MAR 2018 10:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.8.22)  21 MAR 2018 10:04
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1703,11 +1703,11 @@ pdfTeX warning: pdflatex (file ./conteudo/capitulos/figs/segmentacao-referencia.
 >] [42] [43] <conteudo/capitulos/figs/coesaolexicaTT-50-9.png, id=1606, 1413.28pt x 306.14375pt>
 File: conteudo/capitulos/figs/coesaolexicaTT-50-9.png Graphic file (type png)
  <use conteudo/capitulos/figs/coesaolexicaTT-50-9.png>
-Package pdftex.def Info: conteudo/capitulos/figs/coesaolexicaTT-50-9.png used on input line 268.
+Package pdftex.def Info: conteudo/capitulos/figs/coesaolexicaTT-50-9.png used on input line 270.
 (pdftex.def)             Requested size: 455.0pt x 98.56125pt.
  [44 <./conteudo/capitulos/figs/coesaolexicaTT-50-9.png>]
-./conteudo/capitulos/cap-avaliacao-segmentadores.tex:321: Undefined control sequence.
-l.321 	\subfigure
+./conteudo/capitulos/cap-avaliacao-segmentadores.tex:323: Undefined control sequence.
+l.323 	\subfigure
                  [a]{ \label{fig:a}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1718,11 +1718,11 @@ and I'll forget about whatever was undefined.
 <conteudo/capitulos/figs/CDs/WinDiff.png, id=1615, 433.62pt x 111.2958pt>
 File: conteudo/capitulos/figs/CDs/WinDiff.png Graphic file (type png)
  <use conteudo/capitulos/figs/CDs/WinDiff.png>
-Package pdftex.def Info: conteudo/capitulos/figs/CDs/WinDiff.png used on input line 322.
+Package pdftex.def Info: conteudo/capitulos/figs/CDs/WinDiff.png used on input line 324.
 (pdftex.def)             Requested size: 199.16928pt x 51.12025pt.
 
-./conteudo/capitulos/cap-avaliacao-segmentadores.tex:323: Undefined control sequence.
-l.323 	\subfigure
+./conteudo/capitulos/cap-avaliacao-segmentadores.tex:325: Undefined control sequence.
+l.325 	\subfigure
                  [b]{ \label{fig:b}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1733,11 +1733,11 @@ and I'll forget about whatever was undefined.
 <conteudo/capitulos/figs/CDs/Pk.png, id=1616, 433.62pt x 111.2958pt>
 File: conteudo/capitulos/figs/CDs/Pk.png Graphic file (type png)
  <use conteudo/capitulos/figs/CDs/Pk.png>
-Package pdftex.def Info: conteudo/capitulos/figs/CDs/Pk.png used on input line 324.
+Package pdftex.def Info: conteudo/capitulos/figs/CDs/Pk.png used on input line 326.
 (pdftex.def)             Requested size: 199.16928pt x 51.12025pt.
 
-./conteudo/capitulos/cap-avaliacao-segmentadores.tex:325: Undefined control sequence.
-l.325 	\subfigure
+./conteudo/capitulos/cap-avaliacao-segmentadores.tex:327: Undefined control sequence.
+l.327 	\subfigure
                  [c]{ \label{fig:c}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1748,11 +1748,11 @@ and I'll forget about whatever was undefined.
 <conteudo/capitulos/figs/CDs/Acuracy.png, id=1617, 433.62pt x 111.2958pt>
 File: conteudo/capitulos/figs/CDs/Acuracy.png Graphic file (type png)
  <use conteudo/capitulos/figs/CDs/Acuracy.png>
-Package pdftex.def Info: conteudo/capitulos/figs/CDs/Acuracy.png used on input line 326.
+Package pdftex.def Info: conteudo/capitulos/figs/CDs/Acuracy.png used on input line 328.
 (pdftex.def)             Requested size: 199.16928pt x 51.12025pt.
 
-./conteudo/capitulos/cap-avaliacao-segmentadores.tex:327: Undefined control sequence.
-l.327 	\subfigure
+./conteudo/capitulos/cap-avaliacao-segmentadores.tex:329: Undefined control sequence.
+l.329 	\subfigure
                  [d]{ \label{fig:d}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1763,11 +1763,11 @@ and I'll forget about whatever was undefined.
 <conteudo/capitulos/figs/CDs/Precision.png, id=1618, 433.62pt x 111.2958pt>
 File: conteudo/capitulos/figs/CDs/Precision.png Graphic file (type png)
  <use conteudo/capitulos/figs/CDs/Precision.png>
-Package pdftex.def Info: conteudo/capitulos/figs/CDs/Precision.png used on input line 328.
+Package pdftex.def Info: conteudo/capitulos/figs/CDs/Precision.png used on input line 330.
 (pdftex.def)             Requested size: 213.39566pt x 54.77147pt.
 
-./conteudo/capitulos/cap-avaliacao-segmentadores.tex:329: Undefined control sequence.
-l.329 	\subfigure
+./conteudo/capitulos/cap-avaliacao-segmentadores.tex:331: Undefined control sequence.
+l.331 	\subfigure
                  [e]{ \label{fig:e}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1778,11 +1778,11 @@ and I'll forget about whatever was undefined.
 <conteudo/capitulos/figs/CDs/Recall.png, id=1619, 433.62pt x 111.2958pt>
 File: conteudo/capitulos/figs/CDs/Recall.png Graphic file (type png)
  <use conteudo/capitulos/figs/CDs/Recall.png>
-Package pdftex.def Info: conteudo/capitulos/figs/CDs/Recall.png used on input line 330.
+Package pdftex.def Info: conteudo/capitulos/figs/CDs/Recall.png used on input line 332.
 (pdftex.def)             Requested size: 199.16928pt x 51.12025pt.
 
-./conteudo/capitulos/cap-avaliacao-segmentadores.tex:331: Undefined control sequence.
-l.331 	\subfigure
+./conteudo/capitulos/cap-avaliacao-segmentadores.tex:333: Undefined control sequence.
+l.333 	\subfigure
                  [f]{ \label{fig:f}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1793,7 +1793,7 @@ and I'll forget about whatever was undefined.
 <conteudo/capitulos/figs/CDs/F1.png, id=1620, 433.62pt x 111.2958pt>
 File: conteudo/capitulos/figs/CDs/F1.png Graphic file (type png)
  <use conteudo/capitulos/figs/CDs/F1.png>
-Package pdftex.def Info: conteudo/capitulos/figs/CDs/F1.png used on input line 332.
+Package pdftex.def Info: conteudo/capitulos/figs/CDs/F1.png used on input line 334.
 (pdftex.def)             Requested size: 199.16928pt x 51.12025pt.
 Package epstopdf Info: Source file: <conteudo/capitulos/figs/grafico-medidas-APRF1.eps>
 (epstopdf)                    date: 2017-12-30 10:14:06
@@ -1802,12 +1802,12 @@ Package epstopdf Info: Source file: <conteudo/capitulos/figs/grafico-medidas-APR
 (epstopdf)                    date: 2018-02-20 16:53:21
 (epstopdf)                    size: 13048 bytes
 (epstopdf)             Command: <repstopdf --outfile=conteudo/capitulos/figs/grafico-medidas-APRF1-eps-converted-to.pdf conteudo/capitulos/figs/grafico-medidas-APRF1.eps>
-(epstopdf)             \includegraphics on input line 376.
+(epstopdf)             \includegraphics on input line 378.
 Package epstopdf Info: Output file is already uptodate.
  <conteudo/capitulos/figs/grafico-medidas-APRF1-eps-converted-to.pdf, id=1624, 484.81125pt x 172.645pt>
 File: conteudo/capitulos/figs/grafico-medidas-APRF1-eps-converted-to.pdf Graphic file (type pdf)
  <use conteudo/capitulos/figs/grafico-medidas-APRF1-eps-converted-to.pdf>
-Package pdftex.def Info: conteudo/capitulos/figs/grafico-medidas-APRF1-eps-converted-to.pdf used on input line 376.
+Package pdftex.def Info: conteudo/capitulos/figs/grafico-medidas-APRF1-eps-converted-to.pdf used on input line 378.
 (pdftex.def)             Requested size: 455.0pt x 162.03604pt.
 
 
@@ -1821,12 +1821,12 @@ Package epstopdf Info: Source file: <conteudo/capitulos/figs/grafico-medidas-Pk-
 (epstopdf)                    date: 2018-02-20 16:53:43
 (epstopdf)                    size: 14487 bytes
 (epstopdf)             Command: <repstopdf --outfile=conteudo/capitulos/figs/grafico-medidas-Pk-Wd-eps-converted-to.pdf conteudo/capitulos/figs/grafico-medidas-Pk-Wd.eps>
-(epstopdf)             \includegraphics on input line 388.
+(epstopdf)             \includegraphics on input line 390.
 Package epstopdf Info: Output file is already uptodate.
  <conteudo/capitulos/figs/grafico-medidas-Pk-Wd-eps-converted-to.pdf, id=1640, 433.62pt x 180.675pt>
 File: conteudo/capitulos/figs/grafico-medidas-Pk-Wd-eps-converted-to.pdf Graphic file (type pdf)
  <use conteudo/capitulos/figs/grafico-medidas-Pk-Wd-eps-converted-to.pdf>
-Package pdftex.def Info: conteudo/capitulos/figs/grafico-medidas-Pk-Wd-eps-converted-to.pdf used on input line 388.
+Package pdftex.def Info: conteudo/capitulos/figs/grafico-medidas-Pk-Wd-eps-converted-to.pdf used on input line 390.
 (pdftex.def)             Requested size: 455.0pt x 189.59303pt.
 ) [46 <./conteudo/capitulos/figs/grafico-medidas-APRF1-eps-converted-to.pdf> <./conteudo/capitulos/figs/grafico-medidas-Pk-Wd-eps-converted-to.pdf>]
 \openout2 = `conteudo/capitulos/cap-avaliacao-extratores.aux'.
@@ -1883,7 +1883,7 @@ Here is how much of TeX's memory you used:
  38 hyphenation exceptions out of 8191
  50i,15n,40p,1529b,3002s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc}</usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx8.pfb></usr/share/texmf/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi6.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr7.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss10.pfb></usr/share/texmf/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss17.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsso12.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt12.pfb>
-Output written on ovidio-dissertacao.pdf (57 pages, 1706694 bytes).
+Output written on ovidio-dissertacao.pdf (57 pages, 1706692 bytes).
 PDF statistics:
  2140 PDF objects out of 2487 (max. 8388607)
  1388 compressed objects within 14 object streams

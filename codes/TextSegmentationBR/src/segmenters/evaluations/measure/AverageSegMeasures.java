@@ -2,6 +2,7 @@ package segmenters.evaluations.measure;
 
 import java.util.ArrayList;
 
+import preprocessamento.Preprocess;
 import testSementers.TestSegmenters.Metric;
 import tests.EvaluationSegModel;
 
@@ -21,6 +22,10 @@ public class AverageSegMeasures {
 	private EvaluationSegModel evSegModel = null;
 
 	public AverageSegMeasures(ArrayList<SegMeasures> sms, EvaluationSegModel evSegModel) {
+		System.out.println("Creating average measures for: "+evSegModel.getSegmenter().getConfigurationLabel());
+		Preprocess p = evSegModel.getSegmenter().getPreprocess();
+		System.out.println(String.format("preproces = %b %b %b %b %b %b %b %b", p.isRemoveAccents(), p.isRemoveHeaders(), p.isRemoveNumbers(), p.isRemovePunctuation(), p.isRemoveShortThan(), p.isRemoveStem(), p.isRemoveStopWord(), p.isToLowCase()));
+
 		this.pk = average(sms, Metric.PK);
 		this.wd = average(sms, Metric.WINDIFF);
 		this.ac = average(sms, Metric.ACURACY);

@@ -11,7 +11,9 @@ import segmenters.Segmenter.ParamName;
 import segmenters.algorithms.C99BR;
 import segmenters.algorithms.DPSeg;
 import segmenters.algorithms.MinCutSeg;
+import segmenters.algorithms.SentencesSegmenter;
 import segmenters.algorithms.TextTilingBR;
+import segmenters.algorithms.UISeg;
 import segmenters.evaluations.measure.AverageSegMeasures;
 import segmenters.evaluations.measure.SegMeasures;
 import tests.CsvOut;
@@ -28,6 +30,7 @@ public class TestSegmenters {
 	
 	public static  File refFolder = new File("./SegReferences");
 	public static  File txtFolder = new File("./txtDocs");
+	public static  File articleFile = new File(folder + "/article.tex");
 	private static ArrayList<File> txtFiles = new ArrayList<>();
 	
 	private static ArrayList<Metric> metrics = new ArrayList<>();
@@ -35,6 +38,9 @@ public class TestSegmenters {
 	private static ArrayList<CsvOut> csvOuts = new ArrayList<>();
 	private static TexArticle article = new TexArticle();
 	
+
+	private static boolean doPreprocess = true;
+
 	
 	public static void main(String[] args) {
 
@@ -49,20 +55,20 @@ public class TestSegmenters {
 		metrics.add(Metric.F1);
 		metrics.add(Metric.AVR_SEGS_COUNT);
 		
-//		createTTTest();
-//		createC99Test();
-//		createMinCutTest();
-
-		createTT_Models();
-		createC99_Models();
-		createMinCut_Models();
-		createBayesSeg_Models();
 		
+//		createTT_Models();
+//		createC99_Models();
+//		createMinCut_Models();
+//		createBayesSeg_Models();
+//		createUISeg_Models();
+//		createSentencesSegmenter_Models();
+		
+		analise_NSegRate();
 		
 		System.out.println("\n\n\n");
 		System.out.println(article.createTexArticle());
 		
-		article.save(new File(folder + "/article.tex"));
+		article.save(articleFile);
 		
 		for(CsvOut csv : csvOuts) {
 			try {
@@ -71,6 +77,103 @@ public class TestSegmenters {
 				e.printStackTrace();
 			}
 		}	
+	}
+	
+	private static void analise_NSegRate() {
+		
+		ArrayList<EvaluationSegModel> evModelsC99 = new ArrayList<>();
+		ArrayList<EvaluationSegModel> evModelsMin = new ArrayList<>();
+		ArrayList<EvaluationSegModel> evModelsUIS = new ArrayList<>();
+		ArrayList<EvaluationSegModel> evModelsDPS = new ArrayList<>();
+
+		int count = 0;
+		
+		double initialnSegsRate = 0.1;
+		double nSegsRate = initialnSegsRate;
+		double finalnSegsRate = 0.99;
+		double increasenSegsRate = 0.05;
+		
+		int rakingSize = 3;
+		boolean weight = true;
+		int lenCutoff = 9;
+
+		while (nSegsRate <= finalnSegsRate) {
+			
+			C99BR c99 = new C99BR();
+			c99.setRakingSize(rakingSize);
+			c99.setnSegsRate(nSegsRate);
+			c99.setWeitght(weight);
+			evModelsC99.add(new EvaluationSegModel(c99, getDefaultPreprocess(true)));
+			System.out.println(String.format("C99 nSegsRate:%.3f rankingSize:%d", nSegsRate, rakingSize));
+
+			
+			MinCutSeg minCutSeg = new MinCutSeg();
+			minCutSeg.setnSegsRate(nSegsRate);
+			SegmenterParams params = new SegmenterParams();
+			params.setSegLenCutoff(lenCutoff);
+			params.setSegLenCutoffEnabled(true);
+			minCutSeg.setSegmenterParams(params);
+			evModelsMin.add(new EvaluationSegModel(minCutSeg, getDefaultPreprocess(true)));
+			System.out.println(String.format("MinCutSeg nSegsRate:%.3f lenCutoff:%d", nSegsRate, lenCutoff));
+
+
+			UISeg uiseg = new UISeg();
+			uiseg.setnSegsRate(nSegsRate);
+			evModelsUIS.add(new EvaluationSegModel(uiseg, getDefaultPreprocess(true)));
+			System.out.println(String.format("TextSeg ------"));
+			
+			double dispersion = 0.5;
+			double prior = 0.08;
+			
+			DPSeg dpseg = new DPSeg();
+			dpseg.getWrapper().dispersion = dispersion;
+			dpseg.getWrapper().prior = prior;
+			dpseg.getWrapper().use_duration = true;
+			dpseg.setnSegsRate(nSegsRate);
+			dpseg.setNumSegsKnown(nSegsRate > 0);
+
+			evModelsDPS.add(new EvaluationSegModel(dpseg, getDefaultPreprocess(true)));
+			
+			System.out.println(String.format("BayesSeg prior:%f dispersion:%f", dpseg.getWrapper().prior, dpseg.getWrapper().dispersion));
+
+			
+			nSegsRate += increasenSegsRate;
+			count++;
+		}
+		System.out.println(String.format("%d Modelos", count));
+		
+		
+		ArrayList<ParamName> params = new ArrayList<>();
+		
+		params.add(ParamName.NSEGRATE);
+
+		System.out.println("Influência de NSegRate em C99");
+		ArrayList<AverageSegMeasures> averages = new ArrayList<>();
+		for(EvaluationSegModel m : evModelsC99) {
+			ArrayList<SegMeasures> sms = m.getMeasures(txtFiles);
+			averages.add(new AverageSegMeasures(sms, m));
+		}
+		System.out.println("Influência de NSegRate em MinCut");
+		for(EvaluationSegModel m : evModelsMin) {
+			ArrayList<SegMeasures> sms = m.getMeasures(txtFiles);
+			averages.add(new AverageSegMeasures(sms, m));
+		}
+		System.out.println("Influência de NSegRate em UISeg");
+		for(EvaluationSegModel m : evModelsUIS) {
+			ArrayList<SegMeasures> sms = m.getMeasures(txtFiles);
+			averages.add(new AverageSegMeasures(sms, m));
+		}
+		System.out.println("Influência de NSegRate em BayesSeg");
+		for(EvaluationSegModel m : evModelsDPS) {
+			ArrayList<SegMeasures> sms = m.getMeasures(txtFiles);
+			averages.add(new AverageSegMeasures(sms, m));
+		}
+		
+		TexTable tex = new TexTable(metrics, params, averages);
+		CsvOut csvOut = new CsvOut(new File(folder+"/analiseNSegRate.csv"), metrics, params, averages);
+		articleFile = new File(folder + "/analise-NSegRate.tex");
+		article.addTable(tex);
+		csvOuts.add(csvOut);
 	}
 	
 	private static void createTT_Models() {
@@ -97,7 +200,7 @@ public class TestSegmenters {
 				tt.setStep(step);
 				tt.setWindowSize(winsize);
 				
-				evModels.add(new EvaluationSegModel(tt, getPreprocess(true)));
+				evModels.add(new EvaluationSegModel(tt, getPreprocessDoAnything(doPreprocess)));
 				System.out.println(String.format("TextTiling step:%d winsize: %d", step, winsize));
 				count++;
 				
@@ -160,7 +263,7 @@ public class TestSegmenters {
 					c99.setnSegsRate(nSegsRate);
 					c99.setWeitght(weight);
 					
-					evModels.add(new EvaluationSegModel(c99, getPreprocess(true)));
+					evModels.add(new EvaluationSegModel(c99, getPreprocessDoAnything(doPreprocess)));
 					System.out.println(String.format("C99 nSegsRate:%.3f rankingSize:%d", nSegsRate, rakingSize));
 					
 					nSegsRate += increasenSegsRate;
@@ -222,7 +325,7 @@ public class TestSegmenters {
 				params.setSegLenCutoffEnabled(true);
 				minCutSeg.setSegmenterParams(params);
 				
-				evModels.add(new EvaluationSegModel(minCutSeg, getPreprocess(true)));
+				evModels.add(new EvaluationSegModel(minCutSeg, getPreprocessDoAnything(doPreprocess)));
 				
 				System.out.println(String.format("MinCutSeg nSegsRate:%.3f lenCutoff:%d", nSegsRate, lenCutoff));
 				lenCutoff += increaselenCutoff;
@@ -251,6 +354,52 @@ public class TestSegmenters {
 		
 		article.addTable(tex);
 		csvOuts.add(csvOut);
+	}
+	
+	
+	private static void createUISeg_Models() {
+		ArrayList<EvaluationSegModel> evModels = new ArrayList<>();
+
+
+		
+		double initialnSegsRate = 0;
+		double nSegsRate = initialnSegsRate;
+		double finalnSegsRate = 0.9;
+		double increasenSegsRate = 0.1;
+
+		
+		int count = 0;
+
+		while (nSegsRate < finalnSegsRate) {
+			
+			UISeg uiseg = new UISeg();
+			uiseg.setnSegsRate(nSegsRate);
+			
+			evModels.add(new EvaluationSegModel(uiseg, getPreprocessDoAnything(doPreprocess)));
+
+			nSegsRate += increasenSegsRate;
+			
+			count++;
+		}
+			
+		System.out.println(String.format("TextSeg - %d modelos", count));
+		
+		ArrayList<ParamName> params = new ArrayList<>();
+		params.add(ParamName.NSEGRATE);
+		
+		ArrayList<AverageSegMeasures> averages = new ArrayList<>();
+		
+		for(EvaluationSegModel m : evModels) {
+			ArrayList<SegMeasures> sms = m.getMeasures(txtFiles);
+
+			averages.add(new AverageSegMeasures(sms, m));
+		}
+		
+		TexTable tex = new TexTable(metrics, params, averages);
+		CsvOut csvOut = new CsvOut(new File(folder+"/uiseg.csv"), metrics, params, averages);
+		
+		article.addTable(tex);
+		csvOuts.add(csvOut);
 		
 	}
 	
@@ -260,63 +409,10 @@ public class TestSegmenters {
 
 		int count = 0;
 
-//		double initialprior = 0.07;
-//		double prior = initialprior;
-//		double finalprior = 0.12;
-//		double increaseprior = 0.01;
-////		double increaseprior = 0.005;
-//		
-//		while(prior <= finalprior) {
-//			
-//			DPSeg dpseg = new DPSeg();
-//			dpseg.getWrapper().prior = prior;
-//			
-//			evModels.add(new EvaluationSegModel(dpseg, getPreprocess(true)));
-//			System.out.println(String.format("BayesSeg prior:%f", dpseg.getWrapper().prior));
-//
-//			prior += increaseprior;
-//			count++;
-//		}
-		
-		
-		
-		
-////		double initialdispersion = 0.01;
-////		double dispersion = initialdispersion;
-////		double finaldispersion = 0.2;
-////		double increasedispersion = 0.02;
-//
-//		double initialdispersion = 0.1;
-//		double dispersion = initialdispersion;
-//		double finaldispersion = 2;
-//		double increasedispersion = 0.2;
-//		
-//		while(dispersion <= finaldispersion) {
-//			
-//			DPSeg dpseg = new DPSeg();
-//			dpseg.getWrapper().dispersion = dispersion;
-//			dpseg.getWrapper().prior = 0.0950;
-//			dpseg.getWrapper().use_duration = true;
-//			
-////			dpseg.getWrapper().num_segs_known = true;
-//			
-//			evModels.add(new EvaluationSegModel(dpseg, getPreprocess(true)));
-//			System.out.println(String.format("BayesSeg prior:%f dispersion:%f", dpseg.getWrapper().prior, dpseg.getWrapper().dispersion));
-//			
-//			dispersion += increasedispersion;
-//			count++;
-//		}
-		
-		
-//		double initialprior = 0.07;
-//		double prior = initialprior;
-//		double finalprior = 0.12;
-//		double increaseprior = 0.01;
 		double initialprior = 0.08;
 		double prior = initialprior;
 		double finalprior = 0.11;
 		double increaseprior = 0.01;
-		
 		
 		double initialnSegsRate = 0;
 		double nSegsRate = initialnSegsRate;
@@ -329,15 +425,9 @@ public class TestSegmenters {
 		double increasedispersion = 0.2;
 
 		while (nSegsRate <= finalnSegsRate) {
-
-			
 			
 			dispersion = initialdispersion;
 			while(dispersion <= finaldispersion) {
-				
-				
-				
-				
 				
 			 	prior = initialprior;
 				while(prior <= finalprior) {
@@ -348,26 +438,31 @@ public class TestSegmenters {
 					dpseg.getWrapper().use_duration = true;
 					dpseg.setnSegsRate(nSegsRate);
 					dpseg.setNumSegsKnown(nSegsRate > 0);
-	
-					evModels.add(new EvaluationSegModel(dpseg, getPreprocess(true)));
+					
+					Preprocess preprocess = getPreprocessDoAnything(doPreprocess);
+					if (doPreprocess) {
+						preprocess.setIdentifyEOS       (true);
+						preprocess.setRemoveAccents     (false);
+						preprocess.setRemoveHeaders     (true);
+						preprocess.setRemoveNumbers     (true);
+						preprocess.setRemovePunctuation (false);
+						preprocess.setRemoveShortThan   (true);
+						preprocess.setRemoveStem        (false);
+						preprocess.setRemoveStopWord    (true);
+						preprocess.setToLowCase         (true);			
+					}
+
+					
+					evModels.add(new EvaluationSegModel(dpseg, preprocess));
 					
 					System.out.println(String.format("BayesSeg prior:%f dispersion:%f", dpseg.getWrapper().prior, dpseg.getWrapper().dispersion));
 					count++;
 
-					
 					prior += increaseprior;
 				}
-
-				
-				
-				
-				
-				
 				
 				dispersion += increasedispersion;
 			}
-
-			
 			
 			nSegsRate += increasenSegsRate;
 		}
@@ -398,11 +493,63 @@ public class TestSegmenters {
 	}
 	
 	
+	private static void createSentencesSegmenter_Models() {
+		ArrayList<EvaluationSegModel> evModels = new ArrayList<>();
+		
+
+		evModels.add(new EvaluationSegModel(new SentencesSegmenter(), getPreprocessDoAnything(doPreprocess)));
+		
+		ArrayList<ParamName> params = new ArrayList<>();
+		
+		ArrayList<AverageSegMeasures> averages = new ArrayList<>();
+		
+		for(EvaluationSegModel m : evModels) {
+			ArrayList<SegMeasures> sms = m.getMeasures(txtFiles);
+
+			averages.add(new AverageSegMeasures(sms, m));
+		}
+
+		
+		TexTable tex = new TexTable(metrics, params, averages);
+		CsvOut csvOut = new CsvOut(new File(folder+"/sentences.csv"), metrics, params, averages);
+		
+		article.addTable(tex);
+		csvOuts.add(csvOut);
+		
+	}
 	
-	private static Preprocess getPreprocess(boolean b) {
+	
+	private static Preprocess getDefaultPreprocess(boolean b) {
 		return new Preprocess();
 	}
 	
+	private static Preprocess getPreprocessDoAnything(boolean doanything) {
+		Preprocess preprocess = new Preprocess();
+
+		if(doanything) {
+			preprocess.setIdentifyEOS       (true);
+			preprocess.setRemoveAccents     (true);
+			preprocess.setRemoveHeaders     (true);
+			preprocess.setRemoveNumbers     (true);
+			preprocess.setRemovePunctuation (true);
+			preprocess.setRemoveShortThan   (true);
+			preprocess.setRemoveStem        (true);
+			preprocess.setRemoveStopWord    (true);
+			preprocess.setToLowCase         (true);			
+		} else {
+			preprocess.setIdentifyEOS       (true);
+			preprocess.setRemoveAccents     (false);
+			preprocess.setRemoveHeaders     (false);
+			preprocess.setRemoveNumbers     (false);
+			preprocess.setRemovePunctuation (false);
+			preprocess.setRemoveShortThan   (false);
+			preprocess.setRemoveStem        (false);
+			preprocess.setRemoveStopWord    (false);
+			preprocess.setToLowCase         (false);						
+		}
+		
+		return preprocess;
+	}
 	
 	private static void getTxtFiles(File folder) {
 		File listFiles[] = folder.listFiles(new FileFilter() {
@@ -419,9 +566,6 @@ public class TestSegmenters {
 				txtFiles.add(f);
 		}
 	}
-	
-
-	
 }
 
 
