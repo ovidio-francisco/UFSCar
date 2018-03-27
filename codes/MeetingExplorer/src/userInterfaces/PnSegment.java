@@ -16,7 +16,7 @@ public class PnSegment extends JPanel {
 
 	private static final long serialVersionUID = 1L;
 	private Segment segment;
-        private boolean showDescriptions = false;
+        private static boolean showDescriptions = false;
         private boolean ShowSegmentDoc = false;
         
         
@@ -87,4 +87,8 @@ public class PnSegment extends JPanel {
 	public Segment getSegment() {
 		return segment;
 	}
+        
+        public static void setShowDescriptions(boolean sd) {
+            showDescriptions = sd;
+        }
 }

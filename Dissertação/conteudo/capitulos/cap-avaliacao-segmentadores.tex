@@ -367,36 +367,96 @@ A avaliação final foi feita pela comparação dos algoritmos usando as medidas
 	% \label{tab:configfinal}
 % \end{table}
 
+
+
 \input{conteudo/capitulos/inputs/tabela-resumo.tex}
-sssssss
+
+
+
 Na Figura~\ref{fig:grafico-medidas-tradicionais} é apresentada a performance dos algoritmos nas medidas tradicionais. Observa-se valores altos de revocação para a segmentação por sentenças, pois é atribuído um limite a todo candidato a final de segmento, o que resulta no valor máximo para revocação. De maneira semelhante, o comportamento do \textit{TextTiling} gera 
 mais segmentos em relação aos demais, e com isso tem-se valores maiores de revocação, o que pode ser contornado configurando o algoritmo com passos maiores, ou ainda, sobre-escrevendo a função que calcula os \textit{depth scores} para reconhecer vales mais largos.
 
 %--> TODO: explicar (a conceituação teórica) que passos curtos geram mais segmentos
 
-  \begin{figure}[!h]
-	  \centering
-	  \includegraphics[width=1\textwidth]{conteudo/capitulos/figs/grafico-medidas-APRF1.eps}
-	  \caption{Performance dos algoritmos de segmentação textual com as medidas tradicionais}
-	  \label{fig:grafico-medidas-tradicionais}
-  \end{figure}
+  % \begin{figure}[!h]
+	  % \centering
+	  % \includegraphics[width=1\textwidth]{conteudo/capitulos/figs/grafico-medidas-APRF1.eps}
+	  % \caption{Performance dos algoritmos de segmentação textual com as medidas tradicionais}
+	  % \label{fig:grafico-medidas-tradicionais}
+  % \end{figure}
   
 
-Na Figura~\ref{fig:grafico-medidas-Pk-Wd} é apresentada a performance dos algoritmos nas medidas P$_k$ e \textit{WindowDiff}. Verifica-se que \textit{TextSeg} apresenta valores de \textit{WindowDiff} próximas ao \textit{C99} e \textit{BayesSeg} e resultados mais significantes quando medidos por P$_k$ em relação aos demais algoritmos.
+% Na Figura~\ref{fig:grafico-medidas-Pk-Wd} é apresentada a performance dos algoritmos nas medidas P$_k$ e \textit{WindowDiff}. Verifica-se que \textit{TextSeg} apresenta valores de \textit{WindowDiff} próximas ao \textit{C99} e \textit{BayesSeg} e resultados mais significantes quando medidos por P$_k$ em relação aos demais algoritmos.
 
 
 
-  \begin{figure}[!h]
-	  \centering
-	  \includegraphics[width=1\textwidth]{conteudo/capitulos/figs/grafico-medidas-Pk-Wd.eps}
-	  \caption{Performance dos algoritmos de segmentação textual com as medidas P$_k$ e \textit{WindowDiff}.}
-	  \label{fig:grafico-medidas-Pk-Wd}
-  \end{figure}
+  % \begin{figure}[!h]
+	  % \centering
+	  % \includegraphics[width=1\textwidth]{conteudo/capitulos/figs/grafico-medidas-Pk-Wd.eps}
+	  % \caption{Performance dos algoritmos de segmentação textual com as medidas P$_k$ e \textit{WindowDiff}.}
+	  % \label{fig:grafico-medidas-Pk-Wd}
+  % \end{figure}
 
 
 
 
 % De maneira geral, os métodos probabilísticos apresentam desempenho próximo 
+
+
+
+  \begin{figure}[!h]
+	  \centering
+	  \includegraphics[width=1\textwidth]{conteudo/capitulos/figs/graficos/resumo-3.png}
+	  \caption{Performance dos algoritmos de segmentação textual}
+	  \label{fig:grafico-medidas-tradicionais}
+  \end{figure}
+
+
+
+
+
+
+  \begin{figure}[!h]
+	  \centering
+	  \includegraphics[width=1\textwidth]{conteudo/capitulos/figs/graficos/analiseNSegRate-MinCut.png}
+	  \caption{Performance dos algoritmos de segmentação textual}
+	  \label{fig:grafico-medidas-tradicionais}
+  \end{figure}
+
+
+  \begin{figure}[!h]
+	  \centering
+	  \includegraphics[width=1\textwidth]{conteudo/capitulos/figs/graficos/analiseNSegRate-UISeg.png}
+	  \caption{Performance dos algoritmos de segmentação textual}
+	  \label{fig:grafico-medidas-tradicionais}
+  \end{figure}
+
+  \begin{figure}[!h]
+	  \centering
+	  \includegraphics[width=1\textwidth]{conteudo/capitulos/figs/graficos/analiseNSegRate-Bayes.png}
+	  \caption{Performance dos algoritmos de segmentação textual}
+	  \label{fig:grafico-medidas-tradicionais}
+  \end{figure}
+
+  
+  \begin{figure}[!h]
+	  \centering
+	  \includegraphics[width=1\textwidth]{conteudo/capitulos/figs/graficos/analiseNSegRate-C99.png}
+	  \caption{Performance dos algoritmos de segmentação textual}
+	  \label{fig:grafico-medidas-tradicionais}
+  \end{figure}
+
+
+  
+  \begin{figure}[!h]
+	  \centering
+	  \includegraphics[width=1\textwidth]{}
+	  \caption{Performance dos algoritmos de segmentação textual}
+	  \label{fig:grafico-medidas-tradicionais}
+  \end{figure}
+
+
+
 
 
 

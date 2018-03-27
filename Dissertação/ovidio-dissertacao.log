@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.8.22)  21 MAR 2018 18:57
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.8.22)  21 MAR 2018 23:33
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1293,6 +1293,21 @@ LaTeX Warning: Label `fig:a' multiply defined.
 
 LaTeX Warning: Label `fig:b' multiply defined.
 
+
+LaTeX Warning: Label `fig:grafico-medidas-tradicionais' multiply defined.
+
+
+LaTeX Warning: Label `fig:grafico-medidas-tradicionais' multiply defined.
+
+
+LaTeX Warning: Label `fig:grafico-medidas-tradicionais' multiply defined.
+
+
+LaTeX Warning: Label `fig:grafico-medidas-tradicionais' multiply defined.
+
+
+LaTeX Warning: Label `fig:grafico-medidas-tradicionais' multiply defined.
+
 ) (./conteudo/capitulos/cap-avaliacao-extratores.aux) (./conteudo/capitulos/cap-avaliacao-modulo-consulta.aux))
 \openout1 = `ovidio-dissertacao.aux'.
 
@@ -1820,58 +1835,86 @@ Package pdftex.def Info: conteudo/capitulos/figs/CDs/F1.png used on input line 3
 LaTeX Warning: Reference `tab:configfinal' on page 45 undefined on input line 343.
 
 (./conteudo/capitulos/inputs/tabela-resumo.tex
-Overfull \hbox (89.96286pt too wide) in paragraph at lines 4--109
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10.95> on input line 5.
+
+Overfull \hbox (62.76532pt too wide) in paragraph at lines 5--110
  [][] 
  []
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-)
-Package epstopdf Info: Source file: <conteudo/capitulos/figs/grafico-medidas-APRF1.eps>
-(epstopdf)                    date: 2017-12-30 10:14:06
-(epstopdf)                    size: 30670 bytes
-(epstopdf)             Output file: <conteudo/capitulos/figs/grafico-medidas-APRF1-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-02-20 16:53:21
-(epstopdf)                    size: 13048 bytes
-(epstopdf)             Command: <repstopdf --outfile=conteudo/capitulos/figs/grafico-medidas-APRF1-eps-converted-to.pdf conteudo/capitulos/figs/grafico-medidas-APRF1.eps>
-(epstopdf)             \includegraphics on input line 379.
-Package epstopdf Info: Output file is already uptodate.
- <conteudo/capitulos/figs/grafico-medidas-APRF1-eps-converted-to.pdf, id=1623, 484.81125pt x 172.645pt>
-File: conteudo/capitulos/figs/grafico-medidas-APRF1-eps-converted-to.pdf Graphic file (type pdf)
- <use conteudo/capitulos/figs/grafico-medidas-APRF1-eps-converted-to.pdf>
-Package pdftex.def Info: conteudo/capitulos/figs/grafico-medidas-APRF1-eps-converted-to.pdf used on input line 379.
-(pdftex.def)             Requested size: 455.0pt x 162.03604pt.
+) <conteudo/capitulos/figs/graficos/resumo-3.png, id=1623, 534.49687pt x 255.95625pt>
+File: conteudo/capitulos/figs/graficos/resumo-3.png Graphic file (type png)
+ <use conteudo/capitulos/figs/graficos/resumo-3.png>
+Package pdftex.def Info: conteudo/capitulos/figs/graficos/resumo-3.png used on input line 409.
+(pdftex.def)             Requested size: 455.0pt x 217.8958pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-Package epstopdf Info: Source file: <conteudo/capitulos/figs/grafico-medidas-Pk-Wd.eps>
-(epstopdf)                    date: 2017-12-30 09:29:52
-(epstopdf)                    size: 30983 bytes
-(epstopdf)             Output file: <conteudo/capitulos/figs/grafico-medidas-Pk-Wd-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-02-20 16:53:43
-(epstopdf)                    size: 14487 bytes
-(epstopdf)             Command: <repstopdf --outfile=conteudo/capitulos/figs/grafico-medidas-Pk-Wd-eps-converted-to.pdf conteudo/capitulos/figs/grafico-medidas-Pk-Wd.eps>
-(epstopdf)             \includegraphics on input line 391.
-Package epstopdf Info: Output file is already uptodate.
-<conteudo/capitulos/figs/grafico-medidas-Pk-Wd-eps-converted-to.pdf, id=1625, 433.62pt x 180.675pt>
-File: conteudo/capitulos/figs/grafico-medidas-Pk-Wd-eps-converted-to.pdf Graphic file (type pdf)
- <use conteudo/capitulos/figs/grafico-medidas-Pk-Wd-eps-converted-to.pdf>
-Package pdftex.def Info: conteudo/capitulos/figs/grafico-medidas-Pk-Wd-eps-converted-to.pdf used on input line 391.
-(pdftex.def)             Requested size: 455.0pt x 189.59303pt.
+<conteudo/capitulos/figs/graficos/analiseNSegRate-MinCut.png, id=1624, 544.28343pt x 255.95625pt>
+File: conteudo/capitulos/figs/graficos/analiseNSegRate-MinCut.png Graphic file (type png)
+ <use conteudo/capitulos/figs/graficos/analiseNSegRate-MinCut.png>
+Package pdftex.def Info: conteudo/capitulos/figs/graficos/analiseNSegRate-MinCut.png used on input line 421.
+(pdftex.def)             Requested size: 455.0pt x 213.9668pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-) [45 <./conteudo/capitulos/figs/CDs/WinDiff.png> <./conteudo/capitulos/figs/CDs/Pk.png> <./conteudo/capitulos/figs/CDs/Acuracy.png> <./conteudo/capitulos/figs/CDs/Precision.png> <./conteudo/capitulos/figs/CDs/Recall.png> <./conteudo/capitulos/figs/CDs/F1.png>] [46 <./conteudo/capitulos/figs/grafico-medidas-APRF1-eps-converted-to.pdf>] [47 <./conteudo/capitulos/figs/grafico-medidas-Pk-Wd-eps-converted-to.pdf>]
+<conteudo/capitulos/figs/graficos/analiseNSegRate-UISeg.png, id=1625, 544.28343pt x 255.95625pt>
+File: conteudo/capitulos/figs/graficos/analiseNSegRate-UISeg.png Graphic file (type png)
+ <use conteudo/capitulos/figs/graficos/analiseNSegRate-UISeg.png>
+Package pdftex.def Info: conteudo/capitulos/figs/graficos/analiseNSegRate-UISeg.png used on input line 429.
+(pdftex.def)             Requested size: 455.0pt x 213.9668pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<conteudo/capitulos/figs/graficos/analiseNSegRate-Bayes.png, id=1626, 544.28343pt x 255.95625pt>
+File: conteudo/capitulos/figs/graficos/analiseNSegRate-Bayes.png Graphic file (type png)
+ <use conteudo/capitulos/figs/graficos/analiseNSegRate-Bayes.png>
+Package pdftex.def Info: conteudo/capitulos/figs/graficos/analiseNSegRate-Bayes.png used on input line 436.
+(pdftex.def)             Requested size: 455.0pt x 213.9668pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<conteudo/capitulos/figs/graficos/analiseNSegRate-C99.png, id=1627, 544.28343pt x 255.95625pt>
+File: conteudo/capitulos/figs/graficos/analiseNSegRate-C99.png Graphic file (type png)
+ <use conteudo/capitulos/figs/graficos/analiseNSegRate-C99.png>
+Package pdftex.def Info: conteudo/capitulos/figs/graficos/analiseNSegRate-C99.png used on input line 444.
+(pdftex.def)             Requested size: 455.0pt x 213.9668pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+./conteudo/capitulos/cap-avaliacao-segmentadores.tex:453: LaTeX Error: File `' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.453 	  \includegraphics[width=1\textwidth]{}
+                                              
+I could not locate the file with any of these extensions:
+.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPEG,.JBIG2,.JB2,.eps
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+) [45 <./conteudo/capitulos/figs/CDs/WinDiff.png> <./conteudo/capitulos/figs/CDs/Pk.png> <./conteudo/capitulos/figs/CDs/Acuracy.png> <./conteudo/capitulos/figs/CDs/Precision.png> <./conteudo/capitulos/figs/CDs/Recall.png> <./conteudo/capitulos/figs/CDs/F1.png>] [46 <./conteudo/capitulos/figs/graficos/resumo-3.png (PNG copy)>] [47 <./conteudo/capitulos/figs/graficos/analiseNSegRate-MinCut.png (PNG copy)> <./conteudo/capitulos/figs/graficos/analiseNSegRate-UISeg.png (PNG copy)>] [48 <./conteudo/capitulos/figs/graficos/analiseNSegRate-Bayes.png (PNG copy)> <./conteudo/capitulos/figs/graficos/analiseNSegRate-C99.png (PNG copy)>]
 \openout2 = `conteudo/capitulos/cap-avaliacao-extratores.aux'.
 
- (./conteudo/capitulos/cap-avaliacao-extratores.tex [48
+ (./conteudo/capitulos/cap-avaliacao-extratores.tex) [49
 
 
 
-]) [49]
+]
 \openout2 = `conteudo/capitulos/cap-avaliacao-modulo-consulta.aux'.
 
  (./conteudo/capitulos/cap-avaliacao-modulo-consulta.tex [50
@@ -1914,18 +1957,18 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 316.
 ### simple group (level 1) entered at line 1061 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 16424 strings out of 494884
- 248354 string characters out of 6179236
- 464354 words of memory out of 5000000
- 18952 multiletter control sequences out of 15000+600000
- 95698 words of font info for 161 fonts, out of 8000000 for 9000
+ 16473 strings out of 494884
+ 249483 string characters out of 6179236
+ 465292 words of memory out of 5000000
+ 18975 multiletter control sequences out of 15000+600000
+ 105491 words of font info for 169 fonts, out of 8000000 for 9000
  38 hyphenation exceptions out of 8191
  50i,15n,40p,1529b,3005s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc}</usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx8.pfb></usr/share/texmf/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi6.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr7.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss10.pfb></usr/share/texmf/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss17.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsso12.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt12.pfb>
-Output written on ovidio-dissertacao.pdf (59 pages, 1710593 bytes).
+{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc}</usr/share/texmf/fonts/type1/public/lm/lmbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx8.pfb></usr/share/texmf/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi6.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr7.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss10.pfb></usr/share/texmf/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss17.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsso12.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt12.pfb>
+Output written on ovidio-dissertacao.pdf (59 pages, 1821794 bytes).
 PDF statistics:
- 2148 PDF objects out of 2487 (max. 8388607)
- 1394 compressed objects within 14 object streams
- 236 named destinations out of 1000 (max. 500000)
- 32855 words of extra memory for PDF output out of 35830 (max. 10000000)
+ 2142 PDF objects out of 2487 (max. 8388607)
+ 1390 compressed objects within 14 object streams
+ 240 named destinations out of 1000 (max. 500000)
+ 37478 words of extra memory for PDF output out of 42996 (max. 10000000)
 

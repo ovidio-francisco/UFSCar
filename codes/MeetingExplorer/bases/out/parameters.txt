@@ -1,4 +1,4 @@
 #Last Topic Extraction Configuration Parameters
-#Tue Mar 13 19:42:41 BRT 2018
-Num-Topics=50
+#Tue Mar 27 13:00:05 BRT 2018
+Num-Topics=88
 Algorithm=PLSA Parametric

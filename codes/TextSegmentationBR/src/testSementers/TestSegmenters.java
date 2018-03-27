@@ -3,6 +3,8 @@ package testSementers;
 import java.io.File;
 import java.io.FileFilter;
 import java.io.IOException;
+import java.time.Duration;
+import java.time.Instant;
 import java.util.ArrayList;
 
 import edu.mit.nlp.segmenter.SegmenterParams;
@@ -14,8 +16,8 @@ import segmenters.algorithms.MinCutSeg;
 import segmenters.algorithms.SentencesSegmenter;
 import segmenters.algorithms.TextTilingBR;
 import segmenters.algorithms.UISeg;
-import segmenters.evaluations.measure.AverageSegMeasures;
 import segmenters.evaluations.measure.SegMeasures;
+import segmenters.evaluations.measure.SumarySegMeasures;
 import tests.CsvOut;
 import tests.EvaluationSegModel;
 import tests.TexArticle;
@@ -24,7 +26,7 @@ import utils.Files;
 
 public class TestSegmenters {
 	
-	public static enum Metric {ACURACY, PRECISION, RECALL, F1, WINDIFF, PK, AVR_SEGS_COUNT};
+	public static enum Metric {ACURACY, PRECISION, RECALL, F1, WINDIFF, PK, KAPPA, AVR_SEGS_COUNT};
 	
 	private static File folder = new File("./analysis");
 	
@@ -34,7 +36,7 @@ public class TestSegmenters {
 	private static ArrayList<File> txtFiles = new ArrayList<>();
 	
 	private static ArrayList<Metric> metrics = new ArrayList<>();
-
+	
 	private static ArrayList<CsvOut> csvOuts = new ArrayList<>();
 	private static TexArticle article = new TexArticle();
 	
@@ -42,27 +44,29 @@ public class TestSegmenters {
 	private static boolean doPreprocess = true;
 
 	public static void main(String[] args) {
+		Instant start = Instant.now();
+		System.out.println("MyKappa");
 
 		System.out.println("% >>    Test Segmenters With The References    << \n\n");
 		getTxtFiles(txtFolder);
 
 		metrics.add(Metric.WINDIFF);
 		metrics.add(Metric.PK);
+		metrics.add(Metric.KAPPA);
 		metrics.add(Metric.ACURACY);
 		metrics.add(Metric.PRECISION);
 		metrics.add(Metric.RECALL);
 		metrics.add(Metric.F1);
 		metrics.add(Metric.AVR_SEGS_COUNT);
 		
+		createTT_Models();
+		createC99_Models();
+		createMinCut_Models();
+		createBayesSeg_Models();
+		createUISeg_Models();
+		createSentencesSegmenter_Models();
 		
-//		createTT_Models();
-//		createC99_Models();
-//		createMinCut_Models();
-//		createBayesSeg_Models();
-//		createUISeg_Models();
-//		createSentencesSegmenter_Models();
-		
-		analise_NSegRate();
+//		analise_NSegRate();
 		
 		System.out.println("\n\n\n");
 		System.out.println(article.createTexArticle());
@@ -76,8 +80,16 @@ public class TestSegmenters {
 				e.printStackTrace();
 			}
 		}	
+		
+		Instant end = Instant.now();
+		Duration te = Duration.between(start, end); //timeElapsed
+		System.out.println("Time taken: "+ te.toMillis() +" milliseconds");
+		
+		System.out.println(String.format("%d horas, %d minutos %d segundos", te.toHours(),te.toMinutes(),(te.toMillis() / 1000)%60));
+		
 	}
 	
+	@SuppressWarnings("unused")
 	private static void analise_NSegRate() {
 		
 		ArrayList<EvaluationSegModel> evModelsC99 = new ArrayList<>();
@@ -104,7 +116,6 @@ public class TestSegmenters {
 			c99.setWeitght(weight);
 			evModelsC99.add(new EvaluationSegModel(c99, getDefaultPreprocess(true)));
 			System.out.println(String.format("C99 nSegsRate:%.3f rankingSize:%d", nSegsRate, rakingSize));
-
 			
 			MinCutSeg minCutSeg = new MinCutSeg();
 			minCutSeg.setnSegsRate(nSegsRate);
@@ -114,7 +125,6 @@ public class TestSegmenters {
 			minCutSeg.setSegmenterParams(params);
 			evModelsMin.add(new EvaluationSegModel(minCutSeg, getDefaultPreprocess(true)));
 			System.out.println(String.format("MinCutSeg nSegsRate:%.3f lenCutoff:%d", nSegsRate, lenCutoff));
-
 
 			UISeg uiseg = new UISeg();
 			uiseg.setnSegsRate(nSegsRate);
@@ -134,38 +144,36 @@ public class TestSegmenters {
 			evModelsDPS.add(new EvaluationSegModel(dpseg, getDefaultPreprocess(true)));
 			
 			System.out.println(String.format("BayesSeg prior:%f dispersion:%f", dpseg.getWrapper().prior, dpseg.getWrapper().dispersion));
-
 			
 			nSegsRate += increasenSegsRate;
 			count++;
 		}
 		System.out.println(String.format("%d Modelos", count));
 		
-		
 		ArrayList<ParamName> params = new ArrayList<>();
 		
 		params.add(ParamName.NSEGRATE);
 
 		System.out.println("Influência de NSegRate em C99");
-		ArrayList<AverageSegMeasures> averages = new ArrayList<>();
+		ArrayList<SumarySegMeasures> averages = new ArrayList<>();
 		for(EvaluationSegModel m : evModelsC99) {
 			ArrayList<SegMeasures> sms = m.getMeasures(txtFiles);
-			averages.add(new AverageSegMeasures(sms, m));
+			averages.add(new SumarySegMeasures(sms, m));
 		}
 		System.out.println("Influência de NSegRate em MinCut");
 		for(EvaluationSegModel m : evModelsMin) {
 			ArrayList<SegMeasures> sms = m.getMeasures(txtFiles);
-			averages.add(new AverageSegMeasures(sms, m));
+			averages.add(new SumarySegMeasures(sms, m));
 		}
 		System.out.println("Influência de NSegRate em UISeg");
 		for(EvaluationSegModel m : evModelsUIS) {
 			ArrayList<SegMeasures> sms = m.getMeasures(txtFiles);
-			averages.add(new AverageSegMeasures(sms, m));
+			averages.add(new SumarySegMeasures(sms, m));
 		}
 		System.out.println("Influência de NSegRate em BayesSeg");
 		for(EvaluationSegModel m : evModelsDPS) {
 			ArrayList<SegMeasures> sms = m.getMeasures(txtFiles);
-			averages.add(new AverageSegMeasures(sms, m));
+			averages.add(new SumarySegMeasures(sms, m));
 		}
 		
 		TexTable tex = new TexTable(metrics, params, averages);
@@ -214,12 +222,12 @@ public class TestSegmenters {
 		params.add(ParamName.STEP);
 		params.add(ParamName.WINSIZE);
 		
-		ArrayList<AverageSegMeasures> averages = new ArrayList<>();
+		ArrayList<SumarySegMeasures> averages = new ArrayList<>();
 		
 		for(EvaluationSegModel m : evModels) {
 			ArrayList<SegMeasures> sms = m.getMeasures(txtFiles);
 
-			averages.add(new AverageSegMeasures(sms, m));
+			averages.add(new SumarySegMeasures(sms, m));
 		}
 		
 		TexTable tex = new TexTable(metrics, params, averages);
@@ -281,12 +289,12 @@ public class TestSegmenters {
 		params.add(ParamName.RANKINGSIZE);
 		params.add(ParamName.WEITGHT);
 
-		ArrayList<AverageSegMeasures> averages = new ArrayList<>();
+		ArrayList<SumarySegMeasures> averages = new ArrayList<>();
 		
 		for(EvaluationSegModel m : evModels) {
 			ArrayList<SegMeasures> sms = m.getMeasures(txtFiles);
 
-			averages.add(new AverageSegMeasures(sms, m));
+			averages.add(new SumarySegMeasures(sms, m));
 		}
 		
 		TexTable tex = new TexTable(metrics, params, averages);
@@ -340,12 +348,12 @@ public class TestSegmenters {
 		params.add(ParamName.NSEGRATE);
 		params.add(ParamName.LENCUTOFF);
 		
-		ArrayList<AverageSegMeasures> averages = new ArrayList<>();
+		ArrayList<SumarySegMeasures> averages = new ArrayList<>();
 		
 		for(EvaluationSegModel m : evModels) {
 			ArrayList<SegMeasures> sms = m.getMeasures(txtFiles);
 
-			averages.add(new AverageSegMeasures(sms, m));
+			averages.add(new SumarySegMeasures(sms, m));
 		}
 		
 		TexTable tex = new TexTable(metrics, params, averages);
@@ -386,12 +394,12 @@ public class TestSegmenters {
 		ArrayList<ParamName> params = new ArrayList<>();
 		params.add(ParamName.NSEGRATE);
 		
-		ArrayList<AverageSegMeasures> averages = new ArrayList<>();
+		ArrayList<SumarySegMeasures> averages = new ArrayList<>();
 		
 		for(EvaluationSegModel m : evModels) {
 			ArrayList<SegMeasures> sms = m.getMeasures(txtFiles);
 
-			averages.add(new AverageSegMeasures(sms, m));
+			averages.add(new SumarySegMeasures(sms, m));
 		}
 		
 		TexTable tex = new TexTable(metrics, params, averages);
@@ -475,12 +483,12 @@ public class TestSegmenters {
 		params.add(ParamName.PRIOR);
 		params.add(ParamName.DISPERSION);
 		
-		ArrayList<AverageSegMeasures> averages = new ArrayList<>();
+		ArrayList<SumarySegMeasures> averages = new ArrayList<>();
 		
 		for(EvaluationSegModel m : evModels) {
 			ArrayList<SegMeasures> sms = m.getMeasures(txtFiles);
 
-			averages.add(new AverageSegMeasures(sms, m));
+			averages.add(new SumarySegMeasures(sms, m));
 		}
 		
 		TexTable tex = new TexTable(metrics, params, averages);
@@ -500,12 +508,12 @@ public class TestSegmenters {
 		
 		ArrayList<ParamName> params = new ArrayList<>();
 		
-		ArrayList<AverageSegMeasures> averages = new ArrayList<>();
+		ArrayList<SumarySegMeasures> averages = new ArrayList<>();
 		
 		for(EvaluationSegModel m : evModels) {
 			ArrayList<SegMeasures> sms = m.getMeasures(txtFiles);
 
-			averages.add(new AverageSegMeasures(sms, m));
+			averages.add(new SumarySegMeasures(sms, m));
 		}
 
 		

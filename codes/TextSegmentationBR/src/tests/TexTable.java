@@ -3,8 +3,9 @@ package tests;
 import java.util.ArrayList;
 
 import segmenters.Segmenter.ParamName;
-import segmenters.evaluations.measure.AverageSegMeasures;
 import segmenters.evaluations.measure.AverageSegMeasuresList;
+import segmenters.evaluations.measure.SumarySegMeasures;
+import segmenters.evaluations.measure.SumarySegMeasures.Statistic;
 import testSementers.TestSegmenters.Metric;
 
 public class TexTable {
@@ -15,7 +16,7 @@ public class TexTable {
 	
 	private ArrayList<Metric> metrics = new ArrayList<>();
 	private ArrayList<ParamName> params = new ArrayList<>();
-	private ArrayList<AverageSegMeasures> averages = new ArrayList<>();
+	private ArrayList<SumarySegMeasures> averages = new ArrayList<>();
 
 	public void setModelColumnl(String modelColumn) {
 		this.modelColumn = modelColumn;
@@ -39,14 +40,14 @@ public class TexTable {
 
 	
 
-	public TexTable(ArrayList<Metric> metrics, ArrayList<ParamName> params, ArrayList<AverageSegMeasures> averages) {
+	public TexTable(ArrayList<Metric> metrics, ArrayList<ParamName> params, ArrayList<SumarySegMeasures> averages) {
 		this.metrics = metrics;
 		this.params = params;
 		this.averages = averages;
 	}
 
 	private String longTableHeader() {
-		String header = "\\begin{longtable}[c]{"; 
+		String header = "\\tiny\\begin{longtable}[c]{"; 
 		
 		if(!modelColumn.isEmpty())
 			header += "|l|";
@@ -56,7 +57,7 @@ public class TexTable {
 		}
 		
 		for(int i=0; i<metrics.size(); i++) {
-			header += "c|";
+			header += "c|c|";
 		}
 		
 		header += "} \n";
@@ -68,6 +69,7 @@ public class TexTable {
 		}
 		for(Metric c : metrics) {
 			header += String.format(" & %s", MetricToString(c));
+			header += String.format(" & $\\sigma$%s", MetricToString(c));
 		}
 		
 		header += "\\\\ \\hline \n";
@@ -78,29 +80,29 @@ public class TexTable {
 	
 	private String createLines() {
 		StringBuilder lines = new StringBuilder();
-		
 		AverageSegMeasuresList averageList = new AverageSegMeasuresList(averages);
 		
-		for(AverageSegMeasures a : averages) {
+		for(SumarySegMeasures a : averages) {
 			String params = "";
+//			boolean someBest = false;
 			params = getParamsValues(a.getEvSegModel());
 			String l = "";
 			
 			l += a.getEvSegModel().getModelLabel() + " & ";
 			l += params;
 			
-			for(int i=0; i< metrics.size()-1; i++) {
-				double value = a.metricValueByName(metrics.get(i));
-				boolean isBest = averageList.isBest(metrics.get(i), value);
-				String txt = formatedMetricValue(value, isBest) + " & ";
-				l += txt;
+			for(int i=0; i< metrics.size(); i++) {
+				double mean = a.metricValueByName(Statistic.MEAN, metrics.get(i));
+				double stdD = a.metricValueByName(Statistic.STD_DEV, metrics.get(i));
+				boolean isBest = averageList.isBest(metrics.get(i), mean);
+//				someBest |= isBest;
+				String txtMean = formatedMetricValue(mean, isBest) + " & ";
+				String txtStdD = formatedMetricValue(stdD, isBest) + ((i==metrics.size()-1) ? "  \\\\ \\hline \n " : " & ");
+				l += txtMean + txtStdD;
 			}
-			double value = a.metricValueByName(metrics.get(metrics.size()-1));
-			boolean isBest = averageList.isBest(metrics.get(metrics.size()-1), value);
-			String txt = formatedMetricValue(value, isBest) + "  \\\\ \\hline \n ";
-			l += txt;
 			
-			lines.append(l);
+//			if (someBest) 
+				lines.append(l);
 		}
 		
 		return lines.toString();
@@ -116,10 +118,6 @@ public class TexTable {
 		return result;
 	}
 	
-//	public void addAverage(AverageSegMeasures average) {
-//		averages.add(average);
-//	}
-	
 	public ArrayList<ParamName> getParams() {
 		return params;
 	}
@@ -132,23 +130,24 @@ public class TexTable {
 		String result = "???";
 		
 		switch (paramName) {
-		case NSEG:		  result = "\\# Segs";		break;
-		case NSEGRATE:	  result = "Seg Rate";		break;
-		case RANKINGSIZE: result = "Raking Size";	break;
-		case STEP:		  result = "Step";			break;
-		case WEITGHT:	  result = "Weitght";		break;
-		case WINSIZE:	  result = "Win Size";		break;
-		case SMOOTHINGRANGE: result = "Smoothing Range"; break;
-		case LENCUTOFF: 	result = "LenCutoff"; break;
-		case PRIOR: 	result = "Prior"; break;
-		case DISPERSION: 	result = "Dispertion"; break;
-		case NUM_SEGS_KNOWN: 	result = "\\#SegsKnown"; break;
+			case NSEG:		  	 result = "\\# Segs";		break;
+			case NSEGRATE:	 	 result = "Seg Rate";		break;
+			case RANKINGSIZE:	 result = "Raking Size";		break;
+			case STEP:		  	 result = "Step";			break;
+			case WEITGHT:	  	 result = "Weitght";			break;
+			case WINSIZE:	  	 result = "Win Size";		break;
+			case SMOOTHINGRANGE: result = "Smoothing Range"; break;
+			case LENCUTOFF: 	 result = "LenCutoff"; 		break;
+			case PRIOR: 		 result = "Prior"; 			break;
+			case DISPERSION: 	 result = "Dispertion"; 		break;
+			case NUM_SEGS_KNOWN: result = "\\#SegsKnown"; 	break;
 		
-		default: break;
+			default: break;
 		}
 		return result;
 	}
 	
+
 	private String MetricToString(Metric metric) {
 		String result = "???";
 		
@@ -160,6 +159,7 @@ public class TexTable {
 		case PRECISION:		 result = "Precisão"; break;
 		case RECALL:		 result = "Revocação"; break;
 		case WINDIFF:		 result = "$WinDiff$"; break;
+		case KAPPA:			 result = "$Kappa$"; break;
 		default:			 break;
 		}
 		return result;
@@ -177,11 +177,11 @@ public class TexTable {
 		this.metrics = metrics;
 	}
 
-	public ArrayList<AverageSegMeasures> getAverages() {
+	public ArrayList<SumarySegMeasures> getAverages() {
 		return averages;
 	}
 
-	public void setAverages(ArrayList<AverageSegMeasures> averages) {
+	public void setAverages(ArrayList<SumarySegMeasures> averages) {
 		this.averages = averages;
 	}
 	

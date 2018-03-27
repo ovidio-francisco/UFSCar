@@ -50,6 +50,35 @@ public class Segment {
 		return result;
 	}
 	
+
+	public static ArrayList<Segment> getSegmentsByFiles(ArrayList<MMTopic> topics, ArrayList<File> segmentFiles ) {
+		ArrayList<Segment> result = new ArrayList<>();
+		
+//		File folder = Files.getSegmentedDocs();
+//		File[] segmentDocs = listFiles(folder);
+		
+		for(File segmentDoc : segmentFiles) {
+			for(MMTopic topic : topics) {
+				if (topic.containsSegmentDoc(new File(segmentDoc.getName()))) {
+					Segment segment = new Segment();
+					segment.segmentDoc = segmentDoc;
+					segment.originalDocument = extractOriginalDocFromSegmentDoc(segmentDoc);
+					segment.text = Files.loadTxtFile(segmentDoc).trim();
+					segment.relationedTopics.add(topic);
+					
+					for(String descriptor : topic.getDescriptors()) {
+						segment.addDescriptor(descriptor);
+					}
+
+					result.add(segment);
+				}
+			}
+		}
+		
+		return result;
+	}
+
+
 //	/**	Compare the users descriptors and store the matches */
 //	public void matchUserDescriptors(ArrayList<String> descs) {
 //		this.matches.addAll(topicDescriptors.keySet());

@@ -19,6 +19,7 @@ public class SegMeasures {
 	
 	private double pk = -1;
 	private double wd = -1;
+	private double kp = -1;
 	
 	private int tp;
 	private int tn;
@@ -53,6 +54,7 @@ public class SegMeasures {
 		
 		this.pk = pkMeasure(numbRef, numbHyp);
 		this.wd = wdMeasure(numbRef, numbHyp);		
+		this.kp = KappaSegMeasure(binRef, binHyp);
 	}
 	
 
@@ -76,6 +78,12 @@ public class SegMeasures {
 		}
 		
 		return num_misses / (ref.length - k);
+	}
+	
+	private double KappaSegMeasure(int[] ref, int[] hyp) {
+		double k = new KappaSeg(ref, hyp).findKappa();
+//		System.out.println(String.format("kappa = %f", k));
+		return k;
 	}
 
 	
@@ -129,6 +137,10 @@ public class SegMeasures {
 
 	public double getWd() {
 		return wd;
+	}
+	
+	public double getKappa() {
+		return kp;
 	}
 
 	public int getTp() {

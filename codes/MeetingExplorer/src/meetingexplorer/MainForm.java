@@ -12,11 +12,15 @@ import java.util.Set;
 import javax.swing.BorderFactory;
 import javax.swing.BoxLayout;
 import javax.swing.JFileChooser;
+import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.border.CompoundBorder;
 import javax.swing.border.EmptyBorder;
 import javax.swing.border.EtchedBorder;
+import javax.swing.event.TreeSelectionEvent;
+import javax.swing.event.TreeSelectionListener;
+import javax.swing.tree.DefaultMutableTreeNode;
 import javax.swing.tree.DefaultTreeModel;
 import meetingMiner.MMTopic;
 import meetingMiner.MeetingMiner;
@@ -46,7 +50,33 @@ public class MainForm extends javax.swing.JFrame {
         
         jtTopics.setModel(null);
         spSegments.getVerticalScrollBar().setUnitIncrement(12);
+
+
+        PnSegment.setShowDescriptions(false);
+                
         
+        
+        showTopicTree();
+        
+        jtTopics.addTreeSelectionListener(new TreeSelectionListener() {
+            @Override
+            public void valueChanged(TreeSelectionEvent e) {
+                
+                new Thread() {
+		    @Override
+		    public void run(){
+		
+                        setWainting(true);
+                        DefaultMutableTreeNode selectedNode = (DefaultMutableTreeNode)jtTopics.getLastSelectedPathComponent(); 
+                        showSegmentsByTreeNode(selectedNode);
+			setWainting(false);
+
+                    }
+		}.start();
+
+                
+            }
+        });
     }
     
     	private boolean isBasesFolderFound = false;
@@ -100,6 +130,7 @@ public class MainForm extends javax.swing.JFrame {
         imShowTree = new javax.swing.JMenuItem();
         imConfig = new javax.swing.JMenu();
         imConfg = new javax.swing.JMenuItem();
+        imNumDescriptors = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Meeting Explorer");
@@ -114,6 +145,11 @@ public class MainForm extends javax.swing.JFrame {
         tfQuery.setMinimumSize(new java.awt.Dimension(4, 27));
 
         jButton1.setText("Explorar");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout pnCtrlQueryLayout = new javax.swing.GroupLayout(pnCtrlQuery);
         pnCtrlQuery.setLayout(pnCtrlQueryLayout);
@@ -145,17 +181,23 @@ public class MainForm extends javax.swing.JFrame {
         pnQuery.add(filler3, java.awt.BorderLayout.PAGE_START);
         pnQuery.add(filler4, java.awt.BorderLayout.PAGE_END);
 
-        jSplitPane1.setDividerLocation(200);
+        jSplitPane1.setDividerLocation(450);
         jSplitPane1.setDividerSize(6);
 
         jScrollPane1.setBorder(null);
+
+        jtTopics.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jtTopicsMouseClicked(evt);
+            }
+        });
         jScrollPane1.setViewportView(jtTopics);
 
         javax.swing.GroupLayout pnTreeLayout = new javax.swing.GroupLayout(pnTree);
         pnTree.setLayout(pnTreeLayout);
         pnTreeLayout.setHorizontalGroup(
             pnTreeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 199, Short.MAX_VALUE)
+            .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 449, Short.MAX_VALUE)
         );
         pnTreeLayout.setVerticalGroup(
             pnTreeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -164,6 +206,7 @@ public class MainForm extends javax.swing.JFrame {
 
         jSplitPane1.setLeftComponent(pnTree);
 
+        lbSegmentsCount.setFont(new java.awt.Font("Dialog", 0, 12)); // NOI18N
         lbSegmentsCount.setText("lbSegmentsCount");
 
         spSegments.setBorder(null);
@@ -175,10 +218,11 @@ public class MainForm extends javax.swing.JFrame {
         pnResults.setLayout(pnResultsLayout);
         pnResultsLayout.setHorizontalGroup(
             pnResultsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(spSegments, javax.swing.GroupLayout.DEFAULT_SIZE, 282, Short.MAX_VALUE)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnResultsLayout.createSequentialGroup()
-                .addGap(0, 406, Short.MAX_VALUE)
-                .addComponent(lbSegmentsCount))
-            .addComponent(spSegments)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(lbSegmentsCount)
+                .addContainerGap())
         );
         pnResultsLayout.setVerticalGroup(
             pnResultsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -288,6 +332,14 @@ public class MainForm extends javax.swing.JFrame {
         imConfg.setText("Configurar Extratores");
         imConfig.add(imConfg);
 
+        imNumDescriptors.setText("Num Descritores");
+        imNumDescriptors.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                imNumDescriptorsActionPerformed(evt);
+            }
+        });
+        imConfig.add(imNumDescriptors);
+
         jMenuBar1.add(imConfig);
 
         setJMenuBar(jMenuBar1);
@@ -349,6 +401,20 @@ public class MainForm extends javax.swing.JFrame {
         }
         
         MeetingMiner.setTopicExtractionconfiguration(configuration);
+    }
+        
+    private void configureTopicExtraction() {
+        TopicExtractionConfiguration configuration = MeetingMiner.getTopicExtractionconfiguration();
+        
+//        System.out.println(String.format("Num Topics = %d", configuration.getNumTopic(0)));
+        
+        int num = configuration.getNumTopic(0);
+        String ans = JOptionPane.showInputDialog("Digite o número de Tópicos a serem extraídos: ", num);
+        
+        num = Integer.parseInt(ans);
+        configuration.getNumTopics().set(0, num);
+        
+        System.out.println(String.format("Num Topics = %d --> apos cofiguração pelo usuário", configuration.getNumTopic(0)));
     }
 
     
@@ -471,13 +537,14 @@ public class MainForm extends javax.swing.JFrame {
 		
 //		MeetingMiner.prepareFolders();
 //		defaultConfiguration();
+                configureTopicExtraction();
 		MeetingMiner.miningTheMeetings();
 	}
 
     
     private void imExtractTopicsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_imExtractTopicsActionPerformed
 
-        				new Thread() {
+        		new Thread() {
 			        @Override
 			        public void run(){
 			        	setWainting(true);
@@ -489,18 +556,30 @@ public class MainForm extends javax.swing.JFrame {
 
     }//GEN-LAST:event_imExtractTopicsActionPerformed
 
-    private void imShowTreeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_imShowTreeActionPerformed
+    private void showTopicTree() {
         
         MeetingMiner.prepareFolders();
 	MeetingMiner.extractDescriptorsAndFiles();
-
         
         DefaultTreeModel model = new DefaultTreeModel(MeetingMiner.createTree());
         
         jtTopics.setModel(model);
+
+    }
+    
+    private void imShowTreeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_imShowTreeActionPerformed
+
+        showTopicTree();
         
     }//GEN-LAST:event_imShowTreeActionPerformed
 
+    
+    private ArrayList<Segment> filterSegmentsBySegmentFile(File segmentFile) {
+        ArrayList<Segment> result = new ArrayList<>();
+        
+        return result;
+    }
+    
     	private ArrayList<MMTopic> filterTopicsByDescriptor(ArrayList<MMTopic> topics, Set<String> descs) {
 		ArrayList<MMTopic> result = new ArrayList<>();
 		
@@ -549,6 +628,55 @@ public class MainForm extends javax.swing.JFrame {
 
 		return pnSegments;
 	}
+        
+        
+        private void showSegmentsByTreeNode(DefaultMutableTreeNode selectedNode ) {
+	
+           ArrayList<File> files = new ArrayList<>();
+
+           if(selectedNode.isLeaf()) {
+                    files.add(new File(Files.getSegmentedDocs()+"/"+selectedNode.toString()));                      
+           } else {
+                int childCount = selectedNode.getChildCount();
+           
+                for(int i=0;i<childCount;i++) {
+                    files.add(new File(Files.getSegmentedDocs()+"/"+selectedNode.getChildAt(i).toString()));
+                }
+           }
+
+           
+//           for(File f : files) {
+//               System.out.println(String.format("Child File --> %b - %s", f.exists(), f));
+//           }
+           
+           
+//           if(false) {
+               
+                MeetingMiner.extractDescriptorsAndFiles();
+		ArrayList<MMTopic> topics = MeetingMiner.getMMTopics();
+//		ArrayList<Segment> segments = null;
+		
+                /** Carrega todos os segmentos que contém Documentos associados com todos os tópicos */
+                
+                
+//		segments = Segment.getAllSegments(topics);
+		ArrayList<Segment> segments = Segment.getSegmentsByFiles(topics, files);
+                
+                clearSegments();
+		lbSegmentsCount.setText("Gerando visualização");
+		ShowStatus.setMessage  ("Gerando visualização");
+		int count = 0;
+		for(Segment seg : segments) {
+			addSegmentPanel(seg);
+			count++;
+		}
+		lbSegmentsCount.setText(count+" trechos relacionados");
+		ShowStatus.setMessage  (count+" trechos relacionados");
+//           }
+
+                
+
+        }
 
 
     	private void showSegments(boolean filter) {
@@ -619,6 +747,33 @@ public class MainForm extends javax.swing.JFrame {
         
     }//GEN-LAST:event_imShowSegmentsActionPerformed
 
+    private void imNumDescriptorsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_imNumDescriptorsActionPerformed
+        int num = MeetingMiner.getDescriptorsByTopic();
+        
+        String ans = JOptionPane.showInputDialog("Digige o número de descritores: ", num);
+        System.out.println("ans = "+ans);
+
+        if(ans != null) {
+            num = Integer.parseInt(ans);
+            MeetingMiner.setDescriptorsByTopic(num);
+        }
+    }//GEN-LAST:event_imNumDescriptorsActionPerformed
+
+    private void jtTopicsMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jtTopicsMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jtTopicsMouseClicked
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+				new Thread() {
+			        @Override
+			        public void run(){
+			        	setWainting(true);
+			        	showSegments(true);
+			    		setWainting(false);
+			        }
+				}.start();
+    }//GEN-LAST:event_jButton1ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -663,6 +818,7 @@ public class MainForm extends javax.swing.JFrame {
     private javax.swing.JMenuItem imConfg;
     private javax.swing.JMenu imConfig;
     private javax.swing.JMenuItem imExtractTopics;
+    private javax.swing.JMenuItem imNumDescriptors;
     private javax.swing.JMenuItem imShowSegments;
     private javax.swing.JMenuItem imShowTree;
     private javax.swing.JButton jButton1;

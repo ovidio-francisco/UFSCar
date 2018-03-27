@@ -7,37 +7,40 @@ import testSementers.TestSegmenters.Metric;
 public class AverageSegMeasuresList {
 	private double bestPk = -99;
 	private double bestWd = -99;
+	private double bestkp = -99;
 	private double bestAc = -99;
 	private double bestPr = -99;
 	private double bestRc = -99;
 	private double bestF1 = -99;
 	
-	private ArrayList<AverageSegMeasures> list = new ArrayList<>();
+	private ArrayList<SumarySegMeasures> list = new ArrayList<>();
 
-	public AverageSegMeasuresList(ArrayList<AverageSegMeasures> list) {
+	public AverageSegMeasuresList(ArrayList<SumarySegMeasures> list) {
 		this.list = list;
 		
 		this.bestPk = getBest(this.list, Metric.PK);
 		this.bestWd = getBest(this.list, Metric.WINDIFF);
+		this.bestkp = getBest(this.list, Metric.KAPPA);
 		this.bestAc = getBest(this.list, Metric.ACURACY);
 		this.bestPr = getBest(this.list, Metric.PRECISION);
 		this.bestRc = getBest(this.list, Metric.RECALL);
 		this.bestF1 = getBest(this.list, Metric.F1);
 	}
 	
-	public double getBest(ArrayList<AverageSegMeasures> segMeasures, Metric metric) {
+	public double getBest(ArrayList<SumarySegMeasures> segMeasures, Metric metric) {
 		double result = -99;
 		
 		ArrayList<Double> allvalues = new ArrayList<>();
 		
-		for(AverageSegMeasures a : segMeasures) {
+		for(SumarySegMeasures a : segMeasures) {
 			switch (metric) {
-			case ACURACY:			allvalues.add(a.getAc()); 	break;
-			case F1:				allvalues.add(a.getF1());	break;
-			case PK:				allvalues.add(a.getPk());	break;
-			case PRECISION:			allvalues.add(a.getPr()); 	break;
-			case RECALL:			allvalues.add(a.getRc());	break;
-			case WINDIFF:			allvalues.add(a.getWd());	break;
+			case ACURACY:			allvalues.add(a.getAcMean()); 	break;
+			case F1:				allvalues.add(a.getF1Mean());	break;
+			case PK:				allvalues.add(a.getPkMean());	break;
+			case PRECISION:			allvalues.add(a.getPrMean()); 	break;
+			case RECALL:			allvalues.add(a.getRcMean());	break;
+			case WINDIFF:			allvalues.add(a.getWdMean());	break;
+			case KAPPA:				allvalues.add(a.getKpMean());	break;
 			default:				break;
 			}
 		}
@@ -58,6 +61,7 @@ public class AverageSegMeasuresList {
 		case PRECISION:		return value == this.bestPr;	
 		case RECALL:		return value == this.bestRc; 	
 		case WINDIFF:		return value == this.bestWd;	
+		case KAPPA:			return value == this.bestkp;	
 		default:			return false; 
 		}
 	}

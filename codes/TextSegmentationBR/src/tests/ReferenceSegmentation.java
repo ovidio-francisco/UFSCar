@@ -8,6 +8,7 @@ import java.util.Comparator;
 import java.util.HashMap;
 
 import preprocessamento.Preprocess;
+import segmenters.evaluations.measure.KappaSeg;
 import segmenters.evaluations.measure.MeasureUtils;
 import utils.Files;
 
@@ -309,16 +310,95 @@ public class ReferenceSegmentation {
 	
 	
 	private static void checkAgreement(ArrayList<ArrayList<File>> allAnotations) {
+		System.out.println("File Name, KappaMean, PkMean, WindiffMean");
 		for(ArrayList<File> a : allAnotations ) {
-			for (File f : a) {
-				System.out.println(String.format("Ref --->>> %s", f));
-			}
-			System.out.println("---------------");
-			
-//			SegMeasures sm = new SegMeasures(ref, doc, segmenter) here here TODO 
-			
+			String am = agreementMeans(a);
+			System.out.println(String.format("%s, %s", a.get(0).getName(), am));
 		}
 		
+	}
+	
+	private static double wdMeasure(int[] ref, int[] hyp) {
+		int k = (int) Math.round((double) ref.length / (2 * ref[ref.length-1]));
+		double num_misses = 0.0;
+
+		for (int i = k; i < ref.length; i++){
+			num_misses += Math.abs((ref[i] - ref[i-k]) - (hyp[i] - hyp[i-k]));
+		}
+		
+		return num_misses / (ref.length - k);
+	}
+
+	private static double pkMeasure(int[] ref, int[] hyp) {
+		int k = (int) Math.round((double) ref.length / (2 * ref[ref.length-1]));
+		double num_misses = 0.0;
+
+		for (int i = k; i < ref.length; i++){
+		    if ((ref[i] == ref[i-k]) != (hyp[i] == hyp[i-k])) num_misses++;
+		}
+		
+		return num_misses / (ref.length - k);
+	}
+
+	/**
+	 * @param sameNameFiles
+	 * @return
+	 */
+	private static String agreementMeans(ArrayList<File> sameNameFiles) {
+		
+		int count = 0;
+		
+		ArrayList<Double> kappas = new ArrayList<>();
+		ArrayList<Double> windfs = new ArrayList<>();
+		ArrayList<Double> pks = new ArrayList<>();
+		
+		for(int i=0; i<sameNameFiles.size();i++) {
+			for(int j=i+1; j<sameNameFiles.size();j++) {
+	
+//				System.out.print(String.format("%d - %d  --> ", i, j));
+				count++;
+				File a = sameNameFiles.get(i);
+				File b = sameNameFiles.get(j);
+				
+				ArrayList<String> segmentsA  = MeasureUtils.CSVSegmentsToArray(a);
+				ArrayList<String> sentencesA = MeasureUtils.segmentsToSentences(segmentsA, new Preprocess());
+				int[] ra = MeasureUtils.getBinarySegmentation(sentencesA);
+				int[] numbA = MeasureUtils.getNumeredSegmentation(sentencesA);
+
+
+				ArrayList<String> segmentsB  = MeasureUtils.CSVSegmentsToArray(b);
+				ArrayList<String> sentencesB = MeasureUtils.segmentsToSentences(segmentsB, new Preprocess());
+				int[] rb = MeasureUtils.getBinarySegmentation(sentencesB);
+				int[] numbB = MeasureUtils.getNumeredSegmentation(sentencesB);
+
+				double kappa = new KappaSeg(ra, rb).findKappa();
+				double windf = wdMeasure(numbA, numbB);
+				double pk = pkMeasure(numbA, numbB);
+				
+//				System.out.println(String.format("%s <==> %s --> Kappa = %f", a, b, kappa));
+				
+				kappas.add(kappa);
+				windfs.add(windf);
+				pks.add(pk);
+				
+			}
+		}
+		
+		double aKappa = 0;
+		for(double k : kappas) { aKappa += k; }
+		double kappaMean = aKappa/count;
+
+		double aWindiff = 0;
+		for(double w : windfs) { aWindiff += w; }
+		double windifMean = aWindiff/count;
+		
+		double aPk = 0;
+		for(double p : pks) { aPk += p; }
+		double pkMean = aPk / count;
+		
+//		String result = String.format("Kappa Mean = %f, Windiff Mean = %f", kappaMean, windifMean);
+		String result = String.format("%f, %f, %f", kappaMean, pkMean, windifMean);
+		return result;
 	}
 	
 

@@ -7,7 +7,8 @@ import java.util.ArrayList;
 import org.apache.commons.csv.CSVPrinter;
 
 import segmenters.Segmenter.ParamName;
-import segmenters.evaluations.measure.AverageSegMeasures;
+import segmenters.evaluations.measure.SumarySegMeasures;
+import segmenters.evaluations.measure.SumarySegMeasures.Statistic;
 import testSementers.TestSegmenters.Metric;
 import utils.Files;
 
@@ -18,7 +19,7 @@ public class CsvOut {
 	
 	private ArrayList<Metric> metrics = new ArrayList<>();
 	private ArrayList<ParamName> params = new ArrayList<>();
-	private ArrayList<AverageSegMeasures> averages = new ArrayList<>();
+	private ArrayList<SumarySegMeasures> averages = new ArrayList<>();
 
 	
 	public void saveCsvOut() throws IOException {
@@ -31,18 +32,21 @@ public class CsvOut {
 		}
 		for(Metric m : metrics) {
 			csv.print(m);
+			csv.print(m+"'");
 		}
 		csv.println();
 		
-		for(AverageSegMeasures a : averages) {
+		for(SumarySegMeasures a : averages) {
 			csv.print(a.getEvSegModel().getModelLabel());
 			for(ParamName p : params) {
 				String paramValue = String.format("%s", a.getEvSegModel().getSegmenter().getParamByName(p));
 				csv.print(paramValue);
 			}
 			for(Metric m : metrics) {
-				String metricValue = String.format("%f", a.metricValueByName(m));
-				csv.print(metricValue);
+				String metricMean = String.format("%f", a.metricValueByName(Statistic.MEAN    ,m));
+				String metricStdD = String.format("%f", a.metricValueByName(Statistic.STD_DEV ,m));
+				csv.print(metricMean);
+				csv.print(metricStdD);
 			}
 			
 			csv.println();
@@ -54,7 +58,7 @@ public class CsvOut {
 	
 
 	public CsvOut(File csvFile, ArrayList<Metric> metrics, ArrayList<ParamName> params,
-			ArrayList<AverageSegMeasures> averages) {
+			ArrayList<SumarySegMeasures> averages) {
 		this.csvFile = csvFile;
 		this.metrics = metrics;
 		this.params = params;
@@ -93,12 +97,12 @@ public class CsvOut {
 	}
 
 
-	public ArrayList<AverageSegMeasures> getAverages() {
+	public ArrayList<SumarySegMeasures> getAverages() {
 		return averages;
 	}
 
 
-	public void setAverages(ArrayList<AverageSegMeasures> averages) {
+	public void setAverages(ArrayList<SumarySegMeasures> averages) {
 		this.averages = averages;
 	}
 	
