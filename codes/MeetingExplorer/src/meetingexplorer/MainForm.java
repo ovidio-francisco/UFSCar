@@ -51,11 +51,8 @@ public class MainForm extends javax.swing.JFrame {
         jtTopics.setModel(null);
         spSegments.getVerticalScrollBar().setUnitIncrement(12);
 
-
         PnSegment.setShowDescriptions(false);
-                
-        
-        
+                        
         showTopicTree();
         
         jtTopics.addTreeSelectionListener(new TreeSelectionListener() {
