@@ -24,7 +24,7 @@ import utils.ShowStatus;
  * @author Gaia
  */
 @SuppressWarnings("serial")
-public class TopicExtractionConfiguration implements Serializable{
+public final class TopicExtractionConfiguration implements Serializable{  // turned final in 01-04-2018
  
     private ArrayList<Integer> numTopics;
     
@@ -60,7 +60,7 @@ public class TopicExtractionConfiguration implements Serializable{
         setParametersKMeansNonParametric(new Parameters_KMeans_NonParametric());
         setParametersBisectingKMeansNonParametric(new Parameters_BisectingKMeans_NonParametric());
         
-        setNumTopics(new ArrayList<Integer>());
+        setNumTopics(new ArrayList<>());
         
         setAutoNumTopics(false);
     }

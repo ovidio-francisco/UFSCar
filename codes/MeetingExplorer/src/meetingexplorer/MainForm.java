@@ -29,6 +29,8 @@ import preprocessamento.Preprocess;
 import segmenter.algorithms.texttile.TextTilingBR;
 import segmenters.Segmenter;
 import topicExtraction.TETConfigurations.TopicExtractionConfiguration;
+import userInterfaces.FrConfigExtractor;
+import userInterfaces.FrConfigSegmenter;
 import userInterfaces.PnSegment;
 import utils.Files;
 import utils.ShowStatus;
@@ -99,7 +101,7 @@ public class MainForm extends javax.swing.JFrame {
         pnCtrlQuery = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         tfQuery = new javax.swing.JTextField();
-        jButton1 = new javax.swing.JButton();
+        btExplorar = new javax.swing.JButton();
         filler2 = new javax.swing.Box.Filler(new java.awt.Dimension(10, 0), new java.awt.Dimension(100, 0), new java.awt.Dimension(10, 32767));
         filler1 = new javax.swing.Box.Filler(new java.awt.Dimension(100, 100), new java.awt.Dimension(100, 0), new java.awt.Dimension(10, 32767));
         filler3 = new javax.swing.Box.Filler(new java.awt.Dimension(0, 10), new java.awt.Dimension(0, 10), new java.awt.Dimension(32767, 10));
@@ -126,7 +128,8 @@ public class MainForm extends javax.swing.JFrame {
         imShowSegments = new javax.swing.JMenuItem();
         imShowTree = new javax.swing.JMenuItem();
         imConfig = new javax.swing.JMenu();
-        imConfg = new javax.swing.JMenuItem();
+        imConfigSegmentadores = new javax.swing.JMenuItem();
+        imConfgExtratores = new javax.swing.JMenuItem();
         imNumDescriptors = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -141,10 +144,10 @@ public class MainForm extends javax.swing.JFrame {
         tfQuery.setMargin(new java.awt.Insets(0, 4, 0, 0));
         tfQuery.setMinimumSize(new java.awt.Dimension(4, 27));
 
-        jButton1.setText("Explorar");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        btExplorar.setText("Explorar");
+        btExplorar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                btExplorarActionPerformed(evt);
             }
         });
 
@@ -158,7 +161,7 @@ public class MainForm extends javax.swing.JFrame {
                 .addGap(6, 6, 6)
                 .addComponent(tfQuery, javax.swing.GroupLayout.DEFAULT_SIZE, 261, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jButton1)
+                .addComponent(btExplorar)
                 .addGap(18, 18, 18))
         );
         pnCtrlQueryLayout.setVerticalGroup(
@@ -167,7 +170,7 @@ public class MainForm extends javax.swing.JFrame {
                 .addContainerGap(14, Short.MAX_VALUE)
                 .addGroup(pnCtrlQueryLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel1)
-                    .addComponent(jButton1)
+                    .addComponent(btExplorar)
                     .addComponent(tfQuery, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
@@ -326,8 +329,21 @@ public class MainForm extends javax.swing.JFrame {
 
         imConfig.setText("Configurações");
 
-        imConfg.setText("Configurar Extratores");
-        imConfig.add(imConfg);
+        imConfigSegmentadores.setText("Configurar Segmentadores");
+        imConfigSegmentadores.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                imConfigSegmentadoresActionPerformed(evt);
+            }
+        });
+        imConfig.add(imConfigSegmentadores);
+
+        imConfgExtratores.setText("Configurar Extratores");
+        imConfgExtratores.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                imConfgExtratoresActionPerformed(evt);
+            }
+        });
+        imConfig.add(imConfgExtratores);
 
         imNumDescriptors.setText("Num Descritores");
         imNumDescriptors.addActionListener(new java.awt.event.ActionListener() {
@@ -410,6 +426,9 @@ public class MainForm extends javax.swing.JFrame {
         
         num = Integer.parseInt(ans);
         configuration.getNumTopics().set(0, num);
+    
+        
+        configuration.setAutoNumTopics(true);
         
         System.out.println(String.format("Num Topics = %d --> apos cofiguração pelo usuário", configuration.getNumTopic(0)));
     }
@@ -446,7 +465,7 @@ public class MainForm extends javax.swing.JFrame {
         
         	private void setControlsEnable() {
 		imExtractTopics     .setEnabled(isArffFileFound);
-		imConfg             .setEnabled(isArffFileFound);
+		imConfgExtratores             .setEnabled(isArffFileFound);
 //		lbDescriptorsByTopic.setEnabled(isArffFileFound);
 //		cbDescriptorsByTopic.setEnabled(isArffFileFound);
 		
@@ -760,16 +779,26 @@ public class MainForm extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jtTopicsMouseClicked
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-				new Thread() {
-			        @Override
-			        public void run(){
-			        	setWainting(true);
-			        	showSegments(true);
-			    		setWainting(false);
-			        }
-				}.start();
-    }//GEN-LAST:event_jButton1ActionPerformed
+    private void btExplorarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btExplorarActionPerformed
+        new Thread() {
+            @Override
+            public void run(){
+                setWainting(true);
+                showSegments(true);
+                setWainting(false);
+            }
+        }.start();
+    }//GEN-LAST:event_btExplorarActionPerformed
+
+    private void imConfgExtratoresActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_imConfgExtratoresActionPerformed
+        FrConfigExtractor f = new FrConfigExtractor(MeetingMiner.getTopicExtractionconfiguration());
+        f.setVisible(true);        // TODO add your handling code here:
+    }//GEN-LAST:event_imConfgExtratoresActionPerformed
+
+    private void imConfigSegmentadoresActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_imConfigSegmentadoresActionPerformed
+        FrConfigSegmenter f = new FrConfigSegmenter(MeetingMiner.getTopicExtractionconfiguration());
+        f.setVisible(true);
+    }//GEN-LAST:event_imConfigSegmentadoresActionPerformed
 
     /**
      * @param args the command line arguments
@@ -808,17 +837,18 @@ public class MainForm extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btExplorar;
     private javax.swing.Box.Filler filler1;
     private javax.swing.Box.Filler filler2;
     private javax.swing.Box.Filler filler3;
     private javax.swing.Box.Filler filler4;
-    private javax.swing.JMenuItem imConfg;
+    private javax.swing.JMenuItem imConfgExtratores;
     private javax.swing.JMenu imConfig;
+    private javax.swing.JMenuItem imConfigSegmentadores;
     private javax.swing.JMenuItem imExtractTopics;
     private javax.swing.JMenuItem imNumDescriptors;
     private javax.swing.JMenuItem imShowSegments;
     private javax.swing.JMenuItem imShowTree;
-    private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JMenu jMenu;
     private javax.swing.JMenuBar jMenuBar1;

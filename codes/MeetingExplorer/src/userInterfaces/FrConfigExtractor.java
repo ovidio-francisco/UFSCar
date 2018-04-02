@@ -35,7 +35,7 @@ import utils.ShowStatus;
 import utils.UIUtils;
 
 
-public class FrConfgs extends JFrame {
+public class FrConfigExtractor extends JFrame {
 
 	private static final long serialVersionUID = -6203645257431028798L;
 
@@ -108,7 +108,7 @@ public class FrConfgs extends JFrame {
 	private JButton      btExtract = new JButton("Extract");
 	private JButton      btClose   = new JButton("Close");
 	
-	public FrConfgs(TopicExtractionConfiguration cfg) {
+	public FrConfigExtractor(TopicExtractionConfiguration cfg) {
 		setSize(new Dimension(1000, 750));
 		setLocationRelativeTo(null);
 		setDefaultCloseOperation(DISPOSE_ON_CLOSE);

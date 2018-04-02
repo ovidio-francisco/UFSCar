@@ -10,6 +10,7 @@ import java.util.Date;
 import javax.swing.tree.DefaultMutableTreeNode;
 
 import topicExtraction.TET.TopicExtraction;
+import topicExtraction.TET.TopicExtraction_ME;
 import topicExtraction.TETConfigurations.TopicExtractionConfiguration;
 import topicExtraction.TETPreprocessing.TextRepresentation;
 import topicExtraction.mmParameters.M4MArffGenerationParameters;
@@ -104,7 +105,7 @@ public class MeetingMiner {
     
     public static void extractTopics() {
 
-        TopicExtraction.ExtractTopics(MeetingMiner.getTopicExtractionconfiguration());      
+        TopicExtraction_ME.ExtractTopics(MeetingMiner.getTopicExtractionconfiguration());      
     
     }
     

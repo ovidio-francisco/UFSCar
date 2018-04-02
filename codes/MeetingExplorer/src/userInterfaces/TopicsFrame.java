@@ -287,7 +287,7 @@ public class TopicsFrame extends JFrame{
 		btConfg.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				FrConfgs f = new FrConfgs(MeetingMiner.getTopicExtractionconfiguration());
+				FrConfigExtractor f = new FrConfigExtractor(MeetingMiner.getTopicExtractionconfiguration());
 				f.setVisible(true);
 			}
 		});
