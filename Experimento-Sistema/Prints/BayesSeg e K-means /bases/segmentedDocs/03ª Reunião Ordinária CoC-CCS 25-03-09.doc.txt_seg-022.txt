@@ -1,0 +1,5 @@
+343250 A Algoritmos e Complexidade; 
+343137 A e B Algoritmos e Programação de Computadores; 
+343200 A Arquitetura e Organização de Computadores; 
+343277 A Gestão de Pequenas Empresas; 
+343234 A Inteligência Artificial; 

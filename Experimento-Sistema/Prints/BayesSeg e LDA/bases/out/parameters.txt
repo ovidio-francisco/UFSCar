@@ -1,0 +1,4 @@
+#Last Topic Extraction Configuration Parameters
+#Tue Apr 03 09:37:22 BRT 2018
+Num-Topics=50
+Algorithm=LDA Gibbs

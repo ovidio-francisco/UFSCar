@@ -1,0 +1,64 @@
+UNIVERSIDADE FEDERAL DE SÃO CARLOS – Campus Sorocaba
+
+BACHARELADO EM CIÊNCIA DA COMPUTAÇÃO
+
+Rodovia João Leme dos Santos, Km 110 (SP-264)
+
+Bairro do Itinga - Sorocaba-SP - CEP 18052-780
+
+Telefone: (15) 3202-2022 / www. ufscar. br
+
+Ata da 17ª Reunião Extraordinária do Conselho do Curso de Bacharelado em Ciência da Computação, UFSCar – Sorocaba
+
+Local, Dia e Hora: No laboratório de Pedagogia, situada nas dependências da Universidade Federal de São Carlos - campus Sorocaba, à Rodovia João Leme dos Santos, quilômetro 110, Bairro do Itinga, na cidade de Sorocaba, Estado de São Paulo e realizada aos vinte e cinco dias do mês de agosto de dois mil e dez, às 14h00. Convocação e Presença: A convocação foi realizada sete dias antes da data de sua realização, estando presentes os membros do Conselho do Curso de Bacharelado em Ciência da Computação - Sorocaba, sendo eles os professores Luciana A. Martinez Zaina, Fábio Luciano Verdi, Cândida Nunes da Silva, Márcio K. Oikawa, Alexandre Álvaro, Tiemi C. Sakata, que secretariou a reunião, Adilson José Vieira Brandão, José Geraldo Vidal Vieira e Murillo Rodrigo Petrucelli Homem e os representantes discentes Sr. Rubens Onari Júnior (2008), Srta. Priscila Elida Bernardi (2009), Sr. Alessandro Visotto Piccoli, (2010). Comunicação da Presidência: A prof.ª Luciana informou que na última reunião do ConCam foram indicados os nomes do prof. Danilo Rolim e da prof.ª Eli Toso, titular e suplente respectivamente, como representantes do campus Sorocaba no ConsUni (Conselho Universitário). A prof.ª esclareceu também, que o campus já possui um assento ocupado pelo prof. Isaias Torres e que agora teremos dois assentos no respectivo conselho. A prof.ª Luciana também informou que na mesma reunião do ConCam foram indicados os nomes do prof. Marcelo Nivert e do Sr. Carlos Eduardo Vanucci, titular e suplente, para o assento do campus Sorocaba no CoAd (Conselho de Administração da UFSCar), destacando que agora o campus Sorocaba não está mais no plano de implantação do campus, e irá concorrer com os outros campi da universidade pela distribuição de verbas. A prof.ª também informou que no próximo dia trinta de agosto haverá uma reunião com a ProGrad em Sorocaba para retorno sobre o Projeto Político Pedagógico do curso no qual a coordenação do curso irá participar. Comunicação dos membros: O prof. Márcio comunicou que houveram diversos problemas com o lançamento do edital para o concurso público da vaga docente para Banco de Dados. O prof. comunicou que já solicitou uma retificação do edital, mas que até o momento tal solicitação está em trâmite no setor de recursos humanos.  O Sr. Rubens comunicou que foi criado uma lista de e-mails com os e-mails de todos os alunos do curso e docentes do curso, sendo que esta foi uma solicitação da coordenação do curso para que houvesse maior facilidade na comunicação entre alunos e docentes. Foi destacado que os docentes, por padrão, não receberão os e-mails da lista, estando autorizados apenas ao envio de mensagens. Caso desejem receber e-mails da lista o docente deve se comunicar com o Sr. Rubens.  Ordem do Dia: (I) APROVAÇÃO DAS FICHAS DE CARACTERIZAÇÃO. (I.I) A prof.ª Luciana apresentou as fichas de caracterização que seriam analisadas, esclarecendo que todas elas foram criadas considerando fielmente o Projeto Político Pedagógico do curso. As fichas contemplam as disciplinas obrigatórias do curso que ainda não foram oferecidas e as disciplinas optativas que poderão ser oferecidas no primeiro semestre de 2011, sendo respectivamente as obrigatórias: Física para Computação, Algoritmos e Complexidade, Trabalho de Graduação 1, Estágio Supervisionado 1, Trabalho de Graduação 2, Estágio Supervisionado 2 e Seminários de Computação; e as optativas: Tópicos Avançados em Ciência da Computação, Tópicos Avançados em Redes de Computadores e Sistemas Distribuídos, Segurança e Auditoria de Sistemas e Mineração de Dados. Além das fichas foram apresentados os checklists das respectivas disciplinas, que foi uma solicitação da Coordenação Acadêmica para este semestre. DISCIPLINAS OPTATIVAS. (I.II) A prof.ª destacou que haviam sido elaboradas fichas de quatro disciplinas optativas, porém somente três disciplinas serão oferecidas. Desta maneira haverá uma maior flexibilidade para decidir dentre as quatro disciplinas quais seriam as três oferecidas no próximo semestre. DISCIPLINAS DE FÍSICA PARA COMPUTAÇÃO E ALGORTIMOS E COMPLEXIDADE. (I.III) A prof.ª também colocou pra análise as fichas de caracterização das disciplinas de Física para Computação e Algoritmos e Complexidade, explicando que estas disciplinas foram readequadas segundo discussões anteriores sobre a ementa e densidade das mesmas. Juntamente com as fichas de caracterização foi colocada um ofício justificando a alteração das disciplinas. AVALIAÇÃO DAS FICHAS. (I.IV) A prof.ª colocou as fichas para que fosse avaliadas pelos membros do conselho. O prof. Fábio questionou se quando o aluno vai se matricular na disciplina de Estágio ou de Trabalho de Graduação o sistema verifica se o pré-requisito de créditos mínimos cursados é checado. O prof. José Geraldo respondeu que acreditava que esta verificação era realizada. A prof.ª Cândida colocou que no checklist da disciplina de Algoritmos e Complexidade estava que a disciplina era pré-requisito para outras disciplinas do curso, perguntando se realmente havia alguma disciplina que utilizava essa como pré-requisito. A prof.ª Luciana consultou o Projeto Político Pedagógico e verificou que existe uma disciplina optativa, Tópicos Avançados em Teoria da Computação que tem como pré-requisito a disciplina de Algoritmos e Complexidade.   (I.V) As fichas foram aprovadas pelo Conselho. Encerramento: Estando todos de acordo e nada mais havendo a deliberar, lavra-se, leia-se, aprova-se e assina-se esta Ata por todos os membros do Conselho do Curso de Bacharelado em Ciência da Computação, Campus Sorocaba, participantes desta reunião que, em 02 (duas) vias, será levada a registro e arquivamento junto à Coordenação do Conselho do Curso de Bacharelado em Ciência da Computação - Sorocaba, ficando ali à disposição para consulta restrita aos professores da UFSCar - Sorocaba. Nada mais.
+
+	Profª Drª Luciana Aparecida Martinez Zaina
+
+Presidente desta Reunião
+
+	Prof. Dr. Adilson J. Vieira Brandão
+
+Professor Associado
+	Prof. Dr. José Geraldo Vidal Vieira
+
+Professor Adjunto
+
+	Profa. Dra Cândida Nunes da Silva
+
+Professora Adjunta
+	Profa. Dra. Tiemi Chistine Sakata
+
+Professora Adjunta
+
+	Prof. Dr. Fábio Luciano Verdi
+
+Professor Adjunto
+	Prof. Dr. Márcio K. Oikawa
+
+Professor Adjunto
+
+	Prof. Dr. Murillo Rodrigo Petrucelli Homem
+
+Professor Adjunto
+	Rubens Onari Júnior
+
+ Representante Discente - 2008
+
+	Prof. Dr. Alexandre Alvaro
+
+Professor Adjunto
+	Priscila Elida Bernardi
+
+Representante Discente - 2009
+
+
+
+	Alessandro Visotto Piccoli
+
+ Representante Discente - 2010
+
+
+	
+
+
+

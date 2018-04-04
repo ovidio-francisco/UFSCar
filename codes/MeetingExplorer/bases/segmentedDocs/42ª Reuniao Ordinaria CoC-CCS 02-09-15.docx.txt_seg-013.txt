@@ -1,1 +1,0 @@
-Decidiu-se verificar se o sistema permite a mudança dessas fichas para o perfil 1, já que elas possuem pré-requisito e se os alunos do perfil 1 não seriam automaticamente inscritos nas optativas na fase de matrículas. 3.4. 

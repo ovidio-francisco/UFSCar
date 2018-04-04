@@ -6,7 +6,9 @@ import java.util.ArrayList;
 import preprocessamento.Preprocess;
 
 public interface Segmenter {
-	public enum SegmenterAlgorithms {TEXT_TILING, C99}
+	public enum SegmenterAlgorithms {SENTENCES, TEXT_TILING, C99, MINCUT, TEXT_SEG, BAYESSEG}
+	
+	public enum ParamName {STEP, WINSIZE, NSEG, NSEGRATE, RANKINGSIZE, WEITGHT, PARZEMALPHA, SMOOTHINGRANGE, LENCUTOFF, PRIOR, DISPERSION, NUM_SEGS_KNOWN}
 	
 	public static final String EOS_MARK = "_EOS_";
 	
@@ -19,7 +21,10 @@ public interface Segmenter {
 	public String preprocessToString();
 	public String getAlgorithmName();
 	public String paramsToString();
-	
-	public int segmentToFiles(File source, File Folder);
-
+	public String getLabel();
+	public String getConfigurationLabel();
+	public String getParamByName(ParamName paramName);
+        
+        public int segmentToFiles(File source, File Folder);
+        
 }

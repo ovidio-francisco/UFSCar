@@ -60,6 +60,10 @@ and the next token following whitespace is uppercase, it is EOS
 //	private static boolean isLowercase(String s) {
 //		return (s.charAt(0) >= 'a') && (s.charAt(0) <= 'z'); 
 //	} 
+
+	public static String[] getTokens(String txt) {
+		return txt.split("\\s+");
+	}
 	
 	public static String indentifyEndOfSentence(String txt, String eosMark) {
 
@@ -72,7 +76,8 @@ and the next token following whitespace is uppercase, it is EOS
 		
 		txt = txt.replace("!"  , "!"+eosMark); 
 
-		String[] tokens = txt.split("\\s+");
+//		String[] tokens = txt.split("\\s+");
+		String[] tokens = getTokens(txt);
 		
 		
 		for(int i=0; i<tokens.length-1; i++) {
@@ -96,6 +101,15 @@ and the next token following whitespace is uppercase, it is EOS
 				tokens[i] = tokens[i] + eosMark;
 				continue;
 			}
+			
+			if (isANumber(tokens[i+1])) {
+				tokens[i] = tokens[i] + eosMark;
+				continue;
+			}  // by OJF - 15-01-2018
+			
+				
+			
+			
 			
 //			[2] - ok - If " or ' appears before period, it is EOS
 //			[3] - ok - If )}] before period, it is EOS

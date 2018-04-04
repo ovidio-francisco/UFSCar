@@ -246,6 +246,20 @@ public class Files {
 		TextExtractor.extractTxtFromAllFiles(originalDocs, textDocs);
 	}
 
+        public static void saveLinesToTxtFile(String[] lines, File txtFile) {
+        BufferedWriter out = Files.getBufferedWriter(txtFile); 
+
+        try {
+        	for(String line: lines) {
+        		out.write(line);
+        	}
+			out.flush();
+			out.close();
+		} catch (IOException e) {
+			System.err.println("Erro ao salvar o arquivo " + txtFile.getName());
+			e.printStackTrace();
+		}
+        }
 
 	public static int extractSegmentsToTheBase(Segmenter segmenter) {
 		File[] files = textDocs.listFiles(new FileFilter() {
@@ -258,7 +272,14 @@ public class Files {
 		int count = 0;
 		
 		for(File f : files) {
+                        try {
 			count  += segmenter.segmentToFiles(f, segmentedDocs);
+                        }
+                        catch(Exception e) {
+                            System.out.println(String.format("Erro ao segmentar %s com %s", f, segmenter.getLabel()));
+                        }
+                        
+                        
 		}
 		
 		return count;

@@ -8,8 +8,9 @@ import java.util.ArrayList;
 import java.util.Date;
 
 import javax.swing.tree.DefaultMutableTreeNode;
+import segmenters.Segmenter;
+import segmenters.SegmenterConfiguration;
 
-import topicExtraction.TET.TopicExtraction;
 import topicExtraction.TET.TopicExtraction_ME;
 import topicExtraction.TETConfigurations.TopicExtractionConfiguration;
 import topicExtraction.TETPreprocessing.TextRepresentation;
@@ -37,6 +38,7 @@ public class MeetingMiner {
     private static File configSaveFileName = new File("parameters.txt");
     
     public static  TopicExtractionConfiguration topicExtractionconfiguration = new TopicExtractionConfiguration();
+    public static  SegmenterConfiguration segmenterConfiguration = new SegmenterConfiguration(Segmenter.SegmenterAlgorithms.BAYESSEG, true);
     
 //  private static TopicExtractionParameters   extractionParameters     ;// = M4MTopicExtractionConfiguration.getDefaultTopicExtractionConf();
     private static M4MRepresentationParameters representationParameters ;// = M4MRepresentationConfiguration.getDefaultRepresentationConf();
@@ -503,7 +505,9 @@ public class MeetingMiner {
 		return new File(outFolder+"/"+configSaveFileName);
 	}
     
-	
+    public static SegmenterConfiguration getBestSegmenterConfiguration() {
+        return new SegmenterConfiguration(Segmenter.SegmenterAlgorithms.BAYESSEG, true);
+    }
     
     
 }

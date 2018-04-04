@@ -40,7 +40,6 @@ import meetingMiner.MMTopic;
 import meetingMiner.MeetingMiner;
 import meetingMiner.Segment;
 import preprocessamento.Preprocess;
-import segmenter.algorithms.texttile.TextTilingBR;
 import segmenters.Segmenter;
 import topicExtraction.TETConfigurations.TopicExtractionConfiguration;
 import utils.Files;
@@ -232,7 +231,9 @@ public class TopicsFrame extends JFrame{
 		int filesAdded = Files.addToTheBase(folder);
 		Files.extractTextToTheBase();
 		
-		Segmenter segmenter = new TextTilingBR();
+//		Segmenter segmenter = new TextTilingBR();
+                
+                Segmenter segmenter = MeetingMiner.getBestSegmenterConfiguration().buildSegmenter();
 		
 		int segmentsExtracteds = Files.extractSegmentsToTheBase(segmenter);
 		

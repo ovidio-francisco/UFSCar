@@ -26,8 +26,8 @@ import meetingMiner.MMTopic;
 import meetingMiner.MeetingMiner;
 import meetingMiner.Segment;
 import preprocessamento.Preprocess;
-import segmenter.algorithms.texttile.TextTilingBR;
 import segmenters.Segmenter;
+import segmenters.algorithms.TextTilingBR;
 import topicExtraction.TETConfigurations.TopicExtractionConfiguration;
 import userInterfaces.FrConfigExtractor;
 import userInterfaces.FrConfigSegmenter;
@@ -55,7 +55,8 @@ public class MainForm extends javax.swing.JFrame {
 
         PnSegment.setShowDescriptions(false);
                         
-        showTopicTree();
+        verifyStatus();
+        if (isMatricesFound) showTopicTree();
         
         jtTopics.addTreeSelectionListener(new TreeSelectionListener() {
             @Override
@@ -451,7 +452,8 @@ public class MainForm extends javax.swing.JFrame {
 		int filesAdded = Files.addToTheBase(folder);
 		Files.extractTextToTheBase();
 		
-		Segmenter segmenter = new TextTilingBR();
+                Segmenter segmenter = MeetingMiner.getBestSegmenterConfiguration().buildSegmenter();
+
 		
 		int segmentsExtracteds = Files.extractSegmentsToTheBase(segmenter);
 		
