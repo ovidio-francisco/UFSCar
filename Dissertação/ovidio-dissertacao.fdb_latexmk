@@ -1,5 +1,5 @@
 # Fdb version 3
-["bibtex ovidio-dissertacao"] 1521686007 "ovidio-dissertacao.aux" "ovidio-dissertacao.bbl" "ovidio-dissertacao" 1522238059
+["bibtex ovidio-dissertacao"] 1521686007 "ovidio-dissertacao.aux" "ovidio-dissertacao.bbl" "ovidio-dissertacao" 1522878849
   "./abntex2-alf.bst" 1405615040 63287 1073317cf2aaa1ae7cb902d84de1bb0a ""
   "abntex2-options.bib" 1503974450 5396 4eb260dac60f150ae608d45252853090 ""
   "conteudo/capitulos/2-cap1.aux" 1521686004 4077 d3d276828780e64c2672b0ab100a81d7 ""
@@ -14,12 +14,12 @@
   (generated)
   "ovidio-dissertacao.bbl"
   "ovidio-dissertacao.blg"
-["makeindex ovidio-dissertacao.idx"] 1518105189 "ovidio-dissertacao.idx" "ovidio-dissertacao.ind" "ovidio-dissertacao" 1522238059
+["makeindex ovidio-dissertacao.idx"] 1518105189 "ovidio-dissertacao.idx" "ovidio-dissertacao.ind" "ovidio-dissertacao" 1522878849
   "ovidio-dissertacao.idx" 1521686004 0 d41d8cd98f00b204e9800998ecf8427e ""
   (generated)
-  "ovidio-dissertacao.ilg"
   "ovidio-dissertacao.ind"
-["pdflatex"] 1521686003 "ovidio-dissertacao.tex" "ovidio-dissertacao.pdf" "ovidio-dissertacao" 1522238059
+  "ovidio-dissertacao.ilg"
+["pdflatex"] 1521686003 "ovidio-dissertacao.tex" "ovidio-dissertacao.pdf" "ovidio-dissertacao" 1522878849
   "/etc/texmf/web2c/texmf.cnf" 1489454511 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1272929888 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecrm1200.tfm" 1136768653 3584 f80ddd985bd00e29e9a6047ebd9d4781 ""
@@ -227,24 +227,24 @@
   "ovidio-dissertacao.tex" 1521669419 9478 7b1a2d9b948b96cf735abb406c41afdb ""
   "ovidio-dissertacao.toc" 1521686005 6917 dc4373b6f31742e0d7eb4d3c13e54340 ""
   (generated)
-  "conteudo/capitulos/3-cap2.aux"
-  "ovidio-dissertacao.lof"
-  "conteudo/capitulos/2-cap1.aux"
-  "conteudo/capitulos/cap-avaliacao-modulo-consulta.aux"
-  "conteudo/capitulos/1-prefacio.aux"
-  "ovidio-dissertacao.log"
-  "conteudo/capitulos/cap-avaliacao-extratores.tex.aux"
-  "conteudo/capitulos/cap-avaliacao-segmentadores.aux"
-  "ovidio-dissertacao.aux"
-  "conteudo/capitulos/cap-avaliacao-extratores.aux"
-  "ovidio-dissertacao.brf"
-  "ovidio-dissertacao.pdf"
-  "conteudo/capitulos/7-anexo1.aux"
   "ovidio-dissertacao.toc"
-  "conteudo/capitulos/cap-avaliacao-segmentadores.tex.aux"
-  "ovidio-dissertacao.idx"
-  "conteudo/capitulos/4-cap3.aux"
-  "conteudo/capitulos/5-conclusao.aux"
-  "conteudo/capitulos/cap-avaliacao-modulo-consulta.tex.aux"
+  "conteudo/capitulos/cap-avaliacao-modulo-consulta.aux"
+  "conteudo/capitulos/cap-avaliacao-extratores.tex.aux"
+  "ovidio-dissertacao.brf"
+  "conteudo/capitulos/cap-avaliacao-extratores.aux"
+  "ovidio-dissertacao.log"
   "ovidio-dissertacao.lot"
+  "ovidio-dissertacao.lof"
+  "conteudo/capitulos/5-conclusao.aux"
+  "conteudo/capitulos/7-anexo1.aux"
+  "conteudo/capitulos/cap-avaliacao-segmentadores.tex.aux"
+  "conteudo/capitulos/cap-avaliacao-modulo-consulta.tex.aux"
+  "ovidio-dissertacao.pdf"
+  "conteudo/capitulos/3-cap2.aux"
+  "conteudo/capitulos/cap-avaliacao-segmentadores.aux"
+  "conteudo/capitulos/2-cap1.aux"
+  "conteudo/capitulos/1-prefacio.aux"
+  "ovidio-dissertacao.aux"
   "conteudo/capitulos/6-apendice1.aux"
+  "conteudo/capitulos/4-cap3.aux"
+  "ovidio-dissertacao.idx"
