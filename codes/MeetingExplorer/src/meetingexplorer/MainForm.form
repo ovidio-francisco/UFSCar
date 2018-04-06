@@ -104,7 +104,7 @@
           <Group type="102" alignment="1" attributes="0">
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="1" attributes="0">
-                  <Component id="pnStatusBar" pref="739" max="32767" attributes="0"/>
+                  <Component id="pnStatusBar" pref="722" max="32767" attributes="0"/>
                   <Component id="pnCenter" alignment="0" max="32767" attributes="0"/>
                   <Component id="pnQuery" alignment="0" pref="0" max="32767" attributes="0"/>
               </Group>
@@ -154,7 +154,7 @@
                       <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
                       <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
-                      <Component id="tfQuery" pref="261" max="32767" attributes="0"/>
+                      <Component id="tfQuery" pref="244" max="32767" attributes="0"/>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
                       <Component id="btExplorar" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
@@ -292,7 +292,7 @@
       <Layout>
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
-              <Component id="jSplitPane1" alignment="0" max="32767" attributes="0"/>
+              <Component id="jSplitPane1" alignment="0" pref="722" max="32767" attributes="0"/>
           </Group>
         </DimensionLayout>
         <DimensionLayout dim="1">
@@ -361,7 +361,7 @@
               <Layout>
                 <DimensionLayout dim="0">
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="spSegments" alignment="0" pref="282" max="32767" attributes="0"/>
+                      <Component id="spSegments" alignment="0" pref="265" max="32767" attributes="0"/>
                       <Group type="102" alignment="1" attributes="0">
                           <EmptySpace max="32767" attributes="0"/>
                           <Component id="lbSegmentsCount" min="-2" max="-2" attributes="0"/>
