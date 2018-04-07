@@ -23,6 +23,7 @@ public class StopWords {
             try{
                 RandomAccessFile arqStop = new RandomAccessFile("stopPort.txt", "r");
                 ShowStatus.setMessage("Aquivo '"+arqStop.toString()+"'carregado");
+                JOptionPane.showMessageDialog(null, "Aquivo '"+arqStop.toString()+"'carregado - Finalmente!!");
                 String line = "";
                 while((line = arqStop.readLine())!=null){
                     if(line.length()>0){

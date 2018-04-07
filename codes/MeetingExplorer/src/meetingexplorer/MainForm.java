@@ -9,6 +9,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Properties;
 import java.util.Set;
+import java.util.TreeMap;
 import javax.swing.BorderFactory;
 import javax.swing.BoxLayout;
 import javax.swing.JFileChooser;
@@ -27,7 +28,6 @@ import meetingMiner.MeetingMiner;
 import meetingMiner.Segment;
 import preprocessamento.Preprocess;
 import segmenters.Segmenter;
-import segmenters.algorithms.TextTilingBR;
 import topicExtraction.TETConfigurations.TopicExtractionConfiguration;
 import userInterfaces.FrConfigExtractor;
 import userInterfaces.FrConfigSegmenter;
@@ -55,6 +55,12 @@ public class MainForm extends javax.swing.JFrame {
 
         PnSegment.setShowDescriptions(false);
                         
+        
+                       
+        searchMode = SearchMode.FILTER_TOPICS;
+        imFirterTopics.setSelected((searchMode == SearchMode.FILTER_TOPICS));
+
+        
         verifyStatus();
         if (isMatricesFound) showTopicTree();
         
@@ -86,7 +92,10 @@ public class MainForm extends javax.swing.JFrame {
 	private int     originalDocsCount = 0;
 	
 	ArrayList<PnSegment> pnSegs = new ArrayList<>();
+        
+        private enum SearchMode {FILTER_TOPICS, RANK_KEY_WORDS};
 
+        private SearchMode searchMode = SearchMode.FILTER_TOPICS;
         
 
     /**
@@ -98,6 +107,7 @@ public class MainForm extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        bgSearchMode = new javax.swing.ButtonGroup();
         pnQuery = new javax.swing.JPanel();
         pnCtrlQuery = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
@@ -108,7 +118,7 @@ public class MainForm extends javax.swing.JFrame {
         filler3 = new javax.swing.Box.Filler(new java.awt.Dimension(0, 10), new java.awt.Dimension(0, 10), new java.awt.Dimension(32767, 10));
         filler4 = new javax.swing.Box.Filler(new java.awt.Dimension(0, 10), new java.awt.Dimension(0, 10), new java.awt.Dimension(32767, 10));
         pnCenter = new javax.swing.JPanel();
-        jSplitPane1 = new javax.swing.JSplitPane();
+        splitPane = new javax.swing.JSplitPane();
         pnTree = new javax.swing.JPanel();
         jScrollPane1 = new javax.swing.JScrollPane();
         jtTopics = new javax.swing.JTree();
@@ -132,6 +142,11 @@ public class MainForm extends javax.swing.JFrame {
         imConfigSegmentadores = new javax.swing.JMenuItem();
         imConfgExtratores = new javax.swing.JMenuItem();
         imNumDescriptors = new javax.swing.JMenuItem();
+        jSeparator3 = new javax.swing.JPopupMenu.Separator();
+        imShowTopics = new javax.swing.JCheckBoxMenuItem();
+        jSeparator4 = new javax.swing.JPopupMenu.Separator();
+        imFirterTopics = new javax.swing.JRadioButtonMenuItem();
+        imRankKeyWords = new javax.swing.JRadioButtonMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Meeting Explorer");
@@ -182,8 +197,8 @@ public class MainForm extends javax.swing.JFrame {
         pnQuery.add(filler3, java.awt.BorderLayout.PAGE_START);
         pnQuery.add(filler4, java.awt.BorderLayout.PAGE_END);
 
-        jSplitPane1.setDividerLocation(450);
-        jSplitPane1.setDividerSize(6);
+        splitPane.setDividerLocation(450);
+        splitPane.setDividerSize(6);
 
         jScrollPane1.setBorder(null);
 
@@ -205,7 +220,7 @@ public class MainForm extends javax.swing.JFrame {
             .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 266, Short.MAX_VALUE)
         );
 
-        jSplitPane1.setLeftComponent(pnTree);
+        splitPane.setLeftComponent(pnTree);
 
         lbSegmentsCount.setFont(new java.awt.Font("Dialog", 0, 12)); // NOI18N
         lbSegmentsCount.setText("lbSegmentsCount");
@@ -233,17 +248,17 @@ public class MainForm extends javax.swing.JFrame {
                 .addComponent(lbSegmentsCount))
         );
 
-        jSplitPane1.setRightComponent(pnResults);
+        splitPane.setRightComponent(pnResults);
 
         javax.swing.GroupLayout pnCenterLayout = new javax.swing.GroupLayout(pnCenter);
         pnCenter.setLayout(pnCenterLayout);
         pnCenterLayout.setHorizontalGroup(
             pnCenterLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jSplitPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 722, Short.MAX_VALUE)
+            .addComponent(splitPane)
         );
         pnCenterLayout.setVerticalGroup(
             pnCenterLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jSplitPane1)
+            .addComponent(splitPane)
         );
 
         pnStatusBar.setBorder(javax.swing.BorderFactory.createEtchedBorder());
@@ -353,6 +368,26 @@ public class MainForm extends javax.swing.JFrame {
             }
         });
         imConfig.add(imNumDescriptors);
+        imConfig.add(jSeparator3);
+
+        imShowTopics.setSelected(true);
+        imShowTopics.setText("Exibir Grupos");
+        imShowTopics.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                imShowTopicsActionPerformed(evt);
+            }
+        });
+        imConfig.add(imShowTopics);
+        imConfig.add(jSeparator4);
+
+        bgSearchMode.add(imFirterTopics);
+        imFirterTopics.setSelected(true);
+        imFirterTopics.setText("Filtrar por Tópicos");
+        imConfig.add(imFirterTopics);
+
+        bgSearchMode.add(imRankKeyWords);
+        imRankKeyWords.setText("Buscar por Palavras-chave");
+        imConfig.add(imRankKeyWords);
 
         jMenuBar1.add(imConfig);
 
@@ -414,8 +449,14 @@ public class MainForm extends javax.swing.JFrame {
             configuration.setNumTopics(numTopics);
         }
         
+        
+ 
+        
         MeetingMiner.setTopicExtractionconfiguration(configuration);
     }
+        
+        
+      
         
     private void configureTopicExtraction() {
         TopicExtractionConfiguration configuration = MeetingMiner.getTopicExtractionconfiguration();
@@ -430,6 +471,7 @@ public class MainForm extends javax.swing.JFrame {
     
         
         configuration.setAutoNumTopics(true);
+        
         
         System.out.println(String.format("Num Topics = %d --> apos cofiguração pelo usuário", configuration.getNumTopic(0)));
     }
@@ -578,11 +620,9 @@ public class MainForm extends javax.swing.JFrame {
         
         MeetingMiner.prepareFolders();
 	MeetingMiner.extractDescriptorsAndFiles();
-        
         DefaultTreeModel model = new DefaultTreeModel(MeetingMiner.createTree());
         
         jtTopics.setModel(model);
-
     }
     
     private void imShowTreeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_imShowTreeActionPerformed
@@ -592,24 +632,49 @@ public class MainForm extends javax.swing.JFrame {
     }//GEN-LAST:event_imShowTreeActionPerformed
 
     
-    private ArrayList<Segment> filterSegmentsBySegmentFile(File segmentFile) {
-        ArrayList<Segment> result = new ArrayList<>();
+//    private ArrayList<Segment> filterSegmentsBySegmentFile(File segmentFile) {
+//        ArrayList<Segment> result = new ArrayList<>();
+//        
+//        return result;
+//    }
+    
+    private ArrayList<MMTopic> rankedTopicsByDescriptor(ArrayList<MMTopic> topics, Set<String> descs) {
+        ArrayList<MMTopic> result = new ArrayList<>();
+        TreeMap<Integer, MMTopic> freq = new TreeMap<>();
         
+        System.out.println(String.format("*** Ranking The Topics *** \n\n"));
+        for(MMTopic t : topics) {
+            Set<String> descriptorsIntersections = t.descriptorsStemedIntersection(descs);
+            
+            int f = descriptorsIntersections.size();
+            freq.put(f, t);
+            
+            System.out.println(String.format("Topic='%s' freq=%d", t.getDescriptors(), f));
+        }
+        
+        result.addAll(freq.values());
+        
+        System.out.println(">> Ranked Topics <<");
+        for(MMTopic t : topics) {
+            System.out.println(String.format("Topic='%s'", t.getDescriptors()));
+        }
+
+        System.out.println("\n$$$$$ Ranked!! $$$$$\n");
         return result;
     }
     
-    	private ArrayList<MMTopic> filterTopicsByDescriptor(ArrayList<MMTopic> topics, Set<String> descs) {
-		ArrayList<MMTopic> result = new ArrayList<>();
-		
-		for(MMTopic t : topics) {
+    private ArrayList<MMTopic> filterTopicsByDescriptor(ArrayList<MMTopic> topics, Set<String> descs) {
+            ArrayList<MMTopic> result = new ArrayList<>();
+
+            for(MMTopic t : topics) {
 //			ArrayList<String> descriptorsIntersections = t.descriptorsIntersection(descs);
-			Set<String> descriptorsIntersections = t.descriptorsStemedIntersection(descs);
-			if(descriptorsIntersections.size() > 0) {
-				result.add(t);
-			}
-		}
-		
-		return result;
+                    Set<String> descriptorsIntersections = t.descriptorsStemedIntersection(descs);
+                    if(descriptorsIntersections.size() > 0) {
+                            result.add(t);
+                    }
+            }
+
+            return result;
 	}
 
     	private void clearSegments() {
@@ -635,17 +700,24 @@ public class MainForm extends javax.swing.JFrame {
 	}
 
         private JPanel createPnSegments() {
-		JPanel pnSegments = new JPanel();
+            JPanel pnSegments = new JPanel();
 
-		pnSegments.setLayout(new BoxLayout(pnSegments, BoxLayout.Y_AXIS));
+            pnSegments.setLayout(new BoxLayout(pnSegments, BoxLayout.Y_AXIS));
 
-		spSegments = new JScrollPane(pnSegments);
+            spSegments = new JScrollPane(pnSegments);
 
-		spSegments.setBorder(new CompoundBorder(BorderFactory.createEtchedBorder(EtchedBorder.LOWERED), new EmptyBorder(5, 5, 5, 5) ));
-		spSegments.getVerticalScrollBar().setUnitIncrement(12);
+            spSegments.setBorder(new CompoundBorder(BorderFactory.createEtchedBorder(EtchedBorder.LOWERED), new EmptyBorder(5, 5, 5, 5) ));
+            spSegments.getVerticalScrollBar().setUnitIncrement(12);
 
-		return pnSegments;
+            return pnSegments;
 	}
+        
+        
+        private void showSegmentsByTopic(MMTopic topic) {
+            ArrayList<Segment> segments = Segment.getSegmentsByTopic(topic);
+            
+            showSegments(segments);
+        }
         
         
         private void showSegmentsByTreeNode(DefaultMutableTreeNode selectedNode ) {
@@ -653,7 +725,7 @@ public class MainForm extends javax.swing.JFrame {
            ArrayList<File> files = new ArrayList<>();
 
            if(selectedNode.isLeaf()) {
-                    files.add(new File(Files.getSegmentedDocs()+"/"+selectedNode.toString()));                      
+                files.add(new File(Files.getSegmentedDocs()+"/"+selectedNode.toString()));                      
            } else {
                 int childCount = selectedNode.getChildCount();
            
@@ -662,42 +734,51 @@ public class MainForm extends javax.swing.JFrame {
                 }
            }
 
-           
-//           for(File f : files) {
-//               System.out.println(String.format("Child File --> %b - %s", f.exists(), f));
-//           }
-           
-           
-//           if(false) {
-               
-                MeetingMiner.extractDescriptorsAndFiles();
-		ArrayList<MMTopic> topics = MeetingMiner.getMMTopics();
-//		ArrayList<Segment> segments = null;
-		
-                /** Carrega todos os segmentos que contém Documentos associados com todos os tópicos */
-                
-                
-//		segments = Segment.getAllSegments(topics);
-		ArrayList<Segment> segments = Segment.getSegmentsByFiles(topics, files);
-                
-                clearSegments();
-		lbSegmentsCount.setText("Gerando visualização");
-		ShowStatus.setMessage  ("Gerando visualização");
-		int count = 0;
-		for(Segment seg : segments) {
-			addSegmentPanel(seg);
-			count++;
-		}
-		lbSegmentsCount.setText(count+" trechos relacionados");
-		ShowStatus.setMessage  (count+" trechos relacionados");
-//           }
+            MeetingMiner.extractDescriptorsAndFiles();
+            ArrayList<MMTopic> topics = MeetingMiner.getMMTopics();
 
-                
-
+            /** Carrega todos os segmentos que contém Documentos associados com todos os tópicos */
+            ArrayList<Segment> segments = Segment.getSegmentsByFiles(topics, files);
+            showSegments(segments);
         }
 
+        
+        private void showSegments(ArrayList<Segment> segments) {
+            clearSegments();
+            lbSegmentsCount.setText("Gerando visualização");
+            ShowStatus.setMessage  ("Gerando visualização");
+            int count = 0;
+            for(Segment seg : segments) {
+                    addSegmentPanel(seg);
+                    count++;
+            }
+            lbSegmentsCount.setText(count+" trechos relacionados");
+            ShowStatus.setMessage  (count+" trechos relacionados");
+        }
 
-    	private void showSegments(boolean filter) {
+        
+        private void showSegmentsFilteredByTopic() {
+            HashMap<String, String> userDescsStems = new HashMap<>();
+            for(String s : tfQuery.getText().split(" ")) {
+                    if (!Preprocess.getStopWords().isStopWord(s)) {
+                            userDescsStems.put(s, Preprocess.getStemmer().wordStemming(s));
+                    }
+            }
+                
+            MeetingMiner.prepareFolders();	
+            MeetingMiner.extractDescriptorsAndFiles();
+            ArrayList<MMTopic> topics = MeetingMiner.getMMTopics();
+            topics = rankedTopicsByDescriptor(topics, userDescsStems.keySet());
+		
+            MMTopic t = topics.get(topics.size()-1);
+            
+            System.out.println(String.format("Fist Topic --> ", t));
+            ArrayList<Segment> segments = Segment.getSegmentsByTopic(t);
+            
+            showSegments(segments); 
+        }
+        
+    	private void showSegmentsRankedByKeyWords(boolean filter) {
 		MeetingMiner.prepareFolders();	
 		
 		MeetingMiner.extractDescriptorsAndFiles();
@@ -735,17 +816,19 @@ public class MainForm extends javax.swing.JFrame {
 			segments = Segment.getAllSegments(topics);
 		}
 			
+                
+                showSegments(segments);
 		
-		clearSegments();
-		lbSegmentsCount.setText("Gerando visualização");
-		ShowStatus.setMessage  ("Gerando visualização");
-		int count = 0;
-		for(Segment seg : segments) {
-			addSegmentPanel(seg);
-			count++;
-		}
-		lbSegmentsCount.setText(count+" trechos relacionados");
-		ShowStatus.setMessage  (count+" trechos relacionados");
+//		clearSegments();
+//		lbSegmentsCount.setText("Gerando visualização");
+//		ShowStatus.setMessage  ("Gerando visualização");
+//		int count = 0;
+//		for(Segment seg : segments) {
+//			addSegmentPanel(seg);
+//			count++;
+//		}
+//		lbSegmentsCount.setText(count+" trechos relacionados");
+//		ShowStatus.setMessage  (count+" trechos relacionados");
 
 	}
 
@@ -757,7 +840,7 @@ public class MainForm extends javax.swing.JFrame {
 			        @Override
 			        public void run(){
 			        	setWainting(true);
-			        	showSegments(false);
+			        	showSegmentsRankedByKeyWords(false);
 			    		setWainting(false);
 			        }
 				}.start();
@@ -786,7 +869,12 @@ public class MainForm extends javax.swing.JFrame {
             @Override
             public void run(){
                 setWainting(true);
-                showSegments(true);
+                if (true) {
+                    showSegmentsFilteredByTopic();
+                }
+                else {
+                    showSegmentsRankedByKeyWords(true);
+                }
                 setWainting(false);
             }
         }.start();
@@ -802,6 +890,16 @@ public class MainForm extends javax.swing.JFrame {
         f.setVisible(true);
     }//GEN-LAST:event_imConfigSegmentadoresActionPerformed
 
+    private void imShowTopicsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_imShowTopicsActionPerformed
+        showPnTree(imShowTopics.isSelected());
+    }//GEN-LAST:event_imShowTopicsActionPerformed
+
+    private void showPnTree(boolean show) {
+        pnTree.setVisible(show);
+        splitPane.setDividerSize(show ? 6 : 0);
+        if(show) splitPane.setDividerLocation(450);
+    }
+    
     /**
      * @param args the command line arguments
      */
@@ -839,6 +937,7 @@ public class MainForm extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.ButtonGroup bgSearchMode;
     private javax.swing.JButton btExplorar;
     private javax.swing.Box.Filler filler1;
     private javax.swing.Box.Filler filler2;
@@ -848,8 +947,11 @@ public class MainForm extends javax.swing.JFrame {
     private javax.swing.JMenu imConfig;
     private javax.swing.JMenuItem imConfigSegmentadores;
     private javax.swing.JMenuItem imExtractTopics;
+    private javax.swing.JRadioButtonMenuItem imFirterTopics;
     private javax.swing.JMenuItem imNumDescriptors;
+    private javax.swing.JRadioButtonMenuItem imRankKeyWords;
     private javax.swing.JMenuItem imShowSegments;
+    private javax.swing.JCheckBoxMenuItem imShowTopics;
     private javax.swing.JMenuItem imShowTree;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JMenu jMenu;
@@ -857,7 +959,8 @@ public class MainForm extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JSeparator jSeparator2;
-    private javax.swing.JSplitPane jSplitPane1;
+    private javax.swing.JPopupMenu.Separator jSeparator3;
+    private javax.swing.JPopupMenu.Separator jSeparator4;
     private javax.swing.JTree jtTopics;
     private javax.swing.JLabel lbAlgorithm;
     private javax.swing.JLabel lbDocsCount;
@@ -872,6 +975,7 @@ public class MainForm extends javax.swing.JFrame {
     private javax.swing.JPanel pnStatusBar;
     private javax.swing.JPanel pnTree;
     private javax.swing.JScrollPane spSegments;
+    private javax.swing.JSplitPane splitPane;
     private javax.swing.JTextField tfQuery;
     // End of variables declaration//GEN-END:variables
 }

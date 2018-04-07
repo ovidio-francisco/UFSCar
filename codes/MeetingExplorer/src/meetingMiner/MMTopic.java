@@ -27,6 +27,7 @@ public class MMTopic {
 		
 		HashMap<String, String> stems = new HashMap<>();
 		for(String s : descriptors) {
+                        System.out.println(String.format("Descripor -->  %s", s));
 			stems.put(s, Preprocess.getStemmer().wordStemming(s));
 		}
 

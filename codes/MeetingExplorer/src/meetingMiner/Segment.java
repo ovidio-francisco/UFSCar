@@ -50,12 +50,8 @@ public class Segment {
 		return result;
 	}
 	
-
 	public static ArrayList<Segment> getSegmentsByFiles(ArrayList<MMTopic> topics, ArrayList<File> segmentFiles ) {
 		ArrayList<Segment> result = new ArrayList<>();
-		
-//		File folder = Files.getSegmentedDocs();
-//		File[] segmentDocs = listFiles(folder);
 		
 		for(File segmentDoc : segmentFiles) {
 			for(MMTopic topic : topics) {
@@ -77,6 +73,31 @@ public class Segment {
 		
 		return result;
 	}
+        
+        public static ArrayList<Segment> getSegmentsByTopic(MMTopic topic) {
+		ArrayList<Segment> result = new ArrayList<>();
+                
+                System.out.println(String.format("\n -------------- > Criando Segmentos para o Tópico --> %s", topic.getDescriptors()));
+                for(File f : topic.getSegmentsDoc()) {
+                    
+                    File g = new File(Files.getSegmentedDocs()+"/"+f);
+                    
+                    Segment segment = new Segment();
+                    segment.segmentDoc = g;
+                    segment.originalDocument = extractOriginalDocFromSegmentDoc(g);
+                System.out.println(String.format("Lendo arquivo --> %s", g));
+                    segment.text = Files.loadTxtFile(g).trim();
+                    segment.relationedTopics.add(topic);
+
+                    for(String descriptor : topic.getDescriptors()) {
+                            segment.addDescriptor(descriptor);
+                    }
+
+                    result.add(segment);
+                }
+                
+                return result;
+        }
 
 
 //	/**	Compare the users descriptors and store the matches */

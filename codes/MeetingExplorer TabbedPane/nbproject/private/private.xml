@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/ext4Data/UFSCar/codes/MeetingExplorer/src/meetingMiner/MeetingMiner.java</file>
+            <file>file:/ext4Data/UFSCar/codes/MeetingExplorer/src/segmenters/AbstractSegmenter.java</file>
+            <file>file:/ext4Data/UFSCar/codes/MeetingExplorer/src/meetingexplorer/MainForm.java</file>
+            <file>file:/ext4Data/UFSCar/codes/MeetingExplorer/src/utils/Files.java</file>
+            <file>file:/ext4Data/UFSCar/codes/MeetingExplorer/src/userInterfaces/FrConfigExtractor.java</file>
+            <file>file:/ext4Data/UFSCar/codes/MeetingExplorer/src/segmenters/SegmenterConfiguration.java</file>
+            <file>file:/ext4Data/UFSCar/codes/MeetingExplorer/src/userInterfaces/FrConfigSegmenter.java</file>
+            <file>file:/ext4Data/UFSCar/codes/MeetingExplorer/src/topicExtraction/TETConfigurations/TopicExtractionConfiguration.java</file>
+            <file>file:/ext4Data/UFSCar/codes/MeetingExplorer/src/userInterfaces/TopicsFrame.java</file>
+            <file>file:/ext4Data/UFSCar/codes/MeetingExplorer/src/topicExtraction/TET/TopicExtraction_ME.java</file>
+        </group>
+    </open-files>
+</project-private>

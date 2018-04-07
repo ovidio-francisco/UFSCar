@@ -1,0 +1,4 @@
+#Last Topic Extraction Configuration Parameters
+#Tue Apr 03 10:47:37 BRT 2018
+Num-Topics=50
+Algorithm=k-Means Parametric
