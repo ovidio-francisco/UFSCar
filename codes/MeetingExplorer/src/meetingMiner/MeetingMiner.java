@@ -225,6 +225,7 @@ public class MeetingMiner {
             MeetingMiner.numTopics     = numTopics;
             MeetingMiner.orderedTopics = orderedTopics;
             
+            System.out.println("----\n");
            
 //            if (view instanceof DefaultTreeModel) {
 //
@@ -251,6 +252,7 @@ public class MeetingMiner {
         ShowStatus.setMessage("Tree generated");
         
         System.out.println(String.format("--->%d", numTopics));
+        System.out.println("------\n");
         
         
     	return GererateTree(descTopics, docsPerTopics, numTopics, orderedTopics);

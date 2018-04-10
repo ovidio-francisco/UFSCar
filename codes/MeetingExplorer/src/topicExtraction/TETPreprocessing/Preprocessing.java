@@ -11,6 +11,7 @@ import java.io.File;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Set;
+import javax.swing.JOptionPane;
 
 import ptstemmer.Stemmer;
 import topicExtraction.TETStructures.TermValue;
@@ -79,6 +80,9 @@ public class Preprocessing {
         cleanText = LimparAcentos.Limpar(cleanText, termProc_term);
         
         if(remStopWords==true){
+            
+//            System.out.println(String.format("Clean text ===== \n %s \n", cleanText));
+            
             cleanText = sw.removeStopWords(cleanText); //Stopwords removal
         }
         else {

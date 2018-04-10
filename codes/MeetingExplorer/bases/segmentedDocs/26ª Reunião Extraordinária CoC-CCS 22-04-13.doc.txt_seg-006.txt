@@ -1,1 +1,1 @@
- Após discussão, as fichas foram aprovadas como seguem: Novas Tecnologias de Bancos de Dados (ANEXO I), Tópicos em Engenharia de Software (ANEXO II), Tópicos Avançados em Arquitetura de Computadores (ANEXO III), Tópicos Avançados em Sistemas Operacionais (ANEXO IV), Tópicos Avançados em Teoria da Computação (ANEXO V), Tópicos Avançados em Teoria dos Grafos (ANEXO VI), Bioinformática (ANEXO VII), E-Science (ANEXO VIII) e Computação Paralela (ANEXO IX).
+ As disciplinas que ainda não constam no Projeto Pedagógico serão incluídas como anexo.

@@ -18,6 +18,7 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Locale;
 import java.util.Set;
+import javax.swing.JOptionPane;
 
 import meetingMiner.MeetingMiner;
 import ptstemmer.Stemmer;
@@ -36,7 +37,7 @@ public class TextRepresentation {
     //Function to read a text collection and generate a document-term matrix
     @SuppressWarnings({ "unchecked", "rawtypes" })
 	public static void Represent(M4MRepresentationParameters cfg){
-        
+//        JOptionPane.showMessageDialog(null, "Representando!!");
         ArrayList<String>       names        = new ArrayList<>();
         ArrayList<FeatureList>  terms        = new ArrayList<>(); // lista constendo os termos com as respectivas frequencias de cada documento da coleção
         HashMap<String,Integer> termDF       = new HashMap<>(); //armazena as DF dos atributos

@@ -7,7 +7,7 @@ public class HeaderDetector {
 	private String header = null;
 	private String text = null;
 	private int headerOccurrence = 0;
-	private int minSnipSize = 100;
+	private int minSnipSize = 10;
 	private int maxSnipSize = 300;
 	
 	public void detectHeader(String text) {

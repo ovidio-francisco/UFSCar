@@ -7,7 +7,9 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.Properties;
+import java.util.Random;
 import java.util.Set;
 import java.util.TreeMap;
 import javax.swing.BorderFactory;
@@ -23,6 +25,7 @@ import javax.swing.event.TreeSelectionEvent;
 import javax.swing.event.TreeSelectionListener;
 import javax.swing.tree.DefaultMutableTreeNode;
 import javax.swing.tree.DefaultTreeModel;
+import javax.swing.tree.TreeModel;
 import meetingMiner.MMTopic;
 import meetingMiner.MeetingMiner;
 import meetingMiner.Segment;
@@ -31,10 +34,12 @@ import segmenters.Segmenter;
 import topicExtraction.TETConfigurations.TopicExtractionConfiguration;
 import userInterfaces.FrConfigExtractor;
 import userInterfaces.FrConfigSegmenter;
+import userInterfaces.FrShowTopicsTree;
 import userInterfaces.PnSegment;
 import utils.Files;
 import utils.ShowStatus;
 import utils.UIUtils;
+import vsm.VSMQuery;
 
 /**
  * @author ovidiojf
@@ -138,6 +143,7 @@ public class MainForm extends javax.swing.JFrame {
         imExtractTopics = new javax.swing.JMenuItem();
         imShowSegments = new javax.swing.JMenuItem();
         imShowTree = new javax.swing.JMenuItem();
+        imShowTreeFrame = new javax.swing.JMenuItem();
         imConfig = new javax.swing.JMenu();
         imConfigSegmentadores = new javax.swing.JMenuItem();
         imConfgExtratores = new javax.swing.JMenuItem();
@@ -340,6 +346,14 @@ public class MainForm extends javax.swing.JFrame {
             }
         });
         jMenu.add(imShowTree);
+
+        imShowTreeFrame.setText("Exibir Árvore em Janela");
+        imShowTreeFrame.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                imShowTreeFrameActionPerformed(evt);
+            }
+        });
+        jMenu.add(imShowTreeFrame);
 
         jMenuBar1.add(jMenu);
 
@@ -739,9 +753,18 @@ public class MainForm extends javax.swing.JFrame {
 
             /** Carrega todos os segmentos que contém Documentos associados com todos os tópicos */
             ArrayList<Segment> segments = Segment.getSegmentsByFiles(topics, files);
-            showSegments(segments);
+//            showSegments(segments);
+            showRandomSegments(segments, 5);
         }
 
+        
+        private boolean descart(Segment seg) {
+            String txt = seg.getText();
+            txt = txt.replaceAll("[0-9]", "");
+        
+            boolean result = txt.length() < 30;
+            return result;
+        }
         
         private void showSegments(ArrayList<Segment> segments) {
             clearSegments();
@@ -754,6 +777,42 @@ public class MainForm extends javax.swing.JFrame {
             }
             lbSegmentsCount.setText(count+" trechos relacionados");
             ShowStatus.setMessage  (count+" trechos relacionados");
+        }
+        
+        
+        private void showRandomSegments(ArrayList<Segment> segments, int n) {
+            clearSegments();
+            lbSegmentsCount.setText("Gerando visualização");
+            ShowStatus.setMessage  ("Gerando visualização");
+            int count = 0;
+            
+            Random random = new Random();
+            
+            HashSet<Integer> indexes = new HashSet<>();
+            
+            if (segments.size() < n) n = segments.size();
+            
+            while (n > 0) {
+                int r = random.nextInt(segments.size());
+                System.out.println("rand = " + r);
+                
+                if(indexes.add(r)) {
+                    if (!descart(segments.get(r))) {
+                        addSegmentPanel(segments.get(r));
+                        count++;
+                        System.out.println("Added Segment - " + r);
+                        n--;
+                    }
+                    else {
+                        System.out.println("Descartando: " + segments.get(r).getText());
+                        if (segments.size() <= n) n--;
+                    }
+             
+                }
+            }
+            
+            lbSegmentsCount.setText(count+" trechos Randomicamente Selecionados");
+            ShowStatus.setMessage  (count+" trechos Randomicamente Selecionados");
         }
 
         
@@ -777,6 +836,46 @@ public class MainForm extends javax.swing.JFrame {
             
             showSegments(segments); 
         }
+        
+        /**
+         Mostra os segmentos do tópico com maior relevância com as palavras-chave.
+         */
+        private void showSegmentsRankedByTopicSimilarity() {
+            ArrayList<String> descriptorsList = new ArrayList<>();
+            String[] a = {};
+
+            TreeModel tree = jtTopics.getModel();
+            
+            for(int i=0; i<tree.getChildCount(tree.getRoot()); i++) {
+                descriptorsList.add(tree.getChild(tree.getRoot(), i).toString());
+            }
+            
+            VSMQuery vsm = new VSMQuery(descriptorsList.toArray(a));
+
+//            String doc = tree.getChild(tree.getRoot(), 2).toString();
+            String q = tfQuery.getText();
+            String best = vsm.getSimilarest(q, 0).getTxt();
+            double simi = vsm.getSimilarity(q, best);
+            int best_index = -1;
+            
+//            JOptionPane.showMessageDialog(this, String.format("Simi '%s' | '%s' = %2.4f", best, q, simi));
+            
+            System.out.println(String.format("Query Simi == '%s' | '%s' = %2.4f", best, q, simi));
+
+            for(int i=0; i<tree.getChildCount(tree.getRoot()); i++) {
+                String desc = tree.getChild(tree.getRoot(), i).toString();
+                
+                
+                if(best.equals(desc)) {
+                    best_index = i;
+                System.out.println(String.format("Node encontrado ----> %s, [%d], %s, %b\n\n",desc, i, best, best.equals(desc)));
+                }
+                
+            }
+            
+            jtTopics.setSelectionRow(best_index+1);
+        }
+        
         
     	private void showSegmentsRankedByKeyWords(boolean filter) {
 		MeetingMiner.prepareFolders();	
@@ -870,7 +969,8 @@ public class MainForm extends javax.swing.JFrame {
             public void run(){
                 setWainting(true);
                 if (true) {
-                    showSegmentsFilteredByTopic();
+//                    showSegmentsFilteredByTopic();
+                    showSegmentsRankedByTopicSimilarity();
                 }
                 else {
                     showSegmentsRankedByKeyWords(true);
@@ -893,6 +993,12 @@ public class MainForm extends javax.swing.JFrame {
     private void imShowTopicsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_imShowTopicsActionPerformed
         showPnTree(imShowTopics.isSelected());
     }//GEN-LAST:event_imShowTopicsActionPerformed
+
+    private void imShowTreeFrameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_imShowTreeFrameActionPerformed
+		FrShowTopicsTree f = new FrShowTopicsTree();
+		f.setTreeRoot(MeetingMiner.createTree());
+		f.setVisible(true);
+    }//GEN-LAST:event_imShowTreeFrameActionPerformed
 
     private void showPnTree(boolean show) {
         pnTree.setVisible(show);
@@ -935,6 +1041,30 @@ public class MainForm extends javax.swing.JFrame {
             }
         });
     }
+//    private ArrayList<MMTopic> rankedTopicsByDescriptor(ArrayList<MMTopic> topics, Set<String> descs) {
+//        ArrayList<MMTopic> result = new ArrayList<>();
+//        TreeMap<Integer, MMTopic> freq = new TreeMap<>();
+//        
+//        System.out.println(String.format("*** Ranking The Topics *** \n\n"));
+//        for(MMTopic t : topics) {
+//            Set<String> descriptorsIntersections = t.descriptorsStemedIntersection(descs);
+//            
+//            int f = descriptorsIntersections.size();
+//            freq.put(f, t);
+//            
+//            System.out.println(String.format("Topic='%s' freq=%d", t.getDescriptors(), f));
+//        }
+//        
+//        result.addAll(freq.values());
+//        
+//        System.out.println(">> Ranked Topics <<");
+//        for(MMTopic t : topics) {
+//            System.out.println(String.format("Topic='%s'", t.getDescriptors()));
+//        }
+//
+//        System.out.println("\n$$$$$ Ranked!! $$$$$\n");
+//        return result;
+//    }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.ButtonGroup bgSearchMode;
@@ -953,6 +1083,7 @@ public class MainForm extends javax.swing.JFrame {
     private javax.swing.JMenuItem imShowSegments;
     private javax.swing.JCheckBoxMenuItem imShowTopics;
     private javax.swing.JMenuItem imShowTree;
+    private javax.swing.JMenuItem imShowTreeFrame;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JMenu jMenu;
     private javax.swing.JMenuBar jMenuBar1;

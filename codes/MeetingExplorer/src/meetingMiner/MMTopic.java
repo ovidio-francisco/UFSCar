@@ -11,7 +11,8 @@ public class MMTopic {
 	
 	private ArrayList<String> descriptors = new ArrayList<>();
 	private ArrayList<File> segmentsDoc   = new ArrayList<>();
-	
+
+        private double similarity = 0.0; // Similaridade entre os descritores e palavras-chave
 	
 	public ArrayList<String> descriptorsIntersection(ArrayList<String> descs) {
 		ArrayList<String> result = new ArrayList<>();
@@ -86,5 +87,15 @@ public class MMTopic {
 	public void addSegmentDoc(File file) {
 		segmentsDoc.add(file);
 	}
+
+    public double getSimilarity() {
+        return similarity;
+    }
+
+    public void setSimilarity(double similarity) {
+        this.similarity = similarity;
+    }
 	
+        
+        
 }

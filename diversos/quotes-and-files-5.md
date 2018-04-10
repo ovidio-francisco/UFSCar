@@ -20,6 +20,16 @@ file:///ext4Data/UFSCar/papers/Tópicos/Modelos probabilísticos de tópicos: de
 
 
 
+-----------------------------------------
+
+"Morris, J. and G. Hirst. 1991. Lexical Cohesion Computed
+by Thesaural Relations as an Indicator of the
+Structure of Text. Computational linguistics, 17:1, 21
+– 48."
+
+https://arxiv.org/pdf/1204.0255.pdf
+----------------------------
+
 
 
 

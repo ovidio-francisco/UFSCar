@@ -19,11 +19,12 @@ public class StopWords {
     static HashSet<String> list = new HashSet<>();
 
     public StopWords(String language){
+//        JOptionPane.showMessageDialog(null, "Criando StopWord, language =  "+language);
         if(language.equals("port")){
             try{
                 RandomAccessFile arqStop = new RandomAccessFile("stopPort.txt", "r");
                 ShowStatus.setMessage("Aquivo '"+arqStop.toString()+"'carregado");
-                JOptionPane.showMessageDialog(null, "Aquivo '"+arqStop.toString()+"'carregado - Finalmente!!");
+//                JOptionPane.showMessageDialog(null, "Aquivo '"+arqStop.toString()+"'carregado - Finalmente!!");
                 String line = "";
                 while((line = arqStop.readLine())!=null){
                     if(line.length()>0){
@@ -104,6 +105,7 @@ public class StopWords {
                 if(j == terms2.length - 1){
                     quebra = false;
                 }
+//                System.out.println(String.format("isStopWord '%s' --> %b", termo2, isStopWord(termo2)));
                 if(!isStopWord(termo2)){
                         if(termo2.equals(".")){
                             new_str=new_str.concat(" . ");

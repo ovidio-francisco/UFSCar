@@ -73,12 +73,15 @@ public class Preprocess {
 	
 	
 	public String cleanTextMeating(String text) {
+            
 		
 		if (removeHeaders) {
 			HeaderDetector headerDetector = new HeaderDetector();
 			headerDetector.detectHeader(text);
 			text = headerDetector.removeHeader();
 			headerOccurrence = headerDetector.getHeaderOccurrence();
+                        if (headerOccurrence > 0)
+                            System.out.println(String.format("-----> Limpando as Atas %d ocorrencias", headerOccurrence));
 		}
 		
 		if (removePageNumbers) {
@@ -113,6 +116,34 @@ public class Preprocess {
 				);
 	}
 	
+	public static Preprocess getPreprocessDoAnything(boolean doanything) {
+		Preprocess preprocess = new Preprocess();
+
+		if(doanything) {
+			preprocess.setIdentifyEOS       (true);
+			preprocess.setRemoveAccents     (true);
+			preprocess.setRemoveHeaders     (true);
+			preprocess.setRemoveNumbers     (true);
+			preprocess.setRemovePunctuation (true);
+			preprocess.setRemoveShortThan   (true);
+			preprocess.setRemoveStem        (true);
+			preprocess.setRemoveStopWord    (true);
+			preprocess.setToLowCase         (true);			
+		} else {
+			preprocess.setIdentifyEOS       (true);
+			preprocess.setRemoveAccents     (false);
+			preprocess.setRemoveHeaders     (false);
+			preprocess.setRemoveNumbers     (false);
+			preprocess.setRemovePunctuation (false);
+			preprocess.setRemoveShortThan   (false);
+			preprocess.setRemoveStem        (false);
+			preprocess.setRemoveStopWord    (false);
+			preprocess.setToLowCase         (false);						
+		}
+		
+		return preprocess;
+	}
+
 	
 	public static StopWordList getStopWords() {
 		return stopWords;
