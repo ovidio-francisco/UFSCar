@@ -9,6 +9,7 @@ import topicExtraction.TETAlgorithms.Parametric.KMeans_Parametric;
 import topicExtraction.TETAlgorithms.TopicExtractorOld;
 import topicExtraction.TETStructures.NeighborHash;
 import java.util.HashMap;
+import javax.swing.JOptionPane;
 import weka.core.Instances;
 
 /**
@@ -47,12 +48,16 @@ public class KMeans_NonParametric extends TopicExtractorOld{
     
     public void buildTopics(Instances data){
         
+        JOptionPane.showMessageDialog(null, "BuldingTopics KMeans NonParametric");
+        
         HashMap<Integer,Double> kSilhouette = new HashMap<Integer,Double>();
         
         double previousCohesion = 0;
         double currentCohesion = 0;
         
         double[] movingVector = new double[getWindowSize()];
+        
+        System.out.println(String.format("--> minK %d, maxK %d, step %d", minK, maxK, step));
         
         for(int k=minK;k<=maxK;k=k+step){
             this.setNumTopics(k);
@@ -101,6 +106,7 @@ public class KMeans_NonParametric extends TopicExtractorOld{
             avgCohesion = avgCohesion / (double)getNumDocs();
             avgSilhouette = avgSilhouette / (double)getNumDocs();
             System.out.println("[Cohesion;Silhouette]: " + avgCohesion + ";" + avgSilhouette);
+            System.out.println(String.format("--> [NTopic; AVGCohesion;AVGSilhouette]: %d, %f, %f", getNumTopics(), avgCohesion, avgSilhouette) );
             kSilhouette.put(k, avgSilhouette);
             
             if(getMovingAverage()){
@@ -117,6 +123,7 @@ public class KMeans_NonParametric extends TopicExtractorOld{
                 
                 System.out.println("Variation: " + variation);
                 if(variation <= getMinPercVariation()){
+                    System.out.println("--> Breaking !! variation = " + variation + " MinPercVariation = " + getMinPercVariation());
                     break;
                 }    
             }

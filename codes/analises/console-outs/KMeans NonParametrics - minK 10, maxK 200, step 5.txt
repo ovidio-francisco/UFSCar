@@ -1,0 +1,1214 @@
+run:
+>> Meeting Explorer <<
+Diretório base econtrado
+175 documentos encontrados
+Arquivo arff encontrado
+Matrizes encontradas
+Reading document-term matrix...
+Reading term-topic matrix...
+Matrices loaded
+Setting the documents and descriptors for the topics
+Descriptors extracted and documents assigned to topics
+----
+
+Reading document-term matrix...
+Reading term-topic matrix...
+Matrices loaded
+Setting the documents and descriptors for the topics
+Descriptors extracted and documents assigned to topics
+----
+
+Generating the topic tree...
+Tree generated
+--->20
+------
+
+Topic Extraction Configuration
+Input  Dir:  /ext4Data/UFSCar/codes/MeetingExplorer/bases/arff
+Output Dir:  /ext4Data/UFSCar/codes/MeetingExplorer/bases/out
+Automatic Number of Topics:  true
+   PLSA:                     false
+   LDAGibbs:                 false
+   KMeans:                   true
+   Bisecting k-Means:        false
+=== k-Means Non-Parametric === 
+   Maximum number of iterations:        100
+   Minimum % of Changes:                1.000
+   Cluster Labeling:                    Centroid
+   Maximum value of k:                  200
+   Minimum Value of k:                  10
+   Step size:                           5
+   Using moving average:                false
+   Window Size:                         5
+   % Minimum Variation:                 1.000
+
+Arquivo '/ext4Data/UFSCar/codes/MeetingExplorer/bases/arff/representacao.arff' encontrado
+/ext4Data/UFSCar/codes/MeetingExplorer/bases/arff/representacao.arff
+Loading ARFF file...
+Arff loaded
+Extraction topics...
+Non-Parametric 
+
+
+Algorithm: KMeans - Non Parametric
+Cluster labeling: Centroid
+--> minK 10, maxK 200, step 5
+k Value: 10
+Iteration: 1
+- % of changes: 100.0
+- Total Cohesion: 448.4699677962337
+Iteration: 2
+- % of changes: 84.1692789968652
+- Total Cohesion: 576.0207406884142
+Iteration: 3
+- % of changes: 29.780564263322884
+- Total Cohesion: 602.5967728305386
+Iteration: 4
+- % of changes: 10.815047021943574
+- Total Cohesion: 607.8390406715628
+Iteration: 5
+- % of changes: 8.307210031347962
+- Total Cohesion: 612.2316964938984
+Iteration: 6
+- % of changes: 7.523510971786834
+- Total Cohesion: 616.0125460235115
+Iteration: 7
+- % of changes: 5.6426332288401255
+- Total Cohesion: 617.8877284331957
+Iteration: 8
+- % of changes: 5.6426332288401255
+- Total Cohesion: 619.8445294616974
+Iteration: 9
+- % of changes: 2.978056426332288
+- Total Cohesion: 620.6450315606093
+Iteration: 10
+- % of changes: 1.5673981191222568
+- Total Cohesion: 621.2160416830458
+Iteration: 11
+- % of changes: 0.9404388714733543
+- Total Cohesion: 621.4341738447138
+[Cohesion;Silhouette]: 0.4870281426724295;0.36734661253639295
+--> [NTopic; AVGCohesion;AVGSilhouette]: 10, 0.487028, 0.367347
+Variation: 1.0E7
+k Value: 15
+Iteration: 1
+- % of changes: 100.0
+- Total Cohesion: 514.8706470690252
+Iteration: 2
+- % of changes: 78.99686520376176
+- Total Cohesion: 623.6850046697405
+Iteration: 3
+- % of changes: 28.996865203761757
+- Total Cohesion: 650.4078581117716
+Iteration: 4
+- % of changes: 16.4576802507837
+- Total Cohesion: 667.3905890324424
+Iteration: 5
+- % of changes: 7.993730407523511
+- Total Cohesion: 671.2534205942637
+Iteration: 6
+- % of changes: 5.015673981191222
+- Total Cohesion: 673.6329384503574
+Iteration: 7
+- % of changes: 5.6426332288401255
+- Total Cohesion: 675.9996921857769
+Iteration: 8
+- % of changes: 4.545454545454546
+- Total Cohesion: 678.3997778733892
+Iteration: 9
+- % of changes: 1.7241379310344827
+- Total Cohesion: 679.1503110772404
+Iteration: 10
+- % of changes: 0.3134796238244514
+- Total Cohesion: 679.2470876589455
+[Cohesion;Silhouette]: 0.5323253038079502;0.39587453328582894
+--> [NTopic; AVGCohesion;AVGSilhouette]: 15, 0.532325, 0.395875
+Variation: 1.0930072765137666
+k Value: 20
+Iteration: 1
+- % of changes: 100.0
+- Total Cohesion: 513.485428895573
+Iteration: 2
+- % of changes: 82.44514106583071
+- Total Cohesion: 648.1553117622157
+Iteration: 3
+- % of changes: 33.5423197492163
+- Total Cohesion: 679.8366532096386
+Iteration: 4
+- % of changes: 14.733542319749215
+- Total Cohesion: 691.5942142198837
+Iteration: 5
+- % of changes: 8.620689655172415
+- Total Cohesion: 695.8439411330685
+Iteration: 6
+- % of changes: 5.4858934169279
+- Total Cohesion: 697.6867256685026
+Iteration: 7
+- % of changes: 3.1347962382445136
+- Total Cohesion: 698.8970556660428
+Iteration: 8
+- % of changes: 2.978056426332288
+- Total Cohesion: 699.9979923691343
+Iteration: 9
+- % of changes: 2.19435736677116
+- Total Cohesion: 700.6379498478194
+Iteration: 10
+- % of changes: 0.7836990595611284
+- Total Cohesion: 700.8546642450232
+[Cohesion;Silhouette]: 0.5492653189410862;0.3730530781796327
+--> [NTopic; AVGCohesion;AVGSilhouette]: 20, 0.549265, 0.373053
+Variation: 0.538836966547362
+--> Breaking !!
+k Value: 25
+Iteration: 1
+- % of changes: 100.0
+- Total Cohesion: 539.1495482931645
+Iteration: 2
+- % of changes: 88.71473354231975
+- Total Cohesion: 676.2567966002655
+Iteration: 3
+- % of changes: 31.19122257053292
+- Total Cohesion: 708.5602571763404
+Iteration: 4
+- % of changes: 8.620689655172415
+- Total Cohesion: 709.7936776275
+Iteration: 5
+- % of changes: 16.30094043887147
+- Total Cohesion: 720.664693070152
+Iteration: 6
+- % of changes: 10.815047021943574
+- Total Cohesion: 729.727001231801
+Iteration: 7
+- % of changes: 4.858934169278997
+- Total Cohesion: 732.914599290998
+Iteration: 8
+- % of changes: 3.1347962382445136
+- Total Cohesion: 734.273019659814
+Iteration: 9
+- % of changes: 0.9404388714733543
+- Total Cohesion: 734.4778194080008
+[Cohesion;Silhouette]: 0.575632500469646;0.41924647910849727
+--> [NTopic; AVGCohesion;AVGSilhouette]: 25, 0.575633, 0.419246
+Variation: 0.36696775096591505
+--> Breaking !!
+k Value: 30
+Iteration: 1
+- % of changes: 100.0
+- Total Cohesion: 555.238658512093
+Iteration: 2
+- % of changes: 88.24451410658307
+- Total Cohesion: 703.7176783412168
+Iteration: 3
+- % of changes: 30.094043887147336
+- Total Cohesion: 740.5936232801439
+Iteration: 4
+- % of changes: 10.18808777429467
+- Total Cohesion: 750.0747590189693
+Iteration: 5
+- % of changes: 5.172413793103448
+- Total Cohesion: 753.0851859152998
+Iteration: 6
+- % of changes: 2.037617554858934
+- Total Cohesion: 754.5126676632165
+Iteration: 7
+- % of changes: 1.4106583072100314
+- Total Cohesion: 755.6101910174015
+Iteration: 8
+- % of changes: 1.7241379310344827
+- Total Cohesion: 756.520579432047
+Iteration: 9
+- % of changes: 1.5673981191222568
+- Total Cohesion: 757.420019662123
+Iteration: 10
+- % of changes: 0.7836990595611284
+- Total Cohesion: 757.7385166218842
+[Cohesion;Silhouette]: 0.5938772273020334;0.4195714792888015
+--> [NTopic; AVGCohesion;AVGSilhouette]: 30, 0.593877, 0.419571
+Variation: 0.27696251682296613
+--> Breaking !!
+k Value: 35
+Iteration: 1
+- % of changes: 100.0
+- Total Cohesion: 583.1936738231027
+Iteration: 2
+- % of changes: 85.57993730407524
+- Total Cohesion: 705.412816358124
+Iteration: 3
+- % of changes: 31.19122257053292
+- Total Cohesion: 739.6285606972784
+Iteration: 4
+- % of changes: 14.106583072100312
+- Total Cohesion: 751.0893384323116
+Iteration: 5
+- % of changes: 9.090909090909092
+- Total Cohesion: 756.8180979320498
+Iteration: 6
+- % of changes: 4.702194357366771
+- Total Cohesion: 759.9333834419476
+Iteration: 7
+- % of changes: 2.507836990595611
+- Total Cohesion: 761.9379179843951
+Iteration: 8
+- % of changes: 0.9404388714733543
+- Total Cohesion: 762.5312705994245
+[Cohesion;Silhouette]: 0.5975950396547207;0.41892793425637115
+--> [NTopic; AVGCohesion;AVGSilhouette]: 35, 0.597595, 0.418928
+Variation: 0.040380463246029175
+--> Breaking !!
+k Value: 40
+Iteration: 1
+- % of changes: 100.0
+- Total Cohesion: 551.3191173840922
+Iteration: 2
+- % of changes: 87.3040752351097
+- Total Cohesion: 691.902778799322
+Iteration: 3
+- % of changes: 36.36363636363637
+- Total Cohesion: 728.3751346863594
+Iteration: 4
+- % of changes: 17.86833855799373
+- Total Cohesion: 740.0893723926458
+Iteration: 5
+- % of changes: 10.031347962382444
+- Total Cohesion: 749.0235690450124
+Iteration: 6
+- % of changes: 6.426332288401254
+- Total Cohesion: 752.7436424764476
+Iteration: 7
+- % of changes: 4.38871473354232
+- Total Cohesion: 755.7313369359691
+Iteration: 8
+- % of changes: 2.978056426332288
+- Total Cohesion: 757.1542125589154
+Iteration: 9
+- % of changes: 1.5673981191222568
+- Total Cohesion: 757.9615515177463
+Iteration: 10
+- % of changes: 1.09717868338558
+- Total Cohesion: 758.36080140465
+Iteration: 11
+- % of changes: 0.4702194357366771
+- Total Cohesion: 758.5905363793295
+[Cohesion;Silhouette]: 0.594508348884776;0.3981668180575527
+--> [NTopic; AVGCohesion;AVGSilhouette]: 40, 0.594508, 0.398167
+Variation: 0.021828604522365902
+--> Breaking !!
+k Value: 45
+Iteration: 1
+- % of changes: 100.0
+- Total Cohesion: 605.6174646717953
+Iteration: 2
+- % of changes: 85.42319749216301
+- Total Cohesion: 737.9416182675822
+Iteration: 3
+- % of changes: 37.30407523510972
+- Total Cohesion: 776.1279366979437
+Iteration: 4
+- % of changes: 13.479623824451412
+- Total Cohesion: 786.28582456165
+Iteration: 5
+- % of changes: 7.993730407523511
+- Total Cohesion: 790.4400830424015
+Iteration: 6
+- % of changes: 5.329153605015674
+- Total Cohesion: 794.9060319095006
+Iteration: 7
+- % of changes: 1.8808777429467085
+- Total Cohesion: 795.7809844179292
+Iteration: 8
+- % of changes: 0.1567398119122257
+- Total Cohesion: 795.8987072129512
+[Cohesion;Silhouette]: 0.6237450683487082;0.44382540887955824
+--> [NTopic; AVGCohesion;AVGSilhouette]: 45, 0.623745, 0.443825
+Variation: 0.025586691806031014
+--> Breaking !!
+k Value: 50
+Iteration: 1
+- % of changes: 100.0
+- Total Cohesion: 612.4999008514644
+Iteration: 2
+- % of changes: 86.05015673981191
+- Total Cohesion: 754.0872323097618
+Iteration: 3
+- % of changes: 28.683385579937305
+- Total Cohesion: 780.5968301271
+Iteration: 4
+- % of changes: 14.576802507836991
+- Total Cohesion: 794.2741876753596
+Iteration: 5
+- % of changes: 5.956112852664576
+- Total Cohesion: 798.2531717229839
+Iteration: 6
+- % of changes: 2.8213166144200628
+- Total Cohesion: 799.5295623025934
+Iteration: 7
+- % of changes: 0.9404388714733543
+- Total Cohesion: 799.7830990275111
+[Cohesion;Silhouette]: 0.6268646007824996;0.4304158345394933
+--> [NTopic; AVGCohesion;AVGSilhouette]: 50, 0.626865, 0.430416
+Variation: 0.01716112343775289
+--> Breaking !!
+k Value: 55
+Iteration: 1
+- % of changes: 100.0
+- Total Cohesion: 641.0058068228312
+Iteration: 2
+- % of changes: 81.97492163009404
+- Total Cohesion: 767.4378254106634
+Iteration: 3
+- % of changes: 29.153605015673982
+- Total Cohesion: 795.3026419178703
+Iteration: 4
+- % of changes: 13.479623824451412
+- Total Cohesion: 804.4851432519912
+Iteration: 5
+- % of changes: 6.269592476489027
+- Total Cohesion: 808.686233514822
+Iteration: 6
+- % of changes: 2.978056426332288
+- Total Cohesion: 811.2787459788192
+Iteration: 7
+- % of changes: 1.4106583072100314
+- Total Cohesion: 812.8360240362365
+Iteration: 8
+- % of changes: 0.9404388714733543
+- Total Cohesion: 813.936815138485
+[Cohesion;Silhouette]: 0.6379074272183933;0.44734400653342277
+--> [NTopic; AVGCohesion;AVGSilhouette]: 55, 0.637907, 0.447344
+Variation: 0.014499881704243434
+--> Breaking !!
+k Value: 60
+Iteration: 1
+- % of changes: 100.0
+- Total Cohesion: 636.8671560131597
+Iteration: 2
+- % of changes: 87.7742946708464
+- Total Cohesion: 782.5489647515586
+Iteration: 3
+- % of changes: 27.586206896551722
+- Total Cohesion: 811.8162279515582
+Iteration: 4
+- % of changes: 12.695924764890282
+- Total Cohesion: 823.4550281932007
+Iteration: 5
+- % of changes: 7.6802507836990594
+- Total Cohesion: 828.6706396357579
+Iteration: 6
+- % of changes: 3.2915360501567394
+- Total Cohesion: 830.3799929764951
+Iteration: 7
+- % of changes: 1.2539184952978055
+- Total Cohesion: 831.0148272024016
+Iteration: 8
+- % of changes: 1.09717868338558
+- Total Cohesion: 831.3414296211483
+Iteration: 9
+- % of changes: 0.3134796238244514
+- Total Cohesion: 831.5259760239351
+[Cohesion;Silhouette]: 0.6516674466692194;0.4426384154464738
+--> [NTopic; AVGCohesion;AVGSilhouette]: 60, 0.651667, 0.442638
+Variation: 0.017552440256672908
+--> Breaking !!
+k Value: 65
+Iteration: 1
+- % of changes: 100.0
+- Total Cohesion: 653.7996177090375
+Iteration: 2
+- % of changes: 82.13166144200626
+- Total Cohesion: 796.4469846713686
+Iteration: 3
+- % of changes: 22.727272727272727
+- Total Cohesion: 822.5359128699256
+Iteration: 4
+- % of changes: 8.620689655172415
+- Total Cohesion: 830.0605811815764
+Iteration: 5
+- % of changes: 4.702194357366771
+- Total Cohesion: 834.5757145482431
+Iteration: 6
+- % of changes: 3.761755485893417
+- Total Cohesion: 836.6636068164362
+Iteration: 7
+- % of changes: 1.8808777429467085
+- Total Cohesion: 837.523277575898
+Iteration: 8
+- % of changes: 1.09717868338558
+- Total Cohesion: 838.0888485415443
+Iteration: 9
+- % of changes: 1.09717868338558
+- Total Cohesion: 838.5921178505292
+Iteration: 10
+- % of changes: 0.7836990595611284
+- Total Cohesion: 838.9538071313297
+[Cohesion;Silhouette]: 0.657500624709814;0.44215745900745834
+--> [NTopic; AVGCohesion;AVGSilhouette]: 65, 0.657501, 0.442157
+Variation: 0.02009519847629626
+--> Breaking !!
+k Value: 70
+Iteration: 1
+- % of changes: 100.0
+- Total Cohesion: 641.7600971229982
+Iteration: 2
+- % of changes: 85.42319749216301
+- Total Cohesion: 780.9841077708202
+Iteration: 3
+- % of changes: 27.74294670846395
+- Total Cohesion: 813.3612682468867
+Iteration: 4
+- % of changes: 13.94984326018809
+- Total Cohesion: 825.1275985789305
+Iteration: 5
+- % of changes: 6.739811912225706
+- Total Cohesion: 829.7220992596592
+Iteration: 6
+- % of changes: 2.8213166144200628
+- Total Cohesion: 831.2622306935084
+Iteration: 7
+- % of changes: 1.2539184952978055
+- Total Cohesion: 831.8169362738233
+Iteration: 8
+- % of changes: 0.4702194357366771
+- Total Cohesion: 831.8756560847768
+[Cohesion;Silhouette]: 0.6519401693454375;0.45373652961154526
+--> [NTopic; AVGCohesion;AVGSilhouette]: 70, 0.651940, 0.453737
+Variation: 0.008817347399074027
+--> Breaking !!
+k Value: 75
+Iteration: 1
+- % of changes: 100.0
+- Total Cohesion: 675.5384503193438
+Iteration: 2
+- % of changes: 74.45141065830721
+- Total Cohesion: 811.7443677077612
+Iteration: 3
+- % of changes: 24.137931034482758
+- Total Cohesion: 834.9556417683033
+Iteration: 4
+- % of changes: 10.18808777429467
+- Total Cohesion: 842.8632652802329
+Iteration: 5
+- % of changes: 5.4858934169279
+- Total Cohesion: 845.5535230573283
+Iteration: 6
+- % of changes: 2.978056426332288
+- Total Cohesion: 846.9007773916114
+Iteration: 7
+- % of changes: 2.3510971786833856
+- Total Cohesion: 848.5806890234581
+Iteration: 8
+- % of changes: 2.037617554858934
+- Total Cohesion: 849.9152533551646
+Iteration: 9
+- % of changes: 0.9404388714733543
+- Total Cohesion: 850.5106918677667
+[Cohesion;Silhouette]: 0.6666478773480466;0.46176576256374846
+--> [NTopic; AVGCohesion;AVGSilhouette]: 75, 0.666648, 0.461766
+Variation: 0.012332533526195233
+--> Breaking !!
+k Value: 80
+Iteration: 1
+- % of changes: 100.0
+- Total Cohesion: 665.7859443751778
+Iteration: 2
+- % of changes: 83.38557993730407
+- Total Cohesion: 815.3145371712925
+Iteration: 3
+- % of changes: 23.197492163009404
+- Total Cohesion: 846.0926762008419
+Iteration: 4
+- % of changes: 10.344827586206897
+- Total Cohesion: 854.8133580202699
+Iteration: 5
+- % of changes: 3.4482758620689653
+- Total Cohesion: 857.1257157187656
+Iteration: 6
+- % of changes: 1.4106583072100314
+- Total Cohesion: 857.9811154638032
+Iteration: 7
+- % of changes: 0.6269592476489028
+- Total Cohesion: 858.3027878805821
+[Cohesion;Silhouette]: 0.6726724933769423;0.4453504271209844
+--> [NTopic; AVGCohesion;AVGSilhouette]: 80, 0.672672, 0.445350
+Variation: 0.010645636231779054
+--> Breaking !!
+k Value: 85
+Iteration: 1
+- % of changes: 100.0
+- Total Cohesion: 644.1169434086802
+Iteration: 2
+- % of changes: 82.44514106583071
+- Total Cohesion: 806.7405920528773
+Iteration: 3
+- % of changes: 36.677115987460816
+- Total Cohesion: 854.6679370407478
+Iteration: 4
+- % of changes: 10.344827586206897
+- Total Cohesion: 864.9521588718064
+Iteration: 5
+- % of changes: 2.978056426332288
+- Total Cohesion: 867.2582753315486
+Iteration: 6
+- % of changes: 0.3134796238244514
+- Total Cohesion: 867.4537809969814
+[Cohesion;Silhouette]: 0.6798345877138019;0.4659169658218533
+--> [NTopic; AVGCohesion;AVGSilhouette]: 85, 0.679835, 0.465917
+Variation: 0.008534388820551353
+--> Breaking !!
+k Value: 90
+Iteration: 1
+- % of changes: 100.0
+- Total Cohesion: 651.8191172059862
+Iteration: 2
+- % of changes: 90.28213166144201
+- Total Cohesion: 821.1085900909258
+Iteration: 3
+- % of changes: 24.137931034482758
+- Total Cohesion: 846.3797266042748
+Iteration: 4
+- % of changes: 9.561128526645767
+- Total Cohesion: 852.3205762817283
+Iteration: 5
+- % of changes: 7.993730407523511
+- Total Cohesion: 858.2377607730697
+Iteration: 6
+- % of changes: 4.231974921630094
+- Total Cohesion: 861.3685647866972
+Iteration: 7
+- % of changes: 2.507836990595611
+- Total Cohesion: 862.9474897409963
+Iteration: 8
+- % of changes: 1.2539184952978055
+- Total Cohesion: 863.6039864655347
+Iteration: 9
+- % of changes: 0.6269592476489028
+- Total Cohesion: 864.1581521337722
+[Cohesion;Silhouette]: 0.6772611286336213;0.46234562654116834
+--> [NTopic; AVGCohesion;AVGSilhouette]: 90, 0.677261, 0.462346
+Variation: 0.005936588697801781
+--> Breaking !!
+k Value: 95
+Iteration: 1
+- % of changes: 100.0
+- Total Cohesion: 682.8942469536432
+Iteration: 2
+- % of changes: 79.62382445141067
+- Total Cohesion: 832.1720514623491
+Iteration: 3
+- % of changes: 22.570532915360502
+- Total Cohesion: 854.152627665568
+Iteration: 4
+- % of changes: 11.128526645768025
+- Total Cohesion: 862.0999093535719
+Iteration: 5
+- % of changes: 5.956112852664576
+- Total Cohesion: 866.5705393415084
+Iteration: 6
+- % of changes: 3.918495297805643
+- Total Cohesion: 868.891511697144
+Iteration: 7
+- % of changes: 2.3510971786833856
+- Total Cohesion: 869.8096960427896
+Iteration: 8
+- % of changes: 2.037617554858934
+- Total Cohesion: 870.6979051914651
+Iteration: 9
+- % of changes: 2.978056426332288
+- Total Cohesion: 872.6938260777787
+Iteration: 10
+- % of changes: 1.7241379310344827
+- Total Cohesion: 873.5711442946725
+Iteration: 11
+- % of changes: 1.8808777429467085
+- Total Cohesion: 874.7653769016739
+Iteration: 12
+- % of changes: 0.3134796238244514
+- Total Cohesion: 875.035866265095
+[Cohesion;Silhouette]: 0.6857647854742128;0.5028849657214279
+--> [NTopic; AVGCohesion;AVGSilhouette]: 95, 0.685765, 0.502885
+Variation: 0.010101857012360327
+--> Breaking !!
+k Value: 100
+Iteration: 1
+- % of changes: 100.0
+- Total Cohesion: 695.104264861509
+Iteration: 2
+- % of changes: 83.69905956112854
+- Total Cohesion: 832.5595377052356
+Iteration: 3
+- % of changes: 26.01880877742947
+- Total Cohesion: 861.2761416583605
+Iteration: 4
+- % of changes: 12.695924764890282
+- Total Cohesion: 870.9268784699702
+Iteration: 5
+- % of changes: 6.112852664576803
+- Total Cohesion: 875.000634796206
+Iteration: 6
+- % of changes: 3.2915360501567394
+- Total Cohesion: 876.8265336949621
+Iteration: 7
+- % of changes: 1.4106583072100314
+- Total Cohesion: 877.3793563657564
+Iteration: 8
+- % of changes: 0.4702194357366771
+- Total Cohesion: 877.341581302055
+[Cohesion;Silhouette]: 0.6877203555582844;0.44782442075435397
+--> [NTopic; AVGCohesion;AVGSilhouette]: 100, 0.687720, 0.447824
+Variation: 0.006230440950477867
+--> Breaking !!
+k Value: 105
+Iteration: 1
+- % of changes: 100.0
+- Total Cohesion: 695.9916005638723
+Iteration: 2
+- % of changes: 78.21316614420063
+- Total Cohesion: 840.7331697188229
+Iteration: 3
+- % of changes: 24.608150470219435
+- Total Cohesion: 869.5058623113969
+Iteration: 4
+- % of changes: 10.344827586206897
+- Total Cohesion: 877.561497183852
+Iteration: 5
+- % of changes: 6.426332288401254
+- Total Cohesion: 880.7553239370455
+Iteration: 6
+- % of changes: 2.664576802507837
+- Total Cohesion: 881.6121339753412
+Iteration: 7
+- % of changes: 2.507836990595611
+- Total Cohesion: 882.3558652978273
+Iteration: 8
+- % of changes: 1.8808777429467085
+- Total Cohesion: 883.2461433298698
+Iteration: 9
+- % of changes: 1.2539184952978055
+- Total Cohesion: 883.5915901557524
+Iteration: 10
+- % of changes: 0.7836990595611284
+- Total Cohesion: 884.0015833747428
+[Cohesion;Silhouette]: 0.6928290371221326;0.47636250526312673
+--> [NTopic; AVGCohesion;AVGSilhouette]: 105, 0.692829, 0.476363
+Variation: 0.005922727951096496
+--> Breaking !!
+k Value: 110
+Iteration: 1
+- % of changes: 100.0
+- Total Cohesion: 715.7448596110422
+Iteration: 2
+- % of changes: 72.41379310344827
+- Total Cohesion: 855.8655545194936
+Iteration: 3
+- % of changes: 19.278996865203762
+- Total Cohesion: 878.2138466393857
+Iteration: 4
+- % of changes: 6.739811912225706
+- Total Cohesion: 884.8854936534951
+Iteration: 5
+- % of changes: 3.2915360501567394
+- Total Cohesion: 887.8397304093786
+Iteration: 6
+- % of changes: 2.037617554858934
+- Total Cohesion: 889.2047347199174
+Iteration: 7
+- % of changes: 0.4702194357366771
+- Total Cohesion: 889.5518926459223
+[Cohesion;Silhouette]: 0.6971409816974286;0.4898199873631897
+--> [NTopic; AVGCohesion;AVGSilhouette]: 110, 0.697141, 0.489820
+Variation: 0.005055308746820142
+--> Breaking !!
+k Value: 115
+Iteration: 1
+- % of changes: 100.0
+- Total Cohesion: 709.1202702915475
+Iteration: 2
+- % of changes: 78.52664576802508
+- Total Cohesion: 850.5240851895413
+Iteration: 3
+- % of changes: 18.808777429467085
+- Total Cohesion: 869.0528625645878
+Iteration: 4
+- % of changes: 9.247648902821316
+- Total Cohesion: 875.8791719750897
+Iteration: 5
+- % of changes: 4.075235109717868
+- Total Cohesion: 879.0517699079212
+Iteration: 6
+- % of changes: 3.1347962382445136
+- Total Cohesion: 880.8719655535327
+Iteration: 7
+- % of changes: 2.8213166144200628
+- Total Cohesion: 883.1673620641989
+Iteration: 8
+- % of changes: 1.4106583072100314
+- Total Cohesion: 884.088261253629
+Iteration: 9
+- % of changes: 0.4702194357366771
+- Total Cohesion: 884.2930619491729
+[Cohesion;Silhouette]: 0.693034547614801;0.47998579856953905
+--> [NTopic; AVGCohesion;AVGSilhouette]: 115, 0.693035, 0.479986
+Variation: 0.004584341648268042
+--> Breaking !!
+k Value: 120
+Iteration: 1
+- % of changes: 100.0
+- Total Cohesion: 719.0727447828466
+Iteration: 2
+- % of changes: 75.39184952978056
+- Total Cohesion: 857.1273293037791
+Iteration: 3
+- % of changes: 28.526645768025077
+- Total Cohesion: 892.3063837730085
+Iteration: 4
+- % of changes: 10.031347962382444
+- Total Cohesion: 900.5248923753101
+Iteration: 5
+- % of changes: 3.4482758620689653
+- Total Cohesion: 903.6832505263105
+Iteration: 6
+- % of changes: 2.507836990595611
+- Total Cohesion: 904.9969374566144
+Iteration: 7
+- % of changes: 0.6269592476489028
+- Total Cohesion: 905.2213962723506
+[Cohesion;Silhouette]: 0.7094218611638528;0.5034922973002876
+--> [NTopic; AVGCohesion;AVGSilhouette]: 120, 0.709422, 0.503492
+Variation: 0.006844248845450096
+--> Breaking !!
+k Value: 125
+Iteration: 1
+- % of changes: 100.0
+- Total Cohesion: 723.5846608079501
+Iteration: 2
+- % of changes: 79.46708463949844
+- Total Cohesion: 864.0783404228475
+Iteration: 3
+- % of changes: 23.197492163009404
+- Total Cohesion: 888.5989529464746
+Iteration: 4
+- % of changes: 7.6802507836990594
+- Total Cohesion: 894.880622523385
+Iteration: 5
+- % of changes: 3.1347962382445136
+- Total Cohesion: 896.4417524606223
+Iteration: 6
+- % of changes: 0.9404388714733543
+- Total Cohesion: 896.8389171163446
+[Cohesion;Silhouette]: 0.7028741908503925;0.4720969966094122
+--> [NTopic; AVGCohesion;AVGSilhouette]: 125, 0.702874, 0.472097
+Variation: 0.004354366708166246
+--> Breaking !!
+k Value: 130
+Iteration: 1
+- % of changes: 100.0
+- Total Cohesion: 714.2584167558955
+Iteration: 2
+- % of changes: 83.07210031347962
+- Total Cohesion: 863.388002268375
+Iteration: 3
+- % of changes: 25.54858934169279
+- Total Cohesion: 891.5264139257362
+Iteration: 4
+- % of changes: 9.87460815047022
+- Total Cohesion: 900.7783730309332
+Iteration: 5
+- % of changes: 2.8213166144200628
+- Total Cohesion: 902.5744483140976
+Iteration: 6
+- % of changes: 0.9404388714733543
+- Total Cohesion: 903.3424814393846
+[Cohesion;Silhouette]: 0.7079762755608483;0.48063009765362297
+--> [NTopic; AVGCohesion;AVGSilhouette]: 130, 0.707976, 0.480630
+Variation: 0.004333601052443514
+--> Breaking !!
+k Value: 135
+Iteration: 1
+- % of changes: 100.0
+- Total Cohesion: 715.4108884173339
+Iteration: 2
+- % of changes: 81.34796238244513
+- Total Cohesion: 869.6298766700115
+Iteration: 3
+- % of changes: 26.17554858934169
+- Total Cohesion: 899.222768535316
+Iteration: 4
+- % of changes: 7.993730407523511
+- Total Cohesion: 905.495222499475
+Iteration: 5
+- % of changes: 3.761755485893417
+- Total Cohesion: 907.2870158673355
+Iteration: 6
+- % of changes: 0.9404388714733543
+- Total Cohesion: 907.6204945677657
+[Cohesion;Silhouette]: 0.711329746871241;0.48516112861540617
+--> [NTopic; AVGCohesion;AVGSilhouette]: 135, 0.711330, 0.485161
+Variation: 0.004041867520115705
+--> Breaking !!
+k Value: 140
+Iteration: 1
+- % of changes: 100.0
+- Total Cohesion: 721.7648337578369
+Iteration: 2
+- % of changes: 80.25078369905955
+- Total Cohesion: 872.9948978859967
+Iteration: 3
+- % of changes: 18.96551724137931
+- Total Cohesion: 892.6763350443772
+Iteration: 4
+- % of changes: 7.053291536050156
+- Total Cohesion: 899.3146758095759
+Iteration: 5
+- % of changes: 3.918495297805643
+- Total Cohesion: 902.2770412149637
+Iteration: 6
+- % of changes: 1.7241379310344827
+- Total Cohesion: 903.2317859028061
+Iteration: 7
+- % of changes: 0.9404388714733543
+- Total Cohesion: 903.6007980339097
+[Cohesion;Silhouette]: 0.7081772832935985;0.49373247506219275
+--> [NTopic; AVGCohesion;AVGSilhouette]: 140, 0.708177, 0.493732
+Variation: 0.004296254423510337
+--> Breaking !!
+k Value: 145
+Iteration: 1
+- % of changes: 100.0
+- Total Cohesion: 723.7637008603663
+Iteration: 2
+- % of changes: 74.60815047021944
+- Total Cohesion: 872.0349072623102
+Iteration: 3
+- % of changes: 21.15987460815047
+- Total Cohesion: 897.4648841727193
+Iteration: 4
+- % of changes: 7.993730407523511
+- Total Cohesion: 903.1504757716632
+Iteration: 5
+- % of changes: 3.605015673981191
+- Total Cohesion: 904.9537107910324
+Iteration: 6
+- % of changes: 1.4106583072100314
+- Total Cohesion: 905.6356559361187
+Iteration: 7
+- % of changes: 0.3134796238244514
+- Total Cohesion: 905.913756058024
+[Cohesion;Silhouette]: 0.7099844082279142;0.48709364766540947
+--> [NTopic; AVGCohesion;AVGSilhouette]: 145, 0.709984, 0.487094
+Variation: 1.5892150532814675E-4
+--> Breaking !!
+k Value: 150
+Iteration: 1
+- % of changes: 100.0
+- Total Cohesion: 746.7432423346784
+Iteration: 2
+- % of changes: 68.18181818181817
+- Total Cohesion: 883.4158684303961
+Iteration: 3
+- % of changes: 20.37617554858934
+- Total Cohesion: 903.9628464899193
+Iteration: 4
+- % of changes: 10.18808777429467
+- Total Cohesion: 911.6108306965856
+Iteration: 5
+- % of changes: 4.38871473354232
+- Total Cohesion: 914.8291091813793
+Iteration: 6
+- % of changes: 2.19435736677116
+- Total Cohesion: 915.8629790279451
+Iteration: 7
+- % of changes: 1.4106583072100314
+- Total Cohesion: 916.4330831206867
+Iteration: 8
+- % of changes: 0.4702194357366771
+- Total Cohesion: 916.578180274787
+[Cohesion;Silhouette]: 0.7183328977900891;0.5039358369034995
+--> [NTopic; AVGCohesion;AVGSilhouette]: 150, 0.718333, 0.503936
+Variation: 0.004366444641609402
+--> Breaking !!
+k Value: 155
+Iteration: 1
+- % of changes: 100.0
+- Total Cohesion: 712.6301355474377
+Iteration: 2
+- % of changes: 87.61755485893417
+- Total Cohesion: 886.2167491772807
+Iteration: 3
+- % of changes: 21.15987460815047
+- Total Cohesion: 911.6239782476778
+Iteration: 4
+- % of changes: 6.739811912225706
+- Total Cohesion: 916.4185773977453
+Iteration: 5
+- % of changes: 1.8808777429467085
+- Total Cohesion: 917.6210883939214
+Iteration: 6
+- % of changes: 0.7836990595611284
+- Total Cohesion: 918.0960315333856
+[Cohesion;Silhouette]: 0.7195147315065811;0.498978356971528
+--> [NTopic; AVGCohesion;AVGSilhouette]: 155, 0.719515, 0.498978
+Variation: 0.0032449670849441503
+--> Breaking !!
+k Value: 160
+Iteration: 1
+- % of changes: 100.0
+- Total Cohesion: 736.953881391707
+Iteration: 2
+- % of changes: 78.21316614420063
+- Total Cohesion: 877.6666010112746
+Iteration: 3
+- % of changes: 25.862068965517242
+- Total Cohesion: 904.3233089313702
+Iteration: 4
+- % of changes: 8.150470219435736
+- Total Cohesion: 911.6534750932544
+Iteration: 5
+- % of changes: 2.978056426332288
+- Total Cohesion: 914.4089928231177
+Iteration: 6
+- % of changes: 0.9404388714733543
+- Total Cohesion: 914.9793908467094
+[Cohesion;Silhouette]: 0.7171058301277391;0.47253590678202984
+--> [NTopic; AVGCohesion;AVGSilhouette]: 160, 0.717106, 0.472536
+Variation: 0.001619157345825073
+--> Breaking !!
+k Value: 165
+Iteration: 1
+- % of changes: 100.0
+- Total Cohesion: 749.3347611994939
+Iteration: 2
+- % of changes: 77.4294670846395
+- Total Cohesion: 895.6199105059492
+Iteration: 3
+- % of changes: 16.77115987460815
+- Total Cohesion: 915.0768238121717
+Iteration: 4
+- % of changes: 4.545454545454546
+- Total Cohesion: 918.2153909423107
+Iteration: 5
+- % of changes: 2.664576802507837
+- Total Cohesion: 920.4636642011857
+Iteration: 6
+- % of changes: 0.6269592476489028
+- Total Cohesion: 920.6919411834577
+[Cohesion;Silhouette]: 0.7215454084509868;0.49917155983364364
+--> [NTopic; AVGCohesion;AVGSilhouette]: 165, 0.721545, 0.499172
+Variation: 0.0037413082401920317
+--> Breaking !!
+k Value: 170
+Iteration: 1
+- % of changes: 100.0
+- Total Cohesion: 745.4630091040613
+Iteration: 2
+- % of changes: 78.84012539184953
+- Total Cohesion: 888.2551307637773
+Iteration: 3
+- % of changes: 18.96551724137931
+- Total Cohesion: 908.9375340715045
+Iteration: 4
+- % of changes: 7.6802507836990594
+- Total Cohesion: 915.6048798487062
+Iteration: 5
+- % of changes: 4.702194357366771
+- Total Cohesion: 919.8936846857885
+Iteration: 6
+- % of changes: 2.8213166144200628
+- Total Cohesion: 922.0780676509061
+Iteration: 7
+- % of changes: 0.7836990595611284
+- Total Cohesion: 922.6855967236247
+[Cohesion;Silhouette]: 0.7231296518578605;0.4930767821081283
+--> [NTopic; AVGCohesion;AVGSilhouette]: 170, 0.723130, 0.493077
+Variation: 0.003665218158839023
+--> Breaking !!
+k Value: 175
+Iteration: 1
+- % of changes: 100.0
+- Total Cohesion: 763.7489182028214
+Iteration: 2
+- % of changes: 70.84639498432603
+- Total Cohesion: 897.9083720229379
+Iteration: 3
+- % of changes: 17.55485893416928
+- Total Cohesion: 918.2537286350289
+Iteration: 4
+- % of changes: 8.620689655172415
+- Total Cohesion: 925.8888235759403
+Iteration: 5
+- % of changes: 3.605015673981191
+- Total Cohesion: 928.5479983530937
+Iteration: 6
+- % of changes: 1.8808777429467085
+- Total Cohesion: 929.7364376157276
+Iteration: 7
+- % of changes: 0.9404388714733543
+- Total Cohesion: 930.1392854700854
+[Cohesion;Silhouette]: 0.7289492832837651;0.505537587539117
+--> [NTopic; AVGCohesion;AVGSilhouette]: 175, 0.728949, 0.505538
+Variation: 0.0029493003057055045
+--> Breaking !!
+k Value: 180
+Iteration: 1
+- % of changes: 100.0
+- Total Cohesion: 752.608252396842
+Iteration: 2
+- % of changes: 73.04075235109718
+- Total Cohesion: 893.4414719159197
+Iteration: 3
+- % of changes: 25.862068965517242
+- Total Cohesion: 924.5043544093913
+Iteration: 4
+- % of changes: 8.620689655172415
+- Total Cohesion: 931.5206230097044
+Iteration: 5
+- % of changes: 3.761755485893417
+- Total Cohesion: 934.4337130219856
+Iteration: 6
+- % of changes: 2.037617554858934
+- Total Cohesion: 935.7197230584394
+Iteration: 7
+- % of changes: 0.1567398119122257
+- Total Cohesion: 935.7374596686323
+[Cohesion;Silhouette]: 0.7333365671384269;0.5113230393187714
+--> [NTopic; AVGCohesion;AVGSilhouette]: 180, 0.733337, 0.511323
+Variation: 0.0038285036042386977
+--> Breaking !!
+k Value: 185
+Iteration: 1
+- % of changes: 100.0
+- Total Cohesion: 780.7466254682869
+Iteration: 2
+- % of changes: 71.47335423197492
+- Total Cohesion: 910.759467008536
+Iteration: 3
+- % of changes: 20.06269592476489
+- Total Cohesion: 931.58489068304
+Iteration: 4
+- % of changes: 5.329153605015674
+- Total Cohesion: 935.2415279637153
+Iteration: 5
+- % of changes: 1.4106583072100314
+- Total Cohesion: 936.1884627997383
+Iteration: 6
+- % of changes: 0.6269592476489028
+- Total Cohesion: 936.6479544598642
+[Cohesion;Silhouette]: 0.7340564594240926;0.515545424068042
+--> [NTopic; AVGCohesion;AVGSilhouette]: 185, 0.734056, 0.515545
+Variation: 0.004677239827083568
+--> Breaking !!
+k Value: 190
+Iteration: 1
+- % of changes: 100.0
+- Total Cohesion: 744.7820996816837
+Iteration: 2
+- % of changes: 81.50470219435736
+- Total Cohesion: 901.585135109522
+Iteration: 3
+- % of changes: 20.06269592476489
+- Total Cohesion: 928.4009516855833
+Iteration: 4
+- % of changes: 8.150470219435736
+- Total Cohesion: 935.0717312912511
+Iteration: 5
+- % of changes: 2.507836990595611
+- Total Cohesion: 937.0559223825223
+Iteration: 6
+- % of changes: 1.09717868338558
+- Total Cohesion: 937.9514822825105
+Iteration: 7
+- % of changes: 0.4702194357366771
+- Total Cohesion: 938.0666150898389
+[Cohesion;Silhouette]: 0.7352106542827156;0.5144321000137005
+--> [NTopic; AVGCohesion;AVGSilhouette]: 190, 0.735211, 0.514432
+Variation: 0.0037531394229921577
+--> Breaking !!
+k Value: 195
+Iteration: 1
+- % of changes: 100.0
+- Total Cohesion: 771.4631239164595
+Iteration: 2
+- % of changes: 71.31661442006269
+- Total Cohesion: 910.7623353804619
+Iteration: 3
+- % of changes: 22.25705329153605
+- Total Cohesion: 934.6484050368365
+Iteration: 4
+- % of changes: 7.366771159874608
+- Total Cohesion: 941.4968818597822
+Iteration: 5
+- % of changes: 3.1347962382445136
+- Total Cohesion: 942.9103624604147
+Iteration: 6
+- % of changes: 1.5673981191222568
+- Total Cohesion: 943.7554036472542
+Iteration: 7
+- % of changes: 0.9404388714733543
+- Total Cohesion: 944.0488183841048
+[Cohesion;Silhouette]: 0.7399149096390117;0.5278805680302888
+--> [NTopic; AVGCohesion;AVGSilhouette]: 195, 0.739915, 0.527881
+Variation: 0.0045928086088040665
+--> Breaking !!
+k Value: 200
+Iteration: 1
+- % of changes: 100.0
+- Total Cohesion: 770.7253110336013
+Iteration: 2
+- % of changes: 65.98746081504702
+- Total Cohesion: 899.4450484096499
+Iteration: 3
+- % of changes: 20.37617554858934
+- Total Cohesion: 920.5813222007536
+Iteration: 4
+- % of changes: 8.463949843260188
+- Total Cohesion: 928.2472402373851
+Iteration: 5
+- % of changes: 5.015673981191222
+- Total Cohesion: 932.1206168321926
+Iteration: 6
+- % of changes: 4.38871473354232
+- Total Cohesion: 934.445392538918
+Iteration: 7
+- % of changes: 1.2539184952978055
+- Total Cohesion: 934.9624722403848
+Iteration: 8
+- % of changes: 0.7836990595611284
+- Total Cohesion: 935.2836063633575
+[Cohesion;Silhouette]: 0.733064331720851;0.4982226005699086
+--> [NTopic; AVGCohesion;AVGSilhouette]: 200, 0.733064, 0.498223
+Variation: 0.0011208183153357254
+--> Breaking !!
+Best Value of K: 195
+--> _kMeans_100iterations_1.0mindiff_CentroidLabeling_
+Iteration: 1
+- % of changes: 100.0
+- Total Cohesion: 742.3843768829639
+Iteration: 2
+- % of changes: 81.50470219435736
+- Total Cohesion: 914.6765942209851
+Iteration: 3
+- % of changes: 20.06269592476489
+- Total Cohesion: 935.956002671737
+Iteration: 4
+- % of changes: 6.896551724137931
+- Total Cohesion: 941.9373423685456
+Iteration: 5
+- % of changes: 3.605015673981191
+- Total Cohesion: 944.0715429495431
+Iteration: 6
+- % of changes: 1.7241379310344827
+- Total Cohesion: 944.9162320773248
+Iteration: 7
+- % of changes: 0.4702194357366771
+- Total Cohesion: 944.9201026331529
+Topics Extracted!
+Process concluded successfully 
+ --> Meeting Explorer
+Extração de tópicos concluída
+Reading document-term matrix...
+Reading term-topic matrix...
+Matrices loaded
+Setting the documents and descriptors for the topics
+Descriptors extracted and documents assigned to topics
+----
+
+Saving Topic Extraction Configuration to '/ext4Data/UFSCar/codes/MeetingExplorer/bases/out/parameters.txt'
+Concluído em 04:04

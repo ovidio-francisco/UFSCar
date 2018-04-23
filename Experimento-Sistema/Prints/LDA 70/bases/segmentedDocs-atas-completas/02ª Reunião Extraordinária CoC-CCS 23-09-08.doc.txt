@@ -1,0 +1,144 @@
+Local, Dia e Hora: Na sala 12 do prédio acadêmico, situado nas dependências da Universidade Federal de São Carlos - campus Sorocaba, à Rodovia João Leme dos Santos, quilômetro 110, Bairro do Itinga, na cidade de Sorocaba, Estado de São Paulo e realizada aos vinte e três dias do mês de setembro do ano de dois mil e oito, às 09:00 horas. Convocação e Presença: A convocação foi realizada três dias antes da data de sua realização, por e-mails enviados a todos os interessados, e Ofício Circular 05/2008, sendo que se celebrou a primeira chamada às 09h15, a segunda chamada às 09h30 e a terceira chamada às 09h45, estando presentes após a terceira chamada os membros do Conselho do Curso de Bacharelado em Ciência da Computação - Sorocaba, sendo eles o Prof. Dr. Siovani Cintra Felipussi; a Profa. Dra. Yeda Regina Venturini; a Profa. Dra. Tiemi Christine Sakata, Profa. Dra. Katti Faceli, o Prof. Dr. José de Oliveira Guimarães e o Prof. Dr. Laércio José dos Santos. Também presente a Sra. Josiane Donizetti Lobo e o Sr. João Guilherme Júnior. Mesa: Formada pelo Prof. Dr. Siovani Cintra Felipussi, brasileiro, Professor Adjunto Nível 2, na função de Presidente desta Reunião e pela Sra. Josiane Donizetti Lobo, brasileira, Assistente em Administração, na função de Secretária desta Reunião. Comunicações da Presidência: O Prof. Dr. Siovani Cintra Felipussi dá início à reunião. (I) Não houve comunicados. (II) O presidente coloca em votação como inclusão de pauta a discussão sobre o reaproveitamento de vaga. Aprovação unânime. Comunicação dos Membros: (I) Não houve. Ordem do Dia: (I) APRECIAÇÃO DAS FICHAS DE CARATERIZAÇÃO REFERENTES ÀS DISCIPLINAS DO PRIMEIRO PERÍODO LETIVO DE 2009: (I.I) O Prof. Dr. Siovani Cintra Felipussi apresenta as fichas de caracterização das disciplinas aprovadas na reunião anterior e agradece a todos por utilizarem a lista de termos fornecida pela técnica em assuntos educacionais, Sra. Ofir Paschoalick Castilho de Madureira. Ele solicita que cada professor ou professora apresente sua ficha de caracterização. (I.II) O Prof. Dr. José de Oliveira Guimarães apresenta as disciplinas Introdução aos Sistemas de Informação e Algoritmos e Complexidade. (I.IV) A Profa. Dra. Katti Faceli apresenta a disciplina Inteligência Artificial. (I.V) A Profa. Dra. Yeda Regina Venturini apresenta a disciplina Arquitetura e Organização de Computadores. (I.VI) A Profa. Dra. Tiemi Christine Sakata apresenta a disciplina Estrutura de Dados 2. (I.VII) Prof. Dr. Siovani Cintra Felipussi apresenta as disciplinas Noções Básicas de Economia, Gestão de Pequenas Empresas, Probabilidade e Estatística e Geometria Analítica e Álgebra Linear. (I.VIII) Após discussão sobre os objetivos, ementas, distribuição de créditos e requisitos, as fichas de caracterização para o perfil 3, a serem oferecidas no primeiro período letivo de 2009, foram aprovadas como segue:
+
+	Disciplina
+	CR
+	Teo
+	Lab
+	CH
+
+	Introdução aos Sistemas de Informação
+	04
+	04
+	00
+	60
+
+	Algoritmos e Complexidade
+	04
+	03
+	01
+	60
+
+	Inteligência Artificial
+	04
+	03
+	01
+	60
+
+	Arquitetura e Organização de Computadores
+	04
+	04
+	00
+	60
+
+	Estrutura de Dados 2
+	04
+	03
+	01
+	60
+
+	Noções Básicas de Economia
+	02
+	02
+	00
+	30
+
+	Gestão de Pequenas Empresas
+	02
+	02
+	00
+	30
+
+	Probabilidade e Estatística
+	04
+	04
+	00
+	60
+
+	Geometria Analítica e Álgebra Linear
+	04
+	04
+	00
+	60
+
+
+A disciplina Geometria Analítica e Álgebra Linear teve sua ficha de caracterização aprovada com ressalva. O Presidente solicita à secretária que encaminhe ofício solicitando ao curso de Engenharia Florestal a inclusão do curso de Ciência da Computação na ficha de caracterização para o perfil 3 com caráter obrigatória e distribuição de créditos como quatro teóricos e zero práticos. (II) APRECIAÇÃO DO ESPELHAMENTO DAS DISCIPLINAS DO PRIMEIRO PERÍODO LETIVO DE 2008 PARA O PRIMEIRO PERÍODO LETIVO DE 2009. (II.I) O presidente apresenta as disciplinas que foram oferecidas no primeiro período letivo de 2008. Ele lembra que em reunião anterior foi aprovada a inativação das disciplinas Geometria Analítica para o perfil 1 e Álgebra Linear para o perfil 2 e que serão substituídas pela disciplina Geometria Analítica e Álgebra Linear para o perfil 1. (II.II) O presidente propõe que o curso de Ciência da Computação continue a oferecer a disciplina Cálculo Diferencial e Integral 1 em conjunto com o curso de Engenharia de Produção. Após breve discussão a proposta é aceita por unanimidade. (II.III) O presidente coloca em votação o espelhamento das disciplinas referentes ao primeiro período letivo de dois mil e oito para o primeiro período letivo de dois mil e nove. Após discussão o espelhamento é aprovado por unanimidade como segue:
+
+	Disciplina
+	CR
+	Teo
+	Lab
+	CH
+
+	Algoritmos e Programação de Computadores
+	08
+	04
+	04
+	120
+
+	Cálculo Diferencial e Integral 1
+	04
+	03
+	01
+	60
+
+	Física para Computação
+	04
+	03
+	01
+	60
+
+	Geometria Analítica e Álgebra Linear
+	04
+	04
+	00
+	60
+
+	Lógica para Computação
+	04
+	03
+	01
+	60
+
+
+(III) DISCUSSÃO SOBRE O REAPROVEITAMENTO DE VAGAS: (II.I) O presidente discorre brevemente sobre a distribuição de vagas já discutida em reunião anterior. (II.II) Ele informa que no Concurso de Provas e Títulos para Professor Adjunto DE, Área de Ciências Exatas e Naturais, Sub-Área de Ciência da Computação, para as disciplinas Algoritmos e Programação de Computadores, Linguagens de Programação e Estrutura de Dados, edital código 00507, há um candidato aprovado, o Sr. Valter Vieira de Camargo. (II.III) O Presidente coloca em votação a convocação do referido candidato para preenchimento de uma das vagas e posterior encerramento do edital. Após breve discussão a proposta foi aprovada por unanimidade. Encerramento: Estando todos de acordo e nada mais havendo a deliberar, lavra-se, leia-se, aprova-se e assina-se esta Ata por todos os membros do Conselho do Curso de Bacharelado em Ciência da Computação, Campus Sorocaba, participantes desta reunião que, em 02 (duas) vias, será levada a registro e arquivamento junto à Coordenação do Conselho do Curso de Bacharelado em Ciência da Computação - Sorocaba, ficando ali à disposição para consulta restrita aos professores da UFSCar - Sorocaba. Nada mais.
+	Prof. Dr. Siovani Cintra Felipussi
+Presidente desta Reunião
+
+	Josiane Donizetti Lobo
+
+Secretária desta Reunião
+
+Assistente em Administração
+
+da UFSCar-Sorocaba
+	Profa. Dra. Tiemi Christine Sakata
+
+Professor Adjunto
+
+	Profa. Dra. Katti Faceli
+
+Professor Adjunto
+	Profa. Dra. Yeda Regina Venturini
+
+Professor Adjunto
+
+	Prof. Dr. José de Oliveira Guimarães
+Professor Associado
+	Prof. Dr. Laércio José dos Santos
+Professor Adjunto
+
+	Sr. João Guilherme Júnior
+Representante Técnico Administrativo
+	
+
+
+
+
+
+
+
+
+
+
+
+

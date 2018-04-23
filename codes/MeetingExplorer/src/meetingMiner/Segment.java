@@ -123,6 +123,25 @@ public class Segment {
 		
 		this.matches.putAll(stems);
 	}
+	public void matchKeyWords(Set<String> descs) {
+
+		HashMap<String, String> stems = new HashMap<>();
+                
+                String[] terms = getText().split(" ");
+                
+		for(String s : terms) {
+			stems.put(s, Preprocess.getStemmer().wordStemming(s));
+		}
+		
+		ArrayList<String> descsStems = new ArrayList<>();
+		for(String s : descs) {
+			descsStems.add(Preprocess.getStemmer().wordStemming(s));
+		}
+
+		stems.values().retainAll(descsStems);
+		
+		this.matches.putAll(stems);
+	}
 	
 	public static void sortSegmentsByMatcheCount(ArrayList<Segment> segs) {
 		segs.sort(new Comparator<Segment>() {

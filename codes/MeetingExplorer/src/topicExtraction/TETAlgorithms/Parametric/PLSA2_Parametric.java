@@ -95,6 +95,9 @@ public class PLSA2_Parametric extends TopicExtractor{
             if(numIt > 0){
                 currentLog = logLikelihood;
                 ShowStatus.setMessageVerbose("Difference: " + Math.abs(currentLog - previousLog));
+                
+                System.out.println(String.format("Sair %f < %f",Math.abs(currentLog - previousLog), this.getMinDifference()));
+                
                 if(Math.abs(currentLog - previousLog) < this.getMinDifference()){
                     sair = true;
                 }

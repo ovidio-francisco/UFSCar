@@ -112,7 +112,8 @@ public class TopicExtraction_ME {
 	if(configuration.isLDAGibbs()){
 		int numMaxIterations = 2000;
 		int burn = 1000;
-		double alpha = 5;
+//		double alpha = 5;
+		double alpha = 0.1;
 		double beta = 0.1;
 		double minDiff = 1.0;
 		ShowStatus.setMessage("Algorithm: LDA - Gibbs Sampling - Parametric");

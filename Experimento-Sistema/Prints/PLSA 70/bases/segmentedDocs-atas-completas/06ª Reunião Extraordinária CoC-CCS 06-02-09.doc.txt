@@ -1,0 +1,113 @@
+Local, Dia e Hora: No laboratório de informática 02, situado nas dependências da Universidade Federal de São Carlos - campus Sorocaba, à Rodovia João Leme dos Santos, quilômetro 110, Bairro do Itinga, na cidade de Sorocaba, Estado de São Paulo e realizada aos seis dias do mês de fevereiro do ano de dois mil e nove, as 14:00 horas. Convocação e Presença: A convocação foi realizada oito dias antes da data de sua realização, por e-mails enviados a todos os interessados, e Ofício Circular 01/2009, sendo que se celebrou a primeira chamada as 14:15 h, a segunda chamada as 14:30 h e a terceira chamada as 14:45 h, estando presentes após a terceira chamada os membros do Conselho do Curso de Bacharelado em Ciência da Computação - Sorocaba, sendo eles os professores doutores Siovani Cintra Felipussi; Yeda Regina Venturini; Tiemi Christine Sakata, Katti Faceli, Laércio José dos Santos e José de Oliveira Guimarães. Também presentes os professores recém-ingressos Marcio Katsumi Oikawa, Luciana Aparecida Martinez Zaina, Fábio Luciano Verdi, Murillo Rodrigo Petrucelli Homem e José Fernando Rodrigues Junior, além da Sra. Josiane Donizetti Lobo, como secretária desta reunião e do Sr. João Guilherme Júnior como representante técnico administrativo. Comunicações da Presidência: O presidente, Prof. Dr. Siovani Cintra Felipussi, dá início à reunião. (I) Ele dá boas-vindas aos professores recém-ingressos e deseja-lhes boa sorte na vida acadêmica junto à Universidade. (II) O presidente informa que a redistribuição do Prof. Marcelo Zanchetta do Nascimento da Universidade Federal do ABC para a Universidade Federal de São Carlos campus Sorocaba não foi possível, pois a UFABC não teria tempo hábil para proceder a abertura de concurso para preenchimento da vaga. (III) Ele informa que as aulas recomeçarão no dia nove de março de dois mil e nove e solicita a todos os professores qualidade total no ensino. Ele lembra que a portaria 522/06 normatiza os métodos de avaliação, mas que os professores devem ser criteriosos com os alunos, pois os egressos divulgarão o nome da universidade. Questionado, ele informa que a primeira semana de aula, conhecida como calourada, é considerada atividade letiva tendo os alunos presença obrigatória. Ele ainda solicita que todos divulguem as datas das avaliações no primeiro dia, bem como seus métodos de avaliação. (IV) O presidente informa que a I Semana da Computação deverá ocorrer em abril de dois mil e nove. (IV.I) Ele pede que os professores auxiliem no que for possível, mas acrescenta que a organização é responsabilidade dos alunos. O presidente, então, passa a palavra à vice-presidente, a Profa. Dra. Yeda Regina Venturini, para que ela prossiga conduzindo a reunião, uma vez que foi a coordenadora em exercício durante o mês de janeiro. (V) Ela então discorre sobre o Calendário Acadêmico 2009 e solicita atenção de todos  para os prazos. (VI) A vice-coordenadora informa que a universidade procedeu a licitação e compra de microcomputadores, mas que alguns não foram entregues dentro das especificações, apesar de a fornecedora afirmar o contrário. Ela acrescenta que a procuradoria jurídica está acompanhando o caso e, com o auxílio técnico dos professores do curso de Ciência da Computação do campus Sorocaba, busca resolver o impasse. (VII) Ela informa que a Secretaria de Informática do campus São Carlos vai aumentar o link de internet de quatro para dezesseis Mb para o campus Sorocaba, mas que não há prazo definido porque há dificuldades operacionais a serem sanadas. Ela acrescenta que o aumento do link possibilitará o uso de vídeo-conferências, o que diminuirá as viagens ao campus São Carlos. Ela informa, ainda, que após o aumento do link o campus pretende iniciar o uso de cartões integrados no restaurante universitário com o uso de catracas de acesso e solicita o apoio de todos para o desenvolvimento do projeto. (VIII) A professora informa que para acessar os periódicos todos devem utilizar o PROXY e que a procurem depois para obter a configuração. (IX) Referente aos pró-labores dos concursos realizados pelo curso, ela informa que o pagamento está suspenso aguardando a liberação de verba pela União. Ela solicita que os professores que foram presidentes de bancas contatem os membros de suas respectivas bancas e repassem a informação. Comunicação dos Membros: A vice-presidente passa a palavra à Profa. Dra. Tiemi Christine Sakata. (I) Ela informa a todos, principalmente aos novos professores, os informes da Comissão de Ensino. (I.I) O Seminário de Inovação Pedagógica ocorrerá nos dias dez a doze de março de dois mil e nove. (I.II) Na semana anterior ao seminário, dias quatro a seis de março, a Profa. Lea Anastaciou estará no campus Sorocaba para discutir os projetos pedagógicos. Ordem do Dia: (I) DISTRIBUIÇÃO DE DISCIPLINAS. O presidente discorre rapidamente sobre a progressão funcional e como todos devem estar atentos a ela. (I.I) A Profa. Yeda Regina Venturini expõe o problema de o curso de Ciência da Computação ter que dispor de um professor para lecionar uma disciplina da área de matemática. (I.II) O Prof. Dr. Laércio José dos Santos, que também é vice-coordenador do novo curso de Licenciatura em Matemática, explica que o problema se deu pelo fato de a Profa. Dra. Lynnyngs Kelly Arruda Saraiva de Paiva entrar com pedido de afastamento ao setor de recursos humanos, o qual está com uma demanda muito grande de concursos e que não teve tempo hábil para dar prosseguimento à contratação de um novo professor e ao Prof. Dr. José Salatiel Rodrigues Pires, diretor do campus, preferir a não-contratação de professores substitutos. (I.III) O Prof. Sr. Siovani Cintra Felipussi acrescenta que a solicitação da Profa. Magda Peixoto, coordenadora do curso de Licenciatura em Matemática, era de um professor do curso de Ciência da Computação para lecionar Cálculo Diferencial e Integral 3, mas que ele negou, pois o curso não prevê essa disciplina em sua grade curricular e ofereceu um professor para ministrar a disciplina de Cálculo Diferencial e Integral 1. (I.IV) Após discussão sobre o tema, a distribuição de disciplinas do curso de Bacharelado em ciência da Computação para o período letivo de 2009.1 ficou assim definida:
+
+	Disciplina
+	Professor
+
+	Geometria Analítica e Álgebra Linear
+	Murillo Rodrigo Petrucelli Homem
+
+	Cálculo Diferencial e Integral 1
+	Laércio José dos Santos
+
+	Lógica para Computação
+	José de Oliveira Guimarães
+
+	Algoritmos e Programação de Computadores (turma A)
+	Siovani Cintra Felipussi
+
+	Algoritmos e Programação de Computadores (turma B)
+	Yeda Regina Venturini
+
+	Física para Computação
+	Antonio Riul Jr.
+
+	Probabilidade e Estatística
+	Júlio César Pereira
+
+	Arquitetura e Organização de Computadores
+	José Fernando Rodrigues Junior
+
+	Algoritmos e Complexidade
+	Tiemi Christine Sakata
+
+	Inteligência Artificial
+	Katti Faceli
+
+	Gestão de Pequenas Empresas
+	Neila Conceição Viana da Cunha
+
+	Introdução aos Sistemas de Informação
+	Luciana Aparecida Martinez Zaina
+
+	Estrutura de Dados 2
+	Marcio Katsumi Oikawa
+
+	Noções Básicas de Economia
+	Stela Luiza Mattos Ansanelli
+
+	Introdução à Informática
+	Marcio Katsumi Oikawa
+
+	Introdução a Conceitos Computacionais e Algoritmos (turma A –Biologia)
+	Fábio Luciano Verdi
+
+	Introdução a Conceitos Computacionais e Algoritmos (turma B – Economia)
+	Marcio Katsumi Oikawa
+
+	Introdução a Conceitos Computacionais e Algoritmos (turma C – Economia)
+	Fábio Luciano Verdi
+
+	Algoritmos e Programação
+	Tiemi Christine Sakata
+
+
+(II) CALENDÁRIO PROJETO PEDAGÓGICO. A vice-presidente discorre sobre a importância do andamento e conclusão do Projeto Pedagógico do curso. (II.I) Ela acrescenta que a Universidade Federal de São Carlos segue um modelo determinado pelo Ministério da Educação e Cultura e que o campus Sorocaba dispões de duas técnicas em assuntos educacionais para auxiliar na confecção do mesmo. (II.II) Após rápida discussão determinou-se que os professores do curso de Ciência da Computação se reúnam às quartas-feiras, das 9:30 às 12:30 para o andamento e conclusão do Projeto Pedagógico. (III) FINEP – FINANCIADORA DE ESTUDOS E PROJETOS. A vice-presidente agradece o empenho de todos e acrescenta que foi muito bom para o projeto a contratação dos novos professores, pois eles propiciaram diversidade de conhecimentos e interesses para o desenvolvimento do mesmo. (III.I) O Prof. Dr. Marcio Katsumi Oikawa lembra que, se houver interseção, é possível integrar outros projetos de pesquisa. (III.II) A vice-presidente acrescenta que professores de matemática podem desenvolver pesquisas em conjunto com os professores de Ciência da Computação. Breve discussão sobre as áreas e sub-áreas do projeto. (III.II) Conclusão: o  Prof. Dr. Marcio Katsumi Oikawa padronizará os projetos e o Prof. Dr. José Fernando Rodrigues Junior concluirá as conexões e enviará o arquivo via e-mail aos outros professores. (III.III) Os professores combinaram de se reunir para conclusão do conteúdo ainda nesta data. (IV) BANCA PARA CONCURSOS. Devido à abertura de concurso para provimento de vagas nas áreas de Sistemas Operacionais e Algoritmos, a vice-presidente coloca a necessidade de nomeação da banca. (IV.I) Após discussão decidiu-se que (a) para a área de Sistemas Operacionais o Prof. Dr. Fábio Luciano Verdi será o presidente da banca; (b) para a área de Algoritmos uma banca de cinco integrantes, sendo dois da Universidade Federal de São Carlos e três externos, com nomes a serem confirmados. (V) MATRÍCULA 2009. A vice-presidente informa que no dia dez de fevereiro será a primeira chamada para a inscrição dos ingressantes do vestibular. (V.I) Ela acrescenta que a parte operacional será desenvolvida pelos secretários de cursos, mas que professores e coordenadores devem estar presentes para sanar dúvidas de pais e calouros. Todos concordaram em comparecer e participar. (VI) PREVISÃO DE VIAGEM TÉCNICA. O presidente toma a palavra e explica a necessidade de planejamento de viagens técnicas devido à liberação de verba. (VI.I) Ele solicita que cada professor verifique a possibilidade dentro dos interesses do curso e que apresente a proposta. (VII) FORMATAÇÃO DO CONSELHO DE CURSO DE CIÊNCIA DA COMPUTAÇÃO. O presidente apresenta a atual configuração do conselho. Após discussão o conselho aprovou por unanimidade a criação das áreas “Arquitetura e Redes”, “Engenharia de Software” e “Banco de Dados”, bem como a alteração da área “Geometria Diferencial” para “Geometria Diferencial e Topologia” e Exclusão da área “Análise” (VII.I) A secretária lembra que tal alteração deverá ser analisada e aprovada pela Câmara de Graduação, segundo a portaria 662/03. (VIII) COMISSÕES. (VIII.I) COMISSÃO DE PESQUISA. O presidente informa que a Profa. Katti Faceli é a representante do conselho na Comissão de Pesquisa e lhe passa a palavra. (VIII.I.I) A professora, então, discorre sobre os atos da comissão e lembra da necessidade de o Conselho do Curso de Ciência da Computação ter um representante, ainda que como ouvinte. (VIII.I.II) Após breve discussão decidiu-se pela indicação da Profa. Dra. Katti Faceli como titular e do Prof. Dr. Murillo Rodrigo Petrucelli Homem como suplente. (VIII.II) COMISSÃO DE ENSINO. A Profa. Dra. Tiemi Christine Sakata, como representante titular, lembra da necessidade de da indicação de um suplente. (VIII.II.I) Após breve discussão decidiu-se pela indicação da Profa. Dra. Luciana Aparecida Martinez Zaina para suplente. (VIII.III) COMISSÃO DE EXTENSÃO. Após breve discussão decidiu-se pela indicação do Prof. Dr. José Fernando Rodrigues Junior como titular e do Prof. Dr. José de Oliveira Guimarães como suplente. (VIII.IV) COMISSÃO DE INOVAÇÃO TECNOLÓGICA. Após breve discussão decidiu-se pela indicação do Prof. Dr. Marcio Katsumi Oikawa como titular e do Prof. Dr. Fábio Luciano Verdi como suplente. (IX) PÓS-GRADUAÇÃO. A vice-presidente retoma a palavra e discorre sobre os planos para a criação do curso de pós-graduação no curso de Ciência da Computação. (IX.I) O presidente lembra da necessidade de cuidar para que não ocorram erros durante a criação, pois a pontuação da CAPES é muito criteriosa. (IX.II) Ele levanta a questão da necessidade da criação de uma Comissão de Pós-Graduação que deverá discutir e levantar as informações necessárias para a criação do curso. (IX.III) Após discussão decidiu-se que a comissão será formada pela Profa. Dra. Yeda Regina Venturini como presidente, pelo Prof. Dr. Fábio Luciano Verdi como vice-presidente e pelo Prof. Dr. Murillo Rodrigo Petrucelli Homem. (IX.IV) Os membros da comissão comprometeram-se de providenciar as informações necessárias e reunir-se com os demais professores para informes e discussão. (X) CONSELHO DE INFORMÁTICA. O presidente retoma a palavra e discorre sobre a necessidade da criação de um conselho informática no campus. (X.I) Ele acrescenta que a indicação será uma sugestão do curso, mas que a criação ou não será decidida pelo Conselho de Campus. (X.II) A vice-presidente lembra que deve-se ter cautela, pois as intenções de tal conselho podem ser vistas como com o intuito de favorecer o curso de Ciência da Computação. (X.III) Após deliberação o Conselho do Curso de Ciência da Computação decidiu pela indicação para o Conselho de Campus da criação do Conselho de Informática com seis integrantes e a seguinte configuração: (a) três membros professores do curso de Ciência da Computação; (b) dois professores externos, porém com conhecimentos na área e (c) um técnico em informática. Encerramento: Estando todos de acordo e nada mais havendo a deliberar, lavra-se, leia-se, aprova-se e assina-se esta Ata por todos os membros do Conselho do Curso de Bacharelado em Ciência da Computação, Campus Sorocaba, participantes desta reunião que, em 02 (duas) vias, será levada a registro e arquivamento junto à Coordenação do Conselho do Curso de Bacharelado em Ciência da Computação - Sorocaba, ficando ali à disposição para consulta restrita aos professores da UFSCar - Sorocaba. Nada mais.
+	Prof. Dr. Siovani Cintra Felipussi
+Presidente da Reunião
+
+	Josiane Donizetti Lobo
+
+Secretária desta Reunião
+	Profa. Dra. Tiemi Christine Sakata
+
+Professor Adjunto
+
+	Profa. Dra. Katti Faceli
+
+Professor Adjunto
+	Profa. Dra. Yeda Regina Venturini
+
+Professor Adjunto
+
+
+	Prof. Dr. José de Oliveira Guimarães
+Professor Associado
+	Prof. Dr. Laércio José dos Santos
+Professor Adjunto
+
+	Prof. Dr. Marcio Katsumi Oikawa
+Professor Adjunto
+	Profa. Dra. Luciana Aparecida Martinez Zaina
+Professor Adjunto
+
+	Prof. Dr. Fábio Luciano Verdi
+Professor Adjunto
+	Prof. Dr. Murillo Rodrigo Petrucelli Homem
+Professor Adjunto
+
+	Prof. Dr. José Fernando Rodrigues Junior
+Professor Adjunto
+	Sr. João Guilherme Júnior
+Representante Técnico Administrativo
+
+
+
+
+
+
+
+
+
+
+
+

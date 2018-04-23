@@ -1,0 +1,324 @@
+Local, Dia e Hora: Na sala 12 do prédio acadêmico, situado nas dependências da Universidade Federal de São Carlos - campus Sorocaba, à Rodovia João Leme dos Santos, quilômetro 110, Bairro do Itinga, na cidade de Sorocaba, Estado de São Paulo e realizada aos dezesseis dias do mês de outubro do ano de dois mil e oito, às 09:30 horas. Convocação e Presença: A convocação foi realizada dois dias antes da data de sua realização, por e-mails enviados a todos os interessados, e Ofício Circular 06/2008, sendo que se celebrou a primeira chamada às 09h45, a segunda chamada às 10h00 e a terceira chamada às 10h15, estando presentes após a terceira chamada os membros do Conselho do Curso de Bacharelado em Ciência da Computação - Sorocaba, sendo eles os professores doutores Siovani Cintra Felipussi; Yeda Regina Venturini; Tiemi Christine Sakata, Katti Faceli, José de Oliveira Guimarães e Lynnyngs Kelly Arruda Saraiva de Paiva. Também presente a Sra. Josiane Donizetti Lobo, o Sr. César Augusto Costa e o Sr. João Guilherme Júnior. Comunicações da Presidência: O Prof. Dr. Siovani Cintra Felipussi dá início à reunião. (I) O presidente informa que foram entregues noventa microcomputadores adquiridos através de processo de licitação e que estão sob certificação.Comunicação dos Membros: (I) Prof. Dr. José de Oliveira Guimarães informa que houve alteração nos editais dos concurso para preenchimento de vagas do curso de Ciência da Computação e pede aos presidentes das banca que confiram os editais de seus respectivos concursos. Ordem do Dia: (I) ATRIBUIÇÃO DE DISCIPLINAS. (I.I) O Prof. Dr. Siovani Cintra Felipussi solicita que cada professor manifeste sua preferência para ministrar disciplinas. (I.II) Após discussão, decidiu-se os ministrantes das disciplinas a serem ofertadas no primeiro semestre de dois mil e nove como segue:
+	Disciplina
+	Professor
+
+	Introdução aos Sistemas de Informação
+	A contratar
+
+	Algoritmos e Complexidade
+	Tiemi Christine Sakata
+
+	Algoritmos e Programação de Computadores
+	Siovani Cintra Felipussi / A contratar
+
+	Algoritmos e Programação de Computadores
+	Yeda Regina Venturini / A contratar
+
+	Inteligência Artificial
+	Katti Faceli
+
+	Arquitetura e Organização de Computadores
+	A contratar
+
+	Estrutura de Dados 2
+	A contratar
+
+	Noções Básicas de Economia
+	A definir pelo Prof. Danilo Rolim
+
+	Gestão de Pequenas Empresas
+	A definir pelo Prof. Jorge Meireles
+
+	Probabilidade e Estatística
+	A definir pela Profa. Magda Peixoto
+
+	Geometria Analítica e Álgebra Linear
+	A definir pela Profa. Magda Peixoto
+
+	Física para Computação
+	A definir pelo Prof. Antonio Riul
+
+	Lógica para Computação
+	José de Oliveira Guimarães
+
+	Cálculo Diferencial e Integral 1
+	Laércio José dos Santos
+
+
+(II) DEFINIÇÃO DA GRADE HORÁRIA E TIPOS DE SALA. (II.I) Definidos os ministrantes das disciplinas, o presidente solicita que cada professor defina o horário de sua preferência. (II.II) Após discussão, os horários das disciplinas a serem oferecidas ficam assim definidos:
+
+	Disciplina
+	T
+	P
+	Turma
+	Horário
+	Vagas
+
+	Algoritmos e Programação de Computadores
+	4
+	4
+	A
+	Seg
+	14:00
+	18:00
+	45
+
+	
+	4
+	4
+	A
+	Qui
+	14:00
+	18:00
+	45
+
+	Cálculo Diferencial e Integral 1
+	3
+	1
+	B
+	Ter
+	16:00
+	18:00
+	60
+
+	
+	3
+	1
+	B
+	Qua
+	16:00
+	18:00
+	60
+
+	Física para Computação
+	3
+	1
+	A
+	Ter
+	10:30
+	12:30
+	60
+
+	
+	3
+	1
+	A
+	Qua
+	14:00
+	16:00
+	60
+
+	
+	3
+	1
+	A
+	Sex
+	08:30
+	10:30
+	60
+
+	Geometria Analítica e Álgebra Linear
+	4
+	0
+	B
+	Seg
+	08:30
+	10:30
+	60
+
+	
+	4
+	0
+	B
+	Ter
+	08:30
+	10:30
+	60
+
+	Lógica para Computação
+	3
+	1
+	A
+	Seg
+	10:30
+	12:30
+	60
+
+	
+	3
+	1
+	A
+	Ter
+	14:00
+	16:00
+	60
+
+	Algoritmos e Complexidade
+	3
+	1
+	A
+	Ter
+	10:30
+	12:30
+	60
+
+	
+	3
+	1
+	A
+	Sex
+	14:00
+	16:00
+	60
+
+	Algoritmos e Programação de Computadores
+	4
+	4
+	B
+	Seg
+	14:00
+	18:00
+	40
+
+	
+	4
+	4
+	B
+	Qui
+	14:00
+	18:00
+	40
+
+	Arquitetura e Organização de Computadores
+	4
+	0
+	A
+	Ter
+	08:30
+	10:30
+	60
+
+	
+	4
+	0
+	A
+	Qui
+	08:30
+	10:30
+	60
+
+	Estrutura de Dados 2
+	3
+	1
+	A
+	Qui
+	10:30
+	12:30
+	60
+
+	
+	3
+	1
+	A
+	Sex
+	16:00
+	18:00
+	60
+
+	Gestão de Pequenas Empresas
+	2
+	0
+	A
+	Ter
+	16:00
+	18:00
+	60
+
+	Inteligência Artificial
+	3
+	1
+	A
+	Ter
+	14:00
+	16:00
+	60
+
+	
+	3
+	1
+	A
+	Qua
+	13:00
+	15:00
+	60
+
+	Introdução aos Sistemas de Informação
+	0
+	4
+	A
+	Qua
+	07:30
+	11:30
+	60
+
+	Noções Básicas de Economia
+	2
+	0
+	A
+	Sex
+	08:30
+	10:30
+	60
+
+	Probabilidade e Estatística
+	4
+	0
+	A
+	Seg
+	08:30
+	12:30
+	60
+
+
+(II.III) O presidente lembra a todos que esta grade horária não é definitiva, pois o professor encarregado de finalizar as grades, o Prof. Dr. José Benaque Rubert, deverá confirmar a disponibilidade de horários, salas e laboratórios, e poderão ocorrer alterações. (III) AFASTAMENTO DO PROF. DR. SIOVANI CINTRA FELIPUSSI. (III.I) O presidente retoma a palavra e explica seu afastamento nos dias 23 a 24 de outubro de dois mil e oito,  para membro titular em defesa de dissertação de mestrado na UNESP-São José do Rio Preto (III.II) Aprovada por unanimidade. Encerramento: Estando todos de acordo e nada mais havendo a deliberar, lavra-se, leia-se, aprova-se e assina-se esta Ata por todos os membros do Conselho do Curso de Bacharelado em Ciência da Computação, Campus Sorocaba, participantes desta reunião que, em 02 (duas) vias, será levada a registro e arquivamento junto à Coordenação do Conselho do Curso de Bacharelado em Ciência da Computação - Sorocaba, ficando ali à disposição para consulta restrita aos professores da UFSCar - Sorocaba. Nada mais.
+	Prof. Dr. Siovani Cintra Felipussi
+Presidente desta Reunião
+
+	Josiane Donizetti Lobo
+
+Secretária desta Reunião
+
+Assistente em Administração
+
+da UFSCar-Sorocaba
+	Profa. Dra. Tiemi Christine Sakata
+
+Professor Adjunto
+
+	Profa. Dra. Katti Faceli
+
+Professor Adjunto
+	Profa. Dra. Yeda Regina Venturini
+
+Professor Adjunto
+
+	Prof. Dr. José de Oliveira Guimarães
+Professor Associado
+	Prof. Dr. Laércio José dos Santos
+Professor Adjunto
+
+	Sr. João Guilherme Júnior
+Representante Técnico Administrativo
+	
+
+
+
+
+
+
+
+
+
+
+
+

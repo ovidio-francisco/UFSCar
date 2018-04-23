@@ -1,0 +1,65 @@
+\documentclass{article} 
+\usepackage{geometry} 
+\usepackage{longtable}
+\usepackage{multicol} 
+\usepackage[table]{xcolor}\geometry{a4paper, left=15mm, right=15mm, top=10mm} 
+\usepackage[portuguese]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+
+\newcommand{\likert}{
+\begin{figure}[h!]
+\center
+	\includegraphics[width=0.8\textwidth]{Likert/likert.png} 
+\end{figure}
+}
+
+
+%------------------------
+\begin{document}
+\pagestyle{empty}
+
+
+\begin{center}
+\section*{Avaliação}
+\end{center}
+\vspace{1cm}
+
+%\subsection*{Roteiro}
+%% Jornada do usuário:
+%Busca por palavras-chave $\rightarrow$ clique em um trecho $\rightarrow$ \{navegação pelo\}/\{análise do\} grupo do trecho.
+
+% \subsection*{Tarefas:}
+
+% \begin{itemize}
+	% \item Ler o texto introdutório à pesquisa;
+	
+	% \item Analisar os resultados;
+	% \item Responder as questões.
+% \end{itemize}
+
+
+\subsection*{Introdução}
+
+
+
+\input{intro}
+%
+%\input{tabela-busca-1}
+%\input{questoes-busca-1}
+
+% \input{tabela-agrupamento-1}
+\input{tabela-agrupamento-kmeans-70-compra.tex} \input{questoes-agrupamento-kmeans-compra.tex}
+\input{tabela-agrupamento-kmeans-70-defesa.tex} \input{questoes-agrupamento-kmeans-defesa.tex}
+\input{tabela-agrupamento-lda-70-compra.tex} 	\input{questoes-agrupamento-lda-compra.tex}
+\input{tabela-agrupamento-lda-70-defesa.tex} 	\input{questoes-agrupamento-lda-defesa.tex}
+\input{tabela-agrupamento-plsa-70-compra.tex} 	\input{questoes-agrupamento-plsa-compra.tex}
+\input{tabela-agrupamento-plsa-70-defesa.tex} 	\input{questoes-agrupamento-plsa-defesa.tex}
+
+
+
+\end{document}
+
+
+
+

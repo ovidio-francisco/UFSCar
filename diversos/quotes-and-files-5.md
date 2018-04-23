@@ -31,6 +31,18 @@ https://arxiv.org/pdf/1204.0255.pdf
 ----------------------------
 
 
+-----------------------
+
+
+https://www.google.com.br/search?q=lda+alpha+parameter&oq=lda+alpha+parameter&aqs=chrome..69i57.8119j0j7&sourceid=chrome&ie=UTF-8
+https://stats.stackexchange.com/questions/37405/natural-interpretation-for-lda-hyperparameters
+https://datascience.stackexchange.com/questions/199/what-does-the-alpha-and-beta-hyperparameters-contribute-to-in-latent-dirichlet-a
+https://www.thoughtvector.io/blog/lda-alpha-and-beta-parameters-the-intuition/
+
+
+http://www.themacroscope.org/?page_id=391
+http://www.themacroscope.org/?page_id=391
+https://github.com/senderle/topic-modeling-tool
 
 
 

@@ -1,0 +1,30 @@
+Local, Dia e Hora: Na ATLab 105, situada nas dependências da Universidade Federal de São Carlos - campus Sorocaba, à Rodovia João Leme dos Santos, quilômetro 110, Bairro do Itinga, na cidade de Sorocaba, Estado de São Paulo e realizada aos nove dias do mês de Abril do ano de dois mil e quatorze, às 15h00. Convocação e Presença: A convocação foi realizada três dias antes da data de sua realização, por e-mails enviados a todos os interessados, sendo que se celebrou a primeira chamada às 15h00, participaram da reunião os seguintes conselheiros: Gustavo Maciel Dias Vieira (como presidente desta reunião), Murillo R. P. Homem, Tiago A. Almeida, Tiemi C. Sakata, Alexandre Álvaro, Fábio Verdi, Cândida Nunes da Silva. Informes: O professor Gustavo informou que dará início esta semana ao processo de montagem do orçamento do DComp e de sugestões de compras. A demora do início desse processo se deve à grave dos TAs. Foi pedida a inclusão de pauta para a aprovação da avaliação final de desempenho em estágio do professor Tiago Agostinho Almeida, o qual foi aceita. Ordem do Dia: (I) APROVAÇÃO DA ADMISSÃO COMO PESQUISADOR ASSOCIADO DO ALUNO DE PÓS-DOUTORADO LÚCIO AGOSTINHO ROCHA. (I.I) Foi verificada a portaria que dispõe sobre o assunto, os membros aprovaram o pedido. (II) APRECIAÇÃO DA PROPOSTA DE ATUAÇÃO COMO DOCENTE VOLUNTÁRIO DO ALUNO DE PÓS-DOUTORADO LÚCIO AGOSTINHO ROCHA. (II.I) Após verificação da portaria que dispõe sobre o assunto, os membros aprovaram o pedido. (III) APROVAÇÃO RELATÓRIO FINAL DA ATIVIDADE DE EXTENSÃO DO PROFESSOR ALEXANDRE, “CLUBE STARTUP” (III.I) O relatório foi lido e aprovado. (IV) APROVAÇÃO RELATÓRIO FINAL DA ATIVIDADE DE EXTENSÃO DA PROFESSORA CÂNDIDA, “TREINAMENTO PARA MARATONA DE PROGRAMAÇÃO”. (IV.I) O relatório foi lido e aprovado. (V) DELIBERAÇÃO SOBRE A INFRAESTRUTURA COMPUTACIONAL NECESSÁRIA PARA O FUNCIONAMENTO DOS LABORATÓRIOS. (V.I) O professor Gustavo expôs algumas das dificuldades em manter o parque computacional do departamento, levando em conta a demanda por serviços, o elevado número de máquinas e apenas um técnico de laboratório. Ele pediu ao conselho que, em reuniões futuras, sejam definidos um rol potencialmente mais simples de serviços a serem mantidos de forma a equacionar a demanda com os recursos disponíveis. Desde já, ficou decidido a desativação do mecanismo de autenticação centralizado e diretórios compartilhados pela rede, ficando apenas o acesso local às máquinas. Também foram relatados problemas em relação ao técnico de laboratório na preparação do início do semestre letivo, relacionados com o início da greve. O conselho decidiu por um acompanhamento mais próximo da execução das tarefas pedidas. Encerramento: Estando todos de acordo e nada mais havendo a deliberar, lavra-se, leia-se, aprova-se e assina-se esta Ata por todos os membros do conselho do Departamento de Computação de Sorocaba, Campus Sorocaba, participantes desta reunião que, em 02 (duas) vias, será levada à registro e arquivamento junto à chefia do Departamento de Computação de Sorocaba, ficando ali à disposição para consulta. Nada mais.
+	Prof. Dr. Gustavo Maciel Dias Vieira
+Presidente desta Reunião
+
+Prof. Dr. Murillo R. P. Homem
+Docente
+Profa. Dra. Tieimi C. Sakata
+Docente
+
+
+
+	Prof. Dr. Fábio Luciano Verdi
+Docente
+	Prof. Dr. Tiago A. Almeida
+Docente
+	
+
+	Profa. Dra. Cândida Nunes da Silva
+Docente
+	Prof. Dr. Alexandre Álvaro
+Docente
+
+
+	
+	
+
+	
+	
+
+

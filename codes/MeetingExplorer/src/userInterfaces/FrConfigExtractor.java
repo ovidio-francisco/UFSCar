@@ -76,7 +76,7 @@ public class FrConfigExtractor extends JFrame {
 	private JRadioButton rbNonParametric = new JRadioButton("Não Paramétrico", true);
 	private ButtonGroup  btgr            = new ButtonGroup();
 	
-	private JComboBox<Integer> cbNumTopics = new JComboBox<>(new Integer[] {10, 50, 100, 150, 200});
+	private JComboBox<Integer> cbNumTopics = new JComboBox<>(new Integer[] {10, 50, 70, 80, 100, 150, 200});
 	
 	private JTextField tfPlsa_maxIterations         = new JTextField("100", 3);
 	private JTextField tfPlsa_minDiffLoglikelihood  = new JTextField("1.0", 3);

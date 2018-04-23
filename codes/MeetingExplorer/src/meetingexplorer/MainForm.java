@@ -792,6 +792,12 @@ public class MainForm extends javax.swing.JFrame {
             
             if (segments.size() < n) n = segments.size();
             
+            StringBuilder sb = new StringBuilder();
+            sb.append("\n\n%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%");
+            sb.append(String.format("\n\n%s %s Query: '%s'\n", lbAlgorithm.getText(), lbTopicsExtracted.getText(), tfQuery.getText()));
+            DefaultMutableTreeNode selectedNode = (DefaultMutableTreeNode)jtTopics.getLastSelectedPathComponent();
+            sb.append("Descritores: [ " + selectedNode.toString()+" ] \n========\n\n\n");
+            
             while (n > 0) {
                 int r = random.nextInt(segments.size());
                 System.out.println("rand = " + r);
@@ -799,6 +805,7 @@ public class MainForm extends javax.swing.JFrame {
                 if(indexes.add(r)) {
                     if (!descart(segments.get(r))) {
                         addSegmentPanel(segments.get(r));
+                        sb.append(segments.get(r).getText()+"\n\n========\n\n");
                         count++;
                         System.out.println("Added Segment - " + r);
                         n--;
@@ -810,6 +817,8 @@ public class MainForm extends javax.swing.JFrame {
              
                 }
             }
+            
+            System.out.println(sb.toString());
             
             lbSegmentsCount.setText(count+" trechos Randomicamente Selecionados");
             ShowStatus.setMessage  (count+" trechos Randomicamente Selecionados");
@@ -876,8 +885,38 @@ public class MainForm extends javax.swing.JFrame {
             jtTopics.setSelectionRow(best_index+1);
         }
         
+        private void showSementsRankedByKeyWords() {
+            MeetingMiner.extractDescriptorsAndFiles();
+            ArrayList<MMTopic> topics = MeetingMiner.getMMTopics();
+
+            ArrayList<Segment> segments = null;
+
+            HashMap<String, String> userDescsStems = new HashMap<>();
+            for(String s : tfQuery.getText().split(" ")) {
+                    if (!Preprocess.getStopWords().isStopWord(s)) {
+                            userDescsStems.put(s, Preprocess.getStemmer().wordStemming(s));
+                    }
+            }
+
+            ShowStatus.setMessage("\nFiltering topics by: " + userDescsStems.values());
+            
+            segments = Segment.getAllSegments(topics);
+            
+            for(Segment seg : segments) {
+                    seg.matchKeyWords(userDescsStems.keySet());
+            }
+            Segment.sortSegmentsByMatcheCount(segments);
+
+            ShowStatus.setMessage(String.format("%d tópicos selecionados %d segmentos encontrados", topics.size(), segments.size()));
+
+            for(Segment seg: segments) {
+                System.out.println(String.format("--> %s \n-->%s", seg.getMatches().keySet(), seg.getText()));
+            }
+            
+            showSegments(segments);
+        }
         
-    	private void showSegmentsRankedByKeyWords(boolean filter) {
+    	private void showSegmentsRankedByKeyWordsInDescriptors(boolean filter) {
 		MeetingMiner.prepareFolders();	
 		
 		MeetingMiner.extractDescriptorsAndFiles();
@@ -939,7 +978,7 @@ public class MainForm extends javax.swing.JFrame {
 			        @Override
 			        public void run(){
 			        	setWainting(true);
-			        	showSegmentsRankedByKeyWords(false);
+			        	showSegmentsRankedByKeyWordsInDescriptors(false);
 			    		setWainting(false);
 			        }
 				}.start();
@@ -968,12 +1007,13 @@ public class MainForm extends javax.swing.JFrame {
             @Override
             public void run(){
                 setWainting(true);
-                if (true) {
+                if (false) {
 //                    showSegmentsFilteredByTopic();
                     showSegmentsRankedByTopicSimilarity();
                 }
                 else {
-                    showSegmentsRankedByKeyWords(true);
+                    showSementsRankedByKeyWords();
+//                    showSegmentsRankedByKeyWordsInDescriptors(true);
                 }
                 setWainting(false);
             }
