@@ -1,1 +1,0 @@
- Após discussões e algumas sugestões ficou decidido: não mexer nos pesos, que eles variem apenas entre 0,5 e 1,0, diminuir os pesos das aulas de Introdução à Computação (todas terão peso de 0,5), aumentar os pesos para chefia de departamento e coordenações de cursos.

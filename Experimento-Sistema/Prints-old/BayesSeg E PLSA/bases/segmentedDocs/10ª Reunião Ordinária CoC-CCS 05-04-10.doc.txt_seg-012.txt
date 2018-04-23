@@ -1,1 +1,0 @@
-Já as disciplinas de Processamento de Imagens e Visão Computacional e Inteligência Artificial foram criadas novas fichas devido à necessidade de inserção de requisitos (Geometria Analítica e Cálculo diferencial e Integral I), na disciplina de Processamentos de imagens e (Estruturas de Dados) na disciplina de Inteligência Artificial. 

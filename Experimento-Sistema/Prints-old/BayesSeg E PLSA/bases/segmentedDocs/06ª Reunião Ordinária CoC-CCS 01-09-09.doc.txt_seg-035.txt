@@ -1,1 +1,0 @@
-(VI.I) Ficou decidido que o curso de Ciência da Computação não terá disciplinas integradoras, visto que não há docentes pertencentes a esse curso para ministrar estas disciplinas e por motivo de especificidade de área e também pelo fato da grade do curso já possuir disciplinas com temas semelhantes, mas com abordagem computacional. 

@@ -1,1 +1,0 @@
- 32 memórias RAM; divisória antirruídos para criar um espaço dentro da sala do ATLab onde está cluster, nessa sala ficaria o técnico Thiago; placas para identificação das portas dos laboratórios; HD de 1Tb para o servidor do LaSID;

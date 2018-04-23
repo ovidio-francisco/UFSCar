@@ -1,1 +1,0 @@
-Os professores irão escolher suas prioridades dentre quatro itens para suas salas (mesa maior, cadeira, armário alto e quadro branco), caso tais itens tenham saldo na ata de compra os pedidos serão realizados o mais breve possível. 

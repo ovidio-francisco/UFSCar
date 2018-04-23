@@ -1,1 +1,0 @@
-Desde já, ficou decidido a desativação do mecanismo de autenticação centralizado e diretórios compartilhados pela rede, ficando apenas o acesso local às máquinas. 

@@ -1,1 +1,0 @@
-A quantidade de vagas oferecidas foi calculada baseando-se na diferença entre o número de vagas criado nos últimos 04 anos e o número de estudantes ativos, conforme a tabela do Of. 241/2015-Prograd. 
