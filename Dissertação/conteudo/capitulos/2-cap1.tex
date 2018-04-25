@@ -53,19 +53,23 @@ Pode ser usada para melhorar o acesso a informação solicitada por meio de uma 
 
 %        ========== ==========|   Extração de Tópicos  |========== ==========
 
-Contudo, a segmentação textual apenas indica as transições de assuntos ao longo do texto,  produz trechos com um assunto principal e relativamente independente do texto integral. O assunto de cada trecho pode ser estimado por meio de técnicas de extração de tópicos. 
-A extração de tópicos é uma técnica que visa encontrar . 
+Contudo, a segmentação textual apenas indica as transições de assuntos ao longo do texto,  pela qual obtém-se trechos com um assunto principal e relativamente independente do texto integral. O assunto de cada trecho pode ser estimado por meio de técnicas de extração de tópicos.  
+% Os modelos de extração de tópicos fornecem uma estratégia que visa encontrar estruturas latentes em coleções de textos. Atualmente, destacam-se os modelos de extração de tópicos como LDA~\cite{Blei2003} e PLSA~\cite{Hofmann1999} são abordagens amplamente utilizadas ~\cite{DZhu20122} e frequentemente referenciadas em trabalhos que buscam extrair conhecimento e organizar bases textuais ~\cite{Steyvers2007, OCallaghan2015}. 
+Os modelos de extração de tópicos fornecem uma estratégia que visa encontrar nas relações entre documentos, padrões latentes que sejam significativos para o entendimento dessas relações. Tais modelos podem ranquear um conjunto de termos importantes para um ou mais assuntos, bem como ranquear documentos por sua relevância para determinado tema~\cite{Faleiros2016}.
+Nesse trabalho, a expressão \textit{tópico} é usada para designar um assunto considerando que o mesmo foi extraído por meio de técnicas automáticas, ficando a expressão \textit{assunto} utilizada como seu teor popular. 
 
-% Um extrator de tópicos é 
-
-% Conhecendo 
-
+O processo de extração de tópicos atribui um peso a cada documento-tópico e uma relação termo-tópico que pode representar a probabilidade de ocorrência de termo em um documento dado que o tópico está presente. A partir dessas representações, é possível agrupar documentos que compartilham o mesmo tópico bem como os termos que melhor descrevem o tópico. Com isso, obtém-se uma melhor organização da coleção de documentos favorecendo técnicas de para navegação e consulta à coleção de documentos. 
+% com o mesmo teor 
 
 
 
 %        ========== ==========|   Recuperação de Informação  |========== ==========
 % ->> RI
+% --> tópico é o assunto extraído automaticamente 
+% --> segmento é o trecho extraído automaticamente
 
+
+Consultar uma base de dados textual 
 
 
 
@@ -76,8 +80,10 @@ A extração de tópicos é uma técnica que visa encontrar .
 \section{Objetivos}
 %        ========== ==========   Final   ========== ==========
 
-
-O objetivo geral desse trabalho de mestrado é desenvolver uma ferramenta para identificar, organizar e apresentar assuntos registrados em atas de reunião. O projeto se divide em dois objetivos específicos: 1) Avaliar os métodos de segmentação topical, extração de tópicos e recuperação de informação no contexto de atas de reunião. 2) Analisar a qualidade dos subdocumentos apresentados quanto ao agrupamento, e relevância das informações contidas.
+A Busca por informação em dados textuais implica basicamente em consultar uma base de dados não estruturada. O que se objetiva nesse trabalho de mestrado é utilizar a estrutura latente de documentos segmentados em conjunto com técnicas tradicionais de recuperação de informação, tendo como 
+% O objetivo geral desse trabalho de mestrado é desenvolver uma 
+% Esse trabalho tem como 
+proposta o desenvolvimento de uma ferramenta para identificar, organizar e apresentar assuntos registrados em atas de reunião. O projeto se divide em dois objetivos específicos: 1) Avaliar os métodos de segmentação topical, extração de tópicos e recuperação de informação no contexto de atas de reunião. 2) Analisar a qualidade dos subdocumentos apresentados quanto ao agrupamento, e relevância das informações contidas.
 Dessa forma, busca-se ajudar a suprir a necessidade de ferramentas para para esse cenário e contribuir com uma metodologia de extração de informação em documentos com assuntos que pode ser útil em trabalhos relacionados a outros domínios como documentos jurídicos, notícias e transcrições de conversas.
 
 
