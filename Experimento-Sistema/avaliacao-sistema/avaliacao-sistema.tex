@@ -1,0 +1,117 @@
+\documentclass{article} 
+\usepackage{geometry} 
+\usepackage{longtable}
+\usepackage{multicol} 
+\usepackage[table]{xcolor}\geometry{a4paper, left=15mm, right=15mm, top=10mm} 
+\usepackage[portuguese]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{tcolorbox}
+
+\newcommand{\likert}{
+	\begin{figure}[h!] \center
+		\includegraphics[width=0.8\textwidth]{Likert/likert.png} 
+	\end{figure}
+}
+
+\newcommand{\likertA}{
+	\begin{figure}[h!] \center
+		\includegraphics[width=0.8\textwidth]{Likert/likert-1.png} 
+	\end{figure}
+}
+
+\newcommand{\likertB}{
+	\begin{figure}[h!] \center
+		\includegraphics[width=0.8\textwidth]{Likert/likert-2.png} 
+	\end{figure}
+}
+
+\newcommand{\resultsheader}[2] {
+	\noindent \textbf{Consulta #1} -- \textbf{Técnica #2}
+	 \vspace{0.5 cm} \\
+	
+}
+
+\newcommand{\textfiled}{
+
+	\vspace{0.5cm}
+	\begin{tcolorbox}[colback = white]
+		\vspace{1cm}
+
+	\end{tcolorbox}
+}
+
+
+%------------------------
+\begin{document}
+\pagestyle{empty}
+
+\section*{Avaliação de extração de tópicos em atas de reuniões}
+\vspace{1cm}
+
+
+
+
+
+
+\subsection*{Apresentação}
+
+\input{intro-compras.tex}
+\textfiled
+
+\newpage \resultsheader{1}{1} \noindent \textbf{Grupo de trechos:}
+\input{tabela-kmeans-70-compra.tex} 
+\newpage \resultsheader{1}{1}  \noindent \textbf{Questões:}
+\input{questoes-kmeans-compra.tex}
+
+\newpage \resultsheader{1}{2} \noindent \textbf{Grupo de trechos:}
+\input{tabela-lda-70-compra.tex} 	
+\newpage  \resultsheader{1}{2} \noindent \textbf{Questões:}
+\input{questoes-lda-compra.tex}
+
+\newpage \resultsheader{1}{3} \noindent \textbf{Grupo de trechos:}
+\input{tabela-plsa-70-compra.tex} 	
+\newpage  \resultsheader{1}{3}  \noindent \textbf{Questões:}
+\input{questoes-plsa-compra.tex}
+
+
+
+
+
+
+
+% ===========================================================
+
+
+
+
+
+
+\newpage
+\subsection*{Apresentação}
+
+\input{intro-defesa.tex}
+\textfiled
+
+\newpage \resultsheader{2}{1} \noindent \textbf{Grupo de trechos:}
+\input{tabela-kmeans-70-defesa.tex} 
+\newpage \resultsheader{2}{1}  \noindent \textbf{Questões:}
+\input{questoes-kmeans-defesa.tex}
+
+\newpage \resultsheader{2}{2} \noindent \textbf{Grupo de trechos:}
+\input{tabela-lda-70-defesa.tex} 	
+\newpage  \resultsheader{2}{2} \noindent \textbf{Questões:}
+\input{questoes-lda-defesa.tex}
+
+\newpage \resultsheader{2}{3} \noindent \textbf{Grupo de trechos:}
+\input{tabela-plsa-70-defesa.tex} 	
+\newpage  \resultsheader{2}{3}  \noindent \textbf{Questões:}
+\input{questoes-plsa-defesa.tex}
+
+
+
+\end{document}
+
+
+
+
