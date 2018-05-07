@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1524838966 "avaliacao-sistema.tex" "avaliacao-sistema.pdf" "avaliacao-sistema" 1524838967
+["pdflatex"] 1525355832 "avaliacao-sistema.tex" "avaliacao-sistema.pdf" "avaliacao-sistema" 1525355832
   "/etc/texmf/web2c/texmf.cnf" 1489454511 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1272929888 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm" 1136768653 1328 c834bbb027764024c09d3d2bf908b5f0 ""
@@ -113,8 +113,8 @@
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1503409725 860044 6c84ff998dc0d18c5f50acfd95f92a4b ""
   "Likert/likert-1.png" 1524843168 5465 fa19d663082b9a3d24622530c6bdeb77 ""
   "Likert/likert.png" 1524843168 4297 e238925892c5435a5205fecc6d955790 ""
-  "avaliacao-sistema.aux" 1524838966 510 e5a6bea724f4be9a4021be62ebe4d431 ""
-  "avaliacao-sistema.tex" 1524832831 2477 733816ba87c42bbb73d489c1cc6326cd ""
+  "avaliacao-sistema.aux" 1525355832 510 e5a6bea724f4be9a4021be62ebe4d431 ""
+  "avaliacao-sistema.tex" 1525355831 2560 1b12bfc8682fcf84e25c5f8f28233e05 ""
   "intro-compras.tex" 1524843168 5321 db6393171cc8566b063d3bc28ae3bd6d ""
   "intro-defesa.tex" 1524843168 5322 fa631c2bb19bb2d2952e4897759fc06c ""
   "questoes-kmeans-compra.tex" 1524832885 1203 209a8ecb77fa5140d3b9d4e70a156e17 ""
@@ -130,6 +130,6 @@
   "tabela-plsa-70-compra.tex" 1524843168 3833 81e268f8ab27b14670c42b7cea680faf ""
   "tabela-plsa-70-defesa.tex" 1524837231 2810 4b712d0ee75dd1281a50057f0a437afd ""
   (generated)
+  "avaliacao-sistema.pdf"
   "avaliacao-sistema.log"
   "avaliacao-sistema.aux"
-  "avaliacao-sistema.pdf"
