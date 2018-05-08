@@ -29,13 +29,15 @@ As atas de reunião possuem características particulares. Frequentemente aprese
 %%  -->
 
 
-As organizações costumam manter seus documentos eletrônicos organizados em pastas e nomeá-los com informações básicas sobre a reunião a que se refere como a data e alguma referência cronológica, por exemplo "37ª Reunião Ordinária do Conselho ...". Essa forma de organização facilita a localização dos arquivos com ferramentas que fazem buscas pelo nome dos arquivos e pastas. Contudo, essa prática costuma ser insuficiente, pois em uma busca pelo conteúdo dos textos usa-se ferramentas computacionais baseadas em localização de palavras-chave que além de encontrar ocorrências das palavras podem oferecer recursos como operadores \textit{and} e \textit{not} ou ainda suporte a expressões regulares. Esse recurso, conhecido como \textit{grepping}\footnote{O nome \textit{grepping} é uma referência ao comando \texttt{grep} do Unix}, traz resultados satisfatórios em muitos casos. Por outro lado, traz algumas desvantagens como: 1) transfere certa complexidade da tarefa ao usuário 2) as buscas em grandes coleções de documentos podem ser mais lentas 3) não há suporte a padrões mais flexíveis como a proximidade entre as palavras ou palavras que estejam na mesma sentença 4) o retorno ao usuário são os documentos integrais, o que pode exigir uma segunda busca dentro de um documento para encontrar o trecho desejado~\cite{Aggarwal2012,Manning2008}. 
+As organizações costumam manter seus documentos eletrônicos organizados em pastas e nomeá-los com informações básicas sobre a reunião a que se refere como a data e alguma referência cronológica, por exemplo "37ª Reunião Ordinária do Conselho ...". Essa forma de organização facilita a localização dos arquivos com ferramentas que fazem buscas pelo nome dos arquivos e pastas, sem levar em conta o teor dos documentos. 
+%
+Outra forma comum é o uso de ferramentas que fazem buscas nos conteúdos dos documentos, buscando por ocorrências de palavras-chave nos textos. Essas ferramentas permitem buscas combinadas com operadores lógicos como \textit{and}, \textit{or} e \textit{not} ou ainda suporte a expressões regulares. Esse recurso, conhecido como \textit{grepping}\footnote{O nome \textit{grepping} é uma referência ao comando \texttt{grep} do Unix}, traz resultados satisfatórios em muitos casos. Por outro lado, traz algumas desvantagens como: 1) transfere certa complexidade da tarefa ao usuário 2) as buscas em grandes coleções de documentos podem ser mais lentas 3) não há suporte a padrões mais flexíveis como a proximidade entre as palavras ou palavras que estejam na mesma sentença 4) o retorno ao usuário são os documentos integrais, o que pode exigir uma segunda busca dentro de um documento para encontrar o trecho desejado~\cite{Aggarwal2012,Manning2008}. 
 
 
 % TODO: Referências de trabalhos que têm feito isso   ↓↓↓↓↓↓↓
 Para superar essas limitações têm sido utilizadas técnicas de aprendizado de máquina por meio de diversas abordagens. Por exemplo, elas vêm sendo empregadas na organização, gerenciamento, recuperação de informação e extração de conhecimento, como a extração de tópicos e a categorização de automática de documentos~\cite{Purver2006}. 
 % Essas técnicas permitem melhorar a busca por informações em atas de reunião~. 
-% 
+%  Encontra variaveis latentes e agrega informações.
 % 
 %        ==========   Necessidade de consultas  ==========
 % 
