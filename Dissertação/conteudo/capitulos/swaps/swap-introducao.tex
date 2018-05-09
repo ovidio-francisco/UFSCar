@@ -1,54 +1,40 @@
 
+% --> Já falei o que é uma consulta??
 % --> Falei de Boolean Retrieval
 % --> Passar para Information retrieval com indexação, ranqueamento e TF-ITF
+% --> É possível atribuir similaridades usando variáveis latentes?
 
-Outra forma comum é o uso de ferramentas que fazem buscas nos conteúdos dos documentos, buscando por ocorrências de palavras-chave nos textos. Essas ferramentas permitem buscas combinadas com operadores lógicos como \textit{and}, \textit{or} e \textit{not} ou ainda suporte a expressões regulares. Esse recurso, conhecido como \textit{grepping}\footnote{O nome \textit{grepping} é uma referência ao comando \texttt{grep} do Unix}, traz resultados satisfatórios em muitos casos. Por outro lado, traz algumas desvantagens como: 
-1) transfere certa complexidade da tarefa ao usuário 
-2) não há suporte a padrões mais flexíveis como a proximidade entre as palavras ou palavras que estejam na mesma sentença 
-3) informa apenas se um documento casa ou não com a busca do usuário com base na presença ou ausência dos termos da busca~\cite{Aggarwal2012,Manning2008}. 
+% Evita-se o uso de indices, ao invês disso, a busca se dá pelos descritores dos tópicos, o permite também uma exploração aos grupos em busca de documentos relacionados que não foram retornados na busca 
+% o agrupamento de documentos permite a visualização de documentos semelhantes indepentemente de consultas.
 
-Ainda nesse contexto, usa-se a indexação de termos e técnicas de Recuperação de Informação para ranquear os documentos com base em sua relevância com os termos da busca. 
-Contudo essas técnicas utilizam-se da frequência das palavras, 
+A busca por descritores transfere processamento da varredura dos documentos para o processo de extração de tópicos. Esse processo evita processamento e lentidão no momento da pesquisa. Essa estratégia é semelhante a criação de indices para localização rápida de objetos.
 
-% , e um documento é enxergado como um conjunto de termos.
-
-
-O uso de indices e ... traz soluções que podem resolver problemas como lentidão, ranquear e ... mas ....
-
-A fim de resolver essas limitações 
-Outras técnicas são capazes de ranquear os documentos com base utilizando-se de indices 
-
-
-Essa técnica, chamada de \textit{Boolean Retrieval} informa para cada documento se este casa ou não com a busca do usuário. 
-
+expansão de consulta para reformular a consulta
 
 %--> colocar isso no final. Isso se refere a IR de modo geral, não apenas a Boolean Retrieval 
 2) as buscas em grandes coleções de documentos podem ser mais lentas 
-4) o retorno ao usuário são os documentos integrais, o que pode exigir uma segunda busca dentro de um documento para encontrar o trecho desejado
+4) o retorno ao usuário são os documentos integrais, o que pode exigir uma segunda consulta dentro de um documento para encontrar o trecho desejado
 
 % <-- --- --- --- --- --- --- --- --- --- ---
 6) Não reconhece variáveis latentes...
+7) O usuário pode não estar familiarizado com o vocabulário do domínio, % mas pode conhecer o tópico ao qual está interessado.
 
-Essa técnica, chamada de \textit{Boolean Retrieval} enxerga os documentos como conjuntos de palavras e guiam-se 
-pela presença ou ausência dos termos da pesquisa nos documentos. 
-verificando se os termos da pesquisa estão presentes nos documentos.
-
-
-para maioria das aplicações faze-se necessário saber a relevancias 
-
-
-analisa nos documentos a presença ou ausência dos termos da pesquisa e informa
+Thesaurus depende de conhecimento externo sobre o domínio.
 
 
 
-Essa técnica, é chamada de \textit{Boolean Retrieval} em 
 
-analisa nos documentos a presença ou ausência dos termos da pesquisa e informa
+% O uso de indices e ... traz soluções que podem resolver problemas como lentidão, ranquear e ... mas ....
+% Essa técnica, chamada de \textit{Boolean Retrieval} informa para cada documento se este casa ou não com a consulta do usuário. 
+% Essa técnica, chamada de \textit{Boolean Retrieval} enxerga os documentos como conjuntos de palavras e guiam-se 
+% pela presença ou ausência dos termos da pesquisa nos documentos. 
+% verificando se os termos da pesquisa estão presentes nos documentos.
+% analisa nos documentos a presença ou ausência dos termos da pesquisa e informa
+
+% com significado próximo como ``computador'' e ``equipamento''.
 
 
-
-Outra forma comum é o uso de ferramenta que
-
+% Outra forma comum é o uso de ferramentas que fazem buscas nos conteúdos dos documentos, buscando por ocorrências de palavras-chave nos textos. Essas ferramentas permitem buscas combinadas com operadores lógicos como \textit{and}, \textit{or} e \textit{not} ou ainda suporte a expressões regulares. Esse recurso, conhecido como \textit{grepping}\footnote{O nome \textit{grepping} é uma referência ao comando \texttt{grep} do Unix}, traz resultados satisfatórios em muitos casos. Por outro lado, traz algumas desvantagens como: 1) transfere certa complexidade da tarefa ao usuário 2) as buscas em grandes coleções de documentos podem ser mais lentas 3) não há suporte a padrões mais flexíveis como a proximidade entre as palavras ou palavras que estejam na mesma sentença 4) o retorno ao usuário são os documentos integrais, o que pode exigir uma segunda busca dentro de um documento para encontrar o trecho desejado~\cite{Aggarwal2012,Manning2008}. 
 
 ----- ----- ----- ----- ----- ----- ----- ----- ----- -----
 
