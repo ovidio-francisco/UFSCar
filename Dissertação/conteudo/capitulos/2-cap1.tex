@@ -84,12 +84,6 @@ O processo de extração de tópicos atribui um peso a cada documento-tópico e 
 % com o mesmo teor 
 
 
-%        ========== ==========|   Unindo as coisas  |========== ==========
-
-
-Devido as características das atas como ausência de meta-informação como texto seccionado e \textit{hyperlinks} e a multiplicidade de assuntos, esse trabalho utiliza técnicas de segmentação em conjunto com a extração de tópicos para aprimorar a recuperação de informação em coleções de atas de reunião. Essa abordagem traz como vantagens
-
-
 
 %        ========== ==========|   Recuperação de Informação  |========== ==========
 % ->> RI
@@ -109,6 +103,26 @@ Devido as características das atas como ausência de meta-informação como tex
 % Ao buscar por \textit{``bolsa de estudo''}, o usuário pode também estar interessado em \textit{``processo seletivo''}, \textit{``CNPQ''} ou \textit{``FAPESP''}
 
 
+
+
+%        ========== ==========|   Unindo as coisas  |========== ==========
+
+
+Devido as características das atas como ausência de meta-informação 
+% como texto seccionado e \textit{hyperlinks} 
+e a multiplicidade de assuntos, esse trabalho utiliza técnicas de segmentação em conjunto com a extração de tópicos para aprimorar a recuperação de informação em coleções de atas de reunião. 
+
+Nesse trabalho, a segmentação textual é empregada na identificação e isolamento de cada assunto tratado em cada ata. Os segmentos de atas gerados, aqui considerados como sub-documentos, são entregues a um extrator de tópicos. A tarefa do extrator é agrupar os segmentos com um mesmo tópico e eleger palavras da coleção que melhor descrevem cada grupo. Os descritores gerados pelo extrator de tópicos bem com os grupos são aproveitados nas técnicas de recuperação de informação a fim de ranquear os resultados e auxiliar o usuário a encontrar segmentos semelhantes por meio da navegação pelos grupos.
+
+
+% --> Essa abordagem traz como vantagens 
+
+A busca por descritores transfere processamento da varredura dos documentos para o processo de extração de tópicos. Esse processo evita processamento e lentidão no momento da pesquisa. Essa estratégia é semelhante a criação de indices para localização rápida de objetos.
+
+
+
+
+
 \section{Objetivos}
 %        ========== ==========   Final   ========== ==========
 
@@ -120,6 +134,13 @@ Dessa forma, busca-se ajudar a suprir a necessidade de ferramentas para para ess
 
 
 % Assim, nesse contexto, este trabalho propõe a investigação do uso de mineração de texto e as técnicas que constituem o estado da arte na área para o desenvolvimento de uma ferramenta para extração automática de históricos de decisão em atas de reuniões.  % -- <-- 'POBRE'
+
+
+
+% "Diante do cenário descrito na seção anterior, a hipótese levantada neste trabalho é que a qualidade da recomendação é melhorada quando são utilizadas hierarquias de tópicos como informações contextuais."
+
+
+
 
 
 
