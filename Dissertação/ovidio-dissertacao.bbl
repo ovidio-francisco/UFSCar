@@ -285,6 +285,15 @@ ISBN 978-1-60558-512-3. Dispon{\'\i}vel em:
   n.~2, p. 165--178, 2016.
 Dispon{\'\i}vel em: \url{https://doi.org/10.1108/IJICC-01-2016-0001}.}
 
+\bibitem[O'Callaghan et al. 2015]{OCallaghan2015}
+\abntrefinfo{O'Callaghan et al.}{O'CALLAGHAN et al.}{2015}
+{O'CALLAGHAN, D. et al. An analysis of the coherence of descriptors in topic
+  modeling.
+\emph{Expert Syst. Appl.}, Pergamon Press, Inc., Tarrytown, NY, USA, v.~42,
+  n.~13, p. 5645--5657, ago. 2015.
+ISSN 0957-4174.
+Dispon{\'\i}vel em: \url{http://dx.doi.org/10.1016/j.eswa.2015.02.055}.}
+
 \bibitem[Passonneau e Litman 1997]{Passonneau1997}
 \abntrefinfo{Passonneau e Litman}{PASSONNEAU; LITMAN}{1997}
 {PASSONNEAU, R.~J.; LITMAN, D.~J. Discourse segmentation by human and automated
@@ -301,15 +310,6 @@ Dispon{\'\i}vel em: \url{http://dl.acm.org/citation.cfm?id=972684.972689}.}
 \emph{Computational Linguistics}, v.~28, n.~1, p. 19--36, 2002.
 Dispon{\'\i}vel em:
   \url{https://www.scopus.com/inward/record.uri?eid=2-s2.0-0037870455&doi=10.1162\%2f089120102317341756&partnerID=40&md5=279abc4e76fcfc2c4a1896e76a245034}.}
-
-\bibitem[Purver et al. 2006]{Purver2006}
-\abntrefinfo{Purver et al.}{PURVER et al.}{2006}
-{PURVER, M. et al. Unsupervised topic modelling for multi-party spoken
-  discourse. In:  \emph{Proceedings of the 21st International Conference on
-  Computational Linguistics and the 44th Annual Meeting of the Association for
-  Computational Linguistics}. Stroudsburg, PA, USA: Association for
-  Computational Linguistics, 2006.  (ACL-44), p. 17--24. Dispon{\'\i}vel em:
-  \url{https://doi.org/10.3115/1220175.1220178}.}
 
 \bibitem[Reynar 1998]{Reynar1998}
 \abntrefinfo{Reynar}{REYNAR}{1998}
@@ -435,5 +435,12 @@ ISBN 0321321367.}
   Association for Computational Linguistics}. Stroudsburg, PA, USA: Association
   for Computational Linguistics, 2001.  (ACL '01), p. 499--506. Dispon{\'\i}vel
   em: \url{https://doi.org/10.3115/1073012.1073076}.}
+
+\bibitem[Zhu et al. 2012]{DZhu20122}
+\abntrefinfo{Zhu et al.}{ZHU et al.}{2012}
+{ZHU, D. et al. Intuitive topic discovery by incorporating word-pair's
+  connection into lda. In:  \emph{2012 IEEE/WIC/ACM International Conferences
+  on Web Intelligence and Intelligent Agent Technology}. [S.l.: s.n.], 2012.
+  v.~1, p. 303--310.}
 
 \end{thebibliography}

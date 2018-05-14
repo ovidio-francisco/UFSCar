@@ -1,11 +1,67 @@
 
+
+%        ======== ========   Essa abordagem traz como vantagens   ======== ========
+% -->  Essa abordagem traz como vantagens
+
+% -> 1 Segmentação
+A segmentação das atas permite ao sistema criar uma bases de dados interna mais simples, em os assuntos estão isolados em segmentos, formando assim, uma base de dados mais adequada aos métodos de aprendizado de máquina. Além disso, permite que ao sistema final exibir apenas os trechos onde o assunto pesquisado está presente ao invés de entregar documentos integrais.
+% , evitando porções de texto irrelevantes 
+% , que frequentemente tratam de assuntos diversos.
+
+% -> 2 Extração de tópicos -- descritores
+
+% -> 3 Extração de tópicos -- agrupamento
+
+
+
+com subdocumentos 
+
+
+
+Ao utilizar a estrutura gerada pelas técnicas descritas, 
+
+ao mesmo tempo que vale-se das vantagens encontradas nas relações
+
+A busca por palavras-chave em descritores transfere processamento da varredura dos documentos para o processo de extração de tópicos. Esse processo evita processamento e lentidão no momento da pesquisa. Essa estratégia é semelhante a criação de índices para localização rápida de objetos.
+
+
+% --> Gera uma estrutura aos texto e à coleção de textos
+% --> encontra relação entre termos sem necessidade de conhecimento externo sobre o domínio.
+% Evita-se o uso de indices, ao invês disso, a busca se dá pelos descritores dos tópicos, o permite também uma exploração aos grupos em busca de documentos relacionados que não foram retornados na busca 
+% o agrupamento de documentos permite a visualização de documentos semelhantes indepentemente de consultas.  %%%  --- Trazendo uma experiência mais próxima de uma exploração que de consultas.
+
+% e com isso obter uma organização da coleção de documentos.
+
+
+
+% descoberta pelos modelos de extração de tópicos em documentos segmentados em conjunto com técnicas tradicionais de recuperação de informação. (aproveitando-se da estrutura dos tópicos e delimitação dos segmentos)
+
+
+% -->
+Essas abordagens de extração de tópicos também fornecem uma estratégia de redução da dimensionalidade visando a construção de novas dimensões que representam os principais tópicos ou assuntos identificados na coleção de documentos. Ainda, uma organização baseada em tópicos agrupa termos com mesmo significado em um mesmo tópico (sinonímia) e permite que um mesmo termo ocorra em mais de um tópico caso ele possa ter significado diferente em diferentes contextos (polissemia). Uma representação construída com os novos atributos extraídos é uma oportunidade de incorporar conhecimento de domínio aos dados (Guyon and Elisseeff, 2003).
+
+
+para construção de uma representação estruturada da coleção de documentos.
+
+
+
+
+
+"The art of machine learning starts with the design of appropriate data representations.  Better performance is often achieved using features derived from the original input. Building a feature representation is an opportunity to incorporate domain knowledge into the data and can be very application specific. Nonetheless, there are a number of generic feature construction methods, including: clustering; basic linear transforms of the input variables (PCA/SVD, LDA); more sophisticated linear transforms like spectral transforms (Fourier, Hadamard), wavelet transforms or convolutions of kernels; and applying simple functions to subsets of variables, like products to create monomials"
+
+
+
+
+
 % --> Já falei o que é uma consulta??
 % --> Falei de Boolean Retrieval
 % --> Passar para Information retrieval com indexação, ranqueamento e TF-ITF
 % --> É possível atribuir similaridades usando variáveis latentes?
+% --> Gaps estão suficientemente evidendes?
 
-% Evita-se o uso de indices, ao invês disso, a busca se dá pelos descritores dos tópicos, o permite também uma exploração aos grupos em busca de documentos relacionados que não foram retornados na busca 
-% o agrupamento de documentos permite a visualização de documentos semelhantes indepentemente de consultas.  %%%  --- Trazendo uma experiência mais próxima de uma exploração que de consultas.
+
+--> Gera uma estrutura aos texto e à coleção de textos
+
 
 
 expansão de consulta para reformular a consulta
@@ -23,6 +79,10 @@ Thesaurus depende de conhecimento externo sobre o domínio.
 
 
 
+% Os modelos de extração de tópicos fornecem uma estratégia que visa encontrar estruturas latentes em coleções de textos. Atualmente, destacam-se os modelos de extração de tópicos como LDA~\cite{Blei2003} e PLSA~\cite{Hofmann1999} são abordagens amplamente utilizadas ~\cite{DZhu20122} e frequentemente referenciadas em trabalhos que buscam extrair conhecimento e organizar bases textuais ~\cite{Steyvers2007, OCallaghan2015}. 
+
+
+% Nesse trabalho, a segmentação textual é empregada na identificação dos assuntos tratados em cada ata. Os segmentos de atas gerados, aqui considerados como sub-documentos, são entregues a um extrator de tópicos. A tarefa do extrator é agrupar os segmentos com um mesmo tópico e eleger palavras da coleção que melhor descrevem cada grupo. Os descritores gerados pelo extrator de tópicos bem com os grupos são aproveitados nas técnicas de recuperação de informação a fim de ranquear os resultados e auxiliar o usuário a encontrar segmentos semelhantes por meio da navegação pelos grupos.
 
 % O uso de indices e ... traz soluções que podem resolver problemas como lentidão, ranquear e ... mas ....
 % Essa técnica, chamada de \textit{Boolean Retrieval} informa para cada documento se este casa ou não com a consulta do usuário. 
@@ -35,6 +95,14 @@ Thesaurus depende de conhecimento externo sobre o domínio.
 
 
 % Outra forma comum é o uso de ferramentas que fazem buscas nos conteúdos dos documentos, buscando por ocorrências de palavras-chave nos textos. Essas ferramentas permitem buscas combinadas com operadores lógicos como \textit{and}, \textit{or} e \textit{not} ou ainda suporte a expressões regulares. Esse recurso, conhecido como \textit{grepping}\footnote{O nome \textit{grepping} é uma referência ao comando \texttt{grep} do Unix}, traz resultados satisfatórios em muitos casos. Por outro lado, traz algumas desvantagens como: 1) transfere certa complexidade da tarefa ao usuário 2) as buscas em grandes coleções de documentos podem ser mais lentas 3) não há suporte a padrões mais flexíveis como a proximidade entre as palavras ou palavras que estejam na mesma sentença 4) o retorno ao usuário são os documentos integrais, o que pode exigir uma segunda busca dentro de um documento para encontrar o trecho desejado~\cite{Aggarwal2012,Manning2008}. 
+
+
+% :: Segmentos --> trechos com o assunto desejado e nada mais
+% Essa abordagem visa desenvolver um sistema de busca que entrega trechos de diferentes documentos relacionados à consultado do usuário que proporciona
+
+% um retorno mais direcionado
+
+
 
 ----- ----- ----- ----- ----- ----- ----- ----- ----- -----
 
@@ -77,14 +145,8 @@ usuário usam ferramentas básicas fornecidas junto com OS ?
 % Assim, os processos de extração automática de conhecimento em coleções textuais são essenciais, e ao mesmo tempo, constituem um desafio, devido às características de documentos textuais como o formato não estruturado e trechos com diferentes níveis de importância, desde informações essenciais até textos pouco informativos ou mesmo irrelevantes. 
 
 
-% Dados textuais são considerados não estruturados, ou seja, são produzidos sem ...
-
-% ou seja, dados que se caracterizam pela ausência de 
-
 
 ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- 
-
-
 
 
 
@@ -95,11 +157,6 @@ of its open nature.
 
 
 Consequentemente, o alvo da busca é refinado à medida que o usuário ganha mais informações sobre o domı́nio. Outra caracterı́stica das buscas é que o usuário potencialmente se interessa por resultados similares. Por exemplo, ao buscar por Cleópatra, o usuário também pode estar interessado em informações sobre Marco Antônio ou o Antigo Egito.
-
-
-
-
-Os modelos de extração de tópicos fornecem uma estratégia que visa encontrar nas relações entre documentos, padrões latentes que sejam significativos para o entendimento dessas relações. Tais modelos podem ranquear um conjunto de termos importantes para um ou mais assuntos, bem como ranquear documentos por sua relevância para determinado tema~\cite{Faleiros}.
 
 
 estruturas latentes em coleções de textos. Atualmente, destacam-se os modelos de extração de tópicos como LDA~\cite{Blei2003} e PLSA~\cite{Hofmann1999} são abordagens amplamente utilizadas ~\cite{DZhu20122} e frequentemente referenciadas em trabalhos que buscam extrair conhecimento e organizar bases textuais ~\cite{Steyvers2007, OCallaghan2015}. 
@@ -121,11 +178,7 @@ e com isso obter uma organização da coleção de documentos.
 
 
 % A extração de tópicos é uma técnica que visa encontrar . 
-% Um extrator de tópicos é 
 
-% Conhecendo 
-
-% descoberta pelos modelos de extração de tópicos em documentos segmentados em conjunto com técnicas tradicionais de recuperação de informação. (aproveitando-se da estrutura dos tópicos e delimitação dos segmentos)
 
 
 

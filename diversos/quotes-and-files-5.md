@@ -120,3 +120,32 @@ para obter uma representação estruturada dos documentos.
 
 ----------------------------------------
 
+
+3.2.1 Extração de Atributos
+
+O processo de extração de atributos está relacionado à criação de um novo conjunto
+de atributos, usando para tal uma função de mapeamento entre as representações posici-
+onando os dados em uma dimensão latente de forma a representar informações que não
+são capturadas com os atributos originais. O novo espaço produzido pode ser obtido pela
+combinação linear ou não-linear dos atributos originais, por transformações que mapeiam
+o documento em um espaço de conceitos, ou por técnicas probabilı́sticas como os modelos
+generativos de extração de tópicos. Ainda que seleção de atributos seja computacional-
+mente mais simples e produza resultados significativos, a construção de novos atributos
+para coleções de textos se mostra relevante para tarefas em que a interpretabilidade é um
+fator importante. Além disso, as técnicas de extração de atributos são bem sucedidas em
+descobrir a estrutura latente da coleção de documentos (Shafiei et al., 2007; Hava et al.,
+2013). Uma representação construı́da com novos atributos extraı́dos é uma oportunidade
+de incorporar conhecimento de domı́nio aos dados (Guyon and Elisseeff, 2003; Shafiei
+et al., 2007; Farahat and Kamel, 2011; Kalogeratos and Likas, 2012).
+
+
+-- Fabiano
+
+
+
+
+
+"The art of machine learning starts with the design of appropriate data representations.  Better performance is often achieved using features derived from the original input. Building a feature representation is an opportunity to incorporate domain knowledge into the data and can be very application specific. Nonetheless, there are a number of generic feature construction methods, including: clustering; basic linear transforms of the input variables (PCA/SVD, LDA); more sophisticated linear transforms like spectral transforms (Fourier, Hadamard), wavelet transforms or convolutions of kernels; and applying simple functions to subsets of variables, like products to create monomials"
+
+file:///ext4Data/UFSCar/papers/2018/An introduction to variable and feature selection.pdf
+
