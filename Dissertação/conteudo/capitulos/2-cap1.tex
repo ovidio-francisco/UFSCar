@@ -125,7 +125,16 @@ Nesse trabalho, a segmentação textual é empregada na identificação dos assu
 %        ======== ========   Essa abordagem traz como vantagens   ======== ========
 % -->  Essa abordagem traz como vantagens
 
-A busca por palavras-chave em descritores transfere processamento da varredura dos documentos para o processo de extração de tópicos. Esse processo evita processamento e lentidão no momento da pesquisa. Essa estratégia é semelhante a criação de indices para localização rápida de objetos.
+% -> 1 Segmentação
+A segmentação das atas permite ao sistema criar uma base de dados interna mais simples, em que os assuntos estão isolados em segmentos, formando assim, uma base de dados mais adequada à métodos de aprendizado de máquina e recuperação de informação. Além disso, permite que ao sistema final exibir apenas os trechos onde o assunto pesquisado está presente ao invés de entregar  documentos integrais.
+%
+% -> 2 Extração de tópicos -- descritores
+A busca por palavras-chave em descritores transfere processamento da varredura dos documentos para o processo de extração de tópicos. Esse processo evita processamento e lentidão no momento da pesquisa. Essa estratégia é semelhante a criação de índices para localização rápida de objetos. Além disso, encontra relações entre termos e documentos sem necessidade de conhecimento externo sobre o domínio.
+%
+%
+% -> 3 Extração de tópicos -- agrupamento
+Ao agrupar os segmentos por tópicos, tem-se uma organização dos documentos que permite a visualização de segmentos semelhantes permitindo a navegação e exploração aos grupos, além das consultas por palavras-chave.
+
 
 
 
