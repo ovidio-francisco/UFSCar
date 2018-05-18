@@ -1,15 +1,10 @@
-Veneranda
 
 Elie
 Aline
 Sheley
 
-Bruno
-Juliana
-
 Samanta
 Juliana Miranda
-Denise
 
 
 === === === === === === === === === === 
@@ -18,25 +13,28 @@ Denise
 
 
 
--[ ] 01. Juliana Secretaria
--[ ] 02. Outra Secretaria
+-[x] 01. Juliana Secretaria
+-[x] 02. Outra Secretaria
 -[x] 03. Marina
--[ ] 04. Sidney
--[ ] 05. Daniel
--[ ] 06. Márcio
+-[x] 04. Sidney
+-[x] 05. Daniel
+-[x] 06. Márcio
 -[ ] 07. Rossana
--[ ] 08. Beatriz
+-[x] 08. Beatriz
 -[ ] 09. Renato
--[ ] 10. Alexandre
--[ ] 11. Ricardo
--[ ] 12. Luciana
--[ ] 13. Eliane
+-[x] 10. Alexandre
+-[x] 11. Ricardo
+-[x] 12. Luciana
+-[x] 13. Eliane
 -[ ] 14. Cacá
 -[ ] 15. Marina (Cacá)
--[ ] 16. Débora
--[ ] 17. Ana Laura
--[ ] 18. Veridiana
-
+-[x] 16. Débora
+-[x] 17. Ana Laura
+-[x] 18. Veridiana
+-[x] 18. Veneranda
+-[x] 18. Denise
+-[ ] 18. Bruno
+-[ ] 18. Juliana SG
 
 
 
