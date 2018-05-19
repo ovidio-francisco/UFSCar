@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.8.22)  15 MAY 2018 00:48
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.8.22)  18 MAY 2018 23:46
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1493,7 +1493,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 126--128
 
  []
 
-[15]) (./conteudo/capitulos/inputs/segmentacao.tex (./conteudo/capitulos/inputs/algoritmos-segmentacao.tex [16] <conteudo/capitulos/figs/janelas-deslizantes.pdf, id=337, page=1, 844.15375pt x 597.23125pt>
+[15]) (./conteudo/capitulos/inputs/segmentacao.tex (./conteudo/capitulos/inputs/algoritmos-segmentacao.tex [16] <conteudo/capitulos/figs/janelas-deslizantes.pdf, id=338, page=1, 844.15375pt x 597.23125pt>
 File: conteudo/capitulos/figs/janelas-deslizantes.pdf Graphic file (type pdf)
  <use conteudo/capitulos/figs/janelas-deslizantes.pdf, page 1>
 Package pdftex.def Info: conteudo/capitulos/figs/janelas-deslizantes.pdf, page1 used on input line 24.
@@ -1501,7 +1501,7 @@ Package pdftex.def Info: conteudo/capitulos/figs/janelas-deslizantes.pdf, page1 
  [17 <./conteudo/capitulos/figs/janelas-deslizantes.pdf
 
 pdfTeX warning: pdflatex (file ./conteudo/capitulos/figs/janelas-deslizantes.pdf): PDF inclusion: invalid other resource which is no dict (key 'ProcSets', type <array>); ignored.
->] <conteudo/capitulos/figs/curva-similaridade.pdf, id=362, page=1, 845.1575pt x 597.23125pt>
+>] <conteudo/capitulos/figs/curva-similaridade.pdf, id=363, page=1, 845.1575pt x 597.23125pt>
 File: conteudo/capitulos/figs/curva-similaridade.pdf Graphic file (type pdf)
  <use conteudo/capitulos/figs/curva-similaridade.pdf, page 1>
 Package pdftex.def Info: conteudo/capitulos/figs/curva-similaridade.pdf, page1 used on input line 36.
@@ -1516,7 +1516,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-[18 <./conteudo/capitulos/figs/curva-similaridade.pdf>] <conteudo/capitulos/figs/similarity-matrix-l.png, id=414, 516.93124pt x 471.7625pt>
+[18 <./conteudo/capitulos/figs/curva-similaridade.pdf>] <conteudo/capitulos/figs/similarity-matrix-l.png, id=415, 516.93124pt x 471.7625pt>
 File: conteudo/capitulos/figs/similarity-matrix-l.png Graphic file (type png)
  <use conteudo/capitulos/figs/similarity-matrix-l.png>
 Package pdftex.def Info: conteudo/capitulos/figs/similarity-matrix-l.png used on input line 61.
@@ -1531,7 +1531,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-<conteudo/capitulos/figs/c99-matrizes.pdf, id=421, page=1, 796.9775pt x 597.23125pt>
+<conteudo/capitulos/figs/c99-matrizes.pdf, id=422, page=1, 796.9775pt x 597.23125pt>
 File: conteudo/capitulos/figs/c99-matrizes.pdf Graphic file (type pdf)
  <use conteudo/capitulos/figs/c99-matrizes.pdf, page 1>
 Package pdftex.def Info: conteudo/capitulos/figs/c99-matrizes.pdf, page1 used on input line 85.
@@ -1546,7 +1546,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-<conteudo/capitulos/figs/c99-matrizes.pdf, id=423, page=2, 796.9775pt x 597.23125pt>
+<conteudo/capitulos/figs/c99-matrizes.pdf, id=424, page=2, 796.9775pt x 597.23125pt>
 File: conteudo/capitulos/figs/c99-matrizes.pdf Graphic file (type pdf)
  <use conteudo/capitulos/figs/c99-matrizes.pdf, page 2>
 Package pdftex.def Info: conteudo/capitulos/figs/c99-matrizes.pdf, page2 used on input line 89.
@@ -1555,7 +1555,7 @@ Package pdftex.def Info: conteudo/capitulos/figs/c99-matrizes.pdf, page2 used on
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[19 <./conteudo/capitulos/figs/similarity-matrix-l.png>] [20 <./conteudo/capitulos/figs/c99-matrizes.pdf> <./conteudo/capitulos/figs/c99-matrizes.pdf>] <conteudo/capitulos/figs/graph-representation-of-text.png, id=479, 714.67pt x 230.8625pt>
+[19 <./conteudo/capitulos/figs/similarity-matrix-l.png>] [20 <./conteudo/capitulos/figs/c99-matrizes.pdf> <./conteudo/capitulos/figs/c99-matrizes.pdf>] <conteudo/capitulos/figs/graph-representation-of-text.png, id=480, 714.67pt x 230.8625pt>
 File: conteudo/capitulos/figs/graph-representation-of-text.png Graphic file (type png)
  <use conteudo/capitulos/figs/graph-representation-of-text.png>
 Package pdftex.def Info: conteudo/capitulos/figs/graph-representation-of-text.png used on input line 174.
@@ -1607,7 +1607,7 @@ LaTeX Warning: Command \c invalid in math mode on input line 58.
 
 LaTeX Warning: Command \c invalid in math mode on input line 58.
 
-<conteudo/capitulos/figs/near-missing.pdf, id=524, page=1, 844.15375pt x 597.23125pt>
+<conteudo/capitulos/figs/near-missing.pdf, id=525, page=1, 844.15375pt x 597.23125pt>
 File: conteudo/capitulos/figs/near-missing.pdf Graphic file (type pdf)
  <use conteudo/capitulos/figs/near-missing.pdf, page 1>
 Package pdftex.def Info: conteudo/capitulos/figs/near-missing.pdf, page1 used on input line 82.
@@ -1635,7 +1635,7 @@ Package epstopdf Info: Source file: <conteudo/capitulos/figs/visao-geral-3.eps>
 (epstopdf)             Command: <repstopdf --outfile=conteudo/capitulos/figs/visao-geral-3-eps-converted-to.pdf conteudo/capitulos/figs/visao-geral-3.eps>
 (epstopdf)             \includegraphics on input line 24.
 Package epstopdf Info: Output file is already uptodate.
- <conteudo/capitulos/figs/visao-geral-3-eps-converted-to.pdf, id=714, 1084.05pt x 542.025pt>
+ <conteudo/capitulos/figs/visao-geral-3-eps-converted-to.pdf, id=715, 1084.05pt x 542.025pt>
 File: conteudo/capitulos/figs/visao-geral-3-eps-converted-to.pdf Graphic file (type pdf)
  <use conteudo/capitulos/figs/visao-geral-3-eps-converted-to.pdf>
 Package pdftex.def Info: conteudo/capitulos/figs/visao-geral-3-eps-converted-to.pdf used on input line 24.
@@ -1644,7 +1644,7 @@ Package pdftex.def Info: conteudo/capitulos/figs/visao-geral-3-eps-converted-to.
 
 
 
-] <conteudo/capitulos/figs/preparacao-docs.pdf, id=721, page=1, 844.15375pt x 597.23125pt>
+] <conteudo/capitulos/figs/preparacao-docs.pdf, id=722, page=1, 844.15375pt x 597.23125pt>
 File: conteudo/capitulos/figs/preparacao-docs.pdf Graphic file (type pdf)
  <use conteudo/capitulos/figs/preparacao-docs.pdf, page 1>
 Package pdftex.def Info: conteudo/capitulos/figs/preparacao-docs.pdf, page1 used on input line 63.
@@ -1655,7 +1655,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [35 <./conteudo/capitulos/figs/preparacao-docs.pdf
 
 pdfTeX warning: pdflatex (file ./conteudo/capitulos/figs/preparacao-docs.pdf): PDF inclusion: invalid other resource which is no dict (key 'ProcSets', type <array>); ignored.
->] [36] <conteudo/capitulos/figs/estrutura-de-dados-interna.pdf, id=780, page=1, 844.15375pt x 597.23125pt>
+>] [36] <conteudo/capitulos/figs/estrutura-de-dados-interna.pdf, id=781, page=1, 844.15375pt x 597.23125pt>
 File: conteudo/capitulos/figs/estrutura-de-dados-interna.pdf Graphic file (type pdf)
  <use conteudo/capitulos/figs/estrutura-de-dados-interna.pdf, page 1>
 Package pdftex.def Info: conteudo/capitulos/figs/estrutura-de-dados-interna.pdf, page1 used on input line 163.
@@ -1663,7 +1663,7 @@ Package pdftex.def Info: conteudo/capitulos/figs/estrutura-de-dados-interna.pdf,
  [37 <./conteudo/capitulos/figs/estrutura-de-dados-interna.pdf
 
 pdfTeX warning: pdflatex (file ./conteudo/capitulos/figs/estrutura-de-dados-interna.pdf): PDF inclusion: invalid other resource which is no dict (key 'ProcSets', type <array>); ignored.
->] [38] <conteudo/capitulos/figs/tela-principal-2-1.png, id=1394, 1177.39874pt x 737.75626pt>
+>] [38] <conteudo/capitulos/figs/tela-principal-2-1.png, id=1395, 1177.39874pt x 737.75626pt>
 File: conteudo/capitulos/figs/tela-principal-2-1.png Graphic file (type png)
  <use conteudo/capitulos/figs/tela-principal-2-1.png>
 Package pdftex.def Info: conteudo/capitulos/figs/tela-principal-2-1.png used on input line 204.
@@ -1671,7 +1671,7 @@ Package pdftex.def Info: conteudo/capitulos/figs/tela-principal-2-1.png used on 
 ) [39 <./conteudo/capitulos/figs/tela-principal-2-1.png>] [40]
 \openout2 = `conteudo/capitulos/cap-avaliacao-segmentadores.aux'.
 
- (./conteudo/capitulos/cap-avaliacao-segmentadores.tex <conteudo/capitulos/figs/interface-anotacoes.png, id=1408, 1445.4pt x 872.25874pt>
+ (./conteudo/capitulos/cap-avaliacao-segmentadores.tex <conteudo/capitulos/figs/interface-anotacoes.png, id=1409, 1445.4pt x 872.25874pt>
 File: conteudo/capitulos/figs/interface-anotacoes.png Graphic file (type png)
  <use conteudo/capitulos/figs/interface-anotacoes.png>
 Package pdftex.def Info: conteudo/capitulos/figs/interface-anotacoes.png used on input line 20.
@@ -1730,7 +1730,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-] <conteudo/capitulos/figs/segmentacao-referencia.pdf, id=1429, page=1, 844.15375pt x 597.23125pt>
+] <conteudo/capitulos/figs/segmentacao-referencia.pdf, id=1430, page=1, 844.15375pt x 597.23125pt>
 File: conteudo/capitulos/figs/segmentacao-referencia.pdf Graphic file (type pdf)
  <use conteudo/capitulos/figs/segmentacao-referencia.pdf, page 1>
 Package pdftex.def Info: conteudo/capitulos/figs/segmentacao-referencia.pdf, page1 used on input line 114.
@@ -1743,7 +1743,7 @@ Overfull \hbox (16.16505pt too wide) in paragraph at lines 130--161
 [43 <./conteudo/capitulos/figs/segmentacao-referencia.pdf
 
 pdfTeX warning: pdflatex (file ./conteudo/capitulos/figs/segmentacao-referencia.pdf): PDF inclusion: invalid other resource which is no dict (key 'ProcSets', type <array>); ignored.
->] [44] [45] <conteudo/capitulos/figs/coesaolexicaTT-50-9.png, id=1628, 1413.28pt x 306.14375pt>
+>] [44] [45] <conteudo/capitulos/figs/coesaolexicaTT-50-9.png, id=1629, 1413.28pt x 306.14375pt>
 File: conteudo/capitulos/figs/coesaolexicaTT-50-9.png Graphic file (type png)
  <use conteudo/capitulos/figs/coesaolexicaTT-50-9.png>
 Package pdftex.def Info: conteudo/capitulos/figs/coesaolexicaTT-50-9.png used on input line 271.
@@ -1758,7 +1758,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-<conteudo/capitulos/figs/CDs/WinDiff.png, id=1637, 433.62pt x 111.2958pt>
+<conteudo/capitulos/figs/CDs/WinDiff.png, id=1638, 433.62pt x 111.2958pt>
 File: conteudo/capitulos/figs/CDs/WinDiff.png Graphic file (type png)
  <use conteudo/capitulos/figs/CDs/WinDiff.png>
 Package pdftex.def Info: conteudo/capitulos/figs/CDs/WinDiff.png used on input line 325.
@@ -1773,7 +1773,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-<conteudo/capitulos/figs/CDs/Pk.png, id=1638, 433.62pt x 111.2958pt>
+<conteudo/capitulos/figs/CDs/Pk.png, id=1639, 433.62pt x 111.2958pt>
 File: conteudo/capitulos/figs/CDs/Pk.png Graphic file (type png)
  <use conteudo/capitulos/figs/CDs/Pk.png>
 Package pdftex.def Info: conteudo/capitulos/figs/CDs/Pk.png used on input line 327.
@@ -1788,7 +1788,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-<conteudo/capitulos/figs/CDs/Acuracy.png, id=1639, 433.62pt x 111.2958pt>
+<conteudo/capitulos/figs/CDs/Acuracy.png, id=1640, 433.62pt x 111.2958pt>
 File: conteudo/capitulos/figs/CDs/Acuracy.png Graphic file (type png)
  <use conteudo/capitulos/figs/CDs/Acuracy.png>
 Package pdftex.def Info: conteudo/capitulos/figs/CDs/Acuracy.png used on input line 329.
@@ -1803,7 +1803,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-<conteudo/capitulos/figs/CDs/Precision.png, id=1640, 433.62pt x 111.2958pt>
+<conteudo/capitulos/figs/CDs/Precision.png, id=1641, 433.62pt x 111.2958pt>
 File: conteudo/capitulos/figs/CDs/Precision.png Graphic file (type png)
  <use conteudo/capitulos/figs/CDs/Precision.png>
 Package pdftex.def Info: conteudo/capitulos/figs/CDs/Precision.png used on input line 331.
@@ -1818,7 +1818,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-<conteudo/capitulos/figs/CDs/Recall.png, id=1641, 433.62pt x 111.2958pt>
+<conteudo/capitulos/figs/CDs/Recall.png, id=1642, 433.62pt x 111.2958pt>
 File: conteudo/capitulos/figs/CDs/Recall.png Graphic file (type png)
  <use conteudo/capitulos/figs/CDs/Recall.png>
 Package pdftex.def Info: conteudo/capitulos/figs/CDs/Recall.png used on input line 333.
@@ -1833,7 +1833,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-<conteudo/capitulos/figs/CDs/F1.png, id=1642, 433.62pt x 111.2958pt>
+<conteudo/capitulos/figs/CDs/F1.png, id=1643, 433.62pt x 111.2958pt>
 File: conteudo/capitulos/figs/CDs/F1.png Graphic file (type png)
  <use conteudo/capitulos/figs/CDs/F1.png>
 Package pdftex.def Info: conteudo/capitulos/figs/CDs/F1.png used on input line 335.
@@ -1853,7 +1853,7 @@ Overfull \hbox (62.76532pt too wide) in paragraph at lines 5--110
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-) <conteudo/capitulos/figs/graficos/resumo-3.png, id=1645, 534.49687pt x 255.95625pt>
+) <conteudo/capitulos/figs/graficos/resumo-3.png, id=1646, 534.49687pt x 255.95625pt>
 File: conteudo/capitulos/figs/graficos/resumo-3.png Graphic file (type png)
  <use conteudo/capitulos/figs/graficos/resumo-3.png>
 Package pdftex.def Info: conteudo/capitulos/figs/graficos/resumo-3.png used on input line 410.
@@ -1862,7 +1862,7 @@ Package pdftex.def Info: conteudo/capitulos/figs/graficos/resumo-3.png used on i
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<conteudo/capitulos/figs/graficos/analiseNSegRate-MinCut.png, id=1646, 544.28343pt x 255.95625pt>
+<conteudo/capitulos/figs/graficos/analiseNSegRate-MinCut.png, id=1647, 544.28343pt x 255.95625pt>
 File: conteudo/capitulos/figs/graficos/analiseNSegRate-MinCut.png Graphic file (type png)
  <use conteudo/capitulos/figs/graficos/analiseNSegRate-MinCut.png>
 Package pdftex.def Info: conteudo/capitulos/figs/graficos/analiseNSegRate-MinCut.png used on input line 422.
@@ -1871,7 +1871,7 @@ Package pdftex.def Info: conteudo/capitulos/figs/graficos/analiseNSegRate-MinCut
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<conteudo/capitulos/figs/graficos/analiseNSegRate-UISeg.png, id=1647, 544.28343pt x 255.95625pt>
+<conteudo/capitulos/figs/graficos/analiseNSegRate-UISeg.png, id=1648, 544.28343pt x 255.95625pt>
 File: conteudo/capitulos/figs/graficos/analiseNSegRate-UISeg.png Graphic file (type png)
  <use conteudo/capitulos/figs/graficos/analiseNSegRate-UISeg.png>
 Package pdftex.def Info: conteudo/capitulos/figs/graficos/analiseNSegRate-UISeg.png used on input line 430.
@@ -1880,7 +1880,7 @@ Package pdftex.def Info: conteudo/capitulos/figs/graficos/analiseNSegRate-UISeg.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<conteudo/capitulos/figs/graficos/analiseNSegRate-Bayes.png, id=1648, 544.28343pt x 255.95625pt>
+<conteudo/capitulos/figs/graficos/analiseNSegRate-Bayes.png, id=1649, 544.28343pt x 255.95625pt>
 File: conteudo/capitulos/figs/graficos/analiseNSegRate-Bayes.png Graphic file (type png)
  <use conteudo/capitulos/figs/graficos/analiseNSegRate-Bayes.png>
 Package pdftex.def Info: conteudo/capitulos/figs/graficos/analiseNSegRate-Bayes.png used on input line 437.
@@ -1889,7 +1889,7 @@ Package pdftex.def Info: conteudo/capitulos/figs/graficos/analiseNSegRate-Bayes.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<conteudo/capitulos/figs/graficos/analiseNSegRate-C99.png, id=1649, 544.28343pt x 255.95625pt>
+<conteudo/capitulos/figs/graficos/analiseNSegRate-C99.png, id=1650, 544.28343pt x 255.95625pt>
 File: conteudo/capitulos/figs/graficos/analiseNSegRate-C99.png Graphic file (type png)
  <use conteudo/capitulos/figs/graficos/analiseNSegRate-C99.png>
 Package pdftex.def Info: conteudo/capitulos/figs/graficos/analiseNSegRate-C99.png used on input line 445.
@@ -1965,18 +1965,18 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 316.
 ### simple group (level 1) entered at line 1061 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 16495 strings out of 494884
- 249866 string characters out of 6179236
- 466728 words of memory out of 5000000
- 18993 multiletter control sequences out of 15000+600000
- 105491 words of font info for 169 fonts, out of 8000000 for 9000
+ 16498 strings out of 494884
+ 249909 string characters out of 6179236
+ 466732 words of memory out of 5000000
+ 18995 multiletter control sequences out of 15000+600000
+ 109755 words of font info for 170 fonts, out of 8000000 for 9000
  38 hyphenation exceptions out of 8191
- 50i,15n,40p,1335b,2998s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc}</usr/share/texmf/fonts/type1/public/lm/lmbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx8.pfb></usr/share/texmf/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi6.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr7.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss10.pfb></usr/share/texmf/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss17.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsso12.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt12.pfb>
-Output written on ovidio-dissertacao.pdf (61 pages, 1830631 bytes).
+ 50i,15n,40p,1335b,2997s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc}</usr/share/texmf/fonts/type1/public/lm/lmbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx8.pfb></usr/share/texmf/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi6.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr7.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/public/lm/lmri8.pfb></usr/share/texmf/fonts/type1/public/lm/lmss10.pfb></usr/share/texmf/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss17.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsso12.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt12.pfb>
+Output written on ovidio-dissertacao.pdf (61 pages, 1837169 bytes).
 PDF statistics:
- 2172 PDF objects out of 2487 (max. 8388607)
- 1417 compressed objects within 15 object streams
+ 2176 PDF objects out of 2487 (max. 8388607)
+ 1420 compressed objects within 15 object streams
  244 named destinations out of 1000 (max. 500000)
- 37478 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 37990 words of extra memory for PDF output out of 42996 (max. 10000000)
 

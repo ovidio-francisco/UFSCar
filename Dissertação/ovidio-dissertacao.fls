@@ -225,8 +225,9 @@ INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmri10.tfm
 OUTPUT conteudo/capitulos/2-cap1.aux
 INPUT conteudo/capitulos/2-cap1.tex
 INPUT conteudo/capitulos/2-cap1.tex
-INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmr8.tfm
 INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmri12.tfm
+INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmri8.tfm
+INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmr8.tfm
 INPUT /usr/share/texmf/fonts/tfm/public/lm/rm-lmr10.tfm
 INPUT /usr/share/texmf/fonts/tfm/public/lm/rm-lmr7.tfm
 INPUT /usr/share/texmf/fonts/tfm/public/lm/rm-lmr5.tfm
@@ -411,6 +412,7 @@ INPUT /usr/share/texmf/fonts/type1/public/lm/lmr7.pfb
 INPUT /usr/share/texmf/fonts/type1/public/lm/lmr8.pfb
 INPUT /usr/share/texmf/fonts/type1/public/lm/lmri10.pfb
 INPUT /usr/share/texmf/fonts/type1/public/lm/lmri12.pfb
+INPUT /usr/share/texmf/fonts/type1/public/lm/lmri8.pfb
 INPUT /usr/share/texmf/fonts/type1/public/lm/lmss10.pfb
 INPUT /usr/share/texmf/fonts/type1/public/lm/lmss12.pfb
 INPUT /usr/share/texmf/fonts/type1/public/lm/lmss17.pfb
