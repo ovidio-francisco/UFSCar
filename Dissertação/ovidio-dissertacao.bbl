@@ -5,6 +5,12 @@
 \providecommand{\abntbstabout}[1]{}
 \abntbstabout{v-1.9.2 }
 
+\bibitem[Aggarwal 2018]{Aggarwal2018}
+\abntrefinfo{Aggarwal}{AGGARWAL}{2018}
+{AGGARWAL, C.~C. \emph{Machine Learning for Text}. [S.l.]: Springer
+  International Publishing, 2018.
+ISBN 978-3-319-73531-3.}
+
 \bibitem[Aggarwal e Zhai 2012]{Aggarwal2012}
 \abntrefinfo{Aggarwal e Zhai}{AGGARWAL; ZHAI}{2012}
 {AGGARWAL, C.~C.; ZHAI, C.~X. \emph{Mining Text Data}. [S.l.]: Springer
@@ -192,6 +198,14 @@ ISBN 1-58113-096-1. Dispon{\'\i}vel em:
   methodological challenge for corpus linguistics.
 v.~22, p. 13--36, 01 2010.}
 
+\bibitem[Huang et al. 2003]{Huang2003}
+\abntrefinfo{Huang et al.}{HUANG et al.}{2003}
+{HUANG, X. et al. Applying machine learning to text segmentation for
+  information retrieval.
+\emph{Information Retrieval}, v.~6, n.~3, p. 333--362, Sep 2003.
+ISSN 1573-7659.
+Dispon{\'\i}vel em: \url{https://doi.org/10.1023/A:1026028229881}.}
+
 \bibitem[Janin et al. 2003]{Janin2003}
 \abntrefinfo{Janin et al.}{JANIN et al.}{2003}
 {JANIN, A. et al. The icsi meeting corpus. In:  \emph{Proceedings of the IEEE
@@ -319,6 +333,14 @@ Dispon{\'\i}vel em: \url{http://dl.acm.org/citation.cfm?id=972684.972689}.}
 \emph{Computational Linguistics}, v.~28, n.~1, p. 19--36, 2002.
 Dispon{\'\i}vel em:
   \url{https://www.scopus.com/inward/record.uri?eid=2-s2.0-0037870455&doi=10.1162\%2f089120102317341756&partnerID=40&md5=279abc4e76fcfc2c4a1896e76a245034}.}
+
+\bibitem[Prince e Labadi{\'e} 2007]{Prince2007}
+\abntrefinfo{Prince e Labadi{\'e}}{PRINCE; LABADI{\'E}}{2007}
+{PRINCE, V.; LABADI{\'E}, A. Text segmentation based on document understanding
+  for information retrieval. In:  KEDAD, Z. et al. (Ed.). \emph{Natural
+  Language Processing and Information Systems}. Berlin, Heidelberg: Springer
+  Berlin Heidelberg, 2007. p. 295--304.
+ISBN 978-3-540-73351-5.}
 
 \bibitem[Reynar 1998]{Reynar1998}
 \abntrefinfo{Reynar}{REYNAR}{1998}
@@ -452,7 +474,7 @@ ISBN 0321321367.}
 Tese (Doutorado) --- University of Massachusetts Amherst, Massachusetts, MA,
   USA, 2007.}
 
-\bibitem[Wei e Croft 2006]{WEI2006}
+\bibitem[Wei e Croft 2006]{WEIXING}
 \abntrefinfo{Wei e Croft}{WEI; CROFT}{2006}
 {WEI, X.; CROFT, W.~B. Lda-based document models for ad-hoc retrieval. In:
   \emph{Proceedings of the 29th Annual International ACM SIGIR Conference on

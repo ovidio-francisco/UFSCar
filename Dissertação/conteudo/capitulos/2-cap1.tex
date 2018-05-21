@@ -39,7 +39,7 @@ Outra forma comum é o uso de ferramentas que fazem buscas nos conteúdos dos do
 % 
 Ainda nesse contexto, usa-se outras técnicas de Recuperação de Informação como o Modelo de Espaço Vetorial para ranquear documentos atribuindo pontuações para a similaridade de cada par documento/consulta. Com isso, é possível apresentar os documentos ordenados conforme a sua relevância com a consulta. Utiliza-se também dicionários de sinônimos (\textit{thesaurus}) para expandir a consulta do usuário por meio de conhecimento externo adicionado ao sistema. % e com isso ...
 
-Contudo, essas técnicas baseiam-se na frequência de palavras, em que os documentos e consultas são vistos como conjuntos de termos sem levar em conta relações entre termos que compartilham um mesmo tópico dentro do domínio~\cite{WEI2006}. Por exemplo, as consultas ``\textit{alunos bolsa CAPES}'' e ``\textit{suporte financeiro a pesquisa}'' tratam de um mesmo assunto, nesse caso, a transferência de valores monetários como apoio a carreira acadêmica. Utilizando-se das técnicas até agora mencionadas, obteria-se resultados distintos, uma vez que as consultas não compartilham termos e não há relação direta ente eles. Como efeito, os resultados de cada consulta limitariam-se a documentos que compartilham termos com a consulta.
+Contudo, essas técnicas baseiam-se na frequência de palavras, em que os documentos e consultas são vistos como conjuntos de termos sem levar em conta relações entre termos que compartilham um mesmo tópico dentro do domínio~\cite{WEIXING}. Por exemplo, as consultas ``\textit{alunos bolsa CAPES}'' e ``\textit{suporte financeiro a pesquisa}'' tratam de um mesmo assunto, nesse caso, a transferência de valores monetários como apoio a carreira acadêmica. Utilizando-se das técnicas até agora mencionadas, obteria-se resultados distintos, uma vez que as consultas não compartilham termos e não há relação direta ente eles. Como efeito, os resultados de cada consulta limitariam-se a documentos que compartilham termos com a consulta.
 % com termos em comum a consulta.
 Essas técnicas produzem resultados melhores a medida que o usuário fornece termos mais acertados na consulta, o que por vezes é dependente de certo conhecimento e familiaridade com o domínio no qual a coleção de documentos está inserida. Além disso, o retorno ao usuário é uma lista documentos integrais, o que pode exigir uma segunda busca dentro de um documento para encontrar o trecho desejado.
 
@@ -88,7 +88,9 @@ Atualmente, destacam-se os modelos probabilísticos de extração de tópicos co
 %
 Nesse trabalho, a expressão \textit{tópico} é usada para designar um assunto considerando que o mesmo foi extraído por meio de técnicas automáticas, ficando a expressão \textit{assunto} utilizada como seu teor popular. 
 
-O processo de extração de tópicos atribui um peso a cada documento-tópico e uma relação termo-tópico que pode representar a probabilidade de ocorrência de um termo em um documento dado que o tópico está presente. A partir dessas representações, é possível agrupar documentos que compartilham o mesmo tópico bem como os termos que melhor descrevem o tópico. Com isso, obtém-se uma organização da coleção de documentos que favorece técnicas para navegação e consulta à coleção de documentos. 
+O processo de extração de tópicos atribui um peso a cada documento-tópico e uma relação termo-tópico que pode representar a probabilidade de ocorrência de um termo em um documento dado que o tópico está presente. A partir dessas representações, é possível agrupar documentos que compartilham o mesmo tópico bem como os termos que melhor descrevem o tópico~\cite{Aggarwal2018}. Com isso, obtém-se uma organização da coleção de documentos que favorece técnicas para navegação e consulta à coleção de documentos\cite{Maracini2010}. 
+% 
+Além disso, essas abordagens de extração de tópicos fornecem a construção de novos atributos que representam os principais tópicos ou assuntos identificados na coleção de documentos, sendo uma oportunidade de incorporar conhecimento de domínio aos dados. 
 % com o mesmo teor 
 
 
@@ -130,18 +132,20 @@ Nesse trabalho, a segmentação textual é empregada na identificação dos assu
 
 
 %        ======== ========   Essa abordagem traz como vantagens   ======== ========
-% -->  Essa abordagem traz como vantagens
-
+% Essa abordagem traz vantagens em relação às técnicas de recuperação de informação 
+%
+%
+Essa abordagem traz vantagens para a recuperação de informação em coleções de documentos com múltiplos tópicos como atas de reunião.
 % -> 1 Segmentação
-A segmentação das atas permite ao sistema criar uma base de dados interna mais simples, em que os assuntos estão isolados em segmentos, formando assim, uma base de dados mais adequada à métodos de aprendizado de máquina e recuperação de informação. Além disso, permite que ao sistema final exibir apenas os trechos onde o assunto pesquisado está presente ao invés de entregar documentos integrais.
+A segmentação das atas permite ao sistema criar uma base de dados interna mais simples, em que os assuntos estão isolados em segmentos, formando assim, uma base de dados mais adequada aos métodos de aprendizado de máquina e recuperação de informação, empregados nesse trabalho. Além disso, permite ao sistema final exibir apenas os trechos onde o assunto pesquisado está presente ao invés de entregar documentos integrais~\cite{Tagarelli2013, Jeong:2010, Prince2007, Huang2003}. 
 %
 
 % -> 2 Extração de tópicos -- descritores
 
-Modelos de extração de tópicos podem se integrar ao processo de recuperação de informação usando os agrupamentos e seus descritores como uma forma de descrição da coleção~\cite{Zhai2017, Xing2009}, bem como relacionar termos distintos com um determinado tópico em comum~\cite{Wei2007}.  
+Modelos de extração de tópicos podem se integrar ao processo de recuperação de informação usando os agrupamentos e seus descritores como uma forma de descrição da coleção~\cite{Zhai2017, Xing2009}, bem como relacionar termos distintos com um determinado tópico em comum~\cite{WEIXING}.  
 A busca por palavras-chave em descritores transfere processamento da varredura dos documentos para o processo de extração de tópicos. Esse processo evita processamento e lentidão no momento da pesquisa. Essa estratégia é semelhante a criação de índices para aumentar a eficiência em sistemas de recuperação de informação. Além disso, encontra relações entre termos e documentos sem necessidade de conhecimento externo sobre o domínio.
 %
-Assim, nesse trabalho os modelos de extração de tópicos são utilizados para incorporar informação aos segmentos com a finalidade de aprimorar o ranqueamento dos resultados~\cite{Wei2007}. 
+Assim, nesse trabalho os modelos de extração de tópicos são utilizados para incorporar informação aos segmentos com a finalidade de aprimorar o ranqueamento dos resultados~\cite{WEIXING}. 
 % 
 % -> 3 Extração de tópicos -- agrupamento
 Além disso, ao agrupar os segmentos por tópicos, tem-se uma organização dos documentos que permite a visualização de segmentos semelhantes permitindo a navegação e exploração aos grupos, além das consultas por palavras-chave~\cite{Maracini2010}.
@@ -150,8 +154,6 @@ Além disso, ao agrupar os segmentos por tópicos, tem-se uma organização dos 
 
 
 % // https://verbosus.com/bibtex-style-examples.html
-
-
 
 
 

@@ -4,7 +4,7 @@
 \backcite {Miriam2013, Lee2011}{{5}{1}{chapter.1}}
 \backcite {Aggarwal2012,Manning2008}{{6}{1}{chapter.1}}
 \backcite {Aggarwal2012,Manning2008}{{6}{1}{chapter.1}}
-\backcite {WEI2006}{{6}{1}{chapter.1}}
+\backcite {WEIXING}{{6}{1}{chapter.1}}
 \backcite { Bokaei2015, Sakahara2014, Misra2009, Eisenstein2008, Choi2000}{{7}{1}{chapter.1}}
 \backcite { Bokaei2015, Sakahara2014, Misra2009, Eisenstein2008, Choi2000}{{7}{1}{chapter.1}}
 \backcite { Bokaei2015, Sakahara2014, Misra2009, Eisenstein2008, Choi2000}{{7}{1}{chapter.1}}
@@ -19,11 +19,17 @@
 \backcite {DZhu20122}{{7}{1}{chapter.1}}
 \backcite {Steyvers2007, OCallaghan2015}{{7}{1}{chapter.1}}
 \backcite {Steyvers2007, OCallaghan2015}{{7}{1}{chapter.1}}
+\backcite {Aggarwal2018}{{7}{1}{chapter.1}}
+\backcite {Maracini2010}{{7}{1}{chapter.1}}
+\backcite {Tagarelli2013, Jeong:2010, Prince2007, Huang2003}{{8}{1}{chapter.1}}
+\backcite {Tagarelli2013, Jeong:2010, Prince2007, Huang2003}{{8}{1}{chapter.1}}
+\backcite {Tagarelli2013, Jeong:2010, Prince2007, Huang2003}{{8}{1}{chapter.1}}
+\backcite {Tagarelli2013, Jeong:2010, Prince2007, Huang2003}{{8}{1}{chapter.1}}
 \backcite {Zhai2017, Xing2009}{{8}{1}{chapter.1}}
 \backcite {Zhai2017, Xing2009}{{8}{1}{chapter.1}}
-\backcite {Wei2007}{{8}{1}{chapter.1}}
-\backcite {Wei2007}{{8}{1}{chapter.1}}
-\backcite {Maracini2010}{{8}{1}{chapter.1}}
+\backcite {WEIXING}{{8}{1}{chapter.1}}
+\backcite {WEIXING}{{8}{1}{chapter.1}}
+\backcite {Maracini2010}{{9}{1}{chapter.1}}
 \backcite {Hofmann1999,Deerwester1990,Lee1999,Blei2012}{{11}{2}{chapter.2}}
 \backcite {Hofmann1999,Deerwester1990,Lee1999,Blei2012}{{11}{2}{chapter.2}}
 \backcite {Hofmann1999,Deerwester1990,Lee1999,Blei2012}{{11}{2}{chapter.2}}

@@ -19,7 +19,7 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 Database file #1: abntex2-options.bib
 Database file #2: referencias.bib
-I was expecting a `,' or a `}'---line 967 of file referencias.bib
+I was expecting a `,' or a `}'---line 1016 of file referencias.bib
  : 
  : year = {2016}
 (Error may have been on previous line)
@@ -39,45 +39,45 @@ Warning--faltando school em Reynar1998
 | Em caso de dúvidas ou problemas com este estilo procure |
 | http://abntex2.googlecode.com                           |
 +---------------------------------------------------------+
-You've used 64 entries,
+You've used 67 entries,
             6711 wiz_defined-function locations,
-            1745 strings with 24437 characters,
-and the built_in function-call counts, 96193 in all, are:
-= -- 10668
-> -- 2204
-< -- 2068
-+ -- 2802
-- -- 660
-* -- 6479
-:= -- 11668
-add.period$ -- 315
-call.type$ -- 64
-change.case$ -- 727
-chr.to.int$ -- 157
-cite$ -- 66
-duplicate$ -- 8632
-empty$ -- 4330
-format.name$ -- 3147
-if$ -- 20162
+            1768 strings with 25115 characters,
+and the built_in function-call counts, 99679 in all, are:
+= -- 11006
+> -- 2301
+< -- 2113
++ -- 2878
+- -- 689
+* -- 6722
+:= -- 12113
+add.period$ -- 331
+call.type$ -- 67
+change.case$ -- 760
+chr.to.int$ -- 163
+cite$ -- 69
+duplicate$ -- 8890
+empty$ -- 4537
+format.name$ -- 3293
+if$ -- 20940
 int.to.chr$ -- 0
 int.to.str$ -- 0
-missing$ -- 1179
-newline$ -- 349
-num.names$ -- 317
-pop$ -- 1443
+missing$ -- 1236
+newline$ -- 366
+num.names$ -- 333
+pop$ -- 1511
 preamble$ -- 1
-purify$ -- 266
+purify$ -- 278
 quote$ -- 0
-skip$ -- 8719
+skip$ -- 8968
 stack$ -- 1
-substring$ -- 4386
-swap$ -- 3538
-text.length$ -- 139
+substring$ -- 4531
+swap$ -- 3654
+text.length$ -- 144
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 30
+type$ -- 31
 warning$ -- 3
-while$ -- 540
+while$ -- 565
 width$ -- 0
-write$ -- 1133
+write$ -- 1185
 (There were 2 error messages)
