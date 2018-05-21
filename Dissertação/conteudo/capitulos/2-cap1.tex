@@ -39,11 +39,9 @@ Outra forma comum é o uso de ferramentas que fazem buscas nos conteúdos dos do
 % 
 Ainda nesse contexto, usa-se outras técnicas de Recuperação de Informação como o Modelo de Espaço Vetorial para ranquear documentos atribuindo pontuações para a similaridade de cada par documento/consulta. Com isso, é possível apresentar os documentos ordenados conforme a sua relevância com a consulta. Utiliza-se também dicionários de sinônimos (\textit{thesaurus}) para expandir a consulta do usuário por meio de conhecimento externo adicionado ao sistema. % e com isso ...
 
-Contudo, essas técnicas baseiam-se na frequência de palavras, em que os documentos e consultas são vistos como conjuntos de termos sem levar em conta relações entre termos que compartilham um mesmo tópico dentro do domínio. Por exemplo, as consultas ``\textit{alunos bolsa CAPES}'' e ``\textit{suporte financeiro a pesquisa}'' tratam de um mesmo assunto, nesse caso, a transferência de valores monetários como apoio a carreira acadêmica. Utilizando-se das técnicas até agora mencionadas, obteria-se resultados distintos, uma vez que as consultas não compartilham termos e não há relação direta ente eles. Como efeito, os resultados de cada consulta limitariam-se a documentos 
-que compartilham termos com a consulta.
+Contudo, essas técnicas baseiam-se na frequência de palavras, em que os documentos e consultas são vistos como conjuntos de termos sem levar em conta relações entre termos que compartilham um mesmo tópico dentro do domínio~\cite{WEI2006}. Por exemplo, as consultas ``\textit{alunos bolsa CAPES}'' e ``\textit{suporte financeiro a pesquisa}'' tratam de um mesmo assunto, nesse caso, a transferência de valores monetários como apoio a carreira acadêmica. Utilizando-se das técnicas até agora mencionadas, obteria-se resultados distintos, uma vez que as consultas não compartilham termos e não há relação direta ente eles. Como efeito, os resultados de cada consulta limitariam-se a documentos que compartilham termos com a consulta.
 % com termos em comum a consulta.
 Essas técnicas produzem resultados melhores a medida que o usuário fornece termos mais acertados na consulta, o que por vezes é dependente de certo conhecimento e familiaridade com o domínio no qual a coleção de documentos está inserida. Além disso, o retorno ao usuário é uma lista documentos integrais, o que pode exigir uma segunda busca dentro de um documento para encontrar o trecho desejado.
-
 
 
 
@@ -84,9 +82,9 @@ Contudo, a segmentação textual apenas indica as transições de assuntos ao lo
 sem indicações sobre o teor dos segmentos.
 % pela qual obtém-se trechos com um assunto principal e relativamente independente do texto integral. 
 O assunto de cada trecho pode ser estimado por meio de técnicas de extração de tópicos.  
-Os modelos de extração de tópicos fornecem uma estratégia que visa encontrar nas relações entre documentos, padrões latentes que sejam significativos para o entendimento dessas relações. Tais modelos podem ranquear um conjunto de termos importantes para um ou mais assuntos, bem como ranquear documentos por sua relevância para determinado tema~\cite{Faleiros2016}.
+Os modelos de extração de tópicos fornecem uma estratégia que visa encontrar nas relações entre documentos, padrões latentes que sejam significativos para o entendimento dessas relações~\cite{Wei2007}. Tais modelos podem ranquear um conjunto de termos importantes para um ou mais assuntos, bem como ranquear documentos por sua relevância para determinado tema~\cite{Faleiros2016,Xing2009}.
 Atualmente, destacam-se os modelos probabilísticos de extração de tópicos como LDA~\cite{Blei2003} e PLSA~\cite{Hofmann1999}. São abordagens amplamente utilizadas ~\cite{DZhu20122} e frequentemente referenciadas em trabalhos que buscam extrair conhecimento e organizar bases textuais ~\cite{Steyvers2007, OCallaghan2015}.  
-%
+%aa
 %
 Nesse trabalho, a expressão \textit{tópico} é usada para designar um assunto considerando que o mesmo foi extraído por meio de técnicas automáticas, ficando a expressão \textit{assunto} utilizada como seu teor popular. 
 
@@ -124,21 +122,37 @@ Devido as características das atas como ausência de meta-informação e a mult
 Nesse trabalho, a segmentação textual é empregada na identificação dos assuntos tratados em cada ata. Os segmentos de atas gerados, aqui considerados como sub-documentos, são entregues a um extrator de tópicos. A tarefa do extrator é agrupar os segmentos com um mesmo tópico e eleger palavras da coleção que melhor descrevem cada grupo. Os descritores gerados pelo extrator de tópicos bem com os grupos são aproveitados nas técnicas de recuperação de informação a fim de ranquear os resultados e auxiliar o usuário a encontrar segmentos semelhantes por meio da navegação pelos grupos. Essa abordagem visa, em primeiro lugar, identificar os assuntos tratados em cada ata e gerar uma coleção de subdocumentos derivados da coleção de atas originais e, a partir disso, encontrar relações latentes entre os subdocumentos e termos da coleção. Com isso, tem-se uma estrutura que permite às técnicas de recuperação de informação fazer buscas à coleção de atas valendo-se da estrutura criada a partir das técnicas de segmentação textual e extração de tópicos. 
 
 
+
+
+
+
+
+
+
 %        ======== ========   Essa abordagem traz como vantagens   ======== ========
 % -->  Essa abordagem traz como vantagens
 
 % -> 1 Segmentação
 A segmentação das atas permite ao sistema criar uma base de dados interna mais simples, em que os assuntos estão isolados em segmentos, formando assim, uma base de dados mais adequada à métodos de aprendizado de máquina e recuperação de informação. Além disso, permite que ao sistema final exibir apenas os trechos onde o assunto pesquisado está presente ao invés de entregar documentos integrais.
 %
+
 % -> 2 Extração de tópicos -- descritores
+
+Modelos de extração de tópicos podem se integrar ao processo de recuperação de informação usando os agrupamentos e seus descritores como uma forma de descrição da coleção~\cite{Zhai2017, Xing2009}, bem como relacionar termos distintos com um determinado tópico em comum~\cite{Wei2007}.  
 A busca por palavras-chave em descritores transfere processamento da varredura dos documentos para o processo de extração de tópicos. Esse processo evita processamento e lentidão no momento da pesquisa. Essa estratégia é semelhante a criação de índices para aumentar a eficiência em sistemas de recuperação de informação. Além disso, encontra relações entre termos e documentos sem necessidade de conhecimento externo sobre o domínio.
 %
-%
+Assim, nesse trabalho os modelos de extração de tópicos são utilizados para incorporar informação aos segmentos com a finalidade de aprimorar o ranqueamento dos resultados~\cite{Wei2007}. 
+% 
 % -> 3 Extração de tópicos -- agrupamento
-Ao agrupar os segmentos por tópicos, tem-se uma organização dos documentos que permite a visualização de segmentos semelhantes permitindo a navegação e exploração aos grupos, além das consultas por palavras-chave.
-
-
+Além disso, ao agrupar os segmentos por tópicos, tem-se uma organização dos documentos que permite a visualização de segmentos semelhantes permitindo a navegação e exploração aos grupos, além das consultas por palavras-chave~\cite{Maracini2010}.
 %
+
+
+
+% // https://verbosus.com/bibtex-style-examples.html
+
+
+
 
 
 

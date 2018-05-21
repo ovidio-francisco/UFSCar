@@ -149,3 +149,56 @@ et al., 2007; Farahat and Kamel, 2011; Kalogeratos and Likas, 2012).
 
 file:///ext4Data/UFSCar/papers/2018/An introduction to variable and feature selection.pdf
 
+
+-------------------------------------------------
+
+
+"We use symmetric Dirichlet priors in the LDA estimation with
+α = 50 / K and β =0.01, which are common settings in the
+literature. Our experience shows that retrieval results are not very
+sensitive to the values of these parameters."
+
+
+"
+Unlike the basic document representation, the LDA-based
+document model is not limited to only the literal words in a
+document, but instead describes a document with many other
+related highly probable words from the topics of this document.
+For example, for the query “buyout leverage”, the document
+“AP900403-0219”, which talks about “Farley Unit Defaults On
+Pepperell Buyout Loan”, is a relevant document. However, this
+document focuses on the “buyout” part, and does not contain the
+exact query term “leverage”, which makes this document rank
+very low. Using the LDA-based representation, this document is
+closely related to two topics that have strong connections with the
+term “leverage”: one is the economic topic that is strongly
+associated with this document because the document contains
+many representative terms of this topic, such as “million”,
+“company”, and “bankruptcy”; the other is the money market
+topic which is closely connected to “bond”, also a very frequent
+word in this document. In this way, the document is ranked
+higher with the LDA-based document model. Having multiple
+topics represent a document tends to give a clearer association
+between words than the single topic model used in cluster-based
+retrieval.
+"
+
+
+
+file:///ext4Data/UFSCar/papers/Extração de tópicos E Recuperação de Informação/Mais Recentes/LDA-Based Document Models for Ad-hoc Retrieval.pdf
+
+
+-------------------------------------------------
+
+
+
+
+"
+When human
+beings retrieve information, they use background knowledge to interpret and understand
+the text and effectively “add in” words that may be missing. Ranking algorithms solely
+based on matching the literal words that are present will fail to retrieve much relevant
+information.
+"
+
+file:///ext4Data/UFSCar/papers/Extração de tópicos E Recuperação de Informação/TOPIC MODELS IN INFORMATION RETRIEVAL.pdf

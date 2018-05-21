@@ -19,6 +19,11 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 Database file #1: abntex2-options.bib
 Database file #2: referencias.bib
+I was expecting a `,' or a `}'---line 967 of file referencias.bib
+ : 
+ : year = {2016}
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
 A bad cross reference---entry "Cheng2013"
 refers to entry "conf/sdm/2013", which doesn't exist
 Warning--I didn't find a database entry for "conf/sdm/2013"
@@ -27,51 +32,52 @@ Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
 Reallocated global_strs (elt_size=20001) to 20 items from 10.
 Reallocated glb_str_end (elt_size=4) to 20 items from 10.
 Warning--faltando school em Faleiros2016
+Warning--campo year vazio em Faleiros2016
 Warning--faltando school em Reynar1998
 +---------------------------------------------------------+
 | Estilo bibliográfico abntex2-alf.bst versão v-1.9.2           |
 | Em caso de dúvidas ou problemas com este estilo procure |
 | http://abntex2.googlecode.com                           |
 +---------------------------------------------------------+
-You've used 59 entries,
+You've used 64 entries,
             6711 wiz_defined-function locations,
-            1704 strings with 23143 characters,
-and the built_in function-call counts, 89523 in all, are:
-= -- 9938
-> -- 2069
-< -- 1938
-+ -- 2627
-- -- 618
-* -- 6041
-:= -- 10847
-add.period$ -- 287
-call.type$ -- 59
-change.case$ -- 679
-chr.to.int$ -- 149
-cite$ -- 60
-duplicate$ -- 8047
-empty$ -- 3979
-format.name$ -- 2945
-if$ -- 18744
+            1745 strings with 24437 characters,
+and the built_in function-call counts, 96193 in all, are:
+= -- 10668
+> -- 2204
+< -- 2068
++ -- 2802
+- -- 660
+* -- 6479
+:= -- 11668
+add.period$ -- 315
+call.type$ -- 64
+change.case$ -- 727
+chr.to.int$ -- 157
+cite$ -- 66
+duplicate$ -- 8632
+empty$ -- 4330
+format.name$ -- 3147
+if$ -- 20162
 int.to.chr$ -- 0
 int.to.str$ -- 0
-missing$ -- 1089
-newline$ -- 322
-num.names$ -- 291
-pop$ -- 1340
+missing$ -- 1179
+newline$ -- 349
+num.names$ -- 317
+pop$ -- 1443
 preamble$ -- 1
-purify$ -- 248
+purify$ -- 266
 quote$ -- 0
-skip$ -- 8136
+skip$ -- 8719
 stack$ -- 1
-substring$ -- 4074
-swap$ -- 3296
-text.length$ -- 131
+substring$ -- 4386
+swap$ -- 3538
+text.length$ -- 139
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 25
-warning$ -- 2
-while$ -- 495
+type$ -- 30
+warning$ -- 3
+while$ -- 540
 width$ -- 0
-write$ -- 1045
-(There was 1 error message)
+write$ -- 1133
+(There were 2 error messages)

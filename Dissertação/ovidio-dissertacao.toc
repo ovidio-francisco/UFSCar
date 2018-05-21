@@ -4,7 +4,7 @@
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \contentsline {chapter}{\chapternumberline {1}\MakeTextUppercase {Introdu\IeC {\c c}\IeC {\~a}o}}{5}{chapter.1}
-\contentsline {section}{\numberline {1.1}Objetivos}{8}{section.1.1}
+\contentsline {section}{\numberline {1.1}Objetivos}{9}{section.1.1}
 \contentsline {section}{\numberline {1.2}Organiza\IeC {\c c}\IeC {\~a}o da Disserta\IeC {\c c}\IeC {\~a}o}{9}{section.1.2}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \contentsline {chapter}{\chapternumberline {2}\MakeTextUppercase {Conceitua\IeC {\c c}\IeC {\~a}o Te\IeC {\'o}rica}}{11}{chapter.2}
