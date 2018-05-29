@@ -116,6 +116,7 @@ podendo ser usados para descrever o conteúdo da coleção
 % Ao apresentar os segmentos agrupados por tópicos 
 % após o retorno de uma busca inicial por palavras chave
 
+
 com subdocumentos 
 
 Ao utilizar a estrutura gerada pelas técnicas descritas, 
@@ -131,6 +132,24 @@ ao mesmo tempo que vale-se das vantagens encontradas nas relações
 % e com isso obter uma organização da coleção de documentos.
 
 % descoberta pelos modelos de extração de tópicos em documentos segmentados em conjunto com técnicas tradicionais de recuperação de informação. (aproveitando-se da estrutura dos tópicos e delimitação dos segmentos)
+
+
+
+
+% Consultar uma base de dados textual implica em atender à necessidade do usuário no que tange o acesso as informações mais relevantes.
+
+% No caso de documentos como atas de reunião, a busca analisa apenas o conteúdo dos documentos 
+
+% As atas não apresentam meta-informação significantes como texto seccionado, \textit{hyperlinks} e nome de autores.   
+
+
+% Índice invertido é uma técnica popular
+
+% Ao buscar por \textit{``bolsa de estudo''}, o usuário pode também estar interessado em \textit{``processo seletivo''}, \textit{``CNPQ''} ou \textit{``FAPESP''}
+
+
+
+
 
 
 % -->
@@ -175,8 +194,6 @@ Thesaurus depende de conhecimento externo sobre o domínio.
 
 
 
-% Os modelos de extração de tópicos fornecem uma estratégia que visa encontrar estruturas latentes em coleções de textos. Atualmente, destacam-se os modelos de extração de tópicos como LDA~\cite{Blei2003} e PLSA~\cite{Hofmann1999} são abordagens amplamente utilizadas ~\cite{DZhu20122} e frequentemente referenciadas em trabalhos que buscam extrair conhecimento e organizar bases textuais ~\cite{Steyvers2007, OCallaghan2015}. 
-
 
 % Nesse trabalho, a segmentação textual é empregada na identificação dos assuntos tratados em cada ata. Os segmentos de atas gerados, aqui considerados como sub-documentos, são entregues a um extrator de tópicos. A tarefa do extrator é agrupar os segmentos com um mesmo tópico e eleger palavras da coleção que melhor descrevem cada grupo. Os descritores gerados pelo extrator de tópicos bem com os grupos são aproveitados nas técnicas de recuperação de informação a fim de ranquear os resultados e auxiliar o usuário a encontrar segmentos semelhantes por meio da navegação pelos grupos.
 
@@ -209,16 +226,13 @@ usuário usam ferramentas básicas fornecidas junto com OS ?
 
 1) Transfere certa complexidade da tarefa ao usuário.
 
-
 2) As buscas em grandes coleções de documentos podem ser mais lentas. 
 % Complexidade computacional 
 % Recursos limitados
 
 3) Não há suporte a padrões mais flexíveis como a proximidade entre as palavras ou palavras que estejam na mesma sentença.
 
-
 4) O retorno ao usuário são os documentos integrais, o que pode exigir uma segunda busca dentro de um documento para encontrar o trecho desejado~\cite{Aggarwal2012,Manning2008}. 
-
 
 5) Dificuldade em ranquear ?? ( TF-IDF )
 
@@ -229,21 +243,7 @@ usuário usam ferramentas básicas fornecidas junto com OS ?
 
 
 
-% As organizações costumam manter seus documentos eletrônicos organizados em pastas e nomeá-los com informações básicas sobre a reunião a que se refere como a data e alguma referência cronológica, por exemplo "37ª Reunião Ordinária do Conselho ...". Essa forma de organização facilita a localização dos arquivos com ferramentas que fazem buscas pelo nome dos arquivos e pastas. Contudo, essa prática costuma ser insuficiente, pois em uma busca pelo conteúdo dos textos usa-se ferramentas computacionais baseadas em localização de palavras-chave que além de encontrar ocorrências das palavras podem oferecer recursos como operadores \textit{and} e \textit{not} ou ainda suporte a expressões regulares. Esse recurso, conhecido como \textit{grepping}\footnote{O nome \textit{grepping} é uma referência ao comando \texttt{grep} do Unix}, traz resultados satisfatórios em muitos casos. Por outro lado, traz algumas desvantagens como: 1) transfere certa complexidade da tarefa ao usuário 2) as buscas em grandes coleções de documentos podem ser mais lentas 3) não há suporte a padrões mais flexíveis como a proximidade entre as palavras ou palavras que estejam na mesma sentença 4) o retorno ao usuário são os documentos integrais, o que pode exigir uma segunda busca dentro de um documento para encontrar o trecho desejado~\cite{Aggarwal2012,Manning2008}. 
-
-
-
 ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- 
-
-
-
-% A popularização dos computadores possibilitou o armazenamento cada vez maior de conteúdos digitais, sendo bastante comum, o formato textual como livros, documentos, e-mails, redes sociais e páginas web. A produção de textos gera fontes de informações em volumes crescentes que podem superar a capacidade humana de analisá-los manualmente. Essa dificuldade incentiva a pesquisa de ferramentas automáticas para manipulação de dados não estruturados~\cite{Cao:2017, Manning2008}. 
-% Assim, os processos de extração automática de conhecimento em coleções textuais são essenciais, e ao mesmo tempo, constituem um desafio, devido às características de documentos textuais como o formato não estruturado e trechos com diferentes níveis de importância, desde informações essenciais até textos pouco informativos ou mesmo irrelevantes. 
-
-
-
------ ----- ----- ----- ----- ----- ----- ----- ----- ----- 
-
 
 
 Whereas traditional information retrieval only uses the content of documents to
@@ -255,7 +255,6 @@ of its open nature.
 Consequentemente, o alvo da busca é refinado à medida que o usuário ganha mais informações sobre o domı́nio. Outra caracterı́stica das buscas é que o usuário potencialmente se interessa por resultados similares. Por exemplo, ao buscar por Cleópatra, o usuário também pode estar interessado em informações sobre Marco Antônio ou o Antigo Egito.
 
 
-estruturas latentes em coleções de textos. Atualmente, destacam-se os modelos de extração de tópicos como LDA~\cite{Blei2003} e PLSA~\cite{Hofmann1999} são abordagens amplamente utilizadas ~\cite{DZhu20122} e frequentemente referenciadas em trabalhos que buscam extrair conhecimento e organizar bases textuais ~\cite{Steyvers2007, OCallaghan2015}. 
 
 "A ideia básica dos modelos de tópicos é descobrir, nas re- lações entre documentos e termos, padrões latentes que sejam significativos para o entendimento dessas relações. Por exemplo, tais modelos podem ranquear um conjunto de termos como impor- tantes para um ou mais temas. Bem como ranquear documentos como tendo relevância para um ou mais temas. Se for associado um vetor A j a um documento d j e um vetor B i para um termo w i , sendo A j e B i K-dimensionais, pode-se considerar que cada uma dessas dimensões caracterizam um fator latente relacionado com um documento A j e um termo B i . Assim o produto interno A j · B i pode modelar a importância desses fatores na relação documento d j e termo w i ."
 
@@ -284,20 +283,6 @@ e com isso obter uma organização da coleção de documentos.
 
 
 "Atualmente, os modelos de extração de tópicos probabilı́sticos como o Latent Dirichlet Allocation (LDA) são abor- dagens amplamente aplicadas (Zhu et al., 2012), sendo referenciadas na grande maioria dos trabalhos da literatura como sinônimos de modelos de extração de tópicos (Stey- vers and Griffiths, 2007; O’Callaghan et al., 2015)."  
-
-(Zhu et al., 2012)
-Intuitive topic discovery by incorporating word-pair’s connection into lda
-
-( Steyvers and Griffiths, 2007; )
-Probabilistic Topic Models
-
-( O’Callaghan et al., 2015 )
-An analysis of the coherence of descriptors in topic modeling.
-
-
-
-
-
 
 
 Essas abordagens de extração de tópicos também fornecem uma estratégia

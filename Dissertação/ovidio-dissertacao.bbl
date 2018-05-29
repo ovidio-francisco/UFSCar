@@ -115,6 +115,15 @@ ISBN 0136072240, 9780136072249.}
 \emph{Journal of the American Society for Information Science}, v.~41, n.~6, p.
   391--407, 1990.}
 
+\bibitem[Dhillon e Modha 2001]{Dhillon2001}
+\abntrefinfo{Dhillon e Modha}{DHILLON; MODHA}{2001}
+{DHILLON, I.~S.; MODHA, D.~S. Concept decompositions for large sparse text data
+  using clustering.
+\emph{Mach. Learn.}, Kluwer Academic Publishers, Hingham, MA, USA, v.~42,
+  n.~1-2, p. 143--175, jan. 2001.
+ISSN 0885-6125.
+Dispon{\'\i}vel em: \url{https://doi.org/10.1023/A:1007612920971}.}
+
 \bibitem[Dias, Alves e Lopes 2007]{Dias2007}
 \abntrefinfo{Dias, Alves e Lopes}{DIAS; ALVES; LOPES}{2007}
 {DIAS, G.; ALVES, E.; LOPES, J. G.~P. Topic segmentation algorithms for text
@@ -173,6 +182,13 @@ ISBN 0521836573, 9780521836579.}
   n.~6, p. 798--820, dez. 2016.
 ISSN 0165-5515.
 Dispon{\'\i}vel em: \url{https://doi.org/10.1177/0165551515610989}.}
+
+\bibitem[Guyon e Elisseeff 2003]{Guyon2003}
+\abntrefinfo{Guyon e Elisseeff}{GUYON; ELISSEEFF}{2003}
+{GUYON, I.; ELISSEEFF, A. An introduction to variable and feature selection.
+\emph{J. Mach. Learn. Res.}, JMLR.org, v.~3, p. 1157--1182, mar. 2003.
+ISSN 1532-4435.
+Dispon{\'\i}vel em: \url{http://dl.acm.org/citation.cfm?id=944919.944968}.}
 
 \bibitem[Hearst 1997]{Hearst1997}
 \abntrefinfo{Hearst}{HEARST}{1997}
@@ -283,14 +299,6 @@ ISBN 0521865719, 9780521865715.}
   p.~1--3, 2010.
 Dispon{\'\i}vel em: \url{http://sites.labic.icmc.usp.br/torch/}.}
 
-\bibitem[Masao e K\^{o}iti 2000]{Masao:2000}
-\abntrefinfo{Masao e K\^{o}iti}{MASAO; K\^{o}ITI}{2000}
-{MASAO, U.; K\^{o}ITI, H. Multi-topic multi-document summarization. In:
-  \emph{Proceedings of the 18th Conference on Computational Linguistics -
-  Volume 2}. Stroudsburg, PA, USA: Association for Computational Linguistics,
-  2000.  (COLING '00), p. 892--898. Dispon{\'\i}vel em:
-  \url{https://doi.org/10.3115/992730.992775}.}
-
 \bibitem[Misra et al. 2009]{Misra2009}
 \abntrefinfo{Misra et al.}{MISRA et al.}{2009}
 {MISRA, H. et al. Text segmentation via topic modeling: An analytical study.
@@ -353,28 +361,11 @@ Tese (Doutorado), Philadelphia, PA, USA, 1998. AAI9829978.}
 {REZENDE, S.~O. \emph{Sistemas Inteligentes}. Barueri, SP: Manole, 2003. 337 -
   270~p.}
 
-\bibitem[Rezende, Marcacini e Moura 2011]{Rezende2011}
-\abntrefinfo{Rezende, Marcacini e Moura}{REZENDE; MARCACINI; MOURA}{2011}
-{REZENDE, S.~O.; MARCACINI, R.~M.; MOURA, M.~F. O uso da mineração de textos
-  para extração e organização não supervisionada de conhecimento.
-\emph{Revista de Sistemas de Informação da FSMA}, v.~7, p. 7--21, 2011.
-ISSN 19835604.
-Dispon{\'\i}vel em: \url{http://www.fsma.edu.br/si/7edicao.html}.}
-
 \bibitem[Rijsbergen 1979]{Rijsbergen1979}
 \abntrefinfo{Rijsbergen}{RIJSBERGEN}{1979}
 {RIJSBERGEN, C. J.~V. \emph{Information Retrieval}. 2nd. ed. Newton, MA, USA:
   Butterworth-Heinemann, 1979.
 ISBN 0408709294.}
-
-\bibitem[Rubin et al. 2012]{Rubin:2012}
-\abntrefinfo{Rubin et al.}{RUBIN et al.}{2012}
-{RUBIN, T.~N. et al. Statistical topic models for multi-label document
-  classification.
-\emph{Mach. Learn.}, Kluwer Academic Publishers, Hingham, MA, USA, v.~88,
-  n.~1-2, p. 157--208, jul. 2012.
-ISSN 0885-6125.
-Dispon{\'\i}vel em: \url{https://doi.org/10.1007/s10994-011-5272-5}.}
 
 \bibitem[Sakahara, Okada e Nitta 2014]{Sakahara2014}
 \abntrefinfo{Sakahara, Okada e Nitta}{SAKAHARA; OKADA; NITTA}{2014}
@@ -398,15 +389,6 @@ ISSN 2375-9232.}
   n.~5, p. 513--523, ago. 1988.
 ISSN 0306-4573.
 Dispon{\'\i}vel em: \url{http://dx.doi.org/10.1016/0306-4573(88)90021-0}.}
-
-\bibitem[Sasaki, Rea e Ananiadou 2007]{Sasaki:2007}
-\abntrefinfo{Sasaki, Rea e Ananiadou}{SASAKI; REA; ANANIADOU}{2007}
-{SASAKI, Y.; REA, B.; ANANIADOU, S. Multi-topic aspects in clinical text
-  classification. In:  \emph{Proceedings of the 2007 IEEE International
-  Conference on Bioinformatics and Biomedicine}. Washington, DC, USA: IEEE
-  Computer Society, 2007.  (BIBM '07), p. 62--70.
-ISBN 0-7695-3031-1. Dispon{\'\i}vel em:
-  \url{http://dx.doi.org/10.1109/BIBM.2007.53}.}
 
 \bibitem[Schwartz-Ziv e Weisbach 2013]{Miriam2013}
 \abntrefinfo{Schwartz-Ziv e Weisbach}{SCHWARTZ-ZIV; WEISBACH}{2013}
@@ -491,6 +473,15 @@ ISBN 1-59593-369-7. Dispon{\'\i}vel em:
   p. 29--41.
 ISBN 978-3-642-00958-7.}
 
+\bibitem[Zamir e Etzioni 1998]{Zamir1998}
+\abntrefinfo{Zamir e Etzioni}{ZAMIR; ETZIONI}{1998}
+{ZAMIR, O.; ETZIONI, O. Web document clustering: A feasibility demonstration.
+  In:  \emph{Proceedings of the 21st Annual International ACM SIGIR Conference
+  on Research and Development in Information Retrieval}. New York, NY, USA:
+  ACM, 1998.  (SIGIR '98), p. 46--54.
+ISBN 1-58113-015-5. Dispon{\'\i}vel em:
+  \url{http://doi.acm.org/10.1145/290941.290956}.}
+
 \bibitem[Zhai 2017]{Zhai2017}
 \abntrefinfo{Zhai}{ZHAI}{2017}
 {ZHAI, C. Probabilistic topic models for text data retrieval and analysis. In:
@@ -499,6 +490,25 @@ ISBN 978-3-642-00958-7.}
   (SIGIR '17), p. 1399--1401.
 ISBN 978-1-4503-5022-8. Dispon{\'\i}vel em:
   \url{http://doi.acm.org/10.1145/3077136.3082067}.}
+
+\bibitem[Zhao e Karypis 2004]{Zhao2004a}
+\abntrefinfo{Zhao e Karypis}{ZHAO; KARYPIS}{2004a}
+{ZHAO, Y.; KARYPIS, G. Empirical and theoretical comparisons of selected
+  criterion functions for document clustering.
+\emph{Mach. Learn.}, Kluwer Academic Publishers, Hingham, MA, USA, v.~55, n.~3,
+  p. 311--331, jun. 2004.
+ISSN 0885-6125.
+Dispon{\'\i}vel em:
+  \url{http://dx.doi.org/10.1023/B:MACH.0000027785.44527.d6}.}
+
+\bibitem[Zhao e Karypis 2004]{Zhao2004}
+\abntrefinfo{Zhao e Karypis}{ZHAO; KARYPIS}{2004b}
+{ZHAO, Y.; KARYPIS, G. Soft clustering criterion functions for partitional
+  document clustering: A summary of results. In:  \emph{Proceedings of the
+  Thirteenth ACM International Conference on Information and Knowledge
+  Management}. New York, NY, USA: ACM, 2004.  (CIKM '04), p. 246--247.
+ISBN 1-58113-874-1. Dispon{\'\i}vel em:
+  \url{http://doi.acm.org/10.1145/1031171.1031225}.}
 
 \bibitem[Zhu et al. 2012]{DZhu20122}
 \abntrefinfo{Zhu et al.}{ZHU et al.}{2012}

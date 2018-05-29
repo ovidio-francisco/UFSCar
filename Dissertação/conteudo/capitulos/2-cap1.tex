@@ -30,18 +30,28 @@ As atas de reunião possuem características particulares. Frequentemente aprese
 %%  -->
 
 
-As organizações costumam manter seus documentos eletrônicos organizados em pastas e nomeá-los com informações básicas sobre a reunião a que se refere como a data e alguma referência cronológica, por exemplo \textit{``37ª Reunião Ordinária do Conselho ...''}. Essa forma de organização facilita a localização dos arquivos com ferramentas que fazem buscas pelo nome dos arquivos e pastas, sem levar em conta o teor dos documentos. 
+As organizações costumam manter seus documentos eletrônicos organizados em pastas e nomeá-los com informações básicas sobre a reunião a que se refere como a data e alguma referência cronológica, por exemplo \textit{``37ª Reunião Ordinária do Conselho ...''}. Essa organização facilita a localização dos arquivos com ferramentas que fazem buscas pelo nome dos arquivos e pastas, sem levar em conta o teor dos documentos. 
 %
-Outra forma comum é o uso de ferramentas que fazem buscas nos conteúdos dos documentos, buscando por ocorrências de palavras-chave nos textos. Essas ferramentas permitem buscas combinadas com operadores lógicos como \textit{and}, \textit{or} e \textit{not} ou ainda suporte a expressões regulares. Esse recurso, conhecido como \textit{grepping}\footnote{O nome \textit{grepping} é uma referência ao comando \texttt{grep} do Unix}, produz resultados satisfatórios em muitos casos. Por outro lado, traz algumas desvantagens como: 
+Também é comum o uso de ferramentas que fazem buscas nos conteúdos dos documentos, buscando por ocorrências de palavras-chave nos textos. Essas ferramentas permitem buscas combinadas com operadores lógicos como \textit{and}, \textit{or} e \textit{not} ou ainda suporte a expressões regulares. Esse recurso, conhecido como \textit{grepping}\footnote{O nome \textit{grepping} é uma referência ao comando \texttt{grep} do Unix}, produz resultados satisfatórios em muitos casos. Por outro lado, traz algumas desvantagens como: 
 1) transfere certa complexidade da tarefa ao usuário 
 2) não há suporte a padrões mais flexíveis como a proximidade entre as palavras ou palavras que estejam na mesma sentença 
 3) informa apenas se um documento casa ou não com a consulta do usuário com base na presença ou ausência dos termos da consulta~\cite{Aggarwal2012,Manning2008}. 
-% 
-Ainda nesse contexto, usa-se outras técnicas de Recuperação de Informação como o Modelo de Espaço Vetorial para ranquear documentos atribuindo pontuações para a similaridade de cada par documento/consulta. Com isso, é possível apresentar os documentos ordenados conforme a sua relevância com a consulta. Utiliza-se também dicionários de sinônimos (\textit{thesaurus}) para expandir a consulta do usuário por meio de conhecimento externo adicionado ao sistema. % e com isso ...
+ 
 
-Contudo, essas técnicas baseiam-se na frequência de palavras, em que os documentos e consultas são vistos como conjuntos de termos sem levar em conta relações entre termos que compartilham um mesmo tópico dentro do domínio~\cite{WEIXING}. Por exemplo, as consultas ``\textit{alunos bolsa CAPES}'' e ``\textit{suporte financeiro a pesquisa}'' tratam de um mesmo assunto, nesse caso, a transferência de valores monetários como apoio a carreira acadêmica. Utilizando-se das técnicas até agora mencionadas, obteria-se resultados distintos, uma vez que as consultas não compartilham termos e não há relação direta ente eles. Como efeito, os resultados de cada consulta limitariam-se a documentos que compartilham termos com a consulta.
+Ainda nesse contexto, usa-se outras técnicas de Recuperação de Informação como o Modelo de Espaço Vetorial para ranquear documentos atribuindo pontuações para a similaridade de cada par documento/consulta. Com isso, é possível apresentar os documentos ordenados conforme a sua relevância com a consulta. Utiliza-se também dicionários de sinônimos (\textit{thesaurus}) para expandir a consulta do usuário por meio de conhecimento externo adicionado ao sistema~\cite{X,Y,Z}. % e com isso ...
+% TODO: Referências
+%
+Contudo, essas técnicas baseiam-se na frequência de palavras, em que os documentos e consultas são vistos como conjuntos de termos sem levar em conta relações entre termos que compartilham um mesmo tópico dentro do domínio~\cite{WEIXING}. Por exemplo, as consultas ``\textit{alunos bolsa CAPES}'' e ``\textit{suporte financeiro a pesquisa}'' 
+podem estar relacionados a um assunto em comum,
+% tratam de um mesmo assunto, 
+nesse caso, a transferência de valores monetários como apoio a carreira acadêmica.
+% -> ou ainda "assistência téncina em computadores" e "manutenção de PCs" que tratam de assuntos muito próximos, "conservação de equipamentos de informática".
+% -> ou ainda "Workshop desenvolvimento de sites" e "oficina webdesign" que tratam de assuntos muito próximos, "".
+Utilizando-se das técnicas até agora mencionadas, obteria-se resultados distintos para cada caso, uma vez que as consultas não compartilham termos e não há relação direta ente eles. Como efeito, os resultados de cada consulta limitariam-se a documentos que compartilham termos com a consulta.
 % com termos em comum a consulta.
-Essas técnicas produzem resultados melhores a medida que o usuário fornece termos mais acertados na consulta, o que por vezes é dependente de certo conhecimento e familiaridade com o domínio no qual a coleção de documentos está inserida. Além disso, o retorno ao usuário é uma lista documentos integrais, o que pode exigir uma segunda busca dentro de um documento para encontrar o trecho desejado.
+Essas técnicas produzem resultados melhores a medida que o usuário fornece termos mais acertados na consulta, o que por vezes é dependente de certo conhecimento e familiaridade com o domínio no qual a coleção de documentos está inserida. 
+
+Além disso, o retorno ao usuário é uma lista documentos integrais, o que pode exigir uma segunda busca dentro de um documento para encontrar o trecho desejado.
 
 
 
@@ -72,9 +82,6 @@ Pode ser usada para melhorar o acesso a informação solicitada por meio de uma 
 
 
 
-
-
-
 %        ========== ==========|   Extração de Tópicos  |========== ==========
 
 Contudo, a segmentação textual apenas indica as transições de assuntos ao longo do texto,  
@@ -83,14 +90,14 @@ sem indicações sobre o teor dos segmentos.
 % pela qual obtém-se trechos com um assunto principal e relativamente independente do texto integral. 
 O assunto de cada trecho pode ser estimado por meio de técnicas de extração de tópicos.  
 Os modelos de extração de tópicos fornecem uma estratégia que visa encontrar nas relações entre documentos, padrões latentes que sejam significativos para o entendimento dessas relações~\cite{Wei2007}. Tais modelos podem ranquear um conjunto de termos importantes para um ou mais assuntos, bem como ranquear documentos por sua relevância para determinado tema~\cite{Faleiros2016,Xing2009}.
-Atualmente, destacam-se os modelos probabilísticos de extração de tópicos como LDA~\cite{Blei2003} e PLSA~\cite{Hofmann1999}. São abordagens amplamente utilizadas ~\cite{DZhu20122} e frequentemente referenciadas em trabalhos que buscam extrair conhecimento e organizar bases textuais ~\cite{Steyvers2007, OCallaghan2015}.  
-%aa
+Atualmente, destacam-se os modelos probabilísticos de extração de tópicos como LDA~\cite{Blei2003} e PLSA~\cite{Hofmann1999}. São abordagens amplamente utilizadas ~\cite{DZhu20122} e frequentemente referenciadas em trabalhos que buscam extrair conhecimento e organizar bases textuais ~\cite{Aggarwal2018, OCallaghan2015, Steyvers2007}.  
+%
 %
 Nesse trabalho, a expressão \textit{tópico} é usada para designar um assunto considerando que o mesmo foi extraído por meio de técnicas automáticas, ficando a expressão \textit{assunto} utilizada como seu teor popular. 
 
-O processo de extração de tópicos atribui um peso a cada documento-tópico e uma relação termo-tópico que pode representar a probabilidade de ocorrência de um termo em um documento dado que o tópico está presente. A partir dessas representações, é possível agrupar documentos que compartilham o mesmo tópico bem como os termos que melhor descrevem o tópico~\cite{Aggarwal2018}. Com isso, obtém-se uma organização da coleção de documentos que favorece técnicas para navegação e consulta à coleção de documentos\cite{Maracini2010}. 
+O processo de extração de tópicos atribui um peso a cada documento-tópico e uma relação termo-tópico que pode representar a probabilidade de ocorrência de um termo em um documento dado que o tópico está presente. A partir dessas representações, é possível agrupar documentos que compartilham o mesmo tópico bem como os termos que melhor descrevem o tópico~\cite{Aggarwal2018}. Com isso, obtém-se uma organização da coleção de documentos que favorece técnicas para navegação e consulta à coleção de documentos~\cite{Maracini2010}. 
 % 
-Além disso, essas abordagens de extração de tópicos fornecem a construção de novos atributos que representam os principais tópicos ou assuntos identificados na coleção de documentos, sendo uma oportunidade de incorporar conhecimento de domínio aos dados. 
+Além disso, essas abordagens de extração de tópicos fornecem a construção de novos atributos que representam os principais tópicos ou assuntos identificados na coleção de documentos, sendo uma oportunidade de incorporar conhecimento de domínio aos dados~\cite{Guyon2003}. 
 % com o mesmo teor 
 
 
@@ -99,19 +106,6 @@ Além disso, essas abordagens de extração de tópicos fornecem a construção 
 % ->> RI
 % --> tópico é o assunto extraído automaticamente 
 % --> segmento é o trecho extraído automaticamente
-
-
-% Consultar uma base de dados textual implica em atender à necessidade do usuário no que tange o acesso as informações mais relevantes.
-
-% No caso de documentos como atas de reunião, a busca analisa apenas o conteúdo dos documentos 
-
-% As atas não apresentam meta-informação significantes como texto seccionado, \textit{hyperlinks} e nome de autores.   
-
-
-% Índice invertido é uma técnica popular
-
-% Ao buscar por \textit{``bolsa de estudo''}, o usuário pode também estar interessado em \textit{``processo seletivo''}, \textit{``CNPQ''} ou \textit{``FAPESP''}
-
 
 
 
@@ -126,12 +120,8 @@ Nesse trabalho, a segmentação textual é empregada na identificação dos assu
 
 
 
-
-
-
-
-
 %        ======== ========   Essa abordagem traz como vantagens   ======== ========
+
 % Essa abordagem traz vantagens em relação às técnicas de recuperação de informação 
 %
 %
@@ -145,10 +135,10 @@ A segmentação das atas permite ao sistema criar uma base de dados interna mais
 Modelos de extração de tópicos podem se integrar ao processo de recuperação de informação usando os agrupamentos e seus descritores como uma forma de descrição da coleção~\cite{Zhai2017, Xing2009}, bem como relacionar termos distintos com um determinado tópico em comum~\cite{WEIXING}.  
 A busca por palavras-chave em descritores transfere processamento da varredura dos documentos para o processo de extração de tópicos. Esse processo evita processamento e lentidão no momento da pesquisa. Essa estratégia é semelhante a criação de índices para aumentar a eficiência em sistemas de recuperação de informação. Além disso, encontra relações entre termos e documentos sem necessidade de conhecimento externo sobre o domínio.
 %
-Assim, nesse trabalho os modelos de extração de tópicos são utilizados para incorporar informação aos segmentos com a finalidade de aprimorar o ranqueamento dos resultados~\cite{WEIXING}. 
+Assim, nesse trabalho os modelos de extração de tópicos são utilizados para incorporar informação aos segmentos com a finalidade de aprimorar o ranqueamento dos resultados~\cite{Maracini2010, WEIXING}. 
 % 
 % -> 3 Extração de tópicos -- agrupamento
-Além disso, ao agrupar os segmentos por tópicos, tem-se uma organização dos documentos que permite a visualização de segmentos semelhantes permitindo a navegação e exploração aos grupos, além das consultas por palavras-chave~\cite{Maracini2010}.
+Além disso, ao agrupar os segmentos por tópicos, tem-se uma organização dos documentos que permite a visualização de segmentos semelhantes permitindo a navegação e exploração aos grupos além das consultas por palavras-chave.
 %
 
 

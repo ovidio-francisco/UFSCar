@@ -3,6 +3,10 @@ Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: ovidio-dissertacao.aux
 A level-1 auxiliary file: conteudo/capitulos/2-cap1.aux
 A level-1 auxiliary file: conteudo/capitulos/3-cap2.aux
+White space in argument---line 216 of file conteudo/capitulos/3-cap2.aux
+ : \citation{NGUYEN
+ :                  Viet Cuong}
+I'm skipping whatever remains of this command
 A level-1 auxiliary file: conteudo/capitulos/4-cap3.aux
 A level-1 auxiliary file: conteudo/capitulos/cap-avaliacao-segmentadores.aux
 A level-1 auxiliary file: conteudo/capitulos/cap-avaliacao-extratores.aux
@@ -19,13 +23,16 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 Database file #1: abntex2-options.bib
 Database file #2: referencias.bib
-I was expecting a `,' or a `}'---line 1016 of file referencias.bib
+I was expecting a `,' or a `}'---line 1098 of file referencias.bib
  : 
  : year = {2016}
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
 A bad cross reference---entry "Cheng2013"
 refers to entry "conf/sdm/2013", which doesn't exist
+Warning--I didn't find a database entry for "X"
+Warning--I didn't find a database entry for "Y"
+Warning--I didn't find a database entry for "Z"
 Warning--I didn't find a database entry for "conf/sdm/2013"
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
@@ -39,45 +46,45 @@ Warning--faltando school em Reynar1998
 | Em caso de dúvidas ou problemas com este estilo procure |
 | http://abntex2.googlecode.com                           |
 +---------------------------------------------------------+
-You've used 67 entries,
+You've used 68 entries,
             6711 wiz_defined-function locations,
-            1768 strings with 25115 characters,
-and the built_in function-call counts, 99679 in all, are:
-= -- 11006
-> -- 2301
-< -- 2113
-+ -- 2878
-- -- 689
-* -- 6722
-:= -- 12113
-add.period$ -- 331
-call.type$ -- 67
+            1775 strings with 25135 characters,
+and the built_in function-call counts, 101581 in all, are:
+= -- 11282
+> -- 2287
+< -- 2184
++ -- 2941
+- -- 687
+* -- 6816
+:= -- 12326
+add.period$ -- 337
+call.type$ -- 68
 change.case$ -- 760
-chr.to.int$ -- 163
-cite$ -- 69
-duplicate$ -- 8890
-empty$ -- 4537
-format.name$ -- 3293
-if$ -- 20940
-int.to.chr$ -- 0
+chr.to.int$ -- 166
+cite$ -- 70
+duplicate$ -- 9143
+empty$ -- 4600
+format.name$ -- 3280
+if$ -- 21297
+int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 1236
-newline$ -- 366
-num.names$ -- 333
-pop$ -- 1511
+missing$ -- 1252
+newline$ -- 374
+num.names$ -- 338
+pop$ -- 1517
 preamble$ -- 1
-purify$ -- 278
+purify$ -- 279
 quote$ -- 0
-skip$ -- 8968
+skip$ -- 9210
 stack$ -- 1
-substring$ -- 4531
-swap$ -- 3654
-text.length$ -- 144
+substring$ -- 4645
+swap$ -- 3756
+text.length$ -- 148
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 31
 warning$ -- 3
-while$ -- 565
+while$ -- 573
 width$ -- 0
-write$ -- 1185
-(There were 2 error messages)
+write$ -- 1208
+(There were 3 error messages)

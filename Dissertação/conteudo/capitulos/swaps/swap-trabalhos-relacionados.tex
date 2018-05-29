@@ -1,0 +1,112 @@
+
+% -> Fazer uma figura |Segmentação Textual| --> |Extração de Tópicos| --> |RI|
+
+% -> falar sobre abordagens sobre os problemas de documentos com múltiplos temas, segmentação, extração de tópicos e recuperação de informação. Em seguida, falar sobre trabalhos que fazem a interseção dessas técnicas.
+
+
+
+O modelo LDA foi usado por \cite{XINGWEI} como modelo para descrever documentos a fim de aprimorar método de recuperação de informação. Baseia-se na probabilidade do modelo gerar a cnoslta
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+>> Text segmentation is a task of splitting a document into topically coherent segments.  All documents in the set are put into a text segmentation system to get a collection of segments.
+>> Segment combination is a task of merging and combining all the segments to form a hierarchical structure of segments (a tree of segments) which reflects the hierarchical structure of information.
+>> Title generation is a task of generating a title for each node in the tree of segments. A title is a phrase which reflects the content of segments belonging to the node.
+
+
+file:///ext4Data/UFSCar/papers/Segmentação/recentes/A Study on Statistical Generation of a Hierarchical Structure of Topic-information for Multi-documents.pdf
+~\cite{NGUYEN Viet Cuong}
+
+=== === === === === === === === === === === === === === === === === === === === 
+
+
+
+Inicialmente os documentos são modelados como um conjunto de segmentos de acordo com seus tópicos. Em seguida os segmentos são agrupados por meio do algoritmo \textit{Spherical k-Means}\cite{I. S. Dhillon and D. S. Modha,   Y. Zhao and G. Karypis}. Por fim, os conjuntos de segmentos são mapeados para conjuntos de documentos. Cada segmento é substituído por seu documento original, gerando assim, conjuntos sobrepostos de documentos. Os autores ainda propuseram variantes do SKM para 
+
+
+\textit{Bisecting Spherical k-Means}\cite{Y. Zhao and G. Karypis}.
+\textit{Bisecting Spherical k-Means}\cite{I. S. Dhillon and D. S. Modha,   Y. Zhao and G. Karypis}.
+
+--> os autores utilizam segmentos de um determinado documentos para facilitar a atribuição deste a mais de um grupo (onde cada grupo é contém segmentos relevantes a um tópico).
+--> 
+
+% --> Na intro
+--> A proposta de XX é, a partir de conjuntos de segmentos, derivar conjuntos sobrepostos de documentos, os quais podem pertencer a mais de um grupo.
+
+
+% --> os documentos originais são decompostos em um conjunto de segmentos.
+% --> os conjuntos de documentos são derivados dos conjuntos de segmentos.
+
+
+e os documentos originais são classificados. Por fim, um classificador foi induzido a partir dos grupos de segmentos.
+
+
+
+Nesse contexto, Tagarelli e Karypis, (2013) propuseram um \textit{framework} para documentos com múltiplos tópicos que para induzir um classificador a partir da identificação grupos de segmentos dos documentos originais.
+
+
+que levam em conta 
+
+
+
+
+tratar de documentos com múltiplos tópicos e um problema 
+
+documentos com múltiplos tópicos que para induzir um classificador a partir da identificação grupos de segmentos dos documentos originais.
+
+
+
+\cite{Tagarelli2013} 
+" We propose a segment-based document clustering framework, which is designed to induce a classification of documents starting from the identification of cohesive groups of segment-based portions of the original documents. "
+
+
+" -->"
+The final stage in our framework is to map the segment-set clustering solution to a document clustering, in order to provide the user with a likely more useful organization of the input texts. In our study we obtain this document clustering by simply replacing the segment-sets of each cluster with their corresponding original document. Formally, given the set C S = {C 1 , . . . , C h } of clusters over S, the goal is to (d) (d) provide a set C D = {C 1 , . . . , C h } of clusters over (d) D such that C i = {d j ∈ D | S ∈ S j ∈ S and S ∈ C i ∈ C S }, for each i ∈ [1..h].  Although more refined mapping schemes could be devised (e.g. mapping segment-sets with documents on a “majority vote” basis), in this work we chose to pursue the above idea for the sake of its simplicity.
+
+
+
+" we developed a novel clustering framework for multi-topic documents that works "
+
+" Generally speaking, multi-topic documents have a multi-faceted communicative intention, thus reflecting different users’ informative needs "
+
+
+"In other terms, partitioning the set S of segment-sets allows a possibly overlapping clustering of the original documents to be induced."
+
+
+
+% -> Segmento é uma porção de texto indivisível.
+
+
+
+
+
+% No trabalho de \cite{Tagarelli2013} foi proposto um \textit{framework} para induz um classificador de documentos que usa a identificação de grupos de 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
