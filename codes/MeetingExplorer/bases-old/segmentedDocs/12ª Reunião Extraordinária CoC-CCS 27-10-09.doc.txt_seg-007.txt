@@ -1,1 +1,0 @@
- De forma análoga, a disciplina Algoritmos e Complexidade, tinha como requisito a disciplina Matemática Discreta e terá como requisito a disciplina Algoritmos e Programação de Computadores ou Algoritmos e Programação II.

@@ -1,2 +1,0 @@
-A secretaria criará uma conta para cada estudante no momento de seu ingresso e fará a remoção dessa conta após 01 ano de seu desligamento/formação. 
-O aluno será comunicado periodicamente sobre a exclusão de sua conta por meio de e-mail, até que ocorra a remoção. 

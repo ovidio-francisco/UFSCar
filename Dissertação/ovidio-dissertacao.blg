@@ -3,12 +3,77 @@ Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: ovidio-dissertacao.aux
 A level-1 auxiliary file: conteudo/capitulos/2-cap1.aux
 A level-1 auxiliary file: conteudo/capitulos/3-cap2.aux
+Case mismatch error between cite keys Bokaei2015 and bokaei2015
+---line 76 of file conteudo/capitulos/3-cap2.aux
+ : \citation{Bokaei2015
+ :                     }
+I'm skipping whatever remains of this command
+Case mismatch error between cite keys Choi2000 and choi2000
+---line 82 of file conteudo/capitulos/3-cap2.aux
+ : \citation{Choi2000
+ :                   }
+I'm skipping whatever remains of this command
+Case mismatch error between cite keys Misra2009 and misra2009
+---line 84 of file conteudo/capitulos/3-cap2.aux
+ : \citation{Misra2009
+ :                    }
+I'm skipping whatever remains of this command
+Case mismatch error between cite keys Choi2000 and choi2000
+---line 85 of file conteudo/capitulos/3-cap2.aux
+ : \citation{Choi2000
+ :                   }
+I'm skipping whatever remains of this command
+Case mismatch error between cite keys Eisenstein2008 and eisenstein2008
+---line 99 of file conteudo/capitulos/3-cap2.aux
+ : \citation{Eisenstein2008
+ :                         }
+I'm skipping whatever remains of this command
+Case mismatch error between cite keys Eisenstein2008 and eisenstein2008
+---line 100 of file conteudo/capitulos/3-cap2.aux
+ : \citation{Eisenstein2008
+ :                         }
+I'm skipping whatever remains of this command
+Case mismatch error between cite keys Eisenstein2008 and eisenstein2008
+---line 114 of file conteudo/capitulos/3-cap2.aux
+ : \citation{Eisenstein2008
+ :                         }
+I'm skipping whatever remains of this command
+Case mismatch error between cite keys Choi2000 and choi2000
+---line 163 of file conteudo/capitulos/3-cap2.aux
+ : \citation{Choi2000
+ :                   }
+I'm skipping whatever remains of this command
 White space in argument---line 216 of file conteudo/capitulos/3-cap2.aux
  : \citation{NGUYEN
  :                  Viet Cuong}
 I'm skipping whatever remains of this command
 A level-1 auxiliary file: conteudo/capitulos/4-cap3.aux
+Case mismatch error between cite keys Bokaei2015 and bokaei2015
+---line 16 of file conteudo/capitulos/4-cap3.aux
+ : \citation{Bokaei2015
+ :                     }
+I'm skipping whatever remains of this command
+Case mismatch error between cite keys Misra2009 and misra2009
+---line 18 of file conteudo/capitulos/4-cap3.aux
+ : \citation{Misra2009
+ :                    }
+I'm skipping whatever remains of this command
+Case mismatch error between cite keys Sakahara2014 and sakahara2014
+---line 19 of file conteudo/capitulos/4-cap3.aux
+ : \citation{Sakahara2014
+ :                       }
+I'm skipping whatever remains of this command
 A level-1 auxiliary file: conteudo/capitulos/cap-avaliacao-segmentadores.aux
+Case mismatch error between cite keys Eisenstein2008 and eisenstein2008
+---line 42 of file conteudo/capitulos/cap-avaliacao-segmentadores.aux
+ : \citation{Eisenstein2008
+ :                         }
+I'm skipping whatever remains of this command
+Case mismatch error between cite keys Eisenstein2008 and eisenstein2008
+---line 53 of file conteudo/capitulos/cap-avaliacao-segmentadores.aux
+ : \citation{Eisenstein2008
+ :                         }
+I'm skipping whatever remains of this command
 A level-1 auxiliary file: conteudo/capitulos/cap-avaliacao-extratores.aux
 A level-1 auxiliary file: conteudo/capitulos/cap-avaliacao-modulo-consulta.aux
 The style file: abntex2-alf.bst
@@ -38,53 +103,51 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
 Reallocated global_strs (elt_size=20001) to 20 items from 10.
 Reallocated glb_str_end (elt_size=4) to 20 items from 10.
-Warning--faltando school em Faleiros2016
-Warning--campo year vazio em Faleiros2016
 Warning--faltando school em Reynar1998
 +---------------------------------------------------------+
 | Estilo bibliográfico abntex2-alf.bst versão v-1.9.2           |
 | Em caso de dúvidas ou problemas com este estilo procure |
 | http://abntex2.googlecode.com                           |
 +---------------------------------------------------------+
-You've used 68 entries,
+You've used 63 entries,
             6711 wiz_defined-function locations,
-            1775 strings with 25135 characters,
-and the built_in function-call counts, 101581 in all, are:
-= -- 11282
-> -- 2287
-< -- 2184
-+ -- 2941
-- -- 687
-* -- 6816
-:= -- 12326
-add.period$ -- 337
-call.type$ -- 68
-change.case$ -- 760
-chr.to.int$ -- 166
-cite$ -- 70
-duplicate$ -- 9143
-empty$ -- 4600
-format.name$ -- 3280
-if$ -- 21297
+            1739 strings with 24109 characters,
+and the built_in function-call counts, 95734 in all, are:
+= -- 10694
+> -- 2140
+< -- 2081
++ -- 2792
+- -- 643
+* -- 6414
+:= -- 11586
+add.period$ -- 316
+call.type$ -- 63
+change.case$ -- 709
+chr.to.int$ -- 152
+cite$ -- 63
+duplicate$ -- 8663
+empty$ -- 4311
+format.name$ -- 3065
+if$ -- 20051
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 1252
-newline$ -- 374
-num.names$ -- 338
-pop$ -- 1517
+missing$ -- 1165
+newline$ -- 344
+num.names$ -- 313
+pop$ -- 1429
 preamble$ -- 1
-purify$ -- 279
+purify$ -- 259
 quote$ -- 0
-skip$ -- 9210
+skip$ -- 8716
 stack$ -- 1
-substring$ -- 4645
-swap$ -- 3756
-text.length$ -- 148
+substring$ -- 4390
+swap$ -- 3549
+text.length$ -- 139
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 31
-warning$ -- 3
-while$ -- 573
+type$ -- 26
+warning$ -- 1
+while$ -- 536
 width$ -- 0
-write$ -- 1208
-(There were 3 error messages)
+write$ -- 1121
+(There were 16 error messages)

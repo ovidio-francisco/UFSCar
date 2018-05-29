@@ -1,4 +1,0 @@
-
--- As anotações são automáticas ou manuais?
-
--- The corpus is also annotated with RST.  

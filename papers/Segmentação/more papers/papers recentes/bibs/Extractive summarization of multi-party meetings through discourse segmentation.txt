@@ -1,1 +1,0 @@
-@article{bokaei_sameti_liu_2016, title={Extractive summarization of multi-party meetings through discourse segmentation}, volume={22}, DOI={10.1017/S1351324914000199}, number={1}, journal={Natural Language Engineering}, publisher={Cambridge University Press}, author={BOKAEI, MOHAMMAD HADI and SAMETI, HOSSEIN and LIU, YANG}, year={2016}, pages={41–72}}
