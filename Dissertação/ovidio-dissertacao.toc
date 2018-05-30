@@ -4,63 +4,62 @@
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \contentsline {chapter}{\chapternumberline {1}\MakeTextUppercase {Introdu\IeC {\c c}\IeC {\~a}o}}{5}{chapter.1}
-\contentsline {section}{\numberline {1.1}Objetivos}{8}{section.1.1}
-\contentsline {section}{\numberline {1.2}Organiza\IeC {\c c}\IeC {\~a}o da Disserta\IeC {\c c}\IeC {\~a}o}{8}{section.1.2}
+\contentsline {section}{\numberline {1.1}Organiza\IeC {\c c}\IeC {\~a}o da Disserta\IeC {\c c}\IeC {\~a}o}{9}{section.1.1}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {2}\MakeTextUppercase {Conceitua\IeC {\c c}\IeC {\~a}o Te\IeC {\'o}rica}}{9}{chapter.2}
-\contentsline {section}{\numberline {2.1}Conceitos B\IeC {\'a}sicos}{9}{section.2.1}
-\contentsline {section}{\numberline {2.2}Representa\IeC {\c c}\IeC {\~a}o de Textos}{9}{section.2.2}
-\contentsline {subsection}{\numberline {2.2.1}\textit {Bag Of Words}}{9}{subsection.2.2.1}
-\contentsline {section}{\numberline {2.3}Pr\IeC {\'e}-processamento de Textos}{10}{section.2.3}
-\contentsline {subsection}{\numberline {2.3.1}Medidas de Proximidade}{10}{subsection.2.3.1}
-\contentsline {section}{\numberline {2.4}Recupera\IeC {\c c}\IeC {\~a}o de Informa\IeC {\c c}\IeC {\~a}o}{10}{section.2.4}
-\contentsline {subsection}{\numberline {2.4.1}Modelos de Recupera\IeC {\c c}\IeC {\~a}o de Informa\IeC {\c c}\IeC {\~a}o}{11}{subsection.2.4.1}
-\contentsline {subsubsection}{\numberline {2.4.1.1}Modelo Booleano}{11}{subsubsection.2.4.1.1}
-\contentsline {subsubsection}{\numberline {2.4.1.2}Modelo Espa\IeC {\c c}o Vetorial}{12}{subsubsection.2.4.1.2}
-\contentsline {subsubsection}{\numberline {2.4.1.3}Modelo Probabil\IeC {\'\i }stico}{13}{subsubsection.2.4.1.3}
-\contentsline {section}{\numberline {2.5}Segmenta\IeC {\c c}\IeC {\~a}o Textual}{14}{section.2.5}
-\contentsline {subsection}{\numberline {2.5.1}Medidas de Avalia\IeC {\c c}\IeC {\~a}o em Segmenta\IeC {\c c}\IeC {\~a}o Textual}{21}{subsection.2.5.1}
-\contentsline {section}{\numberline {2.6}Anota\IeC {\c c}\IeC {\~a}o de Subt\IeC {\'o}picos}{24}{section.2.6}
-\contentsline {subsection}{\numberline {2.6.1}Metodologia para anota\IeC {\c c}\IeC {\~o}es em corpus}{25}{subsection.2.6.1}
-\contentsline {subsubsection}{\numberline {2.6.1.1}Escolha do corpus}{25}{subsubsection.2.6.1.1}
-\contentsline {subsubsection}{\numberline {2.6.1.2}Escolha da teoria a ser explicada}{26}{subsubsection.2.6.1.2}
-\contentsline {subsubsection}{\numberline {2.6.1.3}Selecionar e treinar os anotadores}{26}{subsubsection.2.6.1.3}
-\contentsline {subsubsection}{\numberline {2.6.1.4}Especificar o procedimento de anota\IeC {\c c}\IeC {\~a}o}{26}{subsubsection.2.6.1.4}
-\contentsline {subsubsection}{\numberline {2.6.1.5}Modelar uma interface para anota\IeC {\c c}\IeC {\~a}o}{26}{subsubsection.2.6.1.5}
-\contentsline {subsubsection}{\numberline {2.6.1.6}Escolher e aplicar medidas de avalia\IeC {\c c}\IeC {\~a}o}{27}{subsubsection.2.6.1.6}
-\contentsline {subsubsection}{\numberline {2.6.1.7}Disponibilizar e manter o produto}{27}{subsubsection.2.6.1.7}
-\contentsline {section}{\numberline {2.7}Modelos de Extra\IeC {\c c}\IeC {\~a}o de T\IeC {\'o}picos}{27}{section.2.7}
-\contentsline {subsection}{\numberline {2.7.1}Modelos N\IeC {\~a}o Probabil\IeC {\'\i }sticos}{28}{subsection.2.7.1}
-\contentsline {subsection}{\numberline {2.7.2}Modelos Probabil\IeC {\'\i }sticos}{28}{subsection.2.7.2}
-\contentsline {section}{\numberline {2.8}Trabalhos Relacionados}{30}{section.2.8}
+\contentsline {chapter}{\chapternumberline {2}\MakeTextUppercase {Conceitua\IeC {\c c}\IeC {\~a}o Te\IeC {\'o}rica}}{11}{chapter.2}
+\contentsline {section}{\numberline {2.1}Conceitos B\IeC {\'a}sicos}{11}{section.2.1}
+\contentsline {section}{\numberline {2.2}Representa\IeC {\c c}\IeC {\~a}o de Textos}{11}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}\textit {Bag Of Words}}{11}{subsection.2.2.1}
+\contentsline {section}{\numberline {2.3}Pr\IeC {\'e}-processamento de Textos}{12}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Medidas de Proximidade}{12}{subsection.2.3.1}
+\contentsline {section}{\numberline {2.4}Recupera\IeC {\c c}\IeC {\~a}o de Informa\IeC {\c c}\IeC {\~a}o}{12}{section.2.4}
+\contentsline {subsection}{\numberline {2.4.1}Modelos de Recupera\IeC {\c c}\IeC {\~a}o de Informa\IeC {\c c}\IeC {\~a}o}{13}{subsection.2.4.1}
+\contentsline {subsubsection}{\numberline {2.4.1.1}Modelo Booleano}{13}{subsubsection.2.4.1.1}
+\contentsline {subsubsection}{\numberline {2.4.1.2}Modelo Espa\IeC {\c c}o Vetorial}{14}{subsubsection.2.4.1.2}
+\contentsline {subsubsection}{\numberline {2.4.1.3}Modelo Probabil\IeC {\'\i }stico}{15}{subsubsection.2.4.1.3}
+\contentsline {section}{\numberline {2.5}Segmenta\IeC {\c c}\IeC {\~a}o Textual}{16}{section.2.5}
+\contentsline {subsection}{\numberline {2.5.1}Medidas de Avalia\IeC {\c c}\IeC {\~a}o em Segmenta\IeC {\c c}\IeC {\~a}o Textual}{23}{subsection.2.5.1}
+\contentsline {section}{\numberline {2.6}Anota\IeC {\c c}\IeC {\~a}o de Subt\IeC {\'o}picos}{26}{section.2.6}
+\contentsline {subsection}{\numberline {2.6.1}Metodologia para anota\IeC {\c c}\IeC {\~o}es em corpus}{27}{subsection.2.6.1}
+\contentsline {subsubsection}{\numberline {2.6.1.1}Escolha do corpus}{27}{subsubsection.2.6.1.1}
+\contentsline {subsubsection}{\numberline {2.6.1.2}Escolha da teoria a ser explicada}{28}{subsubsection.2.6.1.2}
+\contentsline {subsubsection}{\numberline {2.6.1.3}Selecionar e treinar os anotadores}{28}{subsubsection.2.6.1.3}
+\contentsline {subsubsection}{\numberline {2.6.1.4}Especificar o procedimento de anota\IeC {\c c}\IeC {\~a}o}{28}{subsubsection.2.6.1.4}
+\contentsline {subsubsection}{\numberline {2.6.1.5}Modelar uma interface para anota\IeC {\c c}\IeC {\~a}o}{28}{subsubsection.2.6.1.5}
+\contentsline {subsubsection}{\numberline {2.6.1.6}Escolher e aplicar medidas de avalia\IeC {\c c}\IeC {\~a}o}{29}{subsubsection.2.6.1.6}
+\contentsline {subsubsection}{\numberline {2.6.1.7}Disponibilizar e manter o produto}{29}{subsubsection.2.6.1.7}
+\contentsline {section}{\numberline {2.7}Modelos de Extra\IeC {\c c}\IeC {\~a}o de T\IeC {\'o}picos}{29}{section.2.7}
+\contentsline {subsection}{\numberline {2.7.1}Modelos N\IeC {\~a}o Probabil\IeC {\'\i }sticos}{30}{subsection.2.7.1}
+\contentsline {subsection}{\numberline {2.7.2}Modelos Probabil\IeC {\'\i }sticos}{30}{subsection.2.7.2}
+\contentsline {section}{\numberline {2.8}Trabalhos Relacionados}{32}{section.2.8}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {3}\MakeTextUppercase {Sistema de recupera\IeC {\c c}\IeC {\~a}o de informa\IeC {\c c}\IeC {\~a}o em documentos multi-tem\IeC {\'a}ticos}}{33}{chapter.3}
-\contentsline {section}{\numberline {3.1}Sistema Proposto}{33}{section.3.1}
-\contentsline {subsection}{\numberline {3.1.1}M\IeC {\'o}dulo de prepara\IeC {\c c}\IeC {\~a}o e manuten\IeC {\c c}\IeC {\~a}o}{34}{subsection.3.1.1}
-\contentsline {subsubsection}{\numberline {3.1.1.1}Prepara\IeC {\c c}\IeC {\~a}o dos documentos}{34}{subsubsection.3.1.1.1}
-\contentsline {subsubsection}{\numberline {3.1.1.2}Pr\IeC {\'e}-Processamento dos Documentos}{36}{subsubsection.3.1.1.2}
-\contentsline {subsubsection}{\numberline {3.1.1.3}Segmenta\IeC {\c c}\IeC {\~a}o}{36}{subsubsection.3.1.1.3}
-\contentsline {subsubsection}{\numberline {3.1.1.4}Extra\IeC {\c c}\IeC {\~a}o de T\IeC {\'o}picos}{37}{subsubsection.3.1.1.4}
-\contentsline {subsubsection}{\numberline {3.1.1.5}Estrutura de Dados Interna}{37}{subsubsection.3.1.1.5}
-\contentsline {subsection}{\numberline {3.1.2}M\IeC {\'o}dulo de Consulta}{38}{subsection.3.1.2}
-\contentsline {subsubsection}{\numberline {3.1.2.1}Ranqueamento}{38}{subsubsection.3.1.2.1}
-\contentsline {subsubsection}{\numberline {3.1.2.2}Visualiza\IeC {\c c}\IeC {\~a}o}{38}{subsubsection.3.1.2.2}
-\contentsline {section}{\numberline {3.2}Valida\IeC {\c c}\IeC {\~a}o em um copus de atas de reuni\IeC {\~a}o}{39}{section.3.2}
+\contentsline {chapter}{\chapternumberline {3}\MakeTextUppercase {Sistema de recupera\IeC {\c c}\IeC {\~a}o de informa\IeC {\c c}\IeC {\~a}o em documentos multi-tem\IeC {\'a}ticos}}{35}{chapter.3}
+\contentsline {section}{\numberline {3.1}Sistema Proposto}{35}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}M\IeC {\'o}dulo de prepara\IeC {\c c}\IeC {\~a}o e manuten\IeC {\c c}\IeC {\~a}o}{36}{subsection.3.1.1}
+\contentsline {subsubsection}{\numberline {3.1.1.1}Prepara\IeC {\c c}\IeC {\~a}o dos documentos}{36}{subsubsection.3.1.1.1}
+\contentsline {subsubsection}{\numberline {3.1.1.2}Pr\IeC {\'e}-Processamento dos Documentos}{38}{subsubsection.3.1.1.2}
+\contentsline {subsubsection}{\numberline {3.1.1.3}Segmenta\IeC {\c c}\IeC {\~a}o}{38}{subsubsection.3.1.1.3}
+\contentsline {subsubsection}{\numberline {3.1.1.4}Extra\IeC {\c c}\IeC {\~a}o de T\IeC {\'o}picos}{39}{subsubsection.3.1.1.4}
+\contentsline {subsubsection}{\numberline {3.1.1.5}Estrutura de Dados Interna}{39}{subsubsection.3.1.1.5}
+\contentsline {subsection}{\numberline {3.1.2}M\IeC {\'o}dulo de Consulta}{40}{subsection.3.1.2}
+\contentsline {subsubsection}{\numberline {3.1.2.1}Ranqueamento}{40}{subsubsection.3.1.2.1}
+\contentsline {subsubsection}{\numberline {3.1.2.2}Visualiza\IeC {\c c}\IeC {\~a}o}{40}{subsubsection.3.1.2.2}
+\contentsline {section}{\numberline {3.2}Valida\IeC {\c c}\IeC {\~a}o em um copus de atas de reuni\IeC {\~a}o}{41}{section.3.2}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase {Avalia\IeC {\c c}\IeC {\~a}o dos Segmentadores}}{41}{chapter.4}
-\contentsline {section}{\numberline {4.1}Prepara\IeC {\c c}\IeC {\~a}o de um corpus de refer\IeC {\^e}ncia}{41}{section.4.1}
-\contentsline {section}{\numberline {4.2}Configura\IeC {\c c}\IeC {\~a}o experimental}{44}{section.4.2}
-\contentsline {section}{\numberline {4.3}Crit\IeC {\'e}rios de avalia\IeC {\c c}\IeC {\~a}o}{44}{section.4.3}
-\contentsline {section}{\numberline {4.4}Resultados}{45}{section.4.4}
+\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase {Avalia\IeC {\c c}\IeC {\~a}o dos Segmentadores}}{43}{chapter.4}
+\contentsline {section}{\numberline {4.1}Prepara\IeC {\c c}\IeC {\~a}o de um corpus de refer\IeC {\^e}ncia}{43}{section.4.1}
+\contentsline {section}{\numberline {4.2}Configura\IeC {\c c}\IeC {\~a}o experimental}{46}{section.4.2}
+\contentsline {section}{\numberline {4.3}Crit\IeC {\'e}rios de avalia\IeC {\c c}\IeC {\~a}o}{46}{section.4.3}
+\contentsline {section}{\numberline {4.4}Resultados}{47}{section.4.4}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase {Avalia\IeC {\c c}\IeC {\~a}o dos Extratores de T\IeC {\'o}picos}}{51}{chapter.5}
-\contentsline {section}{\numberline {5.1}Configura\IeC {\c c}\IeC {\~a}o experimental}{51}{section.5.1}
-\contentsline {section}{\numberline {5.2}Crit\IeC {\'e}rios de avalia\IeC {\c c}\IeC {\~a}o}{51}{section.5.2}
-\contentsline {section}{\numberline {5.3}Resultados}{51}{section.5.3}
+\contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase {Avalia\IeC {\c c}\IeC {\~a}o dos Extratores de T\IeC {\'o}picos}}{53}{chapter.5}
+\contentsline {section}{\numberline {5.1}Configura\IeC {\c c}\IeC {\~a}o experimental}{53}{section.5.1}
+\contentsline {section}{\numberline {5.2}Crit\IeC {\'e}rios de avalia\IeC {\c c}\IeC {\~a}o}{53}{section.5.2}
+\contentsline {section}{\numberline {5.3}Resultados}{53}{section.5.3}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {6}\MakeTextUppercase {Avalia\IeC {\c c}\IeC {\~a}o do M\IeC {\'o}dulo de Consulta}}{53}{chapter.6}
+\contentsline {chapter}{\chapternumberline {6}\MakeTextUppercase {Avalia\IeC {\c c}\IeC {\~a}o do M\IeC {\'o}dulo de Consulta}}{55}{chapter.6}
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
-\contentsline {chapter}{Refer\^encias}{55}{section*.4}
+\contentsline {chapter}{Refer\^encias}{57}{section*.4}
 \renewcommand *{\cftappendixname }{AP\^ENDICE \space }
 \cftinsert {AAA}
 \renewcommand *{\cftappendixname }{ANEXO \space }

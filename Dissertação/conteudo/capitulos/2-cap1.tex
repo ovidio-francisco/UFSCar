@@ -74,7 +74,7 @@ Uma vez que a ata registra a sucessão de assuntos discutidos na reunião, um si
 
 %        ========== ==========|   Segmentação  |========== ==========
 
-Técnicas de segmentação automática de textos (segmentação textual) podem ser aplicadas com esse propósito. Elas podem dividir um documento em segmentos que contenham um assunto relativamente independente. Com isso, tem-se um conjunto de subdocumentos derivado da coleção de atas original~\cite{Aggarwal2018, bokaei2015, sakahara2014, misra2009, eisenstein2008, choi2000}.
+Técnicas de segmentação automática de textos (segmentação textual) podem ser aplicadas com esse propósito. Elas podem dividir um documento em segmentos que contenham um assunto relativamente independente e gerar um conjunto de subdocumentos derivado da coleção de atas original~\cite{Aggarwal2018, bokaei2015, sakahara2014, misra2009, eisenstein2008, choi2000}.
 
 %--> onde é usada e como pode ser usada aqui
 
@@ -83,8 +83,7 @@ Técnicas de segmentação automática de textos (segmentação textual) podem s
 
 %        ========== ==========|   Extração de Tópicos  |========== ==========
 
-Contudo, a segmentação textual apenas indica as transições de assuntos ao longo do texto,  sem indicações sobre o teor dos segmentos. O assunto de cada trecho pode ser estimado por meio de modelos de extração de tópicos. Essa técnica visa formar grupos com segmentos que compartilham o mesmo assunto bem como indicar palavras que melhor descrevem o grupo.
-
+Contudo, a segmentação textual apenas indica as transições de assuntos ao longo do texto,  sem indicações sobre o teor dos segmentos. O assunto de cada trecho pode ser estimado por meio de modelos de extração de tópicos. Essa técnica possibilita a formação de grupos de segmentos que compartilham o mesmo assunto bem como indicar palavras que melhor descrevem o grupo~\cite{Wei2007}. Com isso, obtém-se uma organização da coleção de documentos que favorece técnicas para navegação e consulta à coleção de documentos~\cite{Maracini2010}. Tais modelos podem eleger um conjunto de termos importantes para um ou mais assuntos, bem como ranquear documentos por sua relevância para determinado tema~\cite{Faleiros2016,Xing2009}
 
 
 
@@ -99,10 +98,12 @@ Contudo, a segmentação textual apenas indica as transições de assuntos ao lo
 %        ========== ==========|   Unindo as coisas  |========== ==========
 
 
-Devido as características das atas como ausência de meta-informação e a multiplicidade de assuntos, as técnicas de segmentação podem ser empregadas em conjunto com a extração de tópicos para aprimorar a recuperação de informação em coleções de atas de reunião. 
+Devido as características das atas como ausência de meta-informação e a multiplicidade de assuntos, as técnicas de segmentação podem ser empregadas em conjunto com a extração de tópicos para 
+gerar uma estrutura de dados derivada da coleção de documentos original que favoreça técnicas de aprendizado de máquina e recuperação de informação no desenvolvimento de um sistema para busca 	
+aprimorar a recuperação de informação em coleções de atas de reunião. 
 % como texto seccionado e \textit{hyperlinks} 
 
-Nesse trabalho, a segmentação textual é empregada na identificação dos assuntos tratados em cada ata. Os segmentos de atas gerados, aqui considerados como sub-documentos, são entregues a um extrator de tópicos. A tarefa do extrator é agrupar os segmentos com um mesmo tópico e eleger palavras da coleção que melhor descrevem cada grupo. Os descritores gerados pelo extrator de tópicos bem com os grupos são aproveitados nas técnicas de recuperação de informação a fim de ranquear os resultados e auxiliar o usuário a encontrar segmentos semelhantes por meio da navegação pelos grupos. Essa abordagem visa, em primeiro lugar, identificar os assuntos tratados em cada ata e gerar uma coleção de subdocumentos derivados da coleção de atas originais e, a partir disso, encontrar relações latentes entre os subdocumentos e termos da coleção. Com isso, tem-se uma estrutura que permite às técnicas de recuperação de informação fazer buscas à coleção de atas valendo-se da estrutura criada a partir das técnicas de segmentação textual e extração de tópicos. 
+Nesse trabalho, a segmentação textual é empregada na identificação dos assuntos tratados em cada ata. Os segmentos de atas gerados, aqui considerados como sub-documentos, são entregues a um extrator de tópicos. A tarefa do extrator é agrupar os segmentos com um mesmo tópico e eleger palavras da coleção que melhor descrevem cada grupo. Os descritores gerados pelo extrator de tópicos bem com os grupos são aproveitados nas técnicas de recuperação de informação a fim de ranquear os resultados e auxiliar o usuário a encontrar segmentos semelhantes por meio da navegação pelos grupos. Essa abordagem visa, em primeiro lugar, identificar os assuntos tratados em cada ata e gerar uma coleção de subdocumentos derivados da coleção de atas originais e, a partir disso, utilizar modelos de extração de tópicos para encontrar relações latentes entre os subdocumentos e termos da coleção. Com isso, tem-se uma estrutura que permite às técnicas de recuperação de informação fazer buscas à coleção de atas valendo-se da estrutura criada a partir das técnicas de segmentação textual e extração de tópicos. 
 
 
 
@@ -142,19 +143,25 @@ Além disso, ao agrupar os segmentos por tópicos, tem-se uma organização dos 
 % --> Disponibilisação do sistema final.
 
 
+%        ========== ==========   Objetivos   ========== ==========
 
 
-\section{Objetivos}
-%        ========== ==========   Final   ========== ==========
-
-A Busca por informação em dados textuais implica basicamente em consultar uma base de dados não estruturada. O que se objetiva nesse trabalho de mestrado é utilizar a estrutura latente de documentos segmentados em conjunto com técnicas tradicionais de recuperação de informação, tendo como 
-% O objetivo geral desse trabalho de mestrado é desenvolver uma 
-% Esse trabalho tem como 
-proposta o desenvolvimento de uma ferramenta para identificar, organizar e apresentar assuntos registrados em atas de reunião. O projeto se divide em dois objetivos específicos: 1) Avaliar os métodos de segmentação topical, extração de tópicos e recuperação de informação no contexto de atas de reunião. 2) Analisar a qualidade dos subdocumentos apresentados quanto ao agrupamento, e relevância das informações contidas.
+Diante desse cenário, o objetivo desse trabalho de mestrado é propor o desenvolvimento uma ferramenta para identificar, organizar e apresentar assuntos registrados em atas de reunião utilizando a estrutura latente de documentos segmentados em conjunto com técnicas de recuperação de informação. 
+%
+%
+Como objetivos específicos, esse trabalho visa  
+% 
+% 1)
+dar início a investigação dos métodos de segmentação textual, extração de tópicos e recuperação de informação no contexto de atas de reunião. Essas técnicas foram avaliadas tendo como referência anotações coletadas de profissionais que desempenham atividades ligadas a atas e reuniões.
+% 
+% 2)
+Após a aplicação das técnicas mais adequadas a esse contexto, esse trabalho pretende ainda analisar junto ao usuário a qualidade dos subdocumentos apresentados quanto ao agrupamento, e relevância das informações contidas. Para isso, um segundo experimento é realizado para coletar dados sobre a percepção de usuários sobre a qualidade dos resultados apresentados a uma consulta a coleção de atas por meio do sistema.
+% 
+% 
 Dessa forma, busca-se ajudar a suprir a necessidade de ferramentas para para esse cenário e contribuir com uma metodologia de extração de informação em documentos com assuntos que pode ser útil em trabalhos relacionados a outros domínios como documentos jurídicos, notícias e transcrições de conversas.
 
 
-% Assim, nesse contexto, este trabalho propõe a investigação do uso de mineração de texto e as técnicas que constituem o estado da arte na área para o desenvolvimento de uma ferramenta para extração automática de históricos de decisão em atas de reuniões.  % -- <-- 'POBRE'
+
 
 
 

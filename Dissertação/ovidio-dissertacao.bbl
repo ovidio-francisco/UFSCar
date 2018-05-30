@@ -5,11 +5,9 @@
 \providecommand{\abntbstabout}[1]{}
 \abntbstabout{v-1.9.2 }
 
-\bibitem[Aggarwal 2018]{Aggarwal2018}
-\abntrefinfo{Aggarwal}{AGGARWAL}{2018}
-{AGGARWAL, C.~C. \emph{Machine Learning for Text}. [S.l.]: Springer
-  International Publishing, 2018.
-ISBN 978-3-319-73531-3.}
+\bibitem[]{Aggarwal2018}
+\abntrefinfo{nada}{NADA}{a}
+{FERRET,O. [S.l.: s.n.].}
 
 \bibitem[Aggarwal e Zhai 2012]{Aggarwal2012}
 \abntrefinfo{Aggarwal e Zhai}{AGGARWAL; ZHAI}{2012}
@@ -140,6 +138,13 @@ ISBN 978-1-57735-323-2. Dispon{\'\i}vel em:
   Processing}. Stroudsburg, PA, USA: Association for Computational Linguistics,
   2008.  (EMNLP '08), p. 334--343. Dispon{\'\i}vel em:
   \url{http://dl.acm.org/citation.cfm?id=1613715.1613760}.}
+
+\bibitem[Faleiros]{Faleiros2016}
+\abntrefinfo{Faleiros}{FALEIROS}{}
+{FALEIROS, T. d.~P.
+\emph{Propagação em grafos bipartidos para extração de tópicos em fluxo de
+  documentos textuais}.
+Tese (Doutorado), São Paulo, SP, Brasil.}
 
 \bibitem[Feldman e Sanger 2006]{Feldman2006}
 \abntrefinfo{Feldman e Sanger}{FELDMAN; SANGER}{2006}
@@ -425,6 +430,13 @@ ISBN 0321321367.}
   Association for Computational Linguistics}. Stroudsburg, PA, USA: Association
   for Computational Linguistics, 2001.  (ACL '01), p. 499--506. Dispon{\'\i}vel
   em: \url{https://doi.org/10.3115/1073012.1073076}.}
+
+\bibitem[Wei 2007]{Wei2007}
+\abntrefinfo{Wei}{WEI}{2007}
+{WEI, X.
+\emph{TOPIC MODELS IN INFORMATION RETRIEVAL}.
+Tese (Doutorado) --- University of Massachusetts Amherst, Massachusetts, MA,
+  USA, 2007.}
 
 \bibitem[Wei e Croft 2006]{WEIXING}
 \abntrefinfo{Wei e Croft}{WEI; CROFT}{2006}
