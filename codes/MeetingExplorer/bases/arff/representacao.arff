@@ -1,0 +1,264 @@
+@RELATION representacao
+
+@ATTRIBUTE name_file STRING
+@ATTRIBUTE cancelamento REAL
+@ATTRIBUTE débora REAL
+@ATTRIBUTE fica REAL
+@ATTRIBUTE mudanças REAL
+@ATTRIBUTE allan REAL
+@ATTRIBUTE acadêmico REAL
+@ATTRIBUTE complete REAL
+@ATTRIBUTE solicitação REAL
+@ATTRIBUTE deverá REAL
+@ATTRIBUTE vir REAL
+@ATTRIBUTE terá REAL
+@ATTRIBUTE aberto REAL
+@ATTRIBUTE colpani REAL
+@ATTRIBUTE sistema REAL
+@ATTRIBUTE exame REAL
+@ATTRIBUTE elizeu REAL
+@ATTRIBUTE pnpd REAL
+@ATTRIBUTE horária REAL
+@ATTRIBUTE resultado REAL
+@ATTRIBUTE sejam REAL
+@ATTRIBUTE celebrou REAL
+@ATTRIBUTE docentes REAL
+@ATTRIBUTE regular REAL
+@ATTRIBUTE apresentar REAL
+@ATTRIBUTE especial REAL
+@ATTRIBUTE espera REAL
+@ATTRIBUTE participação REAL
+@ATTRIBUTE dia REAL
+@ATTRIBUTE representante REAL
+@ATTRIBUTE seguintes REAL
+@ATTRIBUTE brasileiro REAL
+@ATTRIBUTE avaliação REAL
+@ATTRIBUTE redes REAL
+@ATTRIBUTE presidência REAL
+@ATTRIBUTE reitora REAL
+@ATTRIBUTE homologado REAL
+@ATTRIBUTE tiver REAL
+@ATTRIBUTE lista REAL
+@ATTRIBUTE inscrições REAL
+@ATTRIBUTE final REAL
+@ATTRIBUTE breda REAL
+@ATTRIBUTE cidade REAL
+@ATTRIBUTE extraordinária REAL
+@ATTRIBUTE for REAL
+@ATTRIBUTE dcomp REAL
+@ATTRIBUTE humano REAL
+@ATTRIBUTE arquiteturas REAL
+@ATTRIBUTE fórum REAL
+@ATTRIBUTE formada REAL
+@ATTRIBUTE grupos REAL
+@ATTRIBUTE realização REAL
+@ATTRIBUTE heitzmann REAL
+@ATTRIBUTE pedido REAL
+@ATTRIBUTE aprovação REAL
+@ATTRIBUTE aguiar REAL
+@ATTRIBUTE conceito REAL
+@ATTRIBUTE terminar REAL
+@ATTRIBUTE verba REAL
+@ATTRIBUTE decidido REAL
+@ATTRIBUTE alocação REAL
+@ATTRIBUTE enviar REAL
+@ATTRIBUTE exigido REAL
+@ATTRIBUTE vidal REAL
+@ATTRIBUTE local REAL
+@ATTRIBUTE desligamento REAL
+@ATTRIBUTE interface REAL
+@ATTRIBUTE projeto REAL
+@ATTRIBUTE entrega REAL
+@ATTRIBUTE gestão REAL
+@ATTRIBUTE comissão REAL
+@ATTRIBUTE ccgt REAL
+@ATTRIBUTE berbel REAL
+@ATTRIBUTE araújo REAL
+@ATTRIBUTE unidades REAL
+@ATTRIBUTE morato REAL
+@ATTRIBUTE elieber REAL
+@ATTRIBUTE segurança REAL
+@ATTRIBUTE cunha REAL
+@ATTRIBUTE credenciamento REAL
+@ATTRIBUTE mail REAL
+@ATTRIBUTE estado REAL
+@ATTRIBUTE anexo REAL
+@ATTRIBUTE prazo REAL
+@ATTRIBUTE usp REAL
+@ATTRIBUTE ordinária REAL
+@ATTRIBUTE mês REAL
+@ATTRIBUTE cpg REAL
+@ATTRIBUTE alterada REAL
+@ATTRIBUTE marcelo REAL
+@ATTRIBUTE administrativo REAL
+@ATTRIBUTE realizada REAL
+@ATTRIBUTE presença REAL
+@ATTRIBUTE cristina REAL
+@ATTRIBUTE discente REAL
+@ATTRIBUTE proap REAL
+@ATTRIBUTE matrícula REAL
+@ATTRIBUTE fapesp REAL
+@ATTRIBUTE engenharia REAL
+@ATTRIBUTE distância REAL
+@ATTRIBUTE menor REAL
+@ATTRIBUTE meses REAL
+@ATTRIBUTE anterior REAL
+@ATTRIBUTE anos REAL
+@ATTRIBUTE possui REAL
+@ATTRIBUTE implantação REAL
+@ATTRIBUTE educação REAL
+@ATTRIBUTE pós REAL
+@ATTRIBUTE informou REAL
+@ATTRIBUTE presentes REAL
+@ATTRIBUTE feito REAL
+@ATTRIBUTE informação REAL
+@ATTRIBUTE leme REAL
+@ATTRIBUTE banca REAL
+@ATTRIBUTE curso REAL
+@ATTRIBUTE metro REAL
+@ATTRIBUTE edital REAL
+@ATTRIBUTE disponível REAL
+@ATTRIBUTE wilton REAL
+@ATTRIBUTE pode REAL
+@ATTRIBUTE atendida REAL
+@ATTRIBUTE distribuídos REAL
+@ATTRIBUTE momento REAL
+@ATTRIBUTE min REAL
+@ATTRIBUTE área REAL
+@ATTRIBUTE discutir REAL
+@ATTRIBUTE bairro REAL
+@ATTRIBUTE comunicação REAL
+@ATTRIBUTE graduação REAL
+@ATTRIBUTE centro REAL
+@ATTRIBUTE quil REAL
+@ATTRIBUTE ranking REAL
+@ATTRIBUTE convalidação REAL
+@ATTRIBUTE oferta REAL
+@ATTRIBUTE agradeceu REAL
+@ATTRIBUTE trabalho REAL
+@ATTRIBUTE prorrogação REAL
+@ATTRIBUTE primeiro REAL
+@ATTRIBUTE coordenadores REAL
+@ATTRIBUTE reis REAL
+@ATTRIBUTE técnico REAL
+@ATTRIBUTE reitoria REAL
+@ATTRIBUTE iniciou REAL
+@ATTRIBUTE ingresso REAL
+@ATTRIBUTE dissertação REAL
+@ATTRIBUTE bolsa REAL
+@ATTRIBUTE referendum REAL
+@ATTRIBUTE aprovado REAL
+@ATTRIBUTE defesa REAL
+@ATTRIBUTE membro REAL
+@ATTRIBUTE ocorrer REAL
+@ATTRIBUTE computadores REAL
+@ATTRIBUTE novo REAL
+@ATTRIBUTE divulgada REAL
+@ATTRIBUTE presidente REAL
+@ATTRIBUTE aparecida REAL
+@ATTRIBUTE ordem REAL
+@ATTRIBUTE referentes REAL
+@ATTRIBUTE segue REAL
+@ATTRIBUTE calendário REAL
+@ATTRIBUTE software REAL
+@ATTRIBUTE realizar REAL
+@ATTRIBUTE programas REAL
+@ATTRIBUTE dependências REAL
+@ATTRIBUTE rendimento REAL
+@ATTRIBUTE valor REAL
+@ATTRIBUTE concessão REAL
+@ATTRIBUTE relatórios REAL
+@ATTRIBUTE itinga REAL
+@ATTRIBUTE carneiro REAL
+@ATTRIBUTE computação REAL
+@ATTRIBUTE permanência REAL
+@ATTRIBUTE lopes REAL
+@ATTRIBUTE artigo REAL
+@ATTRIBUTE estudos REAL
+@ATTRIBUTE oferecida REAL
+@ATTRIBUTE rocha REAL
+@ATTRIBUTE recebem REAL
+@ATTRIBUTE ppgccs REAL
+@ATTRIBUTE consultada REAL
+@ATTRIBUTE situado REAL
+@ATTRIBUTE conselho REAL
+@ATTRIBUTE semestre REAL
+@ATTRIBUTE agendamento REAL
+@ATTRIBUTE seletivo REAL
+@ATTRIBUTE chamada REAL
+@ATTRIBUTE dados REAL
+@ATTRIBUTE norma REAL
+@ATTRIBUTE rodovia REAL
+@ATTRIBUTE datas REAL
+@ATTRIBUTE candidatos REAL
+@ATTRIBUTE lucio REAL
+@ATTRIBUTE vinda REAL
+@ATTRIBUTE orientada REAL
+@ATTRIBUTE laboratório REAL
+@ATTRIBUTE solicitada REAL
+@ATTRIBUTE mestrado REAL
+@ATTRIBUTE documentação REAL
+@ATTRIBUTE tópicos REAL
+@ATTRIBUTE dezembro REAL
+@ATTRIBUTE linha REAL
+@ATTRIBUTE parra REAL
+@ATTRIBUTE partir REAL
+@ATTRIBUTE capes REAL
+@ATTRIBUTE são REAL
+@ATTRIBUTE processo REAL
+@ATTRIBUTE suplente REAL
+@ATTRIBUTE pesquisa REAL
+@ATTRIBUTE quintale REAL
+@ATTRIBUTE disciplinas REAL
+@ATTRIBUTE retirar REAL
+
+@DATA
+{0 "/ext4Data/UFSCar/codes/MeetingExplorer/bases/segmentedDocs/Ata 29.pdf.txt_seg-001.txt",21 1.0,28 3.0,29 2.0,30 1.0,33 1.0,42 1.0,47 1.0,51 1.0,64 1.0,70 1.0,77 1.0,80 1.0,81 1.0,85 1.0,91 2.0,92 1.0,94 2.0,107 2.0,109 2.0,112 1.0,114 2.0,115 1.0,121 1.0,123 1.0,126 1.0,128 2.0,130 1.0,137 1.0,139 1.0,154 1.0,155 1.0,160 1.0,161 1.0,163 1.0,168 1.0,170 2.0,180 1.0,181 1.0,185 1.0,188 1.0,189 1.0,194 1.0,199 1.0,200 1.0,204 3.0,206 1.0}
+{0 "/ext4Data/UFSCar/codes/MeetingExplorer/bases/segmentedDocs/Ata 29.pdf.txt_seg-002.txt",9 1.0,12 1.0,32 1.0,34 1.0,48 1.0,58 1.0,92 1.0,95 1.0,107 1.0,108 1.0,117 1.0,127 1.0,128 1.0,134 1.0,138 1.0,142 1.0,150 1.0,152 1.0,153 1.0,157 1.0,162 2.0,186 2.0}
+{0 "/ext4Data/UFSCar/codes/MeetingExplorer/bases/segmentedDocs/Ata 29.pdf.txt_seg-003.txt",45 1.0,108 1.0,127 1.0,170 1.0,192 1.0,204 1.0}
+{0 "/ext4Data/UFSCar/codes/MeetingExplorer/bases/segmentedDocs/Ata 29.pdf.txt_seg-004.txt",28 1.0,43 1.0,85 1.0,147 1.0,156 1.0}
+{0 "/ext4Data/UFSCar/codes/MeetingExplorer/bases/segmentedDocs/Ata 29.pdf.txt_seg-005.txt",25 1.0,46 1.0,56 2.0,66 1.0,98 1.0,114 1.0,132 1.0,147 1.0,151 1.0,160 1.0,198 1.0,209 1.0}
+{0 "/ext4Data/UFSCar/codes/MeetingExplorer/bases/segmentedDocs/Ata 29.pdf.txt_seg-006.txt",16 1.0,28 2.0,36 1.0,41 1.0,52 1.0,73 1.0,76 1.0,78 1.0,83 1.0,89 1.0,101 5.0,136 1.0,144 2.0,147 1.0,148 2.0,155 3.0,167 1.0,169 1.0,193 6.0,201 1.0,208 1.0}
+{0 "/ext4Data/UFSCar/codes/MeetingExplorer/bases/segmentedDocs/Ata 29.pdf.txt_seg-007.txt",1 1.0,3 1.0,6 2.0,9 1.0,12 1.0,17 1.0,19 1.0,22 2.0,25 1.0,28 3.0,32 1.0,39 1.0,54 1.0,79 1.0,82 1.0,83 1.0,85 1.0,87 1.0,137 2.0,145 1.0,147 5.0,159 5.0,167 1.0,171 1.0,176 1.0,178 1.0,182 2.0,183 1.0,184 1.0,187 1.0,189 1.0,191 1.0,199 1.0,205 1.0}
+{0 "/ext4Data/UFSCar/codes/MeetingExplorer/bases/segmentedDocs/Ata 29.pdf.txt_seg-008.txt",29 1.0,94 1.0,154 1.0,155 1.0}
+{0 "/ext4Data/UFSCar/codes/MeetingExplorer/bases/segmentedDocs/Ata 30.pdf.txt_seg-001.txt",2 1.0,21 1.0,22 1.0,28 3.0,29 2.0,30 1.0,32 1.0,33 1.0,34 1.0,35 1.0,42 1.0,47 1.0,51 1.0,54 1.0,64 1.0,70 1.0,75 1.0,77 1.0,79 1.0,80 1.0,81 1.0,85 1.0,91 2.0,92 2.0,93 1.0,94 1.0,107 3.0,108 1.0,109 2.0,112 1.0,114 2.0,115 1.0,121 1.0,123 1.0,126 1.0,127 1.0,128 3.0,130 1.0,134 1.0,137 1.0,142 1.0,146 1.0,154 1.0,155 1.0,160 1.0,161 1.0,163 1.0,168 1.0,170 2.0,171 1.0,178 1.0,180 1.0,181 1.0,185 1.0,187 1.0,188 1.0,189 1.0,194 1.0,200 1.0,204 3.0}
+{0 "/ext4Data/UFSCar/codes/MeetingExplorer/bases/segmentedDocs/Ata 30.pdf.txt_seg-002.txt",9 1.0,35 1.0,40 1.0,58 1.0,95 1.0,108 1.0}
+{0 "/ext4Data/UFSCar/codes/MeetingExplorer/bases/segmentedDocs/Ata 30.pdf.txt_seg-003.txt",22 1.0,61 1.0,80 1.0,94 1.0,141 1.0,162 1.0,173 1.0,177 1.0,195 1.0}
+{0 "/ext4Data/UFSCar/codes/MeetingExplorer/bases/segmentedDocs/Ata 30.pdf.txt_seg-004.txt",127 1.0}
+{0 "/ext4Data/UFSCar/codes/MeetingExplorer/bases/segmentedDocs/Ata 30.pdf.txt_seg-005.txt",6 2.0,19 1.0,23 2.0,28 2.0,36 1.0,54 1.0,82 5.0,85 1.0,87 1.0,88 1.0,116 1.0,137 3.0,143 1.0,146 1.0,147 4.0,156 1.0,158 4.0,159 2.0,175 1.0,178 1.0,182 5.0,184 1.0,205 1.0,209 1.0}
+{0 "/ext4Data/UFSCar/codes/MeetingExplorer/bases/segmentedDocs/Ata 30.pdf.txt_seg-006.txt",36 1.0,65 1.0,94 1.0,143 1.0,164 1.0,182 1.0}
+{0 "/ext4Data/UFSCar/codes/MeetingExplorer/bases/segmentedDocs/Ata 30.pdf.txt_seg-007.txt",5 1.0,15 1.0,53 1.0,55 1.0,63 1.0,72 1.0,78 1.0,83 1.0,86 1.0,101 4.0,118 1.0,136 1.0,139 1.0,147 1.0,148 1.0,172 1.0,193 3.0}
+{0 "/ext4Data/UFSCar/codes/MeetingExplorer/bases/segmentedDocs/Ata 30.pdf.txt_seg-008.txt",17 1.0,26 1.0,38 1.0,54 1.0,61 1.0,133 1.0,145 3.0,147 1.0,148 1.0,153 1.0,157 1.0,184 1.0,190 1.0,197 1.0,205 1.0}
+{0 "/ext4Data/UFSCar/codes/MeetingExplorer/bases/segmentedDocs/Ata 30.pdf.txt_seg-009.txt",18 2.0,20 1.0,28 2.0,30 1.0,53 1.0,55 1.0,69 1.0,71 1.0,74 1.0,90 1.0,105 1.0,110 1.0,124 1.0,129 1.0,135 1.0,140 1.0,179 1.0}
+{0 "/ext4Data/UFSCar/codes/MeetingExplorer/bases/segmentedDocs/Ata 30.pdf.txt_seg-010.txt",74 1.0,204 1.0}
+{0 "/ext4Data/UFSCar/codes/MeetingExplorer/bases/segmentedDocs/Ata 30.pdf.txt_seg-011.txt",14 1.0,20 1.0,74 1.0,90 3.0,104 1.0,105 1.0,114 1.0,119 1.0,120 1.0,122 1.0,140 3.0,178 2.0}
+{0 "/ext4Data/UFSCar/codes/MeetingExplorer/bases/segmentedDocs/Ata 30.pdf.txt_seg-012.txt",71 1.0}
+{0 "/ext4Data/UFSCar/codes/MeetingExplorer/bases/segmentedDocs/Ata 30.pdf.txt_seg-013.txt",29 1.0,94 1.0,154 1.0,155 1.0}
+{0 "/ext4Data/UFSCar/codes/MeetingExplorer/bases/segmentedDocs/Ata 32.pdf.txt_seg-001.txt",4 1.0,10 1.0,17 2.0,21 1.0,22 2.0,28 4.0,30 1.0,33 1.0,34 1.0,35 1.0,42 1.0,44 3.0,51 1.0,58 2.0,62 1.0,64 1.0,67 1.0,70 1.0,77 1.0,80 1.0,81 1.0,85 1.0,89 1.0,91 2.0,92 2.0,94 1.0,95 2.0,97 1.0,100 2.0,102 1.0,103 6.0,107 3.0,108 3.0,109 2.0,110 1.0,111 1.0,112 1.0,114 3.0,115 1.0,117 1.0,119 2.0,122 2.0,123 1.0,125 2.0,126 1.0,127 2.0,128 3.0,130 1.0,134 1.0,137 1.0,141 1.0,142 1.0,145 6.0,149 1.0,150 1.0,154 1.0,156 1.0,157 2.0,161 1.0,162 1.0,163 1.0,165 3.0,166 1.0,168 1.0,170 2.0,174 1.0,176 1.0,177 1.0,178 4.0,180 1.0,181 1.0,185 1.0,187 2.0,188 1.0,189 1.0,191 1.0,194 1.0,203 1.0,204 3.0,207 1.0,210 1.0}
+{0 "/ext4Data/UFSCar/codes/MeetingExplorer/bases/segmentedDocs/Ata 32.pdf.txt_seg-002.txt",7 1.0,8 1.0,11 1.0,15 1.0,24 2.0,26 1.0,30 1.0,37 1.0,38 1.0,57 1.0,59 1.0,70 1.0,83 2.0,96 1.0,97 1.0,101 3.0,114 2.0,125 1.0,131 1.0,136 1.0,137 1.0,144 1.0,145 7.0,148 2.0,162 1.0,174 1.0,175 1.0,177 1.0,178 1.0,187 3.0,189 1.0,195 1.0,196 1.0,203 1.0,210 1.0}
+{0 "/ext4Data/UFSCar/codes/MeetingExplorer/bases/segmentedDocs/Ata 32.pdf.txt_seg-003.txt",82 1.0,88 1.0,158 1.0,187 1.0}
+{0 "/ext4Data/UFSCar/codes/MeetingExplorer/bases/segmentedDocs/Ata 32.pdf.txt_seg-004.txt",10 1.0,27 2.0,31 1.0,44 1.0,50 1.0,54 1.0,60 1.0,81 1.0,91 1.0,106 1.0,116 2.0,119 1.0,124 1.0,125 1.0,142 1.0,145 1.0,162 3.0,178 2.0,190 1.0,207 1.0}
+{0 "/ext4Data/UFSCar/codes/MeetingExplorer/bases/segmentedDocs/Ata 32.pdf.txt_seg-005.txt"}
+{0 "/ext4Data/UFSCar/codes/MeetingExplorer/bases/segmentedDocs/Ata 32.pdf.txt_seg-006.txt",25 1.0,40 1.0,46 2.0,53 2.0,56 4.0,66 2.0,83 2.0,98 1.0,101 1.0,114 1.0,132 1.0,136 1.0,144 1.0,146 1.0,147 2.0,148 1.0,151 2.0,160 1.0,193 1.0,198 2.0,205 1.0,209 1.0}
+{0 "/ext4Data/UFSCar/codes/MeetingExplorer/bases/segmentedDocs/Ata 32.pdf.txt_seg-007.txt",15 1.0,27 1.0,36 1.0,53 1.0,72 1.0,113 1.0,139 1.0,144 2.0,147 1.0,148 2.0,167 1.0,172 1.0,183 1.0,193 3.0}
+{0 "/ext4Data/UFSCar/codes/MeetingExplorer/bases/segmentedDocs/Ata 32.pdf.txt_seg-008.txt",29 1.0,94 1.0,154 1.0}
+{0 "/ext4Data/UFSCar/codes/MeetingExplorer/bases/segmentedDocs/Ata 33.pdf.txt_seg-001.txt",28 3.0,33 1.0,42 1.0,51 1.0,64 1.0,70 1.0,77 1.0,80 1.0,81 1.0,85 1.0,91 2.0,92 1.0,107 1.0,112 1.0,114 1.0,115 1.0,126 1.0,128 1.0,130 1.0,161 1.0,163 1.0,168 1.0,170 1.0,180 1.0,188 1.0,189 1.0,194 1.0,204 3.0}
+{0 "/ext4Data/UFSCar/codes/MeetingExplorer/bases/segmentedDocs/Ata 33.pdf.txt_seg-002.txt",3 2.0,4 2.0,13 1.0,14 2.0,15 1.0,16 1.0,21 1.0,22 5.0,23 2.0,24 1.0,27 3.0,28 6.0,30 2.0,31 2.0,33 2.0,34 1.0,35 1.0,39 1.0,44 3.0,45 1.0,47 1.0,49 4.0,58 2.0,59 3.0,60 1.0,61 1.0,68 1.0,69 1.0,76 1.0,80 1.0,84 1.0,87 2.0,91 1.0,92 1.0,94 2.0,95 2.0,98 2.0,99 3.0,100 1.0,102 1.0,103 1.0,107 1.0,108 4.0,109 2.0,110 1.0,111 1.0,113 6.0,114 2.0,117 1.0,118 1.0,121 3.0,123 1.0,125 1.0,127 2.0,128 1.0,131 2.0,132 1.0,133 1.0,134 1.0,137 1.0,141 1.0,142 2.0,144 1.0,145 3.0,147 5.0,148 2.0,149 2.0,151 2.0,154 1.0,155 2.0,156 1.0,160 3.0,162 1.0,165 3.0,170 5.0,172 1.0,173 1.0,174 1.0,175 2.0,181 1.0,182 2.0,183 1.0,184 1.0,185 3.0,186 1.0,190 1.0,192 1.0,193 4.0,195 1.0,196 1.0,197 1.0,200 5.0,201 1.0,204 2.0,205 2.0,206 1.0,207 1.0,209 4.0}
+{0 "/ext4Data/UFSCar/codes/MeetingExplorer/bases/segmentedDocs/Ata 33.pdf.txt_seg-003.txt",18 1.0,28 5.0,82 1.0,85 1.0,87 1.0,147 2.0,158 1.0,159 1.0,178 1.0,182 2.0,199 1.0}
+{0 "/ext4Data/UFSCar/codes/MeetingExplorer/bases/segmentedDocs/Ata 33.pdf.txt_seg-004.txt",5 2.0,36 1.0,40 8.0,63 1.0,73 1.0,83 9.0,91 1.0,101 8.0,136 1.0,144 2.0,147 1.0,148 2.0,155 1.0,167 1.0,193 9.0}
+{0 "/ext4Data/UFSCar/codes/MeetingExplorer/bases/segmentedDocs/Ata 33.pdf.txt_seg-005.txt",29 1.0,80 1.0,94 1.0,107 1.0,112 1.0,128 1.0,154 1.0,162 1.0,168 1.0,170 1.0,178 2.0,204 1.0}
+{0 "/ext4Data/UFSCar/codes/MeetingExplorer/bases/segmentedDocs/Ata 35.pdf.txt_seg-001.txt",28 3.0,33 1.0,42 1.0,43 1.0,51 1.0,64 1.0,70 1.0,77 1.0,80 1.0,81 1.0,91 2.0,92 1.0,107 1.0,112 1.0,114 1.0,115 1.0,126 1.0,128 1.0,130 1.0,161 1.0,163 1.0,168 1.0,170 1.0,180 1.0,188 1.0,189 1.0,194 1.0,204 3.0}
+{0 "/ext4Data/UFSCar/codes/MeetingExplorer/bases/segmentedDocs/Ata 35.pdf.txt_seg-002.txt",21 1.0,22 1.0,30 1.0,34 1.0,92 1.0,94 1.0,107 1.0,109 1.0,114 1.0,123 1.0,127 2.0,128 1.0,134 1.0,137 1.0,142 1.0,149 1.0,154 1.0,170 1.0,181 1.0,185 1.0}
+{0 "/ext4Data/UFSCar/codes/MeetingExplorer/bases/segmentedDocs/Ata 35.pdf.txt_seg-003.txt",19 1.0,23 1.0,28 1.0,91 1.0,143 1.0,147 1.0,156 1.0,182 1.0,184 1.0,205 1.0}
+{0 "/ext4Data/UFSCar/codes/MeetingExplorer/bases/segmentedDocs/Ata 35.pdf.txt_seg-004.txt",15 1.0,28 2.0,40 2.0,41 1.0,49 1.0,52 1.0,53 2.0,76 1.0,83 3.0,84 1.0,101 2.0,113 1.0,136 1.0,144 2.0,147 2.0,148 2.0,155 1.0,169 1.0,183 1.0,193 3.0,208 1.0}
+{0 "/ext4Data/UFSCar/codes/MeetingExplorer/bases/segmentedDocs/Ata 35.pdf.txt_seg-005.txt",1 1.0,23 1.0,53 1.0,96 1.0,147 1.0}
+{0 "/ext4Data/UFSCar/codes/MeetingExplorer/bases/segmentedDocs/Ata 35.pdf.txt_seg-006.txt",29 1.0,94 1.0,154 1.0}
+{0 "/ext4Data/UFSCar/codes/MeetingExplorer/bases/segmentedDocs/Ata 36.pdf.txt_seg-001.txt",2 1.0,11 1.0,14 1.0,21 1.0,22 1.0,28 3.0,30 1.0,32 3.0,34 1.0,35 1.0,40 1.0,42 1.0,48 1.0,50 1.0,51 2.0,53 1.0,56 1.0,58 1.0,64 1.0,67 1.0,70 1.0,71 1.0,75 1.0,80 1.0,81 1.0,85 1.0,91 2.0,92 2.0,93 1.0,99 1.0,106 1.0,107 2.0,108 3.0,109 1.0,111 1.0,112 1.0,114 2.0,115 1.0,123 1.0,125 1.0,126 1.0,127 1.0,128 2.0,129 1.0,130 1.0,134 1.0,135 1.0,137 1.0,138 1.0,142 1.0,145 1.0,148 1.0,150 1.0,152 1.0,154 1.0,157 1.0,161 1.0,162 1.0,163 1.0,168 1.0,170 2.0,180 1.0,181 1.0,185 1.0,188 1.0,189 1.0,203 1.0,204 3.0,209 1.0}
+{0 "/ext4Data/UFSCar/codes/MeetingExplorer/bases/segmentedDocs/Ata 36.pdf.txt_seg-002.txt",127 1.0}
+{0 "/ext4Data/UFSCar/codes/MeetingExplorer/bases/segmentedDocs/Ata 36.pdf.txt_seg-003.txt",28 1.0,36 1.0,65 1.0,143 1.0,156 1.0,164 1.0,182 1.0}
+{0 "/ext4Data/UFSCar/codes/MeetingExplorer/bases/segmentedDocs/Ata 36.pdf.txt_seg-004.txt",7 1.0,8 2.0,26 2.0,37 1.0,38 1.0,40 1.0,44 1.0,53 1.0,83 4.0,86 1.0,101 3.0,104 1.0,120 1.0,136 4.0,137 1.0,144 2.0,145 7.0,147 1.0,148 3.0,150 1.0,152 1.0,174 2.0,178 1.0,179 1.0,189 1.0,190 1.0,202 1.0}
+{0 "/ext4Data/UFSCar/codes/MeetingExplorer/bases/segmentedDocs/Ata 36.pdf.txt_seg-005.txt",13 1.0,36 1.0,118 1.0,144 1.0,148 1.0,167 1.0,201 1.0}
+{0 "/ext4Data/UFSCar/codes/MeetingExplorer/bases/segmentedDocs/Ata 36.pdf.txt_seg-006.txt",24 1.0,53 1.0,62 1.0,68 1.0,83 1.0,96 1.0,146 1.0,197 1.0,202 1.0}
+{0 "/ext4Data/UFSCar/codes/MeetingExplorer/bases/segmentedDocs/Ata 36.pdf.txt_seg-007.txt",15 1.0,28 1.0,49 1.0,113 1.0,144 1.0,147 1.0,148 1.0,155 1.0,183 1.0,193 1.0}
+{0 "/ext4Data/UFSCar/codes/MeetingExplorer/bases/segmentedDocs/Ata 36.pdf.txt_seg-008.txt",19 1.0,23 1.0,25 1.0,36 1.0,53 1.0,57 1.0,59 1.0,62 1.0,82 3.0,87 1.0,131 3.0,137 1.0,145 4.0,147 1.0,158 3.0,164 1.0,166 1.0,182 4.0,184 2.0,189 1.0,195 1.0,205 2.0}
+{0 "/ext4Data/UFSCar/codes/MeetingExplorer/bases/segmentedDocs/Ata 36.pdf.txt_seg-009.txt",154 1.0}

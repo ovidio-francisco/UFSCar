@@ -1,5 +1,9 @@
-
 \chapter{Avaliação dos Extratores de Tópicos}\label{cap-extratores}
+
+
+% 4 - Procedimento (2 consultas, técnicas em ordens diferentes).
+% 5 - Medidas para avaliação.
+% 6 - Conclusão e discussão.
 
 
 
@@ -8,19 +12,36 @@
 % Escolha do método de avaliação (subjetivo com questionario)
 % 
 
+% -- 1 - Motivação para o experimento.
 Nesse capítulo, as técnicas de extração de tópicos são analisadas. O objetivo é comparar os algoritmos de extração de tópicos na tarefa de extração de padrões no contexto das atas de reunião no que tange a qualidade dos agrupamentos e seus descritores bem como sua capacidade de representar os segmentos. Escolheu-se os modelos LDA, PLSA e K-Means para essa análise devido a popularidade desses métodos sendo amplamente utilizados~\cite{DZhu20122} e frequentemente referenciados em trabalhos voltados a organização de bases textuais~\cite{Aggarwal2018, OCallaghan2015, Steyvers2007}.
 
 
-Os métodos foram inicialmente configurados com base em avaliações internas~\cite{Hassani2017} e observações empíricas nas quais escolheu-se os melhores valores para seus parâmetros. Os resultados desses modelos foram submetidos a uma avaliação subjetiva a fim de analisa-los junto a usuários com afinidade com atas de reuniões.
-
+Os métodos foram inicialmente configurados com base em avaliações internas~\cite{Hassani2017} e observações empíricas nas quais escolheu-se os melhores valores para seus parâmetros. Os resultados desses modelos foram submetidos a uma avaliação subjetiva a fim de analisá-los junto a usuários com afinidade com atas de reuniões.
 
 % e comparações
 % com melhores resultados.  
 % Optou-se por uma avaliação subjetiva 
 
 
+
+% -- 2 - Escolha das questões.
+% -- 3 - Escolha dos participantes.
+
+
+
 \section{Configuração experimental}
 
+% A qtd de tópicos é um parametro importante.
+% Todos com 70 tópicos e 5 extratores;
+Durante os primeiros testes empíricos a qualidade dos resultados mostrou-se sensível à quantidade de tópicos extraídos.
+Inicialmente, realizou-se um teste prévio utilizando uma versão não-paramétrica dos algorítimos a fim de automaticamente obter valores ótimos para esse parâmetro por meio da análise das medidas Silhueta e Coesão. Essa configuração automática resulta valores em torno de 20 tópicos. Contudo, apresenta grupos com muitos segmentos (em torno de 100) o que os tornam pouco coesos além de certa dificuldade em julgar capacidade dos descritores em representar bem o tópico.  
+Em observações diretas, valores próximos a entre 60 e 80 mostraram melhores resultados. Nesse trabalho, optou-se por configurar os extratores para extrair 70 tópicos da coleção de segmentos por apresentar melhor resultados aparente na visão de usuário.
+
+Outro fator importante é a quantidade de descritores selecionados para cada tópico. Com base no experimento de anotações em segmentação, descrito no Capítulo~\ref{cap-segmentadores}, os anotadores selecionaram em média 5 palavras para descrever os segmentos, sendo esse valor adotado para essa avaliação.
+
+
+
+% LDA - Gibbs Sampling
 % Parâmetros 
 	% Silueta e Coesão para o K-Means
 	% Alpha e Beta do LDA
