@@ -88,15 +88,11 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 Database file #1: abntex2-options.bib
 Database file #2: referencias.bib
-I was expecting an "="---line 85 of file referencias.bib
- :  // 
- :     author = {Aggarwal, Charu C.},
+Repeated entry---line 113 of file referencias.bib
+ : // @inbook{Aggarwal2018
+ :                        ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 93 of file referencias.bib
- : @inbook{Aggarwal2018
- :                     ,
-I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 1115 of file referencias.bib
+I was expecting a `,' or a `}'---line 1135 of file referencias.bib
  : 
  : year = {2016}
 (Error may have been on previous line)
@@ -108,13 +104,9 @@ Warning--I didn't find a database entry for "Y"
 Warning--I didn't find a database entry for "Z"
 Warning--I didn't find a database entry for "conf/sdm/2013"
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-Warning--para ordenar, precisa dos campos author, organization, editor, title ou key in Aggarwal2018
 Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
 Reallocated global_strs (elt_size=20001) to 20 items from 10.
 Reallocated glb_str_end (elt_size=4) to 20 items from 10.
-`title' is a missing field, not a string, for entry Aggarwal2018
-while executing---line 2217 of file abntex2-alf.bst
-Warning--campo year vazio ou faltando em Aggarwal2018
 Warning--faltando school em Faleiros2016
 Warning--campo year vazio em Faleiros2016
 Warning--faltando school em Reynar1998
@@ -123,45 +115,45 @@ Warning--faltando school em Reynar1998
 | Em caso de dúvidas ou problemas com este estilo procure |
 | http://abntex2.googlecode.com                           |
 +---------------------------------------------------------+
-You've used 65 entries,
+You've used 68 entries,
             6711 wiz_defined-function locations,
-            1746 strings with 24374 characters,
-and the built_in function-call counts, 96764 in all, are:
-= -- 10786
-> -- 2155
-< -- 2081
-+ -- 2808
-- -- 648
-* -- 6472
-:= -- 11726
-add.period$ -- 320
-call.type$ -- 65
-change.case$ -- 718
-chr.to.int$ -- 153
-cite$ -- 69
-duplicate$ -- 8706
-empty$ -- 4390
-format.name$ -- 3088
-if$ -- 20313
-int.to.chr$ -- 2
+            1773 strings with 25213 characters,
+and the built_in function-call counts, 101435 in all, are:
+= -- 11260
+> -- 2287
+< -- 2179
++ -- 2934
+- -- 687
+* -- 6810
+:= -- 12311
+add.period$ -- 337
+call.type$ -- 68
+change.case$ -- 760
+chr.to.int$ -- 166
+cite$ -- 70
+duplicate$ -- 9123
+empty$ -- 4596
+format.name$ -- 3280
+if$ -- 21271
+int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 1195
-newline$ -- 355
-num.names$ -- 318
-pop$ -- 1460
+missing$ -- 1252
+newline$ -- 374
+num.names$ -- 338
+pop$ -- 1518
 preamble$ -- 1
-purify$ -- 264
+purify$ -- 279
 quote$ -- 0
-skip$ -- 8821
+skip$ -- 9188
 stack$ -- 1
-substring$ -- 4411
-swap$ -- 3564
-text.length$ -- 139
+substring$ -- 4631
+swap$ -- 3749
+text.length$ -- 149
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 40
-warning$ -- 5
-while$ -- 542
+type$ -- 31
+warning$ -- 3
+while$ -- 573
 width$ -- 0
-write$ -- 1148
-(There were 19 error messages)
+write$ -- 1208
+(There were 17 error messages)

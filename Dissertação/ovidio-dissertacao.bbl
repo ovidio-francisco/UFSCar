@@ -5,9 +5,11 @@
 \providecommand{\abntbstabout}[1]{}
 \abntbstabout{v-1.9.2 }
 
-\bibitem[]{Aggarwal2018}
-\abntrefinfo{nada}{NADA}{a}
-{FERRET,O. [S.l.: s.n.].}
+\bibitem[Aggarwal 2018]{Aggarwal2018}
+\abntrefinfo{Aggarwal}{AGGARWAL}{2018}
+{AGGARWAL, C.~C. \emph{Machine Learning for Text}. [S.l.]: Springer
+  International Publishing, 2018.
+ISBN 978-3-319-73531-3.}
 
 \bibitem[Aggarwal e Zhai 2012]{Aggarwal2012}
 \abntrefinfo{Aggarwal e Zhai}{AGGARWAL; ZHAI}{2012}
@@ -181,6 +183,14 @@ ISBN 0521836573, 9780521836579.}
 ISSN 0165-5515.
 Dispon{\'\i}vel em: \url{https://doi.org/10.1177/0165551515610989}.}
 
+\bibitem[Hassani e Seidl 2017]{Hassani2017}
+\abntrefinfo{Hassani e Seidl}{HASSANI; SEIDL}{2017}
+{HASSANI, M.; SEIDL, T. Using internal evaluation measures to validate the
+  quality of diverse stream clustering algorithms.
+\emph{Vietnam Journal of Computer Science}, v.~4, n.~3, p. 171--183, Aug 2017.
+ISSN 2196-8896.
+Dispon{\'\i}vel em: \url{https://doi.org/10.1007/s40595-016-0086-9}.}
+
 \bibitem[Hearst 1997]{Hearst1997}
 \abntrefinfo{Hearst}{HEARST}{1997}
 {HEARST, M.~A. Texttiling: Segmenting text into multi-paragraph subtopic
@@ -306,6 +316,15 @@ ISBN 978-1-60558-512-3. Dispon{\'\i}vel em:
 \emph{International Journal of Intelligent Computing and Cybernetics}, v.~9,
   n.~2, p. 165--178, 2016.
 Dispon{\'\i}vel em: \url{https://doi.org/10.1108/IJICC-01-2016-0001}.}
+
+\bibitem[O'Callaghan et al. 2015]{OCallaghan2015}
+\abntrefinfo{O'Callaghan et al.}{O'CALLAGHAN et al.}{2015}
+{O'CALLAGHAN, D. et al. An analysis of the coherence of descriptors in topic
+  modeling.
+\emph{Expert Syst. Appl.}, Pergamon Press, Inc., Tarrytown, NY, USA, v.~42,
+  n.~13, p. 5645--5657, ago. 2015.
+ISSN 0957-4174.
+Dispon{\'\i}vel em: \url{http://dx.doi.org/10.1016/j.eswa.2015.02.055}.}
 
 \bibitem[Passonneau e Litman 1997]{Passonneau1997}
 \abntrefinfo{Passonneau e Litman}{PASSONNEAU; LITMAN}{1997}
@@ -491,5 +510,12 @@ Dispon{\'\i}vel em:
   Management}. New York, NY, USA: ACM, 2004.  (CIKM '04), p. 246--247.
 ISBN 1-58113-874-1. Dispon{\'\i}vel em:
   \url{http://doi.acm.org/10.1145/1031171.1031225}.}
+
+\bibitem[Zhu et al. 2012]{DZhu20122}
+\abntrefinfo{Zhu et al.}{ZHU et al.}{2012}
+{ZHU, D. et al. Intuitive topic discovery by incorporating word-pair's
+  connection into lda. In:  \emph{2012 IEEE/WIC/ACM International Conferences
+  on Web Intelligence and Intelligent Agent Technology}. [S.l.: s.n.], 2012.
+  v.~1, p. 303--310.}
 
 \end{thebibliography}

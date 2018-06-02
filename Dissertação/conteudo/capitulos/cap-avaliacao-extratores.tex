@@ -1,11 +1,31 @@
+
 \chapter{Avaliação dos Extratores de Tópicos}\label{cap-extratores}
 
-Nesse capítulo, as técnicas de extração de tópicos são analisadas em no que tange a qualidade dos agrupamentos e na capacidade dos descritores em representar os segmentos. 
 
-Optou-se por uma avaliação subjetiva 
+
+% Dar uma geral nesse primeiro parágrafo
+% Escolha dos Algorítmos
+% Escolha do método de avaliação (subjetivo com questionario)
+% 
+
+Nesse capítulo, as técnicas de extração de tópicos são analisadas. O objetivo é comparar os algoritmos de extração de tópicos na tarefa de extração de padrões no contexto das atas de reunião no que tange a qualidade dos agrupamentos e seus descritores bem como sua capacidade de representar os segmentos. Escolheu-se os modelos LDA, PLSA e K-Means para essa análise devido a popularidade desses métodos sendo amplamente utilizados~\cite{DZhu20122} e frequentemente referenciados em trabalhos voltados a organização de bases textuais~\cite{Aggarwal2018, OCallaghan2015, Steyvers2007}.
+
+
+Os métodos foram inicialmente configurados com base em avaliações internas~\cite{Hassani2017} e observações empíricas nas quais escolheu-se os melhores valores para seus parâmetros. Os resultados desses modelos foram submetidos a uma avaliação subjetiva a fim de analisa-los junto a usuários com afinidade com atas de reuniões.
+
+
+% e comparações
+% com melhores resultados.  
+% Optou-se por uma avaliação subjetiva 
 
 
 \section{Configuração experimental}
+
+% Parâmetros 
+	% Silueta e Coesão para o K-Means
+	% Alpha e Beta do LDA
+	% PLSA ???
+
 
 
 \section{Critérios de avaliação}
@@ -13,6 +33,5 @@ Optou-se por uma avaliação subjetiva
 % Nesse trabalho, os algoritmos de extração de tópicos foram avaliados subjetivamente. 
 
 \section{Resultados}
-
 
 
