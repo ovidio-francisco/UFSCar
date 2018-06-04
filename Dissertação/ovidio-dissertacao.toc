@@ -54,8 +54,8 @@
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase {Avalia\IeC {\c c}\IeC {\~a}o dos Extratores de T\IeC {\'o}picos}}{53}{chapter.5}
 \contentsline {section}{\numberline {5.1}Configura\IeC {\c c}\IeC {\~a}o experimental}{53}{section.5.1}
-\contentsline {section}{\numberline {5.2}Crit\IeC {\'e}rios de avalia\IeC {\c c}\IeC {\~a}o}{53}{section.5.2}
-\contentsline {section}{\numberline {5.3}Resultados}{53}{section.5.3}
+\contentsline {section}{\numberline {5.2}Crit\IeC {\'e}rios de avalia\IeC {\c c}\IeC {\~a}o}{54}{section.5.2}
+\contentsline {section}{\numberline {5.3}Resultados}{54}{section.5.3}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \contentsline {chapter}{\chapternumberline {6}\MakeTextUppercase {Avalia\IeC {\c c}\IeC {\~a}o do M\IeC {\'o}dulo de Consulta}}{55}{chapter.6}
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}

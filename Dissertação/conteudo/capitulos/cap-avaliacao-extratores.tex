@@ -1,32 +1,44 @@
 \chapter{Avaliação dos Extratores de Tópicos}\label{cap-extratores}
 
-
 % 4 - Procedimento (2 consultas, técnicas em ordens diferentes).
 % 5 - Medidas para avaliação.
 % 6 - Conclusão e discussão.
 
 
-
 % Dar uma geral nesse primeiro parágrafo
 % Escolha dos Algorítmos
 % Escolha do método de avaliação (subjetivo com questionario)
-% 
 
 % -- 1 - Motivação para o experimento.
 Nesse capítulo, as técnicas de extração de tópicos são analisadas. O objetivo é comparar os algoritmos de extração de tópicos na tarefa de extração de padrões no contexto das atas de reunião no que tange a qualidade dos agrupamentos e seus descritores bem como sua capacidade de representar os segmentos. Escolheu-se os modelos LDA, PLSA e K-Means para essa análise devido a popularidade desses métodos sendo amplamente utilizados~\cite{DZhu20122} e frequentemente referenciados em trabalhos voltados a organização de bases textuais~\cite{Aggarwal2018, OCallaghan2015, Steyvers2007}.
+Os algoritmos foram inicialmente configurados com base em avaliações internas~\cite{Hassani2017} e observações empíricas nas quais escolheu-se os melhores valores para seus parâmetros. Os resultados desses modelos foram submetidos a uma avaliação subjetiva a fim de analisá-los junto a usuários com afinidade com atas de reuniões. 
+% A etapa de segmentação textual é avaliada também é avaliada por conveniencia e proximidade dos assuntos.
+A avaliação se deu por meio de questionários onde profissionais com afinidade com atas de reunião forneceram suas percepções em relação aos resultados dos modelos de extração de tópicos. 
 
 
-Os métodos foram inicialmente configurados com base em avaliações internas~\cite{Hassani2017} e observações empíricas nas quais escolheu-se os melhores valores para seus parâmetros. Os resultados desses modelos foram submetidos a uma avaliação subjetiva a fim de analisá-los junto a usuários com afinidade com atas de reuniões.
-
-% e comparações
-% com melhores resultados.  
-% Optou-se por uma avaliação subjetiva 
-
+% -- Explicar que foram 2 consultas (quais) e mostrar os extratores.
 
 
 % -- 2 - Escolha das questões.
+O questionário foi formado por questões envolvendo aspectos os extratores de tópicos e questões referentes à técnica de segmentação textual empregada, conforme mostrado:
+
+\begin{enumerate}
+	\item Todos os trechos apresentados compartilham um mesmo assunto.
+	\item As palavas compra, material, verba, permanente e valor resumem bem o assunto tratado nos trechos.
+	\item Existem trechos que não tratam de um único assunto?
+	\item Existem trechos incompletos e insuficientes para compreensão do assunto do trecho?
+\end{enumerate}
+
+
+A questão 1 está relacionada ao agrupamento dos segmentos. Pretende-se avaliar a Semelhança dos trechos em termos de assunto. 
+
 % -- 3 - Escolha dos participantes.
 
+% -- 4 - Procedimento (2 consultas, técnicas em ordens diferentes).
+% -- 5 - Escolha dos temas para consulta: 
+
+
+Os dados coletados serviram como base para análise dos algoritmos avaliados 
 
 
 \section{Configuração experimental}
