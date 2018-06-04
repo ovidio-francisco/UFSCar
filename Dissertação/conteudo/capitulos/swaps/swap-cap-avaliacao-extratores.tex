@@ -1,37 +1,52 @@
 
-A questão 1 está relacionada ao agrupamento dos segmentos. Pretende-se avaliar a Semelhança dos trechos em termos de assunto. O avaliador é questionado sobre 
 
-As questões 1 e 2 estão relacionadas ao extrator de tópicos. A primeira refere-se ao agrupamento dos segmentos pela qual foi avaliada a semelhança dos trechos em termos de assunto. A segunda questão diz respeito aos descritores selecionados, ao respondê-la o avaliador indicou o quão bem esses termos representam aquele grupo.
-As questões 3 e 4 são ligadas à técnica de segmentação utilizada, o BayesSeg, conforme já mencionado no Capítulo~\ref{cap}. A questão 3 está ligada à coesão de cada segmento, levando em conta a homogeneidade do texto em relação a um assunto. A questão 4 refere-se a completude dos segmentos, ou seja, o quão bem os segmentos podem ser bem compreendidos independentemente da leitura do documento integral.
+com resultados das técnicas de extração de tópicos. 
 
 
+dos segmentos retornados pelas técnicas de extração de tópicos, sendo que cada indivíduo analisou uma consulta à coleção de documentos com resultados das técnicas de extração de tópicos. 
+
+
+
+Os resultados desses cenários foram apresentados a um grupo de usuários que individualmente avaliaram a qualidade dos segmentos retornados pelas técnicas de extração de tópicos, sendo que cada indivíduo analisou uma consulta à coleção de documentos com resultados das técnicas de extração de tópicos. 
+
+Cada avaliador pode  uma consulta 
+
+
+
+
+
+Os resultados de cada cenário foram apresentados ao usuário que pode ler os segmentos retornados e expor sua percepção a cerca dos resultados.
+
+
+
+
+
+ 1 - Motivação para o experimento.
+ 2 - Escolha das questões.
+ 3 - Escolha dos participantes.
+ 4 - Procedimento (2 consultas, técnicas em ordens diferentes).
+ 5 - Medidas para avaliação.
+ 6 - Conclusão e discussão.
+
+
+ % Vale dizer que nessa avaliação o sistema de recuperação de informação não é analisado para que este não interfira na avaliação dos extratores, contudo, o sistema final poderá  ranquear também os segmentos com maior relevância de um ou mais tópicos por meio de técnicas de recuperação de informação. 
+% Como já mencionado no Capítulo~\ref{sec:modulo-consulta} 
+% Para cada cenário, resultou em uma lista de segmentos filtrados pela similaridade entre os descritores e a consulta.
+% coletou-se aleatoriamente 
+ % Nessa avaliação, devido a proximidade a técnica de segmentação textual também foi avaliada subjetivamente em complemento a análise estatística apresentada no Capítulo~\ref{cap-segmentadores}
+% coletados foram analisados a fim de avaliar os algoritmos 
+% A questão 1 está relacionada ao agrupamento dos segmentos. Pretende-se avaliar a Semelhança dos trechos em termos de assunto. O avaliador é questionado sobre 
 % onde o avaliador indica o quanto os 
-
-enquanto a questão 4 refere-se a sua completude, 
-
-Referem-se à coesão de cada segmento e sua completude,respectivamente.
-
-
-a resposta diz respeito
-
-
-
-
+% enquanto a questão 4 refere-se a sua completude, 
+% Referem-se à coesão de cada segmento e sua completude,respectivamente.
+% a resposta diz respeito
 
 % -? A Silueta já não é composta por coesão e separação?
 % -> Como deve ser uma avaliação de extratores de tópicos? --> 
 
-
-
-
 "Semelhança dos trechos em termos de assutno"
 
-
-
-
-
-
-
+" Seleciona o tópico com maior relevância com a consulta "
 
 
 % , em que o valor 70 mostrou 
@@ -40,6 +55,15 @@ a resposta diz respeito
 % e comparações
 % com melhores resultados.  
 % Optou-se por uma avaliação subjetiva 
+
+% LDA - Gibbs Sampling
+% Parâmetros 
+	% Silueta e Coesão para o K-Means
+	% Alpha e Beta do LDA
+	% PLSA ???
+
+
+
 
 
 
