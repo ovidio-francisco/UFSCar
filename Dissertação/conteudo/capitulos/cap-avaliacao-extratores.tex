@@ -38,7 +38,7 @@ Os resultados desses cenários foram apresentados a um grupo de avaliadores que 
 %
 
 % -- 3 - Escolha dos participantes.
-O perfil dos avaliadores é de profissionais da area acadêmica/escolar devido à sua afinidade com o ambiente de gestão e conhecimentos de assuntos relacionados ao \textit{corpus} estudado nesse trabalho. O grupo convidado a participar do experimento é formado por X profissionais da UFSCar campus Sorocaba, X profissionais de escolas técnicas e X profissionais de escolas do Ensino Fundamental, sendo X ocupantes de cargos de gestão como coordenadores de curso, diretores, X membros de conselhos, X profissionais administrativos e X professores, totalizando X avaliadores em que a maioria afirma ter afinidade com atas e reuniões e X declararam nenhuma afinidade com esses documentos. Os avaliadores foram divididos em dois grupos onde cada grupo avaliou as técnicas de extração tópicos a partir de uma consulta (palavras-chave), ou seja, cada indivíduo avaliou 3 cenários distintos. A avaliação consistiu de um documento impresso contendo uma breve apresentação do trabalho, seguido de uma cópia dos resultados das técnicas de extração de tópicos e questões avaliativas sobre cada técnica.
+O perfil dos avaliadores é de profissionais da area acadêmica/escolar devido à sua afinidade com o ambiente de gestão e conhecimentos de assuntos relacionados ao \textit{corpus} estudado nesse trabalho. O grupo convidado a participar do experimento é formado por 24 profissionais da UFSCar campus Sorocaba, 13 profissionais de escolas técnicas e 3 profissionais de escolas do Ensino Fundamental, sendo 11 ocupantes de cargos de gestão como coordenadores de curso, diretores, 17 membros de conselhos, 5 profissionais administrativos e 3 professores, totalizando 40 avaliadores em que a maioria afirma ter afinidade com atas e reuniões e 3 declararam nenhuma afinidade com esses documentos. Os avaliadores foram divididos em dois grupos onde cada grupo avaliou as técnicas de extração tópicos a partir de uma consulta (palavras-chave), ou seja, cada indivíduo avaliou 3 cenários distintos. A avaliação consistiu de um documento impresso contendo uma breve apresentação do trabalho, seguido de uma cópia dos resultados das técnicas de extração de tópicos e questões avaliativas sobre cada técnica.
 
 % X profissionais de gestão de instituições 
 
@@ -74,11 +74,58 @@ As questões 3 e 4 estão ligadas à técnica de segmentação utilizada, o Baye
 Os dados coletados das avaliações foram analisados
 
 
-  \begin{figure}[!h]
-	  \centering
-	  \includegraphics[width=.5\textwidth]{conteudo/capitulos/figs/figuras-experimento/Q1-KMeans.png}
-	  \caption{K-Means - Questão 1}
-	  \label{fig:grafico-medidas-tradicionais}
-  \end{figure}
+
+\begin{figure}[!h] \centering     %%% not \center
+
+	\subfigure{ \label{fig:kmeans}
+		\includegraphics[width=.31\textwidth]{conteudo/capitulos/figs/figuras-experimento/Q1-KMeans.png}
+	}	
+	\subfigure{ \label{fig:lda}
+		\includegraphics[width=.31\textwidth]{conteudo/capitulos/figs/figuras-experimento/Q1-LDA.png}
+	}
+	\subfigure{ \label{fig:plsa}
+		\includegraphics[width=.31\textwidth]{conteudo/capitulos/figs/figuras-experimento/Q1-PLSA.png}
+	}
+	\caption{ \textit{``Todos os trechos apresentados compartilham um mesmo assunto.''} }
+	\label{fig:exemplomatrixrank}
+\end{figure}
+
+
+
+
+\begin{figure}[!h] \centering     %%% not \center
+
+	\subfigure{ \label{fig:kmeans}
+		\includegraphics[width=.31\textwidth]{conteudo/capitulos/figs/figuras-experimento/Q2-KMeans.png}
+	}	
+	\subfigure{ \label{fig:lda}
+		\includegraphics[width=.31\textwidth]{conteudo/capitulos/figs/figuras-experimento/Q2-LDA.png}
+	}
+	\subfigure{ \label{fig:plsa}
+		\includegraphics[width=.31\textwidth]{conteudo/capitulos/figs/figuras-experimento/Q2-PLSA.png}
+	}
+	\caption{\textit{``As palavas <descritores> resumem bem o assunto tratado nos trechos.''} }
+	\label{fig:exemplomatrixrank}
+\end{figure}
+
+
+
+
+
+\begin{figure}[!h] \centering     %%% not \center
+
+	\subfigure{ \label{fig:kmeans}
+		\includegraphics[width=.31\textwidth]{conteudo/capitulos/figs/figuras-experimento/Q3-Seg.png}
+	}	
+	\subfigure{ \label{fig:lda}
+		\includegraphics[width=.31\textwidth]{conteudo/capitulos/figs/figuras-experimento/Q4-Seg.png}
+	}
+	\caption{\textit{``Existem trechos que não tratam de um único assunto?''} \textit{``Existem trechos incompletos e insuficientes para compreensão do assunto do trecho?''} }
+	\label{fig:exemplomatrixrank}
+\end{figure}
+
+
+
+
 
 
