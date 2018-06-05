@@ -368,6 +368,9 @@ INPUT ./conteudo/capitulos/figs/graficos/analiseNSegRate-C99.png
 OUTPUT conteudo/capitulos/cap-avaliacao-extratores.aux
 INPUT conteudo/capitulos/cap-avaliacao-extratores.tex
 INPUT conteudo/capitulos/cap-avaliacao-extratores.tex
+INPUT conteudo/capitulos/figs/figuras-experimento/Q1-KMeans.png
+INPUT ./conteudo/capitulos/figs/figuras-experimento/Q1-KMeans.png
+INPUT ./conteudo/capitulos/figs/figuras-experimento/Q1-KMeans.png
 OUTPUT conteudo/capitulos/cap-avaliacao-modulo-consulta.aux
 INPUT conteudo/capitulos/cap-avaliacao-modulo-consulta.tex
 INPUT conteudo/capitulos/cap-avaliacao-modulo-consulta.tex

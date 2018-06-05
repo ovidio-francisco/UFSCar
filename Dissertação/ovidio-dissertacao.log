@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.8.22)  4 JUN 2018 23:48
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.8.22)  5 JUN 2018 11:06
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1308,7 +1308,11 @@ LaTeX Warning: Label `fig:grafico-medidas-tradicionais' multiply defined.
 
 LaTeX Warning: Label `fig:grafico-medidas-tradicionais' multiply defined.
 
-) (./conteudo/capitulos/cap-avaliacao-extratores.aux) (./conteudo/capitulos/cap-avaliacao-modulo-consulta.aux))
+) (./conteudo/capitulos/cap-avaliacao-extratores.aux
+
+LaTeX Warning: Label `fig:grafico-medidas-tradicionais' multiply defined.
+
+) (./conteudo/capitulos/cap-avaliacao-modulo-consulta.aux))
 \openout1 = `ovidio-dissertacao.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 160.
@@ -1987,7 +1991,12 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 
-] [54]) [55]
+] [54] <conteudo/capitulos/figs/figuras-experimento/Q1-KMeans.png, id=1710, 464.73625pt x 287.0725pt>
+File: conteudo/capitulos/figs/figuras-experimento/Q1-KMeans.png Graphic file (type png)
+ <use conteudo/capitulos/figs/figuras-experimento/Q1-KMeans.png>
+Package pdftex.def Info: conteudo/capitulos/figs/figuras-experimento/Q1-KMeans.png used on input line 79.
+(pdftex.def)             Requested size: 227.5pt x 140.52658pt.
+) [55 <./conteudo/capitulos/figs/figuras-experimento/Q1-KMeans.png (PNG copy)>]
 \openout2 = `conteudo/capitulos/cap-avaliacao-modulo-consulta.aux'.
 
  (./conteudo/capitulos/cap-avaliacao-modulo-consulta.tex [56
@@ -2030,18 +2039,18 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 316.
 ### simple group (level 1) entered at line 1061 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 16686 strings out of 494884
- 252506 string characters out of 6179236
- 469527 words of memory out of 5000000
- 19158 multiletter control sequences out of 15000+600000
+ 16693 strings out of 494884
+ 252821 string characters out of 6179236
+ 469519 words of memory out of 5000000
+ 19162 multiletter control sequences out of 15000+600000
  110271 words of font info for 174 fonts, out of 8000000 for 9000
  38 hyphenation exceptions out of 8191
  50i,15n,40p,1335b,2995s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc}</usr/share/texmf/fonts/type1/public/lm/lmbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx8.pfb></usr/share/texmf/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi6.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr7.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/public/lm/lmri8.pfb></usr/share/texmf/fonts/type1/public/lm/lmss10.pfb></usr/share/texmf/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss17.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsso12.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt12.pfb>
-Output written on ovidio-dissertacao.pdf (66 pages, 1850371 bytes).
+Output written on ovidio-dissertacao.pdf (66 pages, 1856922 bytes).
 PDF statistics:
- 2210 PDF objects out of 2487 (max. 8388607)
- 1451 compressed objects within 15 object streams
- 261 named destinations out of 1000 (max. 500000)
- 37974 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 2212 PDF objects out of 2487 (max. 8388607)
+ 1452 compressed objects within 15 object streams
+ 262 named destinations out of 1000 (max. 500000)
+ 37979 words of extra memory for PDF output out of 42996 (max. 10000000)
 
