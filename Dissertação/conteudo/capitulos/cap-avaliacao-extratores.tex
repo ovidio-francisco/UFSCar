@@ -15,8 +15,7 @@ A avaliação se deu por meio de questionários onde profissionais com afinidade
 
 \section{Configuração experimental}
 
-% A qtd de tópicos é um parametro importante.
-% Todos com 70 tópicos e 5 extratores;
+% A qtd de tópicos é um parametro importante.  % Todos com 70 tópicos e 5 extratores;
 Durante os primeiros testes empíricos a qualidade dos resultados mostrou-se sensível à quantidade de tópicos extraídos.
 Inicialmente, realizou-se um teste prévio utilizando uma versão não-paramétrica dos algorítimos a fim de automaticamente obter valores ótimos para esse parâmetro por meio da análise das medidas Silhueta e Coesão. Essa configuração automática resulta valores em torno de 20 tópicos. Contudo, apresenta grupos com muitos segmentos (em torno de 100) o que os tornam pouco coesos além de certa dificuldade em julgar capacidade dos descritores em representar bem o tópico.  
 Em observações diretas, valores próximos a entre 60 e 80 mostraram melhores resultados. Nesse trabalho, optou-se por configurar os extratores para extrair 70 tópicos da coleção de segmentos por apresentar melhor resultados aparente na visão de usuário.
@@ -62,8 +61,8 @@ Para afastar a hipótese de que os resultados das técnicas fossem influenciados
 
 
 
-% -< O objetivo é comparar os algoritmos de extração de tópicos na tarefa de extração de padrões no contexto das atas de reunião no que tange a qualidade dos agrupamentos e seus descritores bem como sua capacidade de representar os segmentos.
 
+% A primeira refere-se ao agrupamento dos segmentos pela qual foi avaliada a semelhança dos trechos em termos de assunto.
 
 \section{Resultados}
 
@@ -71,10 +70,10 @@ Nessa seção, os dados coletados das avaliações são apresentados e analisado
 (1) comparar algoritmos de extração de tópicos na tarefa de extração de padrões no contexto das atas de reunião, 
 (2) analisar a qualidade dos agrupamentos no que tange a navegação por grupos com mesmo tópico, 
 (3) analisar a qualidade dos descritores extraídos para recuperar os documentos dos grupos,
-(4) validar performance do segmentador empregado.
+(4) validar a performance do segmentador empregado.
 
 
-Na Figura~\ref{fig:Q1} é apresentado as frequência das respostas coletadas sobre a primeira questão a qual refere-se a coesão dos segmentos em relação a semelhança dos segmentos em termos de assunto. Verifica-se que o K-Means tem resultados similares ao LDA enquanto o PLSA se mostrou menos eficiente nesse critério uma vez que mais avaliadores rejeitaram a afirmação de que todos os segmentos tratam de um único assunto em comum. 
+Na Figura~\ref{fig:Q1} é apresentado as frequência das respostas coletadas sobre a primeira questão a qual refere-se a qualidade do agrupamento levando em conta a semelhança dos segmentos em termos de assunto. Verifica-se que o K-Means tem resultados similares ao LDA enquanto o PLSA se mostrou menos eficiente nesse critério uma vez que mais avaliadores rejeitaram a afirmação de que todos os segmentos tratam de um único assunto em comum. 
 
 \begin{figure}[!h] \centering     %%% not \center
 
@@ -99,6 +98,8 @@ Na Figura~\ref{fig:Q1} é apresentado as frequência das respostas coletadas sob
 
 
 
+% A segunda questão diz respeito aos descritores selecionados, ao respondê-la o avaliador indicou o quão bem esses termos representam aquele grupo.
+Outro ponto importante a ser analisado é a capacidade representativa dos descritores, ou seja, o quão bem os descritores podem representar o tópico ao qual os segmentos foram atribuídos. Observa-se na Figura~\ref{fig:Q2} no K-Means a maior diferença entre as opiniões positivas e negativas, sendo a maioria concordante com a afirmação de que os descritores extraídos são bons atributos para descrever o teor dos segmentos extraídos.
 
 \begin{figure}[!h] \centering     %%% not \center
 
@@ -122,7 +123,14 @@ Na Figura~\ref{fig:Q1} é apresentado as frequência das respostas coletadas sob
 \end{figure}
 
 
+% -- Conclusão : extração de padrões	
+Ao analisar os resultados, verifica-se que de maneira geral os modelos K-Means e LDA podem ser considerados satisfatórios na tarefa de agrupar e representar os segmentos das atas.
+Verifica-se também que para o modelo K-Means os avaliadores identificaram que, na maioria dos casos, houve resultados satisfatórios, principalmente quanto a representatividade dos descritores. Embora a avaliação aponte imperfeições, esse modelo apresenta maior uniformidade em relação aos demais.
 
+
+
+Esse experimento foi aproveitado para validar o segmentador empregado nesse trabalho. Uma vez que esta uma etapa anterior à extração de tópicos a princípio, a modelo que selecionou os segmentos não interfere em sua avaliação. Assim, a Figura~\ref{fig:Q3e4} mostra as respostas do avaliadores considerando todos os cenários. As respostas referentes a terceira questão, na qual se averígua a homogeneidade de cada segmento quanto ao seu assunto central, apontam que poucos segmentos contém mais de um assunto.
+Ainda sobre a qualidade da segmentação, a quarta questão investiga a integridade de cada segmento, isto é, sua capacidade de informar o usuário sobre o assunto que trata sem necessidade de se recorrer a leitura do documento integral. Nesse critério, a maioria das avaliações indicam que nenhum ou poucos segmentos apresentam texto insuficiente para leitura.
 
 
 \begin{figure}[!h] \centering     %%% not \center
@@ -135,7 +143,7 @@ Na Figura~\ref{fig:Q1} é apresentado as frequência das respostas coletadas sob
 	}
 	\caption{Contagem de respostas referente a terceira e quarta questão. Os eixos verticais indicam as frequências das alternativas representadas no eixos horizontais por:
 		a=\textit{``Nenhum''}
-		b=\textit{``Pouco''}
+		b=\textit{``Poucos''}
 		c=\textit{``Nem Muitos, nem Poucos''}
 		d=\textit{``Muitos''}
 		e=\textit{``Todos''}.
@@ -145,6 +153,12 @@ Na Figura~\ref{fig:Q1} é apresentado as frequência das respostas coletadas sob
 
 
 
+
+% -- Conclusão : do conjunto das técnicas de extração e segmentação
+
+Nessa Seção, analisou-se as técnicas de segmentação textual e extração de tópicos na criação de uma estrutura derivada do \textit{corpus} original como uma representação estruturada da coleção de atas a qual foi organizada e acrescida de atributos para sua descrição. As analises sugerem que tais técnicas podem oferecer a sistemas de recuperação uma representação estruturada que preserva o conteúdo dos documentos ao mesmo tempo que cria atributos adicionais que incorporam informação à base de dados e podem ser inseridas no espaço de busca.  
+
+% Na maioria dos casos, os dados coletados apontam 
 
 
 
