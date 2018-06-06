@@ -1,35 +1,15 @@
 
 
 
-
-a qualidade de uma consulta à coleção de documentos a partir das técnicas de extração de tópicos analisadas nessa avaliação, ou seja, 
-
-
-
-
-
-
-
-
-com resultados das técnicas de extração de tópicos. 
-
-
-dos segmentos retornados pelas técnicas de extração de tópicos, sendo que cada indivíduo analisou uma consulta à coleção de documentos com resultados das técnicas de extração de tópicos. 
-
-
+% a qualidade de uma consulta à coleção de documentos a partir das técnicas de extração de tópicos analisadas nessa avaliação, ou seja, 
+% dos segmentos retornados pelas técnicas de extração de tópicos, sendo que cada indivíduo analisou uma consulta à coleção de documentos com resultados das técnicas de extração de tópicos. 
 
 % Os resultados desses cenários foram apresentados a um grupo de usuários que individualmente avaliaram a qualidade de uma consulta à coleção de documentos a partir das técnicas de extração de tópicos analisadas nessa avaliação, ou seja, cada indivíduo avaliou 3 cenários distintos, .
 % Os resultados desses cenários foram apresentados a um grupo de usuários que individualmente avaliaram a qualidade dos segmentos retornados pelas técnicas de extração de tópicos, sendo que cada indivíduo analisou uma consulta à coleção de documentos com resultados das técnicas de extração de tópicos. 
 
-Cada avaliador pode  uma consulta 
-
-
-
 
 
 Os resultados de cada cenário foram apresentados ao usuário que pode ler os segmentos retornados e expor sua percepção a cerca dos resultados.
-
-
 
 
  1 - Motivação para o experimento.
@@ -40,6 +20,7 @@ Os resultados de cada cenário foram apresentados ao usuário que pode ler os se
  6 - Conclusão e discussão.
 
 
+% Nesse trabalho, os algoritmos de extração de tópicos foram avaliados subjetivamente. 
  % Vale dizer que nessa avaliação o sistema de recuperação de informação não é analisado para que este não interfira na avaliação dos extratores, contudo, o sistema final poderá  ranquear também os segmentos com maior relevância de um ou mais tópicos por meio de técnicas de recuperação de informação. 
 % Como já mencionado no Capítulo~\ref{sec:modulo-consulta} 
 % Para cada cenário, resultou em uma lista de segmentos filtrados pela similaridade entre os descritores e a consulta.
@@ -73,14 +54,7 @@ Os resultados de cada cenário foram apresentados ao usuário que pode ler os se
 	% Alpha e Beta do LDA
 	% PLSA ???
 
-
-
-
-
-
 % Durante os primeiros testes empíricos a qualidade dos resultados mostrou-se sensível à quantidade de tópicos extraídos, em que o valor 70 mostrou melhores resultados. Outro fator importante é a quantidade de descritores selecionados para cada tópico, com base no experimento de anotações em segmentação, os anotadores selecionaram em média 5 palavras para descrever os segmentos, sendo esse valor adotado para a avaliação.
-
-
 
 
 
@@ -93,56 +67,30 @@ Os resultados de cada cenário foram apresentados ao usuário que pode ler os se
 
 Avaliação Subjetiva do extrator de tópicos:
 
-1 - Comparar algoritmos de extração de tópicos na tarefa de extração de padrões no contexto
-das atas de reunião. 
-2 - Analisar a qualidade dos agrupamentos no que tange a navegação por grupos com mesmo tópico, 
-3 - Analisar a qualidade dos descritores extraídos para recuperar os documentos dos grupos.
+(1) comparar algoritmos de extração de tópicos na tarefa de extração de padrões no contexto das atas de reunião, (2) analisar a qualidade dos agrupamentos no que tange a navegação por grupos com mesmo tópico, (3) analisar a qualidade dos descritores extraídos para recuperar os documentos dos grupos.
 
 
 Tarefas:
-
-Fazer uma busca no sistema pelos termos "concessão de bolsa".
-
 Localizar segmentos que abordem esse assunto na lista ranqueada.
-
 Localizar segmentos que abordem esse assunto utilizado o agrupamento.
-
 Encontrar o documento original de um segmento que aborde esse assunto.
 
-Responder:
-
-
 * É possível identificar claramente os tópicos das coleções com bases nas respectivas categorias?
-
-
 * A navegação pelos tópicos ajuda a conduzir o usuário para o documento desejado?
-
-
 * Os descritores dos tópicos são bons representantes do assunto dos documentos?
-
-
 * Os segmentos apresentados são suficientes para entender o tópico?
-
-
-% - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
-
 
 
 
  % ------------------------------
 
-
  - O K-Means se sobre-sai enquanto PLSA e LDA são equivalentes.
-
 
 --> O segmentador, sendo uma etapa anterior a extração de tópicos, influencia na qualidade do grupos??
 
 --> O K-means traz melhores segmentos (Sem misturar assuntos) em relação aos outros métodos.
 
-
 'Aparentemente o K-means seleciona os trechos mais coesos, mas precisa de mais experimentos, mais amostras ...'
-
-
 
 
  1 - Motivação para o experimento.
@@ -156,7 +104,7 @@ Responder:
 % ------------------------------
 % ------------------------------
 
---> Seria uma tecnica mais estável que  outra? 
+--> Seria uma tecnica mais estável que outra? 
 
 
 --> Com os meus avaliadores T1 > T2 > T3
@@ -176,66 +124,18 @@ Procedimento --> Ordem alternada das Técnicas
 'Usando o K-Means as pessoas identificaram que na maioria dos casos foi .. não é perfeito mais ... tem uma uniformidade maior em termos dos assuntos '
 
 
-
-
-
-
-
-
-
 % Neste capítulo, o processo de extração de tópicos em segmentos de atas de reunião é avaliado. A avaliação experimental neste trabalho é focada em três pontos principais: (1) Comparar algoritmos de extração de tópicos na tarefa de extração de padrões no contexto das atas de reunião.  (2) Analisar a qualidade dos agrupamentos no que tange a navegação por grupos com mesmo tópico, (3) Analisar a qualidade dos descritores extraídos para recuperar os documentos dos grupos.  %(padrões = descritores e agrupamento)  
-
 
 
 
 Nas próximas seções, são apresentadas as coleções textuais a serem utilizadas na avaliação experimental. Em seguida, é descrita a configuração dos experimentos, com o ajuste de parâmetros dos algoritmos e os critérios de avaliação. Por fim, são apresentados os experimentos realizados e uma análise dos resultados.
 
 
-
-
-
+% --------------->>
 Neste capítulo, o processo de extração de tópicos em sub-documentos de atas de reunião é avaliado. A avaliação experimental neste trabalho é focada em três pontos principais: 
 (1) Analisar a qualidade dos agrupamentos no que tange a navegação por grupos com mesmo tópico, 
 (2) Analisar a qualidade dos descritores extraídos para recuperar os documentos dos grupos.
 % na representação dos sub-documentos.
-
-
-
-
-
-
-
-
-
-
-
-0 - Nada;
-1 - Pouco;
-2 - Razoável;
-3 - Bom;
-4 - Excelente;
-
-
-
-Avaliação da UX do sistema ...
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

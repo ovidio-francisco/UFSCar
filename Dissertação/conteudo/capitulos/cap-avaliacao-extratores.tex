@@ -57,23 +57,24 @@ As respostas seguiram a escala \textit{Likert}~\cite{Norman2010} com 5 alternati
 
 As questões 1 e 2 estão relacionadas ao extrator de tópicos. A primeira refere-se ao agrupamento dos segmentos pela qual foi avaliada a semelhança dos trechos em termos de assunto. A segunda questão diz respeito aos descritores selecionados, ao respondê-la o avaliador indicou o quão bem esses termos representam aquele grupo.
 As questões 3 e 4 estão ligadas à técnica de segmentação utilizada, o BayesSeg conforme já mencionado no Capítulo~\ref{cap-segmentadores}. A questão 3 está ligada à coesão de cada segmento, levando em conta a homogeneidade do texto em relação a um assunto. A questão 4 refere-se a completude dos segmentos, ou seja, o quão bem os segmentos podem ser bem compreendidos independentemente da leitura do documento integral.
-
-
+Para afastar a hipótese de que os resultados das técnicas fossem influenciados pela ordem apresentada, essas foram apresentadas aos avaliadores em ordem aleatórias.
 % -- 5 - Escolha dos temas para consulta: 
 
 
 
+% -< O objetivo é comparar os algoritmos de extração de tópicos na tarefa de extração de padrões no contexto das atas de reunião no que tange a qualidade dos agrupamentos e seus descritores bem como sua capacidade de representar os segmentos.
 
-
-
-% Nesse trabalho, os algoritmos de extração de tópicos foram avaliados subjetivamente. 
 
 \section{Resultados}
 
+Nessa seção, os dados coletados das avaliações são apresentados e analisados. Os modelos de extração de tópicos discutidos nesse trabalhos são comparados de acordo com os critérios mencionados anteriormente: 
+(1) comparar algoritmos de extração de tópicos na tarefa de extração de padrões no contexto das atas de reunião, 
+(2) analisar a qualidade dos agrupamentos no que tange a navegação por grupos com mesmo tópico, 
+(3) analisar a qualidade dos descritores extraídos para recuperar os documentos dos grupos,
+(4) validar performance do segmentador empregado.
 
-Os dados coletados das avaliações foram analisados
 
-
+Na Figura~\ref{fig:Q1} é apresentado as frequência das respostas coletadas sobre a primeira questão a qual refere-se a coesão dos segmentos em relação a semelhança dos segmentos em termos de assunto. Verifica-se que o K-Means tem resultados similares ao LDA enquanto o PLSA se mostrou menos eficiente nesse critério uma vez que mais avaliadores rejeitaram a afirmação de que todos os segmentos tratam de um único assunto em comum. 
 
 \begin{figure}[!h] \centering     %%% not \center
 
@@ -85,9 +86,15 @@ Os dados coletados das avaliações foram analisados
 	}
 	\subfigure{ \label{fig:plsa}
 		\includegraphics[width=.31\textwidth]{conteudo/capitulos/figs/figuras-experimento/Q1-PLSA.png}
+	} 
+	\caption{Contagem de respostas referente a primeira questão cujo enunciado foi:\textit{``Todos os trechos apresentados compartilham um mesmo assunto.''}. O eixo vertical indica a frequência das alternativas representadas no eixo horizontal por:
+		a=\textit{``Discordo Totalmente''}
+		b=\textit{``Discordo Parcialmente''}
+		c=\textit{``Não Concordo, nem Discordo''}
+		d=\textit{``Concordo Parcialmente''}
+		e=\textit{``Concordo Totalmente''}.
 	}
-	\caption{ \textit{``Todos os trechos apresentados compartilham um mesmo assunto.''} }
-	\label{fig:exemplomatrixrank}
+	\label{fig:Q1}
 \end{figure}
 
 
@@ -104,8 +111,14 @@ Os dados coletados das avaliações foram analisados
 	\subfigure{ \label{fig:plsa}
 		\includegraphics[width=.31\textwidth]{conteudo/capitulos/figs/figuras-experimento/Q2-PLSA.png}
 	}
-	\caption{\textit{``As palavas <descritores> resumem bem o assunto tratado nos trechos.''} }
-	\label{fig:exemplomatrixrank}
+	\caption{Contagem de respostas referente a segunda questão cujo enunciado foi:\textit{``As palavas <descritores> resumem bem o assunto tratado nos trechos.''}. O eixo vertical indica a frequência das alternativas representadas no eixo horizontal por:
+		a=\textit{``Discordo Totalmente''}
+		b=\textit{``Discordo Parcialmente''}
+		c=\textit{``Não Concordo, nem Discordo''}
+		d=\textit{``Concordo Parcialmente''}
+		e=\textit{``Concordo Totalmente''}.
+	}
+	\label{fig:Q2}
 \end{figure}
 
 
@@ -114,14 +127,20 @@ Os dados coletados das avaliações foram analisados
 
 \begin{figure}[!h] \centering     %%% not \center
 
-	\subfigure{ \label{fig:kmeans}
-		\includegraphics[width=.31\textwidth]{conteudo/capitulos/figs/figuras-experimento/Q3-Seg.png}
+	\subfigure{ \label{fig:seg1}
+		\includegraphics[width=.48\textwidth]{conteudo/capitulos/figs/figuras-experimento/Q3-Seg.png}
 	}	
-	\subfigure{ \label{fig:lda}
-		\includegraphics[width=.31\textwidth]{conteudo/capitulos/figs/figuras-experimento/Q4-Seg.png}
+	\subfigure{ \label{fig:seg2}
+		\includegraphics[width=.48\textwidth]{conteudo/capitulos/figs/figuras-experimento/Q4-Seg.png}
 	}
-	\caption{\textit{``Existem trechos que não tratam de um único assunto?''} \textit{``Existem trechos incompletos e insuficientes para compreensão do assunto do trecho?''} }
-	\label{fig:exemplomatrixrank}
+	\caption{Contagem de respostas referente a terceira e quarta questão. Os eixos verticais indicam as frequências das alternativas representadas no eixos horizontais por:
+		a=\textit{``Nenhum''}
+		b=\textit{``Pouco''}
+		c=\textit{``Nem Muitos, nem Poucos''}
+		d=\textit{``Muitos''}
+		e=\textit{``Todos''}.
+	}
+	\label{fig:Q3e4}
 \end{figure}
 
 
