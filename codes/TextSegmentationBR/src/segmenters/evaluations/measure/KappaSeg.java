@@ -90,7 +90,11 @@ public class KappaSeg {
 		double po = findPo();
 		double pe = findPe();
 		
-		return (po - pe) / (1-pe);
+		double result = (po - pe) / (1-pe);
+		if (result < 0 ) result = result+1;      
+		
+		
+		return result;
 	}
 
 	private double findPe() {

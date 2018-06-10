@@ -118,11 +118,7 @@ $^{[13]}$ &
 	\end{figure}
 \end{center}
 
-Para mensurar a concordância entre anotadores, a medida \textit{kappa (k)}~\cite{Carletta1996} é frequentemente utilizada~\cite{Gruenstein2007, Cardoso2017, Hearst1997}. 
-% Essa medida retorna um valor no intervalo de 0 até 1, onde 1 significa uma concordância perfeita e 0 que não houve concordância. 
-Embora~\cite{Carletta1996} afirme que valores de k~>~0.8 indicam que os dados são confiáveis, visto a subjetividade da tarefa de segmentação textual, medidas menores podem ser aceitaveis, como reportado em~\cite{Hearst1997} que alcançou k~=~0,64 e~\cite{Cardoso2017}, k~=~0,56.  
-
-A Tabela~\ref{tab:segmentacaoreferencia} contém, para cada ata, a quantidade de sentenças e a quantidade de segmentos identificadas pelos participantes.
+Para mensurar a concordância entre anotadores, a medida \textit{kappa (k)}~\cite{Carletta1996} é frequentemente utilizada~\cite{Gruenstein2007, Cardoso2017, Hearst1997}.  Essa medida retorna um valor no intervalo de 0 até 1, onde 1 significa uma concordância perfeita e 0 que não houve concordância. A Tabela~\ref{tab:segmentacaoreferencia} contém, para cada ata, a quantidade de sentenças e a quantidade de segmentos identificadas pelos participantes e as médias das medidas \textit{WindowDiff}, $P_k$ e \textit{Kappa}.
 
 
 \begin{table}[!h]
@@ -143,24 +139,31 @@ A Tabela~\ref{tab:segmentacaoreferencia} contém, para cada ata, a quantidade de
 		\textbf{WD}  \\	\hline
 
 % 		              A1   A2   A3  A4    A5   A6   A7   A8   A9   
-		Ata 1  & 25 & 7  & 4  & 11 & 6  & 16 & 8  & 8  & 15 & 16 &  0.344  & 0.433 & 0.631 \\ \hline 
-		Ata 2  & 17 & 4  & 4  & 8  & 6  & 11 & 6  & 6  & 15 & 14 &  0.266  & 0.439 & 0.565 \\ \hline 
-		Ata 3  & 26 & 6  & 6  & 8  & 4  & 15 & 9  & 10 & 18 & 14 &  0.328  & 0.442 & 0.590 \\ \hline 
-		Ata 4  & 26 & 5  & 5  & 10 & 6  & 14 & 17 & 7  & 11 & 12 &  0.364  & 0.364 & 0.562 \\ \hline 
-		Ata 5  & 33 & 4  & 4  & 6  & 5  & 17 & 22 & 9  & 18 & 16 &  0.315  & 0.458 & 0.889 \\ \hline 
-		Ata 6  & 11 & 3  & 4  & 6  & 4  & 9  & 9  & 4  & 7  &  5 &  0.314  & 0.404 & 0.463 \\ \hline 
-		Ata 7  & 20 & 3  & 7  & 5  & 4  & 11 & 14 & 5  & 5  &  4 &  0.235  & 0.343 & 0.507 \\ \hline 
-		Ata 8  & 35 & 4  & 8  & 3  & 8  & 12 & 17 & 5  & 11 &  9 &  0.211  & 0.421 & 0.629 \\ \hline 
-		Ata 9  & 24 & 3  & 5  & 3  & 6  & 11 & 11 & 3  & 9  &  9 &  0.234  & 0.472 & 0.660 \\ \hline 
-		Ata 10 & 50 & 4  & 5  & 4  & 7  & 31 & 29 & 5  & 9  &  8 &  0.170  & 0.428 & 0.937 \\ \hline 
-		Ata 11 & 43 & 4  & 7  & 5  & 7  & 29 & 19 & 5  & 9  & 12 &  0.209  & 0.368 & 0.704 \\ \hline 
-		Ata 12 & 56 & 3  & 10 & 4  & 16 & 33 & 25 & 4  & 13 & 11 &  0.222  & 0.452 & 0.913 \\ \hline 
+		Ata 1  & 25 & 7  & 4  & 11 & 6  & 16 & 8  & 8  & 15 & 16 &  0.344 & 0.593 & 0.475 \\ \hline 
+		Ata 2  & 17 & 4  & 4  & 8  & 6  & 11 & 6  & 6  & 15 & 14 &  0.377 & 0.572 & 0.509 \\ \hline 
+		Ata 3  & 26 & 6  & 6  & 8  & 4  & 15 & 9  & 10 & 18 & 14 &  0.384 & 0.603 & 0.524 \\ \hline 
+		Ata 4  & 26 & 5  & 5  & 10 & 6  & 14 & 17 & 7  & 11 & 12 &  0.447 & 0.652 & 0.540 \\ \hline 
+		Ata 5  & 33 & 4  & 4  & 6  & 5  & 17 & 22 & 9  & 18 & 16 &  0.315 & 0.595 & 0.364 \\ \hline 
+		Ata 6  & 11 & 3  & 4  & 6  & 4  & 9  & 9  & 4  & 7  &  5 &  0.397 & 0.605 & 0.576 \\ \hline 
+		Ata 7  & 20 & 3  & 7  & 5  & 4  & 11 & 14 & 5  & 5  &  4 &  0.374 & 0.658 & 0.506 \\ \hline 
+		Ata 8  & 35 & 4  & 8  & 3  & 8  & 12 & 17 & 5  & 11 &  9 &  0.378 & 0.611 & 0.471 \\ \hline 
+		Ata 9  & 24 & 3  & 5  & 3  & 6  & 11 & 11 & 3  & 9  &  9 &  0.428 & 0.591 & 0.478 \\ \hline 
+		Ata 10 & 50 & 4  & 5  & 4  & 7  & 31 & 29 & 5  & 9  &  8 &  0.309 & 0.598 & 0.233 \\ \hline 
+		Ata 11 & 43 & 4  & 7  & 5  & 7  & 29 & 19 & 5  & 9  & 12 &  0.348 & 0.645 & 0.412 \\ \hline 
+		Ata 12 & 56 & 3  & 10 & 4  & 16 & 33 & 25 & 4  & 13 & 11 &  0.278 & 0.577 & 0.102 \\ \hline 
 
 	\end{tabular}
 	% \caption{Quantidade de sentenças e segmentos de referência por ata.}
 	\caption{Descrição dos resultados obtidos pelos anotadores. Na segunda coluna, Sent., é mostrado a quantidade de sentenças de cada ata. Nas colunas A1-A9 é mostrado as quantidades de segmentos informados pelos anotadores. As colunas K, P$_k$ e WD indicam respectivamente as medidas Kappa, P$_k$ e WindDiff calculadas.}
 	\label{tab:segmentacaoreferencia}
 \end{table}
+
+
+
+Embora~\cite{Carletta1996} afirme que valores de k~>~0.8 indicam que os dados são confiáveis, visto a subjetividade da tarefa de segmentação textual, medidas menores podem ser aceitáveis, como reportado em~\cite{Hearst1997} que alcançou k~=~0,64 e~\cite{Cardoso2017}, k~=~0,56. Além dos baixos valores para as medidas nota-se também que o anotadores divergem na quantidade de segmentos, o que aponta diferentes anotadores tem percepções distintas quanto a granularidade de assuntos, ou seja, trechos com pequenas mudanças de assunto são entendidas como segmentos diferentes por alguns anotadores, enquanto outros entendem como pertencentes ao mesmo assunto.
+
+
+
 
 
 
@@ -176,7 +179,7 @@ O \textit{TextTiling} permite ajustarmos dois parâmetros, sendo o tamanho da ja
 % -> Parâmetros do C99
 O \textit{C99} permite o ajuste de três parâmetros, sendo, o primeiro a quantidade segmentos desejados, uma vez que, não se conhece o número ideal de segmentos e os documentos não apresentam muitos candidatos, calculou-se uma proporção dos candidatos a limite. Para isso atribuiu-se os valores {0,2; 0,4; 0,6; 0,8}. Para o segundo parâmetro, o tamanho do quadro utilizado para gerar a matriz de ranking, atribuiu-se os valores 9 e 11, sendo 11 o valor padrão da apresentado pelo autor. O algoritmo permite ainda indicar se as sentenças serão representados por vetores contendo a frequência ou o peso de cada termo. Ambas as representações foram utilizadas. Considerando todos os parâmetros, foram geradas 16 configurações para o algoritmo \textit{C99}.
 
-Os algoritmos tradicionais baseados em coesão léxica como o \textit{TextTiling} e \textit{C99} são fortemente afetados pela distribuição das palavras no texto, pois a maioria das medidas de similaridade baseiam-se na frequência das palavras. Para esses, a remoção de termos menos significativo na etapa de pré-processamento pode influenciar o desempenho. Para outras abordagens como \textit{MinCutSeg} e \textit{BayesSeg} usou-se as configurações fornecidas por~\cite{Eisenstein2008}, onde essas técnicas foram utilizadas como \textit{base line}. Para \textit{TextSeg} não requer configuração de parâmetros.
+Os algoritmos tradicionais baseados em coesão léxica como o \textit{TextTiling} e \textit{C99} são fortemente afetados pela distribuição das palavras no texto, pois a maioria das medidas de similaridade baseiam-se na frequência das palavras. Para esses, a remoção de termos menos significativos na etapa de pré-processamento pode influenciar o desempenho. Para outras abordagens como \textit{MinCutSeg} e \textit{BayesSeg} usou-se as configurações fornecidas por~\cite{Eisenstein2008}, onde essas técnicas foram utilizadas como \textit{base line}. Para \textit{TextSeg} não requer configuração de parâmetros.
 Há ainda outras estratégias passíveis de aplicação, como a utilização de fontes externas, por exemplo \textit{thesaurus} e palavras pista, como discutido em \cite{Naili2016, Gutierrez2016, Ferret2009}. Nesse trabalho, essas estratégias não são utilizadas para manter uma abordagem não supervisionada e independente de domínio. 
 % evitar a necessidade de  
 	
@@ -193,25 +196,15 @@ Calculou-se as medidas configurando cada algoritmo conforme mostrado na Subseç�
 A fim de conhecer o impacto do pré-processamento nos algoritmos \textit{TextTiling} e \textit{C99}. Esses foram testados em duas etapas: com o texto integral, e com o texto pré-processado em que elementos menos significativos foram removidos, conforme mencionado na Seção~\ref{sec:modulo-preparacao}.  
 O teste de Friedman foi utilizado para gerar um ranking das melhores configurações para cada medida calculada. Com isso, foi possível descobrir quais valores otimizam um algoritmo para cada medida, considerando seus parâmetros e a influência do pré-processamento. 
  
-Como já mencionado, os algoritmos \textit{MinCutSeg}, \textit{TextSeg} e \textit{BayesSeg} aplicou-se a etapa de pré-processamento e foram testados com as configurações apresentadas por~\cite{Eisenstein2008}. 
-
-
-
-
-
-
-
+Como já mencionado, os algoritmos \textit{MinCutSeg}, \textit{TextSeg} e \textit{BayesSeg} aplicou-se a etapa de pré-processamento e foram testados com as configurações apresentadas por~\cite{Eis2008}. 
 
 
 
 \section{Resultados}
 
-
-Obteve-se, por meio dos testes apresentados, as melhores configurações para as principais medidas de avaliação de segmentadores. Com essas configurações calculou-se a média de cada medida considerando o conjunto de documentos. 
-
+Obteve-se, por meio dos testes apresentados, as melhores configurações para as principais medidas de avaliação de segmentadores. Com essas configurações calculou-se a média de cada medida considerando o conjunto de documentos.  
 
 A seguir são apresentados os resultados obtidos com os algoritmos baseados em coesão léxica, considerando seus principais parâmetros e a aplicação do pré-processamento. Em seguida, são apresentados os resultados da avaliação final dos algoritmos abordados nesse trabalho.
-
 
 Na Tabela~\ref{tab:resultadosTT} são apresentadas, as médias obtidas com o \textit{TextTiling} bem como as configurações utilizadas, onde \textbf{J} é o tamanho da janela e \textbf{P} é o passo.
 
@@ -254,15 +247,10 @@ Na Tabela~\ref{tab:resultadosTT} são apresentadas, as médias obtidas com o \te
 
 % --> Falar da coesão léxica peculiar das atas!!
 
-Uma vez que a coesão léxica é pressuposto de muitas abordagens em segmentação textual, fez-se uma análise desses documentos quanto a similaridade dos termos ao longo do texto. Verificou-se que a técnica de janelas deslizantes empregada pelo TextTiling encontra os vales que indicam transições entre segmentos, contudo ao comparar esses vales com a segmentação de referência, nota-se que a maioria dos limites coincide  ou estão próximos aos vales, porém há casos onde a referência indica limites em trechos com alta coesão léxica e outros onde a queda da coesão, indicada por vales, não coincide com nenhum limite de referência. 
-
-
+Uma vez que a coesão léxica é pressuposto de muitas abordagens em segmentação textual, fez-se uma análise desses documentos quanto a similaridade dos termos ao longo do texto. Verificou-se que a técnica de janelas deslizantes empregada pelo TextTiling encontra os vales que indicam transições entre segmentos, contudo ao comparar esses vales com a segmentação de referência, nota-se que a maioria dos limites coincide ou estão próximos aos vales, porém há casos onde a referência indica limites em trechos com alta coesão léxica e outros onde a queda da coesão, indicada por vales, não coincide com nenhum limite de referência.  
 
 % Na Figura~\ref{fig:coesaolexicaTT}a linha horizontal representa a variação da coesão léxica ao longo de uma ata e as linha verticais azuis e vermelhas representam os limites entre segmentos atribuidos pela referência e pelo algoritmo respectivamente. 
 Na Figura~\ref{fig:coesaolexicaTT} é apresentado a variação da coesão léxica ao longo de uma ata e a segmentação obtida pelo \textit{TextTiling} usando tamanho de janela igual a 50 e passo 9. A linha horizontal representa a variação da coesão léxica e as linha verticais azuis e vermelhas representam os limites entre segmentos atribuídos pela referência e pelo algoritmo respectivamente. 
-
-
-
 
 
   %--- ---
@@ -276,8 +264,8 @@ Na Figura~\ref{fig:coesaolexicaTT} é apresentado a variação da coesão léxic
 
 
 
-Na Tabela~\ref{tab:resultadosc99} são apresentadas, as médias obtidas com o \textit{C99} bem como as configurações utilizadas, onde \textbf{S} é a proporção de segmentos em relação a quantidade de candidatos, \textbf{M} é o tamanho do quadro utilizado para criar a matriz de \textit{rankings} e \textbf{W} indica se os segmentos são representados por vetores contendo a frequência ou um peso das palavras.
-
+Na Tabela~\ref{tab:resultadosc99} são apresentadas, as médias obtidas com o \textit{C99} bem como as configurações utilizadas, onde \textbf{S} é a proporção de segmentos em relação a quantidade de candidatos, \textbf{M} é o tamanho do quadro utilizado para criar a matriz de \textit{rankings} e \textbf{W} indica se as sentenças são representadas por vetores contendo a frequência dos termos ou um peso que representa sua importância no documento. % como TF*IDF que seria a frequencia do termo no elemento (sentença ou parágrafo) * a frequecia invertida do termo no documento. 
+% indica se os segmentos são representados por vetores contendo a frequência ou um peso das palavras.
 
 \begin{table}[!h]
 	\centering
@@ -404,62 +392,12 @@ mais segmentos em relação aos demais, e com isso tem-se valores maiores de rev
 % De maneira geral, os métodos probabilísticos apresentam desempenho próximo 
 
 
-
-  \begin{figure}[!h]
-	  \centering
-	  \includegraphics[width=1\textwidth]{conteudo/capitulos/figs/graficos/resumo-3.png}
-	  \caption{Performance dos algoritmos de segmentação textual}
-	  \label{fig:grafico-medidas-tradicionais}
-  \end{figure}
-
-
-
-
-
-
-  \begin{figure}[!h]
-	  \centering
-	  \includegraphics[width=1\textwidth]{conteudo/capitulos/figs/graficos/analiseNSegRate-MinCut.png}
-	  \caption{Performance dos algoritmos de segmentação textual}
-	  \label{fig:grafico-medidas-tradicionais}
-  \end{figure}
-
-
-  \begin{figure}[!h]
-	  \centering
-	  \includegraphics[width=1\textwidth]{conteudo/capitulos/figs/graficos/analiseNSegRate-UISeg.png}
-	  \caption{Performance dos algoritmos de segmentação textual}
-	  \label{fig:grafico-medidas-tradicionais}
-  \end{figure}
-
-  \begin{figure}[!h]
-	  \centering
-	  \includegraphics[width=1\textwidth]{conteudo/capitulos/figs/graficos/analiseNSegRate-Bayes.png}
-	  \caption{Performance dos algoritmos de segmentação textual}
-	  \label{fig:grafico-medidas-tradicionais}
-  \end{figure}
-
-  
-  \begin{figure}[!h]
-	  \centering
-	  \includegraphics[width=1\textwidth]{conteudo/capitulos/figs/graficos/analiseNSegRate-C99.png}
-	  \caption{Performance dos algoritmos de segmentação textual}
-	  \label{fig:grafico-medidas-tradicionais}
-  \end{figure}
-
-
-  
-  \begin{figure}[!h]
-	  \centering
-	  \includegraphics[width=1\textwidth]{}
-	  \caption{Performance dos algoritmos de segmentação textual}
-	  \label{fig:grafico-medidas-tradicionais}
-  \end{figure}
-
-
-
-
-
+  % \begin{figure}[!h]
+	  % \centering
+	  % \includegraphics[width=1\textwidth]{conteudo/capitulos/figs/graficos/resumo-5.png}
+	  % \caption{Performance dos algoritmos de segmentação textual}
+	  % \label{fig:grafico-medidas-tradicionais}
+  % \end{figure}
 
 
 
@@ -467,12 +405,9 @@ mais segmentos em relação aos demais, e com isso tem-se valores maiores de rev
 
 % cada segmento é um documento
 % Após a identificação dos segmentos, o algoritmo retorna uma lista onde cada elemento é um texto com um assunto predominante e será a partir de disso considerado um documento.
-Após a identificação dos segmentos, o algoritmo retorna uma lista com fragmentos do texto original. Cada segmento é incorporado à estrutura de dados interna como subdocumentos com um tema relativamente independente. Em seguida, esses subdocumentos serão analisados pelo extrator de tópicos para identificação de descritores e agrupamento.
 
-
-
-
-
+ 
+  Após a identificação dos segmentos, o algoritmo retorna uma lista com fragmentos do texto original. Cada segmento é incorporado à estrutura de dados interna como subdocumentos com um tema relativamente independente. Em seguida, esses subdocumentos serão analisados pelo extrator de tópicos para identificação de descritores e agrupamento.
 
 
 
@@ -483,6 +418,41 @@ Após a identificação dos segmentos, o algoritmo retorna uma lista com fragmen
 
 
 
+
+
+\begin{figure}[!h] \centering     %%% not \center
+
+	\subfigure{ \label{fig:influencia-segRate-c99}
+	  \includegraphics[width=.48\textwidth]{conteudo/capitulos/figs/graficos/analiseNSegRate-C99.png}
+	}
+	\subfigure{ \label{fig:influencia-segRate-mc}
+	  \includegraphics[width=.48\textwidth]{conteudo/capitulos/figs/graficos/analiseNSegRate-MinCut.png}
+	}
+	\subfigure{ \label{fig:influencia-segRate-bs}
+	  \includegraphics[width=.48\textwidth]{conteudo/capitulos/figs/graficos/analiseNSegRate-Bayes.png}
+	}
+	\subfigure{ \label{fig:influencia-segRate-ui}
+	  \includegraphics[width=.48\textwidth]{conteudo/capitulos/figs/graficos/analiseNSegRate-UISeg.png}
+	}
+	\caption{Influência do taxa segmentos na eficiência dos algoritmos}
+	\label{fig:resumo-segmentadores}
+\end{figure}
+
+  
+
+
+
+
+\begin{figure}[!h] \centering     %%% not \center
+
+	\subfigure{ \label{fig:resumo-wd-pk}
+		\includegraphics[width=.49\textwidth]{conteudo/capitulos/figs/graficos/resumo-wd-pk.png}	
+	\subfigure{ \label{fig:resumo-tradicionais}
+		\includegraphics[width=.49\textwidth]{conteudo/capitulos/figs/graficos/resumo-tradicionais.png}	
+	}
+	\caption{Performance dos algoritmos de segmentação textual}
+	\label{fig:resumo-segmentadores}
+\end{figure}
 
 
 
