@@ -8,12 +8,16 @@ Nesse capítulo é apresentado uma análise dos algoritmos de segmentação text
 Os algoritmos \textit{TextTiling} e \textit{C99} são analisados deviso a sua abordagem linguística baseada em coesão léxica e por estarem entre os primeiros trabalhos nessa área e serem frequentemente referenciados até hoje~\cite{AlemiG15}. 
 %	
 Selecionou-se também os algoritmos \textit{BayesSeg} e \textit{TextSeg} por trazerem abordagens probabilísticas e o \textit{MinCutSeg} o qual é baseado em particionamento de grafos.
+% 
+Com além disso, incluiu-se também um algoritmo que simplesmente atribui um segmento a cada sentença chamado \textit{Sentenças} para fins de comparação com as técnicas anteriores.
 
 
 
 
-Inicialmente realizou-se uma avaliação objetiva 	d
-em seguida escolheu-se um modelo que apresenta melhores resultados para ser utilizado em conjunto com técnicas de extração de tópicos em um experimento onde se avaliará a performance de ambas as técnicas.
+Inicialmente realizou-se uma avaliação objetiva em que os resultados dos algoritmos foram avaliados por sua similaridade com uma segmentação de referência. Em seguida escolheu-se um modelo que apresenta melhores resultados para ser utilizado em conjunto com técnicas de extração de tópicos em um experimento onde se avaliou a performance de ambas as técnicas junto a profissionais com afinidade com atas de reunião que forneceram suas percepções em relação aos resultados do segmentador empregado nesse trabalho. Os dados obtidos dos experimentos serviram de base para as análises dos algoritmos e de sua aplicação no contexto das atas de reuniões.
+
+
+
 
 
 
@@ -345,94 +349,54 @@ Com os testes anteriores obteve-se, para cada medida, 4 configurações levando 
 % --> Fechar falando sobre os métodos baseados em coesão léxica.
 
 
-A avaliação final foi feita pela comparação dos algoritmos usando as medidas \textit{Pk} e \textit{WindowDiff}. É apresentada também, para fins de comparação, as medidas tradicionais acurácia, precisão, revocação e F$^1$, entretanto, nesse contexto, essas medidas são menos significativa que Pk e WindowDiff, conforme já mencionado na Seção~\ref{subsec:medidas-segmentacao}. A Tabela~\ref{tab:configfinal} contém as médias de cada algoritmo. Vale lembrar que P$_k$ e \textit{WindowDiff} são medidas de dissimilaridade, ou seja, os valores menores significam melhores resultados.
 
-% \begin{table}[!h]
-	% \centering
-% \begin{tabular}{|l||c|c|c|c|c|c|c|} 
-% \hline 
-% \textbf{M\'{e}todo} & 
-% \textbf{Pk} & 
-% \textbf{WD} & 
-% \textbf{A } & 
-% \textbf{P } & 
-% \textbf{R } & 
-% \textbf{F1} & 
-% \textbf{Segmentos}\\ \hline
 
-% Senten\c{c}as & 0.320 & 0.502 & 0.498 & 0.498 & \textbf{1.000} & \textbf{0.642} & 22.083\\ \hline
-% TextTiling    & 0.275 & 0.469 & 0.531 & 0.514 & 0.937 & 0.640 & 19.583\\ \hline
-% C99           & 0.142 & 0.426 & 0.574 & 0.601 & 0.473 & 0.506 & 8.167\\ \hline
-% BayesSeg      & 0.148 & 0.414 & 0.586 & 0.599 & 0.526 & 0.528 & 8.750\\ \hline
-% MinCut        & 0.226 & 0.532 & 0.468 & 0.464 & 0.438 & 0.432 & 10.333\\ \hline
-% TextSeg       & \textbf{0.085} & \textbf{0.387} & \textbf{0.613} & \textbf{0.714} & 0.412 & 0.497 & 5.167\\ \hline
-% \end{tabular} 
 
-	% \caption{Melhores resultados obtidos.}
-	% \label{tab:configfinal}
-% \end{table}
 
+
+
+
+A avaliação final foi feita pela comparação dos resultados dos algoritmos com a segmentação de referência usando as medidas \textit{Pk} e \textit{WindowDiff}. É apresentada também, para fins de comparação com outros trabalhos, as medidas tradicionais acurácia, precisão, revocação e F$^1$, entretanto, nesse contexto, essas medidas são menos significativa que P$_k$ e \textit{WindowDiff}, conforme já mencionado na Seção~\ref{subsec:medidas-segmentacao}. 
+Cada técnica foi executada variando seus principais parâmetros a fim de verificar qual configuração melhor otimiza cada algoritmo. A Tabela~\ref{tab:resumo-resultados} contém a média dos dados obtidos onde os melhores resultados estão destacados. Vale lembrar que P$_k$ e \textit{WindowDiff} são medidas de dissimilaridade, ou seja, os valores menores significam melhores resultados.
 
 
 \input{conteudo/capitulos/inputs/tabela-resumo.tex}
 
 
+% TODO --> Comentar a tabela 
+De maneira geral, as algoritmos avaliados sobressaem ao obtido pela simples atribuição de segmentos a todas sentenças. Observa-se também que os valores de P$_k$ e WD são próximos devido a natureza similar dessas medidas. Pode-se notar também que as configurações que produzem os melhores valores de acurácia também registram melhores valores de P$_k$ ou WD como se vê para \textit{TextTiling}, \textit{MinCutSeg}, \textit{BayesSeg} à exceção de \textit{C99} que registra sua melhor acurácia muito próxima à obtida na configuração ótima para P$_k$ e WD. 
+Essa proximidade entre as medidas que toleram proximidade entre segmentações (P$_k$ \textit{WindowDiff}) e a acurácia que apenas computa limites exatos, sugere que quando os anotadores concordam que dois blocos de texto referem-se a assuntos diferentes, também concordam no ponto exato onde há transição de assunto.
+% Todo: Poderia motivar mais pesquisas em Hieraquias de tópicos?
+% Todo: E dai? --> Sugere que segmentações ou são idênticas ou não são próximas, ou ainda que quando os anotadores (raramente) concordam, seus limites coincidem examente na maioria dos casos.
 
-Na Figura~\ref{fig:grafico-medidas-tradicionais} é apresentada a performance dos algoritmos nas medidas tradicionais. Observa-se valores altos de revocação para a segmentação por sentenças, pois é atribuído um limite a todo candidato a final de segmento, o que resulta no valor máximo para revocação. De maneira semelhante, o comportamento do \textit{TextTiling} gera 
-mais segmentos em relação aos demais, e com isso tem-se valores maiores de revocação, o que pode ser contornado configurando o algoritmo com passos maiores, ou ainda, sobre-escrevendo a função que calcula os \textit{depth scores} para reconhecer vales mais largos.
+Esses resultados são ilustrados graficamente na Figura~\ref{fig:resumo-segmentadores}.
 
-%--> TODO: explicar (a conceituação teórica) que passos curtos geram mais segmentos
-
-  % \begin{figure}[!h]
-	  % \centering
-	  % \includegraphics[width=1\textwidth]{conteudo/capitulos/figs/grafico-medidas-APRF1.eps}
-	  % \caption{Performance dos algoritmos de segmentação textual com as medidas tradicionais}
-	  % \label{fig:grafico-medidas-tradicionais}
-  % \end{figure}
-  
-
-% Na Figura~\ref{fig:grafico-medidas-Pk-Wd} é apresentada a performance dos algoritmos nas medidas P$_k$ e \textit{WindowDiff}. Verifica-se que \textit{TextSeg} apresenta valores de \textit{WindowDiff} próximas ao \textit{C99} e \textit{BayesSeg} e resultados mais significantes quando medidos por P$_k$ em relação aos demais algoritmos.
+Em termos de performance, o modelo implementado no algoritmo \textit{BayesSeg} apresenta melhores para as medidas P$_k$ e \textit{WindowDiff}, visto que essas são mais adequadas ao contexto analisado, este será empregado nos próximos experimentos. Contudo, dado a subjetividade da tarefa de segmentação textual, outros modelos podem ser utilizados satisfatoriamente dependendo do critério adotado. 
 
 
+\begin{figure}[!h] \centering     %%% not \center
 
-  % \begin{figure}[!h]
-	  % \centering
-	  % \includegraphics[width=1\textwidth]{conteudo/capitulos/figs/grafico-medidas-Pk-Wd.eps}
-	  % \caption{Performance dos algoritmos de segmentação textual com as medidas P$_k$ e \textit{WindowDiff}.}
-	  % \label{fig:grafico-medidas-Pk-Wd}
-  % \end{figure}
+	\subfigure{ \label{fig:resumo-wd-pk}
+		\includegraphics[width=.49\textwidth]{conteudo/capitulos/figs/graficos/resumo-wd-pk.png}	
+	\subfigure{ \label{fig:resumo-tradicionais}
+		\includegraphics[width=.49\textwidth]{conteudo/capitulos/figs/graficos/resumo-tradicionais.png}	
+	}
+	\caption{Performance dos algoritmos de segmentação textual}
+	\label{fig:resumo-segmentadores}
+\end{figure}
 
+
+
+% TODO --> Comentar as WD e PK
+
+Na Figura~\ref{fig:resumo-tradicionais} é apresentada a performance dos algoritmos nas medidas tradicionais. Observa-se valores altos de revocação para a segmentação por sentenças, pois é atribuído um limite a todo candidato a final de segmento, o que resulta no valor máximo para revocação. De maneira semelhante, o comportamento do \textit{TextTiling} gera menos segmentos em relação aos demais, e com isso tem-se valores menores de revocação, o que pode ser alterado pela configuração do algoritmo com passos mais curtos, ou ainda, sobre-escrevendo a função que calcula os \textit{depth scores} para reconhecer vales menos profundos.
 
 
 
 % De maneira geral, os métodos probabilísticos apresentam desempenho próximo 
 
 
-  % \begin{figure}[!h]
-	  % \centering
-	  % \includegraphics[width=1\textwidth]{conteudo/capitulos/figs/graficos/resumo-5.png}
-	  % \caption{Performance dos algoritmos de segmentação textual}
-	  % \label{fig:grafico-medidas-tradicionais}
-  % \end{figure}
-
-
-
-
-
-% cada segmento é um documento
-% Após a identificação dos segmentos, o algoritmo retorna uma lista onde cada elemento é um texto com um assunto predominante e será a partir de disso considerado um documento.
-
- 
-  Após a identificação dos segmentos, o algoritmo retorna uma lista com fragmentos do texto original. Cada segmento é incorporado à estrutura de dados interna como subdocumentos com um tema relativamente independente. Em seguida, esses subdocumentos serão analisados pelo extrator de tópicos para identificação de descritores e agrupamento.
-
-
-
-
-% -? Medidas
-
-% -- como ele faz?
-
-
+Outro ponto a ser analisado é a influência da proporção de segmentos identificados na performance do algoritmo. Durante os testes observou-se que os parâmetros relacionados a quantidade de segmentos causam maior impacto nas medidas de desempenho. Na Figura~\ref{fig:influencia-SegRate} é exibida a relação entre a taxa de segmentação e as medidas de desempenho as quais apresentam melhores valores entre $30\%$ e $50\%$ de sentenças marcadas como final de segmento.
 
 
 
@@ -451,23 +415,21 @@ mais segmentos em relação aos demais, e com isso tem-se valores maiores de rev
 	  \includegraphics[width=.48\textwidth]{conteudo/capitulos/figs/graficos/analiseNSegRate-UISeg.png}
 	}
 	\caption{Influência do taxa segmentos na eficiência dos algoritmos}
-	\label{fig:resumo-segmentadores}
+	\label{fig:influencia-SegRate}
 \end{figure}
 
-  
 
 
 
-\begin{figure}[!h] \centering     %%% not \center
+Após a análise dos métodos, selecionou-se o algoritmo que apresenta melhores resultados para as medidas P$_k$ e \textit{WindowDiff} visto a subjetividade da tarefa e a aderência dessas medias à acurácia e precisão. Realizou-se então uma experimento a fim de avaliar subjetivamente o segmentador escolhido em conjunto com extratores de tópicos e analisar essas técnicas.
 
-	\subfigure{ \label{fig:resumo-wd-pk}
-		\includegraphics[width=.49\textwidth]{conteudo/capitulos/figs/graficos/resumo-wd-pk.png}	
-	\subfigure{ \label{fig:resumo-tradicionais}
-		\includegraphics[width=.49\textwidth]{conteudo/capitulos/figs/graficos/resumo-tradicionais.png}	
-	}
-	\caption{Performance dos algoritmos de segmentação textual}
-	\label{fig:resumo-segmentadores}
-\end{figure}
+
+
+
+  % Após a identificação dos segmentos, o algoritmo retorna uma lista com fragmentos do texto original. Cada segmento é incorporado à estrutura de dados interna como subdocumentos com um tema relativamente independente. Em seguida, esses subdocumentos serão analisados pelo extrator de tópicos para identificação de descritores e agrupamento.
+
+
+
 
 
 

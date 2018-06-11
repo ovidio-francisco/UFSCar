@@ -348,6 +348,12 @@ INPUT /usr/share/texmf/fonts/tfm/public/lm/rm-lmr10.tfm
 INPUT /usr/share/texmf/fonts/tfm/public/lm/lmmi10.tfm
 INPUT /usr/share/texmf/fonts/tfm/public/lm/lmsy10.tfm
 INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmbx10.tfm
+INPUT conteudo/capitulos/figs/graficos/resumo-wd-pk.png
+INPUT ./conteudo/capitulos/figs/graficos/resumo-wd-pk.png
+INPUT ./conteudo/capitulos/figs/graficos/resumo-wd-pk.png
+INPUT conteudo/capitulos/figs/graficos/resumo-tradicionais.png
+INPUT ./conteudo/capitulos/figs/graficos/resumo-tradicionais.png
+INPUT ./conteudo/capitulos/figs/graficos/resumo-tradicionais.png
 INPUT conteudo/capitulos/figs/graficos/analiseNSegRate-C99.png
 INPUT ./conteudo/capitulos/figs/graficos/analiseNSegRate-C99.png
 INPUT ./conteudo/capitulos/figs/graficos/analiseNSegRate-C99.png
@@ -360,12 +366,6 @@ INPUT ./conteudo/capitulos/figs/graficos/analiseNSegRate-Bayes.png
 INPUT conteudo/capitulos/figs/graficos/analiseNSegRate-UISeg.png
 INPUT ./conteudo/capitulos/figs/graficos/analiseNSegRate-UISeg.png
 INPUT ./conteudo/capitulos/figs/graficos/analiseNSegRate-UISeg.png
-INPUT conteudo/capitulos/figs/graficos/resumo-wd-pk.png
-INPUT ./conteudo/capitulos/figs/graficos/resumo-wd-pk.png
-INPUT ./conteudo/capitulos/figs/graficos/resumo-wd-pk.png
-INPUT conteudo/capitulos/figs/graficos/resumo-tradicionais.png
-INPUT ./conteudo/capitulos/figs/graficos/resumo-tradicionais.png
-INPUT ./conteudo/capitulos/figs/graficos/resumo-tradicionais.png
 OUTPUT conteudo/capitulos/cap-avaliacao-extratores.aux
 INPUT conteudo/capitulos/cap-avaliacao-extratores.tex
 INPUT conteudo/capitulos/cap-avaliacao-extratores.tex

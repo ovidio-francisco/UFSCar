@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.8.22)  10 JUN 2018 22:57
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.8.22)  11 JUN 2018 15:00
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1290,9 +1290,6 @@ LaTeX Warning: Label `fig:a' multiply defined.
 
 LaTeX Warning: Label `fig:b' multiply defined.
 
-
-LaTeX Warning: Label `fig:resumo-segmentadores' multiply defined.
-
 ) (./conteudo/capitulos/cap-avaliacao-extratores.aux
 
 LaTeX Warning: Label `fig:kmeans' multiply defined.
@@ -1724,95 +1721,79 @@ Package pdftex.def Info: conteudo/capitulos/figs/tela-principal-2-1.png used on 
 
 
 
-] <conteudo/capitulos/figs/interface-anotacoes.png, id=1399, 1445.4pt x 872.25874pt>
+] [41] <conteudo/capitulos/figs/interface-anotacoes.png, id=1407, 1445.4pt x 872.25874pt>
 File: conteudo/capitulos/figs/interface-anotacoes.png Graphic file (type png)
  <use conteudo/capitulos/figs/interface-anotacoes.png>
-Package pdftex.def Info: conteudo/capitulos/figs/interface-anotacoes.png used on input line 35.
+Package pdftex.def Info: conteudo/capitulos/figs/interface-anotacoes.png used on input line 39.
 (pdftex.def)             Requested size: 455.0pt x 274.57661pt.
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[41]
-Overfull \hbox (3.32355pt too wide) in paragraph at lines 58--58
+Overfull \hbox (3.32355pt too wide) in paragraph at lines 62--62
 []|$[]$| 
  []
 
 
-Overfull \hbox (3.32355pt too wide) in paragraph at lines 64--64
+Overfull \hbox (3.32355pt too wide) in paragraph at lines 68--68
 []|$[]$| 
  []
 
 
-Overfull \hbox (3.32355pt too wide) in paragraph at lines 66--66
+Overfull \hbox (3.32355pt too wide) in paragraph at lines 70--70
 []|$[]$| 
  []
 
 
-Overfull \hbox (7.30954pt too wide) in paragraph at lines 68--68
+Overfull \hbox (7.30954pt too wide) in paragraph at lines 72--72
 []|$[]$| 
  []
 
 
-Overfull \hbox (7.30954pt too wide) in paragraph at lines 70--70
+Overfull \hbox (7.30954pt too wide) in paragraph at lines 74--74
 []|$[]$| 
  []
 
 
-Underfull \hbox (badness 2042) in paragraph at lines 71--73
+Underfull \hbox (badness 2042) in paragraph at lines 75--77
 []|\T1/lmr/m/n/10 (+20) Ficou de-ci-dido en-viar e-mail aos do-cen-tes so-li-ci-tando que co-mu-ni-quem per-ma-nen-te-
  []
 
 
-Overfull \hbox (7.30954pt too wide) in paragraph at lines 76--76
+Overfull \hbox (7.30954pt too wide) in paragraph at lines 80--80
 []|$[]$| 
  []
 
 
-Overfull \hbox (7.30954pt too wide) in paragraph at lines 81--81
+Overfull \hbox (7.30954pt too wide) in paragraph at lines 85--85
 []|$[]$| 
  []
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-
-Underfull \vbox (badness 6741) has occurred while \output is active []
-
- [42 <./conteudo/capitulos/figs/interface-anotacoes.png>] <conteudo/capitulos/figs/segmentacao-referencia.pdf, id=1431, page=1, 844.15375pt x 597.23125pt>
+[42 <./conteudo/capitulos/figs/interface-anotacoes.png>] <conteudo/capitulos/figs/segmentacao-referencia.pdf, id=1430, page=1, 844.15375pt x 597.23125pt>
 File: conteudo/capitulos/figs/segmentacao-referencia.pdf Graphic file (type pdf)
  <use conteudo/capitulos/figs/segmentacao-referencia.pdf, page 1>
-Package pdftex.def Info: conteudo/capitulos/figs/segmentacao-referencia.pdf, page1 used on input line 129.
+Package pdftex.def Info: conteudo/capitulos/figs/segmentacao-referencia.pdf, page1 used on input line 133.
 (pdftex.def)             Requested size: 455.0pt x 135.61922pt.
+ [43 <./conteudo/capitulos/figs/segmentacao-referencia.pdf
 
-Overfull \hbox (16.16505pt too wide) in paragraph at lines 141--172
+pdfTeX warning: pdflatex (file ./conteudo/capitulos/figs/segmentacao-referencia.pdf): PDF inclusion: invalid other resource which is no dict (key 'ProcSets', type <array>); ignored.
+>]
+Overfull \hbox (16.16505pt too wide) in paragraph at lines 145--176
  [][] 
  []
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[43 <./conteudo/capitulos/figs/segmentacao-referencia.pdf
-
-pdfTeX warning: pdflatex (file ./conteudo/capitulos/figs/segmentacao-referencia.pdf): PDF inclusion: invalid other resource which is no dict (key 'ProcSets', type <array>); ignored.
->] [44]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [45] <conteudo/capitulos/figs/coesaolexicaTT-50-9.png, id=1623, 1413.28pt x 306.14375pt>
+[44] [45] <conteudo/capitulos/figs/coesaolexicaTT-50-9.png, id=1623, 1413.28pt x 306.14375pt>
 File: conteudo/capitulos/figs/coesaolexicaTT-50-9.png Graphic file (type png)
  <use conteudo/capitulos/figs/coesaolexicaTT-50-9.png>
-Package pdftex.def Info: conteudo/capitulos/figs/coesaolexicaTT-50-9.png used on input line 275.
+Package pdftex.def Info: conteudo/capitulos/figs/coesaolexicaTT-50-9.png used on input line 279.
 (pdftex.def)             Requested size: 455.0pt x 98.56125pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
 [46]
-./conteudo/capitulos/cap-avaliacao-segmentadores.tex:328: Undefined control sequence.
-l.328 	\subfigure
+./conteudo/capitulos/cap-avaliacao-segmentadores.tex:332: Undefined control sequence.
+l.332 	\subfigure
                  [a]{ \label{fig:a}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1823,11 +1804,11 @@ and I'll forget about whatever was undefined.
 <conteudo/capitulos/figs/CDs/WinDiff.png, id=1632, 433.62pt x 111.2958pt>
 File: conteudo/capitulos/figs/CDs/WinDiff.png Graphic file (type png)
  <use conteudo/capitulos/figs/CDs/WinDiff.png>
-Package pdftex.def Info: conteudo/capitulos/figs/CDs/WinDiff.png used on input line 329.
+Package pdftex.def Info: conteudo/capitulos/figs/CDs/WinDiff.png used on input line 333.
 (pdftex.def)             Requested size: 199.16928pt x 51.12025pt.
 
-./conteudo/capitulos/cap-avaliacao-segmentadores.tex:330: Undefined control sequence.
-l.330 	\subfigure
+./conteudo/capitulos/cap-avaliacao-segmentadores.tex:334: Undefined control sequence.
+l.334 	\subfigure
                  [b]{ \label{fig:b}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1838,11 +1819,11 @@ and I'll forget about whatever was undefined.
 <conteudo/capitulos/figs/CDs/Pk.png, id=1633, 433.62pt x 111.2958pt>
 File: conteudo/capitulos/figs/CDs/Pk.png Graphic file (type png)
  <use conteudo/capitulos/figs/CDs/Pk.png>
-Package pdftex.def Info: conteudo/capitulos/figs/CDs/Pk.png used on input line 331.
+Package pdftex.def Info: conteudo/capitulos/figs/CDs/Pk.png used on input line 335.
 (pdftex.def)             Requested size: 199.16928pt x 51.12025pt.
 
-./conteudo/capitulos/cap-avaliacao-segmentadores.tex:332: Undefined control sequence.
-l.332 	\subfigure
+./conteudo/capitulos/cap-avaliacao-segmentadores.tex:336: Undefined control sequence.
+l.336 	\subfigure
                  [c]{ \label{fig:c}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1853,11 +1834,11 @@ and I'll forget about whatever was undefined.
 <conteudo/capitulos/figs/CDs/Acuracy.png, id=1634, 433.62pt x 111.2958pt>
 File: conteudo/capitulos/figs/CDs/Acuracy.png Graphic file (type png)
  <use conteudo/capitulos/figs/CDs/Acuracy.png>
-Package pdftex.def Info: conteudo/capitulos/figs/CDs/Acuracy.png used on input line 333.
+Package pdftex.def Info: conteudo/capitulos/figs/CDs/Acuracy.png used on input line 337.
 (pdftex.def)             Requested size: 199.16928pt x 51.12025pt.
 
-./conteudo/capitulos/cap-avaliacao-segmentadores.tex:334: Undefined control sequence.
-l.334 	\subfigure
+./conteudo/capitulos/cap-avaliacao-segmentadores.tex:338: Undefined control sequence.
+l.338 	\subfigure
                  [d]{ \label{fig:d}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1868,11 +1849,11 @@ and I'll forget about whatever was undefined.
 <conteudo/capitulos/figs/CDs/Precision.png, id=1635, 433.62pt x 111.2958pt>
 File: conteudo/capitulos/figs/CDs/Precision.png Graphic file (type png)
  <use conteudo/capitulos/figs/CDs/Precision.png>
-Package pdftex.def Info: conteudo/capitulos/figs/CDs/Precision.png used on input line 335.
+Package pdftex.def Info: conteudo/capitulos/figs/CDs/Precision.png used on input line 339.
 (pdftex.def)             Requested size: 213.39566pt x 54.77147pt.
 
-./conteudo/capitulos/cap-avaliacao-segmentadores.tex:336: Undefined control sequence.
-l.336 	\subfigure
+./conteudo/capitulos/cap-avaliacao-segmentadores.tex:340: Undefined control sequence.
+l.340 	\subfigure
                  [e]{ \label{fig:e}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1883,11 +1864,11 @@ and I'll forget about whatever was undefined.
 <conteudo/capitulos/figs/CDs/Recall.png, id=1636, 433.62pt x 111.2958pt>
 File: conteudo/capitulos/figs/CDs/Recall.png Graphic file (type png)
  <use conteudo/capitulos/figs/CDs/Recall.png>
-Package pdftex.def Info: conteudo/capitulos/figs/CDs/Recall.png used on input line 337.
+Package pdftex.def Info: conteudo/capitulos/figs/CDs/Recall.png used on input line 341.
 (pdftex.def)             Requested size: 199.16928pt x 51.12025pt.
 
-./conteudo/capitulos/cap-avaliacao-segmentadores.tex:338: Undefined control sequence.
-l.338 	\subfigure
+./conteudo/capitulos/cap-avaliacao-segmentadores.tex:342: Undefined control sequence.
+l.342 	\subfigure
                  [f]{ \label{fig:f}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1898,16 +1879,13 @@ and I'll forget about whatever was undefined.
 <conteudo/capitulos/figs/CDs/F1.png, id=1637, 433.62pt x 111.2958pt>
 File: conteudo/capitulos/figs/CDs/F1.png Graphic file (type png)
  <use conteudo/capitulos/figs/CDs/F1.png>
-Package pdftex.def Info: conteudo/capitulos/figs/CDs/F1.png used on input line 339.
+Package pdftex.def Info: conteudo/capitulos/figs/CDs/F1.png used on input line 343.
 (pdftex.def)             Requested size: 199.16928pt x 51.12025pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-
-LaTeX Warning: Reference `tab:configfinal' on page 47 undefined on input line 348.
-
-(./conteudo/capitulos/inputs/tabela-resumo.tex
+[47 <./conteudo/capitulos/figs/coesaolexicaTT-50-9.png>] (./conteudo/capitulos/inputs/tabela-resumo.tex
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <10.95> on input line 5.
 
@@ -1915,82 +1893,9 @@ Overfull \hbox (62.76532pt too wide) in paragraph at lines 5--110
  [][] 
  []
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-)
-
-LaTeX Warning: Reference `fig:grafico-medidas-tradicionais' on page 47 undefined on input line 381.
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [47 <./conteudo/capitulos/figs/coesaolexicaTT-50-9.png>]
-Underfull \vbox (badness 7415) has occurred while \output is active []
-
- [48 <./conteudo/capitulos/figs/CDs/WinDiff.png> <./conteudo/capitulos/figs/CDs/Pk.png> <./conteudo/capitulos/figs/CDs/Acuracy.png> <./conteudo/capitulos/figs/CDs/Precision.png> <./conteudo/capitulos/figs/CDs/Recall.png> <./conteudo/capitulos/figs/CDs/F1.png>]
-./conteudo/capitulos/cap-avaliacao-segmentadores.tex:441: Undefined control sequence.
-l.441 	\subfigure
-                 { \label{fig:influencia-segRate-c99}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-<conteudo/capitulos/figs/graficos/analiseNSegRate-C99.png, id=1658, 602.25pt x 372.39125pt>
-File: conteudo/capitulos/figs/graficos/analiseNSegRate-C99.png Graphic file (type png)
- <use conteudo/capitulos/figs/graficos/analiseNSegRate-C99.png>
-Package pdftex.def Info: conteudo/capitulos/figs/graficos/analiseNSegRate-C99.png used on input line 442.
-(pdftex.def)             Requested size: 218.39806pt x 135.04376pt.
-
-./conteudo/capitulos/cap-avaliacao-segmentadores.tex:444: Undefined control sequence.
-l.444 	\subfigure
-                 { \label{fig:influencia-segRate-mc}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-<conteudo/capitulos/figs/graficos/analiseNSegRate-MinCut.png, id=1659, 602.25pt x 372.39125pt>
-File: conteudo/capitulos/figs/graficos/analiseNSegRate-MinCut.png Graphic file (type png)
- <use conteudo/capitulos/figs/graficos/analiseNSegRate-MinCut.png>
-Package pdftex.def Info: conteudo/capitulos/figs/graficos/analiseNSegRate-MinCut.png used on input line 445.
-(pdftex.def)             Requested size: 218.39806pt x 135.04376pt.
-
-./conteudo/capitulos/cap-avaliacao-segmentadores.tex:447: Undefined control sequence.
-l.447 	\subfigure
-                 { \label{fig:influencia-segRate-bs}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-<conteudo/capitulos/figs/graficos/analiseNSegRate-Bayes.png, id=1660, 602.25pt x 372.39125pt>
-File: conteudo/capitulos/figs/graficos/analiseNSegRate-Bayes.png Graphic file (type png)
- <use conteudo/capitulos/figs/graficos/analiseNSegRate-Bayes.png>
-Package pdftex.def Info: conteudo/capitulos/figs/graficos/analiseNSegRate-Bayes.png used on input line 448.
-(pdftex.def)             Requested size: 218.39806pt x 135.04376pt.
-
-./conteudo/capitulos/cap-avaliacao-segmentadores.tex:450: Undefined control sequence.
-l.450 	\subfigure
-                 { \label{fig:influencia-segRate-ui}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-<conteudo/capitulos/figs/graficos/analiseNSegRate-UISeg.png, id=1661, 602.25pt x 372.39125pt>
-File: conteudo/capitulos/figs/graficos/analiseNSegRate-UISeg.png Graphic file (type png)
- <use conteudo/capitulos/figs/graficos/analiseNSegRate-UISeg.png>
-Package pdftex.def Info: conteudo/capitulos/figs/graficos/analiseNSegRate-UISeg.png used on input line 451.
-(pdftex.def)             Requested size: 218.39806pt x 135.04376pt.
-
-./conteudo/capitulos/cap-avaliacao-segmentadores.tex:463: Undefined control sequence.
-l.463 	\subfigure
+) [48 <./conteudo/capitulos/figs/CDs/WinDiff.png> <./conteudo/capitulos/figs/CDs/Pk.png> <./conteudo/capitulos/figs/CDs/Acuracy.png> <./conteudo/capitulos/figs/CDs/Precision.png> <./conteudo/capitulos/figs/CDs/Recall.png> <./conteudo/capitulos/figs/CDs/F1.png>]
+./conteudo/capitulos/cap-avaliacao-segmentadores.tex:379: Undefined control sequence.
+l.379 	\subfigure
                  { \label{fig:resumo-wd-pk}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1998,14 +1903,14 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-<conteudo/capitulos/figs/graficos/resumo-wd-pk.png, id=1662, 555.07375pt x 343.2825pt>
+<conteudo/capitulos/figs/graficos/resumo-wd-pk.png, id=1660, 555.07375pt x 343.2825pt>
 File: conteudo/capitulos/figs/graficos/resumo-wd-pk.png Graphic file (type png)
  <use conteudo/capitulos/figs/graficos/resumo-wd-pk.png>
-Package pdftex.def Info: conteudo/capitulos/figs/graficos/resumo-wd-pk.png used on input line 464.
+Package pdftex.def Info: conteudo/capitulos/figs/graficos/resumo-wd-pk.png used on input line 380.
 (pdftex.def)             Requested size: 222.9525pt x 137.8815pt.
 
-./conteudo/capitulos/cap-avaliacao-segmentadores.tex:465: Undefined control sequence.
-l.465 	\subfigure
+./conteudo/capitulos/cap-avaliacao-segmentadores.tex:381: Undefined control sequence.
+l.381 	\subfigure
                  { \label{fig:resumo-tradicionais}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2013,16 +1918,16 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-<conteudo/capitulos/figs/graficos/resumo-tradicionais.png, id=1663, 556.0775pt x 343.2825pt>
+<conteudo/capitulos/figs/graficos/resumo-tradicionais.png, id=1661, 556.0775pt x 343.2825pt>
 File: conteudo/capitulos/figs/graficos/resumo-tradicionais.png Graphic file (type png)
  <use conteudo/capitulos/figs/graficos/resumo-tradicionais.png>
-Package pdftex.def Info: conteudo/capitulos/figs/graficos/resumo-tradicionais.png used on input line 466.
+Package pdftex.def Info: conteudo/capitulos/figs/graficos/resumo-tradicionais.png used on input line 382.
 (pdftex.def)             Requested size: 222.9525pt x 137.63531pt.
 
-./conteudo/capitulos/cap-avaliacao-segmentadores.tex:470: Missing } inserted.
+./conteudo/capitulos/cap-avaliacao-segmentadores.tex:386: Missing } inserted.
 <inserted text> 
                 }
-l.470 \end{figure}
+l.386 \end{figure}
                   
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2030,14 +1935,80 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-) [49 <./conteudo/capitulos/figs/graficos/analiseNSegRate-C99.png (PNG copy)> <./conteudo/capitulos/figs/graficos/analiseNSegRate-MinCut.png (PNG copy)> <./conteudo/capitulos/figs/graficos/analiseNSegRate-Bayes.png (PNG copy)> <./conteudo/capitulos/figs/graficos/analiseNSegRate-UISeg.png (PNG copy)> <./conteudo/capitulos/figs/graficos/resumo-wd-pk.png (PNG copy)> <./conteudo/capitulos/figs/graficos/resumo-tradicionais.png (PNG copy)>]
+./conteudo/capitulos/cap-avaliacao-segmentadores.tex:405: Undefined control sequence.
+l.405 	\subfigure
+                 { \label{fig:influencia-segRate-c99}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+<conteudo/capitulos/figs/graficos/analiseNSegRate-C99.png, id=1664, 602.25pt x 372.39125pt>
+File: conteudo/capitulos/figs/graficos/analiseNSegRate-C99.png Graphic file (type png)
+ <use conteudo/capitulos/figs/graficos/analiseNSegRate-C99.png>
+Package pdftex.def Info: conteudo/capitulos/figs/graficos/analiseNSegRate-C99.png used on input line 406.
+(pdftex.def)             Requested size: 218.39806pt x 135.04376pt.
+
+./conteudo/capitulos/cap-avaliacao-segmentadores.tex:408: Undefined control sequence.
+l.408 	\subfigure
+                 { \label{fig:influencia-segRate-mc}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+<conteudo/capitulos/figs/graficos/analiseNSegRate-MinCut.png, id=1665, 602.25pt x 372.39125pt>
+File: conteudo/capitulos/figs/graficos/analiseNSegRate-MinCut.png Graphic file (type png)
+ <use conteudo/capitulos/figs/graficos/analiseNSegRate-MinCut.png>
+Package pdftex.def Info: conteudo/capitulos/figs/graficos/analiseNSegRate-MinCut.png used on input line 409.
+(pdftex.def)             Requested size: 218.39806pt x 135.04376pt.
+
+./conteudo/capitulos/cap-avaliacao-segmentadores.tex:411: Undefined control sequence.
+l.411 	\subfigure
+                 { \label{fig:influencia-segRate-bs}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+<conteudo/capitulos/figs/graficos/analiseNSegRate-Bayes.png, id=1666, 602.25pt x 372.39125pt>
+File: conteudo/capitulos/figs/graficos/analiseNSegRate-Bayes.png Graphic file (type png)
+ <use conteudo/capitulos/figs/graficos/analiseNSegRate-Bayes.png>
+Package pdftex.def Info: conteudo/capitulos/figs/graficos/analiseNSegRate-Bayes.png used on input line 412.
+(pdftex.def)             Requested size: 218.39806pt x 135.04376pt.
+
+./conteudo/capitulos/cap-avaliacao-segmentadores.tex:414: Undefined control sequence.
+l.414 	\subfigure
+                 { \label{fig:influencia-segRate-ui}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+<conteudo/capitulos/figs/graficos/analiseNSegRate-UISeg.png, id=1667, 602.25pt x 372.39125pt>
+File: conteudo/capitulos/figs/graficos/analiseNSegRate-UISeg.png Graphic file (type png)
+ <use conteudo/capitulos/figs/graficos/analiseNSegRate-UISeg.png>
+Package pdftex.def Info: conteudo/capitulos/figs/graficos/analiseNSegRate-UISeg.png used on input line 415.
+(pdftex.def)             Requested size: 218.39806pt x 135.04376pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[49 <./conteudo/capitulos/figs/graficos/resumo-wd-pk.png (PNG copy)> <./conteudo/capitulos/figs/graficos/resumo-tradicionais.png (PNG copy)>]) [50 <./conteudo/capitulos/figs/graficos/analiseNSegRate-C99.png (PNG copy)> <./conteudo/capitulos/figs/graficos/analiseNSegRate-MinCut.png (PNG copy)> <./conteudo/capitulos/figs/graficos/analiseNSegRate-Bayes.png (PNG copy)> <./conteudo/capitulos/figs/graficos/analiseNSegRate-UISeg.png (PNG copy)>]
 \openout2 = `conteudo/capitulos/cap-avaliacao-extratores.aux'.
 
- (./conteudo/capitulos/cap-avaliacao-extratores.tex [50
+ (./conteudo/capitulos/cap-avaliacao-extratores.tex
+Underfull \vbox (badness 2564) has occurred while \output is active []
+
+ [51
 
 
 
-] [51] [52]
+] [52]
 ./conteudo/capitulos/cap-avaliacao-extratores.tex:80: Undefined control sequence.
 l.80 	\subfigure
                 { \label{fig:kmeans}
@@ -2047,7 +2018,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-<conteudo/capitulos/figs/figuras-experimento/Q1-KMeans.png, id=1706, 357.335pt x 287.0725pt>
+<conteudo/capitulos/figs/figuras-experimento/Q1-KMeans.png, id=1709, 357.335pt x 287.0725pt>
 File: conteudo/capitulos/figs/figuras-experimento/Q1-KMeans.png Graphic file (type png)
  <use conteudo/capitulos/figs/figuras-experimento/Q1-KMeans.png>
 Package pdftex.def Info: conteudo/capitulos/figs/figuras-experimento/Q1-KMeans.png used on input line 81.
@@ -2062,7 +2033,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-<conteudo/capitulos/figs/figuras-experimento/Q1-LDA.png, id=1707, 358.33875pt x 287.0725pt>
+<conteudo/capitulos/figs/figuras-experimento/Q1-LDA.png, id=1710, 358.33875pt x 287.0725pt>
 File: conteudo/capitulos/figs/figuras-experimento/Q1-LDA.png Graphic file (type png)
  <use conteudo/capitulos/figs/figuras-experimento/Q1-LDA.png>
 Package pdftex.def Info: conteudo/capitulos/figs/figuras-experimento/Q1-LDA.png used on input line 84.
@@ -2077,12 +2048,15 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-<conteudo/capitulos/figs/figuras-experimento/Q1-PLSA.png, id=1708, 357.335pt x 286.06876pt>
+<conteudo/capitulos/figs/figuras-experimento/Q1-PLSA.png, id=1711, 357.335pt x 286.06876pt>
 File: conteudo/capitulos/figs/figuras-experimento/Q1-PLSA.png Graphic file (type png)
  <use conteudo/capitulos/figs/figuras-experimento/Q1-PLSA.png>
 Package pdftex.def Info: conteudo/capitulos/figs/figuras-experimento/Q1-PLSA.png used on input line 87.
 (pdftex.def)             Requested size: 141.04889pt x 112.91953pt.
- [53 <./conteudo/capitulos/figs/figuras-experimento/Q1-KMeans.png (PNG copy)> <./conteudo/capitulos/figs/figuras-experimento/Q1-LDA.png (PNG copy)> <./conteudo/capitulos/figs/figuras-experimento/Q1-PLSA.png (PNG copy)>]
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
 ./conteudo/capitulos/cap-avaliacao-extratores.tex:106: Undefined control sequence.
 l.106 	\subfigure
                  { \label{fig:kmeans}
@@ -2092,7 +2066,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-<conteudo/capitulos/figs/figuras-experimento/Q2-KMeans.png, id=1715, 357.335pt x 290.08376pt>
+<conteudo/capitulos/figs/figuras-experimento/Q2-KMeans.png, id=1713, 357.335pt x 290.08376pt>
 File: conteudo/capitulos/figs/figuras-experimento/Q2-KMeans.png Graphic file (type png)
  <use conteudo/capitulos/figs/figuras-experimento/Q2-KMeans.png>
 Package pdftex.def Info: conteudo/capitulos/figs/figuras-experimento/Q2-KMeans.png used on input line 107.
@@ -2107,7 +2081,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-<conteudo/capitulos/figs/figuras-experimento/Q2-LDA.png, id=1716, 357.335pt x 290.08376pt>
+<conteudo/capitulos/figs/figuras-experimento/Q2-LDA.png, id=1714, 357.335pt x 290.08376pt>
 File: conteudo/capitulos/figs/figuras-experimento/Q2-LDA.png Graphic file (type png)
  <use conteudo/capitulos/figs/figuras-experimento/Q2-LDA.png>
 Package pdftex.def Info: conteudo/capitulos/figs/figuras-experimento/Q2-LDA.png used on input line 110.
@@ -2122,12 +2096,16 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-<conteudo/capitulos/figs/figuras-experimento/Q2-PLSA.png, id=1717, 357.335pt x 290.08376pt>
+<conteudo/capitulos/figs/figuras-experimento/Q2-PLSA.png, id=1715, 357.335pt x 290.08376pt>
 File: conteudo/capitulos/figs/figuras-experimento/Q2-PLSA.png Graphic file (type png)
  <use conteudo/capitulos/figs/figuras-experimento/Q2-PLSA.png>
 Package pdftex.def Info: conteudo/capitulos/figs/figuras-experimento/Q2-PLSA.png used on input line 113.
 (pdftex.def)             Requested size: 141.04889pt x 114.50436pt.
 
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[53]
 ./conteudo/capitulos/cap-avaliacao-extratores.tex:138: Undefined control sequence.
 l.138 	\subfigure
                  { \label{fig:seg1}
@@ -2137,7 +2115,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-<conteudo/capitulos/figs/figuras-experimento/Q3-Seg.png, id=1719, 558.085pt x 311.1625pt>
+<conteudo/capitulos/figs/figuras-experimento/Q3-Seg.png, id=1724, 558.085pt x 311.1625pt>
 File: conteudo/capitulos/figs/figuras-experimento/Q3-Seg.png Graphic file (type png)
  <use conteudo/capitulos/figs/figuras-experimento/Q3-Seg.png>
 Package pdftex.def Info: conteudo/capitulos/figs/figuras-experimento/Q3-Seg.png used on input line 139.
@@ -2152,7 +2130,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-<conteudo/capitulos/figs/figuras-experimento/Q4-Seg.png, id=1720, 559.08875pt x 313.17pt>
+<conteudo/capitulos/figs/figuras-experimento/Q4-Seg.png, id=1725, 559.08875pt x 313.17pt>
 File: conteudo/capitulos/figs/figuras-experimento/Q4-Seg.png Graphic file (type png)
  <use conteudo/capitulos/figs/figuras-experimento/Q4-Seg.png>
 Package pdftex.def Info: conteudo/capitulos/figs/figuras-experimento/Q4-Seg.png used on input line 142.
@@ -2161,7 +2139,10 @@ Package pdftex.def Info: conteudo/capitulos/figs/figuras-experimento/Q4-Seg.png 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[54 <./conteudo/capitulos/figs/figuras-experimento/Q2-KMeans.png (PNG copy)> <./conteudo/capitulos/figs/figuras-experimento/Q2-LDA.png (PNG copy)> <./conteudo/capitulos/figs/figuras-experimento/Q2-PLSA.png (PNG copy)>]) [55 <./conteudo/capitulos/figs/figuras-experimento/Q3-Seg.png (PNG copy)> <./conteudo/capitulos/figs/figuras-experimento/Q4-Seg.png (PNG copy)>] (./ovidio-dissertacao.bbl (./ovidio-dissertacao.brf)
+
+Underfull \vbox (badness 7486) has occurred while \output is active []
+
+ [54 <./conteudo/capitulos/figs/figuras-experimento/Q1-KMeans.png (PNG copy)> <./conteudo/capitulos/figs/figuras-experimento/Q1-LDA.png (PNG copy)> <./conteudo/capitulos/figs/figuras-experimento/Q1-PLSA.png (PNG copy)> <./conteudo/capitulos/figs/figuras-experimento/Q2-KMeans.png (PNG copy)> <./conteudo/capitulos/figs/figuras-experimento/Q2-LDA.png (PNG copy)> <./conteudo/capitulos/figs/figuras-experimento/Q2-PLSA.png (PNG copy)>]) [55 <./conteudo/capitulos/figs/figuras-experimento/Q3-Seg.png (PNG copy)> <./conteudo/capitulos/figs/figuras-experimento/Q4-Seg.png (PNG copy)>] (./ovidio-dissertacao.bbl (./ovidio-dissertacao.brf)
 \tf@brf=\write6
 \openout6 = `ovidio-dissertacao.brf'.
 
@@ -2182,7 +2163,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 316.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 316.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 316.
 Package rerunfilecheck Info: File `ovidio-dissertacao.brf' has not changed.
-(rerunfilecheck)             Checksum: 614812D5141D720C68C76AADF28BC878;8608.
+(rerunfilecheck)             Checksum: 50AFA2AD925E1DB8168EEE4D58DE1A6F;8608.
 
 
 LaTeX Warning: There were undefined references.
@@ -2197,18 +2178,18 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 316.
 ### simple group (level 1) entered at line 1061 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 16741 strings out of 494884
- 254727 string characters out of 6179236
- 476338 words of memory out of 5000000
- 19223 multiletter control sequences out of 15000+600000
+ 16740 strings out of 494884
+ 254700 string characters out of 6179236
+ 469715 words of memory out of 5000000
+ 19222 multiletter control sequences out of 15000+600000
  110225 words of font info for 174 fonts, out of 8000000 for 9000
  38 hyphenation exceptions out of 8191
  50i,15n,40p,1335b,2995s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc}</usr/share/texmf/fonts/type1/public/lm/lmbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx8.pfb></usr/share/texmf/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi6.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr7.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/public/lm/lmri8.pfb></usr/share/texmf/fonts/type1/public/lm/lmss10.pfb></usr/share/texmf/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss17.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsso12.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt12.pfb>
-Output written on ovidio-dissertacao.pdf (64 pages, 1876489 bytes).
+Output written on ovidio-dissertacao.pdf (64 pages, 1879671 bytes).
 PDF statistics:
- 2222 PDF objects out of 2487 (max. 8388607)
- 1456 compressed objects within 15 object streams
+ 2228 PDF objects out of 2487 (max. 8388607)
+ 1462 compressed objects within 15 object streams
  259 named destinations out of 1000 (max. 500000)
  38011 words of extra memory for PDF output out of 42996 (max. 10000000)
 
