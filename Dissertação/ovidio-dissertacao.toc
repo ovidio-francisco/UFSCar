@@ -49,8 +49,8 @@
 \contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase {Avalia\IeC {\c c}\IeC {\~a}o dos Segmentadores}}{41}{chapter.4}
 \contentsline {section}{\numberline {4.1}Prepara\IeC {\c c}\IeC {\~a}o de um corpus de refer\IeC {\^e}ncia}{41}{section.4.1}
 \contentsline {section}{\numberline {4.2}Configura\IeC {\c c}\IeC {\~a}o experimental}{44}{section.4.2}
-\contentsline {section}{\numberline {4.3}Crit\IeC {\'e}rios de avalia\IeC {\c c}\IeC {\~a}o}{44}{section.4.3}
-\contentsline {section}{\numberline {4.4}Resultados}{45}{section.4.4}
+\contentsline {section}{\numberline {4.3}Crit\IeC {\'e}rios de avalia\IeC {\c c}\IeC {\~a}o}{45}{section.4.3}
+\contentsline {section}{\numberline {4.4}Resultados}{46}{section.4.4}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase {Avalia\IeC {\c c}\IeC {\~a}o dos Extratores de T\IeC {\'o}picos}}{51}{chapter.5}
 \contentsline {section}{\numberline {5.1}Configura\IeC {\c c}\IeC {\~a}o experimental}{51}{section.5.1}

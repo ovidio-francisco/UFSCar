@@ -17,6 +17,13 @@ ISBN 978-3-319-73531-3.}
   Publishing Company, Incorporated, 2012.
 ISBN 1461432227, 9781461432227.}
 
+\bibitem[Alemi e Ginsparg 2015]{AlemiG15}
+\abntrefinfo{Alemi e Ginsparg}{ALEMI; GINSPARG}{2015}
+{ALEMI, A.~A.; GINSPARG, P. Text segmentation based on semantic word
+  embeddings.
+\emph{CoRR}, abs/1503.05543, 2015.
+Dispon{\'\i}vel em: \url{http://arxiv.org/abs/1503.05543}.}
+
 \bibitem[Beeferman, Berger e Lafferty 1999]{Beeferman1999}
 \abntrefinfo{Beeferman, Berger e Lafferty}{BEEFERMAN; BERGER; LAFFERTY}{1999}
 {BEEFERMAN, D.; BERGER, A.; LAFFERTY, J. Statistical models for text

@@ -64,11 +64,6 @@ Case mismatch error between cite keys Sakahara2014 and sakahara2014
  :                       }
 I'm skipping whatever remains of this command
 A level-1 auxiliary file: conteudo/capitulos/cap-avaliacao-segmentadores.aux
-Case mismatch error between cite keys Eisenstein2008 and eisenstein2008
----line 41 of file conteudo/capitulos/cap-avaliacao-segmentadores.aux
- : \citation{Eisenstein2008
- :                         }
-I'm skipping whatever remains of this command
 A level-1 auxiliary file: conteudo/capitulos/cap-avaliacao-extratores.aux
 The style file: abntex2-alf.bst
 Reallocated singl_function (elt_size=4) to 100 items from 50.
@@ -80,7 +75,7 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
-Reallocated field_info (elt_size=4) to 10037 items from 5000.
+Reallocated field_info (elt_size=4) to 10106 items from 5000.
 Database file #1: abntex2-options.bib
 Database file #2: referencias.bib
 Repeated entry---line 137 of file referencias.bib
@@ -111,45 +106,45 @@ Warning--faltando school em Reynar1998
 | Em caso de dúvidas ou problemas com este estilo procure |
 | http://abntex2.googlecode.com                           |
 +---------------------------------------------------------+
-You've used 69 entries,
+You've used 70 entries,
             6711 wiz_defined-function locations,
-            1781 strings with 25348 characters,
-and the built_in function-call counts, 102142 in all, are:
-= -- 11307
-> -- 2303
-< -- 2182
-+ -- 2939
-- -- 692
-* -- 6856
-:= -- 12405
-add.period$ -- 340
-call.type$ -- 69
-change.case$ -- 767
-chr.to.int$ -- 170
-cite$ -- 71
-duplicate$ -- 9166
-empty$ -- 4655
-format.name$ -- 3303
-if$ -- 21438
+            1788 strings with 25500 characters,
+and the built_in function-call counts, 103471 in all, are:
+= -- 11454
+> -- 2336
+< -- 2215
++ -- 2983
+- -- 702
+* -- 6944
+:= -- 12573
+add.period$ -- 344
+call.type$ -- 70
+change.case$ -- 778
+chr.to.int$ -- 174
+cite$ -- 72
+duplicate$ -- 9293
+empty$ -- 4702
+format.name$ -- 3350
+if$ -- 21700
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 1269
-newline$ -- 379
-num.names$ -- 343
-pop$ -- 1537
+missing$ -- 1286
+newline$ -- 385
+num.names$ -- 348
+pop$ -- 1562
 preamble$ -- 1
-purify$ -- 282
+purify$ -- 286
 quote$ -- 0
-skip$ -- 9230
+skip$ -- 9359
 stack$ -- 1
-substring$ -- 4674
-swap$ -- 3772
-text.length$ -- 151
+substring$ -- 4724
+swap$ -- 3814
+text.length$ -- 152
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 31
 warning$ -- 3
-while$ -- 581
+while$ -- 588
 width$ -- 0
-write$ -- 1224
-(There were 16 error messages)
+write$ -- 1240
+(There were 15 error messages)
