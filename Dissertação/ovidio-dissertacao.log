@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.8.22)  11 JUN 2018 15:00
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.8.22)  11 JUN 2018 18:41
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1300,6 +1300,12 @@ LaTeX Warning: Label `fig:lda' multiply defined.
 
 LaTeX Warning: Label `fig:plsa' multiply defined.
 
+
+LaTeX Warning: Label `fig:Q2' multiply defined.
+
+
+LaTeX Warning: Label `fig:Q2' multiply defined.
+
 ))
 \openout1 = `ovidio-dissertacao.aux'.
 
@@ -2142,16 +2148,200 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 Underfull \vbox (badness 7486) has occurred while \output is active []
 
- [54 <./conteudo/capitulos/figs/figuras-experimento/Q1-KMeans.png (PNG copy)> <./conteudo/capitulos/figs/figuras-experimento/Q1-LDA.png (PNG copy)> <./conteudo/capitulos/figs/figuras-experimento/Q1-PLSA.png (PNG copy)> <./conteudo/capitulos/figs/figuras-experimento/Q2-KMeans.png (PNG copy)> <./conteudo/capitulos/figs/figuras-experimento/Q2-LDA.png (PNG copy)> <./conteudo/capitulos/figs/figuras-experimento/Q2-PLSA.png (PNG copy)>]) [55 <./conteudo/capitulos/figs/figuras-experimento/Q3-Seg.png (PNG copy)> <./conteudo/capitulos/figs/figuras-experimento/Q4-Seg.png (PNG copy)>] (./ovidio-dissertacao.bbl (./ovidio-dissertacao.brf)
+ [54 <./conteudo/capitulos/figs/figuras-experimento/Q1-KMeans.png (PNG copy)> <./conteudo/capitulos/figs/figuras-experimento/Q1-LDA.png (PNG copy)> <./conteudo/capitulos/figs/figuras-experimento/Q1-PLSA.png (PNG copy)> <./conteudo/capitulos/figs/figuras-experimento/Q2-KMeans.png (PNG copy)> <./conteudo/capitulos/figs/figuras-experimento/Q2-LDA.png (PNG copy)> <./conteudo/capitulos/figs/figuras-experimento/Q2-PLSA.png (PNG copy)>]
+./conteudo/capitulos/cap-avaliacao-extratores.tex:172: Undefined control sequence.
+l.172 	\subfigure
+                 { \label{fig:c1q1kmeans}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+<conteudo/capitulos/figs/figuras-experimento/C1-Q1-KMeans.png, id=1733, 357.335pt x 287.0725pt>
+File: conteudo/capitulos/figs/figuras-experimento/C1-Q1-KMeans.png Graphic file (type png)
+ <use conteudo/capitulos/figs/figuras-experimento/C1-Q1-KMeans.png>
+Package pdftex.def Info: conteudo/capitulos/figs/figuras-experimento/C1-Q1-KMeans.png used on input line 173.
+(pdftex.def)             Requested size: 141.04889pt x 113.31573pt.
+
+./conteudo/capitulos/cap-avaliacao-extratores.tex:175: Undefined control sequence.
+l.175 	\subfigure
+                 { \label{fig:c1q1lda}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+<conteudo/capitulos/figs/figuras-experimento/C1-Q1-LDA.png, id=1734, 358.33875pt x 287.0725pt>
+File: conteudo/capitulos/figs/figuras-experimento/C1-Q1-LDA.png Graphic file (type png)
+ <use conteudo/capitulos/figs/figuras-experimento/C1-Q1-LDA.png>
+Package pdftex.def Info: conteudo/capitulos/figs/figuras-experimento/C1-Q1-LDA.png used on input line 176.
+(pdftex.def)             Requested size: 141.04889pt x 112.99596pt.
+
+./conteudo/capitulos/cap-avaliacao-extratores.tex:178: Undefined control sequence.
+l.178 	\subfigure
+                 { \label{fig:c1q1plsa}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+<conteudo/capitulos/figs/figuras-experimento/C1-Q1-PLSA.png, id=1735, 357.335pt x 286.06876pt>
+File: conteudo/capitulos/figs/figuras-experimento/C1-Q1-PLSA.png Graphic file (type png)
+ <use conteudo/capitulos/figs/figuras-experimento/C1-Q1-PLSA.png>
+Package pdftex.def Info: conteudo/capitulos/figs/figuras-experimento/C1-Q1-PLSA.png used on input line 179.
+(pdftex.def)             Requested size: 141.04889pt x 112.91953pt.
+
+./conteudo/capitulos/cap-avaliacao-extratores.tex:181: Undefined control sequence.
+l.181 	\subfigure
+                 { \label{fig:c2q1kmeans}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+<conteudo/capitulos/figs/figuras-experimento/C2-Q1-KMeans.png, id=1736, 357.335pt x 287.0725pt>
+File: conteudo/capitulos/figs/figuras-experimento/C2-Q1-KMeans.png Graphic file (type png)
+ <use conteudo/capitulos/figs/figuras-experimento/C2-Q1-KMeans.png>
+Package pdftex.def Info: conteudo/capitulos/figs/figuras-experimento/C2-Q1-KMeans.png used on input line 182.
+(pdftex.def)             Requested size: 141.04889pt x 113.31573pt.
+
+./conteudo/capitulos/cap-avaliacao-extratores.tex:184: Undefined control sequence.
+l.184 	\subfigure
+                 { \label{fig:c2q1lda}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+<conteudo/capitulos/figs/figuras-experimento/C2-Q1-LDA.png, id=1737, 358.33875pt x 287.0725pt>
+File: conteudo/capitulos/figs/figuras-experimento/C2-Q1-LDA.png Graphic file (type png)
+ <use conteudo/capitulos/figs/figuras-experimento/C2-Q1-LDA.png>
+Package pdftex.def Info: conteudo/capitulos/figs/figuras-experimento/C2-Q1-LDA.png used on input line 185.
+(pdftex.def)             Requested size: 141.04889pt x 112.99596pt.
+
+./conteudo/capitulos/cap-avaliacao-extratores.tex:187: Undefined control sequence.
+l.187 	\subfigure
+                 { \label{fig:c2q1plsa}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+<conteudo/capitulos/figs/figuras-experimento/C2-Q1-PLSA.png, id=1738, 357.335pt x 286.06876pt>
+File: conteudo/capitulos/figs/figuras-experimento/C2-Q1-PLSA.png Graphic file (type png)
+ <use conteudo/capitulos/figs/figuras-experimento/C2-Q1-PLSA.png>
+Package pdftex.def Info: conteudo/capitulos/figs/figuras-experimento/C2-Q1-PLSA.png used on input line 188.
+(pdftex.def)             Requested size: 141.04889pt x 112.91953pt.
+
+./conteudo/capitulos/cap-avaliacao-extratores.tex:202: Undefined control sequence.
+l.202 	\subfigure
+                 { \label{fig:c1q2kmeans}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+<conteudo/capitulos/figs/figuras-experimento/C1-Q2-KMeans.png, id=1739, 357.335pt x 290.08376pt>
+File: conteudo/capitulos/figs/figuras-experimento/C1-Q2-KMeans.png Graphic file (type png)
+ <use conteudo/capitulos/figs/figuras-experimento/C1-Q2-KMeans.png>
+Package pdftex.def Info: conteudo/capitulos/figs/figuras-experimento/C1-Q2-KMeans.png used on input line 203.
+(pdftex.def)             Requested size: 141.04889pt x 114.50436pt.
+
+./conteudo/capitulos/cap-avaliacao-extratores.tex:205: Undefined control sequence.
+l.205 	\subfigure
+                 { \label{fig:c1q2lda}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+<conteudo/capitulos/figs/figuras-experimento/C1-Q2-LDA.png, id=1740, 357.335pt x 290.08376pt>
+File: conteudo/capitulos/figs/figuras-experimento/C1-Q2-LDA.png Graphic file (type png)
+ <use conteudo/capitulos/figs/figuras-experimento/C1-Q2-LDA.png>
+Package pdftex.def Info: conteudo/capitulos/figs/figuras-experimento/C1-Q2-LDA.png used on input line 206.
+(pdftex.def)             Requested size: 141.04889pt x 114.50436pt.
+
+./conteudo/capitulos/cap-avaliacao-extratores.tex:208: Undefined control sequence.
+l.208 	\subfigure
+                 { \label{fig:c1q2plsa}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+<conteudo/capitulos/figs/figuras-experimento/C1-Q2-PLSA.png, id=1741, 357.335pt x 290.08376pt>
+File: conteudo/capitulos/figs/figuras-experimento/C1-Q2-PLSA.png Graphic file (type png)
+ <use conteudo/capitulos/figs/figuras-experimento/C1-Q2-PLSA.png>
+Package pdftex.def Info: conteudo/capitulos/figs/figuras-experimento/C1-Q2-PLSA.png used on input line 209.
+(pdftex.def)             Requested size: 141.04889pt x 114.50436pt.
+
+./conteudo/capitulos/cap-avaliacao-extratores.tex:211: Undefined control sequence.
+l.211 	\subfigure
+                 { \label{fig:c2q2kmeans}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+<conteudo/capitulos/figs/figuras-experimento/C2-Q2-KMeans.png, id=1742, 357.335pt x 290.08376pt>
+File: conteudo/capitulos/figs/figuras-experimento/C2-Q2-KMeans.png Graphic file (type png)
+ <use conteudo/capitulos/figs/figuras-experimento/C2-Q2-KMeans.png>
+Package pdftex.def Info: conteudo/capitulos/figs/figuras-experimento/C2-Q2-KMeans.png used on input line 212.
+(pdftex.def)             Requested size: 141.04889pt x 114.50436pt.
+
+./conteudo/capitulos/cap-avaliacao-extratores.tex:214: Undefined control sequence.
+l.214 	\subfigure
+                 { \label{fig:c2q2lda}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+<conteudo/capitulos/figs/figuras-experimento/C2-Q2-LDA.png, id=1743, 357.335pt x 290.08376pt>
+File: conteudo/capitulos/figs/figuras-experimento/C2-Q2-LDA.png Graphic file (type png)
+ <use conteudo/capitulos/figs/figuras-experimento/C2-Q2-LDA.png>
+Package pdftex.def Info: conteudo/capitulos/figs/figuras-experimento/C2-Q2-LDA.png used on input line 215.
+(pdftex.def)             Requested size: 141.04889pt x 114.50436pt.
+
+./conteudo/capitulos/cap-avaliacao-extratores.tex:217: Undefined control sequence.
+l.217 	\subfigure
+                 { \label{fig:c2q2plsa}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+<conteudo/capitulos/figs/figuras-experimento/C2-Q2-PLSA.png, id=1744, 357.335pt x 290.08376pt>
+File: conteudo/capitulos/figs/figuras-experimento/C2-Q2-PLSA.png Graphic file (type png)
+ <use conteudo/capitulos/figs/figuras-experimento/C2-Q2-PLSA.png>
+Package pdftex.def Info: conteudo/capitulos/figs/figuras-experimento/C2-Q2-PLSA.png used on input line 218.
+(pdftex.def)             Requested size: 141.04889pt x 114.50436pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+) [55 <./conteudo/capitulos/figs/figuras-experimento/Q3-Seg.png (PNG copy)> <./conteudo/capitulos/figs/figuras-experimento/Q4-Seg.png (PNG copy)> <./conteudo/capitulos/figs/figuras-experimento/C1-Q1-KMeans.png (PNG copy)> <./conteudo/capitulos/figs/figuras-experimento/C1-Q1-LDA.png (PNG copy)> <./conteudo/capitulos/figs/figuras-experimento/C1-Q1-PLSA.png (PNG copy)> <./conteudo/capitulos/figs/figuras-experimento/C2-Q1-KMeans.png (PNG copy)> <./conteudo/capitulos/figs/figuras-experimento/C2-Q1-LDA.png (PNG copy)> <./conteudo/capitulos/figs/figuras-experimento/C2-Q1-PLSA.png (PNG copy)>] [56 <./conteudo/capitulos/figs/figuras-experimento/C1-Q2-KMeans.png (PNG copy)> <./conteudo/capitulos/figs/figuras-experimento/C1-Q2-LDA.png (PNG copy)> <./conteudo/capitulos/figs/figuras-experimento/C1-Q2-PLSA.png (PNG copy)> <./conteudo/capitulos/figs/figuras-experimento/C2-Q2-KMeans.png (PNG copy)> <./conteudo/capitulos/figs/figuras-experimento/C2-Q2-LDA.png (PNG copy)> <./conteudo/capitulos/figs/figuras-experimento/C2-Q2-PLSA.png (PNG copy)>] (./ovidio-dissertacao.bbl (./ovidio-dissertacao.brf)
 \tf@brf=\write6
 \openout6 = `ovidio-dissertacao.brf'.
 
- [56
 
-
-]
 bibitemlist
-[57] [58] [59] [60] [61] [62]) 
+[57
+
+
+] [58] [59] [60] [61] [62]) 
 AED: lastpage setting LastPage
 [63]
 \tf@toc=\write7
@@ -2178,18 +2368,18 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 316.
 ### simple group (level 1) entered at line 1061 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 16740 strings out of 494884
- 254700 string characters out of 6179236
- 469715 words of memory out of 5000000
- 19222 multiletter control sequences out of 15000+600000
+ 16814 strings out of 494884
+ 258094 string characters out of 6179236
+ 470496 words of memory out of 5000000
+ 19282 multiletter control sequences out of 15000+600000
  110225 words of font info for 174 fonts, out of 8000000 for 9000
  38 hyphenation exceptions out of 8191
  50i,15n,40p,1335b,2995s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc}</usr/share/texmf/fonts/type1/public/lm/lmbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx8.pfb></usr/share/texmf/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi6.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr7.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/public/lm/lmri8.pfb></usr/share/texmf/fonts/type1/public/lm/lmss10.pfb></usr/share/texmf/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss17.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsso12.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt12.pfb>
-Output written on ovidio-dissertacao.pdf (64 pages, 1879671 bytes).
+Output written on ovidio-dissertacao.pdf (64 pages, 1937620 bytes).
 PDF statistics:
- 2228 PDF objects out of 2487 (max. 8388607)
- 1462 compressed objects within 15 object streams
- 259 named destinations out of 1000 (max. 500000)
- 38011 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 2242 PDF objects out of 2487 (max. 8388607)
+ 1464 compressed objects within 15 object streams
+ 261 named destinations out of 1000 (max. 500000)
+ 38071 words of extra memory for PDF output out of 42996 (max. 10000000)
 
