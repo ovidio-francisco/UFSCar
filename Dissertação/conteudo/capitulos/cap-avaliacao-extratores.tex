@@ -128,9 +128,8 @@ Ao analisar os resultados, verifica-se que de maneira geral os modelos K-Means e
 Verifica-se também que para o modelo K-Means os avaliadores identificaram que, na maioria dos casos, houve resultados satisfatórios, principalmente quanto a representatividade dos descritores. Embora a avaliação aponte imperfeições, esse modelo apresenta maior uniformidade em relação aos demais.
 
 
-
 Esse experimento foi aproveitado para validar o segmentador empregado nesse trabalho. Uma vez que esta uma etapa anterior à extração de tópicos a princípio, a modelo que selecionou os segmentos não interfere em sua avaliação. Assim, a Figura~\ref{fig:Q3e4} mostra as respostas do avaliadores considerando todos os cenários. As respostas referentes a terceira questão, na qual se averígua a homogeneidade de cada segmento quanto ao seu assunto central, apontam que poucos segmentos contém mais de um assunto.
-Ainda sobre a qualidade da segmentação, a quarta questão investiga a integridade de cada segmento, isto é, sua capacidade de informar o usuário sobre o assunto que trata sem necessidade de se recorrer a leitura do documento integral. Nesse critério, a maioria das avaliações indicam que nenhum ou poucos segmentos apresentam texto insuficiente para leitura.
+Ainda sobre a qualidade da segmentação, a quarta questão investiga a integridade de cada segmento, isto é, sua capacidade de informar o usuário sobre o assunto que trata sem necessidade de se recorrer a leitura do documento integral. Nesse critério, a maioria das avaliações indicam que nenhum ou poucos segmentos apresentam texto insuficiente para leitura.  Uma análise mais detalhada das questões relacionadas a segmentação das atas foi discutida no Capítulo~\ref{cap-segmentadores}, ficando aqui análises de pontos onde a segmentação influencia os extratores e os resultados finais apresentados ao usuário.
 
 
 \begin{figure}[!h] \centering     %%% not \center
@@ -152,16 +151,15 @@ Ainda sobre a qualidade da segmentação, a quarta questão investiga a integrid
 \end{figure}
 
 
+Outra questão analisada foi o comportamento dos modelos nas diferentes consultas. Ao se isolar as respostas das questões referentes a uma consulta específica, nota-se certa alteração nas respostas dos modelos. 
+Os gráficos apresentados na Figura~\ref{fig:c12-q1}, mostram na primeira superior as respostas para cada modelo considerando-se os segmentos extraídos na primeira consulta e na linha inferior aqueles referentes a segunda consulta. O K-Means apresenta uma diminuição considerável na segunda consulta em relação a primeira no que se refere a respostas afirmando que os todos os segmentos compartilham um único assunto, e um aumento de respostam indicando discordância total com a afirmação da questão.
+De forma semelhante, o PLSA apresenta diminuição de respostas positivas para essa afirmação e na proporção que há um aumento de respostas negativas. 
+Por outro lado o LDA mantém resultados semelhantes em ambas as consultas, nas quais apresenta resultados equilibrados entre respostas positivas e negativas. Em outras palavras, os modelos K-Means e PLSA sofreram perda de desempenho enquanto o LDA manteve-se estável em ambas consultas.
+Ao analisar separadamente a segunda questão, referente a representatividade dos descritores observa-se na Figura~\ref{fig:c12-q2} que todos os modelos apresentam perca de performance nesse critério, contudo, de forma acentuada no PLSA. 
 
 
-% -- Conclusão : do conjunto das técnicas de extração e segmentação
 
-Nessa Seção, analisou-se as técnicas de segmentação textual e extração de tópicos na criação de uma estrutura derivada do \textit{corpus} original como uma representação estruturada da coleção de atas a qual foi organizada e acrescida de atributos para sua descrição. As análises sugerem que tais técnicas podem oferecer a sistemas de recuperação uma representação estruturada que preserva o conteúdo dos documentos ao mesmo tempo que cria atributos adicionais que incorporam informação à base de dados e podem ser inseridas no espaço de busca.  
-
-% Na maioria dos casos, os dados coletados apontam 
-
-
-Outra questão analisada foi a o comportamento dos modelos nas diferentes consultas. 
+% indicam que o Algoritmo 
 
 
 
@@ -188,8 +186,8 @@ Outra questão analisada foi a o comportamento dos modelos nas diferentes consul
 		\includegraphics[width=.31\textwidth]{conteudo/capitulos/figs/figuras-experimento/C2-Q1-PLSA.png}
 	}
 
-	\caption{Contagem das respostas referentes a primeira questão. A primeira consulta, ``\textit{compra de equipamentos}'', é mostrada na linha superior e a segunda consulta, ``\textit{defesa de dissertação}'', na linha inferior.}
-	\label{fig:Q2}
+	\caption{Contagem das respostas referentes a Primeira questão. A primeira consulta, ``\textit{compra de equipamentos}'', é mostrada na linha superior e a segunda consulta, ``\textit{defesa de dissertação}'', na linha inferior.}
+	\label{fig:c12-q1}
 \end{figure}
 
 
@@ -218,11 +216,32 @@ Outra questão analisada foi a o comportamento dos modelos nas diferentes consul
 		\includegraphics[width=.31\textwidth]{conteudo/capitulos/figs/figuras-experimento/C2-Q2-PLSA.png}
 	}
 
-	\caption{Contagem das respostas referentes a segunda questão. A primeira consulta, ``\textit{compra de equipamentos}'', é mostrada na linha superior e a segunda consulta, ``\textit{defesa de dissertação}'', na linha inferior.}
-	\label{fig:Q2}
+	\caption{Contagem das respostas referentes a Segunda questão. A primeira consulta, ``\textit{compra de equipamentos}'', é mostrada na linha superior e a segunda consulta, ``\textit{defesa de dissertação}'', na linha inferior.}
+	\label{fig:c12-q2}
 \end{figure}
 
 
+
+{
+\small
+TODO:
+--> O segmentador, sendo uma etapa anterior a extração de tópicos, influencia na qualidade do grupos??
+
+--> O K-means traz melhores segmentos (Sem misturar assuntos) em relação aos outros métodos.  'Aparentemente o K-means seleciona os trechos mais coesos, mas precisa de mais experimentos, mais amostras ...'
+
+
+--> Com os avaliadores das ETECs T1 > T2 > T3
+--> Incluindo os da UFSCar   T1 > T2 = T3;
+}
+
+
+
+
+% -- Conclusão : do conjunto das técnicas de extração e segmentação
+
+Nessa Seção, analisou-se as técnicas de segmentação textual e extração de tópicos na criação de uma estrutura derivada do \textit{corpus} original como uma representação estruturada da coleção de atas a qual foi organizada e acrescida de atributos para sua descrição. As análises sugerem que tais técnicas podem oferecer a sistemas de recuperação uma representação estruturada que preserva o conteúdo dos documentos ao mesmo tempo que cria atributos adicionais que incorporam informação à base de dados e podem ser inseridas no espaço de busca.  
+
+% Na maioria dos casos, os dados coletados apontam 
 
 
 
