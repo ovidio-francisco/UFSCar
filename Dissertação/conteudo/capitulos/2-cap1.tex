@@ -98,69 +98,43 @@ Contudo, a segmentação textual apenas indica as transições de assuntos ao lo
 %        ========== ==========|   Unindo as coisas  |========== ==========
 
 % --> Falando do problema ??
-Devido às características das atas, como ausência de meta-informação e a multiplicidade de assuntos, as técnicas de segmentação podem ser empregadas em conjunto com as de extração de tópicos para gerar uma estrutura de dados derivada da coleção de documentos original que favoreça o uso de técnicas de aprendizado de máquina e recuperação de informação no desenvolvimento de um sistema para busca aprimorar a recuperação de informação em coleções de atas de reunião. 
+Devido às características das atas, como a multiplicidade de assuntos, e ausência de meta-informação, as técnicas de segmentação podem ser empregadas em conjunto com modelos de extração de tópicos para criar uma estrutura de dados derivada da coleção de documentos original. 
+Essa abordagem visa, em primeiro lugar, identificar os assuntos tratados em cada ata e gerar uma coleção de subdocumentos derivados da coleção de atas originais e, a partir disso, utilizar modelos de extração de tópicos para encontrar relações latentes entre os subdocumentos e termos da coleção.
+Como resultado, obtém-se uma organização da coleção em que os segmentos são agrupados por assuntos e acrescidos de um conjunto de termos que representam os principais tópicos ou assuntos identificados na coleção de documentos, dessa forma, incorporando conhecimento aos dados originais. Esse novos atributos e a melhor organização da coleção documentos podem ser usados para 
+% os descrevem, 
+% podendo assim 
+expandir o espaço de busca a fim de aprimorar técnicas de recuperação de informação em um sistema para extração de conhecimento em coleções de atas de reunião.
 % como texto seccionado e \textit{hyperlinks} 
-
-Nesse trabalho, a segmentação textual é empregada na identificação de porções lineares de texto que compartilham um mesmo assunto. Os segmentos de atas gerados, aqui considerados como sub-documentos, são entregues a um extrator de tópicos. A tarefa do extrator é agrupar os segmentos com um mesmo tópico e eleger palavras da coleção que melhor descrevem cada grupo. Os descritores gerados pelo extrator de tópicos bem com os grupos são aproveitados nas técnicas de recuperação de informação a fim de ranquear os resultados e auxiliar o usuário a encontrar segmentos semelhantes por meio da navegação pelos grupos. Essa abordagem visa, em primeiro lugar, identificar os assuntos tratados em cada ata e gerar uma coleção de subdocumentos derivados da coleção de atas originais e, a partir disso, utilizar modelos de extração de tópicos para encontrar relações latentes entre os subdocumentos e termos da coleção. Com isso, tem-se uma estrutura que permite às técnicas de recuperação de informação fazer buscas à coleção de atas valendo-se da estrutura criada a partir das técnicas de segmentação textual e extração de tópicos. 
-
 
 
 
 %        ======== ========   Essa abordagem traz como vantagens   ======== ========
 
-% Essa abordagem traz vantagens em relação às técnicas de recuperação de informação 
-%
-%
 Essa abordagem traz vantagens para a recuperação de informação em coleções de documentos com múltiplos tópicos como atas de reunião.
 % -> 1 Segmentação
-A segmentação das atas permite ao sistema criar uma base de dados interna mais simples, em que os assuntos estão isolados em segmentos, formando assim, uma base de dados mais adequada aos métodos de aprendizado de máquina e recuperação de informação, empregados nesse trabalho. Além disso, permite ao sistema final exibir apenas os trechos onde o assunto pesquisado está presente ao invés de entregar documentos integrais~\cite{Tagarelli2013, Jeong:2010, Prince2007, Huang2003}. 
-%
+A segmentação das atas permite ao sistema criar uma base de documentos mais simples, em que os assuntos estão isolados em segmentos, formando assim, um \textit{corpus} mais adequado aos métodos de aprendizado de máquina e recuperação de informação, empregados nesse trabalho. Além disso, permite ao sistema final exibir apenas os trechos onde o assunto pesquisado está presente ao invés de entregar documentos integrais~\cite{Tagarelli2013, Jeong:2010, Prince2007, Huang2003}. 
 
 % -> 2 Extração de tópicos -- descritores
-
-Modelos de extração de tópicos podem se integrar ao processo de recuperação de informação usando os agrupamentos e seus descritores como uma forma de descrição da coleção~\cite{Zhai2017, Xing2009}, bem como relacionar termos distintos com um determinado tópico em comum~\cite{WEIXING}.  
-A busca por palavras-chave em descritores transfere processamento da varredura dos documentos para o processo de extração de tópicos. Esse processo evita processamento e lentidão no momento da pesquisa. Essa estratégia é semelhante a criação de índices para aumentar a eficiência em sistemas de recuperação de informação. Além disso, encontra relações entre termos e documentos sem necessidade de conhecimento externo sobre o domínio.
-%
-Assim, nesse trabalho os modelos de extração de tópicos são utilizados para incorporar informação aos segmentos com a finalidade de aprimorar o ranqueamento dos resultados~\cite{Maracini2010, WEIXING}. 
+Modelos de extração de tópicos podem se integrar ao processo de recuperação de informação usando os agrupamentos e seus descritores como uma forma de descrição da coleção~\cite{Zhai2017, Xing2009}, bem como relacionar termos distintos com um determinado tópico em comum~\cite{WEIXING}. A busca por palavras-chave em descritores transfere esforço computacional da varredura dos documentos para a etapa de extração de tópicos. Essa estratégia evita processamento e lentidão no momento da pesquisa de maneira semelhante à criação de índices para aumentar a eficiência em sistemas de recuperação de informação. Além disso, encontra relações entre termos e documentos sem necessidade de conhecimento externo sobre o domínio. Assim, nesse trabalho os modelos de extração de tópicos são utilizados para incorporar informação aos segmentos com a finalidade de aprimorar o ranqueamento dos resultados~\cite{Maracini2010, WEIXING}. 
 % 
 % -> 3 Extração de tópicos -- agrupamento
 Além disso, ao agrupar os segmentos por tópicos, tem-se uma organização dos documentos que permite a visualização de segmentos semelhantes permitindo a navegação e exploração aos grupos além das consultas por palavras-chave.
 %
 
 
-
-% // https://verbosus.com/bibtex-style-examples.html
-
-
-
-
-%        ========== ==========   Aplicando na UFSCar   ========== ==========
-% --> Seleção das atas
-% --> 1º Teste Segmentação, rotulação, apontamento de descritores
-% --> 2º Teste Percepção do usuário.
-% --> Disponibilisação do sistema final.
-
-
 %        ========== ==========   Objetivos   ========== ==========
-
 
 Diante desse cenário, o objetivo desse trabalho de mestrado é propor o desenvolvimento uma ferramenta para identificar, organizar e apresentar assuntos registrados em atas de reunião utilizando a estrutura latente de documentos segmentados em conjunto com técnicas de recuperação de informação. 
 %
-%
 Como objetivos específicos, esse trabalho visa  
-% 
 % 1)
-dar início a investigação dos métodos de segmentação textual, extração de tópicos e recuperação de informação no contexto de atas de reunião. Essas técnicas foram avaliadas tendo como referência anotações coletadas de profissionais que desempenham atividades ligadas a atas e reuniões.
-% 
+dar início a investigação de métodos de segmentação textual, extração de tópicos e recuperação de informação no contexto de atas de reunião. Para conhecer a eficiência das técnicas de segmentação textual, seus resultados foram analisados tendo como referência anotações coletadas de profissionais que desempenham atividades ligadas a atas e reuniões.
 % 2)
-Após a aplicação das técnicas mais adequadas a esse contexto, esse trabalho pretende ainda analisar junto ao usuário a qualidade dos subdocumentos apresentados quanto ao agrupamento, e relevância das informações contidas. Para isso, um segundo experimento é realizado para coletar dados sobre a percepção de usuários sobre a qualidade dos resultados apresentados a uma consulta a coleção de atas por meio do sistema.
+Além disso, avaliou-se junto ao usuário a qualidade dos subdocumentos apresentados quanto ao agrupamento e relevância das informações contidas. Para isso, foi feito uma coleta de dados sobre a percepção de usuários sobre a qualidade dos resultados apresentados em uma consulta a coleção de atas por meio do sistema.
 % 
-% 
-Dessa forma, busca-se ajudar a suprir a necessidade de ferramentas para para esse cenário e contribuir com uma metodologia de extração de informação em documentos com assuntos que pode ser útil em trabalhos relacionados a outros domínios como documentos jurídicos, notícias e transcrições de conversas.
+Dessa forma, busca-se ajudar a suprir a necessidade de ferramentas para para esse cenário e contribuindo com uma metodologia de extração de informação em documentos com múltiplos assuntos. Além disso, disponibilizar o sistema implementado bem como os dados coletados durante a análise das técnicas de forma a contribuir com novos trabalhos relacionados a esse contexto.
 
-
-
-
+% --> Disponibilisação do sistema final.
 
 
 % "Diante do cenário descrito na seção anterior, a hipótese levantada neste trabalho é que a qualidade da recomendação é melhorada quando são utilizadas hierarquias de tópicos como informações contextuais."
@@ -170,9 +144,10 @@ Dessa forma, busca-se ajudar a suprir a necessidade de ferramentas para para ess
 
 
 
-\section{Organização da Dissertação}
+% \section{Organização da Dissertação}
 
 
 
 
 
+% // https://verbosus.com/bibtex-style-examples.html
