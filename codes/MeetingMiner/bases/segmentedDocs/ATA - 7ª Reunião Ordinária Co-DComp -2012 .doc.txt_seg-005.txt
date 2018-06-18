@@ -1,0 +1,1 @@
+Também foi discutida a ideia do técnico Thiago que a há tempos quer fazer uma autenticação para os alunos, porém ele ainda não conseguiu fazer funcionar, então o prof. Gustavo sugeriu que fosse usado o Linux, e segundo eles em quinze minutos funcionou. 

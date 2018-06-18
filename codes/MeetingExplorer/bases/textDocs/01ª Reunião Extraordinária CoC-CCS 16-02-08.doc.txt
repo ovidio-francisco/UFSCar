@@ -1,0 +1,70 @@
+Local, Dia e Hora: No laboratório LAGESP, situado nas dependências da Universidade Federal de São Carlos - campus Sorocaba, à Rodovia João Leme dos Santos, quilômetro 110, Bairro do Itinga, na cidade de Sorocaba, Estado de São Paulo e realizada aos dezesseis dias do mês de setembro do ano de dois mil e oito, às 09:00 horas. Convocação e Presença: A convocação foi realizada quatro dias antes da data de sua realização, por e-mails enviados a todos os interessados, e Ofício Circular 04/2008, sendo que se celebrou a primeira chamada às 09h15, a segunda chamada às 09h30 e a terceira chamada às 09h45, estando presentes após a terceira chamada os membros do Conselho do Curso de Bacharelado em Ciência da Computação - Sorocaba, sendo eles os professores doutores Siovani Cintra Felipussi; Yeda Regina Venturini; Tiemi Christine Sakata, Katti Faceli, José de Oliveira Guimarães, a Lynnyngs Kelly Arruda Saraiva de Paiva e Laércio José dos Santos. Também presente a Sra. Josiane Donizetti Lobo, o Sr. César Augusto Costa e o Sr. João Guilherme Júnior. Comunicações da Presidência: O Prof. Dr. Siovani Cintra Felipussi dá início à reunião. (I) O presidente informa que esta é a primeira reunião do Conselho do Curso de Ciência da Computação e que isso será muito bom para todos. (I.II) Ele informa a estrutura do CoC e apresenta o representante discente, Sr. César Augusto Costa, e o representante técnico administrativo, Sr. João Guilherme Júnior (I.III) Ele informa, ainda, que o representante técnico administrativo suplente é o Sr. Laerte dos Anjos Guimarães. (II) O presidente informa que os microcomputadores doados pela receita federal são de configuração básica, mas que atenderão satisfatoriamente ao projeto da criação de um laboratório para iniciação científica. (II.I) Ele acrescenta que os alunos não mais dependerão dos horários de uso dos laboratórios e que poderão estudar em qualquer horário, inclusive em finais de semana. (III) O presidente pede desculpas e solicita como inclusão de pauta a discussão sobre a oferta de disciplinas para 2009.1. Aprovação unânime. Comunicação dos Membros: (I) A Profa. Dra. Tiemi Christine Sakata informa que a Profa. Dra. Elaine Cristina M. da Silva Zacarin assumiu a presidência da Comissão de Ensino. Ordem do Dia: (I) APRECIAÇÃO DOS PLANOS DE ENSINO REFERENTE AO SEGUNDO PERÍODO LETIVO DE 2008: (I.I) O Prof. Dr. Siovani Cintra Felipussi solicita que cada consultor apresente o plano de ensino da disciplina que avaliou. (I.II) Após discussão todos os planos de ensino foram aprovados. (I.III) O presidente solicita que os consultores registrem seu aval no sistema Nexus para que ele, como coordenador do curso, possa encaminhá-los à Coordenação Acadêmica. (II) AFASTAMENTO DO PROF. JOSÉ DE OLIVEIRA GUIMARÃES ÀS QUARTAS-FEIRAS (AD REFERENDUM). (II.I) O presidente passa a palavra ao Prof. Dr. José de Oliveira Guimarães. (II.II) O professor, então, explica que tal afastamento é para que ele possa ministrar as disciplinas “Construção de Compiladores 1” e “Construção de Compiladores” oferecidas pelo Departamento de Computação no campus São Carlos. (III) AFASTAMENTO DO PROF. JOSÉ DE OLIVEIRA GUIMARÃES ÀS SEXTAS-FEIRAS. (III.I) O professor acrescenta, ainda, que necessita de um afastamento às sextas-feiras para desenvolver um projeto de pesquisa intitulado “Computação Quântica” junto ao Centro de Lógica Epistemologia e História da Ciência da UNICAMP. (III.II) O presidente retoma a palavra e coloca suas solicitações em votação. Ambos os afastamentos aprovados por unanimidade. (IV) DISCUSSÃO SOBRE A PLANILHA DE ESFORÇO ACADÊMICO. (IV.I) O presidente repassa a palavra ao Prof. Dr. José de Oliveira Guimarães. (IV.II) O professor relata como foi a última reunião da Comissão de Esforço Acadêmico. (IV.III) Ele explica os cálculos para distribuição de vagas e questiona a base para tais cálculos. (IV.IV) O presidente informa que foram adotados os parâmetros fornecidos pelo Ministério da Educação e Cultura. (IV.V) O Prof. Dr. José de Oliveira Guimarães afirma que no cálculo de distribuição de vagas não foram considerados os índices de reprovação típicos das ciências exatas e que isso prejudica o curso de Computação. (IV.VI) Ele acrescenta que o número de professores será insuficiente levando em consideração a taxa de reprovação (IV. VII) A Profa. Dra. Lynnyngs Kelly Arruda Saraiva de Paiva lembra que no campus existem professores sobrecarregados e professores sem ministrar disciplinas. (IV.VIII) O presidente lembra da possibilidade de dividir professores com outros cursos. (IV.IX) Após discussão sobre o tema, o Conselho resolve que o Prof. Dr. Siovani Cintra Felipussi e o Prof. Dr. José de Oliveira Guimarães deverão procurar o diretor do campus, Prof. Dr. José Salatiel, para maiores esclarecimentos para que se possa seguir com os trâmites para a realização de concursos para preenchimento de vagas. (V) OFERTA DE DISCIPLINAS PARA 2009.1. (V.I) O presidente apresenta a grade curricular preliminar e coloca em discussão quais disciplinas deverão ser oferecidas. (V.II) O Prof. Dr. José de Oliveira Guimarães salienta que é necessário que o conteúdo das disciplinas siga um crescimento alinhado e lógico. (V.III) A Profa. Dra. Lynnyngs Saraiva de Paiva sugeriu que as disciplinas Álgebra Linear e Geometria Analítica, ambas de quatro créditos cada, sejam oferecidas em apenas quatro créditos. (V.IV) Ela acrescentou, ainda, que o curso de Engenharia Florestal já possui a disciplina “Geometria Analítica e Álgebra Linear” e que é possível oferecer também aos alunos de Ciência da Computação. (V.V) Após discussão onde cada professor expôs o modo como necessita que os alunos sejam preparados nessas duas disciplinas para o conteúdo que ministrarão em suas próprias, a alteração foi aprovada por unanimidade. (V.VI) O presidente então propôs que a disciplina “Cálculo Diferencial e Integral 1” não seja mais oferecida em conjunto com o curso de Engenharia de Produção para que tenha seu conteúdo alterado de acordo com as necessidades do curso de Ciência da Computação. (V.VII) Após breve discussão a proposta foi aceita por unanimidade. (V.VIII) Após discussão, a oferta de disciplinas para os alunos do perfil três no primeiro semestre de dois mil e nove e respectivos professores que deverão confeccionar as fichas de caracterização ficou assim decidida:
+	Disciplina
+	Professor
+
+	Introdução aos Sistemas de Informação
+	José de Oliveira Guimarães
+
+	Algoritmos e Complexidade
+	José de Oliveira Guimarães
+
+	Inteligência Artificial
+	Katti Faceli
+
+	Arquitetura e Organização de Computadores
+	Yeda Regina Venturini
+
+	Estrutura de Dados 2
+	Tiemi Christine Sakata
+
+	Noções Básicas de Economia
+	Danilo Rolim
+
+	Gestão de Pequenas Empresas
+	Danilo Rolim
+
+	Probabilidade e Estatística
+	Magda Peixoto
+
+	Geometria Analítica e Álgebra Linear
+	Lynnyngs Saraiva de Paiva
+
+
+Encerramento: Estando todos de acordo e nada mais havendo a deliberar, lavra-se, leia-se, aprova-se e assina-se esta Ata por todos os membros do Conselho do Curso de Bacharelado em Ciência da Computação, Campus Sorocaba, participantes desta reunião que, em 02 (duas) vias, será levada a registro e arquivamento junto à Coordenação do Conselho do Curso de Bacharelado em Ciência da Computação - Sorocaba, ficando ali à disposição para consulta restrita aos professores da UFSCar - Sorocaba. Nada mais.
+	Prof. Dr. Siovani Cintra Felipussi
+Presidente desta Reunião
+
+	Josiane Donizetti Lobo
+
+Secretária desta Reunião
+	Profa. Dra. Tiemi Christine Sakata
+
+Professor Adjunto
+
+	Profa. Dra. Katti Faceli
+
+Professor Adjunto
+	Profa. Dra. Yeda Regina Venturini
+
+Professor Adjunto
+
+	Prof. Dr. José de Oliveira Guimarães
+Professor Associado
+	Prof. Dr. Laércio José dos Santos
+Professor Adjunto
+
+	Sr. João Guilherme Júnior
+Representante Técnico Administrativo
+	
+
+
+
+
+
+
+
+
+
+
+
+

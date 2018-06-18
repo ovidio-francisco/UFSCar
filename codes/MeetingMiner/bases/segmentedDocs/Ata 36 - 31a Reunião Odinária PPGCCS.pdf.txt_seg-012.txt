@@ -1,0 +1,1 @@
+A solicitação de prorrogação de bolsa só será analisada caso não 30 existam candidatos na fila de espera e se a vigência da bolsa não tiver atingido 24 meses. 31 Neste caso, se a prorrogação for atendida, o novo prazo de vigência da bolsa será 32 estendido para coincidir com a data prevista da defesa ou até que se complete 24 meses de 33 bolsa (o que ocorrer primeiro); 

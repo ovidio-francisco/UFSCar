@@ -352,15 +352,11 @@ public class ReferenceSegmentation {
 		ArrayList<Double> windfs = new ArrayList<>();
 		ArrayList<Double> pks = new ArrayList<>();
 		
-		StringBuilder sbTodasMedidas = new StringBuilder();
-		sbTodasMedidas.append("Kappa,windiff,pk\n");
-
-		
 		for(int i=0; i<sameNameFiles.size();i++) {
-//			for(int j=i+1; j<sameNameFiles.size();j++) {
-			for(int j=0; j<sameNameFiles.size();j++) {
+			for(int j=i+1; j<sameNameFiles.size();j++) {
 	
 //				System.out.print(String.format("%d - %d  --> ", i, j));
+				count++;
 				File a = sameNameFiles.get(i);
 				File b = sameNameFiles.get(j);
 				
@@ -380,27 +376,13 @@ public class ReferenceSegmentation {
 				double pk = pkMeasure(numbA, numbB);
 				
 //				System.out.println(String.format("%s <==> %s --> Kappa = %f", a, b, kappa));
-
-				if (a.toString().equals(b.toString())) {
-//					System.out.println("===");
-//					sbTodasMedidas.append("$$$");
-					continue;
-				}
-//				System.out.println(String.format(">>> %s <=> %s : kapa=%f ; wd=%f ; pk=%f, ", a, b, kappa, windf, pk ));
-//				String todasMedidas = String.format(">>> %s && %s ; kapa=%f ; wd=%f ; pk=%f\n ", a, b, kappa, windf, pk );
-				String todasMedidas = String.format("%f,%f,%f\n",kappa, windf, pk );
-				sbTodasMedidas.append(todasMedidas);
 				
 				kappas.add(kappa);
 				windfs.add(windf);
 				pks.add(pk);
 				
-				count++;
-
 			}
 		}
-		
-		Files.saveTxtFile(sbTodasMedidas.toString(), new File("todasmedidas"+sameNameFiles.get(0).getName()+".csv"));
 		
 		double aKappa = 0;
 		for(double k : kappas) { aKappa += k; }

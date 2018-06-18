@@ -1,0 +1,135 @@
+Local, Dia e Hora: No laboratório de Informática 02, situado nas dependências da Universidade Federal de São Carlos - campus Sorocaba, à Rodovia João Leme dos Santos, quilômetro 110, Bairro do Itinga, na cidade de Sorocaba, Estado de São Paulo e realizada aos treze dias do mês de maio do ano de dois mil e nove, às 13:00 horas. Convocação e Presença: A convocação foi realizada dois dias antes da data de sua realização, por e-mails enviados a todos os interessados, sendo que se celebrou a primeira chamada às 12:30hs, a segunda chamada às 12:45hs e a terceira chamada às 13:00hs, estando presentes após a terceira chamada os membros do Conselho do Curso de Bacharelado em Ciência da Computação - Sorocaba, sendo eles os professores doutores Siovani Cintra Felipussi; Yeda Regina Venturini; Tiemi Christine Sakata, Katti Faceli, Marcio Katsumi Oikawa, Luciana Aparecida Martinez Zaina, Murillo Rodrigo Petrucelli Homem e José Fernando Rodrigues Junior, Fábio Luciano Verdi além da Sra. Luzia dos Santos Munin, como secretária desta reunião e do Sr. João Guilherme Júnior como representante técnico administrativo. Comunicações da Presidência: O presidente, Prof. Dr. Siovani Cintra Felipussi, dá início à reunião. (I) NOTÍCIAS DA ÚLTIMA REUNIÃO DO COAC – CONSELHO ACADÊMICO. (I.I) Todas as fichas de caracterização encaminhadas pelo curso de Ciência da Computação foram aprovadas. (I.II) Está em discussão um novo sistema de avaliação para ingresso na universidade, há um documento encaminhado pelo Ministério da Educação esclarecendo sobre o novo processo que ficará disponível para consulta dos docentes na secretaria do curso. O presidente lembra a todos também que a opção pelo novo processo seletivo não é definitiva, podendo a universidade optar por ela ou desistir dela a qualquer momento e que os campus poderão adotar ou não tal sistemática de avaliação de forma independente. Comunica que os docentes deverão consultar tal documento e apresentar sugestões a respeito para o representante do curso de ciência na computação na comissão de ensino (professora Tiemi) que as resumirá a fim de pô-las em discussão na próxima reunião do conselho. Após discussão, as sugestões do conselho serão encaminhadas à Câmara de Graduação. (II) NOTÍCIAS DA ÚLTIMA REUNIÃO DO CONCAM – CONSELHO DE CAMPUS. (II.I) foram aprovados os afastamentos do professor Márcio, as fichas de caracterização, a aquisição das bibliografias para o curso de ciência da computação e a proposta de atividade de extensão da professora Luciana. (II.II) UNIVERSIDADE ABERTA. O presidente comunica que acontecerá no final de semana dos dias oito e nove de agosto deste ano o evento “Universidade Aberta”com a finalidade de divulgar os cursos da universidade e questiona os membros se o curso de computação participará do evento. Fica acordado que o curso montará uma área para apresentação do curso com jogos eletrônicos e professores conversando com os visitantes sobre o curso. (II.III) Foi retirada de pauta a discussão sobre o modelo de TCC – trabalho de conclusão de curso – a ser adotado pela universidade (III) SUBSTITUIÇÃO DE SECRETÁRIA. O presidente comunica que a atual secretária do curso pedirá exoneração do cargo e será substituída brevemente. Comunicação dos Membros: (I) A professora Tiemi fala sobre os trabalhos da comissão de ensino e faz alguns questionamentos para um levantamento que a comissão está realizando. Ordem do Dia: (I) ATRIBUIÇÃO DE DISCIPLINAS PARA O PROXIMO SEMESTRE. Ficou aprovada a atribuição de disciplinas anteriormente discutida entre os docentes – conforme tabela a seguir: 
+
+	Disciplina
+	Professor
+	Perfil
+
+	
+	
+	
+
+	341118- Teoria dos Grafos
+	Jose Fernando Junior
+	CCS/P03
+
+	341134 – Informática, Ética e sociedade (2 turmas)
+	Murillo Rodrigo P Homem
+	CCS/P01
+
+	342475- Cálculo Diferencial e Integral 2
+	Magda da Silva Peixoto
+	CCS/P02
+
+	343170-Circuitos Digitais
+	Yeda Regina Venturini
+	CCS/P02
+
+	343161-Estrutura de Dados 1
+	Novato Engenharia de Software
+	CCS/P02
+
+	343153-Matemática Discreta_T1
+	José Guimarães
+	CCS/P02
+
+	343153-Matemática Discreta_T2
+	Novato Algoritmos
+	CCS/P02
+
+	343188-Programação Orientada a Objetos
+	Katti Faceli
+	CCS/P02
+
+	343196-Probabilidade e Estatistica
+	Murillo Rodrigo P Homem
+	CCS/P02
+
+	341088-Noções de Gestão Ambiental
+	Fernando Silveira Franco
+	CCS/P02
+
+	343277-Gestão de Pequenas empresas
+	Neila Conceição Viana da Cunha
+	CCS/P02
+
+	341096-Sistemas Operacionais
+	Novato Sistemas Operacionais
+	CCS/P04
+
+	341100-Lab de Sist. Operacionais
+	Novato Sistemas Operacionais
+	CCS/P04
+
+	341126-Teoria da Computação
+	José Guimarães
+	CCS/P04
+
+	341169-Engenharia de Sofware 1
+	Luciana AP. Zaina
+	CCS/P04
+
+	341177- Banco de Dados
+	Marcio Katsumi Oikawa
+	CCS/P04
+
+	341142-Proce. De Imagens e Visão Computacional
+	Siovani Cintra Felipussi
+	CCS/P04
+
+	342149-Introdução a conceitos comp. E algo.
+	Fábio Luciano Verdi
+	Florestal
+
+	Introdução à Informática
+	Novato Engenharia de Software
+	Matemática
+
+	Algoritmos 
+	Fábio Luciano Verdi
+	Produção
+
+
+(II) DOCENTE DA COMPUTAÇÃO PARA LECIONAR NO CURSO DE MATEMÁTICA. Conforme solicitação da coordenação do curso de matemática, em e-mail anexo, foi cedido um docente para lecionar a disciplina “Introdução à Informática” ao curso no segundo semestre do ano de dois mil e nove. Ficou claro que tal cessão se deu em caráter excepcional, pois essa disciplina não consta na planilha de esforço docente do curso de computação. Será encaminhado um ofício para a coordenação do curso de matemática esclarecendo a situação. (III) OFÍCIO DA COORDENAÇÃO DO CURSO DE ENGENHARIA FLORESTAL. Conforme ofício anexo, a coordenação do curso de Engenharia Florestal informou que a indicação, para os próximos semestres, de docente para lecionar a disciplina “Noções de Gestão Ambiental”dependerá de aprovação do conselho do curso. O conselho do curso de Ciência da Computação é unânime em dizer que esse entendimento não procede, haja vista que a disciplina possui aderência ao perfil dos docentes e consta na planilha de esforço docente do curso de Engenharia Florestal, portanto não contribui para o excesso de carga dos docentes do curso. Será encaminhado um ofício em resposta ao recebido, contendo o entendimento deste conselho. (IV) AFASTAMENTOS DO PROFESSOR FÁBIO LUCIANO VERDI. O professor Fábio solicita afastamento em período parcial nos dias vinte e cinco a vinte e nove do mês de maio do ano de dois mil e nove a fim de apresentar trabalho em conferência; há também a discussão do afastamento parcial, aprovado ad referendum, realizado pelo mesmo professor nos dias vinte a vinte e dois de abril do ano de dois mil e nove. (II.I) as solicitações são postas em votação e aprovadas por unanimidade. (III) SISTEMÁTICA DE AVALIAÇÃO COMPLEMENTAR –S.A.C. Conforme ofício da Coordenação Acadêmica em anexo, o conselho do curso deve iniciar a discussão sobre a S.A.C. (III.I) Após a leitura do referido ofício a discussão é iniciada. Analisando o atual modelo da S.A.C. o conselho entende que há pontos negativos relevantes: o aproveitamento dos alunos é baixo; por ser aplicado após o encerramento do período letivo, permite que alunos em S.A.C. nas disciplinas que são pré requisitos para outras se matriculem nestas e mesmo após reprovados na S.A.C. continuam a cursar as disciplinas, prejudicando assim o andamento regular das atividades. Por tais motivos o conselho entende que a atual S.A.C. deve ser substituída por outra forma de avaliação complementar e recuperação; o conselho entende ser prejudicial a adoção de um modelo único para todas as disciplinas, visto que cada uma tem suas peculiaridades. A sugestão do conselho é estabelecer como obrigação de cada docente a aplicação de uma avaliação complementar, que constará no plano de ensino, dentro do semestre letivo, a ser elaborada e aplicada pelo próprio docente. Encerramento: Estando todos de acordo e nada mais havendo a deliberar, lavra-se, leia-se, aprova-se e assina-se esta Ata por todos os membros do Conselho do Curso de Bacharelado em Ciência da Computação, Campus Sorocaba, participantes desta reunião que, em 02 (duas) vias, será levada a registro e arquivamento junto à Coordenação do Conselho do Curso de Bacharelado em Ciência da Computação - Sorocaba, ficando ali à disposição para consulta restrita aos professores da UFSCar - Sorocaba. Nada mais.
+	Prof. Dr. Siovani Cintra Felipussi
+Presidente desta Reunião
+
+	Luzia dos Santos Munin
+Secretária desta Reunião
+	Profa. Dra. Yeda Regina Venturini
+
+Professor Adjunto
+
+	Profa. Dra. Katti Faceli
+
+Professor Adjunto
+	Profa. Dra. Tiemi Christine Sakata
+
+Professor Adjunto
+
+	Fábio Luciano Verdi
+
+Professor Adjunto
+	Prof. Dr. Marcio Katsumi Oikawa
+Professor Adjunto
+
+	Profa. Dra. Luciana Aparecida Martinez Zaina
+Professor Adjunto
+	Prof. Dr. Murillo Rodrigo Petrucelli Homem
+Professor Adjunto
+
+	Prof. Dr. José Fernando Rodrigues Junior
+Professor Adjunto
+	Sr. João Guilherme Júnior
+Representante Técnico Administrativo
+
+
+
+
+
+
+
+
+
+
+
+

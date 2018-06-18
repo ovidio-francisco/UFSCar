@@ -150,6 +150,8 @@ INPUT algorithm2e.sty
 INPUT algorithm2e.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/tools/xspace.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/tools/xspace.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty
 INPUT macros.tex
 INPUT macros.tex
 INPUT /usr/share/texmf/tex/latex/lm/ot1lmr.fd

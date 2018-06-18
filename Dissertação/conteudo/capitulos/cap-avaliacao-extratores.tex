@@ -17,10 +17,10 @@ A avaliação se deu por meio de questionários onde profissionais com afinidade
 
 % A qtd de tópicos é um parametro importante.  % Todos com 70 tópicos e 5 extratores;
 Durante os primeiros testes a qualidade dos resultados mostrou-se sensível à quantidade de tópicos extraídos.
-Inicialmente, realizou-se um teste prévio utilizando uma versão não-paramétrica dos algorítimos a fim de automaticamente obter valores ótimos para esse parâmetro por meio da análise das medidas Silhueta e Coesão. Essa configuração automática resulta valores em torno de 20 tópicos. Contudo, apresenta grupos com muitos segmentos (em torno de 100) o que os tornam pouco coesos além de certa dificuldade em julgar capacidade dos descritores em representar bem o tópico.  
-Com base em observações empíricas, verificou-se que valores entre 60 e 80 mostraram melhores resultados, em que valores abaixo de 60 geram tópicos com muitos segmentos o que por consequência torna os grupos menos coesos por incluir segmentos com assuntos muito distantes. Por outro lado, valores acima de 80 geram tópicos com poucos segmentos, permitindo assuntos próximos atribuídos a grupos distintos. Nesse trabalho, optou-se por configurar os algoritmos para extrair 70 tópicos da coleção de segmentos por apresentar uma distribuição mais coerente em termos de agrupamento na visão de usuário.
+Inicialmente, realizou-se um teste prévio utilizando uma versão não-paramétrica dos algorítimos a fim de automaticamente obter valores ótimos para esse parâmetro por meio da análise das medidas Silhueta e Coesão. Essa configuração automática resulta valores em torno de 20 tópicos. Contudo, os resultados apresentam grupos com muitos segmentos (em torno de 100) o que os tornam pouco coesos em relação a um assunto central, além de diminuir a capacidade representativa dos descritores.
+Com base em observações empíricas, verificou-se que valores abaixo de 60 geram tópicos com muitos segmentos o que por consequência torna os grupos menos coesos por incluir segmentos com assuntos muito distantes. Por outro lado, valores acima de 80 geram tópicos com poucos segmentos, permitindo assuntos próximos atribuídos a grupos distintos. Nesse trabalho, optou-se por configurar os algoritmos para extrair 70 tópicos da coleção de segmentos por apresentar uma distribuição mais coerente em termos de agrupamento na visão de usuário.
 
-Outro fator importante é a quantidade de descritores selecionados para cada tópico. Com base no experimento de anotações em segmentação, descrito no Capítulo~\ref{cap2}, os anotadores selecionaram em média 5 palavras para descrever os segmentos, sendo esse valor adotado para essa avaliação.
+Outro fator importante é a quantidade de descritores selecionados para cada tópico. Com base no experimento de anotações em segmentação, descrito no Capítulo~\ref{cap-segmentadores}, os anotadores selecionaram em média 5 palavras para descrever os segmentos, sendo esse valor adotado para essa avaliação.
 
 
 
@@ -30,14 +30,14 @@ Outro fator importante é a quantidade de descritores selecionados para cada tó
 
 % - Explicar que foram 2 consultas (quais) e mostrar os extratores.
 % - 4 - Procedimento (2 consultas, técnicas em ordens diferentes).
-Após a configuração, cada um dos modelos de extração de tópicos foi submetido a duas consultas: ``\textit{compra de equipamentos}'' e ``\textit{defesa de dissertação}'' gerando 6 cenários distintos a serem analisados. 
+Após a identificação da configuração mais adequada para cada algoritmo, cada um dos modelos de extração de tópicos foi submetido a duas consultas: ``\textit{compra de equipamentos}'' e ``\textit{defesa de dissertação}'' gerando 6 cenários distintos a serem analisados. 
 Para cada cenário, o sistema seleciona o tópico com maior relevância com a consulta e em seguida exibe 5 segmentos desse tópico escolhidos aleatoriamente. 
 Vale dizer que nessa avaliação as técnicas de ranqueamento dos resultados não são aplicadas para que estas não interfiram na avaliação dos extratores, contudo, o sistema final poderá ranquear também os segmentos com maior relevância de um ou mais tópicos por meio de técnicas de recuperação de informação. 
 Os resultados desses cenários foram apresentados a um grupo de avaliadores que individualmente avaliaram a qualidade das técnicas de extração de tópicos. 
 %
 
 % -- 3 - Escolha dos participantes.
-O perfil dos avaliadores é de profissionais da area acadêmica/escolar devido à sua afinidade com o ambiente de gestão e conhecimentos de assuntos relacionados ao \textit{corpus} estudado nesse trabalho. O grupo convidado a participar do experimento é formado por 24 profissionais da UFSCar campus Sorocaba, 13 profissionais de escolas técnicas e 3 profissionais de escolas do Ensino Fundamental, sendo 11 ocupantes de cargos de gestão como coordenadores de curso, diretores, 17 membros de conselhos, 5 profissionais administrativos e 3 professores, totalizando 40 avaliadores em que a maioria afirma ter afinidade com atas e reuniões e 3 declararam nenhuma afinidade com esses documentos. Os avaliadores foram divididos em dois grupos onde cada grupo avaliou as técnicas de extração tópicos a partir de uma consulta (palavras-chave), ou seja, cada indivíduo avaliou 3 cenários distintos. A avaliação consistiu de um documento impresso contendo uma breve apresentação do trabalho, seguido de uma cópia dos resultados das técnicas de extração de tópicos e questões avaliativas sobre cada técnica.
+O perfil dos avaliadores é de profissionais da area acadêmica/escolar devido à sua afinidade com o ambiente de gestão e conhecimentos de assuntos relacionados ao \textit{corpus} estudado nesse trabalho. O grupo convidado a participar do experimento é formado por 24 profissionais da UFSCar campus Sorocaba, 13 profissionais de escolas técnicas e 3 profissionais de escolas do Ensino Fundamental, sendo 11 ocupantes de cargos de gestão como coordenadores de curso, diretores, 17 membros de conselhos, 5 profissionais administrativos e 3 professores, totalizando 40 avaliadores em que a maioria afirma ter afinidade com atas e reuniões. Apenas 3 declararam nenhuma afinidade com esses documentos, sendo esses últimos descartados por não se adequarem ao perfil desejado. Os avaliadores foram divididos em dois grupos, sendo o primeiro formado por 18 participantes que avaliaram a primeira consulta, ``\textit{compra de equipamentos}'' e o segundo formado por 19 participantes que avaliaram a segunda consulta, ``\textit{compra de equipamentos}''. Os grupos avaliaram as técnicas de extração tópicos a partir de uma consulta (palavras-chave), ou seja, cada indivíduo avaliou 3 cenários distintos. A avaliação consistiu de um documento impresso contendo uma breve apresentação do trabalho, seguido de uma cópia dos resultados das técnicas de extração de tópicos. Para cada técnicas, os avaliadores recebiam 4 questões avaliativas sobre os resultados. Os documentos de ambas avaliações podem ser vistas no Anexo~\ref{anexo:avaliacoes}.
 
 % X profissionais de gestão de instituições 
 
@@ -46,16 +46,19 @@ O questionário foi formado por questões envolvendo aspectos os extratores de t
 As respostas seguiram a escala \textit{Likert}~\cite{Norman2010} com 5 alternativas. 
 % , conforme mostrado:
 
-\begin{enumerate}
-	\item Todos os trechos apresentados compartilham um mesmo assunto.
-	\item As palavas \textit{<descritores>} resumem bem o assunto tratado nos trechos.
-	\item Existem trechos que não tratam de um único assunto?
-	\item Existem trechos incompletos e insuficientes para compreensão do assunto do trecho?
-\end{enumerate}
+% \begin{enumerate}
+	% \item Todos os trechos apresentados compartilham um mesmo assunto.
+	% \item As palavas \textit{<descritores>} resumem bem o assunto tratado nos trechos.
+	% \item Existem trechos que não tratam de um único assunto?
+	% \item Existem trechos incompletos e insuficientes para compreensão do assunto do trecho?
+% \end{enumerate}
 
 
-As questões 1 e 2 estão relacionadas ao extrator de tópicos. A primeira refere-se ao agrupamento dos segmentos pela qual foi avaliada a semelhança dos trechos em termos de assunto. A segunda questão diz respeito aos descritores selecionados, ao respondê-la o avaliador indicou o quão bem esses termos representam aquele grupo.
-As questões 3 e 4 estão ligadas à técnica de segmentação utilizada, o BayesSeg conforme já mencionado no Capítulo~\ref{cap-segmentadores}. A questão 3 está ligada à coesão de cada segmento, levando em conta a homogeneidade do texto em relação a um assunto. A questão 4 refere-se a completude dos segmentos, ou seja, o quão bem os segmentos podem ser bem compreendidos independentemente da leitura do documento integral.
+As questões 1 e 2 estão relacionadas ao extrator de tópicos. 
+A primeira, \textit{``Todos os trechos apresentados compartilham um mesmo assunto.''}, refere-se ao agrupamento dos segmentos pela qual foi avaliada a semelhança dos trechos em termos de assunto. 
+A segunda questão, \textit{``As palavas \textit{<descritores>} resumem bem o assunto tratado nos trechos.''}, diz respeito aos descritores selecionados, ao respondê-la o avaliador indicou o quão bem esses termos representam aquele grupo.
+As questões 3 e 4 estão ligadas à técnica de segmentação utilizada, o BayesSeg conforme já mencionado no Capítulo~\ref{cap-segmentadores}. 
+A questão 3, \textit{``Existem trechos que não tratam de um único assunto?''}, diz respeito à coesão de cada segmento, levando em conta a homogeneidade do texto em relação a um assunto. A questão 4, \textit{``Existem trechos incompletos e insuficientes para compreensão do assunto do trecho?''}, refere-se a completude dos segmentos, ou seja, o quão bem os segmentos podem ser bem compreendidos independentemente da leitura do documento integral.
 Para afastar a hipótese de que os resultados das técnicas fossem influenciados pela ordem apresentada, essas foram apresentadas aos avaliadores em ordem aleatórias.
 % -- 5 - Escolha dos temas para consulta: 
 
@@ -66,11 +69,44 @@ Para afastar a hipótese de que os resultados das técnicas fossem influenciados
 
 \section{Resultados}
 
+% -- Quantitativos
+
+ 
+Inicialmente, a coleção de documentos utilizada como base nesse experimento foi constituída de 175 atas, dessas, foram extraídos 1272 segmentos dos quais os algoritmos atribuíram em média 19 segmentos a cada tópico. Na Tabela~\ref{tab:segquanti} é exibido para cada cenário a quantidade de segmentos atribuídos ao tópico seleciona na busca, bem como os descritores que os identificam.
+ 
+ 
+\begin{table}[!h]
+ 
+\begin{tabular}{|c|c|l|c|}
+ \hline 
+ \textbf{Consulta} &\textbf{Algoritmo }& \textbf{Descritores }& \textbf{\#Seg} \\ \hline
+ \multirow{3}{*}{Consulta 1} &
+ KMeans & \textit{compra, material, verba, permanente e valor} & 13 \\  \cline{2-4} 
+ & LDA    & \textit{verba, compra, pagamento, material e valor}  & 47 \\  \cline{2-4}
+ & PLSA   & \textit{verba, compra, pagamento, valor e realizada} & 9  \\  \hline 
+ \multirow{3}{*}{Consulta 2} &
+ KMeans & \textit{orientada, meses, defesa, prazo e dissertação} & 12 \\  \cline{2-4}
+ & LDA    & \textit{aprovado, defesa, pedido, dissertação e orientada} & 19 \\ \cline{2-4} 
+ & PLSA   & \textit{orientada, prazo, bolsa, meses e defesa} & 19 \\  \hline 
+ \end{tabular}  
+ \label{tab:segquanti}
+ \caption{Descritores e número de segmentos no tópico selecionado pelos Algoritmos}
+
+\end{table} 
+
+Na primeira consulta, \textit{``defesa de dissertação''},  os 3 algoritmos selecionaram um total de 22 segmentos diferentes, sendo que desses 12 foram concomitantemente selecionados por todos os algoritmos e o LDA e o PLSA compartilham 3 desses segmentos nos resultados.
+Na segunda  consulta, \textit{``compra de equipamentos''}, os 3 algoritmos selecionaram um total de 49 segmentos diferentes, sendo que desses 4 foram selecionados concomitantemente por todos os algoritmos. O K-Means compartilha 7 segmentos com o LDA e 3 com o PLSA. O LDA e o PLSA compartilham 2 segmentos nos resultados.
+
+
+
+
 Nessa seção, os dados coletados das avaliações são apresentados e analisados. Os modelos de extração de tópicos discutidos nesse trabalhos são comparados de acordo com os critérios mencionados anteriormente: 
 (1) comparar algoritmos de extração de tópicos na tarefa de extração de padrões no contexto das atas de reunião, 
-(2) analisar a qualidade dos agrupamentos no que tange a navegação por grupos com mesmo tópico, 
-(3) analisar a qualidade dos descritores extraídos para recuperar os documentos dos grupos,
-(4) validar a performance do segmentador empregado.
+% (2) analisar a qualidade dos agrupamentos no que tange a navegação por grupos com mesmo tópico, 
+(2) analisar a qualidade dos descritores extraídos para recuperar os documentos dos grupos.
+Além disso, as questões referentes à segmentação, são analisadas a fim de 
+% (3) 
+validar a performance do segmentador empregado, como complemento ao experimento discutido na Seção~\ref{cap-segmentadores}.
 
 
 Na Figura~\ref{fig:Q1} é apresentado as frequência das respostas coletadas sobre a primeira questão a qual refere-se a qualidade do agrupamento levando em conta a semelhança dos segmentos em termos de assunto. Verifica-se que o K-Means tem resultados similares ao LDA enquanto o PLSA se mostrou menos eficiente nesse critério uma vez que mais avaliadores rejeitaram a afirmação de que todos os segmentos tratam de um único assunto em comum. 

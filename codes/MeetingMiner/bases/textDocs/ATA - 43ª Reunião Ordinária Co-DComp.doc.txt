@@ -1,0 +1,51 @@
+UNIVERSIDADE FEDERAL DE SÃO CARLOS – Campus Sorocaba
+CONSELHO DO DEPARTAMENTO DE COMPUTAÇÃO
+Rodovia João Leme dos Santos, Km 110 (SP-264)
+
+Bairro do Itinga - Sorocaba-SP - CEP 18052-780
+Telefone: (15) 3229-7443 /3229-7548 www. ufscar. br / dcomp@ufscar.br
+
+Ata da 43ª Reunião Ordinária do Conselho do Departamento de Computação de Sorocaba - DComp
+ UFSCar-Sorocaba
+
+Local, Dia e Hora: Na sala 1003 do Centro de Ciência de Gestão em Tecnologia, situada nas dependências da Universidade Federal de São Carlos - campus Sorocaba, à Rodovia João Leme dos Santos, quilômetro 110, Bairro do Itinga, na cidade de Sorocaba, Estado de São Paulo e realizada aos vinte e nove dias do mês de Junho do ano de dois mil e dezesseis, às 14h00. Convocação e Presença: A convocação foi realizada dois dias antes da data de sua realização, por e-mails enviados a todos os interessados, sendo que se celebrou a primeira chamada às 14h00, participaram da reunião os seguintes conselheiros: Sahudy Montenegro González (como presidente desta reunião), Cândida Nunes da Silva, Mario Augusto de S. Liziér, Alexandre Álvaro, Gustavo Maciel Dias Vieira, Luciana Aparecida Martinez Zaina, Fábio Luciano Verdi, Henrique T. Eihara (Representante Discente) e Sonia Vieira Dal Pian (Representante dos TAs). Informes: A grade horária 2016/2 sofreu alterações a pedido dos alunos, devido a interseções de horários de disciplinas como, por exemplo, PDS e BD com Cálculo Dif. e de Séries. O ofício do PIBIC/CCGT vai ser analisado como ponto de pauta da próxima reunião do CoCCGT. Ordem do Dia: (I) APROVAÇÃO DE ATAS DE REUNIÕES ANTERIORES. (I.I) As atas foram lidas e aprovadas. (II) DELIBERAÇÃO SOBRE PROGRAMAS E ATIVIDADES DE EXTENSÃO: (II.I) Relatório de Atividade de Extensão “1ª Installfest Linux”, Coordenador Prof. Gustavo; Relatório de Atividade de Extensão “6ª Mini Maratona de Programação UFSCar-Sorocaba”, Coordenador Prof. Gustavo; Relatório de Atividade de Extensão “SeCoT 2016 - VIII Semana da Computação e Tecnologia”, Coordenador Prof. Tiago; Relatório de Programa de Extensão “Estudo de Linguagens de Programação de Computadores”, Coordenadora Profa. Luciana; Relatório de Programa de Extensão “Apoio ao Uso de Software Livre”, Coordenadora Profa. Tiemi; Relatório de Programa de Extensão “Gestão da Criação, Treinamento, Incubação, Pesquisa e Desenvolvimento e Inovação (PeDeI) e Transferência de Tecnologia de Empreendimentos de Base Tecnológica”, Coordenador Prof. Alexandre; Relatório de Programa de Extensão “Tecnologias para acessibilidade”, Coordenador Prof. Murillo. Todos os documentos foram lidos e aprovados. (II.II) A Atividade de Extensão “Ministrar aulas no Curso de Especialização IC/Unicamp”, Coordenador Prof. Fabio já havia sido aprovada ad-referendum, por razões de prazos e foi trazida para o conselho para ser referendada pelos membros. (III) COMPRAS COM VERBA DE MATERIAL DE CUSTEIO E PERMANENTE. (III.I) A professora Sahudy esclareceu que vamos continuar fazendo pedidos de compras e que chegaram novas demandas: compra de memória RAM para 32 máquinas (a pedido dos profs. Fábio e Yeda), 4 câmeras para o laboratório, visto que o mesmo possui pontos cegos e já furtaram cabos de extensão, manutenção para dois monitores e inscrição para os times de maratona. As demandas foram aprovadas, porém seu processamento pode depender da liberação das verbas. (IV) APROVAÇÃO DA POLÍTICA DE CAPACITAÇÃO. (IV.I) Nas reunião anterior a referida política foi vista e pediram uma modificação no item, o qual já foi modificado (em anexo) e trazido para aprovação hoje. Os membros leram e aprovaram o documento. Encerramento: Estando todos de acordo e nada mais havendo a deliberar, lavra-se, leia-se, aprova-se e assina-se esta Ata por todos os membros do conselho do Departamento de Computação de Sorocaba, Campus Sorocaba, participantes desta reunião que, em 02 (duas) vias, será levada a registro e arquivamento junto à chefia do Departamento de Computação de Sorocaba, ficando ali à disposição para consulta. Nada mais.
+Profa. Dra. Sahudy Montenegro González
+
+Presidente desta Reunião
+	Prof. Dr. Mario Augusto Liziér
+
+Docente
+	Profa. Dra. Luciana Ap. Martinez Zaina
+
+Docente
+	
+
+
+	Prof. Dr. Fábio Luciano Verdi
+Docente
+	Prof. Dr. Gustavo Maciel Dias Vieira
+
+Docente
+	Sonia Vieira Dal Pian
+
+Técnico Administrativo
+	
+
+
+	Prof. Dr. Alexandre Álvaro
+
+Docente
+	Profa. Dra. Cândida N. Silva
+
+Docente
+
+
+	Sonia Vieira Dal Pian
+
+Técnico Administrativo
+	Henrique T. Eihara
+
+Discente
+
+
+

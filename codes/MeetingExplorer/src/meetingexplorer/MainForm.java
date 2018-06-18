@@ -1007,6 +1007,7 @@ public class MainForm extends javax.swing.JFrame {
             @Override
             public void run(){
                 setWainting(true);
+//                if (false) {
                 if (true) {
 //                    showSegmentsFilteredByTopic();
                     showSegmentsRankedByTopicSimilarity();

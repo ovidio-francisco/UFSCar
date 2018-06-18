@@ -1,0 +1,69 @@
+PAGE  
+UNIVERSIDADE FEDERAL DE SÃO CARLOS – Campus Sorocaba
+
+BACHARELADO EM CIÊNCIA DA COMPUTAÇÃO
+
+Rodovia João Leme dos Santos, Km 110 (SP-264)
+
+Bairro do Itinga - Sorocaba-SP - CEP 18052-780
+
+Telefone: (15) 3202-2022 / www. ufscar. br
+
+Ata da 7ª Reunião Ordinária do Conselho do Curso de Bacharelado em Ciência da Computação, UFSCar – Sorocaba
+
+Local, Dia e Hora: Na AT 16 Prédio da Biblioteca, situado nas dependências da Universidade Federal de São Carlos - campus Sorocaba, à Rodovia João Leme dos Santos, quilômetro 110, Bairro do Itinga, na cidade de Sorocaba, Estado de São Paulo e realizada aos treze dias do mês de outubro do ano de dois mil e nove, as 14h00. Convocação e Presença: A convocação foi realizada dois dias antes da data de sua realização, sendo que se celebrou a primeira chamada as 14h00, a segunda chamada as 14h15 e a terceira chamada as 14h30, estando presente após a terceira chamada os membros do Conselho do Curso de Bacharelado em Ciência da Computação - Sorocaba, sendo eles os professores doutores Siovani Cintra Felipussi; Yeda Regina Venturini, Katti Faceli, Luciana Martinez Zaina, Cândida Nunes da Silva, José de Oliveira Guimarães, José Fernando Rodrigues Jr., Murillo Rodrigo Petrucelli Homem, Márcio K. Oikawa, Laércio José dos Santos. Também presente a Sra. Sonia Vieira Dal Pian Nunes Silva, como secretária desta reunião, o Sr. João Guilherme Júnior, representante dos técnicos administrativos, o Sr. João Victor B. Zanatta, representante dos alunos (calouros). O Prof. Gustavo justificou sua ausência e o Sr. César Augusto representante dos discentes também justificou sua ausência. Comunicações da Presidência: (I) O Prof. Siovani informa que foi publicado no Diário Oficial de sexta-feira dia dez de outubro, nomeação do Prof. Alexandre Álvaro e que a Profª Yeda contatou-o por telefone, o qual deixou claro que pretende assumir a vaga e que só faltam os exames médicos. (II) O Prof. Siovani questiona se algum professor tem interesse em ofertar a disciplina de verão e esclarece que é uma disciplina normal, que pode ser oferecida no verão e depois no próprio perfil. (III) O Prof. Informou que temos um aluno de transferência interna com muitas reprovações e disciplinas fundamentais não cursadas, por conseguinte, reenquadrado no perfil um do curso. (III.I) A Profª Yeda questiona sobre o motivo da transferência e o Prof. Siovani esclarece que no pedido de transferência não consta o motivo. Comunicação dos Membros: (I) A Prof. Luciana informou que na última reunião da Comissão de Ensino, foi colocada a necessidade de revezamento das pessoas que participam dessa reunião, podendo ser um revezamento anual. Informou também que dia vinte e seis de outubro um integrante da ProGrad esclarecerá sobre o SAC e a respectiva portaria, sendo assim pediu a participação de todos. (II) A Profª Katti informou que haverá eleição para a comissão de pesquisa, mas que não tem sido convidada a participar das reuniões da comissão, portanto está em dúvida se deve continuar participando das reuniões ou se aguarda o processo de eleição. (II.I) O Prof. Siovani diz que seria interessante que continue participando pois temos o projeto de pós. Ordem do Dia: (I) LISTA DAS DISCIPLINAS QUE ACEITARÃO ALUNO ESPECIAL EM 2010.1. (I.I) a Prof. Yeda esclarece que no ano passado, houve alguns pedidos e até reclamações de determinados alunos, pois a Universidade não oferecia esse tipo de serviço. (I.II) O Prof. José Guimarães falou sobre a necessidade de limitar o número de vagas, pois podemos ter aluno de curso à distância desejando cursar alguma disciplina na Universidade. (I.III) A Profª Yeda coloca que existem regras para poder participar, como aluno especial e faz a leitura na íntegra destas regras para os membros do conselho. (I.IV) O Prof. Siovani pediu para que fosse realizada a deliberação juntamente com a atribuição da carga horária. (II) SUGESTÕES PARA CONTRATAÇÃO DE PROFESSORES SUBSTITUTOS. (II.I) A Profª Yeda tem uma proposta de regra para a contratação e que posteriormente enviará tal proposta. (III) DOCENTES QUE TEM INTERESSE EM LECIONAR NO NÚCLEO. (III.I) A Profª Yeda coloca que em 2010 teremos falta de sala. A Profª coloca que algumas aulas serão lecionadas no núcleo e quem tiver disponibilidade deve manifestar-se o mais rápido possível, mas ressalta que para o curso de computação seria inviável, visto que o uso dos laboratórios de informática é considerável, há também a informação de que o ideal seria que os cursos que estão no último ano utilizassem o núcleo pelo fato dos alunos estarem em estágio. (IV) INFORMAÇÃO EVENTOS/ DATAS A SEREM INSERIDAS NO CALENDÁRIO OFICIAL DA UFSCAR. (IV.I) Não houve nenhuma colocação. (V) ATRIBUIÇÃO DE CARGA HORÁRIA DOCENTE 2010.1. (V.I) A atribuição foi realizada de acordo com as possibilidades e necessidades de cada um. (V.II) O aluno João Victor questiona se há a possibilidade de horário livre na segunda pela manhã e sexta a tarde, pois muitos alunos retornam para suas residências às sextas. (V.III) A Profª Yeda diz que compreende a solicitação, mas há escassez de salas e provavelmente não será possível atender o pedido. (V.IV) A Profª Yeda sugeriu que se estabeleça o maior número possível de alunos na turmas preferenciais e caso a quantidade de alunos na turma sobressalente seja reduzido, então poderia ser fechada. (V.V) A Pofª Luciana informou que conversou com a Profª Tiemi, a qual fez o pedido para lecionar apenas a disciplina Estrutura de Dados 1 e que a disciplina Compiladores, que preliminarmente foi atribuída a ela, fosse oferecida a outro professor. (V.VI) O prof. José Fernando diz que não pretende ficar com mais esta disciplina, pois já está com oito créditos e coloca que seria conveniente que a disciplina em questão fosse dada por alguém que já tenha lecionado anteriormente. (V.VII) A profª Katti fez a seguinte sugestão: que poderia lecionar Lógica, o Prof. José Guimarães lecionaria Compiladores e a Profª Cândida lecionaria no curso de Biologia (Introdução a Conceitos Computacionais e Algoritmos). O Prof. José Guimarães concorda em permutar a disciplina de Lógica por Compiladores. (V.VIII) O Prof. Siovani sugere que as quartas-feiras estejam livres para as reuniões. (V.IX) O Representante dos discentes questionou sobre o período das aulas e sobre o intervalo. (V.X) A Profª Luciana esclarece que a aula é de uma hora e não o período de cinqüenta minutos para cada aula. (V.XI) A atribuição de carga horária é realizada. (V.XII) Segue em anexo a Grade Horária de 2010.1. (VI) DEFINIÇÃO NÚMERO DE VAGAS DAS DISCIPLINAS 2010.1. (VI.I) A profª Katti coloca que a disciplina de Lógica terá um grande número de reprovações, portanto há a necessidade de mais uma turma de Lógica, mas ressalta que não poderá lecionar para duas turmas, sendo assim a disciplina é oferecida a Profª Cândida. (VI.II) O Prof. Siovani diz que a disciplina de Lógica foi lecionada outras vezes, que há material e que o professor que lecionou a referida disciplina poderá ajudar se for necessário. (VI.III) A Profª Cândida aceita lecionar para a segunda turma a disciplina de Lógica. (VI.IV) Foi realizada a definição de número de vagas de cada disciplina. (VI.V) A tabela onde consta as definições segue em anexo. Encerramento: Estando todos de acordo e nada mais havendo a deliberar, lavra-se, leia-se, aprova-se e assina-se esta Ata por todos os membros do Conselho do Curso de Bacharelado em Ciência da Computação, Campus Sorocaba, participantes desta reunião que, em 02 (duas) vias, será levada a registro e arquivamento junto à Coordenação do Conselho do Curso de Bacharelado em Ciência da Computação - Sorocaba, ficando ali à disposição para consulta restrita aos professores da UFSCar - Sorocaba. Nada mais.
+	Prof. Dr. Siovani Cintra Felipussi
+Presidente desta Reunião
+
+	Sonia Vieira Dal Pian N. Silva
+Secretária desta Reunião
+	Profa. Dra. Yeda Regina Venturini
+
+Professor Adjunto
+
+	Profa. Dra. Cândida Nunes da Silva
+Professor Adjunto
+	Profa. Dra. Katti Faceli
+Professor Adjunto
+
+	Prof. Dr. Márcio K. Oikawa
+Professor Adjunto
+	Profa. Dra. Luciana A. Martinez Zaina
+
+Professor Adjunto
+
+	Prof. Dr. José de Oliveira Guimarães
+Professor Associado
+	Prof. Dr. José Fernando Rodrigues Júnior
+
+Professor Adjunto
+
+	Prof. Dr. Laércio José dos Santos
+Professor Adjunto
+	Prof. Dr. Murillo Rodrigo Petrucelli Homem
+
+Professor Adjunto
+
+
+	João Guilherme Júnior
+
+Representante Técnico Administrativo
+
+
+	João  Victor B. Zanatta
+
+Representante Discente
+
+
+
+
+
+
+
+
+
+
+
+
+
+
