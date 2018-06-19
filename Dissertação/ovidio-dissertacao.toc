@@ -54,9 +54,12 @@
 \contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase {Avalia\IeC {\c c}\IeC {\~a}o dos Extratores de T\IeC {\'o}picos}}{51}{chapter.5}
 \contentsline {section}{\numberline {5.1}Configura\IeC {\c c}\IeC {\~a}o experimental}{51}{section.5.1}
 \contentsline {section}{\numberline {5.2}Crit\IeC {\'e}rios de avalia\IeC {\c c}\IeC {\~a}o}{52}{section.5.2}
-\contentsline {section}{\numberline {5.3}Resultados}{53}{section.5.3}
+\contentsline {section}{\numberline {5.3}Avalia\IeC {\c c}\IeC {\~a}o dos Extratores junto a Usu\IeC {\'a}rios}{53}{section.5.3}
+\contentsline {section}{\numberline {5.4}Valida\IeC {\c c}\IeC {\~a}o do Segmentador}{55}{section.5.4}
+\contentsline {section}{\numberline {5.5}Influ\IeC {\^e}ncia dos Extratores na qualidade dos segmentos}{57}{section.5.5}
+\contentsline {section}{\numberline {5.6}Considera\IeC {\c c}\IeC {\~o}es finais}{58}{section.5.6}
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
-\contentsline {chapter}{Refer\^encias}{59}{section*.4}
+\contentsline {chapter}{Refer\^encias}{61}{section*.4}
 \renewcommand *{\cftappendixname }{AP\^ENDICE \space }
 \cftinsert {AAA}
 \renewcommand *{\cftappendixname }{ANEXO \space }

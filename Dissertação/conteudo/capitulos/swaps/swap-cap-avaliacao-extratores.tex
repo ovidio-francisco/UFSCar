@@ -1,3 +1,73 @@
+ Nessa seção, os dados coletados das avaliações são apresentados e analisados. Os
+modelos de extração de tópicos discutidos nesse trabalhos são comparados de acordo com
+os critérios mencionados anteriormente: (1) comparar algoritmos de extração de tópicos na
+tarefa de extração de padrões no contexto das atas de reunião, (2) analisar a qualidade dos
+descritores extraídos para recuperar os documentos dos grupos. Além disso, as questões
+referentes à segmentação, são analisadas a fim de validar a performance do segmentador
+empregado, como complemento ao experimento discutido na Seção 4.
+
+
+
+
+
+
+
+
+
+
+
+as questões referentes à segmentação foram apresentadas juntamente com as 
+
+
+
+
+
+"No caso do KMeans a quantidade de usuários que identificaram que os descritores foram bons foi bem maior do que ... no caso do outro ... enfim" 
+
+
+\textit{``Todos os trechos apresentados compartilham um mesmo assunto.''}
+\textit{``As palavras \textit{<descritores>} resumem bem o assunto tratado nos trechos.''}
+\textit{``Existem trechos que não tratam de um único assunto?''}
+\textit{``Existem trechos incompletos e insuficientes para compreensão do assunto do trecho?''}
+
+	\caption{Contagem de respostas referente a primeira questão cujo enunciado foi:\textit{``Todos os trechos apresentados compartilham um mesmo assunto.''}. O eixo vertical indica a frequência das alternativas representadas no eixo horizontal por:
+		a=\textit{``Discordo Totalmente''}
+		b=\textit{``Discordo Parcialmente''}
+		c=\textit{``Não Concordo, nem Discordo''}
+		d=\textit{``Concordo Parcialmente''}
+		e=\textit{``Concordo Totalmente''}.
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+% o segmentador deve retornar trechos 
+% ser suficientes para que o usuário compreenda o assunto 
+% Nessa seção, os dados referentes à qualidade do segmentador são apresentados e analisados.
+% Esse experimento foi aproveitado para validar o segmentador empregado nesse trabalho. 
+
+a quantidade de usuários que concordam com a afirmação de que os termos são bons descritores foi bem maior em relação ao que discordam.
+
+% a quantidade de usuários que reconhecem os termos como bons descritores foi bem maior que relação aos que os julgaram 
+
+a maior diferença entre as opiniões positivas e negativas, sendo a maioria concordante com a afirmação de que os descritores extraídos são bons atributos para descrever o teor dos segmentos extraídos.
+
+
+
+
+
+
+% --------------------------------------------------
+
+
 Conforme as configurações, cada foi configurado para extrair 70 tópicos e selecionar 5 termos para descreve-los. 
 
 O grupo selecionado pela busca é identificado pelos descritores .... e contem X segmentos.
@@ -24,6 +94,7 @@ Consulta 2 "defesa de dissertação"
 		- Descritores "orientada, prazo, bolsa, meses e defesa"
 		- 19 Segmentos
 
+% --------------------------------------------------
 
 
 
@@ -221,3 +292,36 @@ For both evaluations the used grades were:
 %
 
 
+\begin{figure}[!h] \centering     %%% not \center
+
+	\subfigure{ \label{fig:seg1}
+		\includegraphics[width=.48\textwidth]{conteudo/capitulos/figs/figuras-experimento/Q3-Seg.png}
+	}	
+	\subfigure{ \label{fig:seg2}
+		\includegraphics[width=.48\textwidth]{conteudo/capitulos/figs/figuras-experimento/Q4-Seg.png}
+	}
+	\caption{Contagem de respostas referente a terceira e quarta questão. Os eixos verticais indicam as frequências das alternativas representadas no eixos horizontais por:
+		a=\textit{``Nenhum''}
+		b=\textit{``Poucos''}
+		c=\textit{``Nem Muitos, nem Poucos''}
+		d=\textit{``Muitos''}
+		e=\textit{``Todos''}.
+	}
+	\label{fig:Q3e4}
+\end{figure}
+
+\begin{figure}[!h] \centering     %%% not \center
+
+	\subfigure{ \label{fig:seg1}
+		\includegraphics[width=.48\textwidth]{conteudo/capitulos/figs/figuras-experimento/Q3-Seg.png}
+	}	
+	\subfigure{ \label{fig:seg2}
+		\includegraphics[width=.48\textwidth]{conteudo/capitulos/figs/figuras-experimento/Q4-Seg.png}
+	}
+	\caption{Contagem de respostas referente a quarta questão em que o eixo vertical indica a frequência das alternativas.  }
+	\label{fig:Q3}
+\end{figure}
+
+% Na linha superior observa-se os resultados a terceira questão, 
+
+% e na inferior, os resultados da quarta questão, 
