@@ -1,18 +1,149 @@
 
+Ata      ; Sent. ;  A1  ;   A2 ;  A3 ;  A4 ;   A5 ;   A6 ;   A7 ;   A8 ;   A9  ;  k      ;  P k   ;   WD
+Ata 1    ; 25    ;  7   ;   4  ;  11 ;  6  ;   16 ;   8  ;   8  ;   15 ;   16  ;  0.344  ;  0.593 ;   0.475
+Ata 2    ; 17    ;  4   ;   4  ;  8  ;  6  ;   11 ;   6  ;   6  ;   15 ;   14  ;  0.377  ;  0.572 ;   0.509
+Ata 3    ; 26    ;  6   ;   6  ;  8  ;  4  ;   15 ;   9  ;   10 ;   18 ;   14  ;  0.384  ;  0.603 ;   0.524
+Ata 4    ; 26    ;  5   ;   5  ;  10 ;  6  ;   14 ;   17 ;   7  ;   11 ;   12  ;  0.447  ;  0.652 ;   0.540
+Ata 5    ; 33    ;  4   ;   4  ;  6  ;  5  ;   17 ;   22 ;   9  ;   18 ;   16  ;  0.315  ;  0.595 ;   0.364
+Ata 6    ; 11    ;  3   ;   4  ;  6  ;  4  ;   9  ;   9  ;   4  ;   7  ;   5   ;  0.397  ;  0.605 ;   0.576
+Ata 7    ; 20    ;  3   ;   7  ;  5  ;  4  ;   11 ;   14 ;   5  ;   5  ;   4   ;  0.374  ;  0.658 ;   0.506
+Ata 8    ; 35    ;  4   ;   8  ;  3  ;  8  ;   12 ;   17 ;   5  ;   11 ;   9   ;  0.378  ;  0.611 ;   0.471
+Ata 9    ; 24    ;  3   ;   5  ;  3  ;  6  ;   11 ;   11 ;   3  ;   9  ;   9   ;  0.428  ;  0.591 ;   0.478
+Ata 10   ; 50    ;  4   ;   5  ;  4  ;  7  ;   31 ;   29 ;   5  ;   9  ;   8   ;  0.309  ;  0.598 ;   0.233
+Ata 11   ; 43    ;  4   ;   7  ;  5  ;  7  ;   29 ;   19 ;   5  ;   9  ;   12  ;  0.348  ;  0.645 ;   0.412
+Ata 12   ; 56    ;  3   ;   10 ;  4  ;  16 ;   33 ;   25 ;   4  ;   13 ;   11  ;  0.278  ;  0.577 ;   0.102
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+A concordância entre os anotadores é uma medida importante que mostra como os anotadores compreendem os textos analisados e o nível de confiabilidade da segmentação de referência.
+
+
+
+
+
+
+
+sentença os números a esquerda indicam seu índice e os segmentos estão separados por uma linha horizontal.
+
+
+
+
+
+% os dados coletados foram analisados para gerar a segmentação de referência. 
+
+
+
+  % Após o processo de anotação, os dados coletados foram analisados para gerar a segmentação de referência. A segmentação de referência foi gerada utilizando o critério de maior concordância, como já relatado em outros trabalhos~\cite{Hearst1997, Cardoso2017, Kazantseva2012, Passonneau1997, Galley2003}. Considerou-se que ocorre um limite entre segmentos quando a maioria dos anotadores (metade mais um) concordaram que a mesma sentença é um final de segmento. A concordância entre os anotadores é uma medida importante que mostra como os anotadores compreendem os textos analisados e o nível de confiabilidade da segmentação de referência. Na Figura~\ref{fig:concordanciasegref} é mostrado um exemplo de criação de uma segmentação de referência por meio da concordância entre anotadores. As primeiras linhas representam segmentações fornecidas por anotadores e a última linha representa a segmentação resultante da concordância entre a maioria dos segmentadores e portanto mais confiável. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+% por meio de computadores com acesso a Internet.
+% livres para segmentar e rotular as atas 
+
+
+
+
+
+\ref{}
+
+
+
+
+
+% Selecionou-se um grupo de anotadores para analisar e coletar dados referentes a segmentação de cada ata. O grupo de anotadores foi formado por profissionais com alguma afinidade com atas de reunião, como profissionais administrativos, professores e coordenadores de curso. 
+% Optou-se por desenvolver um \textit{software}\footnote{Códigos fontes disponíveis em: \url{https://github.com/ovidio-francisco/UFSCar/tree/master/codes/TextSegmentationTool} } como ferramenta para a coleta dos dados a fim de facilitar o trabalho de anotação e diminuir eventuais erros, conforme sugerido por~\cite{Hovy2010}. Essa ferramenta foi modelada para permitir aos anotadores visualizar os documentos e indicar livremente as divisões entre segmentos, bem como rotulá-los em classes e indicar palavras que melhor descrevem o assunto central do segmento.
+% Os anotadores receberam informações básicas sobre o objetivo da pesquisa e instruções de como operar o \textit{software}. Contudo, nenhum critério foi estabelecido para o procedimento ficando os anotadores livres para segmentar e rotular as atas orientados apenas pela interface da ferramenta. Na Figura~\ref{fig:interfaceanotacoes} é mostrada a interface da ferramenta utilizada para as anotações.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 -- influência da quantidade de segmentos
 -- considerações sobre o último experimento
 
 
-
-
 -- Mostrar que os cabeçalhos e rodapés ficam agrupados.
 
 
+Outro ponto a ser levando em consideração nesse sistema é o reconhecimento de trechos com pouco relevância em relação à reunião que uma ata se refere, como cabeçalhos e rodapés. Durante dos testes verificou-se a presença de grupos contendo esse tipo de conteúdo como cabeçalhos, rodapés, textos introdutórios e encerramentos. Essa identificação ajuda a 
+
+
+
+
+
+
 % ------------------------------
-
-
 
   \begin{figure}[!h]
 	  \centering
@@ -246,6 +377,32 @@ Sentenças &&& 1.000& \cellcolor{gray!20} \textbf{0.640} & \cellcolor{gray!20} \
 
 % -? Medidas
 % -- como ele faz?
+
+
+
+% Outro ponto a ser analisado é a influência da proporção de segmentos identificados na performance do algoritmo. Durante os testes observou-se que os parâmetros relacionados a quantidade de segmentos causam maior impacto nas medidas de desempenho. Na Figura~\ref{fig:influencia-SegRate} é exibida a relação entre a taxa de segmentação e as medidas de desempenho as quais apresentam melhores valores entre $30\%$ e $50\%$ de sentenças marcadas como final de segmento.
+
+
+
+% \begin{figure}[!h] \centering     %%% not \center
+
+	% \subfigure{ \label{fig:influencia-segRate-c99}
+	  % \includegraphics[width=.48\textwidth]{conteudo/capitulos/figs/graficos/analiseNSegRate-C99.png}
+	% }
+	% \subfigure{ \label{fig:influencia-segRate-mc}
+	  % \includegraphics[width=.48\textwidth]{conteudo/capitulos/figs/graficos/analiseNSegRate-MinCut.png}
+	% }
+	% \subfigure{ \label{fig:influencia-segRate-bs}
+	  % \includegraphics[width=.48\textwidth]{conteudo/capitulos/figs/graficos/analiseNSegRate-Bayes.png}
+	% }
+	% \subfigure{ \label{fig:influencia-segRate-ui}
+	  % \includegraphics[width=.48\textwidth]{conteudo/capitulos/figs/graficos/analiseNSegRate-UISeg.png}
+	% }
+	% \caption{Influência do taxa segmentos na eficiência dos algoritmos}
+	% \label{fig:influencia-SegRate}
+% \end{figure}
+
+
 
 
 
