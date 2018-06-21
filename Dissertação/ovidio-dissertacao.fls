@@ -322,9 +322,6 @@ INPUT ./conteudo/capitulos/figs/interface-anotacoes.png
 INPUT conteudo/capitulos/figs/segmentacao-referencia.pdf
 INPUT ./conteudo/capitulos/figs/segmentacao-referencia.pdf
 INPUT ./conteudo/capitulos/figs/segmentacao-referencia.pdf
-INPUT conteudo/capitulos/figs/coesaolexicaTT-50-9.png
-INPUT ./conteudo/capitulos/figs/coesaolexicaTT-50-9.png
-INPUT ./conteudo/capitulos/figs/coesaolexicaTT-50-9.png
 INPUT conteudo/capitulos/inputs/tabela-resumo.tex
 INPUT conteudo/capitulos/inputs/tabela-resumo.tex
 INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmr10.tfm
@@ -344,6 +341,9 @@ INPUT ./conteudo/capitulos/figs/graficos/analiseNSegRate-Bayes.png
 INPUT conteudo/capitulos/figs/graficos/analiseNSegRate-UISeg.png
 INPUT ./conteudo/capitulos/figs/graficos/analiseNSegRate-UISeg.png
 INPUT ./conteudo/capitulos/figs/graficos/analiseNSegRate-UISeg.png
+INPUT conteudo/capitulos/figs/coesaolexicaTT-50-9.png
+INPUT ./conteudo/capitulos/figs/coesaolexicaTT-50-9.png
+INPUT ./conteudo/capitulos/figs/coesaolexicaTT-50-9.png
 INPUT conteudo/capitulos/figs/graficos/resumo-wd-pk.png
 INPUT ./conteudo/capitulos/figs/graficos/resumo-wd-pk.png
 INPUT ./conteudo/capitulos/figs/graficos/resumo-wd-pk.png

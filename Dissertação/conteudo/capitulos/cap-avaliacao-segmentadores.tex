@@ -48,8 +48,22 @@ O trabalho de anotação, visa entender como usuários entendem as transições 
 % -- 3 - Selecionar e treinar os anotadores 
 % -- 5 - Modelar uma interface para anotação
 Após a delimitação do fenômeno a ser explicado e escolha do \textit{corpus} apropriado, selecionou-se um grupo de anotadores para analisar e coletar dados referentes a cada ata. O grupo de anotadores foi formado por profissionais com alguma afinidade com atas de reunião, como profissionais administrativos, professores e coordenadores de curso. 
-A fim de facilitar o trabalho de anotação e diminuir eventuais erros, optou-se por desenvolver um \textit{software}\footnote{Códigos fontes disponíveis em: \url{https://github.com/ovidio-francisco/UFSCar/tree/master/codes/TextSegmentationTool} } como ferramenta para a coleta dos dados, conforme sugerido por~\cite{Hovy2010}. Essa ferramenta foi modelada para permitir aos anotadores visualizar os documentos e indicar livremente as divisões entre segmentos, bem como rotulá-los em classes e indicar palavras que melhor descrevem o assunto central do segmento.
-Os anotadores receberam informações básicas sobre o objetivo da pesquisa e instruções de como operar o \textit{software} por meio de um vídeo\footnote{Acessível em }. Contudo, nenhum critério foi estabelecido para o procedimento ficando os anotadores orientados apenas pela interface da ferramenta. Na Figura~\ref{fig:interfaceanotacoes} é mostrada a interface da ferramenta utilizada para as anotações.
+A fim de facilitar o trabalho de anotação e diminuir eventuais erros, optou-se por desenvolver um \textit{software}\footnote{Códigos fontes disponíveis em: \url{https://github.com/ovidio-francisco/UFSCar/tree/master/codes/TextSegmentationTool} } como ferramenta para a coleta dos dados, conforme sugerido por~\cite{Hovy2010}. Essa ferramenta foi modelada para permitir aos anotadores visualizar os documentos e indicar livremente as divisões entre segmentos, bem como rotulá-los. 
+
+Nesse processo, rotulou-se o assunto tratado no seguimento em 3 passos:
+(1) classificação quanto ao tipo de comunicação, onde se especificou uma entre as classes 
+\textit{``decisão``},
+\textit{``informe''},
+\textit{``irrelevante''} e 
+\textit{``outro''} sendo que para essa última, o anotador poderia especificar livremente a classe.
+(2) classificação quanto ao ao contexto onde se gerou o assunto, onde as classes, 
+\textit{``discussão''},
+\textit{``orientação''},
+\textit{``solicitação''} e 
+\textit{``outro''} podendo o anotador indicá-las simultaneamente.
+(3) descrição do assunto, onde o anotador apontou até 5 palavras contidas no texto para representar o teor do segmento.
+
+De acordo com a literatura a respeito de anotações em sub-tópicos, é recomendável fornecer treinamento aos participantes. Nesse trabalho os anotadores receberam apenas informações básicas sobre o objetivo da pesquisa e instruções de como operar o \textit{software} por meio de um vídeo\footnote{Acessível em }, deixando o entendimento sobre a segmentação e rotulação a critério do entendimento de cada anotador. Assim, nenhum critério foi estabelecido para o procedimento ficando os anotadores orientados apenas pela interface da ferramenta. Na Figura~\ref{fig:interfaceanotacoes} é mostrada a interface da ferramenta utilizada para as anotações.
 
   \begin{figure}[!h]
 	  \centering
@@ -322,19 +336,19 @@ Na Tabela~\ref{tab:resultadosTT} são apresentadas, as médias obtidas com o \te
 
 % --> Falar da coesão léxica peculiar das atas!!
 
-Uma vez que a coesão léxica é pressuposto de muitas abordagens em segmentação textual, fez-se uma análise desses documentos quanto a similaridade dos termos ao longo do texto. Verificou-se que a técnica de janelas deslizantes empregada pelo TextTiling encontra os vales que indicam transições entre segmentos, contudo ao comparar esses vales com a segmentação de referência, nota-se que a maioria dos limites coincide ou estão próximos aos vales, porém há casos onde a referência indica limites em trechos com alta coesão léxica e outros onde a queda da coesão, indicada por vales, não coincide com nenhum limite de referência.  
+% Uma vez que a coesão léxica é pressuposto de muitas abordagens em segmentação textual, fez-se uma análise desses documentos quanto a similaridade dos termos ao longo do texto. Verificou-se que a técnica de janelas deslizantes empregada pelo TextTiling encontra os vales que indicam transições entre segmentos, contudo ao comparar esses vales com a segmentação de referência, nota-se que a maioria dos limites coincide ou estão próximos aos vales, porém há casos onde a referência indica limites em trechos com alta coesão léxica e outros onde a queda da coesão, indicada por vales, não coincide com nenhum limite de referência.  
 
-% Na Figura~\ref{fig:coesaolexicaTT}a linha horizontal representa a variação da coesão léxica ao longo de uma ata e as linha verticais azuis e vermelhas representam os limites entre segmentos atribuidos pela referência e pelo algoritmo respectivamente. 
-Na Figura~\ref{fig:coesaolexicaTT} é apresentado a variação da coesão léxica ao longo de uma ata e a segmentação obtida pelo \textit{TextTiling} usando tamanho de janela igual a 50 e passo 9. A linha horizontal representa a variação da coesão léxica e as linha verticais azuis e vermelhas representam os limites entre segmentos atribuídos pela referência e pelo algoritmo respectivamente. 
+% % Na Figura~\ref{fig:coesaolexicaTT}a linha horizontal representa a variação da coesão léxica ao longo de uma ata e as linha verticais azuis e vermelhas representam os limites entre segmentos atribuidos pela referência e pelo algoritmo respectivamente. 
+% Na Figura~\ref{fig:coesaolexicaTT} é apresentado a variação da coesão léxica ao longo de uma ata e a segmentação obtida pelo \textit{TextTiling} usando tamanho de janela igual a 50 e passo 9. A linha horizontal representa a variação da coesão léxica e as linha verticais azuis e vermelhas representam os limites entre segmentos atribuídos pela referência e pelo algoritmo respectivamente. 
 
 
-  %--- ---
-  \begin{figure}[!h]
-	  \centering
-	  \includegraphics[width=\textwidth]{conteudo/capitulos/figs/coesaolexicaTT-50-9.png}
-	  \caption{Variação da coesão léxica ao longo de uma ata junto a uma segmentação automática em contraste com uma segmentação de referência.}
-	  \label{fig:coesaolexicaTT}
-  \end{figure}
+  % %--- ---
+  % \begin{figure}[!h]
+	  % \centering
+	  % \includegraphics[width=\textwidth]{conteudo/capitulos/figs/coesaolexicaTT-50-9.png}
+	  % \caption{Variação da coesão léxica ao longo de uma ata junto a uma segmentação automática em contraste com uma segmentação de referência.}
+	  % \label{fig:coesaolexicaTT}
+  % \end{figure}
 
 
 
@@ -406,11 +420,6 @@ Verificou-se que, entre os métodos baseados em coesão léxica, o \textit{C99} 
 
 
 
-
-
-
-
-
 A avaliação final foi feita pela comparação dos resultados dos algoritmos com a segmentação de referência usando as medidas \textit{Pk} e \textit{WindowDiff}. É apresentada também, para fins de comparação com outros trabalhos, as medidas tradicionais acurácia, precisão, revocação e F$^1$, entretanto, nesse contexto, essas medidas são menos significativa que P$_k$ e \textit{WindowDiff}, conforme já mencionado na Seção~\ref{subsec:medidas-segmentacao}. 
 Cada técnica foi executada variando seus principais parâmetros a fim de verificar qual configuração melhor otimiza cada algoritmo. A Tabela~\ref{tab:resumo-resultados} contém a média dos dados obtidos onde os melhores resultados estão destacados. Vale lembrar que P$_k$ e \textit{WindowDiff} são medidas de dissimilaridade, ou seja, os valores menores significam melhores resultados.
 
@@ -425,7 +434,8 @@ Essa proximidade entre as medidas que toleram proximidade entre segmentações (
 % Todo: E dai? --> Sugere que segmentações ou são idênticas ou não são próximas, ou ainda que quando os anotadores (raramente) concordam, seus limites coincidem examente na maioria dos casos.
 
 
-Outro ponto a ser analisado é a influência da proporção de segmentos identificados na performance do algoritmo. Durante os testes observou-se que os parâmetros relacionados a quantidade de segmentos causam maior impacto nas medidas de desempenho. Na Figura~\ref{fig:influencia-SegRate} é exibida a relação entre a taxa de segmentação e as medidas de desempenho as quais apresentam melhores valores entre $30\%$ e $50\%$ de sentenças marcadas como final de segmento.
+
+Durante os testes analisou-se a influência das parâmetros na eficiência dos algoritmos, em que observou-se que a proporção de segmentos extraídos causam maior impacto nas medidas de desempenho. Na Figura~\ref{fig:influencia-SegRate} é exibida a relação entre a taxa de segmentação e as medidas de desempenho as quais apresentam melhores valores entre $30\%$ e $50\%$ de sentenças marcadas como final de segmento.
 
 
 
@@ -446,6 +456,31 @@ Outro ponto a ser analisado é a influência da proporção de segmentos identif
 	\caption{Influência do taxa segmentos na eficiência dos algoritmos}
 	\label{fig:influencia-SegRate}
 \end{figure}
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%
+% Análise da Coesão Léxica e eficiência da técnica do TT
+%%%%%%%%%%%%%%%%%%%%%%
+
+% --> Falar da coesão léxica peculiar das atas!!
+
+A abordagem baseada em janelas deslisantes empregada no \textit{TextTiling} não permite a configuração direta da quantidade de segmentos extraídos, possibilitando o ajuste do tamanho do passo e comprimento da janela que influenciam seu comportamento nesse aspecto, os quais são analisados a seguir.
+Uma vez que a coesão léxica é pressuposto de muitas abordagens em segmentação textual, fez-se uma análise desses documentos quanto a similaridade dos termos ao longo do texto. Verificou-se que a técnica de janelas deslizantes empregada pelo TextTiling encontra os vales que indicam transições entre segmentos, contudo ao comparar esses vales com a segmentação de referência, nota-se que a maioria dos limites coincide ou estão próximos aos vales, porém há casos onde a referência indica limites em trechos com alta coesão léxica e outros onde a queda da coesão, indicada por vales, não coincide com nenhum limite de referência.  
+
+% Na Figura~\ref{fig:coesaolexicaTT}a linha horizontal representa a variação da coesão léxica ao longo de uma ata e as linha verticais azuis e vermelhas representam os limites entre segmentos atribuidos pela referência e pelo algoritmo respectivamente. 
+Na Figura~\ref{fig:coesaolexicaTT} é apresentado a variação da coesão léxica ao longo de uma ata e a segmentação obtida pelo \textit{TextTiling} usando tamanho de janela igual a 50 e passo 9. A linha horizontal representa a variação da coesão léxica e as linha verticais azuis e vermelhas representam os limites entre segmentos atribuídos pela referência e pelo algoritmo respectivamente. 
+
+
+  %--- ---
+  \begin{figure}[!h]
+	  \centering
+	  \includegraphics[width=\textwidth]{conteudo/capitulos/figs/coesaolexicaTT-50-9.png}
+	  \caption{Variação da coesão léxica ao longo de uma ata junto a uma segmentação automática em contraste com uma segmentação de referência.}
+	  \label{fig:coesaolexicaTT}
+  \end{figure}
+
 
 
 

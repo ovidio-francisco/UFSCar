@@ -1,17 +1,28 @@
 
-Ata      ; Sent. ;  A1  ;   A2 ;  A3 ;  A4 ;   A5 ;   A6 ;   A7 ;   A8 ;   A9  ;  k      ;  P k   ;   WD
-Ata 1    ; 25    ;  7   ;   4  ;  11 ;  6  ;   16 ;   8  ;   8  ;   15 ;   16  ;  0.344  ;  0.593 ;   0.475
-Ata 2    ; 17    ;  4   ;   4  ;  8  ;  6  ;   11 ;   6  ;   6  ;   15 ;   14  ;  0.377  ;  0.572 ;   0.509
-Ata 3    ; 26    ;  6   ;   6  ;  8  ;  4  ;   15 ;   9  ;   10 ;   18 ;   14  ;  0.384  ;  0.603 ;   0.524
-Ata 4    ; 26    ;  5   ;   5  ;  10 ;  6  ;   14 ;   17 ;   7  ;   11 ;   12  ;  0.447  ;  0.652 ;   0.540
-Ata 5    ; 33    ;  4   ;   4  ;  6  ;  5  ;   17 ;   22 ;   9  ;   18 ;   16  ;  0.315  ;  0.595 ;   0.364
-Ata 6    ; 11    ;  3   ;   4  ;  6  ;  4  ;   9  ;   9  ;   4  ;   7  ;   5   ;  0.397  ;  0.605 ;   0.576
-Ata 7    ; 20    ;  3   ;   7  ;  5  ;  4  ;   11 ;   14 ;   5  ;   5  ;   4   ;  0.374  ;  0.658 ;   0.506
-Ata 8    ; 35    ;  4   ;   8  ;  3  ;  8  ;   12 ;   17 ;   5  ;   11 ;   9   ;  0.378  ;  0.611 ;   0.471
-Ata 9    ; 24    ;  3   ;   5  ;  3  ;  6  ;   11 ;   11 ;   3  ;   9  ;   9   ;  0.428  ;  0.591 ;   0.478
-Ata 10   ; 50    ;  4   ;   5  ;  4  ;  7  ;   31 ;   29 ;   5  ;   9  ;   8   ;  0.309  ;  0.598 ;   0.233
-Ata 11   ; 43    ;  4   ;   7  ;  5  ;  7  ;   29 ;   19 ;   5  ;   9  ;   12  ;  0.348  ;  0.645 ;   0.412
-Ata 12   ; 56    ;  3   ;   10 ;  4  ;  16 ;   33 ;   25 ;   4  ;   13 ;   11  ;  0.278  ;  0.577 ;   0.102
+Outro ponto a ser analisado é a influência da proporção de segmentos identificados na performance do algoritmo. 
+
+Entre os parâmetros analisados
+
+Entre os parâmetros analisados, a eficiência dos segmentadores mostrou-se sensível à proporção de segmentos extraídos em que 
+
+Durante
+
+
+
+
+
+
+
+
+os parâmetros relacionados 
+
+
+
+Durante os testes 
+
+
+
+proporção de segmentos extraídos mostrou-se sensível
 
 
 
@@ -22,6 +33,54 @@ Ata 12   ; 56    ;  3   ;   10 ;  4  ;  16 ;   33 ;   25 ;   4  ;   13 ;   11  ;
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+A fim de facilitar o trabalho de anotação e diminuir eventuais erros, optou-se por desenvolver um \textit{software}\footnote{Códigos fontes disponíveis em: \url{https://github.com/ovidio-francisco/UFSCar/tree/master/codes/TextSegmentationTool} } como ferramenta para a coleta dos dados, conforme sugerido por~\cite{Hovy2010}. Essa ferramenta foi modelada para permitir aos anotadores visualizar os documentos e indicar livremente as divisões entre segmentos, bem como rotulá-los. 
+Nesse processo, rotulou-se o assunto tratado no seguimento em 3 passos:
+% a rotulação dos segmentos se deu em 2 passos: 
+(1) classificação quanto ao tipo de comunicação, onde se especificou uma entre as classes 
+\textit{''decisão``},
+\textit{''informe``},
+\textit{''irrelevante``},
+\textit{''outro``}, sendo que para essa última, o anotador poderia especificar livremente a classe.
+(2) classificação quanto ao ao contexto onde se gerou o assunto, onde as classes, 
+\textit{''discussão``},
+\textit{''orientação``},
+\textit{''solicitação``} e
+\textit{''outro``}, podendo o anotador indicá-las simultaneamente.
+(3) descrição do assunto, onde o anotador apontou até 5 palavras contidas no texto para representar o teor do segmento.
+
+% discussão que gerou o assunto
+
+Nesse processo, os anotadores rotularam
+a rotulação se deu em 2 passos: rotulação quanto ao tipo de me
+
+em classes e indicar palavras que melhor descrevem o assunto central do segmento.
+
+
+
+
+
+% A fim de facilitar o trabalho de anotação e diminuir eventuais erros, optou-se por desenvolver um \textit{software}\footnote{Códigos fontes disponíveis em: \url{https://github.com/ovidio-francisco/UFSCar/tree/master/codes/TextSegmentationTool} } como ferramenta para a coleta dos dados, conforme sugerido por~\cite{Hovy2010}. Essa ferramenta foi modelada para permitir aos anotadores visualizar os documentos e indicar livremente as divisões entre segmentos, bem como rotulá-los. em classes e indicar palavras que melhor descrevem o assunto central do segmento.
 
 
 
@@ -402,6 +461,24 @@ Sentenças &&& 1.000& \cellcolor{gray!20} \textbf{0.640} & \cellcolor{gray!20} \
 	% \label{fig:influencia-SegRate}
 % \end{figure}
 
+
+
+
+
+
+Ata      ; Sent. ;  A1  ;   A2 ;  A3 ;  A4 ;   A5 ;   A6 ;   A7 ;   A8 ;   A9  ;  k      ;  P k   ;   WD
+Ata 1    ; 25    ;  7   ;   4  ;  11 ;  6  ;   16 ;   8  ;   8  ;   15 ;   16  ;  0.344  ;  0.593 ;   0.475
+Ata 2    ; 17    ;  4   ;   4  ;  8  ;  6  ;   11 ;   6  ;   6  ;   15 ;   14  ;  0.377  ;  0.572 ;   0.509
+Ata 3    ; 26    ;  6   ;   6  ;  8  ;  4  ;   15 ;   9  ;   10 ;   18 ;   14  ;  0.384  ;  0.603 ;   0.524
+Ata 4    ; 26    ;  5   ;   5  ;  10 ;  6  ;   14 ;   17 ;   7  ;   11 ;   12  ;  0.447  ;  0.652 ;   0.540
+Ata 5    ; 33    ;  4   ;   4  ;  6  ;  5  ;   17 ;   22 ;   9  ;   18 ;   16  ;  0.315  ;  0.595 ;   0.364
+Ata 6    ; 11    ;  3   ;   4  ;  6  ;  4  ;   9  ;   9  ;   4  ;   7  ;   5   ;  0.397  ;  0.605 ;   0.576
+Ata 7    ; 20    ;  3   ;   7  ;  5  ;  4  ;   11 ;   14 ;   5  ;   5  ;   4   ;  0.374  ;  0.658 ;   0.506
+Ata 8    ; 35    ;  4   ;   8  ;  3  ;  8  ;   12 ;   17 ;   5  ;   11 ;   9   ;  0.378  ;  0.611 ;   0.471
+Ata 9    ; 24    ;  3   ;   5  ;  3  ;  6  ;   11 ;   11 ;   3  ;   9  ;   9   ;  0.428  ;  0.591 ;   0.478
+Ata 10   ; 50    ;  4   ;   5  ;  4  ;  7  ;   31 ;   29 ;   5  ;   9  ;   8   ;  0.309  ;  0.598 ;   0.233
+Ata 11   ; 43    ;  4   ;   7  ;  5  ;  7  ;   29 ;   19 ;   5  ;   9  ;   12  ;  0.348  ;  0.645 ;   0.412
+Ata 12   ; 56    ;  3   ;   10 ;  4  ;  16 ;   33 ;   25 ;   4  ;   13 ;   11  ;  0.278  ;  0.577 ;   0.102
 
 
 
