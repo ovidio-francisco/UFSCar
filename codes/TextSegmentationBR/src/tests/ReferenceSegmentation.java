@@ -310,7 +310,7 @@ public class ReferenceSegmentation {
 	
 	
 	private static void checkAgreement(ArrayList<ArrayList<File>> allAnotations) {
-		System.out.println("File Name, KappaMean, PkMean, WindiffMean");
+		System.out.println("File Name, KappaMean, KappaStdDev, PkMean, PkStdDev, WindiffMean, WindiffStdDev");
 		for(ArrayList<File> a : allAnotations ) {
 			String am = agreementMeans(a);
 			System.out.println(String.format("%s, %s", a.get(0).getName(), am));
@@ -387,17 +387,43 @@ public class ReferenceSegmentation {
 		double aKappa = 0;
 		for(double k : kappas) { aKappa += k; }
 		double kappaMean = aKappa/count;
-
+		double kappaStdDev = 0;
+		double kappaVariance = 0;
+		for (double v : kappas) {
+			kappaVariance += Math.pow((v-kappaMean),2);
+		}
+		kappaVariance = kappaVariance/kappas.size();
+		kappaStdDev = Math.sqrt(kappaVariance);
+		
+		
+		
 		double aWindiff = 0;
 		for(double w : windfs) { aWindiff += w; }
 		double windifMean = aWindiff/count;
+		double windifStdDev = 0;
+		double windfVariance = 0;
+		for(double v : windfs) {
+			windfVariance += Math.pow((v-windifMean), 2);
+		}
+		windfVariance = windfVariance/windfs.size();
+		windifStdDev = Math.sqrt(windfVariance);
+		
 		
 		double aPk = 0;
 		for(double p : pks) { aPk += p; }
 		double pkMean = aPk / count;
+		double pkStdDev = 0;
+		double pkVariance = 0;
+		for(double v:pks) {
+			pkVariance += Math.pow((v-pkMean), 2);
+		}
+		pkVariance = pkVariance/pks.size();
+		pkStdDev = Math.sqrt(pkVariance);
+				
+		
 		
 //		String result = String.format("Kappa Mean = %f, Windiff Mean = %f", kappaMean, windifMean);
-		String result = String.format("%f, %f, %f", kappaMean, pkMean, windifMean);
+		String result = String.format("%f, %f, %f, %f, %f, %f", kappaMean, kappaStdDev, pkMean, pkStdDev, windifMean, windifStdDev);
 		return result;
 	}
 	

@@ -1,0 +1,351 @@
+01 - 15
+02 - 13
+03 - 15
+04 - 15
+05 - 19
+06 - 9
+07 - 8
+08 - 12
+09 - 12
+10 - 13
+11 - 12
+12 - 21
+
+
+
+
+Creating the Golden Refernce Segmentation
+
++ ./docs/LuF
++ ./docs/Ana
++ ./docs/Mar
++ ./docs/Deb
++ ./docs/Eli
++ ./docs/Cac
++ ./docs/Pro
++ ./docs/Joa
++ ./docs/Jos
+
+
+----
+
+
+12 names
+12 Anotations
+
+01 Ata 30 - 26a Reunião Odinária PPGCCS.txt.csv
+1 0 0 0 1 0 0 0 1 0 0 0 0 0 0 0 1 0 1 0 0 0 0 1 0 
+1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 
+1 1 0 0 1 0 1 0 1 0 0 0 0 0 0 0 1 1 1 0 0 1 0 1 0 
+1 1 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 0 
+1 1 1 0 1 0 1 1 1 0 1 1 1 0 0 0 0 1 1 0 1 1 0 1 0 
+1 1 0 0 1 0 0 0 1 0 0 0 0 0 0 0 0 0 1 0 1 0 0 1 0 
+1 1 0 0 1 0 0 0 1 0 0 0 0 0 0 1 1 0 0 0 1 0 0 0 0 
+1 1 0 0 1 1 1 1 1 0 1 1 1 0 1 0 1 0 1 0 0 0 0 1 0 
+1 0 0 0 1 1 1 1 1 0 1 1 1 1 1 1 1 0 1 0 0 0 0 1 0 
+--------------------------------------------------
+1 1 0 0 1 1 1 1 1 0 1 1 1 0 0 0 1 0 1 0 1 0 0 1 0 
+-->./SegReferences/01 Ata 30 - 26a Reunião Odinária PPGCCS.txt.csv
+
+
+02 Ata 29 - 25a Reunião Odinária PPGCCS.txt.csv
+0 0 0 0 1 0 1 0 0 0 0 0 0 0 0 1 0 
+1 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 0 
+1 1 0 0 1 1 1 0 0 0 0 0 0 0 1 1 0 
+1 0 1 0 1 0 0 0 1 0 0 0 0 0 0 1 0 
+1 1 0 0 1 1 1 0 1 1 0 1 0 0 1 1 0 
+1 1 0 0 1 1 0 0 0 0 0 0 0 1 0 0 0 
+1 0 1 0 1 0 1 0 0 0 0 0 0 0 0 1 0 
+1 1 0 0 1 1 1 1 1 1 1 1 1 1 1 1 0 
+1 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 0 
+----------------------------------
+1 1 1 0 1 1 1 0 1 1 0 1 0 1 1 1 0 
+-->./SegReferences/02 Ata 29 - 25a Reunião Odinária PPGCCS.txt.csv
+
+
+03 Ata 36 - 31a Reunião Odinária PPGCCS.txt.csv
+0 0 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 1 0 0 0 1 0 
+1 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 1 0 0 0 1 0 
+0 1 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 0 1 1 0 0 0 1 0 
+0 1 0 1 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+1 1 0 1 0 1 0 0 1 0 0 1 0 1 0 1 1 1 0 1 1 0 0 1 1 0 
+1 1 0 1 0 0 1 0 0 0 0 0 0 1 0 0 0 1 0 0 1 0 0 0 1 0 
+0 0 0 1 0 0 0 0 1 0 0 0 0 0 1 1 0 1 0 1 1 0 0 1 1 0 
+0 1 0 1 0 1 1 1 1 1 0 1 0 1 0 1 1 1 1 1 1 0 0 1 1 0 
+0 0 0 1 0 1 1 0 1 1 1 0 0 1 0 1 0 1 0 1 1 0 0 1 1 0 
+----------------------------------------------------
+1 1 0 1 0 1 1 0 1 0 0 1 0 1 0 1 0 1 0 1 1 0 0 1 1 0 
+-->./SegReferences/03 Ata 36 - 31a Reunião Odinária PPGCCS.txt.csv
+
+
+04 Ata 32 - 28a Reunião Odinária PPGCCS.txt.csv
+0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 0 0 1 0 
+1 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 0 
+0 1 0 0 1 0 0 0 0 1 1 0 0 0 0 0 1 0 0 0 1 0 1 1 1 0 
+0 0 0 0 1 0 0 0 0 0 1 0 0 1 0 1 0 0 0 0 0 0 0 0 1 0 
+1 1 0 0 1 0 0 0 1 1 1 1 0 1 0 1 0 0 0 0 1 0 1 1 1 0 
+1 1 0 0 1 1 0 1 1 1 1 1 1 1 0 1 0 0 0 0 1 0 1 1 1 0 
+1 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 0 1 0 1 0 
+0 1 0 0 1 0 0 0 1 1 1 0 0 0 0 0 1 0 0 0 1 0 1 1 1 0 
+0 0 0 0 1 0 0 0 1 1 1 1 0 0 0 0 1 0 0 0 1 1 1 1 1 0 
+----------------------------------------------------
+1 1 0 0 1 0 0 0 1 1 1 1 0 1 0 1 1 0 0 0 1 0 1 1 1 0 
+-->./SegReferences/04 Ata 32 - 28a Reunião Odinária PPGCCS.txt.csv
+
+
+05 Ata 33 - 29a Reunião Odinária PPGCCS.txt.csv
+0 0 0 0 1 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 
+1 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 
+0 1 0 0 1 0 0 0 0 1 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 
+0 0 0 0 1 1 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 
+1 1 0 0 1 1 1 0 0 1 0 1 0 0 0 0 1 0 1 0 0 1 0 1 1 0 0 1 1 0 1 1 0 
+1 1 1 0 1 0 1 0 1 1 1 1 1 1 0 0 1 0 1 0 0 1 0 1 1 0 0 1 1 1 1 1 0 
+0 0 0 0 1 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 0 1 0 0 0 1 0 1 1 1 0 
+0 1 0 0 1 1 1 0 0 1 1 1 0 0 0 0 1 0 1 0 0 1 0 1 1 0 0 1 1 1 1 1 0 
+0 0 0 0 1 0 1 0 0 1 1 1 0 0 0 0 1 0 1 0 0 1 1 1 1 0 0 1 0 1 1 1 0 
+------------------------------------------------------------------
+1 1 0 0 1 1 1 0 0 1 1 1 0 0 0 0 1 0 1 0 0 1 0 1 1 0 0 1 1 1 1 1 0 
+-->./SegReferences/05 Ata 33 - 29a Reunião Odinária PPGCCS.txt.csv
+
+
+06 Ata 35 - 5a Reunião Extraodinária PPGCCS.txt.csv
+0 0 0 0 0 1 0 0 0 1 0 
+1 1 0 0 0 0 0 0 0 1 0 
+1 1 0 1 0 1 0 0 0 1 0 
+0 1 0 0 0 0 1 0 0 1 0 
+0 1 1 1 0 1 1 1 1 1 0 
+1 1 0 1 0 1 1 1 1 1 0 
+0 0 0 0 0 1 1 0 0 1 0 
+0 1 0 1 0 0 1 1 1 1 0 
+0 0 0 0 0 1 1 0 1 1 0 
+----------------------
+1 1 0 1 0 1 1 1 1 1 0 
+-->./SegReferences/06 Ata 35 - 5a Reunião Extraodinária PPGCCS.txt.csv
+
+
+07 20ª Reunião Extraordinária CoC-CCS 08-12-10.txt.csv
+0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 
+1 1 0 0 0 1 1 0 0 0 0 0 0 0 0 0 1 0 1 0 
+1 0 1 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 
+0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 0 1 0 
+0 1 1 1 1 0 0 0 1 0 0 0 1 1 1 0 1 1 0 0 
+1 0 1 1 1 0 1 1 1 0 1 1 0 1 0 1 1 0 1 0 
+1 0 0 1 1 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 
+0 0 1 1 1 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 
+0 1 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 
+----------------------------------------
+1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 1 0 1 0 
+-->./SegReferences/07 20ª Reunião Extraordinária CoC-CCS 08-12-10.txt.csv
+
+
+08 25ª Reunião Ordinária CoC-CCS 04-04-12.txt.csv
+0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 
+1 1 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 0 
+0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 
+0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 0 1 0 1 0 1 0 0 0 0 0 1 0 
+1 1 0 1 1 0 1 0 0 0 1 0 0 0 1 0 0 0 1 0 0 0 0 0 0 0 1 0 0 0 0 1 0 1 0 
+1 1 1 1 1 0 1 0 0 0 1 0 1 1 1 0 0 0 1 0 0 0 0 1 0 1 1 0 0 0 0 0 1 1 0 
+1 0 0 1 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 
+0 1 0 1 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 0 0 0 1 0 0 1 0 0 0 0 1 0 0 
+0 0 0 1 1 0 1 0 0 0 1 0 0 1 0 0 0 0 0 0 0 0 0 0 1 0 0 1 0 0 0 0 1 0 0 
+----------------------------------------------------------------------
+1 1 0 1 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 1 0 
+-->./SegReferences/08 25ª Reunião Ordinária CoC-CCS 04-04-12.txt.csv
+
+
+09 40ª Reunião Ordinária CoC-CCS 06-05-15.txt.csv
+0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 0 
+1 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 0 
+0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 
+0 0 0 0 1 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 1 0 
+1 0 0 0 1 0 1 1 0 1 0 0 0 1 0 1 0 0 1 0 1 0 1 0 
+1 0 1 0 1 0 0 0 0 1 0 0 0 1 0 1 0 0 1 0 1 1 1 0 
+0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 
+0 0 0 0 1 0 1 1 0 1 0 0 0 1 0 1 0 0 0 0 1 1 0 0 
+0 0 0 0 0 0 1 1 0 1 0 0 0 1 0 1 0 0 1 0 1 1 0 0 
+------------------------------------------------
+1 0 0 0 1 0 1 1 0 1 0 0 0 1 0 1 0 0 1 0 1 1 1 0 
+-->./SegReferences/09 40ª Reunião Ordinária CoC-CCS 06-05-15.txt.csv
+
+
+10 20ª Reunião Ordinária CoC-CCS 01-06-11.txt.csv
+0 0 1 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 
+1 1 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 
+0 1 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 
+0 1 0 0 0 0 0 1 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 
+1 1 0 1 1 0 0 1 0 1 1 0 0 1 0 1 1 1 1 1 1 0 0 0 0 0 1 0 0 1 1 0 1 0 1 1 0 0 1 1 1 1 1 1 1 1 1 1 0 0 
+1 1 0 1 1 1 0 1 1 1 1 0 0 1 0 1 1 0 0 0 0 0 0 1 0 1 1 0 0 1 1 0 1 0 0 1 0 1 1 1 1 0 1 1 1 1 1 0 0 0 
+1 0 1 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 
+0 1 0 0 1 0 0 0 1 0 0 1 0 1 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 
+0 1 1 0 0 0 0 0 0 1 0 0 0 1 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 
+----------------------------------------------------------------------------------------------------
+1 1 1 1 1 0 0 1 0 1 1 0 0 1 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 
+-->./SegReferences/10 20ª Reunião Ordinária CoC-CCS 01-06-11.txt.csv
+
+
+11 10ª Reunião Ordinária CoC-CCS 05-04-10.txt.csv
+0 0 0 0 1 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 
+1 0 1 0 0 1 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 0 
+1 0 1 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 
+0 0 1 0 0 1 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 
+1 0 1 0 1 1 1 1 1 0 0 0 0 0 1 1 1 1 1 0 1 1 1 1 1 0 1 1 1 1 0 1 1 1 1 1 0 0 0 1 1 0 0 
+1 0 1 0 1 0 1 0 1 0 1 0 0 0 1 0 0 0 0 0 1 1 0 1 0 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 0 1 0 
+1 0 0 0 1 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 
+0 0 1 0 0 1 1 1 1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 
+0 1 0 0 0 1 1 1 1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 0 1 0 0 0 0 0 1 0 1 0 0 0 
+--------------------------------------------------------------------------------------
+1 0 1 0 1 1 1 1 1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 0 
+-->./SegReferences/11 10ª Reunião Ordinária CoC-CCS 05-04-10.txt.csv
+
+
+12 13ª Reunião Ordinária CoC-CCS 05-08-10.txt.csv
+0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 
+1 0 1 0 0 0 0 1 0 0 0 0 0 1 0 0 1 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 0 0 0 0 0 0 0 0 0 0 0 1 0 0 
+1 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 
+0 0 0 0 0 0 0 1 0 1 1 0 1 0 1 0 0 1 0 0 1 0 0 1 0 0 0 1 0 0 0 0 1 0 0 0 0 0 0 0 1 1 0 1 0 0 1 0 0 0 1 0 0 0 0 0 
+0 0 1 0 0 0 1 1 0 0 1 1 1 1 1 0 0 1 0 1 1 0 0 0 1 0 0 1 0 1 1 0 1 1 0 1 1 1 1 1 1 1 0 1 0 1 1 1 1 1 1 0 1 0 0 0 
+1 0 1 0 0 0 1 1 1 1 1 1 1 0 1 0 0 1 0 0 1 0 1 0 1 0 0 1 0 1 0 0 1 0 0 0 0 0 0 0 1 1 0 1 0 1 1 0 0 0 1 0 0 1 0 0 
+0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 
+0 0 1 0 0 0 0 1 0 0 1 1 1 1 1 0 0 0 0 1 1 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 0 0 0 0 0 
+1 0 0 0 0 0 0 0 0 0 1 1 1 1 1 0 0 0 0 0 1 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 0 0 0 0 
+----------------------------------------------------------------------------------------------------------------
+1 0 1 0 0 0 0 1 0 0 1 1 1 1 1 0 0 1 0 1 1 0 0 0 0 0 0 1 0 0 0 0 1 0 0 0 0 0 0 0 1 1 0 1 0 0 1 0 0 0 1 1 0 1 0 0 
+-->./SegReferences/12 13ª Reunião Ordinária CoC-CCS 05-08-10.txt.csv
+
+12 Nomes de Aquivos de referência
+
+01 Ata 30 - 26a Reunião Odinária PPGCCS.txt.csv
+	Anotador  1   7 segmetnos |  25 sentenças
+	Anotador  2   4 segmetnos |  25 sentenças
+	Anotador  3  11 segmetnos |  25 sentenças
+	Anotador  4   6 segmetnos |  25 sentenças
+	Anotador  5  16 segmetnos |  25 sentenças
+	Anotador  6   8 segmetnos |  25 sentenças
+	Anotador  7   8 segmetnos |  25 sentenças
+	Anotador  8  15 segmetnos |  25 sentenças
+	Anotador  9  16 segmetnos |  25 sentenças
+02 Ata 29 - 25a Reunião Odinária PPGCCS.txt.csv
+	Anotador  1   4 segmetnos |  17 sentenças
+	Anotador  2   4 segmetnos |  17 sentenças
+	Anotador  3   8 segmetnos |  17 sentenças
+	Anotador  4   6 segmetnos |  17 sentenças
+	Anotador  5  11 segmetnos |  17 sentenças
+	Anotador  6   6 segmetnos |  17 sentenças
+	Anotador  7   6 segmetnos |  17 sentenças
+	Anotador  8  15 segmetnos |  17 sentenças
+	Anotador  9  14 segmetnos |  17 sentenças
+03 Ata 36 - 31a Reunião Odinária PPGCCS.txt.csv
+	Anotador  1   6 segmetnos |  26 sentenças
+	Anotador  2   6 segmetnos |  26 sentenças
+	Anotador  3   8 segmetnos |  26 sentenças
+	Anotador  4   4 segmetnos |  26 sentenças
+	Anotador  5  15 segmetnos |  26 sentenças
+	Anotador  6   9 segmetnos |  26 sentenças
+	Anotador  7  10 segmetnos |  26 sentenças
+	Anotador  8  18 segmetnos |  26 sentenças
+	Anotador  9  14 segmetnos |  26 sentenças
+04 Ata 32 - 28a Reunião Odinária PPGCCS.txt.csv
+	Anotador  1   5 segmetnos |  26 sentenças
+	Anotador  2   5 segmetnos |  26 sentenças
+	Anotador  3  10 segmetnos |  26 sentenças
+	Anotador  4   6 segmetnos |  26 sentenças
+	Anotador  5  14 segmetnos |  26 sentenças
+	Anotador  6  17 segmetnos |  26 sentenças
+	Anotador  7   7 segmetnos |  26 sentenças
+	Anotador  8  11 segmetnos |  26 sentenças
+	Anotador  9  12 segmetnos |  26 sentenças
+05 Ata 33 - 29a Reunião Odinária PPGCCS.txt.csv
+	Anotador  1   4 segmetnos |  33 sentenças
+	Anotador  2   4 segmetnos |  33 sentenças
+	Anotador  3   6 segmetnos |  33 sentenças
+	Anotador  4   5 segmetnos |  33 sentenças
+	Anotador  5  17 segmetnos |  33 sentenças
+	Anotador  6  22 segmetnos |  33 sentenças
+	Anotador  7   9 segmetnos |  33 sentenças
+	Anotador  8  18 segmetnos |  33 sentenças
+	Anotador  9  16 segmetnos |  33 sentenças
+06 Ata 35 - 5a Reunião Extraodinária PPGCCS.txt.csv
+	Anotador  1   3 segmetnos |  11 sentenças
+	Anotador  2   4 segmetnos |  11 sentenças
+	Anotador  3   6 segmetnos |  11 sentenças
+	Anotador  4   4 segmetnos |  11 sentenças
+	Anotador  5   9 segmetnos |  11 sentenças
+	Anotador  6   9 segmetnos |  11 sentenças
+	Anotador  7   4 segmetnos |  11 sentenças
+	Anotador  8   7 segmetnos |  11 sentenças
+	Anotador  9   5 segmetnos |  11 sentenças
+07 20ª Reunião Extraordinária CoC-CCS 08-12-10.txt.csv
+	Anotador  1   3 segmetnos |  20 sentenças
+	Anotador  2   7 segmetnos |  20 sentenças
+	Anotador  3   5 segmetnos |  20 sentenças
+	Anotador  4   4 segmetnos |  20 sentenças
+	Anotador  5  11 segmetnos |  20 sentenças
+	Anotador  6  14 segmetnos |  20 sentenças
+	Anotador  7   5 segmetnos |  20 sentenças
+	Anotador  8   5 segmetnos |  20 sentenças
+	Anotador  9   4 segmetnos |  20 sentenças
+08 25ª Reunião Ordinária CoC-CCS 04-04-12.txt.csv
+	Anotador  1   4 segmetnos |  35 sentenças
+	Anotador  2   8 segmetnos |  35 sentenças
+	Anotador  3   3 segmetnos |  35 sentenças
+	Anotador  4   8 segmetnos |  35 sentenças
+	Anotador  5  12 segmetnos |  35 sentenças
+	Anotador  6  17 segmetnos |  35 sentenças
+	Anotador  7   5 segmetnos |  35 sentenças
+	Anotador  8  11 segmetnos |  35 sentenças
+	Anotador  9   9 segmetnos |  35 sentenças
+09 40ª Reunião Ordinária CoC-CCS 06-05-15.txt.csv
+	Anotador  1   3 segmetnos |  24 sentenças
+	Anotador  2   5 segmetnos |  24 sentenças
+	Anotador  3   3 segmetnos |  24 sentenças
+	Anotador  4   6 segmetnos |  24 sentenças
+	Anotador  5  11 segmetnos |  24 sentenças
+	Anotador  6  11 segmetnos |  24 sentenças
+	Anotador  7   3 segmetnos |  24 sentenças
+	Anotador  8   9 segmetnos |  24 sentenças
+	Anotador  9   9 segmetnos |  24 sentenças
+10 20ª Reunião Ordinária CoC-CCS 01-06-11.txt.csv
+	Anotador  1   4 segmetnos |  50 sentenças
+	Anotador  2   5 segmetnos |  50 sentenças
+	Anotador  3   4 segmetnos |  50 sentenças
+	Anotador  4   7 segmetnos |  50 sentenças
+	Anotador  5  31 segmetnos |  50 sentenças
+	Anotador  6  29 segmetnos |  50 sentenças
+	Anotador  7   5 segmetnos |  50 sentenças
+	Anotador  8   9 segmetnos |  50 sentenças
+	Anotador  9   8 segmetnos |  50 sentenças
+11 10ª Reunião Ordinária CoC-CCS 05-04-10.txt.csv
+	Anotador  1   4 segmetnos |  43 sentenças
+	Anotador  2   7 segmetnos |  43 sentenças
+	Anotador  3   5 segmetnos |  43 sentenças
+	Anotador  4   7 segmetnos |  43 sentenças
+	Anotador  5  29 segmetnos |  43 sentenças
+	Anotador  6  19 segmetnos |  43 sentenças
+	Anotador  7   5 segmetnos |  43 sentenças
+	Anotador  8   9 segmetnos |  43 sentenças
+	Anotador  9  12 segmetnos |  43 sentenças
+12 13ª Reunião Ordinária CoC-CCS 05-08-10.txt.csv
+	Anotador  1   3 segmetnos |  56 sentenças
+	Anotador  2  10 segmetnos |  56 sentenças
+	Anotador  3   4 segmetnos |  56 sentenças
+	Anotador  4  16 segmetnos |  56 sentenças
+	Anotador  5  33 segmetnos |  56 sentenças
+	Anotador  6  25 segmetnos |  56 sentenças
+	Anotador  7   4 segmetnos |  56 sentenças
+	Anotador  8  13 segmetnos |  56 sentenças
+	Anotador  9  11 segmetnos |  56 sentenças
+
+File Name, KappaMean, KappaStdDev, PkMean, PkStdDev, WindiffMean, WindiffStdDev
+01 Ata 30 - 26a Reunião Odinária PPGCCS.txt.csv, 0.344819, 0.190017, 0.433415, 0.170641, 0.631592, 0.409838
+02 Ata 29 - 25a Reunião Odinária PPGCCS.txt.csv, 0.266253, 0.246877, 0.439583, 0.190603, 0.565509, 0.379908
+03 Ata 36 - 31a Reunião Odinária PPGCCS.txt.csv, 0.328766, 0.183519, 0.442595, 0.165950, 0.590240, 0.353855
+04 Ata 32 - 28a Reunião Odinária PPGCCS.txt.csv, 0.364005, 0.241254, 0.364318, 0.161726, 0.562888, 0.377981
+05 Ata 33 - 29a Reunião Odinária PPGCCS.txt.csv, 0.315300, 0.217138, 0.458818, 0.223742, 0.889749, 0.640341
+06 Ata 35 - 5a Reunião Extraodinária PPGCCS.txt.csv, 0.314606, 0.218952, 0.404938, 0.163728, 0.463580, 0.266211
+07 20ª Reunião Extraordinária CoC-CCS 08-12-10.txt.csv, 0.235888, 0.208688, 0.343964, 0.192019, 0.507272, 0.401734
+08 25ª Reunião Ordinária CoC-CCS 04-04-12.txt.csv, 0.211715, 0.225674, 0.421468, 0.186979, 0.629516, 0.479067
+09 40ª Reunião Ordinária CoC-CCS 06-05-15.txt.csv, 0.234441, 0.258619, 0.472365, 0.203183, 0.660370, 0.427423
+10 20ª Reunião Ordinária CoC-CCS 01-06-11.txt.csv, 0.170895, 0.206225, 0.428278, 0.227281, 0.937978, 1.050226
+11 10ª Reunião Ordinária CoC-CCS 05-04-10.txt.csv, 0.209400, 0.236157, 0.368946, 0.203031, 0.704972, 0.654568
+12 13ª Reunião Ordinária CoC-CCS 05-08-10.txt.csv, 0.222476, 0.195360, 0.452345, 0.200618, 1.113057, 1.202921
+
