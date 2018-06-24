@@ -41,7 +41,7 @@ public class TestSegmenters {
 	private static TexArticle article = new TexArticle();
 	
 
-	private static boolean doPreprocess = true;
+	private static boolean doPreprocess = false;
 
 	public static void main(String[] args) {
 		Instant start = Instant.now();
