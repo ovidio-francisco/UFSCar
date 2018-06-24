@@ -322,6 +322,10 @@ INPUT ./conteudo/capitulos/figs/interface-anotacoes.png
 INPUT conteudo/capitulos/figs/segmentacao-referencia.pdf
 INPUT ./conteudo/capitulos/figs/segmentacao-referencia.pdf
 INPUT ./conteudo/capitulos/figs/segmentacao-referencia.pdf
+INPUT anexos/tabelas/tt-c99-pp/tab-tt-pp.tex
+INPUT anexos/tabelas/tt-c99-pp/tab-tt-pp.tex
+INPUT anexos/tabelas/tt-c99-pp/tab-tt-pp.tex
+INPUT anexos/tabelas/tt-c99-pp/tab-tt-pp.tex
 INPUT conteudo/capitulos/inputs/tabela-resumo.tex
 INPUT conteudo/capitulos/inputs/tabela-resumo.tex
 INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmr10.tfm
@@ -466,6 +470,7 @@ INPUT /usr/share/texmf/fonts/type1/public/lm/lmmi6.pfb
 INPUT /usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb
 INPUT /usr/share/texmf/fonts/type1/public/lm/lmr10.pfb
 INPUT /usr/share/texmf/fonts/type1/public/lm/lmr12.pfb
+INPUT /usr/share/texmf/fonts/type1/public/lm/lmr6.pfb
 INPUT /usr/share/texmf/fonts/type1/public/lm/lmr7.pfb
 INPUT /usr/share/texmf/fonts/type1/public/lm/lmr8.pfb
 INPUT /usr/share/texmf/fonts/type1/public/lm/lmri10.pfb

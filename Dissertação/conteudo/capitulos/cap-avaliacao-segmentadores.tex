@@ -297,32 +297,40 @@ A seguir são apresentados os resultados obtidos com os algoritmos baseados em c
 
 Na Tabela~\ref{tab:resultadosTT} são apresentadas, as médias obtidas com o \textit{TextTiling} bem como as configurações utilizadas, onde \textbf{J} é o tamanho da janela e \textbf{P} é o passo.
 
-\begin{table}[!h]
-	\centering
-	\begin{tabular}{|l||c|c|c||c|c|c|} \hline
 
-		& \multicolumn{3}{c||}{Sem Pré-processamento} 
-		& \multicolumn{3}{c|}{Com Pré-processamento}\\			
 
-		\textbf{Medida} & 
-		\textbf{J} &
-		\textbf{P} & 
-		\textbf{Média} &
-		\textbf{J} &
-		\textbf{P} & 
-		\textbf{Média} \\	\hline
+	\input{anexos/tabelas/tt-c99-pp/tab-tt-pp.tex}  
 
-		P$_k$				& 50 & 9 & 0,142 & 50 & 9  & 0,144 \\ \hline
-		\textit{WindowDiff}	& 50 & 6 & 0,387 & 40 & 9  & 0,396 \\ \hline
-		Acurácia			& 50 & 6 & 0,612 & 40 & 9  & 0,603 \\ \hline
-		Precisão			& 40 & 9 & 0,611 & 50 & 12 & 0,613 \\ \hline
-		Revocação			& 20 & 3 & 0,886 & 20 & 3  & 0,917 \\ \hline
-		F$^1$				& 30 & 6 & 0,605 & 40 & 3  & 0,648 \\ \hline
 
-	\end{tabular}
-	\caption{Resultados obtidos com o \textit{TextTiling}}
-	\label{tab:resultadosTT}
-\end{table}
+	\input{anexos/tabelas/tt-c99-pp/tab-tt-pp.tex}  
+
+
+% \begin{table}[!h]
+	% \centering
+	% \begin{tabular}{|l||c|c|c||c|c|c|} \hline
+
+		% & \multicolumn{3}{c||}{Sem Pré-processamento} 
+		% & \multicolumn{3}{c|}{Com Pré-processamento}\\			
+
+		% \textbf{Medida} & 
+		% \textbf{J} &
+		% \textbf{P} & 
+		% \textbf{Média} &
+		% \textbf{J} &
+		% \textbf{P} & 
+		% \textbf{Média} \\	\hline
+
+		% P$_k$				& 50 & 9 & 0,142 & 50 & 9  & 0,144 \\ \hline
+		% \textit{WindowDiff}	& 50 & 6 & 0,387 & 40 & 9  & 0,396 \\ \hline
+		% Acurácia			& 50 & 6 & 0,612 & 40 & 9  & 0,603 \\ \hline
+		% Precisão			& 40 & 9 & 0,611 & 50 & 12 & 0,613 \\ \hline
+		% Revocação			& 20 & 3 & 0,886 & 20 & 3  & 0,917 \\ \hline
+		% F$^1$				& 30 & 6 & 0,605 & 40 & 3  & 0,648 \\ \hline
+
+	% \end{tabular}
+	% \caption{Resultados obtidos com o \textit{TextTiling}}
+	% \label{tab:resultadosTT}
+% \end{table}
 
 
 
@@ -352,34 +360,34 @@ Na Tabela~\ref{tab:resultadosTT} são apresentadas, as médias obtidas com o \te
 Na Tabela~\ref{tab:resultadosc99} são apresentadas, as médias obtidas com o \textit{C99} bem como as configurações utilizadas, onde \textbf{S} é a proporção de segmentos em relação a quantidade de candidatos, \textbf{M} é o tamanho do quadro utilizado para criar a matriz de \textit{rankings} e \textbf{W} indica se as sentenças são representadas por vetores contendo a frequência dos termos ou um peso que representa sua importância no documento. % como TF*IDF que seria a frequencia do termo no elemento (sentença ou parágrafo) * a frequecia invertida do termo no documento. 
 % indica se os segmentos são representados por vetores contendo a frequência ou um peso das palavras.
 
-\begin{table}[!h]
-	\centering
-	\begin{tabular}{|l||c|c|c|c||c|c|c|c|} \hline
+% \begin{table}[!h]
+	% \centering
+	% \begin{tabular}{|l||c|c|c|c||c|c|c|c|} \hline
 
-		& \multicolumn{4}{c||}{Sem Pré-processamento} 
-		& \multicolumn{4}{c|}{Com Pré-processamento}\\			
+		% & \multicolumn{4}{c||}{Sem Pré-processamento} 
+		% & \multicolumn{4}{c|}{Com Pré-processamento}\\			
 
-		\textbf{Medida} & 
-		\textbf{S} & 
-		\textbf{M} & 
-		\textbf{W} & 
-		\textbf{Média} &
-		\textbf{S} & 
-		\textbf{M} & 
-		\textbf{W} & 
-		\textbf{Média} \\	\hline
+		% \textbf{Medida} & 
+		% \textbf{S} & 
+		% \textbf{M} & 
+		% \textbf{W} & 
+		% \textbf{Média} &
+		% \textbf{S} & 
+		% \textbf{M} & 
+		% \textbf{W} & 
+		% \textbf{Média} \\	\hline
 
-		P$_k$				& 20 & 9 & Sim & 0,134& 20 & 11 & False	& 0,116 \\ \hline  
-		\textit{WindowDiff}	& 60 & 9 & Sim & 0,411& 60 &  9 & Sim 	& 0,390 \\ \hline  
-		Acurácia			& 60 & 9 & Sim & 0,588& 60 &  9 & Sim 	& 0,609 \\ \hline  
-		Precisão			& 40 & 9 & Sim & 0,645& 20 & 11 & False	& 0,720 \\ \hline  
-		Revocação			& 80 & 9 & Sim & 0,869& 80 & 11 & Sim 	& 0,897 \\ \hline  
-		F$^1$				& 80 & 9 & Sim & 0,638& 80 & 11 & Sim 	& 0,655 \\ \hline  
+		% P$_k$				& 20 & 9 & Sim & 0,134& 20 & 11 & False	& 0,116 \\ \hline  
+		% \textit{WindowDiff}	& 60 & 9 & Sim & 0,411& 60 &  9 & Sim 	& 0,390 \\ \hline  
+		% Acurácia			& 60 & 9 & Sim & 0,588& 60 &  9 & Sim 	& 0,609 \\ \hline  
+		% Precisão			& 40 & 9 & Sim & 0,645& 20 & 11 & False	& 0,720 \\ \hline  
+		% Revocação			& 80 & 9 & Sim & 0,869& 80 & 11 & Sim 	& 0,897 \\ \hline  
+		% F$^1$				& 80 & 9 & Sim & 0,638& 80 & 11 & Sim 	& 0,655 \\ \hline  
 
-	\end{tabular}
-	\caption{Resultados obtidos com o \textit{C99}}
-	\label{tab:resultadosc99}
-\end{table}
+	% \end{tabular}
+	% \caption{Resultados obtidos com o \textit{C99}}
+	% \label{tab:resultadosc99}
+% \end{table}
 
 
 

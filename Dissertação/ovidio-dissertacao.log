@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.8.22)  20 JUN 2018 23:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.8.22)  24 JUN 2018 17:52
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1793,12 +1793,25 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [46]
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+LaTeX Warning: Reference `tab:resultadosTT' on page 47 undefined on input line 298.
+
+(./anexos/tabelas/tt-c99-pp/tab-tt-pp.tex
+Overfull \hbox (35.54576pt too wide) in paragraph at lines 5--47
+ [][] 
+ []
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
+) (./anexos/tabelas/tt-c99-pp/tab-tt-pp.tex
+Overfull \hbox (35.54576pt too wide) in paragraph at lines 5--47
+ [][] 
+ []
 
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+)
 Underfull \vbox (badness 1226) has occurred while \output is active []
 
  [47] (./conteudo/capitulos/inputs/tabela-resumo.tex
@@ -1812,9 +1825,12 @@ Overfull \hbox (62.76532pt too wide) in paragraph at lines 5--110
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-) [48]
-./conteudo/capitulos/cap-avaliacao-segmentadores.tex:440: Undefined control sequence.
-l.440 	\subfigure
+)
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [48]
+./conteudo/capitulos/cap-avaliacao-segmentadores.tex:448: Undefined control sequence.
+l.448 	\subfigure
                  { \label{fig:influencia-segRate-c99}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1825,11 +1841,11 @@ and I'll forget about whatever was undefined.
 <conteudo/capitulos/figs/graficos/analiseNSegRate-C99.png, id=1665, 602.25pt x 372.39125pt>
 File: conteudo/capitulos/figs/graficos/analiseNSegRate-C99.png Graphic file (type png)
  <use conteudo/capitulos/figs/graficos/analiseNSegRate-C99.png>
-Package pdftex.def Info: conteudo/capitulos/figs/graficos/analiseNSegRate-C99.png used on input line 441.
+Package pdftex.def Info: conteudo/capitulos/figs/graficos/analiseNSegRate-C99.png used on input line 449.
 (pdftex.def)             Requested size: 218.39806pt x 135.04376pt.
 
-./conteudo/capitulos/cap-avaliacao-segmentadores.tex:443: Undefined control sequence.
-l.443 	\subfigure
+./conteudo/capitulos/cap-avaliacao-segmentadores.tex:451: Undefined control sequence.
+l.451 	\subfigure
                  { \label{fig:influencia-segRate-mc}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1840,11 +1856,11 @@ and I'll forget about whatever was undefined.
 <conteudo/capitulos/figs/graficos/analiseNSegRate-MinCut.png, id=1666, 602.25pt x 372.39125pt>
 File: conteudo/capitulos/figs/graficos/analiseNSegRate-MinCut.png Graphic file (type png)
  <use conteudo/capitulos/figs/graficos/analiseNSegRate-MinCut.png>
-Package pdftex.def Info: conteudo/capitulos/figs/graficos/analiseNSegRate-MinCut.png used on input line 444.
+Package pdftex.def Info: conteudo/capitulos/figs/graficos/analiseNSegRate-MinCut.png used on input line 452.
 (pdftex.def)             Requested size: 218.39806pt x 135.04376pt.
 
-./conteudo/capitulos/cap-avaliacao-segmentadores.tex:446: Undefined control sequence.
-l.446 	\subfigure
+./conteudo/capitulos/cap-avaliacao-segmentadores.tex:454: Undefined control sequence.
+l.454 	\subfigure
                  { \label{fig:influencia-segRate-bs}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1855,11 +1871,11 @@ and I'll forget about whatever was undefined.
 <conteudo/capitulos/figs/graficos/analiseNSegRate-Bayes.png, id=1667, 602.25pt x 372.39125pt>
 File: conteudo/capitulos/figs/graficos/analiseNSegRate-Bayes.png Graphic file (type png)
  <use conteudo/capitulos/figs/graficos/analiseNSegRate-Bayes.png>
-Package pdftex.def Info: conteudo/capitulos/figs/graficos/analiseNSegRate-Bayes.png used on input line 447.
+Package pdftex.def Info: conteudo/capitulos/figs/graficos/analiseNSegRate-Bayes.png used on input line 455.
 (pdftex.def)             Requested size: 218.39806pt x 135.04376pt.
 
-./conteudo/capitulos/cap-avaliacao-segmentadores.tex:449: Undefined control sequence.
-l.449 	\subfigure
+./conteudo/capitulos/cap-avaliacao-segmentadores.tex:457: Undefined control sequence.
+l.457 	\subfigure
                  { \label{fig:influencia-segRate-ui}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1870,7 +1886,7 @@ and I'll forget about whatever was undefined.
 <conteudo/capitulos/figs/graficos/analiseNSegRate-UISeg.png, id=1668, 602.25pt x 372.39125pt>
 File: conteudo/capitulos/figs/graficos/analiseNSegRate-UISeg.png Graphic file (type png)
  <use conteudo/capitulos/figs/graficos/analiseNSegRate-UISeg.png>
-Package pdftex.def Info: conteudo/capitulos/figs/graficos/analiseNSegRate-UISeg.png used on input line 450.
+Package pdftex.def Info: conteudo/capitulos/figs/graficos/analiseNSegRate-UISeg.png used on input line 458.
 (pdftex.def)             Requested size: 218.39806pt x 135.04376pt.
 
 
@@ -1879,14 +1895,18 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [49] <conteudo/capitulos/figs/coesaolexicaTT-50-9.png, id=1677, 1413.28pt x 306.14375pt>
+ [49]
+
+LaTeX Warning: Text page 50 contains only floats.
+
+[50 <./conteudo/capitulos/figs/graficos/analiseNSegRate-C99.png (PNG copy)> <./conteudo/capitulos/figs/graficos/analiseNSegRate-MinCut.png (PNG copy)> <./conteudo/capitulos/figs/graficos/analiseNSegRate-Bayes.png (PNG copy)> <./conteudo/capitulos/figs/graficos/analiseNSegRate-UISeg.png (PNG copy)>] <conteudo/capitulos/figs/coesaolexicaTT-50-9.png, id=1681, 1413.28pt x 306.14375pt>
 File: conteudo/capitulos/figs/coesaolexicaTT-50-9.png Graphic file (type png)
  <use conteudo/capitulos/figs/coesaolexicaTT-50-9.png>
-Package pdftex.def Info: conteudo/capitulos/figs/coesaolexicaTT-50-9.png used on input line 475.
+Package pdftex.def Info: conteudo/capitulos/figs/coesaolexicaTT-50-9.png used on input line 483.
 (pdftex.def)             Requested size: 455.0pt x 98.56125pt.
 
-./conteudo/capitulos/cap-avaliacao-segmentadores.tex:493: Undefined control sequence.
-l.493 	\subfigure
+./conteudo/capitulos/cap-avaliacao-segmentadores.tex:501: Undefined control sequence.
+l.501 	\subfigure
                  { \label{fig:resumo-wd-pk}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1894,14 +1914,14 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-<conteudo/capitulos/figs/graficos/resumo-wd-pk.png, id=1678, 555.07375pt x 343.2825pt>
+<conteudo/capitulos/figs/graficos/resumo-wd-pk.png, id=1682, 555.07375pt x 343.2825pt>
 File: conteudo/capitulos/figs/graficos/resumo-wd-pk.png Graphic file (type png)
  <use conteudo/capitulos/figs/graficos/resumo-wd-pk.png>
-Package pdftex.def Info: conteudo/capitulos/figs/graficos/resumo-wd-pk.png used on input line 494.
+Package pdftex.def Info: conteudo/capitulos/figs/graficos/resumo-wd-pk.png used on input line 502.
 (pdftex.def)             Requested size: 222.9525pt x 137.8815pt.
 
-./conteudo/capitulos/cap-avaliacao-segmentadores.tex:495: Undefined control sequence.
-l.495 	\subfigure
+./conteudo/capitulos/cap-avaliacao-segmentadores.tex:503: Undefined control sequence.
+l.503 	\subfigure
                  { \label{fig:resumo-tradicionais}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1909,16 +1929,16 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-<conteudo/capitulos/figs/graficos/resumo-tradicionais.png, id=1679, 556.0775pt x 343.2825pt>
+<conteudo/capitulos/figs/graficos/resumo-tradicionais.png, id=1683, 556.0775pt x 343.2825pt>
 File: conteudo/capitulos/figs/graficos/resumo-tradicionais.png Graphic file (type png)
  <use conteudo/capitulos/figs/graficos/resumo-tradicionais.png>
-Package pdftex.def Info: conteudo/capitulos/figs/graficos/resumo-tradicionais.png used on input line 496.
+Package pdftex.def Info: conteudo/capitulos/figs/graficos/resumo-tradicionais.png used on input line 504.
 (pdftex.def)             Requested size: 222.9525pt x 137.63531pt.
 
-./conteudo/capitulos/cap-avaliacao-segmentadores.tex:500: Missing } inserted.
+./conteudo/capitulos/cap-avaliacao-segmentadores.tex:508: Missing } inserted.
 <inserted text> 
                 }
-l.500 \end{figure}
+l.508 \end{figure}
                   
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1926,17 +1946,14 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[50 <./conteudo/capitulos/figs/graficos/analiseNSegRate-C99.png (PNG copy)> <./conteudo/capitulos/figs/graficos/analiseNSegRate-MinCut.png (PNG copy)> <./conteudo/capitulos/figs/graficos/analiseNSegRate-Bayes.png (PNG copy)> <./conteudo/capitulos/figs/graficos/analiseNSegRate-UISeg.png (PNG copy)> <./conteudo/capitulos/figs/coesaolexicaTT-50-9.png>]) [51 <./conteudo/capitulos/figs/graficos/resumo-wd-pk.png (PNG copy)> <./conteudo/capitulos/figs/graficos/resumo-tradicionais.png (PNG copy)>]
+[51 <./conteudo/capitulos/figs/coesaolexicaTT-50-9.png> <./conteudo/capitulos/figs/graficos/resumo-wd-pk.png (PNG copy)> <./conteudo/capitulos/figs/graficos/resumo-tradicionais.png (PNG copy)>]) [52]
 \openout2 = `conteudo/capitulos/cap-avaliacao-extratores.aux'.
 
- (./conteudo/capitulos/cap-avaliacao-extratores.tex [52
+ (./conteudo/capitulos/cap-avaliacao-extratores.tex [53
 
 
 
-] [53]
+]
 
 LaTeX Warning: Reference `anexo:avaliacoes' on page 54 undefined on input line 39.
 
@@ -2361,18 +2378,18 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 318.
 ### simple group (level 1) entered at line 1061 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 16888 strings out of 494884
- 259476 string characters out of 6179236
- 483683 words of memory out of 5000000
- 19336 multiletter control sequences out of 15000+600000
- 110570 words of font info for 177 fonts, out of 8000000 for 9000
+ 16898 strings out of 494884
+ 259776 string characters out of 6179236
+ 539578 words of memory out of 5000000
+ 19338 multiletter control sequences out of 15000+600000
+ 110699 words of font info for 178 fonts, out of 8000000 for 9000
  38 hyphenation exceptions out of 8191
  50i,15n,40p,1633b,3029s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc}</usr/share/texmf/fonts/type1/public/lm/lmbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx8.pfb></usr/share/texmf/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi6.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr7.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/public/lm/lmri8.pfb></usr/share/texmf/fonts/type1/public/lm/lmss10.pfb></usr/share/texmf/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss17.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsso12.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt12.pfb>
-Output written on ovidio-dissertacao.pdf (70 pages, 1972187 bytes).
+{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc}</usr/share/texmf/fonts/type1/public/lm/lmbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx8.pfb></usr/share/texmf/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi6.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr6.pfb></usr/share/texmf/fonts/type1/public/lm/lmr7.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/public/lm/lmri8.pfb></usr/share/texmf/fonts/type1/public/lm/lmss10.pfb></usr/share/texmf/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss17.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsso12.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt12.pfb>
+Output written on ovidio-dissertacao.pdf (70 pages, 2005286 bytes).
 PDF statistics:
- 2311 PDF objects out of 2487 (max. 8388607)
- 1532 compressed objects within 16 object streams
+ 2314 PDF objects out of 2487 (max. 8388607)
+ 1534 compressed objects within 16 object streams
  272 named destinations out of 1000 (max. 500000)
  38095 words of extra memory for PDF output out of 42996 (max. 10000000)
 
