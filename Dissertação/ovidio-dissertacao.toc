@@ -66,3 +66,7 @@
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
 \contentsline {appendix}{\chapternumberline {A}\MakeTextUppercase { Tabelas para An\IeC {\'a}lise de de Par\IeC {\^a}metros para os algoritmos de Segmenta\IeC {\c c}\IeC {\~a}o Textual }}{71}{appendix.A}
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\cftinsert {A}
+\contentsline {appendix}{\chapternumberline {B}\MakeTextUppercase { Question\IeC {\'a}rios Utilizados na Avalia\IeC {\c c}\IeC {\~a}o Subjetiva}}{89}{appendix.B}

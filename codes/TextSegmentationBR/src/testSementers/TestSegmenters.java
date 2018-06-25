@@ -41,7 +41,7 @@ public class TestSegmenters {
 	private static TexArticle article = new TexArticle();
 	
 
-	private static boolean doPreprocess = false;
+	private static boolean doPreprocess = true;
 
 	public static void main(String[] args) {
 		Instant start = Instant.now();
@@ -52,10 +52,10 @@ public class TestSegmenters {
 
 		metrics.add(Metric.WINDIFF);
 		metrics.add(Metric.PK);
-		metrics.add(Metric.KAPPA);
+//		metrics.add(Metric.KAPPA);
 		metrics.add(Metric.ACURACY);
-		metrics.add(Metric.PRECISION);
-		metrics.add(Metric.RECALL);
+//		metrics.add(Metric.PRECISION);
+//		metrics.add(Metric.RECALL);
 		metrics.add(Metric.F1);
 		metrics.add(Metric.AVR_SEGS_COUNT);
 		

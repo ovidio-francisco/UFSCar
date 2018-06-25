@@ -1,0 +1,15 @@
+# Fdb version 3
+["pdflatex"] 1529951355 "sem-pp.tex" "sem-pp.pdf" "sem-pp" 1529951355
+  "/etc/texmf/web2c/texmf.cnf" 1489454511 475 c0e671620eb5563b2130f56340a5fde8 ""
+  "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1272929888 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
+  "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm" 1136768653 1328 c834bbb027764024c09d3d2bf908b5f0 ""
+  "/usr/share/texlive/texmf-dist/web2c/texmf.cnf" 1488610416 31340 0f53f8665296bf8fe6c697f9505e31d8 ""
+  "/usr/share/texmf/web2c/texmf.cnf" 1488610416 31340 0f53f8665296bf8fe6c697f9505e31d8 ""
+  "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1490820527 127853 b41f58aff49fe1af38af8d065f49d51c ""
+  "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1503409725 860044 6c84ff998dc0d18c5f50acfd95f92a4b ""
+  "sem-pp.aux" 1529951227 2391 8b898d87816959cf5a5e453ade6ccc9e ""
+  "sem-pp.tex" 1529951244 27198 d07558d64489b89d1a4c0c840dbf761e ""
+  (generated)
+  "sem-pp.pdf"
+  "sem-pp.log"
+  "sem-pp.aux"
