@@ -324,8 +324,8 @@ INPUT ./conteudo/capitulos/figs/segmentacao-referencia.pdf
 INPUT ./conteudo/capitulos/figs/segmentacao-referencia.pdf
 INPUT anexos/tabelas/tt-c99-pp/tab-tt-pp.tex
 INPUT anexos/tabelas/tt-c99-pp/tab-tt-pp.tex
-INPUT anexos/tabelas/tt-c99-pp/tab-tt-pp.tex
-INPUT anexos/tabelas/tt-c99-pp/tab-tt-pp.tex
+INPUT anexos/tabelas/tt-c99-pp/tab-c99-pp.tex
+INPUT anexos/tabelas/tt-c99-pp/tab-c99-pp.tex
 INPUT conteudo/capitulos/inputs/tabela-resumo.tex
 INPUT conteudo/capitulos/inputs/tabela-resumo.tex
 INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmr10.tfm
