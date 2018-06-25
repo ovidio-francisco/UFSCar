@@ -8,23 +8,17 @@ Os algoritmos \textit{TextTiling} e \textit{C99} são analisados devido a sua ab
 %	
 Selecionou-se também os algoritmos \textit{BayesSeg} e \textit{TextSeg} por trazerem abordagens probabilísticas e o \textit{MinCutSeg} o qual é baseado em particionamento de grafos.
 % 
-Além disso, incluiu-se também um algoritmo que simplesmente atribui um segmento a cada sentença chamado \textit{Sentenças} para fins de comparação com as técnicas anteriores.
-
-
-Aqui será detalhada uma avaliação objetiva em que os resultados dos algoritmos foram avaliados por sua similaridade com uma segmentação de referência construída com base na metodologia de anotações em sub-tópicos proposta em~\cite{Hovy2010}. Em seguida escolheu-se o modelo que apresenta melhores resultados para ser utilizado em conjunto com técnicas de extração de tópicos em um experimento onde se avaliou a performance de ambas as técnicas junto a profissionais com afinidade com atas de reunião que forneceram suas percepções em relação aos resultados do segmentador empregado nesse trabalho. Os dados obtidos dos experimentos serviram de base para as análises dos algoritmos e de sua aplicação no contexto das atas de reuniões.
-
-
-
+Além disso, incluiu-se também um algoritmo que simplesmente atribui um segmento a cada sentença chamado aqui de \textit{PseudoSeg} para fins de comparação com as técnicas anteriores.
 
 % ----- Segmnetação de Referência -----
 A avaliação objetiva de um segmentador automático de textos exige uma referência, isto é, um conjunto de textos com os limites entre os segmentos conhecidos. Essa referência, deve ser confiável, sendo uma segmentação legítima que é capaz de dividir o texto em porções relativamente independentes, ou seja, uma segmentação ideal.
-Optou-se por criar um \textit{corpus} de atas de reunião anotadas a fim de produzir-se uma segmentação de referência para avaliações dos algoritmos, bem como sua publicação e utilização em outros trabalhos voltados a esse domínio. O processo de anotação e criação da segmentação de referência está detalhada nas próximas seções.
 
-
-
-
+Aqui será detalhada uma avaliação objetiva em que os resultados dos algoritmos foram avaliados por sua similaridade com uma segmentação de referência construída com base na metodologia de anotações em sub-tópicos proposta em~\cite{Hovy2010}. Em seguida escolheu-se o modelo que apresenta melhores resultados para ser utilizado em conjunto com técnicas de extração de tópicos em um experimento onde se avaliou a performance de ambas as técnicas junto a profissionais com afinidade com atas de reunião que forneceram suas percepções em relação aos resultados do segmentador empregado nesse trabalho. Os dados obtidos dos experimentos serviram de base para as análises dos algoritmos e de sua aplicação no contexto das atas de reuniões. 
+Optou-se por criar um \textit{corpus} de atas de reunião anotadas a fim de produzir-se uma segmentação de referência para avaliações dos algoritmos, bem como sua publicação e utilização em outros trabalhos voltados a esse domínio. O processo de anotação e criação da segmentação de referência está detalhada nas próximas seções.  
 
 Nas próximas seções serão avaliados os segmentadores abordados nesse trabalho. Inicialmente é descrita a preparação do \textit{copus} e em seguida são detalhada as configurações utilizadas pelos algoritmos, bem como os critérios considerados para avaliá-los. Por fim, os resultados são apresentados e discutidos.
+
+
 
 % =========== Avaliação dos Segmentadores ============ %
 % \subsection{Avaliação dos Segmentadores}

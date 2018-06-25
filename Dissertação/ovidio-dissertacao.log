@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.8.22)  25 JUN 2018 15:46
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.8.22)  25 JUN 2018 17:24
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1745,18 +1745,18 @@ Package pdftex.def Info: conteudo/capitulos/figs/tela-principal-2-1.png used on 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [41]
-./conteudo/capitulos/cap-avaliacao-segmentadores.tex:45: Missing $ inserted.
+./conteudo/capitulos/cap-avaliacao-segmentadores.tex:39: Missing $ inserted.
 <inserted text> 
                 $
-l.45 ...l em  http://www.ppgccs.net/?page_id=1150}
+l.39 ...l em  http://www.ppgccs.net/?page_id=1150}
                                                   . Foram coletadas 6 atas d...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-./conteudo/capitulos/cap-avaliacao-segmentadores.tex:45: Extra }, or forgotten $.
+./conteudo/capitulos/cap-avaliacao-segmentadores.tex:39: Extra }, or forgotten $.
 <argument> ...ttp://www.ppgccs.net/?page_id=1150}}
                                                   \@finalstrut \strutbox 
-l.45 ...l em  http://www.ppgccs.net/?page_id=1150}
+l.39 ...l em  http://www.ppgccs.net/?page_id=1150}
                                                   . Foram coletadas 6 atas d...
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -1764,18 +1764,18 @@ you forgot something else, as in `\hbox{$x}'. In such cases
 the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
-./conteudo/capitulos/cap-avaliacao-segmentadores.tex:45: Missing $ inserted.
+./conteudo/capitulos/cap-avaliacao-segmentadores.tex:39: Missing $ inserted.
 <inserted text> 
                 $
-l.45 ...l em  http://www.ppgccs.net/?page_id=1150}
+l.39 ...l em  http://www.ppgccs.net/?page_id=1150}
                                                   . Foram coletadas 6 atas d...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-./conteudo/capitulos/cap-avaliacao-segmentadores.tex:45: Missing } inserted.
+./conteudo/capitulos/cap-avaliacao-segmentadores.tex:39: Missing } inserted.
 <inserted text> 
                 }
-l.45 ...l em  http://www.ppgccs.net/?page_id=1150}
+l.39 ...l em  http://www.ppgccs.net/?page_id=1150}
                                                   . Foram coletadas 6 atas d...
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1789,31 +1789,41 @@ Underfull \vbox (badness 4036) has occurred while \output is active []
  [42] <conteudo/capitulos/figs/interface-anotacoes.png, id=1442, 1445.4pt x 872.25874pt>
 File: conteudo/capitulos/figs/interface-anotacoes.png Graphic file (type png)
  <use conteudo/capitulos/figs/interface-anotacoes.png>
-Package pdftex.def Info: conteudo/capitulos/figs/interface-anotacoes.png used on input line 76.
+Package pdftex.def Info: conteudo/capitulos/figs/interface-anotacoes.png used on input line 70.
 (pdftex.def)             Requested size: 455.0pt x 274.57661pt.
  [43 <./conteudo/capitulos/figs/interface-anotacoes.png>] <conteudo/capitulos/figs/segmentacao-referencia.pdf, id=1461, page=1, 844.15375pt x 597.23125pt>
 File: conteudo/capitulos/figs/segmentacao-referencia.pdf Graphic file (type pdf)
  <use conteudo/capitulos/figs/segmentacao-referencia.pdf, page 1>
-Package pdftex.def Info: conteudo/capitulos/figs/segmentacao-referencia.pdf, page1 used on input line 96.
+Package pdftex.def Info: conteudo/capitulos/figs/segmentacao-referencia.pdf, page1 used on input line 90.
 (pdftex.def)             Requested size: 455.0pt x 135.61922pt.
+
+Overfull \hbox (3.32355pt too wide) in paragraph at lines 114--114
+[]|$[]$| 
+ []
+
 
 Overfull \hbox (3.32355pt too wide) in paragraph at lines 120--120
 []|$[]$| 
  []
 
 
-Overfull \hbox (3.32355pt too wide) in paragraph at lines 126--126
+Overfull \hbox (3.32355pt too wide) in paragraph at lines 122--122
 []|$[]$| 
  []
 
 
-Overfull \hbox (3.32355pt too wide) in paragraph at lines 128--128
+Overfull \hbox (7.30954pt too wide) in paragraph at lines 124--124
 []|$[]$| 
  []
 
 
-Overfull \hbox (7.30954pt too wide) in paragraph at lines 130--130
+Overfull \hbox (7.30954pt too wide) in paragraph at lines 126--126
 []|$[]$| 
+ []
+
+
+Underfull \hbox (badness 2042) in paragraph at lines 127--129
+[]|\T1/lmr/m/n/10 (+20) Ficou de-ci-dido en-viar e-mail aos do-cen-tes so-li-ci-tando que co-mu-ni-quem per-ma-nen-te-
  []
 
 
@@ -1822,17 +1832,7 @@ Overfull \hbox (7.30954pt too wide) in paragraph at lines 132--132
  []
 
 
-Underfull \hbox (badness 2042) in paragraph at lines 133--135
-[]|\T1/lmr/m/n/10 (+20) Ficou de-ci-dido en-viar e-mail aos do-cen-tes so-li-ci-tando que co-mu-ni-quem per-ma-nen-te-
- []
-
-
-Overfull \hbox (7.30954pt too wide) in paragraph at lines 138--138
-[]|$[]$| 
- []
-
-
-Overfull \hbox (7.30954pt too wide) in paragraph at lines 143--143
+Overfull \hbox (7.30954pt too wide) in paragraph at lines 137--137
 []|$[]$| 
  []
 
@@ -1844,7 +1844,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 pdfTeX warning: pdflatex (file ./conteudo/capitulos/figs/segmentacao-referencia.pdf): PDF inclusion: invalid other resource which is no dict (key 'ProcSets', type <array>); ignored.
 >] [45] [46] [47]
 
-LaTeX Warning: Reference `tab:resultadosTT' on page 48 undefined on input line 351.
+LaTeX Warning: Reference `tab:resultadosTT' on page 48 undefined on input line 345.
 
 (./anexos/tabelas/tt-c99-pp/tab-tt-pp.tex
 Overfull \hbox (35.54576pt too wide) in paragraph at lines 8--50
@@ -1861,7 +1861,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 )
 
-LaTeX Warning: Reference `tab:resultadosc99' on page 48 undefined on input line 413.
+LaTeX Warning: Reference `tab:resultadosc99' on page 48 undefined on input line 407.
 
 [48] (./conteudo/capitulos/inputs/tabela-resumo.tex
 LaTeX Font Info:    External font `lmex10' loaded for size
@@ -1874,8 +1874,8 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 Underfull \vbox (badness 1603) has occurred while \output is active []
 
  [49]
-./conteudo/capitulos/cap-avaliacao-segmentadores.tex:501: Undefined control sequence.
-l.501 	\subfigure
+./conteudo/capitulos/cap-avaliacao-segmentadores.tex:495: Undefined control sequence.
+l.495 	\subfigure
                  { \label{fig:influencia-segRate-c99}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1886,11 +1886,11 @@ and I'll forget about whatever was undefined.
 <conteudo/capitulos/figs/graficos/analiseNSegRate-C99.png, id=1677, 602.25pt x 372.39125pt>
 File: conteudo/capitulos/figs/graficos/analiseNSegRate-C99.png Graphic file (type png)
  <use conteudo/capitulos/figs/graficos/analiseNSegRate-C99.png>
-Package pdftex.def Info: conteudo/capitulos/figs/graficos/analiseNSegRate-C99.png used on input line 502.
+Package pdftex.def Info: conteudo/capitulos/figs/graficos/analiseNSegRate-C99.png used on input line 496.
 (pdftex.def)             Requested size: 218.39806pt x 135.04376pt.
 
-./conteudo/capitulos/cap-avaliacao-segmentadores.tex:504: Undefined control sequence.
-l.504 	\subfigure
+./conteudo/capitulos/cap-avaliacao-segmentadores.tex:498: Undefined control sequence.
+l.498 	\subfigure
                  { \label{fig:influencia-segRate-mc}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1901,11 +1901,11 @@ and I'll forget about whatever was undefined.
 <conteudo/capitulos/figs/graficos/analiseNSegRate-MinCut.png, id=1678, 602.25pt x 372.39125pt>
 File: conteudo/capitulos/figs/graficos/analiseNSegRate-MinCut.png Graphic file (type png)
  <use conteudo/capitulos/figs/graficos/analiseNSegRate-MinCut.png>
-Package pdftex.def Info: conteudo/capitulos/figs/graficos/analiseNSegRate-MinCut.png used on input line 505.
+Package pdftex.def Info: conteudo/capitulos/figs/graficos/analiseNSegRate-MinCut.png used on input line 499.
 (pdftex.def)             Requested size: 218.39806pt x 135.04376pt.
 
-./conteudo/capitulos/cap-avaliacao-segmentadores.tex:507: Undefined control sequence.
-l.507 	\subfigure
+./conteudo/capitulos/cap-avaliacao-segmentadores.tex:501: Undefined control sequence.
+l.501 	\subfigure
                  { \label{fig:influencia-segRate-bs}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1916,11 +1916,11 @@ and I'll forget about whatever was undefined.
 <conteudo/capitulos/figs/graficos/analiseNSegRate-Bayes.png, id=1679, 602.25pt x 372.39125pt>
 File: conteudo/capitulos/figs/graficos/analiseNSegRate-Bayes.png Graphic file (type png)
  <use conteudo/capitulos/figs/graficos/analiseNSegRate-Bayes.png>
-Package pdftex.def Info: conteudo/capitulos/figs/graficos/analiseNSegRate-Bayes.png used on input line 508.
+Package pdftex.def Info: conteudo/capitulos/figs/graficos/analiseNSegRate-Bayes.png used on input line 502.
 (pdftex.def)             Requested size: 218.39806pt x 135.04376pt.
 
-./conteudo/capitulos/cap-avaliacao-segmentadores.tex:510: Undefined control sequence.
-l.510 	\subfigure
+./conteudo/capitulos/cap-avaliacao-segmentadores.tex:504: Undefined control sequence.
+l.504 	\subfigure
                  { \label{fig:influencia-segRate-ui}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1931,7 +1931,7 @@ and I'll forget about whatever was undefined.
 <conteudo/capitulos/figs/graficos/analiseNSegRate-UISeg.png, id=1680, 602.25pt x 372.39125pt>
 File: conteudo/capitulos/figs/graficos/analiseNSegRate-UISeg.png Graphic file (type png)
  <use conteudo/capitulos/figs/graficos/analiseNSegRate-UISeg.png>
-Package pdftex.def Info: conteudo/capitulos/figs/graficos/analiseNSegRate-UISeg.png used on input line 511.
+Package pdftex.def Info: conteudo/capitulos/figs/graficos/analiseNSegRate-UISeg.png used on input line 505.
 (pdftex.def)             Requested size: 218.39806pt x 135.04376pt.
 
 
@@ -1943,11 +1943,11 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [50] <conteudo/capitulos/figs/coesaolexicaTT-50-9.png, id=1689, 1413.28pt x 306.14375pt>
 File: conteudo/capitulos/figs/coesaolexicaTT-50-9.png Graphic file (type png)
  <use conteudo/capitulos/figs/coesaolexicaTT-50-9.png>
-Package pdftex.def Info: conteudo/capitulos/figs/coesaolexicaTT-50-9.png used on input line 536.
+Package pdftex.def Info: conteudo/capitulos/figs/coesaolexicaTT-50-9.png used on input line 530.
 (pdftex.def)             Requested size: 455.0pt x 98.56125pt.
 
-./conteudo/capitulos/cap-avaliacao-segmentadores.tex:554: Undefined control sequence.
-l.554 	\subfigure
+./conteudo/capitulos/cap-avaliacao-segmentadores.tex:548: Undefined control sequence.
+l.548 	\subfigure
                  { \label{fig:resumo-wd-pk}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1958,11 +1958,11 @@ and I'll forget about whatever was undefined.
 <conteudo/capitulos/figs/graficos/resumo-wd-pk.png, id=1690, 602.25pt x 243.91125pt>
 File: conteudo/capitulos/figs/graficos/resumo-wd-pk.png Graphic file (type png)
  <use conteudo/capitulos/figs/graficos/resumo-wd-pk.png>
-Package pdftex.def Info: conteudo/capitulos/figs/graficos/resumo-wd-pk.png used on input line 555.
+Package pdftex.def Info: conteudo/capitulos/figs/graficos/resumo-wd-pk.png used on input line 549.
 (pdftex.def)             Requested size: 373.10333pt x 151.11174pt.
 
-./conteudo/capitulos/cap-avaliacao-segmentadores.tex:556: Undefined control sequence.
-l.556 	\subfigure
+./conteudo/capitulos/cap-avaliacao-segmentadores.tex:550: Undefined control sequence.
+l.550 	\subfigure
                  { \label{fig:resumo-tradicionais}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1973,13 +1973,13 @@ and I'll forget about whatever was undefined.
 <conteudo/capitulos/figs/graficos/resumo-tradicionais.png, id=1691, 602.25pt x 243.91125pt>
 File: conteudo/capitulos/figs/graficos/resumo-tradicionais.png Graphic file (type png)
  <use conteudo/capitulos/figs/graficos/resumo-tradicionais.png>
-Package pdftex.def Info: conteudo/capitulos/figs/graficos/resumo-tradicionais.png used on input line 557.
+Package pdftex.def Info: conteudo/capitulos/figs/graficos/resumo-tradicionais.png used on input line 551.
 (pdftex.def)             Requested size: 373.10333pt x 151.11174pt.
 
-./conteudo/capitulos/cap-avaliacao-segmentadores.tex:561: Missing } inserted.
+./conteudo/capitulos/cap-avaliacao-segmentadores.tex:555: Missing } inserted.
 <inserted text> 
                 }
-l.561 \end{figure}
+l.555 \end{figure}
                   
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2702,7 +2702,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 321.
 ### bottom level 
 Here is how much of TeX's memory you used:
  17148 strings out of 494884
- 265249 string characters out of 6179236
+ 265251 string characters out of 6179236
  545136 words of memory out of 5000000
  19506 multiletter control sequences out of 15000+600000
  110828 words of font info for 179 fonts, out of 8000000 for 9000
@@ -2710,7 +2710,7 @@ Here is how much of TeX's memory you used:
  50i,15n,40p,1633b,3184s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx8.pfb></usr/share/texmf/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi6.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi7.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr6.pfb></usr/share/texmf/fonts/type1/public/lm/lmr7.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/public/lm/lmri8.pfb></usr/share/texmf/fonts/type1/public/lm/lmss10.pfb></usr/share/texmf/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss17.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsso12.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt10.pfb></usr/share/texmf/fonts/type1/public/l
 m/lmtt12.pfb>
-Output written on ovidio-dissertacao.pdf (104 pages, 2217818 bytes).
+Output written on ovidio-dissertacao.pdf (104 pages, 2217807 bytes).
 PDF statistics:
  2563 PDF objects out of 2984 (max. 8388607)
  1722 compressed objects within 18 object streams
