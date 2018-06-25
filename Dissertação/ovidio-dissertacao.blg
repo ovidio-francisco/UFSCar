@@ -24,11 +24,11 @@ Case mismatch error between cite keys Choi2000 and choi2000
  :                   }
 I'm skipping whatever remains of this command
 Case mismatch error between cite keys Choi2000 and choi2000
----line 163 of file conteudo/capitulos/3-cap2.aux
+---line 164 of file conteudo/capitulos/3-cap2.aux
  : \citation{Choi2000
  :                   }
 I'm skipping whatever remains of this command
-White space in argument---line 217 of file conteudo/capitulos/3-cap2.aux
+White space in argument---line 218 of file conteudo/capitulos/3-cap2.aux
  : \citation{NGUYEN
  :                  Viet Cuong}
 I'm skipping whatever remains of this command
@@ -50,6 +50,7 @@ Case mismatch error between cite keys Sakahara2014 and sakahara2014
 I'm skipping whatever remains of this command
 A level-1 auxiliary file: conteudo/capitulos/cap-avaliacao-segmentadores.aux
 A level-1 auxiliary file: conteudo/capitulos/cap-avaliacao-extratores.aux
+A level-1 auxiliary file: conteudo/capitulos/6-apendice1.aux
 The style file: abntex2-alf.bst
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
@@ -93,7 +94,7 @@ Warning--faltando school em Reynar1998
 +---------------------------------------------------------+
 You've used 70 entries,
             6711 wiz_defined-function locations,
-            1789 strings with 25515 characters,
+            1790 strings with 25549 characters,
 and the built_in function-call counts, 103471 in all, are:
 = -- 11454
 > -- 2336

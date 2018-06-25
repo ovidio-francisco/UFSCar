@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.8.22)  25 JUN 2018 01:03
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.8.22)  25 JUN 2018 11:42
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1067,8 +1067,31 @@ Package: multirow 2016/11/25 v2.2 Span multiple rows of a table
 \multirow@cntb=\count187
 \multirow@dima=\skip284
 \bigstrutjot=\dimen175
+) (/usr/share/texlive/texmf-dist/tex/latex/tools/longtable.sty
+Package: longtable 2014/10/28 v4.11 Multi-page Table package (DPC)
+\LTleft=\skip285
+\LTright=\skip286
+\LTpre=\skip287
+\LTpost=\skip288
+\LTchunksize=\count188
+\LTcapwidth=\dimen176
+\LT@head=\box40
+\LT@firsthead=\box41
+\LT@foot=\box42
+\LT@lastfoot=\box43
+\LT@cols=\count189
+\LT@rows=\count190
+\c@LT@tables=\count191
+\c@LT@chunks=\count192
+\LT@p@ftn=\toks34
+) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/pdflscape.sty
+Package: pdflscape 2016/05/14 v0.11 Display of landscape pages in PDF (HO)
+ (/usr/share/texlive/texmf-dist/tex/latex/graphics/lscape.sty
+Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
+)
+Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 ) (./macros.tex
-\bracketwidth=\dimen176
+\bracketwidth=\dimen177
 LaTeX Font Info:    Try loading font information for OT1+lmr on input line 19.
  (/usr/share/texmf/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
@@ -1091,200 +1114,200 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <8> on input line 19.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <6> on input line 19.
-\c@teorema=\count188
-\c@lema=\count189
-\c@corolario=\count190
-\c@definicao=\count191
+\c@teorema=\count193
+\c@lema=\count194
+\c@corolario=\count266
+\c@definicao=\count267
 )
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\@ifnextchar' on input line 136.
+(hyperref)                removing `\@ifnextchar' on input line 138.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\begingroup' on input line 136.
+(hyperref)                removing `\begingroup' on input line 138.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\catcode' on input line 136.
+(hyperref)                removing `\catcode' on input line 138.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\active' on input line 136.
+(hyperref)                removing `\active' on input line 138.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\<def>-command' on input line 136.
+(hyperref)                removing `\<def>-command' on input line 138.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\csname\endcsname' on input line 136.
+(hyperref)                removing `\csname\endcsname' on input line 138.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\catcode' on input line 136.
+(hyperref)                removing `\catcode' on input line 138.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\active' on input line 136.
+(hyperref)                removing `\active' on input line 138.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\<let>-command' on input line 136.
+(hyperref)                removing `\<let>-command' on input line 138.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\csname\endcsname' on input line 136.
+(hyperref)                removing `\csname\endcsname' on input line 138.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\<let>-command' on input line 136.
+(hyperref)                removing `\<let>-command' on input line 138.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\%' on input line 136.
+(hyperref)                removing `\%' on input line 138.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\catcode' on input line 136.
+(hyperref)                removing `\catcode' on input line 138.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\active' on input line 136.
+(hyperref)                removing `\active' on input line 138.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\<def>-command' on input line 136.
+(hyperref)                removing `\<def>-command' on input line 138.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\csname\endcsname' on input line 136.
+(hyperref)                removing `\csname\endcsname' on input line 138.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\<def>-command' on input line 136.
+(hyperref)                removing `\<def>-command' on input line 138.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\#' on input line 136.
+(hyperref)                removing `\#' on input line 138.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\catcode' on input line 136.
+(hyperref)                removing `\catcode' on input line 138.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\<def>-command' on input line 136.
+(hyperref)                removing `\<def>-command' on input line 138.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\csname\endcsname' on input line 136.
+(hyperref)                removing `\csname\endcsname' on input line 138.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\<def>-command' on input line 136.
+(hyperref)                removing `\<def>-command' on input line 138.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\&' on input line 136.
+(hyperref)                removing `\&' on input line 138.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\<def>-command' on input line 136.
+(hyperref)                removing `\<def>-command' on input line 138.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\textunderscore' on input line 136.
+(hyperref)                removing `\textunderscore' on input line 138.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\<let>-command' on input line 136.
+(hyperref)                removing `\<let>-command' on input line 138.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\_' on input line 136.
+(hyperref)                removing `\_' on input line 138.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\catcode' on input line 136.
+(hyperref)                removing `\catcode' on input line 138.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\active' on input line 136.
+(hyperref)                removing `\active' on input line 138.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\<let>-command' on input line 136.
+(hyperref)                removing `\<let>-command' on input line 138.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\csname\endcsname' on input line 136.
+(hyperref)                removing `\csname\endcsname' on input line 138.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\<let>-command' on input line 136.
+(hyperref)                removing `\<let>-command' on input line 138.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\csname\endcsname' on input line 136.
+(hyperref)                removing `\csname\endcsname' on input line 138.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\<let>-command' on input line 136.
+(hyperref)                removing `\<let>-command' on input line 138.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\~' on input line 136.
+(hyperref)                removing `\~' on input line 138.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\<let>-command' on input line 136.
+(hyperref)                removing `\<let>-command' on input line 138.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\textasciitilde' on input line 136.
+(hyperref)                removing `\textasciitilde' on input line 138.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\<let>-command' on input line 136.
+(hyperref)                removing `\<let>-command' on input line 138.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\\' on input line 136.
+(hyperref)                removing `\\' on input line 138.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\<def>-command' on input line 136.
+(hyperref)                removing `\<def>-command' on input line 138.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\csname\endcsname' on input line 136.
+(hyperref)                removing `\csname\endcsname' on input line 138.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\<def>-command' on input line 136.
+(hyperref)                removing `\<def>-command' on input line 138.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\Hy@tempa' on input line 136.
+(hyperref)                removing `\Hy@tempa' on input line 138.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\<def>-command' on input line 136.
+(hyperref)                removing `\<def>-command' on input line 138.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\Hy@tempa' on input line 136.
+(hyperref)                removing `\Hy@tempa' on input line 138.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\<let>-command' on input line 136.
+(hyperref)                removing `\<let>-command' on input line 138.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\nextToken' on input line 136.
+(hyperref)                removing `\nextToken' on input line 138.
 
-Package hyperref Info: Option `colorlinks' set `true' on input line 136.
+Package hyperref Info: Option `colorlinks' set `true' on input line 138.
 \ovidio-dissertacao@idxfile=\write5
 \openout5 = `ovidio-dissertacao.idx'.
 
@@ -1299,60 +1322,60 @@ LaTeX Warning: Label `fig:lda' multiply defined.
 
 LaTeX Warning: Label `fig:plsa' multiply defined.
 
-))
+) (./conteudo/capitulos/6-apendice1.aux))
 \openout1 = `ovidio-dissertacao.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 162.
-LaTeX Font Info:    ... okay on input line 162.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 162.
-LaTeX Font Info:    ... okay on input line 162.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 162.
-LaTeX Font Info:    ... okay on input line 162.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 162.
-LaTeX Font Info:    ... okay on input line 162.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 162.
-LaTeX Font Info:    ... okay on input line 162.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 162.
-LaTeX Font Info:    ... okay on input line 162.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 162.
-LaTeX Font Info:    ... okay on input line 162.
-LaTeX Font Info:    Try loading font information for T1+lmr on input line 162.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 164.
+LaTeX Font Info:    ... okay on input line 164.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 164.
+LaTeX Font Info:    ... okay on input line 164.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 164.
+LaTeX Font Info:    ... okay on input line 164.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 164.
+LaTeX Font Info:    ... okay on input line 164.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 164.
+LaTeX Font Info:    ... okay on input line 164.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 164.
+LaTeX Font Info:    ... okay on input line 164.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 164.
+LaTeX Font Info:    ... okay on input line 164.
+LaTeX Font Info:    Try loading font information for T1+lmr on input line 164.
  (/usr/share/texmf/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-\AtBeginShipoutBox=\box40
-Package hyperref Info: Link coloring ON on input line 162.
+\AtBeginShipoutBox=\box44
+Package hyperref Info: Link coloring ON on input line 164.
  (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
  (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count192
+\c@section@level=\count268
 )
 Redoing nameref's sectioning
 Redoing nameref's label
-LaTeX Info: Redefining \nameref on input line 162.
-LaTeX Info: Redefining \ref on input line 162.
-LaTeX Info: Redefining \pageref on input line 162.
-LaTeX Info: Redefining \nameref on input line 162.
-\myptabbox=\box41
-\myptabboxwidth=\skip285
+LaTeX Info: Redefining \nameref on input line 164.
+LaTeX Info: Redefining \ref on input line 164.
+LaTeX Info: Redefining \pageref on input line 164.
+LaTeX Info: Redefining \nameref on input line 164.
+\myptabbox=\box45
+\myptabboxwidth=\skip289
 Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             https://www.ctan.org/pkg/pageslts
-(lastpage)             ! on input line 162.
+(lastpage)             ! on input line 164.
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count193
-\scratchdimen=\dimen177
-\scratchbox=\box42
-\nofMPsegments=\count194
-\nofMParguments=\count266
-\everyMPshowfont=\toks34
-\MPscratchCnt=\count267
-\MPscratchDim=\dimen178
-\MPnumerator=\count268
-\makeMPintoPDFobject=\count269
-\everyMPtoPDFconversion=\toks35
+\scratchcounter=\count269
+\scratchdimen=\dimen178
+\scratchbox=\box46
+\nofMPsegments=\count270
+\nofMParguments=\count271
+\everyMPshowfont=\toks35
+\MPscratchCnt=\count272
+\MPscratchDim=\dimen179
+\MPnumerator=\count273
+\makeMPintoPDFobject=\count274
+\everyMPtoPDFconversion=\toks36
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
  (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
@@ -1365,7 +1388,7 @@ Package grfext Info: Graphics extension search list:
  (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-LaTeX Info: Redefining \microtypecontext on input line 162.
+LaTeX Info: Redefining \microtypecontext on input line 164.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -1378,7 +1401,7 @@ Package microtype Info: No adjustment of character kerning.
  (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-cmr.cfg
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman (RS)
 )
-LaTeX Font Info:    Try loading font information for T1+lmss on input line 176.
+LaTeX Font Info:    Try loading font information for T1+lmss on input line 178.
  (/usr/share/texmf/tex/latex/lm/t1lmss.fd
 File: t1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
@@ -1495,7 +1518,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 126--128
 
  []
 
-[13]) (./conteudo/capitulos/inputs/segmentacao.tex (./conteudo/capitulos/inputs/algoritmos-segmentacao.tex [14] <conteudo/capitulos/figs/janelas-deslizantes.pdf, id=349, page=1, 844.15375pt x 597.23125pt>
+[13]) (./conteudo/capitulos/inputs/segmentacao.tex (./conteudo/capitulos/inputs/algoritmos-segmentacao.tex [14] <conteudo/capitulos/figs/janelas-deslizantes.pdf, id=353, page=1, 844.15375pt x 597.23125pt>
 File: conteudo/capitulos/figs/janelas-deslizantes.pdf Graphic file (type pdf)
  <use conteudo/capitulos/figs/janelas-deslizantes.pdf, page 1>
 Package pdftex.def Info: conteudo/capitulos/figs/janelas-deslizantes.pdf, page1 used on input line 24.
@@ -1503,7 +1526,7 @@ Package pdftex.def Info: conteudo/capitulos/figs/janelas-deslizantes.pdf, page1 
  [15 <./conteudo/capitulos/figs/janelas-deslizantes.pdf
 
 pdfTeX warning: pdflatex (file ./conteudo/capitulos/figs/janelas-deslizantes.pdf): PDF inclusion: invalid other resource which is no dict (key 'ProcSets', type <array>); ignored.
->] <conteudo/capitulos/figs/curva-similaridade.pdf, id=374, page=1, 845.1575pt x 597.23125pt>
+>] <conteudo/capitulos/figs/curva-similaridade.pdf, id=378, page=1, 845.1575pt x 597.23125pt>
 File: conteudo/capitulos/figs/curva-similaridade.pdf Graphic file (type pdf)
  <use conteudo/capitulos/figs/curva-similaridade.pdf, page 1>
 Package pdftex.def Info: conteudo/capitulos/figs/curva-similaridade.pdf, page1 used on input line 36.
@@ -1530,7 +1553,7 @@ LaTeX Warning: Citation `Misra2009' on page 16 undefined on input line 45.
 
 LaTeX Warning: Citation `Choi2000' on page 16 undefined on input line 50.
 
-[16 <./conteudo/capitulos/figs/curva-similaridade.pdf>] <conteudo/capitulos/figs/similarity-matrix-l.png, id=418, 516.93124pt x 471.7625pt>
+[16 <./conteudo/capitulos/figs/curva-similaridade.pdf>] <conteudo/capitulos/figs/similarity-matrix-l.png, id=422, 516.93124pt x 471.7625pt>
 File: conteudo/capitulos/figs/similarity-matrix-l.png Graphic file (type png)
  <use conteudo/capitulos/figs/similarity-matrix-l.png>
 Package pdftex.def Info: conteudo/capitulos/figs/similarity-matrix-l.png used on input line 61.
@@ -1551,7 +1574,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-<conteudo/capitulos/figs/c99-matrizes.pdf, id=421, page=1, 796.9775pt x 597.23125pt>
+<conteudo/capitulos/figs/c99-matrizes.pdf, id=425, page=1, 796.9775pt x 597.23125pt>
 File: conteudo/capitulos/figs/c99-matrizes.pdf Graphic file (type pdf)
  <use conteudo/capitulos/figs/c99-matrizes.pdf, page 1>
 Package pdftex.def Info: conteudo/capitulos/figs/c99-matrizes.pdf, page1 used on input line 85.
@@ -1566,7 +1589,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-<conteudo/capitulos/figs/c99-matrizes.pdf, id=423, page=2, 796.9775pt x 597.23125pt>
+<conteudo/capitulos/figs/c99-matrizes.pdf, id=427, page=2, 796.9775pt x 597.23125pt>
 File: conteudo/capitulos/figs/c99-matrizes.pdf Graphic file (type pdf)
  <use conteudo/capitulos/figs/c99-matrizes.pdf, page 2>
 Package pdftex.def Info: conteudo/capitulos/figs/c99-matrizes.pdf, page2 used on input line 89.
@@ -1579,7 +1602,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 LaTeX Warning: Citation `Eisenstein2008' on page 19 undefined on input line 155.
 
-<conteudo/capitulos/figs/graph-representation-of-text.png, id=477, 714.67pt x 230.8625pt>
+<conteudo/capitulos/figs/graph-representation-of-text.png, id=481, 714.67pt x 230.8625pt>
 File: conteudo/capitulos/figs/graph-representation-of-text.png Graphic file (type png)
  <use conteudo/capitulos/figs/graph-representation-of-text.png>
 Package pdftex.def Info: conteudo/capitulos/figs/graph-representation-of-text.png used on input line 174.
@@ -1631,7 +1654,7 @@ LaTeX Warning: Command \c invalid in math mode on input line 58.
 
 LaTeX Warning: Command \c invalid in math mode on input line 58.
 
-<conteudo/capitulos/figs/near-missing.pdf, id=523, page=1, 844.15375pt x 597.23125pt>
+<conteudo/capitulos/figs/near-missing.pdf, id=527, page=1, 844.15375pt x 597.23125pt>
 File: conteudo/capitulos/figs/near-missing.pdf Graphic file (type pdf)
  <use conteudo/capitulos/figs/near-missing.pdf, page 1>
 Package pdftex.def Info: conteudo/capitulos/figs/near-missing.pdf, page1 used on input line 82.
@@ -1671,12 +1694,12 @@ Package epstopdf Info: Source file: <conteudo/capitulos/figs/visao-geral-3.eps>
 (epstopdf)             Command: <repstopdf --outfile=conteudo/capitulos/figs/visao-geral-3-eps-converted-to.pdf conteudo/capitulos/figs/visao-geral-3.eps>
 (epstopdf)             \includegraphics on input line 24.
 Package epstopdf Info: Output file is already uptodate.
- <conteudo/capitulos/figs/visao-geral-3-eps-converted-to.pdf, id=715, 1084.05pt x 542.025pt>
+ <conteudo/capitulos/figs/visao-geral-3-eps-converted-to.pdf, id=719, 1084.05pt x 542.025pt>
 File: conteudo/capitulos/figs/visao-geral-3-eps-converted-to.pdf Graphic file (type pdf)
  <use conteudo/capitulos/figs/visao-geral-3-eps-converted-to.pdf>
 Package pdftex.def Info: conteudo/capitulos/figs/visao-geral-3-eps-converted-to.pdf used on input line 24.
 (pdftex.def)             Requested size: 412.28189pt x 206.13704pt.
- [33] [34 <./conteudo/capitulos/figs/visao-geral-3-eps-converted-to.pdf>] <conteudo/capitulos/figs/preparacao-docs.pdf, id=729, page=1, 844.15375pt x 597.23125pt>
+ [33] [34 <./conteudo/capitulos/figs/visao-geral-3-eps-converted-to.pdf>] <conteudo/capitulos/figs/preparacao-docs.pdf, id=733, page=1, 844.15375pt x 597.23125pt>
 File: conteudo/capitulos/figs/preparacao-docs.pdf Graphic file (type pdf)
  <use conteudo/capitulos/figs/preparacao-docs.pdf, page 1>
 Package pdftex.def Info: conteudo/capitulos/figs/preparacao-docs.pdf, page1 used on input line 65.
@@ -1694,7 +1717,7 @@ LaTeX Warning: Citation `Misra2009' on page 36 undefined on input line 120.
 
 LaTeX Warning: Citation `Sakahara2014' on page 36 undefined on input line 120.
 
-[36] <conteudo/capitulos/figs/estrutura-de-dados-interna.pdf, id=774, page=1, 844.15375pt x 597.23125pt>
+[36] <conteudo/capitulos/figs/estrutura-de-dados-interna.pdf, id=778, page=1, 844.15375pt x 597.23125pt>
 File: conteudo/capitulos/figs/estrutura-de-dados-interna.pdf Graphic file (type pdf)
  <use conteudo/capitulos/figs/estrutura-de-dados-interna.pdf, page 1>
 Package pdftex.def Info: conteudo/capitulos/figs/estrutura-de-dados-interna.pdf, page1 used on input line 165.
@@ -1702,7 +1725,7 @@ Package pdftex.def Info: conteudo/capitulos/figs/estrutura-de-dados-interna.pdf,
  [37 <./conteudo/capitulos/figs/estrutura-de-dados-interna.pdf
 
 pdfTeX warning: pdflatex (file ./conteudo/capitulos/figs/estrutura-de-dados-interna.pdf): PDF inclusion: invalid other resource which is no dict (key 'ProcSets', type <array>); ignored.
->] [38] <conteudo/capitulos/figs/tela-principal-2-1.png, id=1389, 1177.39874pt x 737.75626pt>
+>] [38] <conteudo/capitulos/figs/tela-principal-2-1.png, id=1393, 1177.39874pt x 737.75626pt>
 File: conteudo/capitulos/figs/tela-principal-2-1.png Graphic file (type png)
  <use conteudo/capitulos/figs/tela-principal-2-1.png>
 Package pdftex.def Info: conteudo/capitulos/figs/tela-principal-2-1.png used on input line 206.
@@ -1715,59 +1738,78 @@ Package pdftex.def Info: conteudo/capitulos/figs/tela-principal-2-1.png used on 
 
 
 ]
-Overfull \hbox (3.30605pt too wide) in paragraph at lines 33--34
-[]\T1/lmr/m/n/12 (-20) A con-du-ção desse ex-pe-ri-mento teve como guia a me-to-do-lo-gia apre-sen-tada em ([][]HOVY;
- []
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [41]
+./conteudo/capitulos/cap-avaliacao-segmentadores.tex:45: Missing $ inserted.
+<inserted text> 
+                $
+l.45 ...l em  http://www.ppgccs.net/?page_id=1150}
+                                                  . Foram coletadas 6 atas d...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./conteudo/capitulos/cap-avaliacao-segmentadores.tex:45: Extra }, or forgotten $.
+<argument> ...ttp://www.ppgccs.net/?page_id=1150}}
+                                                  \@finalstrut \strutbox 
+l.45 ...l em  http://www.ppgccs.net/?page_id=1150}
+                                                  . Foram coletadas 6 atas d...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./conteudo/capitulos/cap-avaliacao-segmentadores.tex:45: Missing $ inserted.
+<inserted text> 
+                $
+l.45 ...l em  http://www.ppgccs.net/?page_id=1150}
+                                                  . Foram coletadas 6 atas d...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./conteudo/capitulos/cap-avaliacao-segmentadores.tex:45: Missing } inserted.
+<inserted text> 
+                }
+l.45 ...l em  http://www.ppgccs.net/?page_id=1150}
+                                                  . Foram coletadas 6 atas d...
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
 
 
-Underfull \vbox (badness 2564) has occurred while \output is active []
+Underfull \vbox (badness 4036) has occurred while \output is active []
 
- [41] <conteudo/capitulos/figs/interface-anotacoes.png, id=1423, 1445.4pt x 872.25874pt>
+ [42] <conteudo/capitulos/figs/interface-anotacoes.png, id=1439, 1445.4pt x 872.25874pt>
 File: conteudo/capitulos/figs/interface-anotacoes.png Graphic file (type png)
  <use conteudo/capitulos/figs/interface-anotacoes.png>
-Package pdftex.def Info: conteudo/capitulos/figs/interface-anotacoes.png used on input line 70.
+Package pdftex.def Info: conteudo/capitulos/figs/interface-anotacoes.png used on input line 76.
 (pdftex.def)             Requested size: 455.0pt x 274.57661pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[42] <conteudo/capitulos/figs/segmentacao-referencia.pdf, id=1446, page=1, 844.15375pt x 597.23125pt>
+ [43 <./conteudo/capitulos/figs/interface-anotacoes.png>] <conteudo/capitulos/figs/segmentacao-referencia.pdf, id=1458, page=1, 844.15375pt x 597.23125pt>
 File: conteudo/capitulos/figs/segmentacao-referencia.pdf Graphic file (type pdf)
  <use conteudo/capitulos/figs/segmentacao-referencia.pdf, page 1>
-Package pdftex.def Info: conteudo/capitulos/figs/segmentacao-referencia.pdf, page1 used on input line 90.
+Package pdftex.def Info: conteudo/capitulos/figs/segmentacao-referencia.pdf, page1 used on input line 96.
 (pdftex.def)             Requested size: 455.0pt x 135.61922pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[43 <./conteudo/capitulos/figs/interface-anotacoes.png>]
-Overfull \hbox (3.32355pt too wide) in paragraph at lines 114--114
-[]|$[]$| 
- []
-
 
 Overfull \hbox (3.32355pt too wide) in paragraph at lines 120--120
 []|$[]$| 
  []
 
 
-Overfull \hbox (3.32355pt too wide) in paragraph at lines 122--122
+Overfull \hbox (3.32355pt too wide) in paragraph at lines 126--126
 []|$[]$| 
  []
 
 
-Overfull \hbox (7.30954pt too wide) in paragraph at lines 124--124
+Overfull \hbox (3.32355pt too wide) in paragraph at lines 128--128
 []|$[]$| 
  []
 
 
-Overfull \hbox (7.30954pt too wide) in paragraph at lines 126--126
+Overfull \hbox (7.30954pt too wide) in paragraph at lines 130--130
 []|$[]$| 
- []
-
-
-Underfull \hbox (badness 2042) in paragraph at lines 127--129
-[]|\T1/lmr/m/n/10 (+20) Ficou de-ci-dido en-viar e-mail aos do-cen-tes so-li-ci-tando que co-mu-ni-quem per-ma-nen-te-
  []
 
 
@@ -1776,32 +1818,34 @@ Overfull \hbox (7.30954pt too wide) in paragraph at lines 132--132
  []
 
 
-Overfull \hbox (7.30954pt too wide) in paragraph at lines 137--137
+Underfull \hbox (badness 2042) in paragraph at lines 133--135
+[]|\T1/lmr/m/n/10 (+20) Ficou de-ci-dido en-viar e-mail aos do-cen-tes so-li-ci-tando que co-mu-ni-quem per-ma-nen-te-
+ []
+
+
+Overfull \hbox (7.30954pt too wide) in paragraph at lines 138--138
 []|$[]$| 
  []
+
+
+Overfull \hbox (7.30954pt too wide) in paragraph at lines 143--143
+[]|$[]$| 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [44 <./conteudo/capitulos/figs/segmentacao-referencia.pdf
 
 pdfTeX warning: pdflatex (file ./conteudo/capitulos/figs/segmentacao-referencia.pdf): PDF inclusion: invalid other resource which is no dict (key 'ProcSets', type <array>); ignored.
->]
-Overfull \hbox (40.4723pt too wide) in paragraph at lines 193--238
- [][] 
- []
+>] [45] [46] [47]
 
-[45]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [46]
-
-LaTeX Warning: Reference `tab:resultadosTT' on page 47 undefined on input line 298.
+LaTeX Warning: Reference `tab:resultadosTT' on page 48 undefined on input line 351.
 
 (./anexos/tabelas/tt-c99-pp/tab-tt-pp.tex
 Overfull \hbox (35.54576pt too wide) in paragraph at lines 8--50
  [][] 
  []
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 ) (./anexos/tabelas/tt-c99-pp/tab-c99-pp.tex
 Overfull \hbox (7.79646pt too wide) in paragraph at lines 5--53
@@ -1813,12 +1857,9 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 )
 
-LaTeX Warning: Reference `tab:resultadosc99' on page 47 undefined on input line 360.
+LaTeX Warning: Reference `tab:resultadosc99' on page 48 undefined on input line 413.
 
-
-Underfull \vbox (badness 1226) has occurred while \output is active []
-
- [47] (./conteudo/capitulos/inputs/tabela-resumo.tex
+[48] (./conteudo/capitulos/inputs/tabela-resumo.tex
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <10.95> on input line 5.
 
@@ -1826,11 +1867,11 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 )
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 1603) has occurred while \output is active []
 
- [48]
-./conteudo/capitulos/cap-avaliacao-segmentadores.tex:448: Undefined control sequence.
-l.448 	\subfigure
+ [49]
+./conteudo/capitulos/cap-avaliacao-segmentadores.tex:501: Undefined control sequence.
+l.501 	\subfigure
                  { \label{fig:influencia-segRate-c99}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1838,14 +1879,14 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-<conteudo/capitulos/figs/graficos/analiseNSegRate-C99.png, id=1663, 602.25pt x 372.39125pt>
+<conteudo/capitulos/figs/graficos/analiseNSegRate-C99.png, id=1674, 602.25pt x 372.39125pt>
 File: conteudo/capitulos/figs/graficos/analiseNSegRate-C99.png Graphic file (type png)
  <use conteudo/capitulos/figs/graficos/analiseNSegRate-C99.png>
-Package pdftex.def Info: conteudo/capitulos/figs/graficos/analiseNSegRate-C99.png used on input line 449.
+Package pdftex.def Info: conteudo/capitulos/figs/graficos/analiseNSegRate-C99.png used on input line 502.
 (pdftex.def)             Requested size: 218.39806pt x 135.04376pt.
 
-./conteudo/capitulos/cap-avaliacao-segmentadores.tex:451: Undefined control sequence.
-l.451 	\subfigure
+./conteudo/capitulos/cap-avaliacao-segmentadores.tex:504: Undefined control sequence.
+l.504 	\subfigure
                  { \label{fig:influencia-segRate-mc}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1853,14 +1894,14 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-<conteudo/capitulos/figs/graficos/analiseNSegRate-MinCut.png, id=1664, 602.25pt x 372.39125pt>
+<conteudo/capitulos/figs/graficos/analiseNSegRate-MinCut.png, id=1675, 602.25pt x 372.39125pt>
 File: conteudo/capitulos/figs/graficos/analiseNSegRate-MinCut.png Graphic file (type png)
  <use conteudo/capitulos/figs/graficos/analiseNSegRate-MinCut.png>
-Package pdftex.def Info: conteudo/capitulos/figs/graficos/analiseNSegRate-MinCut.png used on input line 452.
+Package pdftex.def Info: conteudo/capitulos/figs/graficos/analiseNSegRate-MinCut.png used on input line 505.
 (pdftex.def)             Requested size: 218.39806pt x 135.04376pt.
 
-./conteudo/capitulos/cap-avaliacao-segmentadores.tex:454: Undefined control sequence.
-l.454 	\subfigure
+./conteudo/capitulos/cap-avaliacao-segmentadores.tex:507: Undefined control sequence.
+l.507 	\subfigure
                  { \label{fig:influencia-segRate-bs}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1868,14 +1909,14 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-<conteudo/capitulos/figs/graficos/analiseNSegRate-Bayes.png, id=1665, 602.25pt x 372.39125pt>
+<conteudo/capitulos/figs/graficos/analiseNSegRate-Bayes.png, id=1676, 602.25pt x 372.39125pt>
 File: conteudo/capitulos/figs/graficos/analiseNSegRate-Bayes.png Graphic file (type png)
  <use conteudo/capitulos/figs/graficos/analiseNSegRate-Bayes.png>
-Package pdftex.def Info: conteudo/capitulos/figs/graficos/analiseNSegRate-Bayes.png used on input line 455.
+Package pdftex.def Info: conteudo/capitulos/figs/graficos/analiseNSegRate-Bayes.png used on input line 508.
 (pdftex.def)             Requested size: 218.39806pt x 135.04376pt.
 
-./conteudo/capitulos/cap-avaliacao-segmentadores.tex:457: Undefined control sequence.
-l.457 	\subfigure
+./conteudo/capitulos/cap-avaliacao-segmentadores.tex:510: Undefined control sequence.
+l.510 	\subfigure
                  { \label{fig:influencia-segRate-ui}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1883,10 +1924,10 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-<conteudo/capitulos/figs/graficos/analiseNSegRate-UISeg.png, id=1666, 602.25pt x 372.39125pt>
+<conteudo/capitulos/figs/graficos/analiseNSegRate-UISeg.png, id=1677, 602.25pt x 372.39125pt>
 File: conteudo/capitulos/figs/graficos/analiseNSegRate-UISeg.png Graphic file (type png)
  <use conteudo/capitulos/figs/graficos/analiseNSegRate-UISeg.png>
-Package pdftex.def Info: conteudo/capitulos/figs/graficos/analiseNSegRate-UISeg.png used on input line 458.
+Package pdftex.def Info: conteudo/capitulos/figs/graficos/analiseNSegRate-UISeg.png used on input line 511.
 (pdftex.def)             Requested size: 218.39806pt x 135.04376pt.
 
 
@@ -1895,18 +1936,14 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [49]
-
-LaTeX Warning: Text page 50 contains only floats.
-
-[50 <./conteudo/capitulos/figs/graficos/analiseNSegRate-C99.png (PNG copy)> <./conteudo/capitulos/figs/graficos/analiseNSegRate-MinCut.png (PNG copy)> <./conteudo/capitulos/figs/graficos/analiseNSegRate-Bayes.png (PNG copy)> <./conteudo/capitulos/figs/graficos/analiseNSegRate-UISeg.png (PNG copy)>] <conteudo/capitulos/figs/coesaolexicaTT-50-9.png, id=1680, 1413.28pt x 306.14375pt>
+ [50] <conteudo/capitulos/figs/coesaolexicaTT-50-9.png, id=1686, 1413.28pt x 306.14375pt>
 File: conteudo/capitulos/figs/coesaolexicaTT-50-9.png Graphic file (type png)
  <use conteudo/capitulos/figs/coesaolexicaTT-50-9.png>
-Package pdftex.def Info: conteudo/capitulos/figs/coesaolexicaTT-50-9.png used on input line 483.
+Package pdftex.def Info: conteudo/capitulos/figs/coesaolexicaTT-50-9.png used on input line 536.
 (pdftex.def)             Requested size: 455.0pt x 98.56125pt.
 
-./conteudo/capitulos/cap-avaliacao-segmentadores.tex:501: Undefined control sequence.
-l.501 	\subfigure
+./conteudo/capitulos/cap-avaliacao-segmentadores.tex:554: Undefined control sequence.
+l.554 	\subfigure
                  { \label{fig:resumo-wd-pk}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1914,14 +1951,14 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-<conteudo/capitulos/figs/graficos/resumo-wd-pk.png, id=1681, 555.07375pt x 343.2825pt>
+<conteudo/capitulos/figs/graficos/resumo-wd-pk.png, id=1687, 602.25pt x 243.91125pt>
 File: conteudo/capitulos/figs/graficos/resumo-wd-pk.png Graphic file (type png)
  <use conteudo/capitulos/figs/graficos/resumo-wd-pk.png>
-Package pdftex.def Info: conteudo/capitulos/figs/graficos/resumo-wd-pk.png used on input line 502.
-(pdftex.def)             Requested size: 222.9525pt x 137.8815pt.
+Package pdftex.def Info: conteudo/capitulos/figs/graficos/resumo-wd-pk.png used on input line 555.
+(pdftex.def)             Requested size: 373.10333pt x 151.11174pt.
 
-./conteudo/capitulos/cap-avaliacao-segmentadores.tex:503: Undefined control sequence.
-l.503 	\subfigure
+./conteudo/capitulos/cap-avaliacao-segmentadores.tex:556: Undefined control sequence.
+l.556 	\subfigure
                  { \label{fig:resumo-tradicionais}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1929,16 +1966,16 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-<conteudo/capitulos/figs/graficos/resumo-tradicionais.png, id=1682, 556.0775pt x 343.2825pt>
+<conteudo/capitulos/figs/graficos/resumo-tradicionais.png, id=1688, 602.25pt x 243.91125pt>
 File: conteudo/capitulos/figs/graficos/resumo-tradicionais.png Graphic file (type png)
  <use conteudo/capitulos/figs/graficos/resumo-tradicionais.png>
-Package pdftex.def Info: conteudo/capitulos/figs/graficos/resumo-tradicionais.png used on input line 504.
-(pdftex.def)             Requested size: 222.9525pt x 137.63531pt.
+Package pdftex.def Info: conteudo/capitulos/figs/graficos/resumo-tradicionais.png used on input line 557.
+(pdftex.def)             Requested size: 373.10333pt x 151.11174pt.
 
-./conteudo/capitulos/cap-avaliacao-segmentadores.tex:508: Missing } inserted.
+./conteudo/capitulos/cap-avaliacao-segmentadores.tex:561: Missing } inserted.
 <inserted text> 
                 }
-l.508 \end{figure}
+l.561 \end{figure}
                   
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1946,7 +1983,10 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-[51 <./conteudo/capitulos/figs/coesaolexicaTT-50-9.png> <./conteudo/capitulos/figs/graficos/resumo-wd-pk.png (PNG copy)> <./conteudo/capitulos/figs/graficos/resumo-tradicionais.png (PNG copy)>]) [52]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[51 <./conteudo/capitulos/figs/graficos/analiseNSegRate-C99.png (PNG copy)> <./conteudo/capitulos/figs/graficos/analiseNSegRate-MinCut.png (PNG copy)> <./conteudo/capitulos/figs/graficos/analiseNSegRate-Bayes.png (PNG copy)> <./conteudo/capitulos/figs/graficos/analiseNSegRate-UISeg.png (PNG copy)> <./conteudo/capitulos/figs/coesaolexicaTT-50-9.png>]) [52 <./conteudo/capitulos/figs/graficos/resumo-wd-pk.png (PNG copy)> <./conteudo/capitulos/figs/graficos/resumo-tradicionais.png (PNG copy)>]
 \openout2 = `conteudo/capitulos/cap-avaliacao-extratores.aux'.
 
  (./conteudo/capitulos/cap-avaliacao-extratores.tex [53
@@ -1967,7 +2007,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-<conteudo/capitulos/figs/figuras-experimento/Q1-KMeans.png, id=1733, 357.335pt x 287.0725pt>
+<conteudo/capitulos/figs/figuras-experimento/Q1-KMeans.png, id=1739, 357.335pt x 287.0725pt>
 File: conteudo/capitulos/figs/figuras-experimento/Q1-KMeans.png Graphic file (type png)
  <use conteudo/capitulos/figs/figuras-experimento/Q1-KMeans.png>
 Package pdftex.def Info: conteudo/capitulos/figs/figuras-experimento/Q1-KMeans.png used on input line 118.
@@ -1982,7 +2022,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-<conteudo/capitulos/figs/figuras-experimento/Q1-LDA.png, id=1734, 358.33875pt x 287.0725pt>
+<conteudo/capitulos/figs/figuras-experimento/Q1-LDA.png, id=1740, 358.33875pt x 287.0725pt>
 File: conteudo/capitulos/figs/figuras-experimento/Q1-LDA.png Graphic file (type png)
  <use conteudo/capitulos/figs/figuras-experimento/Q1-LDA.png>
 Package pdftex.def Info: conteudo/capitulos/figs/figuras-experimento/Q1-LDA.png used on input line 121.
@@ -1997,7 +2037,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-<conteudo/capitulos/figs/figuras-experimento/Q1-PLSA.png, id=1735, 357.335pt x 286.06876pt>
+<conteudo/capitulos/figs/figuras-experimento/Q1-PLSA.png, id=1741, 357.335pt x 286.06876pt>
 File: conteudo/capitulos/figs/figuras-experimento/Q1-PLSA.png Graphic file (type png)
  <use conteudo/capitulos/figs/figuras-experimento/Q1-PLSA.png>
 Package pdftex.def Info: conteudo/capitulos/figs/figuras-experimento/Q1-PLSA.png used on input line 124.
@@ -2012,7 +2052,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-<conteudo/capitulos/figs/figuras-experimento/Q2-KMeans.png, id=1738, 357.335pt x 290.08376pt>
+<conteudo/capitulos/figs/figuras-experimento/Q2-KMeans.png, id=1744, 357.335pt x 290.08376pt>
 File: conteudo/capitulos/figs/figuras-experimento/Q2-KMeans.png Graphic file (type png)
  <use conteudo/capitulos/figs/figuras-experimento/Q2-KMeans.png>
 Package pdftex.def Info: conteudo/capitulos/figs/figuras-experimento/Q2-KMeans.png used on input line 136.
@@ -2027,7 +2067,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-<conteudo/capitulos/figs/figuras-experimento/Q2-LDA.png, id=1739, 357.335pt x 290.08376pt>
+<conteudo/capitulos/figs/figuras-experimento/Q2-LDA.png, id=1745, 357.335pt x 290.08376pt>
 File: conteudo/capitulos/figs/figuras-experimento/Q2-LDA.png Graphic file (type png)
  <use conteudo/capitulos/figs/figuras-experimento/Q2-LDA.png>
 Package pdftex.def Info: conteudo/capitulos/figs/figuras-experimento/Q2-LDA.png used on input line 139.
@@ -2042,7 +2082,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-<conteudo/capitulos/figs/figuras-experimento/Q2-PLSA.png, id=1740, 357.335pt x 290.08376pt>
+<conteudo/capitulos/figs/figuras-experimento/Q2-PLSA.png, id=1746, 357.335pt x 290.08376pt>
 File: conteudo/capitulos/figs/figuras-experimento/Q2-PLSA.png Graphic file (type png)
  <use conteudo/capitulos/figs/figuras-experimento/Q2-PLSA.png>
 Package pdftex.def Info: conteudo/capitulos/figs/figuras-experimento/Q2-PLSA.png used on input line 142.
@@ -2051,7 +2091,7 @@ Package pdftex.def Info: conteudo/capitulos/figs/figuras-experimento/Q2-PLSA.png
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[56 <./conteudo/capitulos/figs/figuras-experimento/Q1-KMeans.png (PNG copy)> <./conteudo/capitulos/figs/figuras-experimento/Q1-LDA.png (PNG copy)> <./conteudo/capitulos/figs/figuras-experimento/Q1-PLSA.png (PNG copy)>] <conteudo/capitulos/figs/figuras-experimento/Q3-Seg.png, id=1748, 558.085pt x 311.1625pt>
+[56 <./conteudo/capitulos/figs/figuras-experimento/Q1-KMeans.png (PNG copy)> <./conteudo/capitulos/figs/figuras-experimento/Q1-LDA.png (PNG copy)> <./conteudo/capitulos/figs/figuras-experimento/Q1-PLSA.png (PNG copy)>] <conteudo/capitulos/figs/figuras-experimento/Q3-Seg.png, id=1754, 558.085pt x 311.1625pt>
 File: conteudo/capitulos/figs/figuras-experimento/Q3-Seg.png Graphic file (type png)
  <use conteudo/capitulos/figs/figuras-experimento/Q3-Seg.png>
 Package pdftex.def Info: conteudo/capitulos/figs/figuras-experimento/Q3-Seg.png used on input line 162.
@@ -2060,7 +2100,7 @@ Package pdftex.def Info: conteudo/capitulos/figs/figuras-experimento/Q3-Seg.png 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<conteudo/capitulos/figs/figuras-experimento/Q4-Seg.png, id=1751, 559.08875pt x 313.17pt>
+<conteudo/capitulos/figs/figuras-experimento/Q4-Seg.png, id=1757, 559.08875pt x 313.17pt>
 File: conteudo/capitulos/figs/figuras-experimento/Q4-Seg.png Graphic file (type png)
  <use conteudo/capitulos/figs/figuras-experimento/Q4-Seg.png>
 Package pdftex.def Info: conteudo/capitulos/figs/figuras-experimento/Q4-Seg.png used on input line 173.
@@ -2075,7 +2115,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-<conteudo/capitulos/figs/figuras-experimento/C1-Q1-KMeans.png, id=1759, 357.335pt x 287.0725pt>
+<conteudo/capitulos/figs/figuras-experimento/C1-Q1-KMeans.png, id=1765, 357.335pt x 287.0725pt>
 File: conteudo/capitulos/figs/figuras-experimento/C1-Q1-KMeans.png Graphic file (type png)
  <use conteudo/capitulos/figs/figuras-experimento/C1-Q1-KMeans.png>
 Package pdftex.def Info: conteudo/capitulos/figs/figuras-experimento/C1-Q1-KMeans.png used on input line 191.
@@ -2090,7 +2130,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-<conteudo/capitulos/figs/figuras-experimento/C1-Q1-LDA.png, id=1760, 358.33875pt x 287.0725pt>
+<conteudo/capitulos/figs/figuras-experimento/C1-Q1-LDA.png, id=1766, 358.33875pt x 287.0725pt>
 File: conteudo/capitulos/figs/figuras-experimento/C1-Q1-LDA.png Graphic file (type png)
  <use conteudo/capitulos/figs/figuras-experimento/C1-Q1-LDA.png>
 Package pdftex.def Info: conteudo/capitulos/figs/figuras-experimento/C1-Q1-LDA.png used on input line 194.
@@ -2105,7 +2145,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-<conteudo/capitulos/figs/figuras-experimento/C1-Q1-PLSA.png, id=1761, 357.335pt x 286.06876pt>
+<conteudo/capitulos/figs/figuras-experimento/C1-Q1-PLSA.png, id=1767, 357.335pt x 286.06876pt>
 File: conteudo/capitulos/figs/figuras-experimento/C1-Q1-PLSA.png Graphic file (type png)
  <use conteudo/capitulos/figs/figuras-experimento/C1-Q1-PLSA.png>
 Package pdftex.def Info: conteudo/capitulos/figs/figuras-experimento/C1-Q1-PLSA.png used on input line 197.
@@ -2120,7 +2160,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-<conteudo/capitulos/figs/figuras-experimento/C2-Q1-KMeans.png, id=1762, 357.335pt x 287.0725pt>
+<conteudo/capitulos/figs/figuras-experimento/C2-Q1-KMeans.png, id=1768, 357.335pt x 287.0725pt>
 File: conteudo/capitulos/figs/figuras-experimento/C2-Q1-KMeans.png Graphic file (type png)
  <use conteudo/capitulos/figs/figuras-experimento/C2-Q1-KMeans.png>
 Package pdftex.def Info: conteudo/capitulos/figs/figuras-experimento/C2-Q1-KMeans.png used on input line 200.
@@ -2135,7 +2175,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-<conteudo/capitulos/figs/figuras-experimento/C2-Q1-LDA.png, id=1763, 358.33875pt x 287.0725pt>
+<conteudo/capitulos/figs/figuras-experimento/C2-Q1-LDA.png, id=1769, 358.33875pt x 287.0725pt>
 File: conteudo/capitulos/figs/figuras-experimento/C2-Q1-LDA.png Graphic file (type png)
  <use conteudo/capitulos/figs/figuras-experimento/C2-Q1-LDA.png>
 Package pdftex.def Info: conteudo/capitulos/figs/figuras-experimento/C2-Q1-LDA.png used on input line 203.
@@ -2150,7 +2190,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-<conteudo/capitulos/figs/figuras-experimento/C2-Q1-PLSA.png, id=1764, 357.335pt x 286.06876pt>
+<conteudo/capitulos/figs/figuras-experimento/C2-Q1-PLSA.png, id=1770, 357.335pt x 286.06876pt>
 File: conteudo/capitulos/figs/figuras-experimento/C2-Q1-PLSA.png Graphic file (type png)
  <use conteudo/capitulos/figs/figuras-experimento/C2-Q1-PLSA.png>
 Package pdftex.def Info: conteudo/capitulos/figs/figuras-experimento/C2-Q1-PLSA.png used on input line 206.
@@ -2168,7 +2208,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-<conteudo/capitulos/figs/figuras-experimento/C1-Q2-KMeans.png, id=1766, 357.335pt x 290.08376pt>
+<conteudo/capitulos/figs/figuras-experimento/C1-Q2-KMeans.png, id=1772, 357.335pt x 290.08376pt>
 File: conteudo/capitulos/figs/figuras-experimento/C1-Q2-KMeans.png Graphic file (type png)
  <use conteudo/capitulos/figs/figuras-experimento/C1-Q2-KMeans.png>
 Package pdftex.def Info: conteudo/capitulos/figs/figuras-experimento/C1-Q2-KMeans.png used on input line 222.
@@ -2183,7 +2223,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-<conteudo/capitulos/figs/figuras-experimento/C1-Q2-LDA.png, id=1767, 357.335pt x 290.08376pt>
+<conteudo/capitulos/figs/figuras-experimento/C1-Q2-LDA.png, id=1773, 357.335pt x 290.08376pt>
 File: conteudo/capitulos/figs/figuras-experimento/C1-Q2-LDA.png Graphic file (type png)
  <use conteudo/capitulos/figs/figuras-experimento/C1-Q2-LDA.png>
 Package pdftex.def Info: conteudo/capitulos/figs/figuras-experimento/C1-Q2-LDA.png used on input line 225.
@@ -2198,7 +2238,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-<conteudo/capitulos/figs/figuras-experimento/C1-Q2-PLSA.png, id=1768, 357.335pt x 290.08376pt>
+<conteudo/capitulos/figs/figuras-experimento/C1-Q2-PLSA.png, id=1774, 357.335pt x 290.08376pt>
 File: conteudo/capitulos/figs/figuras-experimento/C1-Q2-PLSA.png Graphic file (type png)
  <use conteudo/capitulos/figs/figuras-experimento/C1-Q2-PLSA.png>
 Package pdftex.def Info: conteudo/capitulos/figs/figuras-experimento/C1-Q2-PLSA.png used on input line 228.
@@ -2213,7 +2253,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-<conteudo/capitulos/figs/figuras-experimento/C2-Q2-KMeans.png, id=1769, 357.335pt x 290.08376pt>
+<conteudo/capitulos/figs/figuras-experimento/C2-Q2-KMeans.png, id=1775, 357.335pt x 290.08376pt>
 File: conteudo/capitulos/figs/figuras-experimento/C2-Q2-KMeans.png Graphic file (type png)
  <use conteudo/capitulos/figs/figuras-experimento/C2-Q2-KMeans.png>
 Package pdftex.def Info: conteudo/capitulos/figs/figuras-experimento/C2-Q2-KMeans.png used on input line 231.
@@ -2228,7 +2268,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-<conteudo/capitulos/figs/figuras-experimento/C2-Q2-LDA.png, id=1770, 357.335pt x 290.08376pt>
+<conteudo/capitulos/figs/figuras-experimento/C2-Q2-LDA.png, id=1776, 357.335pt x 290.08376pt>
 File: conteudo/capitulos/figs/figuras-experimento/C2-Q2-LDA.png Graphic file (type png)
  <use conteudo/capitulos/figs/figuras-experimento/C2-Q2-LDA.png>
 Package pdftex.def Info: conteudo/capitulos/figs/figuras-experimento/C2-Q2-LDA.png used on input line 234.
@@ -2243,7 +2283,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-<conteudo/capitulos/figs/figuras-experimento/C2-Q2-PLSA.png, id=1771, 357.335pt x 290.08376pt>
+<conteudo/capitulos/figs/figuras-experimento/C2-Q2-PLSA.png, id=1777, 357.335pt x 290.08376pt>
 File: conteudo/capitulos/figs/figuras-experimento/C2-Q2-PLSA.png Graphic file (type png)
  <use conteudo/capitulos/figs/figuras-experimento/C2-Q2-PLSA.png>
 Package pdftex.def Info: conteudo/capitulos/figs/figuras-experimento/C2-Q2-PLSA.png used on input line 237.
@@ -2262,7 +2302,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-<conteudo/capitulos/figs/figuras-experimento/t1q3.png, id=1785, 558.085pt x 311.1625pt>
+<conteudo/capitulos/figs/figuras-experimento/t1q3.png, id=1791, 558.085pt x 311.1625pt>
 File: conteudo/capitulos/figs/figuras-experimento/t1q3.png Graphic file (type png)
  <use conteudo/capitulos/figs/figuras-experimento/t1q3.png>
 Package pdftex.def Info: conteudo/capitulos/figs/figuras-experimento/t1q3.png used on input line 262.
@@ -2277,7 +2317,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-<conteudo/capitulos/figs/figuras-experimento/t2q3.png, id=1786, 558.085pt x 311.1625pt>
+<conteudo/capitulos/figs/figuras-experimento/t2q3.png, id=1792, 558.085pt x 311.1625pt>
 File: conteudo/capitulos/figs/figuras-experimento/t2q3.png Graphic file (type png)
  <use conteudo/capitulos/figs/figuras-experimento/t2q3.png>
 Package pdftex.def Info: conteudo/capitulos/figs/figuras-experimento/t2q3.png used on input line 265.
@@ -2292,7 +2332,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-<conteudo/capitulos/figs/figuras-experimento/t3q3.png, id=1787, 558.085pt x 311.1625pt>
+<conteudo/capitulos/figs/figuras-experimento/t3q3.png, id=1793, 558.085pt x 311.1625pt>
 File: conteudo/capitulos/figs/figuras-experimento/t3q3.png Graphic file (type png)
  <use conteudo/capitulos/figs/figuras-experimento/t3q3.png>
 Package pdftex.def Info: conteudo/capitulos/figs/figuras-experimento/t3q3.png used on input line 268.
@@ -2307,7 +2347,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-<conteudo/capitulos/figs/figuras-experimento/t1q4.png, id=1789, 559.08875pt x 313.17pt>
+<conteudo/capitulos/figs/figuras-experimento/t1q4.png, id=1795, 559.08875pt x 313.17pt>
 File: conteudo/capitulos/figs/figuras-experimento/t1q4.png Graphic file (type png)
  <use conteudo/capitulos/figs/figuras-experimento/t1q4.png>
 Package pdftex.def Info: conteudo/capitulos/figs/figuras-experimento/t1q4.png used on input line 287.
@@ -2322,7 +2362,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-<conteudo/capitulos/figs/figuras-experimento/t2q4.png, id=1790, 559.08875pt x 313.17pt>
+<conteudo/capitulos/figs/figuras-experimento/t2q4.png, id=1796, 559.08875pt x 313.17pt>
 File: conteudo/capitulos/figs/figuras-experimento/t2q4.png Graphic file (type png)
  <use conteudo/capitulos/figs/figuras-experimento/t2q4.png>
 Package pdftex.def Info: conteudo/capitulos/figs/figuras-experimento/t2q4.png used on input line 290.
@@ -2337,7 +2377,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-<conteudo/capitulos/figs/figuras-experimento/t3q4.png, id=1791, 559.08875pt x 313.17pt>
+<conteudo/capitulos/figs/figuras-experimento/t3q4.png, id=1797, 559.08875pt x 313.17pt>
 File: conteudo/capitulos/figs/figuras-experimento/t3q4.png Graphic file (type png)
  <use conteudo/capitulos/figs/figuras-experimento/t3q4.png>
 Package pdftex.def Info: conteudo/capitulos/figs/figuras-experimento/t3q4.png used on input line 293.
@@ -2351,19 +2391,31 @@ Package pdftex.def Info: conteudo/capitulos/figs/figuras-experimento/t3q4.png us
 
 ]
 bibitemlist
-[63] [64] [65] [66] [67] [68]) 
+[63] [64] [65] [66] [67] [68]) [69]
+\openout2 = `conteudo/capitulos/6-apendice1.aux'.
+
+ (./conteudo/capitulos/6-apendice1.tex [70
+
+
+]
+
+LaTeX Warning: Reference `cap:avaliacao-extratores' on page 71 undefined on input line 7.
+
+
+LaTeX Warning: Reference `sec:segreferencia' on page 71 undefined on input line 8.
+
+) [71] 
 AED: lastpage setting LastPage
-[69]
 \tf@toc=\write7
 \openout7 = `ovidio-dissertacao.toc'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 318.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 318.
- (./ovidio-dissertacao.aux (./conteudo/capitulos/2-cap1.aux) (./conteudo/capitulos/3-cap2.aux) (./conteudo/capitulos/4-cap3.aux) (./conteudo/capitulos/cap-avaliacao-segmentadores.aux) (./conteudo/capitulos/cap-avaliacao-extratores.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 318.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 318.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 320.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 320.
+(./ovidio-dissertacao.aux (./conteudo/capitulos/2-cap1.aux) (./conteudo/capitulos/3-cap2.aux) (./conteudo/capitulos/4-cap3.aux) (./conteudo/capitulos/cap-avaliacao-segmentadores.aux) (./conteudo/capitulos/cap-avaliacao-extratores.aux) (./conteudo/capitulos/6-apendice1.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 320.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 320.
 Package rerunfilecheck Info: File `ovidio-dissertacao.brf' has not changed.
-(rerunfilecheck)             Checksum: 64453576DB9C84B7533326F8FDF3C358;8702.
+(rerunfilecheck)             Checksum: 6B9FB9116F310B49A76EE79338A04A42;8702.
 
 
 LaTeX Warning: There were undefined references.
@@ -2371,25 +2423,25 @@ LaTeX Warning: There were undefined references.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 318.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 320.
  )
 (\end occurred inside a group at level 1)
 
 ### simple group (level 1) entered at line 1061 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 16901 strings out of 494884
- 259878 string characters out of 6179236
- 543487 words of memory out of 5000000
- 19340 multiletter control sequences out of 15000+600000
- 110699 words of font info for 178 fonts, out of 8000000 for 9000
+ 17042 strings out of 494884
+ 261954 string characters out of 6179236
+ 534886 words of memory out of 5000000
+ 19460 multiletter control sequences out of 15000+600000
+ 110828 words of font info for 179 fonts, out of 8000000 for 9000
  38 hyphenation exceptions out of 8191
- 50i,15n,40p,1633b,3030s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc}</usr/share/texmf/fonts/type1/public/lm/lmbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx8.pfb></usr/share/texmf/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi6.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr6.pfb></usr/share/texmf/fonts/type1/public/lm/lmr7.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/public/lm/lmri8.pfb></usr/share/texmf/fonts/type1/public/lm/lmss10.pfb></usr/share/texmf/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss17.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsso12.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt12.pfb>
-Output written on ovidio-dissertacao.pdf (70 pages, 2006156 bytes).
+ 50i,15n,40p,1633b,3160s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc}</usr/share/texmf/fonts/type1/public/lm/lmbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx8.pfb></usr/share/texmf/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi6.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi7.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr6.pfb></usr/share/texmf/fonts/type1/public/lm/lmr7.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/public/lm/lmri8.pfb></usr/share/texmf/fonts/type1/public/lm/lmss10.pfb></usr/share/texmf/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss17.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsso12.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt12.pfb>
+Output written on ovidio-dissertacao.pdf (72 pages, 2018629 bytes).
 PDF statistics:
- 2313 PDF objects out of 2487 (max. 8388607)
- 1533 compressed objects within 16 object streams
- 272 named destinations out of 1000 (max. 500000)
- 38095 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 2336 PDF objects out of 2487 (max. 8388607)
+ 1552 compressed objects within 16 object streams
+ 276 named destinations out of 1000 (max. 500000)
+ 38103 words of extra memory for PDF output out of 42996 (max. 10000000)
 

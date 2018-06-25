@@ -47,7 +47,7 @@
 \contentsline {section}{\numberline {3.2}Valida\IeC {\c c}\IeC {\~a}o em um copus de atas de reuni\IeC {\~a}o}{39}{section.3.2}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase {Avalia\IeC {\c c}\IeC {\~a}o dos Segmentadores}}{41}{chapter.4}
-\contentsline {section}{\numberline {4.1}Prepara\IeC {\c c}\IeC {\~a}o de um corpus de refer\IeC {\^e}ncia}{41}{section.4.1}
+\contentsline {section}{\numberline {4.1}Prepara\IeC {\c c}\IeC {\~a}o de um corpus de refer\IeC {\^e}ncia}{42}{section.4.1}
 \contentsline {section}{\numberline {4.2}Configura\IeC {\c c}\IeC {\~a}o experimental}{46}{section.4.2}
 \contentsline {section}{\numberline {4.3}Crit\IeC {\'e}rios de avalia\IeC {\c c}\IeC {\~a}o}{47}{section.4.3}
 \contentsline {section}{\numberline {4.4}Resultados}{47}{section.4.4}
@@ -62,5 +62,7 @@
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \contentsline {chapter}{Refer\^encias}{63}{section*.4}
 \renewcommand *{\cftappendixname }{AP\^ENDICE \space }
-\cftinsert {AAA}
-\renewcommand *{\cftappendixname }{ANEXO \space }
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\cftinsert {A}
+\contentsline {appendix}{\chapternumberline {A}\MakeTextUppercase { Tabelas para An\IeC {\'a}lise de de Par\IeC {\^a}metros para os algoritmos de Segmenta\IeC {\c c}\IeC {\~a}o Textual }}{71}{appendix.A}

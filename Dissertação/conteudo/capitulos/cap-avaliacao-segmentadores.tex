@@ -3,23 +3,28 @@
 
 
 
-Nesse capítulo é apresentado uma análise dos algoritmos de segmentação textual com objetivo de iniciar uma discussão sobre a potencialidade das técnicas a serem utilizadas em um corpus constituído de atas de reuniões conforme já mencionado na Seção~\ref{subsec:composicaocorpus}. 
-Os algoritmos \textit{TextTiling} e \textit{C99} são analisados deviso a sua abordagem linguística baseada em coesão léxica e por estarem entre os primeiros trabalhos nessa área e serem frequentemente referenciados até hoje~\cite{AlemiG15}. 
+Nesse capítulo é apresentada uma análise dos algoritmos de segmentação textual com objetivo de iniciar uma discussão sobre a potencialidade das técnicas a serem utilizadas em um \textit{corpus} constituído de atas de reuniões conforme já mencionado na Seção~\ref{subsec:composicaocorpus}. 
+Os algoritmos \textit{TextTiling} e \textit{C99} são analisados devido a sua abordagem linguística baseada em coesão léxica e por estarem entre os primeiros trabalhos nessa área e serem frequentemente referenciados até hoje~\cite{AlemiG15}. 
 %	
 Selecionou-se também os algoritmos \textit{BayesSeg} e \textit{TextSeg} por trazerem abordagens probabilísticas e o \textit{MinCutSeg} o qual é baseado em particionamento de grafos.
 % 
-Com além disso, incluiu-se também um algoritmo que simplesmente atribui um segmento a cada sentença chamado \textit{Sentenças} para fins de comparação com as técnicas anteriores.
+Além disso, incluiu-se também um algoritmo que simplesmente atribui um segmento a cada sentença chamado \textit{Sentenças} para fins de comparação com as técnicas anteriores.
 
 
-Aqui será detalhada uma avaliação objetiva em que os resultados dos algoritmos foram avaliados por sua similaridade com uma segmentação de referência construída com base n metodologia de anotações em sub-tópicos proposta em~\cite{Hovy2010}. Em seguida escolheu-se um modelo que apresenta melhores resultados para ser utilizado em conjunto com técnicas de extração de tópicos em um experimento onde se avaliou a performance de ambas as técnicas junto a profissionais com afinidade com atas de reunião que forneceram suas percepções em relação aos resultados do segmentador empregado nesse trabalho. Os dados obtidos dos experimentos serviram de base para as análises dos algoritmos e de sua aplicação no contexto das atas de reuniões.
+Aqui será detalhada uma avaliação objetiva em que os resultados dos algoritmos foram avaliados por sua similaridade com uma segmentação de referência construída com base na metodologia de anotações em sub-tópicos proposta em~\cite{Hovy2010}. Em seguida escolheu-se o modelo que apresenta melhores resultados para ser utilizado em conjunto com técnicas de extração de tópicos em um experimento onde se avaliou a performance de ambas as técnicas junto a profissionais com afinidade com atas de reunião que forneceram suas percepções em relação aos resultados do segmentador empregado nesse trabalho. Os dados obtidos dos experimentos serviram de base para as análises dos algoritmos e de sua aplicação no contexto das atas de reuniões.
 
 
 
 
 % ----- Segmnetação de Referência -----
 A avaliação objetiva de um segmentador automático de textos exige uma referência, isto é, um conjunto de textos com os limites entre os segmentos conhecidos. Essa referência, deve ser confiável, sendo uma segmentação legítima que é capaz de dividir o texto em porções relativamente independentes, ou seja, uma segmentação ideal.
-Optou-se por criar um \textit{corpus} de atas de reunião anotadas a fim de produzir-se uma segmentação de referência para avaliações dos algoritmos, bem como sua publicação e utilização em outros trabalhos voltados a esse domínio. A o processo de anotação e criação da segmentação de referência está detalhada nas próximas seções.
+Optou-se por criar um \textit{corpus} de atas de reunião anotadas a fim de produzir-se uma segmentação de referência para avaliações dos algoritmos, bem como sua publicação e utilização em outros trabalhos voltados a esse domínio. O processo de anotação e criação da segmentação de referência está detalhada nas próximas seções.
 
+
+
+
+
+Nas próximas seções serão avaliados os segmentadores abordados nesse trabalho. Inicialmente é descrita a preparação do \textit{copus} e em seguida são detalhada as configurações utilizadas pelos algoritmos, bem como os critérios considerados para avaliá-los. Por fim, os resultados são apresentados e discutidos.
 
 % =========== Avaliação dos Segmentadores ============ %
 % \subsection{Avaliação dos Segmentadores}
@@ -30,17 +35,17 @@ Optou-se por criar um \textit{corpus} de atas de reunião anotadas a fim de prod
 
 
 % ----- Anotação -----
-A condução desse experimento teve como guia a metodologia apresentada em~\cite{Hovy2010} a qual indica sete passos para obter um corpus anotado. Essa metodologia está descrita a partir da Seção~\ref{subsec:anotacoes} e abordada com mais detalhes em~\cite{Cardoso2017}. 
+Como já mencionado, a preparação desso corpus anotado teve como guia a metodologia introduzida em~\cite{Hovy2010} a qual indica sete passos para obter um corpus anotado. Essa metodologia está descrita na da Seção~\ref{sec:anotacoes} e explicada em~\cite{Cardoso2017}. 
 
 
 
 % -- 1 - Escolha do Corpus
 % O autor da metodologia indica que 
 % Inicialmente, escolheu-se como \textit{corpus} a ser anotado	
-O processo de anotação iniciou-se com a seleção de 12 atas de reunião do departamento de computação da UFSCar campus Sorocaba, as quais são disponibilizadas publicamente\footnote{Acessível em ppgccs.net\\ }. As atas foram coletadas dos departamentos de graduação e pós-graduação referentes a reuniões ordinárias e extraordinárias, a fim de selecionar documentos levando em conta a variedade em volume de texto e diversidade de assuntos abordados.
+O processo de anotação iniciou-se com a seleção de 12 atas de reuniões do departamento de computação da Universidade Federal de São Carlos campus Sorocaba, as quais são disponibilizadas publicamente\footnote{Acessível em  http://www.ppgccs.net/?page_id=1150}. Foram coletadas 6 atas de reuniões da Comissão do Curso de Pós-Graduação em Ciência da Computação e 6 atas de reuniões do Conselho do Curso de Bacharelado em Ciência da Computação, sendo 5 referentes a reuniões ordinárias e 1 extraordinária de cada setor.
 
 % -- 2 - Escolha da teoria a ser explicada
-O trabalho de anotação, visa entender como usuários entendem as transições de assunto no documento, visto a ausência de marcações e meta informações no texto. Além disso, as anotações desse trabalho devem registrar o entendimento dos usuários em relação aos assuntos de cada segmento identificado e classificá-los quanto ao tipo de menção dada ao assunto. Maiores detalhes sobre a segmentação e rotulação manual serão fornecidos mais adiante nessa seção.
+O trabalho de anotação, visa identificar como usuários entendem as transições de assunto no documento, visto a ausência de marcações e meta informações no texto. Além disso, as anotações desse trabalho devem registrar o entendimento dos usuários em relação aos assuntos de cada segmento identificado e classificá-los quanto ao tipo de menção dada ao assunto. Maiores detalhes sobre a segmentação e rotulação manual serão fornecidos mais adiante nessa seção.
 % do assunto como decisão, informe, irrelevante
 % Com essas anotações pretende-se explicar como os usuários entendem a segmentação e lhes atribui tópicos.
 
@@ -48,10 +53,10 @@ O trabalho de anotação, visa entender como usuários entendem as transições 
 % -- 3 - Selecionar e treinar os anotadores 
 % -- 5 - Modelar uma interface para anotação
 Após a delimitação do fenômeno a ser explicado e escolha do \textit{corpus} apropriado, selecionou-se um grupo de anotadores para analisar e coletar dados referentes a cada ata. O grupo de anotadores foi formado por profissionais com alguma afinidade com atas de reunião, como profissionais administrativos, professores e coordenadores de curso. 
-A fim de facilitar o trabalho de anotação e diminuir eventuais erros, optou-se por desenvolver um \textit{software}\footnote{Códigos fontes disponíveis em: \url{https://github.com/ovidio-francisco/UFSCar/tree/master/codes/TextSegmentationTool} } como ferramenta para a coleta dos dados, conforme sugerido por~\cite{Hovy2010}. Essa ferramenta foi modelada para permitir aos anotadores visualizar os documentos e indicar livremente as divisões entre segmentos, bem como rotulá-los. 
+A fim de facilitar o trabalho de anotação e diminuir eventuais erros, optou-se por desenvolver um \textit{software}\footnote{Códigos fontes disponíveis em: \url{https://github.com/ovidio-francisco/UFSCar/tree/master/codes/TextSegmentationTool} } como ferramenta para a coleta dos dados, conforme sugerido em~\cite{Hovy2010}. Essa ferramenta foi modelada para permitir aos anotadores visualizar os documentos e indicar livremente as divisões entre segmentos, bem como rotulá-los. 
 
 Nesse processo, rotulou-se o assunto tratado no seguimento em 3 passos:
-(1) classificação quanto ao tipo de comunicação, onde se especificou uma entre as classes 
+(1) classificação quanto ao tipo de comunicação, onde se especificou uma entre as opções 
 \textit{``decisão``},
 \textit{``informe''},
 \textit{``irrelevante''} e 
@@ -62,8 +67,9 @@ Nesse processo, rotulou-se o assunto tratado no seguimento em 3 passos:
 \textit{``solicitação''} e 
 \textit{``outro''} podendo o anotador indicá-las simultaneamente.
 (3) descrição do assunto, onde o anotador apontou até 5 palavras contidas no texto para representar o teor do segmento.
+Na Figura~\ref{fig:interfaceanotacoes} é mostrada a interface da ferramenta utilizada para as anotações.
 
-De acordo com a literatura a respeito de anotações em sub-tópicos, é recomendável fornecer treinamento aos participantes. Nesse trabalho os anotadores receberam apenas informações básicas sobre o objetivo da pesquisa e instruções de como operar o \textit{software} por meio de um vídeo\footnote{Acessível em }, deixando o entendimento sobre a segmentação e rotulação a critério do entendimento de cada anotador. Assim, nenhum critério foi estabelecido para o procedimento ficando os anotadores orientados apenas pela interface da ferramenta. Na Figura~\ref{fig:interfaceanotacoes} é mostrada a interface da ferramenta utilizada para as anotações.
+De acordo com a literatura a respeito de anotações em sub-tópicos, é recomendável fornecer treinamento aos participantes. Nesse trabalho os anotadores receberam apenas informações básicas sobre o objetivo da pesquisa e instruções de como operar o \textit{software} por meio de um vídeo\footnote{Acessível em }, deixando o entendimento sobre a segmentação e rotulação a critério de cada anotador. Assim, nenhum critério foi estabelecido para o procedimento ficando os anotadores orientados apenas pela interface da ferramenta. 
 
   \begin{figure}[!h]
 	  \centering
@@ -75,12 +81,12 @@ De acordo com a literatura a respeito de anotações em sub-tópicos, é recomen
 
 
 % -- 4 - Especificar o procedimento de anotação
-O procedimento de anotação deu-se remotamente, em que os anotadores receberam por e-mail o acesso ao \textit{software} e individualmente realizaram as anotações. A tarefa de segmentar e rotular manualmente demandou em torno de 4 a 6 horas de atenção dos anotadores. Em razão desse esforço, o \textit{software} permitiu que a tarefa fosse pausada e reiniciada sempre que houvesse necessidade, sem prejuízos ao trabalho.
+O procedimento de anotação deu-se remotamente. Os anotadores receberam por e-mail o acesso ao \textit{software} e individualmente realizaram as anotações. A tarefa de segmentar e rotular manualmente demandou em torno de 4 a 6 horas de atenção dos anotadores. Em razão desse esforço, o \textit{software} permitiu que a tarefa fosse pausada e reiniciada sempre que houvesse necessidade, sem prejuízos ao trabalho.
 
 
 
 % Os arquivos gerados foram tratados para que os segmentos sempre terminem em uma sentença reconhecida pelo algoritmo, uma vez que as sentenças são a unidade mínima de informação nesse trabalho.
-O \textit{corpus} anotado deve ser constituído a partir dos textos originais e da resultante das percepções dos anotadores a certa do fenômeno a ser explicado. Assim, o texto de cada uma das 12 atas selecionadas será acrescido de informação gerada a partir dos dados coletados. Após o processo de anotação, a segmentação de referência foi criada utilizando o critério de maior concordância, como já relatado em outros trabalhos~\cite{Hearst1997, Cardoso2017, Kazantseva2012, Passonneau1997, Galley2003}. Considerou-se que ocorre um limite entre segmentos quando a maioria dos anotadores (metade mais um) concordou que a mesma sentença é um final de segmento. 
+O \textit{corpus} anotado deve ser constituído a partir dos textos originais e da resultante das percepções dos anotadores a certa do fenômeno a ser explicado. Assim, o texto de cada uma das 12 atas selecionadas será acrescido de informações geradas a partir dos dados coletados. Após o processo de anotação, a segmentação de referência foi criada utilizando o critério de maior concordância, como já relatado em outros trabalhos~\cite{Hearst1997, Cardoso2017, Kazantseva2012, Passonneau1997, Galley2003}. Assim, considerou-se que ocorre um limite entre segmentos quando a maioria dos anotadores (metade mais um) concordou que a mesma sentença é um final de segmento. 
 
 Na Figura~\ref{fig:concordanciasegref} é mostrado um exemplo de criação de uma segmentação de referência por meio da concordância entre anotadores. As primeiras linhas representam segmentações fornecidas por anotadores e a última linha representa a segmentação resultante da concordância entre a maioria dos segmentadores e portanto mais confiável. 
 
@@ -102,7 +108,7 @@ Na Figura~\ref{fig:concordanciasegref} é mostrado um exemplo de criação de um
 
 % ----------------- Exemplo Segmentação de Referência ----------------------
 
-Na Tabela~\ref{tab:segmentacaoreferencia} é mostrado um exemplo em que 6 dos 9 anotadores concordaram a respeito de um segmento. A tabela mostra quatro segmentos extraídos da segmentação de referência onde cada linha contém um segmento e os índices a esquerda indicam uma sentença. Junto à cada segmento é mostrado uma amostra das classes e descritores rotulados por um dos anotadores. Vale ressaltar que esses rótulos não foram utilizados no processo de segmentação e não têm nenhuma influência sobre a segmentação de referência. Nesse trabalho, essas anotações são utilizadas na avaliação dos extratores de tópicos.
+Na Tabela~\ref{tab:segmentacaoreferencia} é mostrado um exemplo em que 6 dos 9 anotadores concordaram a respeito de um segmento. A tabela mostra quatro segmentos extraídos da segmentação de referência onde cada linha contém um segmento e os índices a esquerda indicam uma sentença. Junto à cada segmento é mostrada  a classe e descritores rotulados por um dos anotadores. Vale ressaltar que esses rótulos não foram utilizados no processo de segmentação e não têm nenhuma influência sobre a segmentação de referência. %Nesse trabalho, essas anotações são utilizadas na avaliação dos extratores de tópicos. --> não é
 
 \begin{table}[!h]
 	\centering 
@@ -200,24 +206,39 @@ A Tabela~\ref{tab:ataseanotacoes} contém, para cada ata, a quantidade de senten
 		\textbf{A6}  & 
 		\textbf{A7}  & 
 		\textbf{A8}  & 
-		\textbf{A9}  &
-		\textbf{k}  &
-		\textbf{P$_k$}  &
-		\textbf{WD}  \\	\hline
+		\textbf{A9} 
+		% &
+		% \textbf{k}  &
+		% \textbf{P$_k$}  &
+		% \textbf{WD}  
+		\\	\hline
+
+% &  0.344 & 0.593 & 0.475 
+% &  0.377 & 0.572 & 0.509 
+% &  0.384 & 0.603 & 0.524 
+% &  0.447 & 0.652 & 0.540 
+% &  0.315 & 0.595 & 0.364 
+% &  0.397 & 0.605 & 0.576 
+% &  0.374 & 0.658 & 0.506 
+% &  0.378 & 0.611 & 0.471 
+% &  0.428 & 0.591 & 0.478 
+% &  0.309 & 0.598 & 0.233 
+% &  0.348 & 0.645 & 0.412 
+% &  0.278 & 0.577 & 0.102 
 
 % 		              A1   A2   A3  A4    A5   A6   A7   A8   A9   
-		Ata 1  & 25 & 7  & 4  & 11 & 6  & 16 & 8  & 8  & 15 & 16 &  0.344 & 0.593 & 0.475 \\ \hline 
-		Ata 2  & 17 & 4  & 4  & 8  & 6  & 11 & 6  & 6  & 15 & 14 &  0.377 & 0.572 & 0.509 \\ \hline 
-		Ata 3  & 26 & 6  & 6  & 8  & 4  & 15 & 9  & 10 & 18 & 14 &  0.384 & 0.603 & 0.524 \\ \hline 
-		Ata 4  & 26 & 5  & 5  & 10 & 6  & 14 & 17 & 7  & 11 & 12 &  0.447 & 0.652 & 0.540 \\ \hline 
-		Ata 5  & 33 & 4  & 4  & 6  & 5  & 17 & 22 & 9  & 18 & 16 &  0.315 & 0.595 & 0.364 \\ \hline 
-		Ata 6  & 11 & 3  & 4  & 6  & 4  & 9  & 9  & 4  & 7  &  5 &  0.397 & 0.605 & 0.576 \\ \hline 
-		Ata 7  & 20 & 3  & 7  & 5  & 4  & 11 & 14 & 5  & 5  &  4 &  0.374 & 0.658 & 0.506 \\ \hline 
-		Ata 8  & 35 & 4  & 8  & 3  & 8  & 12 & 17 & 5  & 11 &  9 &  0.378 & 0.611 & 0.471 \\ \hline 
-		Ata 9  & 24 & 3  & 5  & 3  & 6  & 11 & 11 & 3  & 9  &  9 &  0.428 & 0.591 & 0.478 \\ \hline 
-		Ata 10 & 50 & 4  & 5  & 4  & 7  & 31 & 29 & 5  & 9  &  8 &  0.309 & 0.598 & 0.233 \\ \hline 
-		Ata 11 & 43 & 4  & 7  & 5  & 7  & 29 & 19 & 5  & 9  & 12 &  0.348 & 0.645 & 0.412 \\ \hline 
-		Ata 12 & 56 & 3  & 10 & 4  & 16 & 33 & 25 & 4  & 13 & 11 &  0.278 & 0.577 & 0.102 \\ \hline 
+		Ata 1  & 25 & 7  & 4  & 11 & 6  & 16 & 8  & 8  & 15 & 16 \\ \hline 
+		Ata 2  & 17 & 4  & 4  & 8  & 6  & 11 & 6  & 6  & 15 & 14 \\ \hline 
+		Ata 3  & 26 & 6  & 6  & 8  & 4  & 15 & 9  & 10 & 18 & 14 \\ \hline 
+		Ata 4  & 26 & 5  & 5  & 10 & 6  & 14 & 17 & 7  & 11 & 12 \\ \hline 
+		Ata 5  & 33 & 4  & 4  & 6  & 5  & 17 & 22 & 9  & 18 & 16 \\ \hline 
+		Ata 6  & 11 & 3  & 4  & 6  & 4  & 9  & 9  & 4  & 7  &  5 \\ \hline 
+		Ata 7  & 20 & 3  & 7  & 5  & 4  & 11 & 14 & 5  & 5  &  4 \\ \hline 
+		Ata 8  & 35 & 4  & 8  & 3  & 8  & 12 & 17 & 5  & 11 &  9 \\ \hline 
+		Ata 9  & 24 & 3  & 5  & 3  & 6  & 11 & 11 & 3  & 9  &  9 \\ \hline 
+		Ata 10 & 50 & 4  & 5  & 4  & 7  & 31 & 29 & 5  & 9  &  8 \\ \hline 
+		Ata 11 & 43 & 4  & 7  & 5  & 7  & 29 & 19 & 5  & 9  & 12 \\ \hline 
+		Ata 12 & 56 & 3  & 10 & 4  & 16 & 33 & 25 & 4  & 13 & 11 \\ \hline 
 		\textbf{Total} &
 		\textbf{366} & 
 		\textbf{50}&  
@@ -228,10 +249,12 @@ A Tabela~\ref{tab:ataseanotacoes} contém, para cada ata, a quantidade de senten
 		\textbf{186}&  
 		\textbf{71}&  
 		\textbf{140}&  
-		\textbf{130} & 
-		\textbf{0.364} & 
-		\textbf{0.608} & 
-		\textbf{0.432} \\ \hline 
+		\textbf{130} 
+		% & 
+		% \textbf{0.364} & 
+		% \textbf{0.608} & 
+		% \textbf{0.432} 
+		\\ \hline 
 
 	\end{tabular}
 	% \caption{Quantidade de sentenças e segmentos de referência por ata.}
@@ -242,7 +265,7 @@ A Tabela~\ref{tab:ataseanotacoes} contém, para cada ata, a quantidade de senten
 
 
 Os valores de \textit{Kappa} reforça que a tarefa de segmentação é bastante subjetiva e indicam que, nesse contexto, a segmentação de referência resultante é pouco confiável, visto os baixos valores de concordância entre os anotadores. 
-Embora~\cite{Carletta1996} afirme que valores de $k~>~0.8$ indicam que os dados são confiáveis, visto a subjetividade da tarefa de segmentação textual, medidas menores podem ser aceitáveis, como reportado em~\cite{Hearst1997} que alcançou $k~=~0,64$ e~\cite{Cardoso2017}, $k~=~0,56$. Além dos baixos valores para as medidas nota-se também que o anotadores divergem na quantidade de segmentos, o que sugere que diferentes anotadores tem percepções distintas quanto a granularidade de assuntos, ou seja, trechos com pequenas mudanças de assunto são entendidas como segmentos diferentes por alguns anotadores, enquanto outros entendem como pertencentes ao mesmo assunto.
+Embora~\cite{Carletta1996} afirme que valores de $k~>~0,8$ indicam que os dados são confiáveis, visto a subjetividade da tarefa de segmentação textual, medidas menores podem ser aceitáveis, como reportado em~\cite{Hearst1997} que alcançou $k~=~0,64$ e~\cite{Cardoso2017}, $k~=~0,56$. Além dos baixos valores para as medidas nota-se também que o anotadores divergem na quantidade de segmentos, o que sugere que diferentes anotadores tem percepções distintas quanto a granularidade de assuntos, ou seja, trechos com pequenas mudanças de assunto são entendidas como segmentos diferentes por alguns anotadores, enquanto outros entendem como pertencentes ao mesmo assunto.
 
 
 % - maior granularidade é preferivel, pois evita omição de informação.
@@ -252,7 +275,35 @@ Embora~\cite{Carletta1996} afirme que valores de $k~>~0.8$ indicam que os dados 
 % -- 7 - disponibilizar e manter o produto
 Após a coleta dos dados das anotações e construção da segmentação de referência, o \textit{corpus} anotado serviu de como base para avaliação dos segmentadores bem como aspectos da configuração e avaliação dos extratores de tópicos no Capítulo~\ref{cap-extratores}. Além da utilidade prestada a esse trabalho, o produto do resultante do processo de anotação está disponibilizado para outros trabalhos voltados a esse domínio.
 
-Nas próximas seções serão avaliados os segmentadores abordados nesse trabalho. Inicialmente são detalhada as configurações utilizadas pelos algoritmos, bem como os critérios considerados para avaliá-los. Por fim, os resultados são apresentados e discutidos.
+
+
+\begin{table}[!h]
+	\centering
+ \begin{tabular}{|l|c|c|c|c|}
+
+\hline
+Referência  & \#Seg & \textit{Kappa}       & $P_k$                &  \textit{WinDiff}\\ \hline
+Ref. 01     & 15    & 0.344  $\sigma$0.190 & 0.433  $\sigma$0.170 & 0.631  $\sigma$0.409 \\ \hline
+Ref. 02     & 13    & 0.266  $\sigma$0.246 & 0.439  $\sigma$0.190 & 0.565  $\sigma$0.379 \\ \hline
+Ref. 03     & 15    & 0.328  $\sigma$0.183 & 0.442  $\sigma$0.165 & 0.590  $\sigma$0.353 \\ \hline
+Ref. 04     & 15    & 0.364  $\sigma$0.241 & 0.364  $\sigma$0.161 & 0.562  $\sigma$0.377 \\ \hline
+Ref. 05     & 19    & 0.315  $\sigma$0.217 & 0.458  $\sigma$0.223 & 0.889  $\sigma$0.640 \\ \hline
+Ref. 06     & 9     & 0.314  $\sigma$0.218 & 0.404  $\sigma$0.163 & 0.463  $\sigma$0.266 \\ \hline
+Ref. 07     & 8     & 0.235  $\sigma$0.208 & 0.343  $\sigma$0.192 & 0.507  $\sigma$0.401 \\ \hline
+Ref. 08     & 12    & 0.211  $\sigma$0.225 & 0.421  $\sigma$0.186 & 0.629  $\sigma$0.479 \\ \hline
+Ref. 09     & 12    & 0.234  $\sigma$0.258 & 0.472  $\sigma$0.203 & 0.660  $\sigma$0.427 \\ \hline
+Ref. 10     & 13    & 0.170  $\sigma$0.206 & 0.428  $\sigma$0.227 & 0.937  $\sigma$1.050 \\ \hline
+Ref. 11     & 12    & 0.209  $\sigma$0.236 & 0.368  $\sigma$0.203 & 0.704  $\sigma$0.654 \\ \hline
+Ref. 12     & 21    & 0.222  $\sigma$0.195 & 0.452  $\sigma$0.200 & 1.113  $\sigma$1.202 \\ \hline
+ 
+\end{tabular}
+\caption{Detalhes da Segmentação de Referência.}
+\label{tab:detalhesSegRef}
+\end{table}
+
+
+
+
 
 
 
@@ -275,14 +326,16 @@ O \textit{C99} permite o ajuste de três parâmetros, sendo, o primeiro a quanti
 
 Os algoritmos tradicionais baseados em coesão léxica como o \textit{TextTiling} e \textit{C99} são fortemente afetados pela distribuição das palavras no texto, pois a maioria das medidas de similaridade baseiam-se na frequência das palavras. Para esses, a remoção de termos menos significativos na etapa de pré-processamento pode influenciar o desempenho. Para outras abordagens como \textit{MinCutSeg} e \textit{BayesSeg} usou-se as configurações fornecidas por~\cite{Eis2008}, onde essas técnicas foram utilizadas como \textit{base line}. Para \textit{TextSeg} não requer configuração de parâmetros.
 Há ainda outras estratégias passíveis de aplicação, como a utilização de fontes externas, por exemplo \textit{thesaurus} e palavras pista, como discutido em \cite{Naili2016, Gutierrez2016, Ferret2009}. Nesse trabalho, essas estratégias não são utilizadas para manter uma abordagem não supervisionada e independente de domínio. 
-Inicialmente, Calculou-se as medidas configurando cada algoritmo conforme mostrado na Subseção~\ref{subsec:configuracaoexperimental} e, a fim de conhecer o impacto do pré-processamento nos algoritmos \textit{TextTiling} e \textit{C99}. Esses foram testados em duas etapas: com o texto integral, e com o texto pré-processado em que elementos menos significativos foram removidos, conforme mencionado na Seção~\ref{sec:modulo-preparacao}.  
+Inicialmente, calculou-se as medidas configurando cada algoritmo
+% conforme mostrado na Subseção~\ref{subsec:configuracaoexperimental} e, 
+a fim de conhecer o impacto do pré-processamento nos algoritmos \textit{TextTiling} e \textit{C99}. Esses foram testados em duas etapas: com o texto integral, e com o texto pré-processado em que elementos menos significativos foram removidos, conforme mencionado na Seção~\ref{sec:modulo-preparacao}.  
 
 \section{Critérios de avaliação}
 
 % -> Definição do que é um bom algoritmo de segmentação
 Para fins de avaliação desse trabalho, um bom método de segmentação é aquele cujo resultado melhor se aproxima da segmentação de referência, sem a obrigatoriedade de estar perfeitamente alinhado com tal. Ou seja, visto o contexto das atas de reunião, e a subjetividade da tarefa, não é necessário que os limites entre os segmentos (real e hipótese) sejam idênticos, mas que se assemelhem em localização e quantidade.
 
-Os algoritmos foram comparados com a segmentação de referência obtida e calculou-se as medidas mais aplicadas à segmentação textual, $P_k$ e \textit{WindowDiff}. Além dessas, computou-se também as medidas tradicionais acurácia e $F^1$ para analises que considerando a exatidão desses técnicas.
+As segmentações obtidas com os algoritmos foram comparadas com a segmentação de referência obtida e calculou-se as medidas mais aplicadas à segmentação textual, $P_k$ e \textit{WindowDiff}. Além dessas, computou-se também as medidas tradicionais acurácia e $F^1$ para analises que considerando a exatidão desses técnicas.
 % comparação com outros trabalhos que as utilizam.
 
 O teste de Friedman foi utilizado para gerar um ranking das melhores configurações para cada medida calculada. Com isso, foi possível descobrir quais valores otimizam um algoritmo para cada medida, considerando seus parâmetros e a influência do pré-processamento. Como já mencionado, os algoritmos \textit{MinCutSeg} e \textit{BayesSeg} aplicou-se a etapa de pré-processamento e foram testados com as configurações apresentadas por~\cite{Eis2008}. 
@@ -499,9 +552,9 @@ Em termos de performance, o modelo implementado no algoritmo \textit{BayesSeg} a
 \begin{figure}[!h] \centering     %%% not \center
 
 	\subfigure{ \label{fig:resumo-wd-pk}
-		\includegraphics[width=.49\textwidth]{conteudo/capitulos/figs/graficos/resumo-wd-pk.png}	
+		\includegraphics[width=.82\textwidth]{conteudo/capitulos/figs/graficos/resumo-wd-pk.png}	
 	\subfigure{ \label{fig:resumo-tradicionais}
-		\includegraphics[width=.49\textwidth]{conteudo/capitulos/figs/graficos/resumo-tradicionais.png}	
+		\includegraphics[width=.82\textwidth]{conteudo/capitulos/figs/graficos/resumo-tradicionais.png}	
 	}
 	\caption{Performance dos algoritmos de segmentação textual}
 	\label{fig:resumo-segmentadores}
