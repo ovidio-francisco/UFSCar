@@ -326,12 +326,13 @@ INPUT ./conteudo/capitulos/figs/tela-principal-2-1.png
 OUTPUT conteudo/capitulos/cap-avaliacao-segmentadores.aux
 INPUT conteudo/capitulos/cap-avaliacao-segmentadores.tex
 INPUT conteudo/capitulos/cap-avaliacao-segmentadores.tex
-INPUT conteudo/capitulos/figs/interface-anotacoes.png
-INPUT ./conteudo/capitulos/figs/interface-anotacoes.png
-INPUT ./conteudo/capitulos/figs/interface-anotacoes.png
+INPUT conteudo/capitulos/figs/interface-TST.png
+INPUT ./conteudo/capitulos/figs/interface-TST.png
+INPUT ./conteudo/capitulos/figs/interface-TST.png
 INPUT conteudo/capitulos/figs/segmentacao-referencia.pdf
 INPUT ./conteudo/capitulos/figs/segmentacao-referencia.pdf
 INPUT ./conteudo/capitulos/figs/segmentacao-referencia.pdf
+INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmbxi10.tfm
 INPUT anexos/tabelas/tt-c99-pp/tab-tt-pp.tex
 INPUT anexos/tabelas/tt-c99-pp/tab-tt-pp.tex
 INPUT anexos/tabelas/tt-c99-pp/tab-c99-pp.tex
@@ -535,6 +536,7 @@ INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb
 INPUT /usr/share/texmf/fonts/type1/public/lm/lmbx10.pfb
 INPUT /usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb
 INPUT /usr/share/texmf/fonts/type1/public/lm/lmbx8.pfb
+INPUT /usr/share/texmf/fonts/type1/public/lm/lmbxi10.pfb
 INPUT /usr/share/texmf/fonts/type1/public/lm/lmex10.pfb
 INPUT /usr/share/texmf/fonts/type1/public/lm/lmmi10.pfb
 INPUT /usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb
