@@ -50,23 +50,23 @@
 \contentsline {section}{\numberline {4.1}Prepara\IeC {\c c}\IeC {\~a}o de um corpus de refer\IeC {\^e}ncia}{42}{section.4.1}
 \contentsline {section}{\numberline {4.2}Configura\IeC {\c c}\IeC {\~a}o experimental}{46}{section.4.2}
 \contentsline {section}{\numberline {4.3}Crit\IeC {\'e}rios de avalia\IeC {\c c}\IeC {\~a}o}{47}{section.4.3}
-\contentsline {section}{\numberline {4.4}Resultados}{47}{section.4.4}
+\contentsline {section}{\numberline {4.4}Resultados}{48}{section.4.4}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase {Avalia\IeC {\c c}\IeC {\~a}o dos Extratores de T\IeC {\'o}picos}}{53}{chapter.5}
-\contentsline {section}{\numberline {5.1}Configura\IeC {\c c}\IeC {\~a}o experimental}{53}{section.5.1}
-\contentsline {section}{\numberline {5.2}Crit\IeC {\'e}rios de avalia\IeC {\c c}\IeC {\~a}o}{54}{section.5.2}
-\contentsline {section}{\numberline {5.3}Avalia\IeC {\c c}\IeC {\~a}o dos Extratores junto a Usu\IeC {\'a}rios}{55}{section.5.3}
-\contentsline {section}{\numberline {5.4}Valida\IeC {\c c}\IeC {\~a}o do Segmentador}{57}{section.5.4}
-\contentsline {section}{\numberline {5.5}Influ\IeC {\^e}ncia dos Extratores na qualidade dos segmentos}{59}{section.5.5}
-\contentsline {section}{\numberline {5.6}Considera\IeC {\c c}\IeC {\~o}es finais}{60}{section.5.6}
+\contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase {Avalia\IeC {\c c}\IeC {\~a}o dos Extratores de T\IeC {\'o}picos}}{55}{chapter.5}
+\contentsline {section}{\numberline {5.1}Configura\IeC {\c c}\IeC {\~a}o experimental}{55}{section.5.1}
+\contentsline {section}{\numberline {5.2}Crit\IeC {\'e}rios de avalia\IeC {\c c}\IeC {\~a}o}{56}{section.5.2}
+\contentsline {section}{\numberline {5.3}Avalia\IeC {\c c}\IeC {\~a}o dos Extratores junto a Usu\IeC {\'a}rios}{57}{section.5.3}
+\contentsline {section}{\numberline {5.4}Valida\IeC {\c c}\IeC {\~a}o do Segmentador}{59}{section.5.4}
+\contentsline {section}{\numberline {5.5}Influ\IeC {\^e}ncia dos Extratores na qualidade dos segmentos}{61}{section.5.5}
+\contentsline {section}{\numberline {5.6}Considera\IeC {\c c}\IeC {\~o}es finais}{62}{section.5.6}
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
-\contentsline {chapter}{Refer\^encias}{63}{section*.4}
+\contentsline {chapter}{Refer\^encias}{65}{section*.4}
 \renewcommand *{\cftappendixname }{AP\^ENDICE \space }
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
-\contentsline {appendix}{\chapternumberline {A}\MakeTextUppercase { Tabelas para An\IeC {\'a}lise de de Par\IeC {\^a}metros para os algoritmos de Segmenta\IeC {\c c}\IeC {\~a}o Textual }}{71}{appendix.A}
+\contentsline {appendix}{\chapternumberline {A}\MakeTextUppercase { Tabelas para An\IeC {\'a}lise de de Par\IeC {\^a}metros para os algoritmos de Segmenta\IeC {\c c}\IeC {\~a}o Textual }}{73}{appendix.A}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
-\contentsline {appendix}{\chapternumberline {B}\MakeTextUppercase { Question\IeC {\'a}rios Utilizados na Avalia\IeC {\c c}\IeC {\~a}o Subjetiva}}{89}{appendix.B}
+\contentsline {appendix}{\chapternumberline {B}\MakeTextUppercase { Question\IeC {\'a}rios Utilizados na Avalia\IeC {\c c}\IeC {\~a}o Subjetiva}}{91}{appendix.B}
