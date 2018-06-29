@@ -8,8 +8,7 @@ O sistema proposto tem como objetivo recuperar informações em uma coleção de
 
 A proposta original deste trabalho contempla funcionalidades de classificação para identificar automaticamente o tipo de ocorrência onde um assunto é mencionado, o qual pode ser classificado como uma decisão, informe ou menção. Contudo essas funcionalidades configuram trabalhos futuros para continuação do sistema como concebido inicialmente. Assim, esse trabalho de mestrado está focado na segmentação de atas de reunião, no agrupamento desses segmentos em tópicos e na recuperação de trechos de atas relacionados ao assunto da pesquisa.
 
-Esse capítulo está organizado da seguinte forma: primeiramente, na Seção~\ref{sec:sistema-proposto} é apresentada uma visão geral do sistema proposto, seu funcionamento e como as técnicas de segmentação textual e extração de tópicos são empregadas para gerar uma base de dados que concentra as informações necessárias para identificar e agrupar os diversos assuntos distribuídos na coleção de documentos. Ainda nessa seção, o são apresentadas as técnicas de recuperação de informação utilizadas para entregar os segmentos de acordo com a consulta do usuário bem como permitir a exploração de segmentos relacionados ao mesmo tema, os quais originalmente estão distribuídos na coleção de documentos.
-
+Esse capítulo está organizado da seguinte forma: primeiramente, na Seção~\ref{sec:sistema-proposto} é apresentada uma visão geral do sistema proposto, seu funcionamento e como as técnicas de segmentação textual e extração de tópicos são empregadas para gerar uma base de dados que concentra as informações necessárias para identificar e agrupar os diversos assuntos distribuídos na coleção de documentos. Ainda nessa seção, o são apresentadas as técnicas de recuperação de informação utilizadas para entregar os segmentos de acordo com a consulta do usuário bem como permitir a exploração de segmentos relacionados ao mesmo tema, os quais originalmente estão distribuídos na coleção de documentos.  
 Na Seção~\ref{sec:aplicacao-sistema} é apresentada a aplicação do sistema proposto ao contexto das atas de reunião, ou seja, a base de dados original é uma coleção de atas de reunião. Uma vez que as atas configuram um corpus com documentos multi-temáticos, conforme a proposta desse trabalho, essa aplicação visa a validação do sistema e a análise da eficiência das técnicas empregadas em um \textit{corpus} em conformidade com a proposta desse trabalho de mestrado. Será apresentada também a preparação das atas, a descrição dos algoritmos utilizados e suas configurações.
 
 \section{Sistema Proposto}
@@ -260,6 +259,36 @@ Como parte da proposta, o sistema oferece como opção a ordenação cronológic
 \label{sec:aplicacao-sistema}
 
 O foco principal deste trabalho de mestrado é a exploração e recuperação de informação em atas de reunião. A escolha foi feita baseada nas características desses documentos como textos relativamente curtos, em comparação com outros documentos como notícias, artigos, sites da \textit{web}; o estilo de escrita formal em que o redator evita repetições de temos e conceitos em benefício da estética do texto; Multiplicidade de assuntos contidos em uma mesma ata, a qual é difícil determinar um assunto central, mas diversos assuntos independentes que foram tratados durante a reunião.
+
+% aaaaaassssssddd
+
+% \input{anexos/tabelas/distribuicao-topicos/tab-distribuicao-topicos-resumo.tex}
+
+
+% \begin{table}[b]
+	% \caption{blabla   zzzzzzzzzzzs}
+% \end{table}
+
+
+
+
+\begin{table}[!h]
+% \begin{tabular}{c}
+
+
+% \begin{figure}[h]
+\center
+	\includegraphics[page=1,width=1\textwidth]{anexos/tabelas/distribuicao-topicos/distribuicao-topicos-resumo.pdf}
+% \end{figure}
+
+
+ % \end{tabular}  
+ % \label{tab:segquanti}
+ \caption{Descritores e número de segmentos no tópico selecionado pelos Algoritmos}
+\end{table} 
+
+
+
 
 
 

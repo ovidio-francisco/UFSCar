@@ -70,3 +70,7 @@
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
 \contentsline {appendix}{\chapternumberline {B}\MakeTextUppercase { Question\IeC {\'a}rios Utilizados na Avalia\IeC {\c c}\IeC {\~a}o Subjetiva}}{91}{appendix.B}
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\cftinsert {A}
+\contentsline {appendix}{\chapternumberline {C}\MakeTextUppercase { Distribui\IeC {\c c}\IeC {\~a}o dos T\IeC {\'o}picos obtidos pelos extratores}}{107}{appendix.C}

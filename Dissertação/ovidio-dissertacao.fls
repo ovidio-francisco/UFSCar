@@ -195,6 +195,8 @@ INPUT conteudo/capitulos/6-apendice1.aux
 INPUT conteudo/capitulos/6-apendice1.aux
 INPUT conteudo/capitulos/6-apendice2.aux
 INPUT conteudo/capitulos/6-apendice2.aux
+INPUT conteudo/capitulos/6-apendice3.aux
+INPUT conteudo/capitulos/6-apendice3.aux
 OUTPUT ovidio-dissertacao.aux
 INPUT /usr/share/texmf/tex/latex/lm/t1lmr.fd
 INPUT /usr/share/texmf/tex/latex/lm/t1lmr.fd
@@ -323,6 +325,9 @@ INPUT ./conteudo/capitulos/figs/estrutura-de-dados-interna.pdf
 INPUT conteudo/capitulos/figs/tela-principal-2-1.png
 INPUT ./conteudo/capitulos/figs/tela-principal-2-1.png
 INPUT ./conteudo/capitulos/figs/tela-principal-2-1.png
+INPUT anexos/tabelas/distribuicao-topicos/distribuicao-topicos-resumo.pdf
+INPUT ./anexos/tabelas/distribuicao-topicos/distribuicao-topicos-resumo.pdf
+INPUT ./anexos/tabelas/distribuicao-topicos/distribuicao-topicos-resumo.pdf
 OUTPUT conteudo/capitulos/cap-avaliacao-segmentadores.aux
 INPUT conteudo/capitulos/cap-avaliacao-segmentadores.tex
 INPUT conteudo/capitulos/cap-avaliacao-segmentadores.tex
@@ -504,6 +509,12 @@ INPUT ./anexos/avaliacao-sistema/avaliacao-sistema.pdf
 INPUT anexos/avaliacao-sistema/avaliacao-sistema.pdf
 INPUT ./anexos/avaliacao-sistema/avaliacao-sistema.pdf
 INPUT ./anexos/avaliacao-sistema/avaliacao-sistema.pdf
+OUTPUT conteudo/capitulos/6-apendice3.aux
+INPUT conteudo/capitulos/6-apendice3.tex
+INPUT conteudo/capitulos/6-apendice3.tex
+INPUT anexos/tabelas/distribuicao-topicos/distribuicao-topicos.pdf
+INPUT ./anexos/tabelas/distribuicao-topicos/distribuicao-topicos.pdf
+INPUT ./anexos/tabelas/distribuicao-topicos/distribuicao-topicos.pdf
 OUTPUT ovidio-dissertacao.toc
 INPUT ovidio-dissertacao.aux
 INPUT conteudo/capitulos/2-cap1.aux
@@ -520,6 +531,8 @@ INPUT conteudo/capitulos/6-apendice1.aux
 INPUT conteudo/capitulos/6-apendice1.aux
 INPUT conteudo/capitulos/6-apendice2.aux
 INPUT conteudo/capitulos/6-apendice2.aux
+INPUT conteudo/capitulos/6-apendice3.aux
+INPUT conteudo/capitulos/6-apendice3.aux
 INPUT ./ovidio-dissertacao.brf
 INPUT ./ovidio-dissertacao.brf
 INPUT /usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc
@@ -529,10 +542,13 @@ INPUT /usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc
 INPUT /usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx5.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti7.pfb
 INPUT /usr/share/texmf/fonts/type1/public/lm/lmbx10.pfb
 INPUT /usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb
 INPUT /usr/share/texmf/fonts/type1/public/lm/lmbx8.pfb
