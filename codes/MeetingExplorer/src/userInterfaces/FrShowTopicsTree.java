@@ -97,7 +97,8 @@ public class FrShowTopicsTree extends JFrame {
 	}
 	
 	private static String getTreeText(TreeModel model, Object object, String indent) {
-	    String myRow = indent + object + "\n";
+            String segCount = model.getChildCount(object) > 0 ? " - "+model.getChildCount(object) : "";
+	    String myRow = indent + object + segCount  + " \n";
 	    for (int i = 0; i < model.getChildCount(object); i++) {
 	        myRow += getTreeText(model, model.getChild(object, i), indent + "  ");
 	    }
