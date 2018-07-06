@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1530298390 "distribuicao-topicos.tex" "distribuicao-topicos.pdf" "distribuicao-topicos" 1530298390
+["pdflatex"] 1530298390 "distribuicao-topicos.tex" "distribuicao-topicos.pdf" "distribuicao-topicos" 1530484879
   "/etc/texmf/web2c/texmf.cnf" 1489454511 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/home/ovidiojf/.texlive2016/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx0500.600pk" 1530295765 12608 b427582cf538c182dfb73a0adf4fad80 ""
   "/home/ovidiojf/.texlive2016/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm0500.600pk" 1530222664 12496 1cf17e419c0df7a4624c600c0b67c3ff ""
@@ -44,6 +44,6 @@
   "distribuicao-topicos.tex" 1530298387 508 c29d7850d6ac39e12360e63daee7712b ""
   "tab-distribuicao-topicos.tex" 1530296217 15710 920281fffaa8283c5832662d5f3b553b ""
   (generated)
+  "distribuicao-topicos.pdf"
   "distribuicao-topicos.log"
   "distribuicao-topicos.aux"
-  "distribuicao-topicos.pdf"

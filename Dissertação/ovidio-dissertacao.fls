@@ -232,6 +232,7 @@ INPUT ovidio-dissertacao.toc
 INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmssbx10.tfm
 INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmsso12.tfm
 INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmss10.tfm
+INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmssbo10.tfm
 INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmr10.tfm
 INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmri10.tfm
 OUTPUT conteudo/capitulos/2-cap1.aux
@@ -325,9 +326,13 @@ INPUT ./conteudo/capitulos/figs/estrutura-de-dados-interna.pdf
 INPUT conteudo/capitulos/figs/tela-principal-2-1.png
 INPUT ./conteudo/capitulos/figs/tela-principal-2-1.png
 INPUT ./conteudo/capitulos/figs/tela-principal-2-1.png
+INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmsso17.tfm
 INPUT anexos/tabelas/distribuicao-topicos/distribuicao-topicos-resumo.pdf
 INPUT ./anexos/tabelas/distribuicao-topicos/distribuicao-topicos-resumo.pdf
 INPUT ./anexos/tabelas/distribuicao-topicos/distribuicao-topicos-resumo.pdf
+INPUT conteudo/capitulos/figs/doc-em-png/distribuicao.pdf
+INPUT ./conteudo/capitulos/figs/doc-em-png/distribuicao.pdf
+INPUT ./conteudo/capitulos/figs/doc-em-png/distribuicao.pdf
 OUTPUT conteudo/capitulos/cap-avaliacao-segmentadores.aux
 INPUT conteudo/capitulos/cap-avaliacao-segmentadores.tex
 INPUT conteudo/capitulos/cap-avaliacao-segmentadores.tex
@@ -340,6 +345,7 @@ INPUT ./conteudo/capitulos/figs/segmentacao-referencia.pdf
 INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmbxi10.tfm
 INPUT anexos/tabelas/tt-c99-pp/tab-tt-pp.tex
 INPUT anexos/tabelas/tt-c99-pp/tab-tt-pp.tex
+INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmbxi10.tfm
 INPUT anexos/tabelas/tt-c99-pp/tab-c99-pp.tex
 INPUT anexos/tabelas/tt-c99-pp/tab-c99-pp.tex
 INPUT conteudo/capitulos/inputs/tabela-resumo.tex
@@ -542,13 +548,10 @@ INPUT /usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc
 INPUT /usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
-INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx5.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb
-INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb
-INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti7.pfb
 INPUT /usr/share/texmf/fonts/type1/public/lm/lmbx10.pfb
 INPUT /usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb
 INPUT /usr/share/texmf/fonts/type1/public/lm/lmbx8.pfb
@@ -568,8 +571,10 @@ INPUT /usr/share/texmf/fonts/type1/public/lm/lmri8.pfb
 INPUT /usr/share/texmf/fonts/type1/public/lm/lmss10.pfb
 INPUT /usr/share/texmf/fonts/type1/public/lm/lmss12.pfb
 INPUT /usr/share/texmf/fonts/type1/public/lm/lmss17.pfb
+INPUT /usr/share/texmf/fonts/type1/public/lm/lmssbo10.pfb
 INPUT /usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb
 INPUT /usr/share/texmf/fonts/type1/public/lm/lmsso12.pfb
+INPUT /usr/share/texmf/fonts/type1/public/lm/lmsso17.pfb
 INPUT /usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb
 INPUT /usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb
 INPUT /usr/share/texmf/fonts/type1/public/lm/lmtt10.pfb

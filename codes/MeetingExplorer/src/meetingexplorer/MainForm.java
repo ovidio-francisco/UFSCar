@@ -753,8 +753,8 @@ public class MainForm extends javax.swing.JFrame {
 
             /** Carrega todos os segmentos que contém Documentos associados com todos os tópicos */
             ArrayList<Segment> segments = Segment.getSegmentsByFiles(topics, files);
-//            showSegments(segments);
-            showRandomSegments(segments, 5);
+            showSegments(segments);
+//            showRandomSegments(segments, 5);
         }
 
         

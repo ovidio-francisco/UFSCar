@@ -1,28 +1,240 @@
 
+  dia; realizada; chamada; estado; conselho;  - 116 17ª Reunião extraordinária CoC-CCS 25-08-10.doc.txt_seg-001.txt 
+  piccoli; ausência; justificativa; cancelamento; governo;  - 4 17ª Reunião extraordinária CoC-CCS 25-08-10.doc.txt_seg-002.txt 
+  cursadas; conselho; coordenação; computação; presidente;  - 45 17ª Reunião extraordinária CoC-CCS 25-08-10.doc.txt_seg-003.txt 
+  docentes; técnica; administrativo; presidente; dia;  - 72 17ª Reunião extraordinária CoC-CCS 25-08-10.doc.txt_seg-004.txt 
+  disciplinas; cursadas; libras; conselho; aprovado;  - 36 17ª Reunião extraordinária CoC-CCS 25-08-10.doc.txt_seg-005.txt 
+  computação; conselho; aprovado; acordo; ficou;  - 102 17ª Reunião extraordinária CoC-CCS 25-08-10.doc.txt_seg-006.txt 
+  representante; discente; presidente; secretária; turma;  - 55 17ª Reunião extraordinária CoC-CCS 25-08-10.doc.txt_seg-007.txt 
+
+
+
+
+
+
+
+
+
+
+
+
+Tópicos - 70 
+  cursadas; conselho; coordenação; computação; presidente;  - 45 
+    Ata 33 - 29a Reunião Odinária PPGCCS.pdf.txt_seg-002.txt 
+  dia; realizada; chamada; estado; conselho;  - 116 
+    Ata 33 - 29a Reunião Odinária PPGCCS.pdf.txt_seg-001.txt 
+  aprovado; conselho; orientada; pedido; meses;  - 22 
+    Ata 33 - 29a Reunião Odinária PPGCCS.pdf.txt_seg-004.txt 
+  dia; ordem; concurso; dezembro; foram;  - 27 
+    Ata 33 - 29a Reunião Odinária PPGCCS.pdf.txt_seg-003.txt 
+
+
+
+
+
+
+
+
+
+
+
+
+
+a distribuição dos tópicos em uma ata pode dar uma perspectiva da progressão de 
+como um derminado assunto evolui para outro.
+
+
+bem como em uma análise mais voltada a um do
+
+analisar
+
+
+uma visão dos
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+com essa perspectiva, pode ter uma visão, segundo esse sistema, dos principais assuntos abordados no corpus. 
+
+
+
+A segmentação dos textos, junto com seu agrupamento e descritores é utilizada como estrutura para organizar os dados e expandir o espaço de busca.  
+
+é responsabilidade do módulo de consulta 
+
+
+Após os processos de segmentação e extração de tópicos, 
+
+
+
+
+
+
+
+
+
+
+K-Means
+dia; realizada; chamada;
+LDA
+seguintes; chamada; conselho;
+PLSA
+dia; realizada; gestão;
+dia; seguintes; presidente;
+
+
+
+
+
+
+
+
+
+cada segmento de texto que contenha um assunto predominante, e a base da-se em categorias por meio de técnicas de extração de tópicos. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Após selecionado um tópico, o sistema apresenta cada resultado da busca exibindo o texto contido no segmento e um \textit{link} para visualizar o arquivo original.	
+
+como forma de exploração dos grupos 
+resultado da busca exibindo 
+
+Além de sistema de busca baseado 
+
+sos agrupamentos como forma de organização. 
+
+nagegação 
+exploração dos grupo
+encontrar grupos que contém um segmento.
+
+Como resultado, tem-se listas de segmentos ordenados pela relevância com a consulta do usuário separados por tópicos relacionados 
+do usuário separados por tópicos relacionados 
+
+
+
+
+
+
+
+
+
+\subsubsection{Ranqueamento}
+
+
+
+Os dados contidos na estrutura de dados internas devem ser acessados por meio de consultados do usuário. Deseja-se que somente os segmentos relevantes sejam exibidos em em orem de 
+mais relevantes à consulta sejam exibidos 
+omitido aqueles considerados com pouca relevância
+
+
+
+, contudo, ainda 
+
+esse corpus derivado irá server 
+
+
+
+O corpus original passa pelo processo de segmentação 
+
+
+representação / novo corpus / nova estrutura usada para expandir espaço de busca.
+descritores
+tf-idf
+msv
+
+
+
+
+
+utilizar a informação pra raquear os resultados.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 Comissão do Curso de Pós-Graduação em Ciência da Computação da Universidade Federal de São Carlos 
-
 Conselho do Curso de Bacharelado em Ciência da Computação
-
-
-
-
-
-
-
 - Conselho do Departamento de Computação de Sorocaba - DComp
-
 - Conselho do Curso de Ciência da Computação da Universidade Federal de São Carlos - Campus/Sorocaba
-
 - Comissão do Curso de Pós-Graduação em Ciência da Computação da Universidade Federal de São Carlos 
 Conselho do Curso de Bacharelado em Ciência da Computação
-
-
 
 11+55+
 31+42+
 5+31
-
 
 
 66 - (11+55) conselho do departamento de computação 
@@ -909,3 +1121,13 @@ Ao final do processo de segmentação, são produzidos fragmentos de documentos,
 	  % \caption{Variação da coesão léxica ao longo de um artigo melhor estruturado em seções junto a uma segmentação automática em contraste com uma segmentação de referência.}
 	  % \label{fig:coesaolexicaTT-generos-musicais}
   % \end{figure}
+
+
+
+
+% O usuário final precisa de uma interface adequada para visualizar os resultados retornados pela busca considerando-se a relevância dos segmentos selecionados e a navegação pelos tópicos. Uma boa apresentação deve permitir ao usuário identificar a os resultados e ser relativante suficiente para compreensão do conteúdo, evitando a leitura do texto completo. Ou seja, o texto de cada segmento apresentado deve ser suficiente para compreensão do assunto mencionado, sem necessidade de visualizar o documento original.
+
+
+
+
+% O módulo de preparação e manutenção tem como função principal manter uma base de dados necessária para os processos de recuperação de informação. Primeiramente, esse módulo deve receber um conjunto inicial de documentos os quais devem ser divididos em segmentos de texto que contêm um assunto predominante, e agrupá-los em categorias por meio de técnicas de extração de tópicos. Além disso, considera-se o crescimento da bases de documentos, assim, o sistema deve receber novos documentos a medida que são gerados. 

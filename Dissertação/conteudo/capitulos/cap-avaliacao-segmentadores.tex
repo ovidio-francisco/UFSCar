@@ -52,16 +52,17 @@ A fim de facilitar o trabalho de anotação e diminuir eventuais erros, optou-se
 Nesse processo, rotulou-se o assunto tratado no seguimento em 3 passos:
 (1) classificação quanto ao tipo de comunicação, onde se especificou uma entre as opções 
 \textit{``decisão``},
-\textit{``informe''},
-\textit{``irrelevante''} e 
-\textit{``outro''} sendo que para essa última, o anotador poderia especificar livremente a classe.
+\textit{``informe''} e 
+\textit{``irrelevante''}. 
+% e \textit{``outro''} sendo que para essa última, o anotador poderia especificar livremente a classe.
 (2) classificação quanto ao ao contexto onde se gerou o assunto, onde as classes, 
 \textit{``discussão''},
-\textit{``orientação''},
-\textit{``solicitação''} e 
-\textit{``outro''} podendo o anotador indicá-las simultaneamente.
+\textit{``orientação''} e	
+\textit{``solicitação''} podendo o anotador indicá-las simultaneamente.
+% \textit{``outro''} podendo o anotador indicá-las simultaneamente.
+Para os passos 1 e 2 havia a opção \textit{``outro''} em que o anotador poderia especificar livremente o tipo e o contexto do assunto.
 (3) descrição do assunto, onde o anotador apontou até 5 palavras contidas no texto para representar o teor do segmento.
-Esses rótulos tem como propósito ajudar a descrever os segmentos de atas por meio de classes e descritores, podendo ser utilizados por na etapa de treinamento de classificadores e avaliação de extratores de tópicos.
+Esses rótulos tem como propósito ajudar a descrever os segmentos de atas por meio de classes e descritores, podendo ser utilizados na etapa de treinamento de classificadores e avaliação de extratores de tópicos.
 Na Figura~\ref{fig:interfaceanotacoes} é mostrada a interface da ferramenta utilizada para as anotações.
 
 De acordo com a literatura a respeito de anotações em sub-tópicos, é recomendável fornecer treinamento aos participantes. Nesse trabalho os anotadores receberam apenas informações básicas sobre o objetivo da pesquisa e instruções de como operar o \textit{software} por meio de um vídeo\footnote{Acessível em }, deixando o entendimento sobre a segmentação e rotulação a critério de cada anotador. Assim, nenhum critério foi estabelecido para o procedimento ficando os anotadores orientados apenas pela interface da ferramenta. 
@@ -79,7 +80,9 @@ De acordo com a literatura a respeito de anotações em sub-tópicos, é recomen
 % -- 4 - Especificar o procedimento de anotação
 O procedimento de anotação deu-se remotamente. Os anotadores receberam por e-mail o acesso ao \textit{software} e individualmente realizaram as anotações. A tarefa de segmentar e rotular manualmente demandou em torno de 4 a 6 horas de atenção dos anotadores. Em razão desse esforço, o \textit{software} permitiu que a tarefa fosse pausada e reiniciada sempre que houvesse necessidade, sem prejuízos ao trabalho.
 
-Concluído o processo, os dados foram reunidos e tratados para que todo segmento termine em um final de sentença. Uma vez que software dava o anotador liberdade para segmentar o texto após qualquer character do texto, os finais de segmento movidos para que o resultado se adequasse ao formato dos algoritmos segmentação em que usa-se sentenças como unidade básica de informação, conforme já mencionado no Algoritmo~\ref{alg:identificacaofinaisdesent}. A Tabela~\ref{tab:ataseanotacoes}, mostra para cada ata a quantidade de sentenças e segmentos identificados pelos anotadores.
+O software foi desenhado para padronizar o trabalho e otimizar o tempo dos anotadores. Ao mesmo tempo, dava dava liberdade para segmentar o texto após qualquer character do texto. Ocorre que um segmento teve terminar com um sentença completa, uma vez que as sentenças são a menor unidade de informação para os segmentadores, conforme explicado na seção~\ref{sec:aplicacao-sistema} e Algoritmo~\ref{alg:identificacaofinaisdesent}. Como previsto, houve casos onde o anotador omitiu ou adicionou characteres e palavras (quase sempre ocasionado por imprecisão durante a seleção do texto). Visto esta restrição, para garantir que todo segmento termine com uma sentença completa, todo segmento que apresentava sentenças incompletas teve seu incio ou final movido para se adequar à saída dos algoritmos de segmentação. Após o processo, 12 atas foram segmentadas manualmente por 9 anotadores, gerando um conjunto de 108 anotações. Na Tabela~\ref{tab:ataseanotacoes}, é mostrado para cada ata a quantidade de sentenças do documento original e de segmentos identificados por cada anotador.
+
+
 
 \begin{table}[!h]
 	\centering
@@ -134,7 +137,7 @@ Concluído o processo, os dados foram reunidos e tratados para que todo segmento
 
 
 % Os arquivos gerados foram tratados para que os segmentos sempre terminem em uma sentença reconhecida pelo algoritmo, uma vez que as sentenças são a unidade mínima de informação nesse trabalho.
-O \textit{corpus} anotado deve ser constituído a partir dos textos originais e da resultante das percepções dos anotadores a cerca do fenômeno a ser explicado. Assim, o texto de cada uma das 12 atas selecionadas será acrescido de informações geradas a partir dos dados coletados. Após o processo de anotação, a segmentação de referência foi criada utilizando o critério de maior concordância, como já relatado em outros trabalhos~\cite{Hearst1997, Cardoso2017, Kazantseva2012, Passonneau1997, Galley2003}. Assim, considerou-se que ocorre um limite entre segmentos quando a maioria dos anotadores (metade mais um) concordou que a mesma sentença é um final de segmento. 
+O \textit{corpus} anotado deve ser constituído a partir dos textos originais e da resultante das percepções dos anotadores a cerca do fenômeno a ser explicado. Assim, o texto de cada uma das 12 atas selecionadas será acrescido de informações geradas a partir dos dados coletados. Após o processo de anotação, a segmentação de referência foi criada utilizando o critério de maior concordância, como já relatado em outros trabalhos~\cite{Hearst1997, Cardoso2017, Kazantseva2012, Passonneau1997, Galley2003}. Assim, considerou-se que ocorre um limite entre segmentos quando a maioria dos anotadores (metade mais um) concordou que a mesma sentença é um final de segmento. Gerou-se então, 12 documentos derivados das atas originais os quais constituem a segmentação de referência utilizada nesse trabalho.
 
 Na Figura~\ref{fig:concordanciasegref} é mostrado um exemplo de criação de uma segmentação de referência por meio da concordância entre anotadores. As primeiras linhas representam segmentações fornecidas por anotadores e a última linha representa a segmentação resultante da concordância entre a maioria dos segmentadores e portanto mais confiável. 
 
@@ -238,7 +241,9 @@ A qualidade da segmentação de referência está ligada principalmente a confor
 Para mensurar a concordância entre anotadores, a medida \textit{kappa (k)}~\cite{Carletta1996} é frequentemente utilizada~\cite{Gruenstein2007, Cardoso2017, Hearst1997}. Ela mostra como os anotadores compreendem os textos analisados e o nível de confiabilidade da segmentação de referência. Essa medida retorna um valor no intervalo de 0 até 1, onde 1 significa uma concordância perfeita e 0 que não houve concordância. 
 % As medidas de similaridade entre segmentações também podem ser utilizadas para avaliar a qualidade da segmentação de referência. 
 As medidas \textit{WindowDiff} e $P_k$ informam a probabilidade de duas sentenças escolhidas aleatoriamente estarem no mesmo segmento. Elas refletem a similaridade entre duas segmentações, assim também podem ser utilizadas para avaliar a concordância entre os anotadores. As formulações dessas medidas são abordadas em mais detalhes na Seção~\ref{subsec:medidas-segmentacao}.
-Nesse trabalho, para cada segmentação fornecida por cada anotador calcula-se as medidas \textit{WindowDiff}, $P_k$ e \textit{Kappa}.
+%
+%
+Nesse trabalho calculou-se as medidas \textit{WindowDiff}, $P_k$ e \textit{Kappa} para cada par de anotação referente a cada ata, ou seja, para cada uma das 12 atas calculou-se a concordância entre os anotadores.  
 A Tabela~\ref{tab:detalhesSegRef} contém, para cada ata, a quantidade de sentenças e a quantidade de segmentos identificadas pelos participantes e as médias de \textit{WindowDiff}, $P_k$ e \textit{Kappa}. Uma vez que P$_k$ e \textit{WindowDiff}, são medidas de dissimilaridade, são reportados os seus complementos.
 % Uma vez que P$_k$ e WD, indicam melhores valores próximos a 0 e 1 como dissimilarid 
 
@@ -255,20 +260,21 @@ A Tabela~\ref{tab:detalhesSegRef} contém, para cada ata, a quantidade de senten
  \begin{tabular}{|c|c|c|c|c|}
 
 \hline
-\textbf{Referência}  & \textbf{\#Seg} & \textbf{\textit{Kappa}}       & \textbf{\textit{P}$_k$}                &  \textbf{\textit{WinDiff}}\\ \hline
-Ref. 01     & 15    & 0,344  $\sigma$0,190 & 0,433  $\sigma$0,170 & 0,631  $\sigma$0,409 \\ \hline
-Ref. 02     & 13    & 0,266  $\sigma$0,246 & 0,439  $\sigma$0,190 & 0,565  $\sigma$0,379 \\ \hline
-Ref. 03     & 15    & 0,328  $\sigma$0,183 & 0,442  $\sigma$0,165 & 0,590  $\sigma$0,353 \\ \hline
-Ref. 04     & 15    & 0,364  $\sigma$0,241 & 0,364  $\sigma$0,161 & 0,562  $\sigma$0,377 \\ \hline
-Ref. 05     & 19    & 0,315  $\sigma$0,217 & 0,458  $\sigma$0,223 & 0,889  $\sigma$0,640 \\ \hline
-Ref. 06     & 9     & 0,314  $\sigma$0,218 & 0,404  $\sigma$0,163 & 0,463  $\sigma$0,266 \\ \hline
-Ref. 07     & 8     & 0,235  $\sigma$0,208 & 0,343  $\sigma$0,192 & 0,507  $\sigma$0,401 \\ \hline
-Ref. 08     & 12    & 0,211  $\sigma$0,225 & 0,421  $\sigma$0,186 & 0,629  $\sigma$0,479 \\ \hline
-Ref. 09     & 12    & 0,234  $\sigma$0,258 & 0,472  $\sigma$0,203 & 0,660  $\sigma$0,427 \\ \hline
-Ref. 10     & 13    & 0,170  $\sigma$0,206 & 0,428  $\sigma$0,227 & 0,937  $\sigma$1,050 \\ \hline
-Ref. 11     & 12    & 0,209  $\sigma$0,236 & 0,368  $\sigma$0,203 & 0,704  $\sigma$0,654 \\ \hline
-Ref. 12     & 21    & 0,222  $\sigma$0,195 & 0,452  $\sigma$0,200 & 0,113  $\sigma$1,202 \\ \hline
-\textbf{Total}      & \textbf{13.666} & \textbf{0,267}  \textbf{$\sigma$0,218} & \textbf{0,418}  \textbf{$\sigma$0,190} & \textbf{0,604}  \textbf{$\sigma$0,553} \\ \hline
+\textbf{Referência}  & \textbf{\#Seg} & \textbf{\textit{Kappa}}  & \textbf{\textit{P}$_k$}                &  \textbf{\textit{WinDiff}}\\ 
+	& & Média (des. pad.) & Média (des. pad.)&Média (des. pad.) \\ \hline
+Ref. 01     & 15    & 0,344  (0,190) & 0,433  (0,170) & 0,631  (0,409) \\ \hline
+Ref. 02     & 13    & 0,266  (0,246) & 0,439  (0,190) & 0,565  (0,379) \\ \hline
+Ref. 03     & 15    & 0,328  (0,183) & 0,442  (0,165) & 0,590  (0,353) \\ \hline
+Ref. 04     & 15    & 0,364  (0,241) & 0,364  (0,161) & 0,562  (0,377) \\ \hline
+Ref. 05     & 19    & 0,315  (0,217) & 0,458  (0,223) & 0,889  (0,640) \\ \hline
+Ref. 06     & 9     & 0,314  (0,218) & 0,404  (0,163) & 0,463  (0,266) \\ \hline
+Ref. 07     & 8     & 0,235  (0,208) & 0,343  (0,192) & 0,507  (0,401) \\ \hline
+Ref. 08     & 12    & 0,211  (0,225) & 0,421  (0,186) & 0,629  (0,479) \\ \hline
+Ref. 09     & 12    & 0,234  (0,258) & 0,472  (0,203) & 0,660  (0,427) \\ \hline
+Ref. 10     & 13    & 0,170  (0,206) & 0,428  (0,227) & 0,937  (1,050) \\ \hline
+Ref. 11     & 12    & 0,209  (0,236) & 0,368  (0,203) & 0,704  (0,654) \\ \hline
+Ref. 12     & 21    & 0,222  (0,195) & 0,452  (0,200) & 0,113  (1,202) \\ \hline
+\textbf{Total}      & \textbf{13.666} & \textbf{0,267}  \textbf{(0,218)} & \textbf{0,418}  \textbf{(0,190)} & \textbf{0,604}  \textbf{(0,553)} \\ \hline
 \end{tabular}
 \caption{Medidas de concordância entre os anotadores sobre cada ata segmentada manualmente.}
 \label{tab:detalhesSegRef}
@@ -281,8 +287,8 @@ Os valores de \textit{Kappa} reforçam que a tarefa de segmentação é bastante
 Embora~\cite{Carletta1996} afirme que valores de $k~>~0,8$ indicam que os dados são confiáveis, visto a subjetividade da tarefa de segmentação textual, medidas menores podem ser aceitáveis, como reportado em~\cite{Hearst1997} que alcançou $k~=~0,64$ e~\cite{Cardoso2017}, $k~=~0,56$. Além dos baixos valores para as medidas nota-se também que o anotadores divergem na quantidade de segmentos, o que sugere que diferentes anotadores tem percepções distintas quanto a granularidade de assuntos, ou seja, trechos com pequenas mudanças de assunto são entendidas como segmentos diferentes por alguns anotadores, enquanto outros entendem como pertencentes ao mesmo assunto.
 
 % -- 7 - disponibilizar e manter o produto
-Após a coleta dos dados das anotações e construção da segmentação de referência, o \textit{corpus} anotado serviu de como base para avaliação dos segmentadores bem como aspectos da configuração e avaliação dos extratores de tópicos no Capítulo~\ref{cap-extratores}. Além da utilidade prestada a esse trabalho, o produto do resultante do processo de anotação está disponibilizado para outros trabalhos voltados a esse domínio.
-
+Após a coleta dos dados das anotações e construção da segmentação de referência, o \textit{corpus} anotado serviu de como base para avaliação dos segmentadores bem como aspectos da configuração e avaliação dos extratores de tópicos no Capítulo~\ref{cap-extratores}. Além da utilidade prestada a esse trabalho, o produto do resultante do processo de anotação está disponibilizado\footnote{Acessível em  \url{https://github.com/ovidio-francisco/}}
+para outros trabalhos voltados a esse domínio.
 
 
 
@@ -325,14 +331,15 @@ O teste de Friedman foi utilizado para gerar um ranking das melhores configuraç
 
 Obteve-se, por meio dos testes apresentados, as melhores configurações para as principais medidas de avaliação de segmentadores. Com essas configurações calculou-se a média de cada medida considerando o conjunto de documentos. Os algoritmos foram executados com as configurações apresentadas e discutidos mais adiante nessa seção.
 
-A seguir são apresentados os resultados obtidos com os algoritmos baseados em coesão léxica (\textit{TextTiling} e \textit{C99}, considerando seus principais parâmetros e a aplicação do pré-processamento. Em seguida, são apresentados os resultados da avaliação geral de todos os algoritmos abordados nesse trabalho. Na Tabela~\ref{tab:resultadosTT} são apresentadas, as médias das medidas de desempenho obtidas com o \textit{TextTiling} bem como as configurações utilizadas.
+A seguir são apresentados os resultados obtidos com os algoritmos baseados em coesão léxica (\textit{TextTiling} e \textit{C99}), considerando seus principais parâmetros e a aplicação do pré-processamento. Em seguida, são apresentados os resultados da avaliação geral de todos os algoritmos abordados nesse trabalho.
+Na Tabela~\ref{tab:resultados-tt-pp} são apresentadas, as médias das medidas de desempenho obtidas com o \textit{TextTiling} bem como as configurações utilizadas.
 
 
 	\input{anexos/tabelas/tt-c99-pp/tab-tt-pp.tex}  
 
 
 
-Observou-se que o \textit{TextTiling} produz resultados muito similares em relação ao texto pré-processado e o texto integral. A quantidade de segmentos obtidos é influenciada por Step e Win Size, em que menores valores desses parâmetros tendem a produzir mais segmentos, que por consequência também refletem em melhores valores para F$^1$, pois que essa medida é baseada na precisão, a qual é fortemente afetada por falsos positivos. Os melhores valores de \textit{WinDiff} e $P_k$ coincidem nas mesmas configurações juntamente as quais apresentam também resultados mais acurados. A relação entre essas medidas é discutida mais adiante nessa seção.
+Observou-se que o \textit{TextTiling} produz resultados muito similares em relação ao texto pré-processado e o texto integral. A quantidade de segmentos obtidos é influenciada por \textbf{Step} e \textbf{WS} (\textit{Win Size}), em que menores valores desses parâmetros tendem a produzir mais segmentos, que por consequência também refletem em melhores valores para $F^1$, pois que essa medida é baseada na precisão, a qual é fortemente afetada por falsos positivos. Os melhores valores de \textit{WinDiff} e $P_k$ coincidem nas mesmas configurações que também apresentam resultados mais acurados. A relação entre essas medidas é discutida mais adiante nessa seção.
 
 % visto que a primeira é baseada na segunda 
 % Nota-se também que os menores valores para Step e Win Size 
@@ -345,7 +352,7 @@ Observou-se que o \textit{TextTiling} produz resultados muito similares em rela�
 	\input{anexos/tabelas/tt-c99-pp/tab-c99-pp.tex}  
 
 
-Na Tabela~\ref{tab:resultadosc99} são apresentadas, as médias obtidas com o \textit{C99} bem como as configurações utilizadas, onde \textbf{S} é a proporção de segmentos em relação a quantidade de candidatos, \textbf{M} é o tamanho do quadro utilizado para criar a matriz de \textit{rankings} e \textbf{W} indica se as sentenças são representadas por vetores contendo a frequência dos termos ou um peso que representa sua importância no documento. % como TF*IDF que seria a frequencia do termo no elemento (sentença ou parágrafo) * a frequecia invertida do termo no documento. 
+	Na Tabela~\ref{tab:resultadosc99} são apresentadas, as médias obtidas com o \textit{C99} bem como as configurações utilizadas, onde \textbf{SR} (\textit{Segment Rate}) é a proporção de segmentos em relação a quantidade de candidatos, \textbf{RS} (\textit{Ranking Size}) é o tamanho do quadro utilizado para criar a matriz de \textit{rankings} e \textbf{W} indica se as sentenças são representadas por vetores contendo a frequência dos termos ou um peso que representa sua importância no documento. % como TF*IDF que seria a frequencia do termo no elemento (sentença ou parágrafo) * a frequecia invertida do termo no documento. 
 % indica se os segmentos são representados por vetores contendo a frequência ou um peso das palavras.
 
 
@@ -419,18 +426,18 @@ Nesse trabalho, optou-se por aplicar o pré-processamento em todas as técnicas 
 % % --> Fechar falando sobre os métodos baseados em coesão léxica.
 
 
-
-
-A avaliação final foi feita pela comparação dos resultados dos algoritmos com a segmentação de referência usando as medidas \textit{Pk} e \textit{WindowDiff}. É apresentada também, para fins de comparação com outros trabalhos, as medidas tradicionais acurácia, precisão, revocação e F$^1$, entretanto, nesse contexto, essas medidas são menos significativa que P$_k$ e \textit{WindowDiff}, conforme já mencionado na Seção~\ref{subsec:medidas-segmentacao}. 
-Cada técnica foi executada variando seus principais parâmetros a fim de verificar qual configuração melhor otimiza cada algoritmo. A Tabela~\ref{tab:resumo-resultados} contém a média dos dados obtidos onde os melhores resultados estão destacados. Vale lembrar que P$_k$ e \textit{WindowDiff} são medidas de dissimilaridade, ou seja, os valores menores significam melhores resultados.
+A avaliação final foi feita pela comparação dos resultados dos algoritmos com a segmentação de referência usando as medidas \textit{Pk} e \textit{WindowDiff}. É apresentada também, para fins de comparação com outros trabalhos, as medidas tradicionais acurácia e F$^1$, entretanto, nesse contexto, essas medidas são menos significativa que P$_k$ e \textit{WindowDiff}, conforme já mencionado na Seção~\ref{subsec:medidas-segmentacao}. 
+Cada técnica foi executada variando seus principais parâmetros a fim de verificar qual configuração melhor otimiza cada algoritmo. Todos os algoritmos foram executados com o texto pré-processado, visto que essa etapa tem pouca influência positiva nos resultados, como apresentado nas tabelas~\ref{tab:resultados-tt-pp}~e~\ref{tab:resultadosc99} para os algoritmo baseados em coesão léxica e demais algoritmos no anexo x.
+%
+A Tabela~\ref{tab:resumo-resultados} contém a média dos dados obtidos onde os melhores resultados estão destacados. Vale lembrar que P$_k$ e \textit{WindowDiff} são medidas de dissimilaridade, ou seja, os valores menores significam melhores resultados.
 
 
 \input{conteudo/capitulos/inputs/tabela-resumo.tex}
 
 
 % TODO --> Comentar a tabela 
-De maneira geral, as algoritmos avaliados sobressaem ao obtido pela simples atribuição de segmentos a todas sentenças. Observa-se também que os valores de P$_k$ e WD são próximos devido a natureza similar dessas medidas. Pode-se notar também que as configurações que produzem os melhores valores de acurácia também registram melhores valores de P$_k$ ou WD como se vê para \textit{TextTiling}, \textit{MinCutSeg}, \textit{BayesSeg} à exceção de \textit{C99} que registra sua melhor acurácia muito próxima à obtida na configuração ótima para P$_k$ e WD. 
-Essa semelhança entre as medidas que toleram proximidade entre segmentações (P$_k$ \textit{WindowDiff}) e a acurácia que apenas computa limites exatos, sugere que quando os anotadores concordam que dois blocos de texto referem-se a assuntos diferentes, também concordam no ponto exato onde há transição de assunto.  Esses resultados são ilustrados graficamente na Figura~\ref{fig:resumo-segmentadores}.
+De maneira geral, as algoritmos avaliados sobressaem ao obtido pelo \textit{PseudoSeg} (que simplesmente atribui um segmento a todas sentenças). Observa-se também que os valores de $P_k$ e \textit{WindowDiff} são próximos devido a natureza similar dessas medidas. Pode-se notar também que as configurações que produzem os melhores valores de acurácia também registram melhores valores de $P_k$ ou \textit{WindowDiff} como se vê para \textit{TextTiling}, \textit{MinCutSeg}, \textit{BayesSeg} à exceção de \textit{C99} que registra sua melhor acurácia muito próxima à obtida na configuração ótima para $P_k$ e \textit{WindowDiff.} 
+Essa semelhança entre as medidas que toleram proximidade entre segmentações ($P_k$  e \textit{WindowDiff}) e a acurácia que apenas computa limites exatos, sugere que quando os anotadores concordam que dois blocos de texto referem-se a assuntos diferentes, também concordam no ponto exato onde há transição de assunto.  Esses resultados são ilustrados graficamente na Figura~\ref{fig:influencia-SegRate}.
 % Todo: Poderia motivar mais pesquisas em Hieraquias de tópicos?
 % Todo: E dai? --> Sugere que segmentações ou são idênticas ou não são próximas, ou ainda que quando os anotadores (raramente) concordam, seus limites coincidem examente na maioria dos casos.
 
@@ -442,18 +449,18 @@ Durante os testes analisou-se a influência das parâmetros na eficiência dos a
 
 \begin{figure}[!h] \centering     %%% not \center
 
-	\subfigure{ \label{fig:influencia-segRate-c99}
+%	\subfigure{ \label{fig:influencia-segRate-c99}
 	  \includegraphics[width=.48\textwidth]{conteudo/capitulos/figs/graficos/analiseNSegRate-C99.png}
-	}
-	\subfigure{ \label{fig:influencia-segRate-mc}
+%	}
+%	\subfigure{ \label{fig:influencia-segRate-mc}
 	  \includegraphics[width=.48\textwidth]{conteudo/capitulos/figs/graficos/analiseNSegRate-MinCut.png}
-	}
-	\subfigure{ \label{fig:influencia-segRate-bs}
+%	}
+%	\subfigure{ \label{fig:influencia-segRate-bs}
 	  \includegraphics[width=.48\textwidth]{conteudo/capitulos/figs/graficos/analiseNSegRate-Bayes.png}
-	}
-	\subfigure{ \label{fig:influencia-segRate-ui}
+%	}
+%	\subfigure{ \label{fig:influencia-segRate-ui}
 	  \includegraphics[width=.48\textwidth]{conteudo/capitulos/figs/graficos/analiseNSegRate-UISeg.png}
-	}
+%	}
 	\caption{Influência do taxa segmentos na eficiência dos algoritmos}
 	\label{fig:influencia-SegRate}
 \end{figure}
@@ -490,16 +497,21 @@ Na Figura~\ref{fig:coesaolexicaTT} é apresentado a variação da coesão léxic
 
 
 
-Em termos de performance, o modelo implementado no algoritmo \textit{BayesSeg} apresenta melhores para as medidas P$_k$ e \textit{WindowDiff}, visto que essas são mais adequadas ao contexto analisado, este será empregado nos próximos experimentos. Contudo, dado a subjetividade da tarefa de segmentação textual, outros modelos podem ser utilizados satisfatoriamente dependendo do critério adotado. 
+Em termos de performance, o modelo implementado no algoritmo \textit{BayesSeg} apresenta melhores para as medidas $P_k$ e \textit{WindowDiff}, visto que essas são mais adequadas ao contexto analisado, este será empregado nos próximos experimentos. Contudo, dado a subjetividade da tarefa de segmentação textual, outros modelos podem ser utilizados satisfatoriamente dependendo do critério adotado. 
 
 
-\begin{figure}[!b] \centering     %%% not \center
+\begin{figure}[!ht] \centering     %%% not \center
 
-	\subfigure{ \label{fig:resumo-wd-pk}
+%	\subfigure[a]{ 
 		\includegraphics[width=.82\textwidth]{conteudo/capitulos/figs/graficos/resumo-wd-pk.png}	
-	\subfigure{ \label{fig:resumo-tradicionais}
+		% \caption{wd-pk}
+		\label{fig:resumo-wd-pka}
+%	}
+%	\subfigure[b]{ 
 		\includegraphics[width=.82\textwidth]{conteudo/capitulos/figs/graficos/resumo-tradicionais.png}	
-	}
+		% \caption{tradicionais}
+		\label{fig:resumo-tradicionaisa}
+%	}
 	\caption{Performance geral dos algoritmos de segmentação textual e as configurações que apresentam melhores resultados para cada medida de desempenho.}
 	\label{fig:resumo-segmentadores}
 \end{figure}
@@ -508,7 +520,9 @@ Em termos de performance, o modelo implementado no algoritmo \textit{BayesSeg} a
 
 % TODO --> Comentar as WD e PK
 
-Na Figura~\ref{fig:resumo-tradicionais} é apresentada a performance dos algoritmos nas medidas tradicionais. Observa-se valores altos de $F^1$ para a segmentação por sentenças, pois é atribuído um limite a todo candidato a final de segmento, o que resulta no valor máximo para revocação. De maneira semelhante, o comportamento do \textit{TextTiling} gera menos segmentos em relação aos demais, e com isso tem-se valores menores de $F^1$, o que pode ser alterado pela configuração do algoritmo com passos mais curtos, ou ainda, sobre-escrevendo a função que calcula os \textit{depth scores} para reconhecer vales menos profundos.
+Na Figura~\ref{fig:resumo-segmentadores} é apresentada a performance dos algoritmos.
+% nas medidas tradicionais. 
+Observa-se valores altos de $F^1$ para a segmentação por sentenças, pois é atribuído um limite a todo candidato a final de segmento, o que resulta no valor máximo para revocação. De maneira semelhante, o comportamento do \textit{TextTiling} gera menos segmentos em relação aos demais, e com isso tem-se valores menores de $F^1$, o que pode ser alterado pela configuração do algoritmo com passos mais curtos, ou ainda, sobre-escrevendo a função que calcula os \textit{depth scores} para reconhecer vales menos profundos.
 
 
 
@@ -516,12 +530,57 @@ Na Figura~\ref{fig:resumo-tradicionais} é apresentada a performance dos algorit
 
 
 
-Após a análise dos métodos, selecionou-se o algoritmo que apresenta melhores resultados para as medidas P$_k$ e \textit{WindowDiff} visto a subjetividade da tarefa e a aderência dessas medias à acurácia e precisão. Realizou-se então uma experimento a fim de avaliar subjetivamente o segmentador escolhido em conjunto com extratores de tópicos e analisar essas técnicas.
+Após a análise dos métodos, selecionou-se o algoritmo \textit{BayesSeg} para a tarefa de segmentação textual nesse trabalho. Mais análises quanto a segmentação textual serão abordadas no Capítulo~\ref{cap-extratores}. Escolheu-se o \textit{BayesSeg} por apresentar melhores resultados para as medidas $P_k$ e \textit{WindowDiff} visto a subjetividade da tarefa e a aderência dessas medias à acurácia e precisão. Realizou-se então uma experimento a fim de avaliar subjetivamente o segmentador escolhido em conjunto com extratores de tópicos e analisar essas técnicas.
 
 
 
 
   % Após a identificação dos segmentos, o algoritmo retorna uma lista com fragmentos do texto original. Cada segmento é incorporado à estrutura de dados interna como subdocumentos com um tema relativamente independente. Em seguida, esses subdocumentos serão analisados pelo extrator de tópicos para identificação de descritores e agrupamento.
+
+
+
+\section{Considerações finais}
+
+
+
+Nessa seção os algoritmos de segmentação textual foram avaliados objetivamente. 
+Inicialmente, criou-se um conjunto com segmentações manuais usados para gerar uma segmentação de referência, sob a qual os resultados dos algoritmos foram comparados. O produto  desse processo também foi acrescido de rótulos e descrições sobre o assunto de cada segmento.
+Embora a concordância sobre a segmentação entre anotares tenha se mostrado abaixo do esperado, obteve-se, \textit{corpus} anotado que ajuda a entender a coleção de atas original em termos de transição de assuntos entre segmentos e seus conteúdos.
+% em termos da distribuição de tópicos. 
+Contudo, mais experimentos são necessários para criação de uma segmentação de referência mais robusta, a qual pode ser obtida com maior número de anotadores, e aperfeiçoamento do processo de anotação. Após esses primeiros resultados, melhorias na ferramenta para segmentação manual e aplicação de um treinamento adequado dos participantes podem ser desenvolvidos com base nessa primeira experiência.
+% , bem como avaliação de técnicas que se valem de conhecimento externo como \textit{thesaurus} (dicionários) e \textit{clue words} (palavras-pista).
+
+De maneira geral, os dados apontam que há pouca diferença de performance entre os algoritmos. Contudo, o \textit{BayesSeg} mostrou-se superior aos demais considerando-se a similaridades entre seus resultados e a segmentação de referência, as quais foram mensuradas pelas medidas \textit{WindowDiff} e $P_k$.  
+Uma análise subjetiva do segmentador escolhido é apresentada na Seção~\ref{cap-extratores}, em que observa-se resultados satisfatórios a repeito da qualidade dos segmentos obtidos. 
+
+O \textit{corpus} criado a partir da coleção original de documentos foi disponibilizados para trabalhos futuros voltados a esse domínio bem como o \textit{software} para segmentação manual e rotulação de documentos. 
+
+
+% por meio de um corpus gerado a partir de
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

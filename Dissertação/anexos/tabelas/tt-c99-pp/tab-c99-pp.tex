@@ -1,12 +1,12 @@
 
 \begin{table}[!h]
-	\tiny \center
-	\textbf{C99}  \\
+	\tiny 
+	% \textbf{C99}  \\
 	\begin{tabular}{|c|c|c||c|c|c|c||c|c|c|c||c|} 
 \hline 
-\multirow{2}{*}{W} & \multirow{2}{*}{RS} & \multirow{2}{*}{SR} & \multicolumn{4}{c||}{Com texto integral} & \multicolumn{4}{c||}{Com texto pré-processado}& \multirow{2}{*}{\#Segs} \\\cline{4-11}
+\multirow{2}{*}{\textbf{W}} & \multirow{2}{*}{\textbf{RS}} & \multirow{2}{*}{\textbf{SR}} & \multicolumn{4}{c||}{\textbf{Com texto integral}} & \multicolumn{4}{c||}{\textbf{Com texto pré-processado}}& \multirow{2}{*}{\textbf{\#Segs}} \\\cline{4-11}
 
-&& & $WinDiff$ & $P_k$ & Acurácia & $F^1$ & $WinDiff$ & $P_k$ & Acurácia & $F^1$ & \\ \hline 
+																									   && & \textit{\textbf{WinDiff}} & \textbf{\textit{P}$_k$} & \textit{\textbf{Acurácia}} & \textbf{\textit{F}$^1$} & \textit{\textbf{WinDiff}} & \textbf{\textit{P}$_k$} & \textit{\textbf{Acurácia}} & \textbf{\textit{F}$^1$} & \\ \hline 
  \multirow{18}{*}{true} & \multirow{6}{*}{3} 
 	 & 0,20    & 0,481 & 0,463 & 0,574 & 0,324         &     0,463 &  0,445 & 0,581 & 0,339 & 6,083                \\ \cline{3-12}
 	&& 0,30    & 0,457 & 0,437 & 0,596 & 0,447         &     \cellcolor{gray!20} \textbf{0,434} & \cellcolor{gray!20} \textbf{0,407} & 0,607 & 0,457 & 9,250  \\\cline{3-12} 
@@ -50,6 +50,9 @@
 	 && 0,60    & 0,493 & 0,439 & 0,585 & 0,586         &     0,511 &  0,453 & 0,565 & 0,562 & 18,417              \\ \cline{3-12}  
 	 && 0,70    & 0,506 & 0,430 & 0,590 & 0,621         &     0,559 &  0,476 & 0,535 & 0,572 & 21,417              \\ \hline      
  \end{tabular}  
+ \caption{Resultados do \textit{C99} considerando o pré-processamento.}
  \label{tab:resultadosc99}
-\caption{Resultados do TextTiling considerando o pré-processamento.}
 \end{table} 
+
+
+

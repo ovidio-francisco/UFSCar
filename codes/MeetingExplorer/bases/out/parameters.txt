@@ -1,4 +1,4 @@
 #Last Topic Extraction Configuration Parameters
-#Thu Jun 28 23:46:02 BRT 2018
+#Thu Jun 28 23:38:14 BRT 2018
 Num-Topics=70
-Algorithm=k-Means Parametric
+Algorithm=PLSA Parametric

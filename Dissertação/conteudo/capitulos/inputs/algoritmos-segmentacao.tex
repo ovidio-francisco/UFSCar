@@ -42,7 +42,9 @@ Em seguida, os blocos de texto são representados por vetores que contém as fre
 % --> fazer um gráfico-rascunho e usar bolinhas para indicar os limites e usar 1 vale para demostrar o cálculo do depth score.
 
 
-O TextTiling apresenta como vantagens a facilidade de implementação e baixa complexidade computacional, favorecendo a implementação de trabalhos similares ~\cite{Naili2016,Bokaei2015,CHAIBI2014,Kern2009,Galley2003}, e sua utilização como \texttit{base line} em outros trabalhos~\cite{Cardoso2017,Dias2007}. Por outro lado, algoritmos mais complexos, como os baseados em matrizes de similaridade, apresentam acurácia relativamente superior como apresentado em~\cite{Choi2000, Kern2009, Misra2009}.
+O TextTiling apresenta como vantagens a facilidade de implementação e baixa complexidade computacional, favorecendo a implementação de trabalhos similares 
+~\cite{Naili2016,Bokaei2015,CHAIBI2014,Kern2009,Galley2003}, 
+e sua utilização como \textit{base line} em outros trabalhos~\cite{Cardoso2017,Dias2007}. Por outro lado, algoritmos mais complexos, como os baseados em matrizes de similaridade, apresentam acurácia relativamente superior como apresentado em~\cite{Choi2000, Kern2009, Misra2009}.
 
 
 % ==========  C99  ==========
@@ -80,15 +82,16 @@ Na Figura~\ref{fig:a} é destacado um quadro 3~x~3 de uma matriz. Tomando como e
 \begin{figure}[!h]
 	\centering     %%% not \center
 
-	\subfigure[Passo 1]{
-		\label{fig:a}
+%	\subfigure[Passo 1]{
+%		\label{fig:a}
 		\includegraphics[trim={ 10 250 80 40 },clip,page=1,width=60mm]{conteudo/capitulos/figs/c99-matrizes.pdf}
-	}	
-	\subfigure[Passo 2]{
-		\label{fig:b}
+%\\
+%	}	
+%	\subfigure[Passo 2]{
+%		\label{fig:b}
 		\includegraphics[trim={ 10 250 80 40 },clip,page=2,width=60mm]{conteudo/capitulos/figs/c99-matrizes.pdf}
 		% \includegraphics[width=60mm]{conteudo/capitulos/figs/exemplo-matrix-rank-B.png}
-	}
+%	}
 	\caption{Exemplo de construção de uma matriz de rankings.%~\cite{Choi2000}.
 	}
 	\label{fig:exemplomatrixrank}
@@ -179,7 +182,7 @@ O \textit{MinCutSeg} ~\cite{Malioutov:2006a} aborda a segmentação textual como
 
 Essa abordagem é inspirada no trabalho de~\cite{Shi2000} que propõe um critério para particionamento de grafos chamado \textit{normalized-cut criterion} inicialmente desenvolvido para segmentação de imagens estáticas a qual foi aproveita a restrição de linearidade dos textos para segmentação textual.
 
-Seja $G = {V,E}$ um grafo ponderado, unidimensional em que $V$ é o conjunto de vértices que correspondem às sentenças e $E$ é o conjunto de arestas que correspondem as similaridades entre as sentenças. Seja $w(u, v)$ o valor de similaridade entre o par de vértices $u$ e $v$. O \textit{MinCutSeg} visa particionar $G$ em dois grafos disjuntos $A$ e $B$ de modo a minimizar o corte definido pela somatória das arestas que ligam $u\inA$ à $v\inB$(Equação~\ref{equ:corte-grafo}):
+Seja $G = {V,E}$ um grafo ponderado, unidimensional em que $V$ é o conjunto de vértices que correspondem às sentenças e $E$ é o conjunto de arestas que correspondem as similaridades entre as sentenças. Seja $w(u, v)$ o valor de similaridade entre o par de vértices $u$ e $v$. O \textit{MinCutSeg} visa particionar $G$ em dois grafos disjuntos $A$ e $B$ de modo a minimizar o corte definido pela somatória das arestas que ligam $u \in A$ à $v \in B$(Equação~\ref{equ:corte-grafo}):
 
 \begin{equation} 
 	corte(A,B) = \sum_{u \in A,v \in B} w(u, v) 
@@ -203,7 +206,7 @@ Em seguida, define-se o critério de corte normalizado (NCorte) como o resultado
 \end{equation}
 
 
-Uma vez que um texto normalmente é dividido em mais que dois segmentos, é necessário extender o modelo para atender a essa necessidade. Seja $A_1\dotsA_k$ uma partição e $V - A_k$ a diferença entre o grafo $V$ e a partição $k$. O critério para múltiplos cortes normalizados é então estendido para: 
+Uma vez que um texto normalmente é dividido em mais que dois segmentos, é necessário extender o modelo para atender a essa necessidade. Seja $A_1 \dots A_k$ uma partição e $V - A_k$ a diferença entre o grafo $V$ e a partição $k$. O critério para múltiplos cortes normalizados é então estendido para: 
 
 \begin{equation} 
 	NCorte_k(V) = \frac{corte(A_1, V-A_1)}{vol(A_1)} + \dots + \frac{corte(A_k, V-A_k)}{vol(A_k)} 
@@ -213,7 +216,7 @@ Uma vez que um texto normalmente é dividido em mais que dois segmentos, é nece
 
 A decomposição do modelo em uma somatória de termos individuais permite empregar técnicas de programação dinâmica para o problema de cortes multidirecionais em grafos. Mais detalhes da formulação dessa solução estão disponíveis em~\cite{Malioutov:2006a}.
 
-Embora o problema minimizar cortes normalizados em grafos seja um problema do tipo NP-Completo\footnote{NP-Completo configura um tipo de problema para o qual não se conhece uma solução determinística que possa ser computada em tempo polinomial. Papadimitriou provou que o problema de corte mínimo em grafos está incluso nessa categoria.}, no contexto de segmentação textual esse problema é restrito a manter a linearidade dos vertices. A segmentação linear em um grafo implica que todos os vértices entre as extremidades esquerda e direitas de uma partição pertencem à essa partição, consequentemente o espaço de soluções possíveis é reduzido o que permite a execução do algoritmo em tempo polinomial.  
+Embora o problema minimizar cortes normalizados em grafos seja um problema do tipo NP-Completo\footnote{NP-Completo configura um tipo de problema para o qual não se conhece uma solução determinística que possa ser computada em tempo polinomial. Papadimitriou provou que o problema de corte mínimo em grafos está incluso nessa categoria.}, no contexto de segmentação textual esse problema é restrito a manter a linearidade dos vértices. A segmentação linear em um grafo implica que todos os vértices entre as extremidades esquerda e direitas de uma partição pertencem à essa partição, consequentemente o espaço de soluções possíveis é reduzido o que permite a execução do algoritmo em tempo polinomial.  
 
 % ===
 

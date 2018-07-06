@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.8.22)  25 JUN 2018 00:58
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.8.22)  5 JUL 2018 20:43
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -222,39 +222,39 @@ LaTeX Font Info:    ... okay on input line 7.
 ) (./tab-tt-pp.tex
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 8.
-Missing character: There is no Ã in font cmr5!
-Missing character: There is no © in font cmr5!
-Missing character: There is no Ã in font cmr5!
-Missing character: There is no ¡ in font cmr5!
-Missing character: There is no Ã in font cmr5!
-Missing character: There is no ¡ in font cmr5!
+Missing character: There is no Ã in font cmbx5!
+Missing character: There is no © in font cmbx5!
+Missing character: There is no Ã in font cmbxti10!
+Missing character: There is no ¡ in font cmbxti10!
+Missing character: There is no Ã in font cmbxti10!
+Missing character: There is no ¡ in font cmbxti10!
 Missing character: There is no Ã in font cmr10!
 Missing character: There is no © in font cmr10!
 ) [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./tab-c99-pp.tex
-Missing character: There is no Ã in font cmr5!
-Missing character: There is no © in font cmr5!
-Missing character: There is no Ã in font cmr5!
-Missing character: There is no ¡ in font cmr5!
-Missing character: There is no Ã in font cmr5!
-Missing character: There is no ¡ in font cmr5!
+Missing character: There is no Ã in font cmbx5!
+Missing character: There is no © in font cmbx5!
+Missing character: There is no Ã in font cmbxti10!
+Missing character: There is no ¡ in font cmbxti10!
+Missing character: There is no Ã in font cmbxti10!
+Missing character: There is no ¡ in font cmbxti10!
 Missing character: There is no Ã in font cmr10!
 Missing character: There is no © in font cmr10!
 ) [2] (./tabelas-segmentacao-com-e-sem-joined.aux) ) 
 Here is how much of TeX's memory you used:
- 2255 strings out of 494884
- 29841 string characters out of 6179236
- 133847 words of memory out of 5000000
- 5581 multiletter control sequences out of 15000+600000
- 4248 words of font info for 16 fonts, out of 8000000 for 9000
+ 2263 strings out of 494884
+ 29941 string characters out of 6179236
+ 133861 words of memory out of 5000000
+ 5586 multiletter control sequences out of 15000+600000
+ 5302 words of font info for 19 fonts, out of 8000000 for 9000
  38 hyphenation exceptions out of 8191
- 41i,11n,35p,414b,252s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb>
-Output written on tabelas-segmentacao-com-e-sem-joined.pdf (2 pages, 59718 bytes).
+ 41i,11n,35p,414b,284s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on tabelas-segmentacao-com-e-sem-joined.pdf (2 pages, 73801 bytes).
 PDF statistics:
- 27 PDF objects out of 1000 (max. 8388607)
- 18 compressed objects within 1 object stream
+ 35 PDF objects out of 1000 (max. 8388607)
+ 24 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
