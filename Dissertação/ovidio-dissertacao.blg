@@ -35,6 +35,7 @@ I'm skipping whatever remains of this command
 A level-1 auxiliary file: conteudo/capitulos/4-cap3.aux
 A level-1 auxiliary file: conteudo/capitulos/cap-avaliacao-segmentadores.aux
 A level-1 auxiliary file: conteudo/capitulos/cap-avaliacao-extratores.aux
+A level-1 auxiliary file: conteudo/capitulos/5-conclusao.aux
 A level-1 auxiliary file: conteudo/capitulos/6-apendice1.aux
 A level-1 auxiliary file: conteudo/capitulos/6-apendice2.aux
 A level-1 auxiliary file: conteudo/capitulos/6-apendice3.aux
@@ -84,7 +85,7 @@ Warning--faltando school em Reynar1998
 +---------------------------------------------------------+
 You've used 71 entries,
             6711 wiz_defined-function locations,
-            1804 strings with 25847 characters,
+            1805 strings with 25881 characters,
 and the built_in function-call counts, 104587 in all, are:
 = -- 11544
 > -- 2387

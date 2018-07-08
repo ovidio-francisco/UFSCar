@@ -6,10 +6,15 @@
 
 O sistema proposto tem como objetivo recuperar informações em uma coleção de documentos em que cada documento contém assuntos diversos e relativamente independentes entre si. Esse sistema deve identificar os assuntos de cada documento e disponibilizá-los de forma que o usuário consiga consultar a coleção de documentos e obter todo o histórico de ocorrências de um determinado tema de forma que possa identificar onde esse tema foi mencionado, bem como se houve uma decisão relacionada ao tema.
 
-A proposta original deste trabalho contempla funcionalidades de classificação para identificar automaticamente o tipo de ocorrência onde um assunto é mencionado, o qual pode ser classificado como uma decisão, informe ou menção. Contudo essas funcionalidades configuram trabalhos futuros para continuação do sistema como concebido inicialmente. Assim, esse trabalho de mestrado está focado na segmentação de atas de reunião, no agrupamento desses segmentos em tópicos e na recuperação de trechos de atas relacionados ao assunto da pesquisa.
+A proposta original deste trabalho contempla funcionalidades de classificação para identificar automaticamente o tipo de ocorrência onde um assunto é mencionado, o qual pode ser classificado como uma decisão, informe ou simplesmente uma menção ao assunto. Contudo essas funcionalidades configuram trabalhos futuros para continuação do sistema como concebido inicialmente. Assim, esse trabalho de mestrado está focado na segmentação de atas de reunião, no agrupamento desses segmentos em tópicos e na recuperação de trechos de atas relacionados ao assunto da pesquisa.
 
-Esse capítulo está organizado da seguinte forma: primeiramente, na Seção~\ref{sec:sistema-proposto} é apresentada uma visão geral do sistema proposto, seu funcionamento e como as técnicas de segmentação textual e extração de tópicos são empregadas para gerar uma base de dados que concentra as informações necessárias para identificar e agrupar os diversos assuntos distribuídos na coleção de documentos. Ainda nessa seção, são apresentadas as técnicas de recuperação de informação utilizadas para entregar os segmentos de acordo com a consulta do usuário bem como permitir a exploração de segmentos relacionados ao mesmo tema, os quais originalmente estão distribuídos na coleção de documentos.  
-Na Seção~\ref{sec:aplicacao-sistema} é apresentada a aplicação do sistema proposto ao contexto das atas de reunião, ou seja, utilizando como base de dados uma coleção de atas de reunião. Uma vez que as atas configuram um corpus com documentos multi-temáticos, conforme a proposta desse trabalho, essa aplicação visa a validação do sistema e a análise da eficiência das técnicas empregadas em um \textit{corpus} em conformidade com a proposta desse trabalho de mestrado. Será apresentada também a preparação das atas, a descrição dos algoritmos utilizados e suas configurações.
+Esse capítulo está organizado da seguinte forma: primeiramente, na Seção~\ref{sec:sistema-proposto} é apresentada uma visão geral do sistema proposto, seu funcionamento e como as técnicas de segmentação textual e extração de tópicos são empregadas para gerar uma base de dados que concentra as informações necessárias para identificar e agrupar os diversos assuntos distribuídos na coleção de documentos. Ainda nessa seção, é mostrada a utilização das técnicas de recuperação de informação empregadas para entregar os segmentos de acordo com a consulta do usuário bem como permitir a exploração de segmentos relacionados ao mesmo tema, os quais originalmente estão distribuídos na coleção de documentos.  
+Na Seção~\ref{sec:aplicacao-sistema} é apresentada a aplicação do sistema proposto utilizando como base de dados uma coleção de atas de reunião. Uma vez que as atas configuram um \textit{corpus} com documentos multi-temáticos, o sistema será executado e as técnicas empregadas serão analisadas. Será apresentada também a preparação das atas, a descrição dos algoritmos utilizados e suas configurações.
+
+
+
+
+
 
 \section{Sistema Proposto}
 \label{sec:sistema-proposto}
@@ -37,7 +42,7 @@ Na Figura \ref{fig:visao-geral} é mostrada a visão geral do sistema com suas p
 
 \subsection{Módulo de preparação e manutenção}\label{sec:modulo-preparacao}
 
-O módulo de preparação e manutenção tem como função principal manter uma base de dados necessária para os processos de recuperação de informação e aprendizado de máquina. Primeiramente, esse módulo deve receber um conjunto inicial de documentos e em seguida organizá-la por meio das técnicas de segmentação textual e extração de tópicos, de forma que o conjunto resultante formado por segmentos de documentos e os dados obtidos pelo extrator de tópicos constitua um novo corpos estruturado e mais adequado às técnicas de recuperação de informação e demais técnicas de aprendizado de máquina. Além disso, considera-se o crescimento da bases de documentos, assim, o sistema deve receber novos documentos a medida que são gerados. A seguir são apresentadas as etapas do Módulo de preparação e manutenção desde a preparação dos documento até a entrega da estrutura de dados interna ao módulo de consulta. 
+O módulo de preparação e manutenção tem como função principal manter uma base de dados necessária para os processos de recuperação de informação e aprendizado de máquina. Primeiramente, esse módulo deve receber um conjunto inicial de documentos e em seguida organizá-la por meio das técnicas de segmentação textual e extração de tópicos, de forma que o conjunto resultante formado por segmentos de documentos e os dados obtidos pelo extrator de tópicos constitua um novo corpos estruturado e mais adequado às técnicas de recuperação de informação e demais técnicas de aprendizado de máquina. Além disso, considera-se o crescimento da bases de documentos, assim, o sistema deve receber novos documentos a medida que são gerados. A seguir são detalhadas as etapas do Módulo de preparação e manutenção desde a preparação dos documento até a entrega da estrutura de dados interna ao módulo de consulta. 
 
 
 % melhorar ↓↓↓↓↓
@@ -69,7 +74,7 @@ Os documentos são normalmente armazenadas em arquivos binários do tipo \textit
 
 %  Cabeçalhos e rodapés
 % Remoção de cabeçalhos: 
-É frequente alguns documentos, como as atas de reunião, contenham trechos que podem ser considerados pouco informativos e descartados durante o pré-processamento, como cabeçalhos e rodapés que se misturam aos tópicos tratados na reunião, podendo ser inseridos no meio de um tópico prejudicando tanto os algoritmos de MT e RI, quanto a leitura do texto pelo usuário. Um cabeçalho é a porção de texto que inicia cada página do documento e, de forma semelhante, um rodapé e a porção que as encerra. Detecta-se os cabeçalhos e os rodapés sempre que há uma repetição das primeiras e últimas palavras do documento.
+É frequente que alguns documentos, como as atas de reunião, contenham trechos que podem ser considerados pouco informativos e descartados durante o pré-processamento, como cabeçalhos e rodapés que se misturam aos tópicos tratados na reunião, podendo ser inseridos no meio de um tópico prejudicando tanto os algoritmos de MT e RI, quanto a leitura do texto pelo usuário. Um cabeçalho é a porção de texto que inicia cada página do documento e, de forma semelhante, um rodapé e a porção que as encerra. Detecta-se os cabeçalhos e os rodapés sempre que há uma repetição das primeiras e últimas palavras do documento.
 
 
 %  Identificação de sentenças
@@ -87,9 +92,8 @@ Nesse trabalho considera-se as sentenças as menores unidades de informação a 
 \subsubsection{Pré-Processamento dos Documentos}
 
 
-Na etapa de pré-processamento, os documentos são pré-processados individualmente conforme são recebidos pelos algoritmos de segmentação extração de tópicos. Inicialmente, cada texto passou por um processo de transformação em que as letras foram convertidas em caixa baixa e eliminou-se sinais de pontuação, numerais e termos menores que três caracteres. Em seguida removeu-se os termos que não contribuem para a etapa de segmentação, as quais são chamadas de \textit{stop words}, para identificá-las usou-se uma lista de 438 palavras. Em seguida, extraiu-se o radical de cada palavra por meio da técnica \textit{stemming}. 
 
-Na etapa de pré-processamento, os documentos são pré-processados individualmente conforme são recebidos pelos algoritmos de segmentação extração de tópicos. Inicialmente, cada texto passou por um processo de transformação em que as letras foram convertidas em caixa baixa e eliminou-se sinais de pontuação, numerais e termos menores que três caracteres. Em seguida removeu-se os termos que não contribuem para a etapa de segmentação, as quais são chamadas de \textit{stop words}, para identificá-las usou-se uma lista de 438 palavras conhecidas do idioma português, como preposições, artigos e verbos de estado e adicionalmente uma lista contendo palavras muito frequentes e pouco significantes desse domínio com como \textit{``universidade''}, \textit{``computação''} e nomes de pessoas as quais formam listadas manualmente. Em seguida, extraiu-se o radical de cada palavra por meio da técnica \textit{stemming}. A etapa de pré-processamento cria uma estrutura de dados intermediária utilizada para representar os textos, contudo, a estrutura de dados interna preserva os elementos removidos para apresentação ao usuário.
+Na etapa de pré-processamento, os documentos são pré-processados individualmente conforme são recebidos pelos algoritmos de segmentação e extração de tópicos. Inicialmente, cada texto passou por um processo de transformação em que as letras foram convertidas em caixa baixa e eliminou-se sinais de pontuação, numerais e termos menores que três caracteres. Em seguida removeu-se os termos que não contribuem para a etapa de segmentação, as quais são chamadas de \textit{stop words}. Para identificá-las usou-se uma lista de 438 palavras conhecidas do idioma português, como preposições, artigos e verbos de estado e adicionalmente uma lista contendo palavras muito frequentes e pouco significantes desse domínio com como \textit{``universidade''}, \textit{``computação''} e nomes de pessoas as quais formam listadas manualmente. Em seguida, extraiu-se o radical de cada palavra por meio da técnica \textit{stemming}. A etapa de pré-processamento cria uma estrutura de dados intermediária utilizada para representar os textos, contudo, a estrutura de dados interna preserva os elementos removidos para apresentação ao usuário.
 
 % Nesse trabalho, todos os termos restantes após a remoção de \textit{stop words} e \textit{stemming} foram mantidas independentemente de valores de   \textit{Document Frequency} devido a característica das atas de possuir múltiplos assuntos em um documento. Cada segmento pode ser considerado como um sub-documento quem contém um assunto relativamente independente. 
 
@@ -148,7 +152,8 @@ A estrutura de dados interna é o resultado dos processos de segmentação e ext
 (1) documentos originais para referência, 
 (2) segmentos de texto contendo um assunto relativamente independente,
 (3) matrizes documento-tópico e termo-tópico.
-Na Figura~\ref{fig:estrutura-dados-interna} é apresentado a visão geral da estrutura de dados interna. 
+Na Figura~\ref{fig:estrutura-dados-interna} é apresentado a visão geral da estrutura de dados interna onde ilustra-se os arquivos da coleção de documentos ($D$) que contêm assuntos diversos (representados pelos círculos, quadrados e triângulos) ficando disponíveis para visualização e fonte original das informações. 
+% Os arquivos originais são mantidos para referência aos textos integrais ficando disponíveis para visualização e fonte original das informações. 
 
 
 % deve ser atualizada a cada novo documento inserido no sistema.
@@ -166,11 +171,10 @@ Na Figura~\ref{fig:estrutura-dados-interna} é apresentado a visão geral da est
 
 
 
-Na Figura~\ref{fig:estrutura-dados-interna} ilustra-se os arquivos da coleção de documentos ($D$) que contêm assuntos diversos (representados pelos círculos, quadrados e triângulos) fincando disponíveis para visualização e fonte original das informações. Os arquivos originais são mantidos para referência aos textos integrais fincando disponíveis para visualização e fonte original das informações. 
 
-A partir do texto extraído dos documentos originais é gerado o conjunto de segmentos de texto ($S$) armazenadas em arquivos de texto plano que contém os textos em formato legível a serem exibidos ao usuário pelo módulo de consulta. Para se conheça o arquivo que deu origem a cada segmento, o sistema gera metadados que mantém a ligação entre os documentos e seus segmentos. 
+A partir do texto extraído dos documentos originais é gerado o conjunto de segmentos de texto ($S$), armazenados em arquivos de texto plano que contém os textos em formato legível a serem exibidos ao usuário pelo módulo de consulta. Para que se conheça o arquivo que deu origem a cada segmento, o sistema gera metadados que mantém a ligação entre os documentos e seus segmentos. 
 
-Os segmentos são então tratados como sub-documentos pelo sistema em que a partir deles o extrator de tópicos irá construir as matrizes documento-tópico e termo-tópico. Uma vez construídas, essas matrizes são armazenadas em arquivos e usadas para agrupar os segmentos com o mesmo tópico bem como encontrar os melhores termos da coleção para descrever cada tópico.
+Os segmentos são então tratados como sub-documentos pelo sistema em que a partir deles o extrator de tópicos irá construir as matrizes documento-tópico ($W$) e termo-tópico ($Z$). Uma vez construídas, essas matrizes são armazenadas em arquivos e usadas para agrupar os segmentos com o mesmo tópico bem como encontrar os melhores termos da coleção para descrever cada tópico.
 
 Deve-se ressaltar que o sistema recebe um conjunto inicial de documentos a partir do qual a estrutura de dados interna é gerada. A medida que novos documentos são gerados e adicionados ao sistema, serão processados pelo módulo de preparação e manutenção e incorporados a estrutura de dados interna bem como as matrizes documento-tópico e termo-tópicos serão atualizadas pelo extrator de tópicos.
 
@@ -186,7 +190,7 @@ Uma vez que a estrutura de dados interna contém os assuntos abordados na coleç
 
 \subsubsection{Ranqueamento}
 
-Os dados contidos na estrutura de dados interna devem ser acessados por meio de consultados do usuário. Deseja-se que somente os segmentos relevantes sejam exibidos e ordenados por sua similaridade com a consulta. 
+Os dados contidos na estrutura de dados interna devem ser acessados por meio de consultas do usuário. Deseja-se que somente os segmentos relevantes sejam exibidos e ordenados por sua similaridade com a consulta. 
 Nesse trabalho, o ranqueamento dos segmentos é feio por meio buscas em um espaço vetorial (já apresentado na seção~\ref{subsec:modeloespacovetorial}) onde cada segmento é representado pelos descritores obtidos no processo de extração de tópicos. Essa técnica permite utilizar as variáveis latentes identificadas no processo de extração de tópicos, e fazer com que termos diferentes mas com mesmo significado (polissemia) sejam relacionados e considerados no processo de busca.
 Inicialmente, cria-se um \textit{ranking} dos grupos considerando a similaridade entre seus descritores e a consulta. Em seguida, seleciona-se os grupos cujos descritores possuem maior relevância com a consulta do usuário e exibe-se os segmentos atribuídos ao primeiro grupo do \textit{ranking}, ficando os demais grupos disponíveis para exploração pelo usuário. 
 Os segmentos de cada grupo são ordenados de acordo com o peso atribuído à relação entre o segmento e tópico.  Como resultado, tem-se grupos de segmentos (tópicos) ordenados pela similaridade com a consulta, pelos quais se exibe os segmentos ordenados por sua relevância ao tópico. 
@@ -200,7 +204,7 @@ Os segmentos de cada grupo são ordenados de acordo com o peso atribuído à rel
 
 O sistema deve dar acesso ao usuário para que consulte e explore os dados concentrados na estrutura de dados interna, permitindo encontrar resultados relevantes à consulta bem como explorar a base de dados utilizando a organização dos resultados em grupos de segmentos com tópicos relacionados. Deve permitir ao usuário identificar resultados relativante suficientes para compreensão do conteúdo, evitando a leitura de documentos inteiros. Ou seja, os textos apresentados devem ser suficientes para compreensão do assunto mencionado, sem necessidade de visualizar o documento original.
 
-A interface entregue nesse trabalho, foi construída com a finalidade de analisar os resultados de diferentes técnicas de segmentação textual e extração de tópicos. Melhorias na interface e usabilidade para usuários finais constituem trabalhos futuros relacionados a área de experiência de usuário.
+A interface desenvolvida para este trabalho, foi construída com a finalidade de analisar os resultados de diferentes técnicas de segmentação textual e extração de tópicos. Melhorias de funcionalidade e usabilidade da interface finais constituem trabalhos futuros relacionados a área de experiência de usuário.
 
 A visualização é divida em 3 painéis principais: (1) campo de busca, onde se insere palavras chave para consulta para um assunto. (2) Tópicos encontrados na base de dados. (3) segmentos atribuídos ao tópico selecionado. Na Figura~\ref{fig:tela-principal} é apresenta a tela principal do sistema onde observa-se a esquerda os segmentos agrupados por tópicos, os quais são representados por um componente para visualização em árvore onde as pastas, identificadas pelos descritores, representam um tópico. Uma pasta quando expandida revela os segmentos agrupados no tópico que representa. À direita, como resultado da consulta, são apresentados os segmentos selecionados pela relevância com a \textit{string} de busca do usuário. 
 
@@ -216,7 +220,7 @@ A visualização é divida em 3 painéis principais: (1) campo de busca, onde se
 
 O usuário pode reconhecer um tópico por meio dos descritores que ajudam a identificar o assunto pelo qual os segmentos estão relacionados. A qualidade dos descritores e dos grupos extraídos está relacionada ás técnicas de segmentação textual e extração de tópicos empregadas. Nesse sistema, como forma de análise é possível obter resultados de três modelos de extração de tópicos, \textit{K-Means}, \textit{LDA} e \textit{PLSA}, bem como configurá-los manualmente. 
 % Na Figura~\ref{fig:configuracaoextratores} é apresentada a interface para configuração do modelo de extração de tópicos. 
-Após selecionado um tópico, o sistema apresenta o texto contido em cada segmento a ele atribuído e um \textit{link} para visualizar o arquivo original, como referência. Além disso, ao selecionar um segmento, o sistema destaca outros tópicos aos quais um segmento selecionado está atribuído, permitindo um forma de exploração à base dados que aproveita o agrupamento de segmentos por assunto.
+Após selecionado um tópico, o sistema apresenta o texto contido em cada segmento a ele atribuído e um \textit{link} para visualizar o arquivo original, como referência. Além disso, ao selecionar um segmento, o sistema destaca outros tópicos aos quais um segmento selecionado está atribuído, permitindo uma forma de exploração à base dados que aproveita o agrupamento de segmentos por assunto.
 
 
 Como parte da proposta, o sistema oferece como opção a ordenação cronológica dos resultados a fim de apresentar cada resultado dentro de um histórico de menções. Dessa forma o usuário tem acesso uma interface que lhe fornece uma visão temporal das menções ao tema pesquisado.
@@ -228,20 +232,24 @@ Outras funcionalidades podem ser desejáveis para um sistema voltado a usuários
 
 % Como parte da proposta, o sistema apresenta cada resultado dentro de um histórico de menções. Para isso, abaixo do texto é exibida uma linha com links para os resultados que compartilham o mesmo tópico ordenados por data. Um link, ao ser acionado, direciona para o resultado que aponta, além disso, quando o cursor do mouse está sobre o link, é apresentado um pre-visualização do texto. Dessa forma o usuário tem acesso uma interface que lhe fornece uma visão temporal das menções.
 
-
 % Uma vez que um item faz menção a um tópico específico, 
 % o sistema traz vários resultados para uma consulta, alguns mais relevantes que outros. Para cada resultado (que podem tratar de coisas diferentes) o sistema apresenta um histórico de menções para aquele assunto;
 
 
+
+
 % \section{Estudo de caso}
-
-
-
 % \section{Aplicação em um copus de atas de reunião}	
-\section{Validação em um \textit{corpus} de atas de reunião}	
+% \section{Validação em um \textit{corpus} de atas de reunião}	
+\section{Análise de um \textit{corpus} de atas de reunião utilizando ferramentas do sistema}	
 \label{sec:aplicacao-sistema}
 
 O foco principal deste trabalho de mestrado é a exploração e recuperação de informação em atas de reunião. A escolha foi feita baseada nas características desses documentos como textos relativamente curtos, em comparação com outros documentos como notícias, artigos, sites da \textit{web}; o estilo de escrita formal em que o redator evita repetições de temos e conceitos em benefício da estética do texto; Multiplicidade de assuntos contidos em uma mesma ata, a qual é difícil determinar um assunto central, mas diversos assuntos independentes que foram tratados durante a reunião.
+
+
+A seguir, será descrito o conjunto de atas de reunião utilizado como base de dados e os resultados obtidos pela aplicação das técnicas são observados para compreensão e análise do corpus estudado.
+
+
 
 
 \subsection{Composição do \textit{corpus} }
@@ -261,22 +269,29 @@ As atas de reunião diferem dos textos comumente estudados em outros trabalhos e
 
 
 
-\subsection{Visualização}
-
-
-
-A interface oferece ao usuário uma visualização da coleção de documentos após ser trabalhada pelos processos anteriores, permitindo consultas por palavras-chave e navegação pelos grupos conforme o assunto de cada um e o interesse do usuário. Como retorno, diferentes modelos de extração de tópicos apresentam resultados distintos em relação aos descritores e segmentos atribuídos a cada tópico. Na Tabela~\ref{tab:resumodescritoreseqtdsegmetnos} é apresentado um resumo dos tópicos extraídos do \textit{corpus} por cada modelo. Os dados foram gerados configurando cada modelo para extrair um total de 70 tópicos da base da coleção, onde se observa 3 descritores extraídos para cada tópico. Os tópicos estão ordenados pela quantidade de segmentos atribuídos dos quais são exibidos os 45 primeiros tópicos. Os resultados completos dessa tabela, com 70 tópicos e 5 descritores podem ser vistos no Apêndice~\ref{apendice3}.
 
 
 
 
+\subsection{Exploração e observação do \textit{corpus}}
 
-\begin{table}[!h]
-\center
-	\includegraphics[page=1,width=1\textwidth]{anexos/tabelas/distribuicao-topicos/distribuicao-topicos-resumo.pdf}
- \caption{Descritores e número de segmentos no tópico selecionado pelos Algoritmos}
- \label{tab:resumodescritoreseqtdsegmetnos}
-\end{table} 
+Como retorno, diferentes modelos de extração de tópicos apresentam resultados distintos em relação aos descritores e segmentos atribuídos a cada tópico. Na Tabela~\ref{tab:resumodescritoreseqtdsegmetnos} é apresentado um resumo dos tópicos extraídos do \textit{corpus} por cada modelo. Os dados foram gerados configurando cada modelo para extrair um total de 70 tópicos da base da coleção, onde se observa 3 descritores extraídos para cada tópico. Os tópicos estão ordenados pela quantidade de segmentos atribuídos dos quais são exibidos os 45 primeiros tópicos. Os resultados completos dessa tabela, com 70 tópicos e 5 descritores podem ser vistos no Apêndice~\ref{apendice3}.
+
+
+
+% \begin{table}[!h]
+% \center
+	% \includegraphics[page=1,width=1\textwidth]{anexos/tabelas/distribuicao-topicos/distribuicao-topicos-resumo.pdf}
+ % \caption{Descritores e número de segmentos no tópico selecionado pelos Algoritmos}
+ % \label{tab:resumodescritoreseqtdsegmetnos}
+% \end{table} 
+
+\begin{landscape}% Landscape page
+% \tiny
+\input{anexos/tabelas/distribuicao-topicos/tab-distribuicao-topicos-resumo.tex}
+\end{landscape}
+
+
 
 
 De maneira geral, os retornos do sistema apresentados na Tabela~\ref{tab:resumodescritoreseqtdsegmetnos} oferecem uma perspectiva, segundo os modelos utilizados, dos principais assuntos abordados no \textit{corpus}. Por exemplo, o termo \textit{``aprovado''} e \textit{``aprovação''} aparecem como descritores de vários dos tópicos mais numerosos, o que sugere que grande parte dos segmentos, abordam assuntos relacionados a aprovações dos membros da reunião. De forma semelhante, a frequência de termos como \textit{``compra''} e \textit{``verba''}, podem mostrar a importância desses termos para o ambiente onde se deram as reuniões.
@@ -285,11 +300,11 @@ De maneira geral, os retornos do sistema apresentados na Tabela~\ref{tab:resumod
 Observou-se também que alguns tópicos concentram segmentos considerados pouco relevantes em termos de conteúdo, como a primeira parte introdutória da ata, onde se registrar informações como data, local, membros e departamento. Esses segmentos são identificados com os termos 
 \textit{``dia; realizada; chamada;''} pelo K-Means com 116 segmentos; 
 \textit{``seguintes; chamada; conselho;''} pelo LDA com 67 segmentos e 
-\textit{``dia''; realizada; gestão;} e \textit{``dia; seguintes; presidente;''} pelo PLSA com 28 e 27 segmentos. Vale salientar que os segmentos não possuem texto similar, porém não idêntico e que os cabeçalhos e rodapés não estão presentes uma vez que foram removidos na etapa de preparação dos documentos. Como parte da proposta desse trabalho, esse agrupamento ajuda identificar textos com pouca relevância em termos de assuntos abordados na reunião.
+\textit{``dia; realizada; gestão;''} e \textit{``dia; seguintes; presidente;''} pelo PLSA com 28 e 27 segmentos. Vale salientar que os segmentos não possuem texto similar, porém não idêntico e que os cabeçalhos e rodapés não estão presentes uma vez que foram removidos na etapa de preparação dos documentos. Como parte da proposta desse trabalho, esse agrupamento ajuda identificar textos com pouca relevância em termos de assuntos abordados na reunião.
 Os resultados dos sistema são melhores analisados no capítulos~\ref{cap-segmentadores}~e~\ref{cap-extratores} onde as técnicas de segmentação textual e extração de tópicos são avaliadas no contexto das atas de reunião.
 
 
-O sistema permite analisar um corpus pela distribuição dos tópicos ao longo dos da coleção de documentos identificando os assuntos em cada segmento de ata individualmente, gerando assim um visão ampla do corpus. Além disso, os dados obtidos por essa metodologia podem dar uma visão da distribuição dos tópicos em cada um dos documentos. Na Figura~\ref{fig:distribuicao-ata} é exibido graficamente a distribuição de 6 tópicos extraídos de uma ata da coleção. 
+Os dados obtidos pela aplicação das técnicas permitem analisar o \textit{corpus} pela distribuição dos tópicos ao longo da coleção de documentos identificando os assuntos em cada segmento de ata individualmente, gerando assim uma perspectiva ampla dos assuntos contidos na coleção de documentos. Além disso, essa metodologia pode dar uma visão da distribuição dos tópicos em cada um dos documentos. Na Figura~\ref{fig:distribuicao-ata} é exibido graficamente a distribuição de 6 tópicos extraídos de uma ata da coleção. 
 
 
   \begin{center}
@@ -303,7 +318,7 @@ O sistema permite analisar um corpus pela distribuição dos tópicos ao longo d
 \end{center}
 
 
-A ata exibida, foi segmentada utilizando algoritmo \textit{BayesSeg} e os tópicos da coleção foram extraídos com o \textit{K-Means.} Como já mencionado, as primeiras sentenças referem-se a introdução e apresentação da própria reunião e seus membros, as quais o extrator atribuiu a um grupo com 116 segmentos com os descritores \textit{``dia; realizada; chamada; estado; conselho;''}. De forma semelhante, a região da ata reservada à assinatura dos membros foi atribuída a um grupo com 55 segmentos identificados pelos termos \textit{``representante; discente; presidente; secretária; turma;''}. 
+A ata exibida, foi segmentada utilizando algoritmo \textit{BayesSeg} e os tópicos da coleção foram extraídos com o \textit{K-Means}. Como já mencionado, as primeiras sentenças referem-se a introdução e apresentação da própria reunião e seus membros, as quais o extrator atribuiu a um grupo com 116 segmentos com os descritores \textit{``dia; realizada; chamada; estado; conselho;''}. De forma semelhante, a região da ata reservada à assinatura dos membros foi atribuída a um grupo com 55 segmentos identificados pelos termos \textit{``representante; discente; presidente; secretária; turma;''}. 
 
 
 \section{Considerações finais}
@@ -312,8 +327,7 @@ Nessa seção o sistema proposto foi apresentado desde sua proposta original e a
 
 O sistema mostrou-se capaz de criar e manter uma base de dados estruturada a partir de documentos textuais não estruturados e utilizar a estrutura criada para incorporar e  recuperar informações úteis. Usando técnicas de recuperação de informação foi possível localizar grupos e segmentos relevantes às consultas bem como estabelecer rankings com resultados mais pertinentes.
 
-Os agrupamentos e descritores a eles atribuídos permitem ao usuário visualizar os principais assuntos contidos na coleção de documentos bem como perceber relações latentes entre esses assuntos. As estrutura criada fornece uma representação que pode descrever o conteúdo dos segmentos das atas para exploração do usuário bem como para técnicas de recuperação de informação. Mais análises voltadas aos resultados do sistema são discutidas no Capítulo~\ref{cap-segmentadores} e no Capítulo~\ref{cap-extratores}. Trabalhos futuros relacionados ao sistema de metodologia empregada são abordados no Capítulo~\ref{cap-conclusao}.
-
+Os agrupamentos e descritores a eles atribuídos permitem ao usuário visualizar os principais assuntos contidos na coleção de documentos bem como perceber relações latentes entre esses assuntos. As estrutura criada fornece uma representação que pode descrever o conteúdo dos segmentos das atas para exploração do usuário bem como para técnicas de recuperação de informação. Mais análises voltadas aos resultados do sistema são discutidas no Capítulo~\ref{cap-segmentadores} e no Capítulo~\ref{cap-extratores}. Trabalhos futuros relacionados ao sistema de metodologia empregada são abordados no Capítulo~\ref{cap:conclusao}.
 
 % -- qual o ganho em relação a um sitema de busca por palavras-chave? 
 

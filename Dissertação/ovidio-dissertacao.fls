@@ -191,6 +191,8 @@ INPUT conteudo/capitulos/cap-avaliacao-segmentadores.aux
 INPUT conteudo/capitulos/cap-avaliacao-segmentadores.aux
 INPUT conteudo/capitulos/cap-avaliacao-extratores.aux
 INPUT conteudo/capitulos/cap-avaliacao-extratores.aux
+INPUT conteudo/capitulos/5-conclusao.aux
+INPUT conteudo/capitulos/5-conclusao.aux
 INPUT conteudo/capitulos/6-apendice1.aux
 INPUT conteudo/capitulos/6-apendice1.aux
 INPUT conteudo/capitulos/6-apendice2.aux
@@ -327,9 +329,8 @@ INPUT conteudo/capitulos/figs/tela-principal-2-1.png
 INPUT ./conteudo/capitulos/figs/tela-principal-2-1.png
 INPUT ./conteudo/capitulos/figs/tela-principal-2-1.png
 INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmsso17.tfm
-INPUT anexos/tabelas/distribuicao-topicos/distribuicao-topicos-resumo.pdf
-INPUT ./anexos/tabelas/distribuicao-topicos/distribuicao-topicos-resumo.pdf
-INPUT ./anexos/tabelas/distribuicao-topicos/distribuicao-topicos-resumo.pdf
+INPUT anexos/tabelas/distribuicao-topicos/tab-distribuicao-topicos-resumo.tex
+INPUT anexos/tabelas/distribuicao-topicos/tab-distribuicao-topicos-resumo.tex
 INPUT conteudo/capitulos/figs/doc-em-png/distribuicao.pdf
 INPUT ./conteudo/capitulos/figs/doc-em-png/distribuicao.pdf
 INPUT ./conteudo/capitulos/figs/doc-em-png/distribuicao.pdf
@@ -457,6 +458,9 @@ INPUT ./conteudo/capitulos/figs/figuras-experimento/t2q4.png
 INPUT conteudo/capitulos/figs/figuras-experimento/t3q4.png
 INPUT ./conteudo/capitulos/figs/figuras-experimento/t3q4.png
 INPUT ./conteudo/capitulos/figs/figuras-experimento/t3q4.png
+OUTPUT conteudo/capitulos/5-conclusao.aux
+INPUT conteudo/capitulos/5-conclusao.tex
+INPUT conteudo/capitulos/5-conclusao.tex
 INPUT ovidio-dissertacao.bbl
 INPUT ovidio-dissertacao.bbl
 INPUT ovidio-dissertacao.brf
@@ -533,6 +537,8 @@ INPUT conteudo/capitulos/cap-avaliacao-segmentadores.aux
 INPUT conteudo/capitulos/cap-avaliacao-segmentadores.aux
 INPUT conteudo/capitulos/cap-avaliacao-extratores.aux
 INPUT conteudo/capitulos/cap-avaliacao-extratores.aux
+INPUT conteudo/capitulos/5-conclusao.aux
+INPUT conteudo/capitulos/5-conclusao.aux
 INPUT conteudo/capitulos/6-apendice1.aux
 INPUT conteudo/capitulos/6-apendice1.aux
 INPUT conteudo/capitulos/6-apendice2.aux

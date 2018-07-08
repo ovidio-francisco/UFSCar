@@ -1,4 +1,80 @@
 
+
+
+
+visão ampla do \textit{corpus}. 
+
+
+
+
+
+
+
+
+
+
+
+os resultados obtidos pela aplicação das técnicas
+da aplicação das técnicas são 
+As técnicas de segmentação textual e extração de tópicos são 
+
+
+
+
+
+
+Os dados obtidos pela aplicação das técnicas permitem analisar o \textit{corpus} pela distribuição dos tópicos ao longo da coleção de documentos identificando os assuntos em cada segmento de ata individualmente, gerando assim um visão ampla do \textit{corpus}. Além disso, os dados obtidos por essa metodologia podem dar uma visão da distribuição dos tópicos em cada um dos documentos. Na Figura~\ref{fig:distribuicao-ata} é exibido graficamente a distribuição de 6 tópicos extraídos de uma ata da coleção. 
+
+
+
+
+
+
+
+
+
+
+
+executar
+atuar
+observado
+
+constatar
+verificar
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   dia; realizada; chamada; estado; conselho;  - 116 17ª Reunião extraordinária CoC-CCS 25-08-10.doc.txt_seg-001.txt 
   piccoli; ausência; justificativa; cancelamento; governo;  - 4 17ª Reunião extraordinária CoC-CCS 25-08-10.doc.txt_seg-002.txt 
   cursadas; conselho; coordenação; computação; presidente;  - 45 17ª Reunião extraordinária CoC-CCS 25-08-10.doc.txt_seg-003.txt 
@@ -1131,3 +1207,21 @@ Ao final do processo de segmentação, são produzidos fragmentos de documentos,
 
 
 % O módulo de preparação e manutenção tem como função principal manter uma base de dados necessária para os processos de recuperação de informação. Primeiramente, esse módulo deve receber um conjunto inicial de documentos os quais devem ser divididos em segmentos de texto que contêm um assunto predominante, e agrupá-los em categorias por meio de técnicas de extração de tópicos. Além disso, considera-se o crescimento da bases de documentos, assim, o sistema deve receber novos documentos a medida que são gerados. 
+
+
+
+
+% Esse capítulo está organizado da seguinte forma: primeiramente, na Seção~\ref{sec:sistema-proposto} é apresentada uma visão geral do sistema proposto, seu funcionamento e como as técnicas de segmentação textual e extração de tópicos são empregadas para gerar uma base de dados que concentra as informações necessárias para identificar e agrupar os diversos assuntos distribuídos na coleção de documentos. Ainda nessa seção, são apresentadas as técnicas de recuperação de informação utilizadas para entregar os segmentos de acordo com a consulta do usuário bem como permitir a exploração de segmentos relacionados ao mesmo tema, os quais originalmente estão distribuídos na coleção de documentos.  
+
+
+
+% Na Seção~\ref{sec:aplicacao-sistema} é apresentada a aplicação do sistema proposto ao contexto das atas de reunião, ou seja, utilizando como base de dados uma coleção de atas de reunião. Uma vez que as atas configuram um corpus com documentos multi-temáticos, conforme a proposta desse trabalho, essa aplicação visa a validação do sistema e a análise da eficiência das técnicas empregadas em um \textit{corpus} em conformidade com a proposta desse trabalho de mestrado. Será apresentada também a preparação das atas, a descrição dos algoritmos utilizados e suas configurações.
+
+
+
+% Na etapa de pré-processamento, os documentos são pré-processados individualmente conforme são recebidos pelos algoritmos de segmentação extração de tópicos. Inicialmente, cada texto passou por um processo de transformação em que as letras foram convertidas em caixa baixa e eliminou-se sinais de pontuação, numerais e termos menores que três caracteres. Em seguida removeu-se os termos que não contribuem para a etapa de segmentação, as quais são chamadas de \textit{stop words}, para identificá-las usou-se uma lista de 438 palavras. Em seguida, extraiu-se o radical de cada palavra por meio da técnica \textit{stemming}. 
+
+
+
+
+% Na Figura~\ref{fig:estrutura-dados-interna} é apresentado a visão geral da estrutura de dados interna.  Na Figura~\ref{fig:estrutura-dados-interna} ilustra-se os arquivos da coleção de documentos ($D$) que contêm assuntos diversos (representados pelos círculos, quadrados e triângulos) ficando disponíveis para visualização e fonte original das informações. Os arquivos originais são mantidos para referência aos textos integrais fincando disponíveis para visualização e fonte original das informações. 

@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1529776562 "tabelas-segmentacao.tex" "tabelas-segmentacao.pdf" "tabelas-segmentacao" 1529776563
+["pdflatex"] 1529776562 "tabelas-segmentacao.tex" "tabelas-segmentacao.pdf" "tabelas-segmentacao" 1530990106
   "/etc/texmf/web2c/texmf.cnf" 1489454511 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1272929888 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm" 1136768653 1328 c834bbb027764024c09d3d2bf908b5f0 ""
@@ -45,8 +45,8 @@
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1490820527 127853 b41f58aff49fe1af38af8d065f49d51c ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1503409725 860044 6c84ff998dc0d18c5f50acfd95f92a4b ""
   "tabelas-segmentacao.aux" 1529776563 717 cf9f2e46efc3df4e765ad56e005b5db1 ""
-  "tabelas-segmentacao.tex" 1529776561 13801 c2c6e2983381236cec8662846a8fde41 ""
+  "tabelas-segmentacao.tex" 1529776820 13801 c2c6e2983381236cec8662846a8fde41 ""
   (generated)
+  "tabelas-segmentacao.aux"
   "tabelas-segmentacao.log"
   "tabelas-segmentacao.pdf"
-  "tabelas-segmentacao.aux"
