@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.8.22)  7 JUL 2018 21:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.8.22)  9 JUL 2018 14:18
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1419,8 +1419,13 @@ LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <12> not available
 LaTeX Font Info:    Font shape `T1/lmss/bx/it' in size <12> not available
 (Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 46.
 
+Overfull \hbox (1.5877pt too wide) detected at line 77
+ \T1/lmss/bx/n/12 101
+ []
+
+
 Overfull \hbox (1.5877pt too wide) detected at line 81
- \T1/lmss/bx/n/12 115
+ \T1/lmss/bx/n/12 117
  []
 
 ) [3]
@@ -1989,60 +1994,69 @@ Package pdftex.def Info: conteudo/capitulos/figs/figuras-experimento/t3q4.png us
 
 
 
-]) [71] (./ovidio-dissertacao.bbl (./ovidio-dissertacao.brf)
+]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [71]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [72]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [73]) [74] (./ovidio-dissertacao.bbl (./ovidio-dissertacao.brf)
 \tf@brf=\write6
 \openout6 = `ovidio-dissertacao.brf'.
 
- [72
 
-
-]
 bibitemlist
-[73] [74] [75] [76] [77] [78]) [79]
+[75
+
+
+] [76] [77] [78] [79] [80]) [81]
 \openout2 = `conteudo/capitulos/6-apendice1.aux'.
 
- (./conteudo/capitulos/6-apendice1.tex [80
+ (./conteudo/capitulos/6-apendice1.tex [82
 
 
-] [81] (./anexos/tabelas/seg-big-tables/com-pp.tex
+] [83] (./anexos/tabelas/seg-big-tables/com-pp.tex
 Underfull \vbox (badness 10000) detected at line 25
  []
 
-[82
+[84
 
 ]
 Underfull \vbox (badness 10000) detected at line 64
  []
 
-[83] [84]
+[85] [86]
 Underfull \vbox (badness 10000) detected at line 110
  []
 
-[85] [86]
+[87] [88]
 Underfull \vbox (badness 10000) detected at line 156
  []
 
-[87] [88]
+[89] [90]
 Underfull \vbox (badness 10000) detected at line 223
  []
 
-) [89] (./anexos/tabelas/seg-big-tables/sem-pp.tex
+) [91] (./anexos/tabelas/seg-big-tables/sem-pp.tex
 Underfull \vbox (badness 10000) detected at line 24
  []
 
-[90]
+[92]
 Underfull \vbox (badness 10000) detected at line 63
  []
 
-[91] [92]
+[93] [94]
 Underfull \vbox (badness 10000) detected at line 107
  []
 
-[93] [94]
+[95] [96]
 Underfull \vbox (badness 10000) detected at line 152
  []
 
-[95] [96]
+[97] [98]
 Underfull \vbox (badness 10000) detected at line 218
  []
 
@@ -2050,15 +2064,15 @@ Underfull \vbox (badness 10000) detected at line 218
 Underfull \vbox (badness 10000) detected at line 227
  []
 
-) [97])
+) [99])
 \openout2 = `conteudo/capitulos/6-apendice2.aux'.
 
- (./conteudo/capitulos/6-apendice2.tex [98
+ (./conteudo/capitulos/6-apendice2.tex [100
 
 
 
 
-] <anexos/avaliacao-sistema/avaliacao-sistema.pdf, id=2256, page=1, 597.50829pt x 845.0471pt>
+] <anexos/avaliacao-sistema/avaliacao-sistema.pdf, id=2269, page=1, 597.50829pt x 845.0471pt>
 File: anexos/avaliacao-sistema/avaliacao-sistema.pdf Graphic file (type pdf)
  <use anexos/avaliacao-sistema/avaliacao-sistema.pdf, page 1>
 Package pdftex.def Info: anexos/avaliacao-sistema/avaliacao-sistema.pdf, page1 used on input line 16.
@@ -2071,7 +2085,7 @@ Overfull \hbox (45.50278pt too wide) in paragraph at lines 16--17
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<anexos/avaliacao-sistema/avaliacao-sistema.pdf, id=2257, page=2, 597.50829pt x 845.0471pt>
+<anexos/avaliacao-sistema/avaliacao-sistema.pdf, id=2270, page=2, 597.50829pt x 845.0471pt>
 File: anexos/avaliacao-sistema/avaliacao-sistema.pdf Graphic file (type pdf)
  <use anexos/avaliacao-sistema/avaliacao-sistema.pdf, page 2>
 Package pdftex.def Info: anexos/avaliacao-sistema/avaliacao-sistema.pdf, page2 used on input line 22.
@@ -2087,7 +2101,7 @@ LaTeX Warning: Float too large for page by 51.8591pt on input line 23.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<anexos/avaliacao-sistema/avaliacao-sistema.pdf, id=2258, page=3, 597.50829pt x 845.0471pt>
+<anexos/avaliacao-sistema/avaliacao-sistema.pdf, id=2271, page=3, 597.50829pt x 845.0471pt>
 File: anexos/avaliacao-sistema/avaliacao-sistema.pdf Graphic file (type pdf)
  <use anexos/avaliacao-sistema/avaliacao-sistema.pdf, page 3>
 Package pdftex.def Info: anexos/avaliacao-sistema/avaliacao-sistema.pdf, page3 used on input line 29.
@@ -2103,7 +2117,7 @@ LaTeX Warning: Float too large for page by 51.8591pt on input line 30.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<anexos/avaliacao-sistema/avaliacao-sistema.pdf, id=2259, page=4, 597.50829pt x 845.0471pt>
+<anexos/avaliacao-sistema/avaliacao-sistema.pdf, id=2272, page=4, 597.50829pt x 845.0471pt>
 File: anexos/avaliacao-sistema/avaliacao-sistema.pdf Graphic file (type pdf)
  <use anexos/avaliacao-sistema/avaliacao-sistema.pdf, page 4>
 Package pdftex.def Info: anexos/avaliacao-sistema/avaliacao-sistema.pdf, page4 used on input line 34.
@@ -2119,7 +2133,7 @@ LaTeX Warning: Float too large for page by 51.8591pt on input line 35.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<anexos/avaliacao-sistema/avaliacao-sistema.pdf, id=2260, page=5, 597.50829pt x 845.0471pt>
+<anexos/avaliacao-sistema/avaliacao-sistema.pdf, id=2273, page=5, 597.50829pt x 845.0471pt>
 File: anexos/avaliacao-sistema/avaliacao-sistema.pdf Graphic file (type pdf)
  <use anexos/avaliacao-sistema/avaliacao-sistema.pdf, page 5>
 Package pdftex.def Info: anexos/avaliacao-sistema/avaliacao-sistema.pdf, page5 used on input line 39.
@@ -2135,7 +2149,7 @@ LaTeX Warning: Float too large for page by 51.8591pt on input line 40.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<anexos/avaliacao-sistema/avaliacao-sistema.pdf, id=2261, page=6, 597.50829pt x 845.0471pt>
+<anexos/avaliacao-sistema/avaliacao-sistema.pdf, id=2274, page=6, 597.50829pt x 845.0471pt>
 File: anexos/avaliacao-sistema/avaliacao-sistema.pdf Graphic file (type pdf)
  <use anexos/avaliacao-sistema/avaliacao-sistema.pdf, page 6>
 Package pdftex.def Info: anexos/avaliacao-sistema/avaliacao-sistema.pdf, page6 used on input line 44.
@@ -2151,7 +2165,7 @@ LaTeX Warning: Float too large for page by 51.8591pt on input line 45.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<anexos/avaliacao-sistema/avaliacao-sistema.pdf, id=2262, page=7, 597.50829pt x 845.0471pt>
+<anexos/avaliacao-sistema/avaliacao-sistema.pdf, id=2275, page=7, 597.50829pt x 845.0471pt>
 File: anexos/avaliacao-sistema/avaliacao-sistema.pdf Graphic file (type pdf)
  <use anexos/avaliacao-sistema/avaliacao-sistema.pdf, page 7>
 Package pdftex.def Info: anexos/avaliacao-sistema/avaliacao-sistema.pdf, page7 used on input line 51.
@@ -2167,7 +2181,7 @@ LaTeX Warning: Float too large for page by 51.8591pt on input line 52.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<anexos/avaliacao-sistema/avaliacao-sistema.pdf, id=2263, page=8, 597.50829pt x 845.0471pt>
+<anexos/avaliacao-sistema/avaliacao-sistema.pdf, id=2276, page=8, 597.50829pt x 845.0471pt>
 File: anexos/avaliacao-sistema/avaliacao-sistema.pdf Graphic file (type pdf)
  <use anexos/avaliacao-sistema/avaliacao-sistema.pdf, page 8>
 Package pdftex.def Info: anexos/avaliacao-sistema/avaliacao-sistema.pdf, page8 used on input line 59.
@@ -2183,7 +2197,7 @@ LaTeX Warning: Float too large for page by 51.8591pt on input line 60.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<anexos/avaliacao-sistema/avaliacao-sistema.pdf, id=2264, page=9, 597.50829pt x 845.0471pt>
+<anexos/avaliacao-sistema/avaliacao-sistema.pdf, id=2277, page=9, 597.50829pt x 845.0471pt>
 File: anexos/avaliacao-sistema/avaliacao-sistema.pdf Graphic file (type pdf)
  <use anexos/avaliacao-sistema/avaliacao-sistema.pdf, page 9>
 Package pdftex.def Info: anexos/avaliacao-sistema/avaliacao-sistema.pdf, page9 used on input line 67.
@@ -2214,7 +2228,7 @@ LaTeX Warning: Float too large for page by 51.8591pt on input line 75.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<anexos/avaliacao-sistema/avaliacao-sistema.pdf, id=2265, page=10, 597.50829pt x 845.0471pt>
+<anexos/avaliacao-sistema/avaliacao-sistema.pdf, id=2278, page=10, 597.50829pt x 845.0471pt>
 File: anexos/avaliacao-sistema/avaliacao-sistema.pdf Graphic file (type pdf)
  <use anexos/avaliacao-sistema/avaliacao-sistema.pdf, page 10>
 Package pdftex.def Info: anexos/avaliacao-sistema/avaliacao-sistema.pdf, page10 used on input line 79.
@@ -2230,7 +2244,7 @@ LaTeX Warning: Float too large for page by 51.8591pt on input line 80.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<anexos/avaliacao-sistema/avaliacao-sistema.pdf, id=2266, page=12, 597.50829pt x 845.0471pt>
+<anexos/avaliacao-sistema/avaliacao-sistema.pdf, id=2279, page=12, 597.50829pt x 845.0471pt>
 File: anexos/avaliacao-sistema/avaliacao-sistema.pdf Graphic file (type pdf)
  <use anexos/avaliacao-sistema/avaliacao-sistema.pdf, page 12>
 Package pdftex.def Info: anexos/avaliacao-sistema/avaliacao-sistema.pdf, page12 used on input line 84.
@@ -2246,7 +2260,7 @@ LaTeX Warning: Float too large for page by 51.8591pt on input line 85.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<anexos/avaliacao-sistema/avaliacao-sistema.pdf, id=2267, page=13, 597.50829pt x 845.0471pt>
+<anexos/avaliacao-sistema/avaliacao-sistema.pdf, id=2280, page=13, 597.50829pt x 845.0471pt>
 File: anexos/avaliacao-sistema/avaliacao-sistema.pdf Graphic file (type pdf)
  <use anexos/avaliacao-sistema/avaliacao-sistema.pdf, page 13>
 Package pdftex.def Info: anexos/avaliacao-sistema/avaliacao-sistema.pdf, page13 used on input line 89.
@@ -2262,7 +2276,7 @@ LaTeX Warning: Float too large for page by 51.8591pt on input line 90.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<anexos/avaliacao-sistema/avaliacao-sistema.pdf, id=2268, page=14, 597.50829pt x 845.0471pt>
+<anexos/avaliacao-sistema/avaliacao-sistema.pdf, id=2281, page=14, 597.50829pt x 845.0471pt>
 File: anexos/avaliacao-sistema/avaliacao-sistema.pdf Graphic file (type pdf)
  <use anexos/avaliacao-sistema/avaliacao-sistema.pdf, page 14>
 Package pdftex.def Info: anexos/avaliacao-sistema/avaliacao-sistema.pdf, page14 used on input line 94.
@@ -2278,19 +2292,19 @@ LaTeX Warning: Float too large for page by 51.8591pt on input line 95.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-) [99] [100 <./anexos/avaliacao-sistema/avaliacao-sistema.pdf>] [101 <./anexos/avaliacao-sistema/avaliacao-sistema.pdf>] [102 <./anexos/avaliacao-sistema/avaliacao-sistema.pdf>] [103 <./anexos/avaliacao-sistema/avaliacao-sistema.pdf>] [104 <./anexos/avaliacao-sistema/avaliacao-sistema.pdf>] [105 <./anexos/avaliacao-sistema/avaliacao-sistema.pdf>] [106 <./anexos/avaliacao-sistema/avaliacao-sistema.pdf>] [107 <./anexos/avaliacao-sistema/avaliacao-sistema.pdf>] [108 <./anexos/avaliacao-sistema/avaliacao-sistema.pdf>] [109] [110 <./anexos/avaliacao-sistema/avaliacao-sistema.pdf>] [111 <./anexos/avaliacao-sistema/avaliacao-sistema.pdf>] [112 <./anexos/avaliacao-sistema/avaliacao-sistema.pdf>] [113 <./anexos/avaliacao-sistema/avaliacao-sistema.pdf>]
+) [101] [102 <./anexos/avaliacao-sistema/avaliacao-sistema.pdf>] [103 <./anexos/avaliacao-sistema/avaliacao-sistema.pdf>] [104 <./anexos/avaliacao-sistema/avaliacao-sistema.pdf>] [105 <./anexos/avaliacao-sistema/avaliacao-sistema.pdf>] [106 <./anexos/avaliacao-sistema/avaliacao-sistema.pdf>] [107 <./anexos/avaliacao-sistema/avaliacao-sistema.pdf>] [108 <./anexos/avaliacao-sistema/avaliacao-sistema.pdf>] [109 <./anexos/avaliacao-sistema/avaliacao-sistema.pdf>] [110 <./anexos/avaliacao-sistema/avaliacao-sistema.pdf>] [111] [112 <./anexos/avaliacao-sistema/avaliacao-sistema.pdf>] [113 <./anexos/avaliacao-sistema/avaliacao-sistema.pdf>] [114 <./anexos/avaliacao-sistema/avaliacao-sistema.pdf>] [115 <./anexos/avaliacao-sistema/avaliacao-sistema.pdf>]
 \openout2 = `conteudo/capitulos/6-apendice3.aux'.
 
- (./conteudo/capitulos/6-apendice3.tex [114
+ (./conteudo/capitulos/6-apendice3.tex [116
 
 
 
-] [115] <anexos/tabelas/distribuicao-topicos/distribuicao-topicos.pdf, id=2382, page=1, 845.0471pt x 597.50829pt>
+] [117] <anexos/tabelas/distribuicao-topicos/distribuicao-topicos.pdf, id=2394, page=1, 845.0471pt x 597.50829pt>
 File: anexos/tabelas/distribuicao-topicos/distribuicao-topicos.pdf Graphic file (type pdf)
  <use anexos/tabelas/distribuicao-topicos/distribuicao-topicos.pdf, page 1>
 Package pdftex.def Info: anexos/tabelas/distribuicao-topicos/distribuicao-topicos.pdf, page1 used on input line 22.
 (pdftex.def)             Requested size: 545.99861pt x -4.28677pt.
- [116
+ [118
 
  <./anexos/tabelas/distribuicao-topicos/distribuicao-topicos.pdf>]) 
 AED: lastpage setting LastPage
@@ -2318,19 +2332,19 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 328.
 ### simple group (level 1) entered at line 1061 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 17236 strings out of 494884
- 267538 string characters out of 6179236
- 547226 words of memory out of 5000000
+ 17238 strings out of 494884
+ 267554 string characters out of 6179236
+ 547223 words of memory out of 5000000
  19543 multiletter control sequences out of 15000+600000
  125203 words of font info for 185 fonts, out of 8000000 for 9000
  38 hyphenation exceptions out of 8191
  50i,15n,40p,1633b,3199s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx8.pfb></usr/share/texmf/fonts/type1/public/lm/lmbxi10.pfb></usr/share/texmf/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi6.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr6.pfb></usr/share/texmf/fonts/type1/public/lm/lmr7.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/public/lm/lmri8.pfb></usr/share/texmf/fonts/type1/public/lm/lmss10.pfb></usr/share/texmf/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss17.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbo10.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsso12.pfb></usr/share/texmf/fonts/type1/public/lm/lmsso17.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf/fonts/type1/pub
 lic/lm/lmtt10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt12.pfb>
-Output written on ovidio-dissertacao.pdf (117 pages, 2679696 bytes).
+Output written on ovidio-dissertacao.pdf (119 pages, 2688340 bytes).
 PDF statistics:
- 2836 PDF objects out of 2984 (max. 8388607)
- 1878 compressed objects within 19 object streams
- 343 named destinations out of 1000 (max. 500000)
+ 2848 PDF objects out of 2984 (max. 8388607)
+ 1888 compressed objects within 19 object streams
+ 345 named destinations out of 1000 (max. 500000)
  40280 words of extra memory for PDF output out of 42996 (max. 10000000)
 

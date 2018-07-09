@@ -65,17 +65,17 @@
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \contentsline {chapter}{Conclus\IeC {\~a}o}{71}{chapter*.3}
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
-\contentsline {chapter}{Refer\^encias}{73}{section*.5}
+\contentsline {chapter}{Refer\^encias}{75}{section*.5}
 \renewcommand *{\cftappendixname }{AP\^ENDICE \space }
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
-\contentsline {appendix}{\chapternumberline {A}\MakeTextUppercase { Tabelas para An\IeC {\'a}lise de de Par\IeC {\^a}metros para os algoritmos de Segmenta\IeC {\c c}\IeC {\~a}o Textual }}{81}{appendix.A}
+\contentsline {appendix}{\chapternumberline {A}\MakeTextUppercase { Tabelas para An\IeC {\'a}lise de de Par\IeC {\^a}metros para os algoritmos de Segmenta\IeC {\c c}\IeC {\~a}o Textual }}{83}{appendix.A}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
-\contentsline {appendix}{\chapternumberline {B}\MakeTextUppercase { Question\IeC {\'a}rios Utilizados na Avalia\IeC {\c c}\IeC {\~a}o Subjetiva}}{99}{appendix.B}
+\contentsline {appendix}{\chapternumberline {B}\MakeTextUppercase { Question\IeC {\'a}rios Utilizados na Avalia\IeC {\c c}\IeC {\~a}o Subjetiva}}{101}{appendix.B}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
-\contentsline {appendix}{\chapternumberline {C}\MakeTextUppercase { Distribui\IeC {\c c}\IeC {\~a}o dos T\IeC {\'o}picos obtidos pelos extratores}}{115}{appendix.C}
+\contentsline {appendix}{\chapternumberline {C}\MakeTextUppercase { Distribui\IeC {\c c}\IeC {\~a}o dos T\IeC {\'o}picos obtidos pelos extratores}}{117}{appendix.C}

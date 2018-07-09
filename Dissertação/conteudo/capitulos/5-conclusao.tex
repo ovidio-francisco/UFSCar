@@ -8,11 +8,99 @@
 
 Em um contexto em que a grande parte das informações armazenadas pelas organizações está em formato textual, o desenvolvimento de ferramentas computacionais para extração e organização automática dessas informações é uma tarefa que retem atenção e relevância.
 Dentre os textos usados para registros, identificou-se documentos multi-temáticos, os quais abordam assuntos diversos no mesmo texto, como exemplo, as atas de reuniões apresentam com característica a ausência de meta informações ou mesmo quebras de parágrafos que ajudariam a separar e identificar seus conteúdos. 
-Entre as abordagens aplicáveis a este problema estão a segmentação textual e os modelos de extração de tópicos as quais em conjunto são capazes de separar, agrupar e idenficar os assuntos contidos nessa categoria de documentos.
+Entre as abordagens aplicáveis a este problema estão a segmentação textual e os modelos de extração de tópicos as quais em conjunto são capazes de separar, identificar e agrupar os assuntos contidos nessa categoria de documentos.
+
+
+
 
 
 
 % -------------------- Retomada do que foi feito -------------------- 
+
+Sendo assim, este trabalho de mestrado visou o estudo e a comparação das técnicas de segmentação textual e extração de tópicos para extração automática de conhecimento em uma base de dados composta por atas de reunião coletadas da Universidade Federal de São Carlos, campus Sorocaba. 
+Desenvolveu-se uma metodologia que utiliza a segmentação textual para fragmentar as atas em porções de texto com um assunto relativamente independente os quais são agrupados e descritos semanticamente por um modelo de extração de tópicos, conforme apresentado no Capítulo~\ref{cap3}.
+
+Inicialmente, a fim de analisar as técnicas utilizadas, gerou-se um \textit{corpus} anotado por 9 profissionais com afinidade com o domínio investigado. Os anotadores segmentaram e rotularam manualmente 12 atas de reunião. 
+Para isso desenvolveu-se uma ferramenta para anotação manual de documentos, pela qual os anotadores forneceram segmentações e informações sobre os segmentos identificados.
+Os textos originais acrescidos das informações fornecidas pelos anotadores foram reunidas para formar um \textit{corpus} derivado que ajuda a entender o corpus investigado em termos de sua distribuição de tópicos. Os dados referentes a segmentação manual foram utilizados para criar uma segmentação de referência para avaliação objetiva dos segmentadores. 
+
+A avaliação dos segmentadores considerou os algoritmos e seus principais parâmetros para encontrar o modelo que melhor otimiza a tarefa de segmentação do corpus investigado. Comparou-se os resultados obtidos com a segmentação de referência e verificou-se que o algoritmo \textit{BayesSeg} apresenta resultados melhores em relação às demais técnicas analisadas. Contudo, não há diferença significativa entre os métodos, que,  de maneira geral apresentam resultados satisfatórios.  
+Os resultados mostram certa dificuldade devido as características das atas, como estilo de escrita e segmentos relativamente curtos, além da subjetividade intrínseca da tarefa.
+Embora os métodos de segmentação textual tenham se mostrado suficientes, melhores resultados podem ser alcançados com o acréscimo das técnicas mencionadas e a construção de uma segmentação de referência mais robusta em termos concordância entre os anotadores que ajudaram a criá-la.
+Uma vez escolhido o segmentador, este foi utilizado para segmentar os textos de um conjunto de 175 atas, que gerou um conjunto de 1276 segmentos, os quais foram submetidos aos modelos de extração de tópicos.
+Detalhes sobre o \textit{corpus} anotado e avaliação objetiva dos segmentadores foram analisados no Capítulo~\ref{cap-segmentadores}.
+
+
+
+% -- Estrutura de Dados Interna
+
+Após a avaliação dos segmentadores e segmentação do \textit{corpus} inicial, o desenvolvimento prosseguiu com a avaliação dos extratores de tópicos. Os extratores foram executados para agrupar e extrair descritores do conjunto de segmentos. Cada extrator formou 70 grupos (tópicos) e para cada grupo extraiu 5 descritores. 
+
+A metodologia utilizada nesse trabalho conecta as técnicas de segmentação textual aos modelos de extração de tópicos a fim de gerar um estrutura derivada a partir de um \textit{corpus} não estruturado. Essa nova estrutura concentra os textos originais acrescidos de informação latentes e organizados por sua semelhança semântica. Essa organização permite que técnicas de recuperação de informação expandam o espaço de busca além do conjunto de termos original de cada segmento, sendo assim, favorecidas quanto a identificação segmentos relacionados a consulta do usuário bem como permite a exploração dos grupos com assuntos relacionados.
+
+
+
+
+
+% -- Avaliação Subjetiva
+
+
+Os modelos de extração de tópicos foram avaliados subjetivamente por meio de questionários em que 41 avaliadores responderam à questões referentes à qualidade dos trechos apresentados como resultado à consultas à base de dados criada com essa metodologia. 
+A fim de avaliar 3 dos principais modelos de extração de tópicos e o segmentador escolhido (\textit{BayesSeg}), o sistema foi submetido a duas consultas distintas, gerando 6 cenários a serem avaliados. 
+Os questionários foram formulados para obter primeiramente a percepção dos avaliadores quanto a qualidade dos tópicos extraídos, levando em conta a similaridade dos segmentos em relação ao mesmo assunto e a representatividade dos descritores. 
+Os avaliadores também responderam questões referentes a qualidade dos segmentos apresentados, uma vez que a segmentação, embora etapa anterior, é parte do processo de obtenção de conhecimento. Sobre a segmentação, considerou-se a completude dos segmentos a sua unidade em relação ao assunto.
+Os dados dos questionários após coletados e analisados, sugerem que a metodologia empregada é capaz de entregar ao usuário resultados satisfatórios. Verificou-se também que o K-Means traz melhores resultados em relação aos demais extratores avaliados. 
+A análise detalhada dessas avaliações e a relação entre as técnicas empregadas nessa metodologia podem ser vistas no Capítulo~\ref{cap-extratores}.
+% Após coletados e analisados, os dados dos questionários
+
+
+
+% -------------------- Contribuições -------------------- 
+
+
+De modo geral, os resultados obtidos com a utilização das informações extraídas pela metodologia apresentada nesse trabalho recebe uma base de dados constituída por documentos multi-temáticos não estruturada e produz uma estrutura de dados interna mais organizada e acrescida de informações latentes extraídas do próprio \textit{corpus} original de forma não supervisionada. 
+A utilização de descritores para expandir a o espaço de busca pelas técnicas de recuperação de informação possibilita ganho em relação a busca indexada por termos presentes nos documentos. Além disso, o retorno procura exibir apenas os trechos relevantes à consulta do usuário, ao invés de documentos inteiros que podem conter trechos irrelevantes à consulta.  
+A estrutura dada ao corpus original permite analisar seu conteúdo pela perspectiva da distribuição dos tópicos. Com isso, é possível entender a composição e recorrência dos assuntos discutidos bem como traçar um histórico dos assuntos abordados a fim de visualizar sua evolução ao longo do tempo.
+
+
+Considera-se como principais contribuições deste trabalho o método apresentado para extração de conhecimento em documentos multi-temáticos e os resultados produzidos durante a execução da proposta desse sistema. O método proposto permite a extração automática de informações em atas de reunião podendo ser utilizado nesse contexto e aproveitado para trazer avanços em aplicações como extração e recuperação de informação em outros domínios com as mesmas características. O \textit{corpus} anotado produzido está disponível para servir como base de dados para outros trabalhos. A ferramenta desenvolvida para esse propósito pode ser utilizada em qualquer corpus a ser anotado com propósito de pesquisa, bem como modificada livremente. 
+
+
+
+% -------------------- Limitações ? -------------------- 
+
+
+
+% -------------------- Trabalhos Futuros -------------------- 
+
+
+Entre as continuações e futuras melhorias para este trabalho, pode-se citar implementações no próprio sistema proposto e ampliação das bases de dados bem como inclusão de novos \textit{corpora}.  
+%
+Os primeiros experimentos desse trabalho geraram um artigo que foi submetido para publicação, porém, não foi aceito. Essa recusa exigiu novos experimentos com mais dados os quais são apresentados nessa dissertação. Assim, um novo artigo será submetido em complemento à esse trabalho.
+% 
+A proposta inicial desse trabalho contempla a classificação dos segmentos em relação ao tipo de menção ao assunto, como decisão, orientação e irrelevante. Os dados colhidos no experimento mencionado na Seção~\ref{subsec:anotacoes} referentes ao tipo de menção e contexto do assunto serão utilizados para o gerar um classificador para categorizar automaticamente um segmento nas categorias. Para isso, as anotações coletadas podem ser utilizadas na etapa de treinamento dos classificadores.
+%
+Outras melhorias do sistema podem ser alcançadas com testes voltados a experiência do usuário a fim de medir a satisfação dos resultados apresentados e guiar a implementação de uma interface gráfica para possibilitar ao usuário analisar os dados pela exploração interativa dos grupos.
+%
+
+Cita-se também a utilização de fontes externas para melhorar os métodos de segmentação textual. Recursos como \textit{thesaurus} (dicionários de sinônimos) e \textit{clue words} (palavras-pista) podem adicionar conhecimento ao sistema e com isso alcançar melhores resultados. 
+%
+Pretende-se ainda replicar os experimentos deste trabalho em novas bases de dados com características semelhantes às ata de reunião. Por exemplo, transcrições de conversas, diálogos em \textit{chats,} discursos e atas de outras organizações como instituições públicas e governamentais.  
+
+
+
+
+% -------------------- Fechando o Assunto -------------------- 
+
+
+Concluindo, este trabalho tem como principal contribuição para a área de sistemas de extração de conhecimento em bases textuais o método proposto para organizar e adicionar informação a coleção de documentos. Tal método se mostrou eficiente e o os dados obtidos possibilitaram bons resultados para exploração do \textit{corpus} composto por atas de reunião.
+
+
+
+
+
+
+
 
 
 

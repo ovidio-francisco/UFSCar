@@ -1,8 +1,95 @@
 
+A proposta inicial desse trabalho contempla a classificação dos segmentos em relação ao tipo de menção ao assunto, como decisão, orientação e irrelevante. Os dados colhidos no experimento mencionado na Seção~\ref{subsec:anotacoes} referentes ao tipo de menção e contexto do assunto serão utilizados para o gerar um classificador para categorizar automaticamente um segmento nas categorias. Para isso, as anotações coletadas podem ser utilizadas na etapa de treinamento dos classificadores.
+
+
+em categorias como decisão, orientação e irrelevante, utilizado as anotações na etapa de treinamento de classificadores.
 
 
 
 
+
+utilizando os 
+
+
+
+
+
+
+
+
+
+
+
+
+
+% --> Mas há ganho em relação à metodos tradicionais?
+
+
+
+
+
+% -------------------- Fechando o Assunto -------------------- 
+
+contexto extraído possibilitou bons resultados para as recomendações geradas. "
+
+
+
+extração de informações contextual. 
+
+
+% utilização de fontes externas para melhorar os métodos de segmentação textual. Recursos como \textit{thesaurus} (dicionários de sinônimos) e \textit{clue words} (palavras-pista) podem adicionar conhecimento ao sistema . 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+...
+...
+O método proposto permite a extração automática de informações de contexto atas
+
+
+
+	"O método, as features e os resultados apresentados podem ser utilizados e trazer avanços em aplicações como extração e recuperação de informação,"
+	"A implementação da ferramenta proposta nesta dissertação."
+
+
+
+
+
+
+
+	Considera-se como principais contribuições deste trabalho o método e os resultados apresentados para extração de conhecimento em documentos multi-temáticos os quais podem ser utilizados e trazer avanços em aplicações como extração e recuperação de informação em outros domínios com as mesmas características.
+	% e os resultados produzidos. Os quais podem ser utilizados para trazer avanços em aplicações como extração e recuperação de informação em outros domínios com as mesmas características.
+	% A metodologia desenvolvida pode ser utilizada para trazer 
+
+
+
+
+
+
+
+
+
+
+
+
+
+% ==================================================
+
+
+
+% ==================================================
 
 
 Neste trabalho foi apresentado o processo proposto para extração de informações em documentos multi-temáticos.
@@ -43,8 +130,6 @@ trabalhos futuros:
 	" Entre as continuações e futuras melhorias possı́veis para este trabalho, pode-se citar a definição de novas features que auxiliem os métodos de AM na classificação de relações. "
 
 
-
-
 ------------------------------
 
 
@@ -56,8 +141,6 @@ trabalhos futuros:
 
 
 ------------------------------
-Definir uma interface gráfica para possibilitar ao usuário
-uma melhor análise dos resultados. {UX} testes com usuários em consultas livres, a fim de medir a satisfação dos resultados e usabilidade do sistema.
 
 
 % -------------------- Retomada do que foi feito -------------------- 
@@ -80,11 +163,30 @@ Contribuições
 
 
 % -------------------- Limitações ? -------------------- 
+	A proposta inicial desse trabalho contempla a classificação dos segmentos em relação ao tipo de menção ao assunto, como decisão, orientação e irrelevante, utilizado 
 
+	os dados colhidos no experimento mencionado na Seção referentes ao tipo de menção e contexto do assunto serão podem ser utilizados para o gerar um classificador para categorizar automaticamente um segmento em categorias como decisão, orientação e irrelevante, utilizado as anotações na etapa de treinamento de classificadores.
 
 
 
 % -------------------- Trabalhos Futuros -------------------- 
+
+	- Replicação dos experimentos deste trabalho em novas bases de dados;
+	- Uso de informações externas ao sistema como clue words etc
+	- Classificação
+	- Exploração dos grupos
+	- Hierarquia de tópicos
+
+
+	- Utilização de dados externos
+	- Novas bases outros domínios
+
+
+
+Definir uma interface gráfica para possibilitar ao usuário
+uma melhor análise dos resultados. {UX} testes com usuários em consultas livres, a fim de medir a satisfação dos resultados e usabilidade do sistema.
+
+
 
 
 
@@ -111,13 +213,60 @@ Contribuições
 
 
 
-
-
-
-
-
 % Coloque o texto aqui.
 % \section*{Publicações} 
 % \section*{Submissões}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+A avaliação dos segmentadores considerou os algoritmos e seus principais parâmetros para encontrar o modelo que melhor otimiza a tarefa de segmentação do corpus investigado. Comparou-se os resultados obtidos com a segmentação de referência e verificou-se que o algoritmo BayesSeg apresenta resultados melhores em relação às demais técnicas analisadas. Contudo, não há diferença significativa entre os métodos, que,  de maneira geral apresentam resultados satisfatórios.  
+Os resultados mostram certa dificuldade devido as características das atas, como estilo de escrita e segmentos relativamente curtos, além da subjetividade intrínseca da tarefa.
+Embora os métodos de segmentação textual tenham se mostrado suficientes, melhores resultados podem ser alcançados com o acréscimo das técnicas mencionadas e a construção de uma segmentação de referência mais robusta em termos concordância entre os anotadores que ajudaram a criá-la.
+
+
+% Os algoritmos de segmentação textual foram avaliados comparando-se seus resultados a segmentação de referência considerando a . Após análise dos resultados, chegou-se a um modelo que 
+% Os algoritmos de segmentação textual foram avaliados comparando-se seus resultados a segmentação de referência. Após análise dos resultados, chegou-se a um modelo que 
+
+discretamente 
+modestamente
+levemente
+% Os algoritmos de segmentação textual foram avaliados comparando-se seus resultados com uma segmentação de referência criada a partir das segmentações manuais coletadas dos anotadores. Após análise das avaliações, chegou-se a um modelo que 
+
+A metodologia 
+para segmentação das atas e agrupamento dos trechos por assunto.  
+dos diversos assuntos contidos em uma coleção de atas de reunião.
+
+
+
+
+% confirmou o BayesSeg
+% K-Means é melhor
+% Os modelos de extração de tópicos foram avaliados subjetivamente por meio de questionários em que 41 avaliadores responderam à questões referentes à qualidade dos segmentos apresentados como resultado à consultas à base de dados criada com essa metodologia. Os questionários foram formulados para obter a percepção dos avaliadores quanto a similaridade dos segmentos em relação ao mesmo assunto e quanto a representatividade dos descritores extraídos. 
+
+
+
+% a estrutura ajuda a compreender entender analisar e visualizar a base de dados
+
+
+
+
+
+
+
 
 
