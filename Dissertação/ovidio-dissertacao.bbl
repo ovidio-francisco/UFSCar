@@ -288,6 +288,14 @@ v.~401, p. 788--91, 11 1999.}
 {LEE, J.-K. et al. Two-step sentence extraction for summarization of meeting
   minutes. In:  . [S.l.: s.n.], 2011. v.~39, p. 614--619.}
 
+\bibitem[Luhn 1958]{Luhn1958}
+\abntrefinfo{Luhn}{LUHN}{1958}
+{LUHN, H.~P. The automatic creation of literature abstracts.
+\emph{IBM J. Res. Dev.}, IBM Corp., Riverton, NJ, USA, v.~2, n.~2, p. 159--165,
+  abr. 1958.
+ISSN 0018-8646.
+Dispon{\'\i}vel em: \url{http://dx.doi.org/10.1147/rd.22.0159}.}
+
 \bibitem[Malioutov e Barzilay 2006]{Malioutov:2006a}
 \abntrefinfo{Malioutov e Barzilay}{MALIOUTOV; BARZILAY}{2006}
 {MALIOUTOV, I.; BARZILAY, R. Minimum cut model for spoken lecture segmentation.
@@ -391,6 +399,14 @@ Tese (Doutorado), Philadelphia, PA, USA, 1998. AAI9829978.}
 {REZENDE, S.~O. \emph{Sistemas Inteligentes}. Barueri, SP: Manole, 2003. 337 -
   270~p.}
 
+\bibitem[Rezende, Marcacini e Moura 2011]{Rezende2011}
+\abntrefinfo{Rezende, Marcacini e Moura}{REZENDE; MARCACINI; MOURA}{2011}
+{REZENDE, S.~O.; MARCACINI, R.~M.; MOURA, M.~F. O uso da mineração de textos
+  para extração e organização não supervisionada de conhecimento.
+\emph{Revista de Sistemas de Informação da FSMA}, v.~7, p. 7--21, 2011.
+ISSN 19835604.
+Dispon{\'\i}vel em: \url{http://www.fsma.edu.br/si/7edicao.html}.}
+
 \bibitem[Rijsbergen 1979]{Rijsbergen1979}
 \abntrefinfo{Rijsbergen}{RIJSBERGEN}{1979}
 {RIJSBERGEN, C. J.~V. \emph{Information Retrieval}. 2nd. ed. Newton, MA, USA:
@@ -447,6 +463,12 @@ ISSN 0162-8828.}
 {SHROUT, P. E.; FLEISS, J. L. Intraclass correlations: Uses in assessing rater
   reliability.
 v.~86, p. 420--8, 04 1979.}
+
+\bibitem[Soares, Prati e Monard 2008]{Soares2008}
+\abntrefinfo{Soares, Prati e Monard}{SOARES; PRATI; MONARD}{2008}
+{SOARES, M. V.~B.; PRATI, R.~C.; MONARD, M.~C. \emph{PreTexT II: descrição da
+  reestruturação da ferramenta de pré-processamento de textos}.
+[S.l.], 2008.}
 
 \bibitem[Steyvers e Griffiths 2007]{Steyvers2007}
 \abntrefinfo{Steyvers e Griffiths}{STEYVERS; GRIFFITHS}{2007}
@@ -546,5 +568,10 @@ ISBN 1-58113-874-1. Dispon{\'\i}vel em:
   connection into lda. In:  \emph{2012 IEEE/WIC/ACM International Conferences
   on Web Intelligence and Intelligent Agent Technology}. [S.l.: s.n.], 2012.
   v.~1, p. 303--310.}
+
+\bibitem[Zipf 1932]{zipf1932}
+\abntrefinfo{Zipf}{ZIPF}{1932}
+{ZIPF, G.~K. \emph{{Selective Studies and the Principle of Relative Frequency
+  in Language}}. [S.l.]: Harvard University Press, 1932.}
 
 \end{thebibliography}

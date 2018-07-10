@@ -21,46 +21,46 @@ Outros trabalhos abordaram corpus compostos pela transcrição de audios. Por ex
 
 Nesses trabalhos utilizou-se os anotadores como juízes para produzir uma referência em que decidiu-se sobre cada candidato a limite entre segmentos por meio da opinião da maioria. Além desses trabalhos, outros se valeram de segmentações produzidas artificialmente. Por exemplo,~\cite{Choi2000a} produziu um corpos formado por 700 documentos. As referências foram geradas pela concatenação de sentenças extraídas de documentos diferentes. De maneira semelhante,~\cite{CHAIBI2014} utilizou a concatenação de artigos de noticias para produzir os documentos. Os autores consideram um limite real o ponto que divide dois artigos originais. 
 
-\subsection{Metodologia para anotações em corpus}
-\label{subsec:anotacoes}
+% \subsection{Metodologia para anotações em corpus}
+% \label{subsec:anotacoes}
 
 
 Os trabalhos citados anteriormente utilizaram procedimentos diferentes para produzir segmentações de referência para seus trabalhos. Como já citado,~\cite{Hovy2010} propôs que o processo de anotação em corpus pode der sintetizado e dividido em sete passos. 
 
 
-\subsubsection{Escolha do corpus}
+\subsection{Escolha do corpus}
 A criação de corpus raramente é restrita a um único propósito. O material original deve ser preferencialmente constituído de documentos disponíveis livremente à comunidade, a fim de facilitar a comparação, extensão e avaliação de trabalhos futuros. 
 Devido a diversidade linguística de diferentes domínios e gêneros de textos, a escolha dos documentos de amostra deve procurar ser representativa ao domínio a ser abordado. O corpus é considerado representativo quando o assunto a abordado na amostra tem correspondência com a interpretação do público geral desse domínio.
 
 % \subsubsection{Fundamentação da teoria}
-\subsubsection{Escolha da teoria a ser explicada}
+\subsection{Escolha da teoria a ser explicada}
 A anotação deve ajudar a explicar uma teoria, ou seja, fornecer informações úteis à sua compreensão. Essa teoria irá guiar a especificação do processo de anotação, quais informações deseja-se extrair e como interpretá-las. Quanto mais complexa for a teoria ser explicada, mais complexa será a tarefa de anotação bem como as instruções que os anotadores deverão seguir. Além disso, deve-se estabelecer de início o nível de detalhamento necessário. 
 A complexidade da teoria e nível de detalhamento impactam na condução da anotação e da estabilidade da anotação.
 
 % quanto é necessário se aprofundar em detalhes
 
 
-\subsubsection{Selecionar e treinar os anotadores}
+\subsection{Selecionar e treinar os anotadores}
 
 O treinamento e o nível de conhecimento dos anotadores ainda é uma questão em aberto. Alguns pesquisadores afirmam que estes devem ser especialistas no domínio do corpus. Outros afirmam que pessoas adequadamente treinadas podem produzir resultados satisfatórios. 
 Considerando a necessidade de treinamento, tem-se a subjetividade das tarefas que dificulta a elaboração de instruções precisas. Tarefas que permitem a especificação de procedimentos que levam em conta a possibilidade de diferentes casos e variáveis, põem em dúvida a necessidade da criação de um corpus anotado.
 Por outro lado, a ausência de treinamento implica que as anotações terão como base o conhecimento prévio dos anotadores e sua preconcepção a cerca do domínio o que diminui o nível de concordância entre os anotadores e dificulta a replicação de outros trabalhos.
 
 
-\subsubsection{Especificar o procedimento de anotação}
+\subsection{Especificar o procedimento de anotação}
 Alguns processos de anotações podem levar longos períodos, criando a necessidade de dividir a tarefa em fases. Nesses casos, frequentemente os anotadores fazem reuniões periódicas a fim de relatar eventuais problemas.  
 % Em alguns projetos, abre-se espaço para discussão de pontos com baixa concordância, a qual é chamada de fase de ``reconciliação''. 
 Em caso de baixa concordância, pode-se abrir espaço para discussão de pontos com baixa concordância, a qual é chamada de fase de ``reconciliação'' que embora recomendada, em alguns casos pode ocasionar um enviesamento dos resultados. Outra estratégia para baixa concordância é que solicitar que os anotadores marquem o nível de certeza sobre as anotações.
 % Essa fase é recomendada para aumentar o nível de concordância, contudo pode ocasionar um enviesamento dos resultados. 
 
-\subsubsection{Modelar uma interface para anotação}
+\subsection{Modelar uma interface para anotação}
 Um software com interface amigável, além de facilitar o trabalho, evita erros durante o processo. 
 O ganho em tempo e a melhoria na qualidade dos resultados justifica a criação de uma interface. 
 Exemplos softwares para anotação na área de Processamento de linguagem natural e Bioinformática podem ser encontrados em~\cite{Gruenstein2007}.
 
 
 
-\subsubsection{Escolher e aplicar medidas de avaliação}
+\subsection{Escolher e aplicar medidas de avaliação}
 
 Quando observa-se baixa concordância entre os anotadores, entende-se que há uma falha no processo de anotação ou na teoria a ser explicada, o que implica que o dados produzidos não servem para a fins de pesquisa ou aplicações práticas. A medida dessa concordância deve determinar a confiabilidade dos resultados.
 A medida mais utilizada em Processamento de linguagem natural é o coeficiente \textit{kappa}~\cite{Carletta1996} que retorna um valor no intervalo de 0 até 1, onde 1 significa uma concordância perfeita e 0 que não houve concordância. Seja, $P(A)$ a proporção de vezes que os anotadores concordam e $P(E)$ a proporção de concordância esperada ao acaso. O cálculo de \textit{kappa} é dado por:
@@ -74,7 +74,7 @@ Na avaliação de segmentadores, as medidas $P_k$ (Equação~\ref{equ:Pk}) e \te
 
 
 
-\subsubsection{Disponibilizar e manter o produto}
+\subsection{Disponibilizar e manter o produto}
 
 Uma vez criado, o corpus anotado deve ser disponibilizado para uso em outros trabalhos. 
 Recomenda-se fornecer o corpus original além dos resultados obtidos, observando-se desde o início e ao longo do tempo a propriedade e eventuais licenças sob o corpus original.
