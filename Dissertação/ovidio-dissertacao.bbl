@@ -101,7 +101,7 @@ Dispon{\'\i}vel em:
 ISBN 978-1-61197-283-2. Dispon{\'\i}vel em:
   \url{http://dblp.uni-trier.de/db/conf/sdm/sdm2013.html\#ChengGLWY13}.}
 
-\bibitem[Choi 2000]{choi2000}
+\bibitem[Choi 2000]{Choi2000a}
 \abntrefinfo{Choi}{CHOI}{2000}
 {CHOI, F. Y.~Y. Advances in domain independent linear text segmentation. In:
   \emph{Proceedings of the 1st North American Chapter of the Association for
@@ -329,6 +329,15 @@ ISBN 978-1-60558-512-3. Dispon{\'\i}vel em:
 \emph{International Journal of Intelligent Computing and Cybernetics}, v.~9,
   n.~2, p. 165--178, 2016.
 Dispon{\'\i}vel em: \url{https://doi.org/10.1108/IJICC-01-2016-0001}.}
+
+\bibitem[Nguyen 2011]{Cuong2011}
+\abntrefinfo{Nguyen}{NGUYEN}{2011}
+{NGUYEN, V.~C.
+\emph{A Study on Statistical Generation of a Hierarchical Structure of
+  Topic-information for Multi-documents}.
+Tese (Doutorado) --- School of Information Science Japan Advanced Institute of
+  Science and Technology, 2011.
+Dispon{\'\i}vel em: \url{http://hdl.handle.net/10119/12059}.}
 
 \bibitem[Norman 2010]{Norman2010}
 \abntrefinfo{Norman}{NORMAN}{2010}

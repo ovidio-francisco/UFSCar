@@ -43,13 +43,13 @@ Em seguida, os blocos de texto são representados por vetores que contém as fre
 
 
 O TextTiling apresenta como vantagens a facilidade de implementação e baixa complexidade computacional, favorecendo a implementação de trabalhos similares 
-~\cite{Naili2016,Bokaei2015,CHAIBI2014,Kern2009,Galley2003}, 
-e sua utilização como \textit{base line} em outros trabalhos~\cite{Cardoso2017,Dias2007}. Por outro lado, algoritmos mais complexos, como os baseados em matrizes de similaridade, apresentam acurácia relativamente superior como apresentado em~\cite{Choi2000, Kern2009, Misra2009}.
+~\cite{Naili2016,Bokaei2015a,CHAIBI2014,Kern2009,Galley2003}, 
+e sua utilização como \textit{base line} em outros trabalhos~\cite{Cardoso2017,Dias2007}. Por outro lado, algoritmos mais complexos, como os baseados em matrizes de similaridade, apresentam acurácia relativamente superior como apresentado em~\cite{Choi2000a, Kern2009, Misra2009a}.
 
 
 % ==========  C99  ==========
 
-Outro algoritmo frequentemente referenciado na literatura é o C99~\cite{Choi2000} o qual é baseado em uma matriz de \textit{ranking} das similaridades. A utilização de da coesão léxica pode não ser confiável para segmentos pequenos nessa abordagem, pois a ocorrência adicional de uma palavra pode causar certo impacto e alterar o cálculo da similaridade. Além disso, o estilo da escrita normalmente não é constante em todo o texto. Por exemplo, textos iniciais dedicados a introdução costumam apresentar menor coesão do que trechos dedicados a um tópico específico. Portanto, comparar a similaridade entre trechos de diferentes regiões não é apropriado. Devido a isso, as similaridades não podem ser comparadas em valores absolutos. Contorna-se esse problema fazendo uso de matrizes de similaridade para encontrar os segmentos de texto. Para isso, o \textit{C99} constrói uma matriz que contém as similaridades de todas as unidades de informação (normalmente sentenças ou parágrafos). 
+Outro algoritmo frequentemente referenciado na literatura é o C99~\cite{Choi2000a} o qual é baseado em uma matriz de \textit{ranking} das similaridades. A utilização de da coesão léxica pode não ser confiável para segmentos pequenos nessa abordagem, pois a ocorrência adicional de uma palavra pode causar certo impacto e alterar o cálculo da similaridade. Além disso, o estilo da escrita normalmente não é constante em todo o texto. Por exemplo, textos iniciais dedicados a introdução costumam apresentar menor coesão do que trechos dedicados a um tópico específico. Portanto, comparar a similaridade entre trechos de diferentes regiões não é apropriado. Devido a isso, as similaridades não podem ser comparadas em valores absolutos. Contorna-se esse problema fazendo uso de matrizes de similaridade para encontrar os segmentos de texto. Para isso, o \textit{C99} constrói uma matriz que contém as similaridades de todas as unidades de informação (normalmente sentenças ou parágrafos). 
 
 %%%%%% 
 %%%%%% 
@@ -63,7 +63,7 @@ Na Figura~\ref{fig:matrix-similarity} é mostrado um exemplo de uma matriz de si
 	  \includegraphics[width=0.6\textwidth]{conteudo/capitulos/figs/similarity-matrix-l.png}
 
 	  % \includegraphics[width=0.6\textwidth]{conteudo/capitulos/figs/lda-sim-matrix.png}
-	  \caption{\textit{DotPlot} da similaridade entre sentenças onde as linha verticais representam segmentos reais~\cite{Eisenstein2008}.}
+	  \caption{\textit{DotPlot} da similaridade entre sentenças onde as linha verticais representam segmentos reais~\cite{Eis2008}.}
 	  \label{fig:matrix-similarity}
   \end{figure}
 
@@ -77,7 +77,9 @@ Na Figura~\ref{fig:matrix-similarity} é mostrado um exemplo de uma matriz de si
 Em seguida, cada valor na matriz de similaridade é substituído por seu \textit{ranking} local. Para cada elemento da matriz, seu \textit{ranking} será o número de elementos vizinhos com valor de similaridade menor que o seu. Assim, para cada elemento determina-se uma região quadrada de tamanho $l$ em que o elemento em questão será comparado com $l \times l - 1$ elementos vizinhos.
 % 
 % 
-Na Figura~\ref{fig:a} é destacado um quadro 3~x~3 de uma matriz. Tomando como exemplo o elemento com valor $0,5$, a mesma posição na matriz de \textit{rankings} terá o valor $4$, pois esse é o número de vizinhos com valores inferiores a $0,5$ dentro do quadro analisado na matriz de similaridades. Da mesma forma, na Figura~\ref{fig:b} para o valor $0,2$ a matriz de \textit{rankings} conterá o valor $1$ na mesma posição. Após a construção da matriz de ranking obtêm-se um maior contraste entre os pontos, o que facilita a detecção de limites quando a queda de similaridade entre sentenças é mais sutil.
+Na Figura~\ref{fig:exemplomatrixrank} é destacado um quadro 3~x~3 de uma matriz. Tomando como exemplo o elemento com valor $0,5$, a mesma posição na matriz de \textit{rankings} terá o valor $4$, pois esse é o número de vizinhos com valores inferiores a $0,5$ dentro do quadro analisado na matriz de similaridades. Da mesma forma, 
+% na Figura~\ref{fig:b} 
+para o valor $0,2$ a matriz de \textit{rankings} conterá o valor $1$ na mesma posição. Após a construção da matriz de ranking obtêm-se um maior contraste entre os pontos, o que facilita a detecção de limites quando a queda de similaridade entre sentenças é mais sutil.
 
 \begin{figure}[!h]
 	\centering     %%% not \center
@@ -155,7 +157,7 @@ A suposição de independência entre segmentos e as palavras neles contidas, s�
 
 % ==========  BayesSeg  ==========
 
-Os métodos baseados em coesão léxica que utilizam métricas como cosseno quantificam a similaridade entre sentenças baseando-se apenas na frequência das palavras, Essa abordagem, ignora certas características do texto que podem dar pistas sobre a estrutura do texto. Por exemplo, frases como ``Prosseguindo'', ``Dando continuidade'', ``Ao final da reunião'' podem ajudar a detectar o inicio ou final de segmento. A fim de aproveitar esses indicadores, pode-se usar um framework bayesiano que permite incorporar fontes externas ao modelo. O método \textit{BayesSeg}~\cite{Eisenstein2008} aborda a coesão léxica em um contexto bayesiano onde as palavas de um segmento surgem de um modelo de linguagem multinomial o qual é associado a um assunto. 
+Os métodos baseados em coesão léxica que utilizam métricas como cosseno quantificam a similaridade entre sentenças baseando-se apenas na frequência das palavras, Essa abordagem, ignora certas características do texto que podem dar pistas sobre a estrutura do texto. Por exemplo, frases como ``Prosseguindo'', ``Dando continuidade'', ``Ao final da reunião'' podem ajudar a detectar o inicio ou final de segmento. A fim de aproveitar esses indicadores, pode-se usar um framework bayesiano que permite incorporar fontes externas ao modelo. O método \textit{BayesSeg}~\cite{Eis2008} aborda a coesão léxica em um contexto bayesiano onde as palavas de um segmento surgem de um modelo de linguagem multinomial o qual é associado a um assunto. 
 
 Essa abordagem é similar à métodos probabilísticos de extração de tópicos como o Latent Dirichlet Allocation (LDA)~\cite{Blei2003}, com a diferença que ao invés de atribuir tópicos ocultos a cada palavra, esses são usados para segmentar o documento. Nesse sentido, detecta-se um limite entre sentenças quando a distribuição de tópicos entre elas for diferente. O \textit{BayesSeg} baseia-se na ideia que alguns termos são usados em tópicos específicos enquanto outros são neutros em relação aos tópicos do documento e são usados para expressar uma estrutura do documento, ou seja, as frases-pista vem de um único modelo generativo. A fim de refletir essa ideia, o modelo é adaptado para influenciar a probabilidade da sentença de ser uma final ou início de segmento conforme a presença de frases pista.
 

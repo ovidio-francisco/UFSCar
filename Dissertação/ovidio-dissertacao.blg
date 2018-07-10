@@ -3,35 +3,6 @@ Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: ovidio-dissertacao.aux
 A level-1 auxiliary file: conteudo/capitulos/2-cap1.aux
 A level-1 auxiliary file: conteudo/capitulos/3-cap2.aux
-Case mismatch error between cite keys Bokaei2015 and bokaei2015
----line 77 of file conteudo/capitulos/3-cap2.aux
- : \citation{Bokaei2015
- :                     }
-I'm skipping whatever remains of this command
-Case mismatch error between cite keys Choi2000 and choi2000
----line 83 of file conteudo/capitulos/3-cap2.aux
- : \citation{Choi2000
- :                   }
-I'm skipping whatever remains of this command
-Case mismatch error between cite keys Misra2009 and misra2009
----line 85 of file conteudo/capitulos/3-cap2.aux
- : \citation{Misra2009
- :                    }
-I'm skipping whatever remains of this command
-Case mismatch error between cite keys Choi2000 and choi2000
----line 86 of file conteudo/capitulos/3-cap2.aux
- : \citation{Choi2000
- :                   }
-I'm skipping whatever remains of this command
-Case mismatch error between cite keys Choi2000 and choi2000
----line 163 of file conteudo/capitulos/3-cap2.aux
- : \citation{Choi2000
- :                   }
-I'm skipping whatever remains of this command
-White space in argument---line 217 of file conteudo/capitulos/3-cap2.aux
- : \citation{NGUYEN
- :                  Viet Cuong}
-I'm skipping whatever remains of this command
 A level-1 auxiliary file: conteudo/capitulos/4-cap3.aux
 A level-1 auxiliary file: conteudo/capitulos/cap-avaliacao-segmentadores.aux
 A level-1 auxiliary file: conteudo/capitulos/cap-avaliacao-extratores.aux
@@ -49,14 +20,14 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
-Reallocated field_info (elt_size=4) to 10382 items from 5000.
+Reallocated field_info (elt_size=4) to 10451 items from 5000.
 Database file #1: abntex2-options.bib
 Database file #2: referencias.bib
-Repeated entry---line 137 of file referencias.bib
+Repeated entry---line 151 of file referencias.bib
  : // @inbook{Aggarwal2018
  :                        ,
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 1158 of file referencias.bib
+I was expecting a `,' or a `}'---line 1172 of file referencias.bib
  : 
  : year = {2016}
 (Error may have been on previous line)
@@ -69,7 +40,7 @@ Warning--I didn't find a database entry for "Z"
 Warning--I didn't find a database entry for "bokaei2015"
 Warning--I didn't find a database entry for "sakahara2014"
 Warning--I didn't find a database entry for "misra2009"
-Warning--I didn't find a database entry for "Eisenstein2008"
+Warning--I didn't find a database entry for "choi2000"
 Warning--I didn't find a database entry for "conf/sdm/2013"
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
@@ -83,45 +54,45 @@ Warning--faltando school em Reynar1998
 | Em caso de dúvidas ou problemas com este estilo procure |
 | http://abntex2.googlecode.com                           |
 +---------------------------------------------------------+
-You've used 71 entries,
+You've used 72 entries,
             6711 wiz_defined-function locations,
-            1805 strings with 25881 characters,
-and the built_in function-call counts, 104587 in all, are:
-= -- 11544
-> -- 2387
-< -- 2216
-+ -- 3002
-- -- 717
-* -- 7032
-:= -- 12709
-add.period$ -- 349
-call.type$ -- 71
-change.case$ -- 793
-chr.to.int$ -- 175
-cite$ -- 73
-duplicate$ -- 9341
-empty$ -- 4783
-format.name$ -- 3420
-if$ -- 21973
+            1812 strings with 26126 characters,
+and the built_in function-call counts, 105775 in all, are:
+= -- 11686
+> -- 2402
+< -- 2250
++ -- 3042
+- -- 722
+* -- 7104
+:= -- 12866
+add.period$ -- 353
+call.type$ -- 72
+change.case$ -- 799
+chr.to.int$ -- 176
+cite$ -- 74
+duplicate$ -- 9466
+empty$ -- 4826
+format.name$ -- 3443
+if$ -- 22197
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 1305
-newline$ -- 389
-num.names$ -- 353
-pop$ -- 1590
+missing$ -- 1321
+newline$ -- 396
+num.names$ -- 358
+pop$ -- 1604
 preamble$ -- 1
-purify$ -- 291
+purify$ -- 294
 quote$ -- 0
-skip$ -- 9416
+skip$ -- 9545
 stack$ -- 1
-substring$ -- 4773
-swap$ -- 3841
-text.length$ -- 153
+substring$ -- 4825
+swap$ -- 3884
+text.length$ -- 154
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 32
+type$ -- 34
 warning$ -- 3
-while$ -- 597
+while$ -- 604
 width$ -- 0
-write$ -- 1256
-(There were 9 error messages)
+write$ -- 1272
+(There were 3 error messages)

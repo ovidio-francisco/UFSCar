@@ -49,22 +49,22 @@
 \backcite {Croft2009, Manning2008, Rijsbergen1979}{{14}{2.4.1.3}{equation.2.4.5}}
 \backcite {Croft2009, Manning2008, Rijsbergen1979}{{14}{2.4.1.3}{equation.2.4.5}}
 \backcite {Kozima1993}{{14}{2.5}{section.2.5}}
-\backcite {Naili2016,Bokaei2015,CHAIBI2014,Kern2009,Galley2003}{{16}{2.5}{figure.2.2}}
-\backcite {Naili2016,Bokaei2015,CHAIBI2014,Kern2009,Galley2003}{{16}{2.5}{figure.2.2}}
-\backcite {Naili2016,Bokaei2015,CHAIBI2014,Kern2009,Galley2003}{{16}{2.5}{figure.2.2}}
-\backcite {Naili2016,Bokaei2015,CHAIBI2014,Kern2009,Galley2003}{{16}{2.5}{figure.2.2}}
-\backcite {Naili2016,Bokaei2015,CHAIBI2014,Kern2009,Galley2003}{{16}{2.5}{figure.2.2}}
+\backcite {Naili2016,Bokaei2015a,CHAIBI2014,Kern2009,Galley2003}{{16}{2.5}{figure.2.2}}
+\backcite {Naili2016,Bokaei2015a,CHAIBI2014,Kern2009,Galley2003}{{16}{2.5}{figure.2.2}}
+\backcite {Naili2016,Bokaei2015a,CHAIBI2014,Kern2009,Galley2003}{{16}{2.5}{figure.2.2}}
+\backcite {Naili2016,Bokaei2015a,CHAIBI2014,Kern2009,Galley2003}{{16}{2.5}{figure.2.2}}
+\backcite {Naili2016,Bokaei2015a,CHAIBI2014,Kern2009,Galley2003}{{16}{2.5}{figure.2.2}}
 \backcite {Cardoso2017,Dias2007}{{16}{2.5}{figure.2.2}}
 \backcite {Cardoso2017,Dias2007}{{16}{2.5}{figure.2.2}}
-\backcite {Choi2000, Kern2009, Misra2009}{{16}{2.5}{figure.2.2}}
-\backcite {Choi2000, Kern2009, Misra2009}{{16}{2.5}{figure.2.2}}
-\backcite {Choi2000, Kern2009, Misra2009}{{16}{2.5}{figure.2.2}}
-\backcite {Choi2000}{{16}{2.5}{figure.2.2}}
-\backcite {Eisenstein2008}{{17}{3}{figure.2.3}}
+\backcite {Choi2000a, Kern2009, Misra2009a}{{16}{2.5}{figure.2.2}}
+\backcite {Choi2000a, Kern2009, Misra2009a}{{16}{2.5}{figure.2.2}}
+\backcite {Choi2000a, Kern2009, Misra2009a}{{16}{2.5}{figure.2.2}}
+\backcite {Choi2000a}{{16}{2.5}{figure.2.2}}
+\backcite {Eis2008}{{17}{3}{figure.2.3}}
 \backcite {Reynar1998}{{17}{2.5}{figure.2.4}}
 \backcite {Utiyama2001}{{18}{2.5}{equation.2.5.8}}
 \backcite {Malioutov:2006a}{{19}{2.5}{equation.2.5.11}}
-\backcite {Eisenstein2008}{{19}{2.5}{equation.2.5.11}}
+\backcite {Eis2008}{{19}{2.5}{equation.2.5.11}}
 \backcite {Blei2003}{{19}{2.5}{equation.2.5.11}}
 \backcite {Malioutov:2006a}{{19}{2.5}{equation.2.5.11}}
 \backcite {Shi2000}{{19}{2.5}{figure.2.5}}
@@ -80,7 +80,7 @@
 \backcite {Passonneau1997}{{25}{2.6}{section.2.6}}
 \backcite {Galley2003}{{25}{2.6}{section.2.6}}
 \backcite {Janin2003}{{25}{2.6}{section.2.6}}
-\backcite {Choi2000}{{25}{2.6}{section.2.6}}
+\backcite {Choi2000a}{{25}{2.6}{section.2.6}}
 \backcite {CHAIBI2014}{{25}{2.6}{section.2.6}}
 \backcite {Hovy2010}{{25}{2.6.1}{subsection.2.6.1}}
 \backcite {Gruenstein2007}{{26}{2.6.1.5}{subsubsection.2.6.1.5}}
@@ -102,7 +102,7 @@
 \backcite {Zhao2004, Dhillon2001, Zhao2004a}{{30}{2.8}{section.2.8}}
 \backcite {Zhao2004, Dhillon2001, Zhao2004a}{{30}{2.8}{section.2.8}}
 \backcite {Zhao2004, Dhillon2001, Zhao2004a}{{30}{2.8}{section.2.8}}
-\backcite {NGUYEN Viet Cuong}{{30}{2.8}{section.2.8}}
+\backcite {Cuong2011}{{30}{2.8}{section.2.8}}
 \backcite {Bokaei2015a, Bokaei2016, Misra2009a, Sakahara2014a}{{36}{3.1.1.3}{subsubsection.3.1.1.3}}
 \backcite {Bokaei2015a, Bokaei2016, Misra2009a, Sakahara2014a}{{36}{3.1.1.3}{subsubsection.3.1.1.3}}
 \backcite {Bokaei2015a, Bokaei2016, Misra2009a, Sakahara2014a}{{36}{3.1.1.3}{subsubsection.3.1.1.3}}
