@@ -1,22 +1,22 @@
-\section{Anotação de Subtópicos}
+\section{Anotação de Segmentos}
 \label{sec:anotacoes}
 A avaliação de segmentadores frequentemente requer uma segmentação de referência. Essa referência deve refletir um segmentação real sendo confiável para apoiar a avaliação da qualidade de técnicas de segmentação. 
 
 A construção de um corpus anotado demanda tempo e disponibilidade de anotadores humanos, o que a torna uma tarefa relativamente custosa. 
 Assim, é necessário seguir procedimentos que assegurem que a tarefa seja concluída com o exito esperado que o resultado produzido seja válido, confiável e consistente para fins de pesquisas científicas. Para isso,~\cite{Hovy2010} propuseram uma metodologia para anotação em corpus que pode ser resumida em sete passos: 
-(1) Escolha do evento a ser anotado, %e a teoria que o embasa,
-(2) Seleção do corpus,% apropriado,
-(3) Selecionar e treinar os anotadores,
-(4) Especificar o processo de anotação,
-(5) Modelar uma interface para anotação,
-(6) Escolher e aplicar medidas de avaliação e 
-(7) Disponibilizar e manter o produto.
+(1) escolha do evento a ser anotado, %e a teoria que o embasa,
+(2) seleção do corpus, % apropriado,
+(3) selecionar e treinar os anotadores,
+(4) especificar o processo de anotação,
+(5) modelar uma interface para anotação,
+(6) escolher e aplicar medidas de avaliação e 
+(7) disponibilizar e manter o produto.
 % 
-A seguir, serão descritos outros trabalhos relacionados a anotação de corpus e em seguida a os passos dessa metodologia. %  propostos por~\cite{Hovy2010}.
+% A seguir, serão descritos outros trabalhos relacionados a anotação de corpus e em seguida a os passos dessa metodologia. %  propostos por~\cite{Hovy2010}.
 
 Um dos primeiros trabalhos a produzir um corpus com anotações de segmentos foi~\cite{Hearst1997} no qual um corpus constituído por doze artigos de revistas foram anotados por sete técnicos pesquisadores. Cada artigo continha entre 1.800 e 2500 palavras. O autor considerou um limite entre segmentos real onde pelo menos três anotadores marcavam uma transição de tópico. No trabalho de~\cite{Kazantseva2012} utilizou-se um livro ficcional contendo vinte capítulos que foi segmentado por seis alunos de graduação que além de marcar os pontos de transição entre segmentos, forneceram um descrição breve sobre cada segmento identificado. 
 
-Outros trabalhos abordaram corpus compostos pela transcrição de audios. Por exemplo,~\cite{Passonneau1997} transcreveu vinte narrativas sobre um filme que foi segmentada e anotada por sete voluntários. Cada narrativa, continha cerca de 13.500 palavras. Os anotadores não receberam nenhum treinamento formal para a tarefa, mas apenas foram solicitados a usar suas noções de comunicabilidade para identificar as mudanças de tópicos. No trabalho de~\cite{Galley2003} investigou-se a transcrição de um conjunto de vinte e cinco reuniões obtidas do \textit{ICSI Meeting corpus}~\cite{Janin2003} em que pelo menos três anotadores analisaram os pontos onde ocorreu troca da pessoa que fala e apontaram como sendo ou não uma mudança de assunto.  
+Outros trabalhos abordaram corpus compostos pela transcrição de audios. Por exemplo,~\cite{Passonneau1997} transcreveu vinte narrativas sobre um filme que foi segmentada e anotada por sete voluntários. Cada narrativa, continha cerca de 13.500 palavras. Os anotadores não receberam nenhum treinamento formal para a tarefa, mas apenas foram solicitados a usar suas noções de comunicabilidade para identificar as mudanças de tópicos. No trabalho de~\cite{Galley2003} investigou-se a transcrição de um conjunto de vinte e cinco reuniões obtidas do \textit{ICSI Meeting corpus}~\cite{Janin2003} em que pelo menos três anotadores analisaram os pontos onde ocorreram trocas da pessoa que fala e apontaram como sendo ou não uma mudança de assunto.  
 
 
 Nesses trabalhos utilizou-se os anotadores como juízes para produzir uma referência em que decidiu-se sobre cada candidato a limite entre segmentos por meio da opinião da maioria. Além desses trabalhos, outros se valeram de segmentações produzidas artificialmente. Por exemplo,~\cite{Choi2000a} produziu um corpos formado por 700 documentos. As referências foram geradas pela concatenação de sentenças extraídas de documentos diferentes. De maneira semelhante,~\cite{CHAIBI2014} utilizou a concatenação de artigos de noticias para produzir os documentos. Os autores consideram um limite real o ponto que divide dois artigos originais. 
@@ -50,20 +50,20 @@ Por outro lado, a ausência de treinamento implica que as anotações terão com
 \subsection{Especificar o procedimento de anotação}
 Alguns processos de anotações podem levar longos períodos, criando a necessidade de dividir a tarefa em fases. Nesses casos, frequentemente os anotadores fazem reuniões periódicas a fim de relatar eventuais problemas.  
 % Em alguns projetos, abre-se espaço para discussão de pontos com baixa concordância, a qual é chamada de fase de ``reconciliação''. 
-Em caso de baixa concordância, pode-se abrir espaço para discussão de pontos com baixa concordância, a qual é chamada de fase de ``reconciliação'' que embora recomendada, em alguns casos pode ocasionar um enviesamento dos resultados. Outra estratégia para baixa concordância é que solicitar que os anotadores marquem o nível de certeza sobre as anotações.
+Em caso de baixa concordância, pode-se abrir espaço para discussão a fim de que encontrar um ponto de convergência, a qual é chamada de fase de ``reconciliação'' que embora recomendada, em alguns casos pode ocasionar um enviesamento dos resultados, outra estratégia para diminuir uma eventual baixa concordância é solicitar que os anotadores marquem o nível de certeza sobre as anotações.
 % Essa fase é recomendada para aumentar o nível de concordância, contudo pode ocasionar um enviesamento dos resultados. 
 
 \subsection{Modelar uma interface para anotação}
 Um software com interface amigável, além de facilitar o trabalho, evita erros durante o processo. 
 O ganho em tempo e a melhoria na qualidade dos resultados justifica a criação de uma interface. 
-Exemplos softwares para anotação na área de Processamento de linguagem natural e Bioinformática podem ser encontrados em~\cite{Gruenstein2007}.
+Exemplos softwares para anotação na área de Processamento de Linguagem Natural e Bioinformática podem ser encontrados em~\cite{Gruenstein2007}.
 
 
 
 \subsection{Escolher e aplicar medidas de avaliação}
 
 Quando observa-se baixa concordância entre os anotadores, entende-se que há uma falha no processo de anotação ou na teoria a ser explicada, o que implica que o dados produzidos não servem para a fins de pesquisa ou aplicações práticas. A medida dessa concordância deve determinar a confiabilidade dos resultados.
-A medida mais utilizada em Processamento de linguagem natural é o coeficiente \textit{kappa}~\cite{Carletta1996} que retorna um valor no intervalo de 0 até 1, onde 1 significa uma concordância perfeita e 0 que não houve concordância. Seja, $P(A)$ a proporção de vezes que os anotadores concordam e $P(E)$ a proporção de concordância esperada ao acaso. O cálculo de \textit{kappa} é dado por:
+A medida mais utilizada em Processamento de Linguagem Natural é o coeficiente \textit{kappa}~\cite{Carletta1996} que retorna um valor no intervalo de 0 até 1, onde 1 significa uma concordância perfeita e 0 que não houve concordância. Seja $P(A)$ a proporção de vezes que os anotadores concordam e $P(E)$ a proporção de concordância esperada ao acaso. O cálculo de \textit{kappa} é dado por:
 
 \begin{equation}
 	kappa = \frac{P(A) - P(E)}{1 - P(E)}

@@ -1,4 +1,137 @@
 
+%        ==========|   Extração de Tópicos  |==========
+
+Os modelos de extração de tópicos fornecem uma estratégia que visa encontrar nas relações entre documentos, padrões latentes que sejam significativos para o entendimento dessas relações~\cite{Wei2007}. Tais modelos podem ranquear um conjunto de termos importantes para um ou mais assuntos, bem como ranquear documentos por sua relevância para determinado tema~\cite{Faleiros2016,Xing2009}.
+Atualmente, destacam-se os modelos probabilísticos de extração de tópicos como LDA~\cite{Blei2003} e PLSA~\cite{Hofmann1999}. São abordagens amplamente utilizadas ~\cite{DZhu20122} e frequentemente referenciadas em trabalhos que buscam extrair conhecimento e organizar bases textuais ~\cite{Aggarwal2018, OCallaghan2015, Steyvers2007}.  
+%
+%
+Nesse trabalho, a expressão \textit{tópico} é usada para designar um assunto considerando que o mesmo foi extraído por meio de técnicas automáticas, ficando a expressão \textit{assunto} utilizada como seu teor popular. 
+
+O processo de extração de tópicos atribui um peso a cada documento-tópico e uma relação termo-tópico que pode representar a probabilidade de ocorrência de um termo em um documento dado que o tópico está presente. A partir dessas representações, é possível agrupar documentos que compartilham o mesmo tópico bem como os termos que melhor descrevem o tópico~\cite{Aggarwal2018}. Com isso, obtém-se uma organização da coleção de documentos que favorece técnicas para navegação e consulta à coleção de documentos~\cite{Maracini2010}. 
+% 
+Além disso, essas abordagens de extração de tópicos fornecem a construção de novos atributos que representam os principais tópicos ou assuntos identificados na coleção de documentos, sendo uma oportunidade de incorporar conhecimento de domínio aos dados~\cite{Guyon2003}. 
+% com o mesmo teor 
+
+% -- #################### SAI ####################
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+No modelo LDA, o processo de geração de palavras se dá em duas etapas:
+
+\begin{enumerate}
+	\item Atribui-se uma distribuição aleatória sobre os tópicos.
+	\item Para cada termo no documento:
+		\begin{enumerate}
+			\item Atribui-se aleatoriamente a um tópico da distribuição obtida na etapa 1;
+			\item Seleciona-se aleatoriamente uma palavra do tópico correspondente.
+		\end{enumerate}
+\end{enumerate}
+
+Assim cada documento é associado a múltiplos tópicos com proporções distintas (etapa 1). Cada palavra do documento é obtida de um tópico específico (etapa 2.b) que foi anteriormente obtido a partir da distribuição de tópicos do documento (etapa 2.a). Isso permite ao modelo LDA atribuir, para cada documento, múltiplos tópicos com proporções distintas~\cite{Blei2012}.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+as matrizes resultantes não possuem elementos negativos, permitindo uma interpretação mais intuitiva de seus valores. O processo de fatoração proporciona o agrupamento das colunas da matriz $W$ o que possibilita, a propriedade \textit{clustering} a esse modelo.
+
+
+a propriedade de \textit{clustering}, ou seja, agrupar as colunas da matriz $W$, e dessa forma, oferece a característica interessante de agrupar os documentos da coleção.  % -< Onde é utilizado
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Os modelos não-probabilísticos são técnicas em que a matrix documento-termo é projetada em um espaço com menor dimensionalidade chamado \textit{Latent Semantic Space}. 
+
+
+Os modelos não-probabilísticas são técnicas em que 
+
+baseiam-se em técnicas de fatoração de matrizes, 
+
+
+
+
+
+
+
+
+
+
+
+
+
+Os modelos de extração de tópicos são abordagens que visam descobrir padrões latentes nas relações entre os documentos e seus termos. Esses modelos se baseiam na premissa de que um documento é produzido a partir de tópicos previamente definidos que determinam os termos a serem utilizados em um documento. Nesse contexto, um documento é uma mistura de tópicos onde cada termo presente no documento pode ser associado a um tópico. Um tópico por sua vez, é uma estrutura com valor semântico que é representada por um conjunto de termos e seus pesos que indicam o quão significante esses termos são para um assunto e pode ser útil para o  entendimento do tema do tópico~\cite{Steyvers2007,Blei2012}.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -4,6 +4,21 @@ The top-level auxiliary file: ovidio-dissertacao.aux
 A level-1 auxiliary file: conteudo/capitulos/2-cap1.aux
 A level-1 auxiliary file: conteudo/capitulos/3-cap2.aux
 A level-1 auxiliary file: conteudo/capitulos/4-cap3.aux
+Case mismatch error between cite keys Bokaei2015a and bokaei2015a
+---line 16 of file conteudo/capitulos/4-cap3.aux
+ : \citation{Bokaei2015a
+ :                      }
+I'm skipping whatever remains of this command
+Case mismatch error between cite keys Misra2009a and misra2009a
+---line 18 of file conteudo/capitulos/4-cap3.aux
+ : \citation{Misra2009a
+ :                     }
+I'm skipping whatever remains of this command
+Case mismatch error between cite keys Sakahara2014a and sakahara2014a
+---line 19 of file conteudo/capitulos/4-cap3.aux
+ : \citation{Sakahara2014a
+ :                        }
+I'm skipping whatever remains of this command
 A level-1 auxiliary file: conteudo/capitulos/cap-avaliacao-segmentadores.aux
 A level-1 auxiliary file: conteudo/capitulos/cap-avaliacao-extratores.aux
 A level-1 auxiliary file: conteudo/capitulos/5-conclusao.aux
@@ -20,17 +35,12 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
-Reallocated field_info (elt_size=4) to 10727 items from 5000.
+Reallocated field_info (elt_size=4) to 10796 items from 5000.
 Database file #1: abntex2-options.bib
 Database file #2: referencias.bib
 Repeated entry---line 194 of file referencias.bib
  : // @inbook{Aggarwal2018
  :                        ,
-I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 1215 of file referencias.bib
- : 
- : year = {2016}
-(Error may have been on previous line)
 I'm skipping whatever remains of this entry
 A bad cross reference---entry "Cheng2013"
 refers to entry "conf/sdm/2013", which doesn't exist
@@ -47,52 +57,51 @@ Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
 Reallocated global_strs (elt_size=20001) to 20 items from 10.
 Reallocated glb_str_end (elt_size=4) to 20 items from 10.
 Warning--faltando school em Faleiros2016
-Warning--campo year vazio em Faleiros2016
 Warning--faltando school em Reynar1998
 +---------------------------------------------------------+
 | Estilo bibliográfico abntex2-alf.bst versão v-1.9.2           |
 | Em caso de dúvidas ou problemas com este estilo procure |
 | http://abntex2.googlecode.com                           |
 +---------------------------------------------------------+
-You've used 76 entries,
+You've used 77 entries,
             6711 wiz_defined-function locations,
-            1841 strings with 26959 characters,
-and the built_in function-call counts, 110420 in all, are:
-= -- 12146
-> -- 2536
-< -- 2333
-+ -- 3167
-- -- 762
-* -- 7429
-:= -- 13456
-add.period$ -- 369
-call.type$ -- 76
-change.case$ -- 841
-chr.to.int$ -- 186
+            1843 strings with 27040 characters,
+and the built_in function-call counts, 112315 in all, are:
+= -- 12375
+> -- 2569
+< -- 2384
++ -- 3228
+- -- 772
+* -- 7553
+:= -- 13680
+add.period$ -- 374
+call.type$ -- 77
+change.case$ -- 852
+chr.to.int$ -- 190
 cite$ -- 78
-duplicate$ -- 9840
-empty$ -- 5058
-format.name$ -- 3629
-if$ -- 23181
+duplicate$ -- 10032
+empty$ -- 5125
+format.name$ -- 3676
+if$ -- 23559
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 1390
-newline$ -- 419
-num.names$ -- 378
-pop$ -- 1686
+missing$ -- 1408
+newline$ -- 426
+num.names$ -- 383
+pop$ -- 1704
 preamble$ -- 1
-purify$ -- 310
+purify$ -- 314
 quote$ -- 0
-skip$ -- 9927
+skip$ -- 10117
 stack$ -- 1
-substring$ -- 5011
-swap$ -- 4037
-text.length$ -- 161
+substring$ -- 5118
+swap$ -- 4114
+text.length$ -- 164
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 34
-warning$ -- 3
-while$ -- 635
+warning$ -- 2
+while$ -- 645
 width$ -- 0
-write$ -- 1339
-(There were 3 error messages)
+write$ -- 1359
+(There were 5 error messages)

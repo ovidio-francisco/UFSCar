@@ -43,9 +43,11 @@ Em seguida, os blocos de texto são representados por vetores que contém as fre
 % --> fazer um gráfico-rascunho e usar bolinhas para indicar os limites e usar 1 vale para demostrar o cálculo do depth score.
 
 
-O TextTiling apresenta como vantagens a facilidade de implementação e baixa complexidade computacional, favorecendo a implementação de trabalhos similares 
-~\cite{Naili2016,Bokaei2015a,CHAIBI2014,Kern2009,Galley2003}, 
-e sua utilização como \textit{base line} em outros trabalhos~\cite{Cardoso2017,Dias2007}. Por outro lado, algoritmos mais complexos, como os baseados em matrizes de similaridade, apresentam acurácia relativamente superior como apresentado em~\cite{Choi2000a, Kern2009, Misra2009a}.
+O TextTiling apresenta como vantagens a facilidade de implementação 
+e baixa complexidade computacional, 
+o que favorece a implementação de trabalhos similares 
+~\cite{Naili2016,bokaei2015a,CHAIBI2014,Kern2009,Galley2003}, 
+e sua utilização como \textit{base line} em outros trabalhos~\cite{Cardoso2017,Dias2007}. Por outro lado, algoritmos mais complexos, como os baseados em matrizes de similaridade, apresentam acurácia relativamente superior como apresentado em~\cite{Choi2000a, Kern2009, misra2009a}.
 
 
 % ==========  C99  ==========
@@ -136,20 +138,22 @@ $W = \{w_1, w_2, \dots, w_n\}$ e um conjunto de segmentos $S = \{s_1, s_2, \dots
 	P(S|W) = \frac{P(W|S)P(S)}{P(W)}
 \end{equation}
 
-Com isso, é possível encontrar a sequência de segmentos mais provável $\hat{S} = arg max_S~P(W|S) P(S)$. Nesse trabalho assume-se que os segmentos são estaticamente independentes entre si e as palavras nos segmentos são independentes dado o segmento que as contém. Essa simplificação permite decompor o termo $P(W|S)$ em um produtório de ocorrência de das palavras dado um segmento.  
+Com isso, é possível encontrar a sequência de segmentos mais provável $\hat{S} = arg max_S~P(W|S) P(S)$. Nesse trabalho assume-se que os segmentos são estaticamente independentes entre si e as palavras nos segmentos são independentes dado o segmento que as contém. Essa simplificação permite decompor o termo $P(W|S)$ em um produtório de ocorrência de das palavras dado um segmento,  
 
 \begin{equation}
-	P(W|S) = \prod_{i=1}^m \prod_{j=1}^n P(w_j^i|S_i)
+	P(W|S) = \prod_{i=1}^m \prod_{j=1}^n P(w_j^i|S_i) ~ ,
 \end{equation}
 
-Onde $P(w_j^i|S_i)$ é a probabilidade da j-ésima palavra ocorrer no segmento $S_i$ a qual é definida na Equação~\ref{equ:Utiyama2}. Seja $f_i(w_j)$ a frequência da j-ésima palavra no i-ésimo segmento, $n_i$ é o número de palavras em $S_i$ e $k$ é o número de palavas diferentes em $W$. Calcula-se: 
+
+\noindent
+onde $P(w_j^i|S_i)$ é a probabilidade da j-ésima palavra ocorrer no segmento $S_i$ a qual é definida na Equação~\ref{equ:Utiyama2}. Seja $f_i(w_j)$ a frequência da j-ésima palavra no i-ésimo segmento, $n_i$ é o número de palavras em $S_i$ e $k$ é o número de palavas diferentes em $W$. Calcula-se: 
 
 \begin{equation}
 	P(w_j^i|S_i) = \frac{f_i(w_j) + 1}{n_i + k}
 	\label{equ:Utiyama2}
 \end{equation}
 
-A suposição de independência entre segmentos e as palavras neles contidas, são é verificada no mundo real. Para segmentos muito pequenos a estimativa das probabilidades das palavras pode ser afetada, além disso, o modelo não leva em conta a importância relativa das palavras~\cite{Malioutov:2006a}.
+A suposição de independência entre segmentos e as palavras neles contidas, são é verificada no mundo real. Para segmentos muito pequenos a estimativa das probabilidades das palavras pode ser afetada. Além disso, o modelo não leva em conta a importância relativa das palavras~\cite{Malioutov:2006a}.
 
  
 
@@ -159,7 +163,7 @@ A suposição de independência entre segmentos e as palavras neles contidas, s�
 % ==========  BayesSeg  ==========
 
 Os métodos baseados em coesão léxica que utilizam métricas como cosseno quantificam a similaridade entre sentenças baseando-se apenas na frequência das palavras, Essa abordagem, ignora certas características do texto que podem dar pistas sobre a estrutura do texto. Por exemplo, frases como ``Prosseguindo'', ``Dando continuidade'', ``Ao final da reunião'' podem ajudar a detectar o inicio ou final de segmento. A fim de aproveitar esses indicadores, pode-se usar um framework bayesiano que permite incorporar fontes externas ao modelo. O método \textit{BayesSeg}~\cite{Eis2008} aborda a coesão léxica em um contexto bayesiano onde as palavas de um segmento surgem de um modelo de linguagem multinomial o qual é associado a um assunto. 
-
+%
 Essa abordagem é similar à métodos probabilísticos de extração de tópicos como o Latent Dirichlet Allocation (LDA)~\cite{Blei2003}, com a diferença que ao invés de atribuir tópicos ocultos a cada palavra, esses são usados para segmentar o documento. Nesse sentido, detecta-se um limite entre sentenças quando a distribuição de tópicos entre elas for diferente. O \textit{BayesSeg} baseia-se na ideia que alguns termos são usados em tópicos específicos enquanto outros são neutros em relação aos tópicos do documento e são usados para expressar uma estrutura do documento, ou seja, as frases-pista vem de um único modelo generativo. A fim de refletir essa ideia, o modelo é adaptado para influenciar a probabilidade da sentença de ser uma final ou início de segmento conforme a presença de frases pista.
 
 % ===

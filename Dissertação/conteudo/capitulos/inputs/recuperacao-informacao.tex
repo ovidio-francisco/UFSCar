@@ -3,12 +3,12 @@
 
 % Necessidade de encontrar informação
 
-Devido à popularização dos computadores e a grande disponibilidade de documentos em formato digital, em especial na Web, a área da Recuperação de Informação (RI) tem recebido atenção de pesquisadores nas últimas décadas. Recuperação de Informação é área da computação que envolve a aplicação de métodos computacionais no tratamento e busca de informação em bases de dados não estruturados, usualmente grandes coleções de documentos textuais armazenados em dispositivos eletrônicos. De fato, não há dados completamente não estruturados ao se considerar a estrutura linguística latente em documentos textuais. O termo 'não estruturado' se refere a dados que oferecem uma estrutura claramente estruturada para sistemas computadorizados, a exemplo de documentos 
+Devido à popularização dos computadores e a grande disponibilidade de documentos em formato digital, em especial na \textit{web}, a área da Recuperação de Informação (RI) tem recebido atenção de pesquisadores nas últimas décadas. Recuperação de Informação é área da computação que envolve a aplicação de métodos computacionais no tratamento e busca de informação em bases de dados não estruturados, usualmente grandes coleções de documentos textuais armazenados em dispositivos eletrônicos. De fato, não há dados completamente não estruturados ao se considerar a estrutura linguística latente em documentos textuais. O termo ``não estruturado'' se refere a dados que oferecem uma estrutura claramente estruturada para sistemas computadorizados, a exemplo de documentos 
 textuais~\cite{Manning2008}.
 
 % Tratamento == Classificação e Agrupamento?
 
-A tarefa central da recuperação de informação é encontrar informações de interesse dos usuários e exibí-las. Essa necessidade motiva o desenvolvimento de o desenvolvimento de sistemas de recuperação de informação (SRI). Nesses sistemas o usuário expressa sua necessidade por meio da formulação de uma consulta, usualmente composta por um conjunto de palavras-chave. Então, o sistema apresenta os resultados da busca, frequentemente documentos, em ordem de relevância com a consulta.  % TODO: Melhorar
+A tarefa central da recuperação de informação é encontrar informações de interesse dos usuários e exibí-las. Essa necessidade motiva o desenvolvimento de sistemas de recuperação de informação (SRI). Nesses sistemas o usuário expressa sua necessidade por meio da formulação de uma consulta, usualmente composta por um conjunto de palavras-chave. Então, o sistema apresenta os resultados da busca, frequentemente documentos, em ordem de relevância com a consulta.  % TODO: Melhorar
 
 
 % \subsection{Modelos de Recuperação de Informação}
@@ -20,8 +20,7 @@ Um modelo de recuperação de informação deve criar representações de docume
 O modelo booleano ou modelo lógico foi um dos primeiros modelos aplicados a recuperação informação sendo utilizado a partir de 1960. Nesse modelo uma consulta é considerada uma sequencia de termos conectador por operadores lógicos como AND, OR e NOT. Como resultado, classifica cada documento como relevante ou não relevante à consulta, sem gradação de relevância. Esses operadores lógicos podem ser manipulados por usuários com algum conhecimento em álgebra booleana para aumentar a quantidade de resultados ou restringí-la.
 
 Uma desvantagem desse modelo é que não é possível medir a relevância de um documento em relação a consultado do usuário, devia a essa limitação não há informação que permita a ordenação dos resultados, que é uma característica relevante para muitos SRI.
-
-As vantagens desse modelo são a facilidade de implementação e a possibilidade de usuários experientes usarem os operadores lógicos como uma forma de controle sobre os resultados da busca. Por outro lado, para usuários inexperientes isso pode ser considerado uma desvantagem, uma vez que o uso de expressões lógicas não é intuitivo. Apesar dos problemas apresentados, visto sua simplicidade, esse modelo foi largamente utilizado em sistemas comerciais. 
+Já as vantagens desse modelo são a facilidade de implementação e a possibilidade de usuários experientes usarem os operadores lógicos como uma forma de controle sobre os resultados da busca. Por outro lado, para usuários inexperientes isso pode ser considerado uma desvantagem, uma vez que o uso de expressões lógicas não é intuitivo. Apesar dos problemas apresentados, visto sua simplicidade, esse modelo foi largamente utilizado em sistemas comerciais. 
 
 % Falar do Booleano Estendido???
 
@@ -35,9 +34,9 @@ Considera-se que um documento pode ser representado pelo seu conjunto de termos,
 %
 De forma similar, para uma consulta $q$, associa-se um peso $w_{i,q}$ a cada termo consulta. 
 %
-Assim o vetor associado ao documento $d_j$ é dado por $\vec{d}_{j} = (w_{1,j}, w_{2,j}, ..., w_{t,j})$ 
+Assim o vetor associado ao documento $d_j$ é dado por $\vec{d}_{j} = (w_{j,1}, w_{j,2}, ..., w_{j,p})$ 
 %
-e o vetor associado a consulta $q$ é dado por $\vec{q} = (w_{1,q}, w_{2,q}, ..., w_{t,q})$.
+e o vetor associado a consulta $q$ é dado por $\vec{q} = (w_{q,1}, w_{q,2}, ..., w_{q,l})$.
 
 % -- Movido para "Medidas de Proximidade " ↓↓↓↓
 No modelo vetorial, a similidade entre um documento $d_j$ e uma consulta $q$ é calculada pela correlação entre os vetores $\vec{d_j}$ e $\vec{q}$, a qual pode ser medida pelo cosseno (Equação~\ref{equ:cosine}) do ângulo entre esses vetores, conforme já mostrado na Seção~\ref{subsec:MedidasProximidade}. 
@@ -84,11 +83,10 @@ Entre as medidas mais populares para ranqueamento de buscas está a TF-IDF (\tex
 
 
 
-Onde $freq_{i,j}$ é a frequência do termo $k_i$ no documento $d_j$. A medida TF-IDF atribui valores altos para termos que ocorrem frequentemente em um documentos, e valores menores para termos que ocorrem poucas vezes em um documento ou em muitos documentos da coleção. A ideia da medida tf.idf e quantificar a importância de um termo em um documento com base em sua frequência no próprio documento e sua distribuição ao longo da coleção de documentos~\cite{Croft2009,Salton1988,Shamsinejadbabki2012,Salton:1994}.
+Onde $freq_{i,j}$ é a frequência do termo $k_i$ no documento $d_j$. A medida TF-IDF atribui valores altos para termos que ocorrem frequentemente em um documentos, e valores menores para termos que ocorrem poucas vezes em um documento ou em muitos documentos da coleção. A ideia da medida TF-IDF e quantificar a importância de um termo em um documento com base em sua frequência no próprio documento e sua distribuição ao longo da coleção de documentos~\cite{Croft2009,Salton1988,Shamsinejadbabki2012,Salton:1994}.
 
 
-Uma vez que o sistema calcula os graus de similaridade entre os documentos e a busca por meio da equação~\ref{equ:cosine}, é possível ranquear os resultados por ordem de relevância. Além disso, sua relativa simplicidade e flexibilidade, favorecem a aplicação desse modelo em sistemas de recuperação de informação
-~\cite{Tan2005,Croft2009,Manning2008}.
+Uma vez que o sistema, por meio da Equação~\ref{equ:cosine}, calcula a similaridade entre os documentos e a consulta do usuário, é possível ranquear os resultados por ordem de relevância. Além disso, sua relativa simplicidade e flexibilidade, favorecem a aplicação desse modelo em sistemas de recuperação de informação~\cite{Tan2005,Croft2009,Manning2008}.
 
 % ->-----------------------------------------------------------------------
 
@@ -118,7 +116,7 @@ Então, pode-se calcular:
 	sim(d_j, q) = 	
 	\prod_{i:d_i=1} \frac{p_i}{s_i} 
 	\cdot
-	\prod_{i:d_i=0} \frac{1 - p_i}{1 - s_i}
+	\prod_{i:d_i=0} \frac{1 - p_i}{1 - s_i}~,
 	\label{equ:simprob-numeric}
 \end{equation}
 
@@ -130,21 +128,25 @@ onde $\prod_{i:d_i=1}$ significa o produto dos termos com valor 1.\\
 %
 %
 O modelo também supõe que os termos ocorrem independentemente no documento, ou seja, a ocorrência de um termo não influencia a ocorrência de outro. 
-Partindo dessas suposições, a Equação~\ref{equ:simprob-numeric} passa por transformações que incluem aplicação da regra de Bayes e simplificações matemáticas, e chega-se a Equação~\ref{equ:robertson} conhecida como equação de Robertson-Spark Jones a qual é considerada a expressão clássica para ranqueamento no modelo probabilístico. Detalhes da dedução dessa equação podem ser encontrados em~\cite{Croft2009, Manning2008, Rijsbergen1979}.
+Partindo dessas suposições, a Equação~\ref{equ:simprob-numeric} passa por transformações que incluem aplicação da regra de Bayes e simplificações matemáticas, e chega-se a Equação~\ref{equ:robertson} conhecida como equação de Robertson-Spark Jones a qual é considerada a expressão clássica para ranqueamento no modelo probabilístico. Detalhes da dedução dessa equação podem ser encontrados em~\cite{Croft2009, Manning2008, Rijsbergen1979},
 
 
 
 \begin{equation}
-	sim(d_j,q) = \sum_{i=1}^{t} w_{i,j} \cdot w_{i,q}  \cdot \sigma_{i/R}
+	sim(d_j,q) = \sum_{i=1}^{t} w_{i,j} \cdot w_{i,q}  \cdot \sigma_{i/R}~,
 	\label{equ:robertson}
 \end{equation}
+
+
 
 \noindent
 onde $t$ é o número total de termos da coleção e 
 
+
+
 \begin{equation}
-	\sigma_{i/R} = \log \frac{p_i}{1-p_i} + \log \frac{1-s_i}{s_i}
-\end{equation}
+	\sigma_{i/R} = \log \frac{p_i}{1-p_i} + \log \frac{1-s_i}{s_i}~.
+\end{equation} 
 
 
 Esse modelo tem com principal desvantagem a necessidade de estimar a separação inicial entre $R_q$ e $\overline{R_q}$, pois não se conhece inicialmente o conjunto dos documentos relevantes a uma consulta, o qual deve ser aprimorado por meio de interações com o usuário. Além disso, o modelo não leva em consideração a frequência dos termos na indexação do documento. O modelo apresenta como vantagem a característica de atribuir probabilidades as similaridades entre documentos e consultas, o que permite ranquear dos resultados por ordem de relevância. 
