@@ -62,6 +62,14 @@ Dispon{\'\i}vel em: \url{http://dx.doi.org/10.1109/TASLP.2015.2456430}.}
 \emph{Natural Language Engineering}, Cambridge University Press, v.~22, n.~1,
   p. 41--72, 2016.}
 
+\bibitem[Bui et al. 2017]{Bui2017}
+\abntrefinfo{Bui et al.}{BUI et al.}{2017}
+{BUI, Q.~V. et al. Combining latent dirichlet allocation and k-means for
+  documents clustering: Effect of probabilistic based distance measures. In:
+  NGUYEN, N.~T. et al. (Ed.). \emph{Intelligent Information and Database
+  Systems}. Cham: Springer International Publishing, 2017. p. 248--257.
+ISBN 978-3-319-54472-4.}
+
 \bibitem[Cao 2017]{Cao:2017}
 \abntrefinfo{Cao}{CAO}{2017}
 {CAO, L. Data science: A comprehensive overview.
@@ -187,6 +195,13 @@ ISBN 0521836573, 9780521836579.}
 {GRUENSTEIN, A.; NIEKRASZ, J.; PURVER, M. \emph{MEETING STRUCTURE ANNOTATION --
   Annotations Collected with a General Purpose Toolkit}. [S.l.]: Springer,
   Dordrecht, 2007.}
+
+\bibitem[Gurung e Wagh 2017]{Pema2017}
+\abntrefinfo{Gurung e Wagh}{GURUNG; WAGH}{2017}
+{GURUNG, P.; WAGH, R. A study on topic identification using k means clustering
+  algorithm: Big vs. small documents. In:  . [S.l.]: Research India
+  Publications, 2017. p. 221--233.
+ISBN 0973-6107.}
 
 \bibitem[Gutierrez et al. 2016]{Gutierrez2016}
 \abntrefinfo{Gutierrez et al.}{GUTIERREZ et al.}{2016}
@@ -420,6 +435,15 @@ Dispon{\'\i}vel em: \url{http://www.fsma.edu.br/si/7edicao.html}.}
   Butterworth-Heinemann, 1979.
 ISBN 0408709294.}
 
+\bibitem[Rossi e Rezende 2011]{Rossi2011}
+\abntrefinfo{Rossi e Rezende}{ROSSI; REZENDE}{2011}
+{ROSSI, R.~G.; REZENDE, S.~O. Building a topic hierarchy using the
+  bag-of-related-words representation. In:  \emph{Proceedings of the 11th ACM
+  Symposium on Document Engineering}. New York, NY, USA: ACM, 2011.  (DocEng
+  '11), p. 195--204.
+ISBN 978-1-4503-0863-2. Dispon{\'\i}vel em:
+  \url{http://doi.acm.org/10.1145/2034691.2034733}.}
+
 \bibitem[Sakahara, Okada e Nitta 2014]{sakahara2014a}
 \abntrefinfo{Sakahara, Okada e Nitta}{SAKAHARA; OKADA; NITTA}{2014}
 {SAKAHARA, M.; OKADA, S.; NITTA, K. Domain-independent unsupervised text
@@ -442,6 +466,15 @@ ISSN 2375-9232.}
   n.~5, p. 513--523, ago. 1988.
 ISSN 0306-4573.
 Dispon{\'\i}vel em: \url{http://dx.doi.org/10.1016/0306-4573(88)90021-0}.}
+
+\bibitem[Santos, Carvalho e Rezende 2010]{Santos2010a}
+\abntrefinfo{Santos, Carvalho e Rezende}{SANTOS; CARVALHO; REZENDE}{2010}
+{SANTOS, F.~F. dos; CARVALHO, V.~O. de; REZENDE, S.~O. Selecting candidate
+  labels for hierarchical document clusters using association rules. In:
+  \emph{Advances in Soft Computing - Lecture Notes in Computer Science}.
+  Berlin: Springer, 2010.
+ISBN 9783642167720. Dispon{\'\i}vel em:
+  \url{http://www.springerlink.com/content/m83l718tk1162840}.}
 
 \bibitem[Schwartz-Ziv e Weisbach 2013]{Miriam2013}
 \abntrefinfo{Schwartz-Ziv e Weisbach}{SCHWARTZ-ZIV; WEISBACH}{2013}

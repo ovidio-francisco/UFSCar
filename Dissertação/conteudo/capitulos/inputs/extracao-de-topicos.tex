@@ -116,13 +116,30 @@ Assim cada documento é associado a múltiplos tópicos com proporções distint
 
 
 
+Outro modelo empregado na tarefa de extração de tópicos é o \textit{K-Means}. O \textit{K-Means} é um dos algoritmos de agrupamento particional mais usados, tendo se tornado bastante popular em tarefas de recuperação de informação~\cite{Manning2008}. O agrupamento de documentos de uma coleção se dá inicialmente pela codificação de cada documento em um vetores em que seus elementos o representam. Em seguida usa-se medidas de distância para medir as similaridades entre os documentos da coleção.
+A ideia por traz do \textit{K-Means} é definir $k$ documentos aleatórios para representar os grupos, chamados centroides, e atribuir cada documento ao centroide mais próximo. Os centroides são recalculados os grupos rearranjados iterativamente até que não haja mudanças significativas.
+O funcionamento do \textit{K-Means} para agrupar um coleção de documentos em $k$ grupos pode ser definido com a seguir:
+\begin{enumerate}
+	\item Selecione $k$ objetos iniciais, chamados centroides;
+	\item Atribua cada documento ao grupo mais próximo;
+	\item Calcule o novo centroide para cada grupo;
+	\item Repita os passos 2 e 3 até que os grupos não sejam alterados significativamente.
+\end{enumerate}
 
+O critério de parada do \textit{K-Means} é determinado por soma dos erros quadráticos, definida como:
 
+\begin{equation}
+	E = \sum_{i=1}^k    \sum_{x \in C_i}     |x - m_i |^2~,
+\end{equation}
 
+\noindent
+na qual $E$ é a somatória dos erros quadráticos calculados para cada documento da coleção, $x$ é o vetor de atributos que representa o documento, e $mi$ é o centroide ao que representa o grupo $C_i$.
 
+No contexto de extração de tópicos o \textit{K-Means} pode selecionar termos contidos na coleção a fim de descrever os grupos. Esses termos, chamados descritores podem ser selecionados pela frequência dos termos no centroide. 
+%
+Esses termos, chamados descritores podem ser atribuídos a cada grupo com base na frequência dos termos dos centroides. Verifica-se quais termos são mais comuns no documento que representa o centroide e que menos frequentes nos documentos mais distantes ao centroide~\cite{Pema2017, Bui2017, Rossi2011, Santos2010a, Manning2008}. 
 
-
-Os modelos de extração de tópicos foram inicialmente propostos para utilização em mineração de texto onde são empregados na redução de dimensionalidade, extração de informações em textos, bem como na organização e recuperação de documentos, sendo utilizados para mensurar a relevância de um termo ou conjunto de termos para determinado assunto ou documento. Visto a popularidade nessas tarefas e flexibilidade dos modelos, logo notou-se sua utilidade em outros tipos de dados com atributos discretos como imagens, grafos e genética. 
+Os modelos de extração de tópicos foram inicialmente propostos para utilização em mineração de texto onde são empregados na redução de dimensionalidade, extração de informações em textos, bem como na organização e recuperação de documentos, sendo utilizados para mensurar a relevância de um termo ou conjunto de termos para determinado assunto ou documento. Visto a popularidade nessas tarefas e flexibilidade dos modelos, logo notou-se sua utilidade em outros tipos de dados com atributos discretos como na genética, grafos e imagens. 
 
 
 % \subsection{Pós-processamento}
