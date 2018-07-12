@@ -256,7 +256,6 @@ INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmr7.tfm
 INPUT /usr/share/texmf/tex/latex/lm/t1lmtt.fd
 INPUT /usr/share/texmf/tex/latex/lm/t1lmtt.fd
 INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmtt10.tfm
-INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmbx12.tfm
 OUTPUT conteudo/capitulos/3-cap2.aux
 INPUT conteudo/capitulos/3-cap2.tex
 INPUT conteudo/capitulos/3-cap2.tex
@@ -274,6 +273,7 @@ INPUT conteudo/capitulos/inputs/medidas.tex
 INPUT conteudo/capitulos/inputs/medidas.tex
 INPUT conteudo/capitulos/inputs/segmentacao.tex
 INPUT conteudo/capitulos/inputs/segmentacao.tex
+INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmbx12.tfm
 INPUT conteudo/capitulos/inputs/algoritmos-segmentacao.tex
 INPUT conteudo/capitulos/inputs/algoritmos-segmentacao.tex
 INPUT conteudo/capitulos/figs/janelas-deslizantes.pdf

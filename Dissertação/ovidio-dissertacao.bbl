@@ -17,13 +17,6 @@ ISBN 978-3-319-73531-3.}
   Publishing Company, Incorporated, 2012.
 ISBN 1461432227, 9781461432227.}
 
-\bibitem[Alemi e Ginsparg 2015]{AlemiG15}
-\abntrefinfo{Alemi e Ginsparg}{ALEMI; GINSPARG}{2015}
-{ALEMI, A.~A.; GINSPARG, P. Text segmentation based on semantic word
-  embeddings.
-\emph{CoRR}, abs/1503.05543, 2015.
-Dispon{\'\i}vel em: \url{http://arxiv.org/abs/1503.05543}.}
-
 \bibitem[Beeferman, Berger e Lafferty 1999]{Beeferman1999}
 \abntrefinfo{Beeferman, Berger e Lafferty}{BEEFERMAN; BERGER; LAFFERTY}{1999}
 {BEEFERMAN, D.; BERGER, A.; LAFFERTY, J. Statistical models for text
@@ -109,7 +102,7 @@ Dispon{\'\i}vel em:
 ISBN 978-1-61197-283-2. Dispon{\'\i}vel em:
   \url{http://dblp.uni-trier.de/db/conf/sdm/sdm2013.html\#ChengGLWY13}.}
 
-\bibitem[Choi 2000]{Choi2000a}
+\bibitem[Choi 2000]{choi2000a}
 \abntrefinfo{Choi}{CHOI}{2000}
 {CHOI, F. Y.~Y. Advances in domain independent linear text segmentation. In:
   \emph{Proceedings of the 1st North American Chapter of the Association for

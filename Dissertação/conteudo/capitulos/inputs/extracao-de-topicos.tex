@@ -129,11 +129,11 @@ O funcionamento do \textit{K-Means} para agrupar um coleção de documentos em $
 O critério de parada do \textit{K-Means} é determinado por soma dos erros quadráticos, definida como:
 
 \begin{equation}
-	E = \sum_{i=1}^k    \sum_{x \in C_i}     |x - m_i |^2~,
+	E = \sum_{i=1}^k    \sum_{x \in G_i}     |x - l_i |^2~,
 \end{equation}
 
 \noindent
-na qual $E$ é a somatória dos erros quadráticos calculados para cada documento da coleção, $x$ é o vetor de atributos que representa o documento, e $mi$ é o centroide ao que representa o grupo $C_i$.
+na qual $E$ é a somatória dos erros quadráticos calculados para cada documento da coleção, $x$ é o vetor de atributos que representa o documento, e $li$ é o centroide que representa o grupo $G_i$.
 
 No contexto de extração de tópicos o \textit{K-Means} pode selecionar termos contidos na coleção a fim de descrever os grupos. Esses termos, chamados descritores podem ser selecionados pela frequência dos termos no centroide. 
 %

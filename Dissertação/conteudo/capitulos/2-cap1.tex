@@ -22,9 +22,9 @@ Além dos tipos de informações mais comuns que são armazenados no formato tex
 %        ========== ==========   Reuniões   ========== ==========
 % 
 %Seu conteúdo é frequentemente registrado em texto na forma de atas para fins de documentação e consulta posterior. 
-Reuniões são tarefas presentes em ambientes de gestão e organizações de um modo geral, onde discute-se problemas, soluções, propostas, alterações de projetos e frequentemente são tomadas decisões importantes onde a comunicação entre os membros da reunião é feita de forma majoritariamente verbal. Para que seu conteúdo possa ser registrado e externalizado, adota-se a prática de escrever seu conteúdo em atas~\cite{Miriam2013, Lee2011}.
+Reuniões são tarefas presentes em ambientes de gestão e organizações de um modo geral, onde discute-se problemas, soluções, propostas, alterações de projetos e frequentemente são tomadas decisões importantes onde a comunicação entre os membros da reunião é feita de forma majoritariamente verbal. 
 
-Por exemplo, nas reuniões do conselho de um programa de pós-graduação de uma universidade, são decididos, quais são os critérios para credenciamento e permanência de docentes no programa. Ao longo do tempo, esse tema pode ser discutido e mencionado diversas vezes, podendo os critérios inclusive passar por significativas alterações, devido a diversos fatores. O coordenador do programa pode desejar recuperar qual foi a decisão mais recente, para poder aplicar os critérios a um potencial novo membro do programa, ou os membros do conselho podem desejar rever o histórico de tudo o que já foi discutido/decidido sobre o tema, para poder propor alterações nas regras, de forma mais adequada.
+Para que seu conteúdo possa ser registrado e externalizado, adota-se a prática de escrever seu conteúdo em atas~\cite{Miriam2013, Lee2011}. Por exemplo, nas reuniões do conselho de um programa de pós-graduação de uma universidade, são decididos, quais são os critérios para credenciamento e permanência de docentes no programa. Ao longo do tempo, esse tema pode ser discutido e mencionado diversas vezes, podendo os critérios inclusive passar por significativas alterações, devido a diversos fatores. O coordenador do programa pode desejar recuperar qual foi a decisão mais recente, para poder aplicar os critérios a um potencial novo membro do programa, ou os membros do conselho podem desejar rever o histórico de tudo o que já foi discutido/decidido sobre o tema, para poder propor alterações nas regras, de forma mais adequada.
 
 As atas de reunião possuem características particulares. Frequentemente apresentam um texto com poucas quebras de parágrafo e sem marcações de estrutura, como capítulos, seções ou quaisquer indicações sobre o tema do texto. Devido a fatores como a não estruturação e volume dos textos, a localização de um assunto em uma coleção de atas é uma tarefa custosa, especialmente considerando o seu crescimento de seu número em uma instituição. 
 %%  -->
@@ -38,11 +38,11 @@ Também é comum o uso de ferramentas que fazem buscas nos conteúdos dos docume
 3) informa apenas se um documento casa ou não com a consulta do usuário com base na presença ou ausência dos termos da consulta~\cite{Aggarwal2012,Manning2008}. 
  
 
-Ainda nesse contexto, usa-se outras técnicas de Recuperação de Informação como o Modelo de Espaço Vetorial para ranquear documentos atribuindo pontuações para a similaridade de cada par documento/consulta. Com isso, é possível apresentar os documentos ordenados conforme a sua relevância com a consulta. Utiliza-se também dicionários de sinônimos (\textit{thesaurus}) para expandir a consulta do usuário por meio de conhecimento externo adicionado ao sistema~\cite{X,Y,Z}. % e com isso ...
+Ainda nesse contexto, usa-se outras técnicas de Recuperação de Informação como o Modelo de Espaço Vetorial para ranquear documentos atribuindo pontuações para a similaridade de cada par documento/consulta. Com isso, é possível apresentar os documentos ordenados conforme a sua relevância com a consulta. 
+% Utiliza-se também dicionários de sinônimos (\textit{thesaurus}) para expandir a consulta do usuário por meio de conhecimento externo adicionado ao sistema~\cite{X,Y,Z}. % e com isso ...
 % TODO: Referências
 %
-Contudo, essas técnicas baseiam-se na frequência de palavras, em que os documentos e consultas são vistos como conjuntos de termos sem levar em conta relações entre termos que compartilham um mesmo tópico dentro do domínio~\cite{WEIXING}. Por exemplo, as consultas ``\textit{alunos bolsa CAPES}'' e ``\textit{suporte financeiro a pesquisa}'' 
-podem estar relacionados a um assunto em comum,
+Contudo, essas técnicas baseiam-se na frequência de palavras, em que os documentos e consultas são vistos como conjuntos de termos sem levar em conta relações entre termos que compartilham um mesmo tópico dentro do domínio~\cite{WEIXING}. Por exemplo, as consultas ``\textit{alunos bolsa CAPES}'' e ``\textit{suporte financeiro a pesquisa}'' podem estar relacionados a um assunto em comum,
 % tratam de um mesmo assunto, 
 nesse caso, a transferência de valores monetários como apoio a carreira acadêmica.
 % -> ou ainda "assistência téncina em computadores" e "manutenção de PCs" que tratam de assuntos muito próximos, "conservação de equipamentos de informática".
@@ -74,7 +74,7 @@ Uma vez que a ata registra a sucessão de assuntos discutidos na reunião, um si
 
 %        ========== ==========|   Segmentação  |========== ==========
 
-Técnicas de segmentação automática de textos (segmentação textual) podem ser aplicadas com esse propósito. Elas podem dividir um documento em segmentos que contenham um assunto relativamente independente e gerar um conjunto de subdocumentos derivado da coleção de atas original~\cite{Aggarwal2018, bokaei2015, sakahara2014, misra2009, Eis2008, choi2000}.
+Técnicas de segmentação automática de textos (segmentação textual) podem ser aplicadas com esse propósito. Elas podem dividir um documento em segmentos que contenham um assunto relativamente independente e gerar um conjunto de subdocumentos derivado da coleção de atas original~\cite{Aggarwal2018, bokaei2015a, sakahara2014a, misra2009a, Eis2008, choi2000a}.
 
 %--> onde é usada e como pode ser usada aqui
 
@@ -100,7 +100,7 @@ Contudo, a segmentação textual apenas indica as transições de assuntos ao lo
 % --> Falando do problema ??
 Devido às características das atas, como a multiplicidade de assuntos, e ausência de meta-informação, as técnicas de segmentação podem ser empregadas em conjunto com modelos de extração de tópicos para criar uma estrutura de dados derivada da coleção de documentos original. 
 Essa abordagem visa, em primeiro lugar, identificar os assuntos tratados em cada ata e gerar uma coleção de subdocumentos derivados da coleção de atas originais e, a partir disso, utilizar modelos de extração de tópicos para encontrar relações latentes entre os subdocumentos e termos da coleção.
-Como resultado, obtém-se uma organização da coleção em que os segmentos são agrupados por assuntos e acrescidos de um conjunto de termos que representam os principais tópicos ou assuntos identificados na coleção de documentos, dessa forma, incorporando conhecimento aos dados originais. Esse novos atributos e a melhor organização da coleção documentos podem ser usados para 
+Como resultado, obtém-se uma organização da coleção em que os segmentos são agrupados por assuntos e acrescidos de um conjunto de termos que representam os principais tópicos ou assuntos identificados na coleção de documentos, dessa forma, incorporando conhecimento aos dados originais. Esse novos atributos e a organização das atas por temas podem ser usados para 
 % os descrevem, 
 % podendo assim 
 expandir o espaço de busca a fim de aprimorar técnicas de recuperação de informação em um sistema para extração de conhecimento em coleções de atas de reunião.
@@ -130,11 +130,30 @@ Como objetivos específicos, esse trabalho visa
 % 1)
 dar início a investigação de métodos de segmentação textual, extração de tópicos e recuperação de informação no contexto de atas de reunião. Para conhecer a eficiência das técnicas de segmentação textual, seus resultados foram analisados tendo como referência anotações coletadas de profissionais que desempenham atividades ligadas a atas e reuniões.
 % 2)
-Além disso, avaliou-se junto ao usuário a qualidade dos subdocumentos apresentados quanto ao agrupamento e relevância das informações contidas. Para isso, foi feito uma coleta de dados sobre a percepção de usuários sobre a qualidade dos resultados apresentados em uma consulta a coleção de atas por meio do sistema.
+Avaliar junto ao usuário a qualidade dos subdocumentos apresentados quanto ao agrupamento e relevância das informações contidas. Para isso, foi feito uma coleta de dados sobre a percepção de usuários sobre a qualidade dos resultados apresentados em uma consulta a coleção de atas por meio do sistema.
 % 
 Dessa forma, busca-se ajudar a suprir a necessidade de ferramentas para para esse cenário e contribuindo com uma metodologia de extração de informação em documentos com múltiplos assuntos. Além disso, disponibilizar o sistema implementado bem como os dados coletados durante a análise das técnicas de forma a contribuir com novos trabalhos relacionados a esse contexto.
 
 % --> Disponibilisação do sistema final.
+
+
+
+% \section{Organização da Dissertação}
+
+No Capítulo~\ref{cap2} são apesentados os principais conceitos da Recuperação de Informação, de Mineração de Textos, Segmentação Textual e Extração de Tópicos.
+%
+No Capítulo~\ref{cap3} é proposto um sistema para extração de conhecimento em atas de reunião e inicia-se o seu desenvolvimento com base nas técnicas mencionadas. 
+Ainda nesse capítulo, é mostrado um estudo de caso da aplicação das técnicas de Segmentação Textual e Extração de Tópicos em uma coleção de atas. 
+%
+No Capítulo~\ref{cap-segmentadores} é apresentada uma avaliação objetiva em algoritmos de Segmentação Textual a fim de analisar seus resultados e escolher um segmentador a ser utilizado no sistema proposto.
+anotações
+%
+No Capítulo~\ref{cap-extratores} é apresentada uma avaliação subjetiva dos resultados dos modelos de Extração de Tópicos sob um corpus composto por segmentos de atas. Adicionalmente, avaliou-se o segmentador utilizado, uma vez que este está ligado aos resultados avaliados. 
+%
+Por fim as conclusões do trabalho, as limitações dessa pesquisa e os trabalhos futuros são apresentados no último capítulo dessa dissertação.
+
+
+
 
 
 % "Diante do cenário descrito na seção anterior, a hipótese levantada neste trabalho é que a qualidade da recomendação é melhorada quando são utilizadas hierarquias de tópicos como informações contextuais."
@@ -144,7 +163,6 @@ Dessa forma, busca-se ajudar a suprir a necessidade de ferramentas para para ess
 
 
 
-% \section{Organização da Dissertação}
 
 
 
