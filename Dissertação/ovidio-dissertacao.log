@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.8.22)  12 JUL 2018 00:54
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.8.22)  12 JUL 2018 23:08
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1418,12 +1418,12 @@ LaTeX Font Info:    Font shape `T1/lmss/bx/it' in size <12> not available
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <12> not available
 (Font)              Font shape `T1/lmss/m/sl' tried instead on input line 45.
 
-Overfull \hbox (1.5877pt too wide) detected at line 75
+Overfull \hbox (1.5877pt too wide) detected at line 77
  \T1/lmss/bx/n/12 107
  []
 
 
-Overfull \hbox (1.5877pt too wide) detected at line 79
+Overfull \hbox (1.5877pt too wide) detected at line 81
  \T1/lmss/bx/n/12 123
  []
 
@@ -1475,7 +1475,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 124--126
 
  []
 
-) [14] (./conteudo/capitulos/inputs/preprocessamento.tex [15] <conteudo/capitulos/figs/luhn2.png, id=367, 813.0375pt x 322.20375pt>
+) [14] (./conteudo/capitulos/inputs/preprocessamento.tex [15] <conteudo/capitulos/figs/luhn2.png, id=371, 813.0375pt x 322.20375pt>
 File: conteudo/capitulos/figs/luhn2.png Graphic file (type png)
  <use conteudo/capitulos/figs/luhn2.png>
 Package pdftex.def Info: conteudo/capitulos/figs/luhn2.png used on input line 26.
@@ -1510,12 +1510,12 @@ LaTeX Warning: Citation `Choi2000a' on page 19 undefined on input line 16.
 (./conteudo/capitulos/inputs/algoritmos-segmentacao.tex
 Underfull \vbox (badness 1286) has occurred while \output is active []
 
- [19] <conteudo/capitulos/figs/janelas-deslizantes.pdf, id=429, page=1, 844.15375pt x 597.23125pt>
+ [19] <conteudo/capitulos/figs/janelas-deslizantes.pdf, id=433, page=1, 844.15375pt x 597.23125pt>
 File: conteudo/capitulos/figs/janelas-deslizantes.pdf Graphic file (type pdf)
  <use conteudo/capitulos/figs/janelas-deslizantes.pdf, page 1>
 Package pdftex.def Info: conteudo/capitulos/figs/janelas-deslizantes.pdf, page1 used on input line 25.
 (pdftex.def)             Requested size: 364.00139pt x 202.99684pt.
- <conteudo/capitulos/figs/curva-similaridade.pdf, id=433, page=1, 845.1575pt x 597.23125pt>
+ <conteudo/capitulos/figs/curva-similaridade.pdf, id=437, page=1, 845.1575pt x 597.23125pt>
 File: conteudo/capitulos/figs/curva-similaridade.pdf Graphic file (type pdf)
  <use conteudo/capitulos/figs/curva-similaridade.pdf, page 1>
 Package pdftex.def Info: conteudo/capitulos/figs/curva-similaridade.pdf, page1 used on input line 37.
@@ -1534,7 +1534,7 @@ pdfTeX warning: pdflatex (file ./conteudo/capitulos/figs/janelas-deslizantes.pdf
 
 LaTeX Warning: Citation `Choi2000a' on page 21 undefined on input line 55.
 
-<conteudo/capitulos/figs/similarity-matrix-l.png, id=485, 516.93124pt x 471.7625pt>
+<conteudo/capitulos/figs/similarity-matrix-l.png, id=489, 516.93124pt x 471.7625pt>
 File: conteudo/capitulos/figs/similarity-matrix-l.png Graphic file (type png)
  <use conteudo/capitulos/figs/similarity-matrix-l.png>
 Package pdftex.def Info: conteudo/capitulos/figs/similarity-matrix-l.png used on input line 66.
@@ -1546,12 +1546,12 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 Underfull \vbox (badness 4872) has occurred while \output is active []
 
- [21 <./conteudo/capitulos/figs/curva-similaridade.pdf>] <conteudo/capitulos/figs/c99-matrizes.pdf, id=510, page=1, 796.9775pt x 597.23125pt>
+ [21 <./conteudo/capitulos/figs/curva-similaridade.pdf>] <conteudo/capitulos/figs/c99-matrizes.pdf, id=514, page=1, 796.9775pt x 597.23125pt>
 File: conteudo/capitulos/figs/c99-matrizes.pdf Graphic file (type pdf)
  <use conteudo/capitulos/figs/c99-matrizes.pdf, page 1>
 Package pdftex.def Info: conteudo/capitulos/figs/c99-matrizes.pdf, page1 used on input line 92.
 (pdftex.def)             Requested size: 170.71652pt x 73.96164pt.
- <conteudo/capitulos/figs/c99-matrizes.pdf, id=512, page=2, 796.9775pt x 597.23125pt>
+ <conteudo/capitulos/figs/c99-matrizes.pdf, id=516, page=2, 796.9775pt x 597.23125pt>
 File: conteudo/capitulos/figs/c99-matrizes.pdf Graphic file (type pdf)
  <use conteudo/capitulos/figs/c99-matrizes.pdf, page 2>
 Package pdftex.def Info: conteudo/capitulos/figs/c99-matrizes.pdf, page2 used on input line 97.
@@ -1559,7 +1559,7 @@ Package pdftex.def Info: conteudo/capitulos/figs/c99-matrizes.pdf, page2 used on
 
 Underfull \vbox (badness 3009) has occurred while \output is active []
 
- [22 <./conteudo/capitulos/figs/c99-matrizes.pdf> <./conteudo/capitulos/figs/c99-matrizes.pdf> <./conteudo/capitulos/figs/similarity-matrix-l.png>] [23] <conteudo/capitulos/figs/graph-representation-of-text.png, id=565, 714.67pt x 230.8625pt>
+ [22 <./conteudo/capitulos/figs/c99-matrizes.pdf> <./conteudo/capitulos/figs/c99-matrizes.pdf> <./conteudo/capitulos/figs/similarity-matrix-l.png>] [23] <conteudo/capitulos/figs/graph-representation-of-text.png, id=569, 714.67pt x 230.8625pt>
 File: conteudo/capitulos/figs/graph-representation-of-text.png Graphic file (type png)
  <use conteudo/capitulos/figs/graph-representation-of-text.png>
 Package pdftex.def Info: conteudo/capitulos/figs/graph-representation-of-text.png used on input line 184.
@@ -1581,7 +1581,7 @@ LaTeX Warning: Command \c invalid in math mode on input line 57.
 
 LaTeX Warning: Command \c invalid in math mode on input line 57.
 
-<conteudo/capitulos/figs/near-missing.pdf, id=613, page=1, 844.15375pt x 597.23125pt>
+<conteudo/capitulos/figs/near-missing.pdf, id=617, page=1, 844.15375pt x 597.23125pt>
 File: conteudo/capitulos/figs/near-missing.pdf Graphic file (type pdf)
  <use conteudo/capitulos/figs/near-missing.pdf, page 1>
 Package pdftex.def Info: conteudo/capitulos/figs/near-missing.pdf, page1 used on input line 87.
@@ -1644,12 +1644,12 @@ Package epstopdf Info: Source file: <conteudo/capitulos/figs/visao-geral-3.eps>
 (epstopdf)             Command: <repstopdf --outfile=conteudo/capitulos/figs/visao-geral-3-eps-converted-to.pdf conteudo/capitulos/figs/visao-geral-3.eps>
 (epstopdf)             \includegraphics on input line 29.
 Package epstopdf Info: Output file is already uptodate.
- <conteudo/capitulos/figs/visao-geral-3-eps-converted-to.pdf, id=866, 1084.05pt x 542.025pt>
+ <conteudo/capitulos/figs/visao-geral-3-eps-converted-to.pdf, id=870, 1084.05pt x 542.025pt>
 File: conteudo/capitulos/figs/visao-geral-3-eps-converted-to.pdf Graphic file (type pdf)
  <use conteudo/capitulos/figs/visao-geral-3-eps-converted-to.pdf>
 Package pdftex.def Info: conteudo/capitulos/figs/visao-geral-3-eps-converted-to.pdf used on input line 29.
 (pdftex.def)             Requested size: 386.75278pt x 193.37547pt.
- [40 <./conteudo/capitulos/figs/visao-geral-3-eps-converted-to.pdf>] <conteudo/capitulos/figs/preparacao-docs.pdf, id=874, page=1, 844.15375pt x 597.23125pt>
+ [40 <./conteudo/capitulos/figs/visao-geral-3-eps-converted-to.pdf>] <conteudo/capitulos/figs/preparacao-docs.pdf, id=878, page=1, 844.15375pt x 597.23125pt>
 File: conteudo/capitulos/figs/preparacao-docs.pdf Graphic file (type pdf)
  <use conteudo/capitulos/figs/preparacao-docs.pdf, page 1>
 Package pdftex.def Info: conteudo/capitulos/figs/preparacao-docs.pdf, page1 used on input line 64.
@@ -1667,7 +1667,7 @@ LaTeX Warning: Citation `Misra2009a' on page 42 undefined on input line 120.
 
 LaTeX Warning: Citation `Sakahara2014a' on page 42 undefined on input line 120.
 
-[42] <conteudo/capitulos/figs/estrutura-de-dados-interna.pdf, id=918, page=1, 844.15375pt x 597.23125pt>
+[42] <conteudo/capitulos/figs/estrutura-de-dados-interna.pdf, id=922, page=1, 844.15375pt x 597.23125pt>
 File: conteudo/capitulos/figs/estrutura-de-dados-interna.pdf Graphic file (type pdf)
  <use conteudo/capitulos/figs/estrutura-de-dados-interna.pdf, page 1>
 Package pdftex.def Info: conteudo/capitulos/figs/estrutura-de-dados-interna.pdf, page1 used on input line 166.
@@ -1679,7 +1679,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 [43] [44 <./conteudo/capitulos/figs/estrutura-de-dados-interna.pdf
 
 pdfTeX warning: pdflatex (file ./conteudo/capitulos/figs/estrutura-de-dados-interna.pdf): PDF inclusion: invalid other resource which is no dict (key 'ProcSets', type <array>); ignored.
->] <conteudo/capitulos/figs/tela-principal-2-1.png, id=1532, 1177.39874pt x 737.75626pt>
+>] <conteudo/capitulos/figs/tela-principal-2-1.png, id=1536, 1177.39874pt x 737.75626pt>
 File: conteudo/capitulos/figs/tela-principal-2-1.png Graphic file (type png)
  <use conteudo/capitulos/figs/tela-principal-2-1.png>
 Package pdftex.def Info: conteudo/capitulos/figs/tela-principal-2-1.png used on input line 213.
@@ -1701,7 +1701,7 @@ LaTeX Warning: Float too large for page by 39.19878pt on input line 89.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-) [48] <conteudo/capitulos/figs/doc-em-png/distribuicao.pdf, id=1563, page=1, 624.3325pt x 845.1575pt>
+) [48] <conteudo/capitulos/figs/doc-em-png/distribuicao.pdf, id=1567, page=1, 624.3325pt x 845.1575pt>
 File: conteudo/capitulos/figs/doc-em-png/distribuicao.pdf Graphic file (type pdf)
  <use conteudo/capitulos/figs/doc-em-png/distribuicao.pdf, page 1>
 Package pdftex.def Info: conteudo/capitulos/figs/doc-em-png/distribuicao.pdf, page1 used on input line 313.
@@ -1729,12 +1729,12 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 ]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [53] [54] <conteudo/capitulos/figs/interface-TST.png, id=1682, 1371.1225pt x 743.77875pt>
+ [53] [54] <conteudo/capitulos/figs/interface-TST.png, id=1686, 1371.1225pt x 743.77875pt>
 File: conteudo/capitulos/figs/interface-TST.png Graphic file (type png)
  <use conteudo/capitulos/figs/interface-TST.png>
 Package pdftex.def Info: conteudo/capitulos/figs/interface-TST.png used on input line 97.
 (pdftex.def)             Requested size: 455.0pt x 246.82098pt.
- [55 <./conteudo/capitulos/figs/interface-TST.png>] [56] <conteudo/capitulos/figs/segmentacao-referencia.pdf, id=1711, page=1, 844.15375pt x 597.23125pt>
+ [55 <./conteudo/capitulos/figs/interface-TST.png>] [56] <conteudo/capitulos/figs/segmentacao-referencia.pdf, id=1715, page=1, 844.15375pt x 597.23125pt>
 File: conteudo/capitulos/figs/segmentacao-referencia.pdf Graphic file (type pdf)
  <use conteudo/capitulos/figs/segmentacao-referencia.pdf, page 1>
 Package pdftex.def Info: conteudo/capitulos/figs/segmentacao-referencia.pdf, page1 used on input line 171.
@@ -1806,22 +1806,22 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 )
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [62] <conteudo/capitulos/figs/graficos/analiseNSegRate-C99.png, id=1936, 602.25pt x 372.39125pt>
+ [62] <conteudo/capitulos/figs/graficos/analiseNSegRate-C99.png, id=1940, 602.25pt x 372.39125pt>
 File: conteudo/capitulos/figs/graficos/analiseNSegRate-C99.png Graphic file (type png)
  <use conteudo/capitulos/figs/graficos/analiseNSegRate-C99.png>
 Package pdftex.def Info: conteudo/capitulos/figs/graficos/analiseNSegRate-C99.png used on input line 485.
 (pdftex.def)             Requested size: 218.39806pt x 135.04376pt.
- <conteudo/capitulos/figs/graficos/analiseNSegRate-MinCut.png, id=1937, 602.25pt x 372.39125pt>
+ <conteudo/capitulos/figs/graficos/analiseNSegRate-MinCut.png, id=1941, 602.25pt x 372.39125pt>
 File: conteudo/capitulos/figs/graficos/analiseNSegRate-MinCut.png Graphic file (type png)
  <use conteudo/capitulos/figs/graficos/analiseNSegRate-MinCut.png>
 Package pdftex.def Info: conteudo/capitulos/figs/graficos/analiseNSegRate-MinCut.png used on input line 488.
 (pdftex.def)             Requested size: 218.39806pt x 135.04376pt.
- <conteudo/capitulos/figs/graficos/analiseNSegRate-Bayes.png, id=1938, 602.25pt x 372.39125pt>
+ <conteudo/capitulos/figs/graficos/analiseNSegRate-Bayes.png, id=1942, 602.25pt x 372.39125pt>
 File: conteudo/capitulos/figs/graficos/analiseNSegRate-Bayes.png Graphic file (type png)
  <use conteudo/capitulos/figs/graficos/analiseNSegRate-Bayes.png>
 Package pdftex.def Info: conteudo/capitulos/figs/graficos/analiseNSegRate-Bayes.png used on input line 491.
 (pdftex.def)             Requested size: 218.39806pt x 135.04376pt.
- <conteudo/capitulos/figs/graficos/analiseNSegRate-UISeg.png, id=1939, 602.25pt x 372.39125pt>
+ <conteudo/capitulos/figs/graficos/analiseNSegRate-UISeg.png, id=1943, 602.25pt x 372.39125pt>
 File: conteudo/capitulos/figs/graficos/analiseNSegRate-UISeg.png Graphic file (type png)
  <use conteudo/capitulos/figs/graficos/analiseNSegRate-UISeg.png>
 Package pdftex.def Info: conteudo/capitulos/figs/graficos/analiseNSegRate-UISeg.png used on input line 494.
@@ -1833,7 +1833,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [63] <conteudo/capitulos/figs/coesaolexicaTT-50-9.png, id=1947, 1413.28pt x 306.14375pt>
+ [63] <conteudo/capitulos/figs/coesaolexicaTT-50-9.png, id=1951, 1413.28pt x 306.14375pt>
 File: conteudo/capitulos/figs/coesaolexicaTT-50-9.png Graphic file (type png)
  <use conteudo/capitulos/figs/coesaolexicaTT-50-9.png>
 Package pdftex.def Info: conteudo/capitulos/figs/coesaolexicaTT-50-9.png used on input line 519.
@@ -1842,12 +1842,12 @@ Package pdftex.def Info: conteudo/capitulos/figs/coesaolexicaTT-50-9.png used on
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<conteudo/capitulos/figs/graficos/resumo-wd-pk.png, id=1948, 602.25pt x 243.91125pt>
+<conteudo/capitulos/figs/graficos/resumo-wd-pk.png, id=1952, 602.25pt x 243.91125pt>
 File: conteudo/capitulos/figs/graficos/resumo-wd-pk.png Graphic file (type png)
  <use conteudo/capitulos/figs/graficos/resumo-wd-pk.png>
 Package pdftex.def Info: conteudo/capitulos/figs/graficos/resumo-wd-pk.png used on input line 540.
 (pdftex.def)             Requested size: 373.10333pt x 151.11174pt.
- <conteudo/capitulos/figs/graficos/resumo-tradicionais.png, id=1949, 602.25pt x 243.91125pt>
+ <conteudo/capitulos/figs/graficos/resumo-tradicionais.png, id=1953, 602.25pt x 243.91125pt>
 File: conteudo/capitulos/figs/graficos/resumo-tradicionais.png Graphic file (type png)
  <use conteudo/capitulos/figs/graficos/resumo-tradicionais.png>
 Package pdftex.def Info: conteudo/capitulos/figs/graficos/resumo-tradicionais.png used on input line 545.
@@ -1869,32 +1869,32 @@ Underfull \vbox (badness 3746) has occurred while \output is active []
 
 LaTeX Warning: Reference `anexo:avaliacoes' on page 68 undefined on input line 39.
 
-[68] [69] <conteudo/capitulos/figs/figuras-experimento/Q1-KMeans.png, id=2005, 357.335pt x 287.0725pt>
+[68] [69] <conteudo/capitulos/figs/figuras-experimento/Q1-KMeans.png, id=2009, 357.335pt x 287.0725pt>
 File: conteudo/capitulos/figs/figuras-experimento/Q1-KMeans.png Graphic file (type png)
  <use conteudo/capitulos/figs/figuras-experimento/Q1-KMeans.png>
 Package pdftex.def Info: conteudo/capitulos/figs/figuras-experimento/Q1-KMeans.png used on input line 118.
 (pdftex.def)             Requested size: 141.04889pt x 113.31573pt.
- <conteudo/capitulos/figs/figuras-experimento/Q1-LDA.png, id=2006, 358.33875pt x 287.0725pt>
+ <conteudo/capitulos/figs/figuras-experimento/Q1-LDA.png, id=2010, 358.33875pt x 287.0725pt>
 File: conteudo/capitulos/figs/figuras-experimento/Q1-LDA.png Graphic file (type png)
  <use conteudo/capitulos/figs/figuras-experimento/Q1-LDA.png>
 Package pdftex.def Info: conteudo/capitulos/figs/figuras-experimento/Q1-LDA.png used on input line 121.
 (pdftex.def)             Requested size: 141.04889pt x 112.99596pt.
- <conteudo/capitulos/figs/figuras-experimento/Q1-PLSA.png, id=2007, 357.335pt x 286.06876pt>
+ <conteudo/capitulos/figs/figuras-experimento/Q1-PLSA.png, id=2011, 357.335pt x 286.06876pt>
 File: conteudo/capitulos/figs/figuras-experimento/Q1-PLSA.png Graphic file (type png)
  <use conteudo/capitulos/figs/figuras-experimento/Q1-PLSA.png>
 Package pdftex.def Info: conteudo/capitulos/figs/figuras-experimento/Q1-PLSA.png used on input line 124.
 (pdftex.def)             Requested size: 141.04889pt x 112.91953pt.
- <conteudo/capitulos/figs/figuras-experimento/Q2-KMeans.png, id=2010, 357.335pt x 290.08376pt>
+ <conteudo/capitulos/figs/figuras-experimento/Q2-KMeans.png, id=2014, 357.335pt x 290.08376pt>
 File: conteudo/capitulos/figs/figuras-experimento/Q2-KMeans.png Graphic file (type png)
  <use conteudo/capitulos/figs/figuras-experimento/Q2-KMeans.png>
 Package pdftex.def Info: conteudo/capitulos/figs/figuras-experimento/Q2-KMeans.png used on input line 136.
 (pdftex.def)             Requested size: 141.04889pt x 114.50436pt.
- <conteudo/capitulos/figs/figuras-experimento/Q2-LDA.png, id=2011, 357.335pt x 290.08376pt>
+ <conteudo/capitulos/figs/figuras-experimento/Q2-LDA.png, id=2015, 357.335pt x 290.08376pt>
 File: conteudo/capitulos/figs/figuras-experimento/Q2-LDA.png Graphic file (type png)
  <use conteudo/capitulos/figs/figuras-experimento/Q2-LDA.png>
 Package pdftex.def Info: conteudo/capitulos/figs/figuras-experimento/Q2-LDA.png used on input line 139.
 (pdftex.def)             Requested size: 141.04889pt x 114.50436pt.
- <conteudo/capitulos/figs/figuras-experimento/Q2-PLSA.png, id=2012, 357.335pt x 290.08376pt>
+ <conteudo/capitulos/figs/figuras-experimento/Q2-PLSA.png, id=2016, 357.335pt x 290.08376pt>
 File: conteudo/capitulos/figs/figuras-experimento/Q2-PLSA.png Graphic file (type png)
  <use conteudo/capitulos/figs/figuras-experimento/Q2-PLSA.png>
 Package pdftex.def Info: conteudo/capitulos/figs/figuras-experimento/Q2-PLSA.png used on input line 142.
@@ -1903,7 +1903,7 @@ Package pdftex.def Info: conteudo/capitulos/figs/figuras-experimento/Q2-PLSA.png
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[70 <./conteudo/capitulos/figs/figuras-experimento/Q1-KMeans.png (PNG copy)> <./conteudo/capitulos/figs/figuras-experimento/Q1-LDA.png (PNG copy)> <./conteudo/capitulos/figs/figuras-experimento/Q1-PLSA.png (PNG copy)>] <conteudo/capitulos/figs/figuras-experimento/Q3-Seg.png, id=2020, 558.085pt x 311.1625pt>
+[70 <./conteudo/capitulos/figs/figuras-experimento/Q1-KMeans.png (PNG copy)> <./conteudo/capitulos/figs/figuras-experimento/Q1-LDA.png (PNG copy)> <./conteudo/capitulos/figs/figuras-experimento/Q1-PLSA.png (PNG copy)>] <conteudo/capitulos/figs/figuras-experimento/Q3-Seg.png, id=2024, 558.085pt x 311.1625pt>
 File: conteudo/capitulos/figs/figuras-experimento/Q3-Seg.png Graphic file (type png)
  <use conteudo/capitulos/figs/figuras-experimento/Q3-Seg.png>
 Package pdftex.def Info: conteudo/capitulos/figs/figuras-experimento/Q3-Seg.png used on input line 162.
@@ -1912,37 +1912,37 @@ Package pdftex.def Info: conteudo/capitulos/figs/figuras-experimento/Q3-Seg.png 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<conteudo/capitulos/figs/figuras-experimento/Q4-Seg.png, id=2023, 559.08875pt x 313.17pt>
+<conteudo/capitulos/figs/figuras-experimento/Q4-Seg.png, id=2027, 559.08875pt x 313.17pt>
 File: conteudo/capitulos/figs/figuras-experimento/Q4-Seg.png Graphic file (type png)
  <use conteudo/capitulos/figs/figuras-experimento/Q4-Seg.png>
 Package pdftex.def Info: conteudo/capitulos/figs/figuras-experimento/Q4-Seg.png used on input line 173.
 (pdftex.def)             Requested size: 218.39806pt x 122.33173pt.
- [71 <./conteudo/capitulos/figs/figuras-experimento/Q2-KMeans.png (PNG copy)> <./conteudo/capitulos/figs/figuras-experimento/Q2-LDA.png (PNG copy)> <./conteudo/capitulos/figs/figuras-experimento/Q2-PLSA.png (PNG copy)>] <conteudo/capitulos/figs/figuras-experimento/C1-Q1-KMeans.png, id=2031, 357.335pt x 287.0725pt>
+ [71 <./conteudo/capitulos/figs/figuras-experimento/Q2-KMeans.png (PNG copy)> <./conteudo/capitulos/figs/figuras-experimento/Q2-LDA.png (PNG copy)> <./conteudo/capitulos/figs/figuras-experimento/Q2-PLSA.png (PNG copy)>] <conteudo/capitulos/figs/figuras-experimento/C1-Q1-KMeans.png, id=2035, 357.335pt x 287.0725pt>
 File: conteudo/capitulos/figs/figuras-experimento/C1-Q1-KMeans.png Graphic file (type png)
  <use conteudo/capitulos/figs/figuras-experimento/C1-Q1-KMeans.png>
 Package pdftex.def Info: conteudo/capitulos/figs/figuras-experimento/C1-Q1-KMeans.png used on input line 191.
 (pdftex.def)             Requested size: 141.04889pt x 113.31573pt.
- <conteudo/capitulos/figs/figuras-experimento/C1-Q1-LDA.png, id=2032, 358.33875pt x 287.0725pt>
+ <conteudo/capitulos/figs/figuras-experimento/C1-Q1-LDA.png, id=2036, 358.33875pt x 287.0725pt>
 File: conteudo/capitulos/figs/figuras-experimento/C1-Q1-LDA.png Graphic file (type png)
  <use conteudo/capitulos/figs/figuras-experimento/C1-Q1-LDA.png>
 Package pdftex.def Info: conteudo/capitulos/figs/figuras-experimento/C1-Q1-LDA.png used on input line 194.
 (pdftex.def)             Requested size: 141.04889pt x 112.99596pt.
- <conteudo/capitulos/figs/figuras-experimento/C1-Q1-PLSA.png, id=2033, 357.335pt x 286.06876pt>
+ <conteudo/capitulos/figs/figuras-experimento/C1-Q1-PLSA.png, id=2037, 357.335pt x 286.06876pt>
 File: conteudo/capitulos/figs/figuras-experimento/C1-Q1-PLSA.png Graphic file (type png)
  <use conteudo/capitulos/figs/figuras-experimento/C1-Q1-PLSA.png>
 Package pdftex.def Info: conteudo/capitulos/figs/figuras-experimento/C1-Q1-PLSA.png used on input line 197.
 (pdftex.def)             Requested size: 141.04889pt x 112.91953pt.
- <conteudo/capitulos/figs/figuras-experimento/C2-Q1-KMeans.png, id=2034, 357.335pt x 287.0725pt>
+ <conteudo/capitulos/figs/figuras-experimento/C2-Q1-KMeans.png, id=2038, 357.335pt x 287.0725pt>
 File: conteudo/capitulos/figs/figuras-experimento/C2-Q1-KMeans.png Graphic file (type png)
  <use conteudo/capitulos/figs/figuras-experimento/C2-Q1-KMeans.png>
 Package pdftex.def Info: conteudo/capitulos/figs/figuras-experimento/C2-Q1-KMeans.png used on input line 200.
 (pdftex.def)             Requested size: 141.04889pt x 113.31573pt.
- <conteudo/capitulos/figs/figuras-experimento/C2-Q1-LDA.png, id=2035, 358.33875pt x 287.0725pt>
+ <conteudo/capitulos/figs/figuras-experimento/C2-Q1-LDA.png, id=2039, 358.33875pt x 287.0725pt>
 File: conteudo/capitulos/figs/figuras-experimento/C2-Q1-LDA.png Graphic file (type png)
  <use conteudo/capitulos/figs/figuras-experimento/C2-Q1-LDA.png>
 Package pdftex.def Info: conteudo/capitulos/figs/figuras-experimento/C2-Q1-LDA.png used on input line 203.
 (pdftex.def)             Requested size: 141.04889pt x 112.99596pt.
- <conteudo/capitulos/figs/figuras-experimento/C2-Q1-PLSA.png, id=2036, 357.335pt x 286.06876pt>
+ <conteudo/capitulos/figs/figuras-experimento/C2-Q1-PLSA.png, id=2040, 357.335pt x 286.06876pt>
 File: conteudo/capitulos/figs/figuras-experimento/C2-Q1-PLSA.png Graphic file (type png)
  <use conteudo/capitulos/figs/figuras-experimento/C2-Q1-PLSA.png>
 Package pdftex.def Info: conteudo/capitulos/figs/figuras-experimento/C2-Q1-PLSA.png used on input line 206.
@@ -1951,32 +1951,32 @@ Package pdftex.def Info: conteudo/capitulos/figs/figuras-experimento/C2-Q1-PLSA.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<conteudo/capitulos/figs/figuras-experimento/C1-Q2-KMeans.png, id=2038, 357.335pt x 290.08376pt>
+<conteudo/capitulos/figs/figuras-experimento/C1-Q2-KMeans.png, id=2042, 357.335pt x 290.08376pt>
 File: conteudo/capitulos/figs/figuras-experimento/C1-Q2-KMeans.png Graphic file (type png)
  <use conteudo/capitulos/figs/figuras-experimento/C1-Q2-KMeans.png>
 Package pdftex.def Info: conteudo/capitulos/figs/figuras-experimento/C1-Q2-KMeans.png used on input line 222.
 (pdftex.def)             Requested size: 141.04889pt x 114.50436pt.
- <conteudo/capitulos/figs/figuras-experimento/C1-Q2-LDA.png, id=2039, 357.335pt x 290.08376pt>
+ <conteudo/capitulos/figs/figuras-experimento/C1-Q2-LDA.png, id=2043, 357.335pt x 290.08376pt>
 File: conteudo/capitulos/figs/figuras-experimento/C1-Q2-LDA.png Graphic file (type png)
  <use conteudo/capitulos/figs/figuras-experimento/C1-Q2-LDA.png>
 Package pdftex.def Info: conteudo/capitulos/figs/figuras-experimento/C1-Q2-LDA.png used on input line 225.
 (pdftex.def)             Requested size: 141.04889pt x 114.50436pt.
- <conteudo/capitulos/figs/figuras-experimento/C1-Q2-PLSA.png, id=2040, 357.335pt x 290.08376pt>
+ <conteudo/capitulos/figs/figuras-experimento/C1-Q2-PLSA.png, id=2044, 357.335pt x 290.08376pt>
 File: conteudo/capitulos/figs/figuras-experimento/C1-Q2-PLSA.png Graphic file (type png)
  <use conteudo/capitulos/figs/figuras-experimento/C1-Q2-PLSA.png>
 Package pdftex.def Info: conteudo/capitulos/figs/figuras-experimento/C1-Q2-PLSA.png used on input line 228.
 (pdftex.def)             Requested size: 141.04889pt x 114.50436pt.
- <conteudo/capitulos/figs/figuras-experimento/C2-Q2-KMeans.png, id=2041, 357.335pt x 290.08376pt>
+ <conteudo/capitulos/figs/figuras-experimento/C2-Q2-KMeans.png, id=2045, 357.335pt x 290.08376pt>
 File: conteudo/capitulos/figs/figuras-experimento/C2-Q2-KMeans.png Graphic file (type png)
  <use conteudo/capitulos/figs/figuras-experimento/C2-Q2-KMeans.png>
 Package pdftex.def Info: conteudo/capitulos/figs/figuras-experimento/C2-Q2-KMeans.png used on input line 231.
 (pdftex.def)             Requested size: 141.04889pt x 114.50436pt.
- <conteudo/capitulos/figs/figuras-experimento/C2-Q2-LDA.png, id=2042, 357.335pt x 290.08376pt>
+ <conteudo/capitulos/figs/figuras-experimento/C2-Q2-LDA.png, id=2046, 357.335pt x 290.08376pt>
 File: conteudo/capitulos/figs/figuras-experimento/C2-Q2-LDA.png Graphic file (type png)
  <use conteudo/capitulos/figs/figuras-experimento/C2-Q2-LDA.png>
 Package pdftex.def Info: conteudo/capitulos/figs/figuras-experimento/C2-Q2-LDA.png used on input line 234.
 (pdftex.def)             Requested size: 141.04889pt x 114.50436pt.
- <conteudo/capitulos/figs/figuras-experimento/C2-Q2-PLSA.png, id=2043, 357.335pt x 290.08376pt>
+ <conteudo/capitulos/figs/figuras-experimento/C2-Q2-PLSA.png, id=2047, 357.335pt x 290.08376pt>
 File: conteudo/capitulos/figs/figuras-experimento/C2-Q2-PLSA.png Graphic file (type png)
  <use conteudo/capitulos/figs/figuras-experimento/C2-Q2-PLSA.png>
 Package pdftex.def Info: conteudo/capitulos/figs/figuras-experimento/C2-Q2-PLSA.png used on input line 237.
@@ -1985,32 +1985,32 @@ Package pdftex.def Info: conteudo/capitulos/figs/figuras-experimento/C2-Q2-PLSA.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[72 <./conteudo/capitulos/figs/figuras-experimento/Q3-Seg.png (PNG copy)> <./conteudo/capitulos/figs/figuras-experimento/Q4-Seg.png (PNG copy)>] [73 <./conteudo/capitulos/figs/figuras-experimento/C1-Q1-KMeans.png (PNG copy)> <./conteudo/capitulos/figs/figuras-experimento/C1-Q1-LDA.png (PNG copy)> <./conteudo/capitulos/figs/figuras-experimento/C1-Q1-PLSA.png (PNG copy)> <./conteudo/capitulos/figs/figuras-experimento/C2-Q1-KMeans.png (PNG copy)> <./conteudo/capitulos/figs/figuras-experimento/C2-Q1-LDA.png (PNG copy)> <./conteudo/capitulos/figs/figuras-experimento/C2-Q1-PLSA.png (PNG copy)> <./conteudo/capitulos/figs/figuras-experimento/C1-Q2-KMeans.png (PNG copy)> <./conteudo/capitulos/figs/figuras-experimento/C1-Q2-LDA.png (PNG copy)> <./conteudo/capitulos/figs/figuras-experimento/C1-Q2-PLSA.png (PNG copy)> <./conteudo/capitulos/figs/figuras-experimento/C2-Q2-KMeans.png (PNG copy)> <./conteudo/capitulos/figs/figuras-experimento/C2-Q2-LDA.png (PNG copy)> <./conteudo/capitulos/figs/figuras-experimento/C2-Q2-PLSA.png (PNG copy)>] <conteudo/capitulos/figs/figuras-experimento/t1q3.png, id=2058, 558.085pt x 311.1625pt>
+[72 <./conteudo/capitulos/figs/figuras-experimento/Q3-Seg.png (PNG copy)> <./conteudo/capitulos/figs/figuras-experimento/Q4-Seg.png (PNG copy)>] [73 <./conteudo/capitulos/figs/figuras-experimento/C1-Q1-KMeans.png (PNG copy)> <./conteudo/capitulos/figs/figuras-experimento/C1-Q1-LDA.png (PNG copy)> <./conteudo/capitulos/figs/figuras-experimento/C1-Q1-PLSA.png (PNG copy)> <./conteudo/capitulos/figs/figuras-experimento/C2-Q1-KMeans.png (PNG copy)> <./conteudo/capitulos/figs/figuras-experimento/C2-Q1-LDA.png (PNG copy)> <./conteudo/capitulos/figs/figuras-experimento/C2-Q1-PLSA.png (PNG copy)> <./conteudo/capitulos/figs/figuras-experimento/C1-Q2-KMeans.png (PNG copy)> <./conteudo/capitulos/figs/figuras-experimento/C1-Q2-LDA.png (PNG copy)> <./conteudo/capitulos/figs/figuras-experimento/C1-Q2-PLSA.png (PNG copy)> <./conteudo/capitulos/figs/figuras-experimento/C2-Q2-KMeans.png (PNG copy)> <./conteudo/capitulos/figs/figuras-experimento/C2-Q2-LDA.png (PNG copy)> <./conteudo/capitulos/figs/figuras-experimento/C2-Q2-PLSA.png (PNG copy)>] <conteudo/capitulos/figs/figuras-experimento/t1q3.png, id=2062, 558.085pt x 311.1625pt>
 File: conteudo/capitulos/figs/figuras-experimento/t1q3.png Graphic file (type png)
  <use conteudo/capitulos/figs/figuras-experimento/t1q3.png>
 Package pdftex.def Info: conteudo/capitulos/figs/figuras-experimento/t1q3.png used on input line 262.
 (pdftex.def)             Requested size: 141.04889pt x 78.6403pt.
- <conteudo/capitulos/figs/figuras-experimento/t2q3.png, id=2059, 558.085pt x 311.1625pt>
+ <conteudo/capitulos/figs/figuras-experimento/t2q3.png, id=2063, 558.085pt x 311.1625pt>
 File: conteudo/capitulos/figs/figuras-experimento/t2q3.png Graphic file (type png)
  <use conteudo/capitulos/figs/figuras-experimento/t2q3.png>
 Package pdftex.def Info: conteudo/capitulos/figs/figuras-experimento/t2q3.png used on input line 265.
 (pdftex.def)             Requested size: 141.04889pt x 78.6403pt.
- <conteudo/capitulos/figs/figuras-experimento/t3q3.png, id=2060, 558.085pt x 311.1625pt>
+ <conteudo/capitulos/figs/figuras-experimento/t3q3.png, id=2064, 558.085pt x 311.1625pt>
 File: conteudo/capitulos/figs/figuras-experimento/t3q3.png Graphic file (type png)
  <use conteudo/capitulos/figs/figuras-experimento/t3q3.png>
 Package pdftex.def Info: conteudo/capitulos/figs/figuras-experimento/t3q3.png used on input line 268.
 (pdftex.def)             Requested size: 141.04889pt x 78.6403pt.
- <conteudo/capitulos/figs/figuras-experimento/t1q4.png, id=2062, 559.08875pt x 313.17pt>
+ <conteudo/capitulos/figs/figuras-experimento/t1q4.png, id=2066, 559.08875pt x 313.17pt>
 File: conteudo/capitulos/figs/figuras-experimento/t1q4.png Graphic file (type png)
  <use conteudo/capitulos/figs/figuras-experimento/t1q4.png>
 Package pdftex.def Info: conteudo/capitulos/figs/figuras-experimento/t1q4.png used on input line 287.
 (pdftex.def)             Requested size: 141.04889pt x 79.0043pt.
- <conteudo/capitulos/figs/figuras-experimento/t2q4.png, id=2063, 559.08875pt x 313.17pt>
+ <conteudo/capitulos/figs/figuras-experimento/t2q4.png, id=2067, 559.08875pt x 313.17pt>
 File: conteudo/capitulos/figs/figuras-experimento/t2q4.png Graphic file (type png)
  <use conteudo/capitulos/figs/figuras-experimento/t2q4.png>
 Package pdftex.def Info: conteudo/capitulos/figs/figuras-experimento/t2q4.png used on input line 290.
 (pdftex.def)             Requested size: 141.04889pt x 79.0043pt.
- <conteudo/capitulos/figs/figuras-experimento/t3q4.png, id=2064, 559.08875pt x 313.17pt>
+ <conteudo/capitulos/figs/figuras-experimento/t3q4.png, id=2068, 559.08875pt x 313.17pt>
 File: conteudo/capitulos/figs/figuras-experimento/t3q4.png Graphic file (type png)
  <use conteudo/capitulos/figs/figuras-experimento/t3q4.png>
 Package pdftex.def Info: conteudo/capitulos/figs/figuras-experimento/t3q4.png used on input line 293.
@@ -2029,11 +2029,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [78]
-
-LaTeX Warning: Reference `subsec:anotacoes' on page 79 undefined on input line 81.
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 4556) has occurred while \output is active []
 
  [79]) [80] (./ovidio-dissertacao.bbl (./ovidio-dissertacao.brf)
 \tf@brf=\write6
@@ -2104,7 +2100,7 @@ Underfull \vbox (badness 10000) detected at line 227
 
 
 
-] <anexos/avaliacao-sistema/avaliacao-sistema.pdf, id=2427, page=1, 597.50829pt x 845.0471pt>
+] <anexos/avaliacao-sistema/avaliacao-sistema.pdf, id=2432, page=1, 597.50829pt x 845.0471pt>
 File: anexos/avaliacao-sistema/avaliacao-sistema.pdf Graphic file (type pdf)
  <use anexos/avaliacao-sistema/avaliacao-sistema.pdf, page 1>
 Package pdftex.def Info: anexos/avaliacao-sistema/avaliacao-sistema.pdf, page1 used on input line 16.
@@ -2117,7 +2113,7 @@ Overfull \hbox (45.50278pt too wide) in paragraph at lines 16--17
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<anexos/avaliacao-sistema/avaliacao-sistema.pdf, id=2428, page=2, 597.50829pt x 845.0471pt>
+<anexos/avaliacao-sistema/avaliacao-sistema.pdf, id=2433, page=2, 597.50829pt x 845.0471pt>
 File: anexos/avaliacao-sistema/avaliacao-sistema.pdf Graphic file (type pdf)
  <use anexos/avaliacao-sistema/avaliacao-sistema.pdf, page 2>
 Package pdftex.def Info: anexos/avaliacao-sistema/avaliacao-sistema.pdf, page2 used on input line 22.
@@ -2133,7 +2129,7 @@ LaTeX Warning: Float too large for page by 51.8591pt on input line 23.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<anexos/avaliacao-sistema/avaliacao-sistema.pdf, id=2429, page=3, 597.50829pt x 845.0471pt>
+<anexos/avaliacao-sistema/avaliacao-sistema.pdf, id=2434, page=3, 597.50829pt x 845.0471pt>
 File: anexos/avaliacao-sistema/avaliacao-sistema.pdf Graphic file (type pdf)
  <use anexos/avaliacao-sistema/avaliacao-sistema.pdf, page 3>
 Package pdftex.def Info: anexos/avaliacao-sistema/avaliacao-sistema.pdf, page3 used on input line 29.
@@ -2149,7 +2145,7 @@ LaTeX Warning: Float too large for page by 51.8591pt on input line 30.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<anexos/avaliacao-sistema/avaliacao-sistema.pdf, id=2430, page=4, 597.50829pt x 845.0471pt>
+<anexos/avaliacao-sistema/avaliacao-sistema.pdf, id=2435, page=4, 597.50829pt x 845.0471pt>
 File: anexos/avaliacao-sistema/avaliacao-sistema.pdf Graphic file (type pdf)
  <use anexos/avaliacao-sistema/avaliacao-sistema.pdf, page 4>
 Package pdftex.def Info: anexos/avaliacao-sistema/avaliacao-sistema.pdf, page4 used on input line 34.
@@ -2165,7 +2161,7 @@ LaTeX Warning: Float too large for page by 51.8591pt on input line 35.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<anexos/avaliacao-sistema/avaliacao-sistema.pdf, id=2431, page=5, 597.50829pt x 845.0471pt>
+<anexos/avaliacao-sistema/avaliacao-sistema.pdf, id=2436, page=5, 597.50829pt x 845.0471pt>
 File: anexos/avaliacao-sistema/avaliacao-sistema.pdf Graphic file (type pdf)
  <use anexos/avaliacao-sistema/avaliacao-sistema.pdf, page 5>
 Package pdftex.def Info: anexos/avaliacao-sistema/avaliacao-sistema.pdf, page5 used on input line 39.
@@ -2181,7 +2177,7 @@ LaTeX Warning: Float too large for page by 51.8591pt on input line 40.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<anexos/avaliacao-sistema/avaliacao-sistema.pdf, id=2432, page=6, 597.50829pt x 845.0471pt>
+<anexos/avaliacao-sistema/avaliacao-sistema.pdf, id=2437, page=6, 597.50829pt x 845.0471pt>
 File: anexos/avaliacao-sistema/avaliacao-sistema.pdf Graphic file (type pdf)
  <use anexos/avaliacao-sistema/avaliacao-sistema.pdf, page 6>
 Package pdftex.def Info: anexos/avaliacao-sistema/avaliacao-sistema.pdf, page6 used on input line 44.
@@ -2197,7 +2193,7 @@ LaTeX Warning: Float too large for page by 51.8591pt on input line 45.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<anexos/avaliacao-sistema/avaliacao-sistema.pdf, id=2433, page=7, 597.50829pt x 845.0471pt>
+<anexos/avaliacao-sistema/avaliacao-sistema.pdf, id=2438, page=7, 597.50829pt x 845.0471pt>
 File: anexos/avaliacao-sistema/avaliacao-sistema.pdf Graphic file (type pdf)
  <use anexos/avaliacao-sistema/avaliacao-sistema.pdf, page 7>
 Package pdftex.def Info: anexos/avaliacao-sistema/avaliacao-sistema.pdf, page7 used on input line 51.
@@ -2213,7 +2209,7 @@ LaTeX Warning: Float too large for page by 51.8591pt on input line 52.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<anexos/avaliacao-sistema/avaliacao-sistema.pdf, id=2434, page=8, 597.50829pt x 845.0471pt>
+<anexos/avaliacao-sistema/avaliacao-sistema.pdf, id=2439, page=8, 597.50829pt x 845.0471pt>
 File: anexos/avaliacao-sistema/avaliacao-sistema.pdf Graphic file (type pdf)
  <use anexos/avaliacao-sistema/avaliacao-sistema.pdf, page 8>
 Package pdftex.def Info: anexos/avaliacao-sistema/avaliacao-sistema.pdf, page8 used on input line 59.
@@ -2229,7 +2225,7 @@ LaTeX Warning: Float too large for page by 51.8591pt on input line 60.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<anexos/avaliacao-sistema/avaliacao-sistema.pdf, id=2435, page=9, 597.50829pt x 845.0471pt>
+<anexos/avaliacao-sistema/avaliacao-sistema.pdf, id=2440, page=9, 597.50829pt x 845.0471pt>
 File: anexos/avaliacao-sistema/avaliacao-sistema.pdf Graphic file (type pdf)
  <use anexos/avaliacao-sistema/avaliacao-sistema.pdf, page 9>
 Package pdftex.def Info: anexos/avaliacao-sistema/avaliacao-sistema.pdf, page9 used on input line 67.
@@ -2260,7 +2256,7 @@ LaTeX Warning: Float too large for page by 51.8591pt on input line 75.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<anexos/avaliacao-sistema/avaliacao-sistema.pdf, id=2436, page=10, 597.50829pt x 845.0471pt>
+<anexos/avaliacao-sistema/avaliacao-sistema.pdf, id=2441, page=10, 597.50829pt x 845.0471pt>
 File: anexos/avaliacao-sistema/avaliacao-sistema.pdf Graphic file (type pdf)
  <use anexos/avaliacao-sistema/avaliacao-sistema.pdf, page 10>
 Package pdftex.def Info: anexos/avaliacao-sistema/avaliacao-sistema.pdf, page10 used on input line 79.
@@ -2276,7 +2272,7 @@ LaTeX Warning: Float too large for page by 51.8591pt on input line 80.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<anexos/avaliacao-sistema/avaliacao-sistema.pdf, id=2437, page=12, 597.50829pt x 845.0471pt>
+<anexos/avaliacao-sistema/avaliacao-sistema.pdf, id=2442, page=12, 597.50829pt x 845.0471pt>
 File: anexos/avaliacao-sistema/avaliacao-sistema.pdf Graphic file (type pdf)
  <use anexos/avaliacao-sistema/avaliacao-sistema.pdf, page 12>
 Package pdftex.def Info: anexos/avaliacao-sistema/avaliacao-sistema.pdf, page12 used on input line 84.
@@ -2292,7 +2288,7 @@ LaTeX Warning: Float too large for page by 51.8591pt on input line 85.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<anexos/avaliacao-sistema/avaliacao-sistema.pdf, id=2438, page=13, 597.50829pt x 845.0471pt>
+<anexos/avaliacao-sistema/avaliacao-sistema.pdf, id=2443, page=13, 597.50829pt x 845.0471pt>
 File: anexos/avaliacao-sistema/avaliacao-sistema.pdf Graphic file (type pdf)
  <use anexos/avaliacao-sistema/avaliacao-sistema.pdf, page 13>
 Package pdftex.def Info: anexos/avaliacao-sistema/avaliacao-sistema.pdf, page13 used on input line 89.
@@ -2308,7 +2304,7 @@ LaTeX Warning: Float too large for page by 51.8591pt on input line 90.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<anexos/avaliacao-sistema/avaliacao-sistema.pdf, id=2439, page=14, 597.50829pt x 845.0471pt>
+<anexos/avaliacao-sistema/avaliacao-sistema.pdf, id=2444, page=14, 597.50829pt x 845.0471pt>
 File: anexos/avaliacao-sistema/avaliacao-sistema.pdf Graphic file (type pdf)
  <use anexos/avaliacao-sistema/avaliacao-sistema.pdf, page 14>
 Package pdftex.def Info: anexos/avaliacao-sistema/avaliacao-sistema.pdf, page14 used on input line 94.
@@ -2331,7 +2327,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 
-] [123] <anexos/tabelas/distribuicao-topicos/distribuicao-topicos.pdf, id=2553, page=1, 845.0471pt x 597.50829pt>
+] [123] <anexos/tabelas/distribuicao-topicos/distribuicao-topicos.pdf, id=2558, page=1, 845.0471pt x 597.50829pt>
 File: anexos/tabelas/distribuicao-topicos/distribuicao-topicos.pdf Graphic file (type pdf)
  <use anexos/tabelas/distribuicao-topicos/distribuicao-topicos.pdf, page 1>
 Package pdftex.def Info: anexos/tabelas/distribuicao-topicos/distribuicao-topicos.pdf, page1 used on input line 22.
@@ -2364,19 +2360,19 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 328.
 ### simple group (level 1) entered at line 1061 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 17303 strings out of 494884
- 268654 string characters out of 6179236
- 552241 words of memory out of 5000000
- 19585 multiletter control sequences out of 15000+600000
+ 17306 strings out of 494884
+ 268669 string characters out of 6179236
+ 552374 words of memory out of 5000000
+ 19586 multiletter control sequences out of 15000+600000
  124984 words of font info for 182 fonts, out of 8000000 for 9000
  38 hyphenation exceptions out of 8191
- 50i,15n,40p,1633b,3194s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 50i,15n,40p,1633b,3191s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx8.pfb></usr/share/texmf/fonts/type1/public/lm/lmbxi10.pfb></usr/share/texmf/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi6.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr6.pfb></usr/share/texmf/fonts/type1/public/lm/lmr7.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/public/lm/lmri8.pfb></usr/share/texmf/fonts/type1/public/lm/lmss10.pfb></usr/share/texmf/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss17.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbo10.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsso12.pfb></usr/share/texmf/fonts/type1/public/lm/lmsso17.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf/fonts/type1/pub
 lic/lm/lmtt10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt12.pfb>
-Output written on ovidio-dissertacao.pdf (125 pages, 2750936 bytes).
+Output written on ovidio-dissertacao.pdf (125 pages, 2752141 bytes).
 PDF statistics:
- 3007 PDF objects out of 3580 (max. 8388607)
- 2033 compressed objects within 21 object streams
- 373 named destinations out of 1000 (max. 500000)
- 40269 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 3018 PDF objects out of 3580 (max. 8388607)
+ 2044 compressed objects within 21 object streams
+ 375 named destinations out of 1000 (max. 500000)
+ 40285 words of extra memory for PDF output out of 42996 (max. 10000000)
 
