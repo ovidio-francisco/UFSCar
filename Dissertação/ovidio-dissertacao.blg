@@ -4,22 +4,7 @@ The top-level auxiliary file: ovidio-dissertacao.aux
 A level-1 auxiliary file: conteudo/capitulos/2-cap1.aux
 A level-1 auxiliary file: conteudo/capitulos/3-cap2.aux
 Case mismatch error between cite keys Choi2000a and choi2000a
----line 89 of file conteudo/capitulos/3-cap2.aux
- : \citation{Choi2000a
- :                    }
-I'm skipping whatever remains of this command
-Case mismatch error between cite keys Choi2000a and choi2000a
----line 106 of file conteudo/capitulos/3-cap2.aux
- : \citation{Choi2000a
- :                    }
-I'm skipping whatever remains of this command
-Case mismatch error between cite keys Choi2000a and choi2000a
----line 118 of file conteudo/capitulos/3-cap2.aux
- : \citation{Choi2000a
- :                    }
-I'm skipping whatever remains of this command
-Case mismatch error between cite keys Choi2000a and choi2000a
----line 189 of file conteudo/capitulos/3-cap2.aux
+---line 182 of file conteudo/capitulos/3-cap2.aux
  : \citation{Choi2000a
  :                    }
 I'm skipping whatever remains of this command
@@ -64,6 +49,7 @@ Repeated entry---line 256 of file referencias.bib
 I'm skipping whatever remains of this entry
 A bad cross reference---entry "Cheng2013"
 refers to entry "conf/sdm/2013", which doesn't exist
+Warning--I didn't find a database entry for "choi2000a"
 Warning--I didn't find a database entry for "conf/sdm/2013"
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
@@ -76,45 +62,45 @@ Warning--faltando school em Reynar1998
 | Em caso de dúvidas ou problemas com este estilo procure |
 | http://abntex2.googlecode.com                           |
 +---------------------------------------------------------+
-You've used 80 entries,
+You've used 79 entries,
             6711 wiz_defined-function locations,
-            1859 strings with 27994 characters,
-and the built_in function-call counts, 116954 in all, are:
-= -- 12864
-> -- 2700
-< -- 2450
-+ -- 3343
-- -- 811
-* -- 7883
-:= -- 14239
-add.period$ -- 396
-call.type$ -- 80
-change.case$ -- 894
-chr.to.int$ -- 190
-cite$ -- 81
-duplicate$ -- 10376
-empty$ -- 5399
-format.name$ -- 3869
-if$ -- 24606
+            1853 strings with 27717 characters,
+and the built_in function-call counts, 115195 in all, are:
+= -- 12671
+> -- 2648
+< -- 2408
++ -- 3285
+- -- 796
+* -- 7757
+:= -- 14026
+add.period$ -- 391
+call.type$ -- 79
+change.case$ -- 879
+chr.to.int$ -- 186
+cite$ -- 80
+duplicate$ -- 10216
+empty$ -- 5340
+format.name$ -- 3799
+if$ -- 24251
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 1465
-newline$ -- 440
-num.names$ -- 399
-pop$ -- 1775
+missing$ -- 1446
+newline$ -- 433
+num.names$ -- 394
+pop$ -- 1749
 preamble$ -- 1
-purify$ -- 328
+purify$ -- 323
 quote$ -- 0
-skip$ -- 10467
+skip$ -- 10309
 stack$ -- 1
-substring$ -- 5329
-swap$ -- 4271
-text.length$ -- 168
+substring$ -- 5253
+swap$ -- 4208
+text.length$ -- 165
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 38
 warning$ -- 2
-while$ -- 674
+while$ -- 664
 width$ -- 0
-write$ -- 1414
-(There were 9 error messages)
+write$ -- 1396
+(There were 6 error messages)

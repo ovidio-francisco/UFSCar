@@ -3,12 +3,14 @@
 
 % Necessidade de encontrar informação
 
-Devido à popularização dos computadores e a grande disponibilidade de documentos em formato digital, em especial na \textit{web}, a área da Recuperação de Informação (RI) tem recebido atenção de pesquisadores nas últimas décadas. Recuperação de Informação é área da computação que envolve a aplicação de métodos computacionais no tratamento e busca de informação em bases de dados não estruturados, usualmente grandes coleções de documentos textuais armazenados em dispositivos eletrônicos. De fato, não há dados completamente não estruturados ao se considerar a estrutura linguística latente em documentos textuais. O termo ``não estruturado'' se refere a dados que não oferecem uma estrutura claramente estruturada para sistemas computadorizados, a exemplo de documentos 
-textuais~\cite{Manning2008}.
+Devido à popularização dos computadores e a grande disponibilidade de documentos em formato digital, em especial na \textit{web}, a área da Recuperação de Informação (RI) tem recebido atenção de pesquisadores nas últimas décadas. Recuperação de Informação é a área da computação que envolve a aplicação de métodos computacionais no tratamento e busca de informação em bases de dados não estruturados, usualmente grandes coleções de documentos textuais armazenados em dispositivos eletrônicos. De fato, não há dados completamente não estruturados ao se considerar a estrutura linguística latente em documentos textuais. O termo ``não estruturado'' se refere a dados que não oferecem uma estrutura clara para sistemas computadorizados~\cite{Manning2008}.
+% , a exemplo de documentos textuais
 
 % Tratamento == Classificação e Agrupamento?
 
-A tarefa central da recuperação de informação é encontrar informações de interesse dos usuários e exibí-las. Essa necessidade motiva o desenvolvimento de sistemas de recuperação de informação (SRI). Nesses sistemas o usuário expressa sua necessidade por meio da formulação de uma consulta, usualmente composta por um conjunto de palavras-chave. Então, o sistema apresenta os resultados da busca, frequentemente documentos, em ordem de relevância com a consulta.  % TODO: Melhorar
+A tarefa central da recuperação de informação é encontrar informações de interesse dos usuários e exibí-las. 
+% Essa necessidade motiva o desenvolvimento de sistemas de recuperação de informação (SRI).
+Nesses sistemas o usuário expressa sua necessidade por meio da formulação de uma consulta, usualmente composta por um conjunto de palavras-chave. Então, o sistema apresenta os resultados da busca, frequentemente documentos, em ordem de relevância com a consulta.  % TODO: Melhorar
 
 
 % \subsection{Modelos de Recuperação de Informação}
@@ -28,7 +30,7 @@ Já as vantagens desse modelo são a facilidade de implementação e a possibili
 \subsection{Modelo Espaço Vetorial}
 \label{subsec:modeloespacovetorial}
 
-Uma das formas mais comuns para representação textual é conhecida como Modelo Espaço Vetorial (\textit{Vectorial Space Model} - VSM)~\cite{Rezende2003}, onde os documentos e consultas são representados como vetores em um espaço Euclidiano $t$-dimensional em que cada termo extraído da coleção é representado por uma dimensão. 
+Uma das formas mais comuns para representação textual é conhecida como Modelo Espaço Vetorial (\textit{Vectorial Space Model} - VSM), onde os documentos e consultas são representados como vetores em um espaço Euclidiano $t$-dimensional em que cada termo extraído da coleção é representado por uma dimensão~\cite{Rezende2003}. 
 % 
 Considera-se que um documento pode ser representado pelo seu conjunto de termos, onde cada termo $k_i$ de um documento $d_j$ associa-se um peso $w_{ij}\geq0$ que indica a importância desse termo no documento. 
 %
@@ -37,9 +39,9 @@ De forma similar, para uma consulta $q$, associa-se um peso $w_{i,q}$ a cada ter
 Assim o vetor associado ao documento $d_j$ é dado por $\vec{d}_{j} = (w_{j,1}, w_{j,2}, ..., w_{j,p})$ 
 %
 e o vetor associado a consulta $q$ é dado por $\vec{q} = (w_{q,1}, w_{q,2}, ..., w_{q,l})$.
-
+%
 % -- Movido para "Medidas de Proximidade " ↓↓↓↓
-No modelo vetorial, a similidade entre um documento $d_j$ e uma consulta $q$ é calculada pela correlação entre os vetores $\vec{d_j}$ e $\vec{q}$, a qual pode ser medida pelo cosseno (Equação~\ref{equ:cosine}) do ângulo entre esses vetores, conforme já mostrado na Seção~\ref{subsec:MedidasProximidade}. 
+No modelo vetorial, a similidade entre um documento $d_j$ e uma consulta $q$ é calculada pela correlação entre os vetores $\vec{d_j}$ e $\vec{q}$, a qual pode ser medida pelo cosseno (Equação~\ref{equ:cosine}) do ângulo entre esses vetores, conforme mostrado adiante na Seção~\ref{subsec:MedidasProximidade}. 
 
 
 
@@ -86,7 +88,7 @@ Entre as medidas mais populares para ranqueamento de buscas está a TF-IDF (\tex
 onde $freq_{i,j}$ é a frequência do termo $k_i$ no documento $d_j$. A medida TF-IDF atribui valores altos para termos que ocorrem frequentemente em um documentos, e valores menores para termos que ocorrem poucas vezes em um documento ou em muitos documentos da coleção. A ideia da medida TF-IDF e quantificar a importância de um termo em um documento com base em sua frequência no próprio documento e sua distribuição ao longo da coleção de documentos~\cite{Croft2009,Salton1988,Shamsinejadbabki2012,Salton:1994}.
 
 
-Uma vez que o sistema, por meio da Equação~\ref{equ:cosine}, calcula a similaridade entre os documentos e a consulta do usuário, é possível ranquear os resultados por ordem de relevância. Além disso, sua relativa simplicidade e flexibilidade, favorecem a aplicação desse modelo em sistemas de recuperação de informação~\cite{Tan2005,Croft2009,Manning2008}.
+Uma vez que o modelo, por meio da Equação~\ref{equ:cosine}, calcula a similaridade entre os documentos e a consulta do usuário, é possível ranquear os resultados por ordem de relevância. Além disso, sua relativa simplicidade e flexibilidade, favorecem a aplicação desse modelo em sistemas de recuperação de informação~\cite{Tan2005,Croft2009,Manning2008}.
 
 % ->-----------------------------------------------------------------------
 

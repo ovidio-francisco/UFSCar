@@ -102,7 +102,7 @@ Dispon{\'\i}vel em:
 ISBN 978-1-61197-283-2. Dispon{\'\i}vel em:
   \url{http://dblp.uni-trier.de/db/conf/sdm/sdm2013.html\#ChengGLWY13}.}
 
-\bibitem[Choi 2000]{choi2000a}
+\bibitem[Choi 2000]{Choi2000b}
 \abntrefinfo{Choi}{CHOI}{2000}
 {CHOI, F. Y.~Y. Advances in domain independent linear text segmentation. In:
   \emph{Proceedings of the 1st North American Chapter of the Association for
@@ -413,14 +413,6 @@ Tese (Doutorado), Philadelphia, PA, USA, 1998. AAI9829978.}
 \abntrefinfo{Rezende}{REZENDE}{2003}
 {REZENDE, S.~O. \emph{Sistemas Inteligentes}. Barueri, SP: Manole, 2003. 337 -
   270~p.}
-
-\bibitem[Rezende, Marcacini e Moura 2011]{Rezende2011}
-\abntrefinfo{Rezende, Marcacini e Moura}{REZENDE; MARCACINI; MOURA}{2011}
-{REZENDE, S.~O.; MARCACINI, R.~M.; MOURA, M.~F. O uso da mineração de textos
-  para extração e organização não supervisionada de conhecimento.
-\emph{Revista de Sistemas de Informação da FSMA}, v.~7, p. 7--21, 2011.
-ISSN 19835604.
-Dispon{\'\i}vel em: \url{http://www.fsma.edu.br/si/7edicao.html}.}
 
 \bibitem[Rijsbergen 1979]{Rijsbergen1979}
 \abntrefinfo{Rijsbergen}{RIJSBERGEN}{1979}

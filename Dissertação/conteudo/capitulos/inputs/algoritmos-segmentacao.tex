@@ -12,6 +12,9 @@ O conceito de coesão léxica permite a aplicação da técnica de janelas desli
 
 
 
+
+
+\subsection*{\textit{TextTiling}}
 % ==========  TextTiling  ==========
 
 % Rafael --> Podem ter vários tipos de cursa. Ser mais objetivo. Quando a similaridade fica abaixo de um limiar fornecido pelo usuário.? Na verdade, dá pra fazer uma mescla. 
@@ -47,12 +50,17 @@ O TextTiling apresenta como vantagens a facilidade de implementação,
 % e baixa complexidade computacional, 
 o que favorece o desenvolvimento de trabalhos similares 
 ~\cite{Naili2016,bokaei2015a,CHAIBI2014,Kern2009,Galley2003}, 
-e sua utilização como \textit{base line} em outros trabalhos~\cite{Cardoso2017,Dias2007}. Por outro lado, algoritmos mais complexos, como os baseados em matrizes de similaridade, apresentam acurácia relativamente superior como apresentado em~\cite{Choi2000a, Kern2009, misra2009a}.
+e sua utilização como \textit{base line} em outros trabalhos~\cite{Cardoso2017,Dias2007}. Por outro lado, algoritmos mais complexos, como os baseados em matrizes de similaridade, apresentam acurácia relativamente superior como apresentado em~\cite{Choi2000b, Kern2009, misra2009a}.
 
 
+
+
+
+
+\subsection*{\textit{C99}}
 % ==========  C99  ==========
 
-Outro algoritmo frequentemente referenciado na literatura é o C99~\cite{Choi2000a} o qual é baseado em uma matriz de \textit{ranking} das similaridades. A utilização de da coesão léxica pode não ser confiável para segmentos pequenos nessa abordagem, pois a ocorrência adicional de uma palavra pode causar certo impacto e alterar o cálculo da similaridade. Além disso, o estilo da escrita normalmente não é constante em todo o texto. Por exemplo, textos iniciais dedicados a introdução costumam apresentar menor coesão do que trechos dedicados a um tópico específico. Portanto, comparar a similaridade entre trechos de diferentes regiões não é apropriado. Devido a isso, as similaridades não podem ser comparadas em valores absolutos. Contorna-se esse problema fazendo uso de matrizes de similaridade para encontrar os segmentos de texto. Para isso, o \textit{C99} constrói uma matriz que contém as similaridades de todas as unidades de informação (normalmente sentenças ou parágrafos). 
+Outro algoritmo frequentemente referenciado na literatura é o C99~\cite{Choi2000b} o qual é baseado em uma matriz de \textit{ranking} das similaridades. A utilização de da coesão léxica pode não ser confiável para segmentos pequenos nessa abordagem, pois a ocorrência adicional de uma palavra pode causar certo impacto e alterar o cálculo da similaridade. Além disso, o estilo da escrita normalmente não é constante em todo o texto. Por exemplo, textos iniciais dedicados a introdução costumam apresentar menor coesão do que trechos dedicados a um tópico específico. Portanto, comparar a similaridade entre trechos de diferentes regiões não é apropriado. Devido a isso, as similaridades não podem ser comparadas em valores absolutos. Contorna-se esse problema fazendo uso de matrizes de similaridade para encontrar os segmentos de texto. Para isso, o \textit{C99} constrói uma matriz que contém as similaridades de todas as unidades de informação (normalmente sentenças ou parágrafos). 
 
 %%%%%% 
 %%%%%% 
@@ -104,7 +112,7 @@ para o valor $0,2$ a matriz de \textit{rankings} conterá o valor $1$ na mesma p
 % -< Colocar uma explicação mais detalhada para esses passos
 
 
-Finalmente, com base na matriz de \textit{ranking}, o C99 utiliza um método de \textit{clustering} baseado no algoritmo \textit{DotPloting}~\cite{Reynar1998} que usa regiões com maior densidade em uma matriz de similaridades para determinar como os segmentos estão distribuídos.  
+Finalmente, com base na matriz de \textit{ranking}, o C99 utiliza um método de agrupamento baseado no algoritmo \textit{DotPloting}~\cite{Reynar1998} que usa regiões com maior densidade em uma matriz de similaridades para determinar como os segmentos estão distribuídos.  
 % 
 Um segmento é definido por duas sentenças $c_i$ e $c_j$ (respectivamente a primeira e última sentença do segmento) que representam uma região quadrada ao longo da diagonal da matriz. 
 % 
@@ -128,10 +136,11 @@ O processo inicia com um único segmento formado por todas as sentenças do docu
 
 % \textbf{Abordagens probabilísticas}
 
+\subsection*{\textit{TextSeg}}
 % ==========  TextSeg Utiyama and Isahara  ==========
 
 
-Desenvolveu-se também abordagens probabilísticas para segmentação textual, por exemplo, o método proposto por~\cite{Utiyama2001} encontra a segmentação por meio de um modelo estatístico. Dado um texto representado por um conjunto de palavras 
+Desenvolveu-se também abordagens probabilísticas para segmentação textual, por exemplo, o método proposto por~\cite{Utiyama2001}, aqui chamado de \textit{TextSeg} encontra a segmentação por meio de um modelo estatístico. Dado um texto representado por um conjunto de palavras 
 $W = \{w_1, w_2, \dots, w_n\}$ e um conjunto de segmentos $S = \{s_1, s_2, \dots, s_h\}$ que segmenta $W$, a probabilidade da segmentação S é dada por:
 
 \begin{equation}
@@ -158,8 +167,7 @@ A suposição de independência entre segmentos e as palavras neles contidas, s�
  
 
 
-% ===
-
+\subsection*{\textit{BayesSeg}}
 % ==========  BayesSeg  ==========
 
 Os métodos baseados em coesão léxica que utilizam métricas como cosseno quantificam a similaridade entre sentenças baseando-se apenas na frequência das palavras, Essa abordagem, ignora certas características do texto que podem dar pistas sobre a estrutura do texto. Por exemplo, frases como ``\textit{Prosseguindo}'', ``\textit{Dando continuidade}'', ``\textit{Ao final da reunião}'' podem ajudar a detectar o inicio ou final de segmento. A fim de aproveitar esses indicadores, pode-se usar um framework bayesiano que permite incorporar fontes externas ao modelo. O método \textit{BayesSeg}~\cite{Eis2008} aborda a coesão léxica em um contexto bayesiano onde as palavas de um segmento surgem de um modelo de linguagem multinomial o qual é associado a um assunto. 
@@ -170,6 +178,7 @@ Essa abordagem é similar à métodos probabilísticos de extração de tópicos
 
 
 % ==========  MinCut  ==========
+\subsection*{\textit{MinCut}}
 
 % file:///ext4Data/UFSCar/Dissertação-2018/referencias/Minimum Cut Model for Spoken Lecture Segmentation - article.pdf
 

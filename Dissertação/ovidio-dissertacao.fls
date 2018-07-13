@@ -256,6 +256,7 @@ INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmr7.tfm
 INPUT /usr/share/texmf/tex/latex/lm/t1lmtt.fd
 INPUT /usr/share/texmf/tex/latex/lm/t1lmtt.fd
 INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmtt10.tfm
+INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmbx12.tfm
 OUTPUT conteudo/capitulos/3-cap2.aux
 INPUT conteudo/capitulos/3-cap2.tex
 INPUT conteudo/capitulos/3-cap2.tex
@@ -264,6 +265,7 @@ INPUT conteudo/capitulos/inputs/recuperacao-informacao.tex
 INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmss17.tfm
 INPUT conteudo/capitulos/inputs/preprocessamento.tex
 INPUT conteudo/capitulos/inputs/preprocessamento.tex
+INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmsso12.tfm
 INPUT conteudo/capitulos/figs/luhn2.png
 INPUT ./conteudo/capitulos/figs/luhn2.png
 INPUT ./conteudo/capitulos/figs/luhn2.png
@@ -273,7 +275,6 @@ INPUT conteudo/capitulos/inputs/medidas.tex
 INPUT conteudo/capitulos/inputs/medidas.tex
 INPUT conteudo/capitulos/inputs/segmentacao.tex
 INPUT conteudo/capitulos/inputs/segmentacao.tex
-INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmbx12.tfm
 INPUT conteudo/capitulos/inputs/algoritmos-segmentacao.tex
 INPUT conteudo/capitulos/inputs/algoritmos-segmentacao.tex
 INPUT conteudo/capitulos/figs/janelas-deslizantes.pdf
@@ -331,7 +332,6 @@ INPUT conteudo/capitulos/figs/tela-principal-2-1.png
 INPUT ./conteudo/capitulos/figs/tela-principal-2-1.png
 INPUT ./conteudo/capitulos/figs/tela-principal-2-1.png
 INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmsso17.tfm
-INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmsso12.tfm
 INPUT anexos/tabelas/distribuicao-topicos/tab-distribuicao-topicos-resumo.tex
 INPUT anexos/tabelas/distribuicao-topicos/tab-distribuicao-topicos-resumo.tex
 INPUT conteudo/capitulos/figs/doc-em-png/distribuicao.pdf
