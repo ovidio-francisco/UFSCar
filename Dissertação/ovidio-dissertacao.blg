@@ -3,27 +3,7 @@ Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: ovidio-dissertacao.aux
 A level-1 auxiliary file: conteudo/capitulos/2-cap1.aux
 A level-1 auxiliary file: conteudo/capitulos/3-cap2.aux
-Case mismatch error between cite keys Choi2000a and choi2000a
----line 182 of file conteudo/capitulos/3-cap2.aux
- : \citation{Choi2000a
- :                    }
-I'm skipping whatever remains of this command
 A level-1 auxiliary file: conteudo/capitulos/4-cap3.aux
-Case mismatch error between cite keys Bokaei2015a and bokaei2015a
----line 16 of file conteudo/capitulos/4-cap3.aux
- : \citation{Bokaei2015a
- :                      }
-I'm skipping whatever remains of this command
-Case mismatch error between cite keys Misra2009a and misra2009a
----line 18 of file conteudo/capitulos/4-cap3.aux
- : \citation{Misra2009a
- :                     }
-I'm skipping whatever remains of this command
-Case mismatch error between cite keys Sakahara2014a and sakahara2014a
----line 19 of file conteudo/capitulos/4-cap3.aux
- : \citation{Sakahara2014a
- :                        }
-I'm skipping whatever remains of this command
 A level-1 auxiliary file: conteudo/capitulos/cap-avaliacao-segmentadores.aux
 A level-1 auxiliary file: conteudo/capitulos/cap-avaliacao-extratores.aux
 A level-1 auxiliary file: conteudo/capitulos/5-conclusao.aux
@@ -49,7 +29,6 @@ Repeated entry---line 256 of file referencias.bib
 I'm skipping whatever remains of this entry
 A bad cross reference---entry "Cheng2013"
 refers to entry "conf/sdm/2013", which doesn't exist
-Warning--I didn't find a database entry for "choi2000a"
 Warning--I didn't find a database entry for "conf/sdm/2013"
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
@@ -62,45 +41,45 @@ Warning--faltando school em Reynar1998
 | Em caso de dúvidas ou problemas com este estilo procure |
 | http://abntex2.googlecode.com                           |
 +---------------------------------------------------------+
-You've used 79 entries,
+You've used 80 entries,
             6711 wiz_defined-function locations,
-            1853 strings with 27717 characters,
-and the built_in function-call counts, 115195 in all, are:
-= -- 12671
-> -- 2648
-< -- 2408
-+ -- 3285
-- -- 796
-* -- 7757
-:= -- 14026
-add.period$ -- 391
-call.type$ -- 79
-change.case$ -- 879
-chr.to.int$ -- 186
-cite$ -- 80
-duplicate$ -- 10216
-empty$ -- 5340
-format.name$ -- 3799
-if$ -- 24251
+            1859 strings with 27921 characters,
+and the built_in function-call counts, 116918 in all, are:
+= -- 12875
+> -- 2680
+< -- 2447
++ -- 3335
+- -- 806
+* -- 7868
+:= -- 14227
+add.period$ -- 397
+call.type$ -- 80
+change.case$ -- 890
+chr.to.int$ -- 187
+cite$ -- 81
+duplicate$ -- 10375
+empty$ -- 5424
+format.name$ -- 3846
+if$ -- 24616
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 1446
-newline$ -- 433
-num.names$ -- 394
-pop$ -- 1749
+missing$ -- 1464
+newline$ -- 437
+num.names$ -- 399
+pop$ -- 1774
 preamble$ -- 1
-purify$ -- 323
+purify$ -- 327
 quote$ -- 0
-skip$ -- 10309
+skip$ -- 10473
 stack$ -- 1
-substring$ -- 5253
-swap$ -- 4208
-text.length$ -- 165
+substring$ -- 5341
+swap$ -- 4271
+text.length$ -- 167
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 38
+type$ -- 39
 warning$ -- 2
-while$ -- 664
+while$ -- 674
 width$ -- 0
-write$ -- 1396
-(There were 6 error messages)
+write$ -- 1413
+(There were 2 error messages)

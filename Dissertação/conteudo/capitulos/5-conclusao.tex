@@ -25,9 +25,9 @@ Desenvolveu-se uma metodologia que utiliza a segmentação textual para fragment
 
 Inicialmente, a fim de analisar as técnicas utilizadas, gerou-se um \textit{corpus} anotado por 9 profissionais com afinidade com o domínio investigado. Os anotadores segmentaram e rotularam manualmente 12 atas de reunião. 
 Para isso desenvolveu-se uma ferramenta para anotação manual de documentos, pela qual os anotadores forneceram segmentações e informações sobre os segmentos identificados.
-Os textos originais acrescidos das informações fornecidas pelos anotadores foram reunidas para formar um \textit{corpus} derivado que ajuda a entender o corpus investigado em termos de sua distribuição de tópicos. Os dados referentes a segmentação manual foram utilizados para criar uma segmentação de referência para avaliação objetiva dos segmentadores. 
+Os textos originais acrescidos das informações fornecidas pelos anotadores foram reunidas para formar um \textit{corpus} derivado que ajuda a entender o \textit{corpus} investigado em termos de sua distribuição de tópicos. Os dados referentes a segmentação manual foram utilizados para criar uma segmentação de referência para avaliação objetiva dos segmentadores. 
 
-A avaliação dos segmentadores considerou os algoritmos e seus principais parâmetros para encontrar o modelo que melhor otimiza a tarefa de segmentação do corpus investigado. Comparou-se os resultados obtidos com a segmentação de referência e verificou-se que o algoritmo \textit{BayesSeg} apresenta resultados melhores em relação às demais técnicas analisadas. Além disso, a escolha escolheu-se o \textit{BayesSeg} devido ao sua abordagem probabilísticas similar a modelos de extração de tópicos como o LDA. 
+A avaliação dos segmentadores considerou os algoritmos e seus principais parâmetros para encontrar o modelo que melhor otimiza a tarefa de segmentação do \textit{corpus} investigado. Comparou-se os resultados obtidos com a segmentação de referência e verificou-se que o algoritmo \textit{BayesSeg} apresenta resultados melhores em relação às demais técnicas analisadas. Além disso, a escolha escolheu-se o \textit{BayesSeg} devido ao sua abordagem probabilísticas similar a modelos de extração de tópicos como o LDA. 
 Os resultados mostram certa dificuldade devido as características das atas, como estilo de escrita e segmentos relativamente curtos, além da subjetividade intrínseca da tarefa.
 Embora os métodos de segmentação textual tenham se mostrado suficientes, melhores resultados podem ser alcançados com o acréscimo das técnicas mencionadas e a construção de uma segmentação de referência mais robusta em termos concordância entre os anotadores que ajudaram a criá-la.
 Uma vez escolhido o segmentador, este foi utilizado para segmentar os textos de um conjunto de 175 atas, que gerou um conjunto de 1276 segmentos, os quais foram submetidos aos modelos de extração de tópicos.
@@ -63,18 +63,18 @@ A análise detalhada dessas avaliações e a relação entre as técnicas empreg
 
 De modo geral, os resultados obtidos com a utilização das informações extraídas pela metodologia apresentada nesse trabalho recebe uma base de dados constituída por documentos multi-temáticos não estruturada e produz uma estrutura de dados interna mais organizada e acrescida de informações latentes extraídas do próprio \textit{corpus} original de forma não supervisionada. 
 A utilização de descritores para expandir a o espaço de busca pelas técnicas de recuperação de informação possibilita ganho em relação a busca indexada por termos presentes nos documentos. Além disso, o retorno procura exibir apenas os trechos relevantes à consulta do usuário, ao invés de documentos inteiros que podem conter trechos irrelevantes à consulta.  
-A estrutura dada ao corpus original permite analisar seu conteúdo pela perspectiva da distribuição dos tópicos. Com isso, é possível entender a composição e recorrência dos assuntos discutidos bem como traçar um histórico dos assuntos abordados a fim de visualizar sua evolução ao longo do tempo.
+A estrutura dada ao \textit{corpus} original permite analisar seu conteúdo pela perspectiva da distribuição dos tópicos. Com isso, é possível entender a composição e recorrência dos assuntos discutidos bem como traçar um histórico dos assuntos abordados a fim de visualizar sua evolução ao longo do tempo.
 
 
 \section{Contribuições}	
 
 
 
-Considera-se como principais contribuições deste trabalho o método apresentado para extração de conhecimento em documentos multi-temáticos, o corpus de atas anotadas, o sistema proposto e sua implementação, as avaliações dos segmentadores e dos extratores de tópicos e os resultados produzidos durante a execução da proposta desse sistema. 
+Considera-se como principais contribuições deste trabalho o método apresentado para extração de conhecimento em documentos multi-temáticos, o \textit{corpus} de atas anotadas, o sistema proposto e sua implementação, as avaliações dos segmentadores e dos extratores de tópicos e os resultados produzidos durante a execução da proposta desse sistema. 
 
 A metodologia proposta permite organizar e adicionar informação a coleção de documentos multi-temáticos, com a finalidade de extrair automaticamente conhecimento em atas de reunião. Essa metodologia, pode ainda ser  aproveitada para trazer avanços em estudos e aplicações voltadas à extração e recuperação de informação em outros domínios com as mesmas características. 
 
-O \textit{corpus} anotado produzido contém dados adicionados aos documentos originais os quais ajudam a entender o a distribuição dos tópicos ao longo das atas. O corpus anotado está disponível para servir como base de dados para outros trabalhos, bem como a ferramenta desenvolvida para esse propósito, a qual pode ser utilizada em qualquer \textit{corpus} a ser anotado com fins de pesquisa, bem como modificada livremente. 
+O \textit{corpus} anotado produzido contém dados adicionados aos documentos originais os quais ajudam a entender o a distribuição dos tópicos ao longo das atas. O \textit{corpus} anotado está disponível para servir como base de dados para outros trabalhos, bem como a ferramenta desenvolvida para esse propósito, a qual pode ser utilizada em qualquer \textit{corpus} a ser anotado com fins de pesquisa, bem como modificada livremente. 
 
 O Sistema Proposto e sua implementação podem ser utilizados para extração de conhecimento em bases de dados formadas por documentos multi-temáticos, em especial, conjuntos de atas de reunião. Outras domínios que lidam com bases de dados com as mesmas características podem aproveitar esse sistema bem como seu código fonte para eventuais adaptações ou expansões.
  

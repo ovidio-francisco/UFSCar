@@ -1,7 +1,8 @@
 \section{Trabalhos Relacionados}
 
-% --> A segment-based approach to clustering multi-topic documents~\cite{Tagarelli2013}
-% --> Multi-document Topic Segmentation~\cite{Jeong:2010}
+%  --> A segment-based approach to clustering multi-topic documents~\cite{Tagarelli2013}
+%  --- A Study on Statistical Generation of a Hierarchical Structure of Topic-information for Multi-documents. --- 
+%  --> Multi-document Topic Segmentation~\cite{Jeong:2010}
 % --> Statistical Topic Models for Multi-label Document Classification~\cite{Rubin:2012}
 % --> O uso da Mineração de Textos para Extração e Organização não Supervisionada de Conhecimento~\cite{Rezende2011}
 % --> Multi-topic Aspects in Clinical Text Classification~\cite{Sasaki:2007}
@@ -14,25 +15,62 @@
 % --> \cite{Prince2007}
 
 
-Nesta seção são discutidos os principais trabalhos relacionados a proposta desse trabalho abordando as técnicas de Segmentação Textual, Extração de Tópicos e Recuperação de Informação com foco em trabalhos que fazem intersecção entre as técnicas.
+Nesta seção são apresentados os principais trabalhos relacionados a proposta dessa dissertação. Os trabalhos a seguir abordam a Segmentação Textual, Extração de Tópicos e Recuperação de Informação e a intersecção entre as técnicas.
 
-Nos últimos anos, a crescente disponibilidade de documentos longos e a necessidade de gerenciá-los de forma eficiente, incentivou a pesquisa por técnicas de aprendizado de máquina para agrupar e classificar coleções de documentos longos. A maioria dessas pesquisas consideram que um documento pertence a único tópico. Essa premissa é verdadeira em muitos casos, como postagens em redes sociais, \textit{reviews} de produtos e e-mails. 
+Nos últimos anos, a crescente disponibilidade de documentos e a necessidade de gerenciá-los de forma eficiente, incentivou a pesquisa por técnicas de aprendizado de máquina para agrupar e classificar coleções de documentos longos. A maioria dessas pesquisas consideram que um documento pertence a único tópico. Essa premissa é verdadeira em muitos casos, como postagens em redes sociais, \textit{reviews} de produtos e e-mails. 
 Contudo, isso raramente é válido para documentos longos que por vezes possuem mais de um tema. 
 Um dos primeiros trabalhos a agrupar documentos compostos por múltiplos temas é conhecido como \textit{Suffix Tree Clustering} (STC) proposto por \cite{Zamir1998}. O STC usa frases para calcular a similaridades e criar grupos sobrepostos de documentos, em que um documento pode pertencer a mais de um grupo.
 
-Em seu trabalho,~\cite{Tagarelli2013} consideram como documento multi-topical aqueles que têm múltiplas intenções comunicativas que refletem diferentes necessidades de informação.
-Exemplos de documentos multi-topicais podem ser encontrados em discussões em forums, páginas de notícias, discursos e transcrições de conversas e reuniões. Nesse contexto, Tagarelli e Karypis, (2013) propuseram um \textit{framework} de agrupamento para documentos multi-topicais. % Visando induzir um classificador .... 
-Inicialmente os documentos são modelados como um conjunto de segmentos de acordo com seus tópicos. Em seguida os segmentos são agrupados e os documentos originais são classificados. Por fim, um classificador foi induzido a partir dos grupos de segmentos.
-Os autores aplicaram sua metodologia a 3 \textit{datasets}: 1) RCV1 com 6.588 documentos; 2) PubMed com 3.687 documentos; 3) CaseLaw com 2.550 documentos. 
-O trabalho apresenta uma metodologia que utiliza segmentos de um determinado documento para facilitar a atribuição deste a mais de um grupo (onde cada grupo contém segmentos relevantes a um tópico). Para isso, utiliza os parágrafos do texto como estrutura para divisão de um documento, dispensado algoritmos de segmentação textual. Como principal contribuição, fornece uma analise sobre algoritmos de agrupamento de documentos com sobreposição~\cite{Zhao2004, Dhillon2001, Zhao2004a} e propõe variantes deste para adequação ao problema estudado. 
+Outro trabalho pioneiro nesse sentido foi proposto em~\cite{Masao:2000}.
+% Um dos primeiros trabalhos da literatura a abordar a multiplicidade de tópicos em um documento foi proposto em~\cite{}. 
+Esse trabalho foca na sumarização de múltiplos documentos sobre múltiplos tópicos. Os autores propuseram um método baseado em \textit{spreading activation} em uma base de documentos anotados semanticamente. O método extrai partes dos documentos consideradas importantes para criar uma rede que os relaciona. Essa abordagem foi capaz de identificar sentenças relacionadas bem como os documentos. Contudo essa abordagem não utilizada métodos de segmentação textual, considerando cada sentença como nós da rede. Além disso, vale-se de rotulação manual para criar relações entre as entidades.
 
 
+
+% --- Multi-document Topic Segmentation ---
+O algoritmo \textit{MultiSeg}, proposto em~\cite{Jeong:2010} visa descobrir descobrir ligações entre segmentos semanticamente relacionados. Os autores apresentam um modelo Bayesiano não paramétrico para inferir relação e agrupar segmentos de documentos. Essa abordagem se propõe a ajudar usuário a encontrar segmentos relacionados e detectar informações complementares à pesquisa inicial. Segundo os autores, essas relações ainda podem revelar tendências em fontes de dados.
+
+
+% --- A Study on Statistical Generation of a Hierarchical Structure of Topic-information for Multi-documents. --- 
 
 Ainda nesse contexto~\cite{Cuong2011} cria uma Estrutura Hierárquica de Tópicos (\textit{Hierarchical Structure of Topic-information}) -- HST utilizando uma metodologia baseada em segmentos para agrupar segmentos de documentos e identificar os grupos por meio de uma frase que reflete o conteúdo dos segmentos pertences ao grupo.
 Inicialmente o texto de cada documento é dividido em parte topicamente coerentes gerando uma coleção de segmentos. Em seguida, uma hierarquia de tópicos é construída por meio um método de agrupamento aglomerativo hierárquico. Por fim, cada grupo recebe um título, o qual é gerado por meio de algoritmos de sumarização e extração de palavras-chave.
 
 
+% --- A segment-based approach to clustering multi-topic documents. ---
+Em seu trabalho,~\cite{Tagarelli2013} consideram como documento multi-topical aqueles que têm múltiplas intenções comunicativas que refletem diferentes necessidades de informação.
+Exemplos de documentos multi-topicais podem ser encontrados em discussões em forums, páginas de notícias, discursos e transcrições de conversas e reuniões. Nesse contexto, Tagarelli e Karypis, (2013) propuseram um \textit{framework} de agrupamento para documentos multi-topicais. % Visando induzir um classificador .... 
+Inicialmente os documentos são modelados como um conjunto de segmentos de acordo com seus tópicos. Em seguida os segmentos são agrupados e os documentos originais são classificados. Por fim, um classificador foi induzido a partir dos grupos de segmentos.
+Os autores aplicaram sua metodologia a 3 \textit{datasets}: 1) RCV1 com 6.588 documentos; 2) PubMed com 3.687 documentos; 3) CaseLaw com 2.550 documentos. 
+O trabalho apresenta uma metodologia que utiliza segmentos de um determinado documento para facilitar a atribuição deste a mais de um grupo (onde cada grupo contém segmentos relevantes a um tópico). Para isso, utiliza os parágrafos do texto como estrutura para divisão de um documento, dispensado algoritmos de segmentação textual. Como principal contribuição, fornece uma analise sobre algoritmos de agrupamento de documentos com sobreposição~\cite{Zhao2004a, Zhao2004b, Dhillon2001} e propõe variantes deste para adequação ao problema estudado. 
+
+
+
+
+
+
+
 % Outros trabalhos que empregam metodologias semelhantes a este podem ser encontrados em~\cite{XYZ}.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

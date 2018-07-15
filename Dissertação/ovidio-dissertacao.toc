@@ -37,7 +37,7 @@
 \contentsline {section}{\numberline {3.3}Considera\IeC {\c c}\IeC {\~o}es finais}{54}{section.3.3}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase {Avalia\IeC {\c c}\IeC {\~a}o dos Segmentadores}}{57}{chapter.4}
-\contentsline {section}{\numberline {4.1}Prepara\IeC {\c c}\IeC {\~a}o de um corpus de refer\IeC {\^e}ncia}{58}{section.4.1}
+\contentsline {section}{\numberline {4.1}Prepara\IeC {\c c}\IeC {\~a}o de um \textit {corpus} de refer\IeC {\^e}ncia}{58}{section.4.1}
 \contentsline {section}{\numberline {4.2}Configura\IeC {\c c}\IeC {\~a}o experimental}{63}{section.4.2}
 \contentsline {section}{\numberline {4.3}Crit\IeC {\'e}rios de avalia\IeC {\c c}\IeC {\~a}o}{64}{section.4.3}
 \contentsline {section}{\numberline {4.4}Resultados}{64}{section.4.4}

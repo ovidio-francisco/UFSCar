@@ -102,13 +102,13 @@ Dispon{\'\i}vel em:
 ISBN 978-1-61197-283-2. Dispon{\'\i}vel em:
   \url{http://dblp.uni-trier.de/db/conf/sdm/sdm2013.html\#ChengGLWY13}.}
 
-\bibitem[Choi 2000]{Choi2000b}
+\bibitem[Choi 2000]{Choic99}
 \abntrefinfo{Choi}{CHOI}{2000}
 {CHOI, F. Y.~Y. Advances in domain independent linear text segmentation. In:
   \emph{Proceedings of the 1st North American Chapter of the Association for
   Computational Linguistics Conference}. Stroudsburg, PA, USA: Association for
-  Computational Linguistics, 2000.  (NAACL 2000), p. 26--33. Dispon{\'\i}vel
-  em: \url{http://dl.acm.org/citation.cfm?id=974305.974309}.}
+  Computational Linguistics, 2000. p. 26--33. Dispon{\'\i}vel em:
+  \url{http://dl.acm.org/citation.cfm?id=974305.974309}.}
 
 \bibitem[Choi, Wiemer-Hastings e Moore 2001]{Choi2001-LSA}
 \abntrefinfo{Choi, Wiemer-Hastings e Moore}{CHOI; WIEMER-HASTINGS; MOORE}{2001}
@@ -335,6 +335,14 @@ ISBN 0521865719, 9780521865715.}
   XVI Simpósio Brasileiro de Sistemas Multimídia e Web(Webmedia)}, v.~3,
   p.~1--3, 2010.
 Dispon{\'\i}vel em: \url{http://sites.labic.icmc.usp.br/torch/}.}
+
+\bibitem[Masao e K\^{o}iti 2000]{Masao:2000}
+\abntrefinfo{Masao e K\^{o}iti}{MASAO; K\^{o}ITI}{2000}
+{MASAO, U.; K\^{o}ITI, H. Multi-topic multi-document summarization. In:
+  \emph{Proceedings of the 18th Conference on Computational Linguistics -
+  Volume 2}. Stroudsburg, PA, USA: Association for Computational Linguistics,
+  2000.  (COLING '00), p. 892--898. Dispon{\'\i}vel em:
+  \url{https://doi.org/10.3115/992730.992775}.}
 
 \bibitem[Misra et al. 2009]{misra2009a}
 \abntrefinfo{Misra et al.}{MISRA et al.}{2009}
@@ -578,7 +586,7 @@ ISSN 0885-6125.
 Dispon{\'\i}vel em:
   \url{http://dx.doi.org/10.1023/B:MACH.0000027785.44527.d6}.}
 
-\bibitem[Zhao e Karypis 2004]{Zhao2004}
+\bibitem[Zhao e Karypis 2004]{Zhao2004b}
 \abntrefinfo{Zhao e Karypis}{ZHAO; KARYPIS}{2004b}
 {ZHAO, Y.; KARYPIS, G. Soft clustering criterion functions for partitional
   document clustering: A summary of results. In:  \emph{Proceedings of the
