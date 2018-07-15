@@ -241,6 +241,8 @@ INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmr10.tfm
 INPUT conteudo/6-resumo_abstract.tex
 INPUT conteudo/6-resumo_abstract.tex
 INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmss17.tfm
+INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmri12.tfm
+INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmbx12.tfm
 INPUT conteudo/8-simbolos.tex
 INPUT conteudo/8-simbolos.tex
 INPUT ovidio-dissertacao.toc
@@ -252,7 +254,6 @@ INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmri10.tfm
 OUTPUT conteudo/capitulos/2-cap1.aux
 INPUT conteudo/capitulos/2-cap1.tex
 INPUT conteudo/capitulos/2-cap1.tex
-INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmri12.tfm
 INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmri8.tfm
 INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmr8.tfm
 INPUT /usr/share/texmf/fonts/tfm/public/lm/rm-lmr5.tfm
@@ -262,7 +263,6 @@ INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmr7.tfm
 INPUT /usr/share/texmf/tex/latex/lm/t1lmtt.fd
 INPUT /usr/share/texmf/tex/latex/lm/t1lmtt.fd
 INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmtt10.tfm
-INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmbx12.tfm
 OUTPUT conteudo/capitulos/3-cap2.aux
 INPUT conteudo/capitulos/3-cap2.tex
 INPUT conteudo/capitulos/3-cap2.tex

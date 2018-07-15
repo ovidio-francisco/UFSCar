@@ -6,7 +6,60 @@
 % --- 
 \begin{resumo}
 
-% \textbf{Palavras-chaves}: Dissertação. Texto. Mestrado.
+Em um contexto em que a grande parte das informações armazenadas pelas organizações está em formato textual, o desenvolvimento de ferramentas computacionais para extração e organização automática dessas informações é uma tarefa que retém atenção e relevância.
+%
+Os modelos de extração de tópicos são recorrentemente empregados nessa tarefa. Esses modelos são capazes de estabelecer relações e encontrar padrões latentes em coleções de documentos textuais.
+%
+No entanto, há um desafio adicional em documentos constituídos por múltiplos assuntos. Para textos onde há transição de assuntos faz-se necessário, em primeiro lugar, encontrar porções de texto que tratam de um único assunto. Para isso, as técnicas de Segmentação Textual são utilizada para dividir um texto em segmentos com um assunto relativamente independente.
+%
+%
+%
+%
+%
+% Criação de estrutura. 
+O uso combinado de algoritmos de Segmentação Textual e Extração de Tópicos, pode então ser aplicado para criar uma estrutura que ajuda a entender os dados textuais, os quais são inerentemente não estruturados.
+% 
+A criação de uma estrutura organizada em tópicos, que incorpora informações latentes sobre o \textit{corpus} favorece técnicas de Recuperação de Informação. Essa abordagem permite a expansão do espaço de busca além do conjunto de termos original de cada segmento, e a identificação de trechos mais relevantes à consulta.
+% 
+Nesse trabalho, é apresentada uma metodologia para conectar as técnicas de Segmentação Textual aos modelos de Extração de tópicos a fim de gerar uma estrutura derivada de um \textit{corpus} não estruturado, a qual concentra os textos originais acrescidos de informações latentes e organizadas por sua semelhança semântica.
+% 
+% 
+% 
+% 
+% 
+% 
+A pesquisa desse trabalho de mestrado investigou as técnicas de Segmentação Textual e Extração de Tópicos para o desenvolvimento de um sistema de Recuperação de Informação em uma coleção de atas de reunião. 
+% 
+Desenvolveu-se uma sistema para entregar ao usuário os segmentos mais relevantes à consulta. Os trechos exibidos são agrupados por tópicos, o que também possibilita consultas exploratórias à base dados, por meio da navegação por grupos de segmentos relacionados semanticamente. Além disso, trechos pouco relevantes são omitidos, permitindo resultados concentrados no assunto pesquisado.
+% 
+% 
+% 
+% 
+Foram avaliados cinco técnicas de Segmentação Textual e três modelos de Extração de Tópicos da literatura. Com base no conjunto de atas estudado, criou-se um \textit{corpus} anotado manualmente com informações sobre a composição temática das atas e as transições entre os assuntos. O \textit{corpus} anotado serviu como referência para avaliação objetiva das técnicas de Segmentação Textual. Avaliou-se ainda, os resultados obtidos com os modelos de Extração Tópicos junto a profissionais ligados ao contexto de atas de reunião.
+% 
+% 
+% 
+% 
+Os resultados sugerem que as técnicas utilizadas e a metodologia apresentadas entregam respostas satisfatórios. Contudo, mais dados podem ser necessários para execução de novos experimentos a fim de aprimorar as técnicas utilizadas.
+% 
+% 
+% 
+% 
+% 
+A implementação do sistema e das ferramentas utilizadas para esse trabalho, bem como os resultados obtidos nas avaliações, juntamente com o corpus anotado, são as principais contribuições desse trabalho no intuito de dar aportes ao desenvolvimento de novos trabalhos.
+% 
+% 
+% 
+% 
+% 
+% criação de um copus anotado mais robusto e 
+% bem como avaliações das técnicas utilizadas bem implementação das ferramentas implementadas. 
+
+
+\textbf{Palavras-chaves}: 
+Segmentação Textual. 
+Extração de Tópicos.
+Recuperação de Informação. 
 
 \end{resumo}
 % --- 
@@ -19,7 +72,38 @@
  \begin{otherlanguage*}{english}
 
 
-% \textbf{Key-words}: Dissertation. Text. Master.
+
+
+In a context where the most informations stored by the organizations is in the text format, the development of computer tools for automatic extraction and organization of this information is a task that holds attention and relevance.
+%
+The extraction topic models are often employed in this task. This models are able  to establish relations between documents and found latents patterns in sets of them.  
+However, there is an additional challenge for documents composed by multiples subjects. For texts with subject shifts, it is necessary, in fist, found the chunks of texts that address a single subject. So, the Text Segmentation techniques are used to break a text in segments with a relatively independent issue.  
+The combination of the Text Segmentation and Topic Extraction algorithms, can be used to make an structure that helps to understanding textual data, which are inherently non structured.  
+The creation of an topic organized structure, that incorporates latent information concerning the corpus, favors Information Retrievals techniques. This approach allows query expansion space, besides the original set of terms of each segment, and the identification most relevant pieces of text.  
+This work presents an methodology to connect the Text Segmentation techniques to the Topic Extraction Models, in order to generates an derivative structure from a non structured corpus, which concentrates the original texts plus the latent informations and organized by semantic likeness.  
+The research for this thesis investigates the Text Segmentation techniques and the Topic Extraction Models to develop an Information Retrieval system for meeting minutes.  
+We develops an system to give to the user the most relevant segments to the query. The segmentos presented are clustered by this topics, that also enables exploratory searches to the data base, through browsing by groups of semantically related segments. Furthermore, less relevant segments are omitted, allowing results focused on the researched subject.  
+Five techniques of Text Segmentation and three Topic Extraction models from the literature was evaluated. Based on the set of meeting minutes analysed, we create an manually annotated corpus with informations on the thematic composition of the meeting minutes and about the issue shifts. The annotated corpus served as reference to objective evaluation of the Text Segmentation techniques. We also evaluate the results obtained with the Topic Extraction Models. This results were analysed by related to the meeting minutes context.  
+The results points the employed techniques and the methodology presented gives satisfactory answers. However, more data can be necessary to leads new experiments in order to improve the used techniques.  
+The system implementation and the tools used in the work, as well the results obtained in the evaluations, plus the annotated corpus are the principal contributions of this work, in order to support next works.
+
+
+
+
+
+
+
+
+
+
+\textbf{Key-words}: 
+% Segmentação Textual. 
+% Extração de Tópicos.
+% Recuperação de Informação. 
+Text Segmentation.
+Topic Extraction.
+Information Retrieval.
+% Dissertation. Text. Master.
 
  \end{otherlanguage*}
 \end{resumo}
