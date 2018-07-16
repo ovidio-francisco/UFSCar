@@ -1,0 +1,179 @@
+
+
+
+
+
+
+
+\subsection*{Representação de Texto}
+\subsubsection*{\textit{Bag Of Words}}
+
+
+
+
+
+formato 
+
+
+passível de manipulação por algoritmos de extração de padrões 
+
+
+
+A etapa de pré-processamento consiste basicamente em uma padronização dos textos 
+
+
+
+além de aplicar um processo de tratamento, limpeza e, em geral, redução do
+volume de textos, 
+
+
+sempre preservando as características necessárias para que os objetivos
+sejam cumpridos.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+% ---------- B ----------
+
+% A Mineração de Textos (MT) pode ser entendida como um processo de técnicas para descoberta de conhecimento útil com bases textuais. Visto a grande quantidade de conteúdo produzido em formato textual, a MT é utilizada como ferramenta de gestão do conhecimento~\cite{Rezende2011}. Pode se ainda situar a MT como uma especialização do processo de mineração de dados o qual lida estritamente com bases de dados estruturadas, ao passo que a MT se propõe a trabalhar dados não estruturados, em particular, fontes de dados textuais.
+% As principais técnicas de MT utilizadas neste trabalho serão apresentas nas subseções a seguir.
+
+
+
+
+% ---------- 2 ----------
+
+A etapa de preprocessamento refere-se ao processo em que o texto é padronizado e passa por seleção e transformação de seus atributos com finalidade de reduzir sua dimensionalidade mantendo seus elementos mais significantes.
+Inicialmente, visto a diversidade de formatos de documentos digitais como pdf docx e odt, o texto desses arquivos é extraído e convertido em texto plano, sem formatação.
+
+
+% ---------- 1 ----------
+
+Uma das etapas mais importantes para as tarefas de Mineração Textos é a criação de uma representação adequada dos dados. Essa representação deve prover uma maneira estruturada para que possar ser utilizados por algoritmos de Aprendizado de Máquina. Os dados textuais se diferenciam de outros formatos estruturados como bancos de dados relacionais em que um dado é facilmente encontrado. 
+
+
+
+
+% Os dados textuais têm como características serem esparsos e apresentar alta dimensionalidade. Por exemplo, uma coleção de documentos frequentemente contém milhares de palavras, ao passo que um documento específico irá conter uma pequena parcela dessa diversidade, em torno de algumas centenas. Essas características, por consequência, exigem que os dados originais sejam reduzidos, porém preservando as caraterísticas mínimas para os algoritmos utilizados a seguir.
+
+
+
+
+
+transformados em uma representação estruturada.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+% Palavras como artigos, preposições, pronomes, verbos de estado\footnote{Apresentam uma situação inativa, onde o verbo não expressa uma alteração, mas apenas uma propriedade ou condição dos envolvidos.}. Trata-se também como \textit{stop words} as palavras de uso muito frequente dentro de um determinado domínio as quais não são capazes de discriminar textos, portanto também não devem fazer parte dos atributos~\cite{Rezende2003}. 
+
+
+
+
+
+% A principal diferença entre os processos de Mineração de Textos e os processos de Mineração de Dados é a etapa de pré-processamento, a estrutura os textos em um formato mais adequado para seu processamento em sistemas computacionais. 
+
+
+
+
+% A etapa de preprocessamento refere-se ao processo em que o texto é padronizado e passa por seleção e transformação de seus atributos com finalidade de reduzir sua dimensionalidade mantendo seus elementos mais significantes.
+% Inicialmente, visto a diversidade de formatos de documentos digitais como pdf docx e odt, o texto desses arquivos é extraído e convertido em texto plano, sem formatação.
+
+
+
+
+
+
+
+
+
+
+
+
+Os termos de alta frequência são julgados não relevantes por
+geralmente aparecerem na grande maioria dos textos, não trazendo, em geral, informações
+úteis para discriminar este texto. Já os termos de baixa frequência são considerados muito
+raros e não possuem caráter discriminatório. Assim, são traçados pontos de corte superior
+e inferior da Curva de Zipf, de maneira que termos com alta e baixa frequência são descar-
+tados, considerando os termos mais signicativos os de frequência intermediária
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+agenda”, “agendar” e “agendamento” 
+são todas reduzidas ao seu radical em comum, ”agend”.  
+
+
+
+
+
+
+na qual a termo mais recorrente tem sua frequência inversamente proporcional à
+
+
+
+frequencia do termo mais recorrente é inversamente proporcional a
+
+
+
+
+
+

@@ -158,6 +158,10 @@ INPUT /usr/share/texlive/texmf-dist/tex/latex/oberdiek/pdflscape.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/oberdiek/pdflscape.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/lscape.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/lscape.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 INPUT macros.tex
 INPUT macros.tex
 INPUT /usr/share/texmf/tex/latex/lm/ot1lmr.fd
@@ -178,6 +182,16 @@ INPUT /usr/share/texmf/fonts/tfm/public/lm/lmsy6.tfm
 INPUT /usr/share/texmf/tex/latex/lm/omxlmex.fd
 INPUT /usr/share/texmf/tex/latex/lm/omxlmex.fd
 INPUT /usr/share/texmf/fonts/tfm/public/lm/lmex10.tfm
+INPUT /usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+INPUT /usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam7.tfm
+INPUT /usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+INPUT /usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
 OUTPUT ovidio-dissertacao.idx
 INPUT ovidio-dissertacao.aux
 INPUT ovidio-dissertacao.aux
@@ -228,6 +242,10 @@ INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmr12.tfm
 INPUT /var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map
 INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmssbx10.tfm
 INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmssbx10.tfm
+INPUT /usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msa.cfg
+INPUT /usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msa.cfg
+INPUT /usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msb.cfg
+INPUT /usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msb.cfg
 INPUT /usr/share/texmf/fonts/tfm/public/lm/rm-lmr12.tfm
 INPUT /usr/share/texmf/fonts/tfm/public/lm/rm-lmr10.tfm
 INPUT /usr/share/texmf/fonts/tfm/public/lm/rm-lmr7.tfm
@@ -237,6 +255,12 @@ INPUT /usr/share/texmf/fonts/tfm/public/lm/lmmi7.tfm
 INPUT /usr/share/texmf/fonts/tfm/public/lm/lmsy10.tfm
 INPUT /usr/share/texmf/fonts/tfm/public/lm/lmsy10.tfm
 INPUT /usr/share/texmf/fonts/tfm/public/lm/lmsy7.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam7.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
 INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmr10.tfm
 INPUT conteudo/6-resumo_abstract.tex
 INPUT conteudo/6-resumo_abstract.tex
@@ -259,6 +283,8 @@ INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmr8.tfm
 INPUT /usr/share/texmf/fonts/tfm/public/lm/rm-lmr5.tfm
 INPUT /usr/share/texmf/fonts/tfm/public/lm/lmmi5.tfm
 INPUT /usr/share/texmf/fonts/tfm/public/lm/lmsy5.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam5.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm5.tfm
 INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmr7.tfm
 INPUT /usr/share/texmf/tex/latex/lm/t1lmtt.fd
 INPUT /usr/share/texmf/tex/latex/lm/t1lmtt.fd
@@ -364,6 +390,8 @@ INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmr10.tfm
 INPUT /usr/share/texmf/fonts/tfm/public/lm/rm-lmr10.tfm
 INPUT /usr/share/texmf/fonts/tfm/public/lm/lmmi10.tfm
 INPUT /usr/share/texmf/fonts/tfm/public/lm/lmsy10.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmbx10.tfm
 INPUT conteudo/capitulos/figs/graficos/analiseNSegRate-C99.png
 INPUT ./conteudo/capitulos/figs/graficos/analiseNSegRate-C99.png
@@ -594,3 +622,4 @@ INPUT /usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb
 INPUT /usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb
 INPUT /usr/share/texmf/fonts/type1/public/lm/lmtt10.pfb
 INPUT /usr/share/texmf/fonts/type1/public/lm/lmtt12.pfb
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb

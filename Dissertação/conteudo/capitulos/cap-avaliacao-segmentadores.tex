@@ -23,7 +23,7 @@ Nas próximas seções o processo de anotação e criação da segmentação de 
 % =========== Avaliação dos Segmentadores ============ %
 % \subsection{Avaliação dos Segmentadores}
 
-\section{Preparação de um \textit{corpus} de referência}
+\section{Preparação de um \textit{Corpus} de Referência}
 \label{sec:preparacaocorpusreferencia}
 
 
@@ -87,7 +87,7 @@ Na Figura~\ref{fig:interfaceanotacoes} é mostrada a interface da ferramenta uti
 
 
 
-De acordo com a literatura a respeito de anotações em sub-tópicos, é recomendável fornecer treinamento aos participantes. Nesse trabalho os anotadores receberam apenas informações básicas sobre o objetivo da pesquisa e instruções de como operar o \textit{software} por meio de um vídeo\footnote{Acessível em }, deixando o entendimento sobre a segmentação e rotulação a critério de cada anotador. Assim, nenhum critério foi estabelecido para o procedimento ficando os anotadores orientados apenas pela interface da ferramenta. 
+De acordo com a literatura a respeito de anotações em sub-tópicos, é recomendável fornecer treinamento aos participantes. Nesse trabalho os anotadores receberam apenas informações básicas sobre o objetivo da pesquisa e instruções de como operar o \textit{software} por meio de um vídeo\footnote{Acessível em \url{https://youtu.be/zCv3U7Z8kKo}}, deixando o entendimento sobre a segmentação e rotulação a critério de cada anotador. Assim, nenhum critério foi estabelecido para o procedimento ficando os anotadores orientados apenas pela interface da ferramenta. 
 
   \begin{figure}[!h]
 	  \centering
@@ -309,7 +309,7 @@ Os valores de \textit{Kappa} reforçam que a tarefa de segmentação é bastante
 Embora~\cite{Carletta1996} afirme que valores de $k~>~0,8$ indicam que os dados são confiáveis, visto a subjetividade da tarefa de segmentação textual, medidas menores podem ser aceitáveis, como reportado em~\cite{Hearst1997} que obteve $k~=~0,64$ e~\cite{Cardoso2017}, que obteve $k~=~0,56$. Além dos baixos valores para as medidas nota-se também que o anotadores divergem na quantidade de segmentos, o que sugere que diferentes anotadores tem percepções distintas quanto a granularidade de assuntos, ou seja, trechos com pequenas mudanças de assunto são entendidas como segmentos diferentes por alguns anotadores, enquanto outros entendem como pertencentes ao mesmo assunto.
 
 % -- 7 - disponibilizar e manter o produto
-Após a coleta dos dados das anotações e construção da segmentação de referência, o \textit{corpus} anotado serviu de como base para avaliação dos segmentadores bem como aspectos da configuração e avaliação dos extratores de tópicos no Capítulo~\ref{cap-extratores}. O produto resultante do processo de anotação, constituído por segmentos de atas anotados está disponibilizado\footnote{Acessível em  \url{https://github.com/ovidio-francisco/}} para outros trabalhos voltados a esse domínio. 
+Após a coleta dos dados das anotações e construção da segmentação de referência, o \textit{corpus} anotado serviu de como base para avaliação dos segmentadores bem como aspectos da configuração e avaliação dos extratores de tópicos no Capítulo~\ref{cap-extratores}. O produto resultante do processo de anotação, constituído por segmentos de atas anotados está disponibilizado\footnote{Acessível em  \url{https://github.com/ovidio-francisco/UFSCar/}} para outros trabalhos voltados a esse domínio. 
 
 
 
@@ -318,7 +318,7 @@ Após a coleta dos dados das anotações e construção da segmentação de refe
 
 
 
-\section{Configuração experimental}
+\section{Configuração Experimental}
 \label{subsec:configuracaoexperimental}
 
   
@@ -347,7 +347,7 @@ a fim de conhecer o impacto do pré-processamento nos algoritmos.
 Esses foram testados em duas etapas: com o texto integral, e com o texto pré-processado em que elementos menos significativos foram removidos, conforme mencionado na Seção~\ref{sec:modulo-preparacao}.  
 
 
-\section{Critérios de avaliação}
+\section{Critérios de Avaliação}
 
 % -> Definição do que é um bom algoritmo de segmentação
 Para fins de avaliação desse trabalho, um bom método de segmentação é aquele cujo resultado melhor se aproxima da segmentação de referência, sem a obrigatoriedade de estar perfeitamente alinhado com tal. Ou seja, visto o contexto das atas de reunião, e a subjetividade da tarefa, não é necessário que os limites entre os segmentos (real e hipótese) sejam idênticos, mas que se assemelhem em localização e quantidade.
@@ -572,7 +572,7 @@ A escolha justifica-se por este algoritmo apresentar melhores resultados para as
 
 
 
-\section{Considerações finais}
+\section{Considerações Finais}
 
 
 

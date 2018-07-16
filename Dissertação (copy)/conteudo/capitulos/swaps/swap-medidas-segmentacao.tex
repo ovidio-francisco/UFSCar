@@ -1,0 +1,108 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+As medidas tradicionais baseiam-se na matriz de confusão a qual considera um verdadeiro positivo somente quando duas segmentações colocam o final de um segmento no mesmo ponto, sem considerar pequenas diferenças. Além disso, sempre penalizam o algoritmo quando um segmento não não coincide perfeitamente com a referência. Assim essas medidas podem ser mais adequadas quando necessita-se medir a eficiência do algoritmo com maior exatidão. 
+Por outro lado, essas medidas computam apenas os erros do algoritmo quando se detecta falsos positivos ou falsos negativos, o que nesse contexto de segmentação textual pode não ser suficiente, dado a subjetividade da tarefa. 
+%
+Além dessas medidas, que consideram apenas se um segmento foi perfeitamente definido conforme uma referência, pode-se também considerar a distância entre o segmento extraído automaticamente e o segmento de referência~\cite{Kern2009}. Chama-se \textit{near misses} o caso em que um limite identificado automaticamente não coincide exatamente com a referência, mas é necessário considerar a proximidade entre eles.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+podem não ser confiáveis por não considerarem as distâncias lineares dos limites entre segmentos.
+Em outras palavras, 
+
+
+
+Por consequência, 
+
+
+
+
+
+
+As medidas de avaliação tradicionais, podem não ser confiáveis, por não considerarem a distância entre os limites, mas penalizam o algoritmo sempre que um limite que não coincide perfeitamente com a referência. Essas medidas podem ser mais adequadas quando necessita-se de segmentações com maior exatidão. 
+
+
+
+
+
+
+, F$^1$, Acurácia
+- Precisão...
+- F1...
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Com base nos valores da matriz de contingência, pode-se calcular:
+- Precisão...
+- F1...
+
+
+
+
+
+
+
+
+
+
+% Ou seja, dado dois termos de distância $k$, o algoritmo é penalizado caso não concorde com a segmentação de referência se as palavras estão ou não no mesmo segmento. Dadas uma segmentação de referência $ref$ e uma segmentação automática $hyp$, ambas com $N$ sentenças, P$_k$ é computada como: 
+
+o algoritmo é penalizado caso não concorde com a segmentação de referência se as palavras estão ou não no mesmo segmento. 
+
+
+
+ou seja o algoritmos verifica se a hipotese coloca as palavras no mesmo segmento ou e segmentos distintos. O algoritmo será penlizado caso a referência não concorde com a hipotese.
+
+
+
+
+% As medidas de avaliação tradicionais, precisão e revocação, podem não ser confiáveis, por não considerarem a distância entre os limites, mas penalizam o algoritmo sempre que um limite que não coincide perfeitamente com a referência. Essas medidas podem ser mais adequadas quando necessita-se de segmentações com maior exatidão. Em outras palavras, computam apenas os erros do algoritmo quando se detecta falsos positivos ou falsos negativos, o que nesse contexto de segmentação textual pode não ser suficiente, dado a subjetividade da tarefa. Além dessas medidas, que consideram apenas se um segmento foi perfeitamente definido conforme uma referência, pode-se também considerar a distância entre o segmento extraído automaticamente e o segmento de referência~\cite{Kern2009}. Chama-se \textit{near misses} o caso em que um limite identificado automaticamente não coincide exatamente com a referência, mas é necessário considerar a proximidade entre eles.

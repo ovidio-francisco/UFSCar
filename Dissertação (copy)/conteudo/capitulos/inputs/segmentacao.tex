@@ -1,0 +1,38 @@
+
+\section{Segmentação Textual} \label{sec:segmentacao}
+
+
+% -- Definição da Tarefa e de Segmentação
+% A tarefa de segmentação textual consiste em dividir um texto em partes ou segmentos que contenham um significado relativamente independente. Em outras palavras, é identificar as posições nas quais há uma mudança significativa de assuntos. 
+
+
+% -- #################### SAI ####################
+
+%         ==========|   Segmentação  |========== 
+
+A tarefa de segmentação automática de textos, ou segmentação textual consiste em dividir um texto em partes que contenham um significado relativamente independente. Em outras palavras, é identificar as posições nas quais há uma mudança significativa de assunto. É útil em aplicações que trabalham com textos sem indicações de quebras de assunto, ou seja, não apresentam seções ou capítulos, como transcrições automáticas de áudio, vídeos e grandes documentos que contêm vários assuntos como atas de reunião e notícias~\cite{Aggarwal2018, bokaei2015a, sakahara2014a, misra2009a, Eis2008}.
+% <-- Referências
+
+Pode ser usada para melhorar o acesso a informação solicitada por meio de uma consulta, onde é possível oferecer porções menores de texto mais relevantes ao invés de exibir um documento grande que pode conter informações menos pertinentes.  Além disso, encontrar pontos onde o texto muda de assunto, pode ser útil como etapa de pré-processamento em aplicações voltadas ao entendimento do texto, principalmente em documentos longos~\cite{Choi2001-LSA}.
+
+As técnicas de segmentação textual consideram um texto como uma sequência linear de unidades de informação que podem ser, por exemplo, cada termo presente no texto, os parágrafos ou as sentenças. Cada unidade de informação é um elemento do texto que não será dividido no processo de segmentação e cada ponto entre duas unidades é considerado um candidato a limite entre segmentos. Nesse sentido, um segmento pode ser visto como uma sucessão de unidades de informação que compartilham o mesmo assunto.
+
+
+Nessa seção serão apresentados os algoritmos frequentemente referenciados na literatura  com diferentes características. A seguir são detalhados os algoritmos baseados em coesão léxica, \textit{TextTiling} e \textit{C99}, o \textit{BayesSeg} e \textit{TextSeg} que trazem abordagens probabilísticas e o \textit{MinCutSeg} baseado em particionamento de grafos.
+
+
+% -- Algoritmos
+\input{conteudo/capitulos/inputs/algoritmos-segmentacao.tex}
+
+% -- Medidas
+\input{conteudo/capitulos/inputs/medidas-segmentacao.tex}
+
+
+
+
+
+
+
+
+
+
