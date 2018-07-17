@@ -6,7 +6,7 @@
 
 As medidas de avaliação tradicionais como precisão e revocação permitem medir o desempenho de modelos de Recuperação de Informação e Aprendizado de Máquina por meio da comparação dos valores produzidos pelo modelo com os valores observados em uma referência. 
 %	Avaliações baseadas em hits 
-Usa-se uma tabela, chamada matriz de confusão, para visualizar o desempenho de um algoritmo. Na Tabela~\ref{tab:matrizconfusao} é apresentada uma matriz de confusão para duas classes (Positivo e Negativo). 
+Usa-se uma tabela, chamada matriz de confusão, para visualizar o desempenho de um algoritmo. Na Tabela~\ref{tab:matrizconfusao} é apresentada uma matriz de confusão para duas classes (Positivo e Negativo)~\cite{Aggarwal2018, Manning2008}. 
 
 
 \begin{table}[!h]
@@ -28,7 +28,8 @@ Usa-se uma tabela, chamada matriz de confusão, para visualizar o desempenho de 
 
 % -> Falso Positivo % Falso Negativo % Verdadeiro Positivo % O Verdadeiro Negativo, que não existe 
 
-No contexto de segmentação textual, um falso positivo é um limite identificado pelo algoritmo que não corresponde a nenhum limite na segmentação de referência, ou seja, o algoritmo indicou que em determinado ponto há uma quebra de segmento, mas na segmentação de referência, não há quebra no mesmo ponto. De maneira semelhante, um falso negativo é quando o algoritmo não identifica um limite existente na segmentação de referência, ou seja, em determinado ponto há, na segmentação de referência, um limite entre segmentos, contudo, o algoritmo não o identificou.  Um verdadeiro positivo é um ponto no texto indicado pelo algoritmo e pela segmentação de referência como uma quebra de segmentos, ou seja, o algoritmo e a referência concordam que em determinado ponto há uma transição de assunto.  Na avaliação de segmentadores, não há o conceito de verdadeiro negativo. Este seria um ponto no texto indicado pelo algoritmo e pela segmentação de referência onde não há uma quebra de segmentos, uma vez que os algoritmos apenas indicam onde há um limite, essa medida não é necessária. % Não há ou não e necessário?
+No contexto de segmentação textual, um falso positivo é um limite identificado pelo algoritmo que não corresponde a nenhum limite na segmentação de referência, ou seja, o algoritmo indicou que em determinado ponto há uma quebra de segmento, mas na segmentação de referência, não há quebra no mesmo ponto. De maneira semelhante, um falso negativo é quando o algoritmo não identifica um limite existente na segmentação de referência, ou seja, em determinado ponto há, na segmentação de referência, um limite entre segmentos, contudo, o algoritmo não o identificou.  Um verdadeiro positivo é um ponto no texto indicado pelo algoritmo e pela segmentação de referência como uma quebra de segmentos, ou seja, o algoritmo e a referência concordam que em determinado ponto há uma transição de assunto.  Na avaliação de segmentadores, não há o conceito de verdadeiro negativo. Este seria um ponto no texto indicado pelo algoritmo e pela segmentação de referência onde não há uma quebra de segmentos, uma vez que os algoritmos apenas indicam onde há um limite, essa medida não é necessária~\cite{Kazantseva2012, Beeferman1999}. 
+% Não há ou não e necessário?
 
 
 % -> Precisão 
@@ -111,7 +112,7 @@ P_k(ref,hyp) = \frac{1}{N - k}
 \end{equation}
 
 \noindent
-na qual $\delta_S(i,j)$ é a função indicadora que retorna 1 se as sentenças $c_i$ e $c_j$ estão no mesmo segmento e 0 caso contrário, $\bar{\oplus}$ é o operador \texttt{XNOR} (ambos ou nenhum) que retorna 1 se ambos os argumentos forem diferentes. 
+na qual $\delta_S(i,j)$ é a função indicadora que retorna 1 se as sentenças $c_i$ e $c_j$ estão no mesmo segmento e 0 caso contrário, $\bar{\oplus}$ é o operador \texttt{XNOR} (ambos ou nenhum) que retorna 1 se ambos os argumentos forem iguais. 
 %
 %
 O valor de $k$ é calculado como a metade da média dos comprimentos dos segmentos reais. Como resultado, é retornada a dissimilaridade entre a segmentação calculada pela contagem de discrepâncias divida pela quantidade de segmentos analisados. Essa medida pode ser interpretada como a probabilidade de duas sentenças extraídas aleatoriamente pertencerem ao mesmo segmento.  

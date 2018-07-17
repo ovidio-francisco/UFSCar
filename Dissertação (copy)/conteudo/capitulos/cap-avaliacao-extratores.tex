@@ -19,8 +19,9 @@ A avaliação se deu por meio de questionários onde profissionais com afinidade
 
 % A qtd de tópicos é um parametro importante.  % Todos com 70 tópicos e 5 extratores;
 Durante os primeiros testes, a qualidade dos resultados mostrou-se sensível à quantidade de tópicos extraídos.
-Inicialmente, realizou-se um teste prévio utilizando uma versão não-paramétrica dos algorítimos a fim de automaticamente obter valores ótimos para esse parâmetro por meio da análise das medidas Silhueta e Coesão. Essa configuração automática resultou valores em torno de 20 tópicos. Contudo, os resultados apresentam grupos com muitos segmentos (em torno de 100) o que os tornam pouco coesos em relação a um assunto central, além de diminuir a capacidade representativa dos descritores.
-Com base em observações empíricas, verificou-se que valores abaixo de 60 tópicos geram grupos com muitos segmentos o que por consequência torna os grupos menos coesos por incluir segmentos com assuntos muito distantes. Por outro lado, valores acima de 80 geram tópicos com poucos segmentos, permitindo que assuntos próximos sejam atribuídos a grupos distintos. Nesse trabalho, optou-se por configurar os algoritmos para extrair 70 tópicos da coleção de segmentos por apresentar uma distribuição mais coerente em termos de agrupamento na visão de usuário.
+Inicialmente, realizou-se um teste prévio utilizando uma versão não-paramétrica dos algorítimos a fim de automaticamente obter valores ótimos para esse parâmetro por meio da análise das medidas Silhueta e Coesão. Essa configuração automática resultou valores em torno de 20 tópicos. Contudo, os resultados apresentam grupos com muitos segmentos (em torno de 100).
+% o que os tornam pouco coesos em relação a um assunto central, além de diminuir a capacidade representativa dos descritores.
+Com base em observações empíricas, verificou-se que valores abaixo de 60 tópicos geram grupos com muitos segmentos o que por consequência torna os grupos menos coesos por incluir segmentos com assuntos muito distantes, além de diminuir a capacidade representativa dos descritores. Por outro lado, valores acima de 80 geram tópicos com poucos segmentos, permitindo que assuntos próximos sejam atribuídos a grupos distintos. Nesse trabalho, optou-se por configurar os algoritmos para extrair 70 tópicos da coleção de segmentos por apresentar uma distribuição mais coerente em termos de agrupamento na visão de usuário.
 
 Outro fator importante é a quantidade de descritores selecionados para cada tópico. Com base no experimento de anotações de segmentos, descrito no Capítulo~\ref{cap-segmentadores}, os anotadores selecionaram em média 5 palavras para descrever os segmentos, sendo esse valor adotado para essa avaliação.
 
@@ -32,13 +33,14 @@ Outro fator importante é a quantidade de descritores selecionados para cada tó
 % - Explicar que foram 2 consultas (quais) e mostrar os extratores.
 % - 4 - Procedimento (2 consultas, técnicas em ordens diferentes).
 Após a identificação da configuração mais adequada para cada algoritmo, cada um dos três modelos de extração de tópicos foi submetido a duas consultas\footnote{O termo consulta significa um conjunto de palavras chave passadas à um sistema de busca.}: ``\textit{compra de equipamentos}'' e ``\textit{defesa de dissertação}'' gerando 6 cenários distintos a serem analisados. 
-Para cada cenário, o sistema seleciona o tópico com maior relevância com a consulta e em seguida exibe 5 segmentos desse tópico escolhidos aleatoriamente. 
-Vale dizer que nessa avaliação as técnicas de ranqueamento dos resultados não são aplicadas para que estas não interfiram na avaliação dos extratores, contudo, o sistema final poderá ranquear também os segmentos com maior relevância de um ou mais tópicos por meio de técnicas de recuperação de informação. 
+Para cada cenário, o sistema seleciona o tópico com maior relevância com a consulta, conforme apresentado na Seção~\ref{sec-ranqueamento}.
+Em seguida, o sistema exibe 5 segmentos desse tópico escolhidos aleatoriamente. 
+Vale dizer que nessa avaliação as técnicas de ranqueamento dos resultados não são aplicadas para os segmentos contidos no tópico selecionado que estas não interfiram na avaliação dos extratores, contudo, o sistema final poderá ranquear também os segmentos com maior relevância de um ou mais tópicos por meio de técnicas de recuperação de informação. 
 Os resultados desses cenários foram apresentados a um grupo de avaliadores que individualmente avaliaram a qualidade das técnicas de extração de tópicos. 
 %
 
 % -- 3 - Escolha dos participantes.
-O perfil dos avaliadores é de profissionais da area acadêmica/escolar devido à sua afinidade com o ambiente de gestão e conhecimentos de assuntos relacionados ao \textit{corpus} estudado nesse trabalho. O grupo convidado a participar do experimento é formado por 24 profissionais da UFSCar campus Sorocaba, 13 profissionais de escolas técnicas e 3 profissionais de escolas do Ensino Fundamental, sendo 12 ocupantes de cargos de gestão como coordenadores de curso e diretores, 17 membros de conselhos, 5 profissionais administrativos e 3 professores, totalizando 41 avaliadores em que a maioria afirma ter afinidade com atas e reuniões. Apenas 3 declararam nenhuma afinidade com esses documentos, sendo esses últimos descartados por não se adequarem ao perfil desejado. Os avaliadores foram divididos em dois grupos, sendo o primeiro formado por 18 participantes que avaliaram a primeira consulta, ``\textit{compra de equipamentos}'' e o segundo formado por 19 participantes que avaliaram a segunda consulta, ``\textit{defesa de dissertação}''. Os grupos avaliaram as técnicas de extração tópicos a partir de uma consulta, ou seja, cada indivíduo avaliou 3 cenários distintos. A avaliação consistiu de um documento impresso contendo uma breve apresentação do trabalho, seguido de uma cópia dos resultados das técnicas de extração de tópicos. Para cada técnica, os avaliadores recebiam 4 questões sobre os resultados. Os documentos de ambas avaliações podem ser vistas no Apêndice~\ref{apendice2}.
+O perfil dos avaliadores é de profissionais da area acadêmica/escolar devido à sua afinidade com o ambiente de gestão e conhecimentos de assuntos relacionados ao \textit{corpus} estudado nesse trabalho. O grupo convidado a participar do experimento é formado por 24 profissionais da UFSCar - Campus Sorocaba, 13 profissionais de escolas técnicas e 3 profissionais de escolas do Ensino Fundamental, sendo 12 ocupantes de cargos de gestão como coordenadores de curso e diretores, 17 membros de conselhos, 5 profissionais administrativos e 3 professores, totalizando 41 avaliadores em que a maioria afirma ter afinidade com atas e reuniões. Apenas 3 declararam nenhuma afinidade com esses documentos, sendo esses últimos descartados por não se adequarem ao perfil desejado. Os avaliadores foram divididos em dois grupos, sendo o primeiro formado por 18 participantes que avaliaram a primeira consulta, ``\textit{compra de equipamentos}'' e o segundo formado por 19 participantes que avaliaram a segunda consulta, ``\textit{defesa de dissertação}''. Os grupos avaliaram as técnicas de extração tópicos a partir de uma consulta, ou seja, cada indivíduo avaliou 3 cenários distintos. A avaliação consistiu de um documento impresso contendo uma breve apresentação do trabalho, seguido de uma cópia dos resultados das técnicas de extração de tópicos. Para cada técnica, os avaliadores recebiam 4 questões sobre os resultados. Os documentos de ambas avaliações podem ser vistas no Apêndice~\ref{apendice2}.
 
 % X profissionais de gestão de instituições 
 
@@ -62,7 +64,7 @@ As questões 1 e 2, tiveram como alternativas:
 %
 %
 
-As questões 3 e 4 estão ligadas à técnica de segmentação utilizada, o BayesSeg conforme já mencionado no Capítulo~\ref{cap-segmentadores}. 
+		As questões 3 e 4 estão ligadas à técnica de segmentação utilizada, o \textit{BayesSeg} conforme já mencionado no Capítulo~\ref{cap-segmentadores}. 
 A questão 3, \textit{``Existem trechos que não tratam de um único assunto?''}, diz respeito à coesão de cada segmento, levando em conta a homogeneidade do texto em relação a um assunto. A questão 4, \textit{``Existem trechos incompletos e insuficientes para compreensão do assunto do trecho?''}, refere-se a completude dos segmentos, ou seja, o quão bem os segmentos podem ser bem compreendidos independentemente da leitura do documento integral.
 Para afastar a hipótese de que os resultados das técnicas fossem influenciados pela ordem apresentada, essas foram apresentadas aos avaliadores em ordem aleatórias.
 % 
@@ -86,7 +88,7 @@ As questões 3 e 4, tiveram como alternativas:
 % \section{Resultados}
 
 % -- Quantitativos
-Inicialmente, a coleção de documentos utilizada como base nesse experimento foi constituída de 175 atas, dessas, foram extraídos 1272 segmentos dos quais os algoritmos atribuíram em média 19 segmentos a cada tópico. Na Tabela~\ref{tab:segquanti} é exibido para cada cenário a quantidade de segmentos atribuídos ao tópico seleciona na busca, bem como os descritores que os identificam.
+Inicialmente, a coleção de documentos utilizada como base nesse experimento foi constituída de 175 atas, dessas, foram extraídos 1272 segmentos dos quais os algoritmos atribuíram em média 19 segmentos a cada tópico. Na Tabela~\ref{tab:segquanti} é exibido para cada cenário a quantidade de segmentos atribuídos ao tópico selecionado na busca, bem como os descritores que os identificam.
  
 \begin{table}[!h]
 \begin{tabular}{|c|c|l|c|}
@@ -105,7 +107,7 @@ Inicialmente, a coleção de documentos utilizada como base nesse experimento fo
  \caption{Descritores e número de segmentos no tópico selecionado pelos Algoritmos}
 \end{table} 
 
-Na primeira consulta, \textit{``compra de equipamentos''},  os 3 algoritmos selecionaram um total de 22 segmentos diferentes, sendo que desses 12 foram concomitantemente selecionados por todos os algoritmos e o LDA e o PLSA compartilham 3 desses segmentos nos resultados.
+Na primeira consulta, \textit{``compra de equipamentos''},  os 3 algoritmos selecionaram um total de 22 segmentos diferentes, sendo que desses 12 foram concomitantemente selecionados por todos os algoritmos. O LDA e o PLSA compartilham 3 desses segmentos nos resultados.
 Na segunda  consulta, \textit{``defesa de dissertação''}, os 3 algoritmos selecionaram um total de 49 segmentos diferentes, sendo que desses 4 foram selecionados concomitantemente por todos os algoritmos. O K-Means compartilha 7 segmentos com o LDA e 3 com o PLSA. O LDA e o PLSA compartilham 2 segmentos nos resultados.
 % --> E daí?
 
@@ -122,7 +124,7 @@ validar a performance do segmentador empregado, como complemento ao experimento 
 
 Na Figura~\ref{fig:Q1} é apresentado as frequência das respostas coletadas sobre a primeira questão, 
 % \textit{``Todos os trechos apresentados compartilham um mesmo assunto.''}, 
-a qual refere-se a qualidade do agrupamento levando em conta a semelhança dos segmentos em termos de assunto. A afirmação foi dado como opções de resposta: 
+a qual refere-se a qualidade do agrupamento levando em conta a semelhança dos segmentos em termos de assunto. A afirmação foi dada como opções de resposta: 
 \textit{``Discordo Totalmente''}; 
 \textit{``Discordo Parcialmente''}; 
 \textit{``Não Concordo, nem Discordo''}; 
@@ -179,12 +181,14 @@ onde os avaliadores tiveram as mesmas opções de respostas que a anterior. Obse
 
 % -- Conclusão : extração de padrões	
 Ao analisar os resultados, verifica-se que de maneira geral os modelos K-Means e LDA podem ser considerados satisfatórios na tarefa de agrupar e representar os segmentos das atas.
-Verifica-se também que para o modelo K-Means os avaliadores identificaram que, na maioria dos casos, houve resultados satisfatórios, principalmente quanto a representatividade dos descritores. Embora a avaliação aponte imperfeições, esse modelo apresenta maior uniformidade em relação aos demais.
+Verifica-se também que para o modelo K-Means os avaliadores identificaram que, na maioria dos casos, houve resultados satisfatórios, principalmente quanto a representatividade dos descritores. Embora a avaliação aponte imperfeições, esse modelo apresenta maior 
+% uniformidade 
+constância em relação aos demais.
 
 \section{Validação do Segmentador}
 % -- Lalazinho
 
-Nessa seção, os dados coletados no experimento são utilizados para validar o segmentador empregado nesse trabalho. O algoritmo \textit{BayesSeg} é analisado quanto a sua capacidade de extrair segmentos coesos, isto é, que tratem de um único assunto central evitando trazer informações alheias ou irrelevantes. Outro critério avaliado é a completude dos segmentos, ou seja, o segmentos devem conter informação suficiente para o entendimento do texto sem necessidade de outro texto adjacente. Em outras palavras, usuário deve receber informações precisas sobre o tópico selecionado.
+Nessa seção, os dados coletados no experimento são utilizados para validar o segmentador empregado nesse trabalho. O algoritmo \textit{BayesSeg} é analisado quanto a sua capacidade de extrair segmentos coesos, isto é, que tratem de um único assunto central evitando trazer informações alheias ou irrelevantes. Outro critério avaliado é a completude dos segmentos, ou seja, o segmentos devem conter informações suficientes para o entendimento do texto sem necessidade dos textos adjacentes. Em outras palavras, usuário deve receber informações precisas sobre o tópico selecionado.
 
 Os dados coletados de ambas consultas foram somadas, uma vez que esta é uma etapa anterior à extração de tópicos, a princípio, o modelo que selecionou os segmentos não interfere em sua avaliação. Assim, a Figura~\ref{fig:Q3} mostra as respostas do avaliadores considerando todos os cenários. As respostas referentes a terceira questão, na qual se averígua a homogeneidade de cada segmento quanto ao seu assunto central, apontam que poucos segmentos contém mais de um assunto.
 
@@ -209,9 +213,9 @@ Ainda sobre a qualidade da segmentação, a Figura~\ref{fig:Q4} mostra os result
 
 Outra questão analisada foi o comportamento dos modelos nas diferentes consultas. Ao se isolar as respostas das questões referentes a uma consulta específica, nota-se certa alteração nas respostas dos modelos. 
 Os gráficos apresentados na Figura~\ref{fig:c12-q1} mostram 
-% na primeira superior 
+na linha superior 
 as respostas para cada modelo considerando-se os segmentos extraídos na primeira consulta e na linha inferior aqueles referentes à segunda consulta. O K-Means apresenta uma diminuição considerável na segunda consulta em relação à primeira no que se refere a respostas afirmando que os todos os segmentos compartilham um único assunto, e um aumento de respostam indicando discordância total com a afirmação da questão.
-De forma semelhante, o PLSA apresenta diminuição de respostas positivas para essa afirmação e na proporção que há um aumento de respostas negativas. 
+De forma semelhante, o PLSA apresenta diminuição de respostas positivas para essa afirmação na proporção que há um aumento de respostas negativas. 
 Por outro lado o LDA mantém resultados semelhantes em ambas as consultas, nas quais apresenta resultados equilibrados entre respostas positivas e negativas. Em outras palavras, os modelos K-Means e PLSA sofreram perda de desempenho enquanto o LDA manteve-se estável em ambas consultas.
 
 
@@ -245,7 +249,10 @@ Por outro lado o LDA mantém resultados semelhantes em ambas as consultas, nas q
 
 
 
-Ao analisar separadamente a segunda questão, referente a representatividade dos descritores observa-se na Figura~\ref{fig:c12-q2} que todos os modelos apresentam perda de performance nesse critério, contudo, de forma acentuada no PLSA. 
+Ao analisar separadamente a segunda questão, referente a representatividade dos descritores observa-se na Figura~\ref{fig:c12-q2} que todos os modelos apresentam perda de performance 
+% nesse critério, 
+na segunda consulta em relação à primeira,
+contudo, de forma acentuada no PLSA. 
 
 
 
@@ -284,7 +291,8 @@ Ao analisar separadamente a segunda questão, referente a representatividade dos
 
 \section{Influência dos Extratores na Qualidade dos Segmentos}
 
-A fim de analisar a influência das técnicas de extração de tópicos sobre a qualidade dos segmentos, quanto aos critérios de coesão e completude já mencionados. Vale lembrar que embora a extração de tópicos seja uma etapa posterior à extração, esta influencia na seleção dos segmentos apresentados ao usuário. 
+% A fim de 
+Analisou-se a influência das técnicas de extração de tópicos sobre a qualidade dos segmentos apresentados, quanto aos critérios de coesão e completude já mencionados. Vale lembrar que embora a extração de tópicos seja uma etapa posterior à extração, esta influencia na seleção dos segmentos apresentados ao usuário. 
 A Figura~\ref{fig:influenciaExtSegQ3} apresenta as contagens das respostas da terceira questão, \textit{``Existem trechos que não tratam de um único assunto?''}, considerando-se cada extrator separadamente. De forma semelhante, a Figura~\ref{fig:influenciaExtSegQ4}, apresenta os dados da quarta resposta, \textit{``Existem trechos incompletos e insuficientes para compreensão do assunto do trecho?''}.
 
 
@@ -331,7 +339,10 @@ Sob o mesmo critério, os segmentos selecionados pelo PLSA são considerados men
 \end{figure}
 
 
-Quanto a completude dos segmentos selecionados por cada extrator, apresentados na Figura~\ref{fig:influenciaExtSegQ4}, observa-se um comportamento semelhante do extratores, sendo o K-Means e LDA semelhantes e com pouca discrepância em relação aos resultados analisados na Figura~\ref{fig:Q4}. O PLSA tente a tolerar segmentos menos coesos e menos completos enquanto os demais favorecem aqueles com maior qualidade de acordo com os quesitos abordados nesse experimento.
+Quanto a completude dos segmentos selecionados, 
+% por cada extrator, apresentados 
+observa-se na Figura~\ref{fig:influenciaExtSegQ4} 
+um comportamento similar entre os extratores, sendo o K-Means e LDA semelhantes e com pouca discrepância em relação aos resultados analisados na Figura~\ref{fig:Q4}. O PLSA tente a tolerar segmentos menos coesos e menos completos enquanto os demais favorecem aqueles com maior qualidade de acordo com os quesitos abordados nesse experimento.
 
 
 
@@ -350,6 +361,6 @@ Na validação do segmentador empregado no sistema, o \textit{BayesSeg}, consegu
 
 % sendo menos eficiente quando selecionados por meio do PLSA
 
-Os dados coletados forneceram uma base para as análises onde se verificou os pontos principais de cada técnica bem como a relação entre os modelos de extração de tópicos na seleção dos segmentos. Outros critérios podem ser levados em conta visto a subjetividade das avaliações bem como outros experimentos são necessários para obter melhores resultados.
+Os dados coletados forneceram uma base para as análises onde se verificou os pontos principais de cada técnica bem como a relação entre os modelos de extração de tópicos na seleção dos segmentos. Outros critérios podem ser levados em conta visto a subjetividade das avaliações bem como mais experimentos são necessários para obter melhores resultados.
 
 % podem ajudar a entender 

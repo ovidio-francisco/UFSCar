@@ -16,7 +16,7 @@
 \contentsline {subsection}{\numberline {2.3.2}Medidas de Avalia\IeC {\c c}\IeC {\~a}o em Segmenta\IeC {\c c}\IeC {\~a}o Textual}{30}{subsection.2.3.2}
 \contentsline {subsection}{\numberline {2.3.3}Anota\IeC {\c c}\IeC {\~a}o de Segmentos}{34}{subsection.2.3.3}
 \contentsline {section}{\numberline {2.4}Modelos de Extra\IeC {\c c}\IeC {\~a}o de T\IeC {\'o}picos}{37}{section.2.4}
-\contentsline {subsection}{\numberline {2.4.1}Modelos N\IeC {\~a}o Probabil\IeC {\'\i }sticos}{37}{subsection.2.4.1}
+\contentsline {subsection}{\numberline {2.4.1}Modelos N\IeC {\~a}o Probabil\IeC {\'\i }sticos}{38}{subsection.2.4.1}
 \contentsline {subsection}{\numberline {2.4.2}Modelos Probabil\IeC {\'\i }sticos}{38}{subsection.2.4.2}
 \contentsline {section}{\numberline {2.5}Trabalhos Relacionados}{41}{section.2.5}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
@@ -29,19 +29,19 @@
 \contentsline {subsubsection}{\numberline {3.1.1.4}Extra\IeC {\c c}\IeC {\~a}o de T\IeC {\'o}picos}{47}{subsubsection.3.1.1.4}
 \contentsline {subsection}{\numberline {3.1.2}Estrutura de Dados Interna}{47}{subsection.3.1.2}
 \contentsline {subsection}{\numberline {3.1.3}M\IeC {\'o}dulo de Consulta}{48}{subsection.3.1.3}
-\contentsline {subsubsection}{\numberline {3.1.3.1}Ranqueamento}{49}{subsubsection.3.1.3.1}
+\contentsline {subsubsection}{\numberline {3.1.3.1}Ranqueamento}{48}{subsubsection.3.1.3.1}
 \contentsline {subsubsection}{\numberline {3.1.3.2}Interface}{49}{subsubsection.3.1.3.2}
-\contentsline {section}{\numberline {3.2}An\IeC {\'a}lise de um \textit {Corpus} de Atas de Reuni\IeC {\~a}o Utilizando Ferramentas do Sistema}{51}{section.3.2}
+\contentsline {section}{\numberline {3.2}An\IeC {\'a}lise de um \textit {Corpus} de Atas de Reuni\IeC {\~a}o Utilizando Ferramentas do Sistema}{50}{section.3.2}
 \contentsline {subsection}{\numberline {3.2.1}Composi\IeC {\c c}\IeC {\~a}o do \textit {Corpus} }{51}{subsection.3.2.1}
 \contentsline {subsection}{\numberline {3.2.2}Explora\IeC {\c c}\IeC {\~a}o e Observa\IeC {\c c}\IeC {\~a}o do \textit {Corpus}}{51}{subsection.3.2.2}
-\contentsline {section}{\numberline {3.3}Considera\IeC {\c c}\IeC {\~o}es Finais}{55}{section.3.3}
+\contentsline {section}{\numberline {3.3}Considera\IeC {\c c}\IeC {\~o}es Finais}{54}{section.3.3}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase {Avalia\IeC {\c c}\IeC {\~a}o dos Segmentadores}}{57}{chapter.4}
-\contentsline {section}{\numberline {4.1}Prepara\IeC {\c c}\IeC {\~a}o de um \textit {Corpus} de Refer\IeC {\^e}ncia}{58}{section.4.1}
+\contentsline {section}{\numberline {4.1}Prepara\IeC {\c c}\IeC {\~a}o de um \textit {Corpus} de Refer\IeC {\^e}ncia}{57}{section.4.1}
 \contentsline {section}{\numberline {4.2}Configura\IeC {\c c}\IeC {\~a}o Experimental}{63}{section.4.2}
 \contentsline {section}{\numberline {4.3}Crit\IeC {\'e}rios de Avalia\IeC {\c c}\IeC {\~a}o}{64}{section.4.3}
 \contentsline {section}{\numberline {4.4}Resultados}{64}{section.4.4}
-\contentsline {section}{\numberline {4.5}Considera\IeC {\c c}\IeC {\~o}es Finais}{70}{section.4.5}
+\contentsline {section}{\numberline {4.5}Considera\IeC {\c c}\IeC {\~o}es Finais}{69}{section.4.5}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase {Avalia\IeC {\c c}\IeC {\~a}o dos Extratores de T\IeC {\'o}picos}}{71}{chapter.5}
 \contentsline {section}{\numberline {5.1}Configura\IeC {\c c}\IeC {\~a}o Experimental}{71}{section.5.1}

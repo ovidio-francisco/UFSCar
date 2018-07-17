@@ -50,7 +50,7 @@ Por outro lado, a ausência de treinamento implica que as anotações terão com
 \subsection*{Especificar o procedimento de anotação}
 Alguns processos de anotações podem levar longos períodos, criando a necessidade de dividir a tarefa em fases. Nesses casos, frequentemente os anotadores fazem reuniões periódicas a fim de relatar eventuais problemas.  
 % Em alguns projetos, abre-se espaço para discussão de pontos com baixa concordância, a qual é chamada de fase de ``reconciliação''. 
-Em caso de baixa concordância, pode-se abrir espaço para discussão a fim de que encontrar um ponto de convergência, a qual é chamada de fase de ``reconciliação'' que embora recomendada, em alguns casos pode ocasionar um enviesamento dos resultados, outra estratégia para diminuir uma eventual baixa concordância é solicitar que os anotadores apontem seu nível de certeza sobre as anotações.
+Em caso de baixa concordância, pode-se abrir espaço para discussão a fim de que encontrar um ponto de convergência, a qual é chamada de fase de ``reconciliação'' que embora recomendada, em alguns casos pode ocasionar um enviesamento dos resultados, outra estratégia para diminuir uma eventual baixa concordância é solicitar que os anotadores apontem o nível de certeza sobre as anotações.
 % Essa fase é recomendada para aumentar o nível de concordância, contudo pode ocasionar um enviesamento dos resultados. 
 
 \subsection*{Modelar uma interface para anotação}
@@ -62,8 +62,7 @@ Exemplos \textit{softwares} para anotação na área de Processamento de Linguag
 
 \subsection*{Escolher e aplicar medidas de avaliação}
 
-% Quando observa-se baixa concordância entre os anotadores, entende-se que há uma falha no processo de anotação ou na teoria a ser explicada, o que implica que os dados produzidos não servem para a fins de pesquisa ou aplicações práticas. 
-Uma medida de avaliação deve determinar a confiabilidade das avaliações.
+Quando observa-se baixa concordância entre os anotadores, entende-se que há uma falha no processo de anotação ou na teoria a ser explicada, o que implica que o dados produzidos não servem para a fins de pesquisa ou aplicações práticas. A medida dessa concordância deve determinar a confiabilidade dos resultados.
 A medida mais utilizada em Processamento de Linguagem Natural é o coeficiente \textit{kappa}~\cite{Carletta1996} que retorna um valor no intervalo de 0 até 1, onde 1 significa uma concordância perfeita e 0 que não houve concordância. Seja $P(A)$ a proporção de vezes que os anotadores concordam e $P(E)$ a proporção de concordância esperada ao acaso. O cálculo de \textit{kappa} é dado por:
 
 \begin{equation}

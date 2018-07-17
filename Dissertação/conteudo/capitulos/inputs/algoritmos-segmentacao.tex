@@ -8,7 +8,7 @@ Os primeiros trabalhos dessa área se apoiam na ideia de que a mudança de assun
 
 
 
-O conceito de coesão léxica permite a aplicação da técnica de janelas deslizantes para encontrar os segmentos de um texto, em que se verifica a frequência dos termos em um fragmento do documento. Inicialmente, estabelece-se a partir do início do texto, um intervalo de $t$ termos, chamado janela que em seguida é deslocada em passos de $k$ termos adiante até o final do texto. A cada passo, analisa-se os termos contidos na janela~\cite{Reynar1998}.
+O conceito de coesão léxica permite a aplicação da técnica de janelas deslizantes para encontrar os segmentos de um texto, em que se verifica a frequência dos termos em um fragmento do documento. Inicialmente, estabelece-se a partir do início do texto, um intervalo de $l$ termos, chamado janela que em seguida é deslocada em passos de $j$ termos adiante até o final do texto. A cada passo, analisa-se os termos contidos na janela~\cite{Reynar1998}.
 
 
 
@@ -58,12 +58,12 @@ e sua utilização como \textit{base line} em outros trabalhos~\cite{Cardoso2017
 
 \subsection*{\textit{C99}}
 % ==========  C99  ==========
-Outro algoritmo frequentemente referenciado na literatura é o C99~\cite{Choic99} o qual é baseado em uma matriz de \textit{ranking} das similaridades. A utilização de da coesão léxica pode não ser confiável para segmentos pequenos nessa abordagem, pois a ocorrência adicional de uma palavra pode causar certo impacto e alterar o cálculo da similaridade. Além disso, o estilo da escrita normalmente não é constante em todo o texto. Por exemplo, textos iniciais dedicados a introdução costumam apresentar menor coesão do que trechos dedicados a um tópico específico. Portanto, comparar a similaridade entre trechos de diferentes regiões não é apropriado. Devido a isso, as similaridades não podem ser comparadas em valores absolutos. Contorna-se esse problema fazendo uso de matrizes de similaridade para encontrar os segmentos de texto. Para isso, o \textit{C99} constrói uma matriz que contém as similaridades de todas as unidades de informação (normalmente sentenças ou parágrafos). 
+Outro algoritmo frequentemente referenciado na literatura é o C99~\cite{Choic99} o qual é baseado em uma matriz de \textit{ranking} das similaridades. A utilização de coesão léxica pode não ser confiável para segmentos pequenos nessa abordagem, pois a ocorrência adicional de uma palavra pode causar certo impacto e alterar o cálculo da similaridade. Além disso, o estilo da escrita normalmente não é constante em todo o texto. Por exemplo, textos iniciais dedicados a introdução costumam apresentar menor coesão do que trechos dedicados a um tópico específico. Portanto, comparar a similaridade entre trechos de diferentes regiões não é apropriado. Devido a isso, as similaridades não podem ser comparadas em valores absolutos. Contorna-se esse problema fazendo uso de matrizes de similaridade para encontrar os segmentos de texto. Para isso, o \textit{C99} constrói uma matriz que contém as similaridades entre todas as unidades de informação (normalmente sentenças ou parágrafos). 
 
 %%%%%% 
 %%%%%% 
 
-Na Figura~\ref{fig:matrix-similarity} é mostrado um exemplo de uma matriz de similaridade onde a intensidade do ponto($i,j$) representa a similaridade entre as sentenças $i$ e $j$. Observa-se que a matriz é simétrica, assim cada ponto na linha diagonal representa a similaridade quando $i = j$ (ou seja, com a mesma sentença) e revela quadrados com maior concentração de pontos ao longo da diagonal. A concentração de pontos ao longo da diagonal indica porções de texto com maior coesão léxica.
+Na Figura~\ref{fig:matrix-similarity} é mostrado um exemplo de uma matriz de similaridade onde a intensidade do ponto($i,j$) representa a similaridade entre as sentenças $i$ e $j$. Observa-se que a matriz é simétrica, assim cada ponto na linha diagonal representa a similaridade quando $i = j$ (ou seja, com a mesma sentença) e revela quadrados com maior intensidade ao longo da diagonal. A concentração de pontos com maior intensidade ao longo da diagonal indica porções de texto com maior coesão léxica.
 
 
   \begin{figure}[!h]
@@ -88,7 +88,7 @@ Em seguida, cada valor na matriz de similaridade é substituído por seu \textit
 % 
 Na Figura~\ref{fig:exemplomatrixrank} é destacado um quadro 3~x~3 de uma matriz. Tomando como exemplo o elemento com valor $0,5$, a mesma posição na matriz de \textit{rankings} terá o valor $4$, pois esse é o número de vizinhos com valores inferiores a $0,5$ dentro do quadro analisado na matriz de similaridades. Da mesma forma, 
 % na Figura~\ref{fig:b} 
-para o valor $0,2$ a matriz de \textit{rankings} conterá o valor $1$ na mesma posição. Após a construção da matriz de ranking obtêm-se um maior contraste entre os pontos, o que facilita a detecção de limites quando a queda de similaridade entre sentenças é mais sutil.
+para o valor $0,2$ a matriz de \textit{rankings} conterá o valor $1$ na mesma posição. Após a construção da matriz de \textit{ranking} obtêm-se um maior contraste entre os pontos, o que facilita a detecção de limites quando a queda de similaridade entre sentenças é mais sutil.
 
 \begin{figure}[!h]
 	\centering     %%% not \center
@@ -114,19 +114,20 @@ Finalmente, com base na matriz de \textit{ranking}, o C99 utiliza um método de 
 % 
 Um segmento é definido por duas sentenças $c_i$ e $c_j$ (respectivamente a primeira e última sentença do segmento) que representam uma região quadrada ao longo da diagonal da matriz. 
 % 
-Seja $S = \{s1,...,s_h\}$ a lista de $h$ segmentos,  $som_b$ a somatória dos valores dos \textit{rankings} de um segmento $s \in S$ e $a_s$ a sua área. Então, a densidade é computada por: 
+Seja $S = \{s1,...,s_h\}$ a lista de $h$ segmentos,  $som_b$ a somatória dos valores dos \textit{rankings} de um segmento $s \in S$ e $a_s$ a sua área. 
+% Então, a densidade é computada por: 
 % 
 Calcula-se a densidade dessa região como mostrado na Equação~\ref{equ:densidade-c99}. 
 
 
 
 \begin{equation}
-Den = \frac{\sum_{s=1}^h som_s}{\sum_{s=1}^m a_b}
+Den = \frac{\sum_{s=1}^h som_s}{\sum_{s=1}^M a_b}
 \label{equ:densidade-c99}
 \end{equation}
 
 
-O processo inicia com um único segmento formado por todas as sentenças do documento e o divide recursivamente em $m$ segmentos. Cada passo divide $B$ no ponto ($i,j$) que maximiza $Den$~(Equação \ref{equ:densidade-c99}). O processo se repte até atingir o número de segmentos desejados ou um limiar de similaridade.
+O processo inicia com um único segmento formado por todas as sentenças do documento e o divide recursivamente em $M$ segmentos. Cada passo divide $B$ no ponto ($i,j$) que maximiza $Den$~(Equação \ref{equ:densidade-c99}). O processo se repete até atingir o número de segmentos desejados ou um limiar de similaridade.
 
 % ===
 
@@ -138,8 +139,8 @@ O processo inicia com um único segmento formado por todas as sentenças do docu
 % ==========  TextSeg Utiyama and Isahara  ==========
 
 
-Desenvolveu-se também abordagens probabilísticas para segmentação textual, por exemplo, o método proposto por~\cite{Utiyama2001}, aqui chamado de \textit{TextSeg} encontra a segmentação por meio de um modelo estatístico. Dado um texto representado por um conjunto de palavras 
-$W = \{w_1, w_2, \dots, w_n\}$ e um conjunto de segmentos $S = \{s_1, s_2, \dots, s_h\}$ que segmenta $W$, a probabilidade da segmentação S é dada por:
+Desenvolveu-se também abordagens probabilísticas para segmentação textual, por exemplo, o método proposto em~\cite{Utiyama2001}, aqui chamado de \textit{TextSeg} encontra a segmentação por meio de um modelo estatístico. Dado um texto representado por um conjunto de palavras 
+$W = \{w_1, w_2, \dots, w_n\}$ e um conjunto de segmentos $S = \{s_1, s_2, \dots, s_h\}$ que segmenta $W$, a probabilidade da segmentação $S$ é dada por:
 
 \begin{equation}
 	P(S|W) = \frac{P(W|S)P(S)}{P(W)}
@@ -160,7 +161,7 @@ onde $P(w_j^i|S_i)$ é a probabilidade da j-ésima palavra ocorrer no segmento $
 	\label{equ:Utiyama2}
 \end{equation}
 
-A suposição de independência entre segmentos e as palavras neles contidas, são é verificada no mundo real. Para segmentos muito pequenos a estimativa das probabilidades das palavras pode ser afetada. Além disso, o modelo não leva em conta a importância relativa das palavras~\cite{Malioutov:2006a}.
+A suposição de independência entre segmentos e as palavras neles contidas, não é verificada no mundo real. Para segmentos muito pequenos a estimativa das probabilidades das palavras pode ser afetada. Além disso, o modelo não leva em conta a importância relativa das palavras~\cite{Malioutov:2006a}.
 
  
 
@@ -170,7 +171,7 @@ A suposição de independência entre segmentos e as palavras neles contidas, s�
 
 Os métodos baseados em coesão léxica que utilizam métricas como cosseno quantificam a similaridade entre sentenças baseando-se apenas na frequência das palavras, Essa abordagem, ignora certas características do texto que podem dar pistas sobre a estrutura do texto. Por exemplo, frases como ``\textit{Prosseguindo}'', ``\textit{Dando continuidade}'', ``\textit{Ao final da reunião}'' podem ajudar a detectar o inicio ou final de segmento. A fim de aproveitar esses indicadores, pode-se usar um framework bayesiano que permite incorporar fontes externas ao modelo. O método \textit{BayesSeg}~\cite{Eis2008} aborda a coesão léxica em um contexto bayesiano onde as palavas de um segmento surgem de um modelo de linguagem multinomial o qual é associado a um assunto. 
 %
-Essa abordagem é similar à métodos probabilísticos de extração de tópicos como o Latent Dirichlet Allocation (LDA)~\cite{Blei2003}, com a diferença que ao invés de atribuir tópicos ocultos a cada palavra, esses são usados para segmentar o documento. Nesse sentido, detecta-se um limite entre sentenças quando a distribuição de tópicos entre elas for diferente. O \textit{BayesSeg} baseia-se na ideia que alguns termos são usados em tópicos específicos enquanto outros são neutros em relação aos tópicos do documento e são usados para expressar uma estrutura do documento, ou seja, as frases-pista vem de um único modelo generativo. A fim de refletir essa ideia, o modelo é adaptado para influenciar a probabilidade da sentença de ser uma final ou início de segmento conforme a presença de frases pista.
+Essa abordagem é similar à métodos probabilísticos de extração de tópicos como o Latent Dirichlet Allocation (LDA)~\cite{Blei2003}, com a diferença que ao invés de atribuir tópicos ocultos a cada palavra, esses são usados para segmentar o documento. Nesse sentido, detecta-se um limite entre sentenças quando a distribuição de tópicos entre elas for diferente. O \textit{BayesSeg} baseia-se na ideia de que alguns termos são usados em tópicos específicos enquanto outros são neutros em relação aos tópicos do documento e são usados para expressar uma estrutura do documento, ou seja, as frases-pista vem de um único modelo generativo. A fim de refletir essa ideia, o modelo é adaptado para influenciar a probabilidade da sentença de ser uma final ou início de segmento conforme a presença de frases pista.
 
 % ===
 
@@ -183,7 +184,7 @@ Essa abordagem é similar à métodos probabilísticos de extração de tópicos
 
 
 
-O \textit{MinCutSeg} ~\cite{Malioutov:2006a} aborda a segmentação textual como um problema de particionamento de grafo, em que cada nó representa um sentença e os pesos das arestas representam a similaridade entre duas sentenças (Figura~\ref{fig:representacao-texto-grafo}). Nessa abordagem, a segmentação textual corresponde ao particionamento do grafo que representa o texto.
+O \textit{MinCutSeg} ~\cite{Malioutov:2006a} aborda a segmentação textual como um problema de particionamento de grafo, em que cada nó representa uma sentença e os pesos das arestas representam a similaridade entre duas sentenças (Figura~\ref{fig:representacao-texto-grafo}). Nessa abordagem, a segmentação textual corresponde ao particionamento do grafo que representa o texto.
 
 
   \begin{figure}[!h]
@@ -194,7 +195,7 @@ O \textit{MinCutSeg} ~\cite{Malioutov:2006a} aborda a segmentação textual como
   \end{figure}
 
 
-Essa abordagem é inspirada no trabalho de~\cite{Shi2000} que propõe um critério para particionamento de grafos chamado \textit{normalized-cut criterion} inicialmente desenvolvido para segmentação de imagens estáticas a qual foi aproveita a restrição de linearidade dos textos para segmentação textual.
+Essa abordagem é inspirada no trabalho de~\cite{Shi2000} que propõe um critério para particionamento de grafos chamado \textit{normalized-cut criterion} inicialmente desenvolvido para segmentação de imagens estáticas na qual foi aproveita a restrição de linearidade dos textos para segmentação textual.
 
 Seja $G = {V,E}$ um grafo ponderado, unidimensional em que $V$ é o conjunto de vértices que correspondem às sentenças e $E$ é o conjunto de arestas que correspondem as similaridades entre as sentenças. Seja $sim(u, v)$ o valor de similaridade entre o par de vértices $u$ e $v$. O \textit{MinCutSeg} visa particionar $G$ em dois grafos disjuntos $A$ e $B$ de modo a minimizar o corte definido pela somatória das arestas que ligam $u \in A$ à $v \in B$(Equação~\ref{equ:corte-grafo}):
 
@@ -205,7 +206,7 @@ Seja $G = {V,E}$ um grafo ponderado, unidimensional em que $V$ é o conjunto de 
 
 
 
-Além de maximizar a diferença entre as partições $A$ e $B$, é necessário que essas seja homogenias em relação a similaridade de suas sentenças, conforme requerimento definido por~\cite{Shi2000} em que o valor do corte deve ser normalizado pelo volume das partições dado por:
+Além de maximizar a diferença entre as partições $A$ e $B$, é necessário que essas sejam homogenias em relação a similaridade de suas sentenças, conforme requerimento definido por~\cite{Shi2000} em que o valor do corte deve ser normalizado pelo volume das partições dado por:
 
 \begin{equation}
 	vol(A) = \sum_{u \in A, v \in V} sim(u, v)
@@ -220,10 +221,10 @@ Em seguida, define-se o critério de corte normalizado (NCorte) como o resultado
 \end{equation}
 
 
-Uma vez que um texto normalmente é dividido em mais que dois segmentos, é necessário extender o modelo para atender a essa necessidade. Seja $A_1 \dots A_k$ uma partição e $V - A_k$ a diferença entre o grafo $V$ e a partição $k$. O critério para múltiplos cortes normalizados é então estendido para: 
+Uma vez que um texto normalmente é dividido em mais que dois segmentos, é necessário extender o modelo para atender a essa necessidade. Seja $A_1 \dots A_K$ uma partição e $V - A_K$ a diferença entre o grafo $V$ e a partição $K$. O critério para múltiplos cortes normalizados é então estendido para: 
 
 \begin{equation} 
-	NCorte_k(V) = \frac{corte(A_1, V-A_1)}{vol(A_1)} + \dots + \frac{corte(A_k, V-A_k)}{vol(A_k)} 
+	NCorte_K(V) = \frac{corte(A_1, V-A_1)}{vol(A_1)} + \dots + \frac{corte(A_K, V-A_K)}{vol(A_K)} 
 	\label{equ:NCorte-k}
 \end{equation}
 

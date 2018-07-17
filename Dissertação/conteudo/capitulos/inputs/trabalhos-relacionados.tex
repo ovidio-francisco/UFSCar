@@ -35,15 +35,15 @@ O algoritmo \textit{MultiSeg}, proposto em~\cite{Jeong:2010} visa descobrir desc
 % --- A Study on Statistical Generation of a Hierarchical Structure of Topic-information for Multi-documents. --- 
 
 Ainda nesse contexto~\cite{Cuong2011} cria uma Estrutura Hierárquica de Tópicos (\textit{Hierarchical Structure of Topic-information}) -- HST utilizando uma metodologia baseada em segmentos para agrupar segmentos de documentos e identificar os grupos por meio de uma frase que reflete o conteúdo dos segmentos pertences ao grupo.
-Inicialmente o texto de cada documento é dividido em parte topicamente coerentes gerando uma coleção de segmentos. Em seguida, uma hierarquia de tópicos é construída por meio um método de agrupamento aglomerativo hierárquico. Por fim, cada grupo recebe um título, o qual é gerado por meio de algoritmos de sumarização e extração de palavras-chave.
+Inicialmente o texto de cada documento é dividido em partes topicamente coerentes gerando uma coleção de segmentos. Em seguida, uma hierarquia de tópicos é construída por meio um método de agrupamento aglomerativo hierárquico. Por fim, cada grupo recebe um título, o qual é gerado por meio de algoritmos de sumarização e extração de palavras-chave.
 
 
 % --- A segment-based approach to clustering multi-topic documents. ---
-Em seu trabalho,~\cite{Tagarelli2013} consideram como documento multi-topical aqueles que têm múltiplas intenções comunicativas que refletem diferentes necessidades de informação.
-Exemplos de documentos multi-topicais podem ser encontrados em discussões em forums, páginas de notícias, discursos e transcrições de conversas e reuniões. Nesse contexto, Tagarelli e Karypis, (2013) propuseram um \textit{framework} de agrupamento para documentos multi-topicais. % Visando induzir um classificador .... 
+Em seu trabalho,~\cite{Tagarelli2013} consideram como documento multi-temático aqueles que têm múltiplas intenções comunicativas que refletem diferentes necessidades de informação.
+Exemplos de documentos multi-temáticos podem ser encontrados em discussões em forums, páginas de notícias, discursos e transcrições de conversas e reuniões. Nesse contexto, Tagarelli e Karypis, (2013) propuseram um \textit{framework} de agrupamento para documentos multi-temáticos. % Visando induzir um classificador .... 
 Inicialmente os documentos são modelados como um conjunto de segmentos de acordo com seus tópicos. Em seguida os segmentos são agrupados e os documentos originais são classificados. Por fim, um classificador foi induzido a partir dos grupos de segmentos.
 Os autores aplicaram sua metodologia a 3 \textit{datasets}: 1) RCV1 com 6.588 documentos; 2) PubMed com 3.687 documentos; 3) CaseLaw com 2.550 documentos. 
-O trabalho apresenta uma metodologia que utiliza segmentos de um determinado documento para facilitar a atribuição deste a mais de um grupo (onde cada grupo contém segmentos relevantes a um tópico). Para isso, utiliza os parágrafos do texto como estrutura para divisão de um documento, dispensado algoritmos de segmentação textual. Como principal contribuição, fornece uma analise sobre algoritmos de agrupamento de documentos com sobreposição~\cite{Zhao2004a, Zhao2004b, Dhillon2001} e propõe variantes deste para adequação ao problema estudado. 
+O trabalho apresenta uma metodologia que utiliza segmentos de um determinado documento para facilitar a atribuição deste a mais de um grupo (onde cada grupo contém segmentos relevantes a um tópico). Para isso, utiliza os parágrafos do texto como estrutura para divisão de um documento, dispensado algoritmos de segmentação textual. Como principal contribuição, fornece uma análise sobre algoritmos de agrupamento de documentos com sobreposição~\cite{Zhao2004a, Zhao2004b, Dhillon2001} e propõe variantes deste para adequação ao problema estudado. 
 
 
 

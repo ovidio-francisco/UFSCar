@@ -8,7 +8,7 @@ Os primeiros trabalhos dessa área se apoiam na ideia de que a mudança de assun
 
 
 
-O conceito de coesão léxica permite a aplicação da técnica de janelas deslizantes para encontrar os segmentos de um texto, em que se verifica a frequência dos termos em um fragmento do documento. Inicialmente, estabelece-se a partir do início do texto, um intervalo de $t$ termos, chamado janela que em seguida é deslocada em passos de $k$ termos adiante até o final do texto. A cada passo, analisa-se os termos contidos na janela.
+O conceito de coesão léxica permite a aplicação da técnica de janelas deslizantes para encontrar os segmentos de um texto, em que se verifica a frequência dos termos em um fragmento do documento. Inicialmente, estabelece-se a partir do início do texto, um intervalo de $t$ termos, chamado janela que em seguida é deslocada em passos de $k$ termos adiante até o final do texto. A cada passo, analisa-se os termos contidos na janela~\cite{Reynar1998}.
 
 
 
@@ -19,7 +19,7 @@ O conceito de coesão léxica permite a aplicação da técnica de janelas desli
 
 % Rafael --> Podem ter vários tipos de cursa. Ser mais objetivo. Quando a similaridade fica abaixo de um limiar fornecido pelo usuário.? Na verdade, dá pra fazer uma mescla. 
 
-O conceito de coesão léxica motivou a elaboração dos primeiros algoritmos para segmentação textual, entre eles o \textit{TextTiling}. O \textit{TextTiling} baseia-se na ideia de que um segmento pode ser identificado pela análise dos termos que o compõe. Inicialmente, o \textit{TextTiling} recebe uma lista de candidatos a limite entre segmentos, usualmente finais de parágrafo ou finais de sentença. Utilizando a técnica de janelas deslizantes, para cada posição candidata são construídos 2 blocos, um contendo as sentenças que a precedem e outro com as que a sucedem. O tamanho desses blocos é um parâmetro a ser fornecido ao algoritmo e determina o tamanho mínimo de um segmento. Esse processo é ilustrado na Figura~\ref{fig:TT-slidingwindow}.
+A abordagem baseada em coesão léxica motivou a elaboração dos primeiros algoritmos para segmentação textual, entre eles o \textit{TextTiling}. O \textit{TextTiling} baseia-se na ideia de que um segmento pode ser identificado pela análise dos termos que o compõe. Inicialmente, o \textit{TextTiling} recebe uma lista de candidatos a limite entre segmentos, usualmente finais de parágrafo ou finais de sentença. Utilizando a técnica de janelas deslizantes, para cada posição candidata são construídos 2 blocos, um contendo as sentenças que a precedem e outro com as que a sucedem. O tamanho desses blocos é um parâmetro a ser fornecido ao algoritmo e determina o tamanho mínimo de um segmento. Esse processo é ilustrado na Figura~\ref{fig:TT-slidingwindow}.
 
 
 
