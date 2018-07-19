@@ -70,10 +70,10 @@ No modelo vetorial, a similidade entre um documento $d_j$ e uma consulta $q$ é 
 
 
 
-Avaliar a relevância de um documento sob uma consulta é fundamental para os modelos de RI. Para isso pode-se utilizar medidas estatísticas simples como a frequência do termo, conhecida como TF (do inglês \textit{Term Frequency}) e a frequência de documentos, conhecida como DF (do inglês \textit{Document Frequency}). A frequência do termo indica o número de vezes que um termo ocorre na coleção de documentos. A frequência de documentos, indica o número de documentos que contém ao menos uma ocorrência de um determinado termo. Considera-se que os termos que ocorrem frequentemente em muitos documentos, em geral, não trazem informações úteis para discriminar a relevância dos documentos, então, a fim de diminuir o peso de termos altamente frequentes, usa-se o fator IDF (\textit{Inverted Document Frequency}), que é o inverso da número de documentos que contem um termo. O IDF é a medida de informação que um termo fornece com base em quão raro ou comum esse termo é para a coleção. Seja $n$ o número de documentos de uma coleção e $N_i$ o número de documentos onde o termo $t_i$ ocorre, o cálculo de IDF é dado por: 
+Avaliar a relevância de um documento sob uma consulta é fundamental para os modelos de RI. Para isso pode-se utilizar medidas estatísticas simples como a frequência do termo, conhecida como TF (do inglês \textit{Term Frequency}) e a frequência de documentos, conhecida como DF (do inglês \textit{Document Frequency}). A frequência do termo indica o número de vezes que um termo ocorre na coleção de documentos. A frequência de documentos, indica o número de documentos que contém ao menos uma ocorrência de um determinado termo. Considera-se que os termos que ocorrem frequentemente em muitos documentos, em geral, não trazem informações úteis para discriminar a relevância dos documentos, então, a fim de diminuir o peso de termos altamente frequentes, usa-se o fator IDF (\textit{Inverted Document Frequency}), que é o inverso da número de documentos que contem um termo. O IDF é a medida de informação que um termo fornece com base em quão raro ou comum esse termo é para a coleção. Seja $n$ o número de documentos de uma coleção e $L_i$ o número de documentos onde o termo $t_i$ ocorre, o cálculo de IDF é dado por: 
 
 	\begin{equation}
-		IDF(t_i) = log\frac{n}{N_i}~.
+		IDF(t_i) = log\frac{n}{L_i}~.
 		\label{equ:IDF}
 	\end{equation}
 
