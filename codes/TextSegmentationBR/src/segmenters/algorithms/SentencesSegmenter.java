@@ -39,12 +39,13 @@ public class SentencesSegmenter extends AbstractSegmenter {
 
 	@Override
 	public String getLabel() {
-		return "Senten\\c{c}as";
+//		return "Senten\\c{c}as";
+		return "PseudoSeg";
 	}
 
 	@Override
 	public String getConfigurationLabel() {
-		return "Sentenças";
+		return "PseudoSeg";
 	}
 
 	@Override

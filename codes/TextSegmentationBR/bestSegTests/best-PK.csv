@@ -1,0 +1,13 @@
+Doc,TextTiling w:60 s:50,C99 sr:50 rs: 3 w:T,MinCutSeg sr:0.40 lco:15,TextSeg sr:0.50,BayesSeg Pr:0.08 dp:0.30 sr:auto,PseudoSeg
+01 Ata 30 - 26a Reunião Odinária PPGCCS.txt,0.500,0.417,0.625,0.417,0.333,0.417
+02 Ata 29 - 25a Reunião Odinária PPGCCS.txt,0.688,0.375,0.438,0.625,0.438,0.250
+03 Ata 36 - 31a Reunião Odinária PPGCCS.txt,0.520,0.320,0.440,0.480,0.480,0.440
+04 Ata 32 - 28a Reunião Odinária PPGCCS.txt,0.520,0.400,0.440,0.480,0.480,0.440
+05 Ata 33 - 29a Reunião Odinária PPGCCS.txt,0.531,0.250,0.313,0.250,0.281,0.438
+06 Ata 35 - 5a Reunião Extraodinária PPGCCS.txt,0.600,0.500,0.700,0.500,0.500,0.200
+07 20ª Reunião Extraordinária CoC-CCS 08-12-10.txt,0.421,0.211,0.105,0.316,0.368,0.632
+08 25ª Reunião Ordinária CoC-CCS 04-04-12.txt,0.294,0.353,0.294,0.353,0.265,0.676
+09 40ª Reunião Ordinária CoC-CCS 06-05-15.txt,0.435,0.609,0.565,0.522,0.478,0.522
+10 20ª Reunião Ordinária CoC-CCS 01-06-11.txt,0.229,0.417,0.250,0.313,0.313,0.625
+11 10ª Reunião Ordinária CoC-CCS 05-04-10.txt,0.293,0.512,0.171,0.293,0.146,0.610
+12 13ª Reunião Ordinária CoC-CCS 05-08-10.txt,0.345,0.382,0.418,0.455,0.291,0.636

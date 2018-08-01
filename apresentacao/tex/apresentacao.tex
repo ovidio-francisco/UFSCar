@@ -1,0 +1,282 @@
+\documentclass[xcolor=dvipsnames]{beamer}
+\usetheme{Warsaw}
+
+\input{preamble}
+\input{newcommands}
+
+\author{Ovídio José Francisco\\
+Orientadora: Prof.ª Dr. Katti Faceli\\
+Coorientador: Prof. Dr. Rafael Geraldeli Rossi}
+\title{Avaliação de Técnicas de Recuperação de Informação
+para Organização e Extração de Conhecimento de Documentos de Reunião} 
+\subtitle{}
+% \date{\today} 
+\subject{Dissertação de Mestrado} 
+
+
+\begin{document}
+
+\begin{frame}
+	\titlepage
+	 \begin{center}{}\end{center} 
+\end{frame}
+%\sumario
+
+   \begin{frame}
+		\frametitle{Roteiro}
+		\tableofcontents
+   \end{frame}
+
+%\section{Introdução}
+\section{Contextualização}
+
+
+
+\begin{frame}{Contexto}
+
+As atas registram assuntos discutidos em reuniões e podem ser utilizadas como base de dados.
+\nblock{}{
+\begin{itemize}
+	\item Utilizadas como referência e apoio a decisões; 
+	\item Um assunto pode ser discutido diversas vezes em reuniões diferentes;
+	\item É desejável recuperar um histórico desses assuntos ao longo do tempo;
+	\item Necessidade de ferramentas automáticas.
+\end{itemize}
+}
+
+\end{frame}
+
+
+
+
+\begin{frame}{Contexto}
+
+Recuperação de Informação em documentos textuais:
+
+\nblock{}{
+\begin{itemize}
+	\item Informações contidas em grandes quantidades de texto;
+	\item Inerentemente não estruturados;
+	\item Documentos com múltiplos assuntos;
+	\item Assuntos dispersos pela base de documentos.
+\end{itemize}
+}
+
+\end{frame}
+
+
+
+\begin{frame}{Contexto}
+
+% Um dos principais desafios nesse cenário é 
+Nesse cenário, o desafio é encontrar trechos de texto que tratem somente do assunto pesquisado.
+
+\nblock{}{
+
+Essa tarefa consiste em 2 passos principais:
+% Essa tarefa tem 2 passos principais:
+
+\begin{itemize}
+	\item Encontrar pontos onde há transição de assuntos;
+	\item Identificar o teor desses assuntos;
+\end{itemize}
+
+} 
+
+\end{frame}
+
+
+
+
+
+\begin{frame}{Contexto}
+
+Os algoritmos de segmentação textual são utilizados para dividir um texto em segmentos contendo um assunto completo e relativamente independente.
+
+% \addimage{images/pre-process.png}{.9}{}
+
+\nblock{}{
+\begin{itemize}
+	\item Úteis em aplicações com textos sem indicações de quebras de assunto, como transcrições de áudio, e diálogos em chats.
+	\item Não dão indicações sobre o conteúdo dos segmentos.
+\end{itemize}
+} 
+
+\end{frame}
+
+
+
+
+
+\begin{frame}{Contexto}
+
+% \nblock{}{
+	% As técnicas de Extração de Tópicos são empregadas na organização de documentos.
+	Os modelos de Extração de Tópicos podem estimar o assunto de cada documento de uma coleção.
+	
+
+% } 
+
+
+
+\nblock{}{
+
+\begin{itemize}
+	\item Agrupam documentos por tópico.
+	\item Identificam palavras para descrever o tópico do documento.
+\end{itemize}
+} 
+
+\end{frame}
+
+
+
+
+
+
+
+% ---------- Objetivos ----------
+\section{Objetivos}
+\begin{frame}{Objetivos}
+
+
+\nblock{}{
+	Propor uma solução para identificar, organizar e consultar assuntos registrados em atas de reunião.  
+} 
+
+\nblock{}{
+	Utilizar técnicas de Segmentação textual em conjunto com modelos de Extração de Tópicos para:
+	\begin{itemize}
+	\item Gerar uma estrutura mais organizada que a coleção original.
+	\item Utilizar a estrutura latente dos segmentos para Recuperação de Informação. 
+	\end{itemize}
+}
+	% \item Dar início a investigação dessa abordagem no contexto de atas de reunião.
+
+
+\end{frame}
+
+
+
+
+
+
+
+% ---------- Proposta ----------
+\section{Proposta}
+
+
+
+\begin{frame}{Proposta}
+
+	\center Visão Geral do Sistema.
+
+	\addimage{images/visao-geral-3.eps}{.8}{}
+
+\end{frame}
+
+
+\begin{frame}{Proposta}
+
+	\center Estrutura de dados interna e seu processo de geração.
+
+	\addimage{images/estrutura.png}{.8}{}
+
+\end{frame}
+
+
+ 
+ 
+\begin{frame}{Proposta}
+
+	\center Estrutura de dados interna e seu processo de geração.
+
+	\begin{figure}[h!]
+
+		\includegraphics[trim={ 0 235 0 16 },clip,page=1,width=0.73\textwidth]{images/distribuicao.pdf}
+
+	\end{figure}
+
+\end{frame}
+
+ 
+\begin{frame}{Proposta}
+como os dados são apresentados?
+- Tópico com maior similaridade com a consulta
+	- MSV 
+
+	(expansão de espaço?)
+
+\end{frame}
+
+ 
+ 
+% ---------- Análise dos Resultados ----------
+\section{Análise dos Resultados}
+\begin{frame}{Análise dos Resultados}
+
+
+
+
+\begin{figure}[!h]
+	\centering     %%% not \center
+\tiny
+	\subfigure[Ac]{ \label{fig:a}
+		\includegraphics[width=47mm]{images/cds/Acuracia.png} 
+	}	
+	\subfigure[F^1]{ \label{fig:b}
+		\includegraphics[width=47mm]{images/cds/F1.png} \\
+	}
+	\subfigure[P_k]{ \label{fig:c}
+		\includegraphics[width=47mm]{images/cds/Pk.png} 
+	}
+	\subfigure[WD]{ \label{fig:d}
+		\includegraphics[width=47mm]{images/cds/WD.png} 
+	}
+
+		% \caption{Diagramas de Diferença Crítica sobre \textit{ranking} dos algoritmos de segmentação baseados em coesão léxica de acordo com valores de \textit{WindowDiff}, $P_k$, Acurácia, Precisão, Revocação e $F^1$.}
+	% \label{fig:CDs}
+\end{figure}
+	
+	
+\end{frame}
+
+
+
+
+
+% ---------- Conclusão ----------
+\section{Conclusão}
+\begin{frame}{Conclusão}
+	
+	
+\end{frame}
+
+% ---------- Trabalhos Futuros ----------
+\begin{frame}{Trabalhos Futuros}
+	
+	
+\end{frame}
+
+
+\end{document}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%% == FIM DA APRESENTAÇÃO == %%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\section{}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{}
+	
+	\nblock{}{
+	
+	}
+	
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	

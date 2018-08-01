@@ -1,0 +1,782 @@
+\documentclass[11pt]{beamer}
+\usetheme{Warsaw}
+%\useoutertheme{infolines}
+%\useinnertheme{circles}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+% \usepackage{graphicx}
+\usepackage{graphicx,epsfig}
+
+\usepackage{textpos} 
+\usepackage{listings}
+\usepackage{hyperref}
+
+\newcommand{\logoFATEC}{images/logoFATEC_branco.png}
+%\logo{\includegraphics[width=0.18\textwidth]{images/logoFATEC.png}\vspace{220pt}}
+
+\newcommand{\addimage}[3]{
+  \begin{figure}[!h]
+  \centering
+  \includegraphics[width=#2\paperwidth]{#1}
+%  \caption{#3}
+%  \label{fig:componentes-internos}
+  \end{figure}
+}
+
+\setbeamertemplate{headline}{%
+%\leavevmode%
+%  \hbox{%
+%    \begin{beamercolorbox}[wd=\paperwidth,ht=2.5ex,dp=1.125ex]{palette quaternary}%
+%    \insertsectionnavigationhorizontal{\paperwidth}{}{\hskip0pt plus1filll}
+%    \end{beamercolorbox}%
+%  }
+}
+
+\addtobeamertemplate{frametitle}{}{%
+	
+	\small{
+	
+    \begin{textblock*}{\textwidth}(0cm,0.1cm)
+		%\insertsectionnavigationhorizontal{\paperwidth}{}{\hskip0pt plus1filll}
+		\textcolor{gray}{\insertsectionhead\insertsubsectionhead}
+		 
+		
+		%\insertsection \insertsubsection
+    \end{textblock*}
+	}
+    
+    \begin{textblock*}{100mm}(0.9\textwidth,-0.7cm)
+        \includegraphics[width=0.18\textwidth]{\logoFATEC}
+    \end{textblock*}
+}
+    
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\author{prof. Ovídio José Francisco}
+\title{SQL}
+\subtitle{Structured Query Language}
+\date{\today} 
+\subject{Aula} 
+\setbeamercovered{transparent} 
+\setbeamertemplate{navigation symbols}{} 
+
+
+\institute[]{
+  %\inst{1}
+  \includegraphics{images/logoFATEC.png}
+} 
+
+%\AtBeginSection[] 
+%{
+%    \begin{frame}
+%	    \frametitle{Plano de Aula}
+%	    \tableofcontents[currentsection]
+%    \end{frame}
+%}
+
+
+
+\begin{document}
+
+
+
+\begin{frame}
+	\titlepage
+	
+	% Algum texto
+\end{frame}
+
+\begin{frame}
+   \frametitle{Plano de Aula}
+   \tableofcontents
+\end{frame}
+
+\setbeamercovered{invisible}
+
+
+\section[]{SQL - Definições}
+
+
+	\begin{frame}{Definições}
+	
+		 \begin{block}{SQL}
+			Structured Query Language, ou Linguagem de Consulta
+			Estruturada, é a linguagem declarativa padrão para banco de dados
+			relacional.
+
+		 \end{block} 
+
+		Tem como característica, ser muito próxima do inglês, o que aumenta sua legibilidade e facilita a aprendizado.
+	
+		\begin{block}{Seus comandos dividem-se principalmente em 3 grupos:}
+	
+			\begin{itemize}
+			 \item<1-> DDL - Data Definition Language - Linguagem de Definição de Dados;
+			 \item<2-> DML - Data Manipulation Language - Linguagem de Manipulação de Dados;
+			 \item<3-> DQL - Data Query Language – Linguagem de Consulta aos Dados;
+			\end{itemize}
+		\end{block}
+	 	
+	\end{frame}
+
+
+\section[]{DDL - Data Definition Language}
+
+
+	\defverbatim[colored]\codeI{
+	\begin{lstlisting}[language=SQL,basicstyle=\ttfamily,keywordstyle=\color{blue}]
+	create database
+	create table
+	create index
+	alter table
+	alter index
+	drop table
+	drop database
+	\end{lstlisting}
+	}
+
+	\begin{frame}{DDL}
+
+		\begin{block}{DDL - Data Definition Language}
+			São os comandos SQL responsáveis pela definição dos dados, ou seja, pela criação de bancos, tabelas, campos, tipos de dados, restrições, etc.
+		\end{block}	
+
+		\begin{block}{}
+		\codeI
+		\end{block}
+
+	\end{frame}
+	
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	
+\section[]{DML - Data Manipulation Language}
+
+	\defverbatim[colored]\codeI{
+	\begin{lstlisting}[language=SQL,basicstyle=\ttfamily,keywordstyle=\color{blue}]
+	insert
+	update
+	delete
+	\end{lstlisting}
+	}
+	\begin{frame}{DML}
+
+		\begin{block}{DML - Data Maminpulation Language}
+			São os comandos SQL responsáveis pela manipulação dos dados, ou seja, pela inserção, modificação, deleção, etc.
+
+		\end{block}	
+
+		\begin{block}{}
+		\codeI
+		\end{block}
+
+	\end{frame}	
+	
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	
+\section[]{DQL - Data Query Language}
+
+	\defverbatim[colored]\codeI{
+	\begin{lstlisting}[language=SQL,basicstyle=\ttfamily,keywordstyle=\color{blue}]
+	select
+	\end{lstlisting}
+	}
+	\begin{frame}{DQL}
+
+		\begin{block}{DQL - Data Query Language}
+			São os comandos SQL responsáveis pela consulta aos dados.
+
+
+		\end{block}	
+
+		\begin{block}{}
+		\codeI
+		\end{block}
+
+	\end{frame}	
+
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	
+\subsection[]{Comandos Básicos e Exemplos}
+
+	\defverbatim[colored]\codeI{
+	\begin{lstlisting}[language=SQL,basicstyle=\ttfamily,keywordstyle=\color{blue}]
+	create database LOCADORA;
+	create database CLIENTES;
+	create database seresvivos;
+	\end{lstlisting}
+	}
+	\defverbatim[colored]\codeII{
+	\begin{lstlisting}[language=SQL,basicstyle=\ttfamily,keywordstyle=\color{blue}]
+	drop database LOCADORA;
+	drop database CLIENTES;
+	drop database seresvivos;
+	\end{lstlisting}
+	}
+	\begin{frame}{Comandos Básicos de SQL}
+
+		\begin{examples}
+		Criando banco de dados
+		\codeI
+		Excluindo banco de dados
+		\codeII
+		\end{examples}
+
+	\end{frame}	
+
+
+
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	
+	\defverbatim[colored]\codeI{
+	\begin{lstlisting}[language=SQL,basicstyle=\ttfamily,keywordstyle=\color{blue}]
+create table grupos (
+ grupo_id   int  auto_increment primary key,
+ nome_grupo varchar(50) not null,
+ habito     varchar(50) not null
+);
+
+create table especies (
+ especie_id   int  auto_increment 
+ 	primary key,	
+ nome_especie varchar(50) not null,
+ grupo        int 
+ 	references grupos(grupo_id)
+);
+
+	\end{lstlisting}
+	}
+
+	\begin{frame}{Comandos Básicos de SQL}
+
+		\begin{examples}
+		Criando tabelas
+		\codeI
+
+		\end{examples}
+
+	\end{frame}	
+
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	
+	\defverbatim[colored]\codeI{
+	\begin{lstlisting}[language=SQL,basicstyle=\ttfamily,keywordstyle=\color{blue}]
+create table animais (
+ animal_id   int auto_increment primary key,
+ nome_animal varchar(50) not null,
+ data_nasc   timestamp   not null 
+ 	default now(),
+ peso        decimal(10,2),
+ cor         varchar(50),
+
+ especie_animal_id int 
+ 	references especies(especie_id)
+);
+
+	\end{lstlisting}
+	}
+
+	\begin{frame}{Comandos Básicos de SQL}
+
+		\begin{examples}
+		Criando tabelas
+		\codeI
+
+		\end{examples}
+
+	\end{frame}	
+
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	
+	\defverbatim[colored]\codeI{
+	\begin{lstlisting}[language=SQL,basicstyle=\ttfamily,keywordstyle=\color{blue}]
+insert into NOME_TABELA (CAMPOS) 
+	values (VALORES);
+
+insert into grupos 
+	(grupo_id, nome_grupo, habito) 
+	values 
+	(null, 'mamifero', 'terrestre');	
+	\end{lstlisting}
+	}
+
+	\begin{frame}{Comandos Básicos de SQL}
+
+		\begin{examples}
+		Inserindo Registros nas Tabelas:
+
+		\codeI
+
+		\end{examples}
+
+	\end{frame}	
+
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	
+	\defverbatim[colored]\codeI{
+	\begin{lstlisting}[language=SQL,basicstyle=\ttfamily,keywordstyle=\color{blue}]
+insert into NOME_TABELA	values (VALORES);
+
+insert into especies 
+	values (null, 'gato'    , 1);
+
+insert into especies 
+	values (null, 'tubarao' , 2);
+
+insert into especies 
+	values (null, 'canario' , 4);	
+	\end{lstlisting}
+	}
+
+	\begin{frame}{Comandos Básicos de SQL}
+
+		\begin{examples}
+		Inserindo Registros nas Tabelas:
+
+		\codeI
+
+		\end{examples}
+
+	\end{frame}	
+
+
+
+\subsection[]{Cláusula SELECT}
+
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	
+	\defverbatim[colored]\codeI{
+	\begin{lstlisting}[language=SQL,basicstyle=\ttfamily,keywordstyle=\color{blue}]
+select CAMPOS from TABELA;
+select * from clientes;
+select * from animais;
+	\end{lstlisting}
+	}
+
+	\defverbatim[colored]\codeII{
+	\begin{lstlisting}[language=SQL,basicstyle=\ttfamily,keywordstyle=\color{blue}]
+select 1;
+select 2+2=5;
+	\end{lstlisting}
+	}
+
+	\begin{frame}{Consultas}
+
+		\begin{block}{SELECT}
+			Seleciona Dadaos (consultas), quase sempre de tabelas
+		\end{block}
+
+		\begin{examples}
+		Selecionando registros:
+		\codeI
+		\end{examples}
+
+		\vfill
+%		\begin{block}{}
+			O asterisco '*' significa 'todos'
+%		\end{block}
+
+		\pause
+		\begin{block}{}
+			Curiosidade:
+			\codeII
+		\end{block}
+
+	\end{frame}	
+
+
+	\begin{frame}[plain]{Consultas}
+
+	\addimage{images/animais1.png}{0.57}{Seleção da tabela animais}
+
+	\end{frame}	
+
+
+
+
+
+
+\subsection[]{Cláusula WHERE}
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	
+	\defverbatim[colored]\codeI{
+	\begin{lstlisting}[language=SQL,basicstyle=\ttfamily,keywordstyle=\color{blue}]
+select * from animais where peso > 15;
+	\end{lstlisting}
+	}
+
+	\begin{frame}{Consultas com filtros}
+
+		\begin{block}{WHERE}
+			Seguido de uma expressão condicional, insere um filtro à seleção
+		\end{block}
+
+		\begin{examples}
+		\codeI
+		\pause
+		\addimage{images/animais2.png}{0.8}{Seleção da tabela animais}
+		\end{examples}
+	
+
+	\end{frame}	
+
+
+
+
+
+\subsubsection[]{Operadores relacionais}
+
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	
+	\defverbatim[colored]\codeI{
+	\begin{lstlisting}[language=SQL,basicstyle=\ttfamily,keywordstyle=\color{blue}]
+select * from animais where cor <> 'azul';
+select * from animais where peso < 120;
+	\end{lstlisting}
+	}
+
+	\begin{frame}{Operadores relacionais}
+
+		\begin{block}{Criam expressões condicionais}
+			$=, <>, <, <=, >, >= $
+		\end{block}
+
+		\begin{examples}
+		Selecionando registros:
+		\codeI
+		\end{examples}
+
+
+	\end{frame}	
+
+
+
+\subsubsection[]{Operadores lógicos}
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	
+	\defverbatim[colored]\codeI{
+	\begin{lstlisting}[language=SQL,basicstyle=\ttfamily,keywordstyle=\color{blue}]
+select * from animais 
+  where data_nasc > '2016-2-1' and peso < 70;
+	\end{lstlisting}
+	}
+
+	\begin{frame}[plain]{Operadores lógicos}
+
+		\begin{block}{Combina duas ou mais expressões condicionais}
+			AND, OR, NOT
+		\end{block}
+
+		\begin{examples}
+		\codeI
+		\pause
+		\addimage{images/animais2.png}{0.8}{Seleção da tabela animais}
+		\end{examples}
+
+
+	\end{frame}	
+
+
+
+\subsubsection[]{LIKE}
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	
+	\defverbatim[colored]\codeI{
+	\begin{lstlisting}[language=SQL,basicstyle=\ttfamily,keywordstyle=\color{blue}]
+select nome_animal, cor, peso from animais 
+	where nome_animal like '%to%';
+	\end{lstlisting}
+	}
+
+	\begin{frame}{LIKE}
+
+		\begin{block}{Encontra substrings}
+			É usado como uma simplificação de expressões regulares
+		\end{block}
+		
+		
+		\begin{examples}
+		\codeI
+		\pause
+		\addimage{images/animais4.png}{0.5}{Seleção da tabela animais}
+		\end{examples}
+
+	\end{frame}	
+
+	\begin{frame}{LIKE}
+
+		\begin{block}{}
+			'\%' significa 'qualquer sequência de caracteres ou nenhum'\\
+			'\_' significa um caracter qualquer 
+		\end{block}	
+
+		\begin{alertblock}{Atenção}
+			'\%' e '\_' sevem sempre estar dentro das aspas
+		\end{alertblock}
+
+	\end{frame}	
+
+
+
+\subsubsection[]{BETWEEN}
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	
+	\defverbatim[colored]\codeI{
+	\begin{lstlisting}[language=SQL,basicstyle=\ttfamily,keywordstyle=\color{blue}]
+select * from animais where 
+	peso between 10 and 15;	
+	\end{lstlisting}
+	}
+
+	\begin{frame}[plain]{BETWEEN}
+
+		\begin{block}{Seleciona valores entre uma abrangência}
+			Retorna TRUE se a coluna estiver entre dois valores
+		\end{block}
+
+		\begin{examples}
+		\codeI
+		\pause
+		\addimage{images/animais5.png}{0.7}{Seleção da tabela animais}
+		\end{examples}
+
+
+	\end{frame}	
+
+
+
+
+\subsubsection[]{IN}
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	
+	\defverbatim[colored]\codeI{
+	\begin{lstlisting}[language=SQL,basicstyle=\ttfamily,keywordstyle=\color{blue}]
+select * from animais 
+	where cor in ('azul','roxo','preto');
+	\end{lstlisting}
+
+	}
+
+	\begin{frame}{IN}
+
+		\begin{block}{Permite inserir múltiplos valores em uma única expressão condicional}
+			Retorna TRUE se a coluna estiver entre um conjunto de valores
+		\end{block}
+
+		\begin{examples}
+		\codeI
+		\pause
+		\addimage{images/animais6.png}{0.7}{Seleção da tabela animais}
+		\end{examples}
+
+
+	\end{frame}	
+
+
+
+
+
+%\subsubsection[]{IS NULL}
+
+\subsection[]{Cláusula ORDER BY}
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	
+	\defverbatim[colored]\codeI{
+	\begin{lstlisting}[language=SQL,basicstyle=\ttfamily,keywordstyle=\color{blue}]
+select nome_animal, cor, peso from animais 
+	order by nome_animal, peso;
+	\end{lstlisting}
+	}
+
+	\begin{frame}{ORDER BY}
+
+		\begin{block}{Ordena a seleção}
+			Permite estabelecer uma ordenação dos dados de acordo critérios para uma ou mais 
+		\end{block}
+
+
+		\begin{block}{}
+			'DESC' inserido ao final da cláusula pode ser usado para ordenação descendente (do maior para o menor)
+		\end{block}
+
+
+	\end{frame}	
+
+	\begin{frame}[plain]{ORDER BY}
+		\addimage{images/animais7.png}{0.57}{Seleção da tabela animais}		
+	\end{frame}	
+
+
+
+
+\subsection[]{Junções}
+\subsubsection[]{JOIN}
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	
+	\defverbatim[colored]\codeI{
+	\begin{lstlisting}[language=SQL,basicstyle=\ttfamily,keywordstyle=\color{blue}]
+select animais.*, especies.nome_especie 
+  from animais join especies 
+     on animais.especie_animal_id = 
+     especies.especie_id;
+	\end{lstlisting}
+	}
+
+	\begin{frame}{JOIN}
+
+		\begin{block}{Faz a junção de duas ou mais tabelas com um campo em comum}
+			Combina dados de acordo critérios para duas ou mais tabelas, normalmente a condição é a igualdade entre campos chave
+		\end{block}
+
+		\begin{examples}
+		\codeI
+		\end{examples}
+	
+		\pause
+		\addimage{images/innerjoin.png}{0.33}{}
+
+
+	\end{frame}	
+	
+	\begin{frame}[plain]{JOIN}
+%		\begin{examples}
+		\addimage{images/animais8.png}{0.75}{Seleção da tabela animais}		
+%		\end{examples}
+	\end{frame}	
+
+
+
+\subsubsection[]{INNER JOIN}
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	
+	\defverbatim[colored]\codeI{
+	\begin{lstlisting}[language=SQL,basicstyle=\ttfamily,keywordstyle=\color{blue}]
+select animais.*, especies.nome_especie 
+  from animais inner join especies 
+     on animais.especie_animal_id = 
+     especies.especie_id;
+	\end{lstlisting}
+	}
+
+	\begin{frame}{INNER JOIN}
+
+		\begin{block}{Faz a junção de duas ou mais tabelas com um campo em comum}
+			O mesmo que JOIN.
+		\end{block}
+
+		\begin{examples}
+		Selecionando registros:
+		\codeI
+		\end{examples}
+
+		\addimage{images/innerjoin.png}{0.35}
+
+
+	\end{frame}	
+
+
+
+\subsubsection[]{LEFT JOIN}
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	
+	\defverbatim[colored]\codeI{
+	\begin{lstlisting}[language=SQL,basicstyle=\ttfamily,keywordstyle=\color{blue}]
+select animais.*, especies.nome_especie 
+  from animais left join especies 
+     on animais.especie_animal_id = 
+     especies.especie_id;
+	\end{lstlisting}
+	}
+
+	\begin{frame}{LEFT JOIN}
+
+		\begin{block}{Faz a junção de duas ou mais tabelas com um campo em comum}
+			Retorna todos os registros tabela da esquerda. Quando não há igualdade entre os campos relacionados, o campo da tabela da direita será NULL.
+		\end{block}
+
+		\begin{examples}
+		\codeI
+		\end{examples}
+
+
+		\pause
+		\addimage{images/leftjoin.png}{0.34}
+
+	\end{frame}	
+	
+	\begin{frame}[plain]{LEFT JOIN}
+%		\begin{examples}
+		\addimage{images/animais9.png}{0.745}{Seleção da tabela animais}		
+%		\end{examples}
+	\end{frame}	
+	
+
+
+
+\subsubsection[]{RIGHT JOIN}
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	
+	\defverbatim[colored]\codeI{
+	\begin{lstlisting}[language=SQL,basicstyle=\ttfamily,keywordstyle=\color{blue}]
+select animais.*, especies.nome_especie 
+  from animais right join especies 
+     on animais.especie_animal_id = 
+     especies.especie_id;
+	\end{lstlisting}
+	}
+
+	\begin{frame}{RIGHT JOIN}
+
+		\begin{block}{Faz a junção de duas ou mais tabelas com um campo em comum}
+			Retorna todos os registros tabela da direita. Quando não há igualdade entre os campos relacionados, o campo da tabela da esquerda será NULL.
+		\end{block}
+
+		\begin{examples}
+		\codeI
+		\end{examples}
+
+		\pause
+		\addimage{images/rightjoin.png}{0.33}
+		
+	\end{frame}	
+
+	\begin{frame}[plain]{RIGHT JOIN}
+%		\begin{examples}
+		\addimage{images/animais10.png}{0.59}{Seleção da tabela animais}		
+%		\end{examples}
+	\end{frame}	
+
+
+
+
+
+
+\section[]{Exercícios}
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+	\begin{frame}{Exercícios}
+
+		\small{
+		\begin{enumerate}
+		   \item Acesse o endereço \url{https://goo.gl/GlQdSs}, e baixe o arquivo animais.sql e execute pelo mysql linha de comando
+		   \item Selecione todos os grupos
+		   \item Selecione todos as espécies
+		   \item Selecione todos os animais
+		   \item Selecione todos os animais que pesam menos que 50
+		   \item Selecione todos nasceram entre fevereiro e dezembro de 2015
+		   \item Selecione nome, cor e peso de todos cujo nome comece com 'Mi'
+		   \item Selecione nome, cor e peso de todos com cor vermelha, amarela, marrom e laranja
+		   \item Selecione nome, cor e peso de todos ordenados pelos mais jovens
+		   \item Selecione nome, cor e peso e especie de todos os animais
+		   \item Selecione nome, cor e peso e especie e grupo de todos os animais mamíferos
+		\end{enumerate}
+		}
+
+	\end{frame}	
+
+
+
+
+\end{document}

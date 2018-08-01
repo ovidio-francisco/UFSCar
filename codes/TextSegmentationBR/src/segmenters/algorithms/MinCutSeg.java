@@ -116,7 +116,7 @@ public class MinCutSeg extends AbstractSegmenter {
 
 	@Override
 	public String getConfigurationLabel() {
-		return String.format("MinCutSeg SRate:%.2f LCO:%d", nSegsRate, segmenterParams.getSegLenCutoff());
+		return String.format("MinCutSeg sr:%.2f lco:%d", nSegsRate, segmenterParams.getSegLenCutoff());
 	}
 
 	@Override

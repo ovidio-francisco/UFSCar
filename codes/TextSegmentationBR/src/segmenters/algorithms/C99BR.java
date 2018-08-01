@@ -111,7 +111,7 @@ public class C99BR extends AbstractSegmenter {
 
 	@Override
 	public String getConfigurationLabel() {
-		return String.format("C99 %2d %2d %s", (int)(100*this.getnSegsRate()), this.getRakingSize(), this.isWeitght()?"T":"F");
+		return String.format("C99 sr:%2d rs:%2d w:%s", (int)(100*this.getnSegsRate()), this.getRakingSize(), this.isWeitght()?"T":"F");
 	}
 
 	@Override

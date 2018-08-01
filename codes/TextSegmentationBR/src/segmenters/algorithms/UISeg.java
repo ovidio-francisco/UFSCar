@@ -93,7 +93,7 @@ public class UISeg extends AbstractSegmenter {
 	}
 	@Override
 	public String getConfigurationLabel() {
-		return "TextSeg";
+		return String.format("TextSeg sr:%.2f", nSegsRate);
 	}
 	
 	

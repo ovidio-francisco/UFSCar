@@ -1,5 +1,5 @@
 # Fdb version 3
-["bibtex ovidio-dissertacao"] 1531964352 "ovidio-dissertacao.aux" "ovidio-dissertacao.bbl" "ovidio-dissertacao" 1531964352
+["bibtex ovidio-dissertacao"] 1531964352 "ovidio-dissertacao.aux" "ovidio-dissertacao.bbl" "ovidio-dissertacao" 1532568032
   "./abntex2-alf.bst" 1405615040 63287 1073317cf2aaa1ae7cb902d84de1bb0a ""
   "abntex2-options.bib" 1503974450 5396 4eb260dac60f150ae608d45252853090 ""
   "conteudo/capitulos/2-cap1.aux" 1531964348 5771 5da1234dd46bd8b25c93748ff63c62b3 ""
@@ -15,14 +15,14 @@
   "ovidio-dissertacao.bcf" 0 -1 0 ""
   "referencias.bib" 1531832732 44203 fdfaf7e98f3dc51460203d1230f56063 ""
   (generated)
-  "ovidio-dissertacao.bbl"
   "ovidio-dissertacao.blg"
-["makeindex ovidio-dissertacao.idx"] 1531676189 "ovidio-dissertacao.idx" "ovidio-dissertacao.ind" "ovidio-dissertacao" 1531964352
+  "ovidio-dissertacao.bbl"
+["makeindex ovidio-dissertacao.idx"] 1531676189 "ovidio-dissertacao.idx" "ovidio-dissertacao.ind" "ovidio-dissertacao" 1532568032
   "ovidio-dissertacao.idx" 1531964348 0 d41d8cd98f00b204e9800998ecf8427e ""
   (generated)
   "ovidio-dissertacao.ind"
   "ovidio-dissertacao.ilg"
-["pdflatex"] 1531964347 "ovidio-dissertacao.tex" "ovidio-dissertacao.pdf" "ovidio-dissertacao" 1531964352
+["pdflatex"] 1531964347 "ovidio-dissertacao.tex" "ovidio-dissertacao.pdf" "ovidio-dissertacao" 1532568032
   "/etc/texmf/web2c/texmf.cnf" 1489454511 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1272929888 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecrm1200.tfm" 1136768653 3584 f80ddd985bd00e29e9a6047ebd9d4781 ""
@@ -295,7 +295,7 @@
   "conteudo/capitulos/inputs/trabalhos-relacionados.tex" 1531853154 5806 67d579bec8b7712010f9c606593bcf5f ""
   "macros.tex" 1405610592 2151 f1bd8a376d9c6a48b6e57f060d785b92 ""
   "ovidio-dissertacao.aux" 1531964350 22689 4744ad3acb93b0c8883035ba05ca5fc9 ""
-  "ovidio-dissertacao.bbl" 1531964345 28645 691c94080e717c7af03cc3bbc82ca5a5 "bibtex ovidio-dissertacao"
+  "ovidio-dissertacao.bbl" 1531964352 28645 691c94080e717c7af03cc3bbc82ca5a5 "bibtex ovidio-dissertacao"
   "ovidio-dissertacao.brf" 1531964350 11435 22664d196d624e0610ec66456ce62fc4 ""
   "ovidio-dissertacao.ind" 1531676189 0 d41d8cd98f00b204e9800998ecf8427e "makeindex ovidio-dissertacao.idx"
   "ovidio-dissertacao.lof" 1531964350 6547 692b51b517875ae43e0c44f87c399759 ""
@@ -303,20 +303,20 @@
   "ovidio-dissertacao.tex" 1531964339 9588 3f7552f88823c9625260d944d8566e66 ""
   "ovidio-dissertacao.toc" 1531964350 7553 67f89b1bd1400444d5b663bbe8753e33 ""
   (generated)
-  "conteudo/capitulos/3-cap2.aux"
-  "conteudo/capitulos/2-cap1.aux"
-  "ovidio-dissertacao.toc"
-  "ovidio-dissertacao.log"
-  "conteudo/capitulos/5-conclusao.aux"
-  "conteudo/capitulos/cap-avaliacao-segmentadores.aux"
-  "conteudo/capitulos/4-cap3.aux"
-  "ovidio-dissertacao.lot"
   "conteudo/capitulos/6-apendice1.aux"
+  "conteudo/capitulos/6-apendice3.aux"
+  "conteudo/capitulos/6-apendice2.aux"
+  "conteudo/capitulos/cap-avaliacao-extratores.aux"
+  "conteudo/capitulos/2-cap1.aux"
+  "ovidio-dissertacao.brf"
+  "conteudo/capitulos/5-conclusao.aux"
+  "ovidio-dissertacao.toc"
   "ovidio-dissertacao.aux"
   "ovidio-dissertacao.idx"
+  "ovidio-dissertacao.lot"
+  "conteudo/capitulos/cap-avaliacao-segmentadores.aux"
+  "conteudo/capitulos/3-cap2.aux"
   "ovidio-dissertacao.lof"
   "ovidio-dissertacao.pdf"
-  "conteudo/capitulos/cap-avaliacao-extratores.aux"
-  "conteudo/capitulos/6-apendice3.aux"
-  "ovidio-dissertacao.brf"
-  "conteudo/capitulos/6-apendice2.aux"
+  "ovidio-dissertacao.log"
+  "conteudo/capitulos/4-cap3.aux"
