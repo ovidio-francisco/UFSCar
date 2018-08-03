@@ -1,5 +1,6 @@
 \beamer@sectionintoc {1}{Contextualiza\IeC {\c c}\IeC {\~a}o}{3}{0}{1}
 \beamer@sectionintoc {2}{Objetivos}{8}{0}{2}
 \beamer@sectionintoc {3}{Proposta}{9}{0}{3}
-\beamer@sectionintoc {4}{An\IeC {\'a}lise dos Resultados}{13}{0}{4}
-\beamer@sectionintoc {5}{Conclus\IeC {\~a}o}{14}{0}{5}
+\beamer@sectionintoc {4}{An\IeC {\'a}lise dos Resultados}{15}{0}{4}
+\beamer@sectionintoc {5}{Conclus\IeC {\~a}o}{22}{0}{5}
+\beamer@sectionintoc {6}{Trabalhos Futuros}{26}{0}{6}

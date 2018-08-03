@@ -1,6 +1,167 @@
 
 
 
+Receber uma base de dados não estruturada;
+kk
+
+
+Desenvolveu-se uma
+Metodologia que conecta 
+Metodologia que agrupa segmentos de ata por tópico.
+
+
+A metodologia utilizada nesse trabalho: 
+\begin{itemize}
+	\item Conecta as técnicas de segmentação textual aos modelos de extração de tópicos 
+	\item Gera um estrutura derivada de um \textit{corpus} não estruturado.
+	% \item Descobre e identifica variáveis latentes pa
+	\item Utiliza variáveis latentes em conjunto com técnicas de Recuperação de Informação.
+\end{itemize}
+
+
+Essa organização permite
+que técnicas de Recuperação de Informação expandam o espaço de busca além do conjunto
+
+
+Expandir o espaço de busca; 
+
+
+
+
+% \begin{frame}{Análise dos Resultados}
+
+
+
+% \begin{figure}[!ht] \centering     %%% not \center
+
+	% Performance geral dos algoritmos de segmentação textual. 
+
+		% \includegraphics[width=.82\textwidth]{images/graficos/resumo-wd-pk.png}	
+		% \label{fig:resumo-wd-pka}
+		% \includegraphics[width=.82\textwidth]{images/graficos/resumo-tradicionais.png}	
+		% \label{fig:resumo-tradicionaisa}
+
+	% \label{fig:resumo-segmentadores}
+% \end{figure}
+
+
+
+% \end{frame}
+
+
+		\includegraphics[trim={ 0 235 0 16 },clip,page=1,width=0.73\textwidth]{images/distribuicao.pdf}
+tela-principal-2-1.png
+ficando os demais disponíveis para exploração pelo usuário.
+
+Os tópicos mais similares à consulta ficam disponíveis para exploração.
+
+
+Busca exploratória pelos tópicos mais similares à consulta.
+
+
+
+
+
+
+
+O módulo de consulta aproveita a estrutura de dados interna para recuperar informações
+
+Usa-se o modelo de espaço vetorial para ranquear os tópicos.
+
+
+
+
+
+
+
+
+incorporar conhecimento de domínio aos dados
+
+
+
+
+
+
+
+
+
+
+
+
+com isso é possivel identificar em cada ata
+
+com isso é possível identificar trechos que tradam de um assunto
+com isso é possível identificar os assuntos tratados em uma ata bem como sua 
+
+com isso é possível identificar nas atas os trechos que tradam de um assunto
+
+
+com isso é possível identificar os assuntos tratados em uma ata. 
+
+
+
+Essa abordagem permite a expansão do espaço de busca além do conjunto de termos original de cada segmento, e a identificação de trechos mais relevantes à consulta.
+
+
+
+
+
+
+\nblock{ Estrutura mais organizada} {
+	\begin{itemize}
+		\item  Segmentos agrupados por tópico.
+		\item  Segmentos acrescidos de novos atributos (tópicos)
+	\end{itemize}
+}
+
+
+
+
+\begin{center}
+    \begin{minipage}{0.5\textwidth}
+		\begin{description} \tiny
+			\item[DT] Discordo Totalmente
+			\item[DP] Discordo Parcialmente
+			\item[NCND] Não Concordo Nem Discordo
+			\item[CP] Concordo Parcialmente
+			\item[CT] Concordo Totalmente
+		\end{description}
+    \end{minipage}
+  \end{center}
+
+
+
+\begin{center}
+    \begin{minipage}{0.5\textwidth}
+		\begin{description} \tiny
+			\item[N] Nenhum
+			\item[P] Poucos
+			\item[NMNP] Nem Muitos nem Poucos
+			\item[M] Muitos
+			\item[T] Todos
+		\end{description}
+    \end{minipage}
+  \end{center}
+
+
+
+\begin{figure}[!h] \centering     %%% not \center
+%	\subfigure{ \label{fig:kmeans}
+		\includegraphics[width=.31\textwidth]{conteudo/capitulos/figs/figuras-experimento/Q1-KMeans.png}
+%	}	
+%	\subfigure{ \label{fig:lda}
+		\includegraphics[width=.31\textwidth]{conteudo/capitulos/figs/figuras-experimento/Q1-LDA.png}
+%	}
+%	\subfigure{ \label{fig:plsa}
+		\includegraphics[width=.31\textwidth]{conteudo/capitulos/figs/figuras-experimento/Q1-PLSA.png}
+%	} 
+	\caption{Contagem de respostas referente a primeira questão cujo enunciado foi:\textit{``Todos os trechos apresentados compartilham um mesmo assunto.''}. O eixo vertical indica a frequência das alternativas representadas no eixo horizontal. }
+	\label{fig:Q1}
+\end{figure}
+
+
+
+
 
 
 

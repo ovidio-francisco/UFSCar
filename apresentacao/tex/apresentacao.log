@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.8.22)  1 AUG 2018 01:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.8.22)  3 AUG 2018 01:19
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1035,7 +1035,7 @@ Package epstopdf Info: Source file: <images/LogoUfscar.eps>
 (epstopdf)             Command: <repstopdf --outfile=images/LogoUfscar-eps-converted-to.pdf images/LogoUfscar.eps>
 (epstopdf)             \includegraphics on input line 22.
 Package epstopdf Info: Output file is already uptodate.
- <images/LogoUfscar-eps-converted-to.pdf, id=41, 586.19pt x 427.5975pt>
+ <images/LogoUfscar-eps-converted-to.pdf, id=45, 586.19pt x 427.5975pt>
 File: images/LogoUfscar-eps-converted-to.pdf Graphic file (type pdf)
  <use images/LogoUfscar-eps-converted-to.pdf>
 Package pdftex.def Info: images/LogoUfscar-eps-converted-to.pdf used on input line 22.
@@ -1072,40 +1072,51 @@ Package epstopdf Info: Source file: <images/visao-geral-3.eps>
 (epstopdf)                    date: 2018-07-31 23:48:51
 (epstopdf)                    size: 66255 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/visao-geral-3-eps-converted-to.pdf images/visao-geral-3.eps>
-(epstopdf)             \includegraphics on input line 176.
+(epstopdf)             \includegraphics on input line 177.
 Package epstopdf Info: Output file is already uptodate.
- <images/visao-geral-3-eps-converted-to.pdf, id=105, 1084.05pt x 542.025pt>
+ <images/visao-geral-3-eps-converted-to.pdf, id=111, 1084.05pt x 542.025pt>
 File: images/visao-geral-3-eps-converted-to.pdf Graphic file (type pdf)
  <use images/visao-geral-3-eps-converted-to.pdf>
-Package pdftex.def Info: images/visao-geral-3-eps-converted-to.pdf used on input line 176.
+Package pdftex.def Info: images/visao-geral-3-eps-converted-to.pdf used on input line 177.
 (pdftex.def)             Requested size: 291.35739pt x 145.67877pt.
  [9
 
- <./images/visao-geral-3-eps-converted-to.pdf>] <images/estrutura.png, id=112, 891.33pt x 552.0625pt>
+ <./images/visao-geral-3-eps-converted-to.pdf>] <images/estrutura.png, id=118, 891.33pt x 552.0625pt>
 File: images/estrutura.png Graphic file (type png)
  <use images/estrutura.png>
-Package pdftex.def Info: images/estrutura.png used on input line 185.
+Package pdftex.def Info: images/estrutura.png used on input line 186.
 (pdftex.def)             Requested size: 291.35739pt x 180.4543pt.
  [10
 
- <./images/estrutura.png>] <images/distribuicao.pdf, id=120, page=1, 624.3325pt x 845.1575pt>
+ <./images/estrutura.png>] [11
+
+] <images/distribuicao.pdf, id=131, page=1, 624.3325pt x 845.1575pt>
 File: images/distribuicao.pdf Graphic file (type pdf)
  <use images/distribuicao.pdf, page 1>
-Package pdftex.def Info: images/distribuicao.pdf, page1 used on input line 200.
+Package pdftex.def Info: images/distribuicao.pdf, page1 used on input line 227.
 (pdftex.def)             Requested size: 224.32028pt x 213.13203pt.
 
-Overfull \vbox (10.78967pt too high) detected at line 200
+Overfull \vbox (10.78967pt too high) detected at line 227
  []
 
-[11
+[12
 
- <./images/distribuicao.pdf>] [12
+ <./images/distribuicao.pdf>] [13
+
+] <images/tela-principal-2-1.png, id=210, 1177.39874pt x 737.75626pt>
+File: images/tela-principal-2-1.png Graphic file (type png)
+ <use images/tela-principal-2-1.png>
+Package pdftex.def Info: images/tela-principal-2-1.png used on input line 281.
+(pdftex.def)             Requested size: 307.28987pt x 192.54382pt.
+ [14
+
+ <./images/tela-principal-2-1.png>] [15
 
 ]
-./apresentacao.tex:242: Undefined control sequence.
+./apresentacao.tex:335: Undefined control sequence.
 \beamer@doifinframe ...centering \tiny \subfigure 
                                                   [Ac]{ \label {fig:a} \incl...
-l.242 \end{frame}
+l.335 \end{frame}
                  
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1113,16 +1124,16 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-<images/cds/Acuracia.png, id=198, 433.62pt x 126.4725pt>
+<images/cds/Acuracia.png, id=223, 433.62pt x 126.4725pt>
 File: images/cds/Acuracia.png Graphic file (type png)
  <use images/cds/Acuracia.png>
-Package pdftex.def Info: images/cds/Acuracia.png used on input line 242.
+Package pdftex.def Info: images/cds/Acuracia.png used on input line 335.
 (pdftex.def)             Requested size: 133.72795pt x 39.00343pt.
 
-./apresentacao.tex:242: Undefined control sequence.
+./apresentacao.tex:335: Undefined control sequence.
 \beamer@doifinframe ...Acuracia.png} } \subfigure 
                                                   [F^1]{ \label {fig:b} \inc...
-l.242 \end{frame}
+l.335 \end{frame}
                  
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1130,45 +1141,45 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./apresentacao.tex:242: Missing $ inserted.
+./apresentacao.tex:335: Missing $ inserted.
 <inserted text> 
                 $
-l.242 \end{frame}
+l.335 \end{frame}
                  
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-<images/cds/F1.png, id=199, 433.62pt x 126.4725pt>
+<images/cds/F1.png, id=224, 433.62pt x 126.4725pt>
 File: images/cds/F1.png Graphic file (type png)
  <use images/cds/F1.png>
-Package pdftex.def Info: images/cds/F1.png used on input line 242.
+Package pdftex.def Info: images/cds/F1.png used on input line 335.
 (pdftex.def)             Requested size: 133.72795pt x 39.00343pt.
 
 
-./apresentacao.tex:242: LaTeX Error: There's no line here to end.
+./apresentacao.tex:335: LaTeX Error: There's no line here to end.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.242 \end{frame}
+l.335 \end{frame}
                  
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-./apresentacao.tex:242: Missing $ inserted.
+./apresentacao.tex:335: Missing $ inserted.
 <inserted text> 
                 $
-l.242 \end{frame}
+l.335 \end{frame}
                  
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-./apresentacao.tex:242: Missing } inserted.
+./apresentacao.tex:335: Missing } inserted.
 <inserted text> 
                 }
-l.242 \end{frame}
+l.335 \end{frame}
                  
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1176,10 +1187,10 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-./apresentacao.tex:242: Missing } inserted.
+./apresentacao.tex:335: Missing } inserted.
 <inserted text> 
                 }
-l.242 \end{frame}
+l.335 \end{frame}
                  
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1187,10 +1198,10 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-./apresentacao.tex:242: Extra }, or forgotten \endgroup.
+./apresentacao.tex:335: Extra }, or forgotten \endgroup.
 \par ...m \@noitemerr {\@@par }\fi \else {\@@par }
                                                   \fi 
-l.242 \end{frame}
+l.335 \end{frame}
                  
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -1198,10 +1209,10 @@ you forgot something else, as in `\hbox{$x}'. In such cases
 the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
-./apresentacao.tex:242: Extra }, or forgotten \endgroup.
+./apresentacao.tex:335: Extra }, or forgotten \endgroup.
 <recently read> }
                  
-l.242 \end{frame}
+l.335 \end{frame}
                  
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -1209,10 +1220,10 @@ you forgot something else, as in `\hbox{$x}'. In such cases
 the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
-./apresentacao.tex:242: Undefined control sequence.
+./apresentacao.tex:335: Undefined control sequence.
 \beamer@doifinframe ...ds/F1.png} \\ } \subfigure 
                                                   [P_k]{ \label {fig:c} \inc...
-l.242 \end{frame}
+l.335 \end{frame}
                  
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1220,24 +1231,24 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./apresentacao.tex:242: Missing $ inserted.
+./apresentacao.tex:335: Missing $ inserted.
 <inserted text> 
                 $
-l.242 \end{frame}
+l.335 \end{frame}
                  
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-<images/cds/Pk.png, id=200, 433.62pt x 126.4725pt>
+<images/cds/Pk.png, id=225, 433.62pt x 126.4725pt>
 File: images/cds/Pk.png Graphic file (type png)
  <use images/cds/Pk.png>
-Package pdftex.def Info: images/cds/Pk.png used on input line 242.
+Package pdftex.def Info: images/cds/Pk.png used on input line 335.
 (pdftex.def)             Requested size: 133.72795pt x 39.00343pt.
 
-./apresentacao.tex:242: Undefined control sequence.
+./apresentacao.tex:335: Undefined control sequence.
 \beamer@doifinframe ...s/cds/Pk.png} } \subfigure 
                                                   [WD]{ \label {fig:d} \incl...
-l.242 \end{frame}
+l.335 \end{frame}
                  
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1245,24 +1256,24 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-<images/cds/WD.png, id=201, 433.62pt x 126.4725pt>
+<images/cds/WD.png, id=226, 433.62pt x 126.4725pt>
 File: images/cds/WD.png Graphic file (type png)
  <use images/cds/WD.png>
-Package pdftex.def Info: images/cds/WD.png used on input line 242.
+Package pdftex.def Info: images/cds/WD.png used on input line 335.
 (pdftex.def)             Requested size: 133.72795pt x 39.00343pt.
 
-./apresentacao.tex:242: Missing $ inserted.
+./apresentacao.tex:335: Missing $ inserted.
 <inserted text> 
                 $
-l.242 \end{frame}
+l.335 \end{frame}
                  
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-./apresentacao.tex:242: Missing } inserted.
+./apresentacao.tex:335: Missing } inserted.
 <inserted text> 
                 }
-l.242 \end{frame}
+l.335 \end{frame}
                  
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1270,10 +1281,10 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-./apresentacao.tex:242: Extra }, or forgotten \endgroup.
+./apresentacao.tex:335: Extra }, or forgotten \endgroup.
 \par ...m \@noitemerr {\@@par }\fi \else {\@@par }
                                                   \fi 
-l.242 \end{frame}
+l.335 \end{frame}
                  
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -1281,11 +1292,87 @@ you forgot something else, as in `\hbox{$x}'. In such cases
 the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
-[13
+[16
 
- <./images/cds/Acuracia.png> <./images/cds/F1.png> <./images/cds/Pk.png> <./images/cds/WD.png>] [14
+ <./images/cds/Acuracia.png> <./images/cds/F1.png> <./images/cds/Pk.png> <./images/cds/WD.png>] [17
 
-] [15
+] <images/figuras-experimento/Q1-KMeans.png, id=247, 357.335pt x 287.0725pt>
+File: images/figuras-experimento/Q1-KMeans.png Graphic file (type png)
+ <use images/figuras-experimento/Q1-KMeans.png>
+Package pdftex.def Info: images/figuras-experimento/Q1-KMeans.png used on input line 377.
+(pdftex.def)             Requested size: 95.25911pt x 76.5294pt.
+ <images/figuras-experimento/Q1-LDA.png, id=248, 358.33875pt x 287.0725pt>
+File: images/figuras-experimento/Q1-LDA.png Graphic file (type png)
+ <use images/figuras-experimento/Q1-LDA.png>
+Package pdftex.def Info: images/figuras-experimento/Q1-LDA.png used on input line 377.
+(pdftex.def)             Requested size: 95.25911pt x 76.31038pt.
+ <images/figuras-experimento/Q1-PLSA.png, id=249, 357.335pt x 286.06876pt>
+File: images/figuras-experimento/Q1-PLSA.png Graphic file (type png)
+ <use images/figuras-experimento/Q1-PLSA.png>
+Package pdftex.def Info: images/figuras-experimento/Q1-PLSA.png used on input line 377.
+(pdftex.def)             Requested size: 95.25911pt x 76.26181pt.
+ <images/likert.png, id=250, 943.525pt x 60.225pt>
+File: images/likert.png Graphic file (type png)
+ <use images/likert.png>
+Package pdftex.def Info: images/likert.png used on input line 377.
+(pdftex.def)             Requested size: 276.559pt x 17.65225pt.
+ [18
+
+ <./images/figuras-experimento/Q1-KMeans.png (PNG copy)> <./images/figuras-experimento/Q1-LDA.png (PNG copy)> <./images/figuras-experimento/Q1-PLSA.png (PNG copy)> <./images/likert.png>] <images/figuras-experimento/Q2-KMeans.png, id=258, 357.335pt x 290.08376pt>
+File: images/figuras-experimento/Q2-KMeans.png Graphic file (type png)
+ <use images/figuras-experimento/Q2-KMeans.png>
+Package pdftex.def Info: images/figuras-experimento/Q2-KMeans.png used on input line 397.
+(pdftex.def)             Requested size: 95.25911pt x 77.33215pt.
+ <images/figuras-experimento/Q2-LDA.png, id=259, 357.335pt x 290.08376pt>
+File: images/figuras-experimento/Q2-LDA.png Graphic file (type png)
+ <use images/figuras-experimento/Q2-LDA.png>
+Package pdftex.def Info: images/figuras-experimento/Q2-LDA.png used on input line 397.
+(pdftex.def)             Requested size: 95.25911pt x 77.33215pt.
+ <images/figuras-experimento/Q2-PLSA.png, id=260, 357.335pt x 290.08376pt>
+File: images/figuras-experimento/Q2-PLSA.png Graphic file (type png)
+ <use images/figuras-experimento/Q2-PLSA.png>
+Package pdftex.def Info: images/figuras-experimento/Q2-PLSA.png used on input line 397.
+(pdftex.def)             Requested size: 95.25911pt x 77.33215pt.
+File: images/likert.png Graphic file (type png)
+ <use images/likert.png>
+Package pdftex.def Info: images/likert.png used on input line 397.
+(pdftex.def)             Requested size: 276.559pt x 17.65225pt.
+ [19
+
+ <./images/figuras-experimento/Q2-KMeans.png (PNG copy)> <./images/figuras-experimento/Q2-LDA.png (PNG copy)> <./images/figuras-experimento/Q2-PLSA.png (PNG copy)>] <images/figuras-experimento/Q3-Seg.png, id=268, 558.085pt x 311.1625pt>
+File: images/figuras-experimento/Q3-Seg.png Graphic file (type png)
+ <use images/figuras-experimento/Q3-Seg.png>
+Package pdftex.def Info: images/figuras-experimento/Q3-Seg.png used on input line 417.
+(pdftex.def)             Requested size: 147.49782pt x 82.23451pt.
+ <images/likert-1.png, id=269, 953.5625pt x 70.2625pt>
+File: images/likert-1.png Graphic file (type png)
+ <use images/likert-1.png>
+Package pdftex.def Info: images/likert-1.png used on input line 417.
+(pdftex.def)             Requested size: 276.559pt x 20.37773pt.
+ [20
+
+ <./images/figuras-experimento/Q3-Seg.png> <./images/likert-1.png>] <images/figuras-experimento/Q4-Seg.png, id=276, 559.08875pt x 313.17pt>
+File: images/figuras-experimento/Q4-Seg.png Graphic file (type png)
+ <use images/figuras-experimento/Q4-Seg.png>
+Package pdftex.def Info: images/figuras-experimento/Q4-Seg.png used on input line 438.
+(pdftex.def)             Requested size: 147.49782pt x 82.61691pt.
+File: images/likert-1.png Graphic file (type png)
+ <use images/likert-1.png>
+Package pdftex.def Info: images/likert-1.png used on input line 438.
+(pdftex.def)             Requested size: 276.559pt x 20.37773pt.
+ [21
+
+ <./images/figuras-experimento/Q4-Seg.png>] [22
+
+] [23
+
+] [24
+
+] [25
+
+] [26
+
+] [27
 
 ]
 \tf@nav=\write6
@@ -1297,13 +1384,13 @@ deleted material, e.g., by typing `I$}'.
 \tf@snm=\write8
 \openout8 = `apresentacao.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 262.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 262.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 558.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 558.
  (./apresentacao.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 262.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 262.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 558.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 558.
 Package rerunfilecheck Info: File `apresentacao.out' has not changed.
-(rerunfilecheck)             Checksum: 484B1AAE3BC151EDA9CD15844AC43A50;251.
+(rerunfilecheck)             Checksum: 2861F96B0463D4429334211E62E1C16C;303.
 
 
 LaTeX Font Warning: Size substitutions with differences
@@ -1311,18 +1398,18 @@ LaTeX Font Warning: Size substitutions with differences
 
  ) 
 Here is how much of TeX's memory you used:
- 18933 strings out of 494884
- 350799 string characters out of 6179236
- 425999 words of memory out of 5000000
- 21752 multiletter control sequences out of 15000+600000
- 11559 words of font info for 43 fonts, out of 8000000 for 9000
+ 19101 strings out of 494884
+ 354640 string characters out of 6179236
+ 426095 words of memory out of 5000000
+ 21880 multiletter control sequences out of 15000+600000
+ 13926 words of font info for 52 fonts, out of 8000000 for 9000
  38 hyphenation exceptions out of 8191
  48i,11n,60p,795b,664s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb>
-Output written on apresentacao.pdf (15 pages, 542195 bytes).
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb>
+Output written on apresentacao.pdf (27 pages, 736335 bytes).
 PDF statistics:
- 252 PDF objects out of 1000 (max. 8388607)
- 171 compressed objects within 2 object streams
- 40 named destinations out of 1000 (max. 500000)
- 171 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 359 PDF objects out of 1000 (max. 8388607)
+ 245 compressed objects within 3 object streams
+ 67 named destinations out of 1000 (max. 500000)
+ 252 words of extra memory for PDF output out of 10000 (max. 10000000)
 
