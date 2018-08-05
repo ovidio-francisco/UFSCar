@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.8.22)  3 AUG 2018 01:19
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.8.22)  5 AUG 2018 18:17
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -172,6 +172,20 @@ Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package xcolor Info: Driver file: pdftex.def on input line 225.
+ (/usr/share/texlive/texmf-dist/tex/latex/colortbl/colortbl.sty
+Package: colortbl 2012/02/13 v1.0a Color table columns (DPC)
+ (/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
+Package: array 2016/10/06 v2.4d Tabular extension package (FMi)
+\col@sep=\dimen139
+\extrarowheight=\dimen140
+\NC@list=\toks23
+\extratabsurround=\skip44
+\backup@length=\skip45
+)
+\everycr=\toks24
+\minrowclearance=\skip46
+)
+\rownum=\count113
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
 Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
 Package xcolor Info: Model `RGB' extended on input line 1364.
@@ -181,58 +195,56 @@ Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
 Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
- (/usr/share/texlive/texmf-dist/tex/latex/graphics/dvipsnam.def
-File: dvipsnam.def 2016/06/17 v3.0m Driver-dependent file (DPC,SPQR)
-)) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
 Package: pgfcore 2010/04/11 v3.0.1a (rcs-revision 1.7)
  (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
-\pgfmath@dimen=\dimen139
-\pgfmath@count=\count113
+\pgfmath@dimen=\dimen141
+\pgfmath@count=\count114
 \pgfmath@box=\box35
-\pgfmath@toks=\toks23
-\pgfmath@stack@operand=\toks24
-\pgfmath@stack@operation=\toks25
+\pgfmath@toks=\toks25
+\pgfmath@stack@operand=\toks26
+\pgfmath@stack@operation=\toks27
 ) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonometric.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerarithmetics.code.tex))) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
-\c@pgfmathroundto@lastzeros=\count114
+\c@pgfmathroundto@lastzeros=\count115
 )) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex
 File: pgfcorepoints.code.tex 2013/10/07  (rcs-revision 1.27)
-\pgf@picminx=\dimen140
-\pgf@picmaxx=\dimen141
-\pgf@picminy=\dimen142
-\pgf@picmaxy=\dimen143
-\pgf@pathminx=\dimen144
-\pgf@pathmaxx=\dimen145
-\pgf@pathminy=\dimen146
-\pgf@pathmaxy=\dimen147
-\pgf@xx=\dimen148
-\pgf@xy=\dimen149
-\pgf@yx=\dimen150
-\pgf@yy=\dimen151
-\pgf@zx=\dimen152
-\pgf@zy=\dimen153
+\pgf@picminx=\dimen142
+\pgf@picmaxx=\dimen143
+\pgf@picminy=\dimen144
+\pgf@picmaxy=\dimen145
+\pgf@pathminx=\dimen146
+\pgf@pathmaxx=\dimen147
+\pgf@pathminy=\dimen148
+\pgf@pathmaxy=\dimen149
+\pgf@xx=\dimen150
+\pgf@xy=\dimen151
+\pgf@yx=\dimen152
+\pgf@yy=\dimen153
+\pgf@zx=\dimen154
+\pgf@zy=\dimen155
 ) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.code.tex
 File: pgfcorepathconstruct.code.tex 2013/10/07  (rcs-revision 1.29)
-\pgf@path@lastx=\dimen154
-\pgf@path@lasty=\dimen155
+\pgf@path@lastx=\dimen156
+\pgf@path@lasty=\dimen157
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code.tex
 File: pgfcorepathusage.code.tex 2014/11/02  (rcs-revision 1.24)
-\pgf@shorten@end@additional=\dimen156
-\pgf@shorten@start@additional=\dimen157
+\pgf@shorten@end@additional=\dimen158
+\pgf@shorten@start@additional=\dimen159
 ) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.tex
 File: pgfcorescopes.code.tex 2015/05/08  (rcs-revision 1.46)
 \pgfpic=\box36
 \pgf@hbox=\box37
 \pgf@layerbox@main=\box38
-\pgf@picture@serial@count=\count115
+\pgf@picture@serial@count=\count116
 ) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code.tex
 File: pgfcoregraphicstate.code.tex 2014/11/02  (rcs-revision 1.12)
-\pgflinewidth=\dimen158
+\pgflinewidth=\dimen160
 ) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformations.code.tex
 File: pgfcoretransformations.code.tex 2015/08/07  (rcs-revision 1.20)
-\pgf@pt@x=\dimen159
-\pgf@pt@y=\dimen160
-\pgf@pt@temp=\dimen161
+\pgf@pt@x=\dimen161
+\pgf@pt@y=\dimen162
+\pgf@pt@temp=\dimen163
 ) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
 File: pgfcorequick.code.tex 2008/10/09  (rcs-revision 1.3)
 ) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.tex
@@ -241,11 +253,11 @@ File: pgfcoreobjects.code.tex 2006/10/11  (rcs-revision 1.2)
 File: pgfcorepathprocessing.code.tex 2013/09/09  (rcs-revision 1.9)
 ) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.tex
 File: pgfcorearrows.code.tex 2015/05/14  (rcs-revision 1.43)
-\pgfarrowsep=\dimen162
+\pgfarrowsep=\dimen164
 ) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
 File: pgfcoreshade.code.tex 2013/07/15  (rcs-revision 1.15)
-\pgf@max=\dimen163
-\pgf@sys@shading@range@num=\count116
+\pgf@max=\dimen165
+\pgf@sys@shading@range@num=\count117
 ) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
 File: pgfcoreimage.code.tex 2013/07/15  (rcs-revision 1.18)
  (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.tex
@@ -259,8 +271,8 @@ File: pgfcoretransparency.code.tex 2013/09/30  (rcs-revision 1.5)
 File: pgfcorepatterns.code.tex 2013/11/07  (rcs-revision 1.5)
 ))) (/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/xxcolor.sty
 Package: xxcolor 2003/10/24 ver 0.1
-\XC@nummixins=\count117
-\XC@countmixins=\count118
+\XC@nummixins=\count118
+\XC@countmixins=\count119
 ) (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/atbegshi.sty
 Package: atbegshi 2016/06/09 v1.18 At begin shipout hook (HO)
 ) (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
@@ -307,13 +319,13 @@ Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
 Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
 )
-\@linkdim=\dimen164
-\Hy@linkcounter=\count119
-\Hy@pagecounter=\count120
+\@linkdim=\dimen166
+\Hy@linkcounter=\count120
+\Hy@pagecounter=\count121
  (/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2016/06/24 v6.83q Hyperref: PDFDocEncoding definition (HO)
 )
-\Hy@SavedSpaceFactor=\count121
+\Hy@SavedSpaceFactor=\count122
  (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
 )
@@ -327,16 +339,16 @@ Package hyperref Info: Plain pages OFF on input line 4501.
 Package hyperref Info: Backreferencing OFF on input line 4506.
 Package hyperref Info: Implicit mode OFF; no redefinition of LaTeX internals.
 Package hyperref Info: Bookmarks ON on input line 4735.
-\c@Hy@tempcnt=\count122
+\c@Hy@tempcnt=\count123
  (/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip10
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 5088.
-\XeTeXLinkMargin=\dimen165
-\Fld@menulength=\count123
-\Field@Width=\dimen166
-\Fld@charsize=\dimen167
+\XeTeXLinkMargin=\dimen167
+\Fld@menulength=\count124
+\Field@Width=\dimen168
+\Fld@charsize=\dimen169
 Package hyperref Info: Hyper figures OFF on input line 6342.
 Package hyperref Info: Link nesting OFF on input line 6347.
 Package hyperref Info: Hyper index ON on input line 6350.
@@ -346,7 +358,7 @@ Package hyperref Info: Link coloring with OCG OFF on input line 6367.
 Package hyperref Info: PDF/A mode OFF on input line 6372.
 LaTeX Info: Redefining \ref on input line 6412.
 LaTeX Info: Redefining \pageref on input line 6416.
-\Hy@abspage=\count124
+\Hy@abspage=\count125
 
 
 Package hyperref Message: Stopped early.
@@ -357,8 +369,8 @@ Package hyperref Message: Driver (autodetected): hpdftex.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
 File: hpdftex.def 2016/06/24 v6.83q Hyperref driver for pdfTeX
-\Fld@listcount=\count125
-\c@bookmark@seq@number=\count126
+\Fld@listcount=\count126
+\c@bookmark@seq@number=\count127
  (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
 Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 282.
@@ -366,7 +378,7 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 28
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
-\@emptytoks=\toks26
+\@emptytoks=\toks28
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
@@ -374,140 +386,140 @@ LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 ))) (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbasetranslator.sty (/usr/share/texlive/texmf-dist/tex/latex/beamer/translator/translator.sty
 Package: translator 2010/06/12 ver 1.10
  (/usr/share/texlive/texmf-dist/tex/latex/beamer/translator/translator-language-mappings.tex))) (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbasemisc.sty) (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbasetwoscreens.sty) (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbaseoverlay.sty
-\beamer@argscount=\count127
-\beamer@lastskipcover=\skip44
-\beamer@trivlistdepth=\count128
+\beamer@argscount=\count128
+\beamer@lastskipcover=\skip47
+\beamer@trivlistdepth=\count129
 ) (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbasetitle.sty) (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbasesection.sty
-\c@lecture=\count129
-\c@part=\count130
-\c@section=\count131
-\c@subsection=\count132
-\c@subsubsection=\count133
+\c@lecture=\count130
+\c@part=\count131
+\c@section=\count132
+\c@subsection=\count133
+\c@subsubsection=\count134
 ) (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbaseframe.sty
 \beamer@framebox=\box40
 \beamer@frametitlebox=\box41
 \beamer@zoombox=\box42
-\beamer@zoomcount=\count134
-\beamer@zoomframecount=\count135
-\beamer@frametextheight=\dimen168
-\c@subsectionslide=\count136
-\beamer@frametopskip=\skip45
-\beamer@framebottomskip=\skip46
-\beamer@frametopskipautobreak=\skip47
-\beamer@framebottomskipautobreak=\skip48
-\beamer@envbody=\toks27
-\framewidth=\dimen169
-\c@framenumber=\count137
+\beamer@zoomcount=\count135
+\beamer@zoomframecount=\count136
+\beamer@frametextheight=\dimen170
+\c@subsectionslide=\count137
+\beamer@frametopskip=\skip48
+\beamer@framebottomskip=\skip49
+\beamer@frametopskipautobreak=\skip50
+\beamer@framebottomskipautobreak=\skip51
+\beamer@envbody=\toks29
+\framewidth=\dimen171
+\c@framenumber=\count138
 ) (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbaseverbatim.sty
 \beamer@verbatimfileout=\write4
 ) (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbaseframesize.sty
 \beamer@splitbox=\box43
-\beamer@autobreakcount=\count138
-\beamer@autobreaklastheight=\dimen170
-\beamer@frametitletoks=\toks28
-\beamer@framesubtitletoks=\toks29
+\beamer@autobreakcount=\count139
+\beamer@autobreaklastheight=\dimen172
+\beamer@frametitletoks=\toks30
+\beamer@framesubtitletoks=\toks31
 ) (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbaseframecomponents.sty
 \beamer@footins=\box44
 ) (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbasecolor.sty) (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbasenotes.sty
 \beamer@frameboxcopy=\box45
 ) (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbasetoc.sty) (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbasetemplates.sty
-\beamer@sbttoks=\toks30
+\beamer@sbttoks=\toks32
  (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbaseauxtemplates.sty (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbaseboxes.sty
 \bmb@box=\box46
 \bmb@colorbox=\box47
 \bmb@boxshadow=\box48
 \bmb@boxshadowball=\box49
 \bmb@boxshadowballlarge=\box50
-\bmb@temp=\dimen171
-\bmb@dima=\dimen172
-\bmb@dimb=\dimen173
-\bmb@prevheight=\dimen174
+\bmb@temp=\dimen173
+\bmb@dima=\dimen174
+\bmb@dimb=\dimen175
+\bmb@prevheight=\dimen176
 )
-\beamer@blockheadheight=\dimen175
+\beamer@blockheadheight=\dimen177
 )) (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbaselocalstructure.sty (/usr/share/texlive/texmf-dist/tex/latex/tools/enumerate.sty
 Package: enumerate 2015/07/23 v3.00 enumerate extensions (DPC)
-\@enLab=\toks31
+\@enLab=\toks33
 )
-\c@figure=\count139
-\c@table=\count140
-\abovecaptionskip=\skip49
-\belowcaptionskip=\skip50
+\c@figure=\count140
+\c@table=\count141
+\abovecaptionskip=\skip52
+\belowcaptionskip=\skip53
 ) (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbasenavigation.sty
-\beamer@section@min@dim=\dimen176
+\beamer@section@min@dim=\dimen178
 ) (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbasetheorems.sty (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2016/11/05 v2.16a AMS math features
-\@mathmargin=\skip51
+\@mathmargin=\skip54
 
 For additional information on amsmath, use the `?' option.
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
 Package: amstext 2000/06/29 v2.01 AMS text
  (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
-\@emptytoks=\toks32
-\ex@=\dimen177
+\@emptytoks=\toks34
+\ex@=\dimen179
 )) (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen178
+\pmbraise@=\dimen180
 ) (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2016/03/08 v2.02 operator names
 )
-\inf@bad=\count141
+\inf@bad=\count142
 LaTeX Info: Redefining \frac on input line 213.
-\uproot@=\count142
-\leftroot@=\count143
+\uproot@=\count143
+\leftroot@=\count144
 LaTeX Info: Redefining \overline on input line 375.
-\classnum@=\count144
-\DOTSCASE@=\count145
+\classnum@=\count145
+\DOTSCASE@=\count146
 LaTeX Info: Redefining \ldots on input line 472.
 LaTeX Info: Redefining \dots on input line 475.
 LaTeX Info: Redefining \cdots on input line 596.
 \Mathstrutbox@=\box51
 \strutbox@=\box52
-\big@size=\dimen179
+\big@size=\dimen181
 LaTeX Font Info:    Redeclaring font encoding OML on input line 712.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
-\macc@depth=\count146
-\c@MaxMatrixCols=\count147
+\macc@depth=\count147
+\c@MaxMatrixCols=\count148
 \dotsspace@=\muskip11
-\c@parentequation=\count148
-\dspbrk@lvl=\count149
-\tag@help=\toks33
-\row@=\count150
-\column@=\count151
-\maxfields@=\count152
-\andhelp@=\toks34
-\eqnshift@=\dimen180
-\alignsep@=\dimen181
-\tagshift@=\dimen182
-\tagwidth@=\dimen183
-\totwidth@=\dimen184
-\lineht@=\dimen185
-\@envbody=\toks35
-\multlinegap=\skip52
-\multlinetaggap=\skip53
-\mathdisplay@stack=\toks36
+\c@parentequation=\count149
+\dspbrk@lvl=\count150
+\tag@help=\toks35
+\row@=\count151
+\column@=\count152
+\maxfields@=\count153
+\andhelp@=\toks36
+\eqnshift@=\dimen182
+\alignsep@=\dimen183
+\tagshift@=\dimen184
+\tagwidth@=\dimen185
+\totwidth@=\dimen186
+\lineht@=\dimen187
+\@envbody=\toks37
+\multlinegap=\skip55
+\multlinetaggap=\skip56
+\mathdisplay@stack=\toks38
 LaTeX Info: Redefining \[ on input line 2817.
 LaTeX Info: Redefining \] on input line 2818.
 ) (/usr/share/texlive/texmf-dist/tex/latex/amscls/amsthm.sty
 Package: amsthm 2015/03/04 v2.20.2
-\thm@style=\toks37
-\thm@bodyfont=\toks38
-\thm@headfont=\toks39
-\thm@notefont=\toks40
-\thm@headpunct=\toks41
-\thm@preskip=\skip54
-\thm@postskip=\skip55
-\thm@headsep=\skip56
-\dth@everypar=\toks42
+\thm@style=\toks39
+\thm@bodyfont=\toks40
+\thm@headfont=\toks41
+\thm@notefont=\toks42
+\thm@headpunct=\toks43
+\thm@preskip=\skip57
+\thm@postskip=\skip58
+\thm@headsep=\skip59
+\dth@everypar=\toks44
 )
-\c@theorem=\count153
+\c@theorem=\count154
 ) (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbasethemes.sty)) (/usr/share/texlive/texmf-dist/tex/latex/beamer/themes/theme/beamerthemedefault.sty (/usr/share/texlive/texmf-dist/tex/latex/beamer/themes/font/beamerfontthemedefault.sty) (/usr/share/texlive/texmf-dist/tex/latex/beamer/themes/color/beamercolorthemedefault.sty) (/usr/share/texlive/texmf-dist/tex/latex/beamer/themes/inner/beamerinnerthemedefault.sty
-\beamer@dima=\dimen186
-\beamer@dimb=\dimen187
+\beamer@dima=\dimen188
+\beamer@dimb=\dimen189
 ) (/usr/share/texlive/texmf-dist/tex/latex/beamer/themes/outer/beamerouterthemedefault.sty))) (/usr/share/texlive/texmf-dist/tex/latex/beamer/themes/theme/beamerthemeWarsaw.sty (/usr/share/texlive/texmf-dist/tex/latex/beamer/themes/inner/beamerinnerthemerounded.sty) (/usr/share/texlive/texmf-dist/tex/latex/beamer/themes/outer/beamerouterthemeshadow.sty (/usr/share/texlive/texmf-dist/tex/latex/beamer/themes/outer/beamerouterthemesplit.sty)) (/usr/share/texlive/texmf-dist/tex/latex/beamer/themes/color/beamercolorthemeorchid.sty) (/usr/share/texlive/texmf-dist/tex/latex/beamer/themes/color/beamercolorthemewhale.sty)) (./preamble.tex (/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2015/03/17 v1.2c Input encoding file
-\inpenc@prehook=\toks43
-\inpenc@posthook=\toks44
+\inpenc@prehook=\toks45
+\inpenc@posthook=\toks46
  (/usr/share/texlive/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
 Now handling font encoding OML ...
@@ -821,44 +833,98 @@ Now handling font encoding PD1 ...
    defining Unicode char U+2423 (decimal 9251)
 )) (/usr/share/texlive/texmf-dist/tex/latex/graphics/epsfig.sty
 Package: epsfig 1999/02/16 v1.7a (e)psfig emulation (SPQR)
-\epsfxsize=\dimen188
-\epsfysize=\dimen189
+\epsfxsize=\dimen190
+\epsfysize=\dimen191
 ) (/usr/share/texlive/texmf-dist/tex/latex/textpos/textpos.sty
 Package: textpos 2016/06/07 v1.8
 
 Package: textpos 2016/06/07 1.8, absolute positioning of text on the page
 \TP@textbox=\box53
-\TPHorizModule=\dimen190
-\TPVertModule=\dimen191
-\TP@margin=\dimen192
-\TP@absmargin=\dimen193
+\TPHorizModule=\dimen192
+\TPVertModule=\dimen193
+\TP@margin=\dimen194
+\TP@absmargin=\dimen195
 Grid set 16 x 16 = 22.7622pt x 17.07166pt
-\TPboxrulesize=\dimen194
-\TP@tbargs=\toks45
-\TP@prevdepth=\dimen195
+\TPboxrulesize=\dimen196
+\TP@tbargs=\toks47
+\TP@prevdepth=\dimen197
 ) (/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
-\lst@mode=\count154
+\lst@mode=\count155
 \lst@gtempboxa=\box54
-\lst@token=\toks46
-\lst@length=\count155
-\lst@currlwidth=\dimen196
-\lst@column=\count156
-\lst@pos=\count157
-\lst@lostspace=\dimen197
-\lst@width=\dimen198
-\lst@newlines=\count158
-\lst@lineno=\count159
-\lst@maxwidth=\dimen199
+\lst@token=\toks48
+\lst@length=\count156
+\lst@currlwidth=\dimen198
+\lst@column=\count157
+\lst@pos=\count158
+\lst@lostspace=\dimen199
+\lst@width=\dimen256
+\lst@newlines=\count159
+\lst@lineno=\count160
+\lst@maxwidth=\dimen257
  (/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
-\c@lstnumber=\count160
-\lst@skipnumbers=\count161
+\c@lstnumber=\count161
+\lst@skipnumbers=\count162
 \lst@framebox=\box55
 ) (/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
 File: listings.cfg 2015/06/04 1.6 listings configuration
 ))
 Package: listings 2015/06/04 1.6 (Carsten Heinz)
-) (./newcommands.tex)
+ (/usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty
+Package: multirow 2016/11/25 v2.2 Span multiple rows of a table
+\multirow@colwidth=\skip60
+\multirow@cntb=\count163
+\multirow@dima=\skip61
+\bigstrutjot=\dimen258
+) (/usr/share/texlive/texmf-dist/tex/latex/tools/multicol.sty
+Package: multicol 2016/04/07 v1.8p multicolumn formatting (FMi)
+\c@tracingmulticols=\count164
+\mult@box=\box56
+\multicol@leftmargin=\dimen259
+\c@unbalance=\count165
+\c@collectmore=\count166
+\doublecol@number=\count167
+\multicoltolerance=\count168
+\multicolpretolerance=\count169
+\full@width=\dimen260
+\page@free=\dimen261
+\premulticols=\dimen262
+\postmulticols=\dimen263
+\multicolsep=\skip62
+\multicolbaselineskip=\skip63
+\partial@page=\box57
+\last@line=\box58
+\maxbalancingoverflow=\dimen264
+\mult@rightbox=\box59
+\mult@grightbox=\box60
+\mult@gfirstbox=\box61
+\mult@firstbox=\box62
+\@tempa=\box63
+\@tempa=\box64
+\@tempa=\box65
+\@tempa=\box66
+\@tempa=\box67
+\@tempa=\box68
+\@tempa=\box69
+\@tempa=\box70
+\@tempa=\box71
+\@tempa=\box72
+\@tempa=\box73
+\@tempa=\box74
+\@tempa=\box75
+\@tempa=\box76
+\@tempa=\box77
+\@tempa=\box78
+\@tempa=\box79
+\c@columnbadness=\count170
+\c@finalcolumnbadness=\count171
+\last@try=\dimen265
+\multicolovershoot=\dimen266
+\multicolundershoot=\dimen267
+\mult@nat@firstbox=\box80
+\colbreak@box=\box81
+\mc@col@check@num=\count172
+)) (./newcommands.tex)
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\\' on input line 9.
@@ -921,17 +987,17 @@ LaTeX Font Info:    ... okay on input line 17.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count162
-\scratchdimen=\dimen256
-\scratchbox=\box56
-\nofMPsegments=\count163
-\nofMParguments=\count164
-\everyMPshowfont=\toks47
-\MPscratchCnt=\count165
-\MPscratchDim=\dimen257
-\MPnumerator=\count166
-\makeMPintoPDFobject=\count167
-\everyMPtoPDFconversion=\toks48
+\scratchcounter=\count173
+\scratchdimen=\dimen268
+\scratchbox=\box82
+\nofMPsegments=\count174
+\nofMParguments=\count175
+\everyMPshowfont=\toks49
+\MPscratchCnt=\count176
+\MPscratchDim=\dimen269
+\MPnumerator=\count177
+\makeMPintoPDFobject=\count178
+\everyMPtoPDFconversion=\toks50
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
  (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
@@ -944,14 +1010,14 @@ Package grfext Info: Graphics extension search list:
  (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 )) ABD: EveryShipout initializing macros
-\AtBeginShipoutBox=\box57
+\AtBeginShipoutBox=\box83
 Package hyperref Info: Link coloring OFF on input line 17.
  (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
  (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count168
+\c@section@level=\count179
 )
 LaTeX Info: Redefining \ref on input line 17.
 LaTeX Info: Redefining \pageref on input line 17.
@@ -1016,7 +1082,7 @@ Dictionary: translator-numbers-dictionary, Language: English
 Dictionary: translator-theorem-dictionary, Language: English 
 )
 LaTeX Info: Redefining \includegraphics on input line 17.
-\c@lstlisting=\count169
+\c@lstlisting=\count180
  (./apresentacao.nav)
 LaTeX Font Info:    Try loading font information for U+msa on input line 22.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
@@ -1052,7 +1118,7 @@ LaTeX Font Warning: Font shape `OT1/cmss/m/n' in size <4> not available
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./images/LogoUfscar-eps-converted-to.pdf>] (./apresentacao.toc) [2
 
-] [3
+] (./apresentacao.toc) [3
 
 ] [4
 
@@ -1064,6 +1130,14 @@ LaTeX Font Warning: Font shape `OT1/cmss/m/n' in size <4> not available
 
 ] [8
 
+] [9
+
+] (./apresentacao.toc) [10
+
+] [11
+
+] (./apresentacao.toc) [12
+
 ]
 Package epstopdf Info: Source file: <images/visao-geral-3.eps>
 (epstopdf)                    date: 2016-08-04 09:13:03
@@ -1072,307 +1146,496 @@ Package epstopdf Info: Source file: <images/visao-geral-3.eps>
 (epstopdf)                    date: 2018-07-31 23:48:51
 (epstopdf)                    size: 66255 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/visao-geral-3-eps-converted-to.pdf images/visao-geral-3.eps>
-(epstopdf)             \includegraphics on input line 177.
+(epstopdf)             \includegraphics on input line 190.
 Package epstopdf Info: Output file is already uptodate.
- <images/visao-geral-3-eps-converted-to.pdf, id=111, 1084.05pt x 542.025pt>
+ <images/visao-geral-3-eps-converted-to.pdf, id=153, 1084.05pt x 542.025pt>
 File: images/visao-geral-3-eps-converted-to.pdf Graphic file (type pdf)
  <use images/visao-geral-3-eps-converted-to.pdf>
-Package pdftex.def Info: images/visao-geral-3-eps-converted-to.pdf used on input line 177.
+Package pdftex.def Info: images/visao-geral-3-eps-converted-to.pdf used on input line 190.
 (pdftex.def)             Requested size: 291.35739pt x 145.67877pt.
- [9
+ [13
 
- <./images/visao-geral-3-eps-converted-to.pdf>] <images/estrutura.png, id=118, 891.33pt x 552.0625pt>
-File: images/estrutura.png Graphic file (type png)
- <use images/estrutura.png>
-Package pdftex.def Info: images/estrutura.png used on input line 186.
-(pdftex.def)             Requested size: 291.35739pt x 180.4543pt.
- [10
+ <./images/visao-geral-3-eps-converted-to.pdf>] [14
 
- <./images/estrutura.png>] [11
+] <images/pre-process.png, id=169, 1232.605pt x 403.5075pt>
+File: images/pre-process.png Graphic file (type png)
+ <use images/pre-process.png>
+Package pdftex.def Info: images/pre-process.png used on input line 227.
+(pdftex.def)             Requested size: 327.77359pt x 107.2984pt.
 
-] <images/distribuicao.pdf, id=131, page=1, 624.3325pt x 845.1575pt>
-File: images/distribuicao.pdf Graphic file (type pdf)
- <use images/distribuicao.pdf, page 1>
-Package pdftex.def Info: images/distribuicao.pdf, page1 used on input line 227.
-(pdftex.def)             Requested size: 224.32028pt x 213.13203pt.
-
-Overfull \vbox (10.78967pt too high) detected at line 227
+Overfull \hbox (20.48372pt too wide) in paragraph at lines 227--227
+ [] 
  []
 
-[12
+[15
 
- <./images/distribuicao.pdf>] [13
+ <./images/pre-process.png>] <images/extracao-conhecimento3.pdf, id=177, page=1, 2241.37375pt x 597.23125pt>
+File: images/extracao-conhecimento3.pdf Graphic file (type pdf)
+ <use images/extracao-conhecimento3.pdf, page 1>
+Package pdftex.def Info: images/extracao-conhecimento3.pdf, page1 used on input line 240.
+(pdftex.def)             Requested size: 614.57974pt x 158.80655pt.
 
-] <images/tela-principal-2-1.png, id=210, 1177.39874pt x 737.75626pt>
-File: images/tela-principal-2-1.png Graphic file (type png)
- <use images/tela-principal-2-1.png>
-Package pdftex.def Info: images/tela-principal-2-1.png used on input line 281.
-(pdftex.def)             Requested size: 307.28987pt x 192.54382pt.
- [14
-
- <./images/tela-principal-2-1.png>] [15
-
-]
-./apresentacao.tex:335: Undefined control sequence.
-\beamer@doifinframe ...centering \tiny \subfigure 
-                                                  [Ac]{ \label {fig:a} \incl...
-l.335 \end{frame}
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-<images/cds/Acuracia.png, id=223, 433.62pt x 126.4725pt>
-File: images/cds/Acuracia.png Graphic file (type png)
- <use images/cds/Acuracia.png>
-Package pdftex.def Info: images/cds/Acuracia.png used on input line 335.
-(pdftex.def)             Requested size: 133.72795pt x 39.00343pt.
-
-./apresentacao.tex:335: Undefined control sequence.
-\beamer@doifinframe ...Acuracia.png} } \subfigure 
-                                                  [F^1]{ \label {fig:b} \inc...
-l.335 \end{frame}
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./apresentacao.tex:335: Missing $ inserted.
-<inserted text> 
-                $
-l.335 \end{frame}
-                 
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-<images/cds/F1.png, id=224, 433.62pt x 126.4725pt>
-File: images/cds/F1.png Graphic file (type png)
- <use images/cds/F1.png>
-Package pdftex.def Info: images/cds/F1.png used on input line 335.
-(pdftex.def)             Requested size: 133.72795pt x 39.00343pt.
-
-
-./apresentacao.tex:335: LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.335 \end{frame}
-                 
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-./apresentacao.tex:335: Missing $ inserted.
-<inserted text> 
-                $
-l.335 \end{frame}
-                 
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-./apresentacao.tex:335: Missing } inserted.
-<inserted text> 
-                }
-l.335 \end{frame}
-                 
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-./apresentacao.tex:335: Missing } inserted.
-<inserted text> 
-                }
-l.335 \end{frame}
-                 
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-./apresentacao.tex:335: Extra }, or forgotten \endgroup.
-\par ...m \@noitemerr {\@@par }\fi \else {\@@par }
-                                                  \fi 
-l.335 \end{frame}
-                 
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-./apresentacao.tex:335: Extra }, or forgotten \endgroup.
-<recently read> }
-                 
-l.335 \end{frame}
-                 
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-./apresentacao.tex:335: Undefined control sequence.
-\beamer@doifinframe ...ds/F1.png} \\ } \subfigure 
-                                                  [P_k]{ \label {fig:c} \inc...
-l.335 \end{frame}
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./apresentacao.tex:335: Missing $ inserted.
-<inserted text> 
-                $
-l.335 \end{frame}
-                 
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-<images/cds/Pk.png, id=225, 433.62pt x 126.4725pt>
-File: images/cds/Pk.png Graphic file (type png)
- <use images/cds/Pk.png>
-Package pdftex.def Info: images/cds/Pk.png used on input line 335.
-(pdftex.def)             Requested size: 133.72795pt x 39.00343pt.
-
-./apresentacao.tex:335: Undefined control sequence.
-\beamer@doifinframe ...s/cds/Pk.png} } \subfigure 
-                                                  [WD]{ \label {fig:d} \incl...
-l.335 \end{frame}
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-<images/cds/WD.png, id=226, 433.62pt x 126.4725pt>
-File: images/cds/WD.png Graphic file (type png)
- <use images/cds/WD.png>
-Package pdftex.def Info: images/cds/WD.png used on input line 335.
-(pdftex.def)             Requested size: 133.72795pt x 39.00343pt.
-
-./apresentacao.tex:335: Missing $ inserted.
-<inserted text> 
-                $
-l.335 \end{frame}
-                 
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-./apresentacao.tex:335: Missing } inserted.
-<inserted text> 
-                }
-l.335 \end{frame}
-                 
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-./apresentacao.tex:335: Extra }, or forgotten \endgroup.
-\par ...m \@noitemerr {\@@par }\fi \else {\@@par }
-                                                  \fi 
-l.335 \end{frame}
-                 
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
+Overfull \hbox (307.28987pt too wide) in paragraph at lines 240--240
+ [] 
+ []
 
 [16
 
- <./images/cds/Acuracia.png> <./images/cds/F1.png> <./images/cds/Pk.png> <./images/cds/WD.png>] [17
+ <./images/extracao-conhecimento3.pdf>] <images/estrutura.png, id=215, 741.77126pt x 545.03625pt>
+File: images/estrutura.png Graphic file (type png)
+ <use images/estrutura.png>
+Package pdftex.def Info: images/estrutura.png used on input line 249.
+(pdftex.def)             Requested size: 291.35739pt x 214.08522pt.
+ [17
 
-] <images/figuras-experimento/Q1-KMeans.png, id=247, 357.335pt x 287.0725pt>
-File: images/figuras-experimento/Q1-KMeans.png Graphic file (type png)
- <use images/figuras-experimento/Q1-KMeans.png>
-Package pdftex.def Info: images/figuras-experimento/Q1-KMeans.png used on input line 377.
-(pdftex.def)             Requested size: 95.25911pt x 76.5294pt.
- <images/figuras-experimento/Q1-LDA.png, id=248, 358.33875pt x 287.0725pt>
-File: images/figuras-experimento/Q1-LDA.png Graphic file (type png)
- <use images/figuras-experimento/Q1-LDA.png>
-Package pdftex.def Info: images/figuras-experimento/Q1-LDA.png used on input line 377.
-(pdftex.def)             Requested size: 95.25911pt x 76.31038pt.
- <images/figuras-experimento/Q1-PLSA.png, id=249, 357.335pt x 286.06876pt>
-File: images/figuras-experimento/Q1-PLSA.png Graphic file (type png)
- <use images/figuras-experimento/Q1-PLSA.png>
-Package pdftex.def Info: images/figuras-experimento/Q1-PLSA.png used on input line 377.
-(pdftex.def)             Requested size: 95.25911pt x 76.26181pt.
- <images/likert.png, id=250, 943.525pt x 60.225pt>
-File: images/likert.png Graphic file (type png)
- <use images/likert.png>
-Package pdftex.def Info: images/likert.png used on input line 377.
-(pdftex.def)             Requested size: 276.559pt x 17.65225pt.
- [18
+ <./images/estrutura.png>] [18
 
- <./images/figuras-experimento/Q1-KMeans.png (PNG copy)> <./images/figuras-experimento/Q1-LDA.png (PNG copy)> <./images/figuras-experimento/Q1-PLSA.png (PNG copy)> <./images/likert.png>] <images/figuras-experimento/Q2-KMeans.png, id=258, 357.335pt x 290.08376pt>
-File: images/figuras-experimento/Q2-KMeans.png Graphic file (type png)
- <use images/figuras-experimento/Q2-KMeans.png>
-Package pdftex.def Info: images/figuras-experimento/Q2-KMeans.png used on input line 397.
-(pdftex.def)             Requested size: 95.25911pt x 77.33215pt.
- <images/figuras-experimento/Q2-LDA.png, id=259, 357.335pt x 290.08376pt>
-File: images/figuras-experimento/Q2-LDA.png Graphic file (type png)
- <use images/figuras-experimento/Q2-LDA.png>
-Package pdftex.def Info: images/figuras-experimento/Q2-LDA.png used on input line 397.
-(pdftex.def)             Requested size: 95.25911pt x 77.33215pt.
- <images/figuras-experimento/Q2-PLSA.png, id=260, 357.335pt x 290.08376pt>
-File: images/figuras-experimento/Q2-PLSA.png Graphic file (type png)
- <use images/figuras-experimento/Q2-PLSA.png>
-Package pdftex.def Info: images/figuras-experimento/Q2-PLSA.png used on input line 397.
-(pdftex.def)             Requested size: 95.25911pt x 77.33215pt.
-File: images/likert.png Graphic file (type png)
- <use images/likert.png>
-Package pdftex.def Info: images/likert.png used on input line 397.
-(pdftex.def)             Requested size: 276.559pt x 17.65225pt.
+] <images/distribuicao.pdf, id=227, page=1, 624.3325pt x 845.1575pt>
+File: images/distribuicao.pdf Graphic file (type pdf)
+ <use images/distribuicao.pdf, page 1>
+Package pdftex.def Info: images/distribuicao.pdf, page1 used on input line 273.
+(pdftex.def)             Requested size: 224.32028pt x 213.13203pt.
  [19
 
- <./images/figuras-experimento/Q2-KMeans.png (PNG copy)> <./images/figuras-experimento/Q2-LDA.png (PNG copy)> <./images/figuras-experimento/Q2-PLSA.png (PNG copy)>] <images/figuras-experimento/Q3-Seg.png, id=268, 558.085pt x 311.1625pt>
-File: images/figuras-experimento/Q3-Seg.png Graphic file (type png)
- <use images/figuras-experimento/Q3-Seg.png>
-Package pdftex.def Info: images/figuras-experimento/Q3-Seg.png used on input line 417.
-(pdftex.def)             Requested size: 147.49782pt x 82.23451pt.
- <images/likert-1.png, id=269, 953.5625pt x 70.2625pt>
-File: images/likert-1.png Graphic file (type png)
- <use images/likert-1.png>
-Package pdftex.def Info: images/likert-1.png used on input line 417.
-(pdftex.def)             Requested size: 276.559pt x 20.37773pt.
- [20
+ <./images/distribuicao.pdf>] [20
 
- <./images/figuras-experimento/Q3-Seg.png> <./images/likert-1.png>] <images/figuras-experimento/Q4-Seg.png, id=276, 559.08875pt x 313.17pt>
-File: images/figuras-experimento/Q4-Seg.png Graphic file (type png)
- <use images/figuras-experimento/Q4-Seg.png>
-Package pdftex.def Info: images/figuras-experimento/Q4-Seg.png used on input line 438.
-(pdftex.def)             Requested size: 147.49782pt x 82.61691pt.
-File: images/likert-1.png Graphic file (type png)
- <use images/likert-1.png>
-Package pdftex.def Info: images/likert-1.png used on input line 438.
-(pdftex.def)             Requested size: 276.559pt x 20.37773pt.
+] <images/tela-principal-2-1.png, id=305, 1177.39874pt x 737.75626pt>
+File: images/tela-principal-2-1.png Graphic file (type png)
+ <use images/tela-principal-2-1.png>
+Package pdftex.def Info: images/tela-principal-2-1.png used on input line 326.
+(pdftex.def)             Requested size: 307.28987pt x 192.54382pt.
  [21
 
- <./images/figuras-experimento/Q4-Seg.png>] [22
+ <./images/tela-principal-2-1.png>] [22
 
-] [23
+] (./apresentacao.toc) [23
 
 ] [24
 
 ] [25
 
-] [26
+] <images/interface-TST.png, id=345, 1371.1225pt x 743.77875pt>
+File: images/interface-TST.png Graphic file (type png)
+ <use images/interface-TST.png>
+Package pdftex.def Info: images/interface-TST.png used on input line 429.
+(pdftex.def)             Requested size: 307.28987pt x 166.68474pt.
+ [26
 
-] [27
+ <./images/interface-TST.png>] [27
+
+] <images/segmentacao-referencia.pdf, id=358, page=1, 844.15375pt x 597.23125pt>
+File: images/segmentacao-referencia.pdf Graphic file (type pdf)
+ <use images/segmentacao-referencia.pdf, page 1>
+Package pdftex.def Info: images/segmentacao-referencia.pdf, page1 used on input line 489.
+(pdftex.def)             Requested size: 307.28987pt x 91.59213pt.
+ [28
+
+ <./images/segmentacao-referencia.pdf
+
+pdfTeX warning: pdflatex (file ./images/segmentacao-referencia.pdf): PDF inclusion: invalid other resource which is no dict (key 'ProcSets', type <array>); ignored.
+>]
+Overfull \hbox (15.23044pt too wide) in paragraph at lines 533--533
+ [] 
+ []
+
+[29
+
+] (./tabela-resumo.tex) [30
+
+] <images/graficos/analiseNSegRate-C99.png, id=516, 602.25pt x 372.39125pt>
+File: images/graficos/analiseNSegRate-C99.png Graphic file (type png)
+ <use images/graficos/analiseNSegRate-C99.png>
+Package pdftex.def Info: images/graficos/analiseNSegRate-C99.png used on input line 570.
+(pdftex.def)             Requested size: 147.49782pt x 91.1997pt.
+ <images/graficos/analiseNSegRate-MinCut.png, id=517, 602.25pt x 372.39125pt>
+File: images/graficos/analiseNSegRate-MinCut.png Graphic file (type png)
+ <use images/graficos/analiseNSegRate-MinCut.png>
+Package pdftex.def Info: images/graficos/analiseNSegRate-MinCut.png used on input line 570.
+(pdftex.def)             Requested size: 147.49782pt x 91.1997pt.
+ <images/graficos/analiseNSegRate-Bayes.png, id=518, 602.25pt x 372.39125pt>
+File: images/graficos/analiseNSegRate-Bayes.png Graphic file (type png)
+ <use images/graficos/analiseNSegRate-Bayes.png>
+Package pdftex.def Info: images/graficos/analiseNSegRate-Bayes.png used on input line 570.
+(pdftex.def)             Requested size: 147.49782pt x 91.1997pt.
+ <images/graficos/analiseNSegRate-UISeg.png, id=519, 602.25pt x 372.39125pt>
+File: images/graficos/analiseNSegRate-UISeg.png Graphic file (type png)
+ <use images/graficos/analiseNSegRate-UISeg.png>
+Package pdftex.def Info: images/graficos/analiseNSegRate-UISeg.png used on input line 570.
+(pdftex.def)             Requested size: 147.49782pt x 91.1997pt.
+ [31
+
+ <./images/graficos/analiseNSegRate-C99.png (PNG copy)> <./images/graficos/analiseNSegRate-MinCut.png (PNG copy)> <./images/graficos/analiseNSegRate-Bayes.png (PNG copy)> <./images/graficos/analiseNSegRate-UISeg.png (PNG copy)>] [32
+
+]
+./apresentacao.tex:631: Undefined control sequence.
+\beamer@doifinframe ...centering \tiny \subfigure 
+                                                  [Ac]{ \label {fig:a} \incl...
+l.631 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+<images/cds/Acuracia.png, id=531, 433.62pt x 126.4725pt>
+File: images/cds/Acuracia.png Graphic file (type png)
+ <use images/cds/Acuracia.png>
+Package pdftex.def Info: images/cds/Acuracia.png used on input line 631.
+(pdftex.def)             Requested size: 133.72795pt x 39.00343pt.
+
+./apresentacao.tex:631: Undefined control sequence.
+\beamer@doifinframe ...Acuracia.png} } \subfigure 
+                                                  [F^1]{ \label {fig:b} \inc...
+l.631 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./apresentacao.tex:631: Missing $ inserted.
+<inserted text> 
+                $
+l.631 \end{frame}
+                 
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+<images/cds/F1.png, id=532, 433.62pt x 126.4725pt>
+File: images/cds/F1.png Graphic file (type png)
+ <use images/cds/F1.png>
+Package pdftex.def Info: images/cds/F1.png used on input line 631.
+(pdftex.def)             Requested size: 133.72795pt x 39.00343pt.
+
+
+./apresentacao.tex:631: LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.631 \end{frame}
+                 
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+./apresentacao.tex:631: Missing $ inserted.
+<inserted text> 
+                $
+l.631 \end{frame}
+                 
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./apresentacao.tex:631: Missing } inserted.
+<inserted text> 
+                }
+l.631 \end{frame}
+                 
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./apresentacao.tex:631: Missing } inserted.
+<inserted text> 
+                }
+l.631 \end{frame}
+                 
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./apresentacao.tex:631: Extra }, or forgotten \endgroup.
+\par ...m \@noitemerr {\@@par }\fi \else {\@@par }
+                                                  \fi 
+l.631 \end{frame}
+                 
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./apresentacao.tex:631: Extra }, or forgotten \endgroup.
+<recently read> }
+                 
+l.631 \end{frame}
+                 
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./apresentacao.tex:631: Undefined control sequence.
+\beamer@doifinframe ...ds/F1.png} \\ } \subfigure 
+                                                  [P_k]{ \label {fig:c} \inc...
+l.631 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./apresentacao.tex:631: Missing $ inserted.
+<inserted text> 
+                $
+l.631 \end{frame}
+                 
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+<images/cds/Pk.png, id=533, 433.62pt x 126.4725pt>
+File: images/cds/Pk.png Graphic file (type png)
+ <use images/cds/Pk.png>
+Package pdftex.def Info: images/cds/Pk.png used on input line 631.
+(pdftex.def)             Requested size: 133.72795pt x 39.00343pt.
+
+./apresentacao.tex:631: Undefined control sequence.
+\beamer@doifinframe ...s/cds/Pk.png} } \subfigure 
+                                                  [WD]{ \label {fig:d} \incl...
+l.631 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+<images/cds/WD.png, id=534, 433.62pt x 126.4725pt>
+File: images/cds/WD.png Graphic file (type png)
+ <use images/cds/WD.png>
+Package pdftex.def Info: images/cds/WD.png used on input line 631.
+(pdftex.def)             Requested size: 133.72795pt x 39.00343pt.
+
+./apresentacao.tex:631: Missing $ inserted.
+<inserted text> 
+                $
+l.631 \end{frame}
+                 
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./apresentacao.tex:631: Missing } inserted.
+<inserted text> 
+                }
+l.631 \end{frame}
+                 
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./apresentacao.tex:631: Extra }, or forgotten \endgroup.
+\par ...m \@noitemerr {\@@par }\fi \else {\@@par }
+                                                  \fi 
+l.631 \end{frame}
+                 
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+[33
+
+ <./images/cds/Acuracia.png> <./images/cds/F1.png> <./images/cds/Pk.png> <./images/cds/WD.png>] [34
+
+] [35
+
+] [36
+
+] [37
+
+] <images/figuras-experimento/Q1-KMeans.png, id=570, 357.335pt x 287.0725pt>
+File: images/figuras-experimento/Q1-KMeans.png Graphic file (type png)
+ <use images/figuras-experimento/Q1-KMeans.png>
+Package pdftex.def Info: images/figuras-experimento/Q1-KMeans.png used on input line 757.
+(pdftex.def)             Requested size: 95.25911pt x 76.5294pt.
+ <images/figuras-experimento/Q1-LDA.png, id=571, 358.33875pt x 287.0725pt>
+File: images/figuras-experimento/Q1-LDA.png Graphic file (type png)
+ <use images/figuras-experimento/Q1-LDA.png>
+Package pdftex.def Info: images/figuras-experimento/Q1-LDA.png used on input line 757.
+(pdftex.def)             Requested size: 95.25911pt x 76.31038pt.
+ <images/figuras-experimento/Q1-PLSA.png, id=572, 357.335pt x 286.06876pt>
+File: images/figuras-experimento/Q1-PLSA.png Graphic file (type png)
+ <use images/figuras-experimento/Q1-PLSA.png>
+Package pdftex.def Info: images/figuras-experimento/Q1-PLSA.png used on input line 757.
+(pdftex.def)             Requested size: 95.25911pt x 76.26181pt.
+ <images/likert.png, id=573, 943.525pt x 60.225pt>
+File: images/likert.png Graphic file (type png)
+ <use images/likert.png>
+Package pdftex.def Info: images/likert.png used on input line 757.
+(pdftex.def)             Requested size: 276.559pt x 17.65225pt.
+ [38
+
+ <./images/figuras-experimento/Q1-KMeans.png (PNG copy)> <./images/figuras-experimento/Q1-LDA.png (PNG copy)> <./images/figuras-experimento/Q1-PLSA.png (PNG copy)> <./images/likert.png>] <images/figuras-experimento/Q2-KMeans.png, id=581, 357.335pt x 290.08376pt>
+File: images/figuras-experimento/Q2-KMeans.png Graphic file (type png)
+ <use images/figuras-experimento/Q2-KMeans.png>
+Package pdftex.def Info: images/figuras-experimento/Q2-KMeans.png used on input line 777.
+(pdftex.def)             Requested size: 95.25911pt x 77.33215pt.
+ <images/figuras-experimento/Q2-LDA.png, id=582, 357.335pt x 290.08376pt>
+File: images/figuras-experimento/Q2-LDA.png Graphic file (type png)
+ <use images/figuras-experimento/Q2-LDA.png>
+Package pdftex.def Info: images/figuras-experimento/Q2-LDA.png used on input line 777.
+(pdftex.def)             Requested size: 95.25911pt x 77.33215pt.
+ <images/figuras-experimento/Q2-PLSA.png, id=583, 357.335pt x 290.08376pt>
+File: images/figuras-experimento/Q2-PLSA.png Graphic file (type png)
+ <use images/figuras-experimento/Q2-PLSA.png>
+Package pdftex.def Info: images/figuras-experimento/Q2-PLSA.png used on input line 777.
+(pdftex.def)             Requested size: 95.25911pt x 77.33215pt.
+File: images/likert.png Graphic file (type png)
+ <use images/likert.png>
+Package pdftex.def Info: images/likert.png used on input line 777.
+(pdftex.def)             Requested size: 276.559pt x 17.65225pt.
+ [39
+
+ <./images/figuras-experimento/Q2-KMeans.png (PNG copy)> <./images/figuras-experimento/Q2-LDA.png (PNG copy)> <./images/figuras-experimento/Q2-PLSA.png (PNG copy)>] <images/figuras-experimento/Q3-Seg.png, id=590, 558.085pt x 311.1625pt>
+File: images/figuras-experimento/Q3-Seg.png Graphic file (type png)
+ <use images/figuras-experimento/Q3-Seg.png>
+Package pdftex.def Info: images/figuras-experimento/Q3-Seg.png used on input line 796.
+(pdftex.def)             Requested size: 147.49782pt x 82.23451pt.
+ <images/likert-1.png, id=591, 953.5625pt x 70.2625pt>
+File: images/likert-1.png Graphic file (type png)
+ <use images/likert-1.png>
+Package pdftex.def Info: images/likert-1.png used on input line 796.
+(pdftex.def)             Requested size: 276.559pt x 20.37773pt.
+ [40
+
+ <./images/figuras-experimento/Q3-Seg.png> <./images/likert-1.png>] <images/figuras-experimento/Q4-Seg.png, id=598, 559.08875pt x 313.17pt>
+File: images/figuras-experimento/Q4-Seg.png Graphic file (type png)
+ <use images/figuras-experimento/Q4-Seg.png>
+Package pdftex.def Info: images/figuras-experimento/Q4-Seg.png used on input line 816.
+(pdftex.def)             Requested size: 147.49782pt x 82.61691pt.
+File: images/likert-1.png Graphic file (type png)
+ <use images/likert-1.png>
+Package pdftex.def Info: images/likert-1.png used on input line 816.
+(pdftex.def)             Requested size: 276.559pt x 20.37773pt.
+ [41
+
+ <./images/figuras-experimento/Q4-Seg.png>] <images/figuras-experimento/C1-Q1-KMeans.png, id=605, 357.335pt x 287.0725pt>
+File: images/figuras-experimento/C1-Q1-KMeans.png Graphic file (type png)
+ <use images/figuras-experimento/C1-Q1-KMeans.png>
+Package pdftex.def Info: images/figuras-experimento/C1-Q1-KMeans.png used on input line 846.
+(pdftex.def)             Requested size: 95.25911pt x 76.5294pt.
+ <images/figuras-experimento/C1-Q1-LDA.png, id=606, 358.33875pt x 287.0725pt>
+File: images/figuras-experimento/C1-Q1-LDA.png Graphic file (type png)
+
+<use images/figuras-experimento/C1-Q1-LDA.png>
+Package pdftex.def Info: images/figuras-experimento/C1-Q1-LDA.png used on input line 846.
+(pdftex.def)             Requested size: 95.25911pt x 76.31038pt.
+ <images/figuras-experimento/C1-Q1-PLSA.png, id=607, 357.335pt x 286.06876pt>
+File: images/figuras-experimento/C1-Q1-PLSA.png Graphic file (type png)
+ <use images/figuras-experimento/C1-Q1-PLSA.png>
+Package pdftex.def Info: images/figuras-experimento/C1-Q1-PLSA.png used on input line 846.
+(pdftex.def)             Requested size: 95.25911pt x 76.26181pt.
+ <images/figuras-experimento/C2-Q1-KMeans.png, id=608, 357.335pt x 287.0725pt>
+File: images/figuras-experimento/C2-Q1-KMeans.png Graphic file (type png)
+ <use images/figuras-experimento/C2-Q1-KMeans.png>
+Package pdftex.def Info: images/figuras-experimento/C2-Q1-KMeans.png used on input line 846.
+(pdftex.def)             Requested size: 95.25911pt x 76.5294pt.
+ <images/figuras-experimento/C2-Q1-LDA.png, id=609, 358.33875pt x 287.0725pt>
+File: images/figuras-experimento/C2-Q1-LDA.png Graphic file (type png)
+ <use images/figuras-experimento/C2-Q1-LDA.png>
+Package pdftex.def Info: images/figuras-experimento/C2-Q1-LDA.png used on input line 846.
+(pdftex.def)             Requested size: 95.25911pt x 76.31038pt.
+ <images/figuras-experimento/C2-Q1-PLSA.png, id=610, 357.335pt x 286.06876pt>
+File: images/figuras-experimento/C2-Q1-PLSA.png Graphic file (type png)
+ <use images/figuras-experimento/C2-Q1-PLSA.png>
+Package pdftex.def Info: images/figuras-experimento/C2-Q1-PLSA.png used on input line 846.
+(pdftex.def)             Requested size: 95.25911pt x 76.26181pt.
+ [42
+
+ <./images/figuras-experimento/C1-Q1-KMeans.png (PNG copy)> <./images/figuras-experimento/C1-Q1-LDA.png (PNG copy)> <./images/figuras-experimento/C1-Q1-PLSA.png (PNG copy)> <./images/figuras-experimento/C2-Q1-KMeans.png (PNG copy)> <./images/figuras-experimento/C2-Q1-LDA.png (PNG copy)> <./images/figuras-experimento/C2-Q1-PLSA.png (PNG copy)>] <images/figuras-experimento/C1-Q2-KMeans.png, id=616, 357.335pt x 290.08376pt>
+File: images/figuras-experimento/C1-Q2-KMeans.png Graphic file (type png)
+ <use images/figuras-experimento/C1-Q2-KMeans.png>
+Package pdftex.def Info: images/figuras-experimento/C1-Q2-KMeans.png used on input line 876.
+(pdftex.def)             Requested size: 95.25911pt x 77.33215pt.
+ <images/figuras-experimento/C1-Q2-LDA.png, id=617, 357.335pt x 290.08376pt>
+File: images/figuras-experimento/C1-Q2-LDA.png Graphic file (type png)
+ <use images/figuras-experimento/C1-Q2-LDA.png>
+Package pdftex.def Info: images/figuras-experimento/C1-Q2-LDA.png used on input line 876.
+(pdftex.def)             Requested size: 95.25911pt x 77.33215pt.
+ <images/figuras-experimento/C1-Q2-PLSA.png, id=618, 357.335pt x 290.08376pt>
+File: images/figuras-experimento/C1-Q2-PLSA.png Graphic file (type png)
+ <use images/figuras-experimento/C1-Q2-PLSA.png>
+Package pdftex.def Info: images/figuras-experimento/C1-Q2-PLSA.png used on input line 876.
+(pdftex.def)             Requested size: 95.25911pt x 77.33215pt.
+ <images/figuras-experimento/C2-Q2-KMeans.png, id=619, 357.335pt x 290.08376pt>
+File: images/figuras-experimento/C2-Q2-KMeans.png Graphic file (type png)
+ <use images/figuras-experimento/C2-Q2-KMeans.png>
+Package pdftex.def Info: images/figuras-experimento/C2-Q2-KMeans.png used on input line 876.
+(pdftex.def)             Requested size: 95.25911pt x 77.33215pt.
+ <images/figuras-experimento/C2-Q2-LDA.png, id=620, 357.335pt x 290.08376pt>
+File: images/figuras-experimento/C2-Q2-LDA.png Graphic file (type png)
+ <use images/figuras-experimento/C2-Q2-LDA.png>
+Package pdftex.def Info: images/figuras-experimento/C2-Q2-LDA.png used on input line 876.
+(pdftex.def)             Requested size: 95.25911pt x 77.33215pt.
+ <images/figuras-experimento/C2-Q2-PLSA.png, id=621, 357.335pt x 290.08376pt>
+File: images/figuras-experimento/C2-Q2-PLSA.png Graphic file (type png)
+ <use images/figuras-experimento/C2-Q2-PLSA.png>
+Package pdftex.def Info: images/figuras-experimento/C2-Q2-PLSA.png used on input line 876.
+(pdftex.def)             Requested size: 95.25911pt x 77.33215pt.
+ [43
+
+ <./images/figuras-experimento/C1-Q2-KMeans.png (PNG copy)> <./images/figuras-experimento/C1-Q2-LDA.png (PNG copy)> <./images/figuras-experimento/C1-Q2-PLSA.png (PNG copy)> <./images/figuras-experimento/C2-Q2-KMeans.png (PNG copy)> <./images/figuras-experimento/C2-Q2-LDA.png (PNG copy)> <./images/figuras-experimento/C2-Q2-PLSA.png (PNG copy)>] <images/figuras-experimento/t1q3.png, id=629, 558.085pt x 311.1625pt>
+File: images/figuras-experimento/t1q3.png Graphic file (type png)
+ <use images/figuras-experimento/t1q3.png>
+Package pdftex.def Info: images/figuras-experimento/t1q3.png used on input line 900.
+(pdftex.def)             Requested size: 95.25911pt x 53.11058pt.
+ <images/figuras-experimento/t2q3.png, id=630, 558.085pt x 311.1625pt>
+File: images/figuras-experimento/t2q3.png Graphic file (type png)
+ <use images/figuras-experimento/t2q3.png>
+Package pdftex.def Info: images/figuras-experimento/t2q3.png used on input line 900.
+(pdftex.def)             Requested size: 95.25911pt x 53.11058pt.
+ <images/figuras-experimento/t3q3.png, id=631, 558.085pt x 311.1625pt>
+File: images/figuras-experimento/t3q3.png Graphic file (type png)
+ <use images/figuras-experimento/t3q3.png>
+Package pdftex.def Info: images/figuras-experimento/t3q3.png used on input line 900.
+(pdftex.def)             Requested size: 95.25911pt x 53.11058pt.
+ [44
+
+ <./images/figuras-experimento/t1q3.png (PNG copy)> <./images/figuras-experimento/t2q3.png (PNG copy)> <./images/figuras-experimento/t3q3.png (PNG copy)>] <images/figuras-experimento/t1q4.png, id=637, 559.08875pt x 313.17pt>
+File: images/figuras-experimento/t1q4.png Graphic file (type png)
+ <use images/figuras-experimento/t1q4.png>
+Package pdftex.def Info: images/figuras-experimento/t1q4.png used on input line 921.
+(pdftex.def)             Requested size: 95.25911pt x 53.35765pt.
+ <images/figuras-experimento/t2q4.png, id=638, 559.08875pt x 313.17pt>
+File: images/figuras-experimento/t2q4.png Graphic file (type png)
+ <use images/figuras-experimento/t2q4.png>
+Package pdftex.def Info: images/figuras-experimento/t2q4.png used on input line 921.
+(pdftex.def)             Requested size: 95.25911pt x 53.35765pt.
+ <images/figuras-experimento/t3q4.png, id=639, 559.08875pt x 313.17pt>
+File: images/figuras-experimento/t3q4.png Graphic file (type png)
+ <use images/figuras-experimento/t3q4.png>
+Package pdftex.def Info: images/figuras-experimento/t3q4.png used on input line 921.
+(pdftex.def)             Requested size: 95.25911pt x 53.35765pt.
+ [45
+
+ <./images/figuras-experimento/t1q4.png (PNG copy)> <./images/figuras-experimento/t2q4.png (PNG copy)> <./images/figuras-experimento/t3q4.png (PNG copy)>] (./apresentacao.toc) [46
+
+] [47
+
+] [48
+
+] [49
+
+] [50
+
+] (./apresentacao.toc) [51
+
+] [52
+
+] [53
 
 ]
 \tf@nav=\write6
@@ -1384,13 +1647,13 @@ Package pdftex.def Info: images/likert-1.png used on input line 438.
 \tf@snm=\write8
 \openout8 = `apresentacao.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 558.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 558.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1089.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1089.
  (./apresentacao.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 558.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 558.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1089.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1089.
 Package rerunfilecheck Info: File `apresentacao.out' has not changed.
-(rerunfilecheck)             Checksum: 2861F96B0463D4429334211E62E1C16C;303.
+(rerunfilecheck)             Checksum: 14D61D58B96F5C2454EFA7946CFA4F63;306.
 
 
 LaTeX Font Warning: Size substitutions with differences
@@ -1398,18 +1661,18 @@ LaTeX Font Warning: Size substitutions with differences
 
  ) 
 Here is how much of TeX's memory you used:
- 19101 strings out of 494884
- 354640 string characters out of 6179236
- 426095 words of memory out of 5000000
- 21880 multiletter control sequences out of 15000+600000
- 13926 words of font info for 52 fonts, out of 8000000 for 9000
+ 19604 strings out of 494884
+ 365015 string characters out of 6179236
+ 453895 words of memory out of 5000000
+ 22277 multiletter control sequences out of 15000+600000
+ 14514 words of font info for 54 fonts, out of 8000000 for 9000
  38 hyphenation exceptions out of 8191
- 48i,11n,60p,795b,664s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb>
-Output written on apresentacao.pdf (27 pages, 736335 bytes).
+ 55i,11n,65p,795b,794s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb>
+Output written on apresentacao.pdf (53 pages, 1224689 bytes).
 PDF statistics:
- 359 PDF objects out of 1000 (max. 8388607)
- 245 compressed objects within 3 object streams
- 67 named destinations out of 1000 (max. 500000)
- 252 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 758 PDF objects out of 1000 (max. 8388607)
+ 567 compressed objects within 6 object streams
+ 120 named destinations out of 1000 (max. 500000)
+ 406 words of extra memory for PDF output out of 10000 (max. 10000000)
 

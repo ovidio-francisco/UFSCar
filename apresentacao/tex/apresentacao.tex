@@ -1,4 +1,4 @@
-\documentclass[xcolor=dvipsnames]{beamer}
+\documentclass[xcolor=table]{beamer}
 \usetheme{Warsaw}
 
 \input{preamble}
@@ -91,16 +91,24 @@ Essa tarefa consiste em 2 passos principais:
 
 \begin{frame}{Contexto}
 
-Os algoritmos de segmentação textual são utilizados para dividir um texto em segmentos contendo um assunto completo e relativamente independente.
+% Os algoritmos de segmentação textual são utilizados para dividir um texto em segmentos contendo um assunto completo e relativamente independente.
 
 % \addimage{images/pre-process.png}{.9}{}
 
 \nblock{}{
+Algoritmos de Segmentação Textual:
+
 \begin{itemize}
-	\item Úteis em aplicações com textos sem indicações de quebras de assunto, como transcrições de áudio, e diálogos em chats.
+	\item Divide um texto em trechos com um único assunto completo;
+	\item Úteis em aplicações com textos sem indicações de quebras de assunto, como transcrições de áudio, e diálogos em chats;
+	\item Podem ser uma etapa de pré-processamento para outras aplicações;
 	\item Não dão indicações sobre o conteúdo dos segmentos.
 \end{itemize}
 } 
+
+
+% \addimage{images/pre-process.png}{.8}{}
+
 
 \end{frame}
 
@@ -112,24 +120,36 @@ Os algoritmos de segmentação textual são utilizados para dividir um texto em 
 
 % \nblock{}{
 	% As técnicas de Extração de Tópicos são empregadas na organização de documentos.
-	Os modelos de Extração de Tópicos podem estimar o assunto de cada documento de uma coleção.
-	
-
+	% Os modelos de Extração de Tópicos podem estimar o assunto de cada documento de uma coleção.
 % } 
 
-
-
 \nblock{}{
-
+Modelos de Extração de Tópicos:
 \begin{itemize}
-	\item Agrupam documentos por tópico.
-	\item Identificam palavras para descrever o tópico do documento.
+	\item Estimam o assunto de cada documento de uma coleção;
+	\item Agrupam documentos por tópico;
+	\item Identificam palavras para descrever os tópicos;
 	\item Incorporam conhecimento de domínio aos dados.
 \end{itemize}
 } 
 
 \end{frame}
 
+
+
+
+\begin{frame}{Trabalhos Relacionados}
+
+		\begin{itemize}
+			\item Web document clustering (1998); 
+			\item Multi-topic multi-document summarization  (2000); 
+			\item Multi-document topic segmentation (2010); 
+			\item A Study on Statistical Generation of a Hierarchical Structure of Topic-information for Multi-documents (2011); 
+			\item A segment-based approach to clustering multi-topic documents (2013).
+
+		\end{itemize} 
+
+\end{frame}
 
 
 
@@ -158,30 +178,97 @@ Os algoritmos de segmentação textual são utilizados para dividir um texto em 
 \end{frame}
 
 
-
-
-
-
-
 % ---------- Proposta ----------
 \section{Proposta}
 
 
 
-\begin{frame}{Proposta}
-
-	\center Visão Geral do Sistema.
+\begin{frame}{Visão Geral do Sistema}
 
 	\addimage{images/visao-geral-3.eps}{.8}{}
 
 \end{frame}
 
 
-\begin{frame}{Proposta}
 
-	\center Estrutura de dados interna e seu processo de geração.
+
+
+\begin{frame}{Módulo de Preparação}
+	
+	\nblock{Preparação}{
+		\begin{itemize}
+			\item Extração de texto plano;
+			\item Segmentação;
+			\item Remoção de termos;
+			\item Representação dos Segmentos.
+		\end{itemize}
+	}
+	
+	\nblock{Extração de Conhecimento}{
+		\begin{itemize}
+			\item Extração de tópicos;
+			\item Classificação;
+		\end{itemize}
+	}
+
+	\nblock{Manutenção}{
+		Realimentação do sistema	
+	}
+
+
+\end{frame}
+
+
+
+\begin{frame}{Preparação}
+
+	\addimage{images/pre-process.png}{.9}{}
+
+\end{frame}
+
+
+
+
+\begin{frame}{Extração de Conhecimento}
+
+	\begin{figure}[h!]
+
+		\includegraphics[trim={ 0 2 0 16 },clip,page=1,width=2\textwidth]{images/extracao-conhecimento3.pdf}
+
+	\end{figure}
+
+\end{frame}
+
+
+\begin{frame}{Estrutura de dados interna}
+
+	% \center Estrutura de dados interna e seu processo de geração.
 
 	\addimage{images/estrutura.png}{.8}{}
+
+\end{frame}
+
+\begin{frame}{Estrutura de dados interna}
+	\nblock{}{
+		Obtém-se uma estrutura:
+		\begin{itemize}
+			\item Mais organizada que a coleção original;
+			\item Assuntos concentrados em grupos;
+			\item Acrescida de novos atributos;
+			\item Distribuição dos tópicos conhecida.
+			
+		\end{itemize}
+	}
+\end{frame}
+
+
+\begin{frame}{Distribuição de tópicos em uma ata real}
+
+	\begin{figure}[h!]
+
+		\includegraphics[trim={ 0 235 0 16 },clip,page=1,width=0.73\textwidth]{images/distribuicao.pdf}
+
+	\end{figure}
 
 \end{frame}
 
@@ -189,13 +276,64 @@ Os algoritmos de segmentação textual são utilizados para dividir um texto em 
 
 
 
+\begin{frame}{Módulo de Consulta}
 
-\begin{frame}{Proposta}
+	\nblock{ } {
+		Módulo de Consulta:
+		\begin{itemize}
+			\item Utiliza a Estrutura de Dados Interna;
+			\item Os tópicos são representados por seus descritores;
+			\item Usa-se o Modelo de Espaço Vetorial para ranquear os tópicos;
+			\item Exibe-se os segmentos atribuídos ao primeiro tópico do ranking;
+			% \item Busca exploratória pelos tópicos mais similares à consulta.
+		\end{itemize}
+	}
 
-	Essa abordagem permite:
+% como os dados são apresentados?
+% - Tópico com maior similaridade com a consulta
+	% - MSV 
+
+	% (expansão de espaço?)
+
+% \nblock{ } {
+	% \begin{itemize}
+		% \item O Módulo de Consulta recebe consultas do usuário.
+		% \item A Estrutura de Dados Interna é aproveitada para Recuperação de Informação.
+	% \end{itemize}
+% }
+
+% A Estrutura de Dados Interna é aproveitada para Recuperação de Informação.
+
+
+% \nblock{ Estrutura mais organizada} {
+	% \begin{itemize}
+		% \item  Segmentos agrupados por tópico.
+		% \item  Segmentos acrescidos de novos atributos (descritores)
+	% \end{itemize}
+% }
+
+
+\end{frame}
+
+
+\begin{frame}{Módulo de Consulta}
+
+	\center Interface do Sistema após uma consulta\\
+	\vspace{.5cm}
+		\includegraphics[width=\textwidth]{images/tela-principal-2-1.png}
+
+
+\end{frame}
+
+
+
+
+\begin{frame}{Sistema}
+
 
 	\nblock{}{
 	 
+		O sistema permite:\\
 		\begin{itemize}
 			\item Receber uma base de dados não estruturada;
 			\item Identificar os assuntos tratados em cada ata; 
@@ -211,18 +349,201 @@ Os algoritmos de segmentação textual são utilizados para dividir um texto em 
 
 
 
+ 
 
 
 
-\begin{frame}{Proposta}
 
-	\center Distribuição de tópicos em uma ata real. 
 
+% ---------- Análise dos Resultados ----------
+ 
+ 
+\section{Avaliação Experimental}
+\begin{frame}{Avaliação Experimental}
+
+	Os segmentadores foram avaliados objetivamente. 
+	\nblock{}{
+\begin{itemize}
+	\item Processo de anotação manual em segmentos;		
+	\item Criação de segmentações de referência;
+	\item Configuração dos algoritmos;
+	\item Medidas de desempenho (Acurácia, F$^1$, WindowDiff e P$_k$).
+	 % entre a referência e os segmentos obtidos.
+\end{itemize}
+}
+
+
+\eblock{}{
+\begin{itemize}
+	\item \textit{Testes de significância estatística (Friedman e Nemenyi)}
+\end{itemize}
+}
+
+\end{frame}
+
+
+
+
+
+\begin{frame}{Processo de anotação manual em segmentos}
+
+
+	\nblock{}{
+		A tarefa dos anotadores consistiu em:
+		\begin{itemize}
+			\item Selecionar trechos com um único assunto;
+			\item Rotular os trechos selecionados;
+				\begin{itemize}
+					\item Tipo comunicação;
+					\item Contexto onde se gerou o assunto;
+					\item Descrição do assunto.
+				\end{itemize} 
+			% \item 
+		\end{itemize} 
+	}
+
+	\nblock{}{
+		Utilizou-se:
+		\begin{itemize}
+			\item 12 atas da UFSCar;
+				% \begin{itemize}
+					% \item 6 do 
+				% \end{itemize} 
+			\item 09 anotadores;
+			\item Ferramenta para anotações em segmentos.
+		\end{itemize} 
+
+	}
+\end{frame}
+
+
+
+
+
+
+
+\begin{frame}{Processo de anotação manual em segmentos}
+	\center Ferramenta desenvolvida para anotação em segmentos\\
+	\vspace{.5cm}
+		\includegraphics[width=\textwidth]{images/interface-TST.png}
+\end{frame}
+
+
+\begin{frame}{Descrição dos resultados obtidos com anotadores}
+	\center Descrição dos resultados obtidos com anotadores
+\tiny
+\begin{table}[!h]
+	\centering
+
+
+	\begin{tabular}{|l|c|c|c|c|c|c|c|c|c|c|c|c|c|} \hline
+		\textbf{Ata} & \textbf{\#Sent.}  & \textbf{A1}  & \textbf{A2}  & \textbf{A3}  & \textbf{A4}  & \textbf{A5}  & \textbf{A6}  & \textbf{A7}  & \textbf{A8}  & \textbf{A9} \\	\hline
+% 		              A1   A2   A3  A4    A5   A6   A7   A8   A9   
+		Ata 1  & 25 & 7  & 4  & 11 & 6  & 16 & 8  & 8  & 15 & 16 \\ \hline 
+		Ata 2  & 17 & 4  & 4  & 8  & 6  & 11 & 6  & 6  & 15 & 14 \\ \hline 
+		Ata 3  & 26 & 6  & 6  & 8  & 4  & 15 & 9  & 10 & 18 & 14 \\ \hline 
+		Ata 4  & 26 & 5  & 5  & 10 & 6  & 14 & 17 & 7  & 11 & 12 \\ \hline 
+		Ata 5  & 33 & 4  & 4  & 6  & 5  & 17 & 22 & 9  & 18 & 16 \\ \hline 
+		Ata 6  & 11 & 3  & 4  & 6  & 4  & 9  & 9  & 4  & 7  &  5 \\ \hline 
+		Ata 7  & 20 & 3  & 7  & 5  & 4  & 11 & 14 & 5  & 5  &  4 \\ \hline 
+		Ata 8  & 35 & 4  & 8  & 3  & 8  & 12 & 17 & 5  & 11 &  9 \\ \hline 
+		Ata 9  & 24 & 3  & 5  & 3  & 6  & 11 & 11 & 3  & 9  &  9 \\ \hline 
+		Ata 10 & 50 & 4  & 5  & 4  & 7  & 31 & 29 & 5  & 9  &  8 \\ \hline 
+		Ata 11 & 43 & 4  & 7  & 5  & 7  & 29 & 19 & 5  & 9  & 12 \\ \hline 
+		Ata 12 & 56 & 3  & 10 & 4  & 16 & 33 & 25 & 4  & 13 & 11 \\ \hline 
+		\textbf{Total} & \textbf{366} & \textbf{50}&  \textbf{69} & \textbf{73}&  \textbf{79}&  \textbf{209} & \textbf{186}&  \textbf{71}&  \textbf{140}&  \textbf{130} \\ \hline 
+
+	\end{tabular}
+	% \caption{Descrição dos resultados obtidos com anotadores. Na segunda coluna \#Sent., é mostrada a quantidade de sentenças de cada ata. Nas colunas A1-A9 é mostrado as quantidades de segmentos informados pelos anotadores. 
+	% As colunas K, P$_k$ e WD indicam respectivamente as médias de \textit{Kappa}, $P_k$ e \textit{WindowDiff}.
+% } 
+
+\end{table}
+
+
+\end{frame}
+
+
+
+
+
+
+
+
+\begin{frame}{Exemplo de criação de uma segmentação de referência}
+
+
+  \begin{center}
+	  Referência criada a partir da concordância entre segmentações manuais.
 	\begin{figure}[h!]
 
-		\includegraphics[trim={ 0 235 0 16 },clip,page=1,width=0.73\textwidth]{images/distribuicao.pdf}
+	\includegraphics[trim={ 95 255 75 140 },clip,page=1,width=1\textwidth]{images/segmentacao-referencia.pdf}
 
+	% \caption{Exemplo uma segmentação de referência criada a partir da concordância entre segmentações manuais.}
 	\end{figure}
+
+
+\end{center}
+
+
+\end{frame}
+
+
+% \begin{frame}{Segmentações de Referência}
+
+
+	% \nblock{}{
+		% Gerou-se 12 referências
+		% \begin{itemize}
+			% \item Segmentação;
+			% \item Rótulos;
+			% \item Descrição.
+		% \end{itemize}
+	% }
+
+
+% \end{frame}
+
+
+
+
+
+\begin{frame}{Configuração Experimental - Segmentadores}
+\small
+
+\begin{table}
+\begin{tabular}{l|llllll}
+	\textbf{Algoritmo} & \multicolumn{3}{l}{\textbf{Parâmetros} (Configuração)} \\
+	% Algoritmo & P & \\
+% \multicolumn{2}{c}{Multi-column}
+\hline \hline
+% (Configuração)
+
+\textit{TextTiling} & \textbf{Win} &(20-60)  & \textbf{Step}   &(30-55)                  \\ 
+\textit{C99} &        \textbf{SR} &(.2-.7)       & \textbf{W}      &(sim/não) & \textbf{RS}   &(3-7)        \\ 
+\textit{BayesSeg} &   \textbf{SR} &(auto, .3-.9) & \textbf{Prior}  &(.08-.11) & \textbf{Disp} &(.1-.7)         \\ 
+\textit{MinCut} &     \textbf{SR} &(.2-.7)       & \textbf{LenCut} &(5-15)                             \\ 
+\textit{TextSeg} &    \textbf{SR} &(auto, .1-.9) &&&                                      \\ 
+\textit{PseudoSeg} &  && &&&      \\ 
+
+\end{tabular}
+\end{table}
+
+
+\end{frame}
+
+
+
+
+\begin{frame}{Configuração Experimental}
+
+% --------------------------------------------------
+
+	\center Resumo dos melhores resultados obtidos por cada configuração
+
+\input{tabela-resumo.tex} 
+
+% -------------------------------------------------- 
 
 \end{frame}
 
@@ -234,77 +555,52 @@ Os algoritmos de segmentação textual são utilizados para dividir um texto em 
 
 
 
+\begin{frame}{Avaliação Experimental}
 
- 
-\begin{frame}{Proposta}
-% como os dados são apresentados?
-% - Tópico com maior similaridade com a consulta
-	% - MSV 
+	\center Influência da taxa de segmentos na eficiência dos algoritmos
 
-	% (expansão de espaço?)
-
-% \nblock{ } {
-	% \begin{itemize}
-		% \item O Módulo de Consulta recebe consultas do usuário.
-		% \item A Estrutura de Dados Interna é aproveitada para Recuperação de Informação.
-	% \end{itemize}
-% }
-
-A Estrutura de Dados Interna é aproveitada para Recuperação de Informação.
+\begin{figure}[!h] \centering     %%% not \center
+	  \includegraphics[width=.48\textwidth]{images/graficos/analiseNSegRate-C99.png}
+	  \includegraphics[width=.48\textwidth]{images/graficos/analiseNSegRate-MinCut.png} \\
+	  \includegraphics[width=.48\textwidth]{images/graficos/analiseNSegRate-Bayes.png}
+	  \includegraphics[width=.48\textwidth]{images/graficos/analiseNSegRate-UISeg.png}
+\end{figure}
 
 
-\nblock{ } {
+\end{frame}
+
+
+
+
+
+
+
+\begin{frame}{Avaliação Experimental}
+
+
+
+\eblock{}{
+	Testes de significância estatística de Friedman com pós teste de Nemenyi
+
 	\begin{itemize}
-		\item Os tópicos são representados por seus descritores;
-		\item Usa-se o modelo de espaço vetorial para ranquear os tópicos;
-		\item Exibe-se os segmentos atribuídos ao primeiro tópico do ranking;
-		\item Busca exploratória pelos tópicos mais similares à consulta.
+		\item Inicialmente com as configurações de cada algoritmo.
+			% cada algoritmo para encontrar a melhor configuração.
+		\item Novamente com as melhores configurações de cada algoritmo.
 	\end{itemize}
 }
 
-% \nblock{ Estrutura mais organizada} {
-	% \begin{itemize}
-		% \item  Segmentos agrupados por tópico.
-		% \item  Segmentos acrescidos de novos atributos (descritores)
-	% \end{itemize}
-% }
 
 
 \end{frame}
 
 
 
-\begin{frame}{Proposta}
-
-		\includegraphics[width=\textwidth]{images/tela-principal-2-1.png}
-
-\end{frame}
 
 
 
 
 
-
-
- 
- 
-% ---------- Análise dos Resultados ----------
-\section{Análise dos Resultados}
-\begin{frame}{Análise dos Resultados}
-
-	Os segmentadores foram avaliados objetivamente. 
-
-\begin{itemize}
-	\item Criação de segmentações de referência.
-	\item Medidas de similaridade entre a referência e os resultados.
-	\item Testes estatísticos para comparação (Friedman e Nemenyi);
-\end{itemize}
-
-\end{frame}
-
-
-
-\begin{frame}{Análise dos Resultados}
+\begin{frame}{Avaliação Experimental}
 
 \small\center Diagramas de Diferença Crítica sobre \textit{ranking} considerando valores de Acurácia, $F^1$, \textit{WindowDiff}, e $P_k$.
 
@@ -335,32 +631,116 @@ Não há diferença significativa entre os métodos.
 \end{frame}
 	
 
-\begin{frame}{Análise dos Resultados}
+
+
+
+
+
+
+
+
+
+\begin{frame}{Avaliação Experimental}
 
 Os modelos de Extração de Tópicos foram avaliados junto aos usuários.
 
 
+
+\nblock{}{
 \begin{itemize}
 	\item Resultados de 2 consultas ao Sistema usando 
 	\item 3 Extratores (K-Means, LDA, PLSA);
 	\item Impressões dos usuários coletadas via questionários.
 \end{itemize}
+}
 
 \end{frame}
 
 
 
 
+\begin{frame}{Consultas ao Sistema}
+
+
+\nblock{}{
+	Entrada:
+\begin{enumerate}
+	\item \textit{``defesa de dissertação''};
+	\item \textit{``compra de equipamentos''}.
+\end{enumerate}
+}
+
+\nblock{}{
+	\textit{Corpus} 
+	\begin{itemize}
+		\item Formado por 175 atas; 
+		\item Segmentadas com o \textit{BayesSeg};
+		\item Conjunto de 1276 segmentos. 
+	\end{itemize}
+}
+
+\nblock{}{
+	Resultados utilizando 3 modelos para Extração de Tópicos:
+\begin{enumerate}
+	\item K-Means;
+	\item LDA;
+	\item PLSA.
+\end{enumerate}
+}
+
+
+\end{frame}
+
+
+\begin{frame}{Avaliação Subjetiva}
+
+	\nblock{}{
+		Os resultados foram apresentados à um grupo de avaliadores:
+
+		\begin{itemize}
+			\item 24 profissionais da UFSCar;
+			\item 13 profissionais de escolas técnicas;
+			\item 03 profissionais de escolas do Ensino Fundamental.
+		\end{itemize}
+	}
+
+	\nblock{}{
+		Perfil:
+		\begin{itemize}
+			\item 17 membros de conselhos;
+			\item 12 gestores;
+			\item 05 administrativos;
+			\item 03 professores;
+			\item 03 sem afinidade com atas (descartados).
+		\end{itemize}
+	}
+
+\end{frame}
 
 
 
 
+\begin{frame}{Questionário}
+	\nblock{}{
+		Coletar respostas referentes à:
+		\begin{enumerate}
+			\item Coesão dos tópicos;
+			\item Representatividade dos descritores;
+			\item Coesão dos segmentos;
+			\item Completude dos segmentos.
+		\end{enumerate}
+	}
+	
+\end{frame}
 
-\begin{frame}{Análise dos Resultados}
 
-	Coesão dos grupos.
 
-	Primeira questão:\textit{``Todos os trechos apresentados compartilham um mesmo assunto.''}. %O eixo vertical indica a frequência das alternativas representadas no eixo horizontal.
+
+\begin{frame}{Coesão dos tópicos}
+
+	\center \small 
+	Primeira questão:\textit{``Todos os trechos apresentados compartilham um mesmo assunto.''}. 
+
 \begin{figure}[!h] \centering     %%% not \center
 		\includegraphics[width=.31\textwidth]{images/figuras-experimento/Q1-KMeans.png}
 		\includegraphics[width=.31\textwidth]{images/figuras-experimento/Q1-LDA.png}
@@ -378,11 +758,11 @@ Os modelos de Extração de Tópicos foram avaliados junto aos usuários.
 
 
 
-\begin{frame}{Análise dos Resultados}
+\begin{frame}{Representatividade dos descritores}
 
-	Representatividade dos descritores.
-
+	\center\small 
 	Segunda questão:\textit{``As palavras \textit{$<$descritores$>$} resumem bem o assunto tratado nos trechos.''}.
+
 \begin{figure}[!h] \centering     %%% not \center
 
 	\includegraphics[width=.31\textwidth]{images/figuras-experimento/Q2-KMeans.png}
@@ -398,10 +778,9 @@ Os modelos de Extração de Tópicos foram avaliados junto aos usuários.
 
 
 
-\begin{frame}{Análise dos Resultados}
+\begin{frame}{Coesão dos segmentos}
 
-	Coesão dos segmentos.
-
+	\center \small 
 	Terceira questão:\textit{``Existem trechos que não tratam de um único assunto?''}. 
 
 \begin{figure}[!h] \centering     %%% not \center
@@ -418,10 +797,9 @@ Os modelos de Extração de Tópicos foram avaliados junto aos usuários.
 
 
 
-\begin{frame}{Análise dos Resultados}
+\begin{frame}{Completude dos Segmentos}
 
-Completude dos Segmentadores.
-
+	\center \small 
 	Quarta questão:\textit{``Existem trechos incompletos e insuficientes para compreensão do assunto do trecho?''}.
 
 
@@ -440,12 +818,135 @@ Completude dos Segmentadores.
 
 
 
+\begin{frame}{Comportamento em consultas diferentes}
+
+	\center 
+	Coesão dos tópicos\\
+	\tiny Primeira questão:\textit{``Todos os trechos apresentados compartilham um mesmo assunto.''}. 
+
+\begin{figure}[!h] \centering     %%% not \center
+
+		\tiny Primeira Consulta: \textit{``defesa de dissertação''}
+		\includegraphics[width=.31\textwidth]{images/figuras-experimento/C1-Q1-KMeans.png}
+		\includegraphics[width=.31\textwidth]{images/figuras-experimento/C1-Q1-LDA.png}
+		\includegraphics[width=.31\textwidth]{images/figuras-experimento/C1-Q1-PLSA.png} 
+		\\
+		% \vspace{1cm}
+		Segunda Consulta: \textit{``compra de equipamentos''}
+		\includegraphics[width=.31\textwidth]{images/figuras-experimento/C2-Q1-KMeans.png}
+		\includegraphics[width=.31\textwidth]{images/figuras-experimento/C2-Q1-LDA.png}
+		\includegraphics[width=.31\textwidth]{images/figuras-experimento/C2-Q1-PLSA.png}
+
+	% \caption{Contagem das respostas referentes a Primeira questão. A primeira consulta, ``\textit{compra de equipamentos}'', é mostrada na linha superior e a segunda consulta, ``\textit{defesa de dissertação}'', na linha inferior.}
+	
+
+\end{figure}
+
+
+\end{frame}
+
+
+
+
+
+\begin{frame}{Comportamento dos extratores em consultas diferentes}
+
+	\center 
+	Representatividade dos descritores\\
+	\tiny Segunda questão:\textit{``As palavras \textit{$<$descritores$>$} resumem bem o assunto tratado nos trechos.''}.
+
+\begin{figure}[!h] \centering     %%% not \center
+
+		\tiny Primeira Consulta: \textit{``defesa de dissertação''}
+		\includegraphics[width=.31\textwidth]{images/figuras-experimento/C1-Q2-KMeans.png}
+		\includegraphics[width=.31\textwidth]{images/figuras-experimento/C1-Q2-LDA.png}
+		\includegraphics[width=.31\textwidth]{images/figuras-experimento/C1-Q2-PLSA.png}
+		\\
+		% \vspace{1cm}
+		Segunda Consulta: \textit{``compra de equipamentos''}
+		\includegraphics[width=.31\textwidth]{images/figuras-experimento/C2-Q2-KMeans.png}
+		\includegraphics[width=.31\textwidth]{images/figuras-experimento/C2-Q2-LDA.png}
+		\includegraphics[width=.31\textwidth]{images/figuras-experimento/C2-Q2-PLSA.png}
+
+		% \caption{Contagem das respostas referentes a Segunda questão. A primeira consulta, ``\textit{compra de equipamentos}'', é mostrada na linha superior e a segunda consulta, ``\textit{defesa de dissertação}'', na linha inferior.}
+
+
+\end{figure}
+
+\end{frame}
+
+
+
+
+
+\begin{frame}{Qualidade dos segmentos apresentados em diferentes técnicas}
+
+\center Coesão dos segmentos\\
+\tiny Terceira questão:\textit{``Existem trechos que não tratam de um único assunto?''}.%  
+	\vspace{1cm}
+
+\begin{figure}[!h] \centering     %%% not \center
+
+		\includegraphics[width=.31\textwidth]{images/figuras-experimento/t1q3.png}
+		\includegraphics[width=.31\textwidth]{images/figuras-experimento/t2q3.png}
+		\includegraphics[width=.31\textwidth]{images/figuras-experimento/t3q3.png}
+
+	% \caption{Contagem das respostas referentes a terceira questão, isolando-se as técnicas de extração de tópicos.}
+
+\end{figure}
+
+
+
+\end{frame}
+
+
+
+
+\begin{frame}{Qualidade dos segmentos apresentados em diferentes técnicas}
+
+\center Completude dos Segmentos\\
+\tiny Quarta questão:\textit{``Existem trechos incompletos e insuficientes para compreensão do assunto do trecho?''}.%
+	\vspace{1cm}
+
+\begin{figure}[!h] \centering     %%% not \center
+
+		\includegraphics[width=.31\textwidth]{images/figuras-experimento/t1q4.png}
+		\includegraphics[width=.31\textwidth]{images/figuras-experimento/t2q4.png}
+		\includegraphics[width=.31\textwidth]{images/figuras-experimento/t3q4.png}
+
+	% \caption{Contagem das respostas referentes a quarta questão, isolando-se as técnicas de extração de tópicos.}
+	\label{fig:influenciaExtSegQ4}
+\end{figure}
+
+\end{frame}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 % ---------- Conclusão ----------
 \section{Conclusão}
 \begin{frame}{Conclusão}
 	
-A metodologia utilizada nesse trabalho: 
 \nblock{}{
+	A metodologia utilizada nesse trabalho: 
 \begin{itemize}
 	\item Conecta as técnicas de segmentação textual aos modelos de Extração de Tópicos; 
 	\item Gera um estrutura derivada de um \textit{corpus} não estruturado;
@@ -459,23 +960,30 @@ A metodologia utilizada nesse trabalho:
 
 
 \begin{frame}{Conclusão}
+	\center Segmentação 
 
+	\nblock{}{
+		Resultados:
 	\begin{itemize}
-		\item Resultados abaixo do esperado para os segmentadores;
+		\item Medidas abaixo do esperado;
 		\item Impressões satisfatórias dos usuários;
 			\begin{itemize}
 				\item Completude;
 				\item Coesão;
 			\end{itemize}
 	\end{itemize}
+	}
 
 
+	\nblock{}{
+		Possíveis melhorias:
 	\begin{itemize}
 		\item Segmentação de referência com mais anotadores;
-		\item Melhor treinamento dos anotadores;
+		\item Treinamento dos anotadores;
 		\item Maior concordância entre anotadores;
 		\item Segmentação de referência mais confiável e representativa.
 	\end{itemize}
+	}
 
 \end{frame}
 
@@ -485,17 +993,29 @@ A metodologia utilizada nesse trabalho:
 
 \begin{frame}{Conclusão}
 
+	\center Extração de Tópicos
+	\nblock{}{
 	\begin{itemize}
 		\item Extraem padrões úteis do \textit{corpus};
-			\begin{itemize}
-				\item Capacidade Representativa do descritores;
-				\item Coesão dos grupos;
-			\end{itemize}
 		\item Melhores resultados com o K-Means;
 			\begin{itemize}
-				\item Inconstância entre as consultas;
+				\item Coesão dos grupos;
+				\item Capacidade Representativa do descritores;
 			\end{itemize}
+			% \begin{itemize}
+				% \item Coesão 
+				% \item Representatividade
+				% \item Discrepância entre as consultas;
+			% \end{itemize}
 	\end{itemize}
+	}
+
+
+	% \nblock{}{
+	% \begin{itemize}
+		% \item Discrepância entre as consultas;
+	% \end{itemize}
+	% }
 
 \end{frame}
 
@@ -503,7 +1023,8 @@ A metodologia utilizada nesse trabalho:
 
 \begin{frame}{Conclusão}
 
-	\nblock{Contribuições} {
+	\nblock{} {
+Contribuições:
 
 	\begin{itemize}
 \item O método para extração de conhecimento em documentos multi-temáticos; 
@@ -515,7 +1036,11 @@ A metodologia utilizada nesse trabalho:
 	\end{itemize}
 	}
 
-
+	\eblock{} {
+		\begin{itemize}
+			\item Submissão de artigo.
+		\end{itemize}
+	}
 
 \end{frame}
 
@@ -534,13 +1059,19 @@ A metodologia utilizada nesse trabalho:
 	
 	\nblock{} {
 
+		Conclusão do Sistema:
 	\begin{itemize}
+		\item Algoritmos de agrupamento incremental
+		\item Classificação dos segmentos em relação ao tipo de menção ao assunto
+	\end{itemize}
+}
 	
-\item Inclusão de novos corpora (transcrições de conversas, diálogos em chats, discursos e atas de outras organizações)
-\item Fontes externas para melhorar os métodos de segmentação textual  (\textit{thesaurus} e \textit{clue words});
-\item Algoritmos de agrupamento incremental
-\item Classificação dos segmentos em relação ao tipo de menção ao assunto
-\item Testes voltados a experiência do usuário
+	\nblock{} {
+		Melhorias:
+	\begin{itemize}
+		\item Inclusão de novos corpora (transcrições de conversas, diálogos em chats, discursos e atas de outras organizações)
+		\item Fontes externas para melhorar os métodos de segmentação textual  (\textit{thesaurus} e \textit{clue words});
+		\item Testes voltados a experiência do usuário.
 
 	\end{itemize}
 	
@@ -556,6 +1087,17 @@ A metodologia utilizada nesse trabalho:
 \end{frame}
 
 \end{document}
+
+
+
+
+
+
+
+
+
+
+
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
