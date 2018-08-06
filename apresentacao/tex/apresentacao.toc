@@ -1,6 +1,6 @@
 \beamer@sectionintoc {1}{Contextualiza\IeC {\c c}\IeC {\~a}o}{3}{0}{1}
 \beamer@sectionintoc {2}{Objetivos}{10}{0}{2}
 \beamer@sectionintoc {3}{Proposta}{12}{0}{3}
-\beamer@sectionintoc {4}{Avalia\IeC {\c c}\IeC {\~a}o Experimental}{23}{0}{4}
-\beamer@sectionintoc {5}{Conclus\IeC {\~a}o}{46}{0}{5}
-\beamer@sectionintoc {6}{Trabalhos Futuros}{51}{0}{6}
+\beamer@sectionintoc {4}{Avalia\IeC {\c c}\IeC {\~a}o Experimental}{29}{0}{4}
+\beamer@sectionintoc {5}{Conclus\IeC {\~a}o}{52}{0}{5}
+\beamer@sectionintoc {6}{Trabalhos Futuros}{57}{0}{6}
