@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.8.22)  6 AUG 2018 00:22
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.8.22)  7 AUG 2018 01:48
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1128,15 +1128,18 @@ LaTeX Font Warning: Font shape `OT1/cmss/m/n' in size <4> not available
 
 ] [7
 
-] [8
+]
+Overfull \hbox (16.09215pt too wide) in paragraph at lines 195--195
+ [] 
+ []
 
-] [9
+[8
 
-] (./apresentacao.toc) [10
+] (./apresentacao.toc) [9
 
-] [11
+] [10
 
-] (./apresentacao.toc) [12
+] (./apresentacao.toc) [11
 
 ]
 Package epstopdf Info: Source file: <images/visao-geral-3.eps>
@@ -1146,145 +1149,147 @@ Package epstopdf Info: Source file: <images/visao-geral-3.eps>
 (epstopdf)                    date: 2018-07-31 23:48:51
 (epstopdf)                    size: 66255 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/visao-geral-3-eps-converted-to.pdf images/visao-geral-3.eps>
-(epstopdf)             \includegraphics on input line 190.
+(epstopdf)             \includegraphics on input line 233.
 Package epstopdf Info: Output file is already uptodate.
- <images/visao-geral-3-eps-converted-to.pdf, id=153, 1084.05pt x 542.025pt>
+ <images/visao-geral-3-eps-converted-to.pdf, id=146, 1084.05pt x 542.025pt>
 File: images/visao-geral-3-eps-converted-to.pdf Graphic file (type pdf)
  <use images/visao-geral-3-eps-converted-to.pdf>
-Package pdftex.def Info: images/visao-geral-3-eps-converted-to.pdf used on input line 190.
+Package pdftex.def Info: images/visao-geral-3-eps-converted-to.pdf used on input line 233.
 (pdftex.def)             Requested size: 291.35739pt x 145.67877pt.
- [13
+ [12
 
- <./images/visao-geral-3-eps-converted-to.pdf>] [14
+ <./images/visao-geral-3-eps-converted-to.pdf>] [13
 
-] <images/pre-process.png, id=169, 1232.605pt x 403.5075pt>
+] <images/pre-process.png, id=165, 1232.605pt x 403.5075pt>
 File: images/pre-process.png Graphic file (type png)
  <use images/pre-process.png>
-Package pdftex.def Info: images/pre-process.png used on input line 227.
+Package pdftex.def Info: images/pre-process.png used on input line 275.
 (pdftex.def)             Requested size: 327.77359pt x 107.2984pt.
 
-Overfull \hbox (20.48372pt too wide) in paragraph at lines 227--227
+Overfull \hbox (20.48372pt too wide) in paragraph at lines 275--275
+ [] 
+ []
+
+[14
+
+ <./images/pre-process.png>] <images/extracao-conhecimento3.pdf, id=173, page=1, 2241.37375pt x 597.23125pt>
+File: images/extracao-conhecimento3.pdf Graphic file (type pdf)
+ <use images/extracao-conhecimento3.pdf, page 1>
+Package pdftex.def Info: images/extracao-conhecimento3.pdf, page1 used on input line 288.
+(pdftex.def)             Requested size: 614.57974pt x 158.80655pt.
+
+Overfull \hbox (307.28987pt too wide) in paragraph at lines 288--288
  [] 
  []
 
 [15
 
- <./images/pre-process.png>] <images/extracao-conhecimento3.pdf, id=177, page=1, 2241.37375pt x 597.23125pt>
-File: images/extracao-conhecimento3.pdf Graphic file (type pdf)
- <use images/extracao-conhecimento3.pdf, page 1>
-Package pdftex.def Info: images/extracao-conhecimento3.pdf, page1 used on input line 240.
-(pdftex.def)             Requested size: 614.57974pt x 158.80655pt.
-
-Overfull \hbox (307.28987pt too wide) in paragraph at lines 240--240
- [] 
- []
-
-[16
-
- <./images/extracao-conhecimento3.pdf>] <images/estrutura.png, id=215, 741.77126pt x 545.03625pt>
+ <./images/extracao-conhecimento3.pdf>] <images/estrutura.png, id=211, 741.77126pt x 545.03625pt>
 File: images/estrutura.png Graphic file (type png)
  <use images/estrutura.png>
-Package pdftex.def Info: images/estrutura.png used on input line 249.
+Package pdftex.def Info: images/estrutura.png used on input line 297.
 (pdftex.def)             Requested size: 291.35739pt x 214.08522pt.
- [17
+ [16
 
- <./images/estrutura.png>] [18
+ <./images/estrutura.png>] [17
 
-] <images/distribuicao.pdf, id=227, page=1, 624.3325pt x 845.1575pt>
+] <images/distribuicao.pdf, id=223, page=1, 624.3325pt x 845.1575pt>
 File: images/distribuicao.pdf Graphic file (type pdf)
  <use images/distribuicao.pdf, page 1>
-Package pdftex.def Info: images/distribuicao.pdf, page1 used on input line 283.
+Package pdftex.def Info: images/distribuicao.pdf, page1 used on input line 331.
 (pdftex.def)             Requested size: 261.19826pt x 235.5823pt.
 
-Overfull \vbox (11.51077pt too high) detected at line 283
+Overfull \vbox (11.51077pt too high) detected at line 331
+ []
+
+[18
+
+ <./images/distribuicao.pdf>] <images/distribuicao-3-parts.pdf, id=295, page=1, 624.3325pt x 845.1575pt>
+File: images/distribuicao-3-parts.pdf Graphic file (type pdf)
+ <use images/distribuicao-3-parts.pdf, page 1>
+Package pdftex.def Info: images/distribuicao-3-parts.pdf, page1 used on input line 346.
+(pdftex.def)             Requested size: 291.92444pt x 236.63287pt.
+
+Overfull \vbox (12.56134pt too high) detected at line 346
  []
 
 [19
 
- <./images/distribuicao.pdf>] <images/distribuicao-3-parts.pdf, id=300, page=1, 624.3325pt x 845.1575pt>
-File: images/distribuicao-3-parts.pdf Graphic file (type pdf)
- <use images/distribuicao-3-parts.pdf, page 1>
-Package pdftex.def Info: images/distribuicao-3-parts.pdf, page1 used on input line 298.
-(pdftex.def)             Requested size: 291.92444pt x 236.63287pt.
-
-Overfull \vbox (12.56134pt too high) detected at line 298
- []
-
-[20
-
- <./images/distribuicao-3-parts.pdf>] <images/distribuicao-3-parts.pdf, id=457, page=2, 624.3325pt x 845.1575pt>
+ <./images/distribuicao-3-parts.pdf>] <images/distribuicao-3-parts.pdf, id=453, page=2, 624.3325pt x 845.1575pt>
 File: images/distribuicao-3-parts.pdf Graphic file (type pdf)
  <use images/distribuicao-3-parts.pdf, page 2>
-Package pdftex.def Info: images/distribuicao-3-parts.pdf, page2 used on input line 307.
+Package pdftex.def Info: images/distribuicao-3-parts.pdf, page2 used on input line 355.
 (pdftex.def)             Requested size: 291.92444pt x 200.367pt.
- [21
+ [20
 
- <./images/distribuicao-3-parts.pdf>] <images/distribuicao-3-parts.pdf, id=614, page=3, 624.3325pt x 845.1575pt>
+ <./images/distribuicao-3-parts.pdf>] <images/distribuicao-3-parts.pdf, id=610, page=3, 624.3325pt x 845.1575pt>
 File: images/distribuicao-3-parts.pdf Graphic file (type pdf)
  <use images/distribuicao-3-parts.pdf, page 3>
-Package pdftex.def Info: images/distribuicao-3-parts.pdf, page3 used on input line 316.
+Package pdftex.def Info: images/distribuicao-3-parts.pdf, page3 used on input line 364.
 (pdftex.def)             Requested size: 291.92444pt x 164.10115pt.
- [22
+ [21
 
- <./images/distribuicao-3-parts.pdf>] <images/distribuicao-3-parts.pdf, id=771, page=4, 624.3325pt x 845.1575pt>
+ <./images/distribuicao-3-parts.pdf>] <images/distribuicao-3-parts.pdf, id=767, page=4, 624.3325pt x 845.1575pt>
 File: images/distribuicao-3-parts.pdf Graphic file (type pdf)
  <use images/distribuicao-3-parts.pdf, page 4>
-Package pdftex.def Info: images/distribuicao-3-parts.pdf, page4 used on input line 325.
+Package pdftex.def Info: images/distribuicao-3-parts.pdf, page4 used on input line 373.
 (pdftex.def)             Requested size: 184.3758pt x 235.90549pt.
 
-Overfull \vbox (11.83395pt too high) detected at line 325
+Overfull \vbox (11.83395pt too high) detected at line 373
  []
 
-[23
+[22
 
- <./images/distribuicao-3-parts.pdf>] <images/distribuicao-3-parts.pdf, id=928, page=5, 624.3325pt x 845.1575pt>
+ <./images/distribuicao-3-parts.pdf>] <images/distribuicao-3-parts.pdf, id=924, page=5, 624.3325pt x 845.1575pt>
 File: images/distribuicao-3-parts.pdf Graphic file (type pdf)
  <use images/distribuicao-3-parts.pdf, page 5>
-Package pdftex.def Info: images/distribuicao-3-parts.pdf, page5 used on input line 335.
+Package pdftex.def Info: images/distribuicao-3-parts.pdf, page5 used on input line 383.
 (pdftex.def)             Requested size: 291.92444pt x 183.14073pt.
- [24
+ [23
 
- <./images/distribuicao-3-parts.pdf>] <images/distribuicao-3-parts.pdf, id=1084, page=6, 624.3325pt x 845.1575pt>
+ <./images/distribuicao-3-parts.pdf>] <images/distribuicao-3-parts.pdf, id=1080, page=6, 624.3325pt x 845.1575pt>
 File: images/distribuicao-3-parts.pdf Graphic file (type pdf)
  <use images/distribuicao-3-parts.pdf, page 6>
-Package pdftex.def Info: images/distribuicao-3-parts.pdf, page6 used on input line 344.
+Package pdftex.def Info: images/distribuicao-3-parts.pdf, page6 used on input line 392.
 (pdftex.def)             Requested size: 230.46739pt x 244.77904pt.
 
-Overfull \vbox (20.7075pt too high) detected at line 344
+Overfull \vbox (20.7075pt too high) detected at line 392
  []
 
-[25
+[24
 
- <./images/distribuicao-3-parts.pdf>] [26
+ <./images/distribuicao-3-parts.pdf>] [25
 
-] <images/tela-principal-2-1.png, id=1247, 1177.39874pt x 737.75626pt>
+] <images/tela-principal-2-1.png, id=1243, 1177.39874pt x 737.75626pt>
 File: images/tela-principal-2-1.png Graphic file (type png)
  <use images/tela-principal-2-1.png>
-Package pdftex.def Info: images/tela-principal-2-1.png used on input line 401.
+Package pdftex.def Info: images/tela-principal-2-1.png used on input line 450.
 (pdftex.def)             Requested size: 307.28987pt x 192.54382pt.
- [27
+ [26
 
- <./images/tela-principal-2-1.png>] [28
+ <./images/tela-principal-2-1.png>] [27
 
-] (./apresentacao.toc) [29
+] (./apresentacao.toc) [28
+
+] [29
 
 ] [30
 
 ] [31
 
-] <images/interface-TST.png, id=1287, 1371.1225pt x 743.77875pt>
+] <images/interface-TST.png, id=1286, 1371.1225pt x 743.77875pt>
 File: images/interface-TST.png Graphic file (type png)
  <use images/interface-TST.png>
-Package pdftex.def Info: images/interface-TST.png used on input line 504.
+Package pdftex.def Info: images/interface-TST.png used on input line 572.
 (pdftex.def)             Requested size: 307.28987pt x 166.68474pt.
  [32
 
  <./images/interface-TST.png>] [33
 
-] <images/segmentacao-referencia.pdf, id=1300, page=1, 844.15375pt x 597.23125pt>
+] <images/segmentacao-referencia.pdf, id=1298, page=1, 844.15375pt x 597.23125pt>
 File: images/segmentacao-referencia.pdf Graphic file (type pdf)
  <use images/segmentacao-referencia.pdf, page 1>
-Package pdftex.def Info: images/segmentacao-referencia.pdf, page1 used on input line 564.
+Package pdftex.def Info: images/segmentacao-referencia.pdf, page1 used on input line 632.
 (pdftex.def)             Requested size: 307.28987pt x 91.59213pt.
  [34
 
@@ -1292,7 +1297,7 @@ Package pdftex.def Info: images/segmentacao-referencia.pdf, page1 used on input 
 
 pdfTeX warning: pdflatex (file ./images/segmentacao-referencia.pdf): PDF inclusion: invalid other resource which is no dict (key 'ProcSets', type <array>); ignored.
 >]
-Overfull \hbox (15.23044pt too wide) in paragraph at lines 608--608
+Overfull \hbox (15.23044pt too wide) in paragraph at lines 676--676
  [] 
  []
 
@@ -1300,35 +1305,51 @@ Overfull \hbox (15.23044pt too wide) in paragraph at lines 608--608
 
 ] (./tabela-resumo.tex) [36
 
-] <images/graficos/analiseNSegRate-C99.png, id=1458, 602.25pt x 372.39125pt>
+] <images/graficos/resumo-wd-pk.png, id=1456, 602.25pt x 243.91125pt>
+File: images/graficos/resumo-wd-pk.png Graphic file (type png)
+ <use images/graficos/resumo-wd-pk.png>
+Package pdftex.def Info: images/graficos/resumo-wd-pk.png used on input line 710.
+(pdftex.def)             Requested size: 251.97993pt x 102.05122pt.
+ <images/graficos/resumo-tradicionais.png, id=1457, 602.25pt x 243.91125pt>
+File: images/graficos/resumo-tradicionais.png Graphic file (type png)
+ <use images/graficos/resumo-tradicionais.png>
+Package pdftex.def Info: images/graficos/resumo-tradicionais.png used on input line 710.
+(pdftex.def)             Requested size: 251.97993pt x 102.05122pt.
+
+Overfull \vbox (2.76009pt too high) detected at line 710
+ []
+
+[37
+
+ <./images/graficos/resumo-wd-pk.png (PNG copy)> <./images/graficos/resumo-tradicionais.png (PNG copy)>] <images/graficos/analiseNSegRate-C99.png, id=1466, 602.25pt x 372.39125pt>
 File: images/graficos/analiseNSegRate-C99.png Graphic file (type png)
  <use images/graficos/analiseNSegRate-C99.png>
-Package pdftex.def Info: images/graficos/analiseNSegRate-C99.png used on input line 645.
+Package pdftex.def Info: images/graficos/analiseNSegRate-C99.png used on input line 728.
 (pdftex.def)             Requested size: 147.49782pt x 91.1997pt.
- <images/graficos/analiseNSegRate-MinCut.png, id=1459, 602.25pt x 372.39125pt>
+ <images/graficos/analiseNSegRate-MinCut.png, id=1467, 602.25pt x 372.39125pt>
 File: images/graficos/analiseNSegRate-MinCut.png Graphic file (type png)
  <use images/graficos/analiseNSegRate-MinCut.png>
-Package pdftex.def Info: images/graficos/analiseNSegRate-MinCut.png used on input line 645.
+Package pdftex.def Info: images/graficos/analiseNSegRate-MinCut.png used on input line 728.
 (pdftex.def)             Requested size: 147.49782pt x 91.1997pt.
- <images/graficos/analiseNSegRate-Bayes.png, id=1460, 602.25pt x 372.39125pt>
+ <images/graficos/analiseNSegRate-Bayes.png, id=1468, 602.25pt x 372.39125pt>
 File: images/graficos/analiseNSegRate-Bayes.png Graphic file (type png)
  <use images/graficos/analiseNSegRate-Bayes.png>
-Package pdftex.def Info: images/graficos/analiseNSegRate-Bayes.png used on input line 645.
+Package pdftex.def Info: images/graficos/analiseNSegRate-Bayes.png used on input line 728.
 (pdftex.def)             Requested size: 147.49782pt x 91.1997pt.
- <images/graficos/analiseNSegRate-UISeg.png, id=1461, 602.25pt x 372.39125pt>
+ <images/graficos/analiseNSegRate-UISeg.png, id=1469, 602.25pt x 372.39125pt>
 File: images/graficos/analiseNSegRate-UISeg.png Graphic file (type png)
  <use images/graficos/analiseNSegRate-UISeg.png>
-Package pdftex.def Info: images/graficos/analiseNSegRate-UISeg.png used on input line 645.
+Package pdftex.def Info: images/graficos/analiseNSegRate-UISeg.png used on input line 728.
 (pdftex.def)             Requested size: 147.49782pt x 91.1997pt.
- [37
+ [38
 
- <./images/graficos/analiseNSegRate-C99.png (PNG copy)> <./images/graficos/analiseNSegRate-MinCut.png (PNG copy)> <./images/graficos/analiseNSegRate-Bayes.png (PNG copy)> <./images/graficos/analiseNSegRate-UISeg.png (PNG copy)>] [38
+ <./images/graficos/analiseNSegRate-C99.png (PNG copy)> <./images/graficos/analiseNSegRate-MinCut.png (PNG copy)> <./images/graficos/analiseNSegRate-Bayes.png (PNG copy)> <./images/graficos/analiseNSegRate-UISeg.png (PNG copy)>] [39
 
 ]
-./apresentacao.tex:706: Undefined control sequence.
+./apresentacao.tex:786: Undefined control sequence.
 \beamer@doifinframe ...centering \tiny \subfigure 
                                                   [Ac]{ \label {fig:a} \incl...
-l.706 \end{frame}
+l.786 \end{frame}
                  
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1336,16 +1357,16 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-<images/cds/Acuracia.png, id=1473, 433.62pt x 126.4725pt>
+<images/cds/Acuracia.png, id=1480, 433.62pt x 126.4725pt>
 File: images/cds/Acuracia.png Graphic file (type png)
  <use images/cds/Acuracia.png>
-Package pdftex.def Info: images/cds/Acuracia.png used on input line 706.
+Package pdftex.def Info: images/cds/Acuracia.png used on input line 786.
 (pdftex.def)             Requested size: 133.72795pt x 39.00343pt.
 
-./apresentacao.tex:706: Undefined control sequence.
+./apresentacao.tex:786: Undefined control sequence.
 \beamer@doifinframe ...Acuracia.png} } \subfigure 
                                                   [F^1]{ \label {fig:b} \inc...
-l.706 \end{frame}
+l.786 \end{frame}
                  
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1353,45 +1374,45 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./apresentacao.tex:706: Missing $ inserted.
+./apresentacao.tex:786: Missing $ inserted.
 <inserted text> 
                 $
-l.706 \end{frame}
+l.786 \end{frame}
                  
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-<images/cds/F1.png, id=1474, 433.62pt x 126.4725pt>
+<images/cds/F1.png, id=1481, 433.62pt x 126.4725pt>
 File: images/cds/F1.png Graphic file (type png)
  <use images/cds/F1.png>
-Package pdftex.def Info: images/cds/F1.png used on input line 706.
+Package pdftex.def Info: images/cds/F1.png used on input line 786.
 (pdftex.def)             Requested size: 133.72795pt x 39.00343pt.
 
 
-./apresentacao.tex:706: LaTeX Error: There's no line here to end.
+./apresentacao.tex:786: LaTeX Error: There's no line here to end.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.706 \end{frame}
+l.786 \end{frame}
                  
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-./apresentacao.tex:706: Missing $ inserted.
+./apresentacao.tex:786: Missing $ inserted.
 <inserted text> 
                 $
-l.706 \end{frame}
+l.786 \end{frame}
                  
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-./apresentacao.tex:706: Missing } inserted.
+./apresentacao.tex:786: Missing } inserted.
 <inserted text> 
                 }
-l.706 \end{frame}
+l.786 \end{frame}
                  
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1399,10 +1420,10 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-./apresentacao.tex:706: Missing } inserted.
+./apresentacao.tex:786: Missing } inserted.
 <inserted text> 
                 }
-l.706 \end{frame}
+l.786 \end{frame}
                  
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1410,10 +1431,10 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-./apresentacao.tex:706: Extra }, or forgotten \endgroup.
+./apresentacao.tex:786: Extra }, or forgotten \endgroup.
 \par ...m \@noitemerr {\@@par }\fi \else {\@@par }
                                                   \fi 
-l.706 \end{frame}
+l.786 \end{frame}
                  
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -1421,10 +1442,10 @@ you forgot something else, as in `\hbox{$x}'. In such cases
 the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
-./apresentacao.tex:706: Extra }, or forgotten \endgroup.
+./apresentacao.tex:786: Extra }, or forgotten \endgroup.
 <recently read> }
                  
-l.706 \end{frame}
+l.786 \end{frame}
                  
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -1432,10 +1453,10 @@ you forgot something else, as in `\hbox{$x}'. In such cases
 the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
-./apresentacao.tex:706: Undefined control sequence.
+./apresentacao.tex:786: Undefined control sequence.
 \beamer@doifinframe ...ds/F1.png} \\ } \subfigure 
                                                   [P_k]{ \label {fig:c} \inc...
-l.706 \end{frame}
+l.786 \end{frame}
                  
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1443,24 +1464,24 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./apresentacao.tex:706: Missing $ inserted.
+./apresentacao.tex:786: Missing $ inserted.
 <inserted text> 
                 $
-l.706 \end{frame}
+l.786 \end{frame}
                  
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-<images/cds/Pk.png, id=1475, 433.62pt x 126.4725pt>
+<images/cds/Pk.png, id=1482, 433.62pt x 126.4725pt>
 File: images/cds/Pk.png Graphic file (type png)
  <use images/cds/Pk.png>
-Package pdftex.def Info: images/cds/Pk.png used on input line 706.
+Package pdftex.def Info: images/cds/Pk.png used on input line 786.
 (pdftex.def)             Requested size: 133.72795pt x 39.00343pt.
 
-./apresentacao.tex:706: Undefined control sequence.
+./apresentacao.tex:786: Undefined control sequence.
 \beamer@doifinframe ...s/cds/Pk.png} } \subfigure 
                                                   [WD]{ \label {fig:d} \incl...
-l.706 \end{frame}
+l.786 \end{frame}
                  
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1468,24 +1489,24 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-<images/cds/WD.png, id=1476, 433.62pt x 126.4725pt>
+<images/cds/WD.png, id=1483, 433.62pt x 126.4725pt>
 File: images/cds/WD.png Graphic file (type png)
  <use images/cds/WD.png>
-Package pdftex.def Info: images/cds/WD.png used on input line 706.
+Package pdftex.def Info: images/cds/WD.png used on input line 786.
 (pdftex.def)             Requested size: 133.72795pt x 39.00343pt.
 
-./apresentacao.tex:706: Missing $ inserted.
+./apresentacao.tex:786: Missing $ inserted.
 <inserted text> 
                 $
-l.706 \end{frame}
+l.786 \end{frame}
                  
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-./apresentacao.tex:706: Missing } inserted.
+./apresentacao.tex:786: Missing } inserted.
 <inserted text> 
                 }
-l.706 \end{frame}
+l.786 \end{frame}
                  
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1493,10 +1514,10 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-./apresentacao.tex:706: Extra }, or forgotten \endgroup.
+./apresentacao.tex:786: Extra }, or forgotten \endgroup.
 \par ...m \@noitemerr {\@@par }\fi \else {\@@par }
                                                   \fi 
-l.706 \end{frame}
+l.786 \end{frame}
                  
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -1504,184 +1525,182 @@ you forgot something else, as in `\hbox{$x}'. In such cases
 the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
-[39
+[40
 
- <./images/cds/Acuracia.png> <./images/cds/F1.png> <./images/cds/Pk.png> <./images/cds/WD.png>] [40
-
-] [41
+ <./images/cds/Acuracia.png> <./images/cds/F1.png> <./images/cds/Pk.png> <./images/cds/WD.png>] [41
 
 ] [42
 
 ] [43
 
-] <images/figuras-experimento/Q1-KMeans.png, id=1511, 357.335pt x 287.0725pt>
+] [44
+
+] <images/figuras-experimento/Q1-KMeans.png, id=1519, 357.335pt x 287.0725pt>
 File: images/figuras-experimento/Q1-KMeans.png Graphic file (type png)
  <use images/figuras-experimento/Q1-KMeans.png>
-Package pdftex.def Info: images/figuras-experimento/Q1-KMeans.png used on input line 832.
+Package pdftex.def Info: images/figuras-experimento/Q1-KMeans.png used on input line 912.
 (pdftex.def)             Requested size: 95.25911pt x 76.5294pt.
- <images/figuras-experimento/Q1-LDA.png, id=1512, 358.33875pt x 287.0725pt>
+ <images/figuras-experimento/Q1-LDA.png, id=1520, 358.33875pt x 287.0725pt>
 File: images/figuras-experimento/Q1-LDA.png Graphic file (type png)
  <use images/figuras-experimento/Q1-LDA.png>
-Package pdftex.def Info: images/figuras-experimento/Q1-LDA.png used on input line 832.
+Package pdftex.def Info: images/figuras-experimento/Q1-LDA.png used on input line 912.
 (pdftex.def)             Requested size: 95.25911pt x 76.31038pt.
- <images/figuras-experimento/Q1-PLSA.png, id=1513, 357.335pt x 286.06876pt>
+ <images/figuras-experimento/Q1-PLSA.png, id=1521, 357.335pt x 286.06876pt>
 File: images/figuras-experimento/Q1-PLSA.png Graphic file (type png)
  <use images/figuras-experimento/Q1-PLSA.png>
-Package pdftex.def Info: images/figuras-experimento/Q1-PLSA.png used on input line 832.
+Package pdftex.def Info: images/figuras-experimento/Q1-PLSA.png used on input line 912.
 (pdftex.def)             Requested size: 95.25911pt x 76.26181pt.
- <images/likert.png, id=1514, 943.525pt x 60.225pt>
+ <images/likert.png, id=1522, 943.525pt x 60.225pt>
 File: images/likert.png Graphic file (type png)
  <use images/likert.png>
-Package pdftex.def Info: images/likert.png used on input line 832.
-(pdftex.def)             Requested size: 276.559pt x 17.65225pt.
- [44
-
- <./images/figuras-experimento/Q1-KMeans.png (PNG copy)> <./images/figuras-experimento/Q1-LDA.png (PNG copy)> <./images/figuras-experimento/Q1-PLSA.png (PNG copy)> <./images/likert.png>] <images/figuras-experimento/Q2-KMeans.png, id=1523, 357.335pt x 290.08376pt>
-File: images/figuras-experimento/Q2-KMeans.png Graphic file (type png)
- <use images/figuras-experimento/Q2-KMeans.png>
-Package pdftex.def Info: images/figuras-experimento/Q2-KMeans.png used on input line 852.
-(pdftex.def)             Requested size: 95.25911pt x 77.33215pt.
- <images/figuras-experimento/Q2-LDA.png, id=1524, 357.335pt x 290.08376pt>
-File: images/figuras-experimento/Q2-LDA.png Graphic file (type png)
- <use images/figuras-experimento/Q2-LDA.png>
-Package pdftex.def Info: images/figuras-experimento/Q2-LDA.png used on input line 852.
-(pdftex.def)             Requested size: 95.25911pt x 77.33215pt.
- <images/figuras-experimento/Q2-PLSA.png, id=1525, 357.335pt x 290.08376pt>
-File: images/figuras-experimento/Q2-PLSA.png Graphic file (type png)
- <use images/figuras-experimento/Q2-PLSA.png>
-Package pdftex.def Info: images/figuras-experimento/Q2-PLSA.png used on input line 852.
-(pdftex.def)             Requested size: 95.25911pt x 77.33215pt.
-File: images/likert.png Graphic file (type png)
- <use images/likert.png>
-Package pdftex.def Info: images/likert.png used on input line 852.
+Package pdftex.def Info: images/likert.png used on input line 912.
 (pdftex.def)             Requested size: 276.559pt x 17.65225pt.
  [45
 
- <./images/figuras-experimento/Q2-KMeans.png (PNG copy)> <./images/figuras-experimento/Q2-LDA.png (PNG copy)> <./images/figuras-experimento/Q2-PLSA.png (PNG copy)>] <images/figuras-experimento/Q3-Seg.png, id=1532, 558.085pt x 311.1625pt>
-File: images/figuras-experimento/Q3-Seg.png Graphic file (type png)
- <use images/figuras-experimento/Q3-Seg.png>
-Package pdftex.def Info: images/figuras-experimento/Q3-Seg.png used on input line 871.
-(pdftex.def)             Requested size: 147.49782pt x 82.23451pt.
- <images/likert-1.png, id=1533, 953.5625pt x 70.2625pt>
-File: images/likert-1.png Graphic file (type png)
- <use images/likert-1.png>
-Package pdftex.def Info: images/likert-1.png used on input line 871.
-(pdftex.def)             Requested size: 276.559pt x 20.37773pt.
+ <./images/figuras-experimento/Q1-KMeans.png (PNG copy)> <./images/figuras-experimento/Q1-LDA.png (PNG copy)> <./images/figuras-experimento/Q1-PLSA.png (PNG copy)> <./images/likert.png>] <images/figuras-experimento/Q2-KMeans.png, id=1530, 357.335pt x 290.08376pt>
+File: images/figuras-experimento/Q2-KMeans.png Graphic file (type png)
+ <use images/figuras-experimento/Q2-KMeans.png>
+Package pdftex.def Info: images/figuras-experimento/Q2-KMeans.png used on input line 932.
+(pdftex.def)             Requested size: 95.25911pt x 77.33215pt.
+ <images/figuras-experimento/Q2-LDA.png, id=1531, 357.335pt x 290.08376pt>
+File: images/figuras-experimento/Q2-LDA.png Graphic file (type png)
+ <use images/figuras-experimento/Q2-LDA.png>
+Package pdftex.def Info: images/figuras-experimento/Q2-LDA.png used on input line 932.
+(pdftex.def)             Requested size: 95.25911pt x 77.33215pt.
+ <images/figuras-experimento/Q2-PLSA.png, id=1532, 357.335pt x 290.08376pt>
+File: images/figuras-experimento/Q2-PLSA.png Graphic file (type png)
+ <use images/figuras-experimento/Q2-PLSA.png>
+Package pdftex.def Info: images/figuras-experimento/Q2-PLSA.png used on input line 932.
+(pdftex.def)             Requested size: 95.25911pt x 77.33215pt.
+File: images/likert.png Graphic file (type png)
+ <use images/likert.png>
+Package pdftex.def Info: images/likert.png used on input line 932.
+(pdftex.def)             Requested size: 276.559pt x 17.65225pt.
  [46
 
- <./images/figuras-experimento/Q3-Seg.png> <./images/likert-1.png>] <images/figuras-experimento/Q4-Seg.png, id=1540, 559.08875pt x 313.17pt>
-File: images/figuras-experimento/Q4-Seg.png Graphic file (type png)
- <use images/figuras-experimento/Q4-Seg.png>
-Package pdftex.def Info: images/figuras-experimento/Q4-Seg.png used on input line 891.
-(pdftex.def)             Requested size: 147.49782pt x 82.61691pt.
+ <./images/figuras-experimento/Q2-KMeans.png (PNG copy)> <./images/figuras-experimento/Q2-LDA.png (PNG copy)> <./images/figuras-experimento/Q2-PLSA.png (PNG copy)>] <images/figuras-experimento/Q3-Seg.png, id=1539, 558.085pt x 311.1625pt>
+File: images/figuras-experimento/Q3-Seg.png Graphic file (type png)
+ <use images/figuras-experimento/Q3-Seg.png>
+Package pdftex.def Info: images/figuras-experimento/Q3-Seg.png used on input line 951.
+(pdftex.def)             Requested size: 147.49782pt x 82.23451pt.
+ <images/likert-1.png, id=1540, 953.5625pt x 70.2625pt>
 File: images/likert-1.png Graphic file (type png)
  <use images/likert-1.png>
-Package pdftex.def Info: images/likert-1.png used on input line 891.
+Package pdftex.def Info: images/likert-1.png used on input line 951.
 (pdftex.def)             Requested size: 276.559pt x 20.37773pt.
  [47
 
- <./images/figuras-experimento/Q4-Seg.png>] <images/figuras-experimento/C1-Q1-KMeans.png, id=1547, 357.335pt x 287.0725pt>
+ <./images/figuras-experimento/Q3-Seg.png> <./images/likert-1.png>] <images/figuras-experimento/Q4-Seg.png, id=1547, 559.08875pt x 313.17pt>
+File: images/figuras-experimento/Q4-Seg.png Graphic file (type png)
+ <use images/figuras-experimento/Q4-Seg.png>
+Package pdftex.def Info: images/figuras-experimento/Q4-Seg.png used on input line 971.
+(pdftex.def)             Requested size: 147.49782pt x 82.61691pt.
+File: images/likert-1.png Graphic file (type png)
+ <use images/likert-1.png>
+Package pdftex.def Info: images/likert-1.png used on input line 971.
+(pdftex.def)             Requested size: 276.559pt x 20.37773pt.
+ [48
+
+ <./images/figuras-experimento/Q4-Seg.png>] <images/figuras-experimento/C1-Q1-KMeans.png, id=1554, 357.335pt x 287.0725pt>
 File: images/figuras-experimento/C1-Q1-KMeans.png Graphic file (type png)
  <use images/figuras-experimento/C1-Q1-KMeans.png>
-Package pdftex.def Info: images/figuras-experimento/C1-Q1-KMeans.png used on input line 921.
+Package pdftex.def Info: images/figuras-experimento/C1-Q1-KMeans.png used on input line 1001.
 (pdftex.def)             Requested size: 95.25911pt x 76.5294pt.
- <images/figuras-experimento/C1-Q1-LDA.png, id=1548, 358.33875pt x 287.0725pt>
+ <images/figuras-experimento/C1-Q1-LDA.png, id=1555, 358.33875pt x 287.0725pt>
 File: images/figuras-experimento/C1-Q1-LDA.png Graphic file (type png)
 
 <use images/figuras-experimento/C1-Q1-LDA.png>
-Package pdftex.def Info: images/figuras-experimento/C1-Q1-LDA.png used on input line 921.
+Package pdftex.def Info: images/figuras-experimento/C1-Q1-LDA.png used on input line 1001.
 (pdftex.def)             Requested size: 95.25911pt x 76.31038pt.
- <images/figuras-experimento/C1-Q1-PLSA.png, id=1549, 357.335pt x 286.06876pt>
+ <images/figuras-experimento/C1-Q1-PLSA.png, id=1556, 357.335pt x 286.06876pt>
 File: images/figuras-experimento/C1-Q1-PLSA.png Graphic file (type png)
  <use images/figuras-experimento/C1-Q1-PLSA.png>
-Package pdftex.def Info: images/figuras-experimento/C1-Q1-PLSA.png used on input line 921.
+Package pdftex.def Info: images/figuras-experimento/C1-Q1-PLSA.png used on input line 1001.
 (pdftex.def)             Requested size: 95.25911pt x 76.26181pt.
- <images/figuras-experimento/C2-Q1-KMeans.png, id=1550, 357.335pt x 287.0725pt>
+ <images/figuras-experimento/C2-Q1-KMeans.png, id=1557, 357.335pt x 287.0725pt>
 File: images/figuras-experimento/C2-Q1-KMeans.png Graphic file (type png)
  <use images/figuras-experimento/C2-Q1-KMeans.png>
-Package pdftex.def Info: images/figuras-experimento/C2-Q1-KMeans.png used on input line 921.
+Package pdftex.def Info: images/figuras-experimento/C2-Q1-KMeans.png used on input line 1001.
 (pdftex.def)             Requested size: 95.25911pt x 76.5294pt.
- <images/figuras-experimento/C2-Q1-LDA.png, id=1551, 358.33875pt x 287.0725pt>
+ <images/figuras-experimento/C2-Q1-LDA.png, id=1558, 358.33875pt x 287.0725pt>
 File: images/figuras-experimento/C2-Q1-LDA.png Graphic file (type png)
  <use images/figuras-experimento/C2-Q1-LDA.png>
-Package pdftex.def Info: images/figuras-experimento/C2-Q1-LDA.png used on input line 921.
+Package pdftex.def Info: images/figuras-experimento/C2-Q1-LDA.png used on input line 1001.
 (pdftex.def)             Requested size: 95.25911pt x 76.31038pt.
- <images/figuras-experimento/C2-Q1-PLSA.png, id=1552, 357.335pt x 286.06876pt>
+ <images/figuras-experimento/C2-Q1-PLSA.png, id=1559, 357.335pt x 286.06876pt>
 File: images/figuras-experimento/C2-Q1-PLSA.png Graphic file (type png)
  <use images/figuras-experimento/C2-Q1-PLSA.png>
-Package pdftex.def Info: images/figuras-experimento/C2-Q1-PLSA.png used on input line 921.
+Package pdftex.def Info: images/figuras-experimento/C2-Q1-PLSA.png used on input line 1001.
 (pdftex.def)             Requested size: 95.25911pt x 76.26181pt.
- [48
-
- <./images/figuras-experimento/C1-Q1-KMeans.png (PNG copy)> <./images/figuras-experimento/C1-Q1-LDA.png (PNG copy)> <./images/figuras-experimento/C1-Q1-PLSA.png (PNG copy)> <./images/figuras-experimento/C2-Q1-KMeans.png (PNG copy)> <./images/figuras-experimento/C2-Q1-LDA.png (PNG copy)> <./images/figuras-experimento/C2-Q1-PLSA.png (PNG copy)>] <images/figuras-experimento/C1-Q2-KMeans.png, id=1558, 357.335pt x 290.08376pt>
-File: images/figuras-experimento/C1-Q2-KMeans.png Graphic file (type png)
- <use images/figuras-experimento/C1-Q2-KMeans.png>
-Package pdftex.def Info: images/figuras-experimento/C1-Q2-KMeans.png used on input line 951.
-(pdftex.def)             Requested size: 95.25911pt x 77.33215pt.
- <images/figuras-experimento/C1-Q2-LDA.png, id=1559, 357.335pt x 290.08376pt>
-File: images/figuras-experimento/C1-Q2-LDA.png Graphic file (type png)
- <use images/figuras-experimento/C1-Q2-LDA.png>
-Package pdftex.def Info: images/figuras-experimento/C1-Q2-LDA.png used on input line 951.
-(pdftex.def)             Requested size: 95.25911pt x 77.33215pt.
- <images/figuras-experimento/C1-Q2-PLSA.png, id=1560, 357.335pt x 290.08376pt>
-File: images/figuras-experimento/C1-Q2-PLSA.png Graphic file (type png)
- <use images/figuras-experimento/C1-Q2-PLSA.png>
-Package pdftex.def Info: images/figuras-experimento/C1-Q2-PLSA.png used on input line 951.
-(pdftex.def)             Requested size: 95.25911pt x 77.33215pt.
- <images/figuras-experimento/C2-Q2-KMeans.png, id=1561, 357.335pt x 290.08376pt>
-File: images/figuras-experimento/C2-Q2-KMeans.png Graphic file (type png)
- <use images/figuras-experimento/C2-Q2-KMeans.png>
-Package pdftex.def Info: images/figuras-experimento/C2-Q2-KMeans.png used on input line 951.
-(pdftex.def)             Requested size: 95.25911pt x 77.33215pt.
- <images/figuras-experimento/C2-Q2-LDA.png, id=1562, 357.335pt x 290.08376pt>
-File: images/figuras-experimento/C2-Q2-LDA.png Graphic file (type png)
- <use images/figuras-experimento/C2-Q2-LDA.png>
-Package pdftex.def Info: images/figuras-experimento/C2-Q2-LDA.png used on input line 951.
-(pdftex.def)             Requested size: 95.25911pt x 77.33215pt.
- <images/figuras-experimento/C2-Q2-PLSA.png, id=1563, 357.335pt x 290.08376pt>
-File: images/figuras-experimento/C2-Q2-PLSA.png Graphic file (type png)
- <use images/figuras-experimento/C2-Q2-PLSA.png>
-Package pdftex.def Info: images/figuras-experimento/C2-Q2-PLSA.png used on input line 951.
-(pdftex.def)             Requested size: 95.25911pt x 77.33215pt.
  [49
 
- <./images/figuras-experimento/C1-Q2-KMeans.png (PNG copy)> <./images/figuras-experimento/C1-Q2-LDA.png (PNG copy)> <./images/figuras-experimento/C1-Q2-PLSA.png (PNG copy)> <./images/figuras-experimento/C2-Q2-KMeans.png (PNG copy)> <./images/figuras-experimento/C2-Q2-LDA.png (PNG copy)> <./images/figuras-experimento/C2-Q2-PLSA.png (PNG copy)>] <images/figuras-experimento/t1q3.png, id=1571, 558.085pt x 311.1625pt>
-File: images/figuras-experimento/t1q3.png Graphic file (type png)
- <use images/figuras-experimento/t1q3.png>
-Package pdftex.def Info: images/figuras-experimento/t1q3.png used on input line 975.
-(pdftex.def)             Requested size: 95.25911pt x 53.11058pt.
- <images/figuras-experimento/t2q3.png, id=1572, 558.085pt x 311.1625pt>
-File: images/figuras-experimento/t2q3.png Graphic file (type png)
- <use images/figuras-experimento/t2q3.png>
-Package pdftex.def Info: images/figuras-experimento/t2q3.png used on input line 975.
-(pdftex.def)             Requested size: 95.25911pt x 53.11058pt.
- <images/figuras-experimento/t3q3.png, id=1573, 558.085pt x 311.1625pt>
-File: images/figuras-experimento/t3q3.png Graphic file (type png)
- <use images/figuras-experimento/t3q3.png>
-Package pdftex.def Info: images/figuras-experimento/t3q3.png used on input line 975.
-(pdftex.def)             Requested size: 95.25911pt x 53.11058pt.
+ <./images/figuras-experimento/C1-Q1-KMeans.png (PNG copy)> <./images/figuras-experimento/C1-Q1-LDA.png (PNG copy)> <./images/figuras-experimento/C1-Q1-PLSA.png (PNG copy)> <./images/figuras-experimento/C2-Q1-KMeans.png (PNG copy)> <./images/figuras-experimento/C2-Q1-LDA.png (PNG copy)> <./images/figuras-experimento/C2-Q1-PLSA.png (PNG copy)>] <images/figuras-experimento/C1-Q2-KMeans.png, id=1566, 357.335pt x 290.08376pt>
+File: images/figuras-experimento/C1-Q2-KMeans.png Graphic file (type png)
+ <use images/figuras-experimento/C1-Q2-KMeans.png>
+Package pdftex.def Info: images/figuras-experimento/C1-Q2-KMeans.png used on input line 1031.
+(pdftex.def)             Requested size: 95.25911pt x 77.33215pt.
+ <images/figuras-experimento/C1-Q2-LDA.png, id=1567, 357.335pt x 290.08376pt>
+File: images/figuras-experimento/C1-Q2-LDA.png Graphic file (type png)
+ <use images/figuras-experimento/C1-Q2-LDA.png>
+Package pdftex.def Info: images/figuras-experimento/C1-Q2-LDA.png used on input line 1031.
+(pdftex.def)             Requested size: 95.25911pt x 77.33215pt.
+ <images/figuras-experimento/C1-Q2-PLSA.png, id=1568, 357.335pt x 290.08376pt>
+File: images/figuras-experimento/C1-Q2-PLSA.png Graphic file (type png)
+ <use images/figuras-experimento/C1-Q2-PLSA.png>
+Package pdftex.def Info: images/figuras-experimento/C1-Q2-PLSA.png used on input line 1031.
+(pdftex.def)             Requested size: 95.25911pt x 77.33215pt.
+ <images/figuras-experimento/C2-Q2-KMeans.png, id=1569, 357.335pt x 290.08376pt>
+File: images/figuras-experimento/C2-Q2-KMeans.png Graphic file (type png)
+ <use images/figuras-experimento/C2-Q2-KMeans.png>
+Package pdftex.def Info: images/figuras-experimento/C2-Q2-KMeans.png used on input line 1031.
+(pdftex.def)             Requested size: 95.25911pt x 77.33215pt.
+ <images/figuras-experimento/C2-Q2-LDA.png, id=1570, 357.335pt x 290.08376pt>
+File: images/figuras-experimento/C2-Q2-LDA.png Graphic file (type png)
+ <use images/figuras-experimento/C2-Q2-LDA.png>
+Package pdftex.def Info: images/figuras-experimento/C2-Q2-LDA.png used on input line 1031.
+(pdftex.def)             Requested size: 95.25911pt x 77.33215pt.
+ <images/figuras-experimento/C2-Q2-PLSA.png, id=1571, 357.335pt x 290.08376pt>
+File: images/figuras-experimento/C2-Q2-PLSA.png Graphic file (type png)
+ <use images/figuras-experimento/C2-Q2-PLSA.png>
+Package pdftex.def Info: images/figuras-experimento/C2-Q2-PLSA.png used on input line 1031.
+(pdftex.def)             Requested size: 95.25911pt x 77.33215pt.
  [50
 
- <./images/figuras-experimento/t1q3.png (PNG copy)> <./images/figuras-experimento/t2q3.png (PNG copy)> <./images/figuras-experimento/t3q3.png (PNG copy)>] <images/figuras-experimento/t1q4.png, id=1579, 559.08875pt x 313.17pt>
-File: images/figuras-experimento/t1q4.png Graphic file (type png)
- <use images/figuras-experimento/t1q4.png>
-Package pdftex.def Info: images/figuras-experimento/t1q4.png used on input line 996.
-(pdftex.def)             Requested size: 95.25911pt x 53.35765pt.
- <images/figuras-experimento/t2q4.png, id=1580, 559.08875pt x 313.17pt>
-File: images/figuras-experimento/t2q4.png Graphic file (type png)
- <use images/figuras-experimento/t2q4.png>
-Package pdftex.def Info: images/figuras-experimento/t2q4.png used on input line 996.
-(pdftex.def)             Requested size: 95.25911pt x 53.35765pt.
- <images/figuras-experimento/t3q4.png, id=1581, 559.08875pt x 313.17pt>
-File: images/figuras-experimento/t3q4.png Graphic file (type png)
- <use images/figuras-experimento/t3q4.png>
-Package pdftex.def Info: images/figuras-experimento/t3q4.png used on input line 996.
-(pdftex.def)             Requested size: 95.25911pt x 53.35765pt.
+ <./images/figuras-experimento/C1-Q2-KMeans.png (PNG copy)> <./images/figuras-experimento/C1-Q2-LDA.png (PNG copy)> <./images/figuras-experimento/C1-Q2-PLSA.png (PNG copy)> <./images/figuras-experimento/C2-Q2-KMeans.png (PNG copy)> <./images/figuras-experimento/C2-Q2-LDA.png (PNG copy)> <./images/figuras-experimento/C2-Q2-PLSA.png (PNG copy)>] <images/figuras-experimento/t1q3.png, id=1578, 558.085pt x 311.1625pt>
+File: images/figuras-experimento/t1q3.png Graphic file (type png)
+ <use images/figuras-experimento/t1q3.png>
+Package pdftex.def Info: images/figuras-experimento/t1q3.png used on input line 1055.
+(pdftex.def)             Requested size: 95.25911pt x 53.11058pt.
+ <images/figuras-experimento/t2q3.png, id=1579, 558.085pt x 311.1625pt>
+File: images/figuras-experimento/t2q3.png Graphic file (type png)
+ <use images/figuras-experimento/t2q3.png>
+Package pdftex.def Info: images/figuras-experimento/t2q3.png used on input line 1055.
+(pdftex.def)             Requested size: 95.25911pt x 53.11058pt.
+ <images/figuras-experimento/t3q3.png, id=1580, 558.085pt x 311.1625pt>
+File: images/figuras-experimento/t3q3.png Graphic file (type png)
+ <use images/figuras-experimento/t3q3.png>
+Package pdftex.def Info: images/figuras-experimento/t3q3.png used on input line 1055.
+(pdftex.def)             Requested size: 95.25911pt x 53.11058pt.
  [51
 
- <./images/figuras-experimento/t1q4.png (PNG copy)> <./images/figuras-experimento/t2q4.png (PNG copy)> <./images/figuras-experimento/t3q4.png (PNG copy)>] (./apresentacao.toc) [52
+ <./images/figuras-experimento/t1q3.png (PNG copy)> <./images/figuras-experimento/t2q3.png (PNG copy)> <./images/figuras-experimento/t3q3.png (PNG copy)>] <images/figuras-experimento/t1q4.png, id=1586, 559.08875pt x 313.17pt>
+File: images/figuras-experimento/t1q4.png Graphic file (type png)
+ <use images/figuras-experimento/t1q4.png>
+Package pdftex.def Info: images/figuras-experimento/t1q4.png used on input line 1076.
+(pdftex.def)             Requested size: 95.25911pt x 53.35765pt.
+ <images/figuras-experimento/t2q4.png, id=1587, 559.08875pt x 313.17pt>
+File: images/figuras-experimento/t2q4.png Graphic file (type png)
+ <use images/figuras-experimento/t2q4.png>
+Package pdftex.def Info: images/figuras-experimento/t2q4.png used on input line 1076.
+(pdftex.def)             Requested size: 95.25911pt x 53.35765pt.
+ <images/figuras-experimento/t3q4.png, id=1588, 559.08875pt x 313.17pt>
+File: images/figuras-experimento/t3q4.png Graphic file (type png)
+ <use images/figuras-experimento/t3q4.png>
+Package pdftex.def Info: images/figuras-experimento/t3q4.png used on input line 1076.
+(pdftex.def)             Requested size: 95.25911pt x 53.35765pt.
+ [52
 
-] [53
+ <./images/figuras-experimento/t1q4.png (PNG copy)> <./images/figuras-experimento/t2q4.png (PNG copy)> <./images/figuras-experimento/t3q4.png (PNG copy)>] (./apresentacao.toc) [53
 
 ] [54
 
@@ -1689,11 +1708,13 @@ Package pdftex.def Info: images/figuras-experimento/t3q4.png used on input line 
 
 ] [56
 
-] (./apresentacao.toc) [57
+] [57
 
-] [58
+] (./apresentacao.toc) [58
 
 ] [59
+
+] [60
 
 ]
 \tf@nav=\write6
@@ -1705,11 +1726,11 @@ Package pdftex.def Info: images/figuras-experimento/t3q4.png used on input line 
 \tf@snm=\write8
 \openout8 = `apresentacao.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1164.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1164.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1246.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1246.
  (./apresentacao.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1164.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1164.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1246.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1246.
 Package rerunfilecheck Info: File `apresentacao.out' has not changed.
 (rerunfilecheck)             Checksum: 14D61D58B96F5C2454EFA7946CFA4F63;306.
 
@@ -1719,18 +1740,18 @@ LaTeX Font Warning: Size substitutions with differences
 
  ) 
 Here is how much of TeX's memory you used:
- 19648 strings out of 494884
- 366018 string characters out of 6179236
- 454391 words of memory out of 5000000
- 22308 multiletter control sequences out of 15000+600000
+ 19667 strings out of 494884
+ 366489 string characters out of 6179236
+ 454470 words of memory out of 5000000
+ 22321 multiletter control sequences out of 15000+600000
  14514 words of font info for 54 fonts, out of 8000000 for 9000
  38 hyphenation exceptions out of 8191
- 55i,11n,65p,795b,794s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,11n,65p,795b,793s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb>
-Output written on apresentacao.pdf (59 pages, 3373658 bytes).
+Output written on apresentacao.pdf (60 pages, 3395909 bytes).
 PDF statistics:
- 1702 PDF objects out of 1728 (max. 8388607)
- 1056 compressed objects within 11 object streams
- 132 named destinations out of 1000 (max. 500000)
- 472 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1710 PDF objects out of 1728 (max. 8388607)
+ 1062 compressed objects within 11 object streams
+ 136 named destinations out of 1000 (max. 500000)
+ 476 words of extra memory for PDF output out of 10000 (max. 10000000)
 

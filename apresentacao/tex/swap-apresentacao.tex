@@ -1,3 +1,221 @@
+(ZAMIR; ETZIONI, 1998) & 
+(MASAO; KôITI, 2000) & 
+(JEONG; TITOV, 2010) & 
+(NGUYEN, 2011) & 
+(TAGARELLI; KARYPIS, 2013) & 
+
+
+
+
+
+
+
+\begin{frame}{Trabalhos Relacionados}
+
+\tiny
+% \small
+\begin{table}[!h]
+	\centering
+
+% método de inferência de relação
+% Método de relacionamento entre segmentos
+	\begin{tabular}{llll} \hline
+		\textbf{Segmentação} & \textbf{Método de inferência} & \textbf{Idioma} \\
+		\hline\hline
+
+	
+		\multicolumn{3}{c}{\tiny\textit Web document clustering (1998)}   \\ 
+		Sentenças & Agrupamento & Inglês \\ \hline
+		
+	
+		\multicolumn{3}{c}{\tiny\textit Multi-topic multi-document summarization  (2000)}  \\ 
+		Sentenças & Agrupamento & Inglês \\ \hline
+	
+	
+		\multicolumn{3}{c}{\tiny\textit Multi-document topic segmentation (2010)}  \\ 
+		MultiSeg & Modelo Bayesiano  & Inglês \\ \hline
+	
+	
+		\multicolumn{3}{c}{\tiny\textit A Study on Statistical Generation of a Hierarchical Structure of Topic-information for Multi-documents (2011)}  \\
+		Segmentos & Agrupamento hierárquico & Inglês  \\ \hline
+	
+	
+		\multicolumn{3}{c}{\tiny\textit A segment-based approach to clustering multi-topic documents (2013)} \\ 
+		Parágrafos & Agrupamento e classificação &  Inglês \\ \hline
+
+	\end{tabular}
+
+\end{table}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\begin{table}
+\begin{tabular}{l|llllll}
+	\textbf{Algoritmo} & \multicolumn{3}{l}{\textbf{Parâmetros} (Configuração)} \\
+	% Algoritmo & P & \\
+% \multicolumn{2}{c}{Multi-column}
+\hline \hline
+% (Configuração)
+
+\textit{TextTiling} & \textbf{Win} &(20-60)  & \textbf{Step}   &(30-55)                  \\ 
+\textit{C99} &        \textbf{SR} &(.2-.7)       & \textbf{W}      &(sim/não) & \textbf{RS}   &(3-7)        \\ 
+\textit{BayesSeg} &   \textbf{SR} &(auto, .3-.9) & \textbf{Prior}  &(.08-.11) & \textbf{Disp} &(.1-.7)         \\ 
+\textit{MinCut} &     \textbf{SR} &(.2-.7)       & \textbf{LenCut} &(5-15)                             \\ 
+\textit{TextSeg} &    \textbf{SR} &(auto, .1-.9) &&&                                      \\ 
+\textit{PseudoSeg} &  && &&&      \\ 
+
+\end{tabular}
+\end{table}
+
+
+
+		\begin{itemize}
+			\item Web document clustering (1998); 
+			\item Multi-topic multi-document summarization  (2000); 
+			\item Multi-document topic segmentation (2010); 
+			\item A Study on Statistical Generation of a Hierarchical Structure of Topic-information for Multi-documents (2011); 
+			\item A segment-based approach to clustering multi-topic documents (2013).
+
+		\end{itemize} 
+
+		\begin{itemize}
+			\item Web document clustering (1998); 
+			\item Multi-topic multi-document summarization  (2000); 
+			\item Multi-document topic segmentation (2010); 
+			\item A Study on Statistical Generation of a Hierarchical Structure of Topic-information for Multi-documents (2011); 
+			\item A segment-based approach to clustering multi-topic documents (2013).
+
+		\end{itemize} 
+
+
+
+
+
+1 - 
+2 - 
+
+\begin{frame}{Contexto}
+
+As atas registram assuntos discutidos em reuniões e podem ser utilizadas como base de dados.
+\nblock{}{
+\begin{itemize}
+	\item Utilizadas como referência e apoio a decisões; 
+	\item Um assunto pode ser discutido diversas vezes em reuniões diferentes;
+	\item É desejável recuperar um histórico desses assuntos ao longo do tempo;
+	\item Necessidade de ferramentas automáticas.
+\end{itemize}
+}
+
+\end{frame}
+
+
+
+
+\begin{frame}{Contexto}
+
+Recuperação de Informação em documentos textuais:
+
+\nblock{}{
+\begin{itemize}
+	\item Informações contidas em grandes quantidades de texto;
+	\item Inerentemente não estruturados;
+	\item Documentos com múltiplos assuntos;
+	\item Assuntos dispersos pela base de documentos.
+\end{itemize}
+}
+
+\end{frame}
+
+
+\begin{frame}{Contexto}
+
+Recuperação de Informação em documentos textuais:
+
+\nblock{}{
+\begin{itemize}
+	\item Informações contidas em grandes quantidades de texto;
+	\item Inerentemente não estruturados;
+	\item Documentos com múltiplos assuntos;
+	\item Assuntos dispersos pela base de documentos.
+\end{itemize}
+}
+
+\end{frame}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\begin{figure}[!ht] \centering     %%% not \center
+
+%	\subfigure[a]{ 
+		\includegraphics[width=.82\textwidth]{images/graficos/resumo-wd-pk.png}	
+		% \caption{wd-pk}
+		\label{fig:resumo-wd-pka}
+%	}
+%	\subfigure[b]{ 
+		\includegraphics[width=.82\textwidth]{images/graficos/resumo-tradicionais.png}	
+		% \caption{tradicionais}
+		\label{fig:resumo-tradicionaisa}
+%	}
+	% \caption{Performance geral dos algoritmos de segmentação textual e as configurações que apresentam melhores resultados para cada medida de desempenho.}
+	% \label{fig:resumo-segmentadores}
+\end{figure}
+
 
 
 

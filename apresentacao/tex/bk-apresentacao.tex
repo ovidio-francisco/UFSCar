@@ -34,59 +34,51 @@ para Organização e Extração de Conhecimento de Documentos de Reunião}
 
 \begin{frame}{Contexto}
 
-% As atas registram assuntos discutidos em reuniões e podem ser utilizadas como base de dados.
-	% \item Registram assuntos discutidos em reuniões;
+As atas registram assuntos discutidos em reuniões e podem ser utilizadas como base de dados.
 \nblock{}{
 \begin{itemize}
-	\item As atas registram assuntos discutidos em reuniões
-	\item Uma ata pode conter diversos assuntos discutidos;
-\end{itemize}
-}
-
-\nblock{}{
-
-\begin{itemize}
-	\item Um assunto pode ser discutido em diversas reuniões ao longo do tempo
-	\item Recuperar o histórico de um assunto pode apoiar tomadas decisão.
-\end{itemize}
-}
-
-
-\nblock{}{
-% Devido às características das atas:
-\begin{itemize}
-	\item Informações contidas em grandes quantidades de texto;
-	\item Inerentemente não estruturados;
-	\item Documentos com múltiplos assuntos;
+	\item Utilizadas como referência e apoio a decisões; 
+	\item Um assunto pode ser discutido diversas vezes em reuniões diferentes;
+	\item É desejável recuperar um histórico desses assuntos ao longo do tempo;
 	\item Necessidade de ferramentas automáticas.
 \end{itemize}
 }
-
-
-	% \item Podem tratar de diferentes assuntos no mesmo documento;
-
 
 \end{frame}
 
 
 
 
+\begin{frame}{Contexto}
+
+Recuperação de Informação em documentos textuais:
+
+\nblock{}{
+\begin{itemize}
+	\item Informações contidas em grandes quantidades de texto;
+	\item Inerentemente não estruturados;
+	\item Documentos com múltiplos assuntos;
+	\item Assuntos dispersos pela base de documentos.
+\end{itemize}
+}
+
+\end{frame}
+
+
 
 \begin{frame}{Contexto}
 
 % Um dos principais desafios nesse cenário é 
-% Nesse cenário, o desafio é encontrar trechos de texto que tratem somente do assunto pesquisado.
+Nesse cenário, o desafio é encontrar trechos de texto que tratem somente do assunto pesquisado.
 
 \nblock{}{
 
-% Essa tarefa consiste em 2 passos principais:
+Essa tarefa consiste em 2 passos principais:
 % Essa tarefa tem 2 passos principais:
 
-	Desafios na recuperação de informações em atas:
-
 \begin{itemize}
-	\item Apresentar uma ata integral pode dificultar o usuário encontrar determinado assunto;
-	\item É desejável agrupar trechos de atas com assuntos semelhantes.
+	\item Encontrar pontos onde há transição de assuntos;
+	\item Identificar o teor desses assuntos;
 \end{itemize}
 
 } 
@@ -148,49 +140,14 @@ Modelos de Extração de Tópicos:
 
 \begin{frame}{Trabalhos Relacionados}
 
-\tiny
-% \small
-\begin{table}[!h]
-	\centering
+		\begin{itemize}
+			\item Web document clustering (1998); 
+			\item Multi-topic multi-document summarization  (2000); 
+			\item Multi-document topic segmentation (2010); 
+			\item A Study on Statistical Generation of a Hierarchical Structure of Topic-information for Multi-documents (2011); 
+			\item A segment-based approach to clustering multi-topic documents (2013).
 
-	\begin{tabular}{ll} \hline\\
-		(ZAMIR; ETZIONI, 1998) &      Web document clustering (1998)   \\ 
-		(MASAO; KôITI, 2000) &        Multi-topic multi-document summarization  (2000)  \\ 
-		(JEONG; TITOV, 2010) &        Multi-document topic segmentation (2010)  \\ 
-		(NGUYEN, 2011) &              A Study on Statistical Generation of a Hierarchical Structure \\ & of Topic-information for Multi-documents (2011)  \\
-		(TAGARELLI; KARYPIS, 2013) &  A segment-based approach to clustering multi-topic documents (2013) \\ \\ \hline
-	\end{tabular}
-\end{table}
-
-
-
-% \begin{frame}{Trabalhos Relacionados}
-
-\tiny
-% \small
-\begin{table}[!h]
-	\centering
-
-% método de inferência de relação
-% Método de relacionamento entre segmentos
-	\begin{tabular}{lllll} \hline
-		\textbf{Trabalho} & \textbf{Segmentação} & \textbf{Método de inferência}  & \textbf{Representação} & \textbf{Idioma}\\
-		\hline\hline
-
-	
-	 (ZAMIR; ETZIONI, 1998) &      	Sentenças  & Agrupamento                 & & Inglês \\ \hline
-	 (MASAO; KôITI, 2000) &        	Sentenças  & Agrupamento                 & Rotulação manual & Inglês \\ \hline
-	 (JEONG; TITOV, 2010) &        	MultiSeg   & Modelo Bayesiano            & & Inglês \\ \hline
-	 (NGUYEN, 2011) &              	Segmentos  & Agrupamento hierárquico     & Sumarização e \\ &&&palavras-chave& Inglês  \\ \hline
-	 (TAGARELLI; KARYPIS, 2013) &  	Parágrafos & Agrupamento e classificação & & Inglês \\ \hline
-
-	\end{tabular}
-
-\end{table}
-
-
-
-
+		\end{itemize} 
 
 \end{frame}
 
@@ -209,9 +166,9 @@ Modelos de Extração de Tópicos:
 } 
 
 \nblock{}{
-	Utilizar técnicas de Segmentação Textual em conjunto com modelos de Extração de Tópicos para:
+	Utilizar técnicas de Segmentação textual em conjunto com modelos de Extração de Tópicos para:
 	\begin{itemize}
-	\item Gerar uma estrutura mais organizada que a coleção original;
+	\item Gerar uma estrutura mais organizada que a coleção original.
 	\item Utilizar a estrutura latente dos segmentos para Recuperação de Informação. 
 	\end{itemize}
 }
@@ -404,9 +361,8 @@ Modelos de Extração de Tópicos:
 	\nblock{ } {
 		Módulo de Consulta:
 		\begin{itemize}
-			\item Utiliza a Estrutura de Dados Interna como base;
+			\item Utiliza a Estrutura de Dados Interna;
 			\item Os tópicos são representados por seus descritores;
-			\item Os segmentos de atas são agrupados em tópicos;
 			\item Usa o Modelo de Espaço Vetorial para ranquear os tópicos;
 			\item Exibe os segmentos atribuídos ao primeiro tópico do ranking;
 			% \item Busca exploratória pelos tópicos mais similares à consulta.
@@ -483,21 +439,6 @@ Modelos de Extração de Tópicos:
  
  
 \section{Avaliação Experimental}
-
-\begin{frame}{Avaliação Experimental}
-
-	\nblock{}{
-		A Avaliação Experimental foi dividida em duas etapas:
-		\begin{itemize}
-			\item Segmentação Textual;
-			\item Extração de Tópicos.
-
-		\end{itemize}
-	}
-
-\end{frame}
-
-
 \begin{frame}{Avaliação Experimental}
 
 	Os segmentadores foram avaliados objetivamente. 
@@ -506,11 +447,7 @@ Modelos de Extração de Tópicos:
 	\item Processo de anotação manual em segmentos;		
 	\item Criação de segmentações de referência;
 	\item Configuração dos algoritmos;
-	\item Medidas de desempenho; 
-		\begin{itemize}
-			\item Acurácia e F$^1$; 
-			\item WindowDiff e P$_k$.
-		\end{itemize}
+	\item Medidas de desempenho (Acurácia, F$^1$, WindowDiff e P$_k$).
 	 % entre a referência e os segmentos obtidos.
 \end{itemize}
 }
@@ -1151,11 +1088,11 @@ Os modelos de Extração de Tópicos foram avaliados junto aos usuários.
 	\center Extração de Tópicos
 	\nblock{}{
 	\begin{itemize}
-		% \item Extraem padrões úteis do \textit{corpus};
+		\item Extraem padrões úteis do \textit{corpus};
 		\item Melhores resultados com o K-Means;
 			\begin{itemize}
 				\item Coesão dos grupos;
-				\item Capacidade representativa do descritores;
+				\item Capacidade Representativa do descritores;
 			\end{itemize}
 			% \begin{itemize}
 				% \item Coesão 
@@ -1182,15 +1119,20 @@ Os modelos de Extração de Tópicos foram avaliados junto aos usuários.
 Contribuições:
 
 	\begin{itemize}
-\item O método para extração de conhecimento em documentos multi-temáticos na língua portuguesa; 
+\item O método para extração de conhecimento em documentos multi-temáticos; 
 \item O corpus de atas anotadas;
 \item A ferramenta para segmentação e anotação manual;
-\item O sistema proposto e sua implementação; 
+\item O Sistema proposto e sua implementação; 
 \item As avaliações dos Segmentadores e Extratores de Tópicos.
 
 	\end{itemize}
 	}
 
+	\eblock{} {
+		\begin{itemize}
+			\item Submissão de artigo.
+		\end{itemize}
+	}
 
 \end{frame}
 
@@ -1209,11 +1151,10 @@ Contribuições:
 	
 	\nblock{} {
 
-		Adição de novas técnicas ao sistema:
+		Conclusão do Sistema:
 	\begin{itemize}
 		\item Algoritmos de agrupamento incremental
-		% \item Classificação dos segmentos em relação ao tipo de menção ao assunto
-			% \item Categorização dos segmentos (decisão, informe, irrelevante);
+		\item Classificação dos segmentos em relação ao tipo de menção ao assunto
 	\end{itemize}
 }
 	
@@ -1226,12 +1167,6 @@ Contribuições:
 
 	\end{itemize}
 	
-	}
-	
-	\eblock{} {
-		\begin{itemize}
-			\item Submissão de artigo.
-		\end{itemize}
 	}
 \end{frame}
 
