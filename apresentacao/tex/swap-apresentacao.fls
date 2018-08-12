@@ -6,4 +6,5 @@ INPUT /var/lib/texmf/web2c/pdftex/pdflatex.fmt
 INPUT swap-apresentacao.tex
 OUTPUT swap-apresentacao.log
 INPUT /usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmti10.tfm

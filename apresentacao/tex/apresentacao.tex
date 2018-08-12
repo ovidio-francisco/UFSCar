@@ -38,15 +38,15 @@ para Organização e Extração de Conhecimento de Documentos de Reunião}
 	% \item Registram assuntos discutidos em reuniões;
 \nblock{}{
 \begin{itemize}
-	\item As atas registram assuntos discutidos em reuniões
-	\item Uma ata pode conter diversos assuntos discutidos;
+	\item As atas registram assuntos discutidos em reuniões;
+	\item Uma ata pode conter diversos assuntos discutidos.
 \end{itemize}
 }
 
 \nblock{}{
 
 \begin{itemize}
-	\item Um assunto pode ser discutido em diversas reuniões ao longo do tempo
+	\item Um assunto pode ser discutido em diversas reuniões ao longo do tempo;
 	\item Recuperar o histórico de um assunto pode apoiar tomadas decisão.
 \end{itemize}
 }
@@ -107,7 +107,7 @@ para Organização e Extração de Conhecimento de Documentos de Reunião}
 Algoritmos de Segmentação Textual:
 
 \begin{itemize}
-	\item Divide um texto em trechos com um único assunto completo;
+	\item Dividem um texto em trechos com um único assunto completo;
 	\item Úteis em aplicações com textos sem indicações de quebras de assunto, como transcrições de áudio, e diálogos em chats;
 	\item Podem ser uma etapa de pré-processamento para outras aplicações;
 	\item Não dão indicações sobre o conteúdo dos segmentos.
@@ -174,14 +174,14 @@ Modelos de Extração de Tópicos:
 % método de inferência de relação
 % Método de relacionamento entre segmentos
 	\begin{tabular}{lllll} \hline
-		\textbf{Trabalho} & \textbf{Segmentação} & \textbf{Método de inferência}  & \textbf{Representação} & \textbf{Idioma}\\
+		\textbf{Trabalho} & \textbf{Divisão} & \textbf{Método de inferência}  & \textbf{Representação} & \textbf{Idioma}\\
 		\hline\hline
 
 	
 	 (ZAMIR; ETZIONI, 1998) &      	Sentenças  & Agrupamento                 & & Inglês \\ \hline
 	 (MASAO; KôITI, 2000) &        	Sentenças  & Agrupamento                 & Rotulação manual & Inglês \\ \hline
-	 (JEONG; TITOV, 2010) &        	MultiSeg   & Modelo Bayesiano            & & Inglês \\ \hline
-	 (NGUYEN, 2011) &              	Segmentos  & Agrupamento hierárquico     & Sumarização e \\ &&&palavras-chave& Inglês  \\ \hline
+	 (JEONG; TITOV, 2010) &        	Segmentação   & Modelo Bayesiano            & & Inglês \\ \hline
+	 (NGUYEN, 2011) &              	Segmentação  & Agrupamento hierárquico     & Sumarização e \\ &&&palavras-chave& Inglês  \\ \hline
 	 (TAGARELLI; KARYPIS, 2013) &  	Parágrafos & Agrupamento e classificação & & Inglês \\ \hline
 
 	\end{tabular}
@@ -355,41 +355,41 @@ Modelos de Extração de Tópicos:
 \end{frame}
 
 
-\begin{frame}{Distribuição de tópicos em uma ata real} 
-	\begin{figure}[h!]
+% \begin{frame}{Distribuição de tópicos em uma ata real} 
+	% \begin{figure}[h!]
 
-		\includegraphics[trim={ 0 405 300 256 },clip,page=3,width=0.95\textwidth]{images/distribuicao-3-parts.pdf}
+		% \includegraphics[trim={ 0 405 300 256 },clip,page=3,width=0.95\textwidth]{images/distribuicao-3-parts.pdf}
 
-	\end{figure} 
-\end{frame}
-
-
-\begin{frame}{Distribuição de tópicos em uma ata real} 
-	\begin{figure}[h!]
-
-		\includegraphics[trim={ 0 320 300 110 },clip,page=4,width=0.60\textwidth]{images/distribuicao-3-parts.pdf}
-
-	\end{figure} 
-\end{frame}
+	% \end{figure} 
+% \end{frame}
 
 
+% \begin{frame}{Distribuição de tópicos em uma ata real} 
+	% \begin{figure}[h!]
 
-\begin{frame}{Distribuição de tópicos em uma ata real} 
-	\begin{figure}[h!]
+		% \includegraphics[trim={ 0 320 300 110 },clip,page=4,width=0.60\textwidth]{images/distribuicao-3-parts.pdf}
 
-		\includegraphics[trim={ 0 505 300 135 },clip,page=5,width=0.95\textwidth]{images/distribuicao-3-parts.pdf}
-
-	\end{figure} 
-\end{frame}
+	% \end{figure} 
+% \end{frame}
 
 
-\begin{frame}{Distribuição de tópicos em uma ata real} 
-	\begin{figure}[h!]
 
-		\includegraphics[trim={ 0 305 300 195 },clip,page=6,width=0.75\textwidth]{images/distribuicao-3-parts.pdf}
+% \begin{frame}{Distribuição de tópicos em uma ata real} 
+	% \begin{figure}[h!]
 
-	\end{figure} 
-\end{frame}
+		% \includegraphics[trim={ 0 505 300 135 },clip,page=5,width=0.95\textwidth]{images/distribuicao-3-parts.pdf}
+
+	% \end{figure} 
+% \end{frame}
+
+
+% \begin{frame}{Distribuição de tópicos em uma ata real} 
+	% \begin{figure}[h!]
+
+		% \includegraphics[trim={ 0 305 300 195 },clip,page=6,width=0.75\textwidth]{images/distribuicao-3-parts.pdf}
+
+	% \end{figure} 
+% \end{frame}
 
 
 
@@ -444,7 +444,8 @@ Modelos de Extração de Tópicos:
 
 	\center Interface do Sistema após uma consulta\\
 	\vspace{.5cm}
-		\includegraphics[width=\textwidth]{images/tela-principal-2-1.png}
+		% \includegraphics[width=\textwidth]{images/tela-principal-2-1.png}
+		\includegraphics[width=\textwidth]{images/consulta.png}
 
 
 \end{frame}
@@ -1213,7 +1214,7 @@ Contribuições:
 	\begin{itemize}
 		\item Algoritmos de agrupamento incremental
 		% \item Classificação dos segmentos em relação ao tipo de menção ao assunto
-			% \item Categorização dos segmentos (decisão, informe, irrelevante);
+			\item Categorização dos segmentos (decisão, informe, irrelevante);
 	\end{itemize}
 }
 	
