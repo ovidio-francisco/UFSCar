@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.8.22)  17 AUG 2018 20:08
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.8.22)  18 AUG 2018 12:33
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1649,7 +1649,7 @@ Underfull \vbox (badness 1163) has occurred while \output is active []
  [56] <conteudo/capitulos/figs/estrutura-de-dados-interna-revisada.pdf, id=1239, page=1, 844.15375pt x 597.23125pt>
 File: conteudo/capitulos/figs/estrutura-de-dados-interna-revisada.pdf Graphic file (type pdf)
  <use conteudo/capitulos/figs/estrutura-de-dados-interna-revisada.pdf, page 1>
-Package pdftex.def Info: conteudo/capitulos/figs/estrutura-de-dados-interna-revisada.pdf, page1 used on input line 172.
+Package pdftex.def Info: conteudo/capitulos/figs/estrutura-de-dados-interna-revisada.pdf, page1 used on input line 169.
 (pdftex.def)             Requested size: 409.49722pt x 250.76648pt.
 
 
@@ -1667,10 +1667,10 @@ Underfull \vbox (badness 1259) has occurred while \output is active []
  [59] <conteudo/capitulos/figs/consulta.png, id=1865, 1371.1225pt x 743.77875pt>
 File: conteudo/capitulos/figs/consulta.png Graphic file (type png)
  <use conteudo/capitulos/figs/consulta.png>
-Package pdftex.def Info: conteudo/capitulos/figs/consulta.png used on input line 244.
+Package pdftex.def Info: conteudo/capitulos/figs/consulta.png used on input line 239.
 (pdftex.def)             Requested size: 455.0pt x 246.82098pt.
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <17.28> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 269.
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 264.
  [60 <./conteudo/capitulos/figs/consulta.png>] [61] [62] (./anexos/tabelas/distribuicao-topicos/tab-distribuicao-topicos-resumo.tex
 
 LaTeX Warning: Float too large for page by 39.19878pt on input line 89.
@@ -1681,7 +1681,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 ) [63] <conteudo/capitulos/figs/doc-em-png/distribuicao.pdf, id=1892, page=1, 624.3325pt x 845.1575pt>
 File: conteudo/capitulos/figs/doc-em-png/distribuicao.pdf Graphic file (type pdf)
  <use conteudo/capitulos/figs/doc-em-png/distribuicao.pdf, page 1>
-Package pdftex.def Info: conteudo/capitulos/figs/doc-em-png/distribuicao.pdf, page1 used on input line 361.
+Package pdftex.def Info: conteudo/capitulos/figs/doc-em-png/distribuicao.pdf, page1 used on input line 356.
 (pdftex.def)             Requested size: 455.0pt x 444.03311pt.
 
 
@@ -2326,7 +2326,7 @@ Here is how much of TeX's memory you used:
  50i,15n,40p,1632b,3273s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx8.pfb></usr/share/texmf/fonts/type1/public/lm/lmbxi10.pfb></usr/share/texmf/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi6.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr6.pfb></usr/share/texmf/fonts/type1/public/lm/lmr7.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/public/lm/lmri8.pfb></usr/share/texmf/fonts/type1/public/lm/lmss10.pfb></usr/share/texmf/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss17.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbo10.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsso12.pfb></usr/share/texmf/fonts/type1/public/lm/lmsso17.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf/fonts/type1/pub
 lic/lm/lmtt10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on ovidio-dissertacao.pdf (140 pages, 2742150 bytes).
+Output written on ovidio-dissertacao.pdf (140 pages, 2742161 bytes).
 PDF statistics:
  3367 PDF objects out of 3580 (max. 8388607)
  2343 compressed objects within 24 object streams

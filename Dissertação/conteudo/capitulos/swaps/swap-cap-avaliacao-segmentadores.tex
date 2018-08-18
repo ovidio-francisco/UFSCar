@@ -1,5 +1,96 @@
 
 
+- (Para confirmar, ...)
+
+- Teste de Friedman e Nemenyi para as configurações de cada algoritmo.
+- Teste de Friedman e Nemenyi para as melhores configurações dos algoritmos.
+
+
+
+
+
+
+
+
+Com os testes anteriores obteve-se, para cada medida, 4 configurações levando em conta ambos os algoritmos e a presença ou ausência do pré-processamento. Por meio do teste de Friedman e Nemenyi e verificou-se que não há diferença crítica entre os métodos \textit{TextTiling} e \textit{C99}. Na Figura~\ref{fig:CDs} é mostrado os Diagramas para as medidas \textit{WindowDiff}, $P_k$, Acurácia, Precisão, Revocação e $F^1$.	
+
+
+
+
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%
+% Análise da Coesão Léxica e eficiência da técnica do TT
+%%%%%%%%%%%%%%%%%%%%%%
+% *** Removido *** 
+% --> Falar da coesão léxica peculiar das atas!!
+
+% Uma vez que a coesão léxica é pressuposto de muitas abordagens em segmentação textual, fez-se uma análise desses documentos quanto a similaridade dos termos ao longo do texto. Verificou-se que a técnica de janelas deslizantes empregada pelo TextTiling encontra os vales que indicam transições entre segmentos, contudo ao comparar esses vales com a segmentação de referência, nota-se que a maioria dos limites coincide ou estão próximos aos vales, porém há casos onde a referência indica limites em trechos com alta coesão léxica e outros onde a queda da coesão, indicada por vales, não coincide com nenhum limite de referência.  
+
+% % Na Figura~\ref{fig:coesaolexicaTT}a linha horizontal representa a variação da coesão léxica ao longo de uma ata e as linha verticais azuis e vermelhas representam os limites entre segmentos atribuidos pela referência e pelo algoritmo respectivamente. 
+% Na Figura~\ref{fig:coesaolexicaTT} é apresentado a variação da coesão léxica ao longo de uma ata e a segmentação obtida pelo \textit{TextTiling} usando tamanho de janela igual a 50 e passo 9. A linha horizontal representa a variação da coesão léxica e as linha verticais azuis e vermelhas representam os limites entre segmentos atribuídos pela referência e pelo algoritmo respectivamente. 
+
+
+  % %--- ---
+  % \begin{figure}[!h]
+	  % \centering
+	  % \includegraphics[width=\textwidth]{conteudo/capitulos/figs/coesaolexicaTT-50-9.png}
+	  % \caption{Variação da coesão léxica ao longo de uma ata junto a uma segmentação automática em contraste com uma segmentação de referência.}
+	  % \label{fig:coesaolexicaTT}
+  % \end{figure}
+
+
+
+
+
+
+
+
+% --> colocar os CDs aqui?
+
+% Com os testes anteriores obteve-se, para cada medida, 4 configurações levando em conta ambos os algoritmos e a presença ou ausência do pré-processamento. Por meio do teste de Friedman e Nemenyi e verificou-se que não há diferença crítica entre os métodos \textit{TextTiling} e \textit{C99}. Na Figura~\ref{fig:CDs} é mostrado os Diagramas para as medidas \textit{WindowDiff}, $P_k$, Acurácia, Precisão, Revocação e $F^1$.	
+
+% \begin{figure}[!h]
+	% \centering     %%% not \center
+
+	% \subfigure[a]{ \label{fig:a}
+		% \includegraphics[width=70mm]{conteudo/capitulos/figs/CDs/WinDiff.png} }	
+	% \subfigure[b]{ \label{fig:b}
+		% \includegraphics[width=70mm]{conteudo/capitulos/figs/CDs/Pk.png} }
+	% \subfigure[c]{ \label{fig:c}
+		% \includegraphics[width=70mm]{conteudo/capitulos/figs/CDs/Acuracy.png}}
+	% \subfigure[d]{ \label{fig:d}
+		% \includegraphics[width=75mm]{conteudo/capitulos/figs/CDs/Precision.png}}
+	% \subfigure[e]{ \label{fig:e}
+		% \includegraphics[width=70mm]{conteudo/capitulos/figs/CDs/Recall.png}}
+	% \subfigure[f]{ \label{fig:f}
+		% \includegraphics[width=70mm]{conteudo/capitulos/figs/CDs/F1.png}}
+
+		% \caption{Diagramas de Diferença Crítica sobre \textit{ranking} dos algoritmos de segmentação baseados em coesão léxica de acordo com valores de \textit{WindowDiff}, $P_k$, Acurácia, Precisão, Revocação e $F^1$.}
+	% \label{fig:CDs}
+% \end{figure}
+% % -< Colocar uma explicação mais detalhada para esses passos
+% % --> Fechar falando sobre os métodos baseados em coesão léxica.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
