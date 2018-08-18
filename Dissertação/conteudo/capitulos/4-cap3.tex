@@ -43,7 +43,7 @@ Na Figura \ref{fig:visao-geral} é mostrada a visão geral do sistema com suas p
 
 \subsection{Módulo de Preparação e Manutenção}\label{sec:modulo-preparacao}
 
-O módulo de preparação e manutenção tem como função principal manter uma base de dados necessária para os processos de Recuperação de Informação e Aprendizado de Máquina. Primeiramente, esse módulo deve receber um conjunto inicial de documentos e em seguida organizá-lo por meio das técnicas de segmentação textual e extração de tópicos, de forma que o conjunto resultante formado por segmentos de documentos e os dados obtidos pelo extrator de tópicos constitua um novo \textit{corpus} estruturado e mais adequado às técnicas de Recuperação de Informação e Aprendizado de Máquina. Além disso, considera-se o crescimento da bases de documentos, assim, o sistema deve receber novos documentos a medida que são gerados. A seguir são detalhadas as etapas do Módulo de preparação e manutenção desde a preparação dos documento até a entrega da estrutura de dados interna ao Módulo de Consulta. 
+O módulo de preparação e manutenção tem como função principal manter uma base de dados necessária para os processos de Recuperação de Informação e Aprendizado de Máquina. Primeiramente, esse módulo deve receber um conjunto inicial de documentos e em seguida organizá-lo por meio das técnicas de segmentação textual e extração de tópicos, de forma que o conjunto resultante formado por segmentos de documentos e os dados obtidos pelo extrator de tópicos constitua um novo \textit{corpus} estruturado e mais adequado às técnicas de Recuperação de Informação e Aprendizado de Máquina. Além disso, considera-se o crescimento da bases de documentos, assim, o sistema deve receber novos documentos a medida que são gerados. A seguir são detalhadas as etapas do Módulo de preparação e manutenção desde a preparação dos documento até a entrega da base de dados interna ao Módulo de Consulta. 
 
 % melhorar ↓↓↓↓↓
 
@@ -93,7 +93,7 @@ Nesse trabalho considera-se as sentenças as menores unidades de informação a 
 
 
 
-Nessa etapa os documentos são pré-processados individualmente antes de serem recebidos pelos algoritmos de segmentação e extração de tópicos. Inicialmente, cada texto passa por um processo de transformação em que as letras são convertidas em caixa baixa e elimina-se sinais de pontuação, numerais e termos menores que três caracteres. Em seguida remove-se os termos que não contribuem para a etapa de segmentação, as quais são chamadas de \textit{stop words}. Para identificá-las usa-se uma lista de 438 palavras conhecidas do idioma português, como preposições, artigos e verbos de estado e adicionalmente uma lista contendo palavras muito frequentes e pouco significantes desse domínio com como \textit{``universidade''}, \textit{``computação''} e nomes de pessoas as quais formam listadas manualmente. Em seguida, extrai-se o radical de cada palavra por meio da técnica \textit{stemming} implementada no algoritmo de Porter~\cite{Porter1997}. A etapa de pré-processamento cria uma estrutura de dados intermediária, da qual foram removidos os elementos mencionados. Essa estrutura é utilizada para representar os textos, contudo, a estrutura de dados interna preserva os elementos removidos para apresentação adequada ao usuário.
+Nessa etapa os documentos são pré-processados individualmente antes de serem recebidos pelos algoritmos de segmentação e extração de tópicos. Inicialmente, cada texto passa por um processo de transformação em que as letras são convertidas em caixa baixa e elimina-se sinais de pontuação, numerais e termos menores que três caracteres. Em seguida remove-se os termos que não contribuem para a etapa de segmentação, as quais são chamadas de \textit{stop words}. Para identificá-las usa-se uma lista de 438 palavras conhecidas do idioma português, como preposições, artigos e verbos de estado e adicionalmente uma lista contendo palavras muito frequentes e pouco significantes desse domínio com como \textit{``universidade''}, \textit{``computação''} e nomes de pessoas as quais formam listadas manualmente. Em seguida, extrai-se o radical de cada palavra por meio da técnica \textit{stemming} implementada no algoritmo de Porter~\cite{Porter1997}. A etapa de pré-processamento cria uma base de dados intermediária, da qual foram removidos os elementos mencionados. Essa estrutura é utilizada para representar os textos, contudo, a base de dados interna preserva os elementos removidos para apresentação adequada ao usuário.
  
 % Nesse trabalho, todos os termos restantes após a remoção de \textit{stop words} e \textit{stemming} foram mantidas independentemente de valores de   \textit{Document Frequency} devido a característica das atas de possuir múltiplos assuntos em um documento. Cada segmento pode ser considerado como um sub-documento quem contém um assunto relativamente independente. 
 
@@ -147,13 +147,13 @@ Após a etapa de extração de tópicos aplicada a um conjunto de segmentos,  cr
 
 % ==================== Estrutura de Dados Interna ===================== %
 
-\subsection{Estrutura de Dados Interna}
+\subsection{Base de Dados Interna}
 
-A estrutura de dados interna é o resultado dos processos de segmentação e extração de tópicos. Constituída por: 
+A base de dados interna é o resultado dos processos de segmentação e extração de tópicos. Constituída por: 
 (1) documentos originais para referência, 
 (2) segmentos de texto contendo um assunto relativamente independente,
 (3) matrizes documento-tópico e termo-tópico.
-Na Figura~\ref{fig:estrutura-dados-interna} é apresentado a visão geral da estrutura de dados interna onde ilustra-se os arquivos da coleção de documentos ($D$) que contêm assuntos diversos (representados pelos círculos, quadrados e triângulos) ficando disponíveis para visualização e fonte original das informações. 
+Na Figura~\ref{fig:estrutura-dados-interna} é apresentado a visão geral da base de dados interna onde ilustra-se os arquivos da coleção de documentos ($D$) que contêm assuntos diversos (representados pelos círculos, quadrados e triângulos) ficando disponíveis para visualização e fonte original das informações. 
 % Os arquivos originais são mantidos para referência aos textos integrais ficando disponíveis para visualização e fonte original das informações. 
 
 
@@ -164,9 +164,17 @@ Na Figura~\ref{fig:estrutura-dados-interna} é apresentado a visão geral da est
 	\begin{figure}[h!]
 \center
 		% \includegraphics[trim={ 61 0 61 0 },clip,page=1,width=0.9\textwidth]{conteudo/capitulos/figs/estrutura-de-dados-interna.pdf}
-		\includegraphics[trim={ 0 40 0 40 },clip,page=1,width=0.9\textwidth]{conteudo/capitulos/figs/estrutura-de-dados-interna.pdf}
 
-		\caption{Visão geral da estrutura de dados interna e seu processo de geração.}
+
+		% \includegraphics[trim={ 0 40 0 40 },clip,page=1,width=0.9\textwidth]{conteudo/capitulos/figs/estrutura-de-dados-interna.pdf}
+
+
+		\includegraphics[trim={ 0 40 0 40 },clip,page=1,width=0.9\textwidth]{conteudo/capitulos/figs/estrutura-de-dados-interna-revisada.pdf}
+
+
+		\caption{Representação visual da base de dados armazenada pelo sistema e seu processo de geração.}
+
+		% \caption{Visão geral da estrutura de dados interna e seu processo de geração.}
 		\label{fig:estrutura-dados-interna}
 	\end{figure}
 
@@ -177,7 +185,7 @@ A partir do texto extraído dos documentos originais é gerado o conjunto de seg
 
 Os segmentos são então tratados como sub-documentos pelo sistema em que a partir deles o extrator de tópicos irá construir as matrizes documento-tópico ($W$) e termo-tópico ($Z$). Uma vez construídas, essas matrizes são armazenadas em arquivos e usadas para agrupar os segmentos com o mesmo tópico bem como encontrar os melhores termos da coleção para descrever cada tópico.
 
-% Deve-se ressaltar que o sistema recebe um conjunto inicial de documentos a partir do qual a estrutura de dados interna é gerada. A medida que novos documentos são gerados e adicionados ao sistema, serão processados pelo módulo de preparação e manutenção e incorporados a estrutura de dados interna bem como as matrizes documento-tópico e termo-tópicos serão atualizadas pelo extrator de tópicos.
+% Deve-se ressaltar que o sistema recebe um conjunto inicial de documentos a partir do qual a base de dados interna é gerada. A medida que novos documentos são gerados e adicionados ao sistema, serão processados pelo módulo de preparação e manutenção e incorporados a base de dados interna bem como as matrizes documento-tópico e termo-tópicos serão atualizadas pelo extrator de tópicos.
 
 
 
@@ -187,12 +195,12 @@ Os segmentos são então tratados como sub-documentos pelo sistema em que a part
 \subsection{Módulo de Consulta}
 
 
-Uma vez que a Estrutura de Dados Interna contém os assuntos abordados na coleção de documentos e o trecho onde se encontram, tem-se um \textit{corpus} derivado do original o qual é melhor organizado e acrescido de informação. A estrutura de dados gerada pelos processos anteriores é então utilizada pelo Módulo de Consulta, cuja responsabilidade é receber a \textit{string} de consulta do usuário, resgatar os dados desejados e apresentá-los em ordem de relevância, dando condições para o usuário acessar os segmentos encontrados, bem como os documentos originais.
+Uma vez que a base de dados interna contém os assuntos abordados na coleção de documentos e o trecho onde se encontram, tem-se um \textit{corpus} derivado do original o qual é melhor organizado e acrescido de informação. A base de dados gerada pelos processos anteriores é então utilizada pelo Módulo de Consulta, cuja responsabilidade é receber a \textit{string} de consulta do usuário, resgatar os dados desejados e apresentá-los em ordem de relevância, dando condições para o usuário acessar os segmentos encontrados, bem como os documentos originais.
 
 \subsubsection{Ranqueamento}
 \label{sec-ranqueamento}
 
-Os dados contidos na estrutura de dados interna devem ser acessados por meio de consultas do usuário. Deseja-se que somente os segmentos relevantes sejam exibidos e ordenados por sua similaridade com a consulta. 
+Os dados contidos na base de dados interna devem ser acessados por meio de consultas do usuário. Deseja-se que somente os segmentos relevantes sejam exibidos e ordenados por sua similaridade com a consulta. 
 Nesse trabalho, a seleção dos segmentos é feita por meio buscas em um espaço vetorial (já apresentado na seção~\ref{subsec:modeloespacovetorial}) onde cada tópico é representado pelos descritores obtidos no processo de extração de tópicos. Essa técnica permite utilizar as variáveis latentes, e fazer com que termos diferentes mas com mesmo significado (polissemia) sejam relacionados e considerados no processo de busca.
 Inicialmente, cria-se um \textit{ranking} dos tópicos considerando a similaridade entre seus descritores e a consulta. Em seguida, seleciona-se os tópicos cujos descritores possuem maior relevância com a consulta do usuário e exibe-se os segmentos atribuídos ao primeiro tópico do \textit{ranking}, ficando os demais disponíveis para exploração pelo usuário. 
 Os segmentos de cada tópico são ordenados de acordo com o peso atribuído à relação entre o segmento e tópico.  Como resultado, tem-se grupos de segmentos (tópicos) ordenados pela similaridade com a consulta, pelos quais se exibe os segmentos ordenados por sua relevância ao tópico. 
@@ -205,7 +213,7 @@ Os segmentos de cada tópico são ordenados de acordo com o peso atribuído à r
 
 \subsubsection{Interface}
 
-O sistema deve dar acesso ao usuário para que busque e explore os dados concentrados na estrutura de dados interna, permitindo encontrar resultados relevantes à consulta bem como explorar a base de dados utilizando a organização dos resultados em grupos de segmentos com tópicos relacionados. Deve permitir ao usuário identificar resultados relativante suficientes para compreensão do conteúdo, evitando a leitura de documentos inteiros. Portanto, os textos apresentados devem ser suficientes para compreensão do assunto mencionado, sem necessidade de visualizar o documento original.
+O sistema deve dar acesso ao usuário para que busque e explore os dados concentrados na base de dados interna, permitindo encontrar resultados relevantes à consulta bem como explorar a base de dados utilizando a organização dos resultados em grupos de segmentos com tópicos relacionados. Deve permitir ao usuário identificar resultados relativante suficientes para compreensão do conteúdo, evitando a leitura de documentos inteiros. Portanto, os textos apresentados devem ser suficientes para compreensão do assunto mencionado, sem necessidade de visualizar o documento original.
 
 A interface desenvolvida para este trabalho foi construída com a finalidade de analisar os resultados de diferentes técnicas de segmentação textual e extração de tópicos. Melhorias nas funcionalidades e usabilidade da interface finais constituem trabalhos futuros relacionados a área de experiência de usuário.
 
@@ -232,8 +240,10 @@ Após selecionado um tópico, o sistema apresenta o texto contido em cada segmen
 
   \begin{figure}[!h]
 	  \centering
-	  \includegraphics[width=\textwidth]{conteudo/capitulos/figs/tela-principal-2-1.png}
-	  \caption{Tela principal do sistema.}
+	  % \includegraphics[width=\textwidth]{conteudo/capitulos/figs/tela-principal-2-1.png}
+	  \includegraphics[width=\textwidth]{conteudo/capitulos/figs/consulta.png}
+	  % \caption{Tela principal do sistema.}
+	  \caption{Tela do sistema que mostra os tópicos e seus respectivos segmentos.}
 	  \label{fig:tela-principal}
   \end{figure}
 
