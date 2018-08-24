@@ -129,6 +129,13 @@ ISBN 0136072240, 9780136072249.}
 \emph{Journal of the American Society for Information Science}, v.~41, n.~6, p.
   391--407, 1990.}
 
+\bibitem[DEM\v{S}AR 2006]{Demsar2006}
+\abntrefinfo{DEM\v{S}AR}{DEM\V{S}AR}{2006}
+{DEM\V{S}AR, J. Statistical comparisons of classifiers over multiple data sets.
+\emph{J. Mach. Learn. Res.}, JMLR.org, v.~7, p. 1--30, 2006.
+ISSN 1532-4435.
+Dispon{\'\i}vel em: \url{http://dl.acm.org/citation.cfm?id=1248547.1248548}.}
+
 \bibitem[Dhillon e Modha 2001]{Dhillon2001}
 \abntrefinfo{Dhillon e Modha}{DHILLON; MODHA}{2001}
 {DHILLON, I.~S.; MODHA, D.~S. Concept decompositions for large sparse text data
@@ -353,6 +360,14 @@ Dispon{\'\i}vel em: \url{http://sites.labic.icmc.usp.br/torch/}.}
 ISBN 978-1-60558-512-3. Dispon{\'\i}vel em:
   \url{http://doi.acm.org/10.1145/1645953.1646170}.}
 
+\bibitem[Monien e Sudborough 1988]{Monien1988}
+\abntrefinfo{Monien e Sudborough}{MONIEN; SUDBOROUGH}{1988}
+{MONIEN, B.; SUDBOROUGH, I.~H. Min cut is np-complete for edge weighted trees.
+\emph{Theor. Comput. Sci.}, Elsevier Science Publishers Ltd., Essex, UK, v.~58,
+  n.~1-3, p. 209--229, jun. 1988.
+ISSN 0304-3975.
+Dispon{\'\i}vel em: \url{http://dx.doi.org/10.1016/0304-3975(88)90028-X}.}
+
 \bibitem[Naili, Chaibi e Ghezala 2016]{Naili2016}
 \abntrefinfo{Naili, Chaibi e Ghezala}{NAILI; CHAIBI; GHEZALA}{2016}
 {NAILI, M.; CHAIBI, A.~H.; GHEZALA, H. H.~B. Exogenous approach to improve
@@ -385,6 +400,14 @@ Dispon{\'\i}vel em: \url{http://hdl.handle.net/10119/12059}.}
   n.~13, p. 5645--5657, ago. 2015.
 ISSN 0957-4174.
 Dispon{\'\i}vel em: \url{http://dx.doi.org/10.1016/j.eswa.2015.02.055}.}
+
+\bibitem[Papadimitriou 1976]{Papadimitriou1976}
+\abntrefinfo{Papadimitriou}{PAPADIMITRIOU}{1976}
+{PAPADIMITRIOU, C.~H. The np-completeness of the bandwidth minimization
+  problem.
+\emph{Computing}, v.~16, n.~3, p. 263--270, Sep 1976.
+ISSN 1436-5057.
+Dispon{\'\i}vel em: \url{https://doi.org/10.1007/BF02280884}.}
 
 \bibitem[Passonneau e Litman 1997]{Passonneau1997}
 \abntrefinfo{Passonneau e Litman}{PASSONNEAU; LITMAN}{1997}

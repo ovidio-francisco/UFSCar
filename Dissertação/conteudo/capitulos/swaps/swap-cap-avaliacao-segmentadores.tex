@@ -1,4 +1,54 @@
-Para encontrar o melhor modelo de segmentação textual para as atas, considerando-se os algoritmos apresentados e suas configurações, foi aplicado o teste de significância estatística de Friedman com pós-teste de Nemenyi, conforme descrito em 
+
+
+
+
+
+configurações colocadas na primeira posição do \textit{ranking}.
+
+. A Tabela~\ref{tab:configuracoes-ranking-um} contém os
+
+
+e em seguida, executou-se o novamente o teste com as melhores configurações de cada algoritmo/medida.  Na Tabela~\ref{tab:configuracoes-ranking-um} é apresentada o resultado da primeira etapa, a qual contém as configurações colocadas na primeira posição do \textit{ranking}.
+
+
+
+
+Inicialmente foi gerado um \textit{ranking} para cada algoritmo/medida e selecionou-se a primeira configuração de cada \textit{ranking} os quais são apresentados na Tabela~\ref{tab:configuracoes-ranking-um}.
+% --------------------------------------------------------------------------------------
+
+
+
+Esse teste é utilizado para...
+Pelo diagrama, pode-se observar que os algoritmos propostos baseados em redes compostas
+por relações do tipo documento-termo e termo-termo, IMHN C (DT-TT) e IMHN R (DT-
+TT), obtiveram as primeiras posições do ranking.
+
+
+Este é um teste não paramétrico, baseado em ranking e aconselhável para a análise estatística dos resultados de múltiplos classificadores para múltiplas coleções (Trawinski et al., 2012; García et al., 2010; Demsar, 2006).
+
+
+
+
+
+Na Figuras 3.7 e 3.8 são apresentados os diagramas de diferença crítica resultantes do teste de significância estatística de Friedman
+
+......
+
+Na Figura 3.4 é apresentado o diagrama de diferença crítica que corresponde à uma ilustração gráfica do resultado do teste estatístico.
+
+......
+
+Neste diagrama é exibido o ranking médio dos algoritmos e aqueles conectados por uma linha (diferença crítica) não apresentam diferenças estatisticamente significantes. Novamente, só foram considerados os resultados das coleções nas quais foi possível gerar resultados para todas as configurações apresentadas na seção anterior.
+
+
+......
+
+
+Devido à grande quantidade de algoritmos utilizados nesta avaliação experimental, foram criados 5 grupos de experimentos para melhor visualização, análise e compreensão dos resultados. No primeiro grupo
+
+
+
+
 
 
 - (Para confirmar, ...)
@@ -8,31 +58,23 @@ Para encontrar o melhor modelo de segmentação textual para as atas, consideran
 
 
 
+% gerou-se um ranking das melhores configurações de cada algoritmo.  
+% a fim de encontrar as melhores configurações de cada algoritmo.
 
 
 
 
 
+% \begin{figure}[!ht] \centering     %%% not \center
+
+		% \includegraphics[width=1\textwidth]{conteudo/capitulos/figs/cds.png}	
+
+	% \caption{Diagramas de diferença crítica.}
+	% \label{fig:resumo-segmentadores}
+% \end{figure}
 
 
  
-@article{Demsar2006,
- author = {Dem\v{s}ar, Janez},
- title = {Statistical Comparisons of Classifiers over Multiple Data Sets},
- journal = {J. Mach. Learn. Res.},
- issue_date = {12/1/2006},
- volume = {7},
- year = {2006},
- issn = {1532-4435},
- pages = {1--30},
- numpages = {30},
- url = {http://dl.acm.org/citation.cfm?id=1248547.1248548},
- acmid = {1248548},
- publisher = {JMLR.org},
-} 
-
-
-
 
 
 Com os testes anteriores obteve-se, para cada medida, 4 configurações levando em conta ambos os algoritmos e a presença ou ausência do pré-processamento. Por meio do teste de Friedman e Nemenyi e verificou-se que não há diferença crítica entre os métodos \textit{TextTiling} e \textit{C99}. Na Figura~\ref{fig:CDs} é mostrado os Diagramas para as medidas \textit{WindowDiff}, $P_k$, Acurácia, Precisão, Revocação e $F^1$.	
@@ -1017,6 +1059,92 @@ Para os passos 1 e 2 havia a opção \textit{``outro''} em que o anotador poderi
 (3) descrição do assunto, onde o anotador apontou até 5 palavras contidas no texto para representar o teor do segmento.
 Esses rótulos tem como propósito ajudar a descrever os segmentos de atas por meio de classes e descritores, podendo ser utilizados na etapa de treinamento de classificadores e avaliação de extratores de tópicos.
 Na Figura~\ref{fig:interfaceanotacoes} é mostrada a interface da ferramenta utilizada para as anotações.
+
+
+
+
+%% Inicialmente cada algoritmo foi executado com 
+% Inicialmente foi gerado um \textit{ranking} para cada algoritmo/medida e em seguida, executou-se o novamente o teste com as melhores configurações de cada algoritmo/medida.  Na Tabela~\ref{tab:configuracoes-ranking-um} é apresentada o resultado da primeira etapa, a qual contém as configurações colocadas na primeira posição do \textit{ranking}.
+
+
+
+
+
+& 10.11  &  4.31
+& 8.22   &  3.91
+& 10.00  &  4.45
+& 9.67   &  4.00
+& 11.22  &  6.61
+& 5.67   &  2.11
+& 6.44   &  3.47
+& 8.56   &  4.14
+& 6.67   &  3.20
+& 11.33  & 10.12
+& 10.78  &  7.79
+& 13.22  &  9.59
+& 111.89 & 53.72
+
+
+
+
+
+
+50,69,73,79,209,186,71,140,130
+
+
+\begin{table}[!h]
+	\centering
+	\begin{tabular}{|l|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|} \hline
+		\textbf{Ata} & \textbf{\#Sent.}  & 
+		\textbf{A1}  & 
+		\textbf{A2}  & 
+		\textbf{A3}  & 
+		\textbf{A4}  & 
+		\textbf{A5}  & 
+		\textbf{A6}  & 
+		\textbf{A7}  & 
+		\textbf{A8}  & 
+		\textbf{A9}  &
+		\textbf{Média}&
+		\textbf{Desv. P.}
+		\\	\hline
+% 		              A1   A2   A3  A4    A5   A6   A7   A8   A9   
+		Ata 1  & 25 & 7  & 4  & 11 & 6  & 16 & 8  & 8  & 15 & 16 \\ \hline 
+		Ata 2  & 17 & 4  & 4  & 8  & 6  & 11 & 6  & 6  & 15 & 14 \\ \hline 
+		Ata 3  & 26 & 6  & 6  & 8  & 4  & 15 & 9  & 10 & 18 & 14 \\ \hline 
+		Ata 4  & 26 & 5  & 5  & 10 & 6  & 14 & 17 & 7  & 11 & 12 \\ \hline 
+		Ata 5  & 33 & 4  & 4  & 6  & 5  & 17 & 22 & 9  & 18 & 16 \\ \hline 
+		Ata 6  & 11 & 3  & 4  & 6  & 4  & 9  & 9  & 4  & 7  &  5 \\ \hline 
+		Ata 7  & 20 & 3  & 7  & 5  & 4  & 11 & 14 & 5  & 5  &  4 \\ \hline 
+		Ata 8  & 35 & 4  & 8  & 3  & 8  & 12 & 17 & 5  & 11 &  9 \\ \hline 
+		Ata 9  & 24 & 3  & 5  & 3  & 6  & 11 & 11 & 3  & 9  &  9 \\ \hline 
+		Ata 10 & 50 & 4  & 5  & 4  & 7  & 31 & 29 & 5  & 9  &  8 \\ \hline 
+		Ata 11 & 43 & 4  & 7  & 5  & 7  & 29 & 19 & 5  & 9  & 12 \\ \hline 
+		Ata 12 & 56 & 3  & 10 & 4  & 16 & 33 & 25 & 4  & 13 & 11 \\ \hline 
+		\textbf{Total} &
+		\textbf{366} & 
+		\textbf{50}&  
+		\textbf{69} & 
+		\textbf{73}&  
+		\textbf{79}&  
+		\textbf{209} & 
+		\textbf{186}&  
+		\textbf{71}&  
+		\textbf{140}&  
+		\textbf{130} 
+		\\ \hline 
+
+	\end{tabular}
+	\caption{Descrição dos resultados obtidos com anotadores. Na segunda coluna \#Sent., é mostrada a quantidade de sentenças de cada ata. Nas colunas A1-A9 é mostrado as quantidades de segmentos informados pelos anotadores. 
+	% As colunas K, P$_k$ e WD indicam respectivamente as médias de \textit{Kappa}, $P_k$ e \textit{WindowDiff}.
+} 
+
+
+	\label{tab:ataseanotacoes}
+\end{table}
+
+
+
 
 
 

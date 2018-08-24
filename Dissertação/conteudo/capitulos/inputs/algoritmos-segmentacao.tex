@@ -117,7 +117,7 @@ Finalmente, com base na matriz de \textit{ranking}, o C99 utiliza um método de 
 % 
 Um segmento é definido por duas sentenças $c_i$ e $c_j$ (respectivamente a primeira e última sentença do segmento) que representam uma região quadrada ao longo da diagonal da matriz. 
 % 
-Seja $S = \{s1,...,s_h\}$ a lista de $h$ segmentos,  $som_b$ a somatória dos valores dos \textit{rankings} de um segmento $s \in S$ e $a_s$ a sua área. 
+Seja $S = \{s1,...,s_h\}$ a lista de $h$ segmentos,  $som_s$ a somatória dos valores dos \textit{rankings} de um segmento $s \in S$ e $a_s$ a sua área. 
 % Então, a densidade é computada por: 
 % 
 Calcula-se a densidade dessa região como mostrado na Equação~\ref{equ:densidade-c99}. 
@@ -125,12 +125,11 @@ Calcula-se a densidade dessa região como mostrado na Equação~\ref{equ:densida
 
 
 \begin{equation}
-Den = \frac{\sum_{s=1}^h som_s}{\sum_{s=1}^M a_b}
+Den = \frac{\sum_{s=1}^h som_s}{\sum_{s=1}^h a_s}
 \label{equ:densidade-c99}
 \end{equation}
 
-
-O processo inicia com um único segmento formado por todas as sentenças do documento e o divide recursivamente em $M$ segmentos. Cada passo divide $B$ no ponto ($i,j$) que maximiza $Den$~(Equação \ref{equ:densidade-c99}). O processo se repete até atingir o número de segmentos desejados ou um limiar de similaridade.
+O processo inicia com um único segmento formado por todas as sentenças do documento e o divide recursivamente em $h$ segmentos. Cada passo divide $S$ no ponto ($i,j$) que maximiza $Den$~(Equação \ref{equ:densidade-c99}). O processo se repete até atingir o número de segmentos desejados ou um limiar de similaridade.
 
 % ===
 
@@ -234,7 +233,8 @@ Uma vez que um texto normalmente é dividido em mais que dois segmentos, é nece
 
 A decomposição do modelo em uma somatória de termos individuais permite empregar técnicas de programação dinâmica para o problema de cortes multidirecionais em grafos. Mais detalhes da formulação dessa solução estão disponíveis em~\cite{Malioutov:2006a}.
 
-Embora o problema minimizar cortes normalizados em grafos seja um problema do tipo NP-Completo\footnote{NP-Completo configura um tipo de problema para o qual não se conhece uma solução determinística que possa ser computada em tempo polinomial. Papadimitriou provou que o problema de corte mínimo em grafos está incluso nessa categoria.}, no contexto de segmentação textual esse problema é restrito a manter a linearidade dos vértices. A segmentação linear em um grafo implica que todos os vértices entre as extremidades esquerda e direitas de uma partição pertencem à essa partição, consequentemente o espaço de soluções possíveis é reduzido o que permite a execução do algoritmo em tempo polinomial.  
+Embora o problema minimizar cortes normalizados em grafos seja um problema do tipo NP-Completo\footnote{NP-Completo configura um tipo de problema para o qual não se conhece uma solução determinística que possa ser computada em tempo polinomial. Papadimitriou provou que o problema de corte mínimo em grafos está incluso nessa categoria~\cite{Monien1988, Papadimitriou1976}.}, no contexto de segmentação textual esse problema é restrito a manter a linearidade dos vértices. A segmentação linear em um grafo implica que todos os vértices entre as extremidades esquerda e direitas de uma partição pertencem à essa partição, consequentemente o espaço de soluções possíveis é reduzido o que permite a execução do algoritmo em tempo polinomial.  
+
 
 % ===
 

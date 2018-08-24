@@ -44,31 +44,31 @@
 \contentsline {section}{\numberline {4.2}Configura\IeC {\c c}\IeC {\~a}o Experimental}{73}{section.4.2}
 \contentsline {section}{\numberline {4.3}Crit\IeC {\'e}rios de Avalia\IeC {\c c}\IeC {\~a}o}{74}{section.4.3}
 \contentsline {section}{\numberline {4.4}Resultados}{74}{section.4.4}
-\contentsline {section}{\numberline {4.5}Considera\IeC {\c c}\IeC {\~o}es Finais}{79}{section.4.5}
+\contentsline {section}{\numberline {4.5}Considera\IeC {\c c}\IeC {\~o}es Finais}{80}{section.4.5}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase {Avalia\IeC {\c c}\IeC {\~a}o dos Extratores de T\IeC {\'o}picos}}{81}{chapter.5}
-\contentsline {section}{\numberline {5.1}Configura\IeC {\c c}\IeC {\~a}o Experimental}{81}{section.5.1}
-\contentsline {section}{\numberline {5.2}Crit\IeC {\'e}rios de Avalia\IeC {\c c}\IeC {\~a}o}{82}{section.5.2}
-\contentsline {section}{\numberline {5.3}Avalia\IeC {\c c}\IeC {\~a}o dos Extratores Junto a Usu\IeC {\'a}rios}{83}{section.5.3}
-\contentsline {section}{\numberline {5.4}Valida\IeC {\c c}\IeC {\~a}o do Segmentador}{85}{section.5.4}
-\contentsline {section}{\numberline {5.5}Influ\IeC {\^e}ncia dos Extratores na Qualidade dos Segmentos}{88}{section.5.5}
-\contentsline {section}{\numberline {5.6}Considera\IeC {\c c}\IeC {\~o}es Finais}{89}{section.5.6}
+\contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase {Avalia\IeC {\c c}\IeC {\~a}o dos Extratores de T\IeC {\'o}picos}}{83}{chapter.5}
+\contentsline {section}{\numberline {5.1}Configura\IeC {\c c}\IeC {\~a}o Experimental}{83}{section.5.1}
+\contentsline {section}{\numberline {5.2}Crit\IeC {\'e}rios de Avalia\IeC {\c c}\IeC {\~a}o}{84}{section.5.2}
+\contentsline {section}{\numberline {5.3}Avalia\IeC {\c c}\IeC {\~a}o dos Extratores Junto a Usu\IeC {\'a}rios}{85}{section.5.3}
+\contentsline {section}{\numberline {5.4}Valida\IeC {\c c}\IeC {\~a}o do Segmentador}{87}{section.5.4}
+\contentsline {section}{\numberline {5.5}Influ\IeC {\^e}ncia dos Extratores na Qualidade dos Segmentos}{90}{section.5.5}
+\contentsline {section}{\numberline {5.6}Considera\IeC {\c c}\IeC {\~o}es Finais}{91}{section.5.6}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {6}\MakeTextUppercase {Conclus\IeC {\~a}o}}{91}{chapter.6}
-\contentsline {section}{\numberline {6.1}Contribui\IeC {\c c}\IeC {\~o}es}{93}{section.6.1}
-\contentsline {section}{\numberline {6.2}Trabalhos Futuros}{93}{section.6.2}
+\contentsline {chapter}{\chapternumberline {6}\MakeTextUppercase {Conclus\IeC {\~a}o}}{93}{chapter.6}
+\contentsline {section}{\numberline {6.1}Contribui\IeC {\c c}\IeC {\~o}es}{95}{section.6.1}
+\contentsline {section}{\numberline {6.2}Trabalhos Futuros}{95}{section.6.2}
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
-\contentsline {chapter}{Refer\^encias}{95}{section*.28}
+\contentsline {chapter}{Refer\^encias}{97}{section*.28}
 \renewcommand *{\cftappendixname }{AP\^ENDICE \space }
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
-\contentsline {appendix}{\chapternumberline {A}\MakeTextUppercase { Tabelas para An\IeC {\'a}lise de de Par\IeC {\^a}metros para os algoritmos de Segmenta\IeC {\c c}\IeC {\~a}o Textual }}{103}{appendix.A}
+\contentsline {appendix}{\chapternumberline {A}\MakeTextUppercase { Tabelas para An\IeC {\'a}lise de de Par\IeC {\^a}metros para os algoritmos de Segmenta\IeC {\c c}\IeC {\~a}o Textual }}{105}{appendix.A}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
-\contentsline {appendix}{\chapternumberline {B}\MakeTextUppercase { Question\IeC {\'a}rios Utilizados na Avalia\IeC {\c c}\IeC {\~a}o Subjetiva}}{121}{appendix.B}
+\contentsline {appendix}{\chapternumberline {B}\MakeTextUppercase { Question\IeC {\'a}rios Utilizados na Avalia\IeC {\c c}\IeC {\~a}o Subjetiva}}{123}{appendix.B}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
-\contentsline {appendix}{\chapternumberline {C}\MakeTextUppercase { Distribui\IeC {\c c}\IeC {\~a}o dos T\IeC {\'o}picos obtidos pelos extratores}}{137}{appendix.C}
+\contentsline {appendix}{\chapternumberline {C}\MakeTextUppercase { Distribui\IeC {\c c}\IeC {\~a}o dos T\IeC {\'o}picos obtidos pelos extratores}}{139}{appendix.C}

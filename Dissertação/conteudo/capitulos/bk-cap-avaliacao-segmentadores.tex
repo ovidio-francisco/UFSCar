@@ -104,14 +104,13 @@ De acordo com a literatura a respeito de anotações em segmentos, é recomendá
 % -- 4 - Especificar o procedimento de anotação
 O procedimento de anotação deu-se remotamente. Os anotadores receberam por e-mail o acesso ao \textit{software} e individualmente realizaram as anotações. A tarefa de segmentar e rotular manualmente demandou em torno de 4 a 6 horas de atenção dos anotadores. Em razão desse esforço, o \textit{software} permitiu que a tarefa fosse pausada e reiniciada sempre que houvesse necessidade, sem prejuízos ao trabalho.
 
-O \textit{software} foi desenhado para padronizar o trabalho e otimizar o tempo dos anotadores. Ao mesmo tempo, dava dava liberdade para segmentar o texto após qualquer character do texto. Um segmento sempre deve terminar com um sentença completa, uma vez que as sentenças são a menor unidade de informação para os segmentadores, conforme explicado na seção~\ref{sec:aplicacao-sistema} e Algoritmo~\ref{alg:identificacaofinaisdesent}. Como previsto, houve casos onde o anotador omitiu ou adicionou characteres e palavras (quase sempre ocasionado por imprecisão durante a seleção do texto). Para garantir que todo segmento termine com uma sentença completa, aqueles que apresentavam sentenças incompletas tiveram seu incio ou final movidos para se adequar à saída dos algoritmos de segmentação. Após o processo, 12 atas foram segmentadas manualmente por 9 anotadores, gerando um conjunto de 108 anotações. Na Tabela~\ref{tab:ataseanotacoes}, é mostrado para cada ata a quantidade de sentenças do documento original, a quantidade de segmentos identificados por cada anotador, a média segmentos identificados em cada ata e o desvio padrão (D.P).
+O \textit{software} foi desenhado para padronizar o trabalho e otimizar o tempo dos anotadores. Ao mesmo tempo, dava dava liberdade para segmentar o texto após qualquer character do texto. Um segmento sempre deve terminar com um sentença completa, uma vez que as sentenças são a menor unidade de informação para os segmentadores, conforme explicado na seção~\ref{sec:aplicacao-sistema} e Algoritmo~\ref{alg:identificacaofinaisdesent}. Como previsto, houve casos onde o anotador omitiu ou adicionou characteres e palavras (quase sempre ocasionado por imprecisão durante a seleção do texto). Para garantir que todo segmento termine com uma sentença completa, aqueles que apresentavam sentenças incompletas tiveram seu incio ou final movidos para se adequar à saída dos algoritmos de segmentação. Após o processo, 12 atas foram segmentadas manualmente por 9 anotadores, gerando um conjunto de 108 anotações. Na Tabela~\ref{tab:ataseanotacoes}, é mostrado para cada ata a quantidade de sentenças do documento original e de segmentos identificados por cada anotador.
 
 
 
 \begin{table}[!h]
-	\small
 	\centering
-	\begin{tabular}{|l|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|} \hline
+	\begin{tabular}{|l|c|c|c|c|c|c|c|c|c|c|c|c|c|} \hline
 		\textbf{Ata} & \textbf{\#Sent.}  & 
 		\textbf{A1}  & 
 		\textbf{A2}  & 
@@ -121,23 +120,21 @@ O \textit{software} foi desenhado para padronizar o trabalho e otimizar o tempo 
 		\textbf{A6}  & 
 		\textbf{A7}  & 
 		\textbf{A8}  & 
-		\textbf{A9}  &
-		\textbf{Média}&
-		\textbf{D.P.}
+		\textbf{A9} 
 		\\	\hline
 % 		              A1   A2   A3  A4    A5   A6   A7   A8   A9   
-		Ata 1  & 25 & 7  & 4  & 11 & 6  & 16 & 8  & 8  & 15 & 16 & 10.11  &  4.31\\ \hline 
-		Ata 2  & 17 & 4  & 4  & 8  & 6  & 11 & 6  & 6  & 15 & 14 & 8.22   &  3.91\\ \hline 
-		Ata 3  & 26 & 6  & 6  & 8  & 4  & 15 & 9  & 10 & 18 & 14 & 10.00  &  4.45\\ \hline 
-		Ata 4  & 26 & 5  & 5  & 10 & 6  & 14 & 17 & 7  & 11 & 12 & 9.67   &  4.00\\ \hline 
-		Ata 5  & 33 & 4  & 4  & 6  & 5  & 17 & 22 & 9  & 18 & 16 & 11.22  &  6.61\\ \hline 
-		Ata 6  & 11 & 3  & 4  & 6  & 4  & 9  & 9  & 4  & 7  &  5 & 5.67   &  2.11\\ \hline 
-		Ata 7  & 20 & 3  & 7  & 5  & 4  & 11 & 14 & 5  & 5  &  4 & 6.44   &  3.47\\ \hline 
-		Ata 8  & 35 & 4  & 8  & 3  & 8  & 12 & 17 & 5  & 11 &  9 & 8.56   &  4.14\\ \hline 
-		Ata 9  & 24 & 3  & 5  & 3  & 6  & 11 & 11 & 3  & 9  &  9 & 6.67   &  3.20\\ \hline 
-		Ata 10 & 50 & 4  & 5  & 4  & 7  & 31 & 29 & 5  & 9  &  8 & 11.33  & 10.12\\ \hline 
-		Ata 11 & 43 & 4  & 7  & 5  & 7  & 29 & 19 & 5  & 9  & 12 & 10.78  &  7.79\\ \hline 
-		Ata 12 & 56 & 3  & 10 & 4  & 16 & 33 & 25 & 4  & 13 & 11 & 13.22  &  9.59\\ \hline 
+		Ata 1  & 25 & 7  & 4  & 11 & 6  & 16 & 8  & 8  & 15 & 16 \\ \hline 
+		Ata 2  & 17 & 4  & 4  & 8  & 6  & 11 & 6  & 6  & 15 & 14 \\ \hline 
+		Ata 3  & 26 & 6  & 6  & 8  & 4  & 15 & 9  & 10 & 18 & 14 \\ \hline 
+		Ata 4  & 26 & 5  & 5  & 10 & 6  & 14 & 17 & 7  & 11 & 12 \\ \hline 
+		Ata 5  & 33 & 4  & 4  & 6  & 5  & 17 & 22 & 9  & 18 & 16 \\ \hline 
+		Ata 6  & 11 & 3  & 4  & 6  & 4  & 9  & 9  & 4  & 7  &  5 \\ \hline 
+		Ata 7  & 20 & 3  & 7  & 5  & 4  & 11 & 14 & 5  & 5  &  4 \\ \hline 
+		Ata 8  & 35 & 4  & 8  & 3  & 8  & 12 & 17 & 5  & 11 &  9 \\ \hline 
+		Ata 9  & 24 & 3  & 5  & 3  & 6  & 11 & 11 & 3  & 9  &  9 \\ \hline 
+		Ata 10 & 50 & 4  & 5  & 4  & 7  & 31 & 29 & 5  & 9  &  8 \\ \hline 
+		Ata 11 & 43 & 4  & 7  & 5  & 7  & 29 & 19 & 5  & 9  & 12 \\ \hline 
+		Ata 12 & 56 & 3  & 10 & 4  & 16 & 33 & 25 & 4  & 13 & 11 \\ \hline 
 		\textbf{Total} &
 		\textbf{366} & 
 		\textbf{50}&  
@@ -148,16 +145,13 @@ O \textit{software} foi desenhado para padronizar o trabalho e otimizar o tempo 
 		\textbf{186}&  
 		\textbf{71}&  
 		\textbf{140}&  
-		\textbf{130} & 
-		\textbf{111.89} & 
-		\textbf{53.72}
+		\textbf{130} 
 		\\ \hline 
 
 	\end{tabular}
 	\caption{Descrição dos resultados obtidos com anotadores. Na segunda coluna \#Sent., é mostrada a quantidade de sentenças de cada ata. Nas colunas A1-A9 é mostrado as quantidades de segmentos informados pelos anotadores. 
 	% As colunas K, P$_k$ e WD indicam respectivamente as médias de \textit{Kappa}, $P_k$ e \textit{WindowDiff}.
 } 
-
 
 	\label{tab:ataseanotacoes}
 \end{table}
@@ -430,97 +424,12 @@ A Tabela~\ref{tab:resumo-resultados} contém a média dos dados obtidos onde os 
 
 
 
-Em termos de performance, o modelo implementado no algoritmo \textit{BayesSeg} apresenta melhores resultados para as medidas $P_k$ e \textit{WindowDiff}, visto que essas são mais adequadas ao contexto analisado, este será empregado nos próximos experimentos. Contudo, dado a subjetividade da tarefa de segmentação textual, outros modelos podem ser utilizados satisfatoriamente dependendo do critério adotado. 
-
-
-% TODO --> Comentar as WD e PK
-
-Na Figura~\ref{fig:resumo-segmentadores} é apresentada a performance dos algoritmos.
-Observa-se valores altos de $F^1$ para a segmentação por sentenças, pois é atribuído um limite a todo candidato a final de segmento, o que resulta no valor máximo para revocação. De maneira semelhante, o comportamento do \textit{TextTiling} gera menos segmentos em relação aos demais, e com isso tem-se valores menores de $F^1$, o que pode ser alterado pela configuração do algoritmo com passos mais curtos, ou ainda, sobre-escrevendo a função que calcula os \textit{depth scores} para reconhecer vales menos profundos.
-% De maneira geral, os métodos probabilísticos apresentam desempenho próximo 
-
-
-
-\begin{figure}[!b] \centering     %%% not \center
-
-%	\subfigure[a]{ 
-		\includegraphics[width=.82\textwidth]{conteudo/capitulos/figs/graficos/resumo-wd-pk.png}	
-		% \caption{wd-pk}
-		\label{fig:resumo-wd-pka}
-%	}
-%	\subfigure[b]{ 
-		\includegraphics[width=.82\textwidth]{conteudo/capitulos/figs/graficos/resumo-tradicionais.png}	
-		% \caption{tradicionais}
-		\label{fig:resumo-tradicionaisa}
-%	}
-	\caption{Performance geral dos algoritmos de segmentação textual e as configurações que apresentam melhores resultados para cada medida de desempenho.}
-	\label{fig:resumo-segmentadores}
-\end{figure}
-
-
-
 
 %%%%%%%%%%%%%%%%%%%%%%
 % Testes estatísticos
 %%%%%%%%%%%%%%%%%%%%%%
 
 
-% Mostrar o teste,
-% mostrar que o BS se sobressai.
-% mostrar a configuração do BS
-
-% No final falar que o BS foi escolhido.
-
-
-Para encontrar o melhor modelo de segmentação textual para as atas, considerando-se os algoritmos apresentados e suas configurações, foi aplicado o teste de significância estatística de Friedman $N \times N$ com pós-teste de Nemenyi~\cite{Demsar2006}, com nível de significância de $\alpha = 0,05$. 
-% Este teste é utilizado para...
-Com esse teste é possível comparar o desempenho de múltiplos algoritmos em diferentes conjuntos de dados, bem como verificar se existe diferença significativa entre os resultados. O teste gera um \textit{ranking}, pelo qual é possível comparar o desempenho dos algoritmos por sua posição.
-%
-
-Devido à grande quantidade de configurações apresentadas, o teste se deu em duas etapas.
-% 
-Inicialmente foi gerado um \textit{ranking} para cada algoritmo/medida e selecionou-se a primeira configuração de cada \textit{ranking} a fim de conhecer os valores de parâmetros que melhor otimizam cada algoritmo/medida. Na Tabela~\ref{tab:configuracoes-ranking-um} é apresentada o resultado da primeira etapa, a qual contém as primeiras configurações de cada \textit{ranking}.
-Em seguida, executou-se o novamente o teste com as melhores configurações de cada algoritmo/medida.  Na Tabela~\ref{tab:configuracoes-ranking-um} é apresentado o resultado da primeira etapa, a qual contém as configurações colocadas na primeira posição do \textit{ranking}.
-Na Figura~\ref{fig:cds} é apresentado o diagrama de diferença crítica que ilustra graficamente o resultado do teste estatístico. Os algoritmos conectados por uma linha horizontal (diferença crítica) não apresentam diferenças estatisticamente significantes.  Pelo diagrama pode-se observar que o algoritmo \textit{BayesSeg} obteve as primeiras posições do ranking nas medidas acurácia, F$^1$ P$_k$ e WinDiff, porém, estatisticamente os algoritmos são equivalentes.  % o que se deve a forte influência da revocação nessa medida.
-
-
-
-\begin{table}[!htp]
-\centering
-\tiny
-\begin{tabular}{|l|c|c|c|c|c|c|c|c|c|c|c|}\hline
-\multirow{2}{*}{\textbf{Medida}}    & 
-\multicolumn{2}{c|}{\textit{\textbf{TextTiling}}} & 
-\multicolumn{3}{c|}{\textit{\textbf{C99}}}& 
-\multicolumn{2}{c|}{\textit{\textbf{MinCutSeg}}} & 
-\multicolumn{3}{c|}{\textit{\textbf{BayesSeg}}} & 
-\multicolumn{1}{c|}{\textit{\textbf{TextSeg}}}  \\
-& \textbf{Win}&\textbf{Step} & \textbf{SRate}&\textbf{RS}&\textbf{W} & \textbf{SRate}&\textbf{Cut} & \textbf{Prior}&\textbf{Disp}.&\textbf{SRate} & \textbf{SRate}\\
-\hline \hline 
-Acurácia  &  30 & 50 &  0.50 & 3 & Sim &  0.40 & 15   &  0.08 & 0.30 & auto &  0.45 \\
-F$^1$     &  50 & 20 &  0.50 & 3 & Sim &  0.60 & 13   &  0.07 & 0.30 & 0.60 &  0.60 \\
-P$_k$     &  60 & 50 &  0.50 & 3 & Sim &  0.40 & 15   &  0.08 & 0.30 & auto &  0.50 \\
-WinDiff   &  60 & 50 &  0.50 & 3 & Sim &  0.40 & 15   &  0.07 & 0.30 & auto &  0.45 \\
-\hline
-\end{tabular}
-\caption{Algoritmos e configurações colocados em primeiro lugar em cada medida.}
-\label{tab:configuracoes-ranking-um}
-\end{table}
-
-
-
-
-
-
-\begin{figure}[!h]
-	\centering     %%% not \center
-		\includegraphics[width=79mm]{conteudo/capitulos/figs/cds2/Acuracia.png} 
-		\includegraphics[width=79mm]{conteudo/capitulos/figs/cds2/F1.png} 
-		\includegraphics[width=79mm]{conteudo/capitulos/figs/cds2/Pk.png}
-		\includegraphics[width=79mm]{conteudo/capitulos/figs/cds2/WD.png}
-		\caption{Diagramas de diferença crítica.}
-		\label{fig:cds}
-\end{figure}
 
 
 % TODO --> Comentar a tabela 
@@ -531,23 +440,24 @@ Essa semelhança entre as medidas que toleram proximidade entre segmentações (
 
 
 
-
-
-
-
-
-
-
-
 Durante a avaliação experimental analisou-se a influência das parâmetros na eficiência dos algoritmos, em que observou-se que a proporção de segmentos extraídos causaram maior impacto nas medidas de desempenho. Na Figura~\ref{fig:influencia-SegRate} é exibida a relação entre a taxa de segmentação e as medidas de desempenho as quais apresentam melhores valores entre $30\%$ e $50\%$ de sentenças marcadas como final de segmento.
 
 
 
 \begin{figure}[!h] \centering     %%% not \center
+
+%	\subfigure{ \label{fig:influencia-segRate-c99}
 	  \includegraphics[width=.48\textwidth]{conteudo/capitulos/figs/graficos/analiseNSegRate-C99.png}
+%	}
+%	\subfigure{ \label{fig:influencia-segRate-mc}
 	  \includegraphics[width=.48\textwidth]{conteudo/capitulos/figs/graficos/analiseNSegRate-MinCut.png}
+%	}
+%	\subfigure{ \label{fig:influencia-segRate-bs}
 	  \includegraphics[width=.48\textwidth]{conteudo/capitulos/figs/graficos/analiseNSegRate-Bayes.png}
+%	}
+%	\subfigure{ \label{fig:influencia-segRate-ui}
 	  \includegraphics[width=.48\textwidth]{conteudo/capitulos/figs/graficos/analiseNSegRate-UISeg.png}
+%	}
 	\caption{Influência da taxa segmentos na eficiência dos algoritmos}
 	\label{fig:influencia-SegRate}
 \end{figure}
@@ -563,6 +473,7 @@ Durante a avaliação experimental analisou-se a influência das parâmetros na 
 
 A abordagem baseada em janelas deslisantes empregada no \textit{TextTiling} não permite a configuração direta da quantidade de segmentos extraídos, possibilitando o ajuste do tamanho do passo e comprimento da janela que influenciam seu comportamento nesse aspecto, os quais são analisados a seguir.
 Uma vez que a coesão léxica é pressuposto de muitas abordagens em segmentação textual, fez-se uma análise desses documentos quanto a similaridade dos termos ao longo do texto. Verificou-se que a técnica de janelas deslizantes empregada pelo TextTiling encontra os vales que indicam transições entre segmentos. Contudo ao comparar esses vales com a segmentação de referência, nota-se que a maioria dos limites coincide ou estão próximos aos vales. Porém há casos onde a referência indica limites em trechos com alta coesão léxica e outros onde a queda da coesão, indicada por vales, não coincide com nenhum limite de referência.  
+
 % Na Figura~\ref{fig:coesaolexicaTT}a linha horizontal representa a variação da coesão léxica ao longo de uma ata e as linha verticais azuis e vermelhas representam os limites entre segmentos atribuidos pela referência e pelo algoritmo respectivamente. 
 Na Figura~\ref{fig:coesaolexicaTT} é apresentado a variação da coesão léxica ao longo de uma ata e a segmentação obtida pelo \textit{TextTiling} usando tamanho de janela igual a 50 e passo 9. 
 
@@ -585,9 +496,36 @@ Na Figura~\ref{fig:coesaolexicaTT} é apresentado a variação da coesão léxic
 
 
 
+Em termos de performance, o modelo implementado no algoritmo \textit{BayesSeg} apresenta melhores resultados para as medidas $P_k$ e \textit{WindowDiff}, visto que essas são mais adequadas ao contexto analisado, este será empregado nos próximos experimentos. Contudo, dado a subjetividade da tarefa de segmentação textual, outros modelos podem ser utilizados satisfatoriamente dependendo do critério adotado. 
+
+
+\begin{figure}[!ht] \centering     %%% not \center
+
+%	\subfigure[a]{ 
+		\includegraphics[width=.82\textwidth]{conteudo/capitulos/figs/graficos/resumo-wd-pk.png}	
+		% \caption{wd-pk}
+		\label{fig:resumo-wd-pka}
+%	}
+%	\subfigure[b]{ 
+		\includegraphics[width=.82\textwidth]{conteudo/capitulos/figs/graficos/resumo-tradicionais.png}	
+		% \caption{tradicionais}
+		\label{fig:resumo-tradicionaisa}
+%	}
+	\caption{Performance geral dos algoritmos de segmentação textual e as configurações que apresentam melhores resultados para cada medida de desempenho.}
+	\label{fig:resumo-segmentadores}
+\end{figure}
 
 
 
+% TODO --> Comentar as WD e PK
+
+Na Figura~\ref{fig:resumo-segmentadores} é apresentada a performance dos algoritmos.
+% nas medidas tradicionais. 
+Observa-se valores altos de $F^1$ para a segmentação por sentenças, pois é atribuído um limite a todo candidato a final de segmento, o que resulta no valor máximo para revocação. De maneira semelhante, o comportamento do \textit{TextTiling} gera menos segmentos em relação aos demais, e com isso tem-se valores menores de $F^1$, o que pode ser alterado pela configuração do algoritmo com passos mais curtos, ou ainda, sobre-escrevendo a função que calcula os \textit{depth scores} para reconhecer vales menos profundos.
+
+
+
+% De maneira geral, os métodos probabilísticos apresentam desempenho próximo 
 
 
 

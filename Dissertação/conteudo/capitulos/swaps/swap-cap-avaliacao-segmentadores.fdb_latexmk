@@ -1,14 +1,15 @@
 # Fdb version 3
-["pdflatex"] 1529544238 "swap-cap-avaliacao-segmentadores.tex" "swap-cap-avaliacao-segmentadores.pdf" "swap-cap-avaliacao-segmentadores" 1529544238
+["pdflatex"] 1534785505 "swap-cap-avaliacao-segmentadores.tex" "swap-cap-avaliacao-segmentadores.pdf" "swap-cap-avaliacao-segmentadores" 1534785505
   "/etc/texmf/web2c/texmf.cnf" 1489454511 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1272929888 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm" 1136768653 1328 c834bbb027764024c09d3d2bf908b5f0 ""
+  "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbxti10.tfm" 1136768653 1532 9162035f4e7176612125649e348e2195 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmti10.tfm" 1136768653 1480 aa8e34af0eb6a2941b776984cf1dfdc4 ""
   "/usr/share/texlive/texmf-dist/web2c/texmf.cnf" 1488610416 31340 0f53f8665296bf8fe6c697f9505e31d8 ""
   "/usr/share/texmf/web2c/texmf.cnf" 1488610416 31340 0f53f8665296bf8fe6c697f9505e31d8 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1503409725 860044 6c84ff998dc0d18c5f50acfd95f92a4b ""
   "swap-cap-avaliacao-segmentadores.aux" 1529445977 8 a94a2480d3289e625eea47cd1b285758 ""
-  "swap-cap-avaliacao-segmentadores.tex" 1529536961 16551 c7d6ec49f935a4b270f045bc21311141 ""
+  "swap-cap-avaliacao-segmentadores.tex" 1534781683 29686 fd10f5cb52796180af6e0ac8124f29da ""
   (generated)
-  "swap-cap-avaliacao-segmentadores.pdf"
   "swap-cap-avaliacao-segmentadores.log"
+  "swap-cap-avaliacao-segmentadores.pdf"
