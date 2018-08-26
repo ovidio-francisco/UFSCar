@@ -1,24 +1,25 @@
 \select@language {brazil}
 \contentsline {table}{\numberline {1}{\ignorespaces Cole\IeC {\c c}\IeC {\~a}o de documentos na representa\IeC {\c c}\IeC {\~a}o \textit {bag-of-words}}}{32}{table.2.1}
 \contentsline {table}{\numberline {2}{\ignorespaces Matriz de confus\IeC {\~a}o.}}{41}{table.2.2}
-\contentsline {table}{\numberline {3}{\ignorespaces Descritores e n\IeC {\'u}mero de segmentos no t\IeC {\'o}pico selecionado pelos Algoritmos}}{63}{table.3.3}
-\contentsline {table}{\numberline {4}{\ignorespaces Descri\IeC {\c c}\IeC {\~a}o dos resultados obtidos com anotadores. Na segunda coluna \#Sent., \IeC {\'e} mostrada a quantidade de senten\IeC {\c c}as de cada ata. Nas colunas A1-A9 \IeC {\'e} mostrado as quantidades de segmentos informados pelos anotadores. }}{70}{table.4.4}
-\contentsline {table}{\numberline {5}{\ignorespaces Exemplo de segmenta\IeC {\c c}\IeC {\~a}o de refer\IeC {\^e}ncia com rotula\IeC {\c c}\IeC {\~a}o de um anotador}}{71}{table.4.5}
-\contentsline {table}{\numberline {6}{\ignorespaces Medidas de concord\IeC {\^a}ncia entre os anotadores sobre cada ata segmentada manualmente.}}{72}{table.4.6}
-\contentsline {table}{\numberline {7}{\ignorespaces Resultados do TextTiling.}}{75}{table.4.7}
-\contentsline {table}{\numberline {8}{\ignorespaces Resultados do \textit {C99}.}}{76}{table.4.8}
-\contentsline {table}{\numberline {9}{\ignorespaces Resumo dos melhores resultados obtidos por cada configura\IeC {\c c}\IeC {\~a}o e medida de avalia\IeC {\c c}\IeC {\~a}o para cada algoritmos utilizado na configura\IeC {\c c}\IeC {\~a}o experimental. }}{77}{table.4.9}
-\contentsline {table}{\numberline {10}{\ignorespaces Algoritmos e configura\IeC {\c c}\IeC {\~o}es colocados em primeiro lugar em cada medida.}}{78}{table.4.10}
-\contentsline {table}{\numberline {11}{\ignorespaces Descritores e n\IeC {\'u}mero de segmentos no t\IeC {\'o}pico selecionado pelos Algoritmos}}{86}{table.5.11}
-\contentsline {table}{\numberline {12}{Valores das medidas de desempenho para an\IeC {\'a}lise do algoritmo \textit {TextTiling}, utilizando o texto pr\IeC {\'e}-processado.}}{106}{table.A.12}
-\contentsline {table}{\numberline {13}{Valores das medidas de desempenho para an\IeC {\'a}lise do algoritmo \textit {C99}, utilizando o texto pr\IeC {\'e}-processado.}}{108}{table.A.13}
-\contentsline {table}{\numberline {14}{Valores das medidas de desempenho para an\IeC {\'a}lise do algoritmo \textit {MinCutSeg}, utilizando o texto pr\IeC {\'e}-processado.}}{110}{table.A.14}
-\contentsline {table}{\numberline {15}{Valores das medidas de desempenho para an\IeC {\'a}lise do algoritmo \textit {BayesSeg}, utilizando o texto pr\IeC {\'e}-processado.}}{112}{table.A.15}
-\contentsline {table}{\numberline {16}{Valores das medidas de desempenho para an\IeC {\'a}lise do algoritmo \textit {TextSeg}, utilizando o texto pr\IeC {\'e}-processado.}}{113}{table.A.16}
-\contentsline {table}{\numberline {17}{Valores das medidas de desempenho para an\IeC {\'a}lise do algoritmo \textit {TextTiling}, utilizando o texto o texto integral.}}{114}{table.A.17}
-\contentsline {table}{\numberline {18}{Valores das medidas de desempenho para an\IeC {\'a}lise do algoritmo \textit {C99}, utilizando o texto o texto integral.}}{116}{table.A.18}
-\contentsline {table}{\numberline {19}{Valores das medidas de desempenho para an\IeC {\'a}lise do algoritmo \textit {MinCutSeg}, utilizando o texto o texto integral.}}{118}{table.A.19}
-\contentsline {table}{\numberline {20}{Valores das medidas de desempenho para an\IeC {\'a}lise do algoritmo \textit {BayesSeg}, utilizando o texto o texto integral.}}{120}{table.A.20}
-\contentsline {table}{\numberline {21}{Valores das medidas de desempenho para an\IeC {\'a}lise do algoritmo \textit {TextSeg}, utilizando o texto o texto integral.}}{121}{table.A.21}
-\contentsline {table}{\numberline {22}{Valores das medidas de desempenho para an\IeC {\'a}lise do pseudo algoritmo \textit {PseudoSeg}, utilizando o texto o texto integral.}}{121}{table.A.22}
-\contentsline {table}{\numberline {23}{\ignorespaces Distribui\IeC {\c c}\IeC {\~o}es dos t\IeC {\'o}picos obtidos pelos extratores.}}{140}{table.C.23}
+\contentsline {table}{\numberline {3}{\ignorespaces Resumo das principais t\IeC {\'e}cnicas utilizadas para obten\IeC {\c c}\IeC {\~a}o de conhecimento em documentos multi-tem\IeC {\'a}ticos.}}{53}{table.2.3}
+\contentsline {table}{\numberline {4}{\ignorespaces Descritores e n\IeC {\'u}mero de segmentos no t\IeC {\'o}pico selecionado pelos Algoritmos}}{65}{table.3.4}
+\contentsline {table}{\numberline {5}{\ignorespaces Descri\IeC {\c c}\IeC {\~a}o dos resultados obtidos com anotadores. Na segunda coluna \#Sent., \IeC {\'e} mostrada a quantidade de senten\IeC {\c c}as de cada ata. Nas colunas A1-A9 \IeC {\'e} mostrado as quantidades de segmentos informados pelos anotadores. }}{72}{table.4.5}
+\contentsline {table}{\numberline {6}{\ignorespaces Exemplo de segmenta\IeC {\c c}\IeC {\~a}o de refer\IeC {\^e}ncia com rotula\IeC {\c c}\IeC {\~a}o de um anotador}}{73}{table.4.6}
+\contentsline {table}{\numberline {7}{\ignorespaces Medidas de concord\IeC {\^a}ncia entre os anotadores sobre cada ata segmentada manualmente.}}{74}{table.4.7}
+\contentsline {table}{\numberline {8}{\ignorespaces Resultados do TextTiling.}}{77}{table.4.8}
+\contentsline {table}{\numberline {9}{\ignorespaces Resultados do \textit {C99}.}}{78}{table.4.9}
+\contentsline {table}{\numberline {10}{\ignorespaces Resumo dos melhores resultados obtidos por cada configura\IeC {\c c}\IeC {\~a}o e medida de avalia\IeC {\c c}\IeC {\~a}o para cada algoritmos utilizado na configura\IeC {\c c}\IeC {\~a}o experimental. }}{79}{table.4.10}
+\contentsline {table}{\numberline {11}{\ignorespaces Algoritmos e configura\IeC {\c c}\IeC {\~o}es colocados em primeiro lugar em cada medida.}}{80}{table.4.11}
+\contentsline {table}{\numberline {12}{\ignorespaces Descritores e n\IeC {\'u}mero de segmentos no t\IeC {\'o}pico selecionado pelos Algoritmos}}{88}{table.5.12}
+\contentsline {table}{\numberline {13}{Valores das medidas de desempenho para an\IeC {\'a}lise do algoritmo \textit {TextTiling}, utilizando o texto pr\IeC {\'e}-processado.}}{108}{table.A.13}
+\contentsline {table}{\numberline {14}{Valores das medidas de desempenho para an\IeC {\'a}lise do algoritmo \textit {C99}, utilizando o texto pr\IeC {\'e}-processado.}}{110}{table.A.14}
+\contentsline {table}{\numberline {15}{Valores das medidas de desempenho para an\IeC {\'a}lise do algoritmo \textit {MinCutSeg}, utilizando o texto pr\IeC {\'e}-processado.}}{112}{table.A.15}
+\contentsline {table}{\numberline {16}{Valores das medidas de desempenho para an\IeC {\'a}lise do algoritmo \textit {BayesSeg}, utilizando o texto pr\IeC {\'e}-processado.}}{114}{table.A.16}
+\contentsline {table}{\numberline {17}{Valores das medidas de desempenho para an\IeC {\'a}lise do algoritmo \textit {TextSeg}, utilizando o texto pr\IeC {\'e}-processado.}}{115}{table.A.17}
+\contentsline {table}{\numberline {18}{Valores das medidas de desempenho para an\IeC {\'a}lise do algoritmo \textit {TextTiling}, utilizando o texto o texto integral.}}{116}{table.A.18}
+\contentsline {table}{\numberline {19}{Valores das medidas de desempenho para an\IeC {\'a}lise do algoritmo \textit {C99}, utilizando o texto o texto integral.}}{118}{table.A.19}
+\contentsline {table}{\numberline {20}{Valores das medidas de desempenho para an\IeC {\'a}lise do algoritmo \textit {MinCutSeg}, utilizando o texto o texto integral.}}{120}{table.A.20}
+\contentsline {table}{\numberline {21}{Valores das medidas de desempenho para an\IeC {\'a}lise do algoritmo \textit {BayesSeg}, utilizando o texto o texto integral.}}{122}{table.A.21}
+\contentsline {table}{\numberline {22}{Valores das medidas de desempenho para an\IeC {\'a}lise do algoritmo \textit {TextSeg}, utilizando o texto o texto integral.}}{123}{table.A.22}
+\contentsline {table}{\numberline {23}{Valores das medidas de desempenho para an\IeC {\'a}lise do pseudo algoritmo \textit {PseudoSeg}, utilizando o texto o texto integral.}}{123}{table.A.23}
+\contentsline {table}{\numberline {24}{\ignorespaces Distribui\IeC {\c c}\IeC {\~o}es dos t\IeC {\'o}picos obtidos pelos extratores.}}{142}{table.C.24}

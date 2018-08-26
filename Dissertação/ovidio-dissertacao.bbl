@@ -28,14 +28,14 @@ Dispon{\'\i}vel em: \url{http://dx.doi.org/10.1023/A:1007506220214}.}
 \bibitem[Blei 2012]{Blei2012}
 \abntrefinfo{Blei}{BLEI}{2012}
 {BLEI, D.~M. Probabilistic topic models.
-\emph{Commun. ACM}, ACM, New York, NY, USA, v.~55, n.~4, p. 77--84, abr. 2012.
+\emph{Commun. ACM}, ACM, New York, NY, USA, v.~55, n.~4, p. 77--84, 2012.
 ISSN 0001-0782.
 Dispon{\'\i}vel em: \url{http://doi.acm.org/10.1145/2133806.2133826}.}
 
 \bibitem[Blei, Ng e Jordan 2003]{Blei2003}
 \abntrefinfo{Blei, Ng e Jordan}{BLEI; NG; JORDAN}{2003}
 {BLEI, D.~M.; NG, A.~Y.; JORDAN, M.~I. Latent dirichlet allocation.
-\emph{J. Mach. Learn. Res.}, JMLR.org, v.~3, p. 993--1022, mar. 2003.
+\emph{J. Mach. Learn. Res.}, JMLR.org, v.~3, p. 993--1022, 2003.
 ISSN 1532-4435.
 Dispon{\'\i}vel em: \url{http://dl.acm.org/citation.cfm?id=944919.944937}.}
 
@@ -44,7 +44,7 @@ Dispon{\'\i}vel em: \url{http://dl.acm.org/citation.cfm?id=944919.944937}.}
 {BOKAEI, M.~H.; SAMETI, H.; LIU, Y. Linear discourse segmentation of
   multi-party meetings based on local and global information.
 \emph{IEEE/ACM Trans. Audio, Speech and Lang. Proc.}, IEEE Press, Piscataway,
-  NJ, USA, v.~23, n.~11, p. 1879--1891, nov. 2015.
+  NJ, USA, v.~23, n.~11, p. 1879--1891, 2015.
 ISSN 2329-9290.
 Dispon{\'\i}vel em: \url{http://dx.doi.org/10.1109/TASLP.2015.2456430}.}
 
@@ -67,7 +67,7 @@ ISBN 978-3-319-54472-4.}
 \abntrefinfo{Cao}{CAO}{2017}
 {CAO, L. Data science: A comprehensive overview.
 \emph{ACM Comput. Surv.}, ACM, New York, NY, USA, v.~50, n.~3, p. 43:1--43:42,
-  jun. 2017.
+  2017.
 ISSN 0360-0300.
 Dispon{\'\i}vel em: \url{http://doi.acm.org/10.1145/3076253}.}
 
@@ -81,7 +81,7 @@ Dispon{\'\i}vel em: \url{http://doi.acm.org/10.1145/3076253}.}
 \abntrefinfo{Carletta}{CARLETTA}{1996}
 {CARLETTA, J. Assessing agreement on classification tasks: The kappa statistic.
 \emph{Comput. Linguist.}, MIT Press, Cambridge, MA, USA, v.~22, n.~2, p.
-  249--254, jun. 1996.
+  249--254, 1996.
 ISSN 0891-2017.
 Dispon{\'\i}vel em: \url{http://dl.acm.org/citation.cfm?id=230386.230390}.}
 
@@ -116,6 +116,11 @@ ISBN 978-1-61197-283-2. Dispon{\'\i}vel em:
   text segmentation. In:  \emph{In Proceedings of EMNLP}. [S.l.: s.n.], 2001.
   p. 109--117.}
 
+\bibitem[Corcoglioniti et al. 2016]{Corcoglioniti2016}
+\abntrefinfo{Corcoglioniti et al.}{CORCOGLIONITI et al.}{2016}
+{CORCOGLIONITI, F. et al. Knowledge extraction for information retrieval.
+p. 317--333, 05 2016.}
+
 \bibitem[Croft, Metzler e Strohman 2009]{Croft2009}
 \abntrefinfo{Croft, Metzler e Strohman}{CROFT; METZLER; STROHMAN}{2009}
 {CROFT, B.; METZLER, D.; STROHMAN, T. \emph{Search Engines: Information
@@ -141,7 +146,7 @@ Dispon{\'\i}vel em: \url{http://dl.acm.org/citation.cfm?id=1248547.1248548}.}
 {DHILLON, I.~S.; MODHA, D.~S. Concept decompositions for large sparse text data
   using clustering.
 \emph{Mach. Learn.}, Kluwer Academic Publishers, Hingham, MA, USA, v.~42,
-  n.~1-2, p. 143--175, jan. 2001.
+  n.~1-2, p. 143--175, 2001.
 ISSN 0885-6125.
 Dispon{\'\i}vel em: \url{https://doi.org/10.1023/A:1007612920971}.}
 
@@ -207,22 +212,28 @@ ISBN 0973-6107.}
 \abntrefinfo{Gutierrez et al.}{GUTIERREZ et al.}{2016}
 {GUTIERREZ, F. et al. A hybrid ontology-based information extraction system.
 \emph{J. Inf. Sci.}, Sage Publications, Inc., Thousand Oaks, CA, USA, v.~42,
-  n.~6, p. 798--820, dez. 2016.
+  n.~6, p. 798--820, 2016.
 ISSN 0165-5515.
 Dispon{\'\i}vel em: \url{https://doi.org/10.1177/0165551515610989}.}
 
 \bibitem[Guyon e Elisseeff 2003]{Guyon2003}
 \abntrefinfo{Guyon e Elisseeff}{GUYON; ELISSEEFF}{2003}
 {GUYON, I.; ELISSEEFF, A. An introduction to variable and feature selection.
-\emph{J. Mach. Learn. Res.}, JMLR.org, v.~3, p. 1157--1182, mar. 2003.
+\emph{J. Mach. Learn. Res.}, JMLR.org, v.~3, p. 1157--1182, 2003.
 ISSN 1532-4435.
 Dispon{\'\i}vel em: \url{http://dl.acm.org/citation.cfm?id=944919.944968}.}
+
+\bibitem[Habibi e Popescu-Belis 2015]{habibi2015}
+\abntrefinfo{Habibi e Popescu-Belis}{HABIBI; POPESCU-BELIS}{2015}
+{HABIBI, M.; POPESCU-BELIS, A. Keyword extraction and clustering for document
+  recommendation in conversations.
+v.~23, p. 746--759, 04 2015.}
 
 \bibitem[Hassani e Seidl 2017]{Hassani2017}
 \abntrefinfo{Hassani e Seidl}{HASSANI; SEIDL}{2017}
 {HASSANI, M.; SEIDL, T. Using internal evaluation measures to validate the
   quality of diverse stream clustering algorithms.
-\emph{Vietnam Journal of Computer Science}, v.~4, n.~3, p. 171--183, Aug 2017.
+\emph{Vietnam Journal of Computer Science}, v.~4, n.~3, p. 171--183, 2017.
 ISSN 2196-8896.
 Dispon{\'\i}vel em: \url{https://doi.org/10.1007/s40595-016-0086-9}.}
 
@@ -231,7 +242,7 @@ Dispon{\'\i}vel em: \url{https://doi.org/10.1007/s40595-016-0086-9}.}
 {HEARST, M.~A. Texttiling: Segmenting text into multi-paragraph subtopic
   passages.
 \emph{Comput. Linguist.}, MIT Press, Cambridge, MA, USA, v.~23, n.~1, p.
-  33--64, mar. 1997.
+  33--64, 1997.
 ISSN 0891-2017.
 Dispon{\'\i}vel em: \url{http://dl.acm.org/citation.cfm?id=972684.972687}.}
 
@@ -248,13 +259,13 @@ ISBN 1-58113-096-1. Dispon{\'\i}vel em:
 \abntrefinfo{Hovy e Lavid}{HOVY; LAVID}{2010}
 {HOVY, E.; LAVID, J. Towards a 'science' of corpus annotation: A new
   methodological challenge for corpus linguistics.
-v.~22, p. 13--36, 01 2010.}
+v.~22, p. 13--36, 2010.}
 
 \bibitem[Huang et al. 2003]{Huang2003}
 \abntrefinfo{Huang et al.}{HUANG et al.}{2003}
 {HUANG, X. et al. Applying machine learning to text segmentation for
   information retrieval.
-\emph{Information Retrieval}, v.~6, n.~3, p. 333--362, Sep 2003.
+\emph{Information Retrieval}, v.~6, n.~3, p. 333--362, 2003.
 ISSN 1573-7659.
 Dispon{\'\i}vel em: \url{https://doi.org/10.1023/A:1026028229881}.}
 
@@ -271,6 +282,12 @@ Dispon{\'\i}vel em: \url{https://doi.org/10.1023/A:1026028229881}.}
   Management}. New York, NY, USA: ACM, 2010.  (CIKM '10), p. 1119--1128.
 ISBN 978-1-4503-0099-5. Dispon{\'\i}vel em:
   \url{http://doi.acm.org/10.1145/1871437.1871579}.}
+
+\bibitem[Jian et al. 2016]{Jian2016}
+\abntrefinfo{Jian et al.}{JIAN et al.}{2016}
+{JIAN, F. et al. A simple enhancement for ad-hoc information retrieval via
+  topic modelling.
+p. 733--736, 07 2016.}
 
 \bibitem[Kazantseva e Szpakowicz 2012]{Kazantseva2012}
 \abntrefinfo{Kazantseva e Szpakowicz}{KAZANTSEVA; SZPAKOWICZ}{2012}
@@ -303,18 +320,23 @@ Dispon{\'\i}vel em:
 \abntrefinfo{Lee e Seung}{LEE; SEUNG}{1999}
 {LEE, D.; SEUNG, H. S. Learning the parts of objects by non-negative matrix
   factorization.
-v.~401, p. 788--91, 11 1999.}
+v.~401, p. 788--91, 1999.}
 
 \bibitem[Lee et al. 2011]{Lee2011}
 \abntrefinfo{Lee et al.}{LEE et al.}{2011}
 {LEE, J.-K. et al. Two-step sentence extraction for summarization of meeting
   minutes. In:  . [S.l.: s.n.], 2011. v.~39, p. 614--619.}
 
+\bibitem[Li, Li e Fan 2014]{LiJiang2014}
+\abntrefinfo{Li, Li e Fan}{LI; LI; FAN}{2014}
+{LI, L.; LI, W. J.; FAN, Y. Y. Topic-oriented information retrieval.
+v. 989-994, p. 4845--4850, 07 2014.}
+
 \bibitem[Luhn 1958]{Luhn1958}
 \abntrefinfo{Luhn}{LUHN}{1958}
 {LUHN, H.~P. The automatic creation of literature abstracts.
 \emph{IBM J. Res. Dev.}, IBM Corp., Riverton, NJ, USA, v.~2, n.~2, p. 159--165,
-  abr. 1958.
+  1958.
 ISSN 0018-8646.
 Dispon{\'\i}vel em: \url{http://dx.doi.org/10.1147/rd.22.0159}.}
 
@@ -364,7 +386,7 @@ ISBN 978-1-60558-512-3. Dispon{\'\i}vel em:
 \abntrefinfo{Monien e Sudborough}{MONIEN; SUDBOROUGH}{1988}
 {MONIEN, B.; SUDBOROUGH, I.~H. Min cut is np-complete for edge weighted trees.
 \emph{Theor. Comput. Sci.}, Elsevier Science Publishers Ltd., Essex, UK, v.~58,
-  n.~1-3, p. 209--229, jun. 1988.
+  n.~1-3, p. 209--229, 1988.
 ISSN 0304-3975.
 Dispon{\'\i}vel em: \url{http://dx.doi.org/10.1016/0304-3975(88)90028-X}.}
 
@@ -397,7 +419,7 @@ Dispon{\'\i}vel em: \url{http://hdl.handle.net/10119/12059}.}
 {O'CALLAGHAN, D. et al. An analysis of the coherence of descriptors in topic
   modeling.
 \emph{Expert Syst. Appl.}, Pergamon Press, Inc., Tarrytown, NY, USA, v.~42,
-  n.~13, p. 5645--5657, ago. 2015.
+  n.~13, p. 5645--5657, 2015.
 ISSN 0957-4174.
 Dispon{\'\i}vel em: \url{http://dx.doi.org/10.1016/j.eswa.2015.02.055}.}
 
@@ -405,7 +427,7 @@ Dispon{\'\i}vel em: \url{http://dx.doi.org/10.1016/j.eswa.2015.02.055}.}
 \abntrefinfo{Papadimitriou}{PAPADIMITRIOU}{1976}
 {PAPADIMITRIOU, C.~H. The np-completeness of the bandwidth minimization
   problem.
-\emph{Computing}, v.~16, n.~3, p. 263--270, Sep 1976.
+\emph{Computing}, v.~16, n.~3, p. 263--270, 1976.
 ISSN 1436-5057.
 Dispon{\'\i}vel em: \url{https://doi.org/10.1007/BF02280884}.}
 
@@ -414,7 +436,7 @@ Dispon{\'\i}vel em: \url{https://doi.org/10.1007/BF02280884}.}
 {PASSONNEAU, R.~J.; LITMAN, D.~J. Discourse segmentation by human and automated
   means.
 \emph{Comput. Linguist.}, MIT Press, Cambridge, MA, USA, v.~23, n.~1, p.
-  103--139, mar. 1997.
+  103--139, 1997.
 ISSN 0891-2017.
 Dispon{\'\i}vel em: \url{http://dl.acm.org/citation.cfm?id=972684.972689}.}
 
@@ -453,6 +475,14 @@ Tese (Doutorado), Philadelphia, PA, USA, 1998. AAI9829978.}
 {REZENDE, S.~O. \emph{Sistemas Inteligentes}. Barueri, SP: Manole, 2003. 337 -
   270~p.}
 
+\bibitem[Rezende, Marcacini e Moura 2011]{Rezende2011}
+\abntrefinfo{Rezende, Marcacini e Moura}{REZENDE; MARCACINI; MOURA}{2011}
+{REZENDE, S.~O.; MARCACINI, R.~M.; MOURA, M.~F. O uso da mineração de textos
+  para extração e organização não supervisionada de conhecimento.
+\emph{Revista de Sistemas de Informação da FSMA}, v.~7, p. 7--21, 2011.
+ISSN 19835604.
+Dispon{\'\i}vel em: \url{http://www.fsma.edu.br/si/7edicao.html}.}
+
 \bibitem[Rijsbergen 1979]{Rijsbergen1979}
 \abntrefinfo{Rijsbergen}{RIJSBERGEN}{1979}
 {RIJSBERGEN, C. J.~V. \emph{Information Retrieval}. 2nd. ed. Newton, MA, USA:
@@ -487,7 +517,7 @@ ISSN 2375-9232.}
 \abntrefinfo{Salton e Buckley}{SALTON; BUCKLEY}{1988}
 {SALTON, G.; BUCKLEY, C. Term-weighting approaches in automatic text retrieval.
 \emph{Inf. Process. Manage.}, Pergamon Press, Inc., Tarrytown, NY, USA, v.~24,
-  n.~5, p. 513--523, ago. 1988.
+  n.~5, p. 513--523, 1988.
 ISSN 0306-4573.
 Dispon{\'\i}vel em: \url{http://dx.doi.org/10.1016/0306-4573(88)90021-0}.}
 
@@ -511,7 +541,7 @@ ISBN 9783642167720. Dispon{\'\i}vel em:
 {SHAMSINEJADBABKI, P.; SARAEE, M. A new unsupervised feature selection method
   for text clustering based on genetic algorithms.
 \emph{J. Intell. Inf. Syst.}, Kluwer Academic Publishers, Hingham, MA, USA,
-  v.~38, n.~3, p. 669--684, jun. 2012.
+  v.~38, n.~3, p. 669--684, 2012.
 ISSN 0925-9902.
 Dispon{\'\i}vel em: \url{http://dx.doi.org/10.1007/s10844-011-0172-5}.}
 
@@ -519,14 +549,14 @@ Dispon{\'\i}vel em: \url{http://dx.doi.org/10.1007/s10844-011-0172-5}.}
 \abntrefinfo{Shi e Malik}{SHI; MALIK}{2000}
 {SHI, J.; MALIK, J. Normalized cuts and image segmentation.
 \emph{IEEE Transactions on Pattern Analysis and Machine Intelligence}, v.~22,
-  n.~8, p. 888--905, Aug 2000.
+  n.~8, p. 888--905, 2000.
 ISSN 0162-8828.}
 
 \bibitem[Shrout e Fleiss 1979]{Fleiss1979}
 \abntrefinfo{Shrout e Fleiss}{SHROUT; FLEISS}{1979}
 {SHROUT, P. E.; FLEISS, J. L. Intraclass correlations: Uses in assessing rater
   reliability.
-v.~86, p. 420--8, 04 1979.}
+v.~86, p. 420--8, 1979.}
 
 \bibitem[Soares, Prati e Monard 2008]{Soares2008}
 \abntrefinfo{Soares, Prati e Monard}{SOARES; PRATI; MONARD}{2008}
@@ -546,7 +576,7 @@ Dispon{\'\i}vel em:
 \abntrefinfo{Tagarelli e Karypis}{TAGARELLI; KARYPIS}{2013}
 {TAGARELLI, A.; KARYPIS, G. A segment-based approach to clustering multi-topic
   documents.
-\emph{Knowledge and Information Systems}, v.~34, n.~3, p. 563--595, Mar 2013.
+\emph{Knowledge and Information Systems}, v.~34, n.~3, p. 563--595, 2013.
 ISSN 0219-3116.
 Dispon{\'\i}vel em: \url{https://doi.org/10.1007/s10115-012-0556-z}.}
 
@@ -612,7 +642,7 @@ ISBN 978-1-4503-5022-8. Dispon{\'\i}vel em:
 {ZHAO, Y.; KARYPIS, G. Empirical and theoretical comparisons of selected
   criterion functions for document clustering.
 \emph{Mach. Learn.}, Kluwer Academic Publishers, Hingham, MA, USA, v.~55, n.~3,
-  p. 311--331, jun. 2004.
+  p. 311--331, 2004.
 ISSN 0885-6125.
 Dispon{\'\i}vel em:
   \url{http://dx.doi.org/10.1023/B:MACH.0000027785.44527.d6}.}

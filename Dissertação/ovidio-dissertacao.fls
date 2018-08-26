@@ -347,6 +347,7 @@ INPUT conteudo/capitulos/inputs/extracao-de-topicos.tex
 INPUT conteudo/capitulos/inputs/extracao-de-topicos.tex
 INPUT conteudo/capitulos/inputs/trabalhos-relacionados.tex
 INPUT conteudo/capitulos/inputs/trabalhos-relacionados.tex
+INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmbx8.tfm
 OUTPUT conteudo/capitulos/4-cap3.aux
 INPUT conteudo/capitulos/4-cap3.tex
 INPUT conteudo/capitulos/4-cap3.tex
@@ -358,7 +359,6 @@ INPUT ./conteudo/capitulos/figs/preparacao-docs.pdf
 INPUT ./conteudo/capitulos/figs/preparacao-docs.pdf
 INPUT conteudo/capitulos/inputs/algoritmo-find-sentences.tex
 INPUT conteudo/capitulos/inputs/algoritmo-find-sentences.tex
-INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmbx8.tfm
 INPUT conteudo/capitulos/figs/estrutura-de-dados-interna-revisada.pdf
 INPUT ./conteudo/capitulos/figs/estrutura-de-dados-interna-revisada.pdf
 INPUT ./conteudo/capitulos/figs/estrutura-de-dados-interna-revisada.pdf
