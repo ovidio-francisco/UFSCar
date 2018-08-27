@@ -195,6 +195,16 @@ ISBN 0521836573, 9780521836579.}
   Linguistics, 2003.  (ACL '03), p. 562--569. Dispon{\'\i}vel em:
   \url{http://dx.doi.org/10.3115/1075096.1075167}.}
 
+\bibitem[Garc\'{\i}a et al. 2010]{Garcia2010}
+\abntrefinfo{Garc\'{\i}a et al.}{GARC\'{I}A et al.}{2010}
+{GARC\'{I}A, S. et al. Advanced nonparametric tests for multiple comparisons in
+  the design of experiments in computational intelligence and data mining:
+  Experimental analysis of power.
+\emph{Inf. Sci.}, Elsevier Science Inc., New York, NY, USA, v.~180, n.~10, p.
+  2044--2064, maio 2010.
+ISSN 0020-0255.
+Dispon{\'\i}vel em: \url{https://doi.org/10.1016/j.ins.2009.12.010}.}
+
 \bibitem[Gruenstein, Niekrasz e Purver 2007]{Gruenstein2007}
 \abntrefinfo{Gruenstein, Niekrasz e Purver}{GRUENSTEIN; NIEKRASZ; PURVER}{2007}
 {GRUENSTEIN, A.; NIEKRASZ, J.; PURVER, M. \emph{MEETING STRUCTURE ANNOTATION --
@@ -586,6 +596,13 @@ Dispon{\'\i}vel em: \url{https://doi.org/10.1007/s10115-012-0556-z}.}
   Edition)}. Boston, MA, USA: Addison-Wesley Longman Publishing Co., Inc.,
   2005.
 ISBN 0321321367.}
+
+\bibitem[Trawinski et al. 2012]{Bogdan2012}
+\abntrefinfo{Trawinski et al.}{TRAWINSKI et al.}{2012}
+{TRAWINSKI, B. et al. Nonparametric statistical analysis for multiple
+  comparison of machine learning regression algorithms.
+\emph{International Journal of Applied Mathematics and Computer Science},
+  v.~22, n.~4, 2012.}
 
 \bibitem[Utiyama e Isahara 2001]{Utiyama2001}
 \abntrefinfo{Utiyama e Isahara}{UTIYAMA; ISAHARA}{2001}

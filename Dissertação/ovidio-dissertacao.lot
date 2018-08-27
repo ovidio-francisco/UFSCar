@@ -11,15 +11,15 @@
 \contentsline {table}{\numberline {10}{\ignorespaces Resumo dos melhores resultados obtidos por cada configura\IeC {\c c}\IeC {\~a}o e medida de avalia\IeC {\c c}\IeC {\~a}o para cada algoritmos utilizado na configura\IeC {\c c}\IeC {\~a}o experimental. }}{79}{table.4.10}
 \contentsline {table}{\numberline {11}{\ignorespaces Algoritmos e configura\IeC {\c c}\IeC {\~o}es colocados em primeiro lugar em cada medida.}}{80}{table.4.11}
 \contentsline {table}{\numberline {12}{\ignorespaces Descritores e n\IeC {\'u}mero de segmentos no t\IeC {\'o}pico selecionado pelos Algoritmos}}{88}{table.5.12}
-\contentsline {table}{\numberline {13}{Valores das medidas de desempenho para an\IeC {\'a}lise do algoritmo \textit {TextTiling}, utilizando o texto pr\IeC {\'e}-processado.}}{108}{table.A.13}
-\contentsline {table}{\numberline {14}{Valores das medidas de desempenho para an\IeC {\'a}lise do algoritmo \textit {C99}, utilizando o texto pr\IeC {\'e}-processado.}}{110}{table.A.14}
-\contentsline {table}{\numberline {15}{Valores das medidas de desempenho para an\IeC {\'a}lise do algoritmo \textit {MinCutSeg}, utilizando o texto pr\IeC {\'e}-processado.}}{112}{table.A.15}
-\contentsline {table}{\numberline {16}{Valores das medidas de desempenho para an\IeC {\'a}lise do algoritmo \textit {BayesSeg}, utilizando o texto pr\IeC {\'e}-processado.}}{114}{table.A.16}
-\contentsline {table}{\numberline {17}{Valores das medidas de desempenho para an\IeC {\'a}lise do algoritmo \textit {TextSeg}, utilizando o texto pr\IeC {\'e}-processado.}}{115}{table.A.17}
-\contentsline {table}{\numberline {18}{Valores das medidas de desempenho para an\IeC {\'a}lise do algoritmo \textit {TextTiling}, utilizando o texto o texto integral.}}{116}{table.A.18}
-\contentsline {table}{\numberline {19}{Valores das medidas de desempenho para an\IeC {\'a}lise do algoritmo \textit {C99}, utilizando o texto o texto integral.}}{118}{table.A.19}
-\contentsline {table}{\numberline {20}{Valores das medidas de desempenho para an\IeC {\'a}lise do algoritmo \textit {MinCutSeg}, utilizando o texto o texto integral.}}{120}{table.A.20}
-\contentsline {table}{\numberline {21}{Valores das medidas de desempenho para an\IeC {\'a}lise do algoritmo \textit {BayesSeg}, utilizando o texto o texto integral.}}{122}{table.A.21}
-\contentsline {table}{\numberline {22}{Valores das medidas de desempenho para an\IeC {\'a}lise do algoritmo \textit {TextSeg}, utilizando o texto o texto integral.}}{123}{table.A.22}
-\contentsline {table}{\numberline {23}{Valores das medidas de desempenho para an\IeC {\'a}lise do pseudo algoritmo \textit {PseudoSeg}, utilizando o texto o texto integral.}}{123}{table.A.23}
-\contentsline {table}{\numberline {24}{\ignorespaces Distribui\IeC {\c c}\IeC {\~o}es dos t\IeC {\'o}picos obtidos pelos extratores.}}{142}{table.C.24}
+\contentsline {table}{\numberline {13}{Valores das medidas de desempenho para an\IeC {\'a}lise do algoritmo \textit {TextTiling}, utilizando o texto pr\IeC {\'e}-processado.}}{110}{table.A.13}
+\contentsline {table}{\numberline {14}{Valores das medidas de desempenho para an\IeC {\'a}lise do algoritmo \textit {C99}, utilizando o texto pr\IeC {\'e}-processado.}}{112}{table.A.14}
+\contentsline {table}{\numberline {15}{Valores das medidas de desempenho para an\IeC {\'a}lise do algoritmo \textit {MinCutSeg}, utilizando o texto pr\IeC {\'e}-processado.}}{114}{table.A.15}
+\contentsline {table}{\numberline {16}{Valores das medidas de desempenho para an\IeC {\'a}lise do algoritmo \textit {BayesSeg}, utilizando o texto pr\IeC {\'e}-processado.}}{116}{table.A.16}
+\contentsline {table}{\numberline {17}{Valores das medidas de desempenho para an\IeC {\'a}lise do algoritmo \textit {TextSeg}, utilizando o texto pr\IeC {\'e}-processado.}}{117}{table.A.17}
+\contentsline {table}{\numberline {18}{Valores das medidas de desempenho para an\IeC {\'a}lise do algoritmo \textit {TextTiling}, utilizando o texto o texto integral.}}{118}{table.A.18}
+\contentsline {table}{\numberline {19}{Valores das medidas de desempenho para an\IeC {\'a}lise do algoritmo \textit {C99}, utilizando o texto o texto integral.}}{120}{table.A.19}
+\contentsline {table}{\numberline {20}{Valores das medidas de desempenho para an\IeC {\'a}lise do algoritmo \textit {MinCutSeg}, utilizando o texto o texto integral.}}{122}{table.A.20}
+\contentsline {table}{\numberline {21}{Valores das medidas de desempenho para an\IeC {\'a}lise do algoritmo \textit {BayesSeg}, utilizando o texto o texto integral.}}{124}{table.A.21}
+\contentsline {table}{\numberline {22}{Valores das medidas de desempenho para an\IeC {\'a}lise do algoritmo \textit {TextSeg}, utilizando o texto o texto integral.}}{125}{table.A.22}
+\contentsline {table}{\numberline {23}{Valores das medidas de desempenho para an\IeC {\'a}lise do pseudo algoritmo \textit {PseudoSeg}, utilizando o texto o texto integral.}}{125}{table.A.23}
+\contentsline {table}{\numberline {24}{\ignorespaces Distribui\IeC {\c c}\IeC {\~o}es dos t\IeC {\'o}picos obtidos pelos extratores.}}{144}{table.C.24}

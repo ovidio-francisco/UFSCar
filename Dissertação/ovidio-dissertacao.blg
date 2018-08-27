@@ -20,10 +20,14 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
-Reallocated field_info (elt_size=4) to 11141 items from 5000.
+Reallocated field_info (elt_size=4) to 11279 items from 5000.
 Database file #1: abntex2-options.bib
 Database file #2: referencias.bib
-Repeated entry---line 379 of file referencias.bib
+I was expecting an "="---line 8 of file referencias.bib
+ :       pages:      
+ :                   867 - 881",
+I'm skipping whatever remains of this entry
+Repeated entry---line 418 of file referencias.bib
  : // @inbook{Aggarwal2018
  :                        ,
 I'm skipping whatever remains of this entry
@@ -41,45 +45,45 @@ Warning--faltando school em Reynar1998
 | Em caso de dúvidas ou problemas com este estilo procure |
 | http://abntex2.googlecode.com                           |
 +---------------------------------------------------------+
-You've used 89 entries,
+You've used 91 entries,
             6711 wiz_defined-function locations,
-            1926 strings with 29727 characters,
-and the built_in function-call counts, 129982 in all, are:
-= -- 14225
-> -- 2987
-< -- 2690
-+ -- 3668
-- -- 897
-* -- 8740
-:= -- 15844
-add.period$ -- 436
-call.type$ -- 89
-change.case$ -- 993
-chr.to.int$ -- 214
-cite$ -- 90
-duplicate$ -- 11437
-empty$ -- 6090
-format.name$ -- 4286
-if$ -- 27386
+            1942 strings with 30357 characters,
+and the built_in function-call counts, 132626 in all, are:
+= -- 14482
+> -- 3071
+< -- 2739
++ -- 3742
+- -- 921
+* -- 8938
+:= -- 16180
+add.period$ -- 444
+call.type$ -- 91
+change.case$ -- 1021
+chr.to.int$ -- 222
+cite$ -- 92
+duplicate$ -- 11648
+empty$ -- 6199
+format.name$ -- 4408
+if$ -- 27946
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 1626
-newline$ -- 491
-num.names$ -- 445
-pop$ -- 1977
+missing$ -- 1661
+newline$ -- 503
+num.names$ -- 455
+pop$ -- 2015
 preamble$ -- 1
-purify$ -- 364
+purify$ -- 374
 quote$ -- 0
-skip$ -- 11526
+skip$ -- 11739
 stack$ -- 1
-substring$ -- 6192
-swap$ -- 4713
-text.length$ -- 190
+substring$ -- 6299
+swap$ -- 4802
+text.length$ -- 196
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 40
 warning$ -- 2
-while$ -- 775
+while$ -- 790
 width$ -- 0
-write$ -- 1566
-(There were 2 error messages)
+write$ -- 1603
+(There were 3 error messages)
