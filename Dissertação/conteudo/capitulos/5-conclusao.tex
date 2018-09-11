@@ -10,8 +10,12 @@
 % Em um contexto em que a grande parte das informações armazenadas pelas organizações está em formato textual, o desenvolvimento de ferramentas computacionais para extração e organização automática dessas informações é uma tarefa que retem atenção e relevância.
 
 Com a grande disponibilidade de dados em formato textual, há um constante interesse no desenvolvimento de ferramentas computacionais para recuperação automática de informações úteis a partir desses dados. 
-Dentre os textos usados para registros, identificou-se documentos multi-temáticos, os quais abordam assuntos diversos no mesmo texto, como exemplo, as atas de reuniões apresentam como característica a ausência de meta informações ou mesmo quebras de parágrafos que ajudariam a separar e identificar seus conteúdos. 
-Entre as abordagens aplicáveis a este problema estão a segmentação textual e os modelos de extração de tópicos as quais em conjunto são capazes de separar, identificar e agrupar os assuntos contidos nessa categoria de documentos.
+Dentre os textos usados para registros, identificou-se documentos multi-temáticos, os quais abordam assuntos diversos no mesmo texto. Por exemplo, as atas de reuniões apresentam como característica a ausência de meta informações ou mesmo quebras de parágrafos que ajudariam a separar e identificar seus conteúdos. 
+
+
+Em geral, nos trabalhos que abordam esse problema, utilizam-se técnicas para isolar os múltiplos assuntos em trechos para em seguida encontrar relações entre seus conteúdos.  Entre os trabalhos encontrados na literatura, poucos utilizam modelos de aprendizado de máquina para adicionar atributos aos trechos. Observou-se então na recuperação de informação em documentos multi-temáticos, uma área pouco explorada, sobre tudo para o idioma português. 
+Entre as abordagens aplicáveis a este problema estão a segmentação textual e os modelos de extração de tópicos as quais, em conjunto, são capazes de separar, identificar e agrupar os assuntos contidos nessa categoria de documentos além de proporcionar novos atributos aos dados originais os quais expandem o espaço de busca para técnicas de recuperação de informação.
+
 
 
 
@@ -20,8 +24,8 @@ Entre as abordagens aplicáveis a este problema estão a segmentação textual e
 
 % -------------------- Retomada do que foi feito -------------------- 
 
-Dados os desafios apresentados acima, este trabalho de mestrado visou o desenvolvimento de um Sistema de Recuperação de Informação utilizando técnicas de Segmentação Textual e Extração de Tópicos para extração automática de conhecimento em uma base de dados composta por atas de reunião coletadas da Universidade Federal de São Carlos - Campus Sorocaba. 
-Desenvolveu-se uma metodologia que utiliza a segmentação textual para fragmentar as atas em porções de texto com um assunto relativamente independente os quais são agrupados e descritos semanticamente por um modelo de extração de tópicos, conforme apresentado no Capítulo~\ref{cap3}.
+Dados os desafios apresentados para esse tipo de documento e as abordagens a serem exploradas, este trabalho de mestrado visou o desenvolvimento de um sistema de recuperação de informação utilizando técnicas de segmentação textual e extração de tópicos para extração automática de conhecimento em uma base de dados composta por atas de reunião coletadas da Universidade Federal de São Carlos - Campus Sorocaba. 
+Para isso, desenvolveu-se uma metodologia que utiliza a segmentação textual para fragmentar as atas em porções de texto com um assunto relativamente independente os quais são agrupados e descritos semanticamente por um modelo de extração de tópicos, conforme apresentado no Capítulo~\ref{cap3}.
 
 Inicialmente, a fim de analisar as técnicas utilizadas, gerou-se um \textit{corpus} anotado por 9 profissionais com afinidade com o domínio investigado. Os anotadores segmentaram e rotularam manualmente 12 atas de reunião. 
 Para isso desenvolveu-se uma ferramenta para anotação manual de documentos, pela qual os anotadores forneceram segmentações e informações sobre os segmentos identificados.
@@ -42,7 +46,7 @@ Detalhes sobre o \textit{corpus} anotado e avaliação objetiva dos segmentadore
 % Após a avaliação dos segmentadores e segmentação do \textit{corpus} inicial, o desenvolvimento prosseguiu com a avaliação dos extratores de tópicos. Os extratores foram executados para agrupar e extrair descritores do conjunto de segmentos. 
 % Cada extrator formou 70 grupos (tópicos) e para cada grupo foram extraídos 5 descritores. 
 %
-A metodologia utilizada nesse trabalho conecta as técnicas de segmentação textual aos modelos de extração de tópicos a fim de gerar um estrutura derivada a partir de um \textit{corpus} não estruturado. Essa nova estrutura concentra os textos originais acrescidos de informação latentes e organizados por sua semelhança semântica. Essa organização permite que técnicas de Recuperação de Informação expandam o espaço de busca além do conjunto de termos original de cada segmento, sendo assim, favorecidas quanto a identificação segmentos relacionados a consulta do usuário bem como permite a exploração dos grupos com assuntos relacionados.
+A metodologia utilizada neste trabalho conecta as técnicas de segmentação textual aos modelos de extração de tópicos a fim de gerar um estrutura derivada a partir de um \textit{corpus} não estruturado. Essa nova estrutura concentra os textos originais acrescidos de informação latentes e organizados por sua semelhança semântica. Essa organização permite que técnicas de Recuperação de Informação expandam o espaço de busca além do conjunto de termos original de cada segmento, sendo assim, favorecidas quanto a identificação segmentos relacionados a consulta do usuário bem como permite a exploração dos grupos com assuntos relacionados.
 
 
 
@@ -64,7 +68,7 @@ A análise detalhada dessas avaliações e a relação entre as técnicas empreg
 % -------------------- Contribuições -------------------- 
 
 
-De modo geral, o sistema desenvolvido nesse trabalho recebe uma base de dados constituída por documentos multi-temáticos não estruturada e produz uma estrutura de dados interna mais organizada e acrescida de informações latentes extraídas do próprio \textit{corpus} original de forma não supervisionada. 
+De modo geral, o sistema desenvolvido neste trabalho recebe uma base de dados constituída por documentos multi-temáticos não estruturada e produz uma estrutura de dados interna mais organizada e acrescida de informações latentes extraídas do próprio \textit{corpus} original de forma não supervisionada. 
 A utilização de descritores para expandir a o espaço de busca pelas técnicas de recuperação de informação possibilita ganho em relação a busca indexada por termos presentes nos documentos. Além disso, o retorno procura exibir apenas os trechos relevantes à consulta do usuário, ao invés de documentos inteiros que podem conter trechos irrelevantes à consulta.  
 A estrutura dada ao \textit{corpus} original permite analisar seu conteúdo pela perspectiva da distribuição dos tópicos. Com isso, é possível entender a composição e recorrência dos assuntos discutidos bem como traçar um histórico dos assuntos abordados a fim de visualizar sua evolução ao longo do tempo.
 
@@ -81,7 +85,7 @@ O \textit{corpus} anotado gerado neste projeto contém dados adicionados aos doc
 
 O sistema proposto e sua implementação podem ser utilizados para extração de conhecimento em bases de dados formadas por documentos multi-temáticos, em especial, conjuntos de atas de reunião. Outros domínios que lidam com bases de dados com as mesmas características podem aproveitar esse sistema bem como seu código fonte para eventuais adaptações ou expansões.
  
-As avaliações dos segmentadores mostraram dados objetivos sobre o desempenho dessas técnicas quando aplicadas à coleção de documentos utilizada nesse trabalho. 
+As avaliações dos segmentadores mostraram dados objetivos sobre o desempenho dessas técnicas quando aplicadas à coleção de documentos utilizada neste trabalho. 
 A avaliação dos extratores apresentou a percepção de profissionais sobre os resultados da combinação entre o segmentador empregado e os extratores de tópicos.
 
 
@@ -95,9 +99,9 @@ A avaliação dos extratores apresentou a percepção de profissionais sobre os 
 
 Entre as continuações e futuras melhorias para este trabalho, pode-se citar implementações no próprio sistema proposto e ampliação das bases de dados bem como inclusão de novos \textit{corpora}.  
 %
-Os primeiros experimentos desse trabalho geraram um artigo que foi submetido para publicação, porém, não foi aceito. Essa recusa exigiu novos experimentos com mais dados os quais são apresentados nessa dissertação. Assim, um novo artigo será submetido em complemento à esse trabalho.
+Os primeiros experimentos deste trabalho geraram um artigo que foi submetido para publicação, porém, não foi aceito. Essa recusa exigiu novos experimentos com mais dados os quais são apresentados nessa dissertação. Assim, um novo artigo será submetido em complemento à este trabalho.
 % 
-A proposta inicial desse trabalho contempla a classificação dos segmentos em relação ao tipo de menção ao assunto, como decisão, orientação e irrelevante. Os dados colhidos no experimento mencionado na Seção~\ref{sec:anotacoes} referentes ao tipo de menção e contexto do assunto serão utilizados para o gerar um classificador para categorizar automaticamente um segmento nas categorias. Para isso, as anotações coletadas podem ser utilizadas na etapa de treinamento dos classificadores.
+A proposta inicial deste trabalho contempla a classificação dos segmentos em relação ao tipo de menção ao assunto, como decisão, orientação e irrelevante. Os dados colhidos no experimento mencionado na Seção~\ref{sec:anotacoes} referentes ao tipo de menção e contexto do assunto serão utilizados para o gerar um classificador para categorizar automaticamente um segmento nas categorias. Para isso, as anotações coletadas podem ser utilizadas na etapa de treinamento dos classificadores.
 
 %
 Outras melhorias do sistema podem ser alcançadas com testes voltados a experiência do usuário a fim de medir a satisfação dos resultados apresentados e guiar a implementação de uma interface gráfica para possibilitar ao usuário analisar os dados pela exploração interativa dos grupos. Além disso, a implementação de algoritmos de agrupamento incremental devem ser incorporadas ao sistema a fim de suportar adequadamente o crescimento da coleção de documentos.

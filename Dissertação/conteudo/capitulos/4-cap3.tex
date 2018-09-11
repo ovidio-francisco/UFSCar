@@ -6,7 +6,7 @@
 
 O sistema proposto tem como objetivo recuperar informações em uma coleção de documentos em que cada documento contém assuntos diversos e relativamente independentes entre si. Esse sistema deve identificar os assuntos de cada documento e disponibilizá-los de forma que o usuário consiga consultar a coleção de documentos e obter todo o histórico de ocorrências de um determinado tema de forma que possa identificar onde esse tema foi mencionado, bem como se houve uma decisão relacionada ao tema. Os documentos constituídos por diversos assuntos, são aqui chamados de documentos multi-temáticos, em contraste com aqueles cujo assunto central é bem definido e constante ao logo do texto.  
 
-A proposta original deste trabalho contempla funcionalidades de classificação para identificar automaticamente o tipo de ocorrência onde um assunto é mencionado, o qual pode ser classificado como uma decisão, informe ou simplesmente uma menção ao assunto. Contudo essas funcionalidades configuram trabalhos futuros para continuação do sistema como concebido inicialmente. Assim, esse trabalho de mestrado está focado na segmentação de atas de reunião, no agrupamento desses segmentos em tópicos e na recuperação de trechos de atas relacionados ao assunto da pesquisa.
+A proposta original deste trabalho contempla funcionalidades de classificação para identificar automaticamente o tipo de ocorrência onde um assunto é mencionado, o qual pode ser classificado como uma decisão, informe ou simplesmente uma menção ao assunto. Contudo essas funcionalidades configuram trabalhos futuros para continuação do sistema como concebido inicialmente. Assim, este trabalho de mestrado está focado na segmentação de atas de reunião, no agrupamento desses segmentos em tópicos e na recuperação de trechos de atas relacionados ao assunto da pesquisa.
 
 Esse capítulo está organizado da seguinte forma: primeiramente, na Seção~\ref{sec:sistema-proposto} é apresentada uma visão geral do sistema proposto, seu funcionamento e como as técnicas de segmentação textual e extração de tópicos são empregadas para gerar uma base de dados que concentra as informações necessárias para identificar e agrupar os diversos assuntos distribuídos na coleção de documentos. Ainda nessa seção, é apresentada a utilização das técnicas de recuperação de informação empregadas para entregar os segmentos de acordo com a consulta do usuário bem como permitir a exploração de segmentos relacionados ao mesmo tema, os quais originalmente estão distribuídos na coleção de documentos.  
 Na Seção~\ref{sec:aplicacao-sistema} é apresentada a aplicação do sistema proposto utilizando como base de dados uma coleção de atas de reunião. Uma vez que as atas configuram um \textit{corpus} com documentos multi-temáticos, o sistema as utilizará e as técnicas empregadas serão analisadas. Ainda nessa seção, será apresentada a preparação das atas, bem como a descrição dos algoritmos utilizados e suas configurações.
@@ -80,7 +80,7 @@ Os documentos são normalmente armazenadas em arquivos binários do tipo \textit
 %  Identificação de sentenças
 % \item 
 % Identificação sentenças: 
-Nesse trabalho considera-se as sentenças as menores unidades de informação a serem processadas pelos algoritmos de segmentação, por tanto, estas devem ser identificadas. Ao considerar intuitivamente que uma sentença seja uma sequência de palavras entre sinais de pontuação como ``.'', ``!'' e ``?'', alguns erros poderiam ocorrer quando esses tiverem outra função dentro do texto como em abreviações\footnote{As abreviações são identificadas por meio de uma lista com 234 abreviações conhecidas.}, endereços de internet e datas. Outro problema seriam frases curtas com poucas palavras e que não expressam um conceito completo, mas parte dele. Devido ao estilo de pontuação desses documentos, como encerrar sentenças usando um ``;'' e inserção de linhas extras, foram usadas as regras especiais para identificação de finais de sentença. No Algoritmo~\ref{alg:identificacaofinaisdesent} é mostrado como cada \textit{token}\footnote{Nesse trabalho um \textit{token} é qualquer conjunto de símbolos entre sinais não visuais como espaços, quebras de linha e tabulações.} é identificado  como final de sentença.  % Os detalhes sobre essas regras estão disponíveis para consulta em \urlsoftwares.
+Neste trabalho considera-se as sentenças as menores unidades de informação a serem processadas pelos algoritmos de segmentação, por tanto, estas devem ser identificadas. Ao considerar intuitivamente que uma sentença seja uma sequência de palavras entre sinais de pontuação como ``.'', ``!'' e ``?'', alguns erros poderiam ocorrer quando esses tiverem outra função dentro do texto como em abreviações\footnote{As abreviações são identificadas por meio de uma lista com 234 abreviações conhecidas.}, endereços de internet e datas. Outro problema seriam frases curtas com poucas palavras e que não expressam um conceito completo, mas parte dele. Devido ao estilo de pontuação desses documentos, como encerrar sentenças usando um ``;'' e inserção de linhas extras, foram usadas as regras especiais para identificação de finais de sentença. No Algoritmo~\ref{alg:identificacaofinaisdesent} é mostrado como cada \textit{token}\footnote{Neste trabalho um \textit{token} é qualquer conjunto de símbolos entre sinais não visuais como espaços, quebras de linha e tabulações.} é identificado  como final de sentença.  % Os detalhes sobre essas regras estão disponíveis para consulta em \urlsoftwares.
 
 
 \input{conteudo/capitulos/inputs/algoritmo-find-sentences.tex}
@@ -93,9 +93,9 @@ Nesse trabalho considera-se as sentenças as menores unidades de informação a 
 
 
 
-Nessa etapa os documentos são pré-processados individualmente antes de serem recebidos pelos algoritmos de segmentação e extração de tópicos. Inicialmente, cada texto passa por um processo de transformação em que as letras são convertidas em caixa baixa e elimina-se sinais de pontuação, numerais e termos menores que três caracteres. Em seguida remove-se os termos que não contribuem para a etapa de segmentação, as quais são chamadas de \textit{stop words}. Para identificá-las usa-se uma lista de 438 palavras conhecidas do idioma português, como preposições, artigos e verbos de estado e adicionalmente uma lista contendo palavras muito frequentes e pouco significantes desse domínio com como \textit{``universidade''}, \textit{``computação''} e nomes de pessoas as quais formam listadas manualmente. Em seguida, extrai-se o radical de cada palavra por meio da técnica \textit{stemming} implementada no algoritmo de Porter~\cite{Porter1997}. A etapa de pré-processamento cria uma base de dados intermediária, da qual foram removidos os elementos mencionados. Essa estrutura é utilizada para representar os textos, contudo, a base de dados interna preserva os elementos removidos para apresentação adequada ao usuário.
+Nessa etapa os documentos são pré-processados individualmente antes de serem recebidos pelos algoritmos de segmentação e extração de tópicos. Inicialmente, cada texto passa por um processo de transformação em que as letras são convertidas em caixa baixa e elimina-se sinais de pontuação, numerais e termos menores que três caracteres. Em seguida remove-se os termos que não contribuem para a etapa de segmentação, as quais são chamadas de \textit{stop words}. Para identificá-las usa-se uma lista de 438 palavras conhecidas do idioma português, como preposições, artigos e verbos de estado e adicionalmente uma lista contendo palavras muito frequentes e pouco significativas desse domínio com como \textit{``universidade''}, \textit{``computação''} e nomes de pessoas as quais formam listadas manualmente. Em seguida, extrai-se o radical de cada palavra por meio da técnica \textit{stemming} implementada no algoritmo de Porter~\cite{Porter1997}. A etapa de pré-processamento cria uma base de dados intermediária, da qual foram removidos os elementos mencionados. Essa estrutura é utilizada para representar os textos, contudo, a base de dados interna preserva os elementos removidos para apresentação adequada ao usuário.
  
-% Nesse trabalho, todos os termos restantes após a remoção de \textit{stop words} e \textit{stemming} foram mantidas independentemente de valores de   \textit{Document Frequency} devido a característica das atas de possuir múltiplos assuntos em um documento. Cada segmento pode ser considerado como um sub-documento quem contém um assunto relativamente independente. 
+% Neste trabalho, todos os termos restantes após a remoção de \textit{stop words} e \textit{stemming} foram mantidas independentemente de valores de   \textit{Document Frequency} devido a característica das atas de possuir múltiplos assuntos em um documento. Cada segmento pode ser considerado como um sub-documento quem contém um assunto relativamente independente. 
 
 
 
@@ -196,7 +196,7 @@ Uma vez que a base de dados interna contém os assuntos abordados na coleção d
 \label{sec-ranqueamento}
 
 Os dados contidos na base de dados interna devem ser acessados por meio de consultas do usuário. Deseja-se que somente os segmentos relevantes sejam exibidos e ordenados por sua similaridade com a consulta. 
-Nesse trabalho, a seleção dos segmentos é feita por meio buscas em um espaço vetorial (já apresentado na seção~\ref{subsec:modeloespacovetorial}) onde cada tópico é representado pelos descritores obtidos no processo de extração de tópicos. Essa técnica permite utilizar as variáveis latentes, e fazer com que termos diferentes mas com mesmo significado (polissemia) sejam relacionados e considerados no processo de busca.
+Neste trabalho, a seleção dos segmentos é feita por meio buscas em um espaço vetorial (já apresentado na seção~\ref{subsec:modeloespacovetorial}) onde cada tópico é representado pelos descritores obtidos no processo de extração de tópicos. Essa técnica permite utilizar as variáveis latentes, e fazer com que termos diferentes mas com mesmo significado (polissemia) sejam relacionados e considerados no processo de busca.
 Inicialmente, cria-se um \textit{ranking} dos tópicos considerando a similaridade entre seus descritores e a consulta. Em seguida, seleciona-se os tópicos cujos descritores possuem maior relevância com a consulta do usuário e exibe-se os segmentos atribuídos ao primeiro tópico do \textit{ranking}, ficando os demais disponíveis para exploração pelo usuário. 
 Os segmentos de cada tópico são ordenados de acordo com o peso atribuído à relação entre o segmento e tópico.  Como resultado, tem-se grupos de segmentos (tópicos) ordenados pela similaridade com a consulta, pelos quais se exibe os segmentos ordenados por sua relevância ao tópico. 
 % Essa abordagem é similar aos trabalhos apresentados na Seção~\ref{sec-trabalhos-relacionados}, sendo a principal diferença deste trabalho a técnica de ranqueamento dos resultados.
@@ -269,7 +269,7 @@ O foco principal deste projeto de mestrado é a exploração e recuperação de 
 % 
 As atas de reunião, em geral, apresentam como característica textos relativamente curtos, em comparação com outros documentos como notícias, artigos, sites da \textit{web}; o estilo de escrita formal em que o redator evita repetições de temos e conceitos em benefício da estética do texto; Multiplicidade de assuntos contidos em uma mesma ata, na qual é difícil determinar um assunto central, mas diversos assuntos independentes que foram tratados durante a reunião.
 A literatura pesquisada apresenta poucos trabalhos voltados à essas caraterísticas, sobre tudo para o idioma português. Assim, escolheu-se um \textit{corpus} de atas de reunião com propósito principal de contribuir com ferramentas e conhecimentos nesse sentido. 
-% esse trabalho tem foco em atas de 
+% este trabalho tem foco em atas de 
 % reunião c
 
 % características desses documentos como 
@@ -283,7 +283,7 @@ A seguir, será descrito o conjunto de atas de reunião utilizado como base de d
 \subsection{Composição do \textit{Corpus} }
 \label{subsec:composicaocorpus}
 
-O \textit{corpus} abordado nesse trabalho foi formado por atas de reunião coletadas da Universidade Federal de São Carlos - Campus Sorocaba. 
+O \textit{corpus} abordado neste trabalho foi formado por atas de reunião coletadas da Universidade Federal de São Carlos - Campus Sorocaba. 
 Coletou-se 175 atas públicas
 % da Universidade Federal de São Carlos - Campus Sorocaba, destas, são 
 das quais são 
@@ -303,7 +303,7 @@ As atas de reunião diferem dos textos comumente estudados em outros trabalhos e
 
 \subsection{Exploração e Observação do \textit{Corpus}}
 
-Como retorno, diferentes modelos de extração de tópicos apresentam resultados distintos em relação aos descritores e segmentos atribuídos a cada tópico. Na Tabela~\ref{tab:resumodescritoreseqtdsegmetnos} é apresentado um resumo dos tópicos extraídos do \textit{corpus} por cada modelo. Os dados foram gerados configurando cada modelo para extrair um total de 70 tópicos da base da coleção, onde se observa 3 descritores extraídos para cada tópico. Os tópicos estão ordenados pela quantidade de segmentos atribuídos dos quais são exibidos os 45 primeiros tópicos. Os resultados completos dessa tabela, com 70 tópicos e 5 descritores podem ser vistos no Apêndice~\ref{apendice3}.
+Como retorno, diferentes modelos de extração de tópicos apresentam resultados distintos em relação aos descritores e segmentos atribuídos a cada tópico. Na Tabela~\ref{tab:resumodescritoreseqtdsegmetnos} é apresentado um resumo dos tópicos extraídos do \textit{corpus} por cada modelo. Os dados foram gerados configurando cada modelo para extrair um total de 70 tópicos, onde se observa 3 descritores extraídos para cada tópico. Os tópicos estão ordenados pela quantidade de segmentos atribuídos dos quais são exibidos os 45 primeiros tópicos. Os resultados completos dessa tabela, com 70 tópicos e 5 descritores podem ser vistos no Apêndice~\ref{apendice3}.
 
 
 
@@ -328,7 +328,7 @@ De maneira geral, os retornos do sistema apresentados na Tabela~\ref{tab:resumod
 Observou-se também que alguns tópicos concentram segmentos considerados pouco relevantes em termos de conteúdo, como a primeira parte introdutória da ata, onde se registra informações como data, local, membros e departamento. Esses segmentos são identificados com os termos 
 \textit{``dia; realizada; chamada;''} pelo K-Means com 116 segmentos; 
 \textit{``seguintes; chamada; conselho;''} pelo LDA com 67 segmentos e 
-\textit{``dia; realizada; gestão;''} e \textit{``dia; seguintes; presidente;''} pelo PLSA com 28 e 27 segmentos. Vale salientar que os segmentos possuem texto similar, porém não idênticos e que os cabeçalhos e rodapés não estão presentes uma vez que foram removidos na etapa de preparação dos documentos. Como parte da proposta desse trabalho, esse agrupamento ajuda identificar textos com pouca relevância em termos de assuntos abordados na reunião.
+\textit{``dia; realizada; gestão;''} e \textit{``dia; seguintes; presidente;''} pelo PLSA com 28 e 27 segmentos. Vale salientar que os segmentos possuem texto similar, porém não idênticos e que os cabeçalhos e rodapés não estão presentes uma vez que foram removidos na etapa de preparação dos documentos. Como parte da proposta deste trabalho, esse agrupamento ajuda identificar textos com pouca relevância em termos de assuntos abordados na reunião.
 Os resultados dos sistema são melhores analisados no capítulos~\ref{cap-segmentadores}~e~\ref{cap-extratores} onde as técnicas de segmentação textual e extração de tópicos são avaliadas no contexto das atas de reunião.
 
 
@@ -340,7 +340,7 @@ Os dados obtidos pela aplicação das técnicas permitem analisar o \textit{corp
 
 		% \includegraphics[trim={ 0 235 0 0 },clip,page=1,width=\textwidth]{conteudo/capitulos/figs/doc-em-png/distribuicao.pdf}
 
-		% \caption{Distribuição de tópicos em uma ata real. Cada tópico é representado por uma região colorida. Abaixo estão os descritores identificados pela cor do respectivo tópico. Os nomes de pessoas foram ocultados por não expressarem significado nesse trabalho.}
+		% \caption{Distribuição de tópicos em uma ata real. Cada tópico é representado por uma região colorida. Abaixo estão os descritores identificados pela cor do respectivo tópico. Os nomes de pessoas foram ocultados por não expressarem significado neste trabalho.}
 		% \label{fig:distribuicao-ata}
 	% \end{figure}
 % \end{center}
@@ -355,7 +355,7 @@ A ata exibida, foi segmentada utilizando algoritmo \textit{BayesSeg} e os tópic
 
 		\includegraphics[trim={ 0 235 0 0 },clip,page=1,width=\textwidth]{conteudo/capitulos/figs/doc-em-png/distribuicao.pdf}
 
-		\caption{Distribuição de tópicos em uma ata real. Cada tópico é representado por uma região colorida. Abaixo estão os descritores identificados pela cor do respectivo tópico. Os nomes de pessoas foram ocultados por não expressarem significado nesse trabalho.}
+		\caption{Distribuição de tópicos em uma ata real. Cada tópico é representado por uma região colorida. Abaixo estão os descritores identificados pela cor do respectivo tópico. Os nomes de pessoas foram ocultados por não expressarem significado neste trabalho.}
 		\label{fig:distribuicao-ata}
 	\end{figure}
 \end{center}

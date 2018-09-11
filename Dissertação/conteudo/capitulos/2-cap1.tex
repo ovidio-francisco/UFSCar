@@ -17,7 +17,17 @@ Assim, os processos de extração automática de conhecimento em coleções text
 \cite{Aggarwal2012, Jeong:2010, Tagarelli2013}. 
  % -< falar disso mais adiante -->
 
-Além dos tipos de informações mais comuns que são armazenados no formato textual, como e-mails, relatórios, artigos e postagens em redes sociais, têm-se também o armazenamento das atas de reuniões, as quais permitem às organizações a documentação oficial de reuniões em arquivos digitais, facilitando a sua confecção e compartilhamento, bem como consulta às decisões tomadas.
+
+% --- Documentos multi-temáticos ---
+
+Entre as coleções textuais mais utilizadas como fonte para extração automática de conhecimento estão documentos digitais como artigos, notícias e páginas da \textit{Web}, os quais têm um assunto principal ou marcações que ajudam a identificar os temas tratados, bem como delimitá-los.
+Contudo, há uma grande quantidade de informações registradas em documentos formados por múltiplos temas que não oferecem uma estrutura clara que ajude a identificar os assuntos abordados, tão pouco indicam onde há transições entre assuntos. Exemplos são transcrições de áudios, discursos e chats. 
+Neste trabalho, o termo documentos multi-temáticos referem a textos compostos por múltiplos assuntos, os quais não possuem marcações ou metadados com indicações sobre seu teor.
+
+
+
+
+Entre documentos com características multi-temática, têm-se também as atas de reuniões, as quais permitem às organizações a documentação oficial de reuniões em arquivos digitais, facilitando a sua confecção e compartilhamento, bem como consulta às decisões tomadas.
 % 
 % 
 %        ========== ==========   Reuniões   ========== ==========
@@ -25,7 +35,7 @@ Além dos tipos de informações mais comuns que são armazenados no formato tex
 %Seu conteúdo é frequentemente registrado em texto na forma de atas para fins de documentação e consulta posterior. 
 Reuniões são tarefas presentes em ambientes de gestão e organizações de um modo geral, onde discute-se problemas, soluções, propostas, alterações de projetos e frequentemente são tomadas decisões importantes onde a comunicação entre os membros da reunião é feita de forma majoritariamente verbal~\cite{Bokaei2016, Miriam2013}. 
 
-Para que conteúdo das reuniões possa ser registrado e externalizado, adota-se a prática de escrever seu conteúdo em atas~\cite{Miriam2013, Lee2011}. Por exemplo, nas reuniões do conselho de um programa de pós-graduação de uma universidade, são decididos, quais são os critérios para credenciamento e permanência de docentes no programa. Ao longo do tempo, esse tema pode ser discutido e mencionado diversas vezes, podendo os critérios inclusive passar por significativas alterações, devido a diversos fatores. O coordenador do programa pode desejar recuperar qual foi a decisão mais recente, para poder aplicar os critérios a um potencial novo membro do programa, ou os membros do conselho podem desejar rever o histórico de tudo o que já foi discutido/decidido sobre o tema, para poder propor alterações nas regras, de forma mais adequada.
+Para que o conteúdo das reuniões possa ser registrado e externalizado, adota-se a prática de escrever seu conteúdo em atas~\cite{Miriam2013, Lee2011}. Por exemplo, nas reuniões do conselho de um programa de pós-graduação de uma universidade, são decididos, quais são os critérios para credenciamento e permanência de docentes no programa. Ao longo do tempo, esse tema pode ser discutido e mencionado diversas vezes, podendo os critérios inclusive passar por significativas alterações, devido a diversos fatores. O coordenador do programa pode desejar recuperar qual foi a decisão mais recente, para poder aplicar os critérios a um potencial novo membro do programa, ou os membros do conselho podem desejar rever o histórico de tudo o que já foi discutido/decidido sobre o tema, para poder propor alterações nas regras, de forma mais adequada.
 
 As atas de reunião possuem características particulares. Frequentemente apresentam um texto com poucas quebras de parágrafo e sem marcações de estrutura, como capítulos, seções ou quaisquer indicações sobre o tema do texto. Devido a fatores como a não estruturação e volume dos textos, a localização de um assunto em uma coleção de atas é uma tarefa custosa, especialmente considerando seu crescimento em uma instituição. 
 %%  -->
@@ -67,7 +77,7 @@ Uma vez que a ata registra a sucessão de assuntos discutidos na reunião, um si
 % Falar do 'segundo lugar' que é indentificar os tópicos !
 
 
-% Esse trabalho tem 3 tarefas principais: 
+% Este trabalho tem 3 tarefas principais: 
 % 1. Segmentar as atas em trechos que tratem de um único assunto.
 % 2. Identificar o assunto de cada trecho.
 % 3. Ranquear os trechos conforme a relevância com a consulta do usuário.
@@ -111,10 +121,10 @@ expandir o espaço de busca a fim de aprimorar técnicas de recuperação de inf
 
 Essa abordagem traz vantagens para a recuperação de informação em coleções de documentos com múltiplos tópicos como atas de reunião.
 % -> 1 Segmentação
-A segmentação das atas permite ao sistema criar uma base de documentos mais simples, em que os assuntos estão isolados em segmentos, formando assim, um \textit{corpus} mais adequado aos métodos de aprendizado de máquina e recuperação de informação, empregados nesse trabalho. Além disso, permite ao sistema final exibir apenas os trechos onde o assunto pesquisado está presente ao invés de entregar documentos integrais~\cite{Tagarelli2013, Jeong:2010, Prince2007, Huang2003}. 
+A segmentação das atas permite ao sistema criar uma base de documentos mais simples, em que os assuntos estão isolados em segmentos, formando assim, um \textit{corpus} mais adequado aos métodos de aprendizado de máquina e recuperação de informação, empregados neste trabalho. Além disso, permite ao sistema final exibir apenas os trechos onde o assunto pesquisado está presente ao invés de entregar documentos integrais~\cite{Tagarelli2013, Jeong:2010, Prince2007, Huang2003}. 
 
 % -> 2 Extração de tópicos -- descritores
-Modelos de extração de tópicos podem se integrar ao processo de recuperação de informação usando os agrupamentos e seus descritores como uma forma de descrição da coleção~\cite{Zhai2017, Xing2009}, bem como relacionar termos distintos com um determinado tópico em comum~\cite{WEIXING}. A busca por palavras-chave em descritores transfere esforço computacional da varredura dos documentos para a etapa de extração de tópicos. Essa estratégia evita processamento e lentidão no momento da pesquisa de maneira semelhante à criação de índices para aumentar a eficiência em sistemas de recuperação de informação. Além disso, encontra relações entre termos e documentos sem necessidade de conhecimento externo sobre o domínio. Assim, nesse trabalho os modelos de extração de tópicos são utilizados para incorporar informação aos segmentos com a finalidade de aprimorar o ranqueamento dos resultados. 
+Modelos de extração de tópicos podem se integrar ao processo de recuperação de informação usando os agrupamentos e seus descritores como uma forma de descrição da coleção~\cite{Zhai2017, Xing2009}, bem como relacionar termos distintos com um determinado tópico em comum~\cite{WEIXING}. A busca por palavras-chave em descritores transfere esforço computacional da varredura dos documentos para a etapa de extração de tópicos. Essa estratégia evita processamento e lentidão no momento da pesquisa de maneira semelhante à criação de índices para aumentar a eficiência em sistemas de recuperação de informação. Além disso, encontra relações entre termos e documentos sem necessidade de conhecimento externo sobre o domínio. Assim, neste trabalho os modelos de extração de tópicos são utilizados para incorporar informação aos segmentos com a finalidade de aprimorar o ranqueamento dos resultados. 
 % ~\cite{Tagarelli2013, WEIXING}
 % 
 % -> 3 Extração de tópicos -- agrupamento
@@ -124,15 +134,15 @@ Além disso, ao agrupar os segmentos por tópicos, tem-se uma organização dos 
 
 %        ========== ==========   Objetivos   ========== ==========
 
-Diante desse cenário, o objetivo desse trabalho de mestrado é propor o desenvolvimento uma ferramenta para identificar, organizar e apresentar assuntos registrados em atas de reunião utilizando a estrutura latente de documentos segmentados em conjunto com técnicas de recuperação de informação. 
+Diante desse cenário, o objetivo deste trabalho de mestrado é propor o desenvolvimento uma ferramenta de recuperação de informação para identificar, organizar e apresentar assuntos registrados em atas de reunião utilizando a estrutura latente de documentos segmentados. 
 %
-Como objetivos específicos, esse trabalho visa  
+Como objetivos específicos, este trabalho visa  
 % (1) 
-Dar início a investigação de métodos de segmentação textual, extração de tópicos e recuperação de informação no contexto de atas de reunião. Para conhecer a eficiência das técnicas de segmentação textual, seus resultados foram analisados tendo como referência anotações coletadas de profissionais que desempenham atividades ligadas a atas e reuniões.
+investigar métodos de segmentação textual, extração de tópicos e recuperação de informação no contexto de atas de reunião. Para conhecer a eficiência das técnicas de segmentação textual, neste trabalho, são analisados seus resultados tendo como referência anotações coletadas de profissionais que desempenham atividades ligadas a atas e reuniões.
 % (2) 
-Visa ainda, avaliar junto ao usuário a qualidade dos subdocumentos apresentados quanto ao agrupamento e relevância das informações contidas. Para isso, foi feito uma coleta de dados sobre a percepção de usuários sobre a qualidade dos resultados apresentados em uma consulta a coleção de atas por meio do sistema.
+Visa ainda, avaliar junto ao usuário a qualidade dos subdocumentos apresentados quanto ao agrupamento e relevância das informações contidas. Para isso, foi feita uma coleta de dados sobre a percepção de usuários sobre a qualidade dos resultados apresentados em uma consulta a coleção de atas por meio do sistema.
 % 
-Dessa forma, busca-se ajudar a suprir a necessidade de ferramentas para esse cenário e contribuir com uma metodologia para extração de informação em documentos com múltiplos assuntos. Além disso, disponibilizar o sistema implementado bem como os dados coletados durante a análise das técnicas de forma a contribuir com novos trabalhos relacionados a esse contexto.
+Dessa forma, busca-se suprir a necessidade de ferramentas para esse cenário e contribuir com uma metodologia para recuperação de informação e análise dos tópicos contidos em bases textuais formadas por documentos multi-temáticos. Além disso, disponibilizar o sistema implementado bem como os dados coletados durante a análise das técnicas de forma a contribuir com novos trabalhos relacionados a esse contexto.
 
 % --> Disponibilisação do sistema final.
 
@@ -140,12 +150,12 @@ Dessa forma, busca-se ajudar a suprir a necessidade de ferramentas para esse cen
 
 % \section{Organização da Dissertação}
 
-No Capítulo~\ref{cap2} são apesentados os principais conceitos da Recuperação de Informação, de Mineração de Textos, Segmentação Textual e Extração de Tópicos.
+No Capítulo~\ref{cap2} são apesentados os principais conceitos da recuperação de informação, de mineração de textos, segmentação textual e extração de tópicos.
 %
 No Capítulo~\ref{cap3} é proposto um sistema para extração de conhecimento em atas de reunião e inicia-se o seu desenvolvimento com base nas técnicas mencionadas. 
-Ainda nesse capítulo, é mostrado um estudo de caso da aplicação das técnicas de Segmentação Textual e Extração de Tópicos em uma coleção de atas. 
+Ainda nesse capítulo, é mostrado um estudo de caso da aplicação das técnicas de segmentação textual e extração de tópicos em uma coleção de atas. 
 %
-No Capítulo~\ref{cap-segmentadores} é apresentada uma avaliação objetiva de algoritmos de Segmentação Textual a fim de analisar seus resultados e escolher um segmentador para ser utilizado no sistema proposto.
+No Capítulo~\ref{cap-segmentadores} é apresentada uma avaliação objetiva de algoritmos de segmentação textual a fim de analisar seus resultados e escolher um segmentador para ser utilizado no sistema proposto.
 % anotações
 %
 No Capítulo~\ref{cap-extratores} é apresentada uma avaliação subjetiva dos resultados dos modelos de Extração de Tópicos sob um \textit{corpus} composto por segmentos de atas. Adicionalmente, avaliou-se o segmentador utilizado, uma vez que este está ligado aos resultados avaliados. 

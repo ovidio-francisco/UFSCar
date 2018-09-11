@@ -17,6 +17,32 @@
 
 
 Nesta seção são apresentados os principais trabalhos relacionados a proposta dessa dissertação. Os trabalhos a seguir abordam a Segmentação Textual, Extração de Tópicos e Recuperação de Informação e a intersecção entre as técnicas.
+%
+%
+%
+Durante a revisão bibliográfica da literatura relacionada a recuperação de informação em documentos multi-temáticos foram consultadas as seguintes fontes de pesquisa:
+%
+Scopus\footnote{Acessível em: \url{https://www.scopus.com}}; 
+ACM\footnote{Acessível em: \url{https://dl.acm.org}}; 
+SciELO\footnote{Acessível em: \url{http://www.scielo.br}};
+% WebOfScience\footnote{Acessível em: \url{http://webofknowledge.com}}; 
+IEEE XPlore\footnote{Acessível em: \url{https://ieeexplore.ieee.org}};
+ScienceDirect\footnote{Acessível em: \url{https://www.sciencedirect.com}}; 
+Google Scholar\footnote{Acessível em: \url{https://scholar.google.com}}.
+%
+% 
+As fontes de pesquisa foram consultadas utilizando como palavras-chave os seguintes termos:
+\textit{``topic extraction text segmentation''}; 
+\textit{``multi-topic information retrieval''}; 
+\textit{``multi-topic text segmentation''}; 
+\textit{``multi-topic topic extraction''}; 
+\textit{``multi-topic document clustering''}; 
+\textit{``text segmentation clustering''}.
+%
+Neste trabalho, foram selecionados da literatura as metodologias que abordam a tarefa de extrair conhecimento de documentos textuais compostos por múltiplos assuntos.
+%
+Os trabalhos aqui apresentados utilizam diferentes abordagens para tratar o problema da multiplicidade de assuntos em bases não estruturadas. As abordagens baseiam-se em alguma forma de fragmentação dos documentos seguidas de técnicas de inferência para obter informações sobre as relações entre os fragmentos. 
+
 
 Nos últimos anos, a crescente disponibilidade de documentos e a necessidade de gerenciá-los de forma eficiente, incentivou a pesquisa por técnicas de aprendizado de máquina para agrupar e classificar coleções de documentos longos. A maioria dessas pesquisas consideram que um documento pertence a único tópico. Essa premissa é verdadeira em muitos casos, como postagens em redes sociais, \textit{reviews} de produtos e e-mails. 
 Contudo, isso raramente é válido para documentos longos que por vezes possuem mais de um tema. 
@@ -24,7 +50,7 @@ Um dos primeiros trabalhos a agrupar documentos compostos por múltiplos temas �
 
 Outro trabalho pioneiro nesse sentido foi proposto em~\cite{Masao:2000}.
 % Um dos primeiros trabalhos da literatura a abordar a multiplicidade de tópicos em um documento foi proposto em~\cite{}. 
-Esse trabalho foca na sumarização de múltiplos documentos sobre múltiplos tópicos. Os autores propuseram um método baseado em \textit{spreading activation} em uma base de documentos anotados semanticamente. O método extrai partes dos documentos consideradas importantes para criar uma rede que os relaciona. Essa abordagem foi capaz de identificar sentenças relacionadas bem como os documentos. Contudo essa abordagem não utilizada métodos de segmentação textual, considerando cada sentença como nós da rede. Além disso, vale-se de rotulação manual para criar relações entre as entidades.
+Este trabalho foca na sumarização de múltiplos documentos sobre múltiplos tópicos. Os autores propuseram um método baseado em \textit{spreading activation} em uma base de documentos anotados semanticamente. O método extrai partes dos documentos consideradas importantes para criar uma rede que os relaciona. Essa abordagem foi capaz de identificar sentenças relacionadas bem como os documentos. Contudo essa abordagem não utilizada métodos de segmentação textual, considerando cada sentença como nós da rede. Além disso, vale-se de rotulação manual para criar relações entre as entidades.
 
 
 
@@ -51,41 +77,25 @@ O trabalho apresenta uma metodologia que utiliza segmentos de um determinado doc
 
 
 
-Durante a revisão bibliográfica da literatura relacionada a recuperação de informação em documentos multi-temáticos foram consultadas as seguintes fontes de pesquisa:
-%
-Scopus\footnote{Acessível em: \url{https://www.scopus.com/}}; 
-ACM\footnote{Acessível em: \url{https://dl.acm.org/}}; 
-SciEOLO\footnote{Acessível em \url{http://www.scielo.br/}};
-% WebOfScience\footnote{Acessível em: \url{http://webofknowledge.com/}}; 
-IEEE XPlore\footnote{Acessível em \url{https://ieeexplore.ieee.org/}};
-ScienceDirect\footnote{Acessível em: \url{https://www.sciencedirect.com/}}. 
-%
-% 
-As fontes de pesquisa foram consultadas utilizando as como palavras-chave os seguintes termos:
-\textit{``topic extraction text segmentation''}; 
-\textit{``multi-topic information retrieval''}; 
-\textit{``multi-topic text segmentation''}; 
-\textit{``multi-topic topic extraction''}; 
-\textit{``multi-topic document clustering''}; 
-\textit{``text segmentation clustering''}.
-%
-Nesse trabalho foram selecionados da literatura as metodologias que abordam a tarefa de extrair conhecimento de documentos textuais compostos por múltiplos assuntos.
-%
-Os trabalhos aqui apresentados utilizam diferentes abordagens para tratar o problema da multiplicidade de assuntos em bases não estruturadas. As abordagens baseiam-se em alguma forma de fragmentação dos documentos seguidas de técnicas de inferência para obter informações sobre as relações entre os fragmentos. A Tabela~\ref{tab:resumo-trabalhos} contem um resumo das principais técnicas utilizadas nos trabalhos discutidos.
+
+A Tabela~\ref{tab:resumo-trabalhos} contém o resumo das principais técnicas utilizadas nos trabalhos discutidos. Particularmente, é apresentado como é feita a fragmentação dos textos, os métodos de inferência utilizados, as técnicas para agregação de informação à representação dos fragmentos e o idioma dos textos.
+
+
+
 
 \begin{table}[!h]
 	\centering \tiny 
 % método de inferência de relação
 % Método de relacionamento entre segmentos
-	\begin{tabular}{|l|l|l|l|l|} \hline
+	\begin{tabular}{|l|l|l|p{2.8cm}|l|} \hline
 		\textbf{Trabalho} & \textbf{Divisão} & \textbf{Método de inferência}  & \textbf{Representação} & \textbf{Idioma}\\
 		\hline\hline 
 	
-	 (ZAMIR; ETZIONI, 1998) &      	Sentenças  & Agrupamento                 & & Inglês \\ \hline
-	 (MASAO; KôITI, 2000) &        	Sentenças  & Agrupamento                 & Rotulação  manual & Inglês \\ \hline
-	 (JEONG; TITOV, 2010) &        	Segmentação   & Modelo Bayesiano            & & Inglês \\ \hline
-	 (NGUYEN, 2011) &              	Segmentação  & Agrupamento hierárquico     & Sumarização e & \\ &&&palavras-chave& Inglês  \\ \hline
-	 (TAGARELLI; KARYPIS, 2013) &  	Parágrafos & Agrupamento e classificação & & Inglês \\ \hline
+		\cite{Zamir1998} &      	Sentenças  & Agrupamento                 & BOW & Inglês \\ \hline
+		\cite{Masao:2000} &        	Sentenças  & Agrupamento                 & BOW +  Rotulação  manual & Inglês \\ \hline
+		\cite{Jeong:2010} &        	Segmentação   & Modelo Bayesiano            & BOW & Inglês \\ \hline
+		\cite{Cuong2011} &              	Segmentação  & Agrupamento hierárquico     & BOW + Sumarização e palavras-chave& Inglês  \\ \hline
+		\cite{Tagarelli2013} &  	Parágrafos & Agrupamento e classificação & BOW & Inglês \\ \hline
 
 	\end{tabular}
 	\caption{Resumo das principais técnicas utilizadas para obtenção de conhecimento em documentos multi-temáticos.}
@@ -94,9 +104,32 @@ Os trabalhos aqui apresentados utilizam diferentes abordagens para tratar o prob
 \end{table}
 
 
-Há ainda na literatura, diversos trabalhos que descobrem relações latentes entre documentos e as utilizam para recuperação de informação, vistos, por exemplo em~\cite{Corcoglioniti2016, Jian2016, habibi2015, LiJiang2014, Rezende2011}. Contudo há uma lacuna em trabalhos que utilizam representações computacionais automáticas e relações latentes entre esses fragmentos para recuperação de informação em documentos multi-temáticos. Observa-se também a falta de trabalhos voltados a idiomas diferentes do Inglês.
+% Fulano faz isso
+% Fulano faz mais isso
+% aqui será assim:
 
-Assim, este trabalho visa utilizar conectar as técnicas de segmentação textual e extração de tópicos aqui apresentadas, para gerar uma representação computacional dos múltiplos assuntos contidos em documentos textuais para servir como base de dados para técnicas de recuperação de informação.
+Os trabalhos apresentados em~\cite{Zamir1998, Masao:2000} foram um dos primeiros a agrupar fragmentos de documentos. O método de divisão utilizado simplesmente faz a segmentação dos textos em sentenças. De forma semelhante, o trabalho apresentado em ~\cite{Tagarelli2013} utiliza as quebras de parágrafos para dividir seus documentos. 
+Esses trabalhos dividem os documentos utilizando elementos do texto como pontuações e quebras de linha. Somente os trabalhos apresentados em~\cite{Cuong2011, Jeong:2010} utilizam técnicas de segmentação baseadas na análise dos termos.
+Essa última abordagem permite encontrar trechos semanticamente mais coesos e completos em comparação à fragmentação por parágrafos ou sentenças.
+Devido à necessidade de apresentar assuntos relativamente independentes contidos nas atas, bem como obter conjuntos agrupados por tópicos, neste trabalho são exploradas as técnicas de segmentação de textual a fim de obter melhores trechos de documentos em termos completude e coesão dos assuntos.
+
+
+Os trabalhos apresentados em~\cite{Zamir1998, Jeong:2010, Tagarelli2013} usam somente os grupos identificados como forma de agregar informação aos fragmentos. 
+Com objetivo de criar grupos de documentos, os autores representaram as sentenças por meio de tabelas de frequência dos termos sem adição de conhecimento externo ou métodos de aprendizado para construção da representações das sentenças. 
+A fim de incorporar informação aos dados originais, o trabalho apresentado em~\cite{Masao:2000} utiliza rótulos atribuídos manualmente para compor as representações dos fragmentos. 
+Neste trabalho a rotulação manual é utilizada na construção de um \textit{corpus} anotado com informações sobre a segmentação das atas bem como sobre o conteúdo dos segmentos, o qual serve como parâmetro para avaliação dos métodos de segmentação e posterior treinamento de classificadores automáticos.  
+Ainda com finalidade de incorporar informação aos segmentos, a abordagem utilizada em~\cite{Cuong2011} encontra novos atributos por meio de técnicas de sumarização e extração de palavras-chave.  
+A fim de aprimorar a recuperação de informação do sistema aqui proposto, as técnicas de extração de tópicos são utilizadas para agrupar os segmentos por tópicos valendo-se de variáveis latentes, e fornecer descritores que acrescentam informação às representações dos segmentos bem como expandem o espaço de busca mantendo uma abordagem sem utilização de informações externas e independente de domínio.
+
+
+
+% e~\cite{} 
+
+
+Há ainda na literatura, diversos trabalhos que descobrem relações latentes entre documentos e as utilizam para recuperação de informação~\cite{Corcoglioniti2016, Jian2016, habibi2015, LiJiang2014, Rezende2011}. 
+Entretanto, há uma lacuna no que se refere a representações computacionais automáticas e relações latentes de documentos multi-temáticos. Além disso, independente de tratar-se de documentos com um tema ou multi-temáticos, há poucos trabalhos voltados a essa tarefa no idiomas português.
+
+Assim, este trabalho visa conectar as técnicas de segmentação textual e extração de tópicos aqui apresentadas, para gerar uma representação computacional dos múltiplos assuntos contidos em documentos textuais para servir como base de dados para técnicas de recuperação de informação. Nas seções seguintes serão apresentados os detalhes da abordagem proposta neste trabalho.
 
 
 

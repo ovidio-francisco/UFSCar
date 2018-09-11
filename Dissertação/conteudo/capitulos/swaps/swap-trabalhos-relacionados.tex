@@ -3,6 +3,267 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\begin{table}[!h]
+	\centering \tiny 
+% método de inferência de relação
+% Método de relacionamento entre segmentos
+	\begin{tabular}{|l|l|l|l|l|} \hline
+		\textbf{Trabalho} & \textbf{Divisão} & \textbf{Método de inferência}  & \textbf{Representação} & \textbf{Idioma}\\
+		\hline\hline 
+	
+	 (ZAMIR; ETZIONI, 1998) &      	Sentenças  & Agrupamento                 & BOW & Inglês \\ \hline
+	 (MASAO; KôITI, 2000) &        	Sentenças  & Agrupamento                 & BOW + Rotulação  manual & Inglês \\ \hline
+	 (JEONG; TITOV, 2010) &        	Segmentação   & Modelo Bayesiano            & BOW & Inglês \\ \hline
+	 (NGUYEN, 2011) &              	Segmentação  & Agrupamento hierárquico     & BOW + Sumarização e & \\ &&&palavras-chave& Inglês  \\ \hline
+	 (TAGARELLI; KARYPIS, 2013) &  	Parágrafos & Agrupamento e classificação & BOW & Inglês \\ \hline
+
+	\end{tabular}
+	\caption{Resumo das principais técnicas utilizadas para obtenção de conhecimento em documentos multi-temáticos.}
+	\label{tab:resumo-trabalhos}
+
+\end{table}
+
+
+
+
+Contudo há uma lacuna em trabalhos que utilizam representações computacionais automáticas e relações latentes entre esses fragmentos para recuperação de informação em documentos multi-temáticos. Observa-se também a falta de trabalhos voltados a idiomas diferentes do Inglês.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Os trabalhos apresentados na Tabela~\ref{tab:resumo-trabalhos} agrupam seus fragmentos por meio de algoritmos de agrupamento baseados em sua similaridade. 
+Os trabalhos apresentado em~\cite{Masao:2000} acrescenta rotulações manuais às representações de seus fragmentos enquanto~\cite{Cuong2011} utiliza extração de palavras-chave para representar os segmentos. 
+Nesse trabalho a rotulação manual é utilizada na construção de um corpus anotado com informações sobre a segmentação das atas bem como sobre o conteúdo dos segmentos, o qual serve como parâmetro para avaliação dos métodos de segmentação e posterior treinamento de classificadores automáticos.
+A fim de aprimorar a recuperação de informação do sistema aqui proposto, as técnicas de extração de tópicos são utilizadas para agrupar os segmentos por tópicos valendo-se de variáveis latentes e fornecer descritores que acrescentam informação às representações dos segmentos bem como expandem o espaço de busca mantendo uma abordagem sem utilização de informações externas e independente de domínio.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Neste trabalho, 
+
+
+
+
+
+
+A fim de incorporar conhecimento novo aos dados originais, 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Os trabalhos apresentados em~\cite{} usam somente os grupos identificados como forma de agregar informação aos fragmentos. 
+A fim de incorporar informação aos dados originais, o trabalho apresentado em~\cite{Masao:2000} utiliza rótulos atribuídos manualmente para compor as representações dos 
+fragmentos, enquanto a abordagem utilizada em~\cite{Cuong2011} encontra novos atributos por meio de técnicas de sumarização e extração de palavras-chave. 
+Neste trabalho, 
+
+
+
+
+
+
+A fim de incorporar conhecimento novo aos dados originais, 
+
+
+
+Por outro lado, 
+
+
+
+Com objetivo de criar grupos sobrepostos de documentos, os autores representaram as sentenças por meio de tabelas de frequência dos termos sem adição de conhecimento externo ou métodos de aprendizado para construção da representações das sentenças. 
+
+
+
+% O trabalho apresentado em~\cite{Zamir1998} foi um dos primeiros a agrupar fragmentos de documentos. Seu método de divisão dos textos faz simplesmente a segmentação dos textos em sentenças. Com objetivo de criar grupos sobrepostos de documentos, os autores representaram as sentenças por meio de tabelas de frequência dos termos sem adição de conhecimento externo ou métodos de aprendizado para construção da representações das sentenças. Da mesma forma, o trabalho apresentado em~\cite{Masao:2000} divide os documentos em sentenças contidas nos documentos, enquanto em~\cite{Tagarelli2013} utiliza as quebras de parágrafos para dividir seus documentos.
+
+
+
+
+
+
+
+Da mesma forma, o trabalho apresentado em~\cite{Masao:2000} relaciona as sentenças contidas nos documentos, 
+
+
+
+
+% A Tabela~\ref{tab:resumo-trabalhos} contem um resumo das principais técnicas utilizadas nos trabalhos discutidos.
+
+para encontrar relações semânticas , as 
+
+
+
+A Tabela 3 contem o resumo das principais técnicas utilizadas no trabalho, particularmente como é feita a divisão (identificação dos segmentos), qual o método de inferência, a representação que usa, e qual idioma que foi tratado. 
+
+só pra vc se referir a tabela. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+para construção das re
+
+
+supervisionada.
+
+aqui empregados e constituição de um corpus anotado 
+
+
+
+
+
+Os trabalhos apresentados na Tabela~\ref{tab:resumo-trabalhos} agrupam seus elementos por meio de algoritmos de agrupamento baseado na similaridade entre suas representações as quais são baseadas na frequência de seus termos.
+
+
+
+% Melhores fragmentos podem ser obtidos com técnicas de segmentação textual em termos de trechos com assuntos completos e coesos. 
+
+ utiliza rotulações manuais para 	
+
+
+Os métodos de extração de tópicos 
+
+Nos trabalhos apresentados em~\cite{} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 Selecionou-se os trabalhos que de alguma forma buscam obter conhecimento em documentos compostos por vários assuntos.  
 
 Os trabalhos aqui discutidos apresentam diferentes abordagem para recuperar informações em   documentos textuais compostos por múltiplos assuntos.  

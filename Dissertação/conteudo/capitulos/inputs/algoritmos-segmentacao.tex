@@ -148,7 +148,7 @@ $W = \{w_1, w_2, \dots, w_n\}$ e um conjunto de segmentos $S = \{s_1, s_2, \dots
 	P(S|W) = \frac{P(W|S)P(S)}{P(W)}
 \end{equation}
 
-Com isso, é possível encontrar a sequência de segmentos mais provável $\hat{S} = arg max_S~P(W|S) P(S)$. Nesse trabalho assume-se que os segmentos são estaticamente independentes entre si e as palavras nos segmentos são independentes dado o segmento que as contém. Essa simplificação permite decompor o termo $P(W|S)$ em um produtório de ocorrência de das palavras dado um segmento,  
+Com isso, é possível encontrar a sequência de segmentos mais provável $\hat{S} = arg max_S~P(W|S) P(S)$. Neste trabalho assume-se que os segmentos são estaticamente independentes entre si e as palavras nos segmentos são independentes dado o segmento que as contém. Essa simplificação permite decompor o termo $P(W|S)$ em um produtório de ocorrência de das palavras dado um segmento,  
 
 \begin{equation}
 	P(W|S) = \prod_{i=1}^m \prod_{j=1}^n P(w_j^i|S_i) ~ ,

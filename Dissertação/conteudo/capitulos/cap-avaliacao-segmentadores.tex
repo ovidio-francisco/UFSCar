@@ -13,12 +13,12 @@ A avaliação objetiva de um segmentador automático de textos exige uma referê
 %
 % Aqui será detalhada uma avaliação objetiva em que 
 Os resultados dos algoritmos foram avaliados por sua conformidade com uma segmentação de referência construída com base na metodologia de anotações em segmentos proposta em~\cite{Hovy2010}. 
-Em seguida escolheu-se o modelo que apresenta melhores resultados para ser utilizado em conjunto com técnicas de extração de tópicos. Por meio de um experimento avaliou-se a performance de ambas as técnicas junto a profissionais com afinidade com atas de reunião. Os anotadores, forneceram suas percepções em relação aos resultados do segmentador empregado nesse trabalho.  
+Em seguida escolheu-se o modelo que apresenta melhores resultados para ser utilizado em conjunto com técnicas de extração de tópicos. Por meio de um experimento avaliou-se a performance de ambas as técnicas junto a profissionais com afinidade com atas de reunião. Os anotadores, forneceram suas percepções em relação aos resultados do segmentador empregado neste trabalho.  
 Os dados obtidos dos experimentos serviram de base para as análises dos algoritmos e de sua aplicação no contexto das atas de reuniões. 
 Optou-se por criar um \textit{corpus} de atas de reunião anotadas a fim de produzir-se uma segmentação de referência para avaliações dos algoritmos, bem como sua publicação e utilização em outros trabalhos voltados a esse domínio. 
-Detalhes da criação da segmentação de referência utilizada nesse trabalho podem ser vistos na Seção~\ref{sec:preparacaocorpusreferencia}.
+Detalhes da criação da segmentação de referência utilizada neste trabalho podem ser vistos na Seção~\ref{sec:preparacaocorpusreferencia}.
 
-Nas próximas seções o processo de anotação e criação da segmentação de referência será detalhado bem como serão avaliados os segmentadores abordados nesse trabalho. Inicialmente é descrita a preparação do \textit{copus} e em seguida são mostradas as configurações utilizadas pelos algoritmos, bem como os critérios considerados para avaliá-los. Por fim, os resultados são apresentados e discutidos.
+Nas próximas seções o processo de anotação e criação da segmentação de referência será detalhado bem como serão avaliados os segmentadores abordados neste trabalho. Inicialmente é descrita a preparação do \textit{copus} e em seguida são mostradas as configurações utilizadas pelos algoritmos, bem como os critérios considerados para avaliá-los. Por fim, os resultados são apresentados e discutidos.
 
 
 
@@ -41,7 +41,7 @@ A preparação desse \textit{corpus} teve como guia a metodologia introduzida em
 O processo de anotação iniciou-se com a seleção de 12 atas de reuniões do departamento de computação da Universidade Federal de São Carlos - Campus Sorocaba, as quais são disponibilizadas publicamente\footnote{Acessível em  \url{http://www.ppgccs.net/?page\_id=1150}}. Foram coletadas 6 atas de reuniões da Comissão do Curso de Pós-Graduação em Ciência da Computação e 6 atas de reuniões do Conselho do Curso de Bacharelado em Ciência da Computação, sendo 5 referentes a reuniões ordinárias e 1 extraordinária de cada setor.
 
 % -- 2 - Escolha da teoria a ser explicada
-O trabalho de anotação visa identificar como usuários entendem as transições de assunto no documento, visto a ausência de marcações e meta informações no texto. Além disso, as anotações desse trabalho devem registrar o entendimento dos usuários em relação aos assuntos de cada segmento identificado e classificá-los quanto ao tipo de menção dada ao assunto. Maiores detalhes sobre a segmentação e rotulação manual serão fornecidos mais adiante nessa seção.
+O trabalho de anotação visa identificar como usuários entendem as transições de assunto no documento, visto a ausência de marcações e meta informações no texto. Além disso, as anotações deste trabalho devem registrar o entendimento dos usuários em relação aos assuntos de cada segmento identificado e classificá-los quanto ao tipo de menção dada ao assunto. Maiores detalhes sobre a segmentação e rotulação manual serão fornecidos mais adiante nessa seção.
 % do assunto como decisão, informe, irrelevante
 % Com essas anotações pretende-se explicar como os usuários entendem a segmentação e lhes atribui tópicos.
 
@@ -89,7 +89,7 @@ Na Figura~\ref{fig:interfaceanotacoes} é mostrada a interface da ferramenta uti
 
 
 
-De acordo com a literatura a respeito de anotações em segmentos, é recomendável fornecer treinamento aos participantes. Nesse trabalho os anotadores receberam apenas informações básicas sobre o objetivo da pesquisa e instruções de como operar o \textit{software} por meio de um vídeo\footnote{Acessível em \url{https://youtu.be/zCv3U7Z8kKo}}, deixando o entendimento sobre a segmentação e rotulação sob responsabilidade de cada anotador. Assim, nenhum critério foi estabelecido para o procedimento, ficando os anotadores orientados apenas pela interface da ferramenta. 
+De acordo com a literatura a respeito de anotações em segmentos, é recomendável fornecer treinamento aos participantes. Neste trabalho os anotadores receberam apenas informações básicas sobre o objetivo da pesquisa e instruções de como operar o \textit{software} por meio de um vídeo\footnote{Acessível em \url{https://youtu.be/zCv3U7Z8kKo}}, deixando o entendimento sobre a segmentação e rotulação sob responsabilidade de cada anotador. Assim, nenhum critério foi estabelecido para o procedimento, ficando os anotadores orientados apenas pela interface da ferramenta. 
 
   \begin{figure}[!h]
 	  \centering
@@ -166,8 +166,8 @@ O \textit{software} foi desenhado para padronizar o trabalho e otimizar o tempo 
 
 
 
-% Os arquivos gerados foram tratados para que os segmentos sempre terminem em uma sentença reconhecida pelo algoritmo, uma vez que as sentenças são a unidade mínima de informação nesse trabalho.
-O \textit{corpus} anotado deve ser constituído a partir dos textos originais e da resultante das percepções dos anotadores a cerca do fenômeno a ser explicado. Assim, o texto de cada uma das 12 atas selecionadas será acrescido de informações geradas a partir dos dados coletados. Após o processo de anotação, a segmentação de referência foi criada utilizando o critério de maior concordância, como já relatado em outros trabalhos~\cite{Hearst1997, Cardoso2017, Kazantseva2012, Passonneau1997, Galley2003}. Assim, considerou-se que ocorre um limite entre segmentos quando a maioria dos anotadores (metade mais um) concordou que a mesma sentença é um final de segmento. Gerou-se então 12 documentos derivados das atas originais os quais constituem a segmentação de referência utilizada nesse trabalho.
+% Os arquivos gerados foram tratados para que os segmentos sempre terminem em uma sentença reconhecida pelo algoritmo, uma vez que as sentenças são a unidade mínima de informação neste trabalho.
+O \textit{corpus} anotado deve ser constituído a partir dos textos originais e da resultante das percepções dos anotadores a cerca do fenômeno a ser explicado. Assim, o texto de cada uma das 12 atas selecionadas será acrescido de informações geradas a partir dos dados coletados. Após o processo de anotação, a segmentação de referência foi criada utilizando o critério de maior concordância, como já relatado em outros trabalhos~\cite{Hearst1997, Cardoso2017, Kazantseva2012, Passonneau1997, Galley2003}. Assim, considerou-se que ocorre um limite entre segmentos quando a maioria dos anotadores (metade mais um) concordou que a mesma sentença é um final de segmento. Gerou-se então 12 documentos derivados das atas originais os quais constituem a segmentação de referência utilizada neste trabalho.
 
 Na Figura~\ref{fig:concordanciasegref} é mostrado um exemplo de criação de uma segmentação de referência por meio da concordância entre anotadores. As primeiras linhas representam segmentações fornecidas por anotadores e a última linha representa a segmentação resultante da concordância entre a maioria dos segmentadores e portanto mais confiável. 
 
@@ -190,7 +190,7 @@ Na Figura~\ref{fig:concordanciasegref} é mostrado um exemplo de criação de um
 
 % ----------------- Exemplo Segmentação de Referência ----------------------
 
-Na Tabela~\ref{tab:segmentacaoreferencia} é mostrado um exemplo em que 6 dos 9 anotadores concordaram a respeito de um segmento. A tabela mostra quatro segmentos extraídos da segmentação de referência onde cada linha contém um segmento e os índices a esquerda indicam uma sentença. Junto à cada segmento é mostrada  a classe e descritores rotulados por um dos anotadores. Vale ressaltar que esses rótulos não foram utilizados no processo de segmentação e não têm nenhuma influência sobre a segmentação de referência. %Nesse trabalho, essas anotações são utilizadas na avaliação dos extratores de tópicos. --> não é
+Na Tabela~\ref{tab:segmentacaoreferencia} é mostrado um exemplo em que 6 dos 9 anotadores concordaram a respeito de um segmento. A tabela mostra quatro segmentos extraídos da segmentação de referência onde cada linha contém um segmento e os índices a esquerda indicam uma sentença. Junto à cada segmento é mostrada  a classe e descritores rotulados por um dos anotadores. Vale ressaltar que esses rótulos não foram utilizados no processo de segmentação e não têm nenhuma influência sobre a segmentação de referência. %Neste trabalho, essas anotações são utilizadas na avaliação dos extratores de tópicos. --> não é
 
 \begin{table}[!h]
 	\centering 
@@ -274,7 +274,7 @@ Para mensurar a concordância entre anotadores, a medida \textit{kappa (k)}~\cit
 As medidas \textit{WindowDiff} e $P_k$ informam a probabilidade de duas sentenças escolhidas aleatoriamente estarem no mesmo segmento. Elas refletem a similaridade entre duas segmentações, assim também podem ser utilizadas para avaliar a concordância entre os anotadores. As formulações dessas medidas são abordadas em mais detalhes na Seção~\ref{subsec:medidas-segmentacao}.
 %
 %
-Nesse trabalho calculou-se as medidas \textit{WindowDiff}, $P_k$ e \textit{Kappa} para cada par de anotação referente a cada ata, ou seja, para cada uma das 12 atas calculou-se a concordância entre os anotadores.  
+Neste trabalho calculou-se as medidas \textit{WindowDiff}, $P_k$ e \textit{Kappa} para cada par de anotação referente a cada ata, ou seja, para cada uma das 12 atas calculou-se a concordância entre os anotadores.  
 A Tabela~\ref{tab:detalhesSegRef} contém, para cada ata, a quantidade de sentenças e a quantidade de segmentos identificadas pelos participantes e as médias de \textit{WindowDiff}, $P_k$ e \textit{Kappa}. Uma vez que P$_k$ e \textit{WindowDiff}, são medidas de dissimilaridade, são reportados os seus complementos.
 % Uma vez que P$_k$ e WD, indicam melhores valores próximos a 0 e 1 como dissimilarid 
 
@@ -346,7 +346,7 @@ Para o segundo parâmetro, referente ao tamanho do quadro utilizado para gerar a
 O algoritmo permite ainda indicar se as sentenças serão representadas por vetores contendo a frequência ou o peso de cada termo. Ambas as representações foram utilizadas. Considerando todos os parâmetros, foram geradas 16 configurações para o algoritmo \textit{C99}.
 
 Os algoritmos tradicionais baseados em coesão léxica como o \textit{TextTiling} e \textit{C99} são fortemente afetados pela distribuição das palavras no texto, pois a maioria das medidas de similaridade, como a cosseno utilizada nesses algoritmos, baseiam-se na frequência das palavras. Para esses, a remoção de termos menos significativos na etapa de pré-processamento pode influenciar o desempenho. Para outras abordagens como \textit{MinCutSeg} e \textit{BayesSeg}, usou-se as configurações fornecidas por~\cite{Eis2008}, onde essas técnicas foram utilizadas como \textit{base line}. Para o \textit{TextSeg} é requerido apenas a configuração da quantidade de segmentos a serem identificados.
-Há ainda outras estratégias passíveis de aplicação, como a utilização de fontes externas, por exemplo \textit{thesaurus} e palavras pista, como discutido em \cite{Naili2016, Gutierrez2016, Ferret2009}. Nesse trabalho, essas estratégias não são utilizadas para manter uma abordagem não supervisionada e independente de domínio. 
+Há ainda outras estratégias passíveis de aplicação, como a utilização de fontes externas, por exemplo \textit{thesaurus} e palavras pista, como discutido em \cite{Naili2016, Gutierrez2016, Ferret2009}. Neste trabalho, essas estratégias não são utilizadas para manter uma abordagem não supervisionada e independente de domínio. 
 
 % Inicialmente, 
 Calculou-se as medidas configurando cada algoritmo
@@ -359,7 +359,7 @@ Esses foram testados em duas etapas: com o texto integral, e com o texto pré-pr
 \section{Critérios de Avaliação}
 
 % -> Definição do que é um bom algoritmo de segmentação
-Para fins de avaliação desse trabalho, um bom método de segmentação é aquele cujo resultado melhor se aproxima da segmentação de referência, sem a obrigatoriedade de estar perfeitamente alinhado com tal. Ou seja, visto o contexto das atas de reunião, e a subjetividade da tarefa, não é necessário que os limites entre os segmentos (real e hipótese) sejam idênticos, mas que se assemelhem em localização e quantidade.
+Para fins de avaliação deste trabalho, um bom método de segmentação é aquele cujo resultado melhor se aproxima da segmentação de referência, sem a obrigatoriedade de estar perfeitamente alinhado com tal. Ou seja, visto o contexto das atas de reunião, e a subjetividade da tarefa, não é necessário que os limites entre os segmentos (real e hipótese) sejam idênticos, mas que se assemelhem em localização e quantidade.
 
 As segmentações obtidas com os algoritmos foram comparadas com a segmentação de referência obtida e calculou-se as medidas mais aplicadas à segmentação textual, $P_k$ e \textit{WindowDiff}. Além dessas, computou-se também as medidas tradicionais Acurácia e $F^1$ para análises que consideram a exatidão dessas técnicas.
 % comparação com outros trabalhos que as utilizam.
@@ -375,7 +375,7 @@ Obteve-se por meio dos testes apresentados as melhores configurações para as p
 
 A seguir são apresentados os resultados obtidos com os algoritmos baseados em coesão léxica 
 % (\textit{TextTiling} e \textit{C99}), 
-considerando seus principais parâmetros e a aplicação do pré-processamento. Em seguida, são apresentados os resultados da avaliação geral de todos os algoritmos abordados nesse trabalho.
+considerando seus principais parâmetros e a aplicação do pré-processamento. Em seguida, são apresentados os resultados da avaliação geral de todos os algoritmos abordados neste trabalho.
 Na Tabela~\ref{tab:resultados-tt-pp} são apresentadas, as médias das medidas de desempenho obtidas com o \textit{TextTiling} bem como as configurações utilizadas.
 
 
@@ -400,7 +400,7 @@ Na Tabela~\ref{tab:resultadosc99} são apresentadas, as médias obtidas com o \t
 Verificou-se que, entre os métodos baseados em coesão léxica, o \textit{C99} obteve melhor desempenho em acurácia, precisão, $F^1$, $P_k$ e \textit{WindowDiff}, em relação ao \textit{TextTiling}. De maneira geral, o algoritmo \textit{C99} apresenta melhores resultados em relação ao \textit{TextTiling}. 
 % contudo testes estatísticos realizados indicaram que não houve diferença significativa entre os métodos. 
 O mesmo comportamento é observado para as demais técnicas \textit{MinCutSeg}, \textit{BayesSeg} e \textit{TextSeg}, conforme pode ser verificado no Apêndice~\ref{apendice1} que contém os resultados completos de todos algoritmos.
-Nesse trabalho, optou-se por aplicar o pré-processamento em todas as técnicas visto que além de apresentar pequena vantagem na segmentação textual, essa prática é amplamente aplicada em trabalhos nas áreas de Mineração de Texto pela capacidade de diminuição de dimensões e tempo de processamento. 
+Neste trabalho, optou-se por aplicar o pré-processamento em todas as técnicas visto que além de apresentar pequena vantagem na segmentação textual, essa prática é amplamente aplicada em trabalhos nas áreas de Mineração de Texto pela capacidade de diminuição de dimensões e tempo de processamento. 
 
 
 
@@ -480,7 +480,7 @@ Devido à grande quantidade de configurações apresentadas, o teste se deu em d
 % 
 Inicialmente foi gerado um \textit{ranking} para cada algoritmo/medida e selecionou-se a primeira configuração de cada \textit{ranking} a fim de conhecer os valores de parâmetros que melhor otimizam cada algoritmo/medida. Na Tabela~\ref{tab:configuracoes-ranking-um} é apresentada o resultado da primeira etapa, a qual contém as primeiras configurações de cada \textit{ranking}.
 Em seguida, executou-se o novamente o teste com as melhores configurações de cada algoritmo/medida.  Na Tabela~\ref{tab:configuracoes-ranking-um} é apresentado o resultado da primeira etapa, a qual contém as configurações colocadas na primeira posição do \textit{ranking}.
-Na Figura~\ref{fig:cds} é apresentado o diagrama de diferença crítica que ilustra graficamente o resultado do teste estatístico. Os algoritmos conectados por uma linha horizontal (diferença crítica) não apresentam diferenças estatisticamente significantes.  Pelo diagrama pode-se observar que o algoritmo \textit{BayesSeg} obteve as primeiras posições do ranking nas medidas acurácia, F$^1$ P$_k$ e WinDiff, porém, estatisticamente os algoritmos são equivalentes.  % o que se deve a forte influência da revocação nessa medida.
+Na Figura~\ref{fig:cds} é apresentado o diagrama de diferença crítica que ilustra graficamente o resultado do teste estatístico. Os algoritmos conectados por uma linha horizontal (diferença crítica) não apresentam diferenças estatisticamente significativas.  Pelo diagrama pode-se observar que o algoritmo \textit{BayesSeg} obteve as primeiras posições do ranking nas medidas acurácia, F$^1$ P$_k$ e WinDiff, porém, estatisticamente os algoritmos são equivalentes.  % o que se deve a forte influência da revocação nessa medida.
 
 
 
@@ -590,7 +590,7 @@ Na Figura~\ref{fig:coesaolexicaTT} é apresentado a variação da coesão léxic
 
 
 
-Após a análise dos métodos, selecionou-se o algoritmo \textit{BayesSeg} para a tarefa de segmentação textual nesse trabalho. 
+Após a análise dos métodos, selecionou-se o algoritmo \textit{BayesSeg} para a tarefa de segmentação textual neste trabalho. 
 A escolha justifica-se por este algoritmo apresentar melhores resultados para as medidas $P_k$ e \textit{WindowDiff} visto a subjetividade da tarefa e a aderência dessas medias à acurácia e precisão. Mais análises quanto à segmentação textual e desempenho do \textit{BayesSeg} serão abordadas no Capítulo~\ref{cap-extratores}. Em que realizou-se então uma experimento a fim de avaliar subjetivamente o segmentador escolhido em conjunto com extratores de tópicos.
 
 

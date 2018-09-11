@@ -1,188 +1,203 @@
-\backcite {Soares2008}{{11}{(document)}{Doc-Start}}
-\backcite {Eis2008}{{11}{(document)}{Doc-Start}}
-\backcite {Malioutov:2006a}{{11}{(document)}{Doc-Start}}
-\backcite {Cao:2017, Manning2008}{{19}{1}{chapter.1}}
-\backcite {Cao:2017, Manning2008}{{19}{1}{chapter.1}}
-\backcite {Aggarwal2012, Jeong:2010, Tagarelli2013}{{19}{1}{chapter.1}}
-\backcite {Aggarwal2012, Jeong:2010, Tagarelli2013}{{19}{1}{chapter.1}}
-\backcite {Aggarwal2012, Jeong:2010, Tagarelli2013}{{19}{1}{chapter.1}}
-\backcite {Bokaei2016, Miriam2013}{{19}{1}{chapter.1}}
-\backcite {Bokaei2016, Miriam2013}{{19}{1}{chapter.1}}
-\backcite {Miriam2013, Lee2011}{{19}{1}{chapter.1}}
-\backcite {Miriam2013, Lee2011}{{19}{1}{chapter.1}}
-\backcite {Aggarwal2012,Manning2008}{{20}{1}{chapter.1}}
-\backcite {Aggarwal2012,Manning2008}{{20}{1}{chapter.1}}
-\backcite {Gutierrez2016, Croft2009, Manning2008}{{20}{1}{chapter.1}}
-\backcite {Gutierrez2016, Croft2009, Manning2008}{{20}{1}{chapter.1}}
-\backcite {Gutierrez2016, Croft2009, Manning2008}{{20}{1}{chapter.1}}
-\backcite {WEIXING}{{20}{1}{chapter.1}}
-\backcite {Aggarwal2018, bokaei2015a, sakahara2014a, misra2009a, Eis2008}{{21}{1}{chapter.1}}
-\backcite {Aggarwal2018, bokaei2015a, sakahara2014a, misra2009a, Eis2008}{{21}{1}{chapter.1}}
-\backcite {Aggarwal2018, bokaei2015a, sakahara2014a, misra2009a, Eis2008}{{21}{1}{chapter.1}}
-\backcite {Aggarwal2018, bokaei2015a, sakahara2014a, misra2009a, Eis2008}{{21}{1}{chapter.1}}
-\backcite {Aggarwal2018, bokaei2015a, sakahara2014a, misra2009a, Eis2008}{{21}{1}{chapter.1}}
-\backcite {Wei2007}{{21}{1}{chapter.1}}
-\backcite {Maracini2010}{{21}{1}{chapter.1}}
-\backcite {Faleiros2016,Xing2009}{{21}{1}{chapter.1}}
-\backcite {Faleiros2016,Xing2009}{{21}{1}{chapter.1}}
-\backcite {Tagarelli2013, Jeong:2010, Prince2007, Huang2003}{{22}{1}{chapter.1}}
-\backcite {Tagarelli2013, Jeong:2010, Prince2007, Huang2003}{{22}{1}{chapter.1}}
-\backcite {Tagarelli2013, Jeong:2010, Prince2007, Huang2003}{{22}{1}{chapter.1}}
-\backcite {Tagarelli2013, Jeong:2010, Prince2007, Huang2003}{{22}{1}{chapter.1}}
-\backcite {Zhai2017, Xing2009}{{22}{1}{chapter.1}}
-\backcite {Zhai2017, Xing2009}{{22}{1}{chapter.1}}
+\backcite {Soares2008}{{13}{(document)}{Doc-Start}}
+\backcite {Eis2008}{{13}{(document)}{Doc-Start}}
+\backcite {Malioutov:2006a}{{13}{(document)}{Doc-Start}}
+\backcite {Cao:2017, Manning2008}{{21}{1}{chapter.1}}
+\backcite {Cao:2017, Manning2008}{{21}{1}{chapter.1}}
+\backcite {Aggarwal2012, Jeong:2010, Tagarelli2013}{{21}{1}{chapter.1}}
+\backcite {Aggarwal2012, Jeong:2010, Tagarelli2013}{{21}{1}{chapter.1}}
+\backcite {Aggarwal2012, Jeong:2010, Tagarelli2013}{{21}{1}{chapter.1}}
+\backcite {Bokaei2016, Miriam2013}{{21}{1}{chapter.1}}
+\backcite {Bokaei2016, Miriam2013}{{21}{1}{chapter.1}}
+\backcite {Miriam2013, Lee2011}{{21}{1}{chapter.1}}
+\backcite {Miriam2013, Lee2011}{{21}{1}{chapter.1}}
+\backcite {Aggarwal2012,Manning2008}{{22}{1}{chapter.1}}
+\backcite {Aggarwal2012,Manning2008}{{22}{1}{chapter.1}}
+\backcite {Gutierrez2016, Croft2009, Manning2008}{{22}{1}{chapter.1}}
+\backcite {Gutierrez2016, Croft2009, Manning2008}{{22}{1}{chapter.1}}
+\backcite {Gutierrez2016, Croft2009, Manning2008}{{22}{1}{chapter.1}}
 \backcite {WEIXING}{{22}{1}{chapter.1}}
-\backcite {Hofmann1999,Deerwester1990,Lee1999,Blei2012}{{25}{2}{chapter.2}}
-\backcite {Hofmann1999,Deerwester1990,Lee1999,Blei2012}{{25}{2}{chapter.2}}
-\backcite {Hofmann1999,Deerwester1990,Lee1999,Blei2012}{{25}{2}{chapter.2}}
-\backcite {Hofmann1999,Deerwester1990,Lee1999,Blei2012}{{25}{2}{chapter.2}}
-\backcite {Tagarelli2013, Cuong2011}{{25}{2}{chapter.2}}
-\backcite {Tagarelli2013, Cuong2011}{{25}{2}{chapter.2}}
-\backcite {Manning2008, Gutierrez2016}{{26}{2.1}{section.2.1}}
-\backcite {Manning2008, Gutierrez2016}{{26}{2.1}{section.2.1}}
-\backcite {Rezende2003}{{26}{2.1.2}{subsection.2.1.2}}
-\backcite {Croft2009,Salton1988,Shamsinejadbabki2012,Salton:1994}{{27}{2.1.2}{equation.2.1.2}}
-\backcite {Croft2009,Salton1988,Shamsinejadbabki2012,Salton:1994}{{27}{2.1.2}{equation.2.1.2}}
-\backcite {Croft2009,Salton1988,Shamsinejadbabki2012,Salton:1994}{{27}{2.1.2}{equation.2.1.2}}
-\backcite {Croft2009,Salton1988,Shamsinejadbabki2012,Salton:1994}{{27}{2.1.2}{equation.2.1.2}}
-\backcite {Tan2005,Croft2009,Manning2008}{{28}{2.1.2}{equation.2.1.2}}
-\backcite {Tan2005,Croft2009,Manning2008}{{28}{2.1.2}{equation.2.1.2}}
-\backcite {Tan2005,Croft2009,Manning2008}{{28}{2.1.2}{equation.2.1.2}}
-\backcite {Croft2009, Manning2008, Rijsbergen1979}{{28}{2.1.3}{equation.2.1.4}}
-\backcite {Croft2009, Manning2008, Rijsbergen1979}{{29}{2.1.3}{equation.2.1.4}}
-\backcite {Croft2009, Manning2008, Rijsbergen1979}{{29}{2.1.3}{equation.2.1.4}}
-\backcite {Luhn1958}{{30}{2.2}{section*.10}}
-\backcite {zipf1932}{{30}{2.2}{section*.10}}
-\backcite {Maracini2010}{{30}{2.2}{section*.10}}
-\backcite {Soares2008}{{30}{1}{figure.2.1}}
-\backcite {Rezende2003}{{31}{2.2}{section*.12}}
-\backcite {Aggarwal2018, Feldman2006, Rezende2003}{{32}{2.2}{table.2.1}}
-\backcite {Aggarwal2018, Feldman2006, Rezende2003}{{32}{2.2}{table.2.1}}
-\backcite {Aggarwal2018, Feldman2006, Rezende2003}{{32}{2.2}{table.2.1}}
-\backcite {Tan2005,Feldman2006}{{33}{2.2}{equation.2.2.8}}
-\backcite {Tan2005,Feldman2006}{{33}{2.2}{equation.2.2.8}}
-\backcite {Aggarwal2018, bokaei2015a, sakahara2014a, misra2009a, Eis2008}{{33}{2.3}{section.2.3}}
-\backcite {Aggarwal2018, bokaei2015a, sakahara2014a, misra2009a, Eis2008}{{33}{2.3}{section.2.3}}
-\backcite {Aggarwal2018, bokaei2015a, sakahara2014a, misra2009a, Eis2008}{{33}{2.3}{section.2.3}}
-\backcite {Aggarwal2018, bokaei2015a, sakahara2014a, misra2009a, Eis2008}{{33}{2.3}{section.2.3}}
-\backcite {Aggarwal2018, bokaei2015a, sakahara2014a, misra2009a, Eis2008}{{33}{2.3}{section.2.3}}
-\backcite {Choi2001-LSA}{{33}{2.3}{section.2.3}}
-\backcite {Kozima1993}{{34}{2.3.1}{subsection.2.3.1}}
-\backcite {Reynar1998}{{34}{2.3.1}{subsection.2.3.1}}
-\backcite {Naili2016,bokaei2015a,CHAIBI2014,Kern2009,Galley2003}{{35}{2.3.1}{figure.2.3}}
-\backcite {Naili2016,bokaei2015a,CHAIBI2014,Kern2009,Galley2003}{{35}{2.3.1}{figure.2.3}}
-\backcite {Naili2016,bokaei2015a,CHAIBI2014,Kern2009,Galley2003}{{35}{2.3.1}{figure.2.3}}
-\backcite {Naili2016,bokaei2015a,CHAIBI2014,Kern2009,Galley2003}{{35}{2.3.1}{figure.2.3}}
-\backcite {Naili2016,bokaei2015a,CHAIBI2014,Kern2009,Galley2003}{{35}{2.3.1}{figure.2.3}}
-\backcite {Cardoso2017,Dias2007}{{36}{2.3.1}{figure.2.3}}
-\backcite {Cardoso2017,Dias2007}{{36}{2.3.1}{figure.2.3}}
-\backcite {Choic99, Kern2009, misra2009a}{{36}{2.3.1}{figure.2.3}}
-\backcite {Choic99, Kern2009, misra2009a}{{36}{2.3.1}{figure.2.3}}
-\backcite {Choic99, Kern2009, misra2009a}{{36}{2.3.1}{figure.2.3}}
-\backcite {Choic99}{{36}{2.3.1}{section*.16}}
-\backcite {Reynar1998}{{36}{2.3.1}{figure.2.5}}
-\backcite {Eis2008}{{37}{4}{figure.2.4}}
-\backcite {Utiyama2001}{{38}{2.3.1}{section*.17}}
-\backcite {Malioutov:2006a}{{38}{2.3.1}{equation.2.3.12}}
-\backcite {Eis2008}{{38}{2.3.1}{section*.18}}
-\backcite {Blei2003}{{39}{2.3.1}{section*.18}}
-\backcite {Malioutov:2006a}{{39}{2.3.1}{section*.19}}
-\backcite {Malioutov:2006a}{{39}{6}{figure.2.6}}
-\backcite {Shi2000}{{39}{2.3.1}{figure.2.6}}
-\backcite {Shi2000}{{40}{2.3.1}{equation.2.3.13}}
-\backcite {Malioutov:2006a}{{40}{2.3.1}{equation.2.3.16}}
-\backcite {Monien1988, Papadimitriou1976}{{40}{4}{Hfootnote.5}}
-\backcite {Monien1988, Papadimitriou1976}{{40}{4}{Hfootnote.5}}
-\backcite {Aggarwal2018, Manning2008}{{41}{2.3.2}{subsection.2.3.2}}
-\backcite {Aggarwal2018, Manning2008}{{41}{2.3.2}{subsection.2.3.2}}
-\backcite {Kazantseva2012, Beeferman1999}{{41}{2.3.2}{table.2.2}}
-\backcite {Kazantseva2012, Beeferman1999}{{41}{2.3.2}{table.2.2}}
-\backcite {Kern2009}{{42}{2.3.2}{equation.2.3.19}}
-\backcite {Beeferman1999}{{42}{2.3.2}{figure.2.7}}
-\backcite {Pevzner2002}{{43}{2.3.2}{equation.2.3.20}}
-\backcite {Hovy2010}{{44}{2.3.3}{subsection.2.3.3}}
-\backcite {Hearst1997}{{44}{2.3.3}{subsection.2.3.3}}
-\backcite {Kazantseva2012}{{44}{2.3.3}{subsection.2.3.3}}
-\backcite {Passonneau1997}{{44}{2.3.3}{subsection.2.3.3}}
-\backcite {Galley2003}{{44}{2.3.3}{subsection.2.3.3}}
-\backcite {Janin2003}{{44}{2.3.3}{subsection.2.3.3}}
-\backcite {Choic99}{{45}{2.3.3}{subsection.2.3.3}}
-\backcite {CHAIBI2014}{{45}{2.3.3}{subsection.2.3.3}}
-\backcite {Hovy2010}{{45}{2.3.3}{subsection.2.3.3}}
-\backcite {Gruenstein2007}{{46}{2.3.3}{section*.24}}
-\backcite {Carletta1996}{{46}{2.3.3}{section*.25}}
-\backcite {Fleiss1979}{{46}{2.3.3}{equation.2.3.22}}
-\backcite {Kazantseva2012,Cardoso2017}{{46}{2.3.3}{equation.2.3.22}}
-\backcite {Kazantseva2012,Cardoso2017}{{46}{2.3.3}{equation.2.3.22}}
-\backcite {Wei2007}{{47}{2.4}{section.2.4}}
-\backcite {Faleiros2016,Xing2009}{{47}{2.4}{section.2.4}}
-\backcite {Faleiros2016,Xing2009}{{47}{2.4}{section.2.4}}
-\backcite {Blei2003}{{47}{2.4}{section.2.4}}
-\backcite {Hofmann1999}{{47}{2.4}{section.2.4}}
-\backcite {DZhu20122}{{47}{2.4}{section.2.4}}
-\backcite {Aggarwal2018, OCallaghan2015, Steyvers2007}{{47}{2.4}{section.2.4}}
-\backcite {Aggarwal2018, OCallaghan2015, Steyvers2007}{{47}{2.4}{section.2.4}}
-\backcite {Aggarwal2018, OCallaghan2015, Steyvers2007}{{47}{2.4}{section.2.4}}
-\backcite {Aggarwal2018}{{47}{2.4}{section.2.4}}
-\backcite {Maracini2010}{{47}{2.4}{section.2.4}}
-\backcite {Guyon2003}{{47}{2.4}{section.2.4}}
-\backcite {Deerwester1990}{{48}{2.4.1}{equation.2.4.23}}
-\backcite {Deerwester1990}{{48}{2.4.1}{equation.2.4.23}}
-\backcite {Cheng2013}{{48}{2.4.1}{equation.2.4.23}}
-\backcite {Lee1999}{{48}{2.4.1}{equation.2.4.23}}
-\backcite {Hofmann1999}{{48}{2.4.2}{subsection.2.4.2}}
-\backcite {Blei2003}{{49}{2.4.2}{subsection.2.4.2}}
-\backcite {Blei2012, Faleiros2016}{{50}{2.4.2}{Item.5}}
-\backcite {Blei2012, Faleiros2016}{{50}{2.4.2}{Item.5}}
-\backcite {Manning2008}{{50}{2.4.2}{Item.5}}
-\backcite {Pema2017, Bui2017, Rossi2011, Santos2010a, Manning2008}{{51}{2.4.2}{equation.2.4.26}}
-\backcite {Pema2017, Bui2017, Rossi2011, Santos2010a, Manning2008}{{51}{2.4.2}{equation.2.4.26}}
-\backcite {Pema2017, Bui2017, Rossi2011, Santos2010a, Manning2008}{{51}{2.4.2}{equation.2.4.26}}
-\backcite {Pema2017, Bui2017, Rossi2011, Santos2010a, Manning2008}{{51}{2.4.2}{equation.2.4.26}}
-\backcite {Pema2017, Bui2017, Rossi2011, Santos2010a, Manning2008}{{51}{2.4.2}{equation.2.4.26}}
-\backcite {Zamir1998}{{51}{2.5}{section.2.5}}
-\backcite {Masao:2000}{{51}{2.5}{section.2.5}}
-\backcite {Jeong:2010}{{51}{2.5}{section.2.5}}
-\backcite {Cuong2011}{{52}{2.5}{section.2.5}}
-\backcite {Tagarelli2013}{{52}{2.5}{section.2.5}}
-\backcite {Zhao2004a, Zhao2004b, Dhillon2001}{{52}{2.5}{section.2.5}}
-\backcite {Zhao2004a, Zhao2004b, Dhillon2001}{{52}{2.5}{section.2.5}}
-\backcite {Zhao2004a, Zhao2004b, Dhillon2001}{{52}{2.5}{section.2.5}}
-\backcite {Corcoglioniti2016, Jian2016, habibi2015, LiJiang2014, Rezende2011}{{53}{2.5}{table.2.3}}
-\backcite {Corcoglioniti2016, Jian2016, habibi2015, LiJiang2014, Rezende2011}{{53}{2.5}{table.2.3}}
-\backcite {Corcoglioniti2016, Jian2016, habibi2015, LiJiang2014, Rezende2011}{{53}{2.5}{table.2.3}}
-\backcite {Corcoglioniti2016, Jian2016, habibi2015, LiJiang2014, Rezende2011}{{53}{2.5}{table.2.3}}
-\backcite {Corcoglioniti2016, Jian2016, habibi2015, LiJiang2014, Rezende2011}{{53}{2.5}{table.2.3}}
-\backcite {Porter1997}{{58}{3.1.1.2}{subsubsection.3.1.1.2}}
-\backcite {Bokaei2016}{{59}{3.1.1.3}{subsubsection.3.1.1.3}}
-\backcite {Choi2001-LSA}{{63}{3.2.1}{subsection.3.2.1}}
-\backcite {Hovy2010}{{69}{4}{chapter.4}}
-\backcite {Hovy2010}{{69}{4.1}{section.4.1}}
-\backcite {Cardoso2017}{{70}{4.1}{section.4.1}}
-\backcite {Hovy2010}{{70}{4.1}{section.4.1}}
-\backcite {Hearst1997, Cardoso2017, Kazantseva2012, Passonneau1997, Galley2003}{{72}{4.1}{table.4.5}}
-\backcite {Hearst1997, Cardoso2017, Kazantseva2012, Passonneau1997, Galley2003}{{72}{4.1}{table.4.5}}
-\backcite {Hearst1997, Cardoso2017, Kazantseva2012, Passonneau1997, Galley2003}{{72}{4.1}{table.4.5}}
-\backcite {Hearst1997, Cardoso2017, Kazantseva2012, Passonneau1997, Galley2003}{{72}{4.1}{table.4.5}}
-\backcite {Hearst1997, Cardoso2017, Kazantseva2012, Passonneau1997, Galley2003}{{72}{4.1}{table.4.5}}
-\backcite {Carletta1996}{{74}{4.1}{table.4.6}}
-\backcite {Gruenstein2007, Cardoso2017, Hearst1997}{{74}{4.1}{table.4.6}}
-\backcite {Gruenstein2007, Cardoso2017, Hearst1997}{{74}{4.1}{table.4.6}}
-\backcite {Gruenstein2007, Cardoso2017, Hearst1997}{{74}{4.1}{table.4.6}}
-\backcite {Carletta1996}{{74}{4.1}{table.4.7}}
-\backcite {Hearst1997}{{74}{4.1}{table.4.7}}
-\backcite {Cardoso2017}{{74}{4.1}{table.4.7}}
-\backcite {Eis2008}{{75}{4.2}{section.4.2}}
-\backcite {Naili2016, Gutierrez2016, Ferret2009}{{75}{4.2}{section.4.2}}
-\backcite {Naili2016, Gutierrez2016, Ferret2009}{{76}{4.2}{section.4.2}}
-\backcite {Naili2016, Gutierrez2016, Ferret2009}{{76}{4.2}{section.4.2}}
-\backcite {Bogdan2012, Garcia2010, Demsar2006}{{79}{4.4}{figure.4.15}}
-\backcite {Bogdan2012, Garcia2010, Demsar2006}{{79}{4.4}{figure.4.15}}
-\backcite {Bogdan2012, Garcia2010, Demsar2006}{{79}{4.4}{figure.4.15}}
-\backcite {DZhu20122}{{85}{5}{chapter.5}}
-\backcite {Aggarwal2018, OCallaghan2015, Steyvers2007}{{85}{5}{chapter.5}}
-\backcite {Aggarwal2018, OCallaghan2015, Steyvers2007}{{85}{5}{chapter.5}}
-\backcite {Aggarwal2018, OCallaghan2015, Steyvers2007}{{85}{5}{chapter.5}}
-\backcite {Hassani2017}{{85}{5}{chapter.5}}
-\backcite {Norman2010}{{87}{5.2}{section.5.2}}
-\backcite {Norman2010}{{87}{5.2}{section.5.2}}
+\backcite {Aggarwal2018, bokaei2015a, sakahara2014a, misra2009a, Eis2008}{{23}{1}{chapter.1}}
+\backcite {Aggarwal2018, bokaei2015a, sakahara2014a, misra2009a, Eis2008}{{23}{1}{chapter.1}}
+\backcite {Aggarwal2018, bokaei2015a, sakahara2014a, misra2009a, Eis2008}{{23}{1}{chapter.1}}
+\backcite {Aggarwal2018, bokaei2015a, sakahara2014a, misra2009a, Eis2008}{{23}{1}{chapter.1}}
+\backcite {Aggarwal2018, bokaei2015a, sakahara2014a, misra2009a, Eis2008}{{23}{1}{chapter.1}}
+\backcite {Wei2007}{{23}{1}{chapter.1}}
+\backcite {Maracini2010}{{23}{1}{chapter.1}}
+\backcite {Faleiros2016,Xing2009}{{23}{1}{chapter.1}}
+\backcite {Faleiros2016,Xing2009}{{23}{1}{chapter.1}}
+\backcite {Tagarelli2013, Jeong:2010, Prince2007, Huang2003}{{24}{1}{chapter.1}}
+\backcite {Tagarelli2013, Jeong:2010, Prince2007, Huang2003}{{24}{1}{chapter.1}}
+\backcite {Tagarelli2013, Jeong:2010, Prince2007, Huang2003}{{24}{1}{chapter.1}}
+\backcite {Tagarelli2013, Jeong:2010, Prince2007, Huang2003}{{24}{1}{chapter.1}}
+\backcite {Zhai2017, Xing2009}{{24}{1}{chapter.1}}
+\backcite {Zhai2017, Xing2009}{{24}{1}{chapter.1}}
+\backcite {WEIXING}{{24}{1}{chapter.1}}
+\backcite {Hofmann1999,Deerwester1990,Lee1999,Blei2012}{{27}{2}{chapter.2}}
+\backcite {Hofmann1999,Deerwester1990,Lee1999,Blei2012}{{27}{2}{chapter.2}}
+\backcite {Hofmann1999,Deerwester1990,Lee1999,Blei2012}{{27}{2}{chapter.2}}
+\backcite {Hofmann1999,Deerwester1990,Lee1999,Blei2012}{{27}{2}{chapter.2}}
+\backcite {Tagarelli2013, Cuong2011}{{27}{2}{chapter.2}}
+\backcite {Tagarelli2013, Cuong2011}{{27}{2}{chapter.2}}
+\backcite {Manning2008, Gutierrez2016}{{28}{2.1}{section.2.1}}
+\backcite {Manning2008, Gutierrez2016}{{28}{2.1}{section.2.1}}
+\backcite {Rezende2003}{{28}{2.1.2}{subsection.2.1.2}}
+\backcite {Croft2009,Salton1988,Shamsinejadbabki2012,Salton:1994}{{29}{2.1.2}{equation.2.1.2}}
+\backcite {Croft2009,Salton1988,Shamsinejadbabki2012,Salton:1994}{{29}{2.1.2}{equation.2.1.2}}
+\backcite {Croft2009,Salton1988,Shamsinejadbabki2012,Salton:1994}{{29}{2.1.2}{equation.2.1.2}}
+\backcite {Croft2009,Salton1988,Shamsinejadbabki2012,Salton:1994}{{29}{2.1.2}{equation.2.1.2}}
+\backcite {Tan2005,Croft2009,Manning2008}{{30}{2.1.2}{equation.2.1.2}}
+\backcite {Tan2005,Croft2009,Manning2008}{{30}{2.1.2}{equation.2.1.2}}
+\backcite {Tan2005,Croft2009,Manning2008}{{30}{2.1.2}{equation.2.1.2}}
+\backcite {Croft2009, Manning2008, Rijsbergen1979}{{30}{2.1.3}{equation.2.1.4}}
+\backcite {Croft2009, Manning2008, Rijsbergen1979}{{31}{2.1.3}{equation.2.1.4}}
+\backcite {Croft2009, Manning2008, Rijsbergen1979}{{31}{2.1.3}{equation.2.1.4}}
+\backcite {Luhn1958}{{32}{2.2}{section*.10}}
+\backcite {zipf1932}{{32}{2.2}{section*.10}}
+\backcite {Maracini2010}{{32}{2.2}{section*.10}}
+\backcite {Soares2008}{{32}{1}{figure.2.1}}
+\backcite {Rezende2003}{{33}{2.2}{section*.12}}
+\backcite {Aggarwal2018, Feldman2006, Rezende2003}{{34}{2.2}{table.2.1}}
+\backcite {Aggarwal2018, Feldman2006, Rezende2003}{{34}{2.2}{table.2.1}}
+\backcite {Aggarwal2018, Feldman2006, Rezende2003}{{34}{2.2}{table.2.1}}
+\backcite {Tan2005,Feldman2006}{{35}{2.2}{equation.2.2.8}}
+\backcite {Tan2005,Feldman2006}{{35}{2.2}{equation.2.2.8}}
+\backcite {Aggarwal2018, bokaei2015a, sakahara2014a, misra2009a, Eis2008}{{35}{2.3}{section.2.3}}
+\backcite {Aggarwal2018, bokaei2015a, sakahara2014a, misra2009a, Eis2008}{{35}{2.3}{section.2.3}}
+\backcite {Aggarwal2018, bokaei2015a, sakahara2014a, misra2009a, Eis2008}{{35}{2.3}{section.2.3}}
+\backcite {Aggarwal2018, bokaei2015a, sakahara2014a, misra2009a, Eis2008}{{35}{2.3}{section.2.3}}
+\backcite {Aggarwal2018, bokaei2015a, sakahara2014a, misra2009a, Eis2008}{{35}{2.3}{section.2.3}}
+\backcite {Choi2001-LSA}{{35}{2.3}{section.2.3}}
+\backcite {Kozima1993}{{36}{2.3.1}{subsection.2.3.1}}
+\backcite {Reynar1998}{{36}{2.3.1}{subsection.2.3.1}}
+\backcite {Naili2016,bokaei2015a,CHAIBI2014,Kern2009,Galley2003}{{37}{2.3.1}{figure.2.3}}
+\backcite {Naili2016,bokaei2015a,CHAIBI2014,Kern2009,Galley2003}{{37}{2.3.1}{figure.2.3}}
+\backcite {Naili2016,bokaei2015a,CHAIBI2014,Kern2009,Galley2003}{{37}{2.3.1}{figure.2.3}}
+\backcite {Naili2016,bokaei2015a,CHAIBI2014,Kern2009,Galley2003}{{37}{2.3.1}{figure.2.3}}
+\backcite {Naili2016,bokaei2015a,CHAIBI2014,Kern2009,Galley2003}{{37}{2.3.1}{figure.2.3}}
+\backcite {Cardoso2017,Dias2007}{{38}{2.3.1}{figure.2.3}}
+\backcite {Cardoso2017,Dias2007}{{38}{2.3.1}{figure.2.3}}
+\backcite {Choic99, Kern2009, misra2009a}{{38}{2.3.1}{figure.2.3}}
+\backcite {Choic99, Kern2009, misra2009a}{{38}{2.3.1}{figure.2.3}}
+\backcite {Choic99, Kern2009, misra2009a}{{38}{2.3.1}{figure.2.3}}
+\backcite {Choic99}{{38}{2.3.1}{section*.16}}
+\backcite {Reynar1998}{{38}{2.3.1}{figure.2.5}}
+\backcite {Eis2008}{{39}{4}{figure.2.4}}
+\backcite {Utiyama2001}{{40}{2.3.1}{section*.17}}
+\backcite {Malioutov:2006a}{{40}{2.3.1}{equation.2.3.12}}
+\backcite {Eis2008}{{40}{2.3.1}{section*.18}}
+\backcite {Blei2003}{{41}{2.3.1}{section*.18}}
+\backcite {Malioutov:2006a}{{41}{2.3.1}{section*.19}}
+\backcite {Malioutov:2006a}{{41}{6}{figure.2.6}}
+\backcite {Shi2000}{{41}{2.3.1}{figure.2.6}}
+\backcite {Shi2000}{{42}{2.3.1}{equation.2.3.13}}
+\backcite {Malioutov:2006a}{{42}{2.3.1}{equation.2.3.16}}
+\backcite {Monien1988, Papadimitriou1976}{{42}{4}{Hfootnote.5}}
+\backcite {Monien1988, Papadimitriou1976}{{42}{4}{Hfootnote.5}}
+\backcite {Aggarwal2018, Manning2008}{{43}{2.3.2}{subsection.2.3.2}}
+\backcite {Aggarwal2018, Manning2008}{{43}{2.3.2}{subsection.2.3.2}}
+\backcite {Kazantseva2012, Beeferman1999}{{43}{2.3.2}{table.2.2}}
+\backcite {Kazantseva2012, Beeferman1999}{{43}{2.3.2}{table.2.2}}
+\backcite {Kern2009}{{44}{2.3.2}{equation.2.3.19}}
+\backcite {Beeferman1999}{{44}{2.3.2}{figure.2.7}}
+\backcite {Pevzner2002}{{45}{2.3.2}{equation.2.3.20}}
+\backcite {Hovy2010}{{46}{2.3.3}{subsection.2.3.3}}
+\backcite {Hearst1997}{{46}{2.3.3}{subsection.2.3.3}}
+\backcite {Kazantseva2012}{{46}{2.3.3}{subsection.2.3.3}}
+\backcite {Passonneau1997}{{46}{2.3.3}{subsection.2.3.3}}
+\backcite {Galley2003}{{46}{2.3.3}{subsection.2.3.3}}
+\backcite {Janin2003}{{46}{2.3.3}{subsection.2.3.3}}
+\backcite {Choic99}{{47}{2.3.3}{subsection.2.3.3}}
+\backcite {CHAIBI2014}{{47}{2.3.3}{subsection.2.3.3}}
+\backcite {Hovy2010}{{47}{2.3.3}{subsection.2.3.3}}
+\backcite {Gruenstein2007}{{48}{2.3.3}{section*.24}}
+\backcite {Carletta1996}{{48}{2.3.3}{section*.25}}
+\backcite {Fleiss1979}{{48}{2.3.3}{equation.2.3.22}}
+\backcite {Kazantseva2012,Cardoso2017}{{48}{2.3.3}{equation.2.3.22}}
+\backcite {Kazantseva2012,Cardoso2017}{{48}{2.3.3}{equation.2.3.22}}
+\backcite {Wei2007}{{49}{2.4}{section.2.4}}
+\backcite {Faleiros2016,Xing2009}{{49}{2.4}{section.2.4}}
+\backcite {Faleiros2016,Xing2009}{{49}{2.4}{section.2.4}}
+\backcite {Blei2003}{{49}{2.4}{section.2.4}}
+\backcite {Hofmann1999}{{49}{2.4}{section.2.4}}
+\backcite {DZhu20122}{{49}{2.4}{section.2.4}}
+\backcite {Aggarwal2018, OCallaghan2015, Steyvers2007}{{49}{2.4}{section.2.4}}
+\backcite {Aggarwal2018, OCallaghan2015, Steyvers2007}{{49}{2.4}{section.2.4}}
+\backcite {Aggarwal2018, OCallaghan2015, Steyvers2007}{{49}{2.4}{section.2.4}}
+\backcite {Aggarwal2018}{{49}{2.4}{section.2.4}}
+\backcite {Maracini2010}{{49}{2.4}{section.2.4}}
+\backcite {Guyon2003}{{49}{2.4}{section.2.4}}
+\backcite {Deerwester1990}{{50}{2.4.1}{equation.2.4.23}}
+\backcite {Deerwester1990}{{50}{2.4.1}{equation.2.4.23}}
+\backcite {Cheng2013}{{50}{2.4.1}{equation.2.4.23}}
+\backcite {Lee1999}{{50}{2.4.1}{equation.2.4.23}}
+\backcite {Hofmann1999}{{50}{2.4.2}{subsection.2.4.2}}
+\backcite {Blei2003}{{51}{2.4.2}{subsection.2.4.2}}
+\backcite {Blei2012, Faleiros2016}{{52}{2.4.2}{Item.5}}
+\backcite {Blei2012, Faleiros2016}{{52}{2.4.2}{Item.5}}
+\backcite {Manning2008}{{52}{2.4.2}{Item.5}}
+\backcite {Pema2017, Bui2017, Rossi2011, Santos2010a, Manning2008}{{53}{2.4.2}{equation.2.4.26}}
+\backcite {Pema2017, Bui2017, Rossi2011, Santos2010a, Manning2008}{{53}{2.4.2}{equation.2.4.26}}
+\backcite {Pema2017, Bui2017, Rossi2011, Santos2010a, Manning2008}{{53}{2.4.2}{equation.2.4.26}}
+\backcite {Pema2017, Bui2017, Rossi2011, Santos2010a, Manning2008}{{53}{2.4.2}{equation.2.4.26}}
+\backcite {Pema2017, Bui2017, Rossi2011, Santos2010a, Manning2008}{{53}{2.4.2}{equation.2.4.26}}
+\backcite {Zamir1998}{{54}{2.5}{section.2.5}}
+\backcite {Masao:2000}{{54}{2.5}{section.2.5}}
+\backcite {Jeong:2010}{{54}{2.5}{section.2.5}}
+\backcite {Cuong2011}{{54}{2.5}{section.2.5}}
+\backcite {Tagarelli2013}{{54}{2.5}{section.2.5}}
+\backcite {Zhao2004a, Zhao2004b, Dhillon2001}{{55}{2.5}{section.2.5}}
+\backcite {Zhao2004a, Zhao2004b, Dhillon2001}{{55}{2.5}{section.2.5}}
+\backcite {Zhao2004a, Zhao2004b, Dhillon2001}{{55}{2.5}{section.2.5}}
+\backcite {Zamir1998}{{55}{2.5}{section.2.5}}
+\backcite {Masao:2000}{{55}{2.5}{section.2.5}}
+\backcite {Jeong:2010}{{55}{2.5}{section.2.5}}
+\backcite {Cuong2011}{{55}{2.5}{section.2.5}}
+\backcite {Tagarelli2013}{{55}{2.5}{section.2.5}}
+\backcite {Zamir1998, Masao:2000}{{55}{2.5}{table.2.3}}
+\backcite {Zamir1998, Masao:2000}{{55}{2.5}{table.2.3}}
+\backcite {Tagarelli2013}{{55}{2.5}{table.2.3}}
+\backcite {Cuong2011, Jeong:2010}{{55}{2.5}{table.2.3}}
+\backcite {Cuong2011, Jeong:2010}{{55}{2.5}{table.2.3}}
+\backcite {Zamir1998, Jeong:2010, Tagarelli2013}{{55}{2.5}{table.2.3}}
+\backcite {Zamir1998, Jeong:2010, Tagarelli2013}{{55}{2.5}{table.2.3}}
+\backcite {Zamir1998, Jeong:2010, Tagarelli2013}{{55}{2.5}{table.2.3}}
+\backcite {Masao:2000}{{56}{2.5}{table.2.3}}
+\backcite {Cuong2011}{{56}{2.5}{table.2.3}}
+\backcite {Corcoglioniti2016, Jian2016, habibi2015, LiJiang2014, Rezende2011}{{56}{2.5}{table.2.3}}
+\backcite {Corcoglioniti2016, Jian2016, habibi2015, LiJiang2014, Rezende2011}{{56}{2.5}{table.2.3}}
+\backcite {Corcoglioniti2016, Jian2016, habibi2015, LiJiang2014, Rezende2011}{{56}{2.5}{table.2.3}}
+\backcite {Corcoglioniti2016, Jian2016, habibi2015, LiJiang2014, Rezende2011}{{56}{2.5}{table.2.3}}
+\backcite {Corcoglioniti2016, Jian2016, habibi2015, LiJiang2014, Rezende2011}{{56}{2.5}{table.2.3}}
+\backcite {Porter1997}{{60}{3.1.1.2}{subsubsection.3.1.1.2}}
+\backcite {Bokaei2016}{{61}{3.1.1.3}{subsubsection.3.1.1.3}}
+\backcite {Choi2001-LSA}{{65}{3.2.1}{subsection.3.2.1}}
+\backcite {Hovy2010}{{71}{4}{chapter.4}}
+\backcite {Hovy2010}{{71}{4.1}{section.4.1}}
+\backcite {Cardoso2017}{{72}{4.1}{section.4.1}}
+\backcite {Hovy2010}{{72}{4.1}{section.4.1}}
+\backcite {Hearst1997, Cardoso2017, Kazantseva2012, Passonneau1997, Galley2003}{{74}{4.1}{table.4.5}}
+\backcite {Hearst1997, Cardoso2017, Kazantseva2012, Passonneau1997, Galley2003}{{74}{4.1}{table.4.5}}
+\backcite {Hearst1997, Cardoso2017, Kazantseva2012, Passonneau1997, Galley2003}{{74}{4.1}{table.4.5}}
+\backcite {Hearst1997, Cardoso2017, Kazantseva2012, Passonneau1997, Galley2003}{{74}{4.1}{table.4.5}}
+\backcite {Hearst1997, Cardoso2017, Kazantseva2012, Passonneau1997, Galley2003}{{74}{4.1}{table.4.5}}
+\backcite {Carletta1996}{{76}{4.1}{table.4.6}}
+\backcite {Gruenstein2007, Cardoso2017, Hearst1997}{{76}{4.1}{table.4.6}}
+\backcite {Gruenstein2007, Cardoso2017, Hearst1997}{{76}{4.1}{table.4.6}}
+\backcite {Gruenstein2007, Cardoso2017, Hearst1997}{{76}{4.1}{table.4.6}}
+\backcite {Carletta1996}{{76}{4.1}{table.4.7}}
+\backcite {Hearst1997}{{76}{4.1}{table.4.7}}
+\backcite {Cardoso2017}{{76}{4.1}{table.4.7}}
+\backcite {Eis2008}{{77}{4.2}{section.4.2}}
+\backcite {Naili2016, Gutierrez2016, Ferret2009}{{77}{4.2}{section.4.2}}
+\backcite {Naili2016, Gutierrez2016, Ferret2009}{{78}{4.2}{section.4.2}}
+\backcite {Naili2016, Gutierrez2016, Ferret2009}{{78}{4.2}{section.4.2}}
+\backcite {Bogdan2012, Garcia2010, Demsar2006}{{81}{4.4}{figure.4.15}}
+\backcite {Bogdan2012, Garcia2010, Demsar2006}{{81}{4.4}{figure.4.15}}
+\backcite {Bogdan2012, Garcia2010, Demsar2006}{{81}{4.4}{figure.4.15}}
+\backcite {DZhu20122}{{87}{5}{chapter.5}}
+\backcite {Aggarwal2018, OCallaghan2015, Steyvers2007}{{87}{5}{chapter.5}}
+\backcite {Aggarwal2018, OCallaghan2015, Steyvers2007}{{87}{5}{chapter.5}}
+\backcite {Aggarwal2018, OCallaghan2015, Steyvers2007}{{87}{5}{chapter.5}}
+\backcite {Hassani2017}{{87}{5}{chapter.5}}
+\backcite {Norman2010}{{89}{5.2}{section.5.2}}
+\backcite {Norman2010}{{89}{5.2}{section.5.2}}
