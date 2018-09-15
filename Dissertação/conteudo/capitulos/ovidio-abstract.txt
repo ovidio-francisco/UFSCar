@@ -1,0 +1,34 @@
+
+Information retrieval in meeting minutes using text segmentation and topic extraction
+
+
+In a context where the most informations stored by the organizations is in the text format, the development of computer tools for knowledge discovery aimed to organization and information retrieval is a task that holds attention and relevance.
+%
+The extraction topic models are often employed in this task. This models are able  to establish relations between documents and found latents patterns in sets of them.  
+However, there is an additional challenge for documents composed by multiples subjects. For texts with subject shifts, it is necessary, in fist, found the chunks of texts that address a single subject. So, the text segmentation techniques are used to break a text in segments with a relatively independent issue.  
+The combination of the text segmentation and topic extraction algorithms, can be used to make an structure that helps to understanding textual data, which are inherently non structured.  
+The creation of an topic organized structure, that incorporates latent information concerning the corpus, favors Information Retrievals techniques. This approach allows query expansion space, besides the original set of terms of each segment, and the identification most relevant pieces of text.  
+This work presents an methodology to connect the Text Segmentation techniques to the Topic extraction models, in order to generates an derivative structure from a non structured corpus, which concentrates the original texts plus the latent informations and organized by semantic likeness.  
+The research for this thesis investigates the text segmentation techniques and the Topic extraction models to develop an Information Retrieval system for meeting minutes.  
+We develops an system to give to the user the most relevant segments to the query. The segmentos presented are clustered by this topics, that also enables exploratory searches to the data base, through browsing by groups of semantically related segments. Furthermore, less relevant segments are omitted, allowing results focused on the researched subject.  
+Five techniques of text segmentation and three Topic extraction models from the literature was evaluated. Based on the set of meeting minutes analysed, we create an manually annotated corpus with informations on the thematic composition of the meeting minutes and about the issue shifts. The annotated corpus served as reference to objective evaluation of the text segmentation techniques. We also evaluate the results obtained with the Topic extraction models. This results were analysed by related to the meeting minutes context.  
+The results points the employed techniques and the methodology presented gives satisfactory answers. However, more data can be necessary to leads new experiments in order to improve the used techniques.  
+The system implementation and the tools used in the work, as well the results obtained in the evaluations, plus the annotated corpus are the principal contributions of this work, in order to support next works.
+
+
+
+
+
+
+
+
+\textbf{Key-words}: 
+% Segmentação Textual. 
+% Extração de Tópicos.
+% Recuperação de Informação. 
+Information retrieval.
+Text segmentation.
+Topic extraction.
+Meeting minutes.
+% Dissertation. Text. Master.
+
